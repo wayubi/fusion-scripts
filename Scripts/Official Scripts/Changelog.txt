@@ -1,9 +1,20 @@
 --------------------------------------------------------------------------------
  Fusion 1.213 - August 29th, 2004
 --------------------------------------------------------------------------------
-- 09-14-04: Warp/fields\yuno_fild.txt - Updated Warps. [Muad_Dib]
-- 09-14-04: Warp/other\que_god.txt - Added temp warp. [Muad_Dib]
-- 09-14-04: Warp/towns\Yuno.txt - Updated Warps. [Muad_Dib]
+- 09-14-04: Mob\other\jawaii_mob.txt - Added jathena mobs. [Muad_Dib]
+- 09-14-04: Shop\jawaii.txt - Added jathena shops. [Muad_Dib]
+- 09-14-04: Mob\dungeon\um_dun.txt - Updated with jathena mobs. [Muad_Dib]
+- 09-14-04: Mob\field\nif_fild.txt - Updated with jathena mobs. [Muad_Dib]
+- 09-14-04: Mob\other\niflheim_town.txt - Updated with jathena mobs. [Muad_Dib]
+- 09-14-04: Mob\other\yggdrasil_mob.txt - Updated with jathena mobs. [Muad_Dib]
+- 09-14-04: Shop\niflheim.txt - Updated with jathena shops. [Muad_Dib]
+- 09-14-04: Warp\fields\nif_fild.txt - Updated with jathena warps. [Muad_Dib]
+- 09-14-04: Warp\fields\yggdrasil.txt - Updated with jathena warps. [Muad_Dib]
+- 09-14-04: Warp\towns\Jawaii.txt - Updated with jathena warps. [Muad_Dib]
+- 09-14-04: Warp\towns\Niflheim.txt - Updated with jathena warps. [Muad_Dib]
+- 09-14-04: Warp\fields\yuno_fild.txt - Updated Warps. [Muad_Dib]
+- 09-14-04: Warp\other\que_god.txt - Added temp warp. [Muad_Dib]
+- 09-14-04: Warp\towns\Yuno.txt - Updated Warps. [Muad_Dib]
 - 09-13-04: Warp\other\que_god.txt - Added new warps. [Muad_Dib]
 - 09-12-04: Event\Event_Dye.txt - Fixed a menu setting. [Muad_Dib]
 - 09-12-04: Town\Town_Prontera.txt - Updated header and added new sprite for a npc. [Muad_Dib]

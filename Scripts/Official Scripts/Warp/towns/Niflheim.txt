@@ -1,26 +1,33 @@
 //========================================================================================
 // »» The Fusion Project ««
 // Copyright (c) 2004, Cobax Information Systems
-// http://fusion.cobax.net/
+// http://cobax.net/
 // ---------------------------------------------------------------------------------------
 //
 // Niflheim Town Warps - Warp Locations
+// - Original info by jathena
 //
 //========================================================================================
 
-niflheim.gat,220,169,0	warp	niflheimwarp001	1,1,nif_in.gat,14,88
-nif_in.gat,11,88,0	warp	niflheimwarp002	1,1,niflheim.gat,218,170
-niflheim.gat,220,199,0	warp	niflheimwarp003	1,1,nif_in.gat,138,16
-nif_in.gat,135,13,0	warp	niflheimwarp004	1,1,niflheim.gat,218,197
-niflheim.gat,255,194,0	warp	niflheimwarp005	1,1,nif_in.gat,20,156
-nif_in.gat,18,154,0	warp	niflheimwarp006	1,1,niflheim.gat,254,192
-nif_in.gat,65,172,0	warp	niflheimwarp007	1,1,nif_in.gat,139,174
-nif_in.gat,140,171,0	warp	niflheimwarp008	1,1,nif_in,65,169
-niflheim.gat,230,249,0	warp	niflheimwarp009	1,1,nif_in.gat,23,13
-nif_in.gat,23,10,0	warp	niflheimwarp010	1,1,niflheim.gat,227,251
-nif_in.gat,34,34,0	warp	niflheimwarp011	1,1,nif_in.gat,88,32
-nif_in.gat,88,29,0	warp	niflheimwarp012	1,1,nif_in.gat,33,30
-niflheim.gat,188,208,0	warp	niflheimwarp013	1,1,nif_in.gat,156,80
-nif_in.gat,154,78,0	warp	niflheimwarp014	1,1,niflheim.gat,188,205
-nif_in.gat,169,82,0	warp	niflheimwarp015	1,1,nif_in.gat,188,106
-nif_in.gat,186,105,0	warp	niflheimwarp016	1,1,nif_in.gat,167,82
+niflheim.gat,166,162,0	warp	niflheimwarp001	1,1,nif_in.gat,157,81
+nif_in.gat,154,78,0	warp	niflheimwarp002	1,1,niflheim.gat,169,162
+nif_in.gat,169,82,0	warp	niflheimwarp003	1,1,nif_in.gat,189,106
+nif_in.gat,186,106,0	warp	niflheimwarp004	1,1,nif_in.gat,166,82
+niflheim.gat,189,210,0	warp	niflheimwarp005	1,1,nif_in.gat,23,14
+nif_in.gat,23,11,0	warp	niflheimwarp006	1,1,niflheim.gat,189,207
+nif_in.gat,34,34,0	warp	niflheimwarp007	1,1,nif_in.gat,88,32
+nif_in.gat,88,29,0	warp	niflheimwarp008	1,1,nif_in.gat,34,30
+niflheim.gat,219,198,0	warp	niflheimwarp009	1,1,nif_in.gat,137,15
+nif_in.gat,135,13,0	warp	niflheimwarp010	1,1,niflheim.gat,217,196
+niflheim.gat,219,169,0	warp	niflheimwarp011	1,1,nif_in.gat,14,88
+nif_in.gat,11,88,0	warp	niflheimwarp012	1,1,niflheim.gat,216,171
+niflheim.gat,189,241,0	warp	niflheimwarp013	1,1,nif_in.gat,81,77
+nif_in.gat,78,74,0	warp	niflheimwarp014	1,1,niflheim.gat,186,241
+niflheim.gat,202,248,0	warp	niflheimwarp015	1,1,nif_in.gat,95,102
+nif_in.gat,95,106,0	warp	niflheimwarp016	1,1,niflheim.gat,202,254
+niflheim.gat,255,194,0	warp	niflheimwarp017	1,1,nif_in.gat,21,157
+nif_in.gat,18,154,0	warp	niflheimwarp018	1,1,niflheim.gat,253,191
+nif_in.gat,65,174,0	warp	niflheimwarp019	1,1,nif_in.gat,140,174
+nif_in.gat,140,171,0	warp	niflheimwarp020	1,1,nif_in.gat,65,170
+
+

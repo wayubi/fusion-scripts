@@ -5,6 +5,7 @@
 // ---------------------------------------------------------------------------------------
 //
 // Yggdrasil - Monster Spawns Locations
+// - Original info by jathena
 //
 //========================================================================================
 
@@ -12,12 +13,8 @@
 // - Yggdrasil 01 
 //========================================================================================
 
-yggdrasil01.gat,0,0,0,0	  monster	"Poring" 1002,30,0,0,0
-yggdrasil01.gat,0,0,0,0	  monster	"Poporing" 1031,20,0,0,0
-yggdrasil01.gat,0,0,0,0	  monster	"Angeling" 1096,1,900000,100000,0
-yggdrasil01.gat,0,0,0,0	  monster	"Mastering" 1090,1,900000,100000,0
-yggdrasil01.gat,0,0,0,0	  monster	"Fake Angel" 1371,10,0,0,0
-yggdrasil01.gat,0,0,0,0	  monster	"Dryad" 1493,3,0,0,0
-yggdrasil01.gat,0,0,0,0	  monster	"Kind of Beetle" 1494,3,0,0,0
-yggdrasil01.gat,0,0,0,0	  monster	"Parasite" 1500,3,0,0,0
-yggdrasil01.gat,0,0,0,0	  monster	"Green Plant" 1080,5,0,0,0
+yggdrasil01.gat,0,0,0,0	monster	"Red Plant"	1078,15,0,0,0
+yggdrasil01.gat,0,0,0,0	monster	"Blue Plant" 1079,5,0,0,0
+yggdrasil01.gat,0,0,0,0	monster	"Green Plant" 1080,15,0,0,0
+yggdrasil01.gat,0,0,0,0	monster	"Yellow Plant" 1081,15,0,0,0
+yggdrasil01.gat,0,0,0,0	monster	"Shining Plant" 1083,3,0,0,0
