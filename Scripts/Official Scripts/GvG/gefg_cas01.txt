@@ -304,7 +304,7 @@ gefg_cas01.gat,83,47,3	script	"Kafra Service"	117,{
 	mes "[Kafra Personnel]";
 	mes "How may I help you?";
 	next;
-	menu "Storage Service",L_MENU_1,"Teleport Service",L_MENU_2,"Cart Rental Service",L_MENU_3,"End",L_MENU_4;
+	menu "Storage Service",L_MENU_1,"Guild Storage Service",L_MENU_1-2,"Teleport Service",L_MENU_2,"Cart Rental Service",L_MENU_3,"End",L_MENU_4;
 	L_MENU_1:
 		getskilllevel 1,@storagecheck;
 		check @storagecheck >= 6,L_SUB_1,-;
@@ -314,6 +314,16 @@ gefg_cas01.gat,83,47,3	script	"Kafra Service"	117,{
 			goto L_EXIT;
 	L_SUB_1:
 		store;
+		goto L_EXIT;
+	L_MENU_1-2:
+		getskilllevel 1,@storagecheck;
+		check @storagecheck >= 6,L_SUB_1-2,-;
+			mes "[Kafra Personnel]";
+			mes "You need to have Basic Skills level 6";
+			mes "in order to use the guild storage service.";
+			goto L_EXIT;
+	L_SUB_1-2:
+		gstore;
 		goto L_EXIT;
 	L_MENU_2:
 		mes "[Kafra Personnel]";
