@@ -1,7 +1,7 @@
 --------------------------------------------------------------------------------
  Fusion 1.213 - August 29th, 2004
 --------------------------------------------------------------------------------
-- 09-12-04: Event\Event_PvP.txt - Ficed a few menu options by addign a , [Muad_Dib
+- 09-12-04: Event\Event_PvP.txt - Fixed a few menu options by adding a , [Muad_Dib
 - 09-12-04: GvG\nguild_###.txt - Added missing ; to close a few lines properly. [Muad_Dib]
 - 09-12-04: GvG\gefg_cas0#.txt - Added missing ; to close a few lines properly. [Muad_Dib]
 - 09-12-04: GvG\aldeg_cas0#.txt - Added missing ; to close a few lines properly. [Muad_Dib]
