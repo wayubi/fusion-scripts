@@ -38,14 +38,14 @@
 //
 //========================================================================================
 
-alberta.gat,97,51,0	script	Merchant 84,{
+alberta.gat,97,51,0	script	"Merchant" 84,{
 	mes "[Merchant]";
 	mes "When you travel all around the world, you will hear of many rumors. One of Rumors I've heard was really interesting. There are cards which seals the power of monsters within.";
 	mes "If anybody happens to get a hand on those cards, he will obtain the power of monsters...Bah, I don't believe it though.";
 	close;
 }
 
-alberta.gat,53,39,0	script	Merchant	86,{
+alberta.gat,53,39,0	script	"Merchant"	86,{
 	mes "[Merchant]";
 	mes "Oh, you look like a stranger, huh? Welcome to Alberta. By the way, excuse me for a while. I am thinking of some great plans.";
 	mes "I happened to hear there is a store selling unique armors which resist magic in Geffen. If I can circulate them in bulk, I will be rich in no time.";
@@ -99,7 +99,7 @@ alberta.gat,131,139,2	script	"Drunken old man" 84,{
 					close;
 }
 	
-alberta.gat,58,80,2	script	Merchant 189,{
+alberta.gat,58,80,2	script	"Merchant" 189,{
 		mes "[Merchant]";
 		mes "We merchants can open a roadside stand and do some business. With the Discount skill we could buy goods really cheap from the stores in towns and load them in the cart we rent. Then we could go anywhere making money.";
 		next;
@@ -115,7 +115,7 @@ alberta.gat,58,80,2	script	Merchant 189,{
 		close;
 }
 	
-alberta.gat,62,156,2	script	Phina 8,{
+alberta.gat,62,156,2	script	"Phina" 8,{
     		mes "[Phina]";
     		mes "This one time, I was walking in the forest and I saw this little green grass sticking out of the ground.";
     		mes "It was soooo cute so I wanted to touch it. And then you know what happened? The grass actually slapped my hand.";
@@ -138,7 +138,7 @@ alberta.gat,62,156,2	script	Phina 8,{
 			close;
 }
     
-alberta.gat,93,174,2	script	Grandma 103,{
+alberta.gat,93,174,2	script	"Grandma" 103,{
 		mes "[Grandma]";
 		mes "Some time ago derelict ship drifted in at the harbor of Alberta.";
 		mes "Holding onto a little hope of survivors, some of town's young people walked into the ship, but they all ran out terrified. They said the corpses are walking around inside the ship.";
@@ -156,7 +156,7 @@ alberta.gat,93,174,2	script	Grandma 103,{
 		close;
 }
 	
-alberta.gat,189,151,5	script	Sailor	100,{
+alberta.gat,189,151,5	script	"Sailor"	100,{
 		mes "[Sailor]";
 		mes "Where you wanna go?";
 		next;
@@ -180,7 +180,7 @@ alberta.gat,189,151,5	script	Sailor	100,{
       						close;
 }
 
-alb2trea.gat,39,50,6	script	Sailor	100,{
+alb2trea.gat,39,50,6	script	"Sailor"	100,{
 	mes "[Sailor]";
 	mes "Do you wanna return?";
 	menu "Return to Alberta.",L_Menu1,"Quit.",-;
@@ -189,7 +189,7 @@ alb2trea.gat,39,50,6	script	Sailor	100,{
 			warp "alberta",192,169;
 }
 
-alberta.gat,195,151,2	script	Paul 84,{
+alberta.gat,195,151,2	script	"Paul" 84,{
 		mes "[Paul]";
 		mes "Good day, ladies and gentleman. Would you like to join the exploration of the Sunken Ship, the special event provided by Cool Event Corp.?";
 		mes "Oh! Before you join, I would like to suggest you one thing neccessary. Don't dare to challenge if you are not that strong~.";
