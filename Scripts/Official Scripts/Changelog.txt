@@ -1,6 +1,7 @@
 --------------------------------------------------------------------------------
  Fusion 1.212 - June 30th, 2004
 --------------------------------------------------------------------------------
+- 06-23-04: Job\Job_2-1\Job2_Wizard_MobTest.txt - Changed \@Testing to \@WizMobs AND mobs will reset/reinforce it when they die. [Tsusai]
 - 06-22-04: Warp\newbies\new_zone.txt - commented out blacany access warps due to reconstruction of training grounds. [Tsusai]
 - 06-22-04: Warp\towns\Jawaii.txt - gave Muad credit in header. [Tsusai]
 - 06-22-04: Job\Job_2-1\Job2_Wizard_MobTest.txt - Created and controls Mob test. [Tsusai]

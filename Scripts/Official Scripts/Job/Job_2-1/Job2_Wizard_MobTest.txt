@@ -38,10 +38,10 @@ job_wizard.gat,99,94,4 script "Helper" 102,{
 	close;
 OnInit:
 	waitingroom "Waiting Room",2;
-	check \@Testing = 0,start,-;
+	check \@WizMobs = 0,start,-;
 		return;
 	start:
-		set \@Testing = 1;
+		set \@WizMobs = 1;
 		set \@watermob = 0;
 		set \@earthmob = 0;
 		set \@firemob = 0;
@@ -55,11 +55,11 @@ OnInit:
 }
 
 job_wiz.gat,1,1,1	script	"watertest"	-1,{
-	check \@Testing = 2,WaterMobs,-;
-	check \@Testing = 3,WaterGate,-;
+	check \@WizMobs = 2,WaterMobs,-;
+	check \@WizMobs = 3,WaterGate,-;
 	return;
 OnInit:
-	check \@Testing = 1,Phase1,-;
+	check \@WizMobs = 1,Phase1,-;
 		return;
 	Phase1:
 		callmob "job_wiz",109,174,"Phen",1158,0,"watertest";
@@ -70,11 +70,12 @@ OnInit:
 		callmob "job_wiz",126,157,"Marin",1242,0,"watertest";
 		callmob "job_wiz",98,170,"Kukre",1070,0,"watertest";
 		callmob "job_wiz",129,170,"Obeaune",1044,0,"watertest";
-		set \@Testing = 2;
+		set \@WizMobs = 2;
 		npctimer 1;
 		return;
 	WaterMobs:
 		set \@watermob += 1;
+		set \@WizMobs = 2;
 		broadcast " $[\@watermob] ";
 		check \@watermob = 8,Guardians,-;
 			return;
@@ -82,7 +83,7 @@ OnInit:
 		npctimer 0;
 		set \@watermob = 0;
 		broadcast "You have killed all the monsters!",10;
-		set \@Testing = 3;
+		set \@WizMobs = 3;
 		callmob "job_wiz",114,169,"Marine Sphere",1142,0,"watertest";
 		callmob "job_wiz",112,169,"Hydra",1068,0,"watertest";
 		callmob "job_wiz",116,169,"Hydra",1068,0,"watertest";
@@ -92,48 +93,49 @@ OnInit:
 		return;
 	WaterGate:
 		set \@watermob += 1;
+		set \@WizMobs = 3;
 		broadcast " $[\@watermob] ";
 		check \@watermob = 5,End,-;
 		return;
 	End:
 		npctimer 0;
 		broadcast "You have succenssfully defeated the guards!",10;
-		set \@Testing = 4;
+		set \@WizMobs = 4;
 		enablenpc "job_wiz","earthtest",1;
 		warpallpc "job_wiz",116,97,0;
 		return;
 	OnTimer1000:
-		check \@Testing = 3,P1000,-;
+		check \@WizMobs = 3,P1000,-;
 			broadcast "Room of Water, testing will begin.",10;
 			return;
 		P1000:
 			broadcast "The gate guards have appeared! 1 min left!",10;
 			return;
 	OnTimer2000:
-		check \@Testing = 3,Null,-;
+		check \@WizMobs = 3,Null,-;
 			broadcast "3 min left",10;
 			return;
 	OnTimer3000:
 		broadcast "Kill all the monsters within the time limit.",10;
 		return;
 	OnTimer30000:
-		check \@Testing = 3,-,Null;
+		check \@WizMobs = 3,-,Null;
 			goto OnTimer153000;
 	OnTimer33000:
-		check \@Testing = 2,-,Null;
+		check \@WizMobs = 2,-,Null;
 			broadcast "2min 30sec left.",10;
 			return;
 	OnTimer50000:
-		check \@Testing = 3,-,Null;
+		check \@WizMobs = 3,-,Null;
 			goto OnTimer173000;
 	OnTimer60000:
-		check \@Testing = 3,-,Null;
+		check \@WizMobs = 3,-,Null;
 			goto OnTimer183000;
 	OnTimer61000:
-		check \@Testing = 3,-,Null;
+		check \@WizMobs = 3,-,Null;
 			goto OnTimer184000;
 	OnTimer63000:
-		check \@Testing = 3,P63000,-;
+		check \@WizMobs = 3,P63000,-;
 			broadcast "2min left",10;
 			return;
 		P63000:
@@ -162,17 +164,17 @@ OnInit:
 		npctimer 0;
 		warpallpc "geffen",120,110,0;
 		broadcast "Next in line, please enter.",10;
-		set \@Testing = 0;
+		set \@WizMobs = 0;
 	Null:
 		return;
 }
 
 job_wiz.gat,1,1,1	script	"earthtest"	-1,{
-	check \@Testing = 5,EarthMobs,-;
-	check \@Testing = 6,EarthGate,-;
+	check \@WizMobs = 5,EarthMobs,-;
+	check \@WizMobs = 6,EarthGate,-;
 	return;
 OnInit:
-	check \@Testing = 4,Phase1,-;
+	check \@WizMobs = 4,Phase1,-;
 		return;
 	Phase1:
 		callmob "job_wiz",111,102,"Yoyo",1057,0,"earthtest";
@@ -185,11 +187,12 @@ OnInit:
 		callmob "job_wiz",124,98,"Ork Warrior",1023,0,"earthtest";
 		callmob "job_wiz",104,86,"Vitata",1176,0,"earthtest";
 		callmob "job_wiz",127,86,"Mantis",1139,0,"earthtest";
-		set \@Testing = 5;
+		set \@WizMobs = 5;
 		npctimer 1;
 		return;
 	EarthMobs:
 		set \@earthmob += 1;
+		set \@WizMobs = 5;
 		broadcast " $[\@earthmob] ";
 		check \@earthmob = 10,Guardians,-;
 			return;
@@ -197,7 +200,7 @@ OnInit:
 		npctimer 0;
 		set \@earthmob = 0;
 		broadcast "You have killed all the monsters!",10;
-		set \@Testing = 6;
+		set \@WizMobs = 6;
 		callmob "job_wiz",116,97,"Flora",1118,0,"earthtest";
 		callmob "job_wiz",114,95,"Mandragora",1020,0,"earthtest";
 		callmob "job_wiz",118,95,"Mandragora",1020,0,"earthtest";
@@ -209,48 +212,49 @@ OnInit:
 		return;
 	EarthGate:
 		set \@earthmob += 1;
+		set \@WizMobs = 6;
 		broadcast " $[\@earthmob] ";
 		check \@earthmob = 7,End,-;
 		return;
 	End:
 		npctimer 0;
 		broadcast "You have succenssfully defeated the guards!",10;
-		set \@Testing = 7;
+		set \@WizMobs = 7;
 		enablenpc "job_wiz","firetest",1;
 		warpallpc "job_wiz",46,99,0;
 		return;
 	OnTimer1000:
-		check \@Testing = 6,P1000,-;
+		check \@WizMobs = 6,P1000,-;
 			broadcast "Room of Earth, testing will begin.",10;
 			return;
 		P1000:
 			broadcast "The gate guards have appeared! 1 min left!",10;
 			return;
 	OnTimer2000:
-		check \@Testing = 6,Null,-;
+		check \@WizMobs = 6,Null,-;
 			broadcast "3 min left",10;
 			return;
 	OnTimer3000:
 		broadcast "Kill all the monsters within the time limit.",10;
 		return;
 	OnTimer30000:
-		check \@Testing = 6,-,Null;
+		check \@WizMobs = 6,-,Null;
 			goto OnTimer153000;
 	OnTimer33000:
-		check \@Testing = 5,-,Null;
+		check \@WizMobs = 5,-,Null;
 			broadcast "2min 30sec left.",10;
 			return;
 	OnTimer50000:
-		check \@Testing = 6,-,Null;
+		check \@WizMobs = 6,-,Null;
 			goto OnTimer173000;
 	OnTimer60000:
-		check \@Testing = 6,-,Null;
+		check \@WizMobs = 6,-,Null;
 			goto OnTimer183000;
 	OnTimer61000:
-		check \@Testing = 6,-,Null;
+		check \@WizMobs = 6,-,Null;
 			goto OnTimer184000;
 	OnTimer63000:
-		check \@Testing = 6,P63000,-;
+		check \@WizMobs = 6,P63000,-;
 			broadcast "2min left",10;
 			return;
 		P63000:
@@ -279,17 +283,17 @@ OnInit:
 		npctimer 0;
 		warpallpc "geffen",120,110,0;
 		broadcast "Next in line, please enter.",10;
-		set \@Testing = 0;
+		set \@WizMobs = 0;
 	Null:
 		return;
 }
 
 job_wiz.gat,1,1,1	script	"firetest"	-1,{
-	check \@Testing = 8,FireMobs,-;
-	check \@Testing = 9,FireGate,-;
+	check \@WizMobs = 8,FireMobs,-;
+	check \@WizMobs = 9,FireGate,-;
 	return;
 OnInit:
-	check \@Testing = 7,Phase1,-;
+	check \@WizMobs = 7,Phase1,-;
 		return;
 	Phase1:
 		callmob "job_wiz",58,110,"Zerom",1178,0,"firetest";
@@ -300,11 +304,12 @@ OnInit:
 		callmob "job_wiz",51,92,"Elder Willow",1033,0,"firetest";
 		callmob "job_wiz",37,89,"Metaller",1058,0,"firetest";
 		callmob "job_wiz",54,89,"Desert Wolf",1106,0,"firetest";
-		set \@Testing = 8;
+		set \@WizMobs = 8;
 		npctimer 1;
 		return;
 	FireMobs:
 		set \@firemob += 1;
+		set \@WizMobs = 8;
 		broadcast " $[\@firemob] ";
 		check \@firemob = 8,Guardians,-;
 			return;
@@ -312,7 +317,7 @@ OnInit:
 		npctimer 0;
 		set \@firemob = 0;
 		broadcast "You have killed all the monsters!",10;
-		set \@Testing = 9;
+		set \@WizMobs = 9;
 		callmob "job_wiz",44,99,"Greatest General",1277,0,"firetest";
 		callmob "job_wiz",44,99,"Horong",1129,0,"firetest";
 		callmob "job_wiz",45,99,"Horong",1129,0,"firetest";
@@ -320,63 +325,64 @@ OnInit:
 		return;
 	FireGate:
 		set \@firemob += 1;
+		set \@WizMobs = 9;
 		broadcast " $[\@firemob] ";
 		check \@firemob = 3,End,-;
 		return;
 	End:
 		npctimer 0;
 		broadcast "You have succenssfully defeated the guards!",10;
-		set \@Testing = 7;
+		set \@WizMobs = 7;
 		enablenpc "job_wiz","Raul",1;
 		return;
 	OnTimer1000:
-		check \@Testing = 9,P1000,-;
+		check \@WizMobs = 9,P1000,-;
 			broadcast "Room of Fire, testing will begin.",10;
 			return;
 		P1000:
 			broadcast "The gate guards have appeared! 2 min left!",10;
 			return;
 	OnTimer2000:
-		check \@Testing = 9,Null,-;
+		check \@WizMobs = 9,Null,-;
 			broadcast "3 min left",10;
 			return;
 	OnTimer3000:
 		broadcast "Kill all the monsters within the time limit.",10;
 		return;
 	OnTimer30000:
-		check \@Testing = 9,-,Null;
+		check \@WizMobs = 9,-,Null;
 			goto OnTimer93000;
 	OnTimer33000:
-		check \@Testing = 8,-,Null;
+		check \@WizMobs = 8,-,Null;
 			broadcast "2min 30sec left.",10;
 			return;
 	OnTimer60000:
-		check \@Testing = 9,-,Null;
+		check \@WizMobs = 9,-,Null;
 			goto OnTimer123000;
 	OnTimer63000:
-		check \@Testing = 8,-,Null;
+		check \@WizMobs = 8,-,Null;
 			broadcast "2min left",10;
 			return;
 	OnTimer90000:
-		check \@Testing = 9,-,Null;
+		check \@WizMobs = 9,-,Null;
 			goto OnTimer153000;
 	OnTimer93000:
 		broadcast "1min 30sec left",10;
 		return;
 	OnTimer110000:
-		check \@Testing = 9,-,Null;
+		check \@WizMobs = 9,-,Null;
 			goto OnTimer173000;
 	OnTimer120000:
-		check \@Testing = 9,-,Null;
+		check \@WizMobs = 9,-,Null;
 			goto OnTimer183000;
 	OnTimer121000:
-		check \@Testing = 9,-,Null;
+		check \@WizMobs = 9,-,Null;
 			goto OnTimer183000;
 	OnTimer122000:
-		check \@Testing = 9,-,Null;
+		check \@WizMobs = 9,-,Null;
 			goto OnTimer184000;
 	OnTimer123000:
-		check \@Testing = 9,-,P123000;
+		check \@WizMobs = 9,-,P123000;
 			goto OnTimer185000;
 		P123000:
 			broadcast "1min left.",10;
@@ -399,7 +405,7 @@ OnInit:
 		npctimer 0;
 		warpallpc "geffen",120,110,0;
 		broadcast "Next in line, please enter.",10;
-		set \@Testing = 0;
+		set \@WizMobs = 0;
 	Null:
 		return;
 }
@@ -411,7 +417,7 @@ job_wiz.gat,44,99,4	script	"Raul"	735,{
 	mes "Talk to the Guild Clerk...";
 	next;
 	set job_wizard_q = 7;
-	set \@Testing = 0;
+	set \@WizMobs = 0;
 	warp "geffen",120,110;
 	close;
 }
