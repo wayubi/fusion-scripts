@@ -1307,7 +1307,7 @@ OnInit:
 		broadcast "You have succenssfully defeated the guards!",10;
 		set \@WizMobs = 4;
 		enablenpc "job_wiz","earthtest",1;
-		warpallpc "job_wiz",116,97,0;
+		areawarp "job_wiz",98,114,129,185,"job_wiz",116,97;
 		return;
 	OnTimer1000:
 		check \@WizMobs = 3,P1000,-;
@@ -1367,7 +1367,7 @@ OnInit:
 		return;
 	OnTimer185000:
 		npctimer 0;
-		warpallpc "geffen",120,110,0;
+		areawarp "job_wiz",98,114,129,185,"geffen",120,110;
 		broadcast "Next in line, please enter.",10;
 		set \@WizMobs = 0;
 	Null:
@@ -1425,7 +1425,7 @@ OnInit:
 		broadcast "You have succenssfully defeated the guards!",10;
 		set \@WizMobs = 7;
 		enablenpc "job_wiz","firetest",1;
-		warpallpc "job_wiz",46,99,0;
+		areawarp "job_wiz",100,83,131,113,"job_wiz",46,99;
 		return;
 	OnTimer1000:
 		check \@WizMobs = 6,P1000,-;
@@ -1485,7 +1485,7 @@ OnInit:
 		return;
 	OnTimer185000:
 		npctimer 0;
-		warpallpc "geffen",120,110,0;
+		areawarp "job_wiz",100,83,131,113,"geffen",120,110,0;
 		broadcast "Next in line, please enter.",10;
 		set \@WizMobs = 0;
 	Null:
@@ -1606,7 +1606,7 @@ OnInit:
 		return;
 	OnTimer185000:
 		npctimer 0;
-		warpallpc "geffen",120,110,0;
+		areawarp "job_wiz",30,82,61,113,"geffen",120,110,0;
 		broadcast "Next in line, please enter.",10;
 		set \@WizMobs = 0;
 	Null:

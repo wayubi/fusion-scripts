@@ -1,6 +1,7 @@
 --------------------------------------------------------------------------------
  Fusion 1.213 - December ??th, 2004
 -------------------------------------------------------------------------------- 
+- 12-06-04: Job\Job_2-1\Job2_Wizard.txt - Areawarp added. [Tsusai]
 - 12-02-04: Job\Job_2-1\Job2_Priest.txt - Tweaked the overall timer. [Tsusai]
 - 12-02-04: Town\Town_Niflhein.txt - changed some logic in the prayer exam. [Tsusai]
 - 12-02-04: Town\Town_Umbala.txt - Moved bungie warp to warps section as a pure warp. [Tsusai]
