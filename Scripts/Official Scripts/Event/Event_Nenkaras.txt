@@ -15,7 +15,7 @@
 // - Inn Maid Moira -> alberta_in: 32,142
 //   Save location and heal regarding levels for some zeny.
 //
-// - Inn Maid Tina -> alberta_in: 55,142
+// - Inn Maid Tina -> alberta_in: 58,147
 //   Save location and heal regarding levels for some zeny.
 //
 // - Inn Maid Betty -> geffen_in: 70,64
@@ -419,7 +419,7 @@ L_HEAL_LV100_N:
 	close;
 }
 
-alberta_in.gat,55,142,8	script "Inn Maid" 53,{
+alberta_in.gat,58,147,6	script "Inn Maid" 53,{
       mes "[Tina]";
 	mes "Welcome to Nenkaras [South] Inn";
 	next;
