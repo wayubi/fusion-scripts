@@ -1342,6 +1342,7 @@ OnInit:
 job_wiz.gat,0,0,0	script	"watertest"	-1,{
 	check \@Testing = 1,WaterMobs,-;
 	check \@Testing = 2,WaterGate,-;
+	broadcast "Testing number is $[\@Testing]";
 		return;
 	WaterMobs:
 		set \@watermob += 1;
