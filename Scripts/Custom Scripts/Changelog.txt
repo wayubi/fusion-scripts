@@ -1,6 +1,7 @@
 --------------------------------------------------------------------------------
  Fusion 1.212 - June 30th, 2004
 -------------------------------------------------------------------------------- 
+ - 06-02-04: Added Priced All-Jobs Job Changer script (ENG) - Job Changers\All_Jobs-zeny.txt. [Yun Qi]
  - 06-30-04: Added Walking Speed changer script (ENG) - Character Enhancers\Walking_Speed.txt. [Yun Qi]
  - 06-30-04: Added Status Point and Skill Point adding script (ENG) - Character Enhancers\Stat+Skill_Adder.txt. [Yun Qi]
  - 06-30-04: Added "Character Enhancers" folder - Scripts\Custom Scripts\Character Enhancers. [Yun Qi]

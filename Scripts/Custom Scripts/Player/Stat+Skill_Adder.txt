@@ -9,7 +9,7 @@
 //
 // =======================================================================================
 
-prontera.gat,149,179,4 script "Elaine" 67,{
+prontera.gat,159,323,4 script "Elaine" 67,{
 	mes "[Elaine]";
 	mes "Howdy, $charaname...";
 	mes "How are you, today?";
