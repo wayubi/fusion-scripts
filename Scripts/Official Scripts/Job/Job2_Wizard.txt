@@ -1331,6 +1331,7 @@ job_wiz.gat,0,0,0	script	"watertest"	-1,{
 		return;
 	WaterMobs:
 		set \@watermob += 1;
+		broadcast "$[\@watermob] mob smited";
 		check \@watermob = 8,Guardians,-;
 			return;
 		Guardians:
