@@ -7,6 +7,7 @@
 // Wizard Quest - Non Player Character Locations
 //	-translated by yoshiki   
 //	-Converted by Nestor Zulueta
+//	-Mob test by Tsusai
 //
 // - Wizard's Guild Worker -> gef_tower: 111,37
 //   First person to talk to about Wizard job change. Also grants job change. 
@@ -17,8 +18,27 @@
 // - Test Warper -> job_wizard: 99,94
 //   Waiting room, warps to test rooms
 //
-// - Helper -> job_wiz: 50,165
-//   Warps to certain place then if successful grants approval for job change.
+// - Water Room -> job_wiz: 1,1
+//   Water Room Mob summoner and timer.
+
+// - watertest -> job_wiz: 0,0
+//   Counts deaths of water mobs and summons more.
+//
+// - Earth Room -> job_wiz: 1,1
+//   Earth Room Mob summoner and timer.
+
+// - earthtest -> job_wiz: 0,0
+//   Counts deaths of earth mobs and summons more.
+//
+// - Fire Room -> job_wiz: 1,1
+//   Fire Room Mob summoner and timer.
+//
+// - firetest -> job_wiz: 0,0
+//   Counts deaths of fire mobs and summons more.
+//
+// - Wizard -> job_wiz: 44,99
+//   Warps you back to Geffen upon completion.
+//
 //========================================================================================
 
 gef_tower.gat,111,37,4 script "Wizard's Guild Worker" 69,{
@@ -1218,1077 +1238,396 @@ no7:
 }
 
 job_wizard.gat,99,94,4 script "Test Warper" 102,{
-	mes "[Test Warper]";
+	mes "[Helper]";
 	mes "Welcome to the testing grounds!";
 	mes "Please go to the waiting room..";
 	next;
-	mes "[Test Warper]";
+	mes "[Helper]";
 	mes "Please wait if there is someone in front of you.";
-	mes "Progress will be announced periodically, so just relax until your turn.";
+	mes "Just relax until your turn.";
 	next;
-	mes "[Test Warper]";
+	mes "[Helper]";
 	mes "1 person usually takes 5 - 10 min.";
 	mes "It shouldn't take too long.";
 	close;
 OnInit:
-	broadcast "Next in line, please enter.",10;
-	waitingroom "waiting Room",2;
-	warpallpc "job_wiz",50,160;
-	return;
+	waitingroom "Waiting Room",2;
+	check \@Testing = 0,start,-;
+		return;
+	start:
+		set \@Testing = 1;
+		set \@watermob = 0;
+		set \@earthmob = 0;
+		set \@firemob = 0;
+		enablenpc "job_wiz","Earth Room",0;
+		enablenpc "job_wiz","Fire Room",0;
+		enablenpc "job_wiz","Raul",0;
+		resetmymob "job_wiz";
+		enablenpc "job_wiz","Water Room",1;
+		warpallpc "job_wiz",114,169,2;
+		return;
 }
 
-job_wiz.gat,50,165,4	script "Helper" 700,{
-	check \@phase = 1,next2,-;
-	check \@phase = 2,next3,-;
-	check \@phase = 3,suces,-;
-	mes "[Helper]";
-	mes "First test the Water Room";
-talk:
+job_wiz.gat,1,1,1	script	"Water Room"	-1,{
+	return;
+OnInit:
+	check \@Testing = 1,Start,-;
+		return;
+	Start:
+		npctimer 1;
+		callmob "job_wiz",109,174,"Phen",1158,0,"watertest";
+		callmob "job_wiz",118,174,"Kukre",1070,0,"watertest";
+		callmob "job_wiz",109,165,"Vadon",1066,0,"watertest";
+		callmob "job_wiz",118,165,"Cornutus",1067,0,"watertest";
+		callmob "job_wiz",101,157,"Marina",1141,0,"watertest";
+		callmob "job_wiz",126,157,"Marin",1242,0,"watertest";
+		callmob "job_wiz",98,170,"Kukre",1070,0,"watertest";
+		callmob "job_wiz",129,170,"Obeaune",1044,0,"watertest";
+		return;
+	OnTimer1000:
+		broadcast "Room of Water, testing will begin.",10;
+		return;
+	OnTimer2000:
+		broadcast "3 min left",10;
+		return;
+	OnTimer3000:
+		broadcast "Kill all the monsters within the time limit.",10;
+		return;
+	OnTimer33000:
+		broadcast "2min 30sec left.",10;
+		return;
+	OnTimer63000:
+		broadcast "2min left",10;
+		return;
+	OnTimer93000:
+		broadcast "1min 30sec left",10;
+		return;
+	OnTimer123000:
+		broadcast "1min left.",10;
+		return;
+	OnTimer153000:
+		broadcast "30sec left.",10;
+		return;
+	OnTimer173000:
+		broadcast "10 seconds!",10;
+		return;
+	OnTimer183000:
+		broadcast "Out of Time",10;
+		resetmymob "job_wiz";
+		return;
+	OnTimer184000:
+		broadcast "You have failed the test!",10;
+		return;
+	OnTimer185000:
+		npctimer 0;
+		warpallpc "geffen",120,110,0;
+		set \@Testing = 0;
+		return;
+}
+
+job_wiz.gat,0,0,0	script	"watertest"	-1,{
+	check \@Testing = 1,WaterMobs,-;
+	check \@Testing = 2,WaterGate,-;
+		return;
+	WaterMobs:
+		set \@watermob += 1;
+		check \@watermob = 8,Guardians,-;
+			return;
+		Guardians:
+			npctimer 0;
+			enablenpc "job_wiz","Water Room",0;
+			set \@watermob = 0;
+			broadcast "You have killed all the monsters!",10;
+			set \@Testing = 2;
+			callmob "job_wiz",114,169,"Marine Sphere",1142,0,"watertest";
+			callmob "job_wiz",112,169,"Hydra",1068,0,"watertest";
+			callmob "job_wiz",116,169,"Hydra",1068,0,"watertest";
+			callmob "job_wiz",114,171,"Hydra",1068,0,"watertest";
+			callmob "job_wiz",114,167,"Hydra",1068,0,"watertest";
+			npctimer 1;
+			return;
+		OnTimer1000:
+			broadcast "The gate guards have appeared! 1 min left!",10;
+			return;
+		OnTimer30000:
+			broadcast "30sec left!",10;
+			return;
+		OnTimer50000:
+			broadcast "10sec left!",10;
+			return;
+		OnTimer60000:
+			broadcast "Out of time!",10;
+			return;
+		OnTimer61000:
+			broadcast "You have failed the test!",10;
+			warpallpc "geffen",120,110,0;
+			return;
+		OnTimer62000:
+			return;
+		OnTimer63000:
+			npctimer 0;
+			resetmymob "job_wiz";
+			set \@Testing = 0;
+			return;
+	WaterGate:
+		set \@watermob += 1;
+		check \@watermob = 5,End,-;
+			return;
+		End:
+			npctimer 0;
+			broadcast "You have succenssfully defeated the guards!",10;
+			set \@Testing = 3;
+			enablenpc "job_wiz","Earth Room",1;
+			warpallpc "job_wiz",116,97,0;
+			return;
+}
+
+job_wiz.gat,1,1,1	script	"Earth Room"	-1,{
+	return;
+OnInit:
+	check \@Testing = 3,Start,-;
+		return;
+	Start:
+		npctimer 1;
+		callmob "job_wiz",111,102,"Yoyo",1057,0,"earthtest";
+		callmob "job_wiz",120,102,"Deniro",1105,0,"earthtest";
+		callmob "job_wiz",111,102,"Caramel",1103,0,"earthtest";
+		callmob "job_wiz",120,102,"Hode",1127,0,"earthtest";
+		callmob "job_wiz",111,93,"Savage",1166,0,"earthtest";
+		callmob "job_wiz",120,93,"Giearth",1121,0,"earthtest";
+		callmob "job_wiz",107,98,"Bigfoot",106001,"earthtest";
+		callmob "job_wiz",124,98,"Ork Warrior",1023,0,"earthtest";
+		callmob "job_wiz",104,86,"Vitata",1176,0,"earthtest";
+		callmob "job_wiz",127,86,"Mantis",1139,0,"earthtest";
+		return;
+	OnTimer1000:
+		broadcast "Room of Earth, testing will begin.",10;
+		return;
+	OnTimer2000:
+		broadcast "3 min left",10;
+		return;
+	OnTimer3000:
+		broadcast "Kill all the monsters within the time limit.",10;
+		return;
+	OnTimer33000:
+		broadcast "2min 30sec left.",10;
+		return;
+	OnTimer63000:
+		broadcast "2min left",10;
+		return;
+	OnTimer93000:
+		broadcast "1min 30sec left",10;
+		return;
+	OnTimer123000:
+		broadcast "1min left.",10;
+		return;
+	OnTimer153000:
+		broadcast "30sec left.",10;
+		return;
+	OnTimer173000:
+		broadcast "10 seconds!",10;
+		return;
+	OnTimer183000:
+		broadcast "Out of Time",10;
+		resetmymob "job_wiz";
+		return;
+	OnTimer184000:
+		broadcast "You have failed the test!",10;
+		return;
+	OnTimer185000:
+		npctimer 0;
+		warpallpc "geffen",120,110,0;
+		set \@Testing = 0;
+		return;
+}
+
+job_wiz.gat,0,0,0	script	"earthtest"	-1,{
+	check \@Testing = 3,EarthMobs,-;
+	check \@Testing = 4,EarthGate,-;
+		return;
+	EarthMobs:
+		set \@earthmob += 1;
+		check \@earthmob = 10,Guardians,-;
+			return;
+		Guardians:
+			npctimer 0;
+			enablenpc "job_wiz","Earth Room",0;
+			set \@earthmob = 0;
+			broadcast "You have killed all the monsters!",10;
+			set \@Testing = 4;
+			callmob "job_wiz",116,97,"Flora",1118,0,"earthtest";
+			callmob "job_wiz",114,95,"Mandragora",1020,0,"earthtest";
+			callmob "job_wiz",118,95,"Mandragora",1020,0,"earthtest";
+			callmob "job_wiz",114,99,"Mandragora",1020,0,"earthtest";
+			callmob "job_wiz",118,99,"Mandragora ",1020,0,"earthtest";
+			callmob "job_wiz",116,94,"Mandragora",1020,0,"earthtest";
+			callmob "job_wiz",116,100,"Mandragora",1020,0,"earthtest";
+			npctimer 1;
+			return;
+		OnTimer1000:
+			broadcast "The gate guards have appeared! 1 min left!",10;
+			return;
+		OnTimer30000:
+			broadcast "30sec left!",10;
+			return;
+		OnTimer50000:
+			broadcast "10sec left!",10;
+			return;
+		OnTimer60000:
+			broadcast "Out of time!",10;
+			return;
+		OnTimer61000:
+			broadcast "You have failed the test!",10;
+			warpallpc "geffen",120,110,0;
+			return;
+		OnTimer62000:
+			broadcast "Next in line, please enter.";
+			return;
+		OnTimer63000:
+			npctimer 0;
+			resetmymob "job_wiz";
+			set \@Testing = 0;
+			return;
+	EarthGate:
+		set \@earthmob += 1;
+		check \@earthmob = 7,End,-;
+			return;
+		End:
+			npctimer 0;
+			broadcast "You have succenssfully defeated the guards!",10;
+			set \@Testing = 5;
+			enablenpc "job_wiz","Fire Room",1;
+			warpallpc "job_wiz",46,99,0;
+			return;
+}
+
+job_wiz.gat,1,1,1	script	"Fire Room"	-1,{
+	return;
+OnInit:
+	check \@Testing = 5,Start,-;
+		return;
+	Start:
+		npctimer 1;
+		callmob "job_wiz",58,110,"Zerom",1178,0,"firetest";
+		callmob "job_wiz",33,110,"Goblin",1122,0,"firetest";
+		callmob "job_wiz",40,103,"Scorpion",1001,0,"firetest";
+		callmob "job_wiz",51,103,"Frilldora",1119,0,"firetest";
+		callmob "job_wiz",40,92,"Peco Peco",1019,0,"firetest";
+		callmob "job_wiz",51,92,"Elder Willow",1033,0,"firetest";
+		callmob "job_wiz",37,89,"Metaller",1058,0,"firetest";
+		callmob "job_wiz",54,89,"Desert Wolf",1106,0,"firetest";
+		return;
+	OnTimer1000:
+		broadcast "Room of Fire, testing will begin.",10;
+		return;
+	OnTimer2000:
+		broadcast "3 min left",10;
+		return;
+	OnTimer3000:
+		broadcast "Kill all the monsters within the time limit.",10;
+		return;
+	OnTimer33000:
+		broadcast "2min 30sec left.",10;
+		return;
+	OnTimer63000:
+		broadcast "2min left",10;
+		return;
+	OnTimer93000:
+		broadcast "1min 30sec left",10;
+		return;
+	OnTimer123000:
+		broadcast "1min left.",10;
+		return;
+	OnTimer153000:
+		broadcast "30sec left.",10;
+		return;
+	OnTimer173000:
+		broadcast "10 seconds!",10;
+		return;
+	OnTimer183000:
+		broadcast "Out of Time",10;
+		resetmymob "job_wiz";
+		return;
+	OnTimer184000:
+		broadcast "You have failed the test!",10;
+		warpallpc "geffen",120,110,0;
+		return;
+	OnTimer185000:
+		broadcast "Next in line, please enter.",10;
+		return;
+	OnTimer186000:
+		set \@Testing = 0;
+		npctimer 0;
+		return;
+}
+
+job_wiz.gat,0,0,0	script	"firetest"	-1,{
+	check \@Testing = 5,FireMobs,-;
+	check \@Testing = 6,FireGate,-;
+		return;
+	FireMobs:
+		set \@firemob += 1;
+		check \@firemob = 8,Guardians,-;
+			return;
+		Guardians:
+			npctimer 0;
+			enablenpc "job_wiz","Fire Room",0;
+			set \@firemob = 0;
+			broadcast "You have killed all the monsters!",10;
+			set \@Testing = 6;
+			callmob "job_wiz",44,99,"Greatest General",1277,0,"firetest";
+			callmob "job_wiz",44,99,"Horong",1129,0,"firetest";
+			callmob "job_wiz",45,99,"Horong",1129,0,"firetest";
+			npctimer 1;
+			return;
+		OnTimer1000:
+			broadcast "The gate guards have appeared! 2 min left!",10;
+			return;
+		OnTimer30000:
+			broadcast "1min 30sec left!",10;
+			return;
+		OnTimer60000:
+			broadcast "1min left!",10;
+			return;
+		OnTimer90000:
+			broadcast "30sec left!",10;
+			return;
+		OnTimer110000:
+			broadcast "10sec left!",10;
+			return;
+		OnTimer120000:
+			broadcast "Out of time!",10;
+			return;
+		OnTimer121000:
+			broadcast "You have failed the test!",10;
+			warpallpc "geffen",120,110,0;
+			return;
+		OnTimer122000:
+			broadcast "Next in line, please enter.";
+			return;
+		OnTimer123000:
+			npctimer 0;
+			resetmymob "job_wiz";
+			set \@Testing = 0;
+			return;
+	FireGate:
+		set \@firemob += 1;
+		check \@firemob = 3,End,-;
+			return;
+		End:
+			npctimer 0;
+			set \@Testing = 7;
+			enablenpc "job_wiz","Raul",1;
+			return;
+}
+
+job_wiz.gat,44,99,4	script	"Wizard"	735,{
+	mes "Ha! You lived.";
+	mes "Time to warp you back.";
+	mes "Talk to the Guild Clerk...";
 	next;
-	mes "Let's Begin the test?";
-	menu "Yes",yes,"No il prepare first",no,"Heal me plzzz!!!",heala,"Damn I quit",quitit;
-heala:
-	heal 1000,1000;
-	close;
-quitit:
-	warp "geffen",120,110;
-	close;
-yes:
-	check \@phase = 1,earta,-;
-	check \@phase = 2,fira,-;
-	enablenpc "job_wiz","Water Room",0;
-	enablenpc "job_wiz","Earth Room",0;
-	enablenpc "job_wiz","Fire Room",0;
-	enablenpc "job_wiz","Success",0;
-	resetmymob "job_wiz";
-	set \@startwater = 1;
-	enablenpc "job_wiz","Water Room",1;
-	warp "job_wiz",101,182;
-	close;
-earta:
-	enablenpc "job_wiz","Water Room",0;
-	enablenpc "job_wiz","Earth Room",0;
-	enablenpc "job_wiz","Fire Room",0;
-	enablenpc "job_wiz","Success",0;
-	resetmymob "job_wiz";
-	set \@startearth = 1;
-	enablenpc "job_wiz","Earth Room",1;
-	warp "job_wiz",104,111;
-	close;
-fira:
-	enablenpc "job_wiz","Water Room",0;
-	enablenpc "job_wiz","Earth Room",0;
-	enablenpc "job_wiz","Fire Room",0;
-	enablenpc "job_wiz","Success",0;
-	resetmymob "job_wiz";
-	set \@startfire = 1;
-	enablenpc "job_wiz","Fire Room",1;
-	warp "job_wiz",58,87;
-	close;
-no:
-	mes "[Helper]";
-	mes "Wel talk to me when your ready.";
-	close;
-next2:
-	mes "[Helper]";
-	mes "Second test the Earth Room";
-	goto talk;	
-next3:
-	mes "[Helper]";
-	mes "Last test the Fire Room";
-	goto talk;	
-suces:
 	set job_wizard_q = 7;
-	broadcast "Congratulation $charaname for passing the all the test!";
-	mes "[Helper]";
-	mes "Wow you made this far.";
-	mes "Now i will warp you back to geffen.";
-	next;
-	enablenpc "job_wizard","Test Warper",1;
+	set \@Testing = 0;
 	warp "geffen",120,110;
 	close;
-}
-
-//======== Water Room
-job_wiz.gat,1,1,1	script "Water Room" 66,{
-	return;
-OnInit:
-	check \@startwater = 1,start,-;
-	check \@startwater2 = 1,start2,-;
-	check \@phase = 1,endtimer,-;
-	return;
-endtimer:
-	npctimer 0;
-	return;
-start:
-	set \@mobs = 0;
-	callmob "job_wiz",109,174,"Phen",1158,1,"m1";
-	callmob "job_wiz",118,174,"Kukre",1070,1,"m2";	
-	callmob "job_wiz",109,165,"Vadon",1066,1,"m3";
-	callmob "job_wiz",118,165,"Cornutus",1067,1,"m4";
-	callmob "job_wiz",101,157,"Marina",1141,1,"m5";
-	callmob "job_wiz",126,157,"Marin",1242,1,"m6";
-	callmob "job_wiz",98,170,"Kukre",1070,1,"m7";
-	callmob "job_wiz",129,170,"Obeaune",1044,1,"m8";
-	npctimer 1;
-	return;
-start2:
-	set \@mobs = 0;
-	callmob "job_wiz",114,169,"Marine_Sphere",1142,1,"m1";
-	callmob "job_wiz",112,169,"Hydra",1068,1,"m2";
-	callmob "job_wiz",116,169,"Hydra",1068,1,"m3";
-	callmob "job_wiz",114,171,"Hydra",1068,1,"m4";
-	callmob "job_wiz",114,167,"Hydra",1068,1,"m5";
-	return;
-OnTimer1000:
-	broadcast "Room of Water, testing will begin.",10;
-	return;
-OnTimer2000:
-	broadcast "3 min left",10;
-	return;
-OnTimer3000:
-	check \@phaze = 0,-,ewan;
-	broadcast "Kill all the monsters within the time limit.",10;
-ewan:
-	return;
-OnTimer33000:
-	broadcast "2min 30sec left.",10;
-	return;
-OnTimer63000:
-	broadcast "2min left",10;
-	return;
-OnTimer93000:
-	broadcast "1min 30sec left",10;
-	return;
-OnTimer123000:
-	broadcast "1min left.",10;
-	return;
-OnTimer153000:
-	broadcast "30sec left.",10;
-	return;
-OnTimer173000:
-	broadcast "10 seconds!",10;
-	return;
-OnTimer183000:
-	broadcast "Out of Time",10;
-	resetmymob "job_wiz";
-	return;
-OnTimer184000:
-	enablenpc "job_wiz","fail",1;
-	npctimer 0;
-	return;
-}
-
-//======== Earth Room
-job_wiz.gat,1,1,1	script "Earth Room" 111,{
-	return;
-OnInit:
-	check \@startearth = 1,start,-;
-	check \@startearth2 = 1,start2,-;
-	check \@phase = 2,endtimer,-;
-	return;
-endtimer:
-	npctimer 0;
-	return;
-start:
-	set \@mobs = 0;
-	callmob "job_wiz",111,102,"Yoyo",1057,1,"m1";
-	callmob "job_wiz",120,102,"Deniro",1105,1,"m2";
-	callmob "job_wiz",111,102,"Caramel",1103,1,"m3";
-	callmob "job_wiz",120,102,"Hode",1127,1,"m4";
-	callmob "job_wiz",111,93,"Savage",1166,1,"m5";
-	callmob "job_wiz",120,93,"Giearth",1121,1,"m6";
-	callmob "job_wiz",107,98,"Bigfoot",1060,1,"m7";
-	callmob "job_wiz",124,98,"Ork_Warrior",1023,1,"m8";
-	callmob "job_wiz",104,86,"Vitata",1176,1,"m9";
-	callmob "job_wiz",127,86,"Mantis",1139,1,"m10";
-	npctimer 1;
-	return;
-start2:
-	set \@mobs = 0;
-	callmob "job_wiz",116,97,"Flora",1118,1,"m1";
-	callmob "job_wiz",114,95,"Mandragora",1020,1,"m2";
-	callmob "job_wiz",118,95,"Mandragora",1020,1,"m3";
-	callmob "job_wiz",114,99,"Mandragora",1020,1,"m4";
-	callmob "job_wiz",118,99,"Mandragora ",1020,1,"m5";
-	callmob "job_wiz",116,94,"Mandragora",1020,1,"m6";
-	callmob "job_wiz",116,100,"Mandragora",1020,1,"m7";
-	return;
-OnTimer1000:
-	broadcast "Room of Earth, test will begin.",10;
-	return;
-OnTimer2000:
-	broadcast "3 min left",10;
-	return;
-OnTimer3000:
-	broadcast "Kill all the monsters within the time limit.",10;
-	return;
-OnTimer33000:
-	broadcast "2min 30sec left.",10;
-	return;
-OnTimer63000:
-	broadcast "2min left",10;
-	return;
-OnTimer93000:
-	broadcast "1min 30sec left",10;
-	return;
-OnTimer123000:
-	broadcast "1min left.",10;
-	return;
-OnTimer153000:
-	broadcast "30sec left.",10;
-	return;
-OnTimer173000:
-	broadcast "10 seconds!",10;
-	return;
-OnTimer183000:
-	broadcast "Out of Time",10;
-	resetmymob "job_wiz";
-	return;
-OnTimer184000:
-	enablenpc "job_wiz","fail",1;
-	npctimer 0;
-	return;
-}
-
-//======== Room of Fire
-job_wiz.gat,1,1,1	script "Fire Room" 111,{
-	return;
-OnInit:
-	check \@startfire = 1,start,-;
-	check \@startfire2 = 1,start2,-;
-	check \@phase = 3,endtimer,-;
-	return;
-endtimer:
-	npctimer 0;
-	return;
-start:
-	set \@mobs = 0;
-	callmob "job_wiz",58,110,"Zerom",1178,1,"m1";
-	callmob "job_wiz",33,110,"Goblin",1122,1,"m2";
-	callmob "job_wiz",40,103,"Scorpion",1001,1,"m3";
-	callmob "job_wiz",51,103,"Frilldora",1119,1,"m4";
-	callmob "job_wiz",40,92,"Peco Peco",1019,1,"m5";
-	callmob "job_wiz",51,92,"Elder Willow",1033,1,"m6";
-	callmob "job_wiz",37,89,"Metaller",1058,1,"m7";
-	callmob "job_wiz",54,89,"Desert Wolf",1106,1,"m8";
-	npctimer 1;
-	return;
-start2:
-	set \@mobs = 0;
-	callmob "job_wiz",44,99,"Greatest General",1277,1,"m1";
-	callmob "job_wiz",44,99,"Horong",1129,1,"m2";
-	callmob "job_wiz",45,99,"Horong",1129,1,"m3";
-	return;
-OnTimer1000:
-	broadcast "Room of Fire, test will begin.",10;
-	return;
-OnTimer2000:
-	broadcast "3 min left",10;
-	return;
-OnTimer3000:
-	broadcast "Kill all the monsters within the time limit.",10;
-	return;
-OnTimer33000:
-	broadcast "2min 30sec left.",10;
-	return;
-OnTimer63000:
-	broadcast "2min left",10;
-	return;
-OnTimer93000:
-	broadcast "1min 30sec left",10;
-	return;
-OnTimer123000:
-	broadcast "1min left.",10;
-	return;
-OnTimer153000:
-	broadcast "30sec left.",10;
-	return;
-OnTimer173000:
-	broadcast "10 seconds!",10;
-	return;
-OnTimer183000:
-	broadcast "Out of Time",10;
-	resetmymob "job_wizard";
-	return;
-OnTimer184000:
-	enablenpc "job_wiz","fail",1;
-	npctimer 0;
-	return;
-}
-
-job_wiz.gat,1,1,1	script "m1" -1,{
-	set \@mobs + 1;
-	broadcast "$[\@mobs] mobs";
-	check \@startwater = 1,wat1,-;
-	check \@startwater2 = 1,wat2,-;
-	check \@startearth = 1,wat3,-;
-	check \@startearth2 = 1,wat4,-;
-	check \@startfire = 1,wat5,-;
-	check \@startfire2 = 1,wat6,-;
-wat1:
-	check \@mobs = 8,waterdead,-;
-	return;
-wat2:
-	check \@mobs = 5,waterdead2,-;
-	return;
-wat3:
-	check \@mobs = 10,earthdead,-;
-	return;
-wat4:
-	check \@mobs = 7,earthdead2,-;
-	return;
-wat5:
-	check \@mobs = 8,firedead,-;
-	return;
-wat6:
-	check \@mobs = 3,firedead2,-;
-	return;
-waterdead:
-	broadcast "Good Job you killed all the monsters!",10;
-	set \@startwater = 0;
-	set \@startwater2 = 1;
-	addnpctimer "Water Room",-60000;
-	broadcast "Bonus 1 minute!",10;
-	enablenpc "job_wiz","Water Room",1;
-	return;
-waterdead2:
-	set \@startwater2 = 0;
-	set \@phase = 1;
-	enablenpc "job_wiz","Water Room",1;
-	enablenpc "job_wiz","sucess",1;
-	return;
-earthdead:
-	broadcast "Good Job you killed all the monsters!",10;
-	set \@startearth = 0;
-	set \@startearth2 = 1;
-	addnpctimer "Earth Room",-60000;
-	broadcast "Bonus 1 minute!",10;
-	enablenpc "job_wiz","Earth Room",1;
-	return;
-earthdead2:
-	broadcast "Good Job you killed all the monsters!",10;
-	set \@startearth2 = 0;
-	set \@phase = 2;
-	enablenpc "job_wiz","Earth Room",1;
-	enablenpc "job_wiz","sucess",1;
-	return;
-firedead:
-	broadcast "Good Job you killed all the monsters!",10;
-	set \@startfire = 0;
-	set \@startfire2 = 1;
-	addnpctimer "Fire Room",-60000;
-	broadcast "Bonus 1 minute!",10;
-	enablenpc "job_wiz","Fire Room",1;
-	return;
-firedead2:
-	broadcast "Good Job you killed all the monsters!",10;
-	set \@startfire2 = 0;
-	set \@phase = 3;
-	enablenpc "job_wiz","Fire Room",1;
-	enablenpc "job_wiz","sucess",1;
-	return;
-}
-
-job_wiz.gat,1,1,1	script "m2" -1,{
-	set \@mobs + 1;
-	broadcast "$[\@mobs] mobs";
-	check \@startwater = 1,wat1,-;
-	check \@startwater2 = 1,wat2,-;
-	check \@startearth = 1,wat3,-;
-	check \@startearth2 = 1,wat4,-;
-	check \@startfire = 1,wat5,-;
-	check \@startfire2 = 1,wat6,-;
-wat1:
-	check \@mobs = 8,waterdead,-;
-	return;
-wat2:
-	check \@mobs = 5,waterdead2,-;
-	return;
-wat3:
-	check \@mobs = 10,earthdead,-;
-	return;
-wat4:
-	check \@mobs = 7,earthdead2,-;
-	return;
-wat5:
-	check \@mobs = 8,firedead,-;
-	return;
-wat6:
-	check \@mobs = 3,firedead2,-;
-	return;
-waterdead:
-	broadcast "Good Job you killed all the monsters!",10;
-	set \@startwater = 0;
-	set \@startwater2 = 1;
-	addnpctimer "Water Room",-60000;
-	broadcast "Bonus 1 minute!",10;
-	enablenpc "job_wiz","Water Room",1;
-	return;
-waterdead2:
-	set \@startwater2 = 0;
-	set \@phase = 1;
-	enablenpc "job_wiz","Water Room",1;
-	enablenpc "job_wiz","sucess",1;
-	return;
-earthdead:
-	broadcast "Good Job you killed all the monsters!",10;
-	set \@startearth = 0;
-	set \@startearth2 = 1;
-	addnpctimer "Earth Room",-60000;
-	broadcast "Bonus 1 minute!",10;
-	enablenpc "job_wiz","Earth Room",1;
-	return;
-earthdead2:
-	broadcast "Good Job you killed all the monsters!",10;
-	set \@startearth2 = 0;
-	set \@phase = 2;
-	enablenpc "job_wiz","Earth Room",1;
-	enablenpc "job_wiz","sucess",1;
-	return;
-firedead:
-	broadcast "Good Job you killed all the monsters!",10;
-	set \@startfire = 0;
-	set \@startfire2 = 1;
-	addnpctimer "Fire Room",-60000;
-	broadcast "Bonus 1 minute!",10;
-	enablenpc "job_wiz","Fire Room",1;
-	return;
-firedead2:
-	broadcast "Good Job you killed all the monsters!",10;
-	set \@startfire2 = 0;
-	set \@phase = 3;
-	enablenpc "job_wiz","Fire Room",1;
-	enablenpc "job_wiz","sucess",1;
-	return;
-}
-
-job_wiz.gat,1,1,1	script "m3" -1,{
-	set \@mobs + 1;
-	broadcast "$[\@mobs] mobs";
-	check \@startwater = 1,wat1,-;
-	check \@startwater2 = 1,wat2,-;
-	check \@startearth = 1,wat3,-;
-	check \@startearth2 = 1,wat4,-;
-	check \@startfire = 1,wat5,-;
-	check \@startfire2 = 1,wat6,-;
-wat1:
-	check \@mobs = 8,waterdead,-;
-	return;
-wat2:
-	check \@mobs = 5,waterdead2,-;
-	return;
-wat3:
-	check \@mobs = 10,earthdead,-;
-	return;
-wat4:
-	check \@mobs = 7,earthdead2,-;
-	return;
-wat5:
-	check \@mobs = 8,firedead,-;
-	return;
-wat6:
-	check \@mobs = 3,firedead2,-;
-	return;
-waterdead:
-	broadcast "Good Job you killed all the monsters!",10;
-	set \@startwater = 0;
-	set \@startwater2 = 1;
-	addnpctimer "Water Room",-60000;
-	broadcast "Bonus 1 minute!",10;
-	enablenpc "job_wiz","Water Room",1;
-	return;
-waterdead2:
-	set \@startwater2 = 0;
-	set \@phase = 1;
-	enablenpc "job_wiz","Water Room",1;
-	enablenpc "job_wiz","sucess",1;
-	return;
-earthdead:
-	broadcast "Good Job you killed all the monsters!",10;
-	set \@startearth = 0;
-	set \@startearth2 = 1;
-	addnpctimer "Earth Room",-60000;
-	broadcast "Bonus 1 minute!",10;
-	enablenpc "job_wiz","Earth Room",1;
-	return;
-earthdead2:
-	broadcast "Good Job you killed all the monsters!",10;
-	set \@startearth2 = 0;
-	set \@phase = 2;
-	enablenpc "job_wiz","Earth Room",1;
-	enablenpc "job_wiz","sucess",1;
-	return;
-firedead:
-	broadcast "Good Job you killed all the monsters!",10;
-	set \@startfire = 0;
-	set \@startfire2 = 1;
-	addnpctimer "Fire Room",-60000;
-	broadcast "Bonus 1 minute!",10;
-	enablenpc "job_wiz","Fire Room",1;
-	return;
-firedead2:
-	broadcast "Good Job you killed all the monsters!",10;
-	set \@startfire2 = 0;
-	set \@phase = 3;
-	enablenpc "job_wiz","Fire Room",1;
-	enablenpc "job_wiz","sucess",1;
-	return;
-}
-
-job_wiz.gat,1,1,1	script "m4" -1,{
-	set \@mobs + 1;
-	broadcast "$[\@mobs] mobs";
-	check \@startwater = 1,wat1,-;
-	check \@startwater2 = 1,wat2,-;
-	check \@startearth = 1,wat3,-;
-	check \@startearth2 = 1,wat4,-;
-	check \@startfire = 1,wat5,-;
-	check \@startfire2 = 1,wat6,-;
-wat1:
-	check \@mobs = 8,waterdead,-;
-	return;
-wat2:
-	check \@mobs = 5,waterdead2,-;
-	return;
-wat3:
-	check \@mobs = 10,earthdead,-;
-	return;
-wat4:
-	check \@mobs = 7,earthdead2,-;
-	return;
-wat5:
-	check \@mobs = 8,firedead,-;
-	return;
-wat6:
-	check \@mobs = 3,firedead2,-;
-	return;
-waterdead:
-	broadcast "Good Job you killed all the monsters!",10;
-	set \@startwater = 0;
-	set \@startwater2 = 1;
-	addnpctimer "Water Room",-60000;
-	broadcast "Bonus 1 minute!",10;
-	enablenpc "job_wiz","Water Room",1;
-	return;
-waterdead2:
-	set \@startwater2 = 0;
-	set \@phase = 1;
-	enablenpc "job_wiz","Water Room",1;
-	enablenpc "job_wiz","sucess",1;
-	return;
-earthdead:
-	broadcast "Good Job you killed all the monsters!",10;
-	set \@startearth = 0;
-	set \@startearth2 = 1;
-	addnpctimer "Earth Room",-60000;
-	broadcast "Bonus 1 minute!",10;
-	enablenpc "job_wiz","Earth Room",1;
-	return;
-earthdead2:
-	broadcast "Good Job you killed all the monsters!",10;
-	set \@startearth2 = 0;
-	set \@phase = 2;
-	enablenpc "job_wiz","Earth Room",1;
-	enablenpc "job_wiz","sucess",1;
-	return;
-firedead:
-	broadcast "Good Job you killed all the monsters!",10;
-	set \@startfire = 0;
-	set \@startfire2 = 1;
-	addnpctimer "Fire Room",-60000;
-	broadcast "Bonus 1 minute!",10;
-	enablenpc "job_wiz","Fire Room",1;
-	return;
-firedead2:
-	broadcast "Good Job you killed all the monsters!",10;
-	set \@startfire2 = 0;
-	set \@phase = 3;
-	enablenpc "job_wiz","Fire Room",1;
-	enablenpc "job_wiz","sucess",1;
-	return;
-}
-
-job_wiz.gat,1,1,1	script "m5" -1,{
-	set \@mobs + 1;
-	broadcast "$[\@mobs] mobs";
-	check \@startwater = 1,wat1,-;
-	check \@startwater2 = 1,wat2,-;
-	check \@startearth = 1,wat3,-;
-	check \@startearth2 = 1,wat4,-;
-	check \@startfire = 1,wat5,-;
-	check \@startfire2 = 1,wat6,-;
-wat1:
-	check \@mobs = 8,waterdead,-;
-	return;
-wat2:
-	check \@mobs = 5,waterdead2,-;
-	return;
-wat3:
-	check \@mobs = 10,earthdead,-;
-	return;
-wat4:
-	check \@mobs = 7,earthdead2,-;
-	return;
-wat5:
-	check \@mobs = 8,firedead,-;
-	return;
-wat6:
-	check \@mobs = 3,firedead2,-;
-	return;
-waterdead:
-	broadcast "Good Job you killed all the monsters!",10;
-	set \@startwater = 0;
-	set \@startwater2 = 1;
-	addnpctimer "Water Room",-60000;
-	broadcast "Bonus 1 minute!",10;
-	enablenpc "job_wiz","Water Room",1;
-	return;
-waterdead2:
-	set \@startwater2 = 0;
-	set \@phase = 1;
-	enablenpc "job_wiz","Water Room",1;
-	enablenpc "job_wiz","sucess",1;
-	return;
-earthdead:
-	broadcast "Good Job you killed all the monsters!",10;
-	set \@startearth = 0;
-	set \@startearth2 = 1;
-	addnpctimer "Earth Room",-60000;
-	broadcast "Bonus 1 minute!",10;
-	enablenpc "job_wiz","Earth Room",1;
-	return;
-earthdead2:
-	broadcast "Good Job you killed all the monsters!",10;
-	set \@startearth2 = 0;
-	set \@phase = 2;
-	enablenpc "job_wiz","Earth Room",1;
-	enablenpc "job_wiz","sucess",1;
-	return;
-firedead:
-	broadcast "Good Job you killed all the monsters!",10;
-	set \@startfire = 0;
-	set \@startfire2 = 1;
-	addnpctimer "Fire Room",-60000;
-	broadcast "Bonus 1 minute!",10;
-	enablenpc "job_wiz","Fire Room",1;
-	return;
-firedead2:
-	broadcast "Good Job you killed all the monsters!",10;
-	set \@startfire2 = 0;
-	set \@phase = 3;
-	enablenpc "job_wiz","Fire Room",1;
-	enablenpc "job_wiz","sucess",1;
-	return;
-}
-
-job_wiz.gat,1,1,1	script "m6" -1,{
-	set \@mobs + 1;
-	broadcast "$[\@mobs] mobs";
-	check \@startwater = 1,wat1,-;
-	check \@startwater2 = 1,wat2,-;
-	check \@startearth = 1,wat3,-;
-	check \@startearth2 = 1,wat4,-;
-	check \@startfire = 1,wat5,-;
-	check \@startfire2 = 1,wat6,-;
-wat1:
-	check \@mobs = 8,waterdead,-;
-	return;
-wat2:
-	check \@mobs = 5,waterdead2,-;
-	return;
-wat3:
-	check \@mobs = 10,earthdead,-;
-	return;
-wat4:
-	check \@mobs = 7,earthdead2,-;
-	return;
-wat5:
-	check \@mobs = 8,firedead,-;
-	return;
-wat6:
-	check \@mobs = 3,firedead2,-;
-	return;
-waterdead:
-	broadcast "Good Job you killed all the monsters!",10;
-	set \@startwater = 0;
-	set \@startwater2 = 1;
-	addnpctimer "Water Room",-60000;
-	broadcast "Bonus 1 minute!",10;
-	enablenpc "job_wiz","Water Room",1;
-	return;
-waterdead2:
-	set \@startwater2 = 0;
-	set \@phase = 1;
-	enablenpc "job_wiz","Water Room",1;
-	enablenpc "job_wiz","sucess",1;
-	return;
-earthdead:
-	broadcast "Good Job you killed all the monsters!",10;
-	set \@startearth = 0;
-	set \@startearth2 = 1;
-	addnpctimer "Earth Room",-60000;
-	broadcast "Bonus 1 minute!",10;
-	enablenpc "job_wiz","Earth Room",1;
-	return;
-earthdead2:
-	broadcast "Good Job you killed all the monsters!",10;
-	set \@startearth2 = 0;
-	set \@phase = 2;
-	enablenpc "job_wiz","Earth Room",1;
-	enablenpc "job_wiz","sucess",1;
-	return;
-firedead:
-	broadcast "Good Job you killed all the monsters!",10;
-	set \@startfire = 0;
-	set \@startfire2 = 1;
-	addnpctimer "Fire Room",-60000;
-	broadcast "Bonus 1 minute!",10;
-	enablenpc "job_wiz","Fire Room",1;
-	return;
-firedead2:
-	broadcast "Good Job you killed all the monsters!",10;
-	set \@startfire2 = 0;
-	set \@phase = 3;
-	enablenpc "job_wiz","Fire Room",1;
-	enablenpc "job_wiz","sucess",1;
-	return;
-}
-
-job_wiz.gat,1,1,1	script "m7" -1,{
-	set \@mobs + 1;
-	broadcast "$[\@mobs] mobs";
-	check \@startwater = 1,wat1,-;
-	check \@startwater2 = 1,wat2,-;
-	check \@startearth = 1,wat3,-;
-	check \@startearth2 = 1,wat4,-;
-	check \@startfire = 1,wat5,-;
-	check \@startfire2 = 1,wat6,-;
-wat1:
-	check \@mobs = 8,waterdead,-;
-	return;
-wat2:
-	check \@mobs = 5,waterdead2,-;
-	return;
-wat3:
-	check \@mobs = 10,earthdead,-;
-	return;
-wat4:
-	check \@mobs = 7,earthdead2,-;
-	return;
-wat5:
-	check \@mobs = 8,firedead,-;
-	return;
-wat6:
-	check \@mobs = 3,firedead2,-;
-	return;
-waterdead:
-	broadcast "Good Job you killed all the monsters!",10;
-	set \@startwater = 0;
-	set \@startwater2 = 1;
-	addnpctimer "Water Room",-60000;
-	broadcast "Bonus 1 minute!",10;
-	enablenpc "job_wiz","Water Room",1;
-	return;
-waterdead2:
-	set \@startwater2 = 0;
-	set \@phase = 1;
-	enablenpc "job_wiz","Water Room",1;
-	enablenpc "job_wiz","sucess",1;
-	return;
-earthdead:
-	broadcast "Good Job you killed all the monsters!",10;
-	set \@startearth = 0;
-	set \@startearth2 = 1;
-	addnpctimer "Earth Room",-60000;
-	broadcast "Bonus 1 minute!",10;
-	enablenpc "job_wiz","Earth Room",1;
-	return;
-earthdead2:
-	broadcast "Good Job you killed all the monsters!",10;
-	set \@startearth2 = 0;
-	set \@phase = 2;
-	enablenpc "job_wiz","Earth Room",1;
-	enablenpc "job_wiz","sucess",1;
-	return;
-firedead:
-	broadcast "Good Job you killed all the monsters!",10;
-	set \@startfire = 0;
-	set \@startfire2 = 1;
-	addnpctimer "Fire Room",-60000;
-	broadcast "Bonus 1 minute!",10;
-	enablenpc "job_wiz","Fire Room",1;
-	return;
-firedead2:
-	broadcast "Good Job you killed all the monsters!",10;
-	set \@startfire2 = 0;
-	set \@phase = 3;
-	enablenpc "job_wiz","Fire Room",1;
-	enablenpc "job_wiz","sucess",1;
-	return;
-}
-
-job_wiz.gat,1,1,1	script "m8" -1,{
-	set \@mobs + 1;
-	broadcast "$[\@mobs] mobs";
-	check \@startwater = 1,wat1,-;
-	check \@startwater2 = 1,wat2,-;
-	check \@startearth = 1,wat3,-;
-	check \@startearth2 = 1,wat4,-;
-	check \@startfire = 1,wat5,-;
-	check \@startfire2 = 1,wat6,-;
-wat1:
-	check \@mobs = 8,waterdead,-;
-	return;
-wat2:
-	check \@mobs = 5,waterdead2,-;
-	return;
-wat3:
-	check \@mobs = 10,earthdead,-;
-	return;
-wat4:
-	check \@mobs = 7,earthdead2,-;
-	return;
-wat5:
-	check \@mobs = 8,firedead,-;
-	return;
-wat6:
-	check \@mobs = 3,firedead2,-;
-	return;
-waterdead:
-	broadcast "Good Job you killed all the monsters!",10;
-	set \@startwater = 0;
-	set \@startwater2 = 1;
-	addnpctimer "Water Room",-60000;
-	broadcast "Bonus 1 minute!",10;
-	enablenpc "job_wiz","Water Room",1;
-	return;
-waterdead2:
-	set \@startwater2 = 0;
-	set \@phase = 1;
-	enablenpc "job_wiz","Water Room",1;
-	enablenpc "job_wiz","sucess",1;
-	return;
-earthdead:
-	broadcast "Good Job you killed all the monsters!",10;
-	set \@startearth = 0;
-	set \@startearth2 = 1;
-	addnpctimer "Earth Room",-60000;
-	broadcast "Bonus 1 minute!",10;
-	enablenpc "job_wiz","Earth Room",1;
-	return;
-earthdead2:
-	broadcast "Good Job you killed all the monsters!",10;
-	set \@startearth2 = 0;
-	set \@phase = 2;
-	enablenpc "job_wiz","Earth Room",1;
-	enablenpc "job_wiz","sucess",1;
-	return;
-firedead:
-	broadcast "Good Job you killed all the monsters!",10;
-	set \@startfire = 0;
-	set \@startfire2 = 1;
-	addnpctimer "Fire Room",-60000;
-	broadcast "Bonus 1 minute!",10;
-	enablenpc "job_wiz","Fire Room",1;
-	return;
-firedead2:
-	broadcast "Good Job you killed all the monsters!",10;
-	set \@startfire2 = 0;
-	set \@phase = 3;
-	enablenpc "job_wiz","Fire Room",1;
-	enablenpc "job_wiz","sucess",1;
-	return;
-}
-
-job_wiz.gat,1,1,1	script "m9" -1,{
-	set \@mobs + 1;
-	broadcast "$[\@mobs] mobs";
-	check \@startwater = 1,wat1,-;
-	check \@startwater2 = 1,wat2,-;
-	check \@startearth = 1,wat3,-;
-	check \@startearth2 = 1,wat4,-;
-	check \@startfire = 1,wat5,-;
-	check \@startfire2 = 1,wat6,-;
-wat1:
-	check \@mobs = 8,waterdead,-;
-	return;
-wat2:
-	check \@mobs = 5,waterdead2,-;
-	return;
-wat3:
-	check \@mobs = 10,earthdead,-;
-	return;
-wat4:
-	check \@mobs = 7,earthdead2,-;
-	return;
-wat5:
-	check \@mobs = 8,firedead,-;
-	return;
-wat6:
-	check \@mobs = 3,firedead2,-;
-	return;
-waterdead:
-	broadcast "Good Job you killed all the monsters!",10;
-	set \@startwater = 0;
-	set \@startwater2 = 1;
-	addnpctimer "Water Room",-60000;
-	broadcast "Bonus 1 minute!",10;
-	enablenpc "job_wiz","Water Room",1;
-	return;
-waterdead2:
-	set \@startwater2 = 0;
-	set \@phase = 1;
-	enablenpc "job_wiz","Water Room",1;
-	enablenpc "job_wiz","sucess",1;
-	return;
-earthdead:
-	broadcast "Good Job you killed all the monsters!",10;
-	set \@startearth = 0;
-	set \@startearth2 = 1;
-	addnpctimer "Earth Room",-60000;
-	broadcast "Bonus 1 minute!",10;
-	enablenpc "job_wiz","Earth Room",1;
-	return;
-earthdead2:
-	broadcast "Good Job you killed all the monsters!",10;
-	set \@startearth2 = 0;
-	set \@phase = 2;
-	enablenpc "job_wiz","Earth Room",1;
-	enablenpc "job_wiz","sucess",1;
-	return;
-firedead:
-	broadcast "Good Job you killed all the monsters!",10;
-	set \@startfire = 0;
-	set \@startfire2 = 1;
-	addnpctimer "Fire Room",-60000;
-	broadcast "Bonus 1 minute!",10;
-	enablenpc "job_wiz","Fire Room",1;
-	return;
-firedead2:
-	broadcast "Good Job you killed all the monsters!",10;
-	set \@startfire2 = 0;
-	set \@phase = 3;
-	enablenpc "job_wiz","Fire Room",1;
-	enablenpc "job_wiz","sucess",1;
-	return;
-}
-
-job_wiz.gat,1,1,1	script "m10" -1,{
-	set \@mobs + 1;
-	broadcast "$[\@mobs] mobs";
-	check \@startwater = 1,wat1,-;
-	check \@startwater2 = 1,wat2,-;
-	check \@startearth = 1,wat3,-;
-	check \@startearth2 = 1,wat4,-;
-	check \@startfire = 1,wat5,-;
-	check \@startfire2 = 1,wat6,-;
-wat1:
-	check \@mobs = 8,waterdead,-;
-	return;
-wat2:
-	check \@mobs = 5,waterdead2,-;
-	return;
-wat3:
-	check \@mobs = 10,earthdead,-;
-	return;
-wat4:
-	check \@mobs = 7,earthdead2,-;
-	return;
-wat5:
-	check \@mobs = 8,firedead,-;
-	return;
-wat6:
-	check \@mobs = 3,firedead2,-;
-	return;
-waterdead:
-	broadcast "Good Job you killed all the monsters!",10;
-	set \@startwater = 0;
-	set \@startwater2 = 1;
-	addnpctimer "Water Room",-60000;
-	broadcast "Bonus 1 minute!",10;
-	enablenpc "job_wiz","Water Room",1;
-	return;
-waterdead2:
-	set \@startwater2 = 0;
-	set \@phase = 1;
-	enablenpc "job_wiz","Water Room",1;
-	enablenpc "job_wiz","sucess",1;
-	return;
-earthdead:
-	broadcast "Good Job you killed all the monsters!",10;
-	set \@startearth = 0;
-	set \@startearth2 = 1;
-	addnpctimer "Earth Room",-60000;
-	broadcast "Bonus 1 minute!",10;
-	enablenpc "job_wiz","Earth Room",1;
-	return;
-earthdead2:
-	broadcast "Good Job you killed all the monsters!",10;
-	set \@startearth2 = 0;
-	set \@phase = 2;
-	enablenpc "job_wiz","Earth Room",1;
-	enablenpc "job_wiz","sucess",1;
-	return;
-firedead:
-	broadcast "Good Job you killed all the monsters!",10;
-	set \@startfire = 0;
-	set \@startfire2 = 1;
-	addnpctimer "Fire Room",-60000;
-	broadcast "Bonus 1 minute!",10;
-	enablenpc "job_wiz","Fire Room",1;
-	return;
-firedead2:
-	broadcast "Good Job you killed all the monsters!",10;
-	set \@startfire2 = 0;
-	set \@phase = 3;
-	enablenpc "job_wiz","Fire Room",1;
-	enablenpc "job_wiz","sucess",1;
-	return;
-}
-
-//======== failed warp back
-job_wiz.gat,1,1,1	script "fail" 111,{
-	return;	
-OnInit:
-	npctimer 1;
-OnTimer1000:
-	broadcast "Try again next tym.",10;
-OnTimer2000:	
-	npctimer 0;
-	warpallpc "geffen",120,110;
-	return;
-}
-
-//======== Success warp
-job_wiz.gat,1,1,1	script "sucess" 111,{
-	return;
-OnInit:
-	check \@phase = 1,win1,-;
-win1:
-	npctimer 1;
-	return;
-win2:
-	npctimer 1;
-	return;
-win3:
-	npctimer 1;
-	return;
-OnTimer1000:
-	check \@phase = 1,no1,-;
-	check \@phase = 2,no2,-;
-	check \@phase = 3,no3,-;
-no1:	
-	broadcast "Good job you pass Water Test.",10;
-	return;
-no2:	
-	broadcast "Good job you pass Earth Test.",10;
-	return;
-no3:	
-	broadcast "Good job you pass Fire Test.",10;
-	return;
-OnTimer3000:
-	npctimer 0;
-	warpallpc "job_wiz",50,160;
-	return;
 }

@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.005 (Fusion 1.212)
 ----------------------------------------------------------------------------------------------------
+- 06-04-04: Job\Job2_Wizard.txt - Redid the mob test.  Should work now. [Tsusai]
 - 06-04-04: Event\Event_Reset_Skill.txt - Updated some text parts. [Muad_Dib]
 - 05-30-04: Event\Event_Carnival.txt - Added Carnival script. [Muad_Dib]
 - 05-30-04: Town\Town_Turtle_Island.txt - Added Turtle Island script. [Muad_Dib]
