@@ -266,6 +266,7 @@ sword_1-1.gat,230,242,2	script "Test Hall Staff" 105,{
 	mes "Do you surrender?";
 	next;
 	menu "Yes.",-,"No.",NO;
+        broadcast "Applicant $charaname, has failed the test.",1;
 	mes "[Test Hall Staff]";
 	mes "We hope you do better next time $charaname .";
 	next;
@@ -290,6 +291,7 @@ sword_2-1.gat,230,204,2	script "Test Hall Staff" 105,{
 	mes "Do you surrender?";
 	next;
 	menu "Yes.",-,"No.",NO;
+         broadcast "Applicant $charaname, has failed the test.",1;
 	mes "[Test Hall Staff]";
 	mes "We hope you do better next time $charaname .";
 	next;
@@ -302,6 +304,7 @@ NO:
 }
 
 sword_3-1.gat,223,167,2 script "Mae" 92,{
+         broadcast "Applicant $charaname, has successfully passed the test.",1; 
 	mes "[Mae]";
 	mes "I sincerely congratulate you $charaname for passing the test!";
 	mes "I already sent your test result to the Job Department. Please inquire at the Officer in Centre. Thank you.";

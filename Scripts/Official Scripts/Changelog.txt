@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.005
 ----------------------------------------------------------------------------------------------------
+- Job\Job1_Swordman.txt - Added 3 Broadcasts. [Muad_Dib]
 - Archive\ - Commented out all  the npc placements so they don't stand in the way of future/existing scripts. [Muad_Dib]
 - Warp\other\PvP.txt - Added jAthena PvP room warps. [Tsusai]
 - Job\Job1_Magician.txt - Fixed the quest item requirements. [Muad_Dib]
