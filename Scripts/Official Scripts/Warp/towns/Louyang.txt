@@ -37,6 +37,8 @@ lou_in01.gat,125,141,0   warp louyangwarp025   3,3,lou_in01.gat,156,141
 lou_in01.gat,152,141,0   warp louyangwarp026   3,3,lou_in01.gat,120,141
 lou_in01.gat,78,141,0    warp louyangwarp027   3,3,lou_in01.gat,47,141
 lou_in01.gat,51,141,0    warp louyangwarp028   3,3,lou_in01.gat,82,141
+louyang.gat,162,249,0    warp louyangwarp029   3,3,lou_in01.gat,26,18
+lou_in01.gat,29,18,0     warp louyangwarp030   3,3,louyang.gat,162,246
 
 
 
