@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.003
 ----------------------------------------------------------------------------------------------------
+- GvG\npc_guardiankafra.txt - Fixes missing Guardian bug and Kafra service at prtg_cas01. [Tsusai]
 - GvG\*_cas0*.txt - Updated Kafra Services storage check. [Tsusai]
 - NPC\npc_skill_get.txt - Finalized the novice skill quests, replaced variable w/ quest item. [Tsusai]
 - NPC\npc_skill_get.txt - Fixed/Added Novice Skill Quests. [Tsusai]
