@@ -24,13 +24,13 @@
 // Aragham -> morocc_in: 73,38
 // Refine equipments using Elunium/Oridecon.
 //
-// Hakhim -> payon_in01: 81,31
+// Hakhim -> payon: 134,173
 // Transform Rough Elunium/Oridecon into Pures.
 //
-// Begnahd -> payon_in01: 95,19
+// Begnahd -> payon: 123,171
 // Proved Phracon and Emveretarcon.
 //
-// Antonio -> payon_in01: 90,31
+// Antonio -> payon: 130,169
 // Refine equipments using Elunium/Oridecon.
 //
 // Xenophon -> alberta_in: 21,63
@@ -926,7 +926,7 @@ L_EXIT:
 	close;
 }
 
-payon_in01.gat,81,31,4 script	"Hakhim" 88,{
+payon.gat,134,173,8 script	"Hakhim" 88,{
 	mes "[Hakhim]";
 	mes "If you bring Rough Oridecons and";
 	mes "Rough Eluniums to me,";
@@ -983,7 +983,7 @@ L_MENU_2:
 	close;
 }
 
-payon_in01.gat,95,19,4 script	"Begnahd" 88,{
+payon.gat,123,171,8 script	"Begnahd" 88,{
 	mes "[Begnahd]";
 	mes "I,the Honest and Diligent Merchant";
 	mes "sell 2 kinds of Metal for tempering";
@@ -1050,7 +1050,7 @@ L_START_5:
 	goto L_START_1;
 }
 
-payon_in01.gat,90,31,4 script	"Antonio" 88,{
+payon.gat,130,169,8 script	"Antonio" 88,{
 	   lockitem 1;
 	mes "[Antonio]";
 	mes "I am the Armsmith and I can refine any weapon and armor.";

@@ -429,7 +429,7 @@ geffen.gat,118,62,0	script	Guide	705,{
 
 //[Payon Guide]
 
-payon.gat,82,116,4	script	Guide	708,{
+payon.gat,148,213,4	script	Guide	708,{
 	scriptlabel GuidePayon1;
 		cutin "pay_soldier",2;
 		mes "[Payon Squad]";
@@ -457,31 +457,31 @@ payon.gat,82,116,4	script	Guide	708,{
 				mes "[Payon Squad]";
 				mes "'Archer Guild' is a Control Office of Archers. It is located at Northeast Contour of the Archer Village.";
 				check @COMPASS_CHECK == 1,-,L_SUB_1;
-				viewpoint 1,174,189,1,0xFF0000;
+				viewpoint 1,227,329,1,0xFF0000;
 				goto L_SUB_1;
 			L_MENU_1_2:
 				mes "[Payon Squad]";
 				mes "'Armory' is located at Northwest around the Centre.";
 				check @COMPASS_CHECK == 1,-,L_SUB_1;
-				viewpoint 1,30,176,2,0xFF00FF;
+				viewpoint 1,135,158,2,0xFF00FF;
 				goto L_SUB_1;
 			L_MENU_1_3:
 				mes "[Payon Squad]";
 				mes "'Kit Shop' is located at Northwest Contour of the Archer Village.";
 				check @COMPASS_CHECK == 1,-,L_SUB_1;
-				viewpoint 1,174,189,3,0xFF00FF;
+				viewpoint 1,227,329,3,0xFF00FF;
 				goto L_SUB_1;
 			L_MENU_1_4:
 				mes "[Payon Squad]";
 				mes "'Inn' is located at East around the Centre.";
 				check @COMPASS_CHECK == 1,-,L_SUB_1;
-				viewpoint 1,172,134,4,0xFF00FF;
+				viewpoint 1,155,320,4,0xFF00FF;
 				goto L_SUB_1;
 			L_MENU_1_5:
 				mes "[Payon Squad]";
 				mes "'Central Palace' is at North around the Centre.";
 				check @COMPASS_CHECK == 1,-,L_SUB_1;
-				viewpoint 1,89,166,5,0x00FF00;
+				viewpoint 1,155,242,5,0x00FF00;
 				goto L_SUB_1;
 			L_MENU_1_6:
 				mes "[Payon Squad]";
@@ -490,11 +490,11 @@ payon.gat,82,116,4	script	Guide	708,{
 		L_MENU_2:
 			mes "[Payon Squad]";
 			mes "All Map indications have been removed.";
-			viewpoint 2,174,189,1,0xFF0000;
-			viewpoint 2,30,176,2,0xFF00FF;
-			viewpoint 2,174,189,3,0xFF00FF;
-			viewpoint 2,172,134,4,0xFF00FF;
-			viewpoint 2,89,166,5,0x00FF00;
+			viewpoint 2,227,329,1,0xFF0000;
+			viewpoint 2,135,158,2,0xFF00FF;
+			viewpoint 2,227,329,3,0xFF00FF;
+			viewpoint 2,155,320,4,0xFF00FF;
+			viewpoint 2,155,242,5,0x00FF00;
 			set @COMPASS_CHECK = 0;
 			goto L_START_1;
 		L_MENU_3:

@@ -1,7 +1,7 @@
 //========================================================================================
 // »» The Fusion Project ««
 // Copyright (c) 2003-2004, Cobax Information Systems
-//
+// http://cobax.net
 // ---------------------------------------------------------------------------------------
 //
 // Thief Quest Skill - Non Player Character Locations
@@ -11,7 +11,7 @@
 // - Alcouskou -> moc_prydb1: 154,128
 //   Bring items to obtain skill. Applicable jobs are Thief , Assasin and Rogue.
 //
-// - RuRumuni -> payon.gat: 28,121
+// - RuRumuni -> payon.gat: 149,120
 //   Bring items to receive Leather bag of Infinity.
 //========================================================================================
 
@@ -477,7 +477,7 @@ L4_End:
 //-----------------------------------------------
 //==== leather bag of Infinity(skill_thief_1ŠÖ˜A)
 //-----------------------------------------------
-payon.gat,28,121,4	script	"Bag Merchant"	99,{
+payon.gat,149,120,6	script	"Bag Merchant"	99,{
 	mes "[RuRumuni]";
 	mes "Here in Payon Village ";
 	mes "I live surrounded by bow and arrows";

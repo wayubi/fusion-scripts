@@ -1,7 +1,7 @@
 //========================================================================================
 // »» The Fusion Project ««
 // Copyright (c) 2004, Cobax Information Systems
-// http://fusion.cobax.net/
+// http://cobax.net/
 // ---------------------------------------------------------------------------------------
 //
 // Potions Quests - Non Player Character Locations
@@ -15,7 +15,7 @@
 // - Morrison -> prt_in: 47,173
 //   The lil boy who don't eat much.
 //
-// - Moruhatusaya -> payon_in01: 174,113
+// - Moruhatusaya -> payon_in01: 5,48
 //   Juice Maker, he transform raw items into Fruit Juices.
 //
 // - Pharmacist Aziyisan -> alberta_in: 16,28
@@ -189,7 +189,7 @@ L_MENU_4:
 	close;
 }
 
-payon_in01.gat,174,113,3 script "Moruhatusaya" 86,{
+payon_in01.gat,5,48,3 script "Moruhatusaya" 86,{
 	check MOTHER_MARIENU == 2,-,L_START_0;
 	mes "[Moruhatusaya]";
 	mes "Others have come for the fruit processing. Are you one?";

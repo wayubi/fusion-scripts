@@ -21,7 +21,7 @@
 // - Inn Maid Betty -> geffen_in: 70,64
 //   Save location and heal regarding levels for some zeny.
 //
-// - Inn Maid Sun Hee -> payon_in-1: 137,173
+// - Inn Maid Sun Hee -> payon_in01: 131,62
 //   Save location and heal regarding levels for some zeny.
 //
 // - Inn Maid Suzie -> morocc_in: 147,138
@@ -677,7 +677,7 @@ L_HEAL_LV100_N:
 	close;
 }
 
-payon_in01.gat,137,173,5 script "Inn Maid" 78,{
+payon_in01.gat,131,62,5 script "Inn Maid" 78,{
       mes "[Sun Hee]";
 	mes "Welcome to Nenkaras Inn";
 	next;
@@ -689,7 +689,7 @@ L_SAVE:
       mes "[Sun Hee]";
 	mes "Location Saved.";
 	mes "I am waiting for another job to do.";
-	   save "payon_in01",132,176;
+	   save "payon_in01",132,56;
 	close;
 L_HEAL:
 	   check BaseLevel <= 15,L_HEAL_LV15,-;

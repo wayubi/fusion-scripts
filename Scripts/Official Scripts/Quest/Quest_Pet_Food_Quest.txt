@@ -1,7 +1,7 @@
 //========================================================================================
 // »» The Fusion Project ««
 // Copyright (c) 2004, Cobax Information Systems
-// http://fusion.cobax.net/
+// http://cobax.net/
 // ---------------------------------------------------------------------------------------
 //
 // Pet Food Quest - Non Player Character Locations
@@ -12,7 +12,7 @@
 // - Gon-Chan -> prontera: 116,79
 //   Liza's Peco peco.
 //
-// - Egar -> payon: 105,105
+// - Egar -> payon: 172,204
 //   A guy who can sell peco food for the Liza's Peco.
 //
 //========================================================================================
@@ -111,7 +111,7 @@ prontera.gat,116,79,4	script	"Gon-chan"	1019,{
 	close;
 }
 
-payon.gat,105,105,4	script	"Egar"	709,{
+payon.gat,172,204,4	script	"Egar"	709,{
 	check F_Pet_Food_QUEST > 0,L_CHECK_1,-;
 	mes "[Egar]";
 	mes "Can I help you?";

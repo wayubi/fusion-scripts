@@ -181,7 +181,7 @@ morocc.gat,162,97,4	script	"Novice WoE Event"	106,{
 			close;
 }
 
-payon.gat,99,114,3	script	"Novice WoE Event"	106,{
+payon.gat,165,210,3	script	"Novice WoE Event"	106,{
 	mes "[Xavier]";
 	mes "Good day!";
 	mes "I am the host of the Novice WoE Event!";

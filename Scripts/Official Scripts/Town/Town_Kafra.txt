@@ -128,6 +128,7 @@ yuno.gat,159,207,4 script "Kafra Personnel" 114,{
 		mes "Your respawn point has saved.";
 		check @Kafra_COUPON = 0,-,L_SUB_1_2;
 			mes "Thank you for using Kafra Services.";
+			emotion 15;
 			goto L_EXIT;
 	L_SUB_1_2:
 			next;
@@ -197,7 +198,7 @@ yuno.gat,159,207,4 script "Kafra Personnel" 114,{
 				set Zeny -= 1700,0;
 				set KF_PIT += 170;
 			L_SUB_3_3:
-				warp "payon",69,100;
+				warp "payon",155,205;
 		L_MENU_3_4:
 			check @Kafra_COUPON = 0,-,L_SUB_3_4;
 				check Zeny < 1800,-,L_ROOT_3_4;
@@ -288,6 +289,7 @@ yuno.gat,159,207,4 script "Kafra Personnel" 114,{
 		L_MENU_4_3:
 				mes "[Kafra Personnel]";
 				mes "Sorry you already have a cart.";
+		            emotion 4;
 				next;
 				goto L_EXIT;
 		L_SUB_4_2:
@@ -374,6 +376,7 @@ aldebaran.gat,144,118,4	script "Kafra Personnel" 117,{
 		mes "Your respawn point has saved.";
 		check @Kafra_COUPON = 0,-,L_SUB_1_2;
 			mes "Thank you for using Kafra Services.";
+			emotion 15;
 			goto L_EXIT;
 	L_SUB_1_2:
 			next;
@@ -510,6 +513,7 @@ aldebaran.gat,144,118,4	script "Kafra Personnel" 117,{
 		L_MENU_4_3:
 				mes "[Kafra Personnel]";
 				mes "Sorry you already have a cart.";
+		            emotion 4;
 				next;
 				goto L_EXIT;
 		L_SUB_4_2:
@@ -692,7 +696,8 @@ prontera.gat,146,89,6 script "Kafra Personnel" 117,{
 		mes "[Kafra Personnel]";
 		mes "Your position has been saved.";
 		check @Kafra_COUPON = 0,-,L_SUB_1_2;
-			mes "Thank you for using Kafra.";
+			mes "Thank you for using Kafra Services.";
+			emotion 15;
 			goto L_EXIT;
 	L_SUB_1_2:
 			next;
@@ -762,7 +767,7 @@ prontera.gat,146,89,6 script "Kafra Personnel" 117,{
 				set Zeny -= 1200,0;
 				set KF_PIT += 120;
 			L_SUB_3_3:
-				warp "payon",69,100;
+				warp "payon",155,205;
 		L_MENU_3_4:
 			check @Kafra_COUPON = 0,-,L_SUB_3_4;
 				check Zeny < 1200,-,L_ROOT_3_4;
@@ -853,6 +858,7 @@ prontera.gat,146,89,6 script "Kafra Personnel" 117,{
 		L_MENU_4_3:
 				mes "[Kafra Personnel]";
 				mes "Sorry you already have a cart.";
+		            emotion 4;
 				next;
 				goto L_EXIT;
 		L_SUB_4_2:
@@ -939,7 +945,8 @@ prontera.gat,282,200,2 script	"Kafra Personnel"	114,{
 		mes "[Kafra Personnel]";
 		mes "Your position has been saved.";
 		check @Kafra_COUPON = 0,-,L_SUB_1_2;
-			mes "Thank you for using Kafra.";
+			mes "Thank you for using Kafra Services.";
+			emotion 15;
 			goto L_EXIT;
 	L_SUB_1_2:
 			next;
@@ -1009,7 +1016,7 @@ prontera.gat,282,200,2 script	"Kafra Personnel"	114,{
 				set Zeny -= 1200,0;
 				set KF_PIT += 120;
 			L_SUB_3_3:
-				warp "payon",69,100;
+				warp "payon",155,205;
 		L_MENU_3_4:
 			check @Kafra_COUPON = 0,-,L_SUB_3_4;
 				check Zeny < 1200,-,L_ROOT_3_4;
@@ -1100,6 +1107,7 @@ prontera.gat,282,200,2 script	"Kafra Personnel"	114,{
 		L_MENU_4_3:
 				mes "[Kafra Personnel]";
 				mes "Sorry you already have a cart.";
+		            emotion 4;
 				next;
 				goto L_EXIT;
 		L_SUB_4_2:
@@ -1186,7 +1194,8 @@ prontera.gat,151,29,0 script "Kafra Personnel" 115,{
 		mes "[Kafra Personnel]";
 		mes "Your position has been saved.";
 		check @Kafra_COUPON = 0,-,L_SUB_1_2;
-			mes "Thank you for using Kafra.";
+			mes "Thank you for using Kafra Services.";
+			emotion 15;
 			goto L_EXIT;
 	L_SUB_1_2:
 			next;
@@ -1256,7 +1265,7 @@ prontera.gat,151,29,0 script "Kafra Personnel" 115,{
 				set Zeny -= 1200,0;
 				set KF_PIT += 120;
 			L_SUB_3_3:
-				warp "payon",69,100;
+				warp "payon",155,205;
 		L_MENU_3_4:
 			check @Kafra_COUPON = 0,-,L_SUB_3_4;
 				check Zeny < 1200,-,L_ROOT_3_4;
@@ -1347,6 +1356,7 @@ prontera.gat,151,29,0 script "Kafra Personnel" 115,{
 		L_MENU_4_3:
 				mes "[Kafra Personnel]";
 				mes "Sorry you already have a cart.";
+		            emotion 4;
 				next;
 				goto L_EXIT;
 		L_SUB_4_2:
@@ -1433,7 +1443,8 @@ prontera.gat,29,207,6	script	"Kafra Personnel"	113,{
 		mes "[Kafra Personnel]";
 		mes "Your position has been saved.";
 		check @Kafra_COUPON = 0,-,L_SUB_1_2;
-			mes "Thank you for using Kafra.";
+			mes "Thank you for using Kafra Services.";
+			emotion 15;
 			goto L_EXIT;
 	L_SUB_1_2:
 			next;
@@ -1503,7 +1514,7 @@ prontera.gat,29,207,6	script	"Kafra Personnel"	113,{
 				set Zeny -= 1200,0;
 				set KF_PIT += 120;
 			L_SUB_3_3:
-				warp "payon",69,100;
+				warp "payon",155,205;
 		L_MENU_3_4:
 			check @Kafra_COUPON = 0,-,L_SUB_3_4;
 				check Zeny < 1200,-,L_ROOT_3_4;
@@ -1594,6 +1605,7 @@ prontera.gat,29,207,6	script	"Kafra Personnel"	113,{
 		L_MENU_4_3:
 				mes "[Kafra Personnel]";
 				mes "Sorry you already have a cart.";
+		            emotion 4;
 				next;
 				goto L_EXIT;
 		L_SUB_4_2:
@@ -1675,7 +1687,8 @@ prontera.gat,154,329,4 script "Kafra Personnel" 112,{
 		mes "[Kafra Personnel]";
 		mes "Your position has been saved.";
 		check @Kafra_COUPON = 0,-,L_SUB_1_2;
-			mes "Thank you for using Kafra.";
+			mes "Thank you for using Kafra Services.";
+			emotion 15;
 			goto L_EXIT;
 	L_SUB_1_2:
 			next;
@@ -1745,7 +1758,7 @@ prontera.gat,154,329,4 script "Kafra Personnel" 112,{
 				set Zeny -= 1200,0;
 				set KF_PIT += 120;
 			L_SUB_3_3:
-				warp "payon",69,100;
+				warp "payon",155,205;
 		L_MENU_3_4:
 			check @Kafra_COUPON = 0,-,L_SUB_3_4;
 				check Zeny < 1200,-,L_ROOT_3_4;
@@ -1836,6 +1849,7 @@ prontera.gat,154,329,4 script "Kafra Personnel" 112,{
 		L_MENU_4_3:
 				mes "[Kafra Personnel]";
 				mes "Sorry you already have a cart.";
+		            emotion 4;
 				next;
 				goto L_EXIT;
 		L_SUB_4_2:
@@ -1889,7 +1903,8 @@ prt_fild05.gat,290,224,4	script	"Kafra Personnel"	114,{
 		mes "[Kafra Personnel]";
 		mes "Your position has been saved.";
 		check @Kafra_COUPON = 0,-,L_SUB_1_2;
-			mes "Thank you for using Kafra.";
+			mes "Thank you for using Kafra Services.";
+			emotion 15;
 			goto L_EXIT;
 	L_SUB_1_2:
 			next;
@@ -1967,6 +1982,7 @@ prt_fild05.gat,290,224,4	script	"Kafra Personnel"	114,{
 		L_MENU_4_3:
 				mes "[Kafra Personnel]";
 				mes "Sorry you already have a cart.";
+		            emotion 4;
 				next;
 				goto L_EXIT;
 		L_SUB_4_2:
@@ -2025,7 +2041,8 @@ izlude.gat,136,88,4	script	"Kafra Personnel"	115,{
 		mes "[Kafra Personnel]";
 		mes "Your position has been saved.";
 		check @Kafra_COUPON = 0,-,L_SUB_1_2;
-			mes "Thank you for using Kafra.";
+			mes "Thank you for using Kafra Services.";
+			emotion 15;
 			goto L_EXIT;
 	L_SUB_1_2:
 			next;
@@ -2083,7 +2100,7 @@ izlude.gat,136,88,4	script	"Kafra Personnel"	115,{
 				set Zeny -= 1200,0;
 				set KF_PIT += 120;
 			L_SUB_3_2:
-				warp "payon",69,100;
+				warp "payon",155,205;
 		L_MENU_3_3:
 			check @Kafra_COUPON = 0,-,L_SUB_3_3;
 				check Zeny < 1200,-,L_ROOT_3_3;
@@ -2162,6 +2179,7 @@ izlude.gat,136,88,4	script	"Kafra Personnel"	115,{
 		L_MENU_4_3:
 				mes "[Kafra Personnel]";
 				mes "Sorry you already have a cart.";
+		            emotion 4;
 				next;
 				goto L_EXIT;
 		L_SUB_4_2:
@@ -2326,7 +2344,8 @@ Kafra:
 //		mes "[Kafra Personnel]";
 //		mes "Your position has been saved.";
 //		check @Kafra_COUPON = 0,-,L_SUB_1_2;
-//			mes "Thank you for using Kafra.";
+//			mes "Thank you for using Kafra Services.";
+//			emotion 15;
 //			goto L_EXIT;
 //	L_SUB_1_2:
 //			next;
@@ -2404,6 +2423,7 @@ Kafra:
 		L_MENU_4_3:
 				mes "[Kafra Personnel]";
 				mes "Sorry you already have a cart.";
+		            emotion 4;
 				next;
 				goto L_EXIT;
 		L_SUB_4_2:
@@ -2458,7 +2478,8 @@ geffen.gat,120,62,2	script	"Kafra Personnel"	115,{
 		mes "[Kafra Personnel]";
 		mes "Your position has been saved.";
 		check @Kafra_COUPON = 0,-,L_SUB_1_2;
-			mes "Thank you for using Kafra.";
+			mes "Thank you for using Kafra Services.";
+			emotion 15;
 			goto L_EXIT;
 	L_SUB_1_2:
 			next;
@@ -2595,6 +2616,7 @@ geffen.gat,120,62,2	script	"Kafra Personnel"	115,{
 		L_MENU_4_3:
 				mes "[Kafra Personnel]";
 				mes "Sorry you already have a cart.";
+		            emotion 4;
 				next;
 				goto L_EXIT;
 		L_SUB_4_2:
@@ -2677,7 +2699,8 @@ geffen.gat,203,123,4	script	"Kafra Personnel"	114,{
 		mes "[Kafra Personnel]";
 		mes "Your position has been saved.";
 		check @Kafra_COUPON = 0,-,L_SUB_1_2;
-			mes "Thank you for using Kafra.";
+			mes "Thank you for using Kafra Services.";
+			emotion 15;
 			goto L_EXIT;
 	L_SUB_1_2:
 			next;
@@ -2814,6 +2837,7 @@ geffen.gat,203,123,4	script	"Kafra Personnel"	114,{
 		L_MENU_4_3:
 				mes "[Kafra Personnel]";
 				mes "Sorry you already have a cart.";
+		            emotion 4;
 				next;
 				goto L_EXIT;
 		L_SUB_4_2:
@@ -2891,7 +2915,8 @@ morocc.gat,156,97,4	script	"Kafra Personnel"	113,{
 		mes "[Kafra Personnel]";
 		mes "Your position has been saved.";
 		check @Kafra_COUPON = 0,-,L_SUB_1_2;
-			mes "Thank you for using Kafra.";
+			mes "Thank you for using Kafra Services.";
+			emotion 15;
 			goto L_EXIT;
 	L_SUB_1_2:
 			next;
@@ -2961,7 +2986,7 @@ morocc.gat,156,97,4	script	"Kafra Personnel"	113,{
 				set Zeny -= 1200,0;
 				set KF_PIT += 120;
 			L_SUB_3_2:
-				warp "payon",69,100;
+				warp "payon",155,205;
 		L_MENU_3_3:
 			check @Kafra_COUPON = 0,-,L_SUB_3_3;
 				check Zeny < 1800,-,L_ROOT_3_3;
@@ -3040,6 +3065,7 @@ morocc.gat,156,97,4	script	"Kafra Personnel"	113,{
 		L_MENU_4_3:
 				mes "[Kafra Personnel]";
 				mes "Sorry you already have a cart.";
+		            emotion 4;
 				next;
 				goto L_EXIT;
 		L_SUB_4_2:
@@ -3122,7 +3148,8 @@ morocc.gat,160,258,4	script	"Kafra Personnel"	114,{
 		mes "[Kafra Personnel]";
 		mes "Your position has been saved.";
 		check @Kafra_COUPON = 0,-,L_SUB_1_2;
-			mes "Thank you for using Kafra.";
+			mes "Thank you for using Kafra Services.";
+			emotion 15;
 			goto L_EXIT;
 	L_SUB_1_2:
 			next;
@@ -3192,7 +3219,7 @@ morocc.gat,160,258,4	script	"Kafra Personnel"	114,{
 				set Zeny -= 1200,0;
 				set KF_PIT += 120;
 			L_SUB_3_2:
-				warp "payon",69,100;
+				warp "payon",155,205;
 		L_MENU_3_3:
 			check @Kafra_COUPON = 0,-,L_SUB_3_3;
 				check Zeny < 1800,-,L_ROOT_3_3;
@@ -3271,6 +3298,7 @@ morocc.gat,160,258,4	script	"Kafra Personnel"	114,{
 		L_MENU_4_3:
 				mes "[Kafra Personnel]";
 				mes "Sorry you already have a cart.";
+		            emotion 4;
 				next;
 				goto L_EXIT;
 		L_SUB_4_2:
@@ -3349,7 +3377,8 @@ moc_ruins.gat,59,157,4	script	"Kafra Personnel"	117,{
 //		mes "[Kafra Personnel]";
 //		mes "Your position has been saved.";
 //		check @Kafra_COUPON = 0,-,L_SUB_1_2;
-//			mes "Thank you for using Kafra.";
+//			mes "Thank you for using Kafra Services.";
+//			emotion 15;
 //			goto L_EXIT;
 //	L_SUB_1_2:
 //			next;
@@ -3427,6 +3456,7 @@ moc_ruins.gat,59,157,4	script	"Kafra Personnel"	117,{
 		L_MENU_4_3:
 				mes "[Kafra Personnel]";
 				mes "Sorry you already have a cart.";
+		            emotion 4;
 				next;
 				goto L_EXIT;
 		L_SUB_4_2:
@@ -3485,7 +3515,8 @@ alberta.gat,28,229,0	script	"Kafra Personnel"	116,{
 		mes "[Kafra Personnel]";
 		mes "Your position has been saved.";
 		check @Kafra_COUPON = 0,-,L_SUB_1_2;
-			mes "Thank you for using Kafra.";
+			mes "Thank you for using Kafra Services.";
+			emotion 15;
 			goto L_EXIT;
 	L_SUB_1_2:
 			next;
@@ -3531,7 +3562,7 @@ alberta.gat,28,229,0	script	"Kafra Personnel"	116,{
 				set Zeny -= 1200,0;
 				set KF_PIT += 120;
 			L_SUB_3_1:
-				warp "payon",69,100;
+				warp "payon",155,205;
 		L_MENU_3_2:
 			check @Kafra_COUPON = 0,-,L_SUB_3_2;
 				check Zeny < 1800,-,L_ROOT_3_2;
@@ -3610,6 +3641,7 @@ alberta.gat,28,229,0	script	"Kafra Personnel"	116,{
 		L_MENU_4_3:
 				mes "[Kafra Personnel]";
 				mes "Sorry you already have a cart.";
+		            emotion 4;
 				next;
 				goto L_EXIT;
 		L_SUB_4_2:
@@ -3687,7 +3719,8 @@ alberta.gat,113,60,6	script	"Kafra Personnel"	112,{
 		mes "[Kafra Personnel]";
 		mes "Your position has been saved.";
 		check @Kafra_COUPON = 0,-,L_SUB_1_2;
-			mes "Thank you for using Kafra.";
+			mes "Thank you for using Kafra Services.";
+			emotion 15;
 			goto L_EXIT;
 	L_SUB_1_2:
 			next;
@@ -3733,7 +3766,7 @@ alberta.gat,113,60,6	script	"Kafra Personnel"	112,{
 				set Zeny -= 1200,0;
 				set KF_PIT += 120;
 			L_SUB_3_1:
-				warp "payon",69,100;
+				warp "payon",155,205;
 		L_MENU_3_2:
 			check @Kafra_COUPON = 0,-,L_SUB_3_2;
 				check Zeny < 1800,-,L_ROOT_3_2;
@@ -3812,6 +3845,7 @@ alberta.gat,113,60,6	script	"Kafra Personnel"	112,{
 		L_MENU_4_3:
 				mes "[Kafra Personnel]";
 				mes "Sorry you already have a cart.";
+		            emotion 4;
 				next;
 				goto L_EXIT;
 		L_SUB_4_2:
@@ -3890,7 +3924,8 @@ alb2trea.gat,59,69,6	script	"Kafra Personnel"	117,{
 //		mes "[Kafra Personnel]";
 //		mes "Your position has been saved.";
 //		check @Kafra_COUPON = 0,-,L_SUB_1_2;
-//			mes "Thank you for using Kafra.";
+//			mes "Thank you for using Kafra Services.";
+//			emotion 15;
 //			goto L_EXIT;
 //	L_SUB_1_2:
 //			next;
@@ -3968,6 +4003,7 @@ alb2trea.gat,59,69,6	script	"Kafra Personnel"	117,{
 		L_MENU_4_3:
 				mes "[Kafra Personnel]";
 				mes "Sorry you already have a cart.";
+		            emotion 4;
 				next;
 				goto L_EXIT;
 		L_SUB_4_2:
@@ -4002,7 +4038,7 @@ alb2trea.gat,59,69,6	script	"Kafra Personnel"	117,{
 		close;
 }
 
-payon.gat,99,116,4	script	"Kafra Personnel"	113,{
+payon.gat,165,212,4	script	"Kafra Personnel"	113,{
 	set @Kafra_COUPON = 0;
 	cutin "Kafra_05",2;
 	mes "[Kafra Personnel]";
@@ -4021,12 +4057,13 @@ payon.gat,99,116,4	script	"Kafra Personnel"	113,{
 			save "pay_fild01",342,348;
 			goto L_SUB_1_1;
 	L_MENU_1_3:
-			save "payon",69,100;
+			save "payon",155,205;
 	L_SUB_1_1:
 		mes "[Kafra Personnel]";
 		mes "Your position has been saved.";
 		check @Kafra_COUPON = 0,-,L_SUB_1_2;
-			mes "Thank you for using Kafra.";
+			mes "Thank you for using Kafra Services.";
+			emotion 15;
 			goto L_EXIT;
 	L_SUB_1_2:
 			next;
@@ -4151,6 +4188,7 @@ payon.gat,99,116,4	script	"Kafra Personnel"	113,{
 		L_MENU_4_3:
 				mes "[Kafra Personnel]";
 				mes "Sorry you already have a cart.";
+		            emotion 4;
 				next;
 				goto L_EXIT;
 		L_SUB_4_2:
@@ -4205,7 +4243,8 @@ pay_arche.gat,55,123,4	script	"Kafra Personnel"	114,{
 //		mes "[Kafra Personnel]";
 //		mes "Your position has been saved.";
 //		check @Kafra_COUPON = 0,-,L_SUB_1_2;
-//			mes "Thank you for using Kafra.";
+//			mes "Thank you for using Kafra Services.";
+//			emotion 15;
 //			goto L_EXIT;
 //	L_SUB_1_2:
 //			next;
@@ -4283,6 +4322,7 @@ pay_arche.gat,55,123,4	script	"Kafra Personnel"	114,{
 		L_MENU_4_3:
 				mes "[Kafra Personnel]";
 				mes "Sorry you already have a cart.";
+		            emotion 4;
 				next;
 				goto L_EXIT;
 		L_SUB_4_2:
@@ -4337,7 +4377,8 @@ cmd_in02.gat,146,180,4	script	"Kafra Personnel"	721,{
 		mes "[Kafra Personnel]";
 		mes "Your position has been saved.";
 		check @Kafra_COUPON = 0,-,L_SUB_1_2;
-			mes "Thank you for using Kafra.";
+			mes "Thank you for using Kafra Services.";
+			emotion 15;
 			goto L_EXIT;
 	L_SUB_1_2:
 			next;
@@ -4450,6 +4491,7 @@ cmd_in02.gat,146,180,4	script	"Kafra Personnel"	721,{
 		L_MENU_4_3:
 				mes "[Kafra Personnel]";
 				mes "Sorry you already have a cart.";
+		            emotion 4;
 				next;
 				goto L_EXIT;
 		L_SUB_4_2:
@@ -4543,7 +4585,8 @@ cmd_fild07.gat,136,134,4	script	"Kafra Personnel"	721,{
 		mes "[Kafra Personnel]";
 		mes "Your position has been saved.";
 		check @Kafra_COUPON = 0,-,L_SUB_1_2;
-			mes "Thank you for using Kafra.";
+			mes "Thank you for using Kafra Services.";
+			emotion 15;
 			goto L_EXIT;
 	L_SUB_1_2:
 			next;
@@ -4656,6 +4699,7 @@ cmd_fild07.gat,136,134,4	script	"Kafra Personnel"	721,{
 		L_MENU_4_3:
 				mes "[Kafra Personnel]";
 				mes "Sorry you already have a cart.";
+		            emotion 4;
 				next;
 				goto L_EXIT;
 		L_SUB_4_2:
@@ -4744,7 +4788,8 @@ comodo.gat,195,150,4	script	"Kafra Personnel"	721,{
 		mes "[Kafra Personnel]";
 		mes "Your position has been saved.";
 		check @Kafra_COUPON = 0,-,L_SUB_1_2;
-			mes "Thank you for using Kafra.";
+			mes "Thank you for using Kafra Services.";
+			emotion 15;
 			goto L_EXIT;
 	L_SUB_1_2:
 			next;
@@ -4857,6 +4902,7 @@ comodo.gat,195,150,4	script	"Kafra Personnel"	721,{
 		L_MENU_4_3:
 				mes "[Kafra Personnel]";
 				mes "Sorry you already have a cart.";
+		            emotion 4;
 				next;
 				goto L_EXIT;
 		L_SUB_4_2:
@@ -4946,7 +4992,8 @@ gef_fild10.gat,72,336,6	script	"Kafra Personnel"	114,{
 //		mes "[Kafra Personnel]";
 //		mes "Your position has been saved.";
 //		check @Kafra_COUPON = 0,-,L_SUB_1_2;
-//			mes "Thank you for using Kafra.";
+//			mes "Thank you for using Kafra Services.";
+//			emotion 15;
 //			goto L_EXIT;
 //	L_SUB_1_2:
 //			next;
@@ -5083,6 +5130,7 @@ gef_fild10.gat,72,336,6	script	"Kafra Personnel"	114,{
 		L_MENU_4_3:
 				mes "[Kafra Personnel]";
 				mes "Sorry you already have a cart.";
+		            emotion 4;
 				next;
 				goto L_EXIT;
 		L_SUB_4_2:
@@ -5138,6 +5186,7 @@ yuno.gat,151,187,4	script	Kafra Personnel	115,{
 		mes "Your respawn point has saved.";
 		check @Kafra_COUPON = 0,-,L_SUB_1_2;
 			mes "Thank you for using Kafra Services.";
+			emotion 15;
 			goto L_EXIT;
 	L_SUB_1_2:
 			next;
@@ -5207,7 +5256,7 @@ yuno.gat,151,187,4	script	Kafra Personnel	115,{
 				set Zeny -= 1700,0;
 				set KF_PIT += 170;
 			L_SUB_3_3:
-				warp "payon",69,100;
+				warp "payon",155,205;
 		L_MENU_3_4:
 			check @Kafra_COUPON = 0,-,L_SUB_3_4;
 				check Zeny < 1800,-,L_ROOT_3_4;
@@ -5298,6 +5347,7 @@ yuno.gat,151,187,4	script	Kafra Personnel	115,{
 		L_MENU_4_3:
 				mes "[Kafra Personnel]";
 				mes "Sorry you already have a cart.";
+		            emotion 4;
 				next;
 				goto L_EXIT;
 		L_SUB_4_2:
@@ -5383,6 +5433,7 @@ yuno.gat,328,108,6	script	"Kafra Personnel"	117,{
 		mes "Your respawn point has saved.";
 		check @Kafra_COUPON = 0,-,L_SUB_1_2;
 			mes "Thank you for using Kafra Services.";
+			emotion 15;
 			goto L_EXIT;
 	L_SUB_1_2:
 			next;
@@ -5452,7 +5503,7 @@ yuno.gat,328,108,6	script	"Kafra Personnel"	117,{
 				set Zeny -= 1700,0;
 				set KF_PIT += 170;
 			L_SUB_3_3:
-				warp "payon",69,100;
+				warp "payon",155,205;
 		L_MENU_3_4:
 			check @Kafra_COUPON = 0,-,L_SUB_3_4;
 				check Zeny < 1800,-,L_ROOT_3_4;
@@ -5543,6 +5594,7 @@ yuno.gat,328,108,6	script	"Kafra Personnel"	117,{
 		L_MENU_4_3:
 				mes "[Kafra Personnel]";
 				mes "Sorry you already have a cart.";
+		            emotion 4;
 				next;
 				goto L_EXIT;
 		L_SUB_4_2:
@@ -5628,6 +5680,7 @@ yuno.gat,278,221,6	script	"Kafra Personnel"	117,{
 		mes "Your respawn point has saved.";
 		check @Kafra_COUPON = 0,-,L_SUB_1_2;
 			mes "Thank you for using Kafra Services.";
+			emotion 15;
 			goto L_EXIT;
 	L_SUB_1_2:
 			next;
@@ -5697,7 +5750,7 @@ yuno.gat,278,221,6	script	"Kafra Personnel"	117,{
 				set Zeny -= 1700,0;
 				set KF_PIT += 170;
 			L_SUB_3_3:
-				warp "payon",69,100;
+				warp "payon",155,205;
 		L_MENU_3_4:
 			check @Kafra_COUPON = 0,-,L_SUB_3_4;
 				check Zeny < 1800,-,L_ROOT_3_4;
@@ -5788,6 +5841,7 @@ yuno.gat,278,221,6	script	"Kafra Personnel"	117,{
 		L_MENU_4_3:
 				mes "[Kafra Personnel]";
 				mes "Sorry you already have a cart.";
+		            emotion 4;
 				next;
 				goto L_EXIT;
 		L_SUB_4_2:
@@ -5941,6 +5995,7 @@ mjolnir_02.gat,82,362,6	script	"Kafra Personnel"	116,{
 //		L_MENU_4_3:
 //				mes "[Kafra Personnel]";
 //				mes "Sorry you already have a cart.";
+//		            emotion 4;
 //				next;
 //				goto L_EXIT;
 //		L_SUB_4_2:
@@ -6001,7 +6056,8 @@ amatsu.gat,102,149,4 script "Kafra Personnel" 116,{
 		mes "[Kafra Personnel]";
 		mes "Your position has been saved.";
 		check @Kafra_COUPON = 0,-,L_SUB_1_2;
-			mes "Thank you for using Kafra.";
+			mes "Thank you for using Kafra Services.";
+			emotion 15;
 			goto L_EXIT;
 	L_SUB_1_2:
 			next;
@@ -6079,6 +6135,7 @@ amatsu.gat,102,149,4 script "Kafra Personnel" 116,{
 		L_MENU_4_3:
 				mes "[Kafra Personnel]";
 				mes "Sorry you already have a cart.";
+		            emotion 4;
 				next;
 				goto L_EXIT;
 		L_SUB_4_2:
@@ -6135,7 +6192,8 @@ gonryun.gat,159,122,4 script "Kafra Personnel" 116,{
 		mes "[Kafra Personnel]";
 		mes "Your position has been saved.";
 		check @Kafra_COUPON = 0,-,L_SUB_1_2;
-			mes "Thank you for using Kafra.";
+			mes "Thank you for using Kafra Services.";
+			emotion 15;
 			goto L_EXIT;
 	L_SUB_1_2:
 			next;
@@ -6213,6 +6271,7 @@ gonryun.gat,159,122,4 script "Kafra Personnel" 116,{
 		L_MENU_4_3:
 				mes "[Kafra Personnel]";
 				mes "Sorry you already have a cart.";
+		            emotion 4;
 				next;
 				goto L_EXIT;
 		L_SUB_4_2:
@@ -6269,7 +6328,8 @@ umbala.gat,87,160,5 script "Kafra Personnel" 721,{
 		mes "[Kafra Personnel]";
 		mes "Your position has been saved.";
 		check @Kafra_COUPON = 0,-,L_SUB_1_2;
-			mes "Thank you for using Kafra.";
+			mes "Thank you for using Kafra Services.";
+			emotion 15;
 			goto L_EXIT;
 	L_SUB_1_2:
 			next;
@@ -6354,7 +6414,8 @@ louyang.gat,210,104,4 script	"Kafra Personnel"	116,{
 		mes "[Kafra Personnel]";
 		mes "Your position has been saved.";
 		check @Kafra_COUPON = 0,-,L_SUB_1_2;
-			mes "Thank you for using Kafra.";
+			mes "Thank you for using Kafra Services.";
+			emotion 15;
 			goto L_EXIT;
 	L_SUB_1_2:
 			next;
@@ -6432,6 +6493,7 @@ louyang.gat,210,104,4 script	"Kafra Personnel"	116,{
 		L_MENU_4_3:
 				mes "[Kafra Personnel]";
 				mes "Sorry you already have a cart.";
+		            emotion 4;
 				next;
 				goto L_EXIT;
 		L_SUB_4_2:

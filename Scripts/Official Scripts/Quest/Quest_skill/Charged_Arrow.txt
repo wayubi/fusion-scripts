@@ -8,11 +8,11 @@
 //    translated by Victor Huang
 //    fixed and coded by nestor_zulueta
 //
-// - Deothen -> payon.dwm: 30,94
+// - Deothen -> payon.dwm: 158,96
 //   Bring items to obtain skill. Applicable jobs are Archer, Dancer and Bard.
 //========================================================================================
 
-payon.gat,30,94,3   script   Deothen   88,{ 
+payon.gat,158,96,5   script   "Deothen"   88,{ 
 	check Job = 3,Lcheck1,-;
 	check Job = 11,LStart,-;
 	check Job = 19,LStart,-;

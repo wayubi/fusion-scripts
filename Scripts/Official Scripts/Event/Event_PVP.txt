@@ -1,7 +1,7 @@
 //========================================================================================
 // »» The Fusion Project ««
 // Copyright (c) 2004, Cobax Information Systems
-// http://fusion.cobax.net/
+// http://cobax.net/
 // ---------------------------------------------------------------------------------------
 //
 // Event PVP - Non Player Character Locations
@@ -62,10 +62,10 @@
 // - PVP Doorman -> prt_in: 52,140
 //   Warps you to one of the waitingrooms.
 //
-// - PVP Guide -> payon_in01: 172,109
+// - PVP Guide -> payon_in01: 10,54
 //   Gives you PVP Arena information.
 //
-// - PVP Doorman -> payon_in01: 176,107
+// - PVP Doorman -> payon_in01: 6,55
 //   Warps you to one of the waitingrooms.
 //
 // - PVP Guide -> geffen_in: 67,67
@@ -3006,7 +3006,7 @@ pcancel:
 	close;
 }
 
-payon_in01.gat,172,109,5	script	"PVP Guide"	84,{
+payon_in01.gat,10,54,5	script	"PVP Guide"	84,{
 	mes "[PVP Guide]";
 	mes "I will guide you through PVP Mode!";
 	mes "If you have any question about"; 
@@ -3099,7 +3099,7 @@ pvpcancel:
 	close;
 }
 
-payon_in01.gat,176,107,5	script	"PVP Doorman"	83,{
+payon_in01.gat,6,55,5	script	"PVP Doorman"	83,{
 	mes "[PVP Doorman]";
 	mes "I am the PVP waiting room warper.";
 	mes "Please ask my friend 'PVP Guide'";

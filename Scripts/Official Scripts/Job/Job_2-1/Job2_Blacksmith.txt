@@ -29,7 +29,7 @@
 // - Bismarck -> comodo: 158,342
 //   Receives package
 //
-// - Tilpitz -> payon: 151,39
+// - Tilpitz -> payon: 71,62
 //   Receives package
 //
 //========================================================================================
@@ -1313,7 +1313,7 @@ done:
 	close
 }
 
-payon.gat,151,39,4	script	"Tilpitz"	59,{
+payon.gat,71,62,4	script	"Tilpitz"	59,{
 	check job_black = 12,here,-;
 	check job_black = 14,done,-;
 asking:

@@ -1,12 +1,12 @@
 //========================================================================================
 // »» The Fusion Project ««
 // Copyright (c) 2004, Cobax Information Systems
-// http://fusion.cobax.net/
+// http://cobax.net/
 // ---------------------------------------------------------------------------------------
 //
 // Item Making Quests - Non Player Character Locations
 //
-// - Granny -> payon_in01: 103,111
+// - Granny -> payon_in03: 8,95
 //   Give information and make Pretend Murdered Quest.
 //
 // - Blacksmith -> geffen_in: 144,166
@@ -33,7 +33,7 @@
 // - Grampa -> alberta_in: 29,142
 //   Give information and make Boy's Cap Quest.
 //
-// - Mystic Lady -> payon_in01: 103,79
+// - Mystic Lady -> payon_in03: 13,95
 //   Give information and make Ear Muff Quest.
 //
 // - Trader -> aldeba_in: 152,166
@@ -42,7 +42,7 @@
 // - Tempestra -> alberta: 135,79
 //   Give information and make Solar God Hat, Sunday Hat, Wizardry Hat and Magic Hat
 //
-// - Young Man -> payon_in01: 122,41
+// - Young Man -> payon_in01: 5,132
 //   Give information and make Angel Helm and Deviruchi Hat
 //
 // - Zic -> alberta: 120,53
@@ -62,7 +62,7 @@
 //
 //========================================================================================
 
-payon_in01.gat,103,111,4	script	"Granny"	103,{
+payon_in03.gat,8,95,4	script	"Granny"	103,{
 	checkitem 1049,4,-,L_START_1;
 		mes "[Granny]";
 		mes "I wish I could make clothing for my grandchildren in this festive season..";
@@ -153,7 +153,7 @@ geffen_in.gat,144,166,4	script	"Blacksmith"	63,{
 		close;
 }
 
-payon_in01.gat,103,79,4	script	"Mystic Lady"	76,{
+payon_in03.gat,31,95,4	script	"Mystic Lady"	76,{
 	mes "[Mystic Lady]";
 	mes ". . . . . .";
 	mes "My family has produced and sold the special Winter product  ^3355FF'Ear Muffs'^000000 for many years..";
@@ -769,7 +769,7 @@ morocc_in.gat,76,163,4	script	"Marius"	64,{
 		mes "Come on!! I'll beat your ass!!!";
 		close;
 }
-payon_in01.gat,122,41,4	script	"Young Man"	89,{
+payon_in01.gat,5,132,4	script	"Young Man"	89,{
 	mes "[Young Man]";
 	mes "......What is it?";
 	next;
