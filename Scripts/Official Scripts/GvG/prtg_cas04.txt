@@ -6,7 +6,7 @@
 //
 // Prontera Guild Castle - Non Player Character Locations
 //
-// - Flag -> prt_gld: x,y
+// - Skoegul -> prt_gld: x,y
 //   Information about guild base ownerships
 //
 // - Kafra Service -> prtg_cas04: 258,247
@@ -23,7 +23,7 @@
 //
 //========================================================================================
 
-prt_gld.gat,120,243,6	script	"Flag"	722,{
+prt_gld.gat,120,243,6	script	"Skoegul"	722,{
 	scriptlabel prt_gldF04;
 	guildreg "prtg_cas04";
 	check guildid == 0,-,L_START_1;
@@ -52,17 +52,17 @@ L_START_1:
 	mes "    honor yourself.";
 	close;
 }
-prt_gld.gat,120,236,6	script	"Flag"	722,{
+prt_gld.gat,120,236,6	script	"Skoegul"	722,{
 	script prt_gldF04;
 }
-prt_gld.gat,122,243,6	script	"Flag"	722,{
+prt_gld.gat,122,243,6	script	"Skoegul"	722,{
 	script prt_gldF04;
 }
-prt_gld.gat,122,236,6	script	"Flag"	722,{
+prt_gld.gat,122,236,6	script	"Skoegul"	722,{
 	script prt_gldF04;
 }
 
-prtg_cas04.gat,82,29,4	script	"Flag"	722,{
+prtg_cas04.gat,82,29,4	script	"Skoegul"	722,{
 	scriptlabel prtg_casF04;
 	guildreg "prtg_cas04";
 	check guildid == 0,-,L_START_1;
@@ -91,31 +91,31 @@ L_START_1:
 	mes "    honor yourself.";
 	close;
 }
-prtg_cas04.gat,75,29,4	script	"Flag"	722,{
+prtg_cas04.gat,75,29,4	script	"Skoegul"	722,{
 	script prtg_casF04;
 }
-prtg_cas04.gat,75,27,4	script	"Flag"	722,{
+prtg_cas04.gat,75,27,4	script	"Skoegul"	722,{
 	script prtg_casF04;
 }
-prtg_cas04.gat,82,27,4	script	"Flag"	722,{
+prtg_cas04.gat,82,27,4	script	"Skoegul"	722,{
 	script prtg_casF04;
 }
-prtg_cas04.gat,59,29,4	script	"Flag"	722,{
+prtg_cas04.gat,59,29,4	script	"Skoegul"	722,{
 	script prtg_casF04;
 }
-prtg_cas04.gat,67,29,4	script	"Flag"	722,{
+prtg_cas04.gat,67,29,4	script	"Skoegul"	722,{
 	script prtg_casF04;
 }
-prtg_cas04.gat,258,25,4	script	"Flag"	722,{
+prtg_cas04.gat,258,25,4	script	"Skoegul"	722,{
 	script prtg_casF04;
 }
-prtg_cas04.gat,258,20,4	script	"Flag"	722,{
+prtg_cas04.gat,258,20,4	script	"Skoegul"	722,{
 	script prtg_casF04;
 }
-prtg_cas04.gat,263,20,4	script	"Flag"	722,{
+prtg_cas04.gat,263,20,4	script	"Skoegul"	722,{
 	script prtg_casF04;
 }
-prtg_cas04.gat,263,27,4	script	"Flag"	722,{
+prtg_cas04.gat,263,27,4	script	"Skoegul"	722,{
 	script prtg_casF04;
 }
 

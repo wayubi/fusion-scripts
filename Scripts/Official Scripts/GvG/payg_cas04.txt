@@ -6,7 +6,7 @@
 //
 // Payon Guild Castle - Non Player Character Locations
 //
-// - Flag -> pay_gld: x,y
+// - Scarlet Palace -> pay_gld: x,y
 //   Information about guild base ownerships
 //
 // - Kafra Service -> payg_cas04: 40,235
@@ -23,7 +23,7 @@
 //
 //========================================================================================
 
-pay_gld.gat,137,160,0	script	"Flag"	722,{
+pay_gld.gat,137,160,0	script	"Scarlet Palace"	722,{
 	scriptlabel pay_gldF04;
 	guildreg "payg_cas05";
 	check guildid == 0,-,L_START_1;
@@ -52,17 +52,17 @@ L_START_1:
 	mes "    honor yourself.";
 	close;
 }
-pay_gld.gat,143,160,0	script	"Flag"	722,{
+pay_gld.gat,143,160,0	script	"Scarlet Palace"	722,{
 	script pay_gldF04;
 }
-pay_gld.gat,133,151,2	script	"Flag"	722,{
+pay_gld.gat,133,151,2	script	"Scarlet Palace"	722,{
 	script pay_gldF04;
 }
-pay_gld.gat,153,166,1	script	"Flag"	722,{
+pay_gld.gat,153,166,1	script	"Scarlet Palace"	722,{
 	script pay_gldF04;
 }
 
-payg_cas04.gat,255,259,0	script	"Flag"	722,{
+payg_cas04.gat,255,259,0	script	"Scarlet Palace"	722,{
 	scriptlabel payg_casF04;
 	guildreg "payg_cas05";
 	check guildid == 0,-,L_START_1;
@@ -91,19 +91,19 @@ L_START_1:
 	mes "    honor yourself.";
 	close;
 }
-payg_cas04.gat,248,259,0	script	"Flag"	722,{
+payg_cas04.gat,248,259,0	script	"Scarlet Palace"	722,{
 	script payg_casF04;
 }
-payg_cas04.gat,248,168,6	script	"Flag"	722,{
+payg_cas04.gat,248,168,6	script	"Scarlet Palace"	722,{
 	script payg_casF04;
 }
-payg_cas04.gat,248,160,6	script	"Flag"	722,{
+payg_cas04.gat,248,160,6	script	"Scarlet Palace"	722,{
 	script payg_casF04;
 }
-payg_cas04.gat,232,181,4	script	"Flag"	722,{
+payg_cas04.gat,232,181,4	script	"Scarlet Palace"	722,{
 	script payg_casF04;
 }
-payg_cas04.gat,239,181,4	script	"Flag"	722,{
+payg_cas04.gat,239,181,4	script	"Scarlet Palace"	722,{
 	script payg_casF04;
 }
 

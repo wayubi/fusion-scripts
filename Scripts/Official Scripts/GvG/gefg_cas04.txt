@@ -6,7 +6,7 @@
 //
 // Geffen Guild Castle - Non Player Character Locations
 //
-// - Flag -> gef_fild13: x,y
+// - Bergel -> gef_fild13: x,y
 //   Information about guild base ownerships
 //
 // - Kafra Service -> gefg_cas04: 59,70
@@ -23,7 +23,7 @@
 //
 //========================================================================================
 
-gef_fild13.gat,190,203,3	script	"Flag"	722,{
+gef_fild13.gat,190,203,3	script	"Bergel"	722,{
 	scriptlabel gef_fild13F04;
 	guildreg "gefg_cas04";
 	check guildid == 0,-,L_START_1;
@@ -52,11 +52,11 @@ L_START_1:
 	mes "    honor yourself.";
 	close;
 }
-gef_fild13.gat,199,274,3	script	"Flag"	722,{
+gef_fild13.gat,199,274,3	script	"Bergel"	722,{
 	script gef_fild13F04;
 }
 
-gefg_cas04.gat,24,157,6	script	"Flag"	722,{
+gefg_cas04.gat,24,157,6	script	"Bergel"	722,{
 	scriptlabel gefg_casF04;
 	guildreg "gefg_cas04";
 	check guildid == 0,-,L_START_1;
@@ -85,25 +85,25 @@ L_START_1:
 	mes "    honor yourself.";
 	close;
 }
-gefg_cas04.gat,35,158,4	script	"Flag"	722,{
+gefg_cas04.gat,35,158,4	script	"Bergel"	722,{
 	script gefg_casF04;
 }
-gefg_cas04.gat,44,184,4	script	"Flag"	722,{
+gefg_cas04.gat,44,184,4	script	"Bergel"	722,{
 	script gefg_casF04;
 }
-gefg_cas04.gat,51,184,4	script	"Flag"	722,{
+gefg_cas04.gat,51,184,4	script	"Bergel"	722,{
 	script gefg_casF04;
 }
-gefg_cas04.gat,39,212,7	script	"Flag"	722,{
+gefg_cas04.gat,39,212,7	script	"Bergel"	722,{
 	script gefg_casF04;
 }
-gefg_cas04.gat,29,212,1	script	"Flag"	722,{
+gefg_cas04.gat,29,212,1	script	"Bergel"	722,{
 	script gefg_casF04;
 }
-gefg_cas04.gat,24,73,1	script	"Flag"	722,{
+gefg_cas04.gat,24,73,1	script	"Bergel"	722,{
 	script gefg_casF04;
 }
-gefg_cas04.gat,35,73,4	script	"Flag"	722,{
+gefg_cas04.gat,35,73,4	script	"Bergel"	722,{
 	script gefg_casF04;
 }
 

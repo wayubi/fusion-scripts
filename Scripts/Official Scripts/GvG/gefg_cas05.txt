@@ -6,7 +6,7 @@
 //
 // Geffen Guild Castle - Non Player Character Locations
 //
-// - Flag -> gef_fild13: x,y
+// - Mersetzdeitz -> gef_fild13: x,y
 //   Information about guild base ownerships
 //
 // - Kafra Service -> gefg_cas05: 61,52
@@ -23,7 +23,7 @@
 //
 //========================================================================================
 
-gef_fild13.gat,302,87,7	script	"Flag"	722,{
+gef_fild13.gat,302,87,7	script	"Mersetzdeitz"	722,{
 	scriptlabel gef_fild13F05;
 	guildreg "gefg_cas05";
 	check guildid == 0,-,L_START_1;
@@ -52,17 +52,17 @@ L_START_1:
 	mes "    honor yourself.";
 	close;
 }
-gef_fild13.gat,313,83,0	script	"Flag"	722,{
+gef_fild13.gat,313,83,0	script	"Mersetzdeitz"	722,{
 	script gef_fild13F05;
 }
-gef_fild13.gat,252,51,2	script	"Flag"	722,{
+gef_fild13.gat,252,51,2	script	"Mersetzdeitz"	722,{
 	script gef_fild13F05;
 }
-gef_fild13.gat,26,147,2	script	"Flag"	722,{
+gef_fild13.gat,26,147,2	script	"Mersetzdeitz"	722,{
 	script gef_fild13F05;
 }
 
-gefg_cas05.gat,77,185,6	script	"Flag"	722,{
+gefg_cas05.gat,77,185,6	script	"Mersetzdeitz"	722,{
 	scriptlabel gefg_casF05;
 	guildreg "gefg_cas05";
 	check guildid == 0,-,L_START_1;
@@ -91,19 +91,19 @@ L_START_1:
 	mes "    honor yourself.";
 	close;
 }
-gefg_cas05.gat,92,181,0	script	"Flag"	722,{
+gefg_cas05.gat,92,181,0	script	"Mersetzdeitz"	722,{
 	script gefg_casF05;
 }
-gefg_cas05.gat,83,158,1	script	"Flag"	722,{
+gefg_cas05.gat,83,158,1	script	"Mersetzdeitz"	722,{
 	script gefg_casF05;
 }
-gefg_cas05.gat,62,144,7	script	"Flag"	722,{
+gefg_cas05.gat,62,144,7	script	"Mersetzdeitz"	722,{
 	script gefg_casF05;
 }
-gefg_cas05.gat,62,66,4	script	"Flag"	722,{
+gefg_cas05.gat,62,66,4	script	"Mersetzdeitz"	722,{
 	script gefg_casF05;
 }
-gefg_cas05.gat,69,66,4	script	"Flag"	722,{
+gefg_cas05.gat,69,66,4	script	"Mersetzdeitz"	722,{
 	script gefg_casF05;
 }
 

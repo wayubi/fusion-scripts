@@ -6,69 +6,69 @@
 //
 // Midgard braggin Flags - Non Player Character Locations
 //
-// - Flag -> prontera: 156,192
+// - Kriemhild -> prontera: 156,192
 //   Information about guild base ownerships
 //
-// - Flag -> prontera: 146,194
+// - Swanhild -> prontera: 146,194
 //   Information about guild base ownerships
 //
-// - Flag -> prontera: 143,203
+// - Fadhgridh -> prontera: 143,203
 //   Information about guild base ownerships
 //
-// - Flag -> prontera: 167,203
+// - Skoegul -> prontera: 167,203
 //   Information about guild base ownerships
 //
-// - Flag -> prontera: 165,194
+// - Gondul -> prontera: 165,194
 //   Information about guild base ownerships
 //
-// - Flag -> geffen: 109,123
+// - Repherion -> geffen: 109,123
 //   Information about guild base ownerships
 //
-// - Flag -> geffen: 112,129
+// - Eeyorbriggar -> geffen: 112,129
 //   Information about guild base ownerships
 //
-// - Flag -> geffen: 120,132
+// - Yesnelph -> geffen: 120,132
 //   Information about guild base ownerships
 //
-// - Flag -> geffen: 127,130
+// - Bergel -> geffen: 127,130
 //   Information about guild base ownerships
 //
-// - Flag -> geffen: 131,123
+// - Mersetzdeitz -> geffen: 131,123
 //   Information about guild base ownerships
 //
-// - Flag -> payon: 79,31
+// - Bright Arbor -> payon: 79,31
 //   Information about guild base ownerships
 //
-// - Flag -> payon: 79,35
+// - Sacred Altar -> payon: 79,35
 //   Information about guild base ownerships
 //
-// - Flag -> payon: 79,39
+// - Holy Shadow -> payon: 79,39
 //   Information about guild base ownerships
 //
-// - Flag -> payon: 79,43
+// - Scarlet Palace -> payon: 79,43
 //   Information about guild base ownerships
 //
-// - Flag -> payon: 79,47
+// - Bamboo Grove Hill -> payon: 79,47
 //   Information about guild base ownerships
 //
-// - Flag -> aldebaran: 152,97
+// - Neuschwanstein -> aldebaran: 152,97
 //   Information about guild base ownerships
 //
-// - Flag -> aldebaran: 149,97
+// - Hohenschwangau -> aldebaran: 149,97
 //   Information about guild base ownerships
 //
-// - Flag -> aldebaran: 134,97
+// - Nuernberg -> aldebaran: 134,97
 //   Information about guild base ownerships
 //
-// - Flag -> aldebaran: 131,97
+// - Wuerzburg -> aldebaran: 131,97
 //   Information about guild base ownerships
 //
-// - Flag -> aldebaran: 128,97
+// - Rotenburg -> aldebaran: 128,97
 //   Information about guild base ownerships
 //
 //========================================================================================
 
-prontera.gat,156,192,4 script "Flag" 722,{
+prontera.gat,156,192,4 script "Kriemhild" 722,{
 	guildreg "prtg_cas01";
 	check guildid == 0,-,L_START_1;
 	mes "       [ Kingdom of Prontera ]";
@@ -106,7 +106,7 @@ L_START_2:
 	L_MENU_1:
 		warp "prtg_cas01",96,173;
 }
-prontera.gat,146,194,3 script "Flag" 722,{
+prontera.gat,146,194,3 script "Swanhild" 722,{
 	guildreg "prtg_cas02";
 	check guildid == 0,-,L_START_1;
 	mes "       [ Kingdom of Prontera ]";
@@ -144,7 +144,7 @@ L_START_2:
 	L_MENU_1:
 		warp "prtg_cas02",71,36;
 }
-prontera.gat,143,203,2 script "Flag" 722,{
+prontera.gat,143,203,2 script "Fadhgridh" 722,{
 	guildreg "prtg_cas03";
 	check guildid == 0,-,L_START_1;
 	mes "       [ Kingdom of Prontera ]";
@@ -182,7 +182,7 @@ L_START_2:
 	L_MENU_1:
 		warp "prtg_cas03",181,215;
 }
-prontera.gat,167,203,6 script "Flag" 722,{
+prontera.gat,167,203,6 script "Skoegul" 722,{
 	guildreg "prtg_cas04";
 	check guildid == 0,-,L_START_1;
 	mes "       [ Kingdom of Prontera ]";
@@ -220,7 +220,7 @@ L_START_2:
 	L_MENU_1:
 		warp "prtg_cas04",258,247;
 }
-prontera.gat,165,194,5 script "Flag" 722,{
+prontera.gat,165,194,5 script "Gondul" 722,{
 	guildreg "prtg_cas05";
 	check guildid == 0,-,L_START_1;
 	mes "       [ Kingdom of Prontera ]";
@@ -259,7 +259,7 @@ L_START_2:
 		warp "prtg_cas05",52,41;
 }
 
-payon.gat,79,31,4 script "Flag" 722,{
+payon.gat,79,31,4 script "Bright Arbor" 722,{
 	guildreg "payg_cas01";
 	check guildid == 0,-,L_START_1;
 	mes "       [ Kingdom of Payon ]";
@@ -297,7 +297,7 @@ L_START_2:
 	L_MENU_1:
 		warp "payg_cas01",212,108;
 }
-payon.gat,79,35,4 script "Flag" 722,{
+payon.gat,79,35,4 script "Sacred Altar" 722,{
 	guildreg "payg_cas02";
 	check guildid == 0,-,L_START_1;
 	mes "       [ Kingdom of Payon ]";
@@ -335,7 +335,7 @@ L_START_2:
 	L_MENU_1:
 		warp "payg_cas02",22,275;
 }
-payon.gat,79,39,4 script "Flag" 722,{
+payon.gat,79,39,4 script "Holy Shadow" 722,{
 	guildreg "payg_cas03";
 	check guildid == 0,-,L_START_1;
 	mes "       [ Kingdom of Payon ]";
@@ -373,7 +373,7 @@ L_START_2:
 	L_MENU_1:
 		warp "payg_cas03",9,263;
 }
-payon.gat,79,43,4 script "Flag" 722,{
+payon.gat,79,43,4 script "Scarlet Palace" 722,{
 	guildreg "payg_cas04";
 	check guildid == 0,-,L_START_1;
 	mes "       [ Kingdom of Payon ]";
@@ -411,7 +411,7 @@ L_START_2:
 	L_MENU_1:
 		warp "payg_cas04",40,235;
 }
-payon.gat,79,47,4 script "Flag" 722,{
+payon.gat,79,47,4 script "Bamboo Grove Hill" 722,{
 	guildreg "payg_cas05";
 	check guildid == 0,-,L_START_1;
 	mes "       [ Kingdom of Payon ]";
@@ -450,7 +450,7 @@ L_START_2:
 		warp "payg_cas05",276,227;
 }
 
-aldebaran.gat,152,97,4 script "Flag" 722,{
+aldebaran.gat,152,97,4 script "Neuschwanstein" 722,{
 	guildreg "aldeg_cas01";
 	check guildid == 0,-,L_START_1;
 	mes "       [ Kingdom of Aldebaran ]";
@@ -488,7 +488,7 @@ L_START_2:
 	L_MENU_1:
 		warp "aldeg_cas01",218,170;
 }
-aldebaran.gat,149,97,4 script "Flag" 722,{
+aldebaran.gat,149,97,4 script "Hohenschwangau" 722,{
 	guildreg "aldeg_cas02";
 	check guildid == 0,-,L_START_1;
 	mes "       [ Kingdom of Aldebaran ]";
@@ -526,7 +526,7 @@ L_START_2:
 	L_MENU_1:
 		warp "aldeg_cas02",84,74;
 }
-aldebaran.gat,134,97,4 script "Flag" 722,{
+aldebaran.gat,134,97,4 script "Nuernberg" 722,{
 	guildreg "aldeg_cas03";
 	check guildid == 0,-,L_START_1;
 	mes "       [ Kingdom of Aldebaran ]";
@@ -564,7 +564,7 @@ L_START_2:
 	L_MENU_1:
 		warp "aldeg_cas03",118,76;
 }
-aldebaran.gat,131,97,4 script "Flag" 722,{
+aldebaran.gat,131,97,4 script "Wuerzburg" 722,{
 	guildreg "aldeg_cas04";
 	check guildid == 0,-,L_START_1;
 	mes "       [ Kingdom of Aldebaran ]";
@@ -602,7 +602,7 @@ L_START_2:
 	L_MENU_1:
 		warp "aldeg_cas04",45,88;
 }
-aldebaran.gat,128,97,4 script "Flag" 722,{
+aldebaran.gat,128,97,4 script "Rotenburg" 722,{
 	guildreg "aldeg_cas05";
 	check guildid == 0,-,L_START_1;
 	mes "       [ Kingdom of Aldebaran ]";
@@ -640,7 +640,7 @@ L_START_2:
 	L_MENU_1:
 		warp "aldeg_cas05",31,190;
 }
-geffen.gat,109,123,2 script "Flag" 722,{
+geffen.gat,109,123,2 script "Repherion" 722,{
 	guildreg "gefg_cas01";
 	check guildid == 0,-,L_START_1;
 	mes "       [ Kingdom of Geffen ]";
@@ -678,7 +678,7 @@ L_START_2:
 	L_MENU_1:
 		warp "gefg_cas01",83,47;
 }
-geffen.gat,112,129,1 script "Flag" 722,{
+geffen.gat,112,129,1 script "Eeyorbriggar" 722,{
 	guildreg "gefg_cas02";
 	check guildid == 0,-,L_START_1;
 	mes "       [ Kingdom of Geffen ]";
@@ -716,7 +716,7 @@ L_START_2:
 	L_MENU_1:
 		warp "gefg_cas02",23,66;
 }
-geffen.gat,120,132,8 script "Flag" 722,{
+geffen.gat,120,132,8 script "Yesnelph" 722,{
 	guildreg "gefg_cas03";
 	check guildid == 0,-,L_START_1;
 	mes "       [ Kingdom of Geffen ]";
@@ -754,7 +754,7 @@ L_START_2:
 	L_MENU_1:
 		warp "gefg_cas03",116,89;
 }
-geffen.gat,127,130,7 script "Flag" 722,{
+geffen.gat,127,130,7 script "Bergel" 722,{
 	guildreg "gefg_cas04";
 	check guildid == 0,-,L_START_1;
 	mes "       [ Kingdom of Geffen ]";
@@ -792,7 +792,7 @@ L_START_2:
 	L_MENU_1:
 		warp "gefg_cas04",59,70;
 }
-geffen.gat,131,123,6 script "Flag" 722,{
+geffen.gat,131,123,6 script "Mersetzdeitz" 722,{
 	guildreg "gefg_cas05";
 	check guildid == 0,-,L_START_1;
 	mes "       [ Kingdom of Geffen ]";

@@ -6,7 +6,7 @@
 //
 // Geffen Guild Castle - Non Player Character Locations
 //
-// - Flag -> gef_fild13: x,y
+// - Yesnelph -> gef_fild13: x,y
 //   Information about guild base ownerships
 //
 // - Kafra Service -> gefg_cas03: 116,89
@@ -23,7 +23,7 @@
 //
 //========================================================================================
 
-gef_fild13.gat,78,182,4	script	"Flag"	722,{
+gef_fild13.gat,78,182,4	script	"Yesnelph"	722,{
 	scriptlabel gef_fild13F03;
 	guildreg "gefg_cas03";
 	check guildid == 0,-,L_START_1;
@@ -52,23 +52,23 @@ L_START_1:
 	mes "    honor yourself.";
 	close;
 }
-gef_fild13.gat,87,182,4	script	"Flag"	722,{
+gef_fild13.gat,87,182,4	script	"Yesnelph"	722,{
 	script gef_fild13F03;
 }
-gef_fild13.gat,73,295,7	script	"Flag"	722,{
+gef_fild13.gat,73,295,7	script	"Yesnelph"	722,{
 	script gef_fild13F03;
 }
-gef_fild13.gat,113,274,7	script	"Flag"	722,{
+gef_fild13.gat,113,274,7	script	"Yesnelph"	722,{
 	script gef_fild13F03;
 }
-gef_fild13.gat,144,235,6	script	"Flag"	722,{
+gef_fild13.gat,144,235,6	script	"Yesnelph"	722,{
 	script gef_fild13F03;
 }
-gef_fild13.gat,144,244,4	script	"Flag"	722,{
+gef_fild13.gat,144,244,4	script	"Yesnelph"	722,{
 	script gef_fild13F03;
 }
 
-gefg_cas03.gat,122,220,6	script	"Flag"	722,{
+gefg_cas03.gat,122,220,6	script	"Yesnelph"	722,{
 	scriptlabel gefg_casF03;
 	guildreg "gefg_cas03";
 	check guildid == 0,-,L_START_1;
@@ -97,25 +97,25 @@ L_START_1:
 	mes "    honor yourself.";
 	close;
 }
-gefg_cas03.gat,122,229,6	script	"Flag"	722,{
+gefg_cas03.gat,122,229,6	script	"Yesnelph"	722,{
 	script gefg_casF03;
 }
-gefg_cas03.gat,91,257,7	script	"Flag"	722,{
+gefg_cas03.gat,91,257,7	script	"Yesnelph"	722,{
 	script gefg_casF03;
 }
-gefg_cas03.gat,52,276,7	script	"Flag"	722,{
+gefg_cas03.gat,52,276,7	script	"Yesnelph"	722,{
 	script gefg_casF03;
 }
-gefg_cas03.gat,56,164,4	script	"Flag"	722,{
+gefg_cas03.gat,56,164,4	script	"Yesnelph"	722,{
 	script gefg_casF03;
 }
-gefg_cas03.gat,65,164,4	script	"Flag"	722,{
+gefg_cas03.gat,65,164,4	script	"Yesnelph"	722,{
 	script gefg_casF03;
 }
-gefg_cas03.gat,37,214,1	script	"Flag"	722,{
+gefg_cas03.gat,37,214,1	script	"Yesnelph"	722,{
 	script gefg_casF03;
 }
-gefg_cas03.gat,34,208,1	script	"Flag"	722,{
+gefg_cas03.gat,34,208,1	script	"Yesnelph"	722,{
 	script gefg_casF03;
 }
 

@@ -6,7 +6,7 @@
 //
 // Alde Baran Guild Castle - Non Player Character Locations
 //
-// - Flag -> aldeg_cas0: x,y
+// - Nuernberg -> aldeg_cas0: x,y
 //   Information about guild base ownerships
 //
 // - Kafra Service -> aldeg_cas03: 118,76
@@ -23,7 +23,7 @@
 //
 //========================================================================================
 
-aldeg_cas03.gat,176,175,2	script	"Flag"	722,{
+aldeg_cas03.gat,176,175,2	script	"Nuernberg"	722,{
 	scriptlabel aldeg_casF03;
 	guildreg "aldeg_cas03";
 	check guildid == 0,-,L_START_1;
@@ -52,58 +52,58 @@ L_START_1:
 	mes "    honor yourself.";
 	close;
 }
-aldeg_cas03.gat,85,103,2	script	"Flag"	722,{
+aldeg_cas03.gat,85,103,2	script	"Nuernberg"	722,{
 	script alde_gldF03;
 }
-aldeg_cas03.gat,77,115,2	script	"Flag"	722,{
+aldeg_cas03.gat,77,115,2	script	"Nuernberg"	722,{
 	script alde_gldF03;
 }
-aldeg_cas03.gat,77,215,2	script	"Flag"	722,{
+aldeg_cas03.gat,77,215,2	script	"Nuernberg"	722,{
 	script alde_gldF03;
 }
-aldeg_cas03.gat,112,107,2	script	"Flag"	722,{
+aldeg_cas03.gat,112,107,2	script	"Nuernberg"	722,{
 	script alde_gldF03;
 }
-aldeg_cas03.gat,112,117,2	script	"Flag"	722,{
+aldeg_cas03.gat,112,117,2	script	"Nuernberg"	722,{
 	script alde_gldF03;
 }
-aldeg_cas03.gat,69,71,2	script	"Flag"	722,{
+aldeg_cas03.gat,69,71,2	script	"Nuernberg"	722,{
 	script alde_gldF03;
 }
-aldeg_cas03.gat,91,69,2	script	"Flag"	722,{
+aldeg_cas03.gat,91,69,2	script	"Nuernberg"	722,{
 	script alde_gldF03;
 }
-aldeg_cas03.gat,108,60,2	script	"Flag"	722,{
+aldeg_cas03.gat,108,60,2	script	"Nuernberg"	722,{
 	script alde_gldF03;
 }
-aldeg_cas03.gat,121,73,2	script	"Flag"	722,{
+aldeg_cas03.gat,121,73,2	script	"Nuernberg"	722,{
 	script alde_gldF03;
 }
-aldeg_cas03.gat,121,73,2	script	"Flag"	722,{
+aldeg_cas03.gat,121,73,2	script	"Nuernberg"	722,{
 	script alde_gldF03;
 }
-aldeg_cas03.gat,75,102,2	script	"Flag"	722,{
+aldeg_cas03.gat,75,102,2	script	"Nuernberg"	722,{
 	script alde_gldF03;
 }
-aldeg_cas03.gat,199,169,2	script	"Flag"	722,{
+aldeg_cas03.gat,199,169,2	script	"Nuernberg"	722,{
 	script alde_gldF03;
 }
-aldeg_cas03.gat,181,179,2	script	"Flag"	722,{
+aldeg_cas03.gat,181,179,2	script	"Nuernberg"	722,{
 	script alde_gldF03;
 }
-aldeg_cas03.gat,192,44,2	script	"Flag"	722,{
+aldeg_cas03.gat,192,44,2	script	"Nuernberg"	722,{
 	script alde_gldF03;
 }
-aldeg_cas03.gat,88,108,2	script	"Flag"	722,{
+aldeg_cas03.gat,88,108,2	script	"Nuernberg"	722,{
 	script alde_gldF03;
 }
-aldeg_cas03.gat,208,145,2	script	"Flag"	722,{
+aldeg_cas03.gat,208,145,2	script	"Nuernberg"	722,{
 	script alde_gldF03;
 }
-aldeg_cas03.gat,207,75,2	script	"Flag"	722,{
+aldeg_cas03.gat,207,75,2	script	"Nuernberg"	722,{
 	script alde_gldF03;
 }
-aldeg_cas03.gat,96,62,2	script	"Flag"	722,{
+aldeg_cas03.gat,96,62,2	script	"Nuernberg"	722,{
 	script alde_gldF03;
 }
 

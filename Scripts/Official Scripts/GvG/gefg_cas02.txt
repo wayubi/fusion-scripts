@@ -6,7 +6,7 @@
 //
 // Geffen Guild Castle - Non Player Character Locations
 //
-// - Flag -> gef_fild13: x,y
+// - Eeyorbriggar -> gef_fild13: x,y
 //   Information about guild base ownerships
 //
 // - Kafra Service -> gefg_cas02: 23,66
@@ -23,7 +23,7 @@
 //
 //========================================================================================
 
-gef_fild13.gat,303,243,4	script	"Flag"	722,{
+gef_fild13.gat,303,243,4	script	"Eeyorbriggar"	722,{
 	scriptlabel gef_fild13F02;
 	guildreg "gefg_cas02";
 	check guildid == 0,-,L_START_1;
@@ -52,17 +52,17 @@ L_START_1:
 	mes "    honor yourself.";
 	close;
 }
-gef_fild13.gat,312,243,4	script	"Flag"	722,{
+gef_fild13.gat,312,243,4	script	"Eeyorbriggar"	722,{
 	script gef_fild13F02;
 }
-gef_fild13.gat,290,243,4	script	"Flag"	722,{
+gef_fild13.gat,290,243,4	script	"Eeyorbriggar"	722,{
 	script gef_fild13F02;
 }
-gef_fild13.gat,324,243,4	script	"Flag"	722,{
+gef_fild13.gat,324,243,4	script	"Eeyorbriggar"	722,{
 	script gef_fild13F02;
 }
 
-gefg_cas02.gat,65,130,5	script	"Flag"	722,{
+gefg_cas02.gat,65,130,5	script	"Eeyorbriggar"	722,{
 	scriptlabel gefg_casF02;
 	guildreg "gefg_cas02";
 	check guildid == 0,-,L_START_1;
@@ -91,22 +91,22 @@ L_START_1:
 	mes "    honor yourself.";
 	close;
 }
-gefg_cas02.gat,30,123,5	script	"Flag"	722,{
+gefg_cas02.gat,30,123,5	script	"Eeyorbriggar"	722,{
 	script gefg_casF02;
 }
-gefg_cas02.gat,65,139,6	script	"Flag"	722,{
+gefg_cas02.gat,65,139,6	script	"Eeyorbriggar"	722,{
 	script gefg_casF02;
 }
-gefg_cas02.gat,37,177,6	script	"Flag"	722,{
+gefg_cas02.gat,37,177,6	script	"Eeyorbriggar"	722,{
 	script gefg_casF02;
 }
-gefg_cas02.gat,37,168,6	script	"Flag"	722,{
+gefg_cas02.gat,37,168,6	script	"Eeyorbriggar"	722,{
 	script gefg_casF02;
 }
-gefg_cas02.gat,68,47,2	script	"Flag"	722,{
+gefg_cas02.gat,68,47,2	script	"Eeyorbriggar"	722,{
 	script gefg_casF02;
 }
-gefg_cas02.gat,68,36,2	script	"Flag"	722,{
+gefg_cas02.gat,68,36,2	script	"Eeyorbriggar"	722,{
 	script gefg_casF02;
 }
 

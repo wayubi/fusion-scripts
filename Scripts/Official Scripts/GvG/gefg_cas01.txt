@@ -6,7 +6,7 @@
 //
 // Geffen Guild Castle - Non Player Character Locations
 //
-// - Flag -> gef_fild13: x,y
+// - Repherion -> gef_fild13: x,y
 //   Information about guild base ownerships
 //
 // - Kafra Service -> gefg_cas01: 83,47
@@ -23,7 +23,7 @@
 //
 //========================================================================================
 
-gef_fild13.gat,148,51,5	script	"Flag"	722,{
+gef_fild13.gat,148,51,5	script	"Repherion"	722,{
 	scriptlabel gef_fild13F01;
 	guildreg "gefg_cas01";
 	check guildid == 0,-,L_START_1;
@@ -52,17 +52,17 @@ L_START_1:
 	mes "    honor yourself.";
 	close;
 }
-gef_fild13.gat,155,54,5	script	"Flag"	722,{
+gef_fild13.gat,155,54,5	script	"Repherion"	722,{
 	script gef_fild13F01;
 }
-gef_fild13.gat,212,79,6	script	"Flag"	722,{
+gef_fild13.gat,212,79,6	script	"Repherion"	722,{
 	script gef_fild13F01;
 }
-gef_fild13.gat,211,71,6	script	"Flag"	722,{
+gef_fild13.gat,211,71,6	script	"Repherion"	722,{
 	script gef_fild13F01;
 }
 
-gefg_cas01.gat,28,157,4	script	"Flag"	722,{
+gefg_cas01.gat,28,157,4	script	"Repherion"	722,{
 	scriptlabel gefg_casF01;
 	guildreg "gefg_cas01";
 	check guildid == 0,-,L_START_1;
@@ -91,19 +91,19 @@ L_START_1:
 	mes "    honor yourself.";
 	close;
 }
-gefg_cas01.gat,22,156,5	script	"Flag"	722,{
+gefg_cas01.gat,22,156,5	script	"Repherion"	722,{
 	script gefg_casF01;
 }
-gefg_cas01.gat,68,185,3	script	"Flag"	722,{
+gefg_cas01.gat,68,185,3	script	"Repherion"	722,{
 	script gefg_casF01;
 }
-gefg_cas01.gat,17,171,5	script	"Flag"	722,{
+gefg_cas01.gat,17,171,5	script	"Repherion"	722,{
 	script gefg_casF01;
 }
-gefg_cas01.gat,59,16,4	script	"Flag"	722,{
+gefg_cas01.gat,59,16,4	script	"Repherion"	722,{
 	script gefg_casF01;
 }
-gefg_cas01.gat,64,16,4	script	"Flag"	722,{
+gefg_cas01.gat,64,16,4	script	"Repherion"	722,{
 	script gefg_casF01;
 }
 

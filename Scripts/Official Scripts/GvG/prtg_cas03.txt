@@ -6,7 +6,7 @@
 //
 // Prontera Guild Castle - Non Player Character Locations
 //
-// - Flag -> prt_gld: x,y
+// - Fadhgridh -> prt_gld: x,y
 //   Information about guild base ownerships
 //
 // - Kafra Service -> prtg_cas03: 181,215
@@ -23,7 +23,7 @@
 //
 //========================================================================================
 
-prt_gld.gat,147,140,4	script	"Flag"	722,{
+prt_gld.gat,147,140,4	script	"Fadhgridh"	722,{
 	scriptlabel prt_gldF03;
 	guildreg "prtg_cas03";
 	check guildid == 0,-,L_START_1;
@@ -52,14 +52,14 @@ L_START_1:
 	mes "    honor yourself.";
 	close;
 }
-prt_gld.gat,158,140,4	script	"Flag"	722,{
+prt_gld.gat,158,140,4	script	"Fadhgridh"	722,{
 	script prt_gldF03;
 }
-prt_gld.gat,158,136,4	script	"Flag"	722,{
+prt_gld.gat,158,136,4	script	"Fadhgridh"	722,{
 	script prt_gldF03;
 }
 
-prtg_cas03.gat,168,28,4	script	"Flag"	722,{
+prtg_cas03.gat,168,28,4	script	"Fadhgridh"	722,{
 	scriptlabel prtg_casF03;
 	guildreg "prtg_cas03";
 	check guildid == 0,-,L_START_1;
@@ -88,31 +88,31 @@ L_START_1:
 	mes "    honor yourself.";
 	close;
 }
-prtg_cas03.gat,182,28,4	script	"Flag"	722,{
+prtg_cas03.gat,182,28,4	script	"Fadhgridh"	722,{
 	script prtg_casF03;
 }
-prtg_cas03.gat,43,50,4	script	"Flag"	722,{
+prtg_cas03.gat,43,50,4	script	"Fadhgridh"	722,{
 	script prtg_casF03;
 }
-prtg_cas03.gat,48,50,4	script	"Flag"	722,{
+prtg_cas03.gat,48,50,4	script	"Fadhgridh"	722,{
 	script prtg_casF03;
 }
-prtg_cas03.gat,43,58,4	script	"Flag"	722,{
+prtg_cas03.gat,43,58,4	script	"Fadhgridh"	722,{
 	script prtg_casF03;
 }
-prtg_cas03.gat,48,58,4	script	"Flag"	722,{
+prtg_cas03.gat,48,58,4	script	"Fadhgridh"	722,{
 	script prtg_casF03;
 }
-prtg_cas03.gat,158,210,4	script	"Flag"	722,{
+prtg_cas03.gat,158,210,4	script	"Fadhgridh"	722,{
 	script prtg_casF03;
 }
-prtg_cas03.gat,169,210,4	script	"Flag"	722,{
+prtg_cas03.gat,169,210,4	script	"Fadhgridh"	722,{
 	script prtg_casF03;
 }
-prtg_cas03.gat,162,201,4	script	"Flag"	722,{
+prtg_cas03.gat,162,201,4	script	"Fadhgridh"	722,{
 	script prtg_casF03;
 }
-prtg_cas03.gat,165,201,4	script	"Flag"	722,{
+prtg_cas03.gat,165,201,4	script	"Fadhgridh"	722,{
 	script prtg_casF03;
 }
 

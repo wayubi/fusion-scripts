@@ -6,7 +6,7 @@
 //
 // Alde Baran Guild Castle - Non Player Character Locations
 //
-// - Flag -> aldeg_cas02: x,y
+// - Hohenschwangau -> aldeg_cas02: x,y
 //   Information about guild base ownerships
 //
 // - Kafra Service -> aldeg_cas02: 84,74
@@ -23,7 +23,7 @@
 //
 //========================================================================================
 
-aldeg_cas02.gat,82,71,2	script	"Flag"	722,{
+aldeg_cas02.gat,82,71,2	script	"Hohenschwangau"	722,{
 	scriptlabel aldeg_casF02;
 	guildreg "aldeg_cas02";
 	check guildid == 0,-,L_START_1;
@@ -52,49 +52,49 @@ L_START_1:
 	mes "    honor yourself.";
 	close;
 }
-aldeg_cas02.gat,67,30,2	script	"Flag"	722,{
+aldeg_cas02.gat,67,30,2	script	"Hohenschwangau"	722,{
 	script alde_gldF02;
 }
-aldeg_cas02.gat,183,140,2	script	"Flag"	722,{
+aldeg_cas02.gat,183,140,2	script	"Hohenschwangau"	722,{
 	script alde_gldF02;
 }
-aldeg_cas02.gat,212,152,2	script	"Flag"	722,{
+aldeg_cas02.gat,212,152,2	script	"Hohenschwangau"	722,{
 	script alde_gldF02;
 }
-aldeg_cas02.gat,108,39,2	script	"Flag"	722,{
+aldeg_cas02.gat,108,39,2	script	"Hohenschwangau"	722,{
 	script alde_gldF02;
 }
-aldeg_cas02.gat,57,213,2	script	"Flag"	722,{
+aldeg_cas02.gat,57,213,2	script	"Hohenschwangau"	722,{
 	script alde_gldF02;
 }
-aldeg_cas02.gat,91,181,2	script	"Flag"	722,{
+aldeg_cas02.gat,91,181,2	script	"Hohenschwangau"	722,{
 	script alde_gldF02;
 }
-aldeg_cas02.gat,103,53,2	script	"Flag"	722,{
+aldeg_cas02.gat,103,53,2	script	"Hohenschwangau"	722,{
 	script alde_gldF02;
 }
-aldeg_cas02.gat,73,53,2	script	"Flag"	722,{
+aldeg_cas02.gat,73,53,2	script	"Hohenschwangau"	722,{
 	script alde_gldF02;
 }
-aldeg_cas02.gat,63,41,2	script	"Flag"	722,{
+aldeg_cas02.gat,63,41,2	script	"Hohenschwangau"	722,{
 	script alde_gldF02;
 }
-aldeg_cas02.gat,229,6,2	script	"Flag"	722,{
+aldeg_cas02.gat,229,6,2	script	"Hohenschwangau"	722,{
 	script alde_gldF02;
 }
-aldeg_cas02.gat,230,40,2	script	"Flag"	722,{
+aldeg_cas02.gat,230,40,2	script	"Hohenschwangau"	722,{
 	script alde_gldF02;
 }
-aldeg_cas02.gat,197,40,2	script	"Flag"	722,{
+aldeg_cas02.gat,197,40,2	script	"Hohenschwangau"	722,{
 	script alde_gldF02;
 }
-aldeg_cas02.gat,32,213,2	script	"Flag"	722,{
+aldeg_cas02.gat,32,213,2	script	"Hohenschwangau"	722,{
 	script alde_gldF02;
 }
-aldeg_cas02.gat,88,180,2	script	"Flag"	722,{
+aldeg_cas02.gat,88,180,2	script	"Hohenschwangau"	722,{
 	script alde_gldF02;
 }
-aldeg_cas02.gat,121,29,2	script	"Flag"	722,{
+aldeg_cas02.gat,121,29,2	script	"Hohenschwangau"	722,{
 	script alde_gldF02;
 }
 

@@ -6,7 +6,7 @@
 //
 // Payon Guild Castle - Non Player Character Locations
 //
-// - Flag -> pay_gld: x,y
+// - Sacred Altar -> pay_gld: x,y
 //   Information about guild base ownerships
 //
 // - Kafra Service -> payg_cas02: 22,275
@@ -23,7 +23,7 @@
 //
 //========================================================================================
 
-pay_gld.gat,292,112,6	script	"Flag"	722,{
+pay_gld.gat,292,112,6	script	"Sacred Altar"	722,{
 	scriptlabel pay_gldF02;
 	guildreg "payg_cas02";
 	check guildid == 0,-,L_START_1;
@@ -52,17 +52,17 @@ L_START_1:
 	mes "    honor yourself.";
 	close;
 }
-pay_gld.gat,292,120,6	script	"Flag"	722,{
+pay_gld.gat,292,120,6	script	"Sacred Altar"	722,{
 	script pay_gldF02;
 }
-pay_gld.gat,291,135,6	script	"Flag"	722,{
+pay_gld.gat,291,135,6	script	"Sacred Altar"	722,{
 	script pay_gldF02;
 }
-pay_gld.gat,271,163,0	script	"Flag"	722,{
+pay_gld.gat,271,163,0	script	"Sacred Altar"	722,{
 	script pay_gldF02;
 }
 
-payg_cas02.gat,254,40,6	script	"Flag"	722,{
+payg_cas02.gat,254,40,6	script	"Sacred Altar"	722,{
 	scriptlabel payg_casF02;
 	guildreg "payg_cas02";
 	check guildid == 0,-,L_START_1;
@@ -91,19 +91,19 @@ L_START_1:
 	mes "    honor yourself.";
 	close;
 }
-payg_cas02.gat,254,48,6	script	"Flag"	722,{
+payg_cas02.gat,254,48,6	script	"Sacred Altar"	722,{
 	script payg_casF02;
 }
-payg_cas02.gat,202,49,0	script	"Flag"	722,{
+payg_cas02.gat,202,49,0	script	"Sacred Altar"	722,{
 	script payg_casF02;
 }
-payg_cas02.gat,209,49,0	script	"Flag"	722,{
+payg_cas02.gat,209,49,0	script	"Sacred Altar"	722,{
 	script payg_casF02;
 }
-payg_cas02.gat,59,282,4	script	"Flag"	722,{
+payg_cas02.gat,59,282,4	script	"Sacred Altar"	722,{
 	script payg_casF02;
 }
-payg_cas02.gat,70,282,4	script	"Flag"	722,{
+payg_cas02.gat,70,282,4	script	"Sacred Altar"	722,{
 	script payg_casF02;
 }
 

@@ -6,7 +6,7 @@
 //
 // Prontera Guild Castle - Non Player Character Locations
 //
-// - Flag -> prt_gld: x,y
+// - Swanhild -> prt_gld: x,y
 //   Information about guild base ownerships
 //
 // - Kafra Service -> prtg_cas02: 71,36
@@ -23,7 +23,7 @@
 //
 //========================================================================================
 
-prt_gld.gat,244,126,8	script	"Flag"	722,{
+prt_gld.gat,244,126,8	script	"Swanhild"	722,{
 	scriptlabel prt_gldF02;
 	guildreg "prtg_cas02";
 	check guildid == 0,-,L_START_1;
@@ -52,17 +52,17 @@ L_START_1:
 	mes "    honor yourself.";
 	close;
 }
-prt_gld.gat,244,128,8	script	"Flag"	722,{
+prt_gld.gat,244,128,8	script	"Swanhild"	722,{
 	script prt_gldF02;
 }
-prt_gld.gat,236,126,8	script	"Flag"	722,{
+prt_gld.gat,236,126,8	script	"Swanhild"	722,{
 	script prt_gldF02;
 }
-prt_gld.gat,236,128,8	script	"Flag"	722,{
+prt_gld.gat,236,128,8	script	"Swanhild"	722,{
 	script prt_gldF02;
 }
 
-prtg_cas02.gat,40,227,4	script	"Flag"	722,{
+prtg_cas02.gat,40,227,4	script	"Swanhild"	722,{
 	scriptlabel prtg_casF02;
 guildreg "prtg_cas02";
 check guildid == 0,-,L_START_1;
@@ -91,37 +91,37 @@ mes "    have a beef, raise your sword to ";
 mes "    honor yourself.";
 close;
 }
-prtg_cas02.gat,46,227,4	script	"Flag"	722,{
+prtg_cas02.gat,46,227,4	script	"Swanhild"	722,{
 	script prtg_casF02;
 }
-prtg_cas02.gat,11,219,4	script	"Flag"	722,{
+prtg_cas02.gat,11,219,4	script	"Swanhild"	722,{
 	script prtg_casF02;
 }
-prtg_cas02.gat,11,214,4	script	"Flag"	722,{
+prtg_cas02.gat,11,214,4	script	"Swanhild"	722,{
 	script prtg_casF02;
 }
-prtg_cas02.gat,20,219,4	script	"Flag"	722,{
+prtg_cas02.gat,20,219,4	script	"Swanhild"	722,{
 	script prtg_casF02;
 }
-prtg_cas02.gat,20,214,4	script	"Flag"	722,{
+prtg_cas02.gat,20,214,4	script	"Swanhild"	722,{
 	script prtg_casF02;
 }
-prtg_cas02.gat,79,227,8	script	"Flag"	722,{
+prtg_cas02.gat,79,227,8	script	"Swanhild"	722,{
 	script prtg_casF02;
 }
-prtg_cas02.gat,70,227,8	script	"Flag"	722,{
+prtg_cas02.gat,70,227,8	script	"Swanhild"	722,{
 	script prtg_casF02;
 }
-prtg_cas02.gat,38,189,8	script	"Flag"	722,{
+prtg_cas02.gat,38,189,8	script	"Swanhild"	722,{
 	script prtg_casF02;
 }
-prtg_cas02.gat,34,189,8	script	"Flag"	722,{
+prtg_cas02.gat,34,189,8	script	"Swanhild"	722,{
 	script prtg_casF02;
 }
-prtg_cas02.gat,152,174,4	script	"Flag"	722,{
+prtg_cas02.gat,152,174,4	script	"Swanhild"	722,{
 	script prtg_casF02;
 }
-prtg_cas02.gat,164,174,4	script	"Flag"	722,{
+prtg_cas02.gat,164,174,4	script	"Swanhild"	722,{
 	script prtg_casF02;
 }
 

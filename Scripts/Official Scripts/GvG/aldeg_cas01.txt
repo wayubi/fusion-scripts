@@ -6,7 +6,7 @@
 //
 // Alde Baran Guild Castle - Non Player Character Locations
 //
-// - Flag -> alde_gld: x,y
+// - Neuschwanstein -> alde_gld: x,y
 //   Information about guild base ownerships
 //
 // - Kafra Service -> aldeg_cas01: 218,170
@@ -23,7 +23,7 @@
 //
 //========================================================================================
 
-alde_gld.gat,61,87,4	script	"Flag"	722,{
+alde_gld.gat,61,87,4	script	"Neuschwanstein"	722,{
 	scriptlabel alde_gldF01;
 	guildreg "aldeg_cas01";
 	check guildid == 0,-,L_START_1;
@@ -52,16 +52,16 @@ alde_gld.gat,61,87,4	script	"Flag"	722,{
 	mes "    honor yourself.";
 	close;
 }
-alde_gld.gat,61,79,4	script	"Flag"	722,{
+alde_gld.gat,61,79,4	script	"Neuschwanstein"	722,{
 	script alde_gldF01;
 }
-alde_gld.gat,45,87,3	script	"Flag"	722,{
+alde_gld.gat,45,87,3	script	"Neuschwanstein"	722,{
 	script alde_gldF01;
 }
-alde_gld.gat,51,87,2	script	"Flag"	722,{
+alde_gld.gat,51,87,2	script	"Neuschwanstein"	722,{
 	script alde_gldF01;
 }
-aldeg_cas01.gat,30,248,4	script	"Flag"	722,{
+aldeg_cas01.gat,30,248,4	script	"Neuschwanstein"	722,{
 	scriptlabel aldeg_casF01;
 	guildreg "aldeg_cas01";
 	check guildid == 0,-,L_START_1;
@@ -90,46 +90,46 @@ aldeg_cas01.gat,30,248,4	script	"Flag"	722,{
 	mes "    honor yourself.";
 	close;
 }
-aldeg_cas01.gat,30,246,4	script	"Flag"	722,{
+aldeg_cas01.gat,30,246,4	script	"Neuschwanstein"	722,{
 	script aldeg_casF01;
 }
-aldeg_cas01.gat,37,248,4	script	"Flag"	722,{
+aldeg_cas01.gat,37,248,4	script	"Neuschwanstein"	722,{
 	script aldeg_casF01;
 }
-aldeg_cas01.gat,37,246,4	script	"Flag"	722,{
+aldeg_cas01.gat,37,246,4	script	"Neuschwanstein"	722,{
 	script aldeg_casF01;
 }
-aldeg_cas01.gat,95,80,2	script	"Flag"	722,{
+aldeg_cas01.gat,95,80,2	script	"Neuschwanstein"	722,{
 	script aldeg_casF01;
 }
-aldeg_cas01.gat,95,59,2	script	"Flag"	722,{
+aldeg_cas01.gat,95,59,2	script	"Neuschwanstein"	722,{
 	script aldeg_casF01;
 }
-aldeg_cas01.gat,62,75,2	script	"Flag"	722,{
+aldeg_cas01.gat,62,75,2	script	"Neuschwanstein"	722,{
 	script aldeg_casF01;
 }
-aldeg_cas01.gat,70,75,2	script	"Flag"	722,{
+aldeg_cas01.gat,70,75,2	script	"Neuschwanstein"	722,{
 	script aldeg_casF01;
 }
-aldeg_cas01.gat,74,75,2	script	"Flag"	722,{
+aldeg_cas01.gat,74,75,2	script	"Neuschwanstein"	722,{
 	script aldeg_casF01;
 }
-aldeg_cas01.gat,62,64,2	script	"Flag"	722,{
+aldeg_cas01.gat,62,64,2	script	"Neuschwanstein"	722,{
 	script aldeg_casF01;
 }
-aldeg_cas01.gat,66,64,2	script	"Flag"	722,{
+aldeg_cas01.gat,66,64,2	script	"Neuschwanstein"	722,{
 	script aldeg_casF01;
 }
-aldeg_cas01.gat,70,64,2	script	"Flag"	722,{
+aldeg_cas01.gat,70,64,2	script	"Neuschwanstein"	722,{
 	script aldeg_casF01;
 }
-aldeg_cas01.gat,74,64,2	script	"Flag"	722,{
+aldeg_cas01.gat,74,64,2	script	"Neuschwanstein"	722,{
 	script aldeg_casF01;
 }
-aldeg_cas01.gat,203,150,4	script	"Flag"	722,{
+aldeg_cas01.gat,203,150,4	script	"Neuschwanstein"	722,{
 	script aldeg_casF01;
 }
-aldeg_cas01.gat,210,150,4	script	"Flag"	722,{
+aldeg_cas01.gat,210,150,4	script	"Neuschwanstein"	722,{
 	script aldeg_casF01;
 }
 

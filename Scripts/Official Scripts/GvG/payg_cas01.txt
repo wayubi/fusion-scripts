@@ -6,7 +6,7 @@
 //
 // Payon Guild Castle - Non Player Character Locations
 //
-// - Flag -> pay_gld: x,y
+// - Bright Arbor -> pay_gld: x,y
 //   Information about guild base ownerships
 //
 // - Kafra Service -> payg_cas01: 128,58
@@ -23,7 +23,7 @@
 //
 //========================================================================================
 
-pay_gld.gat,125,236,4	script	"Flag"	722,{
+pay_gld.gat,125,236,4	script	"Bright Arbor"	722,{
 	scriptlabel pay_gldF01;
 	guildreg "payg_cas01";
 	check guildid == 0,-,L_START_1;
@@ -52,17 +52,17 @@ L_START_1:
 	mes "    honor yourself.";
 	close;
 }
-pay_gld.gat,110,233,4	script	"Flag"	722,{
+pay_gld.gat,110,233,4	script	"Bright Arbor"	722,{
 	script pay_gldF01;
 }
-pay_gld.gat,116,233,4	script	"Flag"	722,{
+pay_gld.gat,116,233,4	script	"Bright Arbor"	722,{
 	script pay_gldF01;
 }
-pay_gld.gat,91,239,2	script	"Flag"	722,{
+pay_gld.gat,91,239,2	script	"Bright Arbor"	722,{
 	script pay_gldF01;
 }
 
-payg_cas01.gat,238,67,4	script	"Flag"	722,{
+payg_cas01.gat,238,67,4	script	"Bright Arbor"	722,{
 	scriptlabel payg_casF01;
 	guildreg "payg_cas01";
 	check guildid == 0,-,L_START_1;
@@ -91,19 +91,19 @@ L_START_1:
 	mes "    honor yourself.";
 	close;
 }
-payg_cas01.gat,233,67,4	script	"Flag"	722,{
+payg_cas01.gat,233,67,4	script	"Bright Arbor"	722,{
 	script payg_casF01;
 }
-payg_cas01.gat,221,123,4	script	"Flag"	722,{
+payg_cas01.gat,221,123,4	script	"Bright Arbor"	722,{
 	script payg_casF01;
 }
-payg_cas01.gat,221,116,4	script	"Flag"	722,{
+payg_cas01.gat,221,116,4	script	"Bright Arbor"	722,{
 	script payg_casF01;
 }
-payg_cas01.gat,206,108,4	script	"Flag"	722,{
+payg_cas01.gat,206,108,4	script	"Bright Arbor"	722,{
 	script payg_casF01;
 }
-payg_cas01.gat,212,108,4	script	"Flag"	722,{
+payg_cas01.gat,212,108,4	script	"Bright Arbor"	722,{
 	script payg_casF01;
 }
 

@@ -6,7 +6,7 @@
 //
 // Alde Baran Guild Castle - Non Player Character Locations
 //
-// - Flag -> alde_gld: x,y
+// - Wuerzburg -> alde_gld: x,y
 //   Information about guild base ownerships
 //
 // - Kafra Service -> aldeg_cas04: 45,88
@@ -23,7 +23,7 @@
 //
 //========================================================================================
 
-aldeg_cas04.gat,167,61,2	script	"Flag"	722,{
+aldeg_cas04.gat,167,61,2	script	"Wuerzburg"	722,{
 	scriptlabel aldeg_casF04;
 	guildreg "aldeg_cas04";
 	check guildid == 0,-,L_START_1;
@@ -52,58 +52,58 @@ L_START_1:
 	mes "    honor yourself.";
 	close;
 }
-aldeg_cas04.gat,164,90,2	script	"Flag"	722,{
+aldeg_cas04.gat,164,90,2	script	"Wuerzburg"	722,{
 	script alde_gldF04;
 }
-aldeg_cas04.gat,143,209,2	script	"Flag"	722,{
+aldeg_cas04.gat,143,209,2	script	"Wuerzburg"	722,{
 	script alde_gldF04;
 }
-aldeg_cas04.gat,129,193,2	script	"Flag"	722,{
+aldeg_cas04.gat,129,193,2	script	"Wuerzburg"	722,{
 	script alde_gldF04;
 }
-aldeg_cas04.gat,112,206,2	script	"Flag"	722,{
+aldeg_cas04.gat,112,206,2	script	"Wuerzburg"	722,{
 	script alde_gldF04;
 }
-aldeg_cas04.gat,113,212,2	script	"Flag"	722,{
+aldeg_cas04.gat,113,212,2	script	"Wuerzburg"	722,{
 	script alde_gldF04;
 }
-aldeg_cas04.gat,77,117,2	script	"Flag"	722,{
+aldeg_cas04.gat,77,117,2	script	"Wuerzburg"	722,{
 	script alde_gldF04;
 }
-aldeg_cas04.gat,186,42,2	script	"Flag"	722,{
+aldeg_cas04.gat,186,42,2	script	"Wuerzburg"	722,{
 	script alde_gldF04;
 }
-aldeg_cas04.gat,30,69,2	script	"Flag"	722,{
+aldeg_cas04.gat,30,69,2	script	"Wuerzburg"	722,{
 	script alde_gldF04;
 }
-aldeg_cas04.gat,55,97,2	script	"Flag"	722,{
+aldeg_cas04.gat,55,97,2	script	"Wuerzburg"	722,{
 	script alde_gldF04;
 }
-aldeg_cas04.gat,45,98,2	script	"Flag"	722,{
+aldeg_cas04.gat,45,98,2	script	"Wuerzburg"	722,{
 	script alde_gldF04;
 }
-aldeg_cas04.gat,33,116,2	script	"Flag"	722,{
+aldeg_cas04.gat,33,116,2	script	"Wuerzburg"	722,{
 	script alde_gldF04;
 }
-aldeg_cas04.gat,130,180,2	script	"Flag"	722,{
+aldeg_cas04.gat,130,180,2	script	"Wuerzburg"	722,{
 	script alde_gldF04;
 }
-aldeg_cas04.gat,129,193,2	script	"Flag"	722,{
+aldeg_cas04.gat,129,193,2	script	"Wuerzburg"	722,{
 	script alde_gldF04;
 }
-aldeg_cas04.gat,142,209,2	script	"Flag"	722,{
+aldeg_cas04.gat,142,209,2	script	"Wuerzburg"	722,{
 	script alde_gldF04;
 }
-aldeg_cas04.gat,33,107,2	script	"Flag"	722,{
+aldeg_cas04.gat,33,107,2	script	"Wuerzburg"	722,{
 	script alde_gldF04;
 }
-aldeg_cas04.gat,133,220,2	script	"Flag"	722,{
+aldeg_cas04.gat,133,220,2	script	"Wuerzburg"	722,{
 	script alde_gldF04;
 }
-aldeg_cas04.gat,169,22,2	script	"Flag"	722,{
+aldeg_cas04.gat,169,22,2	script	"Wuerzburg"	722,{
 	script alde_gldF04;
 }
-aldeg_cas04.gat,169,15,2	script	"Flag"	722,{
+aldeg_cas04.gat,169,15,2	script	"Wuerzburg"	722,{
 	script alde_gldF04;
 }
 

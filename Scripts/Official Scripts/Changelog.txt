@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.002
 ----------------------------------------------------------------------------------------------------
+- GvG\*.txt - Updated Guild Base Flag names. [mudvayne]
 - GvG\*.txt - Updated the NPC's that warp you to the proper coordinates for the Master Room. [Tsusai]
 - Quest\Quest_Arena_Test.txt - Updated map names. [Tsusai]
 - Shop\Comodo.txt - Added Instruments and Whips to weapon shop. [mudvayne]
