@@ -1,6 +1,7 @@
 --------------------------------------------------------------------------------
  Fusion 1.212 - June 30th, 2004
 --------------------------------------------------------------------------------
+- 06-10-04: Shop\prt_monk.txt - Added a shop in prt_monk based on iro sakray. [nestor_zulueta]
 - 06-08-04: Warp\dungeons\pay_dun.txt - Updated one warp to a random warp. [Tsusai]
 - 06-08-04: Warp\towns\Yuno.txt - changed random warps to sprite id 723 because 45 won't work until OnTouch. [Tsusai]
 - 06-08-04: Event\Event_Bunny.txt - Added other town NPCs but disabled for users to activate. [Tsusai]
