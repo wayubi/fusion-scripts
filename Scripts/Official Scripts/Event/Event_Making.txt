@@ -15,6 +15,9 @@
 // - Cherokee -> alberta_in: 122,53
 //   Give information and make Antlers Quest.
 //
+// - William -> morocc_in: 142,100
+//   Give information and make Stop Post Quest.
+//
 //========================================================================================
 
 payon_in01.gat,103,111,4	script	"Granny"	103,{
