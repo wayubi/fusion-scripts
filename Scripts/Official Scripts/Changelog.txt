@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.002
 ----------------------------------------------------------------------------------------------------
+- Event\Event_Making.txt - Translated Trader, Doctor Band, Feather Bonnet, Phantom of Opera and Sakkat Quest. [mudvayne]
 - Event\Event_Making.txt - Translated Mistic Lady, Ear Muffs Quest. [mudvayne]
 - Event\Event_Making.txt - Translated Grampa, Boy's Cap Quest. [mudvayne]
 - Event\Event_Making.txt - Translated Marius, Binoculars Quest. [mudvayne]

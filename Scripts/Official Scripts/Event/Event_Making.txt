@@ -36,6 +36,8 @@
 // - Mistic Lady -> payon_in01: 103,79
 //   Give information and make Ear Muf Quest.
 //
+// - Trader -> aldeba_in: 152,166
+//   Give information and make Doctor Band, Feather Bonnet, Phantom of Opera and Sakkat.
 //========================================================================================
 
 payon_in01.gat,103,111,4	script	"Granny"	103,{
@@ -261,23 +263,19 @@ morocc_in.gat,142,100,4	script	"Willian"	89,{
 		close;
 }
 
-//----------------------------------
-// 医者のヘアバンド
-//----------------------------------
-
-aldeba_in.gat,152,166,4	script	ある商人	86,{
-	mes "[ある商人]";
-	mes "ははは ! 俺がまさに噂の謎の商人だぜ !";
-	mes "このミッドガルド 世界中を旅回っている !";
-	mes "さあ .. 珍しい物品を売ってるから、 一度見てみるのはどうかい !";
+aldeba_in.gat,152,166,4	script	"Trader"	86,{
+	mes "[Trader]";
+	mes "Muhahaha! I am the Very Famous one,Enigmatic Dealer!";
+	mes "I am Always bustling in and out of Midgard Continent!";
+	mes "Alright.. Here's my Unique and Rare Products from all over the world,You just watch and enjoy!";
 	next;
-	mes "[ある商人]";
-	mes "(1) . ^3355FF医者のヘアバンド^000000 : バンダナ 1 個 + 鉄 50 個 + 損傷したダイヤモンド + 3500 ゼニ";
-	mes "(2) . ^3355FF羽毛帽子^000000 : オールドスターローマンス 1 個 + 鳥の羽毛 300 個 +500 ゼニ";
-	mes "(3) . ^3355FFオペラ仮面^000000 : 鋼鉄  20 個 + 歌う草 1  個 + 5000 ゼニ";
-	mes "(4) . ^3355FF笠^000000 : 木屑 120 個 + 10000 ゼニ";
+	mes "[Trader]";
+	mes "(1) ｷ ^3355FFDoctor Band^000000 : 1 Red Bandana + 50 Iron + 1 Cracked Diamond + 3500 Zeny";
+	mes "(2) ｷ ^3355FFFeather Bonnet^000000 : 1 Romantic Gent + 300 Feather of Birds + 500 Zeny";
+	mes "(3) ｷ ^3355FFPhantom of Opera^000000 : 20 Steel + 1 Singing Plant + 5000 Zeny";
+	mes "(4) ｷ ^3355FFSakkat^000000 : 120 Trunk + 10000 Zeny";
 	next;
-	menu "医者のヘアバンド",L_MENU_1,"羽毛帽子",L_MENU_2,"オペラ仮面",L_MENU_3,"笠",L_MENU_4;
+	menu "Doctor Hat",L_MENU_1,"Feather Bonnet",L_MENU_2,"Phantom of Opera",L_MENU_3,"Sakkat",L_MENU_4;
 	L_MENU_1:
 		checkitem 2275,1,-,L_SUB_1;
 		checkitem 998,50,-,L_SUB_1;
@@ -287,19 +285,19 @@ aldeba_in.gat,152,166,4	script	ある商人	86,{
 		delitem 998,50;
 		delitem 733,1;
 		set Zeny -= 3500,0;
-		mes "[ある商人]";
-		mes "うーむ ! 君…医師免許は";
-		mes "持ってるのか？";
-		mes "まあ、 ブラックヒャックという";
-		mes "奴ほどの実力があれば";
-		mes "免許がなくても関係ないけど。";
-		mes "ま、いいだろ。 さあ持っていけ！";
+		mes "[Trader]";
+		mes "Hmm! Have.. Any Medical License?!";
+		mes "I've heard about an well-known unlicensed physician `Cuwaki'..";
+		mes "I hope you won't get caught...";
+		mes "Yeah...";
+		mes "It's your business whatever.";
+		mes "Take this.";
 		additem 2273,1;
 		close;
 	L_SUB_1:
-		mes "[ある商人]";
-		mes "こら、 俺が言った必要品目をよおく確認したまえ。";
-		mes "若者が頭悪いようだな .. しっかりした方がいいぜ、 うん?";
+		mes "[Trader]";
+		mes "You,Dullard. Check this requirements again.";
+		mes "You Don't look like an idiot though....C'Mon,Man.Get real.";
 		close;
 	L_MENU_2:
 		checkitem 2247,1,-,L_SUB_2;
@@ -308,15 +306,15 @@ aldeba_in.gat,152,166,4	script	ある商人	86,{
 		delitem 2247,1;
 		delitem 916,300;
 		set Zeny -= 500,0;
-		mes "[ある商人]";
-		mes "フフ。 センスあるね、君。";
-		mes "材料を求めるのがきつそうだったろうが、やり甲斐のあるほどのデザインではないか。 さあ、持っていけ ..";
+		mes "[Trader]";
+		mes "Umhahaha. You have good sense, Dude.";
+		mes "I know you got a hard time to collect these stuffs, but this one is worth to deserve. Take it.";
 		additem 5018,1;
 		close;
 	L_SUB_2:
-		mes "[ある商人]";
-		mes "こら、俺が言った必要品目をよおく確認したまえ。";
-		mes "若者が頭悪いようだな .. しっかりした方がいいぜ、 うん?";
+		mes "[Trader]";
+		mes "You,Dullard. Check this requirements again.";
+		mes "You Don't look like an idiot though....C'Mon,Man.Get real.";
 		close;
 	L_MENU_3:
 		checkitem 999,20,-,L_SUB_3;
@@ -325,32 +323,32 @@ aldeba_in.gat,152,166,4	script	ある商人	86,{
 		delitem 999,20;
 		delitem 707,1;
 		set Zeny -= 5000,0;
-		mes "[ある商人]";
-		mes "これはちょっといいモンじゃ ..";
-		mes "いやな感じが少しあるけど  .. それなりにユニークな味がいいと思うよ。 君はどうかい ?";
-		mes ".. 気に入ったようだな .. さ 、持っていけ !";
+		mes "[Trader]";
+		mes "This is pretty nice one.";
+		mes "Well little bit Scary though.. I think it has an Magnetic Attraction. What about your idea?";
+		mes ".. You like it ..Alright.. Take it!";
 		additem 2281,1;
 		close;
 	L_SUB_3:
-		mes "[ある商人]";
-		mes "こら、俺が言った必要品目をよおく確認したまえ。";
-		mes "若者が頭悪いようだな .. しっかりした方がいいぜ、うん?";
+		mes "[Trader]";
+		mes "You,Dullard. Check this requirements again.";
+		mes "You Don't look like an idiot though....C'Mon,Man.Get real.";
 		close;
 	L_MENU_4:
 		checkitem 1019,120,-,L_SUB_4;
 		check Zeny >= 10000,-,L_SUB_4;
 		delitem 1019,120;
 		set Zeny -= 10000,0;
-		mes "[ある商人]";
-		mes "フェイヨンという村に行けば、笠を作ってくれる名人がいる ..";
-		mes "その方が俺だけを通じて世に出した非常にユニークなアイテムじゃ。";
-		mes "さあ ! 持っていけ !";
+		mes "[Trader]";
+		mes "If you have a chance to visit the Uplander Village, Payon, Please go meet the Sakkat Craftsman.";
+		mes "He've never sold Sakkat to other Dealers but to me. Because only me, can recognise its quality. Due its rarity, Sakkat becomes a very Unique and Exceptional product.";
+		mes "OK! Take it!";
 		additem 2280,1;
 		close;
 	L_SUB_4:
-		mes "[ある商人]";
-		mes "こら、俺が言った必要品目をよおく確認したまえ。";
-		mes "若者が頭悪いようだな .. しっかりした方がいいぜ、うん?";
+		mes "[Trader]";
+		mes "You,Dullard. Check this requirements again.";
+		mes "You Don't look like an idiot though....C'Mon,Man.Get real.";
 		close;
 }
 
