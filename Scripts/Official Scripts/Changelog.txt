@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.002
 ----------------------------------------------------------------------------------------------------
+- Town\Town_Siglude.txt - Fixed, can't refine accesories and mid/low headgears and fixed the chance of success. [mudvayne]
 - Warp\warp.txt - Corrected/Added Warps in Al De Baron Guild Castle 4. [Tsusai]
 - Shop\Shop.txt - Added Umbala shop entry. [mudvayne]
 - Town\Town_Umbala.txt - Removed shops entry here and moved to shop.txt [mudvayne]
