@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.003
 ----------------------------------------------------------------------------------------------------
+- GvG\npc_guardiankafra.txt - Finished fixing Prontera Castle Guardian and Kafra service bug. [Tsusai]
 - Warp\fields\prt_fild.txt - Fixed warp destination bug (#602). [Tsusai]
 - Event\Event_Rental.txt - Moved Grand Peko Breeder here and removed crusader support for Peko Breeder. [Tsusai]
 - GvG\gefg_cas01 - 03.txt - Fixes missing Guardian bug and Kafra service bug. [icbob]
