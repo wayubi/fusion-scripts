@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.004
 ----------------------------------------------------------------------------------------------------
+- Town\Town_Kafra.txt - Commented out Umbala Kafra's Teleport. [Tsusai]
 - Changelog.txt - Updated links at the footer. [Tsusai]
 - Town\Town_Kafra.txt - Updated Amatsu Kafras. [Tsusai]
 - Town\Town_Kafra.txt - Added Gonryun kafra. [Muad_Dib]
@@ -28,7 +29,7 @@
 - Mob\other\pvp_n.txt - Reorganised Pvp Room Monster Spawns. [Muad_Dib]
 - Mob\other\xmas_town.txt - Updated, reorganised Lutie Town Monster Spawns. [Muad_Dib]
 - Mob\other\xmas_mob.txt - Added Xmass monsters mob file. [Muad_Dib]
-- Event\Event_Sign.txt - Removed Event_Sign cuase i found some new stuff that was totally different. [Tsusai]
+- Event\Event_Sign.txt - Removed Event_Sign cuase i found some new stuff that was totally different. [Muad_Dib]
 - Mob\dungeon\ama_dun.txt - Updated, reorganised Amatsu Dungeon Monster Spawns. [Muad_Dib]
 - Mob\dungeon\gon_dun.txt - Updated, reorganised Gon Ryun Dungeon Monster Spawns. [Muad_Dib]
 - Mob\field\ama_fild.txt - Updated, reorganised Amatsu Field Monster Spawns. [Muad_Dib]
