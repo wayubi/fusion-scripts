@@ -1,6 +1,8 @@
 --------------------------------------------------------------------------------
  Fusion 1.214 - ??????, 2005
 -------------------------------------------------------------------------------- 
+- 01-30-05: Shop\Prontera.txt - Fixed Prontera Tool Dealer. [Muad_Dib]
+- 01-30-05: Mob\dungeon\in_sphinx_dun.txt - Fixed Sphinx lvl 2 Spawns. [Muad_Dib]
 - 01-28-05: Mob\dungeon\ayo_dun.txt - Added Official Ayathaya mobs. [Muad_Dib]
 - 01-28-05: Mob\dungeon\gefenia_dun.txt - Added Official Gefenia mobs. [Muad_Dib]
 - 01-28-05: Mob\field\ayo_fild.txt -  Added Official Ayathaya mobs. [Muad_Dib]

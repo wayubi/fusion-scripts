@@ -22,10 +22,10 @@ in_sphinx1.gat,0,0,0,0		monster	"Matyr"	1146,10,0,0,0
 // - Sphinx Dungeon 02
 //========================================================================================
 
-in_sphinx1.gat,0,0,0,0  	monster	"Drainliar" 1111,25,0,0,0
-in_sphinx1.gat,0,0,0,0  	monster	"Requiem" 	1164,15,0,0,0
-in_sphinx1.gat,0,0,0,0  	monster	"Zerom" 	1178,20,0,0,0
-in_sphinx1.gat,0,0,0,0		monster	"Matyr"	1146,45,0,0,0
+in_sphinx2.gat,0,0,0,0  	monster	"Drainliar" 1111,25,0,0,0
+in_sphinx2.gat,0,0,0,0  	monster	"Requiem" 	1164,15,0,0,0
+in_sphinx2.gat,0,0,0,0  	monster	"Zerom" 	1178,20,0,0,0
+in_sphinx2.gat,0,0,0,0		monster	"Matyr"	1146,45,0,0,0
 
 //========================================================================================
 // - Sphinx Dungeon 03
