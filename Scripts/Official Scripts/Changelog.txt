@@ -9,6 +9,9 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.005
 ----------------------------------------------------------------------------------------------------
+
+- Mob\field\xmas_fld.txt - Added Hatii Baby. 2004/05/21 [Muad_Dib]
+- Mob\dungeon\xmas_dun.txt - Added Hatii Baby. 2004/05/21 [Muad_Dib]
 - Town\Town_Guide.txt - Updated Comodo Guides. [Muad_Dib]
 - Town\Town_Kafra.txt - Updated Comodo Kafra. [Muad_Dib]
 - Town\Town_Comodo.txt - Updated Town Comodo. [Muad_Dib]
