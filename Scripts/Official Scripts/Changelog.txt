@@ -2,6 +2,7 @@ asdf
 ----------------------------------------------------------------------------------------------------
 Fusion NPC Pack - 1.002
 ----------------------------------------------------------------------------------------------------
+- Event\Event_Potion.txt - Fixed page header, cleaned up script and fixed missing " in npc names. [mudvayne]
 - Event\Event_Bunny.txt - Fixed page header, Npc Names. [mudvayne]
 - Event\Event_MrSmile.txt - Fixed page header, Npc Names and Npc Sprite. [mudvayne]
 - Event\Event_MobTim.txt - Translated Iwado Npc and fixed script header. [mudvayne]
