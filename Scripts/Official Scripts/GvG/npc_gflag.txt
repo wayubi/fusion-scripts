@@ -1,712 +1,832 @@
-//----------------------------------------------------------------------------------------
-// *Npc_gflag* - From Weiss, translated by *AppleGirl*
-// eWeiss Project 2003 - http://revolve.emuxhaven.net/weiss/
-// Edited for dWeiss GVG Project - The Harbinger // Makenza
-//----------------------------------------------------------------------------------------
+//========================================================================================
+// »» The Fusion Project ««
+// Copyright (c) 2004, Cobax Information Systems
+// http://fusion.cobax.net/
+// ---------------------------------------------------------------------------------------
+//
+// Midgard braggin Flags - Non Player Character Locations
+//
+// - Flag -> prontera: 156,192
+//   Information about guild base ownerships
+//
+// - Flag -> prontera: 146,194
+//   Information about guild base ownerships
+//
+// - Flag -> prontera: 143,203
+//   Information about guild base ownerships
+//
+// - Flag -> prontera: 167,203
+//   Information about guild base ownerships
+//
+// - Flag -> prontera: 165,194
+//   Information about guild base ownerships
+//
+// - Flag -> geffen: 109,123
+//   Information about guild base ownerships
+//
+// - Flag -> geffen: 112,129
+//   Information about guild base ownerships
+//
+// - Flag -> geffen: 120,132
+//   Information about guild base ownerships
+//
+// - Flag -> geffen: 127,130
+//   Information about guild base ownerships
+//
+// - Flag -> geffen: 131,123
+//   Information about guild base ownerships
+//
+// - Flag -> payon: 79,31
+//   Information about guild base ownerships
+//
+// - Flag -> payon: 79,35
+//   Information about guild base ownerships
+//
+// - Flag -> payon: 79,39
+//   Information about guild base ownerships
+//
+// - Flag -> payon: 79,43
+//   Information about guild base ownerships
+//
+// - Flag -> payon: 79,47
+//   Information about guild base ownerships
+//
+// - Flag -> aldebaran: 152,97
+//   Information about guild base ownerships
+//
+// - Flag -> aldebaran: 149,97
+//   Information about guild base ownerships
+//
+// - Flag -> aldebaran: 134,97
+//   Information about guild base ownerships
+//
+// - Flag -> aldebaran: 131,97
+//   Information about guild base ownerships
+//
+// - Flag -> aldebaran: 128,97
+//   Information about guild base ownerships
+//
+//========================================================================================
 
-prontera.gat,156,192,4 script Flag 722,{
-guildreg "prtg_cas01";
-check guildid == 0,-,L_START_1;
-mes "       [ Kingdom of Prontera ]";
-next;
-mes "1. As Law of Prontera";
-mes "    this guild base isn't taken by";
-mes "    any guild yet.";
-next;
-mes "2. In order to take this guild base,";
-mes "    you must defeat all the guardians";
-mes "    that protecting guild base and";
-mes "    eliminate the EMPERIUM to";
-mes "    take over the guild base.";
-close;
+prontera.gat,156,192,4 script "Flag" 722,{
+	guildreg "prtg_cas01";
+	check guildid == 0,-,L_START_1;
+	mes "       [ Kingdom of Prontera ]";
+	next;
+	mes "1. As Law of Prontera";
+	mes "    this guild base isn't taken by";
+	mes "    any guild yet.";
+	next;
+	mes "2. In order to take this guild base,";
+	mes "    you must defeat all the guardians";
+	mes "    that protecting guild base and";
+	mes "    eliminate the EMPERIUM to";
+	mes "    take over the guild base.";
+	close;
 L_START_1:
-mes "       [ Kingdom of Prontera ]";
-next;
-mes "1. As law of Prontera this base is now";
-mes "    $guildname 's guild";
-mes "    base.";
-next;
-mes "2.  $guildname Guild master is";
-mes "    $guildmaster, and any of you";
-mes "    have a problem, raise your sword to ";
-mes "    honor yourself.";
-close;
+	check ismyguild != 0,L_START_2,-;
+	mes "       [ Kingdom of Prontera ]";
+	next;
+	mes "1. As law of Prontera this base is now";
+	mes "    $guildname 's guild";
+	mes "    base.";
+	next;
+	mes "2.  $guildname Guild master is";
+	mes "    $guildmaster, and any of you";
+	mes "    have a problem, raise your sword to ";
+	mes "    honor yourself.";
+	close;
+L_START_2:
+	mes "[Vibration of Man's Voice]";
+	mes "The brave soldiers...";
+	mes "Would you like to go back?";
+	next;
+	menu "Go back to guild base.",L_MENU_1,"Cancle",-;
+	close;
+	L_MENU_1:
+		warp "prtg_cas01",96,173;
 }
-prontera.gat,146,194,3 script Flag 722,{
-guildreg "prtg_cas02";
-check guildid == 0,-,L_START_1;
-mes "       [ Kingdom of Prontera ]";
-next;
-mes "1. As Law of Prontera";
-mes "    this guild base isn't taken by";
-mes "    any guild yet.";
-next;
-mes "2. In order to take this guild base,";
-mes "    you must defeat all the guardians";
-mes "    that protecting guild base and";
-mes "    eliminate the EMPERIUM to";
-mes "    take over the guild base.";
-close;
+prontera.gat,146,194,3 script "Flag" 722,{
+	guildreg "prtg_cas02";
+	check guildid == 0,-,L_START_1;
+	mes "       [ Kingdom of Prontera ]";
+	next;
+	mes "1. As Law of Prontera";
+	mes "    this guild base isn't taken by";
+	mes "    any guild yet.";
+	next;
+	mes "2. In order to take this guild base,";
+	mes "    you must defeat all the guardians";
+	mes "    that protecting guild base and";
+	mes "    eliminate the EMPERIUM to";
+	mes "    take over the guild base.";
+	close;
 L_START_1:
-mes "       [ Kingdom of Prontera ]";
-next;
-mes "1. As law of Prontera this base is now";
-mes "    $guildname 's guild";
-mes "    base.";
-next;
-mes "2.  $guildname Guild master is";
-mes "    $guildmaster, and any of you";
-mes "    have a problem, raise your sword to ";
-mes "    honor yourself.";
-close;
+	check ismyguild != 0,L_START_2,-;
+	mes "       [ Kingdom of Prontera ]";
+	next;
+	mes "1. As law of Prontera this base is now";
+	mes "    $guildname 's guild";
+	mes "    base.";
+	next;
+	mes "2.  $guildname Guild master is";
+	mes "    $guildmaster, and any of you";
+	mes "    have a problem, raise your sword to ";
+	mes "    honor yourself.";
+	close;
+L_START_2:
+	mes "[Vibration of Man's Voice]";
+	mes "The brave soldiers...";
+	mes "Would you like to go back?";
+	next;
+	menu "Go back to guild base.",L_MENU_1,"Cancle",-;
+	close;
+	L_MENU_1:
+		warp "prtg_cas02",71,36;
 }
-prontera.gat,143,203,2 script Flag 722,{
-guildreg "prtg_cas03";
-check guildid == 0,-,L_START_1;
-mes "       [ Kingdom of Prontera ]";
-next;
-mes "1. As Law of Prontera";
-mes "    this guild base isn't taken by";
-mes "    any guild yet.";
-next;
-mes "2. In order to take this guild base,";
-mes "    you must defeat all the guardians";
-mes "    that protecting guild base and";
-mes "    eliminate the EMPERIUM to";
-mes "    take over the guild base.";
-close;
+prontera.gat,143,203,2 script "Flag" 722,{
+	guildreg "prtg_cas03";
+	check guildid == 0,-,L_START_1;
+	mes "       [ Kingdom of Prontera ]";
+	next;
+	mes "1. As Law of Prontera";
+	mes "    this guild base isn't taken by";
+	mes "    any guild yet.";
+	next;
+	mes "2. In order to take this guild base,";
+	mes "    you must defeat all the guardians";
+	mes "    that protecting guild base and";
+	mes "    eliminate the EMPERIUM to";
+	mes "    take over the guild base.";
+	close;
 L_START_1:
-mes "       [ Kingdom of Prontera ]";
-next;
-mes "1. As law of Prontera this base is now";
-mes "    $guildname 's guild";
-mes "    base.";
-next;
-mes "2.  $guildname Guild master is";
-mes "    $guildmaster, and any of you";
-mes "    have a problem, raise your sword to ";
-mes "    honor yourself.";
-close;
+	check ismyguild != 0,L_START_2,-;
+	mes "       [ Kingdom of Prontera ]";
+	next;
+	mes "1. As law of Prontera this base is now";
+	mes "    $guildname 's guild";
+	mes "    base.";
+	next;
+	mes "2.  $guildname Guild master is";
+	mes "    $guildmaster, and any of you";
+	mes "    have a problem, raise your sword to ";
+	mes "    honor yourself.";
+	close;
+L_START_2:
+	mes "[Vibration of Man's Voice]";
+	mes "The brave soldiers...";
+	mes "Would you like to go back?";
+	next;
+	menu "Go back to guild base.",L_MENU_1,"Cancle",-;
+	close;
+	L_MENU_1:
+		warp "prtg_cas03",181,215;
 }
-prontera.gat,167,203,6 script Flag 722,{
-guildreg "prtg_cas04";
-check guildid == 0,-,L_START_1;
-mes "       [ Kingdom of Prontera ]";
-next;
-mes "1. As Law of Prontera";
-mes "    this guild base isn't taken by";
-mes "    any guild yet.";
-next;
-mes "2. In order to take this guild base,";
-mes "    you must defeat all the guardians";
-mes "    that protecting guild base and";
-mes "    eliminate the EMPERIUM to";
-mes "    take over the guild base.";
-close;
+prontera.gat,167,203,6 script "Flag" 722,{
+	guildreg "prtg_cas04";
+	check guildid == 0,-,L_START_1;
+	mes "       [ Kingdom of Prontera ]";
+	next;
+	mes "1. As Law of Prontera";
+	mes "    this guild base isn't taken by";
+	mes "    any guild yet.";
+	next;
+	mes "2. In order to take this guild base,";
+	mes "    you must defeat all the guardians";
+	mes "    that protecting guild base and";
+	mes "    eliminate the EMPERIUM to";
+	mes "    take over the guild base.";
+	close;
 L_START_1:
-mes "       [ Kingdom of Prontera ]";
-next;
-mes "1. As law of Prontera this base is now";
-mes "    $guildname 's guild";
-mes "    base.";
-next;
-mes "2.  $guildname Guild master is";
-mes "    $guildmaster, and any of you";
-mes "    have a problem, raise your sword to ";
-mes "    honor yourself.";
-close;
+	check ismyguild != 0,L_START_2,-;
+	mes "       [ Kingdom of Prontera ]";
+	next;
+	mes "1. As law of Prontera this base is now";
+	mes "    $guildname 's guild";
+	mes "    base.";
+	next;
+	mes "2.  $guildname Guild master is";
+	mes "    $guildmaster, and any of you";
+	mes "    have a problem, raise your sword to ";
+	mes "    honor yourself.";
+	close;
+L_START_2:
+	mes "[Vibration of Man's Voice]";
+	mes "The brave soldiers...";
+	mes "Would you like to go back?";
+	next;
+	menu "Go back to guild base.",L_MENU_1,"Cancle",-;
+	close;
+	L_MENU_1:
+		warp "prtg_cas04",258,247;
 }
-prontera.gat,165,194,5 script Flag 722,{
-guildreg "prtg_cas05";
-check guildid == 0,-,L_START_1;
-mes "       [ Kingdom of Prontera ]";
-next;
-mes "1. As Law of Prontera";
-mes "    this guild base isn't taken by";
-mes "    any guild yet.";
-next;
-mes "2. In order to take this guild base,";
-mes "    you must defeat all the guardians";
-mes "    that protecting guild base and";
-mes "    eliminate the EMPERIUM to";
-mes "    take over the guild base.";
-close;
+prontera.gat,165,194,5 script "Flag" 722,{
+	guildreg "prtg_cas05";
+	check guildid == 0,-,L_START_1;
+	mes "       [ Kingdom of Prontera ]";
+	next;
+	mes "1. As Law of Prontera";
+	mes "    this guild base isn't taken by";
+	mes "    any guild yet.";
+	next;
+	mes "2. In order to take this guild base,";
+	mes "    you must defeat all the guardians";
+	mes "    that protecting guild base and";
+	mes "    eliminate the EMPERIUM to";
+	mes "    take over the guild base.";
+	close;
 L_START_1:
-mes "       [ Kingdom of Prontera ]";
-next;
-mes "1. As law of Prontera this base is now";
-mes "    $guildname 's guild";
-mes "    base.";
-next;
-mes "2.  $guildname Guild master is";
-mes "    $guildmaster, and any of you";
-mes "    have a problem, raise your sword to ";
-mes "    honor yourself.";
-close;
+	check ismyguild != 0,L_START_2,-;
+	mes "       [ Kingdom of Prontera ]";
+	next;
+	mes "1. As law of Prontera this base is now";
+	mes "    $guildname 's guild";
+	mes "    base.";
+	next;
+	mes "2.  $guildname Guild master is";
+	mes "    $guildmaster, and any of you";
+	mes "    have a problem, raise your sword to ";
+	mes "    honor yourself.";
+	close;
+L_START_2:
+	mes "[Vibration of Man's Voice]";
+	mes "The brave soldiers...";
+	mes "Would you like to go back?";
+	next;
+	menu "Go back to guild base.",L_MENU_1,"Cancle",-;
+	close;
+	L_MENU_1:
+		warp "prtg_cas05",52,41;
 }
 
-//----------------------------------------------------------------------------------------
-// Unhooked Flags below
-//----------------------------------------------------------------------------------------
+payon.gat,79,31,4 script "Flag" 722,{
+	guildreg "payg_cas01";
+	check guildid == 0,-,L_START_1;
+	mes "       [ Kingdom of Payon ]";
+	next;
+	mes "1. As Law of Payon";
+	mes "    this guild base isn't taken by";
+	mes "    any guild yet.";
+	next;
+	mes "2. In order to take this guild base,";
+	mes "    you must defeat all the guardians";
+	mes "    that protecting guild base and";
+	mes "    eliminate the EMPERIUM to";
+	mes "    take over the guild base.";
+	close;
+L_START_1:
+	check ismyguild != 0,L_START_2,-;
+	mes "       [ Kingdom of Payon ]";
+	next;
+	mes "1. As law of Prontera this base is now";
+	mes "    $guildname 's guild";
+	mes "    base.";
+	next;
+	mes "2.  $guildname Guild master is";
+	mes "    $guildmaster, and any of you";
+	mes "    have a problem, raise your sword to ";
+	mes "    honor yourself.";
+	close;
+L_START_2:
+	mes "[Vibration of Man's Voice]";
+	mes "The brave soldiers...";
+	mes "Would you like to go back?";
+	next;
+	menu "Go back to guild base.",L_MENU_1,"Cancle",-;
+	close;
+	L_MENU_1:
+		warp "payg_cas01",212,108;
+}
+payon.gat,79,35,4 script "Flag" 722,{
+	guildreg "payg_cas02";
+	check guildid == 0,-,L_START_1;
+	mes "       [ Kingdom of Payon ]";
+	next;
+	mes "1. As Law of Payon";
+	mes "    this guild base isn't taken by";
+	mes "    any guild yet.";
+	next;
+	mes "2. In order to take this guild base,";
+	mes "    you must defeat all the guardians";
+	mes "    that protecting guild base and";
+	mes "    eliminate the EMPERIUM to";
+	mes "    take over the guild base.";
+	close;
+L_START_1:
+	check ismyguild != 0,L_START_2,-;
+	mes "       [ Kingdom of Payon ]";
+	next;
+	mes "1. As law of Prontera this base is now";
+	mes "    $guildname 's guild";
+	mes "    base.";
+	next;
+	mes "2.  $guildname Guild master is";
+	mes "    $guildmaster, and any of you";
+	mes "    have a problem, raise your sword to ";
+	mes "    honor yourself.";
+	close;
+L_START_2:
+	mes "[Vibration of Man's Voice]";
+	mes "The brave soldiers...";
+	mes "Would you like to go back?";
+	next;
+	menu "Go back to guild base.",L_MENU_1,"Cancle",-;
+	close;
+	L_MENU_1:
+		warp "payg_cas02",22,275;
+}
+payon.gat,79,39,4 script "Flag" 722,{
+	guildreg "payg_cas03";
+	check guildid == 0,-,L_START_1;
+	mes "       [ Kingdom of Payon ]";
+	next;
+	mes "1. As Law of Payon";
+	mes "    this guild base isn't taken by";
+	mes "    any guild yet.";
+	next;
+	mes "2. In order to take this guild base,";
+	mes "    you must defeat all the guardians";
+	mes "    that protecting guild base and";
+	mes "    eliminate the EMPERIUM to";
+	mes "    take over the guild base.";
+	close;
+L_START_1:
+	check ismyguild != 0,L_START_2,-;
+	mes "       [ Kingdom of Payon ]";
+	next;
+	mes "1. As law of Prontera this base is now";
+	mes "    $guildname 's guild";
+	mes "    base.";
+	next;
+	mes "2.  $guildname Guild master is";
+	mes "    $guildmaster, and any of you";
+	mes "    have a problem, raise your sword to ";
+	mes "    honor yourself.";
+	close;
+L_START_2:
+	mes "[Vibration of Man's Voice]";
+	mes "The brave soldiers...";
+	mes "Would you like to go back?";
+	next;
+	menu "Go back to guild base.",L_MENU_1,"Cancle",-;
+	close;
+	L_MENU_1:
+		warp "payg_cas03",9,263;
+}
+payon.gat,79,43,4 script "Flag" 722,{
+	guildreg "payg_cas04";
+	check guildid == 0,-,L_START_1;
+	mes "       [ Kingdom of Payon ]";
+	next;
+	mes "1. As Law of Payon";
+	mes "    this guild base isn't taken by";
+	mes "    any guild yet.";
+	next;
+	mes "2. In order to take this guild base,";
+	mes "    you must defeat all the guardians";
+	mes "    that protecting guild base and";
+	mes "    eliminate the EMPERIUM to";
+	mes "    take over the guild base.";
+	close;
+L_START_1:
+	check ismyguild != 0,L_START_2,-;
+	mes "       [ Kingdom of Payon ]";
+	next;
+	mes "1. As law of Prontera this base is now";
+	mes "    $guildname 's guild";
+	mes "    base.";
+	next;
+	mes "2.  $guildname Guild master is";
+	mes "    $guildmaster, and any of you";
+	mes "    have a problem, raise your sword to ";
+	mes "    honor yourself.";
+	close;
+L_START_2:
+	mes "[Vibration of Man's Voice]";
+	mes "The brave soldiers...";
+	mes "Would you like to go back?";
+	next;
+	menu "Go back to guild base.",L_MENU_1,"Cancle",-;
+	close;
+	L_MENU_1:
+		warp "payg_cas04",40,235;
+}
+payon.gat,79,47,4 script "Flag" 722,{
+	guildreg "payg_cas05";
+	check guildid == 0,-,L_START_1;
+	mes "       [ Kingdom of Payon ]";
+	next;
+	mes "1. As Law of Payon";
+	mes "    this guild base isn't taken by";
+	mes "    any guild yet.";
+	next;
+	mes "2. In order to take this guild base,";
+	mes "    you must defeat all the guardians";
+	mes "    that protecting guild base and";
+	mes "    eliminate the EMPERIUM to";
+	mes "    take over the guild base.";
+	close;
+L_START_1:
+	check ismyguild != 0,L_START_2,-;
+	mes "       [ Kingdom of Payon ]";
+	next;
+	mes "1. As law of Prontera this base is now";
+	mes "    $guildname 's guild";
+	mes "    base.";
+	next;
+	mes "2.  $guildname Guild master is";
+	mes "    $guildmaster, and any of you";
+	mes "    have a problem, raise your sword to ";
+	mes "    honor yourself.";
+	close;
+L_START_2:
+	mes "[Vibration of Man's Voice]";
+	mes "The brave soldiers...";
+	mes "Would you like to go back?";
+	next;
+	menu "Go back to guild base.",L_MENU_1,"Cancle",-;
+	close;
+	L_MENU_1:
+		warp "payg_cas05",276,227;
+}
 
-
-payon.gat,79,31,4 script Flag 722,{
-guildreg "payg_cas01";
-check guildid == 0,-,L_START_1;
-mes "       [ Kingdom of Payon ]";
-next;
-mes "1. As Law of Payon";
-mes "    this guild base isn't taken by";
-mes "    any guild yet.";
-next;
-mes "2. In order to take this guild base,";
-mes "    you must defeat all the guardians";
-mes "    that protecting guild base and";
-mes "    eliminate the EMPERIUM to";
-mes "    take over the guild base.";
-close;
+aldebaran.gat,152,97,4 script "Flag" 722,{
+	guildreg "aldeg_cas01";
+	check guildid == 0,-,L_START_1;
+	mes "       [ Kingdom of Aldebaran ]";
+	next;
+	mes "1. As Law of Aldebaran";
+	mes "    this guild base isn't taken by";
+	mes "    any guild yet.";
+	next;
+	mes "2. In order to take this guild base,";
+	mes "    you must defeat all the guardians";
+	mes "    that protecting guild base and";
+	mes "    eliminate the EMPERIUM to";
+	mes "    take over the guild base.";
+	close;
 L_START_1:
-mes "       [ Kingdom of Payon ]";
-next;
-mes "1. As law of Prontera this base is now";
-mes "    $guildname 's guild";
-mes "    base.";
-next;
-mes "2.  $guildname Guild master is";
-mes "    $guildmaster, and any of you";
-mes "    have a problem, raise your sword to ";
-mes "    honor yourself.";
-close;
+	check ismyguild != 0,L_START_2,-;
+	mes "       [ Kingdom of Aldebaran ]";
+	next;
+	mes "1. As law of Prontera this base is now";
+	mes "    $guildname 's guild";
+	mes "    base.";
+	next;
+	mes "2.  $guildname Guild master is";
+	mes "    $guildmaster, and any of you";
+	mes "    have a problem, raise your sword to ";
+	mes "    honor yourself.";
+	close;
+L_START_2:
+	mes "[Vibration of Man's Voice]";
+	mes "The brave soldiers...";
+	mes "Would you like to go back?";
+	next;
+	menu "Go back to guild base.",L_MENU_1,"Cancle",-;
+	close;
+	L_MENU_1:
+		warp "aldeg_cas01",218,170;
 }
-payon.gat,79,35,4 script Flag 722,{
-guildreg "payg_cas02";
-check guildid == 0,-,L_START_1;
-mes "       [ Kingdom of Payon ]";
-next;
-mes "1. As Law of Payon";
-mes "    this guild base isn't taken by";
-mes "    any guild yet.";
-next;
-mes "2. In order to take this guild base,";
-mes "    you must defeat all the guardians";
-mes "    that protecting guild base and";
-mes "    eliminate the EMPERIUM to";
-mes "    take over the guild base.";
-close;
+aldebaran.gat,149,97,4 script "Flag" 722,{
+	guildreg "aldeg_cas02";
+	check guildid == 0,-,L_START_1;
+	mes "       [ Kingdom of Aldebaran ]";
+	next;
+	mes "1. As Law of Aldebaran";
+	mes "    this guild base isn't taken by";
+	mes "    any guild yet.";
+	next;
+	mes "2. In order to take this guild base,";
+	mes "    you must defeat all the guardians";
+	mes "    that protecting guild base and";
+	mes "    eliminate the EMPERIUM to";
+	mes "    take over the guild base.";
+	close;
 L_START_1:
-mes "       [ Kingdom of Payon ]";
-next;
-mes "1. As law of Prontera this base is now";
-mes "    $guildname 's guild";
-mes "    base.";
-next;
-mes "2.  $guildname Guild master is";
-mes "    $guildmaster, and any of you";
-mes "    have a problem, raise your sword to ";
-mes "    honor yourself.";
-close;
+	check ismyguild != 0,L_START_2,-;
+	mes "       [ Kingdom of Aldebaran ]";
+	next;
+	mes "1. As law of Prontera this base is now";
+	mes "    $guildname 's guild";
+	mes "    base.";
+	next;
+	mes "2.  $guildname Guild master is";
+	mes "    $guildmaster, and any of you";
+	mes "    have a problem, raise your sword to ";
+	mes "    honor yourself.";
+	close;
+L_START_2:
+	mes "[Vibration of Man's Voice]";
+	mes "The brave soldiers...";
+	mes "Would you like to go back?";
+	next;
+	menu "Go back to guild base.",L_MENU_1,"Cancle",-;
+	close;
+	L_MENU_1:
+		warp "aldeg_cas02",84,74;
 }
-payon.gat,79,39,4 script Flag 722,{
-guildreg "payg_cas03";
-check guildid == 0,-,L_START_1;
-mes "       [ Kingdom of Payon ]";
-next;
-mes "1. As Law of Payon";
-mes "    this guild base isn't taken by";
-mes "    any guild yet.";
-next;
-mes "2. In order to take this guild base,";
-mes "    you must defeat all the guardians";
-mes "    that protecting guild base and";
-mes "    eliminate the EMPERIUM to";
-mes "    take over the guild base.";
-close;
+aldebaran.gat,134,97,4 script "Flag" 722,{
+	guildreg "aldeg_cas03";
+	check guildid == 0,-,L_START_1;
+	mes "       [ Kingdom of Aldebaran ]";
+	next;
+	mes "1. As Law of Aldebaran";
+	mes "    this guild base isn't taken by";
+	mes "    any guild yet.";
+	next;
+	mes "2. In order to take this guild base,";
+	mes "    you must defeat all the guardians";
+	mes "    that protecting guild base and";
+	mes "    eliminate the EMPERIUM to";
+	mes "    take over the guild base.";
+	close;
 L_START_1:
-mes "       [ Kingdom of Payon ]";
-next;
-mes "1. As law of Prontera this base is now";
-mes "    $guildname 's guild";
-mes "    base.";
-next;
-mes "2.  $guildname Guild master is";
-mes "    $guildmaster, and any of you";
-mes "    have a problem, raise your sword to ";
-mes "    honor yourself.";
-close;
+	check ismyguild != 0,L_START_2,-;
+	mes "       [ Kingdom of Aldebaran ]";
+	next;
+	mes "1. As law of Prontera this base is now";
+	mes "    $guildname 's guild";
+	mes "    base.";
+	next;
+	mes "2.  $guildname Guild master is";
+	mes "    $guildmaster, and any of you";
+	mes "    have a problem, raise your sword to ";
+	mes "    honor yourself.";
+	close;
+L_START_2:
+	mes "[Vibration of Man's Voice]";
+	mes "The brave soldiers...";
+	mes "Would you like to go back?";
+	next;
+	menu "Go back to guild base.",L_MENU_1,"Cancle",-;
+	close;
+	L_MENU_1:
+		warp "aldeg_cas03",118,76;
 }
-payon.gat,79,43,4 script Flag 722,{
-guildreg "payg_cas04";
-check guildid == 0,-,L_START_1;
-mes "       [ Kingdom of Payon ]";
-next;
-mes "1. As Law of Payon";
-mes "    this guild base isn't taken by";
-mes "    any guild yet.";
-next;
-mes "2. In order to take this guild base,";
-mes "    you must defeat all the guardians";
-mes "    that protecting guild base and";
-mes "    eliminate the EMPERIUM to";
-mes "    take over the guild base.";
-close;
+aldebaran.gat,131,97,4 script "Flag" 722,{
+	guildreg "aldeg_cas04";
+	check guildid == 0,-,L_START_1;
+	mes "       [ Kingdom of Aldebaran ]";
+	next;
+	mes "1. As Law of Aldebaran";
+	mes "    this guild base isn't taken by";
+	mes "    any guild yet.";
+	next;
+	mes "2. In order to take this guild base,";
+	mes "    you must defeat all the guardians";
+	mes "    that protecting guild base and";
+	mes "    eliminate the EMPERIUM to";
+	mes "    take over the guild base.";
+	close;
 L_START_1:
-mes "       [ Kingdom of Payon ]";
-next;
-mes "1. As law of Prontera this base is now";
-mes "    $guildname 's guild";
-mes "    base.";
-next;
-mes "2.  $guildname Guild master is";
-mes "    $guildmaster, and any of you";
-mes "    have a problem, raise your sword to ";
-mes "    honor yourself.";
-close;
+	check ismyguild != 0,L_START_2,-;
+	mes "       [ Kingdom of Aldebaran ]";
+	next;
+	mes "1. As law of Prontera this base is now";
+	mes "    $guildname 's guild";
+	mes "    base.";
+	next;
+	mes "2.  $guildname Guild master is";
+	mes "    $guildmaster, and any of you";
+	mes "    have a problem, raise your sword to ";
+	mes "    honor yourself.";
+	close;
+L_START_2:
+	mes "[Vibration of Man's Voice]";
+	mes "The brave soldiers...";
+	mes "Would you like to go back?";
+	next;
+	menu "Go back to guild base.",L_MENU_1,"Cancle",-;
+	close;
+	L_MENU_1:
+		warp "aldeg_cas04",45,88;
 }
-payon.gat,79,47,4 script Flag 722,{
-guildreg "payg_cas05";
-check guildid == 0,-,L_START_1;
-mes "       [ Kingdom of Payon ]";
-next;
-mes "1. As Law of Payon";
-mes "    this guild base isn't taken by";
-mes "    any guild yet.";
-next;
-mes "2. In order to take this guild base,";
-mes "    you must defeat all the guardians";
-mes "    that protecting guild base and";
-mes "    eliminate the EMPERIUM to";
-mes "    take over the guild base.";
-close;
+aldebaran.gat,128,97,4 script "Flag" 722,{
+	guildreg "aldeg_cas05";
+	check guildid == 0,-,L_START_1;
+	mes "       [ Kingdom of Aldebaran ]";
+	next;
+	mes "1. As Law of Aldebaran";
+	mes "    this guild base isn't taken by";
+	mes "    any guild yet.";
+	next;
+	mes "2. In order to take this guild base,";
+	mes "    you must defeat all the guardians";
+	mes "    that protecting guild base and";
+	mes "    eliminate the EMPERIUM to";
+	mes "    take over the guild base.";
+	close;
 L_START_1:
-mes "       [ Kingdom of Payon ]";
-next;
-mes "1. As law of Prontera this base is now";
-mes "    $guildname 's guild";
-mes "    base.";
-next;
-mes "2.  $guildname Guild master is";
-mes "    $guildmaster, and any of you";
-mes "    have a problem, raise your sword to ";
-mes "    honor yourself.";
-close;
+	check ismyguild != 0,L_START_2,-;
+	mes "       [ Kingdom of Aldebaran ]";
+	next;
+	mes "1. As law of Prontera this base is now";
+	mes "    $guildname 's guild";
+	mes "    base.";
+	next;
+	mes "2.  $guildname Guild master is";
+	mes "    $guildmaster, and any of you";
+	mes "    have a problem, raise your sword to ";
+	mes "    honor yourself.";
+	close;
+L_START_2:
+	mes "[Vibration of Man's Voice]";
+	mes "The brave soldiers...";
+	mes "Would you like to go back?";
+	next;
+	menu "Go back to guild base.",L_MENU_1,"Cancle",-;
+	close;
+	L_MENU_1:
+		warp "aldeg_cas05",31,190;
 }
-payon.gat,89,155,4 script Flag 722,{
-guildreg "payg_cas01";
-check guildid == 0,-,L_START_1;
-mes "       [ Kingdom of Payon ]";
-next;
-mes "1. As Law of Payon";
-mes "    this guild base isn't taken by";
-mes "    any guild yet.";
-next;
-mes "2. In order to take this guild base,";
-mes "    you must defeat all the guardians";
-mes "    that protecting guild base and";
-mes "    eliminate the EMPERIUM to";
-mes "    take over the guild base.";
-close;
+geffen.gat,109,123,2 script "Flag" 722,{
+	guildreg "gefg_cas01";
+	check guildid == 0,-,L_START_1;
+	mes "       [ Kingdom of Geffen ]";
+	next;
+	mes "1. As Law of Geffen";
+	mes "    this guild base isn't taken by";
+	mes "    any guild yet.";
+	next;
+	mes "2. In order to take this guild base,";
+	mes "    you must defeat all the guardians";
+	mes "    that protecting guild base and";
+	mes "    eliminate the EMPERIUM to";
+	mes "    take over the guild base.";
+	close;
 L_START_1:
-mes "       [ Kingdom of Payon ]";
-next;
-mes "1. As law of Prontera this base is now";
-mes "    $guildname 's guild";
-mes "    base.";
-next;
-mes "2.  $guildname Guild master is";
-mes "    $guildmaster, and any of you";
-mes "    have a problem, raise your sword to ";
-mes "    honor yourself.";
-close;
+	check ismyguild != 0,L_START_2,-;
+	mes "       [ Kingdom of Geffen ]";
+	next;
+	mes "1. As law of Prontera this base is now";
+	mes "    $guildname 's guild";
+	mes "    base.";
+	next;
+	mes "2.  $guildname Guild master is";
+	mes "    $guildmaster, and any of you";
+	mes "    have a problem, raise your sword to ";
+	mes "    honor yourself.";
+	close;
+L_START_2:
+	mes "[Vibration of Man's Voice]";
+	mes "The brave soldiers...";
+	mes "Would you like to go back?";
+	next;
+	menu "Go back to guild base.",L_MENU_1,"Cancle",-;
+	close;
+	L_MENU_1:
+		warp "gefg_cas01",83,47;
 }
-payon.gat,82,155,4 script Flag 722,{
-guildreg "payg_cas02";
-check guildid == 0,-,L_START_1;
-mes "       [ Kingdom of Payon ]";
-next;
-mes "1. As Law of Payon";
-mes "    this guild base isn't taken by";
-mes "    any guild yet.";
-next;
-mes "2. In order to take this guild base,";
-mes "    you must defeat all the guardians";
-mes "    that protecting guild base and";
-mes "    eliminate the EMPERIUM to";
-mes "    take over the guild base.";
-close;
+geffen.gat,112,129,1 script "Flag" 722,{
+	guildreg "gefg_cas02";
+	check guildid == 0,-,L_START_1;
+	mes "       [ Kingdom of Geffen ]";
+	next;
+	mes "1. As Law of Geffen";
+	mes "    this guild base isn't taken by";
+	mes "    any guild yet.";
+	next;
+	mes "2. In order to take this guild base,";
+	mes "    you must defeat all the guardians";
+	mes "    that protecting guild base and";
+	mes "    eliminate the EMPERIUM to";
+	mes "    take over the guild base.";
+	close;
 L_START_1:
-mes "       [ Kingdom of Payon ]";
-next;
-mes "1. As law of Prontera this base is now";
-mes "    $guildname 's guild";
-mes "    base.";
-next;
-mes "2.  $guildname Guild master is";
-mes "    $guildmaster, and any of you";
-mes "    have a problem, raise your sword to ";
-mes "    honor yourself.";
-close;
+	check ismyguild != 0,L_START_2,-;
+	mes "       [ Kingdom of Geffen ]";
+	next;
+	mes "1. As law of Prontera this base is now";
+	mes "    $guildname 's guild";
+	mes "    base.";
+	next;
+	mes "2.  $guildname Guild master is";
+	mes "    $guildmaster, and any of you";
+	mes "    have a problem, raise your sword to ";
+	mes "    honor yourself.";
+	close;
+L_START_2:
+	mes "[Vibration of Man's Voice]";
+	mes "The brave soldiers...";
+	mes "Would you like to go back?";
+	next;
+	menu "Go back to guild base.",L_MENU_1,"Cancle",-;
+	close;
+	L_MENU_1:
+		warp "gefg_cas02",23,66;
 }
-payon.gat,97,155,4 script Flag 722,{
-guildreg "payg_cas03";
-check guildid == 0,-,L_START_1;
-mes "       [ Kingdom of Payon ]";
-next;
-mes "1. As Law of Payon";
-mes "    this guild base isn't taken by";
-mes "    any guild yet.";
-next;
-mes "2. In order to take this guild base,";
-mes "    you must defeat all the guardians";
-mes "    that protecting guild base and";
-mes "    eliminate the EMPERIUM to";
-mes "    take over the guild base.";
-close;
+geffen.gat,120,132,8 script "Flag" 722,{
+	guildreg "gefg_cas03";
+	check guildid == 0,-,L_START_1;
+	mes "       [ Kingdom of Geffen ]";
+	next;
+	mes "1. As Law of Geffen";
+	mes "    this guild base isn't taken by";
+	mes "    any guild yet.";
+	next;
+	mes "2. In order to take this guild base,";
+	mes "    you must defeat all the guardians";
+	mes "    that protecting guild base and";
+	mes "    eliminate the EMPERIUM to";
+	mes "    take over the guild base.";
+	close;
 L_START_1:
-mes "       [ Kingdom of Payon ]";
-next;
-mes "1. As law of Prontera this base is now";
-mes "    $guildname 's guild";
-mes "    base.";
-next;
-mes "2.  $guildname Guild master is";
-mes "    $guildmaster, and any of you";
-mes "    have a problem, raise your sword to ";
-mes "    honor yourself.";
-close;
+	check ismyguild != 0,L_START_2,-;
+	mes "       [ Kingdom of Geffen ]";
+	next;
+	mes "1. As law of Prontera this base is now";
+	mes "    $guildname 's guild";
+	mes "    base.";
+	next;
+	mes "2.  $guildname Guild master is";
+	mes "    $guildmaster, and any of you";
+	mes "    have a problem, raise your sword to ";
+	mes "    honor yourself.";
+	close;
+L_START_2:
+	mes "[Vibration of Man's Voice]";
+	mes "The brave soldiers...";
+	mes "Would you like to go back?";
+	next;
+	menu "Go back to guild base.",L_MENU_1,"Cancle",-;
+	close;
+	L_MENU_1:
+		warp "gefg_cas03",116,89;
 }
-payon.gat,103,155,4 script Flag 722,{
-guildreg "payg_cas04";
-check guildid == 0,-,L_START_1;
-mes "       [ Kingdom of Payon ]";
-next;
-mes "1. As Law of Payon";
-mes "    this guild base isn't taken by";
-mes "    any guild yet.";
-next;
-mes "2. In order to take this guild base,";
-mes "    you must defeat all the guardians";
-mes "    that protecting guild base and";
-mes "    eliminate the EMPERIUM to";
-mes "    take over the guild base.";
-close;
+geffen.gat,127,130,7 script "Flag" 722,{
+	guildreg "gefg_cas04";
+	check guildid == 0,-,L_START_1;
+	mes "       [ Kingdom of Geffen ]";
+	next;
+	mes "1. As Law of Geffen";
+	mes "    this guild base isn't taken by";
+	mes "    any guild yet.";
+	next;
+	mes "2. In order to take this guild base,";
+	mes "    you must defeat all the guardians";
+	mes "    that protecting guild base and";
+	mes "    eliminate the EMPERIUM to";
+	mes "    take over the guild base.";
+	close;
 L_START_1:
-mes "       [ Kingdom of Payon ]";
-next;
-mes "1. As law of Prontera this base is now";
-mes "    $guildname 's guild";
-mes "    base.";
-next;
-mes "2.  $guildname Guild master is";
-mes "    $guildmaster, and any of you";
-mes "    have a problem, raise your sword to ";
-mes "    honor yourself.";
-close;
+	check ismyguild != 0,L_START_2,-;
+	mes "       [ Kingdom of Geffen ]";
+	next;
+	mes "1. As law of Prontera this base is now";
+	mes "    $guildname 's guild";
+	mes "    base.";
+	next;
+	mes "2.  $guildname Guild master is";
+	mes "    $guildmaster, and any of you";
+	mes "    have a problem, raise your sword to ";
+	mes "    honor yourself.";
+	close;
+L_START_2:
+	mes "[Vibration of Man's Voice]";
+	mes "The brave soldiers...";
+	mes "Would you like to go back?";
+	next;
+	menu "Go back to guild base.",L_MENU_1,"Cancle",-;
+	close;
+	L_MENU_1:
+		warp "gefg_cas04",59,70;
 }
-payon.gat,75,155,4 script Flag 722,{
-guildreg "payg_cas05";
-check guildid == 0,-,L_START_1;
-mes "       [ Kingdom of Payon ]";
-next;
-mes "1. As Law of Payon";
-mes "    this guild base isn't taken by";
-mes "    any guild yet.";
-next;
-mes "2. In order to take this guild base,";
-mes "    you must defeat all the guardians";
-mes "    that protecting guild base and";
-mes "    eliminate the EMPERIUM to";
-mes "    take over the guild base.";
-close;
+geffen.gat,131,123,6 script "Flag" 722,{
+	guildreg "gefg_cas05";
+	check guildid == 0,-,L_START_1;
+	mes "       [ Kingdom of Geffen ]";
+	next;
+	mes "1. As Law of Geffen";
+	mes "    this guild base isn't taken by";
+	mes "    any guild yet.";
+	next;
+	mes "2. In order to take this guild base,";
+	mes "    you must defeat all the guardians";
+	mes "    that protecting guild base and";
+	mes "    eliminate the EMPERIUM to";
+	mes "    take over the guild base.";
+	close;
 L_START_1:
-mes "       [ Kingdom of Payon ]";
-next;
-mes "1. As law of Prontera this base is now";
-mes "    $guildname 's guild";
-mes "    base.";
-next;
-mes "2.  $guildname Guild master is";
-mes "    $guildmaster, and any of you";
-mes "    have a problem, raise your sword to ";
-mes "    honor yourself.";
-close;
-}
-aldebaran.gat,152,97,4 script Flag 722,{
-guildreg "aldeg_cas01";
-check guildid == 0,-,L_START_1;
-mes "       [ Kingdom of Aldebaran ]";
-next;
-mes "1. As Law of Aldebaran";
-mes "    this guild base isn't taken by";
-mes "    any guild yet.";
-next;
-mes "2. In order to take this guild base,";
-mes "    you must defeat all the guardians";
-mes "    that protecting guild base and";
-mes "    eliminate the EMPERIUM to";
-mes "    take over the guild base.";
-close;
-L_START_1:
-mes "       [ Kingdom of Aldebaran ]";
-next;
-mes "1. As law of Prontera this base is now";
-mes "    $guildname 's guild";
-mes "    base.";
-next;
-mes "2.  $guildname Guild master is";
-mes "    $guildmaster, and any of you";
-mes "    have a problem, raise your sword to ";
-mes "    honor yourself.";
-close;
-}
-aldebaran.gat,149,97,4 script Flag 722,{
-guildreg "aldeg_cas02";
-check guildid == 0,-,L_START_1;
-mes "       [ Kingdom of Aldebaran ]";
-next;
-mes "1. As Law of Aldebaran";
-mes "    this guild base isn't taken by";
-mes "    any guild yet.";
-next;
-mes "2. In order to take this guild base,";
-mes "    you must defeat all the guardians";
-mes "    that protecting guild base and";
-mes "    eliminate the EMPERIUM to";
-mes "    take over the guild base.";
-close;
-L_START_1:
-mes "       [ Kingdom of Aldebaran ]";
-next;
-mes "1. As law of Prontera this base is now";
-mes "    $guildname 's guild";
-mes "    base.";
-next;
-mes "2.  $guildname Guild master is";
-mes "    $guildmaster, and any of you";
-mes "    have a problem, raise your sword to ";
-mes "    honor yourself.";
-close;
-}
-aldebaran.gat,134,97,4 script Flag 722,{
-guildreg "aldeg_cas03";
-check guildid == 0,-,L_START_1;
-mes "       [ Kingdom of Aldebaran ]";
-next;
-mes "1. As Law of Aldebaran";
-mes "    this guild base isn't taken by";
-mes "    any guild yet.";
-next;
-mes "2. In order to take this guild base,";
-mes "    you must defeat all the guardians";
-mes "    that protecting guild base and";
-mes "    eliminate the EMPERIUM to";
-mes "    take over the guild base.";
-close;
-L_START_1:
-mes "       [ Kingdom of Aldebaran ]";
-next;
-mes "1. As law of Prontera this base is now";
-mes "    $guildname 's guild";
-mes "    base.";
-next;
-mes "2.  $guildname Guild master is";
-mes "    $guildmaster, and any of you";
-mes "    have a problem, raise your sword to ";
-mes "    honor yourself.";
-close;
-}
-aldebaran.gat,131,97,4 script Flag 722,{
-guildreg "aldeg_cas04";
-check guildid == 0,-,L_START_1;
-mes "       [ Kingdom of Aldebaran ]";
-next;
-mes "1. As Law of Aldebaran";
-mes "    this guild base isn't taken by";
-mes "    any guild yet.";
-next;
-mes "2. In order to take this guild base,";
-mes "    you must defeat all the guardians";
-mes "    that protecting guild base and";
-mes "    eliminate the EMPERIUM to";
-mes "    take over the guild base.";
-close;
-L_START_1:
-mes "       [ Kingdom of Aldebaran ]";
-next;
-mes "1. As law of Prontera this base is now";
-mes "    $guildname 's guild";
-mes "    base.";
-next;
-mes "2.  $guildname Guild master is";
-mes "    $guildmaster, and any of you";
-mes "    have a problem, raise your sword to ";
-mes "    honor yourself.";
-close;
-}
-aldebaran.gat,128,97,4 script Flag 722,{
-guildreg "aldeg_cas05";
-check guildid == 0,-,L_START_1;
-mes "       [ Kingdom of Aldebaran ]";
-next;
-mes "1. As Law of Aldebaran";
-mes "    this guild base isn't taken by";
-mes "    any guild yet.";
-next;
-mes "2. In order to take this guild base,";
-mes "    you must defeat all the guardians";
-mes "    that protecting guild base and";
-mes "    eliminate the EMPERIUM to";
-mes "    take over the guild base.";
-close;
-L_START_1:
-mes "       [ Kingdom of Aldebaran ]";
-next;
-mes "1. As law of Prontera this base is now";
-mes "    $guildname 's guild";
-mes "    base.";
-next;
-mes "2.  $guildname Guild master is";
-mes "    $guildmaster, and any of you";
-mes "    have a problem, raise your sword to ";
-mes "    honor yourself.";
-close;
-}
-geffen.gat,109,123,2 script Flag 722,{
-guildreg "gefg_cas01";
-check guildid == 0,-,L_START_1;
-mes "       [ Kingdom of Geffen ]";
-next;
-mes "1. As Law of Geffen";
-mes "    this guild base isn't taken by";
-mes "    any guild yet.";
-next;
-mes "2. In order to take this guild base,";
-mes "    you must defeat all the guardians";
-mes "    that protecting guild base and";
-mes "    eliminate the EMPERIUM to";
-mes "    take over the guild base.";
-close;
-L_START_1:
-mes "       [ Kingdom of Geffen ]";
-next;
-mes "1. As law of Prontera this base is now";
-mes "    $guildname 's guild";
-mes "    base.";
-next;
-mes "2.  $guildname Guild master is";
-mes "    $guildmaster, and any of you";
-mes "    have a problem, raise your sword to ";
-mes "    honor yourself.";
-close;
-}
-geffen.gat,112,129,1 script Flag 722,{
-guildreg "gefg_cas02";
-check guildid == 0,-,L_START_1;
-mes "       [ Kingdom of Geffen ]";
-next;
-mes "1. As Law of Geffen";
-mes "    this guild base isn't taken by";
-mes "    any guild yet.";
-next;
-mes "2. In order to take this guild base,";
-mes "    you must defeat all the guardians";
-mes "    that protecting guild base and";
-mes "    eliminate the EMPERIUM to";
-mes "    take over the guild base.";
-close;
-L_START_1:
-mes "       [ Kingdom of Geffen ]";
-next;
-mes "1. As law of Prontera this base is now";
-mes "    $guildname 's guild";
-mes "    base.";
-next;
-mes "2.  $guildname Guild master is";
-mes "    $guildmaster, and any of you";
-mes "    have a problem, raise your sword to ";
-mes "    honor yourself.";
-close;
-}
-geffen.gat,120,132,8 script Flag 722,{
-guildreg "gefg_cas03";
-check guildid == 0,-,L_START_1;
-mes "       [ Kingdom of Geffen ]";
-next;
-mes "1. As Law of Geffen";
-mes "    this guild base isn't taken by";
-mes "    any guild yet.";
-next;
-mes "2. In order to take this guild base,";
-mes "    you must defeat all the guardians";
-mes "    that protecting guild base and";
-mes "    eliminate the EMPERIUM to";
-mes "    take over the guild base.";
-close;
-L_START_1:
-mes "       [ Kingdom of Geffen ]";
-next;
-mes "1. As law of Prontera this base is now";
-mes "    $guildname 's guild";
-mes "    base.";
-next;
-mes "2.  $guildname Guild master is";
-mes "    $guildmaster, and any of you";
-mes "    have a problem, raise your sword to ";
-mes "    honor yourself.";
-close;
-}
-geffen.gat,127,130,7 script Flag 722,{
-guildreg "gefg_cas04";
-check guildid == 0,-,L_START_1;
-mes "       [ Kingdom of Geffen ]";
-next;
-mes "1. As Law of Geffen";
-mes "    this guild base isn't taken by";
-mes "    any guild yet.";
-next;
-mes "2. In order to take this guild base,";
-mes "    you must defeat all the guardians";
-mes "    that protecting guild base and";
-mes "    eliminate the EMPERIUM to";
-mes "    take over the guild base.";
-close;
-L_START_1:
-mes "       [ Kingdom of Geffen ]";
-next;
-mes "1. As law of Prontera this base is now";
-mes "    $guildname 's guild";
-mes "    base.";
-next;
-mes "2.  $guildname Guild master is";
-mes "    $guildmaster, and any of you";
-mes "    have a problem, raise your sword to ";
-mes "    honor yourself.";
-close;
-}
-geffen.gat,131,123,6 script Flag 722,{
-guildreg "gefg_cas05";
-check guildid == 0,-,L_START_1;
-mes "       [ Kingdom of Geffen ]";
-next;
-mes "1. As Law of Geffen";
-mes "    this guild base isn't taken by";
-mes "    any guild yet.";
-next;
-mes "2. In order to take this guild base,";
-mes "    you must defeat all the guardians";
-mes "    that protecting guild base and";
-mes "    eliminate the EMPERIUM to";
-mes "    take over the guild base.";
-close;
-L_START_1:
-mes "       [ Kingdom of Geffen ]";
-next;
-mes "1. As law of Prontera this base is now";
-mes "    $guildname 's guild";
-mes "    base.";
-next;
-mes "2.  $guildname Guild master is";
-mes "    $guildmaster, and any of you";
-mes "    have a problem, raise your sword to ";
-mes "    honor yourself.";
-close;
+	check ismyguild != 0,L_START_2,-;
+	mes "       [ Kingdom of Geffen ]";
+	next;
+	mes "1. As law of Prontera this base is now";
+	mes "    $guildname 's guild";
+	mes "    base.";
+	next;
+	mes "2.  $guildname Guild master is";
+	mes "    $guildmaster, and any of you";
+	mes "    have a problem, raise your sword to ";
+	mes "    honor yourself.";
+	close;
+L_START_2:
+	mes "[Vibration of Man's Voice]";
+	mes "The brave soldiers...";
+	mes "Would you like to go back?";
+	next;
+	menu "Go back to guild base.",L_MENU_1,"Cancle",-;
+	close;
+	L_MENU_1:
+		warp "gefg_cas05",61,52;
 }

@@ -9,6 +9,9 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.002
 ----------------------------------------------------------------------------------------------------
+- GvG\*.txt - Cleaned scripts, added missing " in npc names, fixed push cart check bug, fixed option check bug, added support for alchimist in kafra cart rent. [mudvayne]
+- GvG\npc_gflag.txt - Removed 5 none-official flags, added option for guild member to warp at guild base. [mudvayne]
+- GvG\npc_emperium.txt - Moved all guild base emperiums here. [mudvayne]
 - Town\Town_Siglude.txt - Fixed typo errors Vurewell, Sade, Begnahd and Kahlamanlith NPCs. [mudvayne]
 - Event\Event_Dye.txt - Fixed missing " in npc names and header. [mudvayne]
 - Shop\Shop.txt - Moved to new filename system. [mudvayne]
