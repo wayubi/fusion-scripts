@@ -23,22 +23,13 @@
 // - Knight Winzer -> job_knight: 89,106
 //   Gives information about the mob test and teleports you into the test.
 //
-// - TEST1 -> job_knt: 1,1
-//   Summons Level 1 mobs and is a 3 minute timer.
-//
-// - area1 -> job_knt: 0,0
+// - area1 -> job_knt: 1,1
 //   Keeps track of Level 1 monster deaths and warps you to Level 2.
 //
-// - TEST2 -> job_knt: 1,1
-//   Summons Level 2 mobs and is a 3 minute timer.
-//
-// - area2 -> job_knt: 0,0
+// - area2 -> job_knt: 1,1
 //   Keeps track of Level 2 monster deaths and warps you to Level 3.
 //
-// - TEST3 -> job_knt: 1,1
-//   Summons Level 3 mobs and is a 3 minute timer.
-//
-// - area3 -> job_knt: 0,0
+// - area3 -> job_knt: 1,1
 //   Keeps track of Level 3 monster deaths and enables unofficial fix.
 //
 // - Knight Winzer -> job_knt: 143,152
@@ -1277,15 +1268,16 @@ L_START_1:
 		set \@area3_mobs = 0;
 		set \@START_KARENA = 1;
 		enablenpc "job_knt","Knight Winzer",0;
-		enablenpc "job_knt","TEST1",1;
-		enablenpc "job_knt","TEST2",0;
-		enablenpc "job_knt","TEST3",0;
+		enablenpc "job_knt","area1",1;
+		enablenpc "job_knt","area2",0;
+		enablenpc "job_knt","area3",0;
 		warpallpc "job_knt",43,146,0;
 		return;
 }
 
-job_knt.gat,1,1,1	script	"TEST1"	111,{
-	return;
+job_knt.gat,1,1,1	script	"area1"	-1,{
+	check \@START_KARENA = 2,Counter,-;
+		return;
 OnInit:
 	check \@START_KARENA = 1,start,-;
 		return;
@@ -1306,6 +1298,151 @@ OnInit:
 		callmob "job_knt",35,146,"Argos",1100,0,"area1";
 		callmob "job_knt",52,146,"Argos",1100,0,"area1";
 		set \@START_KARENA = 2;
+		npctimer 1;
+		return;
+		OnTimer2000:
+			check \@START_KARENA = 3,-,Null;
+				broadcast "Knight Winzer: ..........",10;
+				return;
+		OnTimer3500:
+			check \@START_KARENA = 3,-,Null;
+				broadcast "Knight Winzer: .....You can go to the next level.",10;
+				return;
+		OnTimer5000:
+			check \@START_KARENA = 3,-,Null;
+				npctimer 0;
+				set \@START_KARENA = 4;
+				enablenpc "job_knt","area2",1;
+				warpallpc "job_knt",43,52,0;
+				return;
+		OnTimer30000:
+			getmapusers "job_knt",@USER_NUM;
+			check @USER_NUM = 0,OnTimer180000,-;
+			return;
+		OnTimer60000:
+			getmapusers "job_knt",@USER_NUM;
+			check @USER_NUM = 0,OnTimer180000,-;
+			return;
+		OnTimer90000:
+			getmapusers "job_knt",@USER_NUM;
+			check @USER_NUM = 0,OnTimer180000,-;
+			return;
+		OnTimer120000:
+			getmapusers "job_knt",@USER_NUM;
+			check @USER_NUM = 0,OnTimer180000,-;
+			return;
+		OnTimer150000:
+			getmapusers "job_knt",@USER_NUM;
+			check @USER_NUM = 0,OnTimer180000,-;
+			return;
+		OnTimer180000:
+			npctimer 0;
+			resetmymob "job_knt";
+			set \@START_KARENA = 0;
+			warpallpc "prt_in",80,100,0;
+			return;
+	Counter:
+		set \@area1_mobs + 1;
+		check \@area1_mobs < 15,-,mobdead;
+			return;
+		mobdead:
+			set \@START_KARENA = 3;
+			npctimer 0;
+			npctimer 1;
+		Null:	
+			return;
+}
+
+job_knt.gat,1,1,1	script	"area2"	-1,{
+	check \@START_KARENA = 5,Counter,-;
+		return;
+OnInit:
+	check \@START_KARENA = 4,start,-;
+		return;
+	start:
+		callmob "job_knt",53,52,"Frilldora",1119,0,"area2";
+		callmob "job_knt",34,52,"Frilldora",1119,0,"area2"; 
+		callmob "job_knt",43,42,"Desert Wolf",1106,0,"area2"; 
+		callmob "job_knt",43,62,"Desert Wolf",1106,10,"area2"; 
+		callmob "job_knt",58,52,"Drainliar",1111,0,"area2"; 
+		callmob "job_knt",58,52,"Drainliar",1111,0,"area2"; 
+		callmob "job_knt",29,52,"Drainliar",1111,0,"area2"; 
+		callmob "job_knt",29,52,"Drainliar",1111,0,"area2"; 
+		callmob "job_knt",60,68,"Anacondaq",1030,0,"area2"; 
+		callmob "job_knt",27,68,"Anacondaq",1030,0,"area2"; 
+		callmob "job_knt",60,35,"Anacondaq",1030,0,"area2"; 
+		callmob "job_knt",27,35,"Anacondaq",1030,0,"area2"; 
+		set \@START_KARENA = 5;
+		npctimer 1;
+		return;
+		OnTimer2000:
+			check \@START_KARENA = 6,-,Null;
+				broadcast "Knight Winzer: ..........",10;
+				return;
+		OnTimer3500:
+			check \@START_KARENA = 6,-,Null;
+				broadcast "Knight Winzer: .....You can now enter the last level.",10;
+				return;
+		OnTimer5000:
+			check \@START_KARENA = 6,-,Null;
+				npctimer 0;
+				set \@START_KARENA = 7;
+				enablenpc "job_knt","area3",1;
+				warpallpc "job_knt",143,152,0;
+				return;
+		OnTimer30000:
+			getmapusers "job_knt",@USER_NUM;
+			check @USER_NUM = 0,OnTimer180000,-;
+			return;
+		 OnTimer60000:
+			getmapusers "job_knt",@USER_NUM;
+			check @USER_NUM = 0,OnTimer180000,-;
+			return;
+		 OnTimer90000:
+			getmapusers "job_knt",@USER_NUM;
+			check @USER_NUM = 0,OnTimer180000,-;
+			return;
+		 OnTimer120000:
+			getmapusers "job_knt",@USER_NUM;
+			check @USER_NUM = 0,OnTimer180000,-;
+			return;
+		 OnTimer150000:
+			getmapusers "job_knt",@USER_NUM;
+			check @USER_NUM = 0,OnTimer180000,-;
+			return;
+		OnTimer180000:
+			npctimer 0;
+			resetmymob "job_knt";
+			set \@START_KARENA = 0;
+			warpallpc "prt_in",80,100,0;
+			return;
+	Counter:
+		set \@area2_mobs + 1;
+		check \@area2_mobs < 12,-,mobdead;
+			return;
+		mobdead:
+			set \@START_KARENA = 6;
+			npctimer 0;
+			npctimer 1;
+		Null:
+			return;
+}
+
+job_knt.gat,1,1,1	script	"area3"	-1,{
+	check \@START_KARENA = 8,Counter,-;
+		return;
+OnInit:
+	check \@START_KARENA = 7,start,-;
+		return;
+	start:
+		callmob "job_knt",136,152,"Goblin",1122,0,"area3";
+		callmob "job_knt",150,152,"Goblin",1123,0,"area3";
+		callmob "job_knt",143,145,"Goblin",1124,0,"area3";
+		callmob "job_knt",143,167,"Goblin",1125,0,"area3";
+		callmob "job_knt",139,167,"Goblin",1126,0,"area3";
+		callmob "job_knt",147,167,"Goblin Archer",1258,0,"area3";
+		callmob "job_knt",136,158,"Steam Goblin",1280,0,"area3";
+		set \@START_KARENA = 8;
 		npctimer 1;
 		return;
 		OnTimer30000:
@@ -1334,151 +1471,14 @@ OnInit:
 			set \@START_KARENA = 0;
 			warpallpc "prt_in",80,100,0;
 			return;
-}
-
-job_knt.gat,0,0,0	script	"area1"	-1,{
-	set \@area1_mobs + 1;
-	check \@area1_mobs < 15,-,mobdead;
-		return;
-	mobdead:
-		npctimer 0;
-		npctimer 1;
-		return;
-		OnTimer2000:
-			broadcast "Knight Winzer: ..........",10;
+	Counter:
+		set \@area3_mobs + 1;
+		check \@area3_mobs < 7,-,mobdead;
 			return;
-		OnTimer3500:
-			broadcast "Knight Winzer: .....You can go to the next level.",10;
-			return;
-		OnTimer5000:
+		mobdead:
 			npctimer 0;
-			enablenpc "job_knt","TEST2",1;
-			warpallpc "job_knt",43,52,0;
+			enablenpc "job_knt","Knight Winzer",1;
 			return;
-}
-
-job_knt.gat,1,1,1	script	"TEST2"	111,{
-	return;
-OnInit:
-	check \@START_KARENA = 2,start,-;
-		return;
-	start:
-		callmob "job_knt",53,52,"Frilldora",1119,0,"area2";
-		callmob "job_knt",34,52,"Frilldora",1119,0,"area2"; 
-		callmob "job_knt",43,42,"Desert Wolf",1106,0,"area2"; 
-		callmob "job_knt",43,62,"Desert Wolf",1106,10,"area2"; 
-		callmob "job_knt",58,52,"Drainliar",1111,0,"area2"; 
-		callmob "job_knt",58,52,"Drainliar",1111,0,"area2"; 
-		callmob "job_knt",29,52,"Drainliar",1111,0,"area2"; 
-		callmob "job_knt",29,52,"Drainliar",1111,0,"area2"; 
-		callmob "job_knt",60,68,"Anacondaq",1030,0,"area2"; 
-		callmob "job_knt",27,68,"Anacondaq",1030,0,"area2"; 
-		callmob "job_knt",60,35,"Anacondaq",1030,0,"area2"; 
-		callmob "job_knt",27,35,"Anacondaq",1030,0,"area2"; 
-		set \@START_KARENA = 3;
-		npctimer 1;
-		return;
-		OnTimer30000:
-			getmapusers "job_knt",@USER_NUM;
-			check @USER_NUM = 0,OnTimer180000,-;
-			return;
-		 OnTimer60000:
-			getmapusers "job_knt",@USER_NUM;
-			check @USER_NUM = 0,OnTimer180000,-;
-			return;
-		 OnTimer90000:
-			getmapusers "job_knt",@USER_NUM;
-			check @USER_NUM = 0,OnTimer180000,-;
-			return;
-		 OnTimer120000:
-			getmapusers "job_knt",@USER_NUM;
-			check @USER_NUM = 0,OnTimer180000,-;
-			return;
-		 OnTimer150000:
-			getmapusers "job_knt",@USER_NUM;
-			check @USER_NUM = 0,OnTimer180000,-;
-			return;
-		OnTimer180000:
-			npctimer 0;
-			resetmymob "job_knt";
-			set \@START_KARENA = 0;
-			warpallpc "prt_in",80,100,0;
-			return;
-}
-
-job_knt.gat,0,0,0	script	"area2"	-1,{
-	set \@area2_mobs + 1;
-	check \@area2_mobs < 12,-,mobdead;
-		return;
-	mobdead:
-		npctimer 0;
-		npctimer 1;
-		return;
-		OnTimer2000:
-			broadcast "Knight Winzer: ..........",10;
-			return;
-		OnTimer3500:
-			broadcast "Knight Winzer: .....You can now enter the last level.",10;
-			return;
-		OnTimer5000:
-			npctimer 0;
-			enablenpc "job_knt","TEST3",1;
-			warpallpc "job_knt",143,152,0;
-			return;
-}
-
-job_knt.gat,1,1,1	script	"TEST3"	111,{
-	return;
-OnInit:
-	check \@START_KARENA = 3,start,-;
-		return;
-	start:
-		callmob "job_knt",136,152,"Goblin",1122,0,"area3";
-		callmob "job_knt",150,152,"Goblin",1123,0,"area3";
-		callmob "job_knt",143,145,"Goblin",1124,0,"area3";
-		callmob "job_knt",143,167,"Goblin",1125,0,"area3";
-		callmob "job_knt",139,167,"Goblin",1126,0,"area3";
-		callmob "job_knt",147,167,"Goblin Archer",1258,0,"area3";
-		callmob "job_knt",136,158,"Steam Goblin",1280,0,"area3";
-		set \@START_KARENA = 4;
-		npctimer 1;
-		return;
-		OnTimer30000:
-			getmapusers "job_knt",@USER_NUM;
-			check @USER_NUM = 0,OnTimer180000,-;
-			return;
-		 OnTimer60000:
-			getmapusers "job_knt",@USER_NUM;
-			check @USER_NUM = 0,OnTimer180000,-;
-			return;
-		 OnTimer90000:
-			getmapusers "job_knt",@USER_NUM;
-			check @USER_NUM = 0,OnTimer180000,-;
-			return;
-		 OnTimer120000:
-			getmapusers "job_knt",@USER_NUM;
-			check @USER_NUM = 0,OnTimer180000,-;
-			return;
-		 OnTimer150000:
-			getmapusers "job_knt",@USER_NUM;
-			check @USER_NUM = 0,OnTimer180000,-;
-			return;
-		OnTimer180000:
-			npctimer 0;
-			resetmymob "job_knt";
-			set \@START_KARENA = 0;
-			warpallpc "prt_in",80,100,0;
-			return;
-}
-
-job_knt.gat,0,0,0	script	"area3"	-1,{
-	set \@area3_mobs + 1;
-	check \@area3_mobs < 7,-,mobdead;
-		return;
-	mobdead:
-		enablenpc "job_knt","Knight Winzer",1;
-		npctimer 0;
-		return;
 }
 
 job_knt.gat,143,152,4	script	"Knight Winzer"	733,{

@@ -1,6 +1,7 @@
 --------------------------------------------------------------------------------
  Fusion 1.212 - June 30th, 2004
 --------------------------------------------------------------------------------
+- 06-28-04: Job\Job_2-1\Job2_Knight.txt - merged some parts of the winzer test together to avoid timer problems. [Tsusai]
 - 06-26-04: Warp\guilds\nguild.txt - Added warps to connect n_castle to novice guild castles (Phase 6/8). [Tsusai]
 - 06-26-04: GvG\nguild_****.txt - Populated the castles with flags and npc's (Phase 5/8). [Tsusai]
 - 06-26-04: GvG\ncastle.txt - Added Flags at the Novice Castle map (Phase 4/8). [Tsusai]
