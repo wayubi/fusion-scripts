@@ -1,6 +1,9 @@
 --------------------------------------------------------------------------------
  Fusion 1.212 - June 30th, 2004
 --------------------------------------------------------------------------------
+- 06-10-04: added untranslated town_gonryun [Muad_Dib]
+- 06-10-04: added untranslated town_umbala [Muad_Dib]
+- 06-05-04: npc_event_yuno translated [RPG Advocate]
 - 06-06-04: npc_job_2nd translated [RPG Advocate]
 - 06-05-04: npc_event_yuno translated [RPG Advocate]
 - 06-05-04: npc_event_pumpkin translated [RPG Advocate]
