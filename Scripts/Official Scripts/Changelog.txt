@@ -9,6 +9,9 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.005
 ----------------------------------------------------------------------------------------------------
+- Job\Job1_Swordman.txt - Rolled back, sword_1-# maps do not exist in kRO GRF. [Tsusai]
+- Mob\other\job_quests.txt - Rolled back, sword_1-# maps do not exist in kRO GRF. [Tsusai]
+- Warp\other\job_sword.txt - Rolled back, sword_1-# maps do not exist in kRO GRF. [Tsusai]
 - Mob\dungeon\gon_dun.txt - Edited the spawns. [Muad_Dib]
 - Mob\field\gon_fild.txt - Edited the spawns. [Muad_Dib]
 - Event\Event_PVP.txt - Added Nestor Zulueta's pvp script with some missing npc's. [Muad_Dib]

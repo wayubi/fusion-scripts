@@ -27,37 +27,38 @@ job_thief1.gat,0,0,0,0  	monster	"Spore" 1014,30,0,0,0
 // - Swordsman Quest Mob Part 1
 //========================================================================================
 
-sword_1-1.gat,58,27,10,10     monster     "Fabre" 1184,5,0,0,0
-sword_1-1.gat,30,75,10,10     monster     "Fabre" 1184,5,0,0,0
-sword_1-1.gat,51,106,10,10    monster     "Fabre" 1184,2,0,0,0
-sword_1-1.gat,10,46,10,10     monster     "ChonChon" 1183,2,0,0,0
+job_sword1.gat,58,27,10,10    monster      "Fabre" 1184,5,0,0,0
+job_sword1.gat,30,75,10,10    monster      "Fabre" 1184,5,0,0,0
+job_sword1.gat,51,106,10,10   monster      "Fabre" 1184,2,0,0,0
+job_sword1.gat,10,46,10,10    monster      "Chonchon" 1183,2,0,0,0
 
 //========================================================================================
 // - Swordsman Quest Mob Part 2
 //========================================================================================
 
-sword_2-1.gat,211,29,10,10    monster     "Fabre" 1184,5,0,0,0
-sword_2-1.gat,230,34,10,10    monster     "ChonChon" 1183,2,0,0,0
-sword_2-1.gat,239,61,10,10    monster     "Fabre" 1184,5,0,0,0
-sword_2-1.gat,234,108,10,10   monster     "Fabre" 1184,5,0,0,0
-sword_2-1.gat,196,111,10,10   monster     "Fabre" 1184,5,0,0,0
-sword_2-1.gat,200,63,10,10    monster     "ChonChon" 1183,2,0,0,0
-sword_2-1.gat,98,201,10,10    monster     "Farmiliar" 1005,1,0,0,0
+job_sword1.gat,211,29,10,10   monster      "Fabre" 1184,5,0,0,0
+job_sword1.gat,230,34,10,10   monster      "Chonchon" 1183,2,0,0,0
+job_sword1.gat,239,61,10,10   monster      "Fabre" 1184,5,0,0,0
+job_sword1.gat,234,108,10,10  monster      "Fabre" 1184,5,0,0,0
+job_sword1.gat,196,111,10,10  monster      "Fabre" 1184,5,0,0,0
+job_sword1.gat,200,63,10,10   monster      "Chonchon" 1183,2,0,0,0
+job_sword1.gat,98,201,10,10   monster      "Farmiliar" 1005,1,0,0,0
 
 //========================================================================================
 // - Swordsman Quest Mob Part 3
 //========================================================================================
 
-sword_3-1.gat,145,121,10,10   monster     "ChonChon" 1183,1,0,0,0
-sword_3-1.gat,96,103,10,10    monster     "ChonChon" 1183,2,0,0,0
-sword_3-1.gat,139,103,10,10   monster     "ChonChon" 1183,1,0,0,0
-sword_3-1.gat,121,85,10,10    monster     "ChonChon" 1183,2,0,0,0
-sword_3-1.gat,150,66,10,10    monster     "ChonChon" 1183,1,0,0,0
-sword_3-1.gat,139,103,10,10   monster     "ChonChon" 1183,3,0,0,0
-sword_3-1.gat,151,49,10,10    monster     "ChonChon" 1183,1,0,0,0
-sword_3-1.gat,159,17,10,10    monster     "Fabre" 1184,5,0,0,0
-sword_3-1.gat,127,23,10,10    monster     "Fabre" 1184,5,0,0,0
-sword_3-1.gat,122,15,10,10    monster     "Fabre" 1184,5,0,0,0
+job_sword1.gat,145,121,10,10  monster      "Chonchon" 1183,1,0,0,0
+job_sword1.gat,96,103,10,10   monster      "Chonchon" 1183,2,0,0,0
+job_sword1.gat,139,103,10,10  monster      "Chonchon" 1183,1,0,0,0
+job_sword1.gat,121,85,10,10   monster      "Chonchon" 1183,2,0,0,0
+job_sword1.gat,150,66,10,10   monster      "Chonchon" 1183,1,0,0,0
+job_sword1.gat,139,103,10,10  monster      "Chonchon" 1183,3,0,0,0
+job_sword1.gat,151,49,10,10   monster      "Chonchon" 1183,1,0,0,0
+job_sword1.gat,159,17,10,10   monster      "Fabre" 1184,5,0,0,0
+job_sword1.gat,127,23,10,10   monster      "Fabre" 1184,5,0,0,0
+job_sword1.gat,122,15,10,10   monster      "Fabre" 1184,5,0,0,0
+
 
 //========================================================================================
 // - Mage Quest Mob 2f
