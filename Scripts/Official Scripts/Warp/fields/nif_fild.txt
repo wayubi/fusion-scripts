@@ -1,0 +1,5 @@
+nif_fild01.gat,315,63	warp	warpNifl01	1,1,yggdrasil01.gat,247,262
+nif_fild01.gat,345,323	warp	warpNifl02	1,1,nif_fild02.gat,23,312
+nif_fild02.gat,21,312	warp	warpNifl03	1,1,nif_fild01.gat,343,322
+nif_fild02.gat,379,235	warp	warpNifl04	1,1,niflheim,20,153
+niflheim.gat,18,151	warp	warpNifl05	1,1,nif_fild02.gat,376,235
