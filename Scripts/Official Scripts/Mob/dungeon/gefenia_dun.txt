@@ -1,60 +1,70 @@
 //========================================================================================
 // »» The Fusion Project ««
 // Copyright (c) 2004, Cobax Information Systems
-// http://cobax.net/
+// http://fusion.cobax.net/
 // ---------------------------------------------------------------------------------------
 //
-// Geffenia Dungeon - Monster Spawn Locations
-// - Credits to KSW from asb.
+// Gefenia Dungeon - Monster Spawn Locations
 //
 //========================================================================================
 
 //========================================================================================
-// - Geffenia Dungeon 01
+// - Gefenia Dungeon 01
 //========================================================================================
 
-gefenia01.gat,0,0,0,0   	monster	"Farmiliar" 1005,20,0,0,0
-gefenia01.gat,0,0,0,0   	monster	"Poison Spore" 1077,40,0,0,0
-gefenia01.gat,0,0,0,0   	monster	"Dustiness" 1114,20,0,0,0
-gefenia01.gat,0,0,0,0   	monster	"Argos" 1100,25,0,0,0
-gefenia01.gat,0,0,0,0   	monster	"Whisper" 1179,30,0,0,0
+gefenia01.gat,0,0,0,0	monster	"Fake Angel"	1371,10,0,0,0
+gefenia01.gat,0,0,0,0	monster	"Mini Demon"	1292,6,300000,0,0
+gefenia01.gat,0,0,0,0	monster	"Apolcalips"	1365,4,300000,0,0
+gefenia01.gat,0,0,0,0	monster	"Elder"		1377,10,300000,0,1
+gefenia01.gat,0,0,0,0	monster	"Abyssmal Knight"	1219,3,1800000,900000,1
+gefenia01.gat,0,0,0,0	monster	"Bloody Knight"	1268,2,300000,0,0
+gefenia01.gat,0,0,0,0	monster	"Poring"		1502,1,0,0,0
+gefenia01.gat,0,0,0,0	monster	"Executioner"	1205,1,3600000,1800000,0
+gefenia01.gat,0,0,0,0	monster	"Mysteltainn"	1203,1,7200000,3600000,1
 
 //========================================================================================
-// - Geffenia Dungeon 02
+// - Gefenia Dungeon 02
 //========================================================================================
 
-gefenia02.gat,0,0,0,0   	monster	"Farmiliar" 1005,10,0,0,0
-gefenia02.gat,0,0,0,0   	monster	"Poison Spore" 1077,20,0,0,0
-gefenia02.gat,0,0,0,0   	monster	"Dustiness" 1114,10,0,0,0
-gefenia02.gat,0,0,0,0   	monster	"Argos" 1100,15,0,0,0
-gefenia02.gat,0,0,0,0   	monster	"Whisper" 1179,30,0,0,0
-gefenia02.gat,0,0,0,0   	monster	"Jakk" 1130,20,150000,50000,1
-gefenia02.gat,0,0,0,0		monster	"Blue Plant" 1079,10,300000,100000,1
-gefenia02.gat,0,0,0,0   	monster	"Nightmare" 1061,8,300000,100000,0
-gefenia02.gat,0,0,0,0   	monster	"Myst" 1151,10,0,0,0
+gefenia02.gat,0,0,0,0	monster	"Fake Angel"	1371,10,0,0,0
+gefenia02.gat,0,0,0,0	monster	"Succubus"		1370,6,0,0,0
+gefenia02.gat,0,0,0,0	monster	"Incubus"		1374,6,0,0,0
+gefenia02.gat,0,0,0,0	monster	"Mini Demon"	1292,10,300000,0,0
+gefenia02.gat,0,0,0,0	monster	"Apolcalips"	1365,8,300000,0,0
+gefenia02.gat,0,0,0,0	monster	"Abyssmal Knight"	1219,2,1800000,900000,1
+gefenia02.gat,0,0,0,0	monster	"Bloody Knight"	1268,5,300000,0,0
+gefenia02.gat,0,0,0,0	monster	"Poring"		1502,1,0,0,0
+gefenia02.gat,0,0,0,0	monster	"Gryphon"		1259,1,3600000,1800000,0
+gefenia02.gat,0,0,0,0	monster	"Chimera"		1283,1,7200000,3600000,1
 
 //========================================================================================
-// - Geffenia Dungeon 03
+// - Gefenia Dungeon 03
 //========================================================================================
 
-gefenia03.gat,0,0,0,0    	monster	"Doppleganger" 1046,1,1800000,900000,1
-gefenia03.gat,0,0,0,0   	monster	"Deviruchi" 1109,15,0,0,0
-gefenia03.gat,0,0,0,0    	monster	"Raydric" 1163,15,0,0,0
-gefenia03.gat,0,0,0,0    	monster	"Raydric Archer" 1276,20,0,0,0
-gefenia03.gat,0,0,0,0    	monster	"Joker" 1131,15,150000,50000,1
-gefenia03.gat,0,0,0,0   	monster	"Poison Spore" 1077,20,0,0,0
-gefenia03.gat,0,0,0,0   	monster	"Whisper" 1179,20,0,0,0
+gefenia03.gat,0,0,0,0	monster	"Fake Angel"	1371,4,0,0,0
+gefenia03.gat,0,0,0,0	monster	"Succubus"		1370,5,0,0,0
+gefenia03.gat,0,0,0,0	monster	"Incubus"		1374,5,0,0,0
+gefenia03.gat,0,0,0,0	monster	"Mini Demon"	1292,10,300000,0,0
+gefenia03.gat,0,0,0,0	monster	"Apolcalips"	1365,6,300000,0,0
+gefenia03.gat,0,0,0,0	monster	"Elder"		1377,10,300000,0,1
+gefenia03.gat,0,0,0,0	monster	"Abyssmal Knight"	1219,3,1800000,900000,1
+gefenia03.gat,0,0,0,0	monster	"Bloody Knight"	1268,2,300000,0,0
+gefenia03.gat,0,0,0,0	monster	"Poring"		1502,1,0,0,0
+gefenia03.gat,0,0,0,0	monster	"Dark Illusion"	1302,1,300000,0,0
+gefenia03.gat,0,0,0,0	monster	"Owl Baron"		1295,1,0,0,0
 
 //========================================================================================
-// - Geffenia Dungeon 04
+// - Gefenia Dungeon 04
 //========================================================================================
 
-gefenia04.gat,0,0,0,0   	monster	"Farmiliar" 1005,20,0,0,0
-gefenia04.gat,0,0,0,0   	monster	"Poison Spore" 1077,20,0,0,0
-gefenia04.gat,0,0,0,0   	monster	"Dustiness" 1114,20,0,0,0
-gefenia04.gat,0,0,0,0   	monster	"Argos" 1100,25,0,0,0
-gefenia04.gat,0,0,0,0   	monster	"Whisper" 1179,10,0,0,0
-gefenia04.gat,0,0,0,0   	monster	"Jakk" 1130,10,75000,25000,1
-gefenia04.gat,0,0,0,0		monster	"Blue Plant" 1079,10,300000,100000,1
-gefenia04.gat,0,0,0,0   	monster	"Nightmare" 1061,8,150000,50000,0
-gefenia04.gat,0,0,0,0   	monster	"Myst" 1151,10,0,0,0
+gefenia04.gat,0,0,0,0	monster	"Fake_Angel"	1371,10,0,0,0
+gefenia04.gat,0,0,0,0	monster	"Succubus"		1370,5,0,0,0
+gefenia04.gat,0,0,0,0	monster	"Incubus"		1374,3,0,0,0
+gefenia04.gat,0,0,0,0	monster	"Apolcalips"	1365,4,300000,0,0
+gefenia04.gat,0,0,0,0	monster	"Abyssmal Knight"	1219,5,1800000,900000,1
+gefenia04.gat,0,0,0,0	monster	"Bloody Knight"	1268,2,300000,0,0
+gefenia04.gat,0,0,0,0	monster	"Poring"		1502,1,0,0,0
+gefenia04.gat,0,0,0,0	monster	"Archangeling"	1388,1,3600000,1800000,1
+gefenia04.gat,0,0,0,0	monster	"Maya Purple"	1289,1,1200000,0,0
+gefenia04.gat,0,0,0,0	monster	"Cat O' Nine Tail"	1307,1,0,0,0
+

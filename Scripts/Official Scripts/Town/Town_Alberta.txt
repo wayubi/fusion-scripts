@@ -208,8 +208,7 @@ alberta.gat,189,151,5 script "Fisk" 100,{
 	mes "[Fisk]";
 	mes "Ahoy mate, where'd ya wanna go?";
 	next;
-//	menu "Sunken Ship -> 250 zeny.",L_Menu1,"Izlude Marina -> 500 zeny.",L_Menu2,"Comodo Lighthouse -> 600 zeny.",L_menu3,"Quit",L_Quit;
-	menu "Sunken Ship -> 250 zeny.",L_Menu1,"Izlude Marina -> 500 zeny.",L_Menu2,"Comodo Lighthouse -> 600 zeny.",L_menu3,"Ayothaya -> 1000 zeny",L_menu4,"Quit",L_Quit;
+	menu "Sunken Ship -> 250 zeny.",L_Menu1,"Izlude Marina -> 500 zeny.",L_Menu2,"Comodo Lighthouse -> 600 zeny.",L_menu3,"Quit",L_Quit;
 	close;
 L_Menu1:
 	   check Zeny >= 250,-,L_Menu1_F;
@@ -243,17 +242,6 @@ L_Menu3_F:
       close;
 L_Quit:
       mes "Do as you wish...";
-      close;
-//temp
-L_Menu4:
-	   check Zeny >= 1000,-,L_Menu4_F;
-	   set Zeny -= 1000,0;
-	   warp "ayothaya",150,70;
-      close;
-L_Menu4_F:
-	mes "[Fisk]";
-	mes "Hey now, don't try to cheat me! I";
-	mes "said 1000 zeny!";
       close;
 }
 

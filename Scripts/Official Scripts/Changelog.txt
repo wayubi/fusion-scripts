@@ -1,4 +1,16 @@
 --------------------------------------------------------------------------------
+ Fusion 1.214 - ??????, 2005
+-------------------------------------------------------------------------------- 
+- 01-28-05: Mob\dungeon\ayo_dun.txt - Added Official Ayathaya mobs. [Muad_Dib]
+- 01-28-05: Mob\dungeon\gefenia_dun.txt - Added Official Gefenia mobs. [Muad_Dib]
+- 01-28-05: Mob\field\ayo_fild.txt -  Added Official Ayathaya mobs. [Muad_Dib]
+- 01-28-05: Town\Town_Alberta.txt - Removed Ayothaya from Sailor. [Muad_Dib]
+- 01-28-05: Town\Town_Ayothaya.txt - Updated Town_Ayothaya  Npc's. [Muad_Dib]
+- 01-28-05: Warp\dungeons\ayo_dun.txt - Changed Dungeon Warps. [Muad_Dib]
+- 01-28-05: Warp\fields\ayo_fild.txt - Changed warps. [Muad_Dib]
+- 01-28-05: Warp\towns\Ayothaya.txt - Removed field warps. [Muad_Dib]
+
+--------------------------------------------------------------------------------
  Fusion 1.213 - January 28th, 2005
 -------------------------------------------------------------------------------- 
 - 01-25-05: Final preparation for 1.213 release. [AlexKreuz]
