@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.003
 ----------------------------------------------------------------------------------------------------
+- Mob\field\gon_fild.txt - Updated Gon Ryun Fields Monster Spawns [Muad_Dib]
 - Mob\field\xmass_fild.txt - Updated Lutie Fields Monster Spawns [Muad_Dib]
 - Mob\field\yuno_fild.txt - Updated Yuno Fields Monster Spawns [Muad_Dib]
 - Mob\field\ama_fild.txt - Updated Amatsu Fields Monster Spawns [Muad_Dib]
