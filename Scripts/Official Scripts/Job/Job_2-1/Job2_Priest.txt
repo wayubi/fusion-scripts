@@ -929,70 +929,30 @@ job_prist.gat,1,1,1	script	"GrandTimer"	139,{
 OnTimer3000:
 	areabroadcast "job_prist",8,34,39,109,"[Father Peter]: You will have 5 minutes to pass all 3 trials starting now.",10;
 	return;
-//OnTimer33000:
-//	donpcevent "Father Peter::OnStart";
-//	return;
 OnTimer63000:
-	set @Time = 4;
-	//donpcevent "Father Peter::OnStart";
-	goto TimeM;
-//OnTimer93000:
-//	donpcevent "Father Peter::OnStart";
-//	return;
+	setstr \$@timer = "You have 4 minutes remaining!";
+	goto Announce;
 OnTimer123000:
-	set @Time = 3;
-	//donpcevent "Father Peter::OnStart";
-	goto TimeM;
-//OnTimer153000:
-//	donpcevent "Father Peter::OnStart";
-//	return;
+	setstr \$@timer = "You have 3 minutes remaining!";
+	goto Announce;
 OnTimer183000:
-	set @Time = 2;
-	//donpcevent "Father Peter::OnStart";
-	goto TimeM;
-//OnTimer213000:
-//	donpcevent "Father Peter::OnStart";
-//	return;
+	setstr \$@timer = "You have 2 minutes remaining!";
+	goto Announce;
 OnTimer243000:
-	set @Time = 1;
-	//donpcevent "Father Peter::OnStart";
-	check \@PROOM = 1,Broad1a,-;
-	check \@PROOM = 2,Broad2a,-;
-	check \@PROOM = 3,Broad3a,-;
-		return;
-	Broad1a:
-		areabroadcast "job_prist",8,34,39,109,"[Father Peter]: You have $[@Time] minute remaining!",10;
-		return;
-	Broad2a:
-		areabroadcast "job_prist",160,14,175,178,"[Father Peter]: You have $[@Time] minute remaining!",10;
-		return;
-	Broad3a:
-		areabroadcast "job_prist",90,34,105,105,"[Father Peter]: You have $[@Time] minute remaining!",10;
-		return;
+	setstr \$@timer = "You have 1 minutes remaining!";
+	goto Announce;
 OnTimer273000:
-	set @Time = 30;
-	//donpcevent "Father Peter::OnStart";
-	goto TimeS;
+	setstr \$@timer = "You have 30 seconds remaining!";
+	goto Announce;
 OnTimer293000:
-	set @Time = 10;
-	goto TimeS;
+	setstr \$@timer = "You have 10 seconds remaining!";
+	goto Announce;
 OnTimer2970000:
-	set @Time = 5;
-	goto TimeS;
+	setstr \$@timer = "You have 5 seconds remaining!";
+	goto Announce;
 OnTimer302000:
-	check \@PROOM = 1,Broad1b,-;
-	check \@PROOM = 2,Broad2b,-;
-	check \@PROOM = 3,Broad3b,-;
-		return;
-	Broad1b:
-		areabroadcast "job_prist",8,34,39,109,"[Father Peter]: Time is up. You failed the test.",10;
-		return;
-	Broad2b:
-		areabroadcast "job_prist",160,14,175,178,"[Father Peter]: Time is up. You failed the test.",10;
-		return;
-	Broad3b:
-		areabroadcast "job_prist",90,34,105,105,"[Father Peter]: Time is up. You failed the test.",10;
-		return;
+	setstr \$@timer = "Time is up. You failed the test.";
+	goto Announce;
 OnTimer306000:
 	npctimer 0;
 	check \@PROOM = 1,Warp1,-;
@@ -1012,27 +972,13 @@ OnTimer306000:
 		set \@PROOM = 0;
 		//donpcevent "Father Peter::OnStart";
 		return;
-TimeM:
-	check \@PROOM = 1,Broad1m,-;
-	check \@PROOM = 2,Broad2m,-;
-	check \@PROOM = 3,Broad3m,-;
-		return;
-	Broad1m:
-		areabroadcast "job_prist",8,34,39,109,"[Father Peter]: You have $[@Time] minutes remaining!",10;
-		return;
-	Broad2m:
-		areabroadcast "job_prist",160,14,175,178,"[Father Peter]: You have $[@Time] minutes remaining!",10;
-		return;
-	Broad3m:
-		areabroadcast "job_prist",90,34,105,105,"[Father Peter]: You have $[@Time] minutes remaining!",10;
-		return;
-TimeS:
+Announce:
 	check \@PROOM = 1,Broad1s,-;
 	check \@PROOM = 2,Broad2s,-;
 	check \@PROOM = 3,Broad3s,-;
 		return;
 	Broad1s:
-		areabroadcast "job_prist",8,34,39,109,"[Father Peter]: You have $[@Time] seconds remaining!",10;
+		areabroadcast "job_prist",8,34,39,109,"[Father Peter]: $[\$@timer] ",10;
 		return;
 	Broad2s:
 		areabroadcast "job_prist",160,14,175,178,"[Father Peter]: You have $[@Time] seconds remaining!",10;
