@@ -9,6 +9,9 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.005
 ----------------------------------------------------------------------------------------------------
+- Mob\dungeon\c_tower_dun.txt - Changed monster spawns. [Muad_Dib]
+- Mob\dungeon\gef_dun.txt - Changed monster spawns. [Muad_Dib]
+- Mob\dungeon\moc_pryd_dun.txt - Changed monster spawns. [Muad_Dib]
 - Job\Job2_Knight.txt - Added Lord Knight support for buying Claymores. [Tsusai]
 - Event\Event_Reset_Skill.txt - Added Event Reset Skill. [Muad_Dib]
 - Event\Event_Doll.txt - Updated Event Doll. [Muad_Dib]

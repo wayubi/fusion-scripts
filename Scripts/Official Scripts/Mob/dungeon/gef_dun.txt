@@ -23,6 +23,7 @@ gef_dun00.gat,0,0,0,0   	monster	"Farmiliar" 1005,20,0,0,0
 gef_dun00.gat,0,0,0,0   	monster	"Poporing" 1031,15,0,0,0
 gef_dun00.gat,0,0,0,0   	monster	"Poison Spore" 1077,40,0,0,0
 gef_dun00.gat,0,0,0,0   	monster	"Dustiness" 1114,15,0,0,0
+gef_dun00.gat,0,0,0,0   	monster	"Hunter Fly" 1035,1,300000,150000,1
 
 //========================================================================================
 // - Geffen Tower Dungeon 01
@@ -36,7 +37,7 @@ gef_dun01.gat,0,0,0,0   	monster	"Poison Spore" 1077,20,0,0,0
 gef_dun01.gat,0,0,0,0   	monster	"Dustiness" 1114,30,0,0,0
 gef_dun01.gat,0,0,0,0   	monster	"Argos" 1100,25,0,0,0
 gef_dun01.gat,0,0,0,0   	monster	"Whisper" 1179,30,0,0,0
-gef_dun01.gat,0,0,0,0   	monster	"Jakk" 1130,20,300000,100000,0
+gef_dun01.gat,0,0,0,0   	monster	"Jakk" 1130,20,300000,100000,1
 gef_dun01.gat,0,0,0,0   	monster	"Bathory" 1102,1,0,0,0
 
 //========================================================================================

@@ -65,3 +65,4 @@ moc_pryd06.gat,0,0,0,0  	monster	"Mummy" 1041,20,0,0,0
 moc_pryd06.gat,0,0,0,0  	monster	"Verit" 1032,10,0,0,0
 moc_pryd06.gat,100,90,80,50	monster	"Ancient Mummy" 1297,10,0,0,0
 moc_pryd06.gat,100,90,80,50	monster	"Mimic" 1191,20,0,0,0
+moc_pryd06.gat,0,0,0,0        monster     "Amon Ra" 1511,2,1800000,200000,1

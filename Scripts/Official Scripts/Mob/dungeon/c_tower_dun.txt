@@ -22,7 +22,7 @@ c_tower1.gat,205,210,85,90	monster	"Bathory" 1102,10,0,0,0
 c_tower1.gat,60,197,40,177	monster	"Baphomet Jr" 1101,3,0,0,0
 c_tower1.gat,250,345,110,35	monster	"Baphomet Jr" 1101,3,0,0,0
 c_tower1.gat,250,60,140,50	monster	"Baphomet Jr" 1101,20,0,0,0
-c_tower1.gat,0,0,0,0    	monster	"Clock  Manager" 1270,1,1800000,0,0
+c_tower1.gat,0,0,0,0    	monster	"Clock Manager" 1270,1,1800000,900000,1
 
 //========================================================================================
 // - Clock Tower Dungeon 02
@@ -67,7 +67,8 @@ c_tower2.gat,95,238,0,0 	monster	"Clock" 1269,1,480000,150000,1
 c_tower2.gat,95,237,0,0 	monster	"Clock" 1269,1,475000,150000,1
 c_tower2.gat,96,242,0,0 	monster	"Clock" 1269,1,490000,150000,1
 c_tower2.gat,99,242,0,0  	monster	"Clock" 1269,1,400000,150000,1
-c_tower2.gat,0,0,0,0    	monster	"Clock" Manager 1270,1,1800000,0,0
+c_tower2.gat,0,0,0,0    	monster	"Clock Manager" 1270,1,1800000,900000,1
+c_tower2.gat,0,0,0,0	      monster	"Elder Willow" 1033,3,5000,2000,1
 
 //========================================================================================
 // - Clock Tower Dungeon 03
@@ -75,7 +76,7 @@ c_tower2.gat,0,0,0,0    	monster	"Clock" Manager 1270,1,1800000,0,0
 
 c_tower3.gat,0,0,0,0    	monster	"Alarm" 1193,50,0,0,0
 c_tower3.gat,0,0,0,0    	monster	"Archer Skeleton" 1016,40,0,0,0
-c_tower3.gat,0,0,0,0    	monster	"Clock Manager" 1270,1,1800000,0,0
+c_tower3.gat,0,0,0,0    	monster	"Clock Manager" 1270,1,1800000,900000,1
 
 //========================================================================================
 // - Clock Tower Dungeon 04
@@ -129,7 +130,8 @@ c_tower4.gat,95,180,0,0 	monster	"Rideword" 1195,1,410000,150000,1
 c_tower4.gat,96,180,0,0 	monster	"Rideword" 1195,1,350000,150000,1
 c_tower4.gat,97,180,0,0 	monster	"Rideword" 1195,1,240000,150000,1
 c_tower4.gat,98,180,0,0 	monster	"Rideword" 1195,1,300000,150000,1
-c_tower4.gat,0,0,0,0    	monster	"Clock Manager" 1270,2,1800000,0,0
-c_tower4.gat,0,0,0,0    	monster	"Clock Manager" 1270,1,3600000,0,0
+c_tower4.gat,0,0,0,0    	monster	"Clock Manager" 1270,2,1800000,900000,1
+c_tower4.gat,0,0,0,0    	monster	"Clock Manager" 1270,1,3600000,1800000,1
 c_tower4.gat,42,41,0,0  	monster	"Executioner" 1205,1,7200000,3600000,1
 c_tower4.gat,68,80,0,0  	monster	"Abyss Knight" 1219,1,3600000,1800000,1
+c_tower4.gat,0,0,0,0	      monster	"Elder Willow" 1033,3,5000,2000,1
