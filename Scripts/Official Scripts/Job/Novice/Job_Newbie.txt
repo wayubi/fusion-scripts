@@ -162,8 +162,8 @@ L_ROOT_2:
       close;
 L_ROOT_3:
 	   check @VILLAGE == 3,-,L_ROOT_4;
-	   save "payon",179,97;
-	   warp "payon",179,97;
+	   save "payon",156,210;
+	   warp "payon",156,210;
       close;
 L_ROOT_4:
 	   check @VILLAGE == 4,-,L_ROOT_5;
@@ -1727,10 +1727,10 @@ L_START_9:
 	   warp "izlude",121,165;
       close;
 L_MENU_2:
-	   save "payon",179,97;
+	   save "payon",156,210;
 	mes "[Helper]";
 	mes "I expect you to do your best.";
-	   warp "payon_in02",21,71;
+	   warp "payon",156,210;
       close;
 L_MENU_3:
 	   save "morocc",160,94;
@@ -1810,7 +1810,7 @@ L_SUB_1:
 }
 
 new_1-4.gat,59,186,4	script "Helper" 105,{
-	   save "payon_in02",21,71;
+	   save "payon",156,210;
    	mes "['`Archer' Agency Helper]";
    	mes "Wecome!";
 	mes "Here is Archer Agency";
@@ -1825,7 +1825,7 @@ new_1-4.gat,59,186,4	script "Helper" 105,{
 	   set Zeny += 100,0;
 L_SUB_1:
 	next;
-	   warp "payon_in02",21,71;
+	   warp "payon",154,210;
       close;
 }
 
