@@ -48,6 +48,9 @@
 // - Zic -> alberta: 120,53
 //   Give information and make BaoBao, Crescent Hairpin, Fashion Glasses and Heart Hairpin
 //
+// - Isac Mari -> comodo: 273,137
+//   Give information and make Miner Helmet, Parcel Hat, Heart of Merchant and Phantom Opera
+//
 //========================================================================================
 
 payon_in01.gat,103,111,4	script	"Granny"	103,{
@@ -1289,5 +1292,235 @@ L_SUB_4_1:
 	mes "like it? sure~~)";
 	mes "Coral Reef 1200";
 	mes "...Did you know this already?";
+	close;
+}
+
+comodo.gat,273,137,4	script	"Traveler"	702,{
+	mes "[Isac Mari]";
+	mes "I travel around the world, and I";
+	mes "collecting many interesting stories";
+	mes "from people.";
+	mes "And sometimes they teach me how to";
+	mes "make special items.";
+	next;
+	mes "[Isac Mari]";
+	mes "I know how to make... You wanna";
+	mes "hear it?";
+	mes "I couldn't make it because I";
+	mes "couldn't get the right items to";
+	mes "make it.";
+	next;
+	menu "Mine Helmet",L_MENU_1,"Parcel Hat",L_MENU_2,"Money Loser's Grief",L_MENU_3,"Phantom of Opera",L_MENU_4;
+	close;
+L_MENU_1:
+	checkitem 5009,1,-,L_SUB_1_1;
+	checkitem 999,25,-,L_SUB_1_1;
+	checkitem 747,1,-,L_SUB_1_1;
+	checkitem 5028,1,-,L_SUB_1_1;
+	mes "[Isac Mari]";
+	mes "Wow!! Well done! Finally you have gathered all items needed!";
+	mes "We will make the Miner's Helm for you right away.";
+	next;
+	delitem 5009,1;
+	delitem 999,25;
+	delitem 747,1;
+	delitem 5028,1;
+	additem 5031,1;
+	mes "[Isac Mari]";
+	mes "Tah Dah!!!^FF0000Miner's Helm^000000...! Please Take it!";
+	close;
+L_SUB_1_1:
+	mes "[Isac Mari]";
+	mes "Mine Helmet... I heard that from";
+	mes "the mines near Geffen.";
+	mes "As you know they need lamps in the";
+	mes "mines.";
+	next;
+	mes "[Isac Mari]";
+	mes "But it is not possible to work";
+	mes "without light";
+	mes "event though the lights attract";
+	mes "monster.";
+	next;
+	mes "[Isac Mari]";
+	mes "But oneday, a miner remodeled his";
+	mes "own Safety Helmet...";
+	mes "So after that he could work with";
+	mes "two hands, since that time we call";
+	mes "it as Mine Helm.";
+	next;
+	mes "[Isac Mari]";
+	mes "If you want to make Mine Helmet,";
+	mes "1 Safety Helmet";
+	mes "1 Candle";
+	mes "1 Crystal Mirror";
+	mes "25 Steel";
+	mes "is needed for creation.";
+	next;
+	mes "[Isac Mari]";
+	mes "If you bring all the items then I";
+	mes "will make it for you right away.";
+	mes "Hoo~ see you later.";
+	close;
+L_MENU_2:
+	checkitem 1059,150,-,L_SUB_2_1;
+	checkitem 978,1,-,L_SUB_2_1;
+	checkitem 907,100,-,L_SUB_2_1;
+	mes "[Isac Mari]";
+	mes "Wow!! Well done! Finally you have gathered all items needed!";
+	mes "We will make the Handkerchief for you right away.";
+	next;
+	delitem 1059,150;
+	delitem 978,1;
+	delitem 907,100;
+	additem 5023,1;
+	mes "[Isac Mari]";
+	mes "Tah Dah!!!^FF0000Parcel Hat^000000...! Please Take it!";
+	close;
+L_SUB_2_1:
+	mes "[Isac Mari]";
+	mes "Parcel Hat... I heard that from";
+	mes "around Alberta.";
+	mes "Merchants are always putting goods";
+	mes "in thier carts and open a street";
+	mes "stall.";
+	next;
+	mes "[Isac Mari]";
+	mes "But in the East side of the";
+	mes "country, they use different manners";
+	mes "to transfer goods.";
+	mes "That is use of the Parcel Hat.";
+	next;
+	mes "[Isac Mari]";
+	mes "Goods would be loaded on top of the";
+	mes "head.";
+	mes "So you don't need to carry things";
+	mes "by hand. But it's hard to stay";
+	mes "balanced.";
+	next;
+	mes "[Isac Mari]";
+	mes "If you want me to make Parcel Hat,";
+	mes "150 Fabric";
+	mes "100 Resin";
+	mes "1 Cobaltblue Dyestuffs";
+	mes "is needed for creation.";
+	next;
+	mes "[Isac Mari]";
+	mes "If you bring all the items then I";
+	mes "will make it for you right away.";
+	mes "Hoo~ see you later.";
+	close;
+L_MENU_3:
+	checkitem 2233,1,-,L_SUB_3_1;
+	checkitem 969,1,-,L_SUB_3_1;
+	checkitem 949,80,-,L_SUB_3_1;
+	checkitem 938,800,-,L_SUB_3_1;
+	mes "[Isac Mari]";
+	mes "Wow!! Well done! Finally you have gathered all items needed!";
+	mes "We will make the Heart of Merchant for you right away.";
+	next;
+	delitem 2233,1;
+	delitem 969,1;
+	delitem 949,80;
+	delitem 938,800;
+	additem 5021,1;
+	mes "[Isac Mari]";
+	mes "Tah Dah!!!^FF0000Heart of Merchant^000000...! Please Take it!";
+	close;
+L_SUB_3_1:
+	mes "[Isac Mari]";
+	mes "Money Loser's Grief... this items";
+	mes "rumor was spread by the word of mouth";
+	mes "in Morocc.";
+	mes "Long time ago, one honest Merchant";
+	mes "was quarreling with a bad guild.";
+	next;
+	mes "[Isac Mari]";
+	mes "Because the honest Merchant was not";
+	mes "cheating people by his prices,";
+	mes "unlike the bad guild.";
+	mes "They attacked the honest Merchant's";
+	mes "street stall and took all his";
+	mes "goods.";
+	next;
+	mes "[Isac Mari]";
+	mes "So, the honest Merchant lost";
+	mes "everything except some broken";
+	mes "items.";
+	mes "He was so sad, he put his sadness";
+	mes "in creating a new item from broken";
+	mes "items to express his sadness"
+	next;
+	mes "[Isac Mari]";
+	mes "That is Money Loser's Grief. This";
+	mes "appeals to people's sympathies,";
+	mes "people buy goods more when";
+	mes "merchants wear it... It's support";
+	mes "for the honest merchants.";
+	next;
+	mes "[Isac Mari]";
+	mes "If you want to make Money Loser's";
+	mes "Grief, You need.";
+	mes "1 Slotted Circlet";
+	mes "1 Gold";
+	mes "20 Steel";
+	mes "80 Feather";
+	mes "800 Sticky Mucus";
+	next;
+	mes "[Isac Mari]";
+	mes "If you bring all the items then I";
+	mes "will make it for you right away.";
+	mes "Hoo~ see you later.";
+	close;
+L_MENU_4:
+	checkitem 2281,1,-,L_SUB_4_1;
+	checkitem 1048,50,-,L_SUB_4_1;
+	mes "[Isac Mari]";
+	mes "Wow!! Well done! Finally you have gathered all items needed!";
+	mes "We will make the Phantom of the Opera for you right away.";
+	next;
+	delitem 2281,1;
+	delitem 1048,50;
+	additem 5043,1;
+	mes "[Isac Mari]";
+	mes "Tah Dah!!!^FF0000Phatom of the Opera^000000...! Please Take it!";
+	close;
+L_SUB_4_1:
+	mes "[Isac Mari]";
+	mes "Phantom of Opera... this item rumor";
+	mes "was spread by word of mouth in Al";
+	mes "De Baran.";
+	mes "This story is about the pure love";
+	mes "of a man...";
+	next;
+	mes "[Isac Mari]";
+	mes "Opera ghost... The was a man who";
+	mes "loved this beatiful singer...";
+	mes "But he was so ugly that he had to";
+	mes "wear a mask in order to hide his";
+	mes "face from other people's eyes";
+	next;
+	mes "[Isac Mari]";
+	mes "for that reason he could not face";
+	mes "her, even though he loved her.";
+	mes "He finally revealed himself to her,";
+	mes "after much time had past.";
+	next;
+	mes "[Isac Mari]";
+	mes "However, the mask that he was";
+	mes "wearing has a";
+	mes "different shape then other opera";
+	mes "masks...";
+	next;
+	mes "[Isac Mari]";
+	mes "If you want to make Phantom of";
+	mes "Opera. You will need.";
+	mes "1 Opera Masque";
+	mes "50 Horrendous Hair";
+	next;
+	mes "[Isac Mari]";
+	mes "If you bring all the items then I";
+	mes "will make it for you right away.";
+	mes "Hoo~ see you later.";
 	close;
 }
