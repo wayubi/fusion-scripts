@@ -162,8 +162,8 @@ L_ROOT_2:
       close;
 L_ROOT_3:
 	   check @VILLAGE == 3,-,L_ROOT_4;
-	   save "payon",87,117;
-	   warp "payon",87,117;
+	   save "payon",179,97;
+	   warp "payon",179,97;
       close;
 L_ROOT_4:
 	   check @VILLAGE == 4,-,L_ROOT_5;
@@ -1727,7 +1727,7 @@ L_START_9:
 	   warp "izlude",121,165;
       close;
 L_MENU_2:
-	   save "payon",87,117;
+	   save "payon",179,97;
 	mes "[Helper]";
 	mes "I expect you to do your best.";
 	   warp "payon_in02",21,71;
