@@ -9,9 +9,9 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.003
 ----------------------------------------------------------------------------------------------------
+- NPC\npc_skill_get.txt - Translated more platinum skills. [mudvayne]
 - Event\Event_Rental.txt - Finished officialise script. [mudvayne]
 - Event\Event_MrSmile.txt - Finished officialise script. [mudvayne]
-
 
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.002

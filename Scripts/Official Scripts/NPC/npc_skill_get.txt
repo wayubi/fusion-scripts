@@ -1,14 +1,60 @@
-//-------------------- Skill Get !! NPC SCRIPT --------------------
-// From matnani_skill_get.sc & nimishel_skill_get.sc  by kalen
-//NPC 看護将校とプロンテラ騎士団員にてタイマースクリプトを作ることが可能
-//本鯖では現在10分以内という制限はなさそうですが、話の筋から作れそうなので
-//タイマースクリプトの練習にでもどうぞ
-//-----------------------------------------------------------------
-
-
-//----------------------------------
-// クレイモア (berserk)
-//----------------------------------
+//========================================================================================
+// ｻｻ The Fusion Project ｫｫ
+// Copyright (c) 2004, Cobax Information Systems
+// http://fusion.cobax.net/
+// ---------------------------------------------------------------------------------------
+//
+// Platinum Skills - Non Player Character Locations
+//
+// - 騎士団兵器係 -> prt_in.gat,79,94
+//   Quest for Berserk platinum skill.
+//
+// - 騎士デトマソ -> izlude_in.gat,175,130
+//   Quest for Moving Hp recovery platinum skill.
+//
+// - レオンフォンプリシュ -> prt_in.gat,75,88
+//   Quest for Fatal blow platinum skill.
+//
+// - ファン -> prt_in.gat,94,57
+//   Quest for ? platinum skill.
+//
+// - Roberto -> morocc.gat,121,109
+//   Quest for Arrow crafting platinum skill.
+//
+// - Jason -> payon.gat,30,94
+//   Quest for Charge arrow platinum skill.
+//
+// - Necko -> alberta.gat,83,96
+//   Quest for Lord exclamation platinum skill.
+//
+// - Charlron -> alberta.gat,119,221
+//   Quest for Change cart platinum skill.
+//
+// - コサンス -> alberta.gat,232,106
+//   Quest for Cart revolution platinum skill.
+//
+// - Father Clifford -> prt_church.gat,173,23
+//   Quest for Holy light platinum skill.
+//
+// - Great Magician -> geffen_in.gat,151,119
+//   Quest for Energy coat platinum skill.
+//
+// - Nami -> prt_in.gat,234,133
+//   Quest for First aid platinum skill.
+//
+// - Prontera Knight -> prt_in.gat,73,87
+//   Quest for Act dead platinum skill.
+//
+// - Dread Lord -> prt_castle.gat,175,146
+//   Quest for ? platinum skill.
+//
+// - アルコスク -> moc_prydb1.gat,154,128
+//   Quest for thieves platinum skills.
+//
+// - RuRumuni -> payon.gat,30,120
+//   Quest for ? platinum skill.
+//
+//========================================================================================
 
 prt_in.gat,79,94,4	script	騎士団兵器係	119,{
 	mes "[カネシン]";
@@ -587,608 +633,733 @@ LStartLowlv2:
 	close;
 }
 
-//追加スキル Part 2 - 弓手
-//---------------------------
-//==== 矢作成 ===
-//---------------------------
-morocc.gat,121,109,5	script	"ギョルナリ"	88,{
-	check Job = 3,Lcheck1,-;
-	check Job != 11,LStartOther,LStart2;
-LCheck1:
-	check JobLevel >= 30,-,LStartLowlv;
-LStart2:
-	check skill_acher = 1,LStartTwice,-;
-	mes "[ギョルナリ]";
-	mes "あ、";
-	mes "あなたは…";
-	next;
-	checkitem 907,20,-,LStart;
-	checkitem 7033,7,-,LStart;
-	checkitem 906,7012,-,LStart;
-	checkitem 1019,13,-,LStart;
-	checkitem 501,1,-,LStart;
-	mes "[ギョルナリ]";
-	mes "持ってきましたか！";
-	mes "ありがとうございます。";
-	mes "それでは約束通り、";
-	mes "スキルをお教えします。";
-	next;
-	delitem 907,20;
-	delitem 7033,7;
-	delitem 906,41;
-	delitem 1019,13;
-	delitem 501,1;
-	setskilllevel 0x93,1;
-	set skill_acher = 1,0;
-	mes "[ギョルナリ]";
-	mes "もう矢の心配が少なく";
-	mes "なりましたね。";
-	mes "そうそう、フェイヨンで「カイゴ」";
-	mes "という奴に会いましたか？";
-	mes "気をつけてください。";
-	mes "奴はとても凶暴な奴です…";
-	next;
-	mes "[ギョルナリ]";
-	mes "フェイヨンに行った時は";
-	mes "カイゴには気をつけてくださいね。";
-	mes "覚えておいてください。";
-	mes "それではお元気で、";
-	mes "良い贈り物をありがとう～";
-	close;
-LStart:
-	mes "[ギョルナリ]";
-	mes "フェイヨンの弓手さん！";
-	mes "嬉しいです！こんなところで";
-	mes "仲間に会うなんて！";
-	mes "一人でモロクに来て";
-	mes "知らない人ばかりで…";
-	mes "とても寂しかったんです…";
-	next;
-	menu "大変でしたね…元気出してください",L1_1,"ずっと苦労してください",L1_2;
-L1_1:
- 	mes "[ギョルナリ]";
- 	mes "う…ありがとうございます…";
- 	mes "あなたもこの見知らぬ地では";
- 	mes "苦労が多いことでしょう。";
- 	mes "矢を調達するのも大変でしょう。";
- 	mes "私はそれを自分で作れるように";
- 	mes "お教えしている者です。";
- 	next;
- 	menu "本当ですか!?",-;
-	mes "[ギョルナリ]";
-	mes "ええ、いくつかのアイテムを";
-	mes "利用して矢を作ることができます。";
-	mes "険しい世の中を一人で生きていく";
-	mes "のに重要な技術です。";
-	mes "もし必要ならお教えしますよ。";
-	next;
-	menu "お願いします",-;
-	mes "[ギョルナリ]";
-	mes "いいでしょう。ただし、";
-	mes "私のわがままも聞いてくれますか？";
-	mes "うーん…と";
-	mes "私の欲しい物を集めてきて";
-	mes "くださったらスキルをお教えします。";
-	next;
-	mes "[ギョルナリ]";
-	mes "私は故郷を離れてとても寂しいです。";
-	mes "故郷の品物でその寂しさを慰めて";
-	mes "ほしいのです…";
-	mes "フェイヨン森の^3355FF古木に流れる^000000";
-	mes "^3355FF露20個^000000、 フェイヨンの商店に";
-	mes "売っている^3355FF赤ポーション1本^000000";
-	next;
-	mes "[ギョルナリ]";
-	mes "そして、フェイヨン付近の森に住む";
-	mes "ウィローから出た^3355FF木屑13個^000000、";
-	mes "ワームテールの^3355FF鱗の茎41個^000000";
-	mes "^3355FF毒きのこの胞子7個^000000";
-	mes "を持って来てくだされば";
-	next;
-	mes "[ギョルナリ]";
-	mes "その時スキルを教えてさしあげます。";
-	mes "それではお待ちしています。";
-	mes "故郷の品々を…";
-	close;
-L1_2:
- 	mes "[ギョルナリ]";
- 	check Gender = 0,-,LMAN;
- 	mes "…お嬢さん…";
- 	goto L1_2a;
-LMAN:
- 	mes "…兄さん…";
-L1_2a:
- 	mes "夜道には気をつけてください…";
- 	close;
-LStartLowlv:
-	mes "[ギョルナリ]";
-	mes "うん？何かお話ですか？";
-	mes "んー私からは特にお話は…";
-	mes "…";
-	mes "実力に差がありすぎると";
-	mes "話について来れないでしょう。";
-	close;
-LStartOther:
-	mes "[ギョルナリ]";
-	mes "弓手はめずらしいですか？";
-	mes "道中で見かけると思いますが。";
-	mes "私はただの弓手ではなく、";
-	mes "技術を教えている者です。";
-	close;
-LStartTwice:
-	mes "[ギョルナリ]";
-	mes "あ、故郷の方ですね！";
-	mes "嬉しい！";
-	mes "お元気ですか？";
-	mes "あ！その矢…";
-	mes "ご自分で作ったのですね！";
-	next;
-	mes "[ギョルナリ]";
-	mes "ふふ…";
-	mes "器用になりましたね。";
-	mes "とにかく顔を見せてくれて";
-	mes "嬉しいです。";
-	mes "またぜひ立ち寄ってくださいね。";
-	mes "それではさようなら～";
-close;
+// Arrow crafting
+morocc.gat,121,109,5	script	"Roberto"		88,{
+	goto L_START_2;
+	check Job == 3,L_SUB_1_1,-;
+	check Job != 11,L_START_3,L_START_1;
+	L_SUB_1_1:
+		check JobLevel => 30,-,L_SUB_1_2;
+	L_START_1:
+		check skill_archer == 1,L_START_2,-;
+		mes "[Roberto]";
+		mes "Hey...";
+		mes "It's you.";
+		next;
+		checkitem 907,20,-,L_SUB_1_3;
+		checkitem 921,7,-,L_SUB_1_3;
+		checkitem 7012,41,-,L_SUB_1_3;
+		checkitem 1019,13,-,L_SUB_1_3;
+		checkitem 501,1,-,L_SUB_1_3;
+		mes "[Roberto]";
+		mes "Oh! You brought everything I";
+		mes "asked for. As my promise I'll";
+		mes "teach you the new skill.";
+		mes "You'll be thankful.";
+		next;
+		delitem 907,20;
+		delitem 921,7;
+		delitem 7012,41;
+		delitem 1019,13;
+		delitem 501,1;
+		setskilllevel 0x93,1;
+		set skill_acher = 1;
+		mes "[Roberto]";
+		mes "You don't need to worry about";
+		mes "buying arrows anymore! This";
+		mes "skill will help you make arrows.";
+		mes "Oh, by the way... Have you met";
+		mes "the Kahos in Payon?";
+		next;
+		mes "[Roberto]";
+		mes "Be careful! Kahos are very";
+		mes "fierce! If you ever venture";
+		mes "back to Payon, look out for";
+		mes "Kahos! Thanks for you gifts!";
+		mes "safe journies!!";
+		next;
+		mes "[Roberto]";
+		mes "Oh wait... And if you see my";
+		mes "old friend Jason in Payon...";
+		mes "Tell him I say 'hi'.";
+		mes "Be careful with him too, he's";
+		mes "kinda rough...";
+		close;
+		L_SUB_1_3:
+			mes "[Roberto]";
+			mes "?! You're an Archer from Payon?";
+			mes "Nice to meet you!";
+			mes "I never thought I would find";
+			mes "a friend in a place like this!";
+			mes "I came to Morroc along you see.";
+			next;
+			mes "[Roberto]";
+			mes "I feel so pressured and taken";
+			mes "advantage of... This place is";
+			mes "so rough. I'm so lonely...";
+			next;
+			menu "It's ok! Don't give up, always have hope",-,"Hahaha loser",L_ROOT_1_1;
+				mes "[Roberto]";
+				mes "Thank you for the support.";
+				mes "It looks like you find it rough";
+				mes "here too. Don't you think it's";
+				mes "hard to find arrows here?"
+				mes "Me? I make my own arrows.";
+				next;
+				menu "Huh? Really?",-;
+					mes "[Roberto]";
+					mes "Yeah!";
+					mes "By using useless items that";
+					mes "people rather throw away, I make";
+					mes "arrows from them!";
+					mes "This technique I mastered while";
+					mes "living and travelling alone.";
+					next;
+					mes "[Roberto]";
+					mes "If you want, I could teach you.";
+					mes "But, nothing comes for free in";
+					mes "Morroc. You need to learn how";
+					mes "to get by, by yourself. Umm....";
+					mes "so let's make it this way. You";
+					mes "bring me some items.";
+					next;
+					mes "[Roberto]";
+					mes "I miss my hometown of Payon so";
+					mes "much. All I want is for you to";
+					mes "bring me some items that remind";
+					mes "me of it. Then, I'll teach you the";
+					mes "skill of making your own arrows.";
+					next;
+					mes "[Roberto]";
+					mes "How about, ^3355FF20 Resins^000000 that can be";
+					mes "found around Payon Forest. ^3355FF1 Red";
+					mes "Potion^000000 from the Payon Kitshop. ^3355FF13";
+					mes "Trunks^000000 from the monster Willows";
+					mes "that roam around the woods.";
+					next;
+					mes "[Roberto]";
+					mes "And also, ^3355FF41 Tough Scale-Like";
+					mes "Stems^000000 from the Wormtails and";
+					mes "^3355FF7 Mushroom Spores^000000 that come";
+					mes "from the funny Poisons Spores";
+					mes "in the woods.";
+					next;
+					mes "[Roberto]";
+					mes "Bring me those items, and I";
+					mes "promise to teach you the skill.";
+					mes "And if possible, could you";
+					mes "bring me some news from Payon";
+					mes "too?";
+					close;
+			L_ROOT_1_1:
+				mes "[Roberto]";
+				check Gender == 0,-,L_ROOT_1_2;
+				mes "Hey girl!";
+				goto L_ROOT_1_3;
+				L_ROOT_1_2:
+					mes "Hey boy!";
+				L_ROOT_1_3:
+					mes "Watch what you say,";
+					mes "or the next time you're";
+					mes "walking alone in the alleys";
+					mes "someone might just knock";
+					mes "your head in.";
+					close;
+		L_SUB_1_2:
+			mes "[Roberto]";
+			mes "Hmm...? What...?";
+			mes "I have nothing to say...";
+			mes "It seems the difference in";
+			mes "our abilities is building a";
+			mes "a wall in our speech.";
+			close;
+		L_START_2:
+			mes "[Roberto]";
+			mes "Wow! It's you!";
+			mes "You're from my hometown of";
+			mes "Payon! Nice to see you again!";
+			mes "How are you? Making alot of";
+			mes "arrows? Wow! You made it";
+			mes "yourself!";
+			next;
+			mes "[Roberto]";
+			mes "Ah...";
+			mes "Are you feeling better?";
+			mes "No matter what, I am happy.";
+			mes "Whenever someone visits me";
+			mes "from my hometown to give me";
+			mes "news, I will be happy.";
+			close;
+		L_START_3:
+			mes "[?]";
+			mes "What? Is this the first";
+			mes "time you've seen an Archer?";
+			mes "Sorry, but I don't associate";
+			mes "with people who aren't";
+			mes "Archers.";
+			close;
 }
 
-//---------------------------
-//==== チャージアロー ===
-//---------------------------
-payon.gat,30,94,3	script	"カイゴ"	88,{
-	check Job = 3,Lcheck1,-;
-	check Job != 11,LStartOther,LStart;
-Lcheck1:
-	check JobLevel >= 35,-,LStartLowlv;
-LStart:
-	check skill_acher2 = 1,LStartTwice,-;
-	mes "[カイゴ]";
-	mes "クソ…傷がよく治らんな…";
-	mes "こんな体たらくとは俺としたことが";
-	mes "油断したな…ちぇっ…";
-	mes "それにしても、この俺に";
-	mes "こんな傷をつけるとは…";
-	next;
-	mes "ギョルナリめ…どうしてくれようか。";
-	mes "う～む……あ？";
-	mes "お前、いつからそこに居た？";
-	mes "なかなかできる奴だな。";
-	mes "お前ほどの使い手ならば";
-	mes "「チャージアロー」も使えるだろう。";
-	next;
-	menu "それは何ですか？",L1,"早く教えて",L2;
-L1:
-	mes "[カイゴ]";
-	mes "…冗談だろ？";
-	mes "いや…お前ほどの使い手が";
-	mes "チャージアローも知らないとは";
-	mes "珍しい奴だと思ってな。。";
-	next;
-	mes "(カイゴはしばし考える)";
-	next;
-	mes "[カイゴ]";
-	mes "ふむ、よし、俺が直々に";
-	mes "教えてやるか。";
-	next;
-	mes "[カイゴ]";
-	mes "チャージアローは、攻撃時に";
-	mes "敵を少し後ろに押し出す。";
-	mes "狙いを定めるのに多少時間を";
-	mes "要すが、魔法等と違い、攻撃を";
-	mes "受けても妨害されない。";
-	next;
-	mes "[カイゴ]";
-	mes "近距離戦が苦手な弓手にとっては";
-	mes "ありがたい技術だろう。";
-	mes "お前もチャージアローを覚える気が";
-	mes "あったら、また俺のところに来い。";
-	mes "ある準備をしてな。";
-	next;
-	mes "[カイゴ]";
-	mes "まず弓を改良しなければならないから";
-	mes "使わないクロスボウを一つ用意だ。";
-	mes "そして^3355FF触手10個^000000と^3355FF鳥のくちばし10個^000000";
-	mes "^3355FFサルのしっぽ3個^000000…良い弾力のな。";
-	mes "そして^3355FFエメラルド2個^000000。最後に…";
-	mes "私が好きな^3355FFバナナジュース36本^000000！";
-	next;
-	mes "[カイゴ]";
-	mes "以上";
-	mes "これだけ揃えて来たら";
-	mes "チャージアローを教えてやるよ。";
-	mes "じゃ、いってらっしゃい。";
-	mes "(バナナジュースを持ってこなかったら";
-	mes "殴るしかないな…)";
-	close;
-L2:
-	checkitem 721,2,-,L3;
-	checkitem 942,3,-,L3;
-	checkitem 962,10,-,L3;
-	checkitem 925,10,-,L3;
-	checkitem 532,36,-,L3;
-	mes "[カイゴ]";
-	mes "よし！完璧だ！";
-	mes "俺がみんなのアーチャースキル";
-	mes "チャージアローを伝授してやる！";
-	next;
-	delitem 721,2;
-	delitem 942,3;
-	delitem 962,10;
-	delitem 925,10;
-	delitem 532,36;
-	setskilllevel 0x94,1;
-	set skill_acher2 =1,0;
-	mes "[カイゴ]";
-	mes "ん、思ったより出来が良い。";
-	mes "弓を改良する必要もない！";
-	mes "これはまた持って行きな。";
-	mes "そしてもうどこへなり行って";
-	mes "新しい技を披露して威張れ！";
-	mes "ふはは！";
-	close;
-L3:
-	mes "[カイゴ]";
-	mes "ん…？";
-	mes "足りない物があるな…";
-	mes "もう一度言うが、^3355FFエメラルド 2^000000";
-	mes "^3355FFサルのしっぽ 3^000000、^3355FF触手 10^000000";
-	mes "^3355FF鳥のくちばし 10^000000、 最後に";
-	mes "^3355FFバナナジュース 36本^000000！";
-	next;
-	mes "[カイゴ]";
-	mes "しっかり揃えてまた来いよ！";
-	close;
-LStartLowlv:
-	mes "[カイゴ]";
-	mes "ふむ、お前弓手だな？";
-	mes "もう少しがんばれば";
-	mes "良いものを得られるかもしれんぞ。";
-	mes "がんばれ！";
-	close;
-LStartOther:
-	mes "[???]";
-	mes "寂しい一人身の俺を見て";
-	mes "何かおもしろいのか…？";
-	close;
-LStartTwice:
-	mes "[カイゴ]";
-	mes "よう、また会ったな。";
-	mes "どうしてか俺は見知った奴だと";
-	mes "言い方がぶっきらぼうになるんだ。";
-	mes "まぁ、とにかく嬉しいぜ。";
-	close;
+// Charge Arrow
+payon.gat,30,94,3	script	"Jason"		88,{
+	check Job == 3,L_SUB_1_1,-;
+	check Job != 11,L_START_3,L_START_1;
+	L_SUB_1_1:
+		check JobLevel => 35,-,L_SUB_1_2;
+	L_START_1:
+		check skill_archer2 == 1,L_SUB_1_3,-;
+		mes "[Jason]";
+		mes "My wounds won't heal...";
+		mes "Crap! I thought my body was";
+		mes "good enough. I just wasn't";
+		mes "careful enough... How could";
+		mes "I be hurt like this?";
+		next;
+		mes "[Jason]";
+		mes "Damn Roberto! Where are you?";
+		mes "Huh... ...?";
+		mes "How long have you been";
+		mes "standing there? Huh, if I was";
+		mes "your friend, I'd probably";
+		mes "teach you 'Arrow Repel'.";
+		next;
+		menu "What are you talking about?",-,"Tell me, quick!",L_ROOT_1_1;
+			mes "[Jason]";
+			mes "Are you kidding?";
+			mes "You're a weakling y'know that?";
+			mes "I can't believe you don't";
+			mes "even know 'Arrow Repel'.";
+			mes "I think it's the most";
+			mes "useful skill ever!";
+			next;
+			mes "(He thinks this about alot of things)";
+			next;
+			mes "[Jason]";
+			mes "Oh, you know Roberto?";
+			mes "Ah... He tought you something";
+			mes "didn't he?";
+			mes "Ok... I guess I'll teach";
+			mes "you too.";
+			next;
+			mes "[Jason]";
+			mes "When Arrow Repel is in";
+			mes "effect, the enemy will get";
+			mes "pushed back a little. It takes";
+			mes "a little time to aim it, but";
+			mes "it's alot faster than magic.";
+			next;
+			mes "[Jason]";
+			mes "Even if you get attacked,";
+			mes "it won't affect your aim.";
+			mes "I suck at close range fighting,";
+			mes "so Arrow Repel is a good";
+			mes "attack for me.";
+			next;
+			mes "[Jason]";
+			mes "You first need to master the";
+			mes "art of the bow first.";
+			mes "And bring along a spare";
+			mes "Crossbow with you too.";
+			mes "You'll need it.";
+			next;
+			mes "[Jason]";
+			mes "Bring me some stuff for";
+			mes "the training. I need :";
+			mes "^3355FF- 10 Bill of Birds^000000";
+			mes "^3355FF- 10 Tentacles^000000";
+			mes "^3355FF- 3 Yoyo Tails^000000";
+			mes "^3355FF- 2 Emeralds^000000";
+			next;
+			mes "[Jason]";
+			mes "And last BUT NOT least,";
+			mes "I want ^3355FF36 Banana Juices^000000.";
+			mes "Just bring those back to me";
+			mes "and you'll learn Arrow";
+			mes "Repel. Just go~";
+			next;
+			mes "[Jason]";
+			mes "And if you don't bring the";
+			mes "Banana Juice...";
+			mes "I'm gonna kick your ass!";
+			close;
+		L_ROOT_1_1:
+			checkitem 721,2,-,L_SUB_1_4;
+			checkitem 942,3,-,L_SUB_1_4;
+			checkitem 962,10,-,L_SUB_1_4;
+			checkitem 925,10,-,L_SUB_1_4;
+			checkitem 532,36,-,L_SUB_1_4;
+			mes "[Jason]";
+			mes "Yes! It's perfect!";
+			mes "You have everything I asked for...";
+			mes "Even the Banana Juice!";
+			mes "(That actually is just for me)";
+			mes "Now I can teach you Arrow";
+			mes "Repel! Are you ready?";
+			next;
+			delitem 721,2;
+			delitem 942,3;
+			delitem 962,10;
+			delitem 925,10;
+			delitem 532,36;
+			setskilllevel 0x94,1;
+			set skill_archer2 = 1;
+			mes "[Jason]";
+			mes "Oh! It's better than I thought!";
+			mes "You don't need to make it";
+			mes "any better! Just take this";
+			mes "knowledge and learn some";
+			mes "new moves!";
+			mes "Mwahahahahaaaaa!";
+			close;
+	L_SUB_1_4:
+		mes "[Jason]";
+		mes "Hmm... ... ...?";
+		mes "Something's MISSING!!!";
+		mes "It better not be the Banana";
+		mes "Juice!!!! Are you sure you";
+		mes "brought everything?!";
+		next;
+		mes "[Jason]";
+		mes "One old Crossbow along with...";
+		mes "^3355FF- 10 Bill of Birds^000000";
+		mes "^3355FF- 10 Tentacles^000000";
+		mes "^3355FF- 3 Yoyo Tails^000000";
+		mes "^3355FF- 2 Emeralds^000000";
+		mes "and ^3355FF36 Banana Juices^000000!!";
+		close;
+	L_SUB_1_2:
+		mes "[Jason]";
+		mes "Oh! You're an Archer.";
+		mes "If you work harder, you'll";
+		mes "be able to get whatever you";
+		mes "want in life.";
+		mes "Go for it!";
+		close;
+	L_START_3:
+		mes "[?]";
+		mes "Are you looking at my lonliness?";
+		mes "Is this funny to you?... ...";
+		close;
+	L_SUB_1_3:
+		mes "[Jason]";
+		mes "Hey! We meet again!";
+		mes "I only talk to people I know.";
+		mes "Hah, how's Roberto?";
+		mes "How are you?";
+		mes "Ah, it's nice to see you again.";
+		close;
 }
 
-//追加スキル Part 3 - 商人
-//-----------------------------------------------
-//==== ラウドボイス MC_LOUD ===
-//-----------------------------------------------
-alberta.gat,83,96,5	script	"ネコ"	98,{
-	check Job = 5,Lcheck,-;
-	check Job != 10,LStartOther,LStart;
-Lcheck:
-	check JobLevel >= 15,-,LStartLowlv;
-LStart:
-	check skill_mc = 1,LStartTwice,-;
-	checkitem 722,7,-,L2;
-	checkitem 532,1,-,L2;
-	checkitem 921,50,-,L2;
-	mes "[ネコ]";
-	mes "おお、";
-	mes "資格を得たな。";
-	mes "それじゃー私の使っている";
-	mes "「ラウドボイス」を教えようか。";
-	next;
-	menu "はい!!!!",L1_1,"やだ!!!!",L1_2,"…それはなに？",L1_3;
-L1_1:
- 	mes "[ネコ]";
- 	mes "あははは!! よし!!!";
- 	mes "その気迫だ!";
- 	mes "それではいくぞ！";
- 	next;
-	delitem 722,7;
-	delitem 532,1;
-	delitem 921,50;
-	setskilllevel 0x9B,1;
- 	set skill_mc = 1,0;
- 	mes "[ネコ]";
- 	mes "もう「ラウドボイス」を覚えたな！";
- 	mes "思いきり叫んでいきなさい！";
- 	mes "ははははは！";
- 	close;
-L1_2:
- 	mes "[ネコ]";
- 	mes "えっそうなの…";
- 	mes "ふーん…";
- 	close;
-L1_3:
-	mes "[ネコ]";
-	mes "「ラウドボイス」は大声を出して";
-	mes "戦闘意識を高める技術だ。";
-	mes "^3355FFSP8を消耗して、5分間^000000";
-	mes "^3355FFSTRを4増加^000000させるのだ!!!";
-	mes "重複使用したらその時点からに。";
-	mes "つまり効果がリセットされる。";
-	next;
-	mes "[ネコ]";
-	mes "普段持ってる力を引き出し";
-	mes "ここぞという時に発揮するスキル…";
-	mes "「火事場の馬鹿力」";
-	mes "って言葉もあるでしょ？";
-	mes "あれは無意識に出る力だがね。";
-	close;
-L2:
-	mes "[ネコ]";
-	mes "ん？私の声に釣られて来たか。";
-	mes "やはり私の声は大きいでしょう！";
-	mes "遠くにも聞こえて。";
-	mes "そしてね、";
-	mes "(キョロキョロ)";
-	next;
-	mes "[ネコ]";
-	mes "私の声は、ただバカでかい";
-	mes "だけじゃ無いんだな。";
-	mes "声を気に変えて、喝を入れる";
-	mes "技術にまで昇華させたのだ！";
-	next;
-	mes "[ネコ]";
-	mes "「ラウドボイス」は大声を出して";
-	mes "戦闘意識を高める技術だ。";
-	mes "^3355FFSP8を消耗して、5分間^000000";
-	mes "^3355FFSTRを4増加^000000させるのだ!!!";
-	mes "重複使用したらその時点からに。";
-	mes "つまり効果がリセットされる。";
-	next;
-	mes "[ネコ]";
-	mes "普段持ってる力を引き出し";
-	mes "ここぞという時に発揮するスキル…";
-	mes "「火事場の馬鹿力」";
-	mes "って言葉もあるでしょ？";
-	mes "あれは無意識に出る力だがね。";
-	next;
-	mes "[ネコ]";
-	mes "習得するにはまず腹式呼吸を";
-	mes "覚えなければならないが、";
-	mes "フェイヨン弓手村に居る";
-	mes "吟遊詩人に教われば良い。";
-	next;
-	mes "[ネコ]";
-	mes "しかし！その人死んじゃったの…";
-	mes "これじゃぁもう覚えられないな。";
-	mes "は…ははは…";
-	next;
-	mes "[ネコ]";
-	mes "…";
-	mes "くやしそうだね。";
-	mes "「ラウドボイス」を覚えたいって？";
-	next;
-	mes "[ネコ]";
-	mes "ならば私が教えてあげようか。";
-	mes "本当に望むならね…";
-	mes "まず、声帯を整えないとならないね。";
-	mes "そのためには準備が必要で";
-	next;
-	mes "[ネコ]";
-	mes "^3355FF真珠7個^000000、^3355FFバナナジュース1本^000000";
-	mes "^3355FFきのこの胞子50個^000000を持っておいで！";
-	check Gender = 0,-,LMAN;
-	mes "私がお嬢さんの喉を見るよ！";
-	next;
-	goto L2a;
-LMAN:
-	mes "私があなたの喉を見るよ！";
-	next;
-L2a:
-	mes "[ネコ]";
-	mes "じゃ準備をしておいで～";
-	mes "あの時まで喉を作っておくように！";
-	mes "うひひひひ！";
-	close;
-LStartLowlv:
-	mes "[ネコ]";
-	mes "ん？私の声に釣られて来たか。";
-	mes "やはり私の声は大きいでしょう！";
-	mes "遠くにも聞こえて。";
-	mes "そしてね、";
-	mes "(キョロキョロ)";
-	next;
-	mes "[ネコ]";
-	mes "私の声は、ただバカでかい";
-	mes "だけじゃ無いんだな。";
-	mes "あなたの^3355FF職業レベルが15^000000";
-	mes "になったら、ある秘密を教えて";
-	mes "あげる。また今度ね～";
-	next;
-	mes "[ネコ]";
-	mes "ふはははは！";
-	close;
-LStartOther:
-	mes "[ネコ]";
-	mes "ネコの店はただいま休業中です。";
-	mes "後ほどご来店ください。";
-	close;
-LStartTwice:
-	mes "[ネコ]";
-	mes "申し訳ありません。ネコの店は…";
-	mes "あ、誰かと思ったら～";
-	mes "ははは！";
-	mes "やぁ久しぶりだねぇ～！";
-	mes "うまくいってるかい？";
-	mes "本当に嬉しいね～変わりなくて。";
-	next;
-	mes "[ネコ]";
-	mes "ねぇねぇ、たまには遊びに来てよ！";
-	mes "顔をド忘れしちゃってさ…";
-	mes "ふはははは！";
-	mes "ホント嬉しくて！";
-	mes "アルベルタにちょくちょく";
-	mes "遊びに来てよ！";
-	next;
-	mes "機会見て仕入れにでもさ。";
-	mes "私を見つけたら声かけてね。";
-	mes "そしたらどんなに嬉しいか！";
-	mes "ぐはははは！";
-	mes "わはははは！";
-	mes "だはははは！";
-	close;
+// Lord Exclamation
+alberta.gat,83,96,5	script	"Necko"	98,{
+	check Job == 5,L_SUB_1_1,-;
+	check Job != 10,L_START_2,L_START_1;
+	L_SUB_1_1:
+		check JobLevel => 15,-,L_SUB_1_2;
+	L_START_1:
+		check skill_mc == 1,L_START_3,-;
+		checkitem 722,7,-,L_ROOT_1;
+		checkitem 532,1,-,L_ROOT_1;
+		checkitem 921,50,-,L_ROOT_1
+		mes "[Necko]";
+		mes "Oh! It's you!";
+		mes "You look like you're ready";
+		mes "to learn! Hehe, you came to";
+		mes "learn 'Crazy Uproar' from me";
+		mes "right?";
+		next;
+		menu "Sure!!",-,"No!...",L_MENU_1,"What...?",L_MENU_2;
+			mes "[Necko]";
+			mes "Ahahahaaa!~ Good!";
+			mes "You're just the kind of";
+			mes "person with the spirit I'm";
+			mes "looking for! I'll be glad to";
+			mes "teach you.";
+			mes "Here we go!";
+			next;
+			delitem 722,7;
+			delitem 532,1;
+			delitem 921,50;
+			setskilllevel 0x9B,1;
+			set skill_mc = 1;
+			mes "[Necko]";
+			mes "Wow! Now you learned";
+			mes "Crazy Uproar, you can run";
+			mes "around screaming at the";
+			mes "top of your lungs of your";
+			mes "discounts! Just like me!!";
+			mes "Ahahahaaaaa!!~";
+			close;
+		L_MENU_1:
+			mes "[Necko]";
+			mes "Oh.... ... Really....?";
+			mes "Ok... whatever.... ...";
+			close;
+		L_MENU_2:
+			mes "[Necko]";
+			mes "Crazy Uproar is a skill that";
+			mes "uses your voice when";
+			mes "fighting. You need ^3355FF8 SP^000000 to";
+			mes "you it, and it will raise";
+			mes "your ^3355FFSTR 4 points for 5 mins^000000.";
+			mes "At 5 minutes, it will end.";
+			next;
+			mes "[Necko]";
+			mes "You will be able to save";
+			mes "alot of HP this way. Because";
+			mes "your STR is increased, you";
+			mes "will be stronger, and take in";
+			mes "damage. It's very useful!";
+			close;
+			L_ROOT_1:
+				mes "[Necko]";
+				mes "Eh~? Are you interested in";
+				mes "my voice? Is that the reason";
+				mes "you came here? Hehe, yes!";
+				mes "My voice is very loud!";
+				mes "Even people who live miles";
+				mes "from here can hear me!";
+				next;
+				mes "[Necko]";
+				mes "Huh? Don't believe me?";
+				mes "Look! AHHHHHHH!!!";
+				mes "(Looks around)";
+				next;
+				mes "[Necko]";
+				mes "Heh~ Impressive eh?";
+				mes "You wanna know how I did";
+				mes "that? O hohoho~ It's a";
+				mes "skill I picked up called";
+				mes "'Crazy Uproar'!";
+				next;
+				mes "[Necko]";
+				mes "Crazy Uproar is a skill that";
+				mes "uses your voice when";
+				mes "fighting. You need ^3355FF8 SP^000000 to";
+				mes "you it, and it will raise";
+				mes "your ^3355FFSTR 4 points for 5 mins^000000.";
+				mes "At 5 minutes, it will end.";
+				next;
+				mes "[Necko]";
+				mes "If you want to learn this";
+				mes "skill, first you'll need to learn";
+				mes "about voice dynamics.";
+				next;
+				mes "[Necko]";
+				mes "To learn about voice dynamics,";
+				mes "You will need to goto Payon";
+				mes "and find a Bard with a loud";
+				mes "voice... and then learn from him!";
+				next;
+				mes "[Necko]";
+				mes "Hahaa! Are you gonna?";
+				mes "Too bad! He's dead!";
+				mes "So NO ONE will ever learn";
+				mes "from him again...";
+				mes "Hahahahaaaa!!~";
+				next;
+				mes "[Necko]";
+				mes "... ... ... ...";
+				mes "Hey, you look sad.";
+				mes "Do you want to learn";
+				mes "Crazy Uproar that badly?";
+				mes "Heh, if you want... I can";
+				mes "teach it to you~";
+				next;
+				mes "[Necko]";
+				mes "Fine fine~ I'll teach you ok?";
+				mes "BUT! You need to find me";
+				mes "some items...";
+				mes "These items will strengthen";
+				mes "your vocal coards! And";
+				mes "that is the most important.";
+				next;
+				mes "[Necko]";
+				mes "Ready? These are the things";
+				mes "you'll need for this :";
+				mes "^3355FF- 7 Pearls^000000";
+				mes "^3355FF- 1 Banana Juice^000000";
+				mes "and ^3355FF50 Mushroom Spores^000000";
+				next;
+				mes "[Necko]";
+				mes "Bring those to me";
+				check Gender == 0,-,L_MAN;
+					mes "pretty lady,";
+					mes "and I'll increase the strength";
+					mes "of your voice!";
+					next;
+					goto L_ROOT_1a;
+				L_MAN:
+					mes "handsom man,";
+					mes "and I'll increase the strength";
+					mes "of your voice!";
+					next;
+				L_ROOT_1a:
+					mes "[Necko]";
+					mes "Come back to me when you";
+					mes "have all the items~ I'll";
+					mes "be preparing my lesson";
+					mes "right here where you can";
+					mes "find me~";
+					mes "Whoa whoa~! Yeah yeah~!";
+					close;
+		L_SUB_1_2:
+			mes "[Necko]";
+			mes "Eh~? Are you interested in";
+			mes "my voice? Is that the reason";
+			mes "you came here? Hehe, yes!";
+			mes "My voice is very loud!";
+			mes "Even people who live miles";
+			mes "from here can hear me!";
+			next;
+			mes "[Necko]";
+			mes "Huh? Don't believe me?";
+			mes "Look! AHHHHHHH!!!";
+			mes "(Looks around)";
+			next;
+			mes "[Necko]";
+			mes "The voice is not the only";
+			mes "secret to what I do~.";
+			mes "If you get to a Merchant Lv15,";
+			mes "I'll tell you my secret ok?";
+			mes "Come back and see me!!";
+			next;
+			mes "[Necko]";
+			mes "Kerhahahahaahaaa!~";
+			mes "Puahahahaaaaaaa!~";
+			close;
+		L_START_2:
+			mes "[Necko]";
+			mes "Sorry~! But Necko's shop";
+			mes "is closed right now...";
+			mes "Come back again later!";
+			close;
+		L_START_3:
+			mes "[Necko]";
+			mes "Um... Excuse me, where is";
+			mes "Necko's Shop?";
+			mes "Huh?! You DON'T KNOW?!";
+			mes "Haha! Long time no see~!";
+			mes "How are you these days?";
+			mes "It's good to see you again!";
+			next;
+			mes "[Necko]";
+			mes "Huh? Why am I so happy?";
+			mes "No reason! Just seeing old";
+			mes "friends is exciting for me.";
+			mes "It's good you visit me so";
+			mes "often, otherwise, I'd forget";
+			mes "your face!";
+			next;
+			mes "[Necko]";
+			mes "Whaaahahaahaa!";
+			mes "But seriously, it's good to";
+			mes "see you in Alberta again.";
+			mes "Come to Alberta more often!";
+			mes "Then you can see me eat";
+			mes "bread and yell 24/7!";
+			next;
+			mes "[Necko]";
+			mes "I know, I live such a";
+			mes "happy life...";
+			mes "Herhahaahahaaa!";
+			mes "Kerdahahahahaaa~!";
+			mes "Wah hahahaahaa!";
+			close;
 }
 
-//-----------------------------------------------
-//==== チェンジカート Change Cart ===
-//-----------------------------------------------
-alberta.gat,119,221,6	script	"シャイロン"	107,{
-	check Job = 5,Lcheck,-;
-	check Job != 10,LStartOther,LStart;
-Lcheck:
-	check JobLevel >= 30,-,LStartLowlv;
-LStart:
-	check skill_mc2 = 1,LStartTwice,-;
-	mes "[シャイロン]";
-	mes "やぁ兄弟。";
-	mes "私の記憶が確かなら、 ";
-	mes "あなたは最近儲かってる";
-	mes "商人ですな。";
-	next;
-	mes "ところで冴えないカートを";
-	mes "引いてますねぇ…";
-	next;
-	menu "そのことで話しかけたんです",L1_1,"カートがどうだって？",L1_2,"ツーペアが良くないって？",L1_3;
-L1_1:
-	checkitem 1019,50,-,L2;
-	checkitem 998,10,-,L2;
-	checkitem 919,20,-,L2;
- 	mes "[シャイロン]";
- 	mes "ハハ！分かってますって！";
- 	mes "あなたが準備して来た品物で";
- 	mes "チェンジカートを教えてあげますよ。";
- 	next;
-	delitem 1019,50;
-	delitem 998,10;
-	delitem 919,20;
-	setskilllevel 0x9A,1;
-	set skill_mc2 = 1,0;
- 	mes "[シャイロン]";
- 	mes "おめでとうございます。";
- 	mes "もうあなたは、カートを";
- 	mes "好きな外見に変えられます。";
- 	mes "それにもう私の手助けも必要なく";
- 	mes "あなたのSPを以ってチェンジする";
- 	mes "ことができます。";
- 	next;
- 	mes "[シャイロン]";
- 	mes "便利でしょう。";
- 	mes "そしてもう一つ！";
- 	mes "レベルがある程度上がるごとに";
- 	mes "新しいカートデザインを";
- 	mes "習得することができます。";
- 	mes "なのでがんばってくださいね。";
- 	next;
- 	mes "[シャイロン]";
- 	mes "とにかく格好良くなるでしょ？";
- 	mes "ハハハ！楽しい一日になりまね！";
- 	close;
-L1_2:
- 	mes "[シャイロン]";
- 	mes "あら？全く知らないのですか!?";
- 	mes "商人の新しい演出手法！";
- 	mes "優秀な頭脳と器用さの披露！";
- 	mes "チェンジカートこそ商人をより";
- 	mes "世にアピールする芸なのです！";
- 	next;
- 	mes "[シャイロン]";
- 	mes "Sp40を消費して、自分の";
- 	mes "レベルに合わせてカートを";
- 	mes "変えられる楽しい技術！";
- 	next;
- 	mes "[シャイロン]";
- 	mes "それがチェンジカート！";
- 	mes "世界的な商人なら基本でしょ。";
- 	mes "私がどうやってやるか最初だけ";
- 	mes "教えてあげますから、あなたは";
- 	mes "その通りやってくだされば";
- 	mes "大丈夫ですよ～";
- 	next;
- 	mes "[シャイロン]";
- 	mes "ただ、始めるにあたって材料は";
- 	mes "準備する必要があります。";
- 	mes "^3355FF木屑 50個^000000";
- 	mes "^3355FF鉄 10個^000000";
- 	mes "^3355FF獣の皮 20枚^000000";
- 	mes "- を準備してください。";
- 	next;
- 	mes "[シャイロン]";
- 	mes "これらが揃えば、教えられます";
- 	mes "ので、材料が揃ったらお声を";
- 	mes "掛けてください。";
- 	close;
-L1_3:
- 	mes "[シャイロン]";
- 	mes "「カード」のことではないです…";
- 	close;
-L2:
- 	mes "[シャイロン]";
- 	mes "うーん…私がチェンジカート技術を";
- 	mes "教えてあげることは確かですが、";
- 	mes "カートを改造するための材料を";
- 	mes "揃えて来てくれないと…";
- 	next;
- 	mes "[シャイロン]";
- 	mes "^3355FF木屑 50個^000000";
- 	mes "^3355FF鉄 10個^000000";
- 	mes "^3355FF獣の皮 20枚^000000";
- 	mes "を揃えなければ";
- 	mes "カートを改造できません…";
- 	next;
- 	mes "[シャイロン]";
- 	mes "というわけで、準備が整ったら";
- 	mes "またお声を掛けてください。";
- 	close;
-LStartLowlv:
-	mes "[シャイロン]";
-	mes "いらっしゃい。";
-	mes "商売は面白いですね。";
-	mes "私はよろず屋シャイルロンです。";
-	mes "最近はカートに関する商品を";
-	mes "開発しております。";
-	next;
-	mes "[シャイロン]";
-	mes "あなたはご自分のカートに";
-	mes "満足していますか？";
-	mes "もし変えたければ、私にご相談";
-	mes "ください。ただ、条件があります。";
-	next;
-	mes "[シャイロン]";
-	mes "私はかなり有名な商人なので";
-	mes "そう簡単に取引をしないのです…";
-	mes "あなたが商人の職を30レベルまで";
-	mes "上げることができたら、信用して";
-	mes "取引を考えたいと思います。";
-	close;
-LStartOther:
-	mes "[シャイロン]";
-	mes "私は多様な商品を扱う";
-	mes "シャイロンです。";
-	mes "もし良い品物が手に入ったら";
-	mes "是非私まで取引を";
-	mes "お持ちかけください。";
-	close;
-LStartTwice:
-	mes "[シャイロン]";
-	mes "うーん、誰がこんなに騒々しい";
-	mes "カートを引いてるのかと思ったら";
-	mes "あなたでしたか…。";
-	mes "うん、あなたのことは覚えていますよ。";
-	mes "どうですか？新しいカートは。";
-	next;
-	mes "[シャイロン]";
-	mes "人生を楽しみましょう。";
-	mes "前だけ見て走るのが人生ではないよ。";
-	mes "重いカートを引きずってゆっくり";
-	mes "世の中を見物しながら暮すのが";
-	mes "私たち商人たちの生き方です。";
-	mes "それではまた会いましょう。お元気で～";
-	close;
+// Change cart
+alberta.gat,119,221,6	script	"Charlron"	107,{
+	check Job = 5,L_SUB_1_1,-;
+	check Job != 10,L_START_3,L_START_1;
+	L_SUB_1_1:
+		check JobLevel => 30,-,L_SUB_1_2;
+	L_START_1:
+		check skill_mc2 == 1,L_START_2,-;
+		mes "[Charlron]";
+		mes "Hey you! Merchant!";
+		mes "Ah, nice to see you.";
+		mes "From my guess, you must be";
+		mes "pretty popular around here huh?";
+		mes "Any good with those";
+		mes "sales?";
+		next;
+		mes "[Charlron]";
+		mes "Gah! But your cart looks";
+		mes "like crap! That grey lump";
+		mes "of thing... Aren't you";
+		mes "ashamed?";
+		next;
+		menu "I know! That's why I came to you...",-,"Wha? What's wrong with my Cart?",L_MENU_1,"Is there anything to be ashamed of?",L_MENU_2;
+			checkitem 1019,50,-,L_ROOT_1;
+			checkitem 998,10,-,L_ROOT_1;
+			checkitem 919,20,-,L_ROOT_1;
+			mes "[Charlron]";
+			mes "Haha! Ok! Yes!!!";
+			mes "This is it! I can help you";
+			mes "change your Cart with the";
+			mes "items you brought to me.";
+			next;
+			delitem 1019,50;
+			delitem 998,10;
+			delitem 919,20;
+			setskilllevel 0x9A,1;
+			set skill_mc2 = 1;
+			mes "[Charlron]";
+			mes "Congratulations!";
+			mes "You can choose ANY cart";
+			mes "you want now! Plus,";
+			mes "you can change it anytime";
+			mes "by using any SP you have.";
+			mes "You don't need me.";
+			next;
+			mes "[Charlron]";
+			mes "Easy right?";
+			mes "Oh, and another thing.";
+			mes "Depending on your level,";
+			mes "you cart will be able to";
+			mes "take on different styles.";
+			next;
+			mes "[Charlron]";
+			mes "I hope that motivates you";
+			mes "to try harder and level up.";
+			mes "Hehe, you look really cool";
+			mes "right now. I wish you to";
+			mes "be very happy.";
+			close;
+		L_MENU_1:
+			mes "[Charlron]";
+			mes "What?! Oh my god!";
+			mes "You don't know?";
+			mes "A cart is and object that";
+			mes "people view as the reputation";
+			mes "of a Merchant!";
+			mes "It needs to be extravagant!";
+			next;
+			mes "[Charlron]";
+			mes "So learning this skill";
+			mes "means telling everyone how";
+			mes "good you are!";
+			mes "And depending on your SP";
+			mes "you can change it alot!";
+			mes "It only takes ^3355FF40 SP^000000 to use!";
+			next;
+			mes "[Charlron]";
+			mes "Isn't it like common sense?";
+			mes "Change Cart is the 'must know'";
+			mes "for any Merchant!";
+			mes "I can teach and help you";
+			mes "the first time, but after that";
+			mes "you should be able to do it.";
+			next;
+			mes "[Charlron]";
+			mes "But since it's your first";
+			mes "time, I'll need these from you.";
+			mes "^3355FF- 50 Trunks^000000";
+			mes "^3355FF- 10 Irons^000000";
+			mes "and ^3355FF20 Animal Skins^000000";
+			next;
+			mes "[Charlron]";
+			mes "Bring those all to me";
+			mes "and we'll use them to";
+			mes "decorate your cart.";
+			mes "Understood?";
+			close;
+		L_MENU_2:
+			mes "[Charlron]";
+			mes "Eh fine~ No need to change";
+			mes "the head of your cart.";
+			mes "It seems your head";
+			mes "is thick enough as it is~";
+			close;
+			L_ROOT_1:
+				mes "[Charlron]";
+				mes "Umm...";
+				mes "See? I know the skill, so";
+				mes "I can change my cart anytime.";
+				mes "But for you, it's your";
+				mes "first time, so I need those";
+				mes "items to teach you how.";
+				next;
+				mes "[Charlron]";
+				mes "It's not all that much...";
+				mes "Just bring me :";
+				mes "^3355FF- 50 Trunks^000000";
+				mes "^3355FF- 10 Irons^000000";
+				mes "and ^3355FF20 Animal Skins^000000";
+				next;
+				mes "[Charlron]";
+				mes "Just bring all of them to";
+				mes "me, I'll be waiting here for";
+				mes "you to return.";
+				close;
+	L_START_2:
+		mes "[Charlron]";
+		mes "Hmm... I'm curious, who's";
+		mes "voice is so loud and cart is so";
+		mes "fine? Oh hey!! It's you!";
+		mes "Remember me? I taught";
+		mes "you the art of Cart Changing!";
+		next;
+		mes "[Charlron]";
+		mes "So, whaddya think?";
+		mes "You like it don't you?";
+		mes "Your cart is SO much better";
+		mes "now! Life is good";
+		mes "when your cart looks just";
+		mes "as good as you do.";
+		next;
+		mes "[Charlron]";
+		mes "And remember... If you can";
+		mes "zip through life, it wouldn't";
+		mes "be life anymore. Living like";
+		mes "a merchant, dragging a";
+		mes "heavy cart and supplying";
+		mes "goods, now that's life.";
+		next;
+		mes "[Charlron]";
+		mes "Good luck!";
+		mes "And safe journies.";
+		close;
+	L_SUB_1_2:
+		mes "[Charlron]";
+		mes "Hey, nice to meet you.";
+		mes "How are your sales going?";
+		mes "I'm Charlron, the owner of";
+		mes "this area. Heh, you're";
+		mes "wondering what I'm doing";
+		mes "outside?";
+		next;
+		mes "[Charlron]";
+		mes "Well, life got a bit boring";
+		mes "for me, so I'm doing some";
+		mes "research on carts! Are you";
+		mes "bored of those old fashioned";
+		mes "carts? Grey and dull...";
+		next;
+		mes "[Charlron]";
+		mes "If you want to change it,";
+		mes "I can help you. Although,";
+		mes "I'm a pretty well known";
+		mes "merchant here... I don't do";
+		mes "business with kids. I only";
+		mes "trade with the experianced.";
+		next;
+		mes "[Charlron]";
+		mes "If you know any merchants";
+		mes "that are above level 30,";
+		mes "you get them to come see";
+		mes "me, and I'll fix up their";
+		mes "carts for them.";
+		close;
+	L_START_3:
+		mes "[Charlron]";
+		mes "I am Charlron, a merchant";
+		mes "that sells all types of goods.";
+		mes "I have alot of interesting";
+		mes "stuff. So come trade with me";
+		mes "anytime!";
+		close;
 }
 
 //-----------------------------------------------
@@ -1476,10 +1647,7 @@ LStartTwice:
 	close;
 }
 
-// 追加スキル Part 4 - 聖職者
-//-----------------------------------------------
-//==== ホーリーライト - AL_HOLYLIGHT
-//-----------------------------------------------
+// Holy Light
 prt_church.gat,173,23,4	script	"Father Clifford"	79,{
 	mes "[Father Clifford]";
 	mes "Aah, brethren!  I'm here to assist lost lambs.";
@@ -1508,7 +1676,7 @@ L1:
 	mes "^FF3355A White Jewel^000000";
 	mes "^FF3355A Crystal Blue^000000";
 	mes "^FF3355A Rosary^000000";
-	mes "�etc.";
+	mes "etc.";
 	next;
 	mes "[Father Clifford]";
 	mes "But to succeed this skill,";
@@ -1578,10 +1746,8 @@ L3:
 		mes "Have a safe journey..."
 		close;
 }
-// 追加スキル Part 5 - 魔法師
-//-----------------------------------------------
-//==== エネルギーコート - MG_ENERGYCOAT
-//-----------------------------------------------
+
+// Energy Coat
 geffen_in.gat,151,119,4	script	"Great Magician"	64,{
 	mes "[Blizzardriss]";
 	mes "Yo! Fellow!";
@@ -1731,464 +1897,465 @@ L3:
 		close;
 }
 
-// 追加スキル Part 6 - ノービス
-//-----------------------------------------------
-//==== 応急処置 - NV_FIRSTAID
-//-----------------------------------------------
+// First Aid
 prt_in.gat,234,133,4	script	"Nami"	66,{
-	check Job != 0,LStart1,-;
-	check JobLevel >= 3,-,LStart3;
-LStart1:
-	check skill_nov < 3,-,LStart2;
-	mes "[Nami]";
-	mes "Hey, I'm a volunteer head nurse ";
-	mes "I'm here to be a doctor";
-	mes "Just an ordinary maiden.. excuse me";
-	mes "will you give me a chance ";
-	mes "to teach you? . .";
-	next;
-	menu "Continue Conversation",L1,"Sneak away quietly",LEnd;
-L1:
-	check skill_nov = 0,L1_1,-;
-	check skill_nov = 1,L1_2,-;
-	check skill_nov = 2,L1_3,-;
-L1_1:
- 	mes "[Nami]";
-	mes "Thanks!";
-	mes "Since we're starting I will ";
-	mes "give my best to teach you";
-	mes "-inhales-";
-	next;
-	mes "[Nami]";
-	mes "I will explain to you about ";
-	mes "^3355FF' First Aid '^000000 ";
-	mes "It doesn't need special equipment nor item ";
-	mes "you only need simple items . .";
-	mes "wrapping cloth, or apply ";
-	mes "some medicine";
-	next;
-	mes "[Nami]"
-	mes "to treat the wounded area";
-	mes "This is a good way";
-	mes "to heal your body";
-	mes "wounds. . . . .";
-	mes "Concerning the lack of practive ";
-	mes "you would have to provide for yourself ";
-	next;
-	mes "[Nami]";
-	mes "About the items required for first aid...";
-	mes "You can find the ingredients";
-	mes "easily on a nearby valley: ^3355FF' Red Herb '^000000 and";
-	mes "^3355FF' Clover '^000000 , 3 of each, you would also need";
-	mes "^3355FF' Sterilized Bandage '^000000";
-	next;
-	mes "[Nami]";
-	mes "For the sterilized bandage, you can get a";
-	mes "rotten bandage from a monster somewhere ";
-	mes "and then sterilize it.";
-	mes "Use it to cover your wounds";
-	mes "On the valley outside ";
-	mes "and the merchants ";
-	next;
-	mes "[Nami]"
-	mes "none of them have this item ";
-	mes "Inside east Prontera inn 2nd floor ";
-	mes "The Nurse General is thre";
-	mes "He can prepare for you this item ";
-	mes "Ask him nicely ";
-	mes "and he'll give it to you ";
-	next;
-	mes "[Nami]";
-	mes "Let's start our practice ";
-	mes "But since we don't have the necessary ingredients ";
-	mes "you should go and gather for it first ";
- 	set skill_nov = 1,0;
- 	close;
-L1_2:
- 	mes "[Nami]";
-	mes "About the items required for first aid...";
-	mes "You can find the ingredients";
-	mes "easily on a nearby valley: ^3355FF' Red Herb '^000000 and";
-	mes "^3355FF' Clover '^000000 , 3 of each, you would also need";
-	mes "^3355FF' Sterilized Bandage '^000000" ;
-	next;
-	mes "[Nami]";
-	mes "For the sterilized bandage, you can get a";
-	mes "rotten bandage from a monster somewhere ";
-	mes "and then sterilize it.";
-	mes "Use it to cover your wounds";
-	mes "On the valley outside ";
-	mes "and the merchants ";
-	next;
-	mes "[Nami]";
-	mes "none of them have this item ";
-	mes "Inside east Prontera inn 2nd floor ";
-	mes "The Nurse General is thre";
-	mes "He can prepare for you this item ";
-	mes "Ask him nicely ";
-	mes "and he'll give it to you ";
-	close;
-L1_3:
-	checkitem 507,3,-,L1_E;
-	checkitem 705,3,-,L1_E;
- 	delitem 507,3;
-	delitem 705,3;
-	mes "[Nami]";
-	mes "Welcome back, sorry for your ";
-	mes "effort in finding the ingredients!";
-	mes "Beside that, you went to Prontera ";
-	mes "look for the Nurse General, and face with his";
-	mes "odd personality, it must've been hard on you ";
-	mes "fufufu. . . . .";
-	next;
-	mes "[Nami]";
-	mes "Now let's start our lesson ";
-	mes "performing First Aid is a skill ";
-	mes "that recovers HP using SP ";
-	mes "It takes around 3 SP ";
-	mes "to recover around 5 HP ";
-	next;
-	mes "[Nami]";
-	mes "Now the procedure ";
-	mes "how to bandage the wounded area..";
-	mes "like this, and then this ";
-	mes "After that it's like this, and there, easy isn't it?";
-	next;
-	mes "[Nami]";
-	mes ". . now for the more detailed part ";
-	mes "Use the leftover medicine, half spoon ";
-	mes "one red herb, medium sized is fine";
-	mes "Next do this, and that.";
-	mes "*dang* !!";
-	next;
-	setskilllevel 0x8E,1;
-	set skill_nov = 3,0;
- 	mes "[Nami]";
-	mes "Right, right! Just like that ";
-	mes "Now you get the basics ";
-	mes "So then just use this";
-	mes "skill when you needed ok ";
-	mes "See you! Bye!";
-	close;
-L1_E:
- 	mes "[Nami]";
-	mes "About the items required for first aid...";
-	mes "You can find the ingredients";
-	mes "easily on a nearby valley: ^3355FF' Red Herb '^000000 and";
-	mes "^3355FF' Clover '^000000 , 3 of each, you would also need";
-	mes "^3355FF' Sterilized Bandage '^000000" ;
-	mes "と^3355FF「消毒処理した包帯」^000000が必要です。";
-	close;
-LEnd:
- 	mes "[Nami]";
-	mes ". . . . . Z z z";
-	mes "Sir you did it wrong..";
-	mes "ng ng ng ..";
-	mes "!! *cough* !!";
-	mes "- Looks around -";
-	close;
-LStart2:
-	mes "[Nami]";
-	mes "Lately I've been preparing hard ";
-	mes "for the doctor license examination..";
-	mes "But the grade came out bad";
-	mes "I think its because. .";
-	mes "I didn't practice enough?";
-	next;
-	mes "[Nami]";
-	mes "If you are a";
-	mes "^3355FFNovice job lvl 4 and up ^000000 ";
-	mes "I think I can have a chat ";
-	mes "with you for a while. . . . .";
-	close;
-LStart3:
-	mes "[Nami]";
-	mes "… z ｚ Z";
-	mes "間違えました！先生！";
-	mes "…？";
-	mes "はっ!?";
-	mes "- キョロキョロ -";
-	close;
-}
-//-----------------------------------------------
-//==== 死んだふり - NV_TRICKDEAD
-//-----------------------------------------------
-prt_in.gat,73,87,4	script	"Prontera Knight Member"	65,{
-	check Job = 0,-,LStart2;
-	check JobLevel >= 7,-,LStart2;
-	check skill_nov < 3,LStart2,-;
-	check skill_nov >= 6,LStart2,-;
- 	mes "[Blma]";
-	mes "Yep! Just as you see, I am...";
-	mes "A Prontera Knight member.";
-	mes "My name is Blma, Hahaha!!";
-	mes "Just became a member a few days ago/";
-	mes "and I feel great, not bad eh?";
-	next;
-	check skill_nov = 3,L1_1,-;
-	check skill_nov = 4,L1_2,-;
-	check skill_nov = 5,L1_3,-;
-L1_1:
- 		mes "[Blma]";
-		mes "Yo! Novice fella.";
-		mes "Your novice face reminds me of";
-		mes "myself back then.";
-		mes "Hahaha!  What memories...";
-		mes "Ah, I sound like a middle-aged guy.";
-		mes "Sorry, I'm just reminiscing my youth.";
+	check Job != 0,L_START_1,-;
+	check JobLevel >= 3,-,L_START_3;
+	goto L_SUB_1_2;
+	L_START_1:
+		check skill_nov < 3,-,L_START_2;
+		mes "[Nami]";
+		mes "Hi!";
+		mes "I'm going to be a nurse someday,";
+		mes "I want to be one so bad!";
+		mes "I'm always trying to learn more...";
+		mes "Actually, I'm quite good!";
+		mes "Do you want me to try on you?";
 		next;
-		mes "[Blma]";
-		mes "Hehe...you must've";
-		mes "gone through hards times too.";
-		mes "Back when i was a novice myself";
-		mes "I learned a trick";
-		mes "let me tell you about it...";
+		menu "Continue Conversation",-,"Slowly walk away....",L_END;
+			check skill_nov == 2,L_SUB_1_2,-;
+			check skill_nov == 3,L_SUB_1_1,-;
+			check skill_nov == 0,-,-;
+			mes "[Nami]";
+			mes "Thanks for giving me this chance!";
+			mes "I'll do my best. Don't worry!";
+			mes "When I'm nursing, I never give";
+			mes "half efforts! I'm ready.";
+			mes "**inhales**";
+			next;
+			mes "[Nami]";
+			mes "Let me tell you about the skill";
+			mes "that I'm using to help you.";
+			mes "It's called ^3355FF'First Aid'^000000.";
+			mes "It doesn't need any special";
+			mes "equipment or items. Just plain";
+			mes "old cloth or leftover potions.";
+			next;
+			mes "[Nami]";
+			mes "Anyone can perform First Aid.";
+			mes "It's a simple skill that you can";
+			mes "use to heal your body and treat";
+			mes "small wounds.";
+			mes "But it only works on yourself";
+			next;
+			mes "[Nami]";
+			mes "Do you want to learn this skill?";
+			mes "It doesn't take much...";
+			mes "I wouldn't mind teaching you.";
+			mes "But it does require some preparation.";
+			mes "Like some items...";
+			next;
+			mes "[Nami]";
+			mes "The things you need are :";
+			mes "^3355FF3 'Red Herb'^000000";
+			mes "^3355FF3 'Clover'^000000";
+			mes "^3355FFand 1 'Sterilized Bandage^000000";
+			next;
+			mes "[Nami]";
+			mes "Most of the items you can find";
+			mes "anywhere in this city...";
+			mes "Some are even dropped by monsters.";
+			mes "It shouldn't be hard to find.";
+			mes "But a 'Sterilized Bandage' might";
+			mes "be difficult...";
+			next;
+			mes "[Nami]";
+			mes "Ah! I know! You can get it from";
+			mes "a nurse I met while training!";
+			mes "He's in the Eastern Side of the";
+			mes "Prontera Castle! He always";
+			mes "carries extra items with him.";
+			mes "He'll give it to you.";
+			next;
+			mes "[Nami]";
+			mes "Let's start practicing!";
+			mes "You go find the ingredients and";
+			mes "come back here!";
+			mes "I'll be waiting here, to teach you";
+			mes "first aid.";
+			set skill_nov = 1,0;
+			close;
+		L_SUB_1_1:
+			mes "[Nami]";
+			mes "About the ingredients for first";
+			mes "aid, you can get all of it easily.";
+			mes "The things you need are :";
+			mes "^3355FF3 'Red Herb'^000000";
+			mes "^3355FF3 'Clover'^000000";
+			mes "^3355FFand 1 'Sterilized Bandage^000000";
+			next;
+			mes "[Nami]";
+			mes "For the sterilized banage, meet";
+			mes "'Dread Lord' the nurse.";
+			mes "He's in the Eastern Side of the";
+			mes "Prontera Castle! He always";
+			mes "carries extra items with him.";
+			mes "He'll give it to you.";
+			close;
+		L_SUB_1_2:
+			checkitem 507,3,-,L_ITEM_E;
+			checkitem 705,3,-,L_ITEM_E;
+			delitem 507,3;
+			delitem 705,3;
+			mes "[Nami]";
+			mes "Oh hey! Welcome back!!";
+			mes "Sorry to inconvienance you to";
+			mes "find those items... and ontop of";
+			mes "that, meeting with Dread Lord.";
+			mes "A perculiar person huh?";
+			mes "Thanks for that.";
+			next;
+			mes "[Nami]";
+			mes "Ok, letsee... To perform First Aid";
+			mes "it costs you 3 SP, and recovers in";
+			mes "return 5 HP. Easy huh?";
+			mes "Just do it here, here and here...";
+			mes "For the best effect of course!";
+			next;
+			mes "[Nami]";
+			mes "Believe be, that bandage will come";
+			mes "in handy alot! Well, that is unless";
+			mes "you think of becoming a swordsman.";
+			mes "They have abnormally fast HP";
+			mes "recovery, don't you think?";
+			next;
+			setskilllevel 0x8E,1;
+			set skill_nov = 3,0;
+			mes "[Nami]";
+			mes "Right! Right! Just like that~!";
+			mes "You learned First Aid!";
+			mes "Wow! I must be becoming a better";
+			mes "nurse! Use First Aid alot ok?!";
+			mes "I'll see you later, Bye!~";
+			close;
+			L_ITEM_E:
+				mes "[Nami]";
+				mes "About the ingredients for first";
+				mes "aid, you can get all of it easily.";
+				mes "The things you need are :";
+				mes "^3355FF3 'Red Herb'^000000";
+				mes "^3355FF3 'Clover'^000000";
+				mes "^3355FFand 1 'Sterilized Bandage^000000";
+		L_END:
+			mes "[Nami]";
+			mes "Ah... h-huhh?! What?!";
+			mes "Where are you going?!";
+			mes "Come back here for your shot!";
+			mes "On prick and it's over!!";
+			mes "Someone! Go get them!!~!";
+			close;
+	L_START_2:
+		mes "[Nami]";
+		mes "Recently, I've been studying";
+		mes "very hard! I'm trying to get my";
+		mes "nurse's liscence...";
+		mes "But my test came out bad...";
+		mes "Is it my fault?";
 		next;
-		mes "[Blma]";
-		mes "...It's a little strange,";
-		mes "I think this skill";
-		mes "would be very useful for you.";
+		mes "[Nami]";
+		mes "I don't think I'm bad at anything,";
+		mes "I'd make a great nurse!";
+		mes "It must be from lack of experiance.";
+		mes "I'll just try harder then...";
 		next;
-		mes "[Blma]";
-		mes "Haha, alright, you want to know?";
-		mes "My personal skill, I'll tell you and";
-		mes "I'll also teach you!";
-		mes "It's called ^3355FFPlay Dead^000000!!!";
-		mes "Relax, it's just faking it...";
-		mes "don't get so pale just hearing it.";
-		next;
-		mes "[Blma]";
-		mes "^3355FF'Play Dead^000000'";
-		mes "this skill requires a Novice's";
-		mes "extreme patience.";
-		mes "This may look like nothing";
-		mes "but it is a very useful skill and";
-		mes "is not that simple at all too";
-		next;
-		mes "[Blma]";
-		mes "When you run into a powerful monster ";
-		mes "and you can't defeat it ";
-		mes "you can use Play Dead ";
-		mes "If the monster is intelligent ";
-		mes "and scratches you to check if you're ";
-		mes " really dead, can you stand it?";
-		next;
-		mes "[Blma]";
-		mes "Considering the many scenarios ";
-		mes "you could say that ";
-		mes "pretending to be dead";
-		mes "requires extreme persistence!";
-		mes "Total dead-like appearance. . this is";
-		mes "what Play Dead is all about ";
-		next;
-		mes "[Blma]";
-		mes "Enough with the explanation ";
-		mes "From your eyes looks like";
-		mes "you are eager to learn it";
-		mes "Then let's start ";
-		mes "the lesson, first ";
-		mes "swallow this pill on my hand ";
-		next;
-		mes "[Blma]";
-		mes "Within 10 minuts, run to East Prontera Inn";
-		mes "2nd floor, meet with Nurse General";
-		mes "and acquire ^3355FF' Novice Nametag '^000000";
-		mes "and you're set! . .";
-		next;
-		mes "^3355FF- Gulp (swallows pill) -^000000";
-		next;
-		mes "[Blma]";
-		mes "Haha! The pill you just swallowed ";
-		mes "is actually a pill that cause suffocation";
-		mes "Ha~Ha~Just kidding, your face looked funny!";
-		mes "It's okay, this pill won't ";
-		mes "do harm to your body, the best way to train your ";
-		mes "persistence is to run long distances a lot ";
-		next;
-		mes "[Blma]";
-		mes "It's one of the best way ";
-		mes "Now then, start running. .";
-		mes "If you take too long to get back";
-		mes "I'll tell you to run again, ready, go!!";
-		mes "Run fast~ - - - - -";
-//10分計測開始(タイマーイベント)のはずだが、本鯖は現在無し？
-//時間経過後、skill_nov=5 @Novice_Nametag=0にセット
- 		set skill_nov = 4,0;
- 		close;
-L1_2:
-		mes "[Blma]";
-		mes "Hey, you don't have much time left!";
-		mes "The world isn't that big! *sigh*!";
-		mes "Do you really want to learn the skill?";
-		mes "Run, run, run - - - -";
-		next;
-		mes "[Blma]";
-		mes "Prontera Nurse General";
-		mes "is at east Prontera inn ";
-		mes "2nd floor";
+		mes "[Nami]";
+		mes "*sigh* If you were a First Class,";
+		mes "over ^3355FFNovice of Level 4^000000 or higher.";
+		mes "I could probably stay to talk...";
+		mes "Now I have to go back and study...";
+		mes "Nursing is important to me!";
 		close;
-L1_3:
- 		check @Novice_Nametag=1,-,L1_timeout;
-		mes "[Blma]"
-		mes "Great! You brought the Nametag";
-		mes "Ok! Practice over. .";
-		mes "Only by enduring the pill effect,";
-		mes "facing the Nurse General's ferocity, and still stand";
-		mes "I think you would ";
-		mes "do a great expression of Play Dead";
+	L_START_3:
+		mes "[Nami]";
+		mes "... ... ... ... Z z Z ...";
+		mes "Wha?! Sir! It's wrong!!";
+		mes "nn... nn... nnnnn!!";
+		mes "*cough*";
+		mes "What's going on?!";
+		close;
+}
+// Act Dead
+prt_in.gat,73,87,4	script	"Prontera Knight"	65,{
+	check Job == 0,-,L_START_2;
+	check JobLevel => 7,-,L_START_2;
+	check skill_nov < 3,L_START_2,-;
+	check skill_nov => 6,L_START_2,-;
+	mes "[Bulma]";
+	mes "Wow! Do you see me? Look!";
+	mes "I am finally a Prontera Knight.";
+	mes "My name is Bulma, I just";
+	mes "became a Knight a couple days";
+	mes "ago. I feel great! Not bad eh?";
+	mes "What do you think?";
+	next;
+	check skill_nov = 3,L_SUB_1_1,-;
+	check skill_nov = 4,L_SUB_1_2,-;
+	check skill_nov = 5,L_SUB_1_3,-;
+	L_SUB_1_1:
+		mes "[Bulma]";
+		mes "Hah! Your clueless face reminds";
+		mes "me of when I was a Novice.";
+		mes "Oh, I must sound like a middle";
+		mes "aged man. Sorry, I was just";
+		mes "remembering my youth.";
+		mes "Ah.. What memories...";
 		next;
-		mes "[Blma]";
-		mes "When you see a strong monster ";
-		mes "and you observed that";
-		mes "you can't defeat it, just play dead ";
-		mes "Ok ok, I'll see you next time!";
- 		set skill_nov = 6,0;
- 		set @Novice_Nametag = 0,0;
+		mes "[Bulma]";
+		mes "Ah, you must've gone through";
+		mes "hard times too, haven't you?";
+		mes "Back when I was a novice...";
+		mes "I learned a Trick!";
+		mes "Let me teach it to you...";
+		next;
+		mes "[Bulma]";
+		mes "At first you might think it's";
+		mes "a strange skill... But it came";
+		mes "to my rescue bunches of times.";
+		mes "It will be very useful to you.";
+		next;
+		mes "[Bulma]";
+		mes "Alright, alright. You wanna know?";
+		mes "MY personal skill, I'll tell you";
+		mes "and teach you! The skill is";
+		mes "called '^3355FFPlay Dead^000000'! Relax! It's";
+		mes "just faking it, don't get so";
+		mes "pale...";
+		next;
+		mes "[Bulma]";
+		mes "'^3355FFPlay Dead^000000' is a skill that needs";
+		mes "a Novice's full attention. It may";
+		mes "look like nothing at first, but";
+		mes "it is a very useful skill. But";
+		mes "it's not all that simple to";
+		mes "learn.";
+		next;
+		mes "[Bulma]";
+		mes "When you run into a strong";
+		mes "monster and can't kill it, use";
+		mes "Play Dead. If the monster is";
+		mes "smart, it will scratch you once";
+		mes "to see if you're dead. Can you";
+		mes "handle it?";
+		next;
+		mes "[Bulma]";
+		mes "Considering all the situations";
+		mes "you could run into, you can";
+		mes "say that pretending to be dead";
+		mes "takes alot of practice.";
+		mes "The total dead-like appearance";
+		mes "is what Play Dead is all about.";
+		next;
+		mes "[Bulma]";
+		mes "Enough with the explanation.";
+		mes "I didn't lose you did I?";
+		mes "You look eager to learn the skill.";
+		mes "But first, swallow this pill...";
+		next;
+		mes "[Bulma]";
+		mes "Now, run to the Prontera Castle";
+		mes "and meet with Dread Lord the";
+		mes "nurse general. He should know you.";
+		mes "Get the 'Novice Nametag' and come";
+		mes "back here!";
+		next;
+		mes "[Bulma]";
+		mes "Oh no! The pill you just swallowed";
+		mes "causes suffocation!! .. .. .. Just";
+		mes "kidding! You should've seen your";
+		mes "face. This pill just helps you";
+		mes "train yourself for persisting";
+		mes "in your task.";
+		next;
+		mes "[Bulma]";
+		mes "It's one of the best ways to";
+		mes "reach patients. Now run! go!";
+		mes "Get that Novice Nametag!";
+		mes "Run fast!!";
+		set skill_nov = 4;
+		close;
+	L_SUB_1_2:
+		mes "[Bulma]";
+		mes "?! What are you still doing here?";
+		mes "Run Run Run! The world isn't THAT";
+		mes "big is it?";
+		next;
+		mes "[Bulma]";
+		mes "Get the Novice Nametag from";
+		mes "Dread Lord the nurse general!";
+		mes "2nd floor, east in Prontera Castle!";
+		close;
+	L_SUB_1_3:
+		check @Novice_Nametag == 1,-,L_TIMEDOUT_1;
+		mes "[Bulma]";
+		mes "Great! You brought the Novice";
+		mes "Nametag! Good good, only by";
+		mes "learning how to endure this,";
+		mes "and facing the Dread Lord can";
+		mes "you truely master the Play Dead";
+		mes "skill.";
+		next;
+		mes "[Bulma]";
+		mes "Just remember, if you see a strong";
+		mes "monster, and you can't defeat it.";
+		mes "Use the Play Dead skill, it will help";
+		mes "you out alot! Good luck!";
+		mes "See you next time!";
+		set skill_nov = 6;
+		set @Novice_Nametag = 0;
 		setskilllevel 0x8F,1;
- 		close;
-L1_timeout:
-		mes "[Blma]";
-		mes "hey-";
-		mes "where's the Novice Nametag?";
-		mes "did you drop it somewhere. .";
-		mes "This won't do ";
-		mes "We'll have to start over again";
-		next;
-		mes "[Blma]";
-		mes "You look like you're making fun of me ";
-		mes "Be careful ";
-		mes "Prontera Knight member";
-		mes "is not to be taken lightly ";
-		mes "Let's start all over again, one more time!!";
-		set skill_nov = 4,0;
 		close;
-LStart2:
-	mes "[Blma]";
-	mes "Ah, you really reminded me of my youth!";
-	mes "especially during my Novice years";
-	mes "I can remember it vividly. . . . . those times";
-	mes "It was really rough, now I've gotten this high ";
-	mes "makes me feel lenient ";
-	mes "Novice (Job lvl 7 and up)";
-	next;
-	mes "[Blma]";
-	mes "( Also requires First Aid skill)";
-	mes "Just think of it as";
-	mes "giving the Novice some advice. .";
-	next;
-	mes "[Blma]";
-	mes "If you have a partner";
-	mes "which is novice and good friend of yours ";
-	mes "Introduce him to me ";
-	mes "I'll help him as well..";
-	close;
+		L_TIMEDOUT_1:
+			mes "[Bulma]";
+			mes "... ... Hey~?";
+			mes "Where's the Novice Nametag?";
+			mes "Did you drop it somewhere?";
+			mes "Ah... This won't do at all...";
+			mes "You'll need to start over again.";
+			next;
+			mes "[Bulma]";
+			mes "Are you mocking me?";
+			mes "Be warned... A member of the";
+			mes "Prontera Knights isn't to be";
+			mes "taken lightly.";
+			mes "Let's start again!";
+			set skill_nov = 4;
+			close;
+	L_START_2:
+		mes "[Bulma]";
+		mes "Ah, you remind me of my youth.";
+		mes "Me in my Novice years. *sigh*";
+		mes "I can remember so clearly, great";
+		mes "days those were. It was really";
+		mes "rough. But now I've gotten this";
+		mes "far... Makes me feel relieved.";
+		next;
+		mes "[Bulma]";
+		mes "If you know any Novices that";
+		mes "know the First Aid skill, tell";
+		mes "them to come find me.";
+		mes "I got something cool to teach them.";
+		next;
+		mes "[Bulma]";
+		mes "Just make sure they're above";
+		mes "Job Level 7. I'll make it worth";
+		mes "their time.";
+		close;
 }
-//-----------------------------------------------
-//==== 看護将校 (skill_novフラグ)
-//-----------------------------------------------
-prt_castle.gat,175,146,4	script	"Nurse General"	50,{
-	mes ". . . . . . . . . .";
-	mes ". . . . . . . . . .";
-	mes "Please don't go running around nearby ";
-	mes "and disturb my work, would you please get";
-	mes "out of my sight?";
+// 
+prt_castle.gat,175,146,4	script	"Dread Lord"	50,{
+	mes "[Dread Lord]";
+	mes "I am the Nurse General....";
+	mes "... ... ... ...";
+	mes "I am called Dread Lord.";
+	mes "Please do not disturb me, if";
+	mes "you have no business here";
+	mes "get out of my sight.";
 	next;
-	check skill_nov >= 6,L_3,-;
-	check skill_nov = 5,L_5,-;
-	check skill_nov = 4,L_4,-;
-	check skill_nov = 3,L_3,-;
-	check skill_nov = 2,L_2,-;
-	check skill_nov = 1,L_1,-;
- 	mes "[Dread Lord]";
-	mes "This is Prontera, our surgeons are ";
-	mes "busy at all times everyday helping the wounded ";
-	mes "and giving them first aids ";
-	mes "That's why everyone of us ";
-	mes "here appears tense...";
+	check skill_nov => 6,L_SUB_1_3,-;
+	check skill_nov == 5,L_SUB_1_5,-;
+	check skill_nov == 4,L_SUB_1_4,-;
+	check skill_nov == 3,L_SUB_1_3,-;
+	check skill_nov == 2,L_SUB_1_2,-;
+	check skill_nov == 1,L_SUB_1_1,-;
+	mes "[Dread Lord]";
+	mes "In Prontera Castle, our surgeons";
+	mes "are working around the clock";
+	mes "to heal the wounded, give soldiers";
+	mes "first aid and help the needy.";
+	mes "That is why everyone around here";
+	mes "is constantly so tense.";
 	next;
 	mes "[Dread Lord]";
-	mes "Even I the Nurse General as well ";
-	mes "am always busy with emergencies ";
-	mes "I don't have time to deal with you, please go away!";
+	mes "Even I, the Nurse General himself";
+	mes "are busy all the time, providing";
+	mes "first aid emergencies to those";
+	mes "who need it.";
+	mes "I don't have time to deal with you";
+	mes "now.. please go away!";
 	close;
-L_1:
-	mes "[Dread Lord]";
-	mes "Ahaha. .";
-	mes "You want to get some bandage?";
-	mes "Do you know how we";
-	mes "acquire these bandages?";
-	mes "In a pyramid nearby Morroc ";
-	mes "deep inside the dungeon will you find the bandage ";
-	next;
-	mes "[Dread Lord]";
-	mes "We acquire rotten bandages from ";
-	mes "the mummies there and then ";
-	mes "sterilize it afterwards, that's how this bandages are made. ";
-	mes "Do you believe in what I said? . .";
-	next;
-	mes "[Dread Lord]";
-	mes "Fufu, the rotten bandages ";
-	mes "fumes out poisonous gas ";
-	mes ". . . . . If I weren't so busy ";
-	mes "I can instruct you how sterilize one";
-	next;
-	mes "[Dread Lord]";
-	mes "and then give you sterilized bandage ";
-	mes "Too bad I'm tired now, here, take this. ";
-	mes "if your aid skill improves";
-	mes "you can come to our nurses and help out a bit ";
-	mes "Just don't try looking for the rotten bandage ";
-	mes "on your own, you might get killed by the mummies";
-	next;
-	mes "^3355FF- Acquired sterilized bandage -^000000";
- 	set skill_nov = 2,0;
- 	close;
-L_2:
-	mes "[Dread Lord]";
-	mes "Hey, if there's nothing else ";
-	mes "get away from my sight ";
-	mes "I need some rest..";
-	mes ". . . . .";
-	mes "- fuu, fuu. . . . . -";
-	close;
-L_3:
-	mes "[Dread Lord]";
-	mes "Noisy, get out!!";
-	mes "I hate people being so noisy..";
-	mes "I really hate!";
-	close;
-L_4:
-	mes "[Dread Lord]";
-	mes "How dare you disturb my rest.";
-	mes "You shouldn't be running around ";
-	mes "recklessly inside holy capital Prontera!!";
-	mes "Aiya. . ";
-	mes "Why must you be so noisy!! ";
-	next;
-	mes "[Dread Lord]";
-	mes ". . . . . What ?";
-	mes "You want to get your Novice Nametag?";
-	mes "Alright alright, take it then leave!";
-	mes "- hrmph -";
-	next;
-	mes "^3355FF- Acquired Novice Nametag -^000000";
- 	set @Novice_Nametag = 1,0;
- 	set skill_nov = 5,0;
- 	close;
-L_4a:
-	mes "[Dread Lord]";
-	mes "What now!?";
-	mes "Why are you looking for me ";
-	mes "just for a Novice Nametag!";
-	mes "You want to be a Novice forever? ";
-	mes "What a crook!";
-	close;
-L_5:
-	mes "[Dread Lord]";
-	mes "Aiyo, what else do you want!";
-	mes "Hurry up and go! scram!";
-	mes "You novices needs to run more!";
-	close;
+	L_SUB_1_1:
+		mes "[Dread Lord]";
+		mes "Oh... I see...";
+		mes "You need some bandages huh?";
+		mes "Do you know how I get these";
+		mes "bandages? They lie deep in";
+		mes "the pyramids near Morroc.";
+		next;
+		mes "[Dread Lord]";
+		mes "Getting the bandages from the";
+		mes "cursed mummies, we sterilize them.";
+		mes "After they're sterilized,";
+		mes "they're good to use.";
+		mes "Do you believe me?";
+		next;
+		mes "[Dread Lord]";
+		mes "Hoho... Those bandages let out";
+		mes "poisonous gases... If I weren't";
+		mes "so busy, I'd teach you to";
+		mes "sterilize some.";
+		next;
+		mes "[Dread Lord]";
+		mes "But I'm always on the move...";
+		mes "too busy... Here, take these ones.";
+		mes "Once you get more skilled,";
+		mes "you can help the nurses find";
+		mes "more bandages. Try not to go"
+		mes "on your own, you might get killed.";
+		next;
+		mes "^3355FF- Got Sterilized Bandage -^000000";
+		set skill_nov = 2;
+		close;
+	L_SUB_1_2:
+		mes "[Dread Lord]";
+		mes "If there's nothing else...";
+		mes "Please get out of my way,";
+		mes "there are alot of people I need";
+		mes "to help!";
+		close;
+	L_SUB_1_3:
+		mes "[Dread Lord]";
+		mes "Is there something I can do";
+		mes "for you? I can't stand idlers!";
+		mes "Move it or lose it! Peoples";
+		mes "lives are at stake!";
+		mes "I need to help them!";
+		close;
+	L_SUB_1_4:
+		check @Novice_Nametag == 0,-,L_ROOT_4;
+		mes "[Dread Lord]";
+		mes "Arg! What are you doing here";
+		mes "again?! You can't be running";
+		mes "around inside a Hospital like";
+		mes "this! Why are you so reckless";
+		mes "and noisy?!";
+		next;
+		mes "[Dread Lord]";
+		mes "What?... ... ...";
+		mes "You need to get your Novice";
+		mes "Nametag? Alright! Alright! Take";
+		mes "it and stop bothering me!";
+		mes "*hmph*";
+		next;
+		mes "^3355FF- Got Novice Nametag -^000000";
+		set @Novice_Nametag = 1;
+		set skill_nov = 5;
+		close;
+		L_ROOT_4:
+			mes "[Dread Lord]";
+			mes "What now?!";
+			mes "Why do you keep bothering";
+			mes "me?! I gave you your Novice";
+			mes "Nametag! Do you want to";
+			mes "be a Novice forever?!";
+			mes "GO AWAY!!";
+			close;
+	L_SUB_1_5:
+		mes "[Dread Lord]";
+		mes "Wha... It's the noisy Novice";
+		mes "again... What do you want?";
+		mes "I really don't like noisy people...";
+		mes "Please leave...";
+		close;
 }
 // 追加スキル Part 7 - シーフ
 moc_prydb1.gat,154,128,4	script	"アルコスク"	118,{
