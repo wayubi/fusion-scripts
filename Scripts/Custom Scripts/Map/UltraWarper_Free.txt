@@ -4,7 +4,7 @@
 // http://fusion.cobax.net/
 // ---------------------------------------------------------------------------------------
 //              Warper - Non Player Character Locations
-//			Warps to all towns (100z), guild castles (Free), and dungeons (300z).
+//			Warps to all towns (Free), guild castles (Free), and dungeons (Free).
 //
 // - prontera 164 174
 //
@@ -91,7 +91,7 @@ prontera.gat,164,174,3	script	"Warper"	117,{
 	goto L_MENU_0_0;
  Cities:
 	mes "[Warper]";
-	mes "I can send you to any town, for the small fee of 100z.";
+	mes "I can send you to any town, for free.";
 	mes " ";
 	mes "Where would you like to go?";
 	next;
@@ -99,74 +99,44 @@ prontera.gat,164,174,3	script	"Warper"	117,{
 	menu "Nevermind",NVM,"Izlude",M_Izlude,"Geffen",M_Geffen,"Alberta",M_Alberta,"Umbala",M_Umbala,"Al de Baran",M_Aldebaran,"None of these.. Next?",More1;
 	close;
    M_Izlude:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "izlude",128,93;
    M_Geffen:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "geffen",120,63;
    M_Alberta:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "alberta",30,234;
    M_Umbala:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "umbala",123,143;
    M_Aldebaran:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "aldebaran",140,121;
  More1:
 	menu "Nevermind",NVM,"Payon",M_Payon,"Morocc",M_Morocc,"Lutie",M_Xmas,"Juno",M_Juno,"Comodo",M_Comodo,"Nifflheim",M_Nifflheim,"None of these.. Next?",More2;
 	close;
    M_Payon:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "payon",89,122;
    M_Morocc:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "morocc",158,282;
    M_Xmas:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "xmas",148,130;
    M_Juno:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "yuno",158,169;
    M_Comodo:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "comodo",191,153;
    M_Nifflheim:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "niflheim",202,171;
  More2:
 	menu "Nevermind",NVM,"Amatsu",M_Amatsu,"Gon Ryune",M_Kunlun,"Lou Yang",M_louyang,"Jawaii",M_Jawai;
 	close;
    M_Amatsu:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "amatsu",197,86;
    M_Kunlun:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "gon_fild01",257,90;
    M_louyang:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "lou_fild01",190,102;
    M_Jawai:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "jawaii",232,101;
 Dungeons:
 	mes "[Warper]";
-	mes "I can send you to any dungeon, for the small fee of 300z.";
+	mes "I can send you to any dungeon, for free.";
 	mes " ";
 	mes "Where would you like to go?";
 	next;
@@ -174,55 +144,31 @@ L_MENU_0_2:
 	menu "Nevermind",NVM,"Bibalan Dungeon",M_Bil,"Sunken Ship",M_Sunken,"Hidden Temple",M_Prt_fild01,"Orc Dungeon",M_Gef_fild10,"Ant Hell",M_Moc_fild04,"None of these.. Next?",2More2;
 	close;
 M_Bil:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "izlu2dun",108,111;
 M_Sunken:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "alb2trea",43,53;
 M_Prt_fild01:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "prt_fild01",136,368;
 M_Gef_fild10:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "gef_fild10",67,334;
 M_Moc_fild04:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_fild04",210,328;
 2More2:
 	menu "Nevermind",NVM,"Coal Mines",M_mjolnir_02,"Sphinx Dungeon",M_moc_fild19,"Pyramids Dungeon",M_moc_ruins,"Glast Heim Prison",M_gef_fild06,"Beach Dungeon",M_Beach,"Turtle Dungeon",M_Turtle,"Magma Dungeon",M_Magma;
 	close;
 M_mjolnir_02:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "mjolnir_02",79,361;
 M_moc_fild19:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_fild19",106,99;
 M_moc_ruins:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_ruins",62,162;
 M_gef_fild06:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "glast_01",200,292;
 M_Beach:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "comodo",28,215;
 M_Turtle:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "tur_dun01",162,33;
 M_Magma:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "yuno_fild03",41,146;
 Guilds:
 	mes "[Warper]";
@@ -296,11 +242,6 @@ L_a4:
 	warp "alde_gld",46,84;
 L_a5:
 	warp "alde_gld",144,85;
-   ZENY:
-	mes "[Warper]";
-	mes "Not enough zeny? That is unfortunate...";
-	cutin "kafra_01",255;
-	close;
    NVM:
 	mes "[Warper]";
 	mes "Come back, if you're ever in need.";
@@ -331,7 +272,7 @@ izlude.gat,136,90,4	script	"Warper"	117,{
 	goto L_MENU_0_0;
  Cities:
 	mes "[Warper]";
-	mes "I can send you to any town, for the small fee of 100z.";
+	mes "I can send you to any town, for free.";
 	mes " ";
 	mes "Where would you like to go?";
 	next;
@@ -339,74 +280,44 @@ izlude.gat,136,90,4	script	"Warper"	117,{
 	menu "Nevermind",NVM,"Prontera",M_Prontera,"Geffen",M_Geffen,"Alberta",M_Alberta,"Umbala",M_Umbala,"Al de Baran",M_Aldebaran,"None of these.. Next?",More1;
 	close;
    M_Prontera:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "prontera",155,184;
    M_Geffen:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "geffen",120,63;
    M_Alberta:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "alberta",30,234;
    M_Umbala:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "umbala",123,143;
    M_Aldebaran:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "aldebaran",140,121;
  More1:
 	menu "Nevermind",NVM,"Payon",M_Payon,"Morocc",M_Morocc,"Lutie",M_Xmas,"Juno",M_Juno,"Comodo",M_Comodo,"Nifflheim",M_Nifflheim,"None of these.. Next?",More2;
 	close;
    M_Payon:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "payon",89,122;
    M_Morocc:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "morocc",158,282;
    M_Xmas:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "xmas",148,130;
    M_Juno:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "yuno",158,169;
    M_Comodo:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "comodo",191,153;
    M_Nifflheim:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "niflheim",202,171;
  More2:
 	menu "Nevermind",NVM,"Amatsu",M_Amatsu,"Gon Ryune",M_Kunlun,"Lou Yang",M_louyang,"Jawaii",M_Jawai;
 	close;
    M_Amatsu:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "amatsu",197,86;
    M_Kunlun:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "gon_fild01",257,90;
    M_louyang:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "lou_fild01",190,102;
    M_Jawai:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "jawaii",232,101;
 Dungeons:
 	mes "[Warper]";
-	mes "I can send you to any dungeon, for the small fee of 300z.";
+	mes "I can send you to any dungeon, for free.";
 	mes " ";
 	mes "Where would you like to go?";
 	next;
@@ -414,55 +325,31 @@ L_MENU_0_2:
 	menu "Nevermind",NVM,"Bibalan Dungeon",M_Bil,"Sunken Ship",M_Sunken,"Hidden Temple",M_Prt_fild01,"Orc Dungeon",M_Gef_fild10,"Ant Hell",M_Moc_fild04,"None of these.. Next?",2More2;
 	close;
 M_Bil:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "izlu2dun",108,111;
 M_Sunken:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "alb2trea",43,53;
 M_Prt_fild01:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "prt_fild01",136,368;
 M_Gef_fild10:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "gef_fild10",67,334;
 M_Moc_fild04:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_fild04",210,328;
 2More2:
 	menu "Nevermind",NVM,"Coal Mines",M_mjolnir_02,"Sphinx Dungeon",M_moc_fild19,"Pyramids Dungeon",M_moc_ruins,"Glast Heim Prison",M_gef_fild06,"Beach Dungeon",M_Beach,"Turtle Dungeon",M_Turtle,"Magma Dungeon",M_Magma;
 	close;
 M_mjolnir_02:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "mjolnir_02",79,361;
 M_moc_fild19:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_fild19",106,99;
 M_moc_ruins:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_ruins",62,162;
 M_gef_fild06:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "glast_01",200,292;
 M_Beach:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "comodo",28,215;
 M_Turtle:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "tur_dun01",162,33;
 M_Magma:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "yuno_fild03",41,146;
 Guilds:
 	mes "[Warper]";
@@ -536,11 +423,6 @@ L_a4:
 	warp "alde_gld",46,84;
 L_a5:
 	warp "alde_gld",144,85;
-   ZENY:
-	mes "[Warper]";
-	mes "Not enough zeny? That is unfortunate...";
-	cutin "kafra_01",255;
-	close;
    NVM:
 	mes "[Warper]";
 	mes "Come back, if you're ever in need.";
@@ -571,7 +453,7 @@ geffen.gat,124,68,4	script	"Warper"	117,{
 	goto L_MENU_0_0;
  Cities:
 	mes "[Warper]";
-	mes "I can send you to any town, for the small fee of 100z.";
+	mes "I can send you to any town, for free.";
 	mes " ";
 	mes "Where would you like to go?";
 	next;
@@ -579,74 +461,46 @@ geffen.gat,124,68,4	script	"Warper"	117,{
 	menu "Nevermind",NVM,"Prontera",M_Prontera,"Izlude",M_Izlude,"Alberta",M_Alberta,"Umbala",M_Umbala,"Al de Baran",M_Aldebaran,"None of these.. Next?",More1;
 	close;
    M_Prontera:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "prontera",155,184;
    M_Izlude:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "izlude",128,93;
-   M_Alberta:
-	check Zeny < 100,ZENY,-;
+   M_Alberta:ENY,-;
 	set Zeny -= 100,0;
 	warp "alberta",30,234;
    M_Umbala:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "umbala",123,143;
    M_Aldebaran:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "aldebaran",140,121;
  More1:
 	menu "Nevermind",NVM,"Payon",M_Payon,"Morocc",M_Morocc,"Lutie",M_Xmas,"Juno",M_Juno,"Comodo",M_Comodo,"Nifflheim",M_Nifflheim,"None of these.. Next?",More2;
 	close;
    M_Payon:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "payon",89,122;
    M_Morocc:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "morocc",158,282;
-   M_Xmas:
-	check Zeny < 100,ZENY,-;
+   M_Xmas:NY,-;
 	set Zeny -= 100,0;
 	warp "xmas",148,130;
    M_Juno:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "yuno",158,169;
    M_Comodo:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "comodo",191,153;
    M_Nifflheim:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "niflheim",202,171;
  More2:
 	menu "Nevermind",NVM,"Amatsu",M_Amatsu,"Gon Ryune",M_Kunlun,"Lou Yang",M_louyang,"Jawaii",M_Jawai;
 	close;
    M_Amatsu:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "amatsu",197,86;
    M_Kunlun:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "gon_fild01",257,90;
    M_louyang:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "lou_fild01",190,102;
    M_Jawai:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "jawaii",232,101;
 Dungeons:
 	mes "[Warper]";
-	mes "I can send you to any dungeon, for the small fee of 300z.";
+	mes "I can send you to any dungeon, for free.";
 	mes " ";
 	mes "Where would you like to go?";
 	next;
@@ -654,55 +508,31 @@ L_MENU_0_2:
 	menu "Nevermind",NVM,"Bibalan Dungeon",M_Bil,"Sunken Ship",M_Sunken,"Hidden Temple",M_Prt_fild01,"Orc Dungeon",M_Gef_fild10,"Ant Hell",M_Moc_fild04,"None of these.. Next?",2More2;
 	close;
 M_Bil:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "izlu2dun",108,111;
 M_Sunken:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "alb2trea",43,53;
 M_Prt_fild01:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "prt_fild01",136,368;
 M_Gef_fild10:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "gef_fild10",67,334;
 M_Moc_fild04:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_fild04",210,328;
 2More2:
 	menu "Nevermind",NVM,"Coal Mines",M_mjolnir_02,"Sphinx Dungeon",M_moc_fild19,"Pyramids Dungeon",M_moc_ruins,"Glast Heim Prison",M_gef_fild06,"Beach Dungeon",M_Beach,"Turtle Dungeon",M_Turtle,"Magma Dungeon",M_Magma;
 	close;
 M_mjolnir_02:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "mjolnir_02",79,361;
 M_moc_fild19:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_fild19",106,99;
 M_moc_ruins:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_ruins",62,162;
 M_gef_fild06:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "glast_01",200,292;
 M_Beach:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "comodo",28,215;
 M_Turtle:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "tur_dun01",162,33;
 M_Magma:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "yuno_fild03",41,146;
 Guilds:
 	mes "[Warper]";
@@ -776,11 +606,6 @@ L_a4:
 	warp "alde_gld",46,84;
 L_a5:
 	warp "alde_gld",144,85;
-   ZENY:
-	mes "[Warper]";
-	mes "Not enough zeny? That is unfortunate...";
-	cutin "kafra_01",255;
-	close;
    NVM:
 	mes "[Warper]";
 	mes "Come back, if you're ever in need.";
@@ -811,7 +636,7 @@ alberta.gat,24,241,5	script	"Warper"	117,{
 	goto L_MENU_0_0;
  Cities:
 	mes "[Warper]";
-	mes "I can send you to any town, for the small fee of 100z.";
+	mes "I can send you to any town, for free.";
 	mes " ";
 	mes "Where would you like to go?";
 	next;
@@ -819,74 +644,44 @@ alberta.gat,24,241,5	script	"Warper"	117,{
 	menu "Nevermind",NVM,"Prontera",M_Prontera,"Izlude",M_Izlude,"Geffen",M_Geffen,"Umbala",M_Umbala,"Al de Baran",M_Aldebaran,"None of these.. Next?",More1;
 	close;
    M_Prontera:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "prontera",155,184;
    M_Izlude:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "izlude",128,93;
    M_Geffen:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "geffen",120,63;
    M_Umbala:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "umbala",123,143;
    M_Aldebaran:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "aldebaran",140,121;
  More1:
 	menu "Nevermind",NVM,"Payon",M_Payon,"Morocc",M_Morocc,"Lutie",M_Xmas,"Juno",M_Juno,"Comodo",M_Comodo,"Nifflheim",M_Nifflheim,"None of these.. Next?",More2;
 	close;
    M_Payon:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "payon",89,122;
    M_Morocc:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "morocc",158,282;
    M_Xmas:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "xmas",148,130;
    M_Juno:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "yuno",158,169;
    M_Comodo:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "comodo",191,153;
    M_Nifflheim:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "niflheim",202,171;
  More2:
 	menu "Nevermind",NVM,"Amatsu",M_Amatsu,"Gon Ryune",M_Kunlun,"Lou Yang",M_louyang,"Jawaii",M_Jawai;
 	close;
    M_Amatsu:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "amatsu",197,86;
    M_Kunlun:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "gon_fild01",257,90;
    M_louyang:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "lou_fild01",190,102;
    M_Jawai:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "jawaii",232,101;
 Dungeons:
 	mes "[Warper]";
-	mes "I can send you to any dungeon, for the small fee of 300z.";
+	mes "I can send you to any dungeon, for free.";
 	mes " ";
 	mes "Where would you like to go?";
 	next;
@@ -894,55 +689,31 @@ L_MENU_0_2:
 	menu "Nevermind",NVM,"Bibalan Dungeon",M_Bil,"Sunken Ship",M_Sunken,"Hidden Temple",M_Prt_fild01,"Orc Dungeon",M_Gef_fild10,"Ant Hell",M_Moc_fild04,"None of these.. Next?",2More2;
 	close;
 M_Bil:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "izlu2dun",108,111;
 M_Sunken:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "alb2trea",43,53;
 M_Prt_fild01:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "prt_fild01",136,368;
 M_Gef_fild10:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "gef_fild10",67,334;
 M_Moc_fild04:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_fild04",210,328;
 2More2:
 	menu "Nevermind",NVM,"Coal Mines",M_mjolnir_02,"Sphinx Dungeon",M_moc_fild19,"Pyramids Dungeon",M_moc_ruins,"Glast Heim Prison",M_gef_fild06,"Beach Dungeon",M_Beach,"Turtle Dungeon",M_Turtle,"Magma Dungeon",M_Magma;
 	close;
 M_mjolnir_02:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "mjolnir_02",79,361;
 M_moc_fild19:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_fild19",106,99;
 M_moc_ruins:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_ruins",62,162;
 M_gef_fild06:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "glast_01",200,292;
 M_Beach:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "comodo",28,215;
 M_Turtle:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "tur_dun01",162,33;
 M_Magma:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "yuno_fild03",41,146;
 Guilds:
 	mes "[Warper]";
@@ -1016,11 +787,6 @@ L_a4:
 	warp "alde_gld",46,84;
 L_a5:
 	warp "alde_gld",144,85;
-   ZENY:
-	mes "[Warper]";
-	mes "Not enough zeny? That is unfortunate...";
-	cutin "kafra_01",255;
-	close;
    NVM:
 	mes "[Warper]";
 	mes "Come back, if you're ever in need.";
@@ -1051,7 +817,7 @@ payon.gat,97,120,4	script	"Warper"	117,{
 	goto L_MENU_0_0;
  Cities:
 	mes "[Warper]";
-	mes "I can send you to any town, for the small fee of 100z.";
+	mes "I can send you to any town, for free.";
 	mes " ";
 	mes "Where would you like to go?";
 	next;
@@ -1059,74 +825,44 @@ payon.gat,97,120,4	script	"Warper"	117,{
 	menu "Nevermind",NVM,"Prontera",M_Prontera,"Izlude",M_Izlude,"Geffen",M_Geffen,"Alberta",M_Alberta,"Umbala",M_Umbala,"Al de Baran",M_Aldebaran,"None of these.. Next?",More1;
 	close;
    M_Prontera:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "prontera",155,184;
    M_Izlude:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "izlude",128,93;
    M_Geffen:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "geffen",120,63;
    M_Alberta:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "alberta",30,234;
    M_Umbala:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "umbala",123,143;
    M_Aldebaran:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "aldebaran",140,121;
  More1:
 	menu "Nevermind",NVM,"Morocc",M_Morocc,"Lutie",M_Xmas,"Juno",M_Juno,"Comodo",M_Comodo,"Nifflheim",M_Nifflheim,"None of these.. Next?",More2;
 	close;
    M_Morocc:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "morocc",158,282;
    M_Xmas:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "xmas",148,130;
    M_Juno:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "yuno",158,169;
    M_Comodo:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "comodo",191,153;
    M_Nifflheim:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "niflheim",202,171;
  More2:
 	menu "Nevermind",NVM,"Amatsu",M_Amatsu,"Gon Ryune",M_Kunlun,"Lou Yang",M_louyang,"Jawaii",M_Jawai;
 	close;
    M_Amatsu:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "amatsu",197,86;
    M_Kunlun:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "gon_fild01",257,90;
    M_louyang:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "lou_fild01",190,102;
    M_Jawai:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "jawaii",232,101;
 Dungeons:
 	mes "[Warper]";
-	mes "I can send you to any dungeon, for the small fee of 300z.";
+	mes "I can send you to any dungeon, for free.";
 	mes " ";
 	mes "Where would you like to go?";
 	next;
@@ -1134,55 +870,31 @@ L_MENU_0_2:
 	menu "Nevermind",NVM,"Bibalan Dungeon",M_Bil,"Sunken Ship",M_Sunken,"Hidden Temple",M_Prt_fild01,"Orc Dungeon",M_Gef_fild10,"Ant Hell",M_Moc_fild04,"None of these.. Next?",2More2;
 	close;
 M_Bil:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "izlu2dun",108,111;
 M_Sunken:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "alb2trea",43,53;
 M_Prt_fild01:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "prt_fild01",136,368;
 M_Gef_fild10:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "gef_fild10",67,334;
 M_Moc_fild04:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_fild04",210,328;
 2More2:
 	menu "Nevermind",NVM,"Coal Mines",M_mjolnir_02,"Sphinx Dungeon",M_moc_fild19,"Pyramids Dungeon",M_moc_ruins,"Glast Heim Prison",M_gef_fild06,"Beach Dungeon",M_Beach,"Turtle Dungeon",M_Turtle,"Magma Dungeon",M_Magma;
 	close;
 M_mjolnir_02:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "mjolnir_02",79,361;
 M_moc_fild19:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_fild19",106,99;
 M_moc_ruins:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_ruins",62,162;
 M_gef_fild06:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "glast_01",200,292;
 M_Beach:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "comodo",28,215;
 M_Turtle:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "tur_dun01",162,33;
 M_Magma:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "yuno_fild03",41,146;
 Guilds:
 	mes "[Warper]";
@@ -1256,11 +968,6 @@ L_a4:
 	warp "alde_gld",46,84;
 L_a5:
 	warp "alde_gld",144,85;
-   ZENY:
-	mes "[Warper]";
-	mes "Not enough zeny? That is unfortunate...";
-	cutin "kafra_01",255;
-	close;
    NVM:
 	mes "[Warper]";
 	mes "Come back, if you're ever in need.";
@@ -1291,7 +998,7 @@ aldebaran.gat,136,118,5	script	script	"Warper"	117,{
 	goto L_MENU_0_0;
  Cities:
 	mes "[Warper]";
-	mes "I can send you to any town, for the small fee of 100z.";
+	mes "I can send you to any town, for free.";
 	mes " ";
 	mes "Where would you like to go?";
 	next;
@@ -1299,74 +1006,44 @@ aldebaran.gat,136,118,5	script	script	"Warper"	117,{
 	menu "Nevermind",NVM,"Prontera",M_Prontera,"Izlude",M_Izlude,"Geffen",M_Geffen,"Alberta",M_Alberta,"Umbala",M_Umbala,"None of these.. Next?",More1;
 	close;
    M_Prontera:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "prontera",155,184;
    M_Izlude:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "izlude",128,93;
    M_Geffen:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "geffen",120,63;
    M_Alberta:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "alberta",30,234;
    M_Umbala:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "umbala",123,143;
  More1:
 	menu "Nevermind",NVM,"Payon",M_Payon,"Morocc",M_Morocc,"Lutie",M_Xmas,"Juno",M_Juno,"Comodo",M_Comodo,"Nifflheim",M_Nifflheim,"None of these.. Next?",More2;
 	close;
    M_Payon:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "payon",89,122;
    M_Morocc:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "morocc",158,282;
    M_Xmas:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "xmas",148,130;
    M_Juno:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "yuno",158,169;
    M_Comodo:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "comodo",191,153;
    M_Nifflheim:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "niflheim",202,171;
  More2:
 	menu "Nevermind",NVM,"Amatsu",M_Amatsu,"Gon Ryune",M_Kunlun,"Lou Yang",M_louyang,"Jawaii",M_Jawai;
 	close;
    M_Amatsu:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "amatsu",197,86;
    M_Kunlun:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "gon_fild01",257,90;
    M_louyang:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "lou_fild01",190,102;
    M_Jawai:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "jawaii",232,101;
 Dungeons:
 	mes "[Warper]";
-	mes "I can send you to any dungeon, for the small fee of 300z.";
+	mes "I can send you to any dungeon, for free.";
 	mes " ";
 	mes "Where would you like to go?";
 	next;
@@ -1374,55 +1051,31 @@ L_MENU_0_2:
 	menu "Nevermind",NVM,"Bibalan Dungeon",M_Bil,"Sunken Ship",M_Sunken,"Hidden Temple",M_Prt_fild01,"Orc Dungeon",M_Gef_fild10,"Ant Hell",M_Moc_fild04,"None of these.. Next?",2More2;
 	close;
 M_Bil:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "izlu2dun",108,111;
 M_Sunken:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "alb2trea",43,53;
 M_Prt_fild01:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "prt_fild01",136,368;
 M_Gef_fild10:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "gef_fild10",67,334;
 M_Moc_fild04:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_fild04",210,328;
 2More2:
 	menu "Nevermind",NVM,"Coal Mines",M_mjolnir_02,"Sphinx Dungeon",M_moc_fild19,"Pyramids Dungeon",M_moc_ruins,"Glast Heim Prison",M_gef_fild06,"Beach Dungeon",M_Beach,"Turtle Dungeon",M_Turtle,"Magma Dungeon",M_Magma;
 	close;
 M_mjolnir_02:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "mjolnir_02",79,361;
 M_moc_fild19:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_fild19",106,99;
 M_moc_ruins:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_ruins",62,162;
 M_gef_fild06:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "glast_01",200,292;
 M_Beach:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "comodo",28,215;
 M_Turtle:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "tur_dun01",162,33;
 M_Magma:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "yuno_fild03",41,146;
 Guilds:
 	mes "[Warper]";
@@ -1496,11 +1149,6 @@ L_a4:
 	warp "alde_gld",46,84;
 L_a5:
 	warp "alde_gld",144,85;
-   ZENY:
-	mes "[Warper]";
-	mes "Not enough zeny? That is unfortunate...";
-	cutin "kafra_01",255;
-	close;
    NVM:
 	mes "[Warper]";
 	mes "Come back, if you're ever in need.";
@@ -1531,7 +1179,7 @@ morocc.gat,164,281,4	script	"Warper"	117,{
 	goto L_MENU_0_0;
  Cities:
 	mes "[Warper]";
-	mes "I can send you to any town, for the small fee of 100z.";
+	mes "I can send you to any town, for free.";
 	mes " ";
 	mes "Where would you like to go?";
 	next;
@@ -1539,74 +1187,44 @@ morocc.gat,164,281,4	script	"Warper"	117,{
 	menu "Nevermind",NVM,"Prontera",M_Prontera,"Izlude",M_Izlude,"Geffen",M_Geffen,"Alberta",M_Alberta,"Umbala",M_Umbala,"Al de Baran",M_Aldebaran,"None of these.. Next?",More1;
 	close;
    M_Prontera:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "prontera",155,184;
    M_Izlude:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "izlude",128,93;
    M_Geffen:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "geffen",120,63;
    M_Alberta:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "alberta",30,234;
    M_Umbala:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "umbala",123,143;
    M_Aldebaran:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "aldebaran",140,121;
  More1:
 	menu "Nevermind",NVM,"Payon",M_Payon,"Lutie",M_Xmas,"Juno",M_Juno,"Comodo",M_Comodo,"Nifflheim",M_Nifflheim,"None of these.. Next?",More2;
 	close;
    M_Payon:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "payon",89,122;
    M_Xmas:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "xmas",148,130;
    M_Juno:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "yuno",158,169;
    M_Comodo:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "comodo",191,153;
    M_Nifflheim:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "niflheim",202,171;
  More2:
 	menu "Nevermind",NVM,"Amatsu",M_Amatsu,"Gon Ryune",M_Kunlun,"Lou Yang",M_louyang,"Jawaii",M_Jawai;
 	close;
    M_Amatsu:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "amatsu",197,86;
    M_Kunlun:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "gon_fild01",257,90;
    M_louyang:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "lou_fild01",190,102;
    M_Jawai:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "jawaii",232,101;
 Dungeons:
 	mes "[Warper]";
-	mes "I can send you to any dungeon, for the small fee of 300z.";
+	mes "I can send you to any dungeon, for free.";
 	mes " ";
 	mes "Where would you like to go?";
 	next;
@@ -1614,55 +1232,31 @@ L_MENU_0_2:
 	menu "Nevermind",NVM,"Bibalan Dungeon",M_Bil,"Sunken Ship",M_Sunken,"Hidden Temple",M_Prt_fild01,"Orc Dungeon",M_Gef_fild10,"Ant Hell",M_Moc_fild04,"None of these.. Next?",2More2;
 	close;
 M_Bil:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "izlu2dun",108,111;
 M_Sunken:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "alb2trea",43,53;
 M_Prt_fild01:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "prt_fild01",136,368;
 M_Gef_fild10:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "gef_fild10",67,334;
 M_Moc_fild04:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_fild04",210,328;
 2More2:
 	menu "Nevermind",NVM,"Coal Mines",M_mjolnir_02,"Sphinx Dungeon",M_moc_fild19,"Pyramids Dungeon",M_moc_ruins,"Glast Heim Prison",M_gef_fild06,"Beach Dungeon",M_Beach,"Turtle Dungeon",M_Turtle,"Magma Dungeon",M_Magma;
 	close;
 M_mjolnir_02:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "mjolnir_02",79,361;
 M_moc_fild19:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_fild19",106,99;
 M_moc_ruins:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_ruins",62,162;
 M_gef_fild06:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "glast_01",200,292;
 M_Beach:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "comodo",28,215;
 M_Turtle:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "tur_dun01",162,33;
 M_Magma:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "yuno_fild03",41,146;
 Guilds:
 	mes "[Warper]";
@@ -1736,18 +1330,12 @@ L_a4:
 	warp "alde_gld",46,84;
 L_a5:
 	warp "alde_gld",144,85;
-   ZENY:
-	mes "[Warper]";
-	mes "Not enough zeny? That is unfortunate...";
-	cutin "kafra_01",255;
-	close;
    NVM:
 	mes "[Warper]";
 	mes "Come back, if you're ever in need.";
 	cutin "kafra_01",255;
 	close;
 }
-
 
 
 //Lutie
@@ -1773,7 +1361,7 @@ xmas.gat,150,135,4	script	script	"Warper"	117,{
 	goto L_MENU_0_0;
  Cities:
 	mes "[Warper]";
-	mes "I can send you to any town, for the small fee of 100z.";
+	mes "I can send you to any town, for free.";
 	mes " ";
 	mes "Where would you like to go?";
 	next;
@@ -1781,74 +1369,44 @@ xmas.gat,150,135,4	script	script	"Warper"	117,{
 	menu "Nevermind",NVM,"Prontera",M_Prontera,"Izlude",M_Izlude,"Geffen",M_Geffen,"Alberta",M_Alberta,"Umbala",M_Umbala,"Al de Baran",M_Aldebaran,"None of these.. Next?",More1;
 	close;
    M_Prontera:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "prontera",155,184;
    M_Izlude:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "izlude",128,93;
    M_Geffen:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "geffen",120,63;
    M_Alberta:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "alberta",30,234;
    M_Umbala:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "umbala",123,143;
    M_Aldebaran:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "aldebaran",140,121;
  More1:
 	menu "Nevermind",NVM,"Payon",M_Payon,"Morocc",M_Morocc,"Juno",M_Juno,"Comodo",M_Comodo,"Nifflheim",M_Nifflheim,"None of these.. Next?",More2;
 	close;
    M_Payon:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "payon",89,122;
    M_Morocc:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "morocc",158,282;
    M_Juno:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "yuno",158,169;
    M_Comodo:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "comodo",191,153;
    M_Nifflheim:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "niflheim",202,171;
  More2:
 	menu "Nevermind",NVM,"Amatsu",M_Amatsu,"Gon Ryune",M_Kunlun,"Lou Yang",M_louyang,"Jawaii",M_Jawai;
 	close;
    M_Amatsu:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "amatsu",197,86;
    M_Kunlun:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "gon_fild01",257,90;
    M_louyang:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "lou_fild01",190,102;
    M_Jawai:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "jawaii",232,101;
 Dungeons:
 	mes "[Warper]";
-	mes "I can send you to any dungeon, for the small fee of 300z.";
+	mes "I can send you to any dungeon, for free.";
 	mes " ";
 	mes "Where would you like to go?";
 	next;
@@ -1856,55 +1414,31 @@ L_MENU_0_2:
 	menu "Nevermind",NVM,"Bibalan Dungeon",M_Bil,"Sunken Ship",M_Sunken,"Hidden Temple",M_Prt_fild01,"Orc Dungeon",M_Gef_fild10,"Ant Hell",M_Moc_fild04,"None of these.. Next?",2More2;
 	close;
 M_Bil:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "izlu2dun",108,111;
 M_Sunken:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "alb2trea",43,53;
 M_Prt_fild01:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "prt_fild01",136,368;
 M_Gef_fild10:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "gef_fild10",67,334;
 M_Moc_fild04:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_fild04",210,328;
 2More2:
 	menu "Nevermind",NVM,"Coal Mines",M_mjolnir_02,"Sphinx Dungeon",M_moc_fild19,"Pyramids Dungeon",M_moc_ruins,"Glast Heim Prison",M_gef_fild06,"Beach Dungeon",M_Beach,"Turtle Dungeon",M_Turtle,"Magma Dungeon",M_Magma;
 	close;
 M_mjolnir_02:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "mjolnir_02",79,361;
 M_moc_fild19:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_fild19",106,99;
 M_moc_ruins:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_ruins",62,162;
 M_gef_fild06:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "glast_01",200,292;
 M_Beach:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "comodo",28,215;
 M_Turtle:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "tur_dun01",162,33;
 M_Magma:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "yuno_fild03",41,146;
 Guilds:
 	mes "[Warper]";
@@ -1978,11 +1512,6 @@ L_a4:
 	warp "alde_gld",46,84;
 L_a5:
 	warp "alde_gld",144,85;
-   ZENY:
-	mes "[Warper]";
-	mes "Not enough zeny? That is unfortunate...";
-	cutin "kafra_01",255;
-	close;
    NVM:
 	mes "[Warper]";
 	mes "Come back, if you're ever in need.";
@@ -2013,7 +1542,7 @@ comodo.gat,193,158,4	script	"Warper"	117,{
 	goto L_MENU_0_0;
  Cities:
 	mes "[Warper]";
-	mes "I can send you to any town, for the small fee of 100z.";
+	mes "I can send you to any town, for free.";
 	mes " ";
 	mes "Where would you like to go?";
 	next;
@@ -2021,74 +1550,44 @@ comodo.gat,193,158,4	script	"Warper"	117,{
 	menu "Nevermind",NVM,"Prontera",M_Prontera,"Izlude",M_Izlude,"Geffen",M_Geffen,"Alberta",M_Alberta,"Umbala",M_Umbala,"Al de Baran",M_Aldebaran,"None of these.. Next?",More1;
 	close;
    M_Prontera:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "prontera",155,184;
    M_Izlude:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "izlude",128,93;
    M_Geffen:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "geffen",120,63;
    M_Alberta:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "alberta",30,234;
    M_Umbala:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "umbala",123,143;
    M_Aldebaran:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "aldebaran",140,121;
  More1:
 	menu "Nevermind",NVM,"Payon",M_Payon,"Morocc",M_Morocc,"Juno",M_Juno,"Lutie",M_Xmas,"Nifflheim",M_Nifflheim,"None of these.. Next?",More2;
 	close;
    M_Payon:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "payon",89,122;
    M_Morocc:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "morocc",158,282;
    M_Juno:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "yuno",158,169;
    M_Xmas:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "xmas",148,130;
    M_Nifflheim:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "niflheim",202,171;
  More2:
 	menu "Nevermind",NVM,"Amatsu",M_Amatsu,"Gon Ryune",M_Kunlun,"Lou Yang",M_louyang,"Jawaii",M_Jawai;
 	close;
    M_Amatsu:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "amatsu",197,86;
    M_Kunlun:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "gon_fild01",257,90;
    M_louyang:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "lou_fild01",190,102;
    M_Jawai:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "jawaii",232,101;
 Dungeons:
 	mes "[Warper]";
-	mes "I can send you to any dungeon, for the small fee of 300z.";
+	mes "I can send you to any dungeon, for free.";
 	mes " ";
 	mes "Where would you like to go?";
 	next;
@@ -2096,55 +1595,31 @@ L_MENU_0_2:
 	menu "Nevermind",NVM,"Bibalan Dungeon",M_Bil,"Sunken Ship",M_Sunken,"Hidden Temple",M_Prt_fild01,"Orc Dungeon",M_Gef_fild10,"Ant Hell",M_Moc_fild04,"None of these.. Next?",2More2;
 	close;
 M_Bil:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "izlu2dun",108,111;
 M_Sunken:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "alb2trea",43,53;
 M_Prt_fild01:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "prt_fild01",136,368;
 M_Gef_fild10:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "gef_fild10",67,334;
 M_Moc_fild04:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_fild04",210,328;
 2More2:
 	menu "Nevermind",NVM,"Coal Mines",M_mjolnir_02,"Sphinx Dungeon",M_moc_fild19,"Pyramids Dungeon",M_moc_ruins,"Glast Heim Prison",M_gef_fild06,"Beach Dungeon",M_Beach,"Turtle Dungeon",M_Turtle,"Magma Dungeon",M_Magma;
 	close;
 M_mjolnir_02:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "mjolnir_02",79,361;
 M_moc_fild19:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_fild19",106,99;
 M_moc_ruins:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_ruins",62,162;
 M_gef_fild06:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "glast_01",200,292;
 M_Beach:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "comodo",28,215;
 M_Turtle:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "tur_dun01",162,33;
 M_Magma:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "yuno_fild03",41,146;
 Guilds:
 	mes "[Warper]";
@@ -2218,11 +1693,6 @@ L_a4:
 	warp "alde_gld",46,84;
 L_a5:
 	warp "alde_gld",144,85;
-   ZENY:
-	mes "[Warper]";
-	mes "Not enough zeny? That is unfortunate...";
-	cutin "kafra_01",255;
-	close;
    NVM:
 	mes "[Warper]";
 	mes "Come back, if you're ever in need.";
@@ -2253,7 +1723,7 @@ yuno.gat,153,164,0	script	"Warper"	117,{
 	goto L_MENU_0_0;
  Cities:
 	mes "[Warper]";
-	mes "I can send you to any town, for the small fee of 100z.";
+	mes "I can send you to any town, for free.";
 	mes " ";
 	mes "Where would you like to go?";
 	next;
@@ -2261,129 +1731,75 @@ yuno.gat,153,164,0	script	"Warper"	117,{
 	menu "Nevermind",NVM,"Prontera",M_Prontera,"Izlude",M_Izlude,"Geffen",M_Geffen,"Alberta",M_Alberta,"Umbala",M_Umbala,"Al de Baran",M_Aldebaran,"None of these.. Next?",More1;
 	close;
    M_Prontera:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "prontera",155,184;
    M_Izlude:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "izlude",128,93;
    M_Geffen:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "geffen",120,63;
    M_Alberta:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "alberta",30,234;
    M_Umbala:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "umbala",123,143;
    M_Aldebaran:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "aldebaran",140,121;
  More1:
 	menu "Nevermind",NVM,"Payon",M_Payon,"Morocc",M_Morocc,"Lutie",M_Xmas,"Comodo",M_Comodo,"Nifflheim",M_Nifflheim,"None of these.. Next?",More2;
 	close;
    M_Payon:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "payon",89,122;
    M_Morocc:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "morocc",158,282;
    M_Xmas:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "xmas",148,130;
    M_Comodo:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "comodo",191,153;
    M_Nifflheim:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "niflheim",202,171;
  More2:
 	menu "Nevermind",NVM,"Amatsu",M_Amatsu,"Gon Ryune",M_Kunlun,"Lou Yang",M_louyang,"Jawaii",M_Jawai;
    M_Amatsu:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "amatsu",197,86;
    M_Kunlun:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "gon_fild01",257,90;
    M_louyang:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "lou_fild01",190,102;
    M_Jawai:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "jawaii",232,101;
 Dungeons:
 	mes "[Warper]";
-	mes "I can send you to any dungeon, for the small fee of 300z.";
+	mes "I can send you to any dungeon, for free.";
 	mes " ";
 	mes "Where would you like to go?";
 	next;
 L_MENU_0_2:
-	menu "Bibalan Dungeon",M_Bil,"Sunken Ship",M_Sunken,"Hidden Temple",M_Prt_fild01,"Orc Dungeon",M_Gef_fild10,"Ant Hell",M_Moc_fild04,"None of these.. Next?",2More2;
+	menu "Nevermind",NVM,"Bibalan Dungeon",M_Bil,"Sunken Ship",M_Sunken,"Hidden Temple",M_Prt_fild01,"Orc Dungeon",M_Gef_fild10,"Ant Hell",M_Moc_fild04,"None of these.. Next?",2More2;
 	close;
 M_Bil:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "izlu2dun",108,111;
 M_Sunken:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "alb2trea",43,53;
 M_Prt_fild01:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "prt_fild01",136,368;
 M_Gef_fild10:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "gef_fild10",67,334;
 M_Moc_fild04:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_fild04",210,328;
 2More2:
 	menu "Nevermind",NVM,"Coal Mines",M_mjolnir_02,"Sphinx Dungeon",M_moc_fild19,"Pyramids Dungeon",M_moc_ruins,"Glast Heim Prison",M_gef_fild06,"Beach Dungeon",M_Beach,"Turtle Dungeon",M_Turtle,"Magma Dungeon",M_Magma;
 	close;
 M_mjolnir_02:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "mjolnir_02",79,361;
 M_moc_fild19:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_fild19",106,99;
 M_moc_ruins:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_ruins",62,162;
 M_gef_fild06:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "glast_01",200,292;
 M_Beach:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "comodo",28,215;
 M_Turtle:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "tur_dun01",162,33;
 M_Magma:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "yuno_fild03",41,146;
 Guilds:
 	mes "[Warper]";
@@ -2457,11 +1873,6 @@ L_a4:
 	warp "alde_gld",46,84;
 L_a5:
 	warp "alde_gld",144,85;
-   ZENY:
-	mes "[Warper]";
-	mes "Not enough zeny? That is unfortunate...";
-	cutin "kafra_01",255;
-	close;
    NVM:
 	mes "[Warper]";
 	mes "Come back, if you're ever in need.";
@@ -2493,7 +1904,7 @@ umbala.gat,126,140,3	script	"Warper"	117,{
 	goto L_MENU_0_0;
  Cities:
 	mes "[Warper]";
-	mes "I can send you to any town, for the small fee of 100z.";
+	mes "I can send you to any town, for free.";
 	mes " ";
 	mes "Where would you like to go?";
 	next;
@@ -2501,129 +1912,75 @@ umbala.gat,126,140,3	script	"Warper"	117,{
 	menu "Nevermind",NVM,"Prontera",M_Prontera,"Izlude",M_Izlude,"Geffen",M_Geffen,"Alberta",M_Alberta,"Al de Baran",M_Aldebaran,"None of these.. Next?",More1;
 	close;
    M_Prontera:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "prontera",155,184;
    M_Izlude:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "izlude",128,93;
    M_Geffen:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "geffen",120,63;
    M_Alberta:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "alberta",30,234;
    M_Aldebaran:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "aldebaran",140,121;
  More1:
 	menu "Nevermind",NVM,"Payon",M_Payon,"Morocc",M_Morocc,"Lutie",M_Xmas,"Juno",M_Juno,"Comodo",M_Comodo,"Nifflheim",M_Nifflheim,"None of these.. Next?",More2;
 	close;
    M_Payon:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "payon",89,122;
    M_Morocc:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "morocc",158,282;
    M_Xmas:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "xmas",148,130;
    M_Juno:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "yuno",158,169;
    M_Comodo:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "comodo",191,153;
    M_Nifflheim:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "niflheim",202,171;
  More2:
 	menu "Nevermind",NVM,"Amatsu",M_Amatsu,"Gon Ryune",M_Kunlun,"Lou Yang",M_louyang,"Jawaii",M_Jawai;
    M_Amatsu:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "amatsu",197,86;
    M_Kunlun:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "gon_fild01",257,90;
    M_louyang:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "lou_fild01",190,102;
    M_Jawai:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "jawaii",232,101;
 Dungeons:
 	mes "[Warper]";
-	mes "I can send you to any dungeon, for the small fee of 300z.";
+	mes "I can send you to any dungeon, for free.";
 	mes " ";
 	mes "Where would you like to go?";
 	next;
 L_MENU_0_2:
-	menu "Bibalan Dungeon",M_Bil,"Sunken Ship",M_Sunken,"Hidden Temple",M_Prt_fild01,"Orc Dungeon",M_Gef_fild10,"Ant Hell",M_Moc_fild04,"None of these.. Next?",2More2;
+	menu "Nevermind",NVM,"Bibalan Dungeon",M_Bil,"Sunken Ship",M_Sunken,"Hidden Temple",M_Prt_fild01,"Orc Dungeon",M_Gef_fild10,"Ant Hell",M_Moc_fild04,"None of these.. Next?",2More2;
 	close;
 M_Bil:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "izlu2dun",108,111;
 M_Sunken:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "alb2trea",43,53;
 M_Prt_fild01:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "prt_fild01",136,368;
 M_Gef_fild10:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "gef_fild10",67,334;
 M_Moc_fild04:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_fild04",210,328;
 2More2:
 	menu "Nevermind",NVM,"Coal Mines",M_mjolnir_02,"Sphinx Dungeon",M_moc_fild19,"Pyramids Dungeon",M_moc_ruins,"Glast Heim Prison",M_gef_fild06,"Beach Dungeon",M_Beach,"Turtle Dungeon",M_Turtle,"Magma Dungeon",M_Magma;
 	close;
 M_mjolnir_02:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "mjolnir_02",79,361;
 M_moc_fild19:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_fild19",106,99;
 M_moc_ruins:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_ruins",62,162;
 M_gef_fild06:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "glast_01",200,292;
 M_Beach:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "comodo",28,215;
 M_Turtle:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "tur_dun01",162,33;
 M_Magma:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "yuno_fild03",41,146;
 Guilds:
 	mes "[Warper]";
@@ -2697,11 +2054,6 @@ L_a4:
 	warp "alde_gld",46,84;
 L_a5:
 	warp "alde_gld",144,85;
-   ZENY:
-	mes "[Warper]";
-	mes "Not enough zeny? That is unfortunate...";
-	cutin "kafra_01",255;
-	close;
    NVM:
 	mes "[Warper]";
 	mes "Come back, if you're ever in need.";
@@ -2732,7 +2084,7 @@ amatsu.gat,193,85,6	script	"Warper"	117,{
 	goto L_MENU_0_0;
  Cities:
 	mes "[Warper]";
-	mes "I can send you to any town, for the small fee of 100z.";
+	mes "I can send you to any town, for free.";
 	mes " ";
 	mes "Where would you like to go?";
 	next;
@@ -2740,129 +2092,75 @@ amatsu.gat,193,85,6	script	"Warper"	117,{
 	menu "Nevermind",NVM,"Prontera",M_Prontera,"Izlude",M_Izlude,"Geffen",M_Geffen,"Alberta",M_Alberta,"Umbala",M_Umbala,"Al de Baran",M_Aldebaran,"None of these.. Next?",More1;
 	close;
    M_Prontera:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "prontera",155,184;
    M_Izlude:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "izlude",128,93;
    M_Geffen:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "geffen",120,63;
    M_Alberta:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "alberta",30,234;
    M_Umbala:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "umbala",123,143;
    M_Aldebaran:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "aldebaran",140,121;
  More1:
 	menu "Nevermind",NVM,"Payon",M_Payon,"Morocc",M_Morocc,"Lutie",M_Xmas,"Juno",M_Juno,"Comodo",M_Comodo,"Nifflheim",M_Nifflheim,"None of these.. Next?",More2;
 	close;
    M_Payon:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "payon",89,122;
    M_Morocc:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "morocc",158,282;
    M_Xmas:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "xmas",148,130;
    M_Juno:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "yuno",158,169;
    M_Comodo:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "comodo",191,153;
    M_Nifflheim:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "niflheim",202,171;
  More2:
 	menu "Nevermind",NVM,"Gon Ryune",M_Kunlun,"Lou Yang",M_louyang,"Jawaii",M_Jawai;
    M_Kunlun:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "gon_fild01",257,90;
    M_louyang:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "lou_fild01",190,102;
    M_Jawai:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "jawaii",232,101;
 Dungeons:
 	mes "[Warper]";
-	mes "I can send you to any dungeon, for the small fee of 300z.";
+	mes "I can send you to any dungeon, for free.";
 	mes " ";
 	mes "Where would you like to go?";
 	next;
 L_MENU_0_2:
-	menu "Bibalan Dungeon",M_Bil,"Sunken Ship",M_Sunken,"Hidden Temple",M_Prt_fild01,"Orc Dungeon",M_Gef_fild10,"Ant Hell",M_Moc_fild04,"None of these.. Next?",2More2;
+	menu "Nevermind",NVM,"Bibalan Dungeon",M_Bil,"Sunken Ship",M_Sunken,"Hidden Temple",M_Prt_fild01,"Orc Dungeon",M_Gef_fild10,"Ant Hell",M_Moc_fild04,"None of these.. Next?",2More2;
 	close;
 M_Bil:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "izlu2dun",108,111;
 M_Sunken:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "alb2trea",43,53;
 M_Prt_fild01:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "prt_fild01",136,368;
 M_Gef_fild10:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "gef_fild10",67,334;
 M_Moc_fild04:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_fild04",210,328;
 2More2:
 	menu "Nevermind",NVM,"Coal Mines",M_mjolnir_02,"Sphinx Dungeon",M_moc_fild19,"Pyramids Dungeon",M_moc_ruins,"Glast Heim Prison",M_gef_fild06,"Beach Dungeon",M_Beach,"Turtle Dungeon",M_Turtle,"Magma Dungeon",M_Magma;
 	close;
 M_mjolnir_02:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "mjolnir_02",79,361;
 M_moc_fild19:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_fild19",106,99;
 M_moc_ruins:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_ruins",62,162;
 M_gef_fild06:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "glast_01",200,292;
 M_Beach:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "comodo",28,215;
 M_Turtle:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "tur_dun01",162,33;
 M_Magma:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "yuno_fild03",41,146;
 Guilds:
 	mes "[Warper]";
@@ -2936,11 +2234,6 @@ L_a4:
 	warp "alde_gld",46,84;
 L_a5:
 	warp "alde_gld",144,85;
-   ZENY:
-	mes "[Warper]";
-	mes "Not enough zeny? That is unfortunate...";
-	cutin "kafra_01",255;
-	close;
    NVM:
 	mes "[Warper]";
 	mes "Come back, if you're ever in need.";
@@ -2972,7 +2265,7 @@ gon_fild01.gat,255,88,6	script	"Warper"	117,{
 	goto L_MENU_0_0;
  Cities:
 	mes "[Warper]";
-	mes "I can send you to any town, for the small fee of 100z.";
+	mes "I can send you to any town, for free.";
 	mes " ";
 	mes "Where would you like to go?";
 	next;
@@ -2980,129 +2273,75 @@ gon_fild01.gat,255,88,6	script	"Warper"	117,{
 	menu "Nevermind",NVM,"Prontera",M_Prontera,"Izlude",M_Izlude,"Geffen",M_Geffen,"Alberta",M_Alberta,"Umbala",M_Umbala,"Al de Baran",M_Aldebaran,"None of these.. Next?",More1;
 	close;
    M_Prontera:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "prontera",155,184;
    M_Izlude:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "izlude",128,93;
    M_Geffen:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "geffen",120,63;
    M_Alberta:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "alberta",30,234;
    M_Umbala:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "umbala",123,143;
    M_Aldebaran:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "aldebaran",140,121;
  More1:
 	menu "Nevermind",NVM,"Payon",M_Payon,"Morocc",M_Morocc,"Lutie",M_Xmas,"Juno",M_Juno,"Comodo",M_Comodo,"Nifflheim",M_Nifflheim,"None of these.. Next?",More2;
 	close;
    M_Payon:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "payon",89,122;
    M_Morocc:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "morocc",158,282;
    M_Xmas:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "xmas",148,130;
    M_Juno:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "yuno",158,169;
    M_Comodo:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "comodo",191,153;
    M_Nifflheim:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "niflheim",202,171;
  More2:
 	menu "Nevermind",NVM,"Amatsu",M_Amatsu,"Lou Yang",M_louyang,"Jawaii",M_Jawai;
    M_Amatsu:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "amatsu",197,86;
    M_louyang:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "lou_fild01",190,102;
    M_Jawai:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "jawaii",232,101;
 Dungeons:
 	mes "[Warper]";
-	mes "I can send you to any dungeon, for the small fee of 300z.";
+	mes "I can send you to any dungeon, for free.";
 	mes " ";
 	mes "Where would you like to go?";
 	next;
 L_MENU_0_2:
-	menu "Bibalan Dungeon",M_Bil,"Sunken Ship",M_Sunken,"Hidden Temple",M_Prt_fild01,"Orc Dungeon",M_Gef_fild10,"Ant Hell",M_Moc_fild04,"None of these.. Next?",2More2;
+	menu "Nevermind",NVM,"Bibalan Dungeon",M_Bil,"Sunken Ship",M_Sunken,"Hidden Temple",M_Prt_fild01,"Orc Dungeon",M_Gef_fild10,"Ant Hell",M_Moc_fild04,"None of these.. Next?",2More2;
 	close;
 M_Bil:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "izlu2dun",108,111;
 M_Sunken:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "alb2trea",43,53;
 M_Prt_fild01:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "prt_fild01",136,368;
 M_Gef_fild10:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "gef_fild10",67,334;
 M_Moc_fild04:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_fild04",210,328;
 2More2:
 	menu "Nevermind",NVM,"Coal Mines",M_mjolnir_02,"Sphinx Dungeon",M_moc_fild19,"Pyramids Dungeon",M_moc_ruins,"Glast Heim Prison",M_gef_fild06,"Beach Dungeon",M_Beach,"Turtle Dungeon",M_Turtle,"Magma Dungeon",M_Magma;
 	close;
 M_mjolnir_02:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "mjolnir_02",79,361;
 M_moc_fild19:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_fild19",106,99;
 M_moc_ruins:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_ruins",62,162;
 M_gef_fild06:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "glast_01",200,292;
 M_Beach:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "comodo",28,215;
 M_Turtle:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "tur_dun01",162,33;
 M_Magma:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "yuno_fild03",41,146;
 Guilds:
 	mes "[Warper]";
@@ -3176,11 +2415,6 @@ L_a4:
 	warp "alde_gld",46,84;
 L_a5:
 	warp "alde_gld",144,85;
-   ZENY:
-	mes "[Warper]";
-	mes "Not enough zeny? That is unfortunate...";
-	cutin "kafra_01",255;
-	close;
    NVM:
 	mes "[Warper]";
 	mes "Come back, if you're ever in need.";
@@ -3212,7 +2446,7 @@ niflheim.gat,190,190,5	script	"Warper"	117,{
 	goto L_MENU_0_0;
  Cities:
 	mes "[Warper]";
-	mes "I can send you to any town, for the small fee of 100z.";
+	mes "I can send you to any town, for free.";
 	mes " ";
 	mes "Where would you like to go?";
 	next;
@@ -3220,129 +2454,75 @@ niflheim.gat,190,190,5	script	"Warper"	117,{
 	menu "Nevermind",NVM,"Prontera",M_Prontera,"Izlude",M_Izlude,"Geffen",M_Geffen,"Alberta",M_Alberta,"Umbala",M_Umbala,"Al de Baran",M_Aldebaran,"None of these.. Next?",More1;
 	close;
    M_Prontera:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "prontera",155,184;
    M_Izlude:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "izlude",128,93;
    M_Geffen:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "geffen",120,63;
    M_Alberta:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "alberta",30,234;
    M_Umbala:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "umbala",123,143;
    M_Aldebaran:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "aldebaran",140,121;
  More1:
 	menu "Nevermind",NVM,"Payon",M_Payon,"Morocc",M_Morocc,"Lutie",M_Xmas,"Juno",M_Juno,"Comodo",M_Comodo,"None of these.. Next?",More2;
 	close;
    M_Payon:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "payon",89,122;
    M_Morocc:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "morocc",158,282;
    M_Xmas:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "xmas",148,130;
    M_Juno:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "yuno",158,169;
    M_Comodo:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "comodo",191,153;
  More2:
 	menu "Nevermind",NVM,"Amatsu",M_Amatsu,"Gon Ryune",M_Kunlun,"Lou Yang",M_louyang,"Jawaii",M_Jawai;
    M_Amatsu:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "amatsu",197,86;
    M_Kunlun:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "gon_fild01",257,90;
    M_louyang:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "lou_fild01",190,102;
    M_Jawai:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "jawaii",232,101;
 Dungeons:
 	mes "[Warper]";
-	mes "I can send you to any dungeon, for the small fee of 300z.";
+	mes "I can send you to any dungeon, for free.";
 	mes " ";
 	mes "Where would you like to go?";
 	next;
 L_MENU_0_2:
-	menu "Bibalan Dungeon",M_Bil,"Sunken Ship",M_Sunken,"Hidden Temple",M_Prt_fild01,"Orc Dungeon",M_Gef_fild10,"Ant Hell",M_Moc_fild04,"None of these.. Next?",2More2;
+	menu "Nevermind",NVM,"Bibalan Dungeon",M_Bil,"Sunken Ship",M_Sunken,"Hidden Temple",M_Prt_fild01,"Orc Dungeon",M_Gef_fild10,"Ant Hell",M_Moc_fild04,"None of these.. Next?",2More2;
 	close;
 M_Bil:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "izlu2dun",108,111;
 M_Sunken:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "alb2trea",43,53;
 M_Prt_fild01:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "prt_fild01",136,368;
 M_Gef_fild10:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "gef_fild10",67,334;
 M_Moc_fild04:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_fild04",210,328;
 2More2:
 	menu "Nevermind",NVM,"Coal Mines",M_mjolnir_02,"Sphinx Dungeon",M_moc_fild19,"Pyramids Dungeon",M_moc_ruins,"Glast Heim Prison",M_gef_fild06,"Beach Dungeon",M_Beach,"Turtle Dungeon",M_Turtle,"Magma Dungeon",M_Magma;
 	close;
 M_mjolnir_02:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "mjolnir_02",79,361;
 M_moc_fild19:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_fild19",106,99;
 M_moc_ruins:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_ruins",62,162;
 M_gef_fild06:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "glast_01",200,292;
 M_Beach:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "comodo",28,215;
 M_Turtle:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "tur_dun01",162,33;
 M_Magma:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "yuno_fild03",41,146;
 Guilds:
 	mes "[Warper]";
@@ -3416,11 +2596,6 @@ L_a4:
 	warp "alde_gld",46,84;
 L_a5:
 	warp "alde_gld",144,85;
-   ZENY:
-	mes "[Warper]";
-	mes "Not enough zeny? That is unfortunate...";
-	cutin "kafra_01",255;
-	close;
    NVM:
 	mes "[Warper]";
 	mes "Come back, if you're ever in need.";
@@ -3452,7 +2627,7 @@ lou_fild01.gat,187,101,8	script	"Warper"	117,{
 	goto L_MENU_0_0;
  Cities:
 	mes "[Warper]";
-	mes "I can send you to any town, for the small fee of 100z.";
+	mes "I can send you to any town, for free.";
 	mes " ";
 	mes "Where would you like to go?";
 	next;
@@ -3460,129 +2635,75 @@ lou_fild01.gat,187,101,8	script	"Warper"	117,{
 	menu "Nevermind",NVM,"Prontera",M_Prontera,"Izlude",M_Izlude,"Geffen",M_Geffen,"Alberta",M_Alberta,"Umbala",M_Umbala,"Al de Baran",M_Aldebaran,"None of these.. Next?",More1;
 	close;
    M_Prontera:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "prontera",155,184;
    M_Izlude:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "izlude",128,93;
    M_Geffen:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "geffen",120,63;
    M_Alberta:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "alberta",30,234;
    M_Umbala:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "umbala",123,143;
    M_Aldebaran:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "aldebaran",140,121;
  More1:
 	menu "Nevermind",NVM,"Payon",M_Payon,"Morocc",M_Morocc,"Lutie",M_Xmas,"Juno",M_Juno,"Comodo",M_Comodo,"Nifflheim",M_Nifflheim,"None of these.. Next?",More2;
 	close;
    M_Payon:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "payon",89,122;
    M_Morocc:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "morocc",158,282;
    M_Xmas:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "xmas",148,130;
    M_Juno:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "yuno",158,169;
    M_Comodo:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "comodo",191,153;
    M_Nifflheim:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "niflheim",202,171;
  More2:
 	menu "Nevermind",NVM,"Amatsu",M_Amatsu,"Gon Ryune",M_Kunlun,"Jawaii",M_Jawai;
    M_Amatsu:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "amatsu",197,86;
    M_Kunlun:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "gon_fild01",257,90;
    M_Jawai:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "jawaii",232,101;
 Dungeons:
 	mes "[Warper]";
-	mes "I can send you to any dungeon, for the small fee of 300z.";
+	mes "I can send you to any dungeon, for free.";
 	mes " ";
 	mes "Where would you like to go?";
 	next;
 L_MENU_0_2:
-	menu "Bibalan Dungeon",M_Bil,"Sunken Ship",M_Sunken,"Hidden Temple",M_Prt_fild01,"Orc Dungeon",M_Gef_fild10,"Ant Hell",M_Moc_fild04,"None of these.. Next?",2More2;
+	menu "Nevermind",NVM,"Bibalan Dungeon",M_Bil,"Sunken Ship",M_Sunken,"Hidden Temple",M_Prt_fild01,"Orc Dungeon",M_Gef_fild10,"Ant Hell",M_Moc_fild04,"None of these.. Next?",2More2;
 	close;
 M_Bil:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "izlu2dun",108,111;
 M_Sunken:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "alb2trea",43,53;
 M_Prt_fild01:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "prt_fild01",136,368;
 M_Gef_fild10:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "gef_fild10",67,334;
 M_Moc_fild04:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_fild04",210,328;
 2More2:
 	menu "Nevermind",NVM,"Coal Mines",M_mjolnir_02,"Sphinx Dungeon",M_moc_fild19,"Pyramids Dungeon",M_moc_ruins,"Glast Heim Prison",M_gef_fild06,"Beach Dungeon",M_Beach,"Turtle Dungeon",M_Turtle,"Magma Dungeon",M_Magma;
 	close;
 M_mjolnir_02:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "mjolnir_02",79,361;
 M_moc_fild19:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_fild19",106,99;
 M_moc_ruins:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_ruins",62,162;
 M_gef_fild06:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "glast_01",200,292;
 M_Beach:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "comodo",28,215;
 M_Turtle:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "tur_dun01",162,33;
 M_Magma:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "yuno_fild03",41,146;
 Guilds:
 	mes "[Warper]";
@@ -3656,11 +2777,6 @@ L_a4:
 	warp "alde_gld",46,84;
 L_a5:
 	warp "alde_gld",144,85;
-   ZENY:
-	mes "[Warper]";
-	mes "Not enough zeny? That is unfortunate...";
-	cutin "kafra_01",255;
-	close;
    NVM:
 	mes "[Warper]";
 	mes "Come back, if you're ever in need.";
@@ -3691,7 +2807,7 @@ jawaii.gat,115,249,8	script	"Warper"	117,{
 	goto L_MENU_0_0;
  Cities:
 	mes "[Warper]";
-	mes "I can send you to any town, for the small fee of 100z.";
+	mes "I can send you to any town, for free.";
 	mes " ";
 	mes "Where would you like to go?";
 	next;
@@ -3699,133 +2815,77 @@ jawaii.gat,115,249,8	script	"Warper"	117,{
 	menu "Nevermind",NVM,"Prontera",M_Prontera,"Izlude",M_Izlude,"Geffen",M_Geffen,"Alberta",M_Alberta,"Umbala",M_Umbala,"Al de Baran",M_Aldebaran,"None of these.. Next?",More1;
 	close;
    M_Prontera:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "prontera",155,184;
    M_Izlude:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "izlude",128,93;
    M_Geffen:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "geffen",120,63;
    M_Alberta:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "alberta",30,234;
    M_Umbala:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "umbala",123,143;
    M_Aldebaran:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "aldebaran",140,121;
  More1:
 	menu "Nevermind",NVM,"Payon",M_Payon,"Morocc",M_Morocc,"Lutie",M_Xmas,"Juno",M_Juno,"Comodo",M_Comodo,"Nifflheim",M_Nifflheim,"None of these.. Next?",More2;
 	close;
    M_Payon:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "payon",89,122;
    M_Morocc:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "morocc",158,282;
    M_Xmas:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "xmas",148,130;
    M_Juno:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "yuno",158,169;
    M_Comodo:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "comodo",191,153;
    M_Nifflheim:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "niflheim",202,171;
  More2:
 	menu "Nevermind",NVM,"Amatsu",M_Amatsu,"Gon Ryune",M_Kunlun,"Lou Yang",M_louyang,"Jawaii",M_Jawai;
    M_Amatsu:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "amatsu",197,86;
    M_Kunlun:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "gon_fild01",257,90;
    M_louyang:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "lou_fild01",190,102;
    M_Jawai:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "jawaii",232,101;
 Dungeons:
 	mes "[Warper]";
-	mes "I can send you to any dungeon, for the small fee of 300z.";
+	mes "I can send you to any dungeon, for free.";
 	mes " ";
 	mes "Where would you like to go?";
 	next;
 L_MENU_0_2:
-	menu "Bibalan Dungeon",M_Bil,"Sunken Ship",M_Sunken,"Hidden Temple",M_Prt_fild01,"Orc Dungeon",M_Gef_fild10,"Ant Hell",M_Moc_fild04,"None of these.. Next?",2More2;
+	menu "Nevermind",NVM,"Bibalan Dungeon",M_Bil,"Sunken Ship",M_Sunken,"Hidden Temple",M_Prt_fild01,"Orc Dungeon",M_Gef_fild10,"Ant Hell",M_Moc_fild04,"None of these.. Next?",2More2;
 	close;
 M_Bil:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "izlu2dun",108,111;
 M_Sunken:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "alb2trea",43,53;
 M_Prt_fild01:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "prt_fild01",136,368;
 M_Gef_fild10:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "gef_fild10",67,334;
 M_Moc_fild04:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_fild04",210,328;
 2More2:
 	menu "Nevermind",NVM,"Coal Mines",M_mjolnir_02,"Sphinx Dungeon",M_moc_fild19,"Pyramids Dungeon",M_moc_ruins,"Glast Heim Prison",M_gef_fild06,"Beach Dungeon",M_Beach,"Turtle Dungeon",M_Turtle,"Magma Dungeon",M_Magma;
 	close;
 M_mjolnir_02:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "mjolnir_02",79,361;
 M_moc_fild19:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_fild19",106,99;
 M_moc_ruins:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_ruins",62,162;
 M_gef_fild06:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "glast_01",200,292;
 M_Beach:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "comodo",28,215;
 M_Turtle:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "tur_dun01",162,33;
 M_Magma:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "yuno_fild03",41,146;
 Guilds:
 	mes "[Warper]";
@@ -3899,11 +2959,6 @@ L_a4:
 	warp "alde_gld",46,84;
 L_a5:
 	warp "alde_gld",144,85;
-   ZENY:
-	mes "[Warper]";
-	mes "Not enough zeny? That is unfortunate...";
-	cutin "kafra_01",255;
-	close;
    NVM:
 	mes "[Warper]";
 	mes "Come back, if you're ever in need.";
@@ -3932,7 +2987,7 @@ pay_arche.gat,54,145,5	script	"Warper"	117,{
 	goto L_MENU_0_0;
  Cities:
 	mes "[Warper]";
-	mes "I can send you to any town, for the small fee of 100z.";
+	mes "I can send you to any town, for free.";
 	mes " ";
 	mes "Where would you like to go?";
 	next;
@@ -3940,78 +2995,46 @@ pay_arche.gat,54,145,5	script	"Warper"	117,{
 	menu "Nevermind",NVM,"Prontera",M_Prontera,"Izlude",M_Izlude,"Geffen",M_Geffen,"Alberta",M_Alberta,"Umbala",M_Umbala,"Al de Baran",M_Aldebaran,"None of these.. Next?",More1;
 	close;
    M_Prontera:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "prontera",155,184;
    M_Izlude:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "izlude",128,93;
    M_Geffen:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "geffen",120,63;
    M_Alberta:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "alberta",30,234;
    M_Umbala:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "umbala",123,143;
    M_Aldebaran:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "aldebaran",140,121;
  More1:
 	menu "Nevermind",NVM,"Payon",M_Payon,"Morocc",M_Morocc,"Lutie",M_Xmas,"Juno",M_Juno,"Comodo",M_Comodo,"Nifflheim",M_Nifflheim,"None of these.. Next?",More2;
 	close;
    M_Payon:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "payon",89,122;
    M_Morocc:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "morocc",158,282;
    M_Xmas:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "xmas",148,130;
    M_Juno:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "yuno",158,169;
    M_Comodo:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "comodo",191,153;
    M_Nifflheim:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "niflheim",202,171;
  More2:
 	menu "Nevermind",NVM,"Amatsu",M_Amatsu,"Gon Ryune",M_Kunlun,"Lou Yang",M_louyang,"Jawaii",M_Jawai;
 	close;
    M_Amatsu:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "amatsu",197,86;
    M_Kunlun:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "gon_fild01",257,90;
    M_louyang:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "lou_fild01",190,102;
    M_Jawai:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "jawaii",232,101;
 Dungeons:
 	mes "[Warper]";
-	mes "I can send you to any dungeon, for the small fee of 300z.";
+	mes "I can send you to any dungeon, for free.";
 	mes " ";
 	mes "Where would you like to go?";
 	next;
@@ -4019,55 +3042,31 @@ L_MENU_0_2:
 	menu "Nevermind",NVM,"Bibalan Dungeon",M_Bil,"Sunken Ship",M_Sunken,"Hidden Temple",M_Prt_fild01,"Orc Dungeon",M_Gef_fild10,"Ant Hell",M_Moc_fild04,"None of these.. Next?",2More2;
 	close;
 M_Bil:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "izlu2dun",108,111;
 M_Sunken:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "alb2trea",43,53;
 M_Prt_fild01:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "prt_fild01",136,368;
 M_Gef_fild10:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "gef_fild10",67,334;
 M_Moc_fild04:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_fild04",210,328;
 2More2:
 	menu "Nevermind",NVM,"Coal Mines",M_mjolnir_02,"Sphinx Dungeon",M_moc_fild19,"Pyramids Dungeon",M_moc_ruins,"Glast Heim Prison",M_gef_fild06,"Beach Dungeon",M_Beach,"Turtle Dungeon",M_Turtle,"Magma Dungeon",M_Magma;
 	close;
 M_mjolnir_02:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "mjolnir_02",79,361;
 M_moc_fild19:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_fild19",106,99;
 M_moc_ruins:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_ruins",62,162;
 M_gef_fild06:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "glast_01",200,292;
 M_Beach:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "comodo",28,215;
 M_Turtle:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "tur_dun01",162,33;
 M_Magma:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "yuno_fild03",41,146;
 Guilds:
 	mes "[Warper]";
@@ -4141,11 +3140,6 @@ L_a4:
 	warp "alde_gld",46,84;
 L_a5:
 	warp "alde_gld",144,85;
-   ZENY:
-	mes "[Warper]";
-	mes "Not enough zeny? That is unfortunate...";
-	cutin "kafra_01",255;
-	close;
    NVM:
 	mes "[Warper]";
 	mes "Come back, if you're ever in need.";
@@ -4174,7 +3168,7 @@ alb2trea.gat,44,57,4	script	"Warper"	117,{
 	goto L_MENU_0_0;
  Cities:
 	mes "[Warper]";
-	mes "I can send you to any town, for the small fee of 100z.";
+	mes "I can send you to any town, for free.";
 	mes " ";
 	mes "Where would you like to go?";
 	next;
@@ -4182,78 +3176,46 @@ alb2trea.gat,44,57,4	script	"Warper"	117,{
 	menu "Nevermind",NVM,"Prontera",M_Prontera,"Izlude",M_Izlude,"Geffen",M_Geffen,"Alberta",M_Alberta,"Umbala",M_Umbala,"Al de Baran",M_Aldebaran,"None of these.. Next?",More1;
 	close;
    M_Prontera:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "prontera",155,184;
    M_Izlude:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "izlude",128,93;
    M_Geffen:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "geffen",120,63;
    M_Alberta:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "alberta",30,234;
    M_Umbala:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "umbala",123,143;
    M_Aldebaran:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "aldebaran",140,121;
  More1:
 	menu "Nevermind",NVM,"Payon",M_Payon,"Morocc",M_Morocc,"Lutie",M_Xmas,"Juno",M_Juno,"Comodo",M_Comodo,"Nifflheim",M_Nifflheim,"None of these.. Next?",More2;
 	close;
    M_Payon:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "payon",89,122;
    M_Morocc:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "morocc",158,282;
    M_Xmas:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "xmas",148,130;
    M_Juno:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "yuno",158,169;
    M_Comodo:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "comodo",191,153;
    M_Nifflheim:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "niflheim",202,171;
  More2:
 	menu "Nevermind",NVM,"Amatsu",M_Amatsu,"Gon Ryune",M_Kunlun,"Lou Yang",M_louyang,"Jawaii",M_Jawai;
 	close;
    M_Amatsu:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "amatsu",197,86;
    M_Kunlun:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "gon_fild01",257,90;
    M_louyang:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "lou_fild01",190,102;
    M_Jawai:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "jawaii",232,101;
 Dungeons:
 	mes "[Warper]";
-	mes "I can send you to any dungeon, for the small fee of 300z.";
+	mes "I can send you to any dungeon, for free.";
 	mes " ";
 	mes "Where would you like to go?";
 	next;
@@ -4261,55 +3223,31 @@ L_MENU_0_2:
 	menu "Nevermind",NVM,"Bibalan Dungeon",M_Bil,"Sunken Ship",M_Sunken,"Hidden Temple",M_Prt_fild01,"Orc Dungeon",M_Gef_fild10,"Ant Hell",M_Moc_fild04,"None of these.. Next?",2More2;
 	close;
 M_Bil:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "izlu2dun",108,111;
 M_Sunken:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "alb2trea",43,53;
 M_Prt_fild01:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "prt_fild01",136,368;
 M_Gef_fild10:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "gef_fild10",67,334;
 M_Moc_fild04:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_fild04",210,328;
 2More2:
 	menu "Nevermind",NVM,"Coal Mines",M_mjolnir_02,"Sphinx Dungeon",M_moc_fild19,"Pyramids Dungeon",M_moc_ruins,"Glast Heim Prison",M_gef_fild06,"Beach Dungeon",M_Beach,"Turtle Dungeon",M_Turtle,"Magma Dungeon",M_Magma;
 	close;
 M_mjolnir_02:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "mjolnir_02",79,361;
 M_moc_fild19:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_fild19",106,99;
 M_moc_ruins:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_ruins",62,162;
 M_gef_fild06:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "glast_01",200,292;
 M_Beach:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "comodo",28,215;
 M_Turtle:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "tur_dun01",162,33;
 M_Magma:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "yuno_fild03",41,146;
 Guilds:
 	mes "[Warper]";
@@ -4383,11 +3321,6 @@ L_a4:
 	warp "alde_gld",46,84;
 L_a5:
 	warp "alde_gld",144,85;
-   ZENY:
-	mes "[Warper]";
-	mes "Not enough zeny? That is unfortunate...";
-	cutin "kafra_01",255;
-	close;
    NVM:
 	mes "[Warper]";
 	mes "Come back, if you're ever in need.";
@@ -4415,7 +3348,7 @@ izlu2dun.gat,110,112,4	script	"Warper"	117,{
 	goto L_MENU_0_0;
  Cities:
 	mes "[Warper]";
-	mes "I can send you to any town, for the small fee of 100z.";
+	mes "I can send you to any town, for free.";
 	mes " ";
 	mes "Where would you like to go?";
 	next;
@@ -4423,78 +3356,46 @@ izlu2dun.gat,110,112,4	script	"Warper"	117,{
 	menu "Nevermind",NVM,"Prontera",M_Prontera,"Izlude",M_Izlude,"Geffen",M_Geffen,"Alberta",M_Alberta,"Umbala",M_Umbala,"Al de Baran",M_Aldebaran,"None of these.. Next?",More1;
 	close;
    M_Prontera:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "prontera",155,184;
    M_Izlude:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "izlude",128,93;
    M_Geffen:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "geffen",120,63;
    M_Alberta:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "alberta",30,234;
    M_Umbala:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "umbala",123,143;
    M_Aldebaran:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "aldebaran",140,121;
  More1:
 	menu "Nevermind",NVM,"Payon",M_Payon,"Morocc",M_Morocc,"Lutie",M_Xmas,"Juno",M_Juno,"Comodo",M_Comodo,"Nifflheim",M_Nifflheim,"None of these.. Next?",More2;
 	close;
    M_Payon:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "payon",89,122;
    M_Morocc:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "morocc",158,282;
    M_Xmas:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "xmas",148,130;
    M_Juno:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "yuno",158,169;
    M_Comodo:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "comodo",191,153;
    M_Nifflheim:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "niflheim",202,171;
  More2:
 	menu "Nevermind",NVM,"Amatsu",M_Amatsu,"Gon Ryune",M_Kunlun,"Lou Yang",M_louyang,"Jawaii",M_Jawai;
 	close;
    M_Amatsu:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "amatsu",197,86;
    M_Kunlun:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "gon_fild01",257,90;
    M_louyang:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "lou_fild01",190,102;
    M_Jawai:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "jawaii",232,101;
 Dungeons:
 	mes "[Warper]";
-	mes "I can send you to any dungeon, for the small fee of 300z.";
+	mes "I can send you to any dungeon, for free.";
 	mes " ";
 	mes "Where would you like to go?";
 	next;
@@ -4502,55 +3403,31 @@ L_MENU_0_2:
 	menu "Nevermind",NVM,"Bibalan Dungeon",M_Bil,"Sunken Ship",M_Sunken,"Hidden Temple",M_Prt_fild01,"Orc Dungeon",M_Gef_fild10,"Ant Hell",M_Moc_fild04,"None of these.. Next?",2More2;
 	close;
 M_Bil:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "izlu2dun",108,111;
 M_Sunken:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "alb2trea",43,53;
 M_Prt_fild01:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "prt_fild01",136,368;
 M_Gef_fild10:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "gef_fild10",67,334;
 M_Moc_fild04:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_fild04",210,328;
 2More2:
 	menu "Nevermind",NVM,"Coal Mines",M_mjolnir_02,"Sphinx Dungeon",M_moc_fild19,"Pyramids Dungeon",M_moc_ruins,"Glast Heim Prison",M_gef_fild06,"Beach Dungeon",M_Beach,"Turtle Dungeon",M_Turtle,"Magma Dungeon",M_Magma;
 	close;
 M_mjolnir_02:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "mjolnir_02",79,361;
 M_moc_fild19:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_fild19",106,99;
 M_moc_ruins:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_ruins",62,162;
 M_gef_fild06:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "glast_01",200,292;
 M_Beach:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "comodo",28,215;
 M_Turtle:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "tur_dun01",162,33;
 M_Magma:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "yuno_fild03",41,146;
 Guilds:
 	mes "[Warper]";
@@ -4624,11 +3501,6 @@ L_a4:
 	warp "alde_gld",46,84;
 L_a5:
 	warp "alde_gld",144,85;
-   ZENY:
-	mes "[Warper]";
-	mes "Not enough zeny? That is unfortunate...";
-	cutin "kafra_01",255;
-	close;
    NVM:
 	mes "[Warper]";
 	mes "Come back, if you're ever in need.";
@@ -4656,7 +3528,7 @@ yuno_fild03.gat,38,144,5	script	"Warper"	117,{
 	goto L_MENU_0_0;
  Cities:
 	mes "[Warper]";
-	mes "I can send you to any town, for the small fee of 100z.";
+	mes "I can send you to any town, for free.";
 	mes " ";
 	mes "Where would you like to go?";
 	next;
@@ -4664,78 +3536,46 @@ yuno_fild03.gat,38,144,5	script	"Warper"	117,{
 	menu "Nevermind",NVM,"Prontera",M_Prontera,"Izlude",M_Izlude,"Geffen",M_Geffen,"Alberta",M_Alberta,"Umbala",M_Umbala,"Al de Baran",M_Aldebaran,"None of these.. Next?",More1;
 	close;
    M_Prontera:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "prontera",155,184;
    M_Izlude:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "izlude",128,93;
    M_Geffen:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "geffen",120,63;
    M_Alberta:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "alberta",30,234;
    M_Umbala:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "umbala",123,143;
    M_Aldebaran:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "aldebaran",140,121;
  More1:
 	menu "Nevermind",NVM,"Payon",M_Payon,"Morocc",M_Morocc,"Lutie",M_Xmas,"Juno",M_Juno,"Comodo",M_Comodo,"Nifflheim",M_Nifflheim,"None of these.. Next?",More2;
 	close;
    M_Payon:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "payon",89,122;
    M_Morocc:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "morocc",158,282;
    M_Xmas:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "xmas",148,130;
    M_Juno:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "yuno",158,169;
    M_Comodo:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "comodo",191,153;
    M_Nifflheim:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "niflheim",202,171;
  More2:
 	menu "Nevermind",NVM,"Amatsu",M_Amatsu,"Gon Ryune",M_Kunlun,"Lou Yang",M_louyang,"Jawaii",M_Jawai;
 	close;
    M_Amatsu:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "amatsu",197,86;
    M_Kunlun:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "gon_fild01",257,90;
    M_louyang:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "lou_fild01",190,102;
    M_Jawai:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "jawaii",232,101;
 Dungeons:
 	mes "[Warper]";
-	mes "I can send you to any dungeon, for the small fee of 300z.";
+	mes "I can send you to any dungeon, for free.";
 	mes " ";
 	mes "Where would you like to go?";
 	next;
@@ -4743,55 +3583,31 @@ L_MENU_0_2:
 	menu "Nevermind",NVM,"Bibalan Dungeon",M_Bil,"Sunken Ship",M_Sunken,"Hidden Temple",M_Prt_fild01,"Orc Dungeon",M_Gef_fild10,"Ant Hell",M_Moc_fild04,"None of these.. Next?",2More2;
 	close;
 M_Bil:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "izlu2dun",108,111;
 M_Sunken:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "alb2trea",43,53;
 M_Prt_fild01:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "prt_fild01",136,368;
 M_Gef_fild10:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "gef_fild10",67,334;
 M_Moc_fild04:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_fild04",210,328;
 2More2:
 	menu "Nevermind",NVM,"Coal Mines",M_mjolnir_02,"Sphinx Dungeon",M_moc_fild19,"Pyramids Dungeon",M_moc_ruins,"Glast Heim Prison",M_gef_fild06,"Beach Dungeon",M_Beach,"Turtle Dungeon",M_Turtle,"Magma Dungeon",M_Magma;
 	close;
 M_mjolnir_02:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "mjolnir_02",79,361;
 M_moc_fild19:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_fild19",106,99;
 M_moc_ruins:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_ruins",62,162;
 M_gef_fild06:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "glast_01",200,292;
 M_Beach:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "comodo",28,215;
 M_Turtle:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "tur_dun01",162,33;
 M_Magma:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "yuno_fild03",41,146;
 Guilds:
 	mes "[Warper]";
@@ -4865,11 +3681,6 @@ L_a4:
 	warp "alde_gld",46,84;
 L_a5:
 	warp "alde_gld",144,85;
-   ZENY:
-	mes "[Warper]";
-	mes "Not enough zeny? That is unfortunate...";
-	cutin "kafra_01",255;
-	close;
    NVM:
 	mes "[Warper]";
 	mes "Come back, if you're ever in need.";
@@ -4897,7 +3708,7 @@ tur_dun01.gat,162,30,0	script	"Warper"	117,{
 	goto L_MENU_0_0;
  Cities:
 	mes "[Warper]";
-	mes "I can send you to any town, for the small fee of 100z.";
+	mes "I can send you to any town, for free.";
 	mes " ";
 	mes "Where would you like to go?";
 	next;
@@ -4905,78 +3716,46 @@ tur_dun01.gat,162,30,0	script	"Warper"	117,{
 	menu "Nevermind",NVM,"Prontera",M_Prontera,"Izlude",M_Izlude,"Geffen",M_Geffen,"Alberta",M_Alberta,"Umbala",M_Umbala,"Al de Baran",M_Aldebaran,"None of these.. Next?",More1;
 	close;
    M_Prontera:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "prontera",155,184;
    M_Izlude:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "izlude",128,93;
    M_Geffen:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "geffen",120,63;
    M_Alberta:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "alberta",30,234;
    M_Umbala:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "umbala",123,143;
    M_Aldebaran:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "aldebaran",140,121;
  More1:
 	menu "Nevermind",NVM,"Payon",M_Payon,"Morocc",M_Morocc,"Lutie",M_Xmas,"Juno",M_Juno,"Comodo",M_Comodo,"Nifflheim",M_Nifflheim,"None of these.. Next?",More2;
 	close;
    M_Payon:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "payon",89,122;
    M_Morocc:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "morocc",158,282;
    M_Xmas:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "xmas",148,130;
    M_Juno:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "yuno",158,169;
    M_Comodo:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "comodo",191,153;
    M_Nifflheim:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "niflheim",202,171;
  More2:
 	menu "Nevermind",NVM,"Amatsu",M_Amatsu,"Gon Ryune",M_Kunlun,"Lou Yang",M_louyang,"Jawaii",M_Jawai;
 	close;
    M_Amatsu:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "amatsu",197,86;
    M_Kunlun:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "gon_fild01",257,90;
    M_louyang:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "lou_fild01",190,102;
    M_Jawai:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "jawaii",232,101;
 Dungeons:
 	mes "[Warper]";
-	mes "I can send you to any dungeon, for the small fee of 300z.";
+	mes "I can send you to any dungeon, for free.";
 	mes " ";
 	mes "Where would you like to go?";
 	next;
@@ -4984,55 +3763,31 @@ L_MENU_0_2:
 	menu "Nevermind",NVM,"Bibalan Dungeon",M_Bil,"Sunken Ship",M_Sunken,"Hidden Temple",M_Prt_fild01,"Orc Dungeon",M_Gef_fild10,"Ant Hell",M_Moc_fild04,"None of these.. Next?",2More2;
 	close;
 M_Bil:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "izlu2dun",108,111;
 M_Sunken:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "alb2trea",43,53;
 M_Prt_fild01:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "prt_fild01",136,368;
 M_Gef_fild10:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "gef_fild10",67,334;
 M_Moc_fild04:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_fild04",210,328;
 2More2:
 	menu "Nevermind",NVM,"Coal Mines",M_mjolnir_02,"Sphinx Dungeon",M_moc_fild19,"Pyramids Dungeon",M_moc_ruins,"Glast Heim Prison",M_gef_fild06,"Beach Dungeon",M_Beach,"Turtle Dungeon",M_Turtle,"Magma Dungeon",M_Magma;
 	close;
 M_mjolnir_02:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "mjolnir_02",79,361;
 M_moc_fild19:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_fild19",106,99;
 M_moc_ruins:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_ruins",62,162;
 M_gef_fild06:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "glast_01",200,292;
 M_Beach:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "comodo",28,215;
 M_Turtle:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "tur_dun01",162,33;
 M_Magma:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "yuno_fild03",41,146;
 Guilds:
 	mes "[Warper]";
@@ -5106,11 +3861,6 @@ L_a4:
 	warp "alde_gld",46,84;
 L_a5:
 	warp "alde_gld",144,85;
-   ZENY:
-	mes "[Warper]";
-	mes "Not enough zeny? That is unfortunate...";
-	cutin "kafra_01",255;
-	close;
    NVM:
 	mes "[Warper]";
 	mes "Come back, if you're ever in need.";
@@ -5138,7 +3888,7 @@ comodo.gat,32,219,5	script	"Warper"	117,{
 	goto L_MENU_0_0;
  Cities:
 	mes "[Warper]";
-	mes "I can send you to any town, for the small fee of 100z.";
+	mes "I can send you to any town, for free.";
 	mes " ";
 	mes "Where would you like to go?";
 	next;
@@ -5146,78 +3896,46 @@ comodo.gat,32,219,5	script	"Warper"	117,{
 	menu "Nevermind",NVM,"Prontera",M_Prontera,"Izlude",M_Izlude,"Geffen",M_Geffen,"Alberta",M_Alberta,"Umbala",M_Umbala,"Al de Baran",M_Aldebaran,"None of these.. Next?",More1;
 	close;
    M_Prontera:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "prontera",155,184;
    M_Izlude:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "izlude",128,93;
    M_Geffen:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "geffen",120,63;
    M_Alberta:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "alberta",30,234;
    M_Umbala:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "umbala",123,143;
    M_Aldebaran:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "aldebaran",140,121;
  More1:
 	menu "Nevermind",NVM,"Payon",M_Payon,"Morocc",M_Morocc,"Lutie",M_Xmas,"Juno",M_Juno,"Comodo",M_Comodo,"Nifflheim",M_Nifflheim,"None of these.. Next?",More2;
 	close;
    M_Payon:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "payon",89,122;
    M_Morocc:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "morocc",158,282;
    M_Xmas:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "xmas",148,130;
    M_Juno:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "yuno",158,169;
    M_Comodo:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "comodo",191,153;
    M_Nifflheim:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "niflheim",202,171;
  More2:
 	menu "Nevermind",NVM,"Amatsu",M_Amatsu,"Gon Ryune",M_Kunlun,"Lou Yang",M_louyang,"Jawaii",M_Jawai;
 	close;
    M_Amatsu:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "amatsu",197,86;
    M_Kunlun:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "gon_fild01",257,90;
    M_louyang:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "lou_fild01",190,102;
    M_Jawai:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "jawaii",232,101;
 Dungeons:
 	mes "[Warper]";
-	mes "I can send you to any dungeon, for the small fee of 300z.";
+	mes "I can send you to any dungeon, for free.";
 	mes " ";
 	mes "Where would you like to go?";
 	next;
@@ -5225,55 +3943,31 @@ L_MENU_0_2:
 	menu "Nevermind",NVM,"Bibalan Dungeon",M_Bil,"Sunken Ship",M_Sunken,"Hidden Temple",M_Prt_fild01,"Orc Dungeon",M_Gef_fild10,"Ant Hell",M_Moc_fild04,"None of these.. Next?",2More2;
 	close;
 M_Bil:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "izlu2dun",108,111;
 M_Sunken:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "alb2trea",43,53;
 M_Prt_fild01:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "prt_fild01",136,368;
 M_Gef_fild10:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "gef_fild10",67,334;
 M_Moc_fild04:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_fild04",210,328;
 2More2:
 	menu "Nevermind",NVM,"Coal Mines",M_mjolnir_02,"Sphinx Dungeon",M_moc_fild19,"Pyramids Dungeon",M_moc_ruins,"Glast Heim Prison",M_gef_fild06,"Beach Dungeon",M_Beach,"Turtle Dungeon",M_Turtle,"Magma Dungeon",M_Magma;
 	close;
 M_mjolnir_02:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "mjolnir_02",79,361;
 M_moc_fild19:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_fild19",106,99;
 M_moc_ruins:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_ruins",62,162;
 M_gef_fild06:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "glast_01",200,292;
 M_Beach:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "comodo",28,215;
 M_Turtle:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "tur_dun01",162,33;
 M_Magma:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "yuno_fild03",41,146;
 Guilds:
 	mes "[Warper]";
@@ -5347,11 +4041,6 @@ L_a4:
 	warp "alde_gld",46,84;
 L_a5:
 	warp "alde_gld",144,85;
-   ZENY:
-	mes "[Warper]";
-	mes "Not enough zeny? That is unfortunate...";
-	cutin "kafra_01",255;
-	close;
    NVM:
 	mes "[Warper]";
 	mes "Come back, if you're ever in need.";
@@ -5379,7 +4068,7 @@ moc_ruins.gat,60,168,4	script	"Warper"	117,{
 	goto L_MENU_0_0;
  Cities:
 	mes "[Warper]";
-	mes "I can send you to any town, for the small fee of 100z.";
+	mes "I can send you to any town, for free.";
 	mes " ";
 	mes "Where would you like to go?";
 	next;
@@ -5387,78 +4076,46 @@ moc_ruins.gat,60,168,4	script	"Warper"	117,{
 	menu "Nevermind",NVM,"Prontera",M_Prontera,"Izlude",M_Izlude,"Geffen",M_Geffen,"Alberta",M_Alberta,"Umbala",M_Umbala,"Al de Baran",M_Aldebaran,"None of these.. Next?",More1;
 	close;
    M_Prontera:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "prontera",155,184;
    M_Izlude:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "izlude",128,93;
    M_Geffen:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "geffen",120,63;
    M_Alberta:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "alberta",30,234;
    M_Umbala:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "umbala",123,143;
    M_Aldebaran:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "aldebaran",140,121;
  More1:
 	menu "Nevermind",NVM,"Payon",M_Payon,"Morocc",M_Morocc,"Lutie",M_Xmas,"Juno",M_Juno,"Comodo",M_Comodo,"Nifflheim",M_Nifflheim,"None of these.. Next?",More2;
 	close;
    M_Payon:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "payon",89,122;
    M_Morocc:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "morocc",158,282;
    M_Xmas:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "xmas",148,130;
    M_Juno:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "yuno",158,169;
    M_Comodo:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "comodo",191,153;
    M_Nifflheim:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "niflheim",202,171;
  More2:
 	menu "Nevermind",NVM,"Amatsu",M_Amatsu,"Gon Ryune",M_Kunlun,"Lou Yang",M_louyang,"Jawaii",M_Jawai;
 	close;
    M_Amatsu:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "amatsu",197,86;
    M_Kunlun:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "gon_fild01",257,90;
    M_louyang:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "lou_fild01",190,102;
    M_Jawai:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "jawaii",232,101;
 Dungeons:
 	mes "[Warper]";
-	mes "I can send you to any dungeon, for the small fee of 300z.";
+	mes "I can send you to any dungeon, for free.";
 	mes " ";
 	mes "Where would you like to go?";
 	next;
@@ -5466,55 +4123,31 @@ L_MENU_0_2:
 	menu "Nevermind",NVM,"Bibalan Dungeon",M_Bil,"Sunken Ship",M_Sunken,"Hidden Temple",M_Prt_fild01,"Orc Dungeon",M_Gef_fild10,"Ant Hell",M_Moc_fild04,"None of these.. Next?",2More2;
 	close;
 M_Bil:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "izlu2dun",108,111;
 M_Sunken:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "alb2trea",43,53;
 M_Prt_fild01:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "prt_fild01",136,368;
 M_Gef_fild10:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "gef_fild10",67,334;
 M_Moc_fild04:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_fild04",210,328;
 2More2:
 	menu "Nevermind",NVM,"Coal Mines",M_mjolnir_02,"Sphinx Dungeon",M_moc_fild19,"Pyramids Dungeon",M_moc_ruins,"Glast Heim Prison",M_gef_fild06,"Beach Dungeon",M_Beach,"Turtle Dungeon",M_Turtle,"Magma Dungeon",M_Magma;
 	close;
 M_mjolnir_02:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "mjolnir_02",79,361;
 M_moc_fild19:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_fild19",106,99;
 M_moc_ruins:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_ruins",62,162;
 M_gef_fild06:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "glast_01",200,292;
 M_Beach:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "comodo",28,215;
 M_Turtle:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "tur_dun01",162,33;
 M_Magma:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "yuno_fild03",41,146;
 Guilds:
 	mes "[Warper]";
@@ -5588,11 +4221,6 @@ L_a4:
 	warp "alde_gld",46,84;
 L_a5:
 	warp "alde_gld",144,85;
-   ZENY:
-	mes "[Warper]";
-	mes "Not enough zeny? That is unfortunate...";
-	cutin "kafra_01",255;
-	close;
    NVM:
 	mes "[Warper]";
 	mes "Come back, if you're ever in need.";
@@ -5620,7 +4248,7 @@ moc_fild19.gat,106,97,6	script	"Warper"	117,{
 	goto L_MENU_0_0;
  Cities:
 	mes "[Warper]";
-	mes "I can send you to any town, for the small fee of 100z.";
+	mes "I can send you to any town, for free.";
 	mes " ";
 	mes "Where would you like to go?";
 	next;
@@ -5628,78 +4256,46 @@ moc_fild19.gat,106,97,6	script	"Warper"	117,{
 	menu "Nevermind",NVM,"Prontera",M_Prontera,"Izlude",M_Izlude,"Geffen",M_Geffen,"Alberta",M_Alberta,"Umbala",M_Umbala,"Al de Baran",M_Aldebaran,"None of these.. Next?",More1;
 	close;
    M_Prontera:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "prontera",155,184;
    M_Izlude:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "izlude",128,93;
    M_Geffen:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "geffen",120,63;
    M_Alberta:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "alberta",30,234;
    M_Umbala:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "umbala",123,143;
    M_Aldebaran:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "aldebaran",140,121;
  More1:
 	menu "Nevermind",NVM,"Payon",M_Payon,"Morocc",M_Morocc,"Lutie",M_Xmas,"Juno",M_Juno,"Comodo",M_Comodo,"Nifflheim",M_Nifflheim,"None of these.. Next?",More2;
 	close;
    M_Payon:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "payon",89,122;
    M_Morocc:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "morocc",158,282;
    M_Xmas:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "xmas",148,130;
    M_Juno:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "yuno",158,169;
    M_Comodo:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "comodo",191,153;
    M_Nifflheim:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "niflheim",202,171;
  More2:
 	menu "Nevermind",NVM,"Amatsu",M_Amatsu,"Gon Ryune",M_Kunlun,"Lou Yang",M_louyang,"Jawaii",M_Jawai;
 	close;
    M_Amatsu:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "amatsu",197,86;
    M_Kunlun:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "gon_fild01",257,90;
    M_louyang:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "lou_fild01",190,102;
    M_Jawai:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "jawaii",232,101;
 Dungeons:
 	mes "[Warper]";
-	mes "I can send you to any dungeon, for the small fee of 300z.";
+	mes "I can send you to any dungeon, for free.";
 	mes " ";
 	mes "Where would you like to go?";
 	next;
@@ -5707,55 +4303,31 @@ L_MENU_0_2:
 	menu "Nevermind",NVM,"Bibalan Dungeon",M_Bil,"Sunken Ship",M_Sunken,"Hidden Temple",M_Prt_fild01,"Orc Dungeon",M_Gef_fild10,"Ant Hell",M_Moc_fild04,"None of these.. Next?",2More2;
 	close;
 M_Bil:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "izlu2dun",108,111;
 M_Sunken:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "alb2trea",43,53;
 M_Prt_fild01:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "prt_fild01",136,368;
 M_Gef_fild10:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "gef_fild10",67,334;
 M_Moc_fild04:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_fild04",210,328;
 2More2:
 	menu "Nevermind",NVM,"Coal Mines",M_mjolnir_02,"Sphinx Dungeon",M_moc_fild19,"Pyramids Dungeon",M_moc_ruins,"Glast Heim Prison",M_gef_fild06,"Beach Dungeon",M_Beach,"Turtle Dungeon",M_Turtle,"Magma Dungeon",M_Magma;
 	close;
 M_mjolnir_02:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "mjolnir_02",79,361;
 M_moc_fild19:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_fild19",106,99;
 M_moc_ruins:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_ruins",62,162;
 M_gef_fild06:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "glast_01",200,292;
 M_Beach:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "comodo",28,215;
 M_Turtle:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "tur_dun01",162,33;
 M_Magma:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "yuno_fild03",41,146;
 Guilds:
 	mes "[Warper]";
@@ -5829,11 +4401,6 @@ L_a4:
 	warp "alde_gld",46,84;
 L_a5:
 	warp "alde_gld",144,85;
-   ZENY:
-	mes "[Warper]";
-	mes "Not enough zeny? That is unfortunate...";
-	cutin "kafra_01",255;
-	close;
    NVM:
 	mes "[Warper]";
 	mes "Come back, if you're ever in need.";
@@ -5861,7 +4428,7 @@ glast_01.gat,203,291,3	script	"Warper"	117,{
 	goto L_MENU_0_0;
  Cities:
 	mes "[Warper]";
-	mes "I can send you to any town, for the small fee of 100z.";
+	mes "I can send you to any town, for free.";
 	mes " ";
 	mes "Where would you like to go?";
 	next;
@@ -5869,78 +4436,46 @@ glast_01.gat,203,291,3	script	"Warper"	117,{
 	menu "Nevermind",NVM,"Prontera",M_Prontera,"Izlude",M_Izlude,"Geffen",M_Geffen,"Alberta",M_Alberta,"Umbala",M_Umbala,"Al de Baran",M_Aldebaran,"None of these.. Next?",More1;
 	close;
    M_Prontera:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "prontera",155,184;
    M_Izlude:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "izlude",128,93;
    M_Geffen:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "geffen",120,63;
    M_Alberta:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "alberta",30,234;
    M_Umbala:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "umbala",123,143;
    M_Aldebaran:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "aldebaran",140,121;
  More1:
 	menu "Nevermind",NVM,"Payon",M_Payon,"Morocc",M_Morocc,"Lutie",M_Xmas,"Juno",M_Juno,"Comodo",M_Comodo,"Nifflheim",M_Nifflheim,"None of these.. Next?",More2;
 	close;
    M_Payon:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "payon",89,122;
    M_Morocc:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "morocc",158,282;
    M_Xmas:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "xmas",148,130;
    M_Juno:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "yuno",158,169;
    M_Comodo:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "comodo",191,153;
    M_Nifflheim:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "niflheim",202,171;
  More2:
 	menu "Nevermind",NVM,"Amatsu",M_Amatsu,"Gon Ryune",M_Kunlun,"Lou Yang",M_louyang,"Jawaii",M_Jawai;
 	close;
    M_Amatsu:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "amatsu",197,86;
    M_Kunlun:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "gon_fild01",257,90;
    M_louyang:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "lou_fild01",190,102;
    M_Jawai:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "jawaii",232,101;
 Dungeons:
 	mes "[Warper]";
-	mes "I can send you to any dungeon, for the small fee of 300z.";
+	mes "I can send you to any dungeon, for free.";
 	mes " ";
 	mes "Where would you like to go?";
 	next;
@@ -5948,55 +4483,31 @@ L_MENU_0_2:
 	menu "Nevermind",NVM,"Bibalan Dungeon",M_Bil,"Sunken Ship",M_Sunken,"Hidden Temple",M_Prt_fild01,"Orc Dungeon",M_Gef_fild10,"Ant Hell",M_Moc_fild04,"None of these.. Next?",2More2;
 	close;
 M_Bil:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "izlu2dun",108,111;
 M_Sunken:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "alb2trea",43,53;
 M_Prt_fild01:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "prt_fild01",136,368;
 M_Gef_fild10:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "gef_fild10",67,334;
 M_Moc_fild04:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_fild04",210,328;
 2More2:
 	menu "Nevermind",NVM,"Coal Mines",M_mjolnir_02,"Sphinx Dungeon",M_moc_fild19,"Pyramids Dungeon",M_moc_ruins,"Glast Heim Prison",M_gef_fild06,"Beach Dungeon",M_Beach,"Turtle Dungeon",M_Turtle,"Magma Dungeon",M_Magma;
 	close;
 M_mjolnir_02:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "mjolnir_02",79,361;
 M_moc_fild19:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_fild19",106,99;
 M_moc_ruins:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_ruins",62,162;
 M_gef_fild06:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "glast_01",200,292;
 M_Beach:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "comodo",28,215;
 M_Turtle:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "tur_dun01",162,33;
 M_Magma:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "yuno_fild03",41,146;
 Guilds:
 	mes "[Warper]";
@@ -6070,11 +4581,6 @@ L_a4:
 	warp "alde_gld",46,84;
 L_a5:
 	warp "alde_gld",144,85;
-   ZENY:
-	mes "[Warper]";
-	mes "Not enough zeny? That is unfortunate...";
-	cutin "kafra_01",255;
-	close;
    NVM:
 	mes "[Warper]";
 	mes "Come back, if you're ever in need.";
@@ -6102,7 +4608,7 @@ mjolnir_02.gat,83,360,3	script	"Warper"	117,{
 	goto L_MENU_0_0;
  Cities:
 	mes "[Warper]";
-	mes "I can send you to any town, for the small fee of 100z.";
+	mes "I can send you to any town, for free.";
 	mes " ";
 	mes "Where would you like to go?";
 	next;
@@ -6110,78 +4616,46 @@ mjolnir_02.gat,83,360,3	script	"Warper"	117,{
 	menu "Nevermind",NVM,"Prontera",M_Prontera,"Izlude",M_Izlude,"Geffen",M_Geffen,"Alberta",M_Alberta,"Umbala",M_Umbala,"Al de Baran",M_Aldebaran,"None of these.. Next?",More1;
 	close;
    M_Prontera:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "prontera",155,184;
    M_Izlude:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "izlude",128,93;
    M_Geffen:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "geffen",120,63;
    M_Alberta:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "alberta",30,234;
    M_Umbala:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "umbala",123,143;
    M_Aldebaran:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "aldebaran",140,121;
  More1:
 	menu "Nevermind",NVM,"Payon",M_Payon,"Morocc",M_Morocc,"Lutie",M_Xmas,"Juno",M_Juno,"Comodo",M_Comodo,"Nifflheim",M_Nifflheim,"None of these.. Next?",More2;
 	close;
    M_Payon:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "payon",89,122;
    M_Morocc:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "morocc",158,282;
    M_Xmas:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "xmas",148,130;
    M_Juno:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "yuno",158,169;
    M_Comodo:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "comodo",191,153;
    M_Nifflheim:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "niflheim",202,171;
  More2:
 	menu "Nevermind",NVM,"Amatsu",M_Amatsu,"Gon Ryune",M_Kunlun,"Lou Yang",M_louyang,"Jawaii",M_Jawai;
 	close;
    M_Amatsu:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "amatsu",197,86;
    M_Kunlun:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "gon_fild01",257,90;
    M_louyang:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "lou_fild01",190,102;
    M_Jawai:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "jawaii",232,101;
 Dungeons:
 	mes "[Warper]";
-	mes "I can send you to any dungeon, for the small fee of 300z.";
+	mes "I can send you to any dungeon, for free.";
 	mes " ";
 	mes "Where would you like to go?";
 	next;
@@ -6189,55 +4663,31 @@ L_MENU_0_2:
 	menu "Nevermind",NVM,"Bibalan Dungeon",M_Bil,"Sunken Ship",M_Sunken,"Hidden Temple",M_Prt_fild01,"Orc Dungeon",M_Gef_fild10,"Ant Hell",M_Moc_fild04,"None of these.. Next?",2More2;
 	close;
 M_Bil:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "izlu2dun",108,111;
 M_Sunken:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "alb2trea",43,53;
 M_Prt_fild01:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "prt_fild01",136,368;
 M_Gef_fild10:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "gef_fild10",67,334;
 M_Moc_fild04:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_fild04",210,328;
 2More2:
 	menu "Nevermind",NVM,"Coal Mines",M_mjolnir_02,"Sphinx Dungeon",M_moc_fild19,"Pyramids Dungeon",M_moc_ruins,"Glast Heim Prison",M_gef_fild06,"Beach Dungeon",M_Beach,"Turtle Dungeon",M_Turtle,"Magma Dungeon",M_Magma;
 	close;
 M_mjolnir_02:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "mjolnir_02",79,361;
 M_moc_fild19:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_fild19",106,99;
 M_moc_ruins:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_ruins",62,162;
 M_gef_fild06:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "glast_01",200,292;
 M_Beach:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "comodo",28,215;
 M_Turtle:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "tur_dun01",162,33;
 M_Magma:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "yuno_fild03",41,146;
 Guilds:
 	mes "[Warper]";
@@ -6311,11 +4761,6 @@ L_a4:
 	warp "alde_gld",46,84;
 L_a5:
 	warp "alde_gld",144,85;
-   ZENY:
-	mes "[Warper]";
-	mes "Not enough zeny? That is unfortunate...";
-	cutin "kafra_01",255;
-	close;
    NVM:
 	mes "[Warper]";
 	mes "Come back, if you're ever in need.";
@@ -6343,7 +4788,7 @@ moc_fild04.gat,204,330,4	script	"Warper"	117,{
 	goto L_MENU_0_0;
  Cities:
 	mes "[Warper]";
-	mes "I can send you to any town, for the small fee of 100z.";
+	mes "I can send you to any town, for free.";
 	mes " ";
 	mes "Where would you like to go?";
 	next;
@@ -6351,78 +4796,46 @@ moc_fild04.gat,204,330,4	script	"Warper"	117,{
 	menu "Nevermind",NVM,"Prontera",M_Prontera,"Izlude",M_Izlude,"Geffen",M_Geffen,"Alberta",M_Alberta,"Umbala",M_Umbala,"Al de Baran",M_Aldebaran,"None of these.. Next?",More1;
 	close;
    M_Prontera:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "prontera",155,184;
    M_Izlude:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "izlude",128,93;
    M_Geffen:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "geffen",120,63;
    M_Alberta:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "alberta",30,234;
    M_Umbala:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "umbala",123,143;
    M_Aldebaran:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "aldebaran",140,121;
  More1:
 	menu "Nevermind",NVM,"Payon",M_Payon,"Morocc",M_Morocc,"Lutie",M_Xmas,"Juno",M_Juno,"Comodo",M_Comodo,"Nifflheim",M_Nifflheim,"None of these.. Next?",More2;
 	close;
    M_Payon:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "payon",89,122;
    M_Morocc:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "morocc",158,282;
    M_Xmas:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "xmas",148,130;
    M_Juno:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "yuno",158,169;
    M_Comodo:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "comodo",191,153;
    M_Nifflheim:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "niflheim",202,171;
  More2:
 	menu "Nevermind",NVM,"Amatsu",M_Amatsu,"Gon Ryune",M_Kunlun,"Lou Yang",M_louyang,"Jawaii",M_Jawai;
 	close;
    M_Amatsu:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "amatsu",197,86;
    M_Kunlun:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "gon_fild01",257,90;
    M_louyang:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "lou_fild01",190,102;
    M_Jawai:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "jawaii",232,101;
 Dungeons:
 	mes "[Warper]";
-	mes "I can send you to any dungeon, for the small fee of 300z.";
+	mes "I can send you to any dungeon, for free.";
 	mes " ";
 	mes "Where would you like to go?";
 	next;
@@ -6430,55 +4843,31 @@ L_MENU_0_2:
 	menu "Nevermind",NVM,"Bibalan Dungeon",M_Bil,"Sunken Ship",M_Sunken,"Hidden Temple",M_Prt_fild01,"Orc Dungeon",M_Gef_fild10,"Ant Hell",M_Moc_fild04,"None of these.. Next?",2More2;
 	close;
 M_Bil:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "izlu2dun",108,111;
 M_Sunken:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "alb2trea",43,53;
 M_Prt_fild01:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "prt_fild01",136,368;
 M_Gef_fild10:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "gef_fild10",67,334;
 M_Moc_fild04:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_fild04",210,328;
 2More2:
 	menu "Nevermind",NVM,"Coal Mines",M_mjolnir_02,"Sphinx Dungeon",M_moc_fild19,"Pyramids Dungeon",M_moc_ruins,"Glast Heim Prison",M_gef_fild06,"Beach Dungeon",M_Beach,"Turtle Dungeon",M_Turtle,"Magma Dungeon",M_Magma;
 	close;
 M_mjolnir_02:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "mjolnir_02",79,361;
 M_moc_fild19:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_fild19",106,99;
 M_moc_ruins:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_ruins",62,162;
 M_gef_fild06:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "glast_01",200,292;
 M_Beach:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "comodo",28,215;
 M_Turtle:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "tur_dun01",162,33;
 M_Magma:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "yuno_fild03",41,146;
 Guilds:
 	mes "[Warper]";
@@ -6552,11 +4941,6 @@ L_a4:
 	warp "alde_gld",46,84;
 L_a5:
 	warp "alde_gld",144,85;
-   ZENY:
-	mes "[Warper]";
-	mes "Not enough zeny? That is unfortunate...";
-	cutin "kafra_01",255;
-	close;
    NVM:
 	mes "[Warper]";
 	mes "Come back, if you're ever in need.";
@@ -6585,7 +4969,7 @@ gef_fild10.gat,71,335,3	script	"Warper"	117,{
 	goto L_MENU_0_0;
  Cities:
 	mes "[Warper]";
-	mes "I can send you to any town, for the small fee of 100z.";
+	mes "I can send you to any town, for free.";
 	mes " ";
 	mes "Where would you like to go?";
 	next;
@@ -6593,78 +4977,46 @@ gef_fild10.gat,71,335,3	script	"Warper"	117,{
 	menu "Nevermind",NVM,"Prontera",M_Prontera,"Izlude",M_Izlude,"Geffen",M_Geffen,"Alberta",M_Alberta,"Umbala",M_Umbala,"Al de Baran",M_Aldebaran,"None of these.. Next?",More1;
 	close;
    M_Prontera:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "prontera",155,184;
    M_Izlude:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "izlude",128,93;
    M_Geffen:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "geffen",120,63;
    M_Alberta:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "alberta",30,234;
    M_Umbala:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "umbala",123,143;
    M_Aldebaran:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "aldebaran",140,121;
  More1:
 	menu "Nevermind",NVM,"Payon",M_Payon,"Morocc",M_Morocc,"Lutie",M_Xmas,"Juno",M_Juno,"Comodo",M_Comodo,"Nifflheim",M_Nifflheim,"None of these.. Next?",More2;
 	close;
    M_Payon:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "payon",89,122;
    M_Morocc:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "morocc",158,282;
    M_Xmas:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "xmas",148,130;
    M_Juno:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "yuno",158,169;
    M_Comodo:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "comodo",191,153;
    M_Nifflheim:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "niflheim",202,171;
  More2:
 	menu "Nevermind",NVM,"Amatsu",M_Amatsu,"Gon Ryune",M_Kunlun,"Lou Yang",M_louyang,"Jawaii",M_Jawai;
 	close;
    M_Amatsu:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "amatsu",197,86;
    M_Kunlun:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "gon_fild01",257,90;
    M_louyang:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "lou_fild01",190,102;
    M_Jawai:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "jawaii",232,101;
 Dungeons:
 	mes "[Warper]";
-	mes "I can send you to any dungeon, for the small fee of 300z.";
+	mes "I can send you to any dungeon, for free.";
 	mes " ";
 	mes "Where would you like to go?";
 	next;
@@ -6672,55 +5024,31 @@ L_MENU_0_2:
 	menu "Nevermind",NVM,"Bibalan Dungeon",M_Bil,"Sunken Ship",M_Sunken,"Hidden Temple",M_Prt_fild01,"Orc Dungeon",M_Gef_fild10,"Ant Hell",M_Moc_fild04,"None of these.. Next?",2More2;
 	close;
 M_Bil:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "izlu2dun",108,111;
 M_Sunken:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "alb2trea",43,53;
 M_Prt_fild01:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "prt_fild01",136,368;
 M_Gef_fild10:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "gef_fild10",67,334;
 M_Moc_fild04:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_fild04",210,328;
 2More2:
 	menu "Nevermind",NVM,"Coal Mines",M_mjolnir_02,"Sphinx Dungeon",M_moc_fild19,"Pyramids Dungeon",M_moc_ruins,"Glast Heim Prison",M_gef_fild06,"Beach Dungeon",M_Beach,"Turtle Dungeon",M_Turtle,"Magma Dungeon",M_Magma;
 	close;
 M_mjolnir_02:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "mjolnir_02",79,361;
 M_moc_fild19:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_fild19",106,99;
 M_moc_ruins:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_ruins",62,162;
 M_gef_fild06:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "glast_01",200,292;
 M_Beach:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "comodo",28,215;
 M_Turtle:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "tur_dun01",162,33;
 M_Magma:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "yuno_fild03",41,146;
 Guilds:
 	mes "[Warper]";
@@ -6794,11 +5122,6 @@ L_a4:
 	warp "alde_gld",46,84;
 L_a5:
 	warp "alde_gld",144,85;
-   ZENY:
-	mes "[Warper]";
-	mes "Not enough zeny? That is unfortunate...";
-	cutin "kafra_01",255;
-	close;
    NVM:
 	mes "[Warper]";
 	mes "Come back, if you're ever in need.";
@@ -6826,7 +5149,7 @@ prt_fild01.gat,139,365,4	script	"Warper"	117,{
 	goto L_MENU_0_0;
  Cities:
 	mes "[Warper]";
-	mes "I can send you to any town, for the small fee of 100z.";
+	mes "I can send you to any town, for free.";
 	mes " ";
 	mes "Where would you like to go?";
 	next;
@@ -6834,78 +5157,46 @@ prt_fild01.gat,139,365,4	script	"Warper"	117,{
 	menu "Nevermind",NVM,"Prontera",M_Prontera,"Izlude",M_Izlude,"Geffen",M_Geffen,"Alberta",M_Alberta,"Umbala",M_Umbala,"Al de Baran",M_Aldebaran,"None of these.. Next?",More1;
 	close;
    M_Prontera:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "prontera",155,184;
    M_Izlude:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "izlude",128,93;
    M_Geffen:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "geffen",120,63;
    M_Alberta:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "alberta",30,234;
    M_Umbala:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "umbala",123,143;
    M_Aldebaran:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "aldebaran",140,121;
  More1:
 	menu "Nevermind",NVM,"Payon",M_Payon,"Morocc",M_Morocc,"Lutie",M_Xmas,"Juno",M_Juno,"Comodo",M_Comodo,"Nifflheim",M_Nifflheim,"None of these.. Next?",More2;
 	close;
    M_Payon:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "payon",89,122;
    M_Morocc:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "morocc",158,282;
    M_Xmas:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "xmas",148,130;
    M_Juno:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "yuno",158,169;
    M_Comodo:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "comodo",191,153;
    M_Nifflheim:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "niflheim",202,171;
  More2:
 	menu "Nevermind",NVM,"Amatsu",M_Amatsu,"Gon Ryune",M_Kunlun,"Lou Yang",M_louyang,"Jawaii",M_Jawai;
 	close;
    M_Amatsu:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "amatsu",197,86;
    M_Kunlun:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "gon_fild01",257,90;
    M_louyang:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "lou_fild01",190,102;
    M_Jawai:
-	check Zeny < 100,ZENY,-;
-	set Zeny -= 100,0;
 	warp "jawaii",232,101;
 Dungeons:
 	mes "[Warper]";
-	mes "I can send you to any dungeon, for the small fee of 300z.";
+	mes "I can send you to any dungeon, for free.";
 	mes " ";
 	mes "Where would you like to go?";
 	next;
@@ -6913,55 +5204,31 @@ L_MENU_0_2:
 	menu "Nevermind",NVM,"Bibalan Dungeon",M_Bil,"Sunken Ship",M_Sunken,"Hidden Temple",M_Prt_fild01,"Orc Dungeon",M_Gef_fild10,"Ant Hell",M_Moc_fild04,"None of these.. Next?",2More2;
 	close;
 M_Bil:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "izlu2dun",108,111;
 M_Sunken:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "alb2trea",43,53;
 M_Prt_fild01:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "prt_fild01",136,368;
 M_Gef_fild10:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "gef_fild10",67,334;
 M_Moc_fild04:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_fild04",210,328;
 2More2:
 	menu "Nevermind",NVM,"Coal Mines",M_mjolnir_02,"Sphinx Dungeon",M_moc_fild19,"Pyramids Dungeon",M_moc_ruins,"Glast Heim Prison",M_gef_fild06,"Beach Dungeon",M_Beach,"Turtle Dungeon",M_Turtle,"Magma Dungeon",M_Magma;
 	close;
 M_mjolnir_02:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "mjolnir_02",79,361;
 M_moc_fild19:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_fild19",106,99;
 M_moc_ruins:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "moc_ruins",62,162;
 M_gef_fild06:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "glast_01",200,292;
 M_Beach:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "comodo",28,215;
 M_Turtle:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "tur_dun01",162,33;
 M_Magma:
-	check Zeny < 300,ZENY,-;
-	set Zeny -= 300,0;
         warp "yuno_fild03",41,146;
 Guilds:
 	mes "[Warper]";
@@ -7035,11 +5302,6 @@ L_a4:
 	warp "alde_gld",46,84;
 L_a5:
 	warp "alde_gld",144,85;
-   ZENY:
-	mes "[Warper]";
-	mes "Not enough zeny? That is unfortunate...";
-	cutin "kafra_01",255;
-	close;
    NVM:
 	mes "[Warper]";
 	mes "Come back, if you're ever in need.";
