@@ -1,0 +1,78 @@
+----------------------------------------------------------------------------------------------------
+Fusion NPC Pack - 1.002
+----------------------------------------------------------------------------------------------------
+- GvG\prtg_cas02.txt - Corrected Prontera Castle Emperium Location. [AlexKreuz]
+
+----------------------------------------------------------------------------------------------------
+Fusion NPC Pack - 1.001
+----------------------------------------------------------------------------------------------------
+- Fixed: Event/Event_Potion.txt - Variable typo, and the npc is working [mudvayne]
+- Fixed: Town/Town_Kapra.txt - Can't dupe items with Kapra's Cart Rental [mudvayne]
+- Updated: Town/Town_Kapra.txt - Cart Rental support for Alchimist [mudvayne]
+- Added: Mob/mob_umb.txt - Umbala monster definitions. [AlexKreuz]
+- Added: Town/Town_Umbala.txt - Umbala NPC scripts. [AlexKreuz]
+- Added: Warp/Warp_Umbala.txt - Umbala warp definitions. [AlexKreuz]
+
+----------------------------------------------------------------------------------------------------
+Fusion NPC Pack - 11/12/2003
+----------------------------------------------------------------------------------------------------
+- Updated: NPC/npc_skill_get.txt - Pointed Scale -> Tough Scalelike Stem. [AlexKreuz]
+- Updated: Shop/shop.txt - Thief Clothes: 7400Z -> 74000Z. [AlexKreuz]
+- Updated: Shop/shop.txt - Glaive: 1200Z -> 20000Z. [AlexKreuz]
+
+----------------------------------------------------------------------------------------------------
+Fusion NPC Pack - 11/03/2003
+----------------------------------------------------------------------------------------------------
+- Renamed: Job/Job_Merchant.txt [AlexKreuz]
+- Updated: Shop/shop.txt [AlexKreuz]
+- Replaced: Town/Town_Aldebaran.txt [L0ne_W0lf]
+- Replaced: Town/Town_Alberta.txt [L0ne_W0lf]
+- Replaced: Town/Town_Amatsu.txt [L0ne_W0lf]
+- Replaced: Town/Town_Comodo.txt [L0ne_W0lf]
+- Replaced: Town/Town_Guide.txt [L0ne_W0lf]
+- Replaced: Town/Town_Izlude.txt [L0ne_W0lf]
+- Replaced: Town/Town_Payon.txt [L0ne_W0lf]
+- Replaced: Town/Town_Prontera.txt [L0ne_W0lf]
+- Replaced: Town/Town_Juno.txt [L0ne_W0lf]
+- Replaced: Warp/warp.txt [L0ne_W0lf]
+- Added: GvG/*.* [L0ne_W0lf]
+- Deleted: Map/*.* [AlexKreuz]
+
+----------------------------------------------------------------------------------------------------
+Fusion NPC Pack - 11/01/2003
+----------------------------------------------------------------------------------------------------
+- Initial Package Released [AlexKreuz]
+
+----
+
+Please note that you are entitled and encouraged to use any scripts
+or script packets out that that you would like. The purpose of this
+package is to create a "standard" NPC package which will be steadily
+updated.  Updates made can be viewed in this changelog file so that
+you, the user, will know which files you should consider updating.
+
+You are all encouraged to contribute to this package by doing the
+following: Translating the scripts from Japanese and Korean, Translating
+from Engrish to English, Making bug fixes and correctiong,
+Submitting what you feel are "official" gravity scripts (no custom
+scripts please), etc. Please always base your changes on the latest NPC
+Scripts package. Credit is always given and never claimed.
+
+This changelog will be tracked by date and not by version number.
+
+Thanks, and good luck.
+- AlexKreuz
+
+
+Relevant Links
+
+- The Fusion Project
+- http://www.izlude.net
+
+- The Weiss BBS
+- http://eweiss.sourceforge.net/forums
+
+- The DarkWeiss Forums
+- http://dweiss.sigh.org/forum
+
+- IRC: irc.mircx.com - #weiss

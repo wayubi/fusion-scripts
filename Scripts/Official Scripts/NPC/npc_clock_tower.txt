@@ -1,0 +1,200 @@
+//--------------------------------
+//npc_ClockTower.txt by Kalen
+//--------------------------------
+
+//-------------------- [ The Key ( 3F -> 4F ) ] --------------------
+
+c_tower3.gat,10,249,4	script	"Gatekeeper"	84,{
+		mes "[Gatekeeper Riku]";
+		mes "Welcome to ";
+		mes "Kinase - Blue Gallino";
+		mes "the one of Local Speciality in Aldebaran.";
+		mes "However,from the 4th Floor of this Clock Tower,";
+		mes "You may not enter.";
+		mes "Please go back to where you're from.";
+		next;
+		menu "About Clock Tower",L1,"About the 4th Floor",L2,"Move to the 4th Floor",L3,"End mesue",L4;
+L1:
+			mes "[Gatekeeper Riku]";
+			mes "Homeland of Alchemy,Aldebaran!";
+			mes "Long Time ago, there were";
+			mes "3 Legendary Alchemists...They are";
+			mes "Bruke Seimer,";
+			mes "Philip Warisez,";
+			mes "And..";
+			next;
+			mes "[Gatekeeper Riku]";
+			mes "Romero Specialre!";
+			mes "This venerable architecture is";
+			mes "their masterpiece.";
+			mes "I assume you would feel something unusual";
+			mes "While on the way to this floor,";
+			mes "Every feature of This Clocktower ";
+			next;
+			mes "[Gatekeeper Riku]";
+			mes "Consists of Mysterious Ancient Magics.";
+			mes "If you just wander around here";
+			mes " without any intention";
+			next;
+			mes "[Gatekeeper Riku]";
+			mes "By any means,";
+			mes "You will meet with a mishap";
+			mes "by Gatekeeper Creatures.";
+			mes "Please be careful ..";
+			close;
+L2:
+			mes "[Gatekeeper Riku]";
+			mes "Ancient Alchemists";
+			mes "Sealed the Gate of 4th Floor using an Alchemistic Device ";
+			mes "To keep something";
+			mes "From Evil Creatures and Human Enemies.";
+			mes "To go through this door";
+			next;
+			mes "[Gatekeeper Riku]";
+			mes "It needs a Key.";
+			mes "That Key has rumored to be possessed by Gatekeeper Creatures";
+			mes "Prowling around here.";
+			next;
+			mes "[Gatekeeper Riku]";
+			mes "The Key is the Intensiveness of Ancient Alchemy,";
+			mes "By hearsay When used once,";
+			mes "It will be released from being spelled";
+			mes "And be disapeared.";
+			next;
+			mes "[Gatekeeper Riku]";
+			mes "If that key";
+			mes "Comes into your possession,";
+			mes "Please show it to me.";
+			mes "The one who possesses the Key";
+			mes "Will have access to go through";
+			mes "This Gate with his own will!";
+			next;
+			mes "[Gatekeeper Riku]";
+			mes "I will give you a chance.";
+			mes ". . . . .";
+			close;
+L3:
+			checkitem 7026,1,-,L3_1;
+			mes "[Gatekeeper Riku]";
+			mes "Hmm! I already felt that you are not an Ordinary person,";
+			mes "Now it seems to be successful in Speculation.";
+			mes "Please,You may enter.";
+			mes "May God bless you ..";
+			next;
+			delitem 7026,1;
+			warp "c_tower4",185,44;
+L3_1:
+			mes "[Gatekeeper Riku]";
+			mes ". . . . . .";
+			mes "Unfortunately you don't have a privilege";
+			mes "To enter this Gate ..";
+			mes "You won't be able to go through";
+			mes "As long as Ancient Alchemists";
+			mes " Don't approve you.";
+			close;
+L4:
+			mes "[Gatekeeper Riku]";
+			mes "This Clock Tower";
+			mes "Is the place where the 3 Ancient Legendary Alchemists";
+			mes "Have left their Spirits and Skills.";
+			mes "Please Do not Scribble or Damage on the Interior.";
+			close;
+}
+
+//-------------------- [ The Key ( B3 -> B4 ) ] --------------------
+
+alde_dun03.gat,264,16,4	script	"Gatekeeper"	101,
+		mes "[Gatekeeper Boy]";
+		mes "Welcome to";
+		mes "Kinase - Blue Gallino";
+		mes "The one of Local Speciality in Aldebaran.";
+		mes "You can't go through from B4th Floor,";
+		mes "Please go back.";
+		next;
+		menu "About Clock Tower",L1,"About B4th Floor",L2,"Move to the B4th Floor",L3,"End mesue",L4;
+L1:
+			mes "[Gatekeeper Boy]";
+			mes "Homeland of Alchemy,Aldebaran!";
+			mes "Long Time ago, there were";
+			mes "3 Legendary Alchemists...They are";
+			mes "Bruke Seimer";
+			mes "Philip Warisez";
+			mes "And ..";
+			next;
+			mes "[Gatekeeper Boy]";
+			mes "Romero Specialre!";
+			mes "This venerable architecture is";
+			mes "their masterpiece.";
+			mes "I assume you would feel something unusual";
+			mes "While on the way to this floor,";
+			mes "Every feature of This Clocktower ";
+			next;
+			mes "[Gatekeeper Boy]";
+			mes "Consists of Mysterious Ancient Magics.";
+			mes "If you just wander around here,";
+			mes " without any intention";
+			next;			
+			mes "[Gatekeeper Boy]";
+			mes "By any means,";
+			mes "You will meet with a mishap";
+			mes "by Gatekeeper Creatures.";
+			mes "Please be careful ..";
+			close;
+L2:
+			mes "[Gatekeeper Boy]";
+			mes "Ancient Alchemists";
+			mes "Sealed the Gate of 4th Floor using an Alchemistic Device ";
+			mes "To keep something";
+			mes "From Evil Creatures and Human Enemies.";
+			mes "To go through this door";
+			next;
+			mes "[Gatekeeper Boy]";
+			mes "It needs a Key.";
+			mes "That Key has rumored to be possessed by Gatekeeper Creatures";
+			mes "Prowling around here.";
+			next;
+			mes "[Gatekeeper Boy]";
+			mes "The Key is the Intensiveness of Ancient Alchemy,";
+			mes "By hearsay When used once,";
+			mes "It will be released from being spelled";
+			mes "And be disapeared.";
+			next;
+			mes "[Gatekeeper Boy]";
+			mes "If that key";
+			mes "Comes into your porssession,";
+			mes "Please show me.";
+			mes "The one who possesses the Key";
+			mes "Will have access to go through";
+			mes "This Gate with his own will!";
+			next;
+			mes "[Gatekeeper Boy]";
+			mes "I will give you a chance.";
+			mes ". . . . .";
+			close;
+L3:
+			checkitem 7027,1,-,L3_1;
+			mes "[Gatekeeper Boy]";
+			mes "Hmm! I already felt that you are not an Ordinary person,";
+			mes "Now it seems to be successful in Speculation.";
+			mes "Please,You may enter.";
+			mes "May God bless you ..";
+			next;
+			delitem 7027,1;
+			warp "alde_dun04",79,267;
+L3_1:
+			mes "[Gatekeeper Boy]";
+			mes ". . . . . .";
+			mes "Unfortunately you don't have a privilege";
+			mes "To enter this Gate ..";
+			mes "You won't be able to go through";
+			mes "As long as Ancient Alchemists";
+			mes " Don't grant you.";
+			close;
+L4:
+			mes "[Gatekeeper Boy]";
+			mes "This Clock Tower";
+			mes "Is the place where the 3 Ancient Legendary Alchemists";
+			mes "Has left their Spirits and Skills.";
+			mes "Please Do not Scribble or Damage on the Interior.";
+			close;
+}

@@ -1,0 +1,522 @@
+//-------------------------------------------------------------
+//--Kafraイベント　By Kalen
+//--!格納関数 KF_PIT(一時計算用は@Kafratemp)!
+//--重量チェックいれてません
+//-------------------------------------------------------------
+aldeba_in.gat,79,161,6	script	カプラ職員	115,{
+//途中表示用に代入
+	set @Kafratemp = KF_PIT,0;
+	mes "[カプラ職員]";
+	mes "いらっしゃいませ$charaname様。";
+	mes "当カプラサービスをご利用いただき";
+	mes "獲得されたポイントと、商品を交換";
+	mes "しております。";
+	next;
+	mes "[カプラ職員]";
+	mes "私はカプラポイント";
+	mes "^7D0781100p から 3000p まで^000000";
+	mes "を商品と交換致します。";
+	next;
+	check KF_PIT = 0,LError4,-;
+//本来ならここで重量check→1100空いてなければLError2へ
+	mes "[カプラ職員]";
+	mes "お客様の獲得ポイントは";
+	mes "^FF0000 $[KF_PIT] ^000000 です。";
+	mes "次の中からご希望の品物を";
+	mes "お選びください。";
+	next;
+	menu "100p = いも 7 個",L1_1,"200p = いも 15 個",L1_2,"300p = いも 25 個",L1_3,"400p = いも 35 個",L1_4,"500p = いも 50 個",L1_5,"600p = いも 60 個",L1_6,"700p = いも 75 個",L1_7,"800p = いも 85 個",L1_8,"900p = いも 100 個",L1_9,"1000p = チャンス1",L1_10,"次項目",LMenu2,"取り消し",LEnd2;
+LMenu2:
+	menu "1100p = 赤ポーション 7 個",L2_1,"1300p = 赤ポーション 15 個",L2_2,"1500p = 赤ポーション 25 個",L2_3,"1700p = 赤ポーション 35 個",L2_4,"1900p = 赤ポーション 50 個",L2_5,"2100p = 赤ポーション 60 個",L2_6,"2300p = 赤ポーション 75 個",L2_7,"2500p = 赤ポーション 85 個",L2_8,"2800p = 赤ポーション 100 個",L2_9,"3000p = チャンス2",L2_10,"取り消し",LEnd2;
+L1_1:
+	check KF_PIT >= 100,-,LError;
+	set @Kafratemp - 100,0;
+	mes "[カプラ職員]";
+	mes "商品と交換した場合、";
+	mes "^FF0000$[@Kafratemp]^000000 点が残ります。";
+	mes "交換しますか？";
+	next;
+	menu "交換する",-,"取り消し",LEnd2;
+	set KF_PIT - 100,0;
+	additem 516,7;
+	goto LEnd1;
+L1_2:
+	check KF_PIT >= 200,-,LError;
+	set @Kafratemp - 200,0;
+	mes "[カプラ職員]";
+	mes "商品と交換した場合、";
+	mes "^FF0000$[@Kafratemp]^000000 点が残ります。";
+	mes "交換しますか？";
+	next;
+	menu "交換する",-,"取り消し",LEnd2;
+	set KF_PIT - 200,0;
+	additem 516,15;
+	goto LEnd1;
+L1_3:
+	check KF_PIT >= 300,-,LError;
+	set @Kafratemp - 300,0;
+	mes "[カプラ職員]";
+	mes "商品と交換した場合、";
+	mes "^FF0000$[@Kafratemp]^000000 点が残ります。";
+	mes "交換しますか？";
+	next;
+	menu "交換する",-,"取り消し",LEnd2;
+	set KF_PIT - 300,0;
+	additem 516,25;
+	goto LEnd1;
+L1_4:
+	check KF_PIT >= 400,-,LError;
+	set @Kafratemp - 400,0;
+	mes "[カプラ職員]";
+	mes "商品と交換した場合、";
+	mes "^FF0000$[@Kafratemp]^000000 点が残ります。";
+	mes "交換しますか？";
+	next;
+	menu "交換する",-,"取り消し",LEnd2;
+	set KF_PIT - 400,0;
+	additem 516,35;
+	goto LEnd1;
+L1_5:
+	check KF_PIT >= 500,-,LError;
+	set @Kafratemp - 500,0;
+	mes "[カプラ職員]";
+	mes "商品と交換した場合、";
+	mes "^FF0000$[@Kafratemp]^000000 点が残ります。";
+	mes "交換しますか？";
+	next;
+	menu "交換する",-,"取り消し",LEnd2;
+	set KF_PIT - 500,0;
+	additem 516,50;
+	goto LEnd1;
+L1_6:
+	check KF_PIT >= 600,-,LError;
+	set @Kafratemp - 600,0;
+	mes "[カプラ職員]";
+	mes "商品と交換した場合、";
+	mes "^FF0000$[@Kafratemp]^000000 点が残ります。";
+	mes "交換しますか？";
+	next;
+	menu "交換する",-,"取り消し",LEnd2;
+	set KF_PIT - 600,0;
+	additem 516,60;
+	goto LEnd1;
+L1_7:
+	check KF_PIT >= 700,-,LError;
+	set @Kafratemp - 700,0;
+	mes "[カプラ職員]";
+	mes "商品と交換した場合、";
+	mes "^FF0000$[@Kafratemp]^000000 点が残ります。";
+	mes "交換しますか？";
+	next;
+	menu "交換する",-,"取り消し",LEnd2;
+	set KF_PIT - 700,0;
+	additem 516,75;
+	goto LEnd1;
+L1_8:
+	check KF_PIT >= 800,-,LError;
+	set @Kafratemp - 800,0;
+	mes "[カプラ職員]";
+	mes "商品と交換した場合、";
+	mes "^FF0000$[@Kafratemp]^000000 点が残ります。";
+	mes "交換しますか？";
+	next;
+	menu "交換する",-,"取り消し",LEnd2;
+	set KF_PIT - 800,0;
+	additem 516,85;
+	goto LEnd1;
+L1_9:
+	check KF_PIT >= 900,-,LError;
+	set @Kafratemp - 900,0;
+	mes "[カプラ職員]";
+	mes "商品と交換した場合、";
+	mes "^FF0000$[@Kafratemp]^000000 点が残ります。";
+	mes "交換しますか？";
+	next;
+	menu "交換する",-,"取り消し",LEnd2;
+	set KF_PIT - 900,0;
+	additem 516,100;
+	goto LEnd1;
+L2_1:
+	check KF_PIT >= 1100,-,LError;
+	set @Kafratemp - 1100,0;
+	mes "[カプラ職員]";
+	mes "商品と交換した場合、";
+	mes "^FF0000$[@Kafratemp]^000000 点が残ります。";
+	mes "交換しますか？";
+	next;
+	menu "交換する",-,"取り消し",LEnd2;
+	set KF_PIT - 1100,0;
+	additem 501,7;
+	goto LEnd1;
+L2_2:
+	check KF_PIT >= 1300,-,LError;
+	set @Kafratemp - 1300,0;
+	mes "[カプラ職員]";
+	mes "商品と交換した場合、";
+	mes "^FF0000$[@Kafratemp]^000000 点が残ります。";
+	mes "交換しますか？";
+	next;
+	menu "交換する",-,"取り消し",LEnd2;
+	set KF_PIT - 1300,0;
+	additem 501,15;
+	goto LEnd1;
+L2_3:
+	check KF_PIT >= 1500,-,LError;
+	set @Kafratemp - 1500,0;
+	mes "[カプラ職員]";
+	mes "商品と交換した場合、";
+	mes "^FF0000$[@Kafratemp]^000000 点が残ります。";
+	mes "交換しますか？";
+	next;
+	menu "交換する",-,"取り消し",LEnd2;
+	set KF_PIT - 1500,0;
+	additem 501,25;
+	goto LEnd1;
+L2_4:
+	check KF_PIT >= 1700,-,LError;
+	set @Kafratemp - 1700,0;
+	mes "[カプラ職員]";
+	mes "商品と交換した場合、";
+	mes "^FF0000$[@Kafratemp]^000000 点が残ります。";
+	mes "交換しますか？";
+	next;
+	menu "交換する",-,"取り消し",LEnd2;
+	set KF_PIT - 1700,0;
+	additem 501,35;
+	goto LEnd1;
+L2_5:
+	check KF_PIT >= 1900,-,LError;
+	set @Kafratemp - 1900,0;
+	mes "[カプラ職員]";
+	mes "商品と交換した場合、";
+	mes "^FF0000$[@Kafratemp]^000000 点が残ります。";
+	mes "交換しますか？";
+	next;
+	menu "交換する",-,"取り消し",LEnd2;
+	set KF_PIT - 1900,0;
+	additem 501,50;
+	goto LEnd1;
+L2_6:
+	check KF_PIT >= 2100,-,LError;
+	set @Kafratemp - 2100,0;
+	mes "[カプラ職員]";
+	mes "商品と交換した場合、";
+	mes "^FF0000$[@Kafratemp]^000000 点が残ります。";
+	mes "交換しますか？";
+	next;
+	menu "交換する",-,"取り消し",LEnd2;
+	set KF_PIT - 2100,0;
+	additem 501,60;
+	goto LEnd1;
+L2_7:
+	check KF_PIT >= 2300,-,LError;
+	set @Kafratemp - 2300,0;
+	mes "[カプラ職員]";
+	mes "商品と交換した場合、";
+	mes "^FF0000$[@Kafratemp]^000000 点が残ります。";
+	mes "交換しますか？";
+	next;
+	menu "交換する",-,"取り消し",LEnd2;
+	set KF_PIT - 2300,0;
+	additem 501,75;
+	goto LEnd1;
+L2_8:
+	check KF_PIT >= 2500,-,LError;
+	set @Kafratemp - 2500,0;
+	mes "[カプラ職員]";
+	mes "商品と交換した場合、";
+	mes "^FF0000$[@Kafratemp]^000000 点が残ります。";
+	mes "交換しますか？";
+	next;
+	menu "交換する",-,"取り消し",LEnd2;
+	set KF_PIT - 2500,0;
+	additem 501,85;
+	goto LEnd1;
+L2_9:
+	check KF_PIT >= 2800,-,LError;
+	set @Kafratemp - 2800,0;
+	mes "[カプラ職員]";
+	mes "商品と交換した場合、";
+	mes "^FF0000$[@Kafratemp]^000000 点が残ります。";
+	mes "交換しますか？";
+	next;
+	menu "交換する",-,"取り消し",LEnd2;
+	set KF_PIT - 2800,0;
+	additem 501,100;
+	goto LEnd1;
+//---------------------チャンス----------------------------
+L1_10:
+	check KF_PIT >= 1000,-,LError;
+	set @Kafratemp - 1000,0;
+	mes "[カプラ職員]";
+	mes "商品と交換した場合、";
+	mes "^FF0000$[@Kafratemp]^000000 点が残ります。";
+	mes "交換しますか？";
+	next;
+	menu "交換する",-,"取り消し",LEnd2;
+	set KF_PIT - 1000,0;
+	mes "[カプラ職員]";
+	mes "^0000ffチャンス1！^000000";
+	next;
+	mes "[カプラ職員]";
+	mes "それでは、お客様の運だめしと";
+	mes "まいりましょう。";
+	mes "準備はよろしいですか？";
+	next;
+	mes "[カプラ職員]";
+	mes "こちらの抽選器ですが、";
+	mes "5回まで回せます。";
+	mes "何回回しますか？";
+Linput1:
+	next;
+	input @chance1;
+	check @chance1 != 0,-,LError3-1;
+	check @chance1 >= 6,LError3-1,-;
+Lrandom1:
+	random @chance2,3;
+	check @chance2 = 0,Lr1_1,-;
+	check @chance2 = 1,Lr1_2,-;
+	check @chance2 = 2,Lr1_3,-;
+Lr1_1:
+	set @chance1 - 1,0;
+	mes "ポロッ カツッ カツン……";
+	next;
+	check @chance1 = 0,Lc1,-;
+	goto Lrandom1;
+Lr1_2:
+	set @chance1 - 1,0;
+	mes "ガラガラガラ……";
+	next;
+	check @chance1 = 0,Lc1,-;
+	goto Lrandom1;
+Lr1_3:
+	set @chance1 - 1,0;
+	mes "ジャラジャラ……";
+	next;
+	check @chance1 = 0,Lc1,-;
+	goto Lrandom1;
+Lc1:
+	mes "[カプラ職員]";
+	mes "はい、でましたね～";
+	mes "えっと……";
+	next;
+	mes "[カプラ職員]";
+	mes "^ff0000おっ……これは^000000";
+	next;
+//ここで抽選
+	random @chance3,4;
+	check @chance3 = 0,Lc1_1,-;
+	check @chance3 = 1,Lc1_2,-;
+	check @chance3 = 2,Lc1_3,-;
+	check @chance3 = 3,Lc1_4,-;
+Lc1_1:
+	additem 2328,1;
+	mes "[カプラ職員]";
+	mes "1等～";
+	mes "1等賞です～";
+	mes "賞品は^00ff00ウードンメイル一着！^000000";
+	next;
+	mes "[カプラ職員]";
+//台詞抜け
+	mes "ご利用ありがとうございました！";
+	goto LEnd1;
+Lc1_2:
+	additem 2403,1;
+	mes "[カプラ職員]";
+	mes "2等～";
+	mes "2等賞です～";
+	mes "賞品は^00ff00シューズ一足！^000000";
+	next;
+	mes "[カプラ職員]";
+	mes "カッコイイデザインと丈夫な素材！";
+	mes "当カプラ職員は遠いところに";
+	mes "出かけるときはいつもコレを履いて";
+	mes "いくんですよ。";
+	mes "ご利用ありがとうございました！";
+	goto LEnd1;
+Lc1_3:
+	additem 602,4;
+	mes "[カプラ職員]";
+	mes "3等～";
+	mes "3等賞です～";
+	mes "賞品は^00ff00蝶の羽４個！^000000";
+	next;
+	mes "[カプラ職員]";
+	mes "危ないときはコレ！";
+	mes "ご利用ありがとうございました！";
+	goto LEnd1;
+Lc1_4:
+	additem 516,100;
+	mes "[カプラ職員]";
+	mes "残念～";
+	mes "残念賞です～";
+	mes "賞品は^00ff00いも100個！^000000";
+	next;
+	mes "[カプラ職員]";
+//台詞抜け
+	mes "ご利用ありがとうございました！";
+	goto LEnd1;
+L2_10:
+	check KF_PIT >= 3000,-,LError;
+	set @Kafratemp - 3000,0;
+	mes "[カプラ職員]";
+	mes "商品と交換した場合、";
+	mes "^FF0000$[@Kafratemp]^000000 点が残ります。";
+	mes "交換しますか？";
+	next;
+	menu "交換する",-,"取り消し",LEnd2;
+	set KF_PIT - 3000,0;
+	mes "[カプラ職員]";
+	mes "^0000ffチャンス2！^000000";
+	next;
+	mes "[カプラ職員]";
+	mes "それでは、お客様の運だめしと";
+	mes "まいりましょう。";
+	mes "準備はよろしいですか？";
+	next;
+	mes "[カプラ職員]";
+	mes "こちらの抽選器ですが、";
+	mes "5回まで回せます。";
+	mes "何回回しますか？";
+Linput2:
+	next;
+	input @chance1;
+	check @chance1 >= 6,LError3-2,-;
+	check @chance1 != 0,-,LError3-2;
+Lrandom2:
+	random @chance2,3;
+	check @chance2 = 0,Lr2_1,-;
+	check @chance2 = 1,Lr2_2,-;
+	check @chance2 = 2,Lr2_3,-;
+Lr2_1:
+	set @chance1 - 1,0;
+	mes "ポロッ カツッ カツン……";
+	next;
+	check @chance1 = 0,Lc2,-;
+	goto Lrandom2;
+Lr2_2:
+	set @chance1 - 1,0;
+	mes "ガラガラガラ……";
+	next;
+	check @chance1 = 0,Lc2,-;
+	goto Lrandom2;
+Lr2_3:
+	set @chance1 - 1,0;
+	mes "ジャラジャラ……";
+	next;
+	check @chance1 = 0,Lc2,-;
+	goto Lrandom2;
+Lc2:
+	mes "[カプラ職員]";
+	mes "はい、でましたね～";
+	mes "えっと……";
+	next;
+	mes "[カプラ職員]";
+	mes "^ff0000おっ……これは^000000";
+	next;
+	random @chance3,4;
+	check @chance3 = 0,Lc2_1,-;
+	check @chance3 = 1,Lc2_2,-;
+	check @chance3 = 2,Lc2_3,-;
+	check @chance3 = 3,Lc2_4,-;
+Lc2_1:
+	additem 505,3;
+	mes "[カプラ職員]";
+	mes "1等～";
+	mes "1等賞です～";
+	mes "賞品は^00ff00青いポーション3個！^000000";
+	next;
+	mes "[カプラ職員]";
+//台詞抜け
+	mes "ご利用ありがとうございました！";
+	goto LEnd1;
+Lc2_2:
+	additem 2226,1;
+	mes "[カプラ職員]";
+	mes "2等～";
+	mes "2等賞です～";
+	mes "賞品は^00ff00キャップ一個！^000000";
+	next;
+	mes "[カプラ職員]";
+//台詞抜け
+	mes "ご利用ありがとうございました！";
+	goto LEnd1;
+Lc2_3:
+	additem 2201,1;
+	mes "[カプラ職員]";
+	mes "3等～";
+	mes "3等賞です～";
+	mes "賞品は^00ff00サングラス１個！^000000";
+	next;
+	mes "[カプラ職員]";
+	mes "私が浮気調査によく使う物ですね。";
+	mes "皆さんはそんなことに使われないように";
+	mes "願っております……";
+	mes "ご利用ありがとうございました！";
+	goto LEnd1;
+Lc2_4:
+	additem 501,100;
+	mes "[カプラ職員]";
+	mes "残念～";
+	mes "残念賞です～";
+	mes "賞品は^00ff00赤いポーション100個！^000000";
+	next;
+	mes "[カプラ職員]";
+//台詞抜け
+	mes "ご利用ありがとうございました！";
+	goto LEnd1;
+LError:
+	mes "[カプラ職員]";
+	mes "申し訳ありませんが、";
+	mes "お客様が選択した賞品は";
+	mes "ポイントが不足しておりますので";
+//mes "^0000FF$[@Kafratemp2]^000000 ポイントが不足しておりますので";
+	mes "交換することができかねます。";
+	mes "もう一度ご確認の上選択してください。";
+	close;
+LError2:
+	mes "[カプラ職員]";
+	mes "お客様、少々荷物を持ちすぎて";
+	mes "おりませんか？";
+	mes "その状態では商品を交換しても";
+	mes "お持ちになれません。";
+	next;
+	mes "[カプラ職員]";
+	mes "お手数ですが、カプラサービスをご利用になり、残り重量が";
+	mes "^0000FF1100^000000 程になるように荷物を";
+	mes "減らすようにお願い致します。";
+	close;
+LError3-1:
+	mes "[カプラ職員]";
+	mes "……";
+	mes "1～5回の間でお願いします。";
+	goto Linput1;
+LError3-2:
+	mes "[カプラ職員]";
+	mes "……";
+	mes "1～5回の間でお願いします。";
+	goto Linput2;
+LError4:
+//--Original--(フラグが存在しないと不具合があるため)
+	mes "[カプラ職員]";
+	mes "どうやらお客様は";
+	mes "1ポイントも手に入れてないようですね";
+	mes "がんばってポイントを貯めて";
+	mes "また来てくださいね。";
+	close;
+LEnd1:
+	next;
+	mes "[カプラ職員]";
+	mes "また多くのポイントを集め";
+	mes "られるよう願っております。";
+	mes "いつも (株)カプラサービスを";
+	mes "ご利用いただきありがとう";
+	mes "ございます。";
+	close;
+LEnd2:
+	mes "[カプラ職員]";
+	mes "かしこまりました。";
+	mes "今後ともカプラサービスをよろしく";
+	mes "お願い致します。";
+	close;
+}

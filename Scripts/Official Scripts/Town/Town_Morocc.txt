@@ -1,0 +1,78 @@
+//----------------------------------------------------------------------------------------
+// Morocc Town - From Weiss, translated by Rentus, some corrections by Hylysi
+// eWeiss Project 2003 - http://revolve.emuxhaven.net/weiss/
+//----------------------------------------------------------------------------------------
+
+morocc.gat,68,260,0	script	Towner	99,{
+	mes "[Towner]";
+	mes "Those giant, triangular buildings at the corner of Morroc are called as pyramids.... They have been here for thousands and thousands of years.";
+	next;
+	mes "[Towner]";
+	mes "Nobody knows when and why they were built or who built them. But all we know for sure is there are tons of horrendous monsters inside the pyramids.";
+	next;
+	mes "[Towner]";
+	mes "I think you better stay away from them.";
+	mes "Monsters in the pyramid love to feed on strangers. Giggle giggle...";
+	close;
+}
+
+morocc_in.gat,112,122,0	script	Grampa	61,{
+	mes "[Old Scholar]";
+	mes "I've devoted my life to the pyramid research. Nothing has been revealed yet, but I assure you that biggest pyramid holds within the Tomb of the Ancient King.";
+	next;
+	mes "[Old Scholar]";
+	mes "Osiris, The Greatest King of History would sleep the eternal sleep deep inside the pyramid. If my eyes are working right...";
+	close;
+}
+
+morocc.gat,116,266,0	script	Towner	85,{
+	mes "[Towner]";
+	mes "I can tell you the most horrible creature of the desert is the Wolf, yeah it is. It even gulps down Peco Peco Eggs.";
+	mes "Moreover, those damn punks roam about in a group all the time. And then one of fellas gets attacked, all take a sudden turn into Violence.";
+	next;
+	mes "[Towner]";
+	mes "It is not funny you know. The place anywhere the scum pass, doesn't have much things except human bones and rotten milk in the bag.";
+	mes "God they have no mercy...";
+	close;
+}
+
+morocc.gat,208,85,0	script	Towner	83,{
+	mes "[Towner]";
+	mes "My job is the trade business, I keep coming and going between Morroc and Prontera due to my job. I can't even count how many times I've been across the hot, dry Desert.";
+	next;
+	mes "[Towner]";
+	mes "One day, on the Desert I was so thirsty so I caught a cactus to get some water out of it.";
+	mes "Oh man, all of a sudden, that cactus turned out to be a creature and started to shoot its needles toward me. It was the worst experience of my entire life.";
+	next;
+	mes "[Towner]";
+	mes "And I figured out later it is not a normal Cactus but Muka a Monster...";
+	close;
+}
+
+morocc.gat,150,50,0	script	Towner	85,{
+	mes "[Lapidary]";
+	mes "Queen of the jewelry is the diamond. Nobody could deny its beautiful and lucid appearance when looked at once. So it costs a lot zeny to purchase...";
+	next;
+	mes "[Lapidary]";
+	mes "Many factors increase its value, but the most important thing is the size.";
+	next;
+	mes "[Lapidary]";
+	mes "Hmm...Besides its crystallization should be perfect, not cracked or chiped if you want to make a fortune with a diamond.";
+	close;
+}
+
+morocc.gat,44,180,0	script	Towner	89,{
+mes "[Drunk Man]";
+	mes "Heh Heh...Hiccup! Oh, are you a stranger here? Nice to meet ya, buddy! So how's your trip?";
+	mes "This was predestined that you and I meet at this time, I will tell you what, Hiccup. It is I who just heard from the Pub, you know..?";
+	next;
+	mes "[Drunk Man]";
+	mes "There is a dagger bringing great luck to its owner by hearsay. The well-known thief in this Rune Midgard possesses this dagger,and never been caught.";
+	next;
+	mes "[Drunk Man]";
+	mes "Arrgh...I wish I could have that one...but only in my dreams.";
+	mes "How about you? Why don't you look for it? It's not a big deal to whom like you, the brave man? Giggle giggle~ and I offered you a big tip, you would have to buy me a drink later if you searched that sword, promise me, alright!";
+	mes "Hiccup!";
+	close;
+}
+

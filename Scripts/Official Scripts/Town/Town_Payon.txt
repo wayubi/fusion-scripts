@@ -1,0 +1,593 @@
+//=========================================== <Payon> ===================================
+payon.gat,163,139,0	script	Lady	90,{
+	mes "[Lady]";
+	mes "Back to our history, we had a hard time making our living in this village, Payon. People lived in Penury so even they couldn't afford for the dead to rest in peace. Some people threw their dead family into the cave near the village.";
+	mes "So in that Cave,it has rumored there are many walking Zombies which could have never gone Beyond the Realm.Ahhh...Spooky...";
+	next;
+	mes "Lurking in the cave, when the living near them they start to assault following the sweet scent of humans. But it doesn't mean Zombies hold a grudge against us, it's just their instinct...";
+	mes "Their rotten bodies can't leave the cold, dark and damp cave...They just want the warmth of humans coming from the outer-world, that's why they keep attacking people without intentions...It's a spooky but tragic story...";
+	close;
+}
+payon_in.gat,171,138,0	script	"Young Man"	88,{
+	mes "[Young Man]";
+	mes "I can see you are a stranger from the appearance of your traveling outfit. You must be a well-experienced fighter otherwise you couldn't successfully arrive at this steep place with all tough those creatures outside.";
+	mes "However you miss something important for fights. You can't defeat those monsters only with might.";
+	next;
+	mes "[Young Man]";
+	mes "Sometimes you will encounter some creatures with a hard-shell body which can't be damaged by physical attacks. Only psychic power like magic can defeat them at ease.";
+	mes "If you study magics, works will be easier... If you don't,you'd better accompany with somebody using magic.";
+	close;
+}
+payon.gat,29,115,0	script	"Young Man"	88,{
+	mes "[Young Man]"
+	mes "I still remember the story from my grand father with blessed memories. People say there is an Amulet possessing evil power within which can awaken the dead from the grave.";
+	mes "Well I'm not sure it's true or not, but if so, I wonder what would happen when I summon my grand father from the realm with it....";
+	next;
+	mes "[Young Man]";
+	mes "(Son, never think such a thing.)";
+	mes "Eeeeeeeeekkkkk?! Wasn't it my grampa? Wa, wahhhhhhhh...";
+	close;
+}
+//========== Ladies in Payon Pub ==
+payon_in01.gat,104,183,0	script	Waitress	90,{
+	mes	"[Pub Lady]";
+	mes "People in this place seem to be busy all the time, they come and go to be Archers or to buy arrows, I have to stick with this small shop.";
+    mes "I feell so melancholy and bored.";
+ 	next;
+	mes "[Pub Lady]";
+	mes "I am sick and tired of noodle soup. I have to take too many showers to get rid of the smell.";
+    mes "But it isn't easy to deodorize..sigh...";
+	next;
+	mes "[Pub Lady]";
+	mes "Where can I find the right person who is a really hot, sexy hunk, and who can take me out of this small place?";
+	check Gender=1,-,LStartF;
+  	mes "[Pub Lady]";
+  	mes "Hello, mister?";
+   	LStartF:
+   		mes "[Pub Lady]";
+   		mes "Hello, lady?";
+		next;
+		mes "[Pub Lady]";
+		mes "Grandma the fortuneteller told me that I would meet great luck in the near future!"; 
+		mes "But look at me, what's wrong with me!! I am leaving a managable life everyday!!";
+		mes "Oh..boy. What a dumb wishy-washy person I am.";
+		next;
+		mes "[Pub Lady]";
+		mes "I am so sorry, I should haven't said this to you. Now I am acting like i'm stupid.";  
+ 		mes "I am sorry dear, please forgive my misbehaviour.";
+		next;
+		mes "[Pub Lady]";
+		mes "So, how may I help you? ";
+		menu "Have you ever heard of Zombies?",L_menu1,"I want to have my fortune told.",L_menu2,"I need some booze.",L_menu3,"I'm good",L_menu4;
+		L_menu1:
+			mes "[Pub Lady]";
+			mes "Zombies are the walking dead. You can easily spot them in this village, Payon.";
+        	mes "It's rumored that they fear holiness. That's why Archers prefer to use arrows made out of holy metal, silver against Zombies.";
+  			next;
+			mes "[Pub Lady]";
+			mes "Legend says the chief of this town used silver arrows against walking zombies that used to be his brethren, to enlighten their souls to rest in peace.";
+ 			mes "We believe only this way, zombies can be leaded to the peaceful world beyond the realm.";
+	    	next;
+			mes "[Pub Lady]";
+			mes "You might not agree on our tradition which respects the diseased.";
+			next;
+			mes "[Pub Lady]";
+			mes "Somehow I would like to appreciate the chief to enlighten my grandfather's poor soul.";
+			close;
+		L_menu2:
+			mes "[Pub Lady]";
+			mes "Oh! I must say she is really an extraordinary person. Well, it could be your luck, she doesn't hang around here much as she used to do.";
+ 			next;
+			mes "[Pub Lady]";
+			mes "On the first place, she stayed here to mind her business, but ever since the chief recognized her talent, she's stayed in the central palace."
+        	mes "You'd better go to there if you want to see her.";
+			close;
+		L_menu3:
+			mes "[Pub Lady]";
+			mes "I am so sorry they're all sold out and we can't afford to prepare alchohol anymore due to hostile creatures out there.";
+        	mes "My master built a very strict rule of his own, that is we only provide the best drinks to customers.";
+			next;
+			mes "[Pub Lady]";
+			mes "So please come later again.";
+			next;
+			mes "[Pub Lady]";
+			mes "Sorry for your inconvenience.";
+			close;
+		L_menu4:
+			mes "[Pub Lady]";
+			mes "Have a nice day, dear.";
+			mes "Sob...I wish I could be in bed of roses.";
+ 			close;
+}
+//======== Payon Guard ==
+payon.gat,93,162,3	script	Guardsman	105,{
+	mes "[Guardsman]";
+	mes "This is the central palace of payon.";
+	mes "Even though we open this place to public in obedience to the head of the tribe's order..you must be orderly inside.";
+	next;
+	mes "[Guardsman]";
+	mes "Besides we have strict rules against violence here your for the preservation of public peace. Please cooperate.";
+	close;
+}
+//======== Payon Guard ==
+payon_in01.gat,69,90,3	script	"Chief Guardsman"	105,{
+	mes "[Chief Guardsman]";
+	mes "What brings you here?";
+	next;
+	mes "[Chief Guardsman]";
+	mes "I can see you are not belong here. I would like to suggest you to behave in this place.";
+	next;
+	mes "[Chief Guardsman]";
+	mes "And I disarm your equipments for the preservation of public peace.";
+	close;
+}
+//==================================  Payon Lady  ==
+payon.gat,166,140,1	script	Woman	66,{
+	mes "[Woman]";
+	mes "Welcome to payon. You must of had a hard time while passing through the forest. How was your travel?";
+	mes "Numbers of tourist has been reduced due to enormous monsters outside, Payon is becoming a quiet town.";
+	mes "So there's nothing much to do for villagers nowadays, I am just chit-chatting with my friends. Hohoho~";
+	next;
+	mes "[Woman]";
+	mes "To be honest, things are getting tough because of those creatures...sigh...";
+	check Gender=1,-,LStartF;
+		mes "Mister, you look as strong as a rocker! How many monsters have you killed?";
+		mes "Would you mind if I introduce a place for you to hunt?";
+	LStartF:
+		mes "Lady how many monsters have you killed?";
+		mes "I know the best place for a hunt, you will be able to fill your pocket with money there. How's it sound?";
+    	next;
+    	mes "[Woman]";
+    	mes "Oh well, I happened to know we have a cave in the middle of the village.";
+    	mes "Are you interested in that place?";
+    	mes "Just head north of town, pass a forest and head north-west.";
+    	mes "You will realise when you are at the place with the smell of stinky monsters.";
+		next;
+		menu "It sounds dangerous."L_menu1,"I think I need to fully prepare for that place.",L_menu2,"Lady, you wear nice clothing~",L_menu3;
+		L_menu1:
+			mes "[Woman]";
+			mes "Come on, you coward~. It's just nothing but a simple cave filled with normal monsters.";
+			mes "It is quite safe so even we established an archer village near the cave to prevent incident~ hohoho~";
+			close;
+		L_menu2:
+			mes "[Woman]";
+			mes "Hoho...don't worry for preparation. There is a tool dealer in front of the cave, you can purchase items you need.";
+			mes "He is my husband...oops, he is a man very close to me. Hoho, Hoho...";
+			close;
+		L_menu3:
+			mes "[Woman]";
+			mes "Oh hohohoho! Did you notice? This is in-style in Prontera thesedays!";
+			mes "Women in this town don't know anything about Fashion! My husband sells young and naive customers pups to present me these clothing...oh ho oh hoho...";
+			close;
+}
+//==================================  Payon Woman B  =======
+payon.gat,163,142,5	script	Woman	66,{
+	mes "[Jim's Mother]";
+	mes "Oh boy there she goes again. She is a confirmed gossip.";
+	mes "Please don't take her first impression as our village's. Not all of us here at Payon are big mouths. She gets too excited with one time fortune telling.";
+	mes "Anyway you look like a new face here, don't you?";
+	next;
+	mes "[Jim's Mother]";
+	check Gender=1,-,LStartF;
+		mes "Oh, you have broad shoulders...hohoho! Will you go out with me?";
+		mes "I like to treat you to a nice dinner.";
+	LStartF:
+		mes "Don't you think your dress is too lousy?";
+		mes "I don't like young ladies pounce up.";
+		next;
+		menu "Fortune Telling?",L_menu1,"...Good Bye.",L_menu2;
+		L_menu1:
+			mes "[Jim's Mother]";
+			mes "Oh yes, tell you what.";
+			mes "There is a extraordinary fortune teller.";
+			mes "You can meet her in the central palace. The more money you pay she will give you the better divination sign.";
+			next;
+			mes "[Jim's Mother]";
+			mes "She told me I would meet a nice guy this month...hohohoho~";
+			close; 
+		L_menu2:
+			mes "[Jim's Mother]";
+			mes "Ummm why don't you stay and chit chat with me for a while...?";
+			close;
+}
+//==================================  Payon Drunk  =======
+payon_in01.gat,95,181,1	script	Drunk	120,{
+	check Job < 3,-,L_Menu1_F1;
+	mes "[Drunk]";
+	mes "Hey hey! I am wondering how stupid archers who don't know how to aim targets could drink alcohol. Hahaha~!";
+	mes "Do you want to buy me a drink?";
+	L_Menu1_F1:
+	mes "[Drunk]";
+	mes "Yoyo! Archer brother! Salute to your fingers stratching bowstring!";
+	mes "Do you want to buy me a drink?";
+	next;
+	menu "Promise me you won't drink more than one jug.",L_menu1,"No thanks,buddy.",L_menu2,"Oh my god~ hell no~!",L_menu3;
+		L_menu1:
+			check Zeny == 200,-,L_SUB_1;
+			set Zeny -= 200,0;
+			mes "[Drunk]";
+			mes "Thanks brother! Strangers are always generous without exception! Archer guys are pinch-pennies nowadays!";
+			mes "Muhahahaha! I wasn't like that when I was young.";
+			mes "Back then I was young, I used to fool around with girls! One of the grannies in this village and I was really hot back then!";
+			mes "She still acts like a young lady in taste for consmetics and stuff!";
+			next;
+			mes "[Drunk]";
+			mes "Gulp~Gulp~Man! This is great! Thank you may man! Thank you! Muhahahahaha!";
+			close;
+			L_SUB_1:
+				mes "[Drunk]";
+				mes "Cheapass, don't even have enough money. Move on young one, your waisting my time!";
+				close;
+		L_menu2:
+			mes "[Drunk]";
+			mes "Blah. Young people don't know how to respect elderly people!";
+			mes "Fine! I won't beg you anymore! I won't...";
+			close;
+		L_menu3:
+			mes "[Drunk]";
+			mes "Umm, oookay. Fine by me...";
+			close;
+}
+//==================================  Archer Zakk  =======
+payon_in01.gat,95,179,5	script	"Archer Zakk"	88,{
+	mes "[Archer Zakk]";
+	mes "I am so worried about one of my pals. He speaks about much crap.";
+	mes "Well he is an expert of archery, but I hate his big mouth...";
+	mes "Our chief is also fed up with him.";
+	next;
+	menu "Archer?",L_menu1,"Chief?",L_menu2,"Big Mouth?",L_menu3;
+		L_menu1:
+			mes "[Archer Zakk]";
+			mes "Ah yeah yeah. My friend is the number one archer in Payon, in the same costume as me too.";
+			mes "He teaches newbie archers around the archer village.";
+			mes "Well...you'd better talk to him at lease once.";
+			close;
+		L_menu2:
+			mes "[Archer Zakk]";
+			mes "Chief lives in the central palace. He is the spiritual guide of Payon.";
+			mes "He used to dictate to the whole Payon forest carrying Gakkung. I remember the battle scene he showed when I was a little kid. Hmm~";
+			mes "Even though he is old and weak now...his eyes...he still has keen-sighted eyes of his young days, he can hit targets without missing.";
+			next;
+			mes "[Archer Zakk]";
+			mes "I admire him from the bottom of my heart.";
+			close;
+		L_menu3:
+			mes "[Archer Zakk]";
+			mes "You know a big mouth is the person who is much talkative and who doesn't stop talking.";
+			mes "He never stops talking as I said, one day he started to talk while we did laundry at the riverbank, he stopped talking when we realised our shirts tunrned out to get tattered.";
+			mes "He became a kind of legend, people used to call him as Bowing Mouth or Chatterbox instead of his real name.";
+			mes "I've never seen a person talk as much as him.";
+			next;
+			mes "[Archer Zakk]";
+			mes "I've been many places, but I didn't see any guy who likes talking or being talkative.";
+			mes "Maybe other people agree on my opinion. Oh yes, I think you are with me.";
+			mes "As I see your face, you've got friends of few words so far! Hmm Hmm!!";
+			mes "Tactiturnity is bliss, you know.";
+			next;
+			mes "[Archer Zakk]";
+			mes "Ah, My friend Wolt? He doesn't have his place so he always stay at inn.";
+			mes "I guess you can meet him by now. Why don't you go see him?";
+			close;
+}
+//==================================  Archer Wolt  =======
+payon_in01.gat,176,176,2	script	"Archer Wolt"	88,{
+	mes "[Archer Wolt]";
+	mes "Archers should practice as much as they can. Otherwise they won't be an expert.";
+	mes "Are you new here? Howdy!";
+	next;
+	mes "[Archer Wolt]";
+	mes "I am Wolt the Archer. Just call me Wolt.";
+	mes "I know this is an expected question, do you tend to idle away your time?";
+	next;
+	menu "Hell no.",L_menu1,"Yeah I guess.",L_menu2;
+		L_menu1:
+			mes "[Archer Wolt]";
+			mes "Hmm...You don't? You are born to be an archer then.";
+			mes "We, archers should not idle away without practice.";
+			mes "So we hate people who are not dilligent.";
+			next;
+			mes "[Archer Wolt]";
+			mes "Did you ask how we practice? Duh...Archers of Payon don't have much time to play bowing as people in other places do.";
+			mes "Actual fighting equals to practice! Carrying a bow all the time and run after monsters!";
+			mes "That's the way we go!";
+			next;
+			menu "You must need a good bow.",L_sub1,"Oh well, isn't it a practice?",-;
+			close;
+				L_sub1:
+					mes "[Archer Wolt]";
+					mes "You've got the point, that's right! A Bow is the essence of a good archer!";
+					mes "Bows constructed in Payon are the greatest in this continent! They are light and stout, made out of high quality wooden blocks from Payon Forest!";
+					mes "The qulity of wood determines the quality of the bow. My sweety is made out of a walnut tree, it is stout enough to bear thousands of times of stretching.";
+					mes "Besides it's decorated with ebony, when you keep it well under, you feel great!";
+					next;
+					mes "[Archer Wolt]";
+					mes "Payon forest has been famous for thier quality of wood. Then suddenly trees turned into horrible creatures affected by evil force around the continent.";
+					mes "It is suck a pity to see tree monsters! They used to be beautiful....";
+					mes "However even if they became monsters, they still give us high quality woods! Then we make bows out of those items from monsters! Muhahahaha!";
+					next;
+					menu "Then why worry about it?",L_case;
+						L_case:
+							mes "[Archer Wolt]";
+							mes "But you know monsters don't appear only in the forest. Don't you realise why the archer village was established in this place?";
+							mes "Heading west, you can see a cave. Inside the cave, enormous monsters keep spawning without limit.";
+							mes "We are here, to protect our territory against them in obedience to our chief's order.";
+							next;
+							menu "Cave?!",L_para1,"Chief?",L_para2,"Oh man I hate this town~",L_para3;
+								L_para1:
+									mes "[Archer Wolt]";
+									mes "Head north of town, you can see the cave I told you about."
+									mes "Inside there, you will encounter lots of ugly monsters such as bastard looking like a bat or the walking dead.";
+									mes "If we let them out of the place, they would invade our town. We frequently clean up the cave.";
+									next;
+									mes "[Archer Wolt]";
+									mes "However they are endlessly respawned. It seems we're wasting our time and labor without nothing...";
+									mes "Enough already, let's cut off this crap. Even I can't talk more than this.";
+									mes "I have lots of things to do!";
+									close;
+								L_para2:
+									mes "[Archer Wolt]";
+									mes "Chief? Ah he is such a great person. Well, he always scolds me because of too much talking.";
+									mes "He always try to keep us in safety. Lately it seems he doesn't come out of his palace.";
+									mes "He is inside a room guarded by a warrior.";
+									next;
+									mes "[Archer Wolt]";
+									mes "Heheheh~ I will be in trouble if he gets to know I tell you this to a stranger~ hehehe~";
+									mes "Well somehow I already burst out of it, no use to regret!";
+									mes "Ummm however I think I'd better seal my lips by now. Ok bye, see you later dude!";
+									close;
+								L_para3:
+									mes "[Archer Wolt]";
+									mes "Well thats not very nice!";
+									mes "If you don't like our humble town then you should leave, bastard!";
+									close;
+		L_menu2:
+			mes "[Archer Wolt]";
+			mes "Hmm...sometimes you need rest.";
+			mes "Do you want to listen to my story? I set fire on my house during my last holiday~ hahaha~ I fell a sleep while I heated the bath.Hahaha!";
+			next;
+			menu "Is it ok to take a rest?",L_temp1,"But how about my training?",L_temp2,"...Blah see ya.",L_temp3;
+				L_temp1:
+					mes "[Archer Wolt]";
+					mes "Umm...it won't be ok if you don't practice and just goof around. Probably our chief will get mad at you...Well you could be the drunk in the pub in the future... Hahaha. Muhahaha.";
+					next;
+					menu "Chief?",L_sub_para1,"Drunk?",L_sub_para2,"I know you're already out of your mind!",L_sub_para3;
+					L_sub_para1:
+						mes "[Archer Wolt]";
+						mes "Chief? Ah he is such a great guy. Well, he always scolds me because I talk too much talking.";
+						mes "He always trys to keep us in safety. Lately it seems he doesn't come out of his palace.";
+						mes "He is inside a room guarded by a warrior.";
+						next;
+						mes "[Archer Wolt]";
+						mes "Heheheh~ I will be in trouble if he gets to know I tell you this to a stranger~ hehehe~";
+						mes "Well somehow I already burst it out, no use to regret!";
+						mes "Ummm however I think I'd better seal my lips by now. Ok bye, see you later dude!";
+						close;
+					L_sub_para2:
+						mes "[Archer Wolt]";
+						mes "Ah that guy in the pub. When I get spare money I buy him a drink sometimes, I am so worried about his drinking disorder.";
+						mes "He is one of my villagers, I don't want to see him dead.";
+						mes "Hmm...he reminds me of a jug full of beer...";
+						mes "I gotta go to the pub! Ok then, See you later!";
+						close;
+					L_sub_para3:
+						mes "[Archer Wolt]";
+						mes "Yeah dumbo.";
+						close;
+				L_temp2:
+					mes "[Archer Wolt]";
+					mes "Hmm...You don't? You are born to be an archer then.";
+					mes "We, archers should not idle away without practice.";
+					mes "So we hate people who are not dilligent.";
+					next;
+					mes "[Archer Wolt]";
+					mes "It is so amazing that lazy guy like me could be an archer.";
+					mes "Life is worth to live.";
+					mes "So live your life with passion!";
+					close;
+				L_temp3:
+					close;
+}
+//==================================  Archer Joe  =======
+pay_arche.gat,77,131,2	script	"Archer Joe"	88,{
+	mes "[Archer Joe]";
+	mes "Payon! What a wonderful place! Superb Bows! Excellent Archers!";
+	mes "Hay you! Have you heard of our fame?";
+	next;
+	menu "Oh yeah!",L_menu1,"Err Sorry?!",L_menu2,"......",L_menu3;
+	L_menu1:
+		mes "[Archer Joe]";
+		mes "Oh! You my man buddy! Archers of Payon! You know who we are!";
+		mes "Arrows of Payon Archers never miss the targets! Even it can aim at the heart of the enemy from a long distance!";
+		next;
+		menu "You like this place, huh?",L_Msub1,"Haha...",L_Msub2;
+		L_Msub1:
+			mes "[Archer Joe]";
+			mes "Yes! I love this place! So now I am researching Payon!";
+			mes "If you have any questions, please ask me!";
+			next;
+			menu "People are wearing unique costumes in here.",L_Mpara1,"Can you tell me what the building is in the middle of town?",L_Mpara2,"Who is the guy drinking...Over there?",L_Mpara3,"Talk to you later.",L_Mpara4;
+			L_Mpara1:
+				mes "[Archer Joe]";
+				mes "Yes, I agree.";
+				mes "You must know this place has been isolated from the outside because of the thick forest, and people living here got to form a very unique culture, which is quite different from the one of this continent.";
+				mes "This costume is the one of their traditional clothing! Why don't you try? It is very comfortable!";
+				close;
+			L_Mpara2:
+				mes "[Archer Joe]";
+				mes "Strangers are not allowed to enter the central palace. I've never been there.";
+				mes "People say, royal families and their friends from outside are gathered in the place.";
+				mes "In fact I would like to go in there. It attracts my attention.";
+				close;
+			L_Mpara3:
+				mes "[Archer Joe]";
+				mes "Oh! He is a notorious guy in this town! Don't treat him to drinks! You will regret that!";
+				close;
+			L_Mpara4:
+				mes "[Archer Joe]";
+				mes "Ok! Catch you later! See ya!";
+				close;
+		L_Msub2:
+			close;
+	L_menu2:
+		mes "[Archer Joe]";
+		mes "Oh boy, what a shame! How on earth can't you know there is something about archers of Payon!";
+		mes "Please come back later when you become more skillfull! Let's talk about what makes archers of Payon so attractive later!";
+		close;
+	L_menu3:
+		mes "[Archer Joe]";
+		mes "What makes you zip your mouth? Are you shy?";
+		mes "Ummm... you don't have to be shy before me..";
+		close;	
+}
+//================================== Monster Scholar Vuicokk =======
+payon_in01.gat,164,165,2	script	"Monster Scholar"	98,{
+	mes "[Monster Scholar Vuicokk]";
+	mes "Nice to meet you. I am Vuicokk the cholar in the monster research organization of Rune Midgard.";
+	mes "Do you have any questions about monsters of Rune Midgard?";
+	next;
+	menu "Late News.",L_menu1,"Undead Monster.",L_menu2,"Monster Research Organization.",L_menu3;
+	L_menu1:
+		mes "[Monster Scholar Vuicokk]";
+		mes "Payon is located deep inside the forest, you can easily get attacked by monster troops.";
+		mes "Besides a dangerous cave is near the town.";
+		next;
+		mes "[Monster Scholar Vuicokk]";
+		mes "Especially in the cave, monsters of undead attribute are spotted here and there, monster academic world is paying attention on the cave.";
+		mes "My mission in here is analysing their characters.";
+		close;
+	L_menu2:
+		mes "[Monster Scholar Vuicokk]";
+		mes "The remarkable feature of them is found in their origin.";
+		mes "Most of the monsters used to be the payon people who need to rest in peace by now.";
+		mes "Somehow their lost souls are wandering about the realm.";
+		next;
+		mes "[Monster Scholar Vuicokk]";
+		mes "It is totally classified from other monsters mutated from living creatures.";
+		mes "So our king takes great interest in Zombies,";
+		mes "Because they used to be the people who belonged to Rune Midgard when they were alive.";
+		next;
+		mes "[Monster Scholar Vuicokk]";
+		mes "His Majesty Tristram 3rd greatly encourages us to discover how to get rid of all the undead in this world.";
+		mes "We will try to eradicate sources of the undead as soon as we can, in compliance with the promise with families of them, in obedience to the king's order.";
+		next;
+		mes "[Monster Scholar Vuicokk]";
+		mes "I am sure to succeed.";
+		close;
+	L_menu3:
+		mes "[Monster Scholar Vuicokk]";
+		mes "Monster Research Organization has been formed as occasion demands to counter monsters that keep spawning without limit in our land.";
+		mes "The talent from all around the world are gathered in this organization to study the origin of monsters and to to feagure out how to defeat.";
+		next;
+		mes "[Monster Scholar Vuicokk]";
+		mes "Of course it is not that easy as you expect. We've studied them at the sacrifice of our lives.";
+		next;
+		mes "[Monster Scholar Vuicokk]";
+		mes "There have been countless amount of victims damaged by monsters during the mission...";
+		mes "However nothing can stop us. It is for you and our land, Rune-Midgard Kindom!";
+		next;
+		mes "[Monster Scholar Vuicokk]";
+		mes "Oops, I am so sorry to get too excited. I'm sorry.";
+		mes "Hmm hmm...anyway if you happened to meet Scholars like me, please treat them well.";
+		mes "Somehow we are carrying on this job for you not only for us.";
+		close;
+}
+//==================================  Chief  =======
+payon_in01.gat,136,147,2	script	Chief	120,{
+	check BaseLevel =< 30,-,L_Menu1;
+	random @R_SEL_NUM,2; 
+	check @R_SEL_NUM == 0,-,T_TALK0; 
+	mes "[Guard]";
+	mes "Hey hey! Show your respect to the chief!";
+	close;
+	T_TALK0:
+		check @R_SEL_NUM == 1,-,T_TALK2;
+		mes "[Guard]";
+		mes "Hey! I said...";
+		next;
+		mes "[Chief]";
+		mes "That's fine, I am ok. It's been a long time since I talked to such young people.";
+		next;
+		menu "Please tell me about Payon.",L_menu1,"Where the guards come from?",L_menu2,"Please tell me about the cave.",L_menu3,"I am wondering what archer does.",L_menu4,"I am wondering what hunter does.",L_menu5;
+		L_menu1:
+			mes "[Chief]";
+			mes "Payon is the city of highlanders, who'be been self-supporting and self-sufficient.";
+			mes "Although our ancestors couldn't take civillized cultural benefits as much as farmers or citizens did, they knew how to make their living without help.";
+			mes "Young acting power motivated them to survive from the elemetal forces. We, payon people including females have learned how to go hunt and how to protect ourselves from danger.";
+			next;
+			mes "[Chief]";
+			mes "I heard of weak young people who fear fields or dungeons filled with monsters. But to us, battle against monsters is a part of our lives.";
+			mes "That's why his majesty Tristram 3rd expects us to teach young people how to efficiently fight against evil creatures.";
+			close;
+		L_menu2:
+			mes "[Chief]";
+			mes "Prontera has sent civil servants to Payon as I was young.";
+			mes "Royal troops, Kafra ladies, officers...at first we used to argue due to different customs.";
+			mes "However I cannot deny they've helped to activate foreign trade with other countries briskly.";
+			next;
+			mes "[Chief]";
+			mes "Now young people outside Payon constitute themselves Payon villagers...I could hardly imagine this scene when I was young. Hh huh...";
+			mes "I am very pleased to see them. Even though they came from other places they love Payon.";
+			close;
+		L_menu3:
+			mes "[Chief]";
+			mes "The cave up North is the place I used to goto sometimes.";
+			mes "It was harder then now, evil creatures that I'd never seen kept respawning inside without limit.";
+			mes "Present monsters are...different from the monsters we used to fight with.";
+			next;
+			mes "[Chief]";
+			mes "Have you ever happened to see? A lasting grudge coming out of the cave...it was caused from the dead who never came back after going inside the cave to protect this village.";
+			next;
+			mes "[Chief]";
+			mes "Those walking dead make another victim...ah...I am too old to endure such a severe pain...I am too old...";
+			next;
+			mes "[Chief]";
+			mes "I can do anything to stop the dead.....I can do anything....";
+			close;
+		L_menu4:
+			mes "[Chief]";
+			mes "We gather enough wood from the huge forest surrounding Payon.";
+			mes "It is a natural benefit that we own excellent archers. You might think Forest welcomes archers to practice bowing, but it takes the side opposite yours."
+			next;
+			mes "[Chief]";
+			mes "The forest aids you in hiding yourself, blocking the way of enemies who must approch to attack.";
+			mes "Archers are dexterous to attack dull enemies from a long distance.";
+			next;
+			mes "[Chief]";
+			mes "Besides...there is an expected merit being inside the forest. When I was young I was out of arrows while fighting against monsters in the woods, but arrows dropped by monsters saved my life from them. Muhahahaha!";
+			close;
+		L_menu5:
+			mes "[Chief]";
+			mes "As foreign cultures were introduced in Payon, the battle style of ours has been changed.";
+			mes "Especially explosive compound and technology have remarkably affected on people's life style. It seems people were not satisfied only with bows and arrows to fight.";
+			next;
+			mes "[Chief]";
+			mes "Trapping skills which enable to hunt monsters easier were invented, so the previous Chief granted them a name of hunter.";
+			mes "Even though it was all the go on the first place, trapping is a really dangerous skill, we hardly approve the youth to be hunters.";
+			next;
+			mes "[Chief]";
+			mes "People who have enough responsibility on themselves can challange on the class.";
+			close;
+			next;
+	T_TALK2:
+		check @R_SEL_NUM == 3,-,T_TALK3;
+		mes "[Chief]";
+		mes "Tired... I'd better take a rest then. Take care of yourself.";
+		close;
+	T_TALK3:
+		mes "[Guard]";
+		mes "The Chief is taking a rest. Would you mind if I ask you to come back later?";
+		close;
+}
+//==================================  Guard  =======
+payon_in01.gat,129,140,2	script	Guard	105,{
+	check BaseLevel =< 30,-,L_Menu1;
+	mes "[Guard]";
+	mes "Yo yo yo, you are not allowed to come in.";
+	mes "Go outside.";
+	close;
+	L_Menu1:
+	mes "[Guard]"
+	mes "Sorry but you are not allowed to come in.";
+	mes "Please leave.";
+	close;
+}

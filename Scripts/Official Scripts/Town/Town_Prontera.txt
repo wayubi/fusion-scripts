@@ -1,0 +1,240 @@
+//----------------------------------------------------------------------
+// スクリプト : Town_Prontera v1.0
+//----------------------------------------------------------------------
+
+// 街
+
+prontera.gat,54,240,6	script	Man	97,{
+	mes "[Man]";
+	mes "The Bug form of creamy, ^000077Fabre^000000 will first change to ^000077Pupa^000000, then turn into ^000077Creamy^000000";
+	mes "One day, I was on my way to Geffen, I actually saw it change, it really sickens me.";
+	next;
+	mes "[Man]";
+	mes "But everyone here seems to be killing them without thinking what will happen when it extincts...";
+	close;
+}
+
+prontera.gat,101,288,3	script	Man	98,{
+	mes "[Man]";
+	mes "There are pink colored monsters: ^000077Poring^000000 outside the town";
+	mes "They're cute, and don't attack people, but they like to eat whatever that's on the ground.";
+	next;
+	mes "[Man]";
+	mes "It's kinda troublesome to have your stuff stolen by them, but good thing is that they are very weak,";
+	mes "There are green colored version call ^000077Poporings^000000, it's much stronger than Porings, so if you're a novice, you better be careful.";
+	close;
+}
+
+prontera.gat,106,116,5	script	Girl	91,{
+	mes "[Girl]";
+	mes "Me and my family was out for a nice picnic in the holiday.  While we're looking for a quite place to sit, deep inside the forest, we saw something incredible.  It was a huge army of bees!";
+	next;
+	mes "[Girl]";
+	mes "I have never saw that many bees in my life!  But what suprised me is that they all seems to be listen to a queen bee.";
+	mes "She was using a Honeycomb to control all the worker bees.  If every man in this world can be control like that, how wonderful it'll be!";
+	close;
+}
+
+// Library
+
+prt_in.gat,178,92,0	script	"Curator of Library"	57,{
+	mes "[Guiss]";
+	mes "Right now, it's in the preparation. Please come back later.";
+	mes "Ah, and So is the other one.";
+	next;
+	mes "[Guiss]";
+	mes "Actually, we have tons of classics which need to be preserved.That's why we open libraries only a couple of times a year.";
+	mes "Don't be sorry for this.";
+	close;
+}
+
+prt_in.gat,175,50,0	script	Ellen	71,{
+	mes "[Ellen]";
+	mes "Ah... Um.. Right now, it is in the preparation... so please come by next time.";
+	mes "Ah! And So is the other one.";
+	close;
+}
+
+// 騎士団
+
+prt_in.gat,87,92,4	script	Knight	65,{
+	mes "[Knight]";
+	mes "I wish I could attck and defend at the same time. You know,when you use the weapon which have to grip with both hands, your defence will be weaker than usual because you can't hold a shield at the same time...";
+	mes "There should be the weapon which covers the weakness.";
+	next;
+	mes "[Knight]";
+	mes "If I could make that weapon,definately it would show me the money... oh well.";
+	close;
+}
+
+prt_in.gat,88,105,2	script	Recruiter	105,{
+	check SEWER_PRT == 1,-,L_START_1;
+		mes "[Recruiter]";
+		mes "Well,You joined in the Culvert Campaign .Would you let me guide you?";
+		next;
+		menu "Go toward the Enterance.",-,"Quit.",L_START_2;
+			warp "prt_fild05",274,208;
+	L_START_1:
+		mes "[Recruiter]";
+		mes "Let me inform the Notice from the Capital Defense Headquarter of Rune-Midgard Kingdom.";
+		mes "We decided to recruit the punitive force through this incident.";
+		next;
+		menu "Volunteer.",L_MENU_1,"Incident....?",L_MENU_2,"Quit.",L_START_2;
+	L_MENU_1:
+			set SEWER_PRT = 1;
+			mes "[Recruiter]";
+			mes "Your registration confirmed . We will try to maintain peace and order in Rune-Midgard Kingdome.And I appreciate you speaking for Capital Defense Headquarter.";
+			mes "These are subsidies. 3 Red Potions, 1 Milk.";
+			mes "And 1 Orange Potion for Emergency.";
+			additem 501,3;
+			additem 519,1;
+			additem 502,1;
+			next;
+			mes "[Recruiter]";
+			mes "Are you ready? I will warp you to the Culvert.";
+			warp "prt_fild05",274,208;
+	L_MENU_2:
+			mes "[Recruiter]";
+			mes "Didn't you hear yet?";
+			mes "The Culvert is infested with noxious insects.We found out sewages and moggots there.What a huge disturbance at that time...Never hear that?";
+			next;
+			mes "[Recruiter]";
+			mes "Since the incident occurred,it has been forbidden the people to use water supply by the Quaratine.";
+			mes "Needless to say,the people has suffered in extreme water disturbance.In time,it would cause distrust in Protera Kingdom.";
+			mes "The situation has become critical.Restlessness prevails among the people.";
+			next;
+			mes "[Recruiter]";
+			mes "Alrighty,Warriors!!!!The People needs you!!";
+			mes "Let's expel those craps from our land!!!";
+			mes "Anyone want to fight for????";
+			next;
+			menu "Volunteer.",L_MENU_1,"Quit.",L_START_2;
+	L_START_2:
+		close;
+}
+
+// 教会
+
+prt_church.gat,27,24,2	script	Sister	79,{
+	mes "[Sister]";
+	mes "We as priests, are all against using blade weapons.  Because we want to convert the monsters, not killing them.";
+	close;
+}
+
+// 室内
+
+prt_church.gat,84,57,2	script	Fun	85,{
+	mes "[Fun]";
+	mes "Are you having fun on your journey?";
+	mes "I wish you a wonderful day everyday here.";
+	mes "Oh, I'm the nice knight, Fun.";
+	mes "Don't worry about me, have some fun...  hahaha";
+	close;
+}
+
+prt_in.gat,47,141,1	script	Oldman	56,{
+	mes "[Oldman]";
+	mes "It's been so long for anyone to go into the sewer.  Recently, I heard from people saying it's been infested by ^000077Thief bugs!^000000";
+	next;
+	mes "[Oldman]";
+	mes "Anyways, its growth in population size so fast, we can't even use them as food.  Feels like they can survive even if the whole world is destroyed!!";
+	close;
+}
+
+prt_in.gat,26,31,4	script	Oldman	97,{
+	mes "[Oldman]";
+	mes "You might not believe me whatn I saw in ^000077Culvet Sewer^000000!";
+	mes "My family has been maintaining the sewer system for 3 generations, I have the knowledge of all of my anciesters about the sewer.";
+	mes "When I was in the 4th floor, I saw a shining ^000077Thief Bug^000000 in the dark!";
+	next;
+	mes "[Oldman]";
+	mes "A shining thief bug!  How can a thief bug shin like that?  I guess anywhere in the world there's something that shins like that";
+	close;
+}
+
+// 宿屋
+// 独自仕様に変更のためコメントアウト
+
+//prontera_in.gat,244,135,0	script	従業員アルマ	53,{
+//   	mes "[従業員セミ]";
+//	mes "いらっしゃいませ～旅館'ネンカラス'にようこそ～お客様、何の御用ですか？";
+//	next;
+//	menu "セーブする",-,"やめる",L_START_1;
+//		mes "[従業員セミ]";
+//		mes "はい、セーブできました。ありがとうございました！";
+//		save "prontera_in",238,130;
+//	L_START_1:
+//		close;
+//}
+//
+//prontera_in.gat,61,141,4	script	旅館従業員	94,{
+//  	mes "[従業員アルマ]";
+//	mes "いらっしゃいませ～旅館'ネンカラス'にようこそ～何の御用ですか？";
+//	next;
+//	menu "セーブする",-,"やめる",L_START_1;
+//		mes "[従業員アルマ]";
+//		mes "はい、こちらでセーブできました。ご利用ありがとうございま～す。";
+//		save "prontera_in",64,136;
+//	L_START_1:
+//		close;
+//}
+//
+// 兵士
+
+prontera.gat,160,330,8	script	Guard	105,{
+	scriptlabel PronteraGuards;
+	mes "Welcome to Prontera.";
+	close;
+}
+
+prontera.gat,229,104,5	script	Guard	105,{
+	script PronteraGuards;
+}
+
+prontera.gat,223,99,1	script	Guard	105,{
+	script PronteraGuards;
+}
+
+prontera.gat,52,344,5	script	Guard	105,{
+	script PronteraGuards;
+}
+
+prontera.gat,47,399,5	script	Guard	105,{
+	script PronteraGuards;
+}
+
+// 地下水路
+
+prt_fild05.gat,270,212,5	script	"Culvert Guardian"	105,{
+	check SEWER_PRT == 0,-,L_START_1;
+		mes "[Culvert Guardian]";
+		mes "Sorry,Only Volunteers for the Culvert Campaign can go inside.";
+		mes "You can check this issue in the ^000077Culvert Registrar's Office^000000.It is located at the North-West,direction of 11 O'clock.";
+		close;
+	L_START_1:
+		mes "[Culvert Guardian]";
+		mes "Here you are.The entrance of the Culvert.Are you sure you want to Go inside?";
+		next;
+		menu "Sure.",-,"Quit.",L_MENU_1;
+			warp "prt_sewb1",131,247;
+	L_MENU_1:
+			close;
+}
+
+// プロ北
+
+prt_maze02,100,69,0	script	Guard	105,{
+	mes "[Guard]";
+	mes "Hey, I don't get your point but I say you should take a rest in home rather than go inside the forest.Don't you ever be told the Demon lurks there?";
+	mes "Naturally,Nobody came back on the hoof so I am not sure whether it really exists or not... well,Do as you want,dude.I am not your mother.";
+	close;
+}
+
+prt_maze02,110,69,0	script	Guard	105,{
+	mes "[Guard]";
+	mes "Phew...That geek who went inside last time, never returned either.";
+	mes "I tried to stop him so many times but he never took it seriously.He told me he needed herbs.";
+	mes "If I were him, I would never give up my life for stupid herbs.";
+	close;
+}
+

@@ -1,0 +1,909 @@
+//----------------------------------------------------------------------------------------
+// Hair Dye Event - From Weiss, translated by Ziganow, Bug Fixes by AlexKreuz [Izlude.Net]
+// eWeiss Project 2003 - http://weiss.kittyloaf.net
+//----------------------------------------------------------------------------------------
+
+
+alberta_in.gat,133,55,3	script	RUITSU	84,{
+		check MOLGENSTAIN == 2,-,L_START_1;
+			mes "[Merchant RUITSU]";
+			mes "Mr. ...";
+			mes "it is how -- or [ having called on the scientist with that amusing head of ? Geffen ]?";
+			next;
+			menu "Talk about MORUGEN Stein.",-,"Go Away",L_MENU_1;
+				mes "[Merchant RUITSU]";
+				mes "Although that fellow's room was heard by Geffen, has not it visited yet??";
+				mes "... what?...it is already...isn't it useless? An uncanny thing may be made with that solution.";
+				close;
+	L_MENU_1:
+				mes "[Merchant RUITSU]";
+				mes "if you want to say some in some cases -- talking -- it is how Although there is no way of accustoming depending on which mind does not progress well";
+				close;
+	L_START_1:
+		mes "[Merchant RUITSU]";
+		mes "What business?";
+		next;
+		checkitem 971,1,-,L_START_2;
+		checkitem 972,1,-,L_START_2;
+		menu "Talk",L_MENU_1_1,"Talk about solution etc.",L_MENU_1_2,"Go Away.",L_MENU_1_3;
+	L_MENU_1_1:
+			mes "[Merchant RUITSU]";
+			mes "It is Geffen in order to get a magic tool.   There was a time of being in the village to say. Then, the rumor about a chemist with the amusing one head will be heard.";
+			mes "It is because ... which was not obtained at all, because he did not look at me since they were doing unconsciousness to research, although visited and seen, interest having been made and hearing it here and there.";
+			next;
+			mes "[Merchant RUITSU]";
+			mes "Then, surely he heard the language said in the soliloquy.";
+			mes "'KARUBODIRU ... Date RIMIN ... '";
+			mes "Although merely considered and cooked at least to somniloquy at first, other new liquids with which it is different from water during long time if commercial work is done came to be found.";
+			close;
+	L_MENU_1_2:
+			set MOLGENSTAIN = 1;
+			mes "[Merchant RUITSU]";
+			mes "... is this that solution? the new thing which has not been seen in fact although I also heard only rumor -- what -- good -- a hand -- putting in -- a shelf";
+			mes "However, although it is regrettable what should be carried out now, I am not dividing. Only that fellow should know all.";
+			next;
+			mes "[Merchant RUITSU]";
+			mes "Probably, you who are an adventure person want to surely visit to that chemist and to solve the question.";
+			mes "A chemist's room is obtained in the gratitude which was allowed to carry out the actual thing of the new solution. Since it is an old thing, although he does not remember the detailed position,";
+			mes "The chemist lives in Geffen. Name^0000ffMORUGEN Stein^000000he had said.";
+			next;
+			mes "[Merchant RUITSU]";
+			mes "If it is heard by Geffen, it turns out that it is detailed.";
+			mes "Good luck.";
+			close;
+	L_MENU_1_3:
+			mes "[Merchant RUITSU]";
+			mes "Is it unsatisfying?.";
+			close;
+	L_START_2:
+		checkitem 972,1,-,L_START_3;
+		menu "Talk.",L_MENU_1_1,"Talk about KARUBODIRU.",-,"Don't Talk",L_MENU_1_3;
+			set MOLGENSTAIN = 1;
+			mes "[Merchant RUITSU]";
+			mes "... is this the KARUBODIRU? the new thing which has not been seen in fact although I also heard only rumor -- what -- good -- a hand -- putting in -- a shelf.";
+			mes "However, although it is what should be carried out now, I am not dividing. Only that fellow should know all.";
+			next;
+			mes "[Merchant RUITSU]";
+			mes "A chemist's room is obtained in the gratitude which was allowed to carry out the actual thing of the new solution. Since it is an old thing, although he does not remember the detailed position...,";
+			mes "The chemist lives in Geffen. Named^0000ffMORUGEN Stein^000000 he had said.";
+			next;
+			mes "[Merchant RUITSU]";
+			mes "If it is heard by Geffen, it turns out that it is detailed.";
+			mes "Good luck.";
+			close;
+	L_START_3:
+		checkitem 971,1,-,L_START_4;
+		menu "Talk.",L_MENU_1_1,"Talk about KARUBODIRU.",-,"Don't Talk",L_MENU_1_3;
+			set MOLGENSTAIN = 1;
+			mes "[Merchant RUITSU]";
+			mes "... is this the KARUBODIRU? the new thing which has not been seen in fact although I also heard only rumor -- what -- good -- a hand -- putting in -- a shelf..";
+			mes "However, although it is what should be carried out now, I am not dividing. Only that fellow should know all.";
+			next;
+			mes "[Merchant RUITSU]";
+			mes "A chemist's room is obtained in the gratitude which was allowed to carry out the actual thing of the new solution. Since it is an old thing, although he does not remember the detailed position...,";
+			mes "The chemist lives in Geffen. Named^0000ffMORUGEN Stein^000000 he had said.";
+			next;
+			mes "[Merchant RUITSU]";
+			mes "If it is heard by Geffen, it turns out that it is detailed.";
+			mes "Good luck.";
+			close;
+	L_START_4:
+		menu "Talk",L_MENU_1_1,"Leave alone",L_MENU_1_3;
+}
+
+geffen.gat,184,114,6	script	"AURU day phon"	82,{
+		check MOLGENSTAIN == 2,-,L_START_2;
+			mes "[Geffen residents   AURU day phon]";
+			mes "Did fate lead us once again? It was waiting for you to come.";
+			mes "It comes out... Or [ having met those whom you are looking for ]?";
+			next;
+			menu "Talk about MORUGEN Stein.",-,"Stop",L_MENU_1;
+				mes "[Geffen residents   AURU day phon]";
+				mes "Doesn't it meet yet?";
+				mes "He is a blacksmith.   It lives in the second floor. Although it is for a while, since it is an important talk, it talks. Please be careful! It is better for approaching him too much to avoid.";
+				close;
+	L_MENU_1:
+				mes "[Geffen residents   AURU day phon]";
+				mes "Only while it was for a while, a certain will was felt from your seen face. But do you tell me nothing?";
+				mes "I am that you thought that you were already a friend.   ... Was it only my illusion?";
+				close;
+	L_START_2:
+		mes "[Geffen residents   AURU day phon]";
+		mes "The time which passed away at once does not return. Even if it is the power of great magic. Time is flowing also at this moment that I am telling to such a wind.";
+		mes "Why was I really called the thing??";
+		next;
+		check MOLGENSTAIN > 0,-,L_START_3;
+			menu "Talk",-,"I heard about MORUGEN Stein.",L_MENU_2_1,"Stop",L_MENU_2_2;
+				mes "[Geffen residents   AURU day phon]";
+				mes "The power of magic is studied and I who pursue am also common.   I do not think people. Does it seem that but this world has many really rare people?";
+				mes "If it is you, can even something take in being able to apply all? having given up surrounding [ all ] ... I tried to want to be out of order in something completely -- alike ...";
+				close;
+	L_MENU_2_1:
+				set MOLGENSTAIN = 2;
+				mes "[Geffen residents   AURU day phon]";
+				mes "If it knows about that madness, do you also have distance with normal people? Although it seems to want to know in many cases about that man";
+				mes "I am impossible for explaining his thing in detail. I'm sorry, please understand also by ... The maximum action which I can do will only obtain his room.";
+				next;
+				mes "[Geffen residents   AURU day phon]";
+				mes "He is a blacksmith.   It lives in the second floor. Although it is for a while, since it is an important talk, it talks. Please be careful! It is better for approaching him too much to avoid.";
+				close;
+	L_MENU_2_2:
+				mes "[Geffen residents   AURU day phon]";
+				mes "Only while it was for a while, a certain will was felt from your seen face. But do you tell me nothing?";
+				mes "Although it is, there is also no method of comrades as me... Also for one human being, Nature is ..., i.e., man's will, a part... It is since it is like being the flow of Nature.";
+				close;
+	L_START_3:
+		menu "Talk",-,"Stop",L_MENU_3;
+			mes "[Geffen residents   AURU day phon]";
+			mes "The power of magic is studied and I who pursue am also common.   I do not think people. Does it seem that but this world has many really rare people?";
+			mes "If it is you, can even something take in being able to apply all? having given up surrounding [ all ] ... I tried to want to be out of order in something completely -- alike ...";
+			close;
+	L_MENU_3:
+			mes "[Geffen residents   AURU day phon]";
+			mes "Only while it was for a while, a certain will was felt from your seen face. But do you tell me nothing?";
+			mes "Regrettably there is also no method of comrades as me... Also for one human being, Nature is ..., i.e., man's will, a part... It is since it is like being the flow of Nature.";
+			close;
+}
+
+geffen_in.gat,141,140,3	script	"MORUGEN Stain"	121,{
+		check MOLGENSTAIN == 3,-,L_START_3;
+		mes "[Chemist   MORUGEN Stein]";
+		mes "HIHIHIHI .... A way is just . HIHIHIHI.... HIHIHIHIHITSU";
+		next;
+		menu "I heard about the research currently done now.",-,"Ask to make a new thing.",L_MENU_1,"Stop",L_MENU_0;
+			mes "[Chemist   MORUGEN Stein]";
+			mes "HIHIHIHI ... I tried to want to hear it about the research which I am doing by somewhere.";
+			mes "It meets [ ...to which hiding also dropped off / ... HIHIHIHIHI ].. After knowing all, it says without [and] hiding... Disagreeable";
+			next;
+			mes "[Chemist   MORUGEN Stein]";
+			mes "... It is expected that the research which I was doing has already been completed.";
+			mes "It can do [ ... Time / .... HIHIHITSU ] in this gifted of mine... HIHIHI .... Time is only a problem.";
+			next;
+			mes "[Chemist   MORUGEN Stein]";
+			mes "... [ ... It was only going to find the method of melting what is not melted in water. ] It was said that he wanted to know about the research... It is ...  even if it takes.";
+			mes "Isn't there any profoundly interesting? That hard rock and iron   The method of melting a lump into a weak liquid!!!";
+			mes "any -- or -- although -- muddily ---- it will come [!! ] to be alike muddily HIHI!!! ... HIHIHIHITSU!! ... It is !!!. HIHIHIHIHHIHI muddily!!! !.";
+			next;
+			mes "[Chemist   MORUGEN Stein]";
+			mes "passing ... and ... anyhow .. yet --   Some have been found out although all cannot be melted.";
+			mes "... which can make what has ... newer than what you can imagine by this method many ... It is if only you wish!! ";
+			mes "... such .. a face becomes red while blood conveyance is activated in the body -- this -- feeling ... a pleasant liquid secretes in the head -- having -- a joy like pleasure -- ???   this -- feeling ... such -- such ..... ";
+			mes " -- only wishing ... ";
+			close;
+	L_MENU_1:
+			mes" [Chemist   MORUGEN Stein] ";
+			mes" -- HIHIHIHITSU .... you were also interested too .";
+			mes" -- so ... that is right ... a world -- whom -- interest [   ] -- not having -- ? which obtained and dropped off ... a thing -- this pleasant and excited ... FUFUFUFU";
+			mes"... Paddle ?? which wants to make what.. Well ? HIHIHIHI";
+			next;
+			menu "Neutralizer",-,"Mixture",L_MENU_2;
+				mes" [chemist   MORUGEN Stein] ";
+				mes" ... it was said that he wanted to make a neutralizer -- buying ... FU   FU   FU   FU -- the preparation thing for this play is obtained in ... ";
+				mes" ... which ... ... ...... such ...... ";
+				next;
+				mes" [chemist   MORUGEN Stein] ";
+				mes" ..... remembered ... so ... alcohol .... and ..... date RIMIN --   sky ? which can keep .... and it ... ";
+				mes" -- which can be made if there are even these three preparation things -- I want to ask ... and me the gratitude of the gratitude which came to enjoy this play that gifted ... and   technology collected ... HIHIHIHITSU";
+				mes" ... it cuts in ... so much -- it has not rubbed ... a great thing does not want me ... FU   FU   FU   FU ... great ....";
+				mes " ... 3000    What is necessary is just to take out even Zeny... HIHIHIHI";
+				mes ".... .....? which is not the reason which carries out by accident and is regarded as high ... it is moved by me -- Mr. ... has ... too like me, and creative ... HIHIHIHIHIHIHIHIHIHIHITSU";
+				next;
+				mes "[Chemist   MORUGEN Stein]";
+				mes "... Does it begin? ....";
+				next;
+				menu "Talk",-,"Don't Talk",L_ROOT_1;
+					checkitem 970,1,-,L_SUB_1_1;
+					checkitem 971,1,-,L_SUB_1_1;
+					checkitem 713,1,-,L_SUB_1_1;
+					check Zeny >= 3000,L_SUB_1_2,-;
+	L_SUB_1_1:
+					mes "[Chemist   MORUGEN Stein]";
+					mes "FUFUFUFU [ .. HAA / .... Quick / .. Quick / ... Before having collected material!! /] .... It is insufficient... HAA";
+					mes "Play is then... It is FUFUFUFUFU.";
+					close;
+	L_SUB_1_2:
+					mes "[Chemist   MORUGEN Stein]";
+					mes "...... HIHIHIHIHIHI ...... so ... in this way ...... so ... ??? ... more ........ HIHIHIHIHI";
+					mes ".... AA .... AHA ... HA .... AHA ....!!! !!!.";
+					next;
+					delitem 970,1;
+					delitem 971,1;
+					delitem 713,1;
+					set Zeny -= 3000,0;
+					additem 973,1;
+					mes "[Chemist   MORUGEN Stein]";
+					mes "..........";
+					close;
+	L_ROOT_1:
+					mes "[Chemist   MORUGEN Stein]";
+					mes "HI... HIHIHI....";
+					close;
+	L_MENU_2:
+				mes "[Chemist   MORUGEN Stein]";
+				mes "... it was said that he wanted to make a mixture -- buying ... FU   FU   FU   FU -- the preparation thing for this play is obtained in ...";
+				mes "... which ... ... ...... such .....";
+				next;
+				mes "[Chemist   MORUGEN Stein]";
+				mes "..... remembered ... so ... alcohol .... and ..... KARUBODIRU .... and it can be kept   Empty ?";
+				mes "...which can be made if there are even these three preparation things...gifted to ... and me   I want to ask the gratitude of the gratitude which came to enjoy this play that technology collected ... HIHIHIHITSU";
+				mes " it cuts in ... so much -- it has not rubbed ... a great thing does not want me ... FU   FU   FU   FU ... great....";
+				mes "... 4000Zeny ...    What is necessary is just to take out even Zeny... HIHIHIHI";
+				mes "......What? which is not the reason which carries out by accident and is regarded as high ... it is moved by me -- Mr. ... has ...too like me, and creativ .... HIHIHIHIHIHIHIHIHIHIHITSU";
+				next;
+				mes "[Chemist   MORUGEN Stein]";
+				mes " ... Does it begin? ....";
+				next;
+				menu "Talk",-,"Go Away",L_ROOT_2;
+					checkitem 970,1,-,L_SUB_2_1;
+					checkitem 972,1,-,L_SUB_2_1;
+					checkitem 713,1,-,L_SUB_2_1;
+					check Zeny >= 4000,L_SUB_2_2,-;
+	L_SUB_2_1:
+					mes "[Chemist   MORUGEN Stein]";
+					mes "FUFUFUFU [ .. HAA / .... Quick / .. Quick / ... Before having collected material!! ] .... It is insufficient... HAA";
+					mes "Play is then... It is FUFUFUFUFU.";
+					close;
+	L_SUB_2_2:
+					mes "[Chemist   MORUGEN Stein]";
+					mes ".... HIHIHIHIHIHI ...... so ... in this way ...... so .... more ........ HIHIHIHIHI";
+					mes ".... AA .... AHA ... HA .... AHA ....!!!";
+					next;
+					delitem 970,1;
+					delitem 972,1;
+					delitem 713,1;
+					set Zeny -= 4000,0;
+					additem 974,1;
+					mes "[Chemist   MORUGEN Stein]";
+					mes " .........";
+					close;
+	L_ROOT_2:
+					mes "[Chemist   MORUGEN Stein]";
+					mes "FU...FUFUFU";
+					close;
+	L_MENU_0:
+		mes "[Chemist   MORUGEN Stein]";
+		mes "FUFUFUF...FUFU";
+		close;
+	L_START_3:
+		check MOLGENSTAIN == 2,-,L_START_4;
+			set MOLGENSTAIN = 3;
+			mes "[Chemist   MORUGEN Stein]";
+			mes "HIHIHIHI .... Just way. HIHIHIHI .... HIHIHIHIHITSU .... ";
+			next;
+			mes "[Chemist   MORUGEN Stein]";
+			mes " [ ... I / ... A long time sees a living man. ] ... It is bad when impolite... HIHIHIHI";
+			mes "that is right ... it is what business -- ?";
+			next;
+			menu "It is heard about the research currently done now",-,"It asks to make a new thing.",L_MENU_3_1,"It stops",L_MENU_3_2;
+		mes "[Chemist   MORUGEN Stein]";
+		mes "HIHIHIHI .... A way is just . HIHIHIHI.... HIHIHIHIHITSU";
+		next;
+		menu "I heard about the research currently done now.",-,"Ask to make a new thing.",L_MENU_1,"Stop",L_MENU_0;
+			mes "[Chemist   MORUGEN Stein]";
+			mes "HIHIHIHI ... I tried to want to hear it about the research which I am doing by somewhere.";
+			mes "It meets [ ...to which hiding also dropped off / ... HIHIHIHIHI ].. After knowing all, it says without [and] hiding... Disagreeable";
+			next;
+			mes "[Chemist   MORUGEN Stein]";
+			mes "... It is expected that the research which I was doing has already been completed.";
+			mes "It can do [ ... Time / .... HIHIHITSU ] in this gifted of mine... HIHIHI .... Time is only a problem.";
+			next;
+			mes "[Chemist   MORUGEN Stein]";
+			mes "... [ ... It was only going to find the method of melting what is not melted in water. ] It was said that he wanted to know about the research... It is ...  even if it takes.";
+			mes "Isn't there any profoundly interesting? That hard rock and iron   The method of melting a lump into a weak liquid!!!";
+			mes "any -- or -- although -- muddily ---- it will come [!! ] to be alike muddily HIHI!!! ... HIHIHIHITSU!! ... It is !!!. HIHIHIHIHHIHI muddily!!! !.";
+			next;
+			mes "[Chemist   MORUGEN Stein]";
+			mes "passing ... and ... anyhow .. yet --   Some have been found out although all cannot be melted.";
+			mes "... which can make what has ... newer than what you can imagine by this method many ... It is if only you wish!! ";
+			mes "... such .. a face becomes red while blood conveyance is activated in the body -- this -- feeling ... a pleasant liquid secretes in the head -- having -- a joy like pleasure -- ???   this -- feeling ... such -- such ..... ";
+			mes " -- only wishing ... ";
+			close;
+	L_MENU_3_1:
+				mes "[Chemist   MORUGEN Stein]";
+				mes "HIHI .... HIHIHIHI .... ";
+				close;
+	L_MENU_3_2:
+				close;
+	L_START_4:
+		mes "[Chemist   MORUGEN Stein]";
+		mes "HIHIHIHI -- Mr. ... him .... there should not be the smell of the meat which has a memory in a long time.";
+		mes "Man ... Are you man? Man to whom it is also valid   ... HIHIHIHIHIHI";
+		close;
+}
+
+prontera.gat,78,150,3	script	Dairen	90,{
+		mes "[Maiden of a village   Dairen]";
+		mes "such ... these days -- an open space -- people -- many -- double -- it is coarse";
+		mes "What -- this dust - being dirty ... isn't all it a good reason just because it is a capital?";
+		mes " ... What does it seem to be from it? ";
+		next;
+		menu "Talk",-,"Stop",L_MENU_1;
+			mes "[Maiden of a village   Dairen]";
+			mes "or [ that it is possibly interested in a party or a dress ] -- not knowing .";
+			mes "the highest of late -- being in fashion -- splendid, whatever it may call it   Is it the dress decorated by the color?";
+			next;
+			mes "[Maiden of a village   Dairen]";
+			mes "in order to take out the color from which even the soul is likely to be taken -- desert village   the dye currently made only from MOROKU -- using it --  -- although it has said that it is useless ...  to which the price of the dye is beyond imagination";
+			mes "such .. what to wear at least at once";
+			close;
+	L_MENU_1:
+			mes "[Maiden of a village   Dairen]";
+			mes "...What ? man's thing..... setting ... a strange person";
+			close;
+}
+
+morocc_in.gat,146,99,3	script	Zabadorihan	58,{
+		mes "[Zabadorihan]";
+		mes " ... the weather is true -- it is hot . -- such weather   To making dye, it is tight.";
+		next;
+		menu "Talk",-,"Dye is built.",L_MENU_2,"Go away",L_MENU_3;
+			mes "[Zabadorihan]";
+			mes "There is nothing that I want to tell to you independently.";
+			mes "But, it is made to hear it if it is the talk of my past..";
+			mes "A few is [ which it is long and is not loaded ] whether to hear it, although it may not be.?";
+			next;
+			menu "I heard about it",-,"Didn't hear about",L_MENU_1_1;
+				mes "[Zabadorihan]";
+				mes "From [ before I am born and discretion sticks ] ... Father   Dye was made..";
+				mes "Time long like there is no... and the father had been making dye.";
+				mes "It meets... When a mother is sick and dies ... It did not stop making dye..";
+				mes "Then, such a father was hateful...";
+				next;
+				mes "[Zabadorihan]";
+				mes "Such a father is disagreeable.. It is dye automatically.   Although structure also becomes disagreeable, it comes out of a house when young, and anything is done and it excels.";
+				mes "but ... now, I go back [ home ] again and trade is in me by ... making dye ... I tried to want for blood not to have ... probably ... even if it begins .... obtaining ... a 15-year ...  shelf.";
+				next;
+				mes "[Zabadorihan]";
+				mes "These days came and it felt... It is  now as which a father can understand..";
+				mes "While the father threw all away why, was crazy to making dye?...";
+				next;
+				mes "[Zabadorihan]";
+				mes "that color that the work repeated repeatedly overlaps and probably dyes it ... in order to take out the color of a phantom which was seen in much time and the dream   it was....";
+				next;
+				mes "[Zabadorihan]";
+				mes "FUTSU [ ... It is / or / it was from what body . year / which present I believe so / before ]. / ... From the moment that what a color says comes to be understood / ... It is ? why it is known... It.....";
+				mes "See.I did not get a father -- that color is surely taken out and is shown.";
+				close;
+	L_MENU_1_1:
+				mes "[Zabadorihan]";
+				mes "It can do -- it can do .. should not believe the talk of making .... dye and it should not be heard . HAHAHAHATSU";
+				close;
+	L_MENU_2:
+		mes "[Zabadorihan]";
+		mes "Means! It will make, if only you are good. I am surely you.   He promises to take out a color needed..";
+		mes "It comes out and is what color.   Paddle which wants to make dye. A commission changes with colors which it is going to make.";
+		mes "Do you want to ask why it is? this world -- a hand -- what is necessary is for it just to turn out that there are a color which can be made at a low price, and a color which is not so";
+		mes "possibly, don't think that a commission is high . -- is the color of this dye the special thing which my soul is putting?.";
+		next;
+		menu "Red dye",-,"Yellow dye",L_MENU_2_2,"It ? Is and is dye.",L_MENU_2_3,"Dye of Dark",L_MENU_2_4,"Dye of Light",L_MENU_2_5,"Purple dye",L_MENU_2_6,"White dye",L_MENU_2_7,"It ? Is and is dye.",L_MENU_2_8,"Go away",L_MENU_2_9;
+			mes "[Zabadorihan]";
+			mes "Obtaining ... in order to make Red dye   Red herb   '30' a neutralizer, and a Empty Bottle ? is required..";
+			mes "The commission for manufacture 3000 Zeny only the grade is got.";
+			mes "If it is you, although it thinks that it can be preparing...Is work begun?";
+			next;
+			menu "Makeme a dye.",-,"Nothing",L_MENU_2_9;
+				checkitem 507,30,-,L_ROOT_2_1A;
+				checkitem 973,1,-,L_ROOT_2_1A;
+				checkitem 713,1,-,L_ROOT_2_1A;
+				check Zeny >= 3000,L_ROOT_2_1B,-;
+	L_ROOT_2_1A:
+				mes "[Zabadorihan]";
+				mes "Insufficient [and]...";
+				mes "It seems that the color which somehow or other cannot be taken out with the material. How collects material more.?";
+				close;
+	L_ROOT_2_1B:
+				delitem 507,30;
+				delitem 973,1;
+				delitem 713,1;
+				set Zeny -= 3000,0;
+				additem 975,1;
+				mes "[Zabadorihan]";
+				mes "FUMU ... It can improve, if it does not and come. It is a deep color even if it takes..";
+				mes "Of course, I am although it tries hard in order to take out the charming color beyond this...";
+				mes "...When dye was needed then always, before coming.";
+				close;
+	L_MENU_2_2:
+			mes "[Zabadorihan]";
+			mes "Obtaining ... In order to make yellow dye   Yellow herb   '30'   a neutralizer, and an Empty Bottle is required.";
+			mes "The commission for manufacture 3000 Zeny only the grade is got.";
+			mes "If it is you, although it thinks that it can be preparing...Is work begun?";
+			next;
+			menu "Makeme a dye.",-,"Nothing",L_MENU_2_9;
+				checkitem 508,30,-,L_ROOT_2_2A;
+				checkitem 973,1,-,L_ROOT_2_2A;
+				checkitem 713,1,-,L_ROOT_2_2A;
+				check Zeny >= 3000,L_ROOT_2_2B,-;
+	L_ROOT_2_2A:
+				mes "[Zabadorihan]";
+				mes "Insufficient [and]...";
+				mes "It seems that the color which somehow or other cannot be taken out with the material. How collects material more.?";
+				close;
+	L_ROOT_2_2B:
+				delitem 508,30;
+				delitem 973,1;
+				delitem 713,1;
+				set Zeny -= 3000,0;
+				additem 976,1;
+				mes "[Zabadorihan]";
+				mes "FUMU ... It can improve, if it does not and come. It is a deep color even if it takes..";
+				mes "Of course, I am although it tries hard in order to take out the charming color beyond this...";
+				mes "...When dye was needed then always, before coming.";
+				close;
+	L_MENU_2_3:
+			mes "[Zabadorihan]";
+			mes "Obtaining ... In order to make blue dye   Yellow herb   '20'   a neutralizer, and an Empty Bottle is required."
+			mes "The commission for manufacture 3500 Zeny only the grade is got.";
+			mes "If it is you, although it thinks that it can be preparing...Is work begun?";
+			next;
+			menu "Makeme a dye.",-,"Nothing",L_MENU_2_9;
+				checkitem 510,20,-,L_ROOT_2_3A;
+				checkitem 973,1,-,L_ROOT_2_3A;
+				checkitem 713,1,-,L_ROOT_2_3A;
+				check Zeny >= 3500,L_ROOT_2_3B,-;
+	L_ROOT_2_3A:
+				mes "[Zabadorihan]";
+				mes "Insufficient [and]...";
+				mes "It seems that the color which somehow or other cannot be taken out with the material. How collects material more.?";
+				close;
+	L_ROOT_2_3B:
+				delitem 510,20;
+				delitem 973,1;
+				delitem 713,1;
+				set Zeny -= 3500,0;
+				additem 978,1;
+				mes "[Zabadorihan]";
+				mes "FUMU ... It can improve, if it does not and come. It is a deep color even if it takes..";
+				mes "Of course, I am although it tries hard in order to take out the charming color beyond this...";
+				mes "...When dye was needed then always, before coming.";
+				close;
+	L_MENU_2_4:
+			mes "[????? ??????]";
+			mes "Obtaining ... In order to make blue dye   Yellow herb   '5'   a neutralizer, and an Empty Bottle is required.";
+			mes "The commission for manufacture 5000 Zeny only the grade is got.";
+			mes "If it is you, although it thinks that it can be preparing...Is work begun?";
+			next;
+			menu "Makeme a dye.",-,"Nothing",L_MENU_2_9;
+				checkitem 510,5,-,L_ROOT_2_4A;
+				checkitem 973,1,-,L_ROOT_2_4A;
+				checkitem 713,1,-,L_ROOT_2_4A;
+				checkitem 511,20,-,L_ROOT_2_4A;
+				checkitem 508,20,-,L_ROOT_2_4A;
+				checkitem 974,1,-,L_ROOT_2_4A;
+				check Zeny >= 5000,L_ROOT_2_4B,-;
+	L_ROOT_2_4A:
+				mes "[Zabadorihan]";
+				mes "Insufficient [and]...";
+				mes "It seems that the color which somehow or other cannot be taken out with the material. How collects material more.?";
+				close;
+	L_ROOT_2_4B:
+				delitem 510,5;
+				delitem 973,1;
+				delitem 713,1;
+				delitem 511,20;
+				delitem 508,20;
+				delitem 974,1;
+				set Zeny -= 5000,0;
+				additem 979,1;
+				mes "[Zabadorihan]";
+				mes "FUMU ... It can improve, if it does not and come. It is a deep color even if it takes..";
+				mes "Of course, I am although it tries hard in order to take out the charming color beyond this...";
+				mes "...When dye was needed then always, before coming.";
+				close;
+	L_MENU_2_5:
+			mes "[Zabadorihan]";
+			mes "Obtaining ... In order to make blue dye   Yellow herb   '20'   a neutralizer, and an Empty Bottle is required."
+			mes "The commission for manufacture 3500 Zeny only the grade is got.";
+			mes "If it is you, although it thinks that it can be preparing...Is work begun?";
+			next;
+			menu "Makeme a dye.",-,"Nothing",L_MENU_2_9;
+				checkitem 507,20,-,L_ROOT_2_5A;
+				checkitem 973,1,-,L_ROOT_2_5A;
+				checkitem 713,1,-,L_ROOT_2_5A;
+				checkitem 974,1,-,L_ROOT_2_5A;
+				checkitem 508,20,-,L_ROOT_2_5A;
+				check Zeny >= 5000,L_ROOT_2_5B,-;
+	L_ROOT_2_5A:
+				mes "[Zabadorihan]";
+				mes "Insufficient [and]...";
+				mes "It seems that the color which somehow or other cannot be taken out with the material. How collects material more.?";
+				close;
+	L_ROOT_2_5B:
+				delitem 507,20;
+				delitem 973,1;
+				delitem 713,1;
+				delitem 974,1;
+				delitem 508,20;
+				set Zeny -= 5000,0;
+				additem 980,1;
+				mes "[Zabadorihan]";
+				mes "FUMU ... It can improve, if it does not and come. It is a deep color even if it takes..";
+				mes "Of course, I am although it tries hard in order to take out the charming color beyond this...";
+				mes "...When dye was needed then always, before coming.";
+				close;
+	L_MENU_2_6:
+			mes "[Zabadorihan]";
+			mes "Obtaining ... In order to make blue dye   Yellow herb   '20'   a neutralizer, and an Empty Bottle is required."
+			mes "The commission for manufacture 3500 Zeny only the grade is got.";
+			mes "If it is you, although it thinks that it can be preparing...Is work begun?";
+			next;
+			menu "Makeme a dye.",-,"Nothing",L_MENU_2_9;
+				checkitem 507,20,-,L_ROOT_2_6A;
+				checkitem 973,1,-,L_ROOT_2_6A;
+				checkitem 713,1,-,L_ROOT_2_6A;
+				checkitem 974,1,-,L_ROOT_2_6A;
+				checkitem 510,10,-,L_ROOT_2_6A;
+				check Zeny >= 5000,L_ROOT_2_6B,-;
+	L_ROOT_2_6A:
+				mes "[Zabadorihan]";
+				mes "Insufficient [and]...";
+				mes "It seems that the color which somehow or other cannot be taken out with the material. How collects material more.?";
+				close;
+	L_ROOT_2_6B:
+				delitem 507,20;
+				delitem 973,1;
+				delitem 713,1;
+				delitem 974,1;
+				delitem 510,10;
+				set Zeny -= 5000,0;
+				additem 981,1;
+				mes "[Zabadorihan]";
+				mes "FUMU ... It can improve, if it does not and come. It is a deep color even if it takes..";
+				mes "Of course, I am although it tries hard in order to take out the charming color beyond this...";
+				mes "...When dye was needed then always, before coming.";
+				close;
+	L_MENU_2_7:
+			mes "[Zabadorihan]";
+			mes "Obtaining ... In order to make blue dye   Yellow herb   '20'   a neutralizer, and an Empty Bottle is required."
+			mes "The commission for manufacture 3000 Zeny only the grade is got.";
+			mes "If it is you, although it thinks that it can be preparing...Is work begun?";
+			next;
+			menu "Makeme a dye.",-,"Nothing",L_MENU_2_9;
+				checkitem 509,30,-,L_ROOT_2_7A;
+				checkitem 973,1,-,L_ROOT_2_7A;
+				checkitem 713,1,-,L_ROOT_2_7A;
+				check Zeny >= 3000,L_ROOT_2_7B,-;
+	L_ROOT_2_7A:
+				mes "[Zabadorihan]";
+				mes "Insufficient [and]...";
+				mes "It seems that the color which somehow or other cannot be taken out with the material. How collects material more.?";
+				close;
+	L_ROOT_2_7B:
+				delitem 509,30;
+				delitem 973,1;
+				delitem 713,1;
+				set Zeny -= 3000,0;
+				additem 982,1;
+				mes "[Zabadorihan]";
+				mes "FUMU ... It can improve, if it does not and come. It is a deep color even if it takes..";
+				mes "Of course, I am although it tries hard in order to take out the charming color beyond this...";
+				mes "...When dye was needed then always, before coming.";
+				close;
+	L_MENU_2_8:
+			mes "[Zabadorihan]";
+			mes "Obtaining ... In order to make blue dye   Yellow herb   '20'   a neutralizer, and an Empty Bottle is required."
+			mes "The commission for manufacture 7000 Zeny only the grade is got.";
+			mes "If it is you, although it thinks that it can be preparing...Is work begun?";
+			next;
+			menu "Makeme a dye.",-,"Nothing",L_MENU_2_9;
+				checkitem 507,30,-,L_ROOT_2_8A;
+				checkitem 973,1,-,L_ROOT_2_8A;
+				checkitem 713,1,-,L_ROOT_2_8A;
+				checkitem 510,5,-,L_ROOT_2_8A;
+				checkitem 508,30,-,L_ROOT_2_8A;
+				checkitem 974,1,-,L_ROOT_2_8A;
+				checkitem 511,30,-,L_ROOT_2_8A;
+				check Zeny >= 7000,L_ROOT_2_8B,-;
+	L_ROOT_2_8A:
+				mes "[Zabadorihan]";
+				mes "Insufficient [and]...";
+				mes "It seems that the color which somehow or other cannot be taken out with the material. How collects material more.?";
+				close;
+	L_ROOT_2_8B:
+				delitem 507,30;
+				delitem 973,1;
+				delitem 713,1;
+				delitem 510,5;
+				delitem 508,30;
+				delitem 974,1;
+				delitem 511,30;
+				set Zeny -= 7000,0;
+				additem 983,1;
+				mes "[Zabadorihan]";
+				mes "FUMU ... It can improve, if it does not and come. It is a deep color even if it takes..";
+				mes "Of course, I am although it tries hard in order to take out the charming color beyond this...";
+				mes "...When dye was needed then always, before coming.";
+				close;
+	L_MENU_2_9:
+				mes "[Zabadorihan]";
+				mes "What?";
+				mes "....is having divided strangely such ... ";
+				close;
+	L_MENU_3:
+			mes "[Zabadorihan]";
+			mes "Although it is not boast, I have the technology which makes dyeing medicine.";
+			mes "If it may be required, I will be asked, and it is , at a good price I think.";
+			close;
+}
+
+prt_in.gat,284,168,3	script	"Jineda inlay full"	55,{
+		mes "[Jineda]";
+		mes "11...10 ... obtaining ... means the party of tonight should do somehow or other that is right";
+		mes "...carries out now and it is a seed. Now, was it made needed on what business?";
+		next;
+		menu "Talk",-,"Dress is dyed.",L_MENU_1,"Stop talking",L_MENU_2;
+			mes "[Jineda]";
+			mes "as for a few, this world tried to have become easy -- although held ... dress   Mr. ... who is generous for a while when an order is seen pour in ... it was in the world which may be taken. Isn't it by mistake?";
+			mes "... It is although is not thought... Probably, it will ? and be good. Since such men are also in a world, can the ? exhibition of the beauty which man pursues be carried out?.";
+			mes "Of course, this is although it is only my idea... A few ways the man whom neither hair nor scales has can express his individuality and beauty are whether it is what led not others but dress.";
+			next;
+			mes "[Jineda]";
+			mes "HAHAHA ... When it sees at such a view point, I think that this work of me who thought to me is very noble-minded work. doing being large.";
+			mes "It is moved also by you. When a splendid and first color is dyed that unseemly and rude cloth and leather ... It is degree so that a completely new life may be produced.   The passion and energy";
+			mes "it was completed although it was very tight and difficult work  it is felt when a dress is seen that  those difficulties are enough recompensed only by one";
+			close;
+	L_MENU_1:
+//          mes "[Jineda]";
+//          mes "Cheek ... Do I hear that it came for you to dye dress? And is good. Is this work interesting?";
+//          mes "But a material required for dyeing has direct me with. It does not provide. If all are not brought ... Has the material which I need all gathered?   Or [ I see ]?";
+			mes "[Jineda]";
+			mes "You are also dress.   Was it made to be necessary for dyeing?
+			mes "Although it is not explanation, there is no margin of time to dye your dress now. full of this that makes a order meet the deadline it is since...";
+			mes "Or [ not giving next time again, although it is not explanation ]?";
+			close;
+	L_MENU_2:
+			mes "[Jineda]";
+			mes "Please make .... there be nothing slowly. Although I am busy and could not take care even if?";
+			close;
+}
+
+prt_in.gat,243,168,4	script	Yobichi	91,{
+ 	mes "[Yobobichi]";
+	check Gender == 1,-,L_SUB_1;
+		mes "Welcome.";
+		mes "Like this hair hurting ...";
+		mes "Is tidy care required?";
+		mes "Then, please sit down.";
+		goto L_START_1;
+	L_SUB_1:
+		random @R_SEL_NUM,2;
+		check @R_SEL_NUM == 0,-,L_SUB_2;
+			mes "Welcome.";
+			mes "At all. Elder sister";
+			mes "Does hair hurt very much?";
+			mes "Please leave me.";
+			goto L_START_1;
+	L_SUB_2:
+			mes "At all. Elder sister";
+			mes "If hair dyeing is carried out,";
+			mes "How is it?";
+			mes "It can become more beautiful?";
+			mes "The image of is changed decisively.";
+			mes "Or [ not carrying out ]?";
+ L_START_1:
+ 	next;
+	menu "Hair is dyed",-,"About hair dyeing",L_START_10,"Stop talking",L_START_11;
+		mes "[Beautician Yobobichi]";
+		mes "Well, was courage taken out?";
+		mes "Then, it gives up.";
+		mes "Let's disguise ourselves?";
+		mes "Which color is all right?";
+		next;
+		set @CHOOSE_SUCCESS = 0;
+ L_START_2:
+	check @CHOOSE_SUCCESS = 1,-,L_START_3;
+		mes "[Beautician Yobobichi]";
+		mes "In other colors which will be how?";
+		mes "Does it dye??";
+		next;
+		menu "Yes",-,"No",L_MENU_2_1;
+			mes "[Beautician Yobobichi]";
+			mes "Yes, certainly.";
+			mes "Please [ color / of hope ].";
+			next;
+			goto L_START_3;
+ L_MENU_2_1:
+		check Gender == 1,-,L_SUB_2_1;
+			mes "[Beautician Yobobichi]";
+			mes "It is...";
+			mes "It is great!";
+			mes "It waits for next coming.";
+			mes "It gets down.";
+			close;
+ L_SUB_2_1:
+			mes "[Beautician Yobobichi]";
+			mes "It is...";
+			mes "It is great!";
+			mes "It waits for next coming.";
+			mes "It gets down.";
+			close;
+ L_START_3:
+	menu "I need your help in red.",-,"I need your help in yellow.",L_MENU_3_1,"It is purple and I need your help.",L_MENU_3_2,"I need your help in red.",L_MENU_3_3,"It is green and I need your help.",L_MENU_3_4,"It is blue and I need your help.",L_MENU_3_5,"It is white and I need your help.",L_MENU_3_6,"It is black and I need your help.",L_MENU_3_7,"It is right now.",L_MENU_3_8;
+		mes "[Beautician Yobobichi]";
+		mes "Then, is it dyed red?";
+		set @HEADPALETTE = 8;
+		goto L_START_4;
+ L_MENU_3_1:
+		mes "[Beautician Yobobichi]";
+		mes "Then, is it dyed yellow?";
+		set @HEADPALETTE = 1;
+		goto L_START_4;
+ L_MENU_3_2:
+		mes "[Beautician Yobobichi]";
+		mes "Then, does it dye purple?";
+		set @HEADPALETTE = 2;
+		goto L_START_4;
+ L_MENU_3_3:
+		mes "[Beautician Yobobichi]";
+		mes "Then, is it dyed red?";
+		set @HEADPALETTE = 3;
+		goto L_START_4;
+ L_MENU_3_4:
+		mes "[Beautician Yobobichi]";
+		mes "Then, does it dye green?";
+		set @HEADPALETTE = 4;
+		goto L_START_4;
+ L_MENU_3_5:
+		mes "[Beautician Yobobichi]";
+		mes "Then, does it dye blue?";
+		set @HEADPALETTE = 5;
+		goto L_START_4;
+ L_MENU_3_6:
+		mes "[Beautician Yobobichi]";
+		mes "Then, does it dye white?";
+		set @HEADPALETTE = 6;
+		goto L_START_4;
+ L_MENU_3_7:
+		mes "[Beautician Yobobichi]";
+		mes "Then, does it dye black?";
+		set @HEADPALETTE = 7;
+		goto L_START_4;
+ L_MENU_3_8:
+	check @CHOOSE_SUCCESS > 0,-,L_SUB_3_1;
+		mes "[Beautician Yobobichi]";
+		mes "Was the present color pleased?";
+		mes "It is well-matched.";
+		close;
+ L_SUB_3_1:
+		mes "[Beautician Yobobichi]";
+		mes "Do you remain as it is and come?";
+		mes "Although somewhat wasteful mind is also carried out";
+		mes "The present color is also well-matched.";
+		close;
+ L_START_4:
+	next;
+	menu "Yes?",L_START_5,"No!",-;
+		mes "[Beautician Yobobichi]";
+		mes "Do you remain as it is and come?";
+		mes "Although somewhat wasteful mind is also carried out";
+		mes "The present color is also well-matched.";
+		close;
+ L_START_5:
+	check Hcolor = @HEADPALETTE,-,L_START_6;
+		mes "[Beautician Yobobichi]";
+		mes "And it is color are a visitor.";
+		mes "It is the same as the present hair.";
+		next;
+		goto L_START_3;
+ L_START_6:
+	check @HEADPALETTE = 8,-,L_ROOT_6_1;
+		checkitem 975,1,L_START_7,-;
+		mes "[Beautician Yobobichi]";
+		mes "For dyeing it that red";
+		mes "The dye of a red color is required.";
+		close;
+ L_ROOT_6_1:
+	check @HEADPALETTE = 1,-,L_ROOT_6_2;
+		checkitem 976,1,L_START_7,-;
+		mes "[Beautician Yobobichi]";
+		mes "For dyeing it that yellow.";
+		mes "Yellow dye is required.";
+		close;
+ L_ROOT_6_2:
+	check @HEADPALETTE = 2,-,L_ROOT_6_3;
+		checkitem 981,1,L_START_7,-;
+		mes "[Beautician Yobobichi]";
+		mes "For dyeing it that purple";
+		mes "Purple dye is required.";
+		close;
+ L_ROOT_6_3:
+	check @HEADPALETTE = 3,-,L_ROOT_6_4;
+		checkitem 980,1,L_START_7,-;
+		mes "[Beautician Yobobichi]";
+		mes "For dyeing it that red";
+		mes "Red dye is required.";
+		close;
+ L_ROOT_6_4:
+	check @HEADPALETTE = 4,-,L_ROOT_6_5;
+		checkitem 979,1,L_START_7,-;
+		mes "[Beautician Yobobichi]";
+		mes "For dyeing it that green";
+		mes "Green dye is required.";
+		close;
+ L_ROOT_6_5:
+	check @HEADPALETTE = 5,-,L_ROOT_6_6;
+		checkitem 978,1,L_START_7,-;
+		mes "[Beautician Yobobichi]";
+		mes "For dyeing it that blue";
+		mes "The dye of a blue color is required.";
+		close;
+ L_ROOT_6_6:
+	check @HEADPALETTE = 6,-,L_ROOT_6_7;
+		checkitem 982,1,L_START_7,-;
+		mes "[Beautician Yobobichi]";
+		mes "For dyeing it that white";
+		mes "The dye of a white color is required.";
+		close;
+ L_ROOT_6_7:
+		checkitem 983,1,L_START_7,-;
+		mes "[Beautician Yobobichi]";
+		mes "For dyeing it that black";
+		mes "The dye of a black color is required.";
+		close;
+ L_START_7:
+	check Zeny < 5000,-,L_START_8;
+		mes "[Beautician Yobobichi]";
+		mes "A visitor and a charge are prepayment.";
+		mes "They are 5000 zeny";
+		close;
+ L_START_8:
+	check @HEADPALETTE = 8,-,L_ROOT_8_1;
+		delitem 975,1;
+		goto L_START_9;
+ L_ROOT_8_1:
+	check @HEADPALETTE = 1,-,L_ROOT_8_2;
+		delitem 976,1;
+		goto L_START_9;
+ L_ROOT_8_2:
+	check @HEADPALETTE = 2,-,L_ROOT_8_3;
+		delitem 981,1;
+		goto L_START_9;
+ L_ROOT_8_3:
+	check @HEADPALETTE = 3,-,L_ROOT_8_4;
+		delitem 980,1;
+		goto L_START_9;
+ L_ROOT_8_4:
+	check @HEADPALETTE = 4,-,L_ROOT_8_5;
+		delitem 979,1;
+		goto L_START_9;
+ L_ROOT_8_5:
+	check @HEADPALETTE = 5,-,L_ROOT_8_6;
+		delitem 978,1;
+		goto L_START_9;
+ L_ROOT_8_6:
+	check @HEADPALETTE = 6,-,L_ROOT_8_7;
+		delitem 982,1;
+		goto L_START_9;
+ L_ROOT_8_7:
+		delitem 983,1;
+ L_START_9:
+	set Zeny -= 5000,0;
+	hcolor @HEADPALETTE;
+	set @CHOOSE_SUCCESS = 1;
+	goto L_START_2;
+ L_START_10:
+	mes "[Beautician Yobobichi]";
+	mes "When a feeling does not float,";
+	mes "when shaken at a sweetheart,";
+	mes "when there are those who want to show strikingly,";
+	mes "when you want to carry out foppish,";
+	mes "the image of is changed at such time.";
+	mes "Or [ not feeling refreshed ]?";
+	next;
+	mes "[Beautician Yobobichi]";
+	mes "Dye which dyes hair here";
+	mes "It is great hair if you have.";
+	mes "It changes more strikingly, puts and raises.";
+	mes "Don't care in a charge etc.";
+	mes "Since a better thing is obtained.";
+	next;
+	mes "[Beautician Yobobichi]";
+	mes "*Material and charge guidance*";
+	mes "?^FF3080Dye of the color of hope   One piece^000000";
+	mes "?^FF3080Hair dyeing charge 5000 zeny^000000";
+	close;
+ L_START_11:
+	mes "[Beautician Yobobichi]";
+	mes "A man or woman . People become beautiful.";
+	mes "A right and duty occur.";
+	close;
+}

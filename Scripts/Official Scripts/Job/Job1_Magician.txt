@@ -1,0 +1,119 @@
+//----------------------------------------------------------------------------------------
+// Mage Job Change NPC - From Weiss, translated by Khali
+// eWeiss Project 2003 - http://revolve.emuxhaven.net/weiss/
+// Item check-Quest by Khali
+//----------------------------------------------------------------------------------------
+
+geffen_in.gat,164,124,4 script Guildsman 123,{
+mes "[Guildsman]";
+mes "Hello there wonderer. You came to sign up for the mage job?";
+next;
+menu "Change job to Magician",L_Menu1,"Requirements",L_Menu2,"End",-;
+close;
+  L_Menu1:
+// Requirement Check
+   mes "[Guildsman]";
+   mes "First I'll check if all the requirements have been met.";
+   mes "Also making sure you have the solution.";
+   next;
+   check Job == 0,-,L_Menu1_F1;
+   check JobLevel >= 10,-,L_Menu1_F2;
+   checkitem 1089,1,-,L_ITEM_1;
+// Requirement Pass
+// check SkillPoint == 0,-,L_Menu1_F3;
+   set JobLevel = 1,0;
+   jobchange 2;
+   delitem 1089,1;
+   mes "[Guildsman]";
+   mes "Congradulations, you are now a Magician.";
+   close;
+    L_Menu1_F1:
+     mes "[Guildsman]";
+     mes "You are not a novice.";
+     close;
+    L_Menu1_F2:
+     mes "[Guildsman]";
+     mes "You must learn a basic job level of 9";
+     close;
+    L_Menu1_F3:
+     mes "[Guildsman]";
+     mes "Please use all your skills up first";
+     close;
+    L_ITEM_1:
+     mes "[Guildsman]";
+     mes "You do not have the required items.";
+     mes "hint: willows drop these required trunks.";
+     close;
+//--------------
+//--------------
+  L_Menu2:
+   mes "[Guildsman]";
+   mes "You will need to bring me an Aqueous Solution from the";
+   mes "Archer Village, Payon.";
+   mes "To complete your quest you must mix them at the Mixing Machine and enter this code: 8472.";
+   next;
+   mes "[Guildsman]";
+   mes "Please remember it and bring the solution back to me.";
+   close;
+}
+//----------------------------------------------------------------------------------------
+//Potion Mixer
+//----------------------------------------------------------------------------------------
+payon_in02.gat,86,29,1 script Aqueur-Alquimist 123,{
+mes "[Aqueur-Alquimist]";
+mes "Hello there wonderer. You came to sign up for the mage job?";
+mes "Do you have the ingredients?";
+next;
+menu "Yes",L_MenuM1,"No",L_MenuM2;
+close;
+  L_MenuM1:
+// Requirement Check
+   mes "[Aqueur-Alquimist]";
+   mes "First I'll check if you have all the required items.";
+   next;
+   check Job == 0,-,L_MenuM1_F1;
+   check JobLevel >= 10,-,L_MenuM1_F2;
+   checkitem 909,2,-,L_ITEMM_1;
+   checkitem 914,3,-,L_ITEMM_1;
+   checkitem 519,1,-,L_ITEMM_1;
+// Requirement Pass
+// check SkillPoint == 0,-,L_MenuM1_F3;
+   set JobLevel = 1,0;
+   jobchange 2;
+   delitem 909,2;
+   delitem 914,3;
+   delitem 519,1;
+   mes "[Guildsman]";
+   mes "Here is the Payon Solution.";
+   additem 1089,1;
+   close;
+    L_MenuM1_F1:
+     mes "[Guildsman]";
+     mes "You are not a novice.";
+     close;
+    L_MenuM1_F2:
+     mes "[Guildsman]";
+     mes "You must learn a basic job level of 9";
+     close;
+    L_MenuM1_F3:
+     mes "[Guildsman]";
+     mes "Please use all your skills up first";
+     close;
+    L_ITEMM_1:
+     mes "[Guildsman]";
+     mes "You do not have the required items.";
+     mes "hint: You can get jellopy from Porings";
+     mes "hint: You can get fluff from Fabres";
+     mes "hint: You can get milk from Pickys";
+     close;
+//--------------
+//--------------
+  L_MenuM2:
+   mes "[Guildsman]";
+   mes "You need to bring me:";
+   mes "Jellopy 2ea, Fluff 3ea, Milk 1ea so I can mix the ingredients";
+   next;
+   mes "[Guildsman]";
+   mes "Please bring me those items.";
+   close;
+}

@@ -1,0 +1,47 @@
+moc_ruins.gat,91,150,5	script	"Ponka-Hontas"	93,{
+	mes "[Mage Guildsman]";
+	mes "You want the Solution? Then give me at least 1 Empty Testube.";
+	next;
+	menu "Alright",L_1,"Forget it.",L_2;
+    	L_1:        
+		mes "[Mage Guildsman]";
+		checkitem 1092,1,-,L_notube;
+		mes "Ok, you have the empty Testube, that's good!"
+		delitem 1092,1;
+		next;
+		mes "[Mage Guildsman]";
+		additem 1088,1;
+		mes "Thank you, I think you will be a great mage, you are so generous.";
+		mes "I hope i'll see you soon again here";
+		close;
+		L_notube:
+			mes "You can't Carry on Fluid without a bottle, are you sure you want to become a mage?";
+			mes "Bring an Empty Testube";
+			close;
+	L_2:
+		close;
+}
+
+pay_arche.gat,122,100,5	script	"Dollshoi"	88,{
+	mes "[Mage Guildsman]";
+	mes "You want the Solution? Then give me at least 1 Empty Testube.";
+	next;
+	menu "Alright",L_0,"Forget it.",L_1;
+    	L_0:        
+		mes "[Mage Guildsman]";
+		checkitem 1092,1,-,L_notube;
+		mes "Ok, you have the empty Testube, that's good!";
+		delitem 1092,1;
+		next;
+		mes "[Mage Guildsman]";
+		additem 1089,1;
+		mes "Thank you, I think you will be a great mage, you are so generous.";
+		mes "I hope i'll see you soon again here";
+		close;
+		L_notube:
+			mes "You can't Carry on Fluid without a bottle, are you sure you want to become a mage?";
+			mes "Bring an Empty Testube";
+			close;
+	L_1:
+		close;
+}

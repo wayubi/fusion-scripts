@@ -1,0 +1,63 @@
+//----------------------------------------------------------------------------------------
+// Archer Job Change NPC - From Weiss, translated by Khali
+// eWeiss Project 2003 - http://revolve.emuxhaven.net/weiss/
+// Item check-Quest by Khali
+//----------------------------------------------------------------------------------------
+
+payon_in02.gat,62,71,4 script Archer 86,{
+mes "[Archer]";
+mes "Welcome to Payon, traveller";
+mes "So, have you decided if you want to be an archer?";
+next;
+menu "Change job to Archer",L_MENU_0,"Requirements",L_MENU_1,"End",-;
+close;
+  L_MENU_0:
+//Requirement Check
+   mes "[Archer]";
+   mes "First I'll check if all the requirements have been met.";
+   next;
+   check Job == 0,-,L_Menu1_F1;
+   check JobLevel >= 10,-,L_Menu1_F2;
+   checkitem 1066,1,-,L_ITEM_1;
+   checkitem 1067,1,-,L_ITEM_1;
+   checkitem 1068,1,-,L_ITEM_1;
+// pass requirement check
+// check SkillPoint == 0,-,L_Menu1_F3;
+   set JobLevel = 1,0;
+   jobchange 3;
+   delitem 1066,1;
+   delitem 1067,1;
+   delitem 1068,1;
+   mes "[Archer]";
+   mes "Congratulations!  You are now an Archer!";
+   close;
+    L_Menu1_F1:
+     mes "[Archer]";
+     mes "You are not a novice.";
+     close;
+    L_Menu1_F2:
+     mes "[Archer]";
+     mes "You must learn a basic job level of 9";
+     close;
+    L_Menu1_F3:
+     mes "[Archer]";
+     mes "Please use all your skills up first";
+     close;
+    L_ITEM_1:
+     mes "[Archer]";
+     mes "You do not have the required items.";
+     mes "hint: willows drop these required trunks.";
+     close;
+//----------------------
+//----------------------
+  L_MENU_1:
+   mes "[Archer]";
+   mes "Once you are job level 10, you may become an Archer.";
+   mes "You must also ";
+   mes "You must collect three trunks: 1 Solid Trunk, 1 Barren Trunk and 1 Fine Grained Trunk.";
+   mes "These are dropped by a monster called Willow.";
+   next;
+   mes "[Archer]";
+   mes "Good luck on your quest.";
+   close;
+}

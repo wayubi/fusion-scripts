@@ -1,0 +1,48 @@
+//----------------------------------------------------------------------------------------
+// Acolyte Job Change NPC - From Weiss, translated by Soulfang
+// eWeiss Project 2003 - http://revolve.emuxhaven.net/weiss/
+//----------------------------------------------------------------------------------------
+
+prt_church.gat,184,41,4	script	Priestess	69,{
+	mes "[Priestess Mareusis]";
+	mes "What is it you are looking for?";
+	next;
+	menu "Change job to Acolyte",L_Menu1,"Hear jobchange requirements",L_Menu2,"End",-;
+	close;
+		L_Menu1:
+//Below unknown words following the missing quest
+			mes "[Priestess Mareusis]";
+			mes "Right now there is no job change quest.";
+			next;
+			check Job == 0,-,L_Menu1_F1;
+			check JobLevel >= 10,-,L_Menu1_F2;
+// Skill points can't be taken now...
+// check SkillPoint == 0,-,L_Menu1_F3;
+			set JobLevel = 1,0;
+			jobchange 4;
+			mes "[Priestess Mareusis]";
+			mes "Congratulations.";
+			close;
+				L_Menu1_F1:
+					mes "[Priestess Mareusis]";
+					mes "Unless you are a novice, you can't be an Acolyte.";
+					close;
+				L_Menu1_F2:
+					mes "[Priestess Mareusis]";
+					mes "You can't change unless you're Basic Skill Level 9.";
+					close;
+				L_Menu1_F3:
+					mes "[Priestess Mareusis]";
+					mes "You can't change your job unless you have used all your skill points.";
+					close;
+//--------------
+//--------------
+		L_Menu2:
+			mes "[Priestess Mareusis]";
+			mes "You may change your job immediately after changing your job to job level 10.";
+			next;
+			mes "[Priestess Mareusis]";
+			mes "In the future, you can only change your job after a specific quest has been completed.";
+			mes "Please keep this in mind.";
+			close;
+}

@@ -1,0 +1,231 @@
+// Namelessness
+//----------------------------------------------------------------------------------------
+// ネンカラス (有料でHealしてくれます。)
+
+prt_in.gat,244,135,2	script	"Inn Maid"	53,{
+       	mes "[Sammy]";
+        mes "宿屋 Nenkaras [West] へようこそ。";
+	next;
+	menu "Save",L_SAVE,"Heal",L_HEAL,"Quit",-;
+	mes "[Sammy]";
+	mes "またのご利用をお待ちしております。";
+	close;
+		L_SAVE:
+			mes "[Sammy]";
+			mes "この場所でセーブを行いました。";
+			mes "またのご利用をお待ちしております。";
+			save "prt_in",238,130;
+			close;
+		L_HEAL:
+			check BaseLevel<=15,L_HEAL_LV15,-;
+			check BaseLevel<=30,L_HEAL_LV30,-;
+			check BaseLevel<=50,L_HEAL_LV50,-;
+			check BaseLevel<=75,L_HEAL_LV75,-;
+			check BaseLevel<=99,L_HEAL_LV100,-;
+			mes "[Sammy]";
+			mes "生憎満室でして...申し訳ございません。";
+			close;
+				L_HEAL_LV15:
+					next;
+					mes "[Sammy]";
+					mes "料金は 50 Zeny になりますが、宜しいでしょうか？";
+					next;
+					menu "Yes",-,"No",L_HEAL_LV15_N;
+						check Zeny>=50,-,L_HEAL_LV15_F;
+							set Zeny -= 50,0;
+							heal 30000,30000;
+							close;
+								L_HEAL_LV15_F:
+									mes "[Sammy]";
+									mes "お金が足りないようです。";
+									close;
+						L_HEAL_LV15_N:
+							mes "[Sammy]";
+							mes "またのご利用をお待ちしております。";
+							close;
+				L_HEAL_LV30:
+					mes "[Sammy]";
+					mes "料金は 100 Zeny になりますが、宜しいでしょうか？";
+					next;
+					menu "Yes",-,"No",L_HEAL_LV30_N;
+						check Zeny>=100,-,L_HEAL_LV30_F;
+							set Zeny -= 100,0;
+							heal 30000,30000;
+							close;
+								L_HEAL_LV30_F:
+									mes "[Sammy]";
+									mes "お金が足りないようです。";
+									close;
+						L_HEAL_LV30_N:
+							mes "[Sammy]";
+							mes "またのご利用をお待ちしております。";
+							close;
+				L_HEAL_LV50:
+					next;
+					mes "[Sammy]";
+					mes "料金は 200 Zeny になりますが、宜しいでしょうか？";
+					next;
+					menu "Yes",-,"No",L_HEAL_LV50_N;
+						check Zeny>=200,-,L_HEAL_LV50_F;
+							set Zeny -= 200,0;
+							heal 30000,30000;
+							close;
+								L_HEAL_LV50_F:
+									mes "[Sammy]";
+									mes "お金が足りないようです。";
+									close;
+						L_HEAL_LV50_N:
+							mes "[Sammy]";
+							mes "またのご利用をお待ちしております。";
+							close;
+				L_HEAL_LV75:
+					next;
+					mes "[Sammy]";
+					mes "料金は 300 Zeny になりますが、宜しいでしょうか？";
+					next;
+					menu "Yes",-,"No",L_HEAL_LV75_N;
+						check Zeny>=300,-,L_HEAL_LV75_F;
+							set Zeny -= 300,0;
+							heal 30000,30000;
+							close;
+								L_HEAL_LV75_F:
+									mes "[Sammy]";
+									mes "お金が足りないようです。";
+									close;
+						L_HEAL_LV75_N:
+							mes "[Sammy]";
+							mes "またのご利用をお待ちしております。";
+							close;
+				L_HEAL_LV100:
+					next;
+					mes "[Sammy]";
+					mes "料金は 400 Zeny になりますが、宜しいでしょうか？";
+					next;
+					menu "Yes",-,"No",L_HEAL_LV100_N;
+						check Zeny>=400,-,L_HEAL_LV100_F;
+							set Zeny -= 400,0;
+							heal 30000,30000;
+							close;
+								L_HEAL_LV100_F:
+									mes "[Sammy]";
+									mes "お金が足りないようです。";
+									close;
+						L_HEAL_LV100_N:
+							mes "[Sammy]";
+							mes "またのご利用をお待ちしております。";
+							close;
+}
+
+prt_in.gat,61,141,2	script	"Inn Maid"	53,{
+       	mes "[Ahlma]";
+        mes "宿屋 Nenkaras [East] へようこそ。";
+	next;
+	menu "Save",L_SAVE,"Heal",L_HEAL,"Quit",-;
+	mes "[Ahlma]";
+	mes "またのご利用をお待ちしております。";
+	close;
+		L_SAVE:
+			mes "[Ahlma]";
+			mes "この場所でセーブを行いました。";
+			mes "またのご利用をお待ちしております。";
+			save "prt_in",64,136;
+			close;
+		L_HEAL:
+			check BaseLevel<=15,L_HEAL_LV15,-;
+			check BaseLevel<=30,L_HEAL_LV30,-;
+			check BaseLevel<=50,L_HEAL_LV50,-;
+			check BaseLevel<=75,L_HEAL_LV75,-;
+			check BaseLevel<=99,L_HEAL_LV100,-;
+			mes "[Ahlma]";
+			mes "生憎満室でして...申し訳ございません。";
+			close;
+				L_HEAL_LV15:
+					next;
+					mes "[Ahlma]";
+					mes "料金は 50 Zeny になりますが、宜しいでしょうか？";
+					next;
+					menu "Yes",-,"No",L_HEAL_LV15_N;
+						check Zeny>=50,-,L_HEAL_LV15_F;
+							set Zeny -= 50,0;
+							heal 30000,30000;
+							close;
+								L_HEAL_LV15_F:
+									mes "[Ahlma]";
+									mes "お金が足りないようです。";
+									close;
+						L_HEAL_LV15_N:
+							mes "[Ahlma]";
+							mes "またのご利用をお待ちしております。";
+							close;
+				L_HEAL_LV30:
+					mes "[Ahlma]";
+					mes "料金は 100 Zeny になりますが、宜しいでしょうか？";
+					next;
+					menu "Yes",-,"No",L_HEAL_LV30_N;
+						check Zeny>=100,-,L_HEAL_LV30_F;
+							set Zeny -= 100,0;
+							heal 30000,30000;
+							close;
+								L_HEAL_LV30_F:
+									mes "[Ahlma]";
+									mes "お金が足りないようです。";
+									close;
+						L_HEAL_LV30_N:
+							mes "[Ahlma]";
+							mes "またのご利用をお待ちしております。";
+							close;
+				L_HEAL_LV50:
+					next;
+					mes "[Ahlma]";
+					mes "料金は 200 Zeny になりますが、宜しいでしょうか？";
+					next;
+					menu "Yes",-,"No",L_HEAL_LV50_N;
+						check Zeny>=200,-,L_HEAL_LV50_F;
+							set Zeny -= 200,0;
+							heal 30000,30000;
+							close;
+								L_HEAL_LV50_F:
+									mes "[Ahlma]";
+									mes "お金が足りないようです。";
+									close;
+						L_HEAL_LV50_N:
+							mes "[Ahlma]";
+							mes "またのご利用をお待ちしております。";
+							close;
+				L_HEAL_LV75:
+					next;
+					mes "[Ahlma]";
+					mes "料金は 300 Zeny になりますが、宜しいでしょうか？";
+					next;
+					menu "Yes",-,"No",L_HEAL_LV75_N;
+						check Zeny>=300,-,L_HEAL_LV75_F;
+							set Zeny -= 300,0;
+							heal 30000,30000;
+							close;
+								L_HEAL_LV75_F:
+									mes "[Ahlma]";
+									mes "お金が足りないようです。";
+									close;
+						L_HEAL_LV75_N:
+							mes "[Ahlma]";
+							mes "またのご利用をお待ちしております。";
+							close;
+				L_HEAL_LV100:
+					next;
+					mes "[Ahlma]";
+					mes "料金は 400 Zeny になりますが、宜しいでしょうか？";
+					next;
+					menu "Yes",-,"No",L_HEAL_LV100_N;
+						check Zeny>=400,-,L_HEAL_LV100_F;
+							set Zeny -= 400,0;
+							heal 30000,30000;
+							close;
+								L_HEAL_LV100_F:
+									mes "[Ahlma]";
+									mes "お金が足りないようです。";
+									close;
+						L_HEAL_LV100_N:
+							mes "[Ahlma]";
+							mes "またのご利用をお待ちしております。";
+							close;
+}

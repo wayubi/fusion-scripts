@@ -1,0 +1,48 @@
+//----------------------------------------------------------------------------------------
+//Priest Job Change NPC - From Weiss, Translated by Cryshandylan
+// eWeiss Project 2003 - http://revolve.emuxhaven.net/weiss/
+//----------------------------------------------------------------------------------------
+
+prt_church.gat,16,41,4 script "Priest" 60,{
+mes "[Priest]";
+mes "Good Day?";
+mes "This is the Prontera Parish";
+next;
+menu "Change into a Priest",L_Menu1,"The Requirements",L_Menu2,"Quit",-;
+close;
+ L_Menu1:
+  mes "[Priest]";
+  mes "First I'll check if all the requirements have been met.";
+  next;
+  check Job == 4,-,L_Menu1_F1;
+  check JobLevel >= 40,-,L_Menu1_F2;
+// pass requirement check
+// check SkillPoint == 0,-,L_Menu1_F3;
+  set JobLevel = 1,0;
+  jobchange 8;
+  mes "[Priest]";
+  mes "Congratulations, Your Faith is Strong";
+  close;
+   L_Menu1_F1:
+    mes "[Priest]";
+    mes "You are not a novice";
+    close;
+   L_Menu1_F2:
+    mes "[Priest]";
+    mes "You must reach Job Level 40 as an Acolyte to prove your faith.";
+    close;
+   L_Menu1_F3:
+    mes "[Priest]";
+    mes "You still have yet to use your faith given powers. (Use your skill points)";
+    close;
+//--------------
+  close;
+ L_Menu2:
+  mes "[Priest]";
+  mes "The requirements are simple";
+  mes "For now, all we require is that you have achieved a faith(job) level of 40";
+  next;
+  mes "[Priest]";
+  mes "Please note that when the Job Quests are updated, you will have to pass an additional test.";
+  close;
+}

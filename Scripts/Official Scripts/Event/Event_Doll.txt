@@ -1,0 +1,277 @@
+//---------------------------------------------
+// Event_doll.txt by kalen
+// (no original source, based on jRO)
+// translated by melz, with some modifications
+//---------------------------------------------
+alberta.gat,117,134,8	script	"Little Kid"	96,{
+//Gender distinction
+check Gender=1,LStartM,-;
+LStartF:
+	mes "[Little Kid]";
+	mes "Hello, lady. Since you're a girl, you must like dolls, don't you?";
+	mes "I love dolls!";
+	next;
+	mes "[Little Kid]";
+	mes "I want a new doll. Daddy is going to buy me one for my birthday.";
+	next;
+	menu "That's nice",L1,"Want a doll?",L2;
+LStartM:
+	mes "[Little Kid]";
+	mes "Hello, mister. Hmm, since you're a boy, you don't like dolls, do you?";
+	mes "I just love dolls!";
+	next;
+	mes "[Little Kid]";
+	mes "I want a new doll. Daddy is going to buy me one for my birthday.";
+	next;
+	menu "That's nice",L1,"Want a doll?",L2;
+L1:
+	mes "[Little Kid]";
+	mes "What kind of doll would be nice, I wonder~";
+	mes "That's right! I want a monkey doll~";
+	mes "I think it would be really cute.";
+	close;
+L2:
+	mes "[Little Kid]";
+	mes "Eh?";
+check Gender=1,L2M,-;
+	mes "You want give me one, lady?";
+	goto L2B;
+L2M:
+	mes "You want give me one, mister?";
+L2B:
+	mes "A doll? YAY~!";
+	mes "What kind of doll will you give me?!";
+	next;
+	menu "Poring doll",L21,"Chonchon doll",L22,"Puppet",L23,"Rocker doll",L24,"Spore doll",L25,"Osiris doll",L26,"Baphomet doll",L27,"Racoon doll",L28,"Yoyo doll",L29;
+L21:
+// Dialogue unknown (Candy 1)
+	checkitem 741,1,-,LEnd;
+	mes "[Little Kid]";
+	mes "Yay, it's a poring doll!"
+	next;
+delitem 741,1;
+additem 529,1;
+	mes "[Little Kid]";
+	mes "Thank you for the doll!";
+	close;
+L22:
+	checkitem 742,1,-,LEnd;
+	mes "[Little Kid]";
+	mes "Eh .... Chonchon ... doll ...";
+	next;
+	mes "[Little Kid]";
+	mes "Oh well, since you're giving it to me, I have to treasure it ....";
+	next;
+	mes "[Little Kid]";
+check Gender=1,L22M2,-;
+	mes "Here, lady, take this.";
+	goto L22B2;
+L22M2:
+	mes "Here, mister, take this.";
+L22B2:
+	next;
+delitem 742,1;
+additem 530,1;
+	mes "[Little Kid]";
+	mes "If I ate too much of it, I'll get cavities anyway.";
+check Gender=1,L22M3,-;
+	mes "You too, lady, ";
+	goto L22B3;
+L22M3:
+	mes "You too, mister, ";
+L22B3:
+	mes "don't eat too much, ok?";
+	mes "And thanks, by the way ...";
+	next;
+	mes "[Little Kid]";
+	mes "(Chonchon .... *mumble mumble*)";
+	close;
+L23:
+	checkitem 740,1,-,LEnd;
+	mes "[Little Kid]";
+	mes "Wow--! It's a rabbit!";
+	mes "It's so cute!!";
+check Gender=1,L23M1,-;
+	mes "Thank you so much, lady!";
+	goto L23B1;
+L23M1:
+	mes "Thank you so much, mister!";
+L23B1:
+	next;
+	mes "[Little Kid]";
+	mes "So fluffy~";
+	mes "Oh yeah! Let me give you a present too!";
+	mes "Ummm ... found it!";
+	mes "Take this!";
+	next;
+delitem 740,1;
+additem 530,1;
+	mes "[Little Kid]";
+	mes "I got this from Santa. It's a candy cane~";
+check Gender=1,L23M3,-;
+	mes "Eat it too, lady.";
+	goto L23B3;
+L23M3:
+	mes "Eat it too, mister.";
+L23B3:
+	mes "Thank you for the rabbit doll!";
+	mes "I'm gonna hug this to sleep every night~";
+	close;
+L24:
+	checkitem 752,1,-,LEnd;
+	mes "[Little Kid]";
+	mes "Ah, a Rocker doll.";
+	mes "I hate hopping things but the doll's kinda cute.";
+	next;
+	mes "[Little Kid]";
+	mes "Thank you~";
+//check Gender=1,L24M1,-;
+	mes "I'll have to give you something too.";
+//	goto L24B1;
+//L24M1:
+//	mes "Ç†ÇΩÇµÇ‡Ç®Ç…Ç¢ÇøÇ·ÇÒÇ…âΩÇ©Ç†Ç∞ÇÈÅB";
+//L24B1:
+	mes "Hmm, didn't I get some stuff from my uncle ...";
+	next;
+delitem 752,1;
+additem 532,7;
+	mes "[Little Kid]";
+	mes "We've got tons of them at home.";
+//check Gender=1,L24M2,-;
+	mes "So I'll share some with you~";
+//	goto L24B2;
+//L24M2:
+//	mes "Ç®Ç…Ç¢ÇøÇ·ÇÒÇ…Ç‡Ç®Ç∑ÇªÇÌÇØÅ`";
+//L24B2:
+	mes "Thank you for the doll!";
+	close;
+L25:
+	checkitem 743,1,-,LEnd;
+	mes "[Little Kid]";
+	mes "Blehh ....";
+	mes "It's a mushroom...";
+	mes "Mom's always scolding me for not eating mushrooms ...";
+	next;
+	mes "[Little Kid]";
+	mes "I'll take it anyway, since the doll looks cute.";
+	mes "But I still won't eat mushrooms though ...";
+	mes "Hmm, I'll need to give you a present too.";
+	next;
+delitem 740,1;
+additem 538,5;
+	mes "[Little Kid]";
+	mes "Mom made this.";
+check Gender=1,L25M,-;
+	mes "Take it, lady!";
+	goto L25B;
+L25M:
+	mes "Take it, mister!";
+L25B:
+	next;
+	mes "[Litte Kid]";
+	mes "Thank you for the doll~";
+	close;
+L26:
+//Dialogue unknown (Mastela 2)
+	checkitem 751,1,-,LEnd;
+	mes "[Little Kid]";
+	mes "Yay! It's an Osiris doll!"
+	next;
+delitem 751,1;
+additem 522,2;
+	mes "[Little Kid]";
+	mes "Thank you for the doll!";
+	close;
+L27:
+//Dialogue unknown(Panacea5)
+	checkitem 750,1,-,LEnd;
+	mes "[Little Kid]";
+	mes "Yay! It's a Baphomet doll!"
+	next;
+delitem 750,1;
+additem 525,5;
+	mes "[Little Kid]";
+	mes "Thank you for the doll!";
+	close;
+L28:
+	checkitem 754,1,-,LEnd;
+	mes "[Little Kid]";
+	mes "Ah, it's a racoon doll~";
+	mes "I hate Smokies, but the doll's really cute!";
+	next;
+	mes "[Little Kid]";
+	mes "It's really cute~";
+check Gender=1,L28M1,-;
+	mes "Thank you very much, lady!";
+	goto L28B1;
+L28M1:
+	mes "Thank you very much, mister!";
+L28B1:
+	next;
+delitem 754,1;
+additem 539,3;
+	mes "[Little Kid]";
+	mes "Let me give you some of Grandma's home-made cakes!";
+check Gender=1,L28M2,-;
+	mes "Do you like sweet things, lady?";
+	goto L28B2;
+L28M2:
+	mes "Do you like sweet things, mister?";
+L28B2:
+	mes "This is really good, so eat it~";
+	next;
+	mes "[Little Kid]";
+	mes "Thank you for this cute doll!";
+	close;
+L29:
+	checkitem 753,1,-,LEnd;
+	mes "[Little Kid]";
+	mes "Wow--!!!";
+	mes "It's a monkey! So cute~";
+check Gender=1,L29M1,-;
+	mes "Thank you very much, lady!";
+	goto L29B1;
+L29M1:
+	mes "Thank you very much, mister!";
+L29B1:
+	mes "I really wanted it~";
+	next;
+	mes "[Little Kid]";
+	mes "It's so cute~";
+//check Gender=1,L29M2,-;
+	mes "That's right!";
+	mes "As a thank you, I'll give you this.";
+//	goto L29B2;
+//L29M2:
+//	mes "ÇªÇ§ÇæÅIÇ®Ç…Ç¢ÇøÇ·ÇÒÇ…";
+//L29B2:
+//	mes "Ç®óÁÇµÇΩÇ¢ÇÃÅB";
+	next;
+	delitem 753,1;
+	additem 608,1;
+	mes "[Little Kid]";
+	mes "Dad picked them up during his travels.";
+	mes "It's a seed of some kind.";
+	mes "We tried planting them at home, but it doesn't seem to grow.";
+check Gender=1,L29M3,-;
+	mes "I'll give it to you, lady!";
+	goto L29B3;
+L29M3:
+	mes "I'll give it to you, mister!";
+L29B3:
+	next;
+	mes "[Little Kid]";
+	mes "Thank you so much for the doll!";
+	close;
+LEnd:
+	mes "[Little Kid]";
+check Gender=1,LEndM,-;
+	mes "Lady, you're a liar!";
+	goto LEndB;
+LEndM:
+	mes "Mister, you're a liar!";
+LEndB:
+	mes "You don't even have a doll!";
+	mes "(*bleh*)";
+	close;
+}

@@ -1,0 +1,68 @@
+//----------------------------------------------------------------------------------------
+// Bunny Band NPC - From Weiss, translated by GTO
+// eWeiss Project 2003 - http://revolve.emuxhaven.net/weiss/
+//----------------------------------------------------------------------------------------
+
+
+prontera.gat,55,350,5	script	"Peco Breeder"	105,{
+	mes "[Peco Breeder]";
+	check Job == 7,-,L_START_1;
+		mes "Hello, want to buy a peco to ride on?";
+		next;
+		menu "Yes",-,"No",L_MENU_1;
+			check Zeny < 2500,-,L_SUB_1;
+			mes "[Peco Breeder]";
+			mes "Sorry, but you don't seem to have 2500z on you, come back later.";
+			close;
+		L_SUB_1:
+			mes "[Peco Breeder]";
+			mes "You will! That’s good";
+			mes "Using a Peco won’t only make you look good but it will also make you move faster then walking.";
+			mes "The cost of using a Peco is 2500z";
+			next;
+			menu "I'll take one!",-,"Maybe later",L_ROOT_1;
+				set Zeny -= 2500,0;
+				option 2,1;
+			L_ROOT_1:
+			mes "Thanks for stopping by";
+				close;
+		L_MENU_1:
+			mes "[Peco Breeder]";
+			mes "Ah well, have a good day then!";
+			close;
+	L_START_1:
+		mes "Sorry only Knights can ride a Peco";
+		close;
+}
+
+in_hunter.gat,146,99,2	script	"Falcon Breeder"	105,{
+	mes "[Falcon Breeder]";
+	check Job == 11,-,L_START_1;
+		mes "Welcome, want a bird by your side young Hunter?";
+		next;
+		menu "Yes",-,"No",L_MENU_1;
+			check Zeny < 2500,-,L_SUB_1;
+			mes "[Falcon Breeder]";
+			mes "Sorry, but you don't seem to have 2500z on you, come back later.";
+			close;
+		L_SUB_1:
+			mes "[Falcon Breeder]";
+			mes "Say hello to your now best friend.";
+			mes "When you have a Falcon by your side you don’t just have a new friend with you.";
+			mes "You have a new ally";
+			mes "but it will cost you 2500z.";
+			next;
+			menu "I'll take one!",-,"Maybe later",L_ROOT_1;
+				set Zeny -= 2500,0;
+				option 1,1;
+			L_ROOT_1:
+			mes "Thanks for stopping by";
+				close;
+		L_MENU_1:
+			mes "[Falcon Breeder]";
+			mes "Oki, have a nice day!";
+			close;
+	L_START_1:
+		mes "Sorry only Hunters can have a Falcon";
+		close;
+}

@@ -1,0 +1,50 @@
+//----------------------------------------------------------------------------------------
+// Swordman Job Change NPC - From Weiss, translated by Khali
+// eWeiss Project 2003 - http://revolve.emuxhaven.net/weiss/
+//----------------------------------------------------------------------------------------
+
+izlude_in.gat,74,172,4 script Swordman 119,{
+//Opening
+mes "[Swordman]";
+mes "What is it you are looking for?";
+//Menu
+next;
+menu "Change job to Swordman",L_Menu1,"Requirements",L_Menu2,"End",-;
+close;
+  L_Menu1:
+//Requirements check
+   mes "[Swordman]";
+   mes "First I'll check if all the requirements have been met.";
+   next;
+   check Job == 0,-,L_Menu1_F1;
+   check JobLevel >= 10,-,L_Menu1_F2;
+// pass requirement check
+// check SkillPoint == 0,-,L_Menu1_F3;
+   set JobLevel = 1,0;
+   jobchange 1;
+   mes "[Swordman]";
+   mes "Welcome to the swordmen guild!";
+   close;
+    L_Menu1_F1:
+     mes "[Swordman]";
+     mes "You are not a novice.";
+     close;
+    L_Menu1_F2:
+     mes "[Swordman]";
+     mes "First, you must learn a Basic Skill of Level 9. If you can't qualify this condition, you won't be able to earn any job.";
+     close;
+    L_Menu1_F3:
+     mes "[Swordman]";
+     mes "Please use all your skills up first";
+     close;
+//--------------
+//--------------
+  L_Menu2:
+   mes "[Swordman]";
+   mes "Once you are job level 10, you may become a Swordman";
+   mes "In the future, you will have to complete a quest to change your job.";
+   next;
+   mes "[Swordman]";
+   mes "Good Luck";
+   close;
+}

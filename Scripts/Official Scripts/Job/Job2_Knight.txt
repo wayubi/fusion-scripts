@@ -1,0 +1,84 @@
+//----------------------------------------------------------------------------------------
+// Knight Translation - From Weiss, translated by Khali
+// eWeiss Project 2003 - http://revolve.emuxhaven.net/weiss/
+//----------------------------------------------------------------------------------------
+
+prt_in.gat,88,101,4 script Knight 56,{
+mes "[Prontera Knight]";
+mes "Good Day, This is the Prontera Chivarly.";
+next;
+menu "Change Job into a Knight.",L_Menu1,"Requirements",L_Menu2,"End",-;
+close;
+ L_Menu1:
+// Check Requirements
+  mes "[Prontera Knight]";
+  mes "First I'll check if all the requirements have been met.";
+  next;
+  check Job == 1,-,L_Menu1_F1;
+  check JobLevel >= 40,-,L_Menu1_F2;
+//Requirements Passed
+// check SkillPoint == 0,-,L_Menu1_F3;
+  set JobLevel = 1,0;
+  jobchange 7;
+  mes "[Prontera Knight]";
+  mes "Congradulations, you are now a Knight!";
+  close;
+   L_Menu1_F1:
+    mes "[Prontera Knight]";
+    mes "You must be a swordman before you can become a knight.";
+    close;
+   L_Menu1_F2:
+    mes "[Prontera Knight]";
+    mes "You must be at least Job Level 40 to become a knight.";
+    close;
+//--------------
+//--------------
+ L_Menu2:
+//ˆÈ‰º•s–¾[‘äŽŒ]
+  mes "[Prontera Knight]";
+  mes "To become a knight you must complete the following:";
+  mes "Become a Swordman";
+  mes "Job Level 40";
+  next;
+  mes "[Prontera Knight]";
+  mes "Good luck.";
+  mes "I also recommend you use up all your skills first.";
+  close;
+//--------------
+}
+
+// PecoPeco Breeder
+prontera.gat,55,350,5 script Breeder 105,{
+check Job=7,-,L_noKnight;
+mes "[PecoPeco Breeder]";
+mes "So you wish to rent a PecoPeco huh?";
+mes "It'll cost you 2500 zeny.";
+next;
+menu "Rent a PecoPeco",L_peko_no,"No",-;
+L_peko_on:
+ check Zeny>=2500,-,L_peko_nomaney;
+ mes "[PecoPeco Breeder]";
+ mes "You have enough money for a PecoPeco, do you wish to rent one?";
+ next;
+ menu "Rent a PecoPeco",L_peko_yes,"No",L_peko_no;
+ L_peko_yes:
+  option 2,0;
+  option 2,1;
+  mes "[PecoPeco Breeder]";
+  mes "Here is your PecoPeco.";
+  close;
+ L_peko_no:
+  mes "[PecoPeco Breeder]";
+  mes "Alright, continue on.";
+  close;
+ L_peko_nomaney:
+  mes "[PecoPeco Breeder]";
+  mes "I'm sorry...";
+  mes "You don't have enough zeny.";
+  close;
+L_noKnight:
+ mes "[PecoPeco Breeder]";
+ mes "So you wish to ride a PecoPeco?";
+ mes "You can't ride a PecoPeco unless you are a knight.";
+ close;
+}
