@@ -314,7 +314,7 @@ L1_2:
 	mes "2nd floor";
 	close;
 L1_3:
-	check @Novice_Nametag = 1,-,L1_timeout;
+	checkitem 7039,1,-,L1_timeout;
 	mes "[Jamie]";
 	mes "Great! You brought the Nametag";
 	mes "Ok! Practice over. .";
@@ -329,7 +329,7 @@ L1_3:
 	mes "you can't defeat it, just play dead ";
 	mes "Ok ok, I'll see you next time";
 	set skill_nov = 6;
-	set @Novice_Nametag = 0;
+	delitem 7039,1;
 	setskilllevel 0x8F,1;
 	close;
 L1_timeout:
@@ -444,7 +444,7 @@ L_3:
 	mes "I really hate it!";
 	close;
 L_4:
-	check @Novice_Nametag = 0,-,L_4a;
+	checkitem 7039,0,-,L_4a;
 	mes "[Nurse General]";
 	mes "How dare you disturb my rest.";
 	mes "You shouldn't be running around";
@@ -458,7 +458,7 @@ L_4:
 	mes "Alright alright, take it and leave!";
 	next;
 	mes "^3355FF- Acquired Novice Nametag -^000000";
-	set @Novice_Nametag = 1;
+	additem 7039,1;
 	set skill_nov = 5;
 	close;
 L_4a:
