@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.003
 ----------------------------------------------------------------------------------------------------
+- Quest\Questskill - added new folder [nestor_zulueta]
 - Job\Job2_Wizard.txt - Complete change to Wizard quest. [nestor_zulueta] 
 - Job\Job_Super_Novice.txt - Fixed header. [Muad_Dib] 
 - Town\Town_Aldebaran.txt - Removed 2nd guide. [Muad_Dib]
