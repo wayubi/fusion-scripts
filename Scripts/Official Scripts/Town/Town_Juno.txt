@@ -1067,7 +1067,7 @@ yuno_fild11.gat,299,116,0 script "Sailor" 100,{
 	mes "[Sailor]";
 	mes "Hello my friend, where do you wish to go?";
 	next;
-	menu "Alberta = 600 Zeny",L_Alberta,"Izlude = 800 Zeny",L_Izlude,"Cancel",L_End;
+	menu "Alberta -> 600 Zeny",L_Alberta,"Izlude -> 800 Zeny",L_Izlude,"Cancel",L_End;
 L_Alberta:
 		check Zeny >= 600,-,L_Zeny;
     		set Zeny -= 600,0;

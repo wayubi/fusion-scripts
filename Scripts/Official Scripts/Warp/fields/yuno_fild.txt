@@ -40,7 +40,7 @@ yuno_fild02.gat,21,337,0	warp	junofieldwarp029	1,1,yuno_fild03.gat,373,327
 yuno_fild03.gat,380,331,0	warp	junofieldwarp030	1,1,yuno_fild02.gat,26,337
 yuno_fild03.gat,23,162,0	warp	junofieldwarp031	1,1,yuno_fild04.gat,369,146
 yuno_fild04.gat,374,150,0	warp	junofieldwarp032	1,1,yuno_fild03.gat,28,162
-yuno_fild03.gat,34,140,0	warp	junofieldwarp033	1,1,mag_dun01.gat,238,237
+yuno_fild03.gat,32,139,0	warp	junofieldwarp033	1,1,mag_dun01.gat,126,69
 yuno_fild03.gat,22,79,0		warp	junofieldwarp034	1,1,yuno_fild04.gat,366,80
 yuno_fild04.gat,373,83,0	warp	junofieldwarp035	1,1,yuno_fild03.gat,27,79
 yuno_fild08.gat,74,376,0	warp	junofieldwarp036	1,1,yuno_fild02.gat,69,30

@@ -1,6 +1,10 @@
 --------------------------------------------------------------------------------
  Fusion 1.213 - January 1st, 2005
 -------------------------------------------------------------------------------- 
+- 12-29-04: Warp\dungeons\mag_dun.txt - Updated magma dungeon warps. [Muad_Dib]
+- 12-29-04: Mob\field\yuno_fild.txt - Added Plants to the fields. [Muad_Dib]
+- 12-29-04: Town\Town_Juno.txt - Fixed a couple of tyo's. [Muad_Dib]
+- 12-29-04: Warp\fields\yuno_fild.txt - Updated magma dungeon entrance warp. [Muad_Dib]
 - 12-28-04: Town\Town_Siglude.txt - added temporarily Repairman npc's in geffen and aldebaran. [Muad_Dib]
 - 12-28-04: Town\Guide\Aldebaran_Guide.txt - Corrected 2 typo's. [Muad_Dib]
 - 12-28-04: Mob\field\yuno_fild.txt - Updated mobs to the new fields. [Muad_Dib]

@@ -4,7 +4,7 @@
 // http://fusion.cobax.net/
 // ---------------------------------------------------------------------------------------
 //
-// Yuno Fields - Monster Spawn Locations
+// Juno Fields - Monster Spawn Locations
 //
 //========================================================================================
 
@@ -16,6 +16,11 @@ yuno_fild01.gat,0,0,0,0		monster	"Poring"		1002,40,0,0,0
 yuno_fild01.gat,0,0,0,0		monster	"Poporing"		1031,30,0,0,0
 yuno_fild01.gat,0,0,0,0		monster	"Dustiness"		1114,20,0,0,0
 yuno_fild01.gat,0,0,0,0		monster	"Grand Peco"	1369,20,0,0,0
+yuno_fild01.gat,0,0,0,0		monster	"Green Plant"	1080,20,180000,90000,1
+yuno_fild01.gat,0,0,0,0		monster	"Red Plant"		1078,15,180000,90000,1
+yuno_fild01.gat,0,0,0,0		monster	"Shining Plant"	1083,3,1800000,900000,1
+yuno_fild01.gat,0,0,0,0		monster	"Blue Plant"	1079,2,360000,180000,1
+yuno_fild01.gat,0,0,0,0		monster	"Yellow Plant"	1081,23,360000,180000,1
 
 //========================================================================================
 // - Yuno Field 02
@@ -29,6 +34,10 @@ yuno_fild02.gat,0,0,0,0		monster	"The Paper"		1375,5,0,0,0
 yuno_fild02.gat,0,0,0,0		monster	"Driller"		1380,15,0,0,0
 yuno_fild02.gat,0,0,0,0		monster	"Sleeper"		1386,15,0,0,0
 yuno_fild02.gat,0,0,0,0		monster	"Archangeling"	1388,1,3600000,1800000,1
+yuno_fild02.gat,0,0,0,0		monster	"Red Plant"		1078,20,180000,90000,1
+yuno_fild02.gat,0,0,0,0		monster	"Shining Plant"	1083,1,1800000,900000,1
+yuno_fild02.gat,0,0,0,0		monster	"Blue Plant"	1079,3,360000,180000,1
+yuno_fild02.gat,0,0,0,0		monster	"Yellow Plant"	1081,20,360000,180000,1
 
 //========================================================================================
 // - Yuno Field 03
@@ -39,7 +48,11 @@ yuno_fild03.gat,0,0,0,0		monster	"Goat"		1372,20,0,0,0
 yuno_fild03.gat,0,0,0,0		monster	"The Paper"		1375,10,0,0,0
 yuno_fild03.gat,0,0,0,0		monster	"Harpy"		1376,5,0,0,0
 yuno_fild03.gat,0,0,0,0		monster	"Demon Pungus"	1378,20,0,0,0
-yuno_fild03.gat,0,0,0,0		monster	"Sleeper		1386,5,0,0,0
+yuno_fild03.gat,0,0,0,0		monster	"Sleeper"		1386,5,0,0,0
+yuno_fild03.gat,0,0,0,0		monster	"Red Plant"		1078,15,180000,90000,1
+yuno_fild03.gat,0,0,0,0		monster	"Shining Plant"	1083,2,1800000,900000,1
+yuno_fild03.gat,0,0,0,0		monster	"Blue Plant"	1079,4,360000,180000,1
+yuno_fild03.gat,0,0,0,0		monster	"Yellow Plant"	1081,20,360000,180000,1
 
 //========================================================================================
 // - Yuno Field 04
@@ -52,6 +65,9 @@ yuno_fild04.gat,0,0,0,0		monster	"The Paper"		1375,10,0,0,0
 yuno_fild04.gat,0,0,0,0		monster	"Harpy"		1376,5,0,0,0
 yuno_fild04.gat,0,0,0,0		monster	"Driller"		1380,10,0,0,0
 yuno_fild04.gat,0,0,0,0		monster	"Sleeper"		1386,5,0,0,0
+yuno_fild04.gat,0,0,0,0		monster	"Green Plant"	1080,10,180000,90000,1
+yuno_fild04.gat,0,0,0,0		monster	"Red Plant"		1078,10,180000,90000,1
+yuno_fild04.gat,0,0,0,0		monster	"Yellow Plant"	1081,10,360000,180000,1
 
 //========================================================================================
 // - Yuno Field 05
@@ -62,6 +78,9 @@ yuno_fild05.gat,0,0,0,0		monster	"Poporing"		1031,30,0,0,0
 yuno_fild05.gat,0,0,0,0		monster	"Dustiness"		1114,20,0,0,0
 yuno_fild05.gat,0,0,0,0		monster	"Grand Peco"	1369,20,0,0,0
 yuno_fild05.gat,0,0,0,0		monster	"Driller"		1380,15,0,0,0
+yuno_fild05.gat,0,0,0,0		monster	"Green Plant"	1080,5,180000,90000,1
+yuno_fild05.gat,0,0,0,0		monster	"Yellow Plant"	1081,10,360000,180000,1
+yuno_fild05.gat,0,0,0,0		monster	"Red Plant"		1078,5,180000,90000,1
 
 //========================================================================================
 // - Yuno Field 07
@@ -73,6 +92,10 @@ yuno_fild07.gat,0,0,0,0		monster	"Geographer"	1368,15,0,0,0
 yuno_fild07.gat,0,0,0,0		monster	"Harpy"		1376,5,0,0,0
 yuno_fild07.gat,0,0,0,0		monster	"Driller"		1380,10,0,0,0
 yuno_fild07.gat,0,0,0,0		monster	"Sleeper"		1386,5,0,0,0
+yuno_fild07.gat,0,0,0,0		monster	"Red Plant"		1078,10,180000,90000,1
+yuno_fild07.gat,0,0,0,0		monster	"Shining Plant"	1083,2,1800000,900000,1
+yuno_fild07.gat,0,0,0,0		monster	"Blue Plant"	1079,6,360000,180000,1
+yuno_fild07.gat,0,0,0,0		monster	"Yellow Plant"	1081,15,360000,180000,1
 
 //========================================================================================
 // - Yuno Field 08
@@ -84,6 +107,10 @@ yuno_fild08.gat,0,0,0,0		monster	"The Paper"		1375,10,0,0,0
 yuno_fild08.gat,0,0,0,0		monster	"Harpy"		1376,5,0,0,0
 yuno_fild08.gat,0,0,0,0		monster	"Driller"		1380,15,0,0,0
 yuno_fild08.gat,0,0,0,0		monster	"Sleeper"		1386,15,0,0,0
+yuno_fild08.gat,0,0,0,0		monster	"Red Plant"		1078,10,180000,90000,1
+yuno_fild08.gat,0,0,0,0		monster	"Shining Plant"	1083,3,1800000,900000,1
+yuno_fild08.gat,0,0,0,0		monster	"Blue Plant"	1079,5,360000,180000,1
+yuno_fild08.gat,0,0,0,0		monster	"Yellow Plant"	1081,15,360000,180000,1
 
 //========================================================================================
 // - Yuno Field 09
@@ -95,6 +122,10 @@ yuno_fild09.gat,0,0,0,0		monster	"The Paper"		1375,10,0,0,0
 yuno_fild09.gat,0,0,0,0		monster	"Harpy"		1376,5,0,0,0
 yuno_fild09.gat,0,0,0,0		monster	"Driller"		1380,15,0,0,0
 yuno_fild09.gat,0,0,0,0		monster	"Sleeper"		1386,15,0,0,0
+yuno_fild09.gat,0,0,0,0		monster	"Red Plant"		1078,10,180000,90000,1
+yuno_fild09.gat,0,0,0,0		monster	"Yellow Plant"	1081,15,360000,180000,1
+yuno_fild09.gat,0,0,0,0		monster	"Shining Plant"	1083,1,1800000,900000,1
+yuno_fild09.gat,0,0,0,0		monster	"Blue Plant"	1079,3,360000,180000,1
 
 //========================================================================================
 // - Yuno Field 11
@@ -106,6 +137,10 @@ yuno_fild11.gat,0,0,0,0		monster	"Driller"		1380,15,0,0,0
 yuno_fild11.gat,0,0,0,0		monster	"Goat"		1372,15,0,0,0
 yuno_fild11.gat,0,0,0,0		monster	"Dustiness"		1114,5,0,0,0
 yuno_fild11.gat,0,0,0,0		monster	"Geographer"	1368,15,0,0,0
+yuno_fild11.gat,0,0,0,0		monster	"Red Plant"		1078,10,180000,90000,1
+yuno_fild11.gat,0,0,0,0		monster	"Shining Plant"	1083,1,1800000,900000,1
+yuno_fild11.gat,0,0,0,0		monster	"Blue Plant"	1079,3,360000,180000,1
+yuno_fild11.gat,0,0,0,0		monster	"Yellow Plant"	1081,15,360000,180000,1
 
 //========================================================================================
 // - Yuno Field 12
@@ -116,5 +151,9 @@ yuno_fild12.gat,0,0,0,0		monster	"Goat"		1372,20,0,0,0
 yuno_fild12.gat,0,0,0,0		monster	"The Paper"		1375,10,0,0,0
 yuno_fild12.gat,0,0,0,0		monster	"Harpy"		1376,5,0,0,0
 yuno_fild12.gat,0,0,0,0		monster	"Demon Pungus"	1378,20,0,0,0
-yuno_fild12.gat,0,0,0,0		monster	"Sleeper		1386,5,0,0,0
+yuno_fild12.gat,0,0,0,0		monster	"Sleeper"		1386,5,0,0,0
+yuno_fild12.gat,0,0,0,0		monster	"Red Plant"		1078,5,180000,90000,1
+yuno_fild12.gat,0,0,0,0		monster	"Shining Plant"	1083,1,1800000,900000,1
+yuno_fild12.gat,0,0,0,0		monster	"Blue Plant"	1079,2,360000,180000,1
+yuno_fild12.gat,0,0,0,0		monster	"Yellow Plant"	1081,10,360000,180000,1
 
