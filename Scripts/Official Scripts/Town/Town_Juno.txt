@@ -1,6 +1,7 @@
 //----------------------------------
 //Town_Juno.txt by kalen
 //Translated by SilentDragon
+//Updated by Tezuka
 //----------------------------------
 
 yuno.gat,153,47,4	script	"Juno Guide"	700,{
