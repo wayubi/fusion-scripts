@@ -9,7 +9,9 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.003
 ----------------------------------------------------------------------------------------------------
-- Mob\field\prt_fld.txt - Updated Prontera Fields Monster Spawns [Muad_Dib]
+- Mob\field\yuno_fild.txt - Updated Yuno Fields Monster Spawns [Muad_Dib]
+- Mob\field\ama_fild.txt - Updated Amatsu Fields Monster Spawns [Muad_Dib]
+- Mob\field\prt_fild.txt - Updated Prontera Fields Monster Spawns [Muad_Dib]
 - Mob\dungeon\gld_dun.txt - Updated Guild Dungeon Monster Spawns [Muad_Dib]
 - Job\Job2_Alchemist.txt - Added a temp changer until more quest info is known. (Requested on Bugtracker) [Muad_Dib]
 - Job\Job2_Rogue.txt - Added a temp changer until more quest info is known. (Requested on Bugtracker) [Muad_Dib]

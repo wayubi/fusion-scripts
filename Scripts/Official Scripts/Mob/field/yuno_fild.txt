@@ -1,24 +1,54 @@
-yuno_fild01.gat,0,0,0,0  monster "Cremy Fear" 1293,15,0,0,0
-yuno_fild01.gat,0,0,0,0  monster "Geographer" 1368,10,0,0,0
-yuno_fild01.gat,0,0,0,0  monster "Giant Spider" 1304,10,0,0,0
-yuno_fild01.gat,0,0,0,0  monster "Raptice" 1027,10,0,0,0
-yuno_fild02.gat,0,0,0,0  monster "Demon Punk" 1378,10,0,0,0
-yuno_fild02.gat,0,0,0,0  monster "Geographer" 1368,10,0,0,0
-yuno_fild02.gat,0,0,0,0  monster "Giant Hornet" 1303,10,0,0,0
-yuno_fild02.gat,0,0,0,0  monster "Gig" 1387,10,0,0,0
-yuno_fild02.gat,0,0,0,0  monster "Goat" 1372,10,0,0,0
-yuno_fild03.gat,0,0,0,0  monster "Caterpillar" 1300,10,0,0,0
-yuno_fild03.gat,0,0,0,0  monster "Deleter(Earth)" 1385,10,0,0,0
-yuno_fild03.gat,0,0,0,0  monster "Deleter(Sky)" 1384,10,0,0,0
-yuno_fild03.gat,0,0,0,0  monster "Demon Punk" 1378,10,0,0,0
-yuno_fild03.gat,0,0,0,0  monster "Killer Mantis"
-yuno_fild04.gat,0,0,0,0  monster "Deleter(Earth)" 1385,10,0,0,0
-yuno_fild04.gat,0,0,0,0  monster "Deleter(Sky)" 1384,10,0,0,0
-yuno_fild04.gat,0,0,0,0  monster "Demon Punk" 1378,10,0,0,0
-yuno_fild04.gat,0,0,0,0  monster "Goat" 1372,10,0,0,0
-yuno_fild04.gat,0,0,0,0  monster "Caterpillar" 1300,10,0,0,0
-yuno_fild05.gat,0,0,0,0  monster "Deleter(Sky)" 1384,10,0,0,0
-yuno_fild05.gat,0,0,0,0  monster "Goat" 1372,10,0,0,0
-yuno_fild05.gat,0,0,0,0  monster "Giant Spider" 1304,10,0,0,0
-yuno_fild05.gat,0,0,0,0  monster "Giant Hornet" 1303,10,0,0,0
-yuno_fild05.gat,0,0,0,0  monster "Geographer" 1368,10,0,0,0
+//========================================================================================
+// »» The Fusion Project ««
+// Copyright (c) 2004, Cobax Information Systems
+// http://fusion.cobax.net/
+// ---------------------------------------------------------------------------------------
+//
+// Yuno Fields Mob - Monster Spawn Locations
+//
+//========================================================================================
+
+//========================================================================================
+// - Yuno Field 01
+//========================================================================================
+
+yuno_fild01.gat,0,0,0,0	 monster	"Poring" 1002,45,0,0,0
+yuno_fild01.gat,0,0,0,0	 monster	"Grand Peco" 1369,15,0,0,0
+yuno_fild01.gat,0,0,0,0	 monster	"Dustiness" 1114,15,0,0,0
+yuno_fild01.gat,0,0,0,0	 monster	"Poporing" 1031,25,0,0,0
+
+//========================================================================================
+// - Yuno Field 02
+//========================================================================================
+
+yuno_fild02.gat,0,0,0,0	 monster	"Angeling" 1388,1,1800000,200000,1
+yuno_fild02.gat,0,0,0,0	 monster	"Driller" 1380,5,0,0,0
+yuno_fild02.gat,0,0,0,0	 monster	"Dustiness" 1114,15,0,0,0
+yuno_fild02.gat,0,0,0,0	 monster	"Geographer" 1368,20,0,0,0
+yuno_fild02.gat,0,0,0,0	 monster	"Grand Peco" 1369,15,0,0,0
+yuno_fild02.gat,0,0,0,0	 monster	"Poring" 1002,45,0,0,0
+yuno_fild02.gat,0,0,0,0	 monster	"Sleeper" 1386,10,0,0,0
+
+//========================================================================================
+// - Yuno Field 03
+//========================================================================================
+
+yuno_fild03.gat,0,0,0,0	 monster	"Sleeper" 1386,10,0,0,0
+yuno_fild03.gat,0,0,0,0  monster    "Demon Pungus" 1378,10,0,0,0
+yuno_fild03.gat,0,0,0,0  monster	"Geographer" 1368,20,0,0,0
+yuno_fild03.gat,0,0,0,0  monster    "Goat" 1372,15,0,0,0
+yuno_fild03.gat,0,0,0,0  monster    "Harpy" 1376,5,0,0,0
+yuno_fild03.gat,0,0,0,0  monster    "The Paper" 1375,10,0,0,0
+
+
+//========================================================================================
+// - Yuno Field 04
+//========================================================================================
+
+yuno_fild04.gat,0,0,0,0	 monster	"Driller" 1380,5,0,0,0
+yuno_fild04.gat,0,0,0,0	 monster	"Geographer" 1368,20,0,0,0
+yuno_fild04.gat,0,0,0,0  monster    "Goat" 1372,15,0,0,0
+yuno_fild04.gat,0,0,0,0  monster    "Harpy" 1376,5,0,0,0
+yuno_fild04.gat,0,0,0,0	 monster	"Poring" 1002,35,0,0,0
+yuno_fild02.gat,0,0,0,0	 monster	"Sleeper" 1386,10,0,0,0
+yuno_fild04.gat,0,0,0,0  monster    "The Paper" 1375,10,0,0,0
