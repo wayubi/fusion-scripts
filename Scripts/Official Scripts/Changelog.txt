@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.004
 ----------------------------------------------------------------------------------------------------
+- Shop\Gonryun.txt - Translated the shop names. [Muad_Dib]
 - Town\Town_LouYang.txt - Updated header and a warp coordinate. [Muad_Dib]
 - town\town_kafra.txt - change prices and location of teleport services of all kafra in alberta based on ragnamart [nestor_zulueta]
 - town\town_kafra.txt - change prices and location of teleport services of kafra in izlude based on ragnamart [nestor_zulueta]
