@@ -1,6 +1,7 @@
 --------------------------------------------------------------------------------
  Fusion 1.213 - August 29th, 2004
 --------------------------------------------------------------------------------
+- 07-14-04: shop\geffen.txt - Deleted npc that sold ori's and elu's.. [Muad_Dib]
 - 07-12-04: Warp\dungeons\gefenia_dun.txt - Added Gefenia warps. [Muad_Dib]
 - 07-07-04: Event\Event_NGuild.txt - Changed checkstr to check. [Tsusai]
 - 07-07-04: shop\niflheim.txt - Fixed Bastard Sword Price. [Muad_Dib]
