@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.003
 ----------------------------------------------------------------------------------------------------
+- Warp\towns\aldebaran.txt - Removed Alchemist warps. [Tsusai]
 - Job\Job2_Crusader.txt - Added Grand Peko Breeder. [icbob]
 - Job\Job2_Knight.txt - Fixed Pecopeco Breeder miss spelled label. [icbob]
 - GvG\gefg_cas0#.txt - Added Geffen Emblem Flag Support. [icbob]
