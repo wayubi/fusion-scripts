@@ -1,7 +1,7 @@
 ====================================================================================================
  »» The Fusion Project ««
  Copyright (c) 2004, Cobax Information Systems
- http:\\fusion.cobax.net\
+ http:/fusion.cobax.net/
 ----------------------------------------------------------------------------------------------------
  Scripts Change Logs
 ====================================================================================================
@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.005
 ----------------------------------------------------------------------------------------------------
+- Changelog.txt - fixed the \ in the web addresses to / [Tsusai]
 - Town\Town_Kafra.txt - Updated Comodo kafra prices.=. [Muad_Dib]
 - Town\Town_Comodo.txt - Updated a Paros Lighthouse NPC. [Muad_Dib]
 - Job\Job2_Rogue.txt - Updated change location. [Muad_Dib]
@@ -563,12 +564,12 @@ Thanks, and good luck.
 Relevant Links
 
 - The Fusion Project
-- http:\\fusion.cobax.net
+- http://fusion.cobax.net
 
 - The Weiss BBS
-- http:\\eweiss.sourceforge.net\garbage\
+- http://eweiss.sourceforge.net/garbage/
 
 - The DarkWeiss Forums
-- http:\\dweiss.sigh.org\forum\
+- http:/dweiss.sigh.org/forum/
 
 - IRC: irc.z4znet.com - #fusion
