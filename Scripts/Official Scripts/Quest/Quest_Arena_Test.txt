@@ -1,18 +1,47 @@
-//----------------------------------------------------------------------
-// スクリプト : Arena_Test v0.3
-//----------------------------------------------------------------------
-// ※サーバ側MAPファイル名のリネーム必須(BGM対策)
-//   /map/force_01.gat → force_1-1.gat
-//----------------------------------------------------------------------
+//========================================================================================
+// ｻｻ The Fusion Project ｫｫ
+// Copyright (c) 2004, Cobax Information Systems
+// http://fusion.cobax.net/
+// ---------------------------------------------------------------------------------------
+//
+// Arena Test Quest - Non Player Character Locations
+//
+// - Receptionist -> prt_are_in: 99,85
+//   Enable the Arena Test.
+//
+// - Guide -> force_1-1: 99,20
+//   Enable Mobs with timers.
+//
+// - Advancer -> force_1-1: 10,56
+//   Enable Mobs with timers.
+//
+// - area1 -> force_1-1: 0,0
+//   Say text when area1 is clear.
+//
+// - area2 -> force_1-1: 0,0
+//   Say text when area2 is clear.
+//
+// - area3 -> force_1-1: 0,0
+//   Say text when area3 is clear.
+//
+// - area4 -> force_1-1: 0,0
+//   Say text when area4 is clear.
+//
+// - area5 -> force_1-1: 0,0
+//   Say text when area5 is clear.
+//
+// - area6 -> force_1-1: 0,0
+//   Say text when area6 is clear.
+//
+// - area7 -> force_1-1: 0,0
+//   Say text when area7 is clear.
+//
+// - area8 -> force_1-1: 0,0
+//   Say text when area8 is clear.
+//
+//========================================================================================
 
-//warp.txt補完(とりあえず固定ワープゾーンとして定義)
-force_1-1.gat,99,124,0	warp	warp9001	1,1,prt_are_in.gat,169,152
-//force_1-2.gat,21,178,0	warp	warp9002	1,1,prt_are_in.gat,169,152
-//force_1-3.gat,99,186,0	warp	warp9003	1,1,prt_are_in.gat,169,152
-//----------------------------------------------------------------------
-// 受付NPC
-//----------------------------------------------------------------------
-prt_are_in.gat,99,85,4	script	Receptionist	124,{
+prt_are_in.gat,99,85,4	script	"Receptionist"	124,{
 	return;
  OnInit:
 	waitingroom "Time Attack!(1P)",2;
@@ -53,11 +82,7 @@ prt_are_in.gat,99,85,4	script	Receptionist	124,{
 	return;
 }
 
-
-//----------------------------------------------------------------------
-// 案内NPC
-//----------------------------------------------------------------------
-force_1-1.gat,99,20,4	script	Guide	124,{
+force_1-1.gat,99,20,4	script	"Guide"	124,{
 	return;
  OnInit:
 	check \@START_ARENA = 1,L_START_1,-;
@@ -112,11 +137,7 @@ force_1-1.gat,99,20,4	script	Guide	124,{
 	enablenpc "force_1-1","Advancer",1;
 	return;
 }
-
-//----------------------------------------------------------------------
-// 進行NPC
-//----------------------------------------------------------------------
-force_1-1.gat,10,56,4	script	Advancer	111,{
+force_1-1.gat,10,56,4	script	"Advancer"	111,{
 	return;
  OnInit:
 	check \@START_ARENA = 2,L_START_1,-;
@@ -155,10 +176,7 @@ force_1-1.gat,10,56,4	script	Advancer	111,{
 	return;
 }
 
-//----------------------------------------------------------------------
-// mob死亡時イベント
-//----------------------------------------------------------------------
-force_1-1.gat,0,0,4	script	area1	-1,{
+force_1-1.gat,0,0,4	script	"area1"	-1,{
 	set \@AREA1_MOB += 1;
 	check \@AREA1_MOB < 5,-,L_START_1;
 	return;
@@ -174,7 +192,7 @@ force_1-1.gat,0,0,4	script	area1	-1,{
 	return;
 }
 
-force_1-1.gat,0,0,4	script	area2	-1,{
+force_1-1.gat,0,0,4	script	"area2"	-1,{
 	set \@AREA2_MOB += 1;
 	check \@AREA2_MOB < 4,-,L_START_1;
 	return;
@@ -190,7 +208,7 @@ force_1-1.gat,0,0,4	script	area2	-1,{
 	return;
 }
 
-force_1-1.gat,0,0,4	script	area3	-1,{
+force_1-1.gat,0,0,4	script	"area3"	-1,{
 	set \@AREA3_MOB += 1;
 	check \@AREA3_MOB < 4,-,L_START_1;
 	return;
@@ -207,7 +225,7 @@ force_1-1.gat,0,0,4	script	area3	-1,{
 	return;
 }
 
-force_1-1.gat,0,0,4	script	area4	-1,{
+force_1-1.gat,0,0,4	script	"area4"	-1,{
 	enablenpc "force_1-1","Advancer",0;
 	set \@START_ARENA = 0;
 	broadcast "All clearance! Congratulations",10;
@@ -215,7 +233,7 @@ force_1-1.gat,0,0,4	script	area4	-1,{
 	return;
 }
 
-force_1-1.gat,0,0,4	script	area5	-1,{
+force_1-1.gat,0,0,4	script	"area5"	-1,{
 	set \@AREA5_MOB += 1;
 	check \@AREA5_MOB < 4,-,L_START_1;
 	return;
@@ -232,7 +250,7 @@ force_1-1.gat,0,0,4	script	area5	-1,{
 	return;
 }
 
-force_1-1.gat,0,0,4	script	area6	-1,{
+force_1-1.gat,0,0,4	script	"area6"	-1,{
 	set \@AREA6_MOB += 1;
 	check \@AREA6_MOB < 4,-,L_START_1;
 	return;
@@ -249,7 +267,7 @@ force_1-1.gat,0,0,4	script	area6	-1,{
 	return;
 }
 
-force_1-1.gat,0,0,4	script	area7	-1,{
+force_1-1.gat,0,0,4	script	"area7"	-1,{
 	set \@AREA7_MOB += 1;
 	check \@AREA7_MOB < 4,-,L_START_1;
 	return;
@@ -266,7 +284,7 @@ force_1-1.gat,0,0,4	script	area7	-1,{
 	return;
 }
 
-force_1-1.gat,0,0,4	script	area8	-1,{
+force_1-1.gat,0,0,4	script	"area8"	-1,{
 	set \@AREA8_MOB += 1;
 	check \@AREA8_MOB < 4,-,L_START_1;
 	return;
