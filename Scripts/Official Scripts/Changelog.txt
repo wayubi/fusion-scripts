@@ -1,6 +1,11 @@
 --------------------------------------------------------------------------------
  Fusion 1.213 - August 29th, 2004
 -------------------------------------------------------------------------------- 
+- 10-30-04: Quest\Quest_skill\Cart_Revolution.txt - Fixed Npc name. [Muad_Dib]
+- 10-30-04: Town\Town_Umbala.txt - Updated Bungeejump with OnTouch. [Muad_Dib]
+- 10-30-04: Town\kafra\Umbala_Kafra.txt - Fixed save option. [Muad_Dib]
+- 10-30-04: other\job_sword.txt - Added Broadcasts when u finished a course. [Muad_Dib]
+- 10-30-04: Warps\**\**.txt - Added OnTouch to random warps. [Muad_Dib]
 - 10-27-04: GvG\nguild_###.txt - Added Guild Storage Service option. [Muad_Dib]
 - 10-27-04: GvG\gefg_cas0#.txt - Added Guild Storage Service option. [Muad_Dib]
 - 10-27-04: GvG\aldeg_cas0#.txt - Added Guild Storage Service option. [Muad_Dib]
@@ -95,8 +100,8 @@
 - 09-06-04: Town\Town_Geffen.txt - Added new mRO npc's and npc emotions. [Muad_Dib]
 - 09-06-04: Town\Town_Comodo.txt - Fixed lots typos and added npc emotions. [Muad_Dib]
 - 09-06-04: Job\Job1_Swordman.txt - Added Percentheal and npc emotions. [Muad_Dib]
-- 09-06-04: Town\Town_Turtle_Island.txt - Added npc emotions.
-- 09-06-04: Town\Town_Umbala.txt - Renamed Umbala references to Umbla.
+- 09-06-04: Town\Town_Turtle_Island.txt - Added npc emotions. [Muad_Dib]
+- 09-06-04: Town\Town_Umbala.txt - Renamed Umbala references to Umbla.[Muad_Dib]
 - 09-06-04: Event\Event_Rental.txt - Fixed small hunter in Falcon Renter. [Muad_Dib]
 - 09-06-04: Event\Event_PvP.txt - Updated Yoyo mode payon map warps. [Muad_Dib]
 - 09-04-04: Town\Town_LouYang.txt - Added npc's from kRO screenshot.

@@ -115,13 +115,13 @@ LStartOther:
 	mes "Unfortunately you ain't a merchant."; 
 	close; 
 LStartLowlv:
-	mes "[Charlron]";
+	mes "[Gershaun]"; 
 	mes "Hello friendly merchant. You have to raise your level a little more before using Change Cart."; 
 	mes "You need to be atleast joblevel 35."; 
 	close; 
 LStartTwice: 
 	setskilllevel 0x99,1;
-	mes "[Charlron]"; 
+	mes "[Gershaun]"; 
 	mes "You already have this skill implemented in your skilltree."; 
 	close; 
 }

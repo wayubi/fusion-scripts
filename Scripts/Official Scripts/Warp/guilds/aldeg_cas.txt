@@ -68,7 +68,8 @@ aldeg_cas04.gat,108,210,0	warp	warp1858	1,1,aldeg_cas04.gat,186,92
 //aldeg_cas04.gat,132,231,0	warp	warp1859	1,1,aldeg_cas04.gat,14,196
 aldeg_cas04.gat,132,209,0	warp	warp1859a	1,1,aldeg_cas04.gat,50,129
 aldeg_cas04.gat,17,196,0	warp	warp1860	1,1,aldeg_cas04.gat,132,228
-aldeg_cas04.gat,132,231,4	script	aldg408r	723,{
+aldeg_cas04.gat,132,231,4	script	""	45,1,1,{
+OnTouch:
 	random @warp,100;
 	check @warp <= 25,w1,-;
 	check @warp <= 50,w2,-;

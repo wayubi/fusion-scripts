@@ -8,15 +8,14 @@
 //
 //========================================================================================
 
-//umbala.gat,219,189,0 warp  umbalawarp001   1,1,um_in.gat,32,70 
-//Replaced with jAthena Script #umba0029 with added on denying message.
-umbala.gat,220,189,0	script	""	723,{
+umbala.gat,220,189,0 script "" 45,1,1,{
+OnTouch:	
 	check event_umbala == 7,Warp,-;
 		mes "[*Unknown*]";
 		mes "You aren't allowed in here. Go away!";
 		close;
 	Warp:
-		warp "um_in.gat",32,71;
+		warp "um_in",32,71;
 }
 um_in.gat,28,70,0    warp  umbalawarp002   1,1,umbala.gat,217,187 
 umbala.gat,125,157,0 warp  umbalawarp003   1,1,um_in.gat,155,114 
@@ -31,5 +30,3 @@ umbala.gat,156,249,0 warp  umbalawarp011   1,1,um_in.gat,99,67
 um_in.gat,99,63,0    warp  umbalawarp012   1,1,umbala.gat,160,247 
 umbala.gat,108,164,0 warp  umbalawarp013   1,1,um_in.gat,38,113
 um_in.gat,38,110,0   warp  umbalawarp014   1,1,umbala.gat,104,163 
-//Bungee Jumping area
-umbala.gat,136,195,0	hiddenwarp	umbalariver	1,1,umbala,145,166

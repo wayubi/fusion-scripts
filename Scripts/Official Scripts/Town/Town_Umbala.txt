@@ -1608,28 +1608,34 @@ um_in.gat,144,45,5	script	"Wambokoriotan"	789,{
 //==============================================================================
 //Bungee jumping!
 //==============================================================================
-//
-Umbala.gat,140,197,0	script	"Bungy Jumping"	139,{
-//don't know how to auto trigger, so.... there, it ain't working, but it can soon - Tsusai
-	random @jumprand,4;
-	check @jumprand == 1,L1,-;
-	check @jumprand == 2,L2,-;
-	check @jumprand == 3,L3,-;
-		broadcast "Bungy Jumping Area: $charaname : Iyahaaaaahh!",10;
-		end;
-	L1:
-		//Dead
-		broadcast "Bungy Jumping Area: $charaname : Ukiyaaaaaaaaaa!",10;
-		die;
-		return;
-	L2:
-		//HP50% Damage
-		broadcast "Bungy Jumping Area: $charaname : Kyaaaaaaaaaaa!",10;
-		percentdamage 50,0;
-		return;
-	L3:
-		//HP99%‚Ì Damage
-		broadcast "Bungy Jumping Area: $charaname : Waaaaaaaaaah!",10;
-		percentdamage 99,0;
-		return;
+umbala.gat,140,197,0 script "Bungy Jumping" 139,0,1,{
+OnTouch:
+	random @jumprand,100;
+	check @jumprand <= 25,L1,-;
+	check @jumprand <= 50,L2,-;
+	check @jumprand <= 75,L3,-;
+	broadcast "Bungy Jumping Area: $charaname : Iyahaaaaahh!",10;
+	return;
+L1:
+//Dead
+	broadcast "Bungy Jumping Area: $charaname : Ukiyaaaaaaaaaa!",10;
+	die;
+	return;
+L2:
+//HP50% Damage
+	broadcast "Bungy Jumping Area: $charaname : Kyaaaaaaaaaaa!",10;
+	percentdamage 50,0;
+	return;
+L3:
+//HP99%‚Damage
+	broadcast "Bungy Jumping Area: $charaname : Waaaaaaaaaah!",10;
+	percentdamage 99,0;
+	warp "nif_in",68,14;
+	return;
+}
+
+umbala.gat,136,195,0 script "Bungee Fall"	139,1,1,{
+OnTouch:
+	warp "umbala",145,166;
+	return;
 }
