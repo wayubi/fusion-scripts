@@ -11,7 +11,7 @@
 ----------------------------------------------------------------------------------------------------
 - Shop\Shop.txt - Cleaned shops, fixed Comodo Shops, fixed pet merchants, removed carnival shops? (useless) [mudvayne]
 - Shop\Shop.txt - Removed Old Refiners Shops. [mudvayne]
-- Town\Town_Siglude.txt - Enabled Translated Vurewell, Sade, Begnahd and Kahlamanlith Npcs. [mudvayne]
+- Town\Town_Siglude.txt - Enabled Vurewell, Sade, Begnahd and Kahlamanlith Npcs. [mudvayne]
 - Event\Event_KafraP.txt - Translated Kafra point leader and removed useless comments. [mudvayne]
 - Event\Event_Making.txt - Added Young Man and Tempestra Npc, alot of new Hat Quest. [mudvayne]
 - Original\Original_Nenkaras.txt - Translated Inn Maid Sammy/Ahlma Npcs. [mudvayne]
