@@ -431,7 +431,7 @@ mes "    honor yourself.";
 close;
 }
 aldebaran.gat,152,97,4 script Flag 722,{
-guildreg "payg_cas01";
+guildreg "aldeg_cas01";
 check guildid == 0,-,L_START_1;
 mes "       [ Kingdom of Aldebaran ]";
 next;
@@ -459,7 +459,7 @@ mes "    honor yourself.";
 close;
 }
 aldebaran.gat,149,97,4 script Flag 722,{
-guildreg "payg_cas02";
+guildreg "aldeg_cas02";
 check guildid == 0,-,L_START_1;
 mes "       [ Kingdom of Aldebaran ]";
 next;
@@ -487,7 +487,7 @@ mes "    honor yourself.";
 close;
 }
 aldebaran.gat,134,97,4 script Flag 722,{
-guildreg "payg_cas03";
+guildreg "aldeg_cas03";
 check guildid == 0,-,L_START_1;
 mes "       [ Kingdom of Aldebaran ]";
 next;
@@ -515,7 +515,7 @@ mes "    honor yourself.";
 close;
 }
 aldebaran.gat,131,97,4 script Flag 722,{
-guildreg "payg_cas04";
+guildreg "aldeg_cas04";
 check guildid == 0,-,L_START_1;
 mes "       [ Kingdom of Aldebaran ]";
 next;
@@ -543,7 +543,7 @@ mes "    honor yourself.";
 close;
 }
 aldebaran.gat,128,97,4 script Flag 722,{
-guildreg "payg_cas05";
+guildreg "aldeg_cas05";
 check guildid == 0,-,L_START_1;
 mes "       [ Kingdom of Aldebaran ]";
 next;
@@ -571,7 +571,7 @@ mes "    honor yourself.";
 close;
 }
 geffen.gat,109,123,2 script Flag 722,{
-guildreg "payg_cas01";
+guildreg "gefg_cas01";
 check guildid == 0,-,L_START_1;
 mes "       [ Kingdom of Geffen ]";
 next;
@@ -599,7 +599,7 @@ mes "    honor yourself.";
 close;
 }
 geffen.gat,112,129,1 script Flag 722,{
-guildreg "payg_cas02";
+guildreg "gefg_cas02";
 check guildid == 0,-,L_START_1;
 mes "       [ Kingdom of Geffen ]";
 next;
@@ -627,7 +627,7 @@ mes "    honor yourself.";
 close;
 }
 geffen.gat,120,132,8 script Flag 722,{
-guildreg "payg_cas03";
+guildreg "gefg_cas03";
 check guildid == 0,-,L_START_1;
 mes "       [ Kingdom of Geffen ]";
 next;
@@ -655,7 +655,7 @@ mes "    honor yourself.";
 close;
 }
 geffen.gat,127,130,7 script Flag 722,{
-guildreg "payg_cas04";
+guildreg "gefg_cas04";
 check guildid == 0,-,L_START_1;
 mes "       [ Kingdom of Geffen ]";
 next;
@@ -683,7 +683,7 @@ mes "    honor yourself.";
 close;
 }
 geffen.gat,131,123,6 script Flag 722,{
-guildreg "payg_cas05";
+guildreg "gefg_cas05";
 check guildid == 0,-,L_START_1;
 mes "       [ Kingdom of Geffen ]";
 next;
