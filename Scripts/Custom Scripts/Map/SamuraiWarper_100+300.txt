@@ -3,8 +3,10 @@
 // Copyright (c) 2004, Cobax Information Systems
 // http://fusion.cobax.net/
 // ---------------------------------------------------------------------------------------
-//  This NPC uses pictures that are not available with the original kro and sakaray.
-//  Link to necessary pictures: http://angler.animeworld.cl/samurai_maps.rar
+//
+//  **Note: This NPC uses pictures that are not available with the original kro and sakaray.
+//          Link to download pictures: http://angler.animeworld.cl/samurai_maps.rar
+//
 //
 //              Samurai Warper - Non Player Character Locations
 //

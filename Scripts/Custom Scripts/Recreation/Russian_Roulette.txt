@@ -7,6 +7,24 @@
 // - Borris -> cmd_in02 178 101
 //        Plays Russian Roulette.
 //
+// ** Note: User (the person running Fusion) must supply the item names and id numbers. 
+//       (You may find item id numbers in the database\item_db.txt file)  
+//
+//     For example:
+//       setstr $@prize = "NAME OF PRIZE 6";
+//       additem #,1;
+//       mes "[Borris]";
+//       mes "Your prize is $[$@prize]. Have a good day.";
+//       close; 
+//
+//
+//     Could be changed to:
+//       setstr $@prize = "a Butterfly Wing";
+//       additem 602,1;
+//       mes "[Borris]";
+//       mes "Your prize is $[$@prize]. Have a good day.";
+//       close; 
+//
 //========================================================================================
 
 cmd_in02.gat,180,100,4   script   "Borris"   98,{
