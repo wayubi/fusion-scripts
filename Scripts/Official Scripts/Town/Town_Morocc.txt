@@ -23,7 +23,31 @@
 //   Talks about Jewels.
 //
 // - Towner -> morocc: 44,180
-//   A drunk man.   
+//   A drunk man.
+//
+// - Poring Lady -> morocc: 79,111
+//   Talks about Angelring and Ghostring.
+//
+// - Ant Man -> morocc: 76,75
+//   Talks about Anthell, ants, and grandpa.
+//
+// - Assassin Boy -> morocc: 123,58
+//   Talks about where the assassin clan is.
+//
+// - Uncle in a glow -> morocc: 180,155
+//   Talks about the desert.
+//
+// - Fly Man -> morocc: 234,273
+//   Talks about the mysterious Dragon Fly.
+//
+// - Uncle Morroc -> morocc: 227,213
+//   Talks about the desert.
+//
+// - Uncle Assassin -> moc_fild16: 199,212
+//   Explains what an assassin.
+//
+// - Assassin Dude -> moc_fild16: 211,254
+//   Talks about katars and dual daggers assassin capabilities.
 //
 //========================================================================================
 
@@ -100,3 +124,327 @@ morocc.gat,44,180,0 script "Towner" 89,{
 	close;
 }
 
+morocc.gat,79,111,4	script	"Poring Lady"	66,{
+	mes "[Syvia]";
+	mes "All around the Rune-Midgard";
+	mes "You can see lots of cute monsters such as";
+	mes "spore which lolls out the tongue when dead...";
+	next;
+	mes "[Syvia]";
+	mes "Or picky the desert chick wearing an egg shell on the head and jumping about the morroc desert..";
+	mes "However you can't deny that Poring is the most popular monster!";
+	next;
+	menu "Angeling ?",-,"Ghostring ?",GR,"Quit Conversation",QUIT;
+		mes "[Syvia]";
+		mes "2 Rare porings living near Prontera are now getting popular.";
+		mes "One of them is Angeling !";
+		mes "And another one is Ghostring !";
+		next;
+		mes "[Syvia]";
+		mes "Angeling is a poring with angel wings,";
+		mes "and is rarely seen among mass porings living in the filed of southern prontera.";
+		next;
+		mes "[Syvia]";
+		mes "That guy is a high leveled monster of Holy property,";
+		mes "so it withstands most of magic skills";
+		mes "except magic skills or attack of neutral&shadow property.";
+		next;
+		mes "[Syvia]";
+		mes "Hehe don't you think I know lots of things about porings?";
+		mes "Frankly I fell in love with porings =P";
+		close;
+	GR:
+		mes "[Syvia]";
+		mes "2 Rare porings living near Prontera are now getting popular.";
+		mes "One of them is Angeling !";
+		mes "And another one is Ghostring !";
+		next;
+		mes "[Syvia]";
+		mes "Ghostring is an evil ghost poring,";
+		mes "and is rarely seen among mass porings living in the filed of southern prontera.";
+		next;
+		mes "[Syvia]";
+		mes "That guy is a high-leveled monster of ghost property,";
+		mes "so it withstands all physical attacks.";
+		mes "That is you can do damage on it only through magic or other property caused from weapons.";
+		next;
+		mes "[Syvia]";
+		mes "Hehe don't you think I know lots of things about porings?";
+		mes "Frankly I fell in love with porings =P";
+		close;
+	QUIT:
+		mes "[Syvia]";
+		mes "OMG! You shrugg off on me!";
+		mes "I am proud of myself that I've studied lots of things about porings!!!";
+		mes "If you want to know things about porings";
+		mes "you can count on me !";
+		mes "Ehem !";
+		close;
+}
+
+morocc.gat,76,75,4	script	"Ant Man"	47,{
+	mes "[Akira]";
+	mes "When you walk through the desert about one map toward north ..";
+	mes "and 3 maps toward east for the next..";
+	mes "you will see an entrance of `Anthell' which seems to be there to make preys of ants. ";
+	next;
+	menu "' Anthell '?",-,"Ants?",ANTS,"End Conversation",END;
+		mes "[Akira]";
+		mes "When you head east from Morroc town,";
+		mes "you will see a bridge connected to the Payon Forest.";
+		next;
+		mes "[Akira]";
+		mes "Map right before the map of bridge";
+		mes "When you go up straight, there is Anthell.";
+		close;
+	ANTS:
+		mes "[Akira]";
+		mes "The hell swarms with innumerable giant ants,";
+		mes "You will notice that those ants have different names which classify their level.";
+		mes "Their names are Andre, Piere, & Deniro in order of their priority.";
+		next;
+		mes "[Akira]";
+		mes "Keep in mind their names,";
+		mes "if you want to find right ants for your level.";
+		next;
+		mes "[Akira]";
+		mes "Oh and they are greedy for items just like porings,";
+		mes "be carefull.";
+		close;
+	END:
+		mes "[Akira]";
+		mes "Not only ants live in ' Anthell ',";
+		mes "but Giearth the grampa earth fairy does.";
+		next;
+		mes "[Akira]";
+		mes "Of course ants are dangerous, because of their sharp teeth and jaws,";
+		mes "That grampa's shovel is really annoying.";
+		mes "You'd better be carefull with him.";
+		close;
+}
+
+morocc.gat,123,58,4	script	"Assassin Boy"	118,{
+	mes "[Slayer Kid]";
+	mes "Expert of man-to-man fight,";
+	mes "Who becomes generally known to polish off enemies neatly and tidily. ";
+	mes "That is Assassin!!";
+	next;
+	menu "?????",-,"Where I can find the assassin clan ?",WHERE,"End Conversation",END;
+		mes "[Slayer Kid]";
+		mes "People say Assassins practice to assassinate targets without trace,";
+		mes "It's been 3 months since I left home to search around for the Assassin clan...";
+		mes "When can I reach them!!!!!!!!!";
+		close;
+	WHERE:
+		mes "[Slayer Kid]";
+		mes "Well you know ..";
+		mes "I don't think it exists in the real world...";
+		mes "People say when you walk down the desert from this town toward 2 maps on the east,";
+		mes "2 maps on the south for the next,";
+		next;
+		mes "[Slayer Kid]";
+		mes "'Mirrage Tower' the head building of Sograt Desert appears in sand storm will appear..";
+		mes "If you are acknowledged by Assassin Cross the clan master,";
+		next;
+		mes "[Slayer Kid]";
+		mes "You will be qualified as an Assassin.";
+		mes "Assassin Cross is an high emblem given to the best assassin of assassins!";
+		next;
+		mes "[Slayer Kid]";
+		mes "In case of poor thief,";
+		mes "it will be almost impossible to meet the Assassin Cross...";
+		close;
+	END:
+		mes "[Slayer Kid]";
+		mes "Assassin is the advanced job of Thief,";
+		mes "and is speciallised in approach fight combined neutral+poison attack.";
+		mes "Evenmore the character is able to smuggle into enemy's base while clocking himself under shadow.";
+		close;
+}
+
+morocc.gat,180,155,4	script	"Uncle in a glow"	49,{
+	mes "[Dmitrii]";
+	mes "Because of the average temperature of Morroc region which is the highest in the Rune Midgard Kingdom,";
+	mes "You will be burned on the ass if you recklessly sit down in the middle of desert.";
+	next;
+	menu "About the sand of Desert",-,"About the remedy for Fatigue",FAG,"End Conversation",END;
+		mes "[Dmitrii]";
+		mes ". . . . . Well";
+		mes "it is supposed to be hot!!!";
+		mes "But it's not !";
+		next;
+		mes "[Dmitrii]"
+		mes "Because the sand of Morroc desert doesn't conduct heat as much as it's supposed to do, ";
+		mes "it just feels warm when sit down on it for rest.";
+		next;
+		mes "[Dmitrii]";
+		mes "So everydoy is able to recover HP and SP in the middle of desert without suffering from heat.";
+		close;
+	FAG:
+		mes "[Dmitrii]";
+		mes "Remedy for Fatigue!";
+		mes "Dreams for all potions!";
+		mes "Especially Red Potions are  popular in steady due to its affordable price and light weight,";
+		mes "even though it only recovers small amount of HP.";
+		next;
+		mes "[Dmitrii]";
+		mes "Splash!!! Jump into the Oasis near Pyramids,";
+		mes "and gulp up a potion~";
+		mes "How does it sound ?";
+		close;
+	END:
+		mes "[Dmitrii]";
+		mes "Sometimes 'Milk' comes out of 'PecoPeco's Egg'.";
+		mes "I am wondering how come the cow milk comes out of bird eggs..";
+		next;
+		mes "[Dmitrii]";
+		mes "Meanwhile 'Milk' from eggs...";
+		mes "doesn't it sound reasonable???";
+		close;
+}
+
+morocc.gat,234,273,4	script	"Fly Man"	54,{
+	mes "[Armani]";
+	mes "I saw it I saw it!";
+	mes "There is a particular fly existing at the north of this town!!!!";
+	mes "That dude's name is ";
+	mes "Dragon Fly the king of Desert Flies!!!!!!!";
+	next;
+	menu "What .. Dragon Fly ?!",-,"So what?",SW;
+		mes "[Armani]";
+		mes "It is the boss of desert flies,";
+		mes "It is much strong than other ordinary files...";
+		mes "Even though it happenes by low chancce,";
+		mes "That dude drops 'Clip', one of rare items.";
+		mes "'Clip' is one and only accessory which contains a slot within,";
+		next;
+		mes "[Armani]";
+		mes "You can insert monster card into the item.";
+		mes "It seems everybody dreams of Clip nowadays.";
+		next;
+		mes "[Armani]";
+		mes "So Why don't you challenge?";
+		close;
+	SW:
+		mes "[Armani]";
+		mes "Blah . Do you ignore Dragon Fly just because it's a kind of flies?";
+		mes "Oh well if you get a chance to fight with,";
+		mes "you will be much sorry than you expect.";
+		mes "It is fly of flies!!!!";
+		next;
+		mes "[Armani]";
+		mes "Keep in mind that name,";
+		mes "' Dragon Fly ' -";
+		close;
+}
+
+morocc.gat,227,213,4	script	"Uncle Morroc"	48,{
+	mes "[Phlanette]";
+	mes "Morroc is highly dry region surrounded by desert.";
+	mes "There is no place which is hot and dry comparing to Morroc in the world.";
+	next;
+	menu "Desert Story",-,"Quit Conversation",END;
+		mes "[Phlanette]";
+		mes "Let me explain about the desert.";
+		mes "Desert is bare of vegetation,";
+		mes "due to low rainfall and high evaporation at the same time.";
+		next;
+		mes "[Phlanette]";
+		mes "But no matter how it's dry";
+		mes "Tough plants can survive and grow up in the desert.";
+		next;
+		mes "[Phlanette]";
+		mes "Unfortunately some of those plants growing up around Morroc Desert have been mutated into monsters, ";
+		mes "'Muka' the cactus represents those desert monsters.";
+		close;
+	END:
+		mes "[Phlanette]";
+		mes "Sands everywhere!!!!";
+		mes "Sigh . Now I am sick and tired of sands and desert...";
+		mes "Morroc!!!!";
+		mes "I hate you -";
+		close;
+}
+
+moc_fild16.gat,199,212,4	script	"Uncle Assassin"	55,{
+	mes "[Hashisid]";
+	mes ". . . . . To assassins,";
+	mes "it is important not to meet targets in the eye.";
+	mes "If the target is quick-witted, ";
+	mes "he will suspects you by the expression in your eyes.";
+	next;
+	menu "Notion of Assassin",-,"Quit Conversation",QUIT;
+		mes "[Hashisid]";
+		mes "Let me chatter you about the dictionary notion of Assassin!!";
+		mes "Assassin means . Infiltrator ..";
+		mes "Murderer .. and  someone who defames reputation of other people.";
+		next;
+		mes "[Hashisid]";
+		mes "However we assassin clan don't harm innocent people with nothing.";
+		mes "Our main mission is assassinating evil creatures or gathering fact of them.";
+		close;
+	QUIT:
+		mes "[Hashisid]";
+		mes "Once upon a time,";
+		mes "our ancestors took their duties after smoking Hashish the narcotic tobacco.";
+		mes "But now out clan prohibit to smoke Hashish because insect or animal monsters are very senstive on the smell,";
+		next;
+		mes "[Hashisid]";
+		mes "so they can easily recognise our presence near them.";
+		mes "Keep away from smelly food such as Garlic Bread before you go hunting,";
+		mes "Otherwise you will be immediately ripped by Wild Boars or Wolves.";
+		close;
+}
+
+moc_fild16.gat,211,254,4	script	"Assassin Dude"	118,{
+	mes "[DV-7]";
+	mes "After you get promoted into an Assassin, the high class of theif,";
+	mes "You can very your battle style into 2 different types,";
+	mes "Katar the Both-hands weapon or dual daggers.";
+	next;
+	menu "Specialness of Katar",-,"Specialness of Dual Daggers",DD,"Quit Conversation",QUIT;
+		mes "[DV-7]";
+		mes "Katar which is possibly purchased at NPC shop in morroc,";
+		mes "is an equipment worn on both hands,";
+		mes "and efficiently aids its wearer to slash foes in quick motion.";
+		next;
+		mes "[DV-7]";
+		mes "Right hand is mainly used for Katar,";
+		mes "Left han supports right hand in weak motion.";
+		mes "It's supposed to be worn on both hands,";
+		mes "you can't equip extra weapon at the same time with a Katar.";
+		next;
+		mes "[DV-7]";
+		mes "Comparing Dual Daggers,";
+		mes "its speed is fairly fast to attack,";
+		mes " and enables its wearer to use 'Sonic Blow' the unique skill for Katar Class.";
+		next;
+		mes "[DV-7]";
+		mes "You can learn ' Sonic Blow ' skill at Katar Mastery Level 4.";
+		mes "' Sonic Blow ' a skill which delivers 8 blows at once, using Katar.";
+		close;
+	DD:
+		mes "[DV-7]";
+		mes "' Dual Daggers ' enables you to equip 2 different kinds of Daggers at the same time.";
+		mes "Of course you can equip any other weapons not only daggers,";
+		next;
+		mes "[DV-7]";
+		mes "However I don't like to suggest you to use other weapons because they are not that fast as daggers.";
+		mes "Especially whe equip a dagger on the right hand,";
+		mes "'Double Attack' skill is activated,";
+		next;
+		mes "[DV-7]";
+		mes "It actualizes the formula,";
+		mes "Double Attack with Right Handed Dagger + Left Hand Weapon";
+		mes "= ' 3 blows ' .";
+		next;
+		mes "[DV-7]";
+		mes "This battle style enables you to have a good command of both hands,";
+		mes "with daggers of various feature.";
+		close;
+	QUIT:
+		mes "[DV-7]";
+		mes "Hopefully you will make the best use of present weapons you have,";
+		mes "and will meet a good result.";
+		close;
+}
