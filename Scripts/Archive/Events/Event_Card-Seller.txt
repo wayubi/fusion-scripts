@@ -11,7 +11,7 @@
 //
 //========================================================================================
 
-prt_in.gat,38,104,4	script	"Card Master"	47,{
+//prt_in.gat,38,104,4	script	"Card Master"	47,{
 	mes "[Card Master]";
 	mes "Welcome.";
 	mes "We sell randomly picked cards here.";

@@ -10,7 +10,7 @@
 // クレイモア (berserk)
 //----------------------------------
 
-prt_in.gat,79,94,4	script	騎士団兵器係	119,{
+//prt_in.gat,79,94,4	script	騎士団兵器係	119,{
 	mes "[カネシン]";
 	mes "あーなんていうか!";
 	mes "この美しい刃の色は!";
@@ -103,7 +103,7 @@ prt_in.gat,79,94,4	script	騎士団兵器係	119,{
 //-----------------------------------------------
 //==== 移動時HP回復 - MOVINGRECOVERY
 //-----------------------------------------------
-izlude_in.gat,175,130,2	script	"Knight DeTomaso"	98,{
+//izlude_in.gat,175,130,2	script	"Knight DeTomaso"	98,{
 	check Job = 1,Lcheck,-;
 	check Job != 7,LStartOther,Lcheck2;
 Lcheck:
@@ -233,7 +233,7 @@ LStartTwice:
 //-----------------------------------------------
 //==== 急所攻撃 - FATALBLOW
 //-----------------------------------------------
-prt_in.gat,75,88,5	script	"レオンフォンプリシュ"	85,{
+//prt_in.gat,75,88,5	script	"レオンフォンプリシュ"	85,{
 	check Job = 1,Lcheck,-;
 	check Job != 7,LStartOther,Lcheck2;
 Lcheck:
@@ -399,7 +399,7 @@ LStartTwice:
 //-----------------------------------------------
 //==== オートバーサーク
 //-----------------------------------------------
-prt_in.gat,94,57,3	script	"ファン"	85,{
+//prt_in.gat,94,57,3	script	"ファン"	85,{
 	check Job = 1,Lcheck,-;
 	check Job != 7,LStartOther,LStart;
 Lcheck:
@@ -577,7 +577,7 @@ LStartLowlv2:
 //---------------------------
 //==== 矢作成 ===
 //---------------------------
-morocc.gat,121,109,5	script	"ギョルナリ"	88,{
+//morocc.gat,121,109,5	script	"ギョルナリ"	88,{
 	check Job = 3,Lcheck1,-;
 	check Job = 19,LStart2,-;
 	check Job = 20,LStart2,-;
@@ -724,7 +724,7 @@ close;
 //---------------------------
 //==== チャージアロー ===
 //---------------------------
-payon.gat,30,94,3	script	"カイゴ"	88,{
+//payon.gat,30,94,3	script	"カイゴ"	88,{
 	check Job = 3,Lcheck1,-;
 	check Job = 19,LStart,-;
 	check Job = 20,LStart,-;
@@ -854,7 +854,7 @@ LStartTwice:
 //-----------------------------------------------
 //==== ラウドボイス MC_LOUD ===
 //-----------------------------------------------
-alberta.gat,83,96,5	script	"ネコ"	98,{
+//alberta.gat,83,96,5	script	"ネコ"	98,{
 	check Job = 5,Lcheck,-;
 	check Job != 10,LStartOther,LStart;
 Lcheck:
@@ -1027,7 +1027,7 @@ LStartTwice:
 //-----------------------------------------------
 //==== チェンジカート Change Cart ===
 //-----------------------------------------------
-alberta.gat,119,221,6	script	"シャイロン"	107,{
+//alberta.gat,119,221,6	script	"シャイロン"	107,{
 	check Job = 5,Lcheck,-;
 	check Job != 10,LStartOther,LStart;
 Lcheck:
@@ -1184,7 +1184,7 @@ LStartTwice:
 //-----------------------------------------------
 //==== カートレボリューション Cart Revolution ===
 //-----------------------------------------------
-alberta.gat,232,106,6	script	"コサンス"	57,{
+//alberta.gat,232,106,6	script	"コサンス"	57,{
 	check Job = 5,Lcheck,-;
 	check Job != 10,LStartOther,LStart;
 Lcheck:
@@ -1470,7 +1470,7 @@ LStartTwice:
 //-----------------------------------------------
 //==== ホーリーライト - AL_HOLYLIGHT
 //-----------------------------------------------
-prt_church.gat,173,23,4	script	"Father Clifford"	79,{
+//prt_church.gat,173,23,4	script	"Father Clifford"	79,{
 	mes "[Father Clifford]";
 	mes "Aah, brethren!  I'm here to assist lost lambs.";
 	mes "Do you feel strong in your heart?";
@@ -1572,7 +1572,7 @@ L3:
 //-----------------------------------------------
 //==== エネルギーコート - MG_ENERGYCOAT
 //-----------------------------------------------
-geffen_in.gat,151,119,4	script	"Great Magician"	64,{
+//geffen_in.gat,151,119,4	script	"Great Magician"	64,{
 	mes "[Blizzardriss]";
 	mes "Yo! Fellow!";
 	mes "If you are a magician, please take the";
@@ -1725,7 +1725,7 @@ L3:
 //-----------------------------------------------
 //==== 応急処置 - NV_FIRSTAID
 //-----------------------------------------------
-prt_in.gat,234,133,4	script	"Nami"	66,{
+//prt_in.gat,234,133,4	script	"Nami"	66,{
 	check Job != 0,LStart1,-;
 	check JobLevel >= 4,-,LStart2;
 LStart1:
@@ -1896,7 +1896,7 @@ LStart3:
 //-----------------------------------------------
 //==== 死んだふり - NV_TRICKDEAD
 //-----------------------------------------------
-prt_in.gat,73,87,4	script	"Prontera Knight Member"	65,{
+//prt_in.gat,73,87,4	script	"Prontera Knight Member"	65,{
 	check Job = 0,-,LStart2;
 	check JobLevel >= 7,-,LStart2;
 	check skill_nov < 3,LStart2,-;
@@ -2067,7 +2067,7 @@ LStart2:
 //-----------------------------------------------
 //==== 看護将校 (skill_novフラグ)
 //-----------------------------------------------
-prt_castle.gat,175,146,4	script	"Nursing Instructor"	50,{
+//prt_castle.gat,175,146,4	script	"Nursing Instructor"	50,{
 	random @rant 2;
 	check @rant = 0,Rant1,-;
 	check @rant = 1,Rant2,Rant2;
@@ -2150,7 +2150,7 @@ L_4:
 	close;
 }
 // 追加スキル Part 7 - シーフ
-moc_prydb1.gat,154,128,4	script	"Alcouskou"	118,{
+//moc_prydb1.gat,154,128,4	script	"Alcouskou"	118,{
 check Job = 6,LStart,-;
 check Job !=12,LStart1,-;
 LStart:
@@ -2603,7 +2603,7 @@ LStart1:
 //-----------------------------------------------
 //==== ポケット販売商人(skill_thief_1関連)
 //-----------------------------------------------
-payon.gat,30,120,4	script	"RuRumuni"	99,{
+//payon.gat,30,120,4	script	"RuRumuni"	99,{
 	mes "[RuRumuni]";
 	mes "Here in Payon Village ";
 	mes "I live surrounded by bow and arrows";

@@ -3,7 +3,7 @@
 // eWeiss Project 2003 - http://weiss.kittyloaf.net 
 //----------------------------------------------------------------------------------------
 
-prontera.gat,141,172,5      script       "Jac"       107,{
+//prontera.gat,141,172,5      script       "Jac"       107,{
 	mes "[Jac]";
 	mes "I am the 2nd oldest and calmest of the 4 brothers that makes all the newer hats.";
 	mes "You will need to bring me the correct items for each hat so I can make them.";

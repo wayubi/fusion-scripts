@@ -3,7 +3,7 @@
 // eWeiss Project 2003 - http://weiss.kittyloaf.net 
 //----------------------------------------------------------------------------------------
 
-prontera.gat,140,172,5      script       "Zac"       704,{
+//prontera.gat,140,172,5      script       "Zac"       704,{
 	mes "[Zac]";
 	mes "I am the oldest and strongest of the 4 brothers that makes all the newer hats.";
 	mes "You will need to bring me the correct items for each hat so I can make them."

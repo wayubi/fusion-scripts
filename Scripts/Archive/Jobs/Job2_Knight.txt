@@ -12,7 +12,7 @@
 //
 //========================================================================================
 
-prt_in.gat,88,101,4 script "Knight" 56,{
+//prt_in.gat,88,101,4 script "Knight" 56,{
       mes "[Prontera Knight]";
       mes "Good Day, This is the Prontera Chivarly.";
       next;

@@ -1,4 +1,4 @@
-arena_room.gat,50,68,4	script	案内要員	105,{
+//arena_room.gat,50,68,4	script	案内要員	105,{
 	mes "[案内要員]";
 	mes "ようこそ、うわさのお仕置き部屋へ";
 	mes "";

@@ -3,7 +3,7 @@
 // eWeiss Project 2003 - http://revolve.emuxhaven.net/weiss/
 //----------------------------------------------------------------------------------------
 
-alberta_in.gat,53,43,6	script	"Merchant"	86,{
+//alberta_in.gat,53,43,6	script	"Merchant"	86,{
 mes "[Merchant]";
 mes "What is it you are looking for?";
 //Menu

@@ -3,7 +3,7 @@
 // eWeiss Project 2003 - http://weiss.kittyloaf.net 
 //----------------------------------------------------------------------------------------
 
-prontera.gat,143,172,5      script       "Blac"       732,{
+//prontera.gat,143,172,5      script       "Blac"       732,{
 	mes "[Blac]";
 	mes "I am the youngest and sexiest of the 4 brothers that makes all the newer hats.";
 	mes "You will need to bring me the correct items for each hat so I can make them.";
