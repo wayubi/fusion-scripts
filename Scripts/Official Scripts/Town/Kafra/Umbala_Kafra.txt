@@ -25,7 +25,7 @@ umbala.gat,87,160,5 script "Kafra Employee" 721,{
 	mes "How can I help you today?";
 	next;
 L_SUB_0_1:
-	menu "Save",L_MENU_1,"Use Storage",L_MENU_2,"Use Kafra Pass",L_MENU_5,"Check Other Information",L_MENU_6,"Cancel",L_MENU_7;
+	menu "Save",L_MENU_1,"Use Storage",L_MENU_2,"Use Teleport Service",L_MENU_3,"Use Kafra Pass",L_MENU_5,"Check Other Information",L_MENU_6,"Cancel",L_MENU_7;
 L_MENU_1:
 		save "umbala",100,154;
 	mes "[Kafra Employee]";
@@ -61,6 +61,29 @@ L_ROOT_2_2:
 	goto L_EXIT;
 L_SUB_2_2:
 		store;
+	goto L_EXIT;
+L_MENU_3:
+	mes "[Kafra Employee]";
+	mes "Please pick your destination.";
+	next;
+	menu "Comodo -> 800z",L_MENU_3_1,"Cancel",L_MENU_3_3;
+L_MENU_3_1:
+		check @Kafra_PASS   = 0,-,L_SUB_3_1;
+		check Zeny < 800,-,L_ROOT_3_1;
+	mes "[Kafra Employee]";
+	mes "You don't have enough money.";
+	mes "Please verify the amount of money you have.";
+	goto L_EXIT;
+L_ROOT_3_1:
+		set Zeny -= 800,0;
+		set KF_PIT += 120;
+L_SUB_3_1:
+		warp "comodo",209,143;
+L_MENU_3_3:
+		check @Kafra_PASS   = 0,-,L_START_1;
+	mes "[Kafra Employee]";
+	mes "Thank you very much.";
+	mes "Please come again.";
 	goto L_EXIT;
 L_MENU_4:
 		check Job != 5,-,L_SUB_4_1;

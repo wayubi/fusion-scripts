@@ -103,7 +103,6 @@ L_MENU_3_3:
 	mes "Thank you very much.";
 	mes "Please come again.";
 	goto L_EXIT;
-
 L_MENU_4:
 		check Job != 5,-,L_SUB_4_1;
 		check Job != 10,-,L_SUB_4_1;
@@ -490,7 +489,7 @@ L_MENU_3:
 		mes "[Kafra Employee]";
 		mes "Please pick your destination.";
 		next;
-		menu "Comodo's Paros Lighthouse -> 800 z",L_MENU_3_1,"Morroc -> 1500 z",L_MENU_3_2,"Cancel",L_MENU_3_3;
+		menu "Comodo's Paros Lighthouse -> 800 z",L_MENU_3_1,"Morroc -> 1500 z",L_MENU_3_2,"Umbala -> 800 z",L_MENU_3_4,"Cancel",L_MENU_3_3;
 L_MENU_3_1:
 		check @Kafra_PASS  = 0,-,L_SUB_3_1;
 		check Zeny < 800,-,L_ROOT_3_1;
@@ -515,6 +514,18 @@ L_ROOT_3_2:
 		set KF_PIT += 150;
 L_SUB_3_2:
 		warp "morocc",156,46;
+L_MENU_3_4:
+		check @Kafra_PASS  = 0,-,L_SUB_3_4;
+		check Zeny < 800,-,L_ROOT_3_4;
+	mes "[Kafra Employee]";
+	mes "You don't have enough money.";
+	mes "Please verify the amount of money you have.";
+	goto L_EXIT;
+L_ROOT_3_4:
+		set Zeny -= 800,0;
+		set KF_PIT += 150;
+L_SUB_3_4:
+		warp "umbala",100,154;
 L_MENU_3_3:
 		check @Kafra_PASS  = 0,-,L_START_1;
 	mes "[Kafra Employee]";

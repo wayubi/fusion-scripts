@@ -1,6 +1,8 @@
 --------------------------------------------------------------------------------
  Fusion 1.213 - August 29th, 2004
 -------------------------------------------------------------------------------- 
+- 11-02-04: Town\kafra\Comodo_Kafra.txt - Added warp to Umbala. [Muad_Dib]
+- 11-02-04: Town\kafra\Umbala_Kafra.txt - Added warp to Comodo. [Muad_Dib]
 - 10-30-04: Quest\Quest_skill\Cart_Revolution.txt - Fixed Npc name. [Muad_Dib]
 - 10-30-04: Town\Town_Umbala.txt - Updated Bungeejump with OnTouch. [Muad_Dib]
 - 10-30-04: Town\kafra\Umbala_Kafra.txt - Fixed save option. [Muad_Dib]
