@@ -9,6 +9,9 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.005
 ----------------------------------------------------------------------------------------------------
+- Town\Town_Payon.txt - Updated Town Payon. [Muad_Dib]
+- Town\Town_Izlude.txt - Updated Town Izlude. [Muad_Dib]
+- Town\Town_Alberta.txt - Updated Town Alberta. [Muad_Dib]
 - Mob\dungeon\c_tower_dun.txt - Changed monster spawns. [Muad_Dib]
 - Mob\dungeon\gef_dun.txt - Changed monster spawns. [Muad_Dib]
 - Mob\dungeon\moc_pryd_dun.txt - Changed monster spawns. [Muad_Dib]

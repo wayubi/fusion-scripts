@@ -754,7 +754,7 @@ L_About:
       mes "about turtle island until I";
       mes "discover it...";
       mes "Ha ha ha..";
-      close;;
+      close;
 L_Confuse:
 	mes "[Jornadan Niliria]";
       mes "Whoops !";

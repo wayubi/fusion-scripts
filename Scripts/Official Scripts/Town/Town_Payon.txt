@@ -124,7 +124,7 @@ payon_in01.gat,69,90,3 script "Chief Guardsman"	105,{
 	close;
 }
 
-payon.gat,166,140,1	script	"Woman"	66,{
+payon.gat,166,140,1 script "Woman" 66,{
 	mes "[Woman]";
 	mes "Welcome to payon. You must of had a hard time while passing through the forest. How was your travel?";
 	mes "Numbers of tourist has been reduced due to enormous monsters outside, Payon is becoming a quiet town.";
@@ -170,109 +170,109 @@ payon.gat,163,142,5 script "Woman" 66,{
 	mes "Anyway you look like a new face here, don't you?";
 	next;
 	mes "[Jim's Mother]";
-	check Gender=1,-,LStartF;
-		mes "Oh, you have broad shoulders...hohoho! Will you go out with me?";
-		mes "I like to treat you to a nice dinner.";
-	LStartF:
-		mes "Don't you think your dress is too lousy?";
-		mes "I don't like young ladies pounce up.";
-		next;
-		menu "Fortune Telling?",L_menu1,"...Good Bye.",L_menu2;
-		L_menu1:
-			mes "[Jim's Mother]";
-			mes "Oh yes, tell you what.";
-			mes "There is a extraordinary fortune teller.";
-			mes "You can meet her in the central palace. The more money you pay she will give you the better divination sign.";
-			next;
-			mes "[Jim's Mother]";
-			mes "She told me I would meet a nice guy this month...hohohoho~";
-			close; 
-		L_menu2:
-			mes "[Jim's Mother]";
-			mes "Ummm why don't you stay and chit chat with me for a while...?";
-			close;
+	   check Gender=1,-,LStartF;
+	mes "Oh, you have broad shoulders...hohoho! Will you go out with me?";
+	mes "I like to treat you to a nice dinner.";
+LStartF:
+	mes "Don't you think your dress is too lousy?";
+	mes "I don't like young ladies pounce up.";
+	next;
+	menu "Fortune Telling?",L_menu1,"...Good Bye.",L_menu2;
+L_menu1:
+	mes "[Jim's Mother]";
+	mes "Oh yes, tell you what.";
+	mes "There is a extraordinary fortune teller.";
+	mes "You can meet her in the central palace. The more money you pay she will give you the better divination sign.";
+	next;
+	mes "[Jim's Mother]";
+	mes "She told me I would meet a nice guy this month...hohohoho~";
+	close; 
+L_menu2:
+	mes "[Jim's Mother]";
+	mes "Ummm why don't you stay and chit chat with me for a while...?";
+	close;
 }
-//==================================  Payon Drunk  =======
-payon_in01.gat,95,181,1	script	"Drunk"	120,{
-	check Job < 3,-,L_Menu1_F1;
+
+payon_in01.gat,95,181,1	script "Drunk" 120,{
+	   check Job < 3,-,L_Menu1_F1;
 	mes "[Drunk]";
 	mes "Hey hey! I am wondering how stupid archers who don't know how to aim targets could drink alcohol. Hahaha~!";
 	mes "Do you want to buy me a drink?";
-	L_Menu1_F1:
+L_Menu1_F1:
 	mes "[Drunk]";
 	mes "Yoyo! Archer brother! Salute to your fingers stratching bowstring!";
 	mes "Do you want to buy me a drink?";
 	next;
 	menu "Promise me you won't drink more than one jug.",L_menu1,"No thanks,buddy.",L_menu2,"Oh my god~ hell no~!",L_menu3;
-		L_menu1:
-			check Zeny == 200,-,L_SUB_1;
-			set Zeny -= 200,0;
-			mes "[Drunk]";
-			mes "Thanks brother! Strangers are always generous without exception! Archer guys are pinch-pennies nowadays!";
-			mes "Muhahahaha! I wasn't like that when I was young.";
-			mes "Back then I was young, I used to fool around with girls! One of the grannies in this village and I was really hot back then!";
-			mes "She still acts like a young lady in taste for consmetics and stuff!";
-			next;
-			mes "[Drunk]";
-			mes "Gulp~Gulp~Man! This is great! Thank you may man! Thank you! Muhahahahaha!";
-			close;
-			L_SUB_1:
-				mes "[Drunk]";
-				mes "Cheapass, don't even have enough money. Move on young one, your waisting my time!";
-				close;
-		L_menu2:
-			mes "[Drunk]";
-			mes "Blah. Young people don't know how to respect elderly people!";
-			mes "Fine! I won't beg you anymore! I won't...";
-			close;
-		L_menu3:
-			mes "[Drunk]";
-			mes "Umm, oookay. Fine by me...";
-			close;
+L_menu1:
+	   check Zeny == 200,-,L_SUB_1;
+	   set Zeny -= 200,0;
+	mes "[Drunk]";
+	mes "Thanks brother! Strangers are always generous without exception! Archer guys are pinch-pennies nowadays!";
+	mes "Muhahahaha! I wasn't like that when I was young.";
+	mes "Back then I was young, I used to fool around with girls! One of the grannies in this village and I was really hot back then!";
+	mes "She still acts like a young lady in taste for consmetics and stuff!";
+	next;
+	mes "[Drunk]";
+	mes "Gulp~Gulp~Man! This is great! Thank you may man! Thank you! Muhahahahaha!";
+	close;
+L_SUB_1:
+	mes "[Drunk]";
+	mes "Cheapass, don't even have enough money. Move on young one, your waisting my time!";
+	close;
+L_menu2:
+	mes "[Drunk]";
+	mes "Blah. Young people don't know how to respect elderly people!";
+	mes "Fine! I won't beg you anymore! I won't...";
+	close;
+L_menu3:
+	mes "[Drunk]";
+	mes "Umm, oookay. Fine by me...";
+	close;
 }
-//==================================  Archer Zakk  =======
-payon_in01.gat,95,179,5	script	"Archer Zakk"	88,{
+
+payon_in01.gat,95,179,5	script "Archer Zakk" 88,{
 	mes "[Archer Zakk]";
 	mes "I am so worried about one of my pals. He speaks about much crap.";
 	mes "Well he is an expert of archery, but I hate his big mouth...";
 	mes "Our chief is also fed up with him.";
 	next;
 	menu "Archer?",L_menu1,"Chief?",L_menu2,"Big Mouth?",L_menu3;
-		L_menu1:
-			mes "[Archer Zakk]";
-			mes "Ah yeah yeah. My friend is the number one archer in Payon, in the same costume as me too.";
-			mes "He teaches newbie archers around the archer village.";
-			mes "Well...you'd better talk to him at lease once.";
-			close;
-		L_menu2:
-			mes "[Archer Zakk]";
-			mes "Chief lives in the central palace. He is the spiritual guide of Payon.";
-			mes "He used to dictate to the whole Payon forest carrying Gakkung. I remember the battle scene he showed when I was a little kid. Hmm~";
-			mes "Even though he is old and weak now...his eyes...he still has keen-sighted eyes of his young days, he can hit targets without missing.";
-			next;
-			mes "[Archer Zakk]";
-			mes "I admire him from the bottom of my heart.";
-			close;
-		L_menu3:
-			mes "[Archer Zakk]";
-			mes "You know a big mouth is the person who is much talkative and who doesn't stop talking.";
-			mes "He never stops talking as I said, one day he started to talk while we did laundry at the riverbank, he stopped talking when we realised our shirts tunrned out to get tattered.";
-			mes "He became a kind of legend, people used to call him as Bowing Mouth or Chatterbox instead of his real name.";
-			mes "I've never seen a person talk as much as him.";
-			next;
-			mes "[Archer Zakk]";
-			mes "I've been many places, but I didn't see any guy who likes talking or being talkative.";
-			mes "Maybe other people agree on my opinion. Oh yes, I think you are with me.";
-			mes "As I see your face, you've got friends of few words so far! Hmm Hmm!!";
-			mes "Tactiturnity is bliss, you know.";
-			next;
-			mes "[Archer Zakk]";
-			mes "Ah, My friend Wolt? He doesn't have his place so he always stay at inn.";
-			mes "I guess you can meet him by now. Why don't you go see him?";
-			close;
+L_menu1:
+	mes "[Archer Zakk]";
+	mes "Ah yeah yeah. My friend is the number one archer in Payon, in the same costume as me too.";
+	mes "He teaches newbie archers around the archer village.";
+	mes "Well...you'd better talk to him at lease once.";
+	close;
+L_menu2:
+	mes "[Archer Zakk]";
+	mes "Chief lives in the central palace. He is the spiritual guide of Payon.";
+	mes "He used to dictate to the whole Payon forest carrying Gakkung. I remember the battle scene he showed when I was a little kid. Hmm~";
+	mes "Even though he is old and weak now...his eyes...he still has keen-sighted eyes of his young days, he can hit targets without missing.";
+	next;
+	mes "[Archer Zakk]";
+	mes "I admire him from the bottom of my heart.";
+	close;
+L_menu3:
+	mes "[Archer Zakk]";
+	mes "You know a big mouth is the person who is much talkative and who doesn't stop talking.";
+	mes "He never stops talking as I said, one day he started to talk while we did laundry at the riverbank, he stopped talking when we realised our shirts tunrned out to get tattered.";
+	mes "He became a kind of legend, people used to call him as Bowing Mouth or Chatterbox instead of his real name.";
+	mes "I've never seen a person talk as much as him.";
+	next;
+	mes "[Archer Zakk]";
+	mes "I've been many places, but I didn't see any guy who likes talking or being talkative.";
+	mes "Maybe other people agree on my opinion. Oh yes, I think you are with me.";
+	mes "As I see your face, you've got friends of few words so far! Hmm Hmm!!";
+	mes "Tactiturnity is bliss, you know.";
+	next;
+	mes "[Archer Zakk]";
+	mes "Ah, My friend Wolt? He doesn't have his place so he always stay at inn.";
+	mes "I guess you can meet him by now. Why don't you go see him?";
+	close;
 }
-//==================================  Archer Wolt  =======
-payon_in01.gat,176,176,2	script	"Archer Wolt"	88,{
+
+payon_in01.gat,176,176,2 script "Archer Wolt" 88,{
 	mes "[Archer Wolt]";
 	mes "Archers should practice as much as they can. Otherwise they won't be an expert.";
 	mes "Are you new here? Howdy!";
@@ -282,164 +282,164 @@ payon_in01.gat,176,176,2	script	"Archer Wolt"	88,{
 	mes "I know this is an expected question, do you tend to idle away your time?";
 	next;
 	menu "Hell no.",L_menu1,"Yeah I guess.",L_menu2;
-		L_menu1:
-			mes "[Archer Wolt]";
-			mes "Hmm...You don't? You are born to be an archer then.";
-			mes "We, archers should not idle away without practice.";
-			mes "So we hate people who are not dilligent.";
-			next;
-			mes "[Archer Wolt]";
-			mes "Did you ask how we practice? Duh...Archers of Payon don't have much time to play bowing as people in other places do.";
-			mes "Actual fighting equals to practice! Carrying a bow all the time and run after monsters!";
-			mes "That's the way we go!";
-			next;
-			menu "You must need a good bow.",L_sub1,"Oh well, isn't it a practice?",-;
-			close;
-				L_sub1:
-					mes "[Archer Wolt]";
-					mes "You've got the point, that's right! A Bow is the essence of a good archer!";
-					mes "Bows constructed in Payon are the greatest in this continent! They are light and stout, made out of high quality wooden blocks from Payon Forest!";
-					mes "The qulity of wood determines the quality of the bow. My sweety is made out of a walnut tree, it is stout enough to bear thousands of times of stretching.";
-					mes "Besides it's decorated with ebony, when you keep it well under, you feel great!";
-					next;
-					mes "[Archer Wolt]";
-					mes "Payon forest has been famous for thier quality of wood. Then suddenly trees turned into horrible creatures affected by evil force around the continent.";
-					mes "It is suck a pity to see tree monsters! They used to be beautiful....";
-					mes "However even if they became monsters, they still give us high quality woods! Then we make bows out of those items from monsters! Muhahahaha!";
-					next;
-					menu "Then why worry about it?",L_case;
-						L_case:
-							mes "[Archer Wolt]";
-							mes "But you know monsters don't appear only in the forest. Don't you realise why the archer village was established in this place?";
-							mes "Heading west, you can see a cave. Inside the cave, enormous monsters keep spawning without limit.";
-							mes "We are here, to protect our territory against them in obedience to our chief's order.";
-							next;
-							menu "Cave?!",L_para1,"Chief?",L_para2,"Oh man I hate this town~",L_para3;
-								L_para1:
-									mes "[Archer Wolt]";
-									mes "Head north of town, you can see the cave I told you about."
-									mes "Inside there, you will encounter lots of ugly monsters such as bastard looking like a bat or the walking dead.";
-									mes "If we let them out of the place, they would invade our town. We frequently clean up the cave.";
-									next;
-									mes "[Archer Wolt]";
-									mes "However they are endlessly respawned. It seems we're wasting our time and labor without nothing...";
-									mes "Enough already, let's cut off this crap. Even I can't talk more than this.";
-									mes "I have lots of things to do!";
-									close;
-								L_para2:
-									mes "[Archer Wolt]";
-									mes "Chief? Ah he is such a great person. Well, he always scolds me because of too much talking.";
-									mes "He always try to keep us in safety. Lately it seems he doesn't come out of his palace.";
-									mes "He is inside a room guarded by a warrior.";
-									next;
-									mes "[Archer Wolt]";
-									mes "Heheheh~ I will be in trouble if he gets to know I tell you this to a stranger~ hehehe~";
-									mes "Well somehow I already burst out of it, no use to regret!";
-									mes "Ummm however I think I'd better seal my lips by now. Ok bye, see you later dude!";
-									close;
-								L_para3:
-									mes "[Archer Wolt]";
-									mes "Well thats not very nice!";
-									mes "If you don't like our humble town then you should leave, bastard!";
-									close;
-		L_menu2:
-			mes "[Archer Wolt]";
-			mes "Hmm...sometimes you need rest.";
-			mes "Do you want to listen to my story? I set fire on my house during my last holiday~ hahaha~ I fell a sleep while I heated the bath.Hahaha!";
-			next;
-			menu "Is it ok to take a rest?",L_temp1,"But how about my training?",L_temp2,"...Blah see ya.",L_temp3;
-				L_temp1:
-					mes "[Archer Wolt]";
-					mes "Umm...it won't be ok if you don't practice and just goof around. Probably our chief will get mad at you...Well you could be the drunk in the pub in the future... Hahaha. Muhahaha.";
-					next;
-					menu "Chief?",L_sub_para1,"Drunk?",L_sub_para2,"I know you're already out of your mind!",L_sub_para3;
-					L_sub_para1:
-						mes "[Archer Wolt]";
-						mes "Chief? Ah he is such a great guy. Well, he always scolds me because I talk too much talking.";
-						mes "He always trys to keep us in safety. Lately it seems he doesn't come out of his palace.";
-						mes "He is inside a room guarded by a warrior.";
-						next;
-						mes "[Archer Wolt]";
-						mes "Heheheh~ I will be in trouble if he gets to know I tell you this to a stranger~ hehehe~";
-						mes "Well somehow I already burst it out, no use to regret!";
-						mes "Ummm however I think I'd better seal my lips by now. Ok bye, see you later dude!";
-						close;
-					L_sub_para2:
-						mes "[Archer Wolt]";
-						mes "Ah that guy in the pub. When I get spare money I buy him a drink sometimes, I am so worried about his drinking disorder.";
-						mes "He is one of my villagers, I don't want to see him dead.";
-						mes "Hmm...he reminds me of a jug full of beer...";
-						mes "I gotta go to the pub! Ok then, See you later!";
-						close;
-					L_sub_para3:
-						mes "[Archer Wolt]";
-						mes "Yeah dumbo.";
-						close;
-				L_temp2:
-					mes "[Archer Wolt]";
-					mes "Hmm...You don't? You are born to be an archer then.";
-					mes "We, archers should not idle away without practice.";
-					mes "So we hate people who are not dilligent.";
-					next;
-					mes "[Archer Wolt]";
-					mes "It is so amazing that lazy guy like me could be an archer.";
-					mes "Life is worth to live.";
-					mes "So live your life with passion!";
-					close;
-				L_temp3:
-					close;
+L_menu1:
+	mes "[Archer Wolt]";
+	mes "Hmm...You don't? You are born to be an archer then.";
+	mes "We, archers should not idle away without practice.";
+	mes "So we hate people who are not dilligent.";
+	next;
+	mes "[Archer Wolt]";
+	mes "Did you ask how we practice? Duh...Archers of Payon don't have much time to play bowing as people in other places do.";
+	mes "Actual fighting equals to practice! Carrying a bow all the time and run after monsters!";
+	mes "That's the way we go!";
+	next;
+	menu "You must need a good bow.",L_sub1,"Oh well, isn't it a practice?",-;
+	close;
+L_sub1:
+	mes "[Archer Wolt]";
+	mes "You've got the point, that's right! A Bow is the essence of a good archer!";
+	mes "Bows constructed in Payon are the greatest in this continent! They are light and stout, made out of high quality wooden blocks from Payon Forest!";
+	mes "The qulity of wood determines the quality of the bow. My sweety is made out of a walnut tree, it is stout enough to bear thousands of times of stretching.";
+	mes "Besides it's decorated with ebony, when you keep it well under, you feel great!";
+	next;
+      mes "[Archer Wolt]";
+	mes "Payon forest has been famous for thier quality of wood. Then suddenly trees turned into horrible creatures affected by evil force around the continent.";
+	mes "It is suck a pity to see tree monsters! They used to be beautiful....";
+	mes "However even if they became monsters, they still give us high quality woods! Then we make bows out of those items from monsters! Muhahahaha!";
+	next;
+	menu "Then why worry about it?",L_case;
+L_case:
+	mes "[Archer Wolt]";
+	mes "But you know monsters don't appear only in the forest. Don't you realise why the archer village was established in this place?";
+	mes "Heading west, you can see a cave. Inside the cave, enormous monsters keep spawning without limit.";
+	mes "We are here, to protect our territory against them in obedience to our chief's order.";
+	next;
+	menu "Cave?!",L_para1,"Chief?",L_para2,"Oh man I hate this town~",L_para3;
+L_para1:
+	mes "[Archer Wolt]";
+	mes "Head north of town, you can see the cave I told you about."
+	mes "Inside there, you will encounter lots of ugly monsters such as bastard looking like a bat or the walking dead.";
+	mes "If we let them out of the place, they would invade our town. We frequently clean up the cave.";
+	next;
+	mes "[Archer Wolt]";
+	mes "However they are endlessly respawned. It seems we're wasting our time and labor without nothing...";
+	mes "Enough already, let's cut off this crap. Even I can't talk more than this.";
+	mes "I have lots of things to do!";
+	close;
+L_para2:
+	mes "[Archer Wolt]";
+	mes "Chief? Ah he is such a great person. Well, he always scolds me because of too much talking.";
+	mes "He always try to keep us in safety. Lately it seems he doesn't come out of his palace.";
+	mes "He is inside a room guarded by a warrior.";
+	next;
+	mes "[Archer Wolt]";
+	mes "Heheheh~ I will be in trouble if he gets to know I tell you this to a stranger~ hehehe~";
+	mes "Well somehow I already burst out of it, no use to regret!";
+	mes "Ummm however I think I'd better seal my lips by now. Ok bye, see you later dude!";
+	close;
+L_para3:
+	mes "[Archer Wolt]";
+	mes "Well thats not very nice!";
+	mes "If you don't like our humble town then you should leave, bastard!";
+	close;
+L_menu2:
+	mes "[Archer Wolt]";
+	mes "Hmm...sometimes you need rest.";
+	mes "Do you want to listen to my story? I set fire on my house during my last holiday~ hahaha~ I fell a sleep while I heated the bath.Hahaha!";
+	next;
+	menu "Is it ok to take a rest?",L_temp1,"But how about my training?",L_temp2,"...Blah see ya.",L_temp3;
+L_temp1:
+	mes "[Archer Wolt]";
+	mes "Umm...it won't be ok if you don't practice and just goof around. Probably our chief will get mad at you...Well you could be the drunk in the pub in the future... Hahaha. Muhahaha.";
+	next;
+	menu "Chief?",L_sub_para1,"Drunk?",L_sub_para2,"I know you're already out of your mind!",L_sub_para3;
+L_sub_para1:
+	mes "[Archer Wolt]";
+	mes "Chief? Ah he is such a great guy. Well, he always scolds me because I talk too much talking.";
+	mes "He always trys to keep us in safety. Lately it seems he doesn't come out of his palace.";
+	mes "He is inside a room guarded by a warrior.";
+	next;
+	mes "[Archer Wolt]";
+	mes "Heheheh~ I will be in trouble if he gets to know I tell you this to a stranger~ hehehe~";
+	mes "Well somehow I already burst it out, no use to regret!";
+	mes "Ummm however I think I'd better seal my lips by now. Ok bye, see you later dude!";
+	close;
+L_sub_para2:
+	mes "[Archer Wolt]";
+	mes "Ah that guy in the pub. When I get spare money I buy him a drink sometimes, I am so worried about his drinking disorder.";
+	mes "He is one of my villagers, I don't want to see him dead.";
+	mes "Hmm...he reminds me of a jug full of beer...";
+	mes "I gotta go to the pub! Ok then, See you later!";
+	close;
+L_sub_para3:
+	mes "[Archer Wolt]";
+	mes "Yeah dumbo.";
+	close;
+L_temp2:
+	mes "[Archer Wolt]";
+	mes "Hmm...You don't? You are born to be an archer then.";
+	mes "We, archers should not idle away without practice.";
+	mes "So we hate people who are not dilligent.";
+	next;
+	mes "[Archer Wolt]";
+	mes "It is so amazing that lazy guy like me could be an archer.";
+	mes "Life is worth to live.";
+	mes "So live your life with passion!";
+	close;
+L_temp3:
+	close;
 }
-//==================================  Archer Joe  =======
-pay_arche.gat,77,131,2	script	"Archer Joe"	88,{
+
+pay_arche.gat,77,131,2 script	"Archer Joe" 88,{
 	mes "[Archer Joe]";
 	mes "Payon! What a wonderful place! Superb Bows! Excellent Archers!";
 	mes "Hay you! Have you heard of our fame?";
 	next;
 	menu "Oh yeah!",L_menu1,"Err Sorry?!",L_menu2,"......",L_menu3;
-	L_menu1:
-		mes "[Archer Joe]";
-		mes "Oh! You my man buddy! Archers of Payon! You know who we are!";
-		mes "Arrows of Payon Archers never miss the targets! Even it can aim at the heart of the enemy from a long distance!";
-		next;
-		menu "You like this place, huh?",L_Msub1,"Haha...",L_Msub2;
-		L_Msub1:
-			mes "[Archer Joe]";
-			mes "Yes! I love this place! So now I am researching Payon!";
-			mes "If you have any questions, please ask me!";
-			next;
-			menu "People are wearing unique costumes in here.",L_Mpara1,"Can you tell me what the building is in the middle of town?",L_Mpara2,"Who is the guy drinking...Over there?",L_Mpara3,"Talk to you later.",L_Mpara4;
-			L_Mpara1:
-				mes "[Archer Joe]";
-				mes "Yes, I agree.";
-				mes "You must know this place has been isolated from the outside because of the thick forest, and people living here got to form a very unique culture, which is quite different from the one of this continent.";
-				mes "This costume is the one of their traditional clothing! Why don't you try? It is very comfortable!";
-				close;
-			L_Mpara2:
-				mes "[Archer Joe]";
-				mes "Strangers are not allowed to enter the central palace. I've never been there.";
-				mes "People say, royal families and their friends from outside are gathered in the place.";
-				mes "In fact I would like to go in there. It attracts my attention.";
-				close;
-			L_Mpara3:
-				mes "[Archer Joe]";
-				mes "Oh! He is a notorious guy in this town! Don't treat him to drinks! You will regret that!";
-				close;
-			L_Mpara4:
-				mes "[Archer Joe]";
-				mes "Ok! Catch you later! See ya!";
-				close;
-		L_Msub2:
-			close;
-	L_menu2:
-		mes "[Archer Joe]";
-		mes "Oh boy, what a shame! How on earth can't you know there is something about archers of Payon!";
-		mes "Please come back later when you become more skillfull! Let's talk about what makes archers of Payon so attractive later!";
-		close;
-	L_menu3:
-		mes "[Archer Joe]";
-		mes "What makes you zip your mouth? Are you shy?";
-		mes "Ummm... you don't have to be shy before me..";
-		close;	
+L_menu1:
+	mes "[Archer Joe]";
+	mes "Oh! You my man buddy! Archers of Payon! You know who we are!";
+	mes "Arrows of Payon Archers never miss the targets! Even it can aim at the heart of the enemy from a long distance!";
+	next;
+      menu "You like this place, huh?",L_Msub1,"Haha...",L_Msub2;
+L_Msub1:
+	mes "[Archer Joe]";
+	mes "Yes! I love this place! So now I am researching Payon!";
+	mes "If you have any questions, please ask me!";
+	next;
+	menu "People are wearing unique costumes in here.",L_Mpara1,"Can you tell me what the building is in the middle of town?",L_Mpara2,"Who is the guy drinking...Over there?",L_Mpara3,"Talk to you later.",L_Mpara4;
+L_Mpara1:
+	mes "[Archer Joe]";
+	mes "Yes, I agree.";
+	mes "You must know this place has been isolated from the outside because of the thick forest, and people living here got to form a very unique culture, which is quite different from the one of this continent.";
+	mes "This costume is the one of their traditional clothing! Why don't you try? It is very comfortable!";
+	close;
+L_Mpara2:
+	mes "[Archer Joe]";
+	mes "Strangers are not allowed to enter the central palace. I've never been there.";
+	mes "People say, royal families and their friends from outside are gathered in the place.";
+	mes "In fact I would like to go in there. It attracts my attention.";
+	close;
+L_Mpara3:
+	mes "[Archer Joe]";
+	mes "Oh! He is a notorious guy in this town! Don't treat him to drinks! You will regret that!";
+	close;
+L_Mpara4:
+	mes "[Archer Joe]";
+	mes "Ok! Catch you later! See ya!";
+	close;
+L_Msub2:
+	close;
+L_menu2:
+	mes "[Archer Joe]";
+	mes "Oh boy, what a shame! How on earth can't you know there is something about archers of Payon!";
+	mes "Please come back later when you become more skillfull! Let's talk about what makes archers of Payon so attractive later!";
+	close;
+L_menu3:
+	mes "[Archer Joe]";
+	mes "What makes you zip your mouth? Are you shy?";
+	mes "Ummm... you don't have to be shy before me..";
+	close;	
 }
 
 payon_in01.gat,164,165,2 script "Monster Scholar" 98,{
@@ -494,7 +494,7 @@ L_menu3:
 	close;
 }
 
-payon_in01.gat,136,147,2	script	"Chief"	120,{
+payon_in01.gat,136,147,2 script "Chief" 120,{
 	   check BaseLevel =< 30,-,L_Menu1;
 	   random @R_SEL_NUM,2; 
 	   check @R_SEL_NUM == 0,-,T_TALK0; 
@@ -606,5 +606,22 @@ payon.gat,27,175,0 script "Sign" 111,{
       mes "^9999FFVilla De Payon Shoppe^000000";
       mes "Weapons, Armor and Accessories";
       mes "'We Never Close!'";
+      close;
+}
+
+payon.gat,171,137,0 script "Sign" 111,{
+	mes "^993333- The Sign Reads -^000000";
+      mes "Welcome.";
+      close;
+}
+
+payon.gat,165,128,0 script "Sign Post" 111,{
+	mes "^993333- The Sign Post Reads -^000000";
+      mes "North to Archer Fields";
+      mes "Northwest to Prontera";
+      mes "East to Payon Fields";
+      mes "South to Payon Fields";
+      mes "Southeast to Alberta";
+      mes "West to Morroc";
       close;
 }
