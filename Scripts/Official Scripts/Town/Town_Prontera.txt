@@ -96,8 +96,11 @@
 // - Billboard -> prontera: 31,212
 //   Prontera Billboard.
 //
-// - Prontera Sign -> prontera: 278,212
+// - Prontera Sign -> prontera: 216,70
 //   Prontera Sign.
+//
+// - Strife -> prontera: 278,212
+//   Talks about becoming a swordie and a Knight.
 //
 //========================================================================================
 
@@ -877,5 +880,83 @@ prontera.gat,278,212,0 script "Sign" 111,{
 	mes "^993333- The Sign Reads -^000000";
       mes "Please help keep Prontera a clean";
       mes "place.";
+      close;
+}
+
+
+prontera,216,70,4 script "Strife" 48,{
+         check Job == 1,L_Swordie,-; 
+	   check event_swordie == 1,L_Fight,-;
+      mes "[Strife]";
+      mes "I am gonna be an awesome knight.";
+      mes "To obtain that, I am training. Heh";
+      mes "Heh Heh...";
+      mes "But first, I must become a swordie.";
+      mes "That is why I am training. You are";
+      mes "diligently trying to obtain your";
+      mes "goals, right?";
+      next;
+      menu "Of course.",L_Ofcourse,"No...",-;
+      mes "[Strife]";
+      mes "You can't be like that. Think";
+      mes "about what you want to be first.";
+      mes "If you don't, you'll regret it";
+      mes "later on in life.";
+      close;
+L_Swordie:
+      mes "[Strife]";
+      mes "I will become an awesome knight.";
+      mes "So that's why I am training";
+      mes "diligently right now. Heh Heh";
+      mes "Heh...";
+      mes "Hey! Why are you looking at me";
+      mes "like why am I bothering when I'm";
+      mes "not even a swordie...?";
+      next;
+      mes "[Strife]";
+      mes "i know. I know. In order to become";
+      mes "a knight, I must first become a";
+      mes "swordie.";
+      mes "That's why I am training so hard.";
+      next;
+      mes "[Strife]";
+      mes "But, oddly, when I see the";
+      mes "different knights that pass by";
+      mes "here, I get inspired.";
+      mes "That's why I purposely came all the";
+      mes "way to Prontera to train.";
+      next;
+      menu "Do your best.",L_Best,"Just Stop.",-;
+      mes "[Strife]";
+      mes "Fight! Fight! Just wait and see. I";
+      mes "will be stronger than you one day!";
+      close;
+L_Best:
+      mes "[Strife]";
+      mes "Of course. I will become strong";
+      mes "like you one day.";
+      mes "So when you see me on that day,";
+      mes "please acknowledge me.";
+      close;
+L_Ofcourse:
+      mes "[Strife]";
+      mes "To become a swordie, you must go to";
+      mes "Prontera's satelite city of";
+      mes "Izlude. You must go take a test";
+      mes "there.";
+      mes "I failed the test miserably once...";
+      mes "But I will not fail again!";
+      next;
+      mes "[Strife]";
+      mes " Training! Training! I must train";
+      mes "diligently!";
+      mes "You must be strong too! Once we";
+      mes "both get stronger, we shall meet";
+      mes "again!";
+         set event_swordie = 1;
+      close;
+L_Fight:
+      mes "[Strife]";
+      mes "Fight! Fight! Fight!";
       close;
 }

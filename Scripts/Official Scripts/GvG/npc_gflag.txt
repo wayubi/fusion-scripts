@@ -83,7 +83,7 @@
 //
 //========================================================================================
 
-prontera.gat,156,192,4 script "Kriemhild" 722,{
+prontera.gat,156,190,4 script "Kriemhild" 722,{
 	guildreg "prtg_cas01";
 	check guildid == 0,-,L_START_1;
       mes "[ Edict of the Divine Rune Midgard Kingdom ]"

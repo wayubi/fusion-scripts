@@ -9,6 +9,12 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.005
 ----------------------------------------------------------------------------------------------------
+- Town\Town_Prontera.txt - Updated Strife Npc. [Muad_Dib]
+- Event\Event_Valentine.txt - Added Valentine Event. (Needs 2 lines in item database in order to work. I have done this in mine.)[Muad_Dib]
+- GvG\npc_gflag.txt - Moved Kriemhild flag position. [Muad_Dib]
+- Job\Job1_Acolyte.txt - Fixed save command. [Muad_Dib]
+- Event\Event_Bunny.txt - Fixed a mes error. [Muad_Dib]
+- Town\Town_Prontera.txt - Added Strife Npc. [Muad_Dib]
 - Event\Event_Making.txt - Fixed a additem error. [Muad_Dib]
 - Town\Town_amatsu.txt - Fixed a few mes errors. [Muad_Dib]
 - Town\Town_Alberta.txt - Updated Gotanblue NPC. [Muad_Dib]
