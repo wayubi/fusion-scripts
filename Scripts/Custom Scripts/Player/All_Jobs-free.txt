@@ -154,8 +154,7 @@ prontera.gat,164,320,4 script "Faberau" 87,{
 			next;
 			ccolor 0;
 			jobchange 24;
-			set baselevel = 1,0;
-			set JobLevel = 1,0;
+			basereset;
 			resetstat;
 			set statuspoint = 100;
 			set skillpoints = 0;
@@ -259,7 +258,8 @@ prontera.gat,164,320,4 script "Faberau" 87,{
 				jobchange 41;
 				goto L_SETJOBLEVEL;
 	L_SETJOBLEVEL:
-		set JobLevel = 1,0;
+		//very redundant  Jobchange does this
+		//set JobLevel = 1,0;
 		close;
 	L_SKILLPOINT:
 		mes "[Faberau]";

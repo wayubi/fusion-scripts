@@ -1,6 +1,7 @@
 --------------------------------------------------------------------------------
  Fusion 1.213 - August 29th, 2004
 --------------------------------------------------------------------------------
+ - 10-18-04: removed set baselevel and set joblevel for basereset; [Tsusai]
  - 07-31-04: Added All Towns & All Dungeons Warper script (ENG) - Map\UltraWarper_Free.txt. [Yun Qi]
  - 07-31-04: Added All Towns & All Dungeons Warper script (ENG) - Map\UltraWarper_100+300.txt. [Yun Qi]
  - 07-13-04: Added a City Census NPC script (ENG) - Recreation\Census.txt. [Yun Qi]
