@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.003
 ----------------------------------------------------------------------------------------------------
+- Town\Town_Kafra.txt - remove line l_quest to avoid error. [nestor_zulueta]
 - Event\Event_Making.txt - change grampa location. [nestor_zulueta]
 - Town\Town_Alberta.txt - fixed npc id of phina and added random message. [nestor_zulueta]
 - Warp\towns\Alberta.txt - fixed warp linking to young man and grampa. [nestor_zulueta]
