@@ -25,6 +25,9 @@
 
 gef_fild13.gat,78,182,4	script	"Yesnelph"	722,{
 	scriptlabel gef_fild13F03;
+OnInit:
+	guildreg "gefg_cas03";
+return;
 	guildreg "gefg_cas03";
 	check guildid == 0,-,L_START_1;
 	mes "       [ Kingdom of Prontera ]";
@@ -70,6 +73,9 @@ gef_fild13.gat,144,244,4	script	"Yesnelph"	722,{
 
 gefg_cas03.gat,122,220,6	script	"Yesnelph"	722,{
 	scriptlabel gefg_casF03;
+OnInit:
+	guildreg "gefg_cas03";
+return;
 	guildreg "gefg_cas03";
 	check guildid == 0,-,L_START_1;
 	mes "       [ Kingdom of Prontera ]";

@@ -25,6 +25,9 @@
 
 pay_gld.gat,208,268,4	script	"Bamboo Grove Hill"	722,{
 	scriptlabel pay_gldF05;
+OnInit:
+	guildreg "payg_cas05";
+return;
 	guildreg "payg_cas05";
 	check guildid == 0,-,L_START_1;
 	mes "       [ Kingdom of Payon ]";
@@ -63,6 +66,9 @@ pay_gld.gat,187,294,2	script	"Bamboo Grove Hill"	722,{
 }
 payg_cas05.gat,32,249,4	script	"Bamboo Grove Hill"	722,{
 	scriptlabel payg_casF05;
+OnInit:
+	guildreg "payg_cas05";
+return;
 	guildreg "payg_cas05";
 	check guildid == 0,-,L_START_1;
 	mes "       [ Kingdom of Payon ]";

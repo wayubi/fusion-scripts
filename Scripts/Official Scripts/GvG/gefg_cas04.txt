@@ -25,6 +25,9 @@
 
 gef_fild13.gat,190,203,3	script	"Bergel"	722,{
 	scriptlabel gef_fild13F04;
+OnInit:
+	guildreg "gefg_cas04";
+return;
 	guildreg "gefg_cas04";
 	check guildid == 0,-,L_START_1;
 	mes "       [ Kingdom of Prontera ]";
@@ -58,6 +61,9 @@ gef_fild13.gat,199,274,3	script	"Bergel"	722,{
 
 gefg_cas04.gat,24,157,6	script	"Bergel"	722,{
 	scriptlabel gefg_casF04;
+OnInit:
+	guildreg "gefg_cas04";
+return;
 	guildreg "gefg_cas04";
 	check guildid == 0,-,L_START_1;
 	mes "       [ Kingdom of Prontera ]";

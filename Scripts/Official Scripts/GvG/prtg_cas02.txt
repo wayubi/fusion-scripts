@@ -25,6 +25,9 @@
 
 prt_gld.gat,244,126,8	script	"Swanhild"	722,{
 	scriptlabel prt_gldF02;
+OnInit:
+	guildreg "prtg_cas02";
+return;
 	guildreg "prtg_cas02";
 	check guildid == 0,-,L_START_1;
 	mes "       [ Kingdom of Prontera ]";
@@ -64,6 +67,9 @@ prt_gld.gat,236,128,8	script	"Swanhild"	722,{
 
 prtg_cas02.gat,40,227,4	script	"Swanhild"	722,{
 	scriptlabel prtg_casF02;
+OnInit:
+	guildreg "prtg_cas02";
+return;
 guildreg "prtg_cas02";
 check guildid == 0,-,L_START_1;
 mes "       [ Kingdom of Prontera ]";

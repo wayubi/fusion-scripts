@@ -25,6 +25,9 @@
 
 prt_gld.gat,131,60,6	script	"Kriemhild"	722,{
 	scriptlabel prt_gldF01;
+OnInit:
+	guildreg "prtg_cas01";
+return;
 	guildreg "prtg_cas01";
 	check guildid == 0,-,L_START_1;
 	mes "       [ Kingdom of Prontera ]";
@@ -63,6 +66,9 @@ prt_gld.gat,135,60,6	script	"Kriemhild"	722,{
 }
 prtg_cas01.gat,58,56,4	script	"Kriemhild"	722,{
 	scriptlabel prtg_casF01;
+OnInit:
+	guildreg "prtg_cas01";
+return;
 	guildreg "prtg_cas01";
 	check guildid == 0,-,L_START_1;
 	mes "       [ Kingdom of Prontera ]";

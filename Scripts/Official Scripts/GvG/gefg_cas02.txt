@@ -25,6 +25,9 @@
 
 gef_fild13.gat,303,243,4	script	"Eeyorbriggar"	722,{
 	scriptlabel gef_fild13F02;
+OnInit:
+	guildreg "gefg_cas02";
+return;
 	guildreg "gefg_cas02";
 	check guildid == 0,-,L_START_1;
 	mes "       [ Kingdom of Prontera ]";
@@ -64,6 +67,9 @@ gef_fild13.gat,324,243,4	script	"Eeyorbriggar"	722,{
 
 gefg_cas02.gat,65,130,5	script	"Eeyorbriggar"	722,{
 	scriptlabel gefg_casF02;
+OnInit:
+	guildreg "gefg_cas02";
+return;
 	guildreg "gefg_cas02";
 	check guildid == 0,-,L_START_1;
 	mes "       [ Kingdom of Prontera ]";

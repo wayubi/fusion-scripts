@@ -25,6 +25,9 @@
 
 prt_gld.gat,120,243,6	script	"Skoegul"	722,{
 	scriptlabel prt_gldF04;
+OnInit:
+	guildreg "prtg_cas04";
+return;
 	guildreg "prtg_cas04";
 	check guildid == 0,-,L_START_1;
 	mes "       [ Kingdom of Prontera ]";
@@ -64,6 +67,9 @@ prt_gld.gat,122,236,6	script	"Skoegul"	722,{
 
 prtg_cas04.gat,82,29,4	script	"Skoegul"	722,{
 	scriptlabel prtg_casF04;
+OnInit:
+	guildreg "prtg_cas04";
+return;
 	guildreg "prtg_cas04";
 	check guildid == 0,-,L_START_1;
 	mes "       [ Kingdom of Prontera ]";
