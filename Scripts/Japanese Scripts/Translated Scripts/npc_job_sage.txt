@@ -1,3 +1,5 @@
+Translated by RPG Advocate
+Updated by Darkchild and Muad_Dib
 //==================================
 //Sage Castle
 //==================================
@@ -14,88 +16,61 @@ yuno_in02.gat,38,61,4	script	Magic Academy Headmaster 	743,{
 	menu "Change class to Sage",L_Menu1_1,"About the Sage class",-,"Just looking around",L_Menu1_2;
 		mes "[Keiron]";
 		mes "So you're interested in being a Sage?";
-		mes "Well, I can't just make you one";
-		mes "straight away.";
+		mes "Well, I can't just make you one straight away.";
 		next;
 		mes "[Keiron]";
-		mes "In order to become a Sage, you'll need";
-		mes "to file an application for entry into the";
-		mes "Shubaichul Magic Academy and take";
-		mes "the placement test.";
+		mes "In order to become a Sage, you'll need to file an application for entry into the Shubaichul Magic Academy and take the placement test.";
 		next;
 		mes "[Keiron]";
-		mes "Once you're placed, you'll need to";
-		mes "complete coursework and finally";
-		mes "write and defend a thesis.";
+		mes "Once you're placed, you'll need to complete coursework and finally write and defend a thesis.";
 		next;
 		mes "[Keiron]";
-		mes "If you successfully complete the";
-		mes "requirements, you'll be granted a";
-		mes "a Sage license.";
+		mes "If you successfully complete the requirements, you'll be granted a Sage license.";
 		next;
 		mes "[Keiron]";
-		mes "If you wish to apply, go see";
-		mes "Mathias in the Shubaichul";
-		mes "Magic Academy.  Tell him I sent";
-		mes "you.";
+		mes "If you wish to apply, go see Mathias in the Shubaichul Magic Academy.";
+		mes "Tell him I sent you.";
 		close;
 L_Menu1_1:
 	mes "[Keiron]";
 	mes "A Sage?";
 	mes "Well...";
-	mes "In order to change you way of living,";
-	mes "you have to change your way of thinking.";
+	mes "In order to change you way of living, you have to change your way of thinking.";
 	next;
 	mes "[Keiron]";
-	mes "Sages actively contribute knowledge";
-	mes "to the kingdom through rigorous";
-	mes "research.  They also help";
-	mes "society through its worst problems.";
-	mes "Just because you dress as a Sage";
-	mes "doesn't mean you're a Sage.";
+	mes "Sages actively contribute knowledge to the kingdom through rigorous research.";
+	mes "They also help society through its worst problems.";
+	mes "Just because you dress as a Sage doesn't mean you're a Sage.";
 	next;
 	mes "[Keiron]";
-	mes "To become a Sage, please apply";
-	mes "for entry into the Shubaichul Magic Academy.";
-	mes "The admissions officer will explain the";
-        mes "educational requirements.";
+	mes "To become a Sage, please apply for entry into the Shubaichul Magic Academy.";
+	mes "The admissions officer will explain the educational requirements.";
 	close;
 L_Menu1_2:
 	mes "[Keiron]";
-	mes "Excellent.  If you have some";
-	mes "free time, why not peruse a";
-	mes "a volume from our library?";
-	mes "Our library is truly a bastion";
-        mes "of knowledge.";
+	mes "Excellent.  If you have some free time, why not peruse a a volume from our library?";
+	mes "Our library is truly a bastion of knowledge.";
 	next;
 	mes "[Keiron]";
-	mes "Of course, there is much that";
-	mes "can't be learned from reading";
-	mes "books, but it's a good start.";
+	mes "Of course, there is much that can't be learned from reading books, but it's a good start.";
 	close;
 L_Menu2_1:
 	mes "[Keiron]";
-	mes "We Sages do a lot of research";
-	mes "about the world on our own,";
+	mes "We Sages do a lot of research about the world on our own,";
 	mes "but to maximize our knowledge,";
-	mes "we regularly form interdisciplinary";
-	mes "research teams.";
+	mes "we regularly form interdisciplinary research teams.";
 	next;
 	mes "[Keiron]";
-	mes "You should talk to our Sages";
-	mes "and share any research you";
-	mes "may have been doing within";
-	mes "your own profession.";
+	mes "You should talk to our Sages and share any research you may have been doing within your own profession.";
 	close;
 L_Menu2_2:
 	mes "[Keiron]";
 	mes "The road to becoming a Sage isn't easy.";
-	mes "You need to have a strong dedication";
-	mes "to mastering magic.";
+	mes "You need to have a strong dedication to mastering magic.";
 	next;
 	mes "[Keiron]";
-	mes "You need to keep plugging away";
-	mes "at that thesis.  Good luck!";
+	mes "You need to keep plugging away at that thesis.";
+	mes "Good luck!";
 	close;
 L_Menu3_1:
 	if (countitem(1550) >= 1) goto L_Menu3_2;
@@ -109,8 +84,7 @@ L_Menu3_1:
 	close;
 L_Menu3_2:
 	mes "[Keiron]";
-	mes "It looks like you have a thesis to";
-	mes "present.  Let's have a look...";
+	mes "It looks like you have a thesis to present.  Let's have a look...";
 	next;
 	mes "[Keiron]";
 	mes "Hmmm...";
@@ -123,37 +97,35 @@ L_Menu3_2:
 	next;
 	mes "[Keiron]";
 	mes "It's not stylistically";
-	mes "cohesive, but your zeal for";
-	mes "research is amply proven by";
-	mes "your thesis.  I approve.";
+	mes "cohesive, but your zeal for research is amply proven by your thesis.  I approve.";
 	next;
+	if(SkillPoint == 0) goto LCHANGE;
+	mes "[Keiron]";
+	mes "Well you are all set for the jobchange except for 1 thing!";
+	mes "You have unused Skill Points!!!";
+	mes "Please use those first!";
+	close;
+		
+	LCHANGE:
 	jobchange 16;
 	mes "[Keiron]";
 	mes "Congratulations!";
-	mes "You're a Sage now.  Don't";
-	mes "let that passion for";
-	mes "research ever be dampened.";
+	mes "You're a Sage now.";
+	mes "Don't let that passion for research ever be dampened.";
 	next;
 	mes "[Keiron]";
-	mes "Keep your thesis around, since it";
-	mes "may be useful in a publish-or-";
-	mes "perish environment later on.";
+	mes "Keep your thesis around, since it may be useful in a publish-or-perish environment later on.";
 	next;
 	mes "[Keiron]";
-	mes "Some day, you'll be a bastion of";
-	mes "knowledge all by yourself!";
+	mes "Some day, you'll be a bastion of knowledge all by yourself!";
 	close;
 L_Menu3_3:
 	mes "[Keiron]";
 	mes "Hmmm?  What's up?";
-	mes "Just because you're a Sage doesn't";
-	mes "mean you should quit your studies.";
+	mes "Just because you're a Sage doesn't mean you should quit your studies.";
 	next;
 	mes "[Keiron]";
-	mes "In order to maintain our role";
-	mes "as the kingdom's gatherers and";
-	mes "dissemenators of knowledge, we can";
-	mes "never miss an opportunity to gather data.";
+	mes "In order to maintain our role as the kingdom's gatherers and dissemenators of knowledge, we can never miss an opportunity to gather data.";
 	close;
 }
 
@@ -173,8 +145,7 @@ yuno_in03.gat,244,31,3	script	Physics Professor	120,{
 	mes "What?";
 	next;
 	mes "[Ebeshi]";
-	mes "Did you come to study";
-	mes "under my guidance?";
+	mes "Did you come to study under my guidance?";
 	next;
 	mes "[Ebeshi]";
 	mes "Well, you need to enroll first.";
@@ -185,9 +156,7 @@ L_Menu1_1:
 	mes "Eh???????????????????????????????";
 	next;
 	mes "[Ebeshi]";
-	mes "I don't think there's anything";
-	mes "someone like you can learn from";
-	mes "me.";
+	mes "I don't think there's anything someone like you can learn from me.";
 	next;
 	mes "[Ebeshi]";
 	mes "Are you disappointed?";
@@ -196,26 +165,22 @@ L_Menu1_1:
 L_Menu1_2:
 	set job2nd_sage2,8;
 	mes "[Ebeshi]";
-	mes "Well, I'm glad to meet another fine";
-	mes "student such as yourself.";
+	mes "Well, I'm glad to meet another fine student such as yourself.";
 	next;
 	mes "[Ebeshi]";
-	mes "Aren't you excited that you're going";
-	mes "to study under me?!  Hehehehe....";
+	mes "Aren't you excited that you're going to study under me?!";
+	mes "Hehehehe....";
 	next;
 	mes "[Ebeshi]";
-	mes "I hate to be intrusive, but";
-	mes "could you get something for me";
-	mes "before I start my class?";
+	mes "I hate to be intrusive, but could you get something for me before I start my class?";
 	next;
 	mes "[Ebeshi]";
-	mes "I need ^3051FD30x Stone^000000 as part of the";
-	mes "class materials.  Can you get that?";
+	mes "I need ^3051FD30x Stone^000000 as part of the class materials.";
+	mes "Can you get that?";
 	next;
 	mes "[Ebeshi]";
-	mes "If you really want to get stones";
-	mes "quick, you should look up a friendly";
-	mes "thief to assist you!  Thanks for helping out.";
+	mes "If you really want to get stones quick,";
+	mes "you should look up a friendly thief to assist you!  Thanks for helping out.";
 	close;
 L_Menu2_1:
 	if (countitem(7049) >= 30) goto L_Menu2_2;
@@ -231,8 +196,8 @@ L_Menu2_1:
 		close;
 	L_Menu2_2:
 		mes "[Ebeshi]";
-		mes "Awesome!  You've got all the stones";
-		mes "I need.  Now, watch this!";
+		mes "Awesome!  You've got all the stones I need.";
+		mes "Now, watch this!";
 		next;
 		mes "[Ebeshi]";
 		mes "Abracadabra!!";
@@ -246,8 +211,8 @@ L_Menu2_1:
 		delitem 7049,30;
 		set job2nd_sage2,9;
 		mes "[Ebeshi]";
-		mes "You see that?  I created three";
-		mes "elemental stones!";
+		mes "You see that?";
+		mes "I created three elemental stones!";
 		next;
 		mes "[Ebeshi]";
 		mes "Pretty cool, don't you think?";
@@ -257,9 +222,7 @@ L_Menu2_1:
 		getitem 993,1;
 		getitem 992,1;
 		mes "[Ebeshi]";
-		mes "Now, for your next lesson, you";
-		mes "need to synthesize some different";
-		mes "kinds of arrows with those stones.";
+		mes "Now, for your next lesson, you need to synthesize some different kinds of arrows with those stones.";
 		next;
 		mes "[Ebeshi]";
 		mes "Specifically...";
@@ -268,24 +231,22 @@ L_Menu2_1:
 		mes "^3051FD50x Wind Arrow^000000";
 		next;
 		mes "[Ebeshi]";
-		mes "An archer friend can help you";
-		mes "make the arrows.";
+		mes "An archer friend can help you make the arrows.";
 		mes "Give it a try!";
 		close;
 	L_Menu2_3:
 		if ((countitem(1754) >= 50) && (countitem(1756) >= 50) && (countitem(1755) >= 50)) goto L_Menu2_4;
 		mes "[Ebeshi]";
 		mes "Hmmm?";
-		mes "What did you do with those stones I";
-		mes "gave you?  You didn't sell them, I hope..."";
+		mes "What did you do with those stones I gave you?";
+		mes "You didn't sell them, I hope...";
 		next;
 		mes "[Ebeshi]";
-                mes "You need to use them to make"
+                mes "You need to use them to make";
 		mes "^3051FD50x Crystal Arrow^000000";
 		mes "^3051FD50x Stone Arrow^000000";
 		mes "^3051FD50x Wind Arrow^000000";
-		mes "An archer friend can help you";
-		mes "make the arrows.";
+		mes "An archer friend can help you make the arrows.";
 		close;
 	L_Menu2_4:
 		mes "[Ebeshi]";
@@ -293,29 +254,26 @@ L_Menu2_1:
 		mes "Now, to continue with the lesson...";
 		next;
 		mes "[Ebeshi]";
-		mes "This lesson covers the Elemental Affinity";
-		mes "chapter in your textbook.";
+		mes "This lesson covers the Elemental Affinity chapter in your textbook.";
 		next;
 		mes "[Ebeshi]";
 		mes "The first affinity is really easy.";
-		mes "Water magic is very effective against";
-		mes "fire.  It's easy to remember.  All you";
-                mes "need to remember is water being splashed on fire.";
+		mes "Water magic is very effective against fire.";
+		mes "It's easy to remember.";
+		mes "All you need to remember is water being splashed on fire.";
 		next;
 		mes "[Ebeshi]";
-		mes "Wind magic will decimate water-based";
-		mes "monsters.  Observe what happens when a";
-		mes "lake is struck by lightning.";
+		mes "Wind magic will decimate water-based monsters.";
+		mes "Observe what happens when a lake is struck by lightning.";
 		next;
 		mes "[Ebeshi]";
-		mes "Earth magic will crush wind-based";
-		mes "monsters easily.  Don't you build a house";
-		mes "on a strong foundation to keep the wind away?";
+		mes "Earth magic will crush wind-based monsters easily.";
+		mes "Don't you build a house on a strong foundation to keep the wind away?";
 		next;
 		mes "[Ebeshi]";
 		mes "Fire magic mercilessly scorches the earth.";
-		mes "Won't a tree burn if a fire";
-		mes "breaks out?  Same with an earth-based monster.";
+		mes "Won't a tree burn if a fire breaks out?";
+		mes "Same with an earth-based monster.";
 		next;
 		mes "[Ebeshi]";
 		mes "Do you understand?";
@@ -326,23 +284,20 @@ L_Menu2_1:
 		delitem 1755,50;
 		set job2nd_sage2,10;
 		mes "[Ebeshi]";
-		mes "Next time you come, bring";
-		mes "^3051FD1x Holy Water^000000.  We'll need it";
-		mes "for the lesson.";
-		mes "It will be easy to acquire if you have";
-		mes "contacts in the church.";
+		mes "Next time you come, bring ^3051FD1x Holy Water^000000.";
+		mes "We'll need it for the lesson.";
+		mes "It will be easy to acquire if you have contacts in the church.";
 		close;
 	L_Menu2_5:
 		if (countitem(523) >= 1) goto L_Menu2_6;
 		mes "[Ebeshi]";
 		mes "Ooops!";
-		mes "Did you forget about the item";
-                mes "I asked you to bring?";
+		mes "Did you forget about the item I asked you to bring?";
 		next;
 		mes "[Ebeshi]";
 		mes "I need ^3051FD1x Holy Water^000000 for the lesson.";
-		mes "Ask an Acolyte to help you make";
-		mes "it.  Hehehehe...";
+		mes "Ask an Acolyte to help you make it.";
+		mes "Hehehehe...";
 		close;
 	L_Menu2_6:
 		mes "[Ebeshi]";
@@ -355,47 +310,42 @@ L_Menu2_1:
 		next;
 		mes "[Ebeshi]";
 		mes "Water magic sucks against wind!";
-		mes "Would a lightning bolt care if it";
-		mes "was frozen?  Heheheheh....";
+		mes "Would a lightning bolt care if it was frozen?";
+		mes "Heheheheh....";
 		next;
 		mes "[Ebeshi]";
-		mes "Wind magic is totally useless against";
-		mes "the earth.  Will a tree suffer permanent";
-		mes "damage if it's blown about?";
+		mes "Wind magic is totally useless against the earth.";
+		mes "Will a tree suffer permanent damage if it's blown about?";
 		next;
 		mes "[Ebeshi]";
 		mes "Earth magic is ineffective against fire.";
-		mes "If you put some leaves on a fire, will the";
-		mes "fire go out?  No, just the opposite will happen.";
+		mes "If you put some leaves on a fire, will the fire go out?";
+		mes "No, just the opposite will happen.";
 		next;
 		mes "[Ebeshi]";
 		mes "Fire won't do much against water.";
-		mes "If you heat water, doesn't it just";
-		mes "become more dangerous?";
+		mes "If you heat water, doesn't it just become more dangerous?";
 		next;
 		mes "[Ebeshi]";
-		mes "That was a pretty informative";
-		mes "lecture!";
+		mes "That was a pretty informative lecture!";
 		mes "You think so too, right?";
 		next;
 		delitem 523,1;
 		set job2nd_sage2,11;
 		mes "[Ebeshi]";
-		mes "Now, you have enough knowledge to";
-		mes "prepare a defensible thesis.";
+		mes "Now, you have enough knowledge to prepare a defensible thesis.";
 		mes "Hehehehehe!";
 		next;
 		mes "[Ebeshi]";
 		mes "To put the thesis together, you'll need:";
-		mes "^3051FD1x Bird Feather^000000 for your writing instrument.";
-		mes "^3051FD1x Beast Hide^000000 for the pages.";
-		mes "^3051FD1x Shavings^000000 to bind the pages.";
-		mes "^3051FD1x India Ink^000000" for your ink.;
+		mes "^3051FD1x Feather of Birds^000000 for your writing instrument.";
+		mes "^3051FD1x Animal Skin^000000 for the pages.";
+		mes "^3051FD1x Trunk^000000 to bind the pages.";
+		mes "^3051FD1x Squid Ink^000000 for your ink.";
 		mes "^3051FD1x Empty Bottle^000000 to store your ink.";
 		next;
 		mes "[Ebeshi]";
-		mes "Come and see me once you've";
-		mes "gotten all of these items together.";
+		mes "Come and see me once you've gotten all of these items together.";
 		close;
 	L_ThesisStart1:
 		if ((countitem(916) >= 1) && (countitem(919) >= 1) && (countitem(1019) >= 1) && (countitem(1024) >= 1) && (countitem(713) >= 1)) goto L_ThesisStart2;
@@ -405,15 +355,14 @@ L_Menu2_1:
 		next;
 		mes "[Ebeshi]";
                 mes "You need these items to start your thesis:";
-		mes "^3051FD1x Bird Feather^000000 for your writing instrument.";
-		mes "^3051FD1x Beast Hide^000000 for the pages.";
-		mes "^3051FD1x Shavings^000000 to bind the pages.";
-		mes "^3051FD1x India Ink^000000" for your ink.;
+		mes "^3051FD1x Feather of Birds^000000 for your writing instrument.";
+		mes "^3051FD1x Animal Skin^000000 for the pages.";
+		mes "^3051FD1x Trunk^000000 to bind the pages.";
+		mes "^3051FD1x Squid Ink^000000 for your ink.";
 		mes "^3051FD1x Empty Bottle^000000 to store your ink.";
 		next;
 		mes "[Ebeshi]";
-		mes "Do you have some friends that might";
-		mes "be able to help you gather the materials?";
+		mes "Do you have some friends that might be able to help you gather the materials?";
 		mes "That will make it a simple task!";
 		close;
 	L_ThesisStart2:
@@ -437,7 +386,7 @@ L_Menu2_1:
 		mes "Elemental magic is divided into four types...";
 			menu "...called Fire, Wind, Water, and Earth",L_ThesisMenu1_1,"...named Fire, Wind, Water, and Earth",L_ThesisMenu1_2,"...that oppose each other: Fire, Wind, Water, and Earth",L_ThesisMenu1_3;
 		L_ThesisMenu1_1:
-			mes "...called Fire, Wind, Water, and Earth"";
+			mes "...called Fire, Wind, Water, and Earth";
 			goto L_Thesis2;
 		L_ThesisMenu1_2:
 			mes "...named Fire, Wind, Water, and Earth";
@@ -449,16 +398,13 @@ L_Menu2_1:
 			mes "Each attribute has certain properties.";
 			menu "Wind conquers water...",L_ThesisMenu2_1,"Water douses fire...",L_ThesisMenu2_2,"Fire scorches Earth...",L_ThesisMenu2_3;
 		L_ThesisMenu2_1:
-			mes "Wind conquers Water and";
-			mes "Earth attacks Wind";
+			mes "Wind conquers Water and Earth attacks Wind";
 			goto L_Thesis3;
 		L_ThesisMenu2_2:
-			mes "Water douses fire, while";
-			mes "Wind zaps Water";
+			mes "Water douses fire, while Wind zaps Water";
 			goto L_Thesis3;
 		L_ThesisMenu2_3:
-			mes "Fire scorches Earth, and";
-			mes "Water douses Fire.";
+			mes "Fire scorches Earth, and Water douses Fire.";
 			goto L_Thesis3;
 		L_Thesis3:
 			menu "But weaknesses exist, too",L_ThesisMenu3_1,"You can customize your weapon element, also",L_ThesisMenu3_2,"Elemental affinity varies by monster type, also",L_ThesisMenu3_3;
@@ -517,7 +463,7 @@ L_Menu2_1:
 			mes "...if you want to stay safe. power...";
 			goto L_Thesis8;
 		L_Thesis8:
-			menu "That would make me happy",L_ThesisMenu8_1,"...is difficult to imagine"",L_ThesisMenu8_2,"In the interest of a safe battle...",L_ThesisMenu8_3;
+			menu "That would make me happy",L_ThesisMenu8_1,"...is difficult to imagine",L_ThesisMenu8_2,"In the interest of a safe battle...",L_ThesisMenu8_3;
 		L_ThesisMenu8_1:
 			mes "That would make me happy.";
 			goto L_Thesis9;
@@ -545,7 +491,7 @@ L_Menu2_1:
 			next;
 			goto L_ThesisEnd;
 		L_ThesisMenu10_2:
-			mes "...people might drink them when they're not hurt"";
+			mes "...people might drink them when they're not hurt";
 			next;
 			goto L_ThesisEnd;
 		L_ThesisMenu10_3:
@@ -560,75 +506,42 @@ L_Menu2_1:
 		mes "......";
 		next;
 		set job2nd_sage,11;
-		getitem2 1550,1,0,0,0,0,0,0,0;
+		getitem 1550,1;
 		mes "[Ebeshi]";
 		mes "Alright!";
-		mes "You've finished!  It looks";
-		mes "pretty good!";
+		mes "You've finished!  It looks pretty good!";
 		next;
 		mes "[Ebeshi]";
-		mes "You should take that to the";
-		mes "Headmaster!  He'll decide whether";
-		mes "you graduate or not.  Hehehehehe....";
+		mes "You should take that to the Headmaster!";
+		mes "He'll decide whether you graduate or not.";
+		mes "Hehehehehe....";
 		close;
 L_Menu3_1:
 	mes "[Ebeshi]";
-	mes "What's up?  Did you forget";
-	mes "something?!";
+	mes "What's up?  Did you forget something?!";
 	next;
 	mes "[Ebeshi]";
-	mes "You should see the Headmaster";
-	mes "and present your thesis so";
-	mes "you can graduate!";
+	mes "You should see the Headmaster and present your thesis so you can graduate!";
 	close;
 L_Menu3_2:
 	mes "[Ebeshi]";
 	mes "Good afternoon!";
-	mes "It's good to meet other Sages";
-	mes "and exchange information.";
+	mes "It's good to meet other Sages and exchange information.";
 	mes "Heheheheh!!";
 	next;
 	mes "[Ebeshi]";
-	mes "Even though company is good";
-	mes "sometimes, I need to continue";
-	mes "my magical research!";
+	mes "Even though company is good sometimes, I need to continue my magical research!";
 	next;
 	mes "[Ebeshi]";
-	mes "Do you want to continue your";
-	mes "study here?  Please feel free";
-	mes "to talk to the other professors";
-	mes "and read the literature here.  Hehehehe!";
+	mes "Do you want to continue your study here?";
+	mes "Please feel free to talk to the other professors and read the literature here.";
+	mes "Hehehehe!";
 	close;
 }
 
 //==================================
 //Monster Museum
 //==================================
-
-// RPG Advocate sez: These seem to be debug scripts.  They should probably
-// be removed prior to release.
-
-yuno_in03.gat,32,109,4	script	flagcontrol2	111,{
-	menu "+1",-,"-1",L_Menu1_1,"0",L_Menu1_2;
-	set job2nd_sage2,job2nd_sage2+1;
-	close;
-L_Menu1_1:
-	set job2nd_sage2,job2nd_sage2-1;
-	close;
-L_Menu1_2:
-	set job2nd_sage2,0;
-	close;
-}
-
-yuno_in03.gat,33,109,4	script	flagcheck2	111,{
-	mes " " + job2nd_sage2 + " ";
-	close;
-}
-
-yuno_in03.gat,152,35,4	script	flagcheck	111,{
-	mes " " + job2nd_sage + " ";
-	close;
-}
 
 yuno_in03.gat,32,102,0	script	Biology Professor	755,{
 	if (Class == 16) goto L_Menu5_4;
@@ -640,54 +553,45 @@ yuno_in03.gat,32,102,0	script	Biology Professor	755,{
 	if (job2nd_sage == 8) goto L_Menu2_1;
 	mes "[Lucias]";
 	mes "I have a headache...";
-	mes "I've got too many things going on";
-	mes "at once!";
+	mes "I've got too many things going on at once!";
 	next;
 	mes "[Lucias]";
-	mes "Of course, I'll teach people about";
-	mes "biology even with a headache!";
+	mes "Of course, I'll teach people about biology even with a headache!";
 	close;
 L_Menu1_1:
 	mes "[Lucias]";
 	mes "Hmmm?  Are you just poking around?";
 	next;
 	mes "[Lucias]";
-	mes "That's fine, but please don't";
-	mes "touch anything.  We keep dangerous";
-	mes "bioagents in here!";
+	mes "That's fine, but please don't touch anything.";
+	mes "We keep dangerous bioagents in here!";
 	next;
 	mes "[Lucias]";
-	mes "If you have information about";
-	mes "rare monsters, we'll pay";
-	mes "you handsomely.";
+	mes "If you have information about rare monsters, we'll pay you handsomely.";
 	close;
 L_Menu2_1:
 	mes "[Lucias]";
 	mes "Oh, you've taken the placement test?";
-	mes "I'm Lucias, a preeminent researcher";
-	mes "in the biological sciences.";
+	mes "I'm Lucias, a preeminent researcher in the biological sciences.";
 	next;
 	mes "[Lucias]";
 	mes "What's your name, young one?";
 	next;
-	menu "I'm " + strcharinfo(0) + "",-;
+	menu "I'm " + strcharinfo(0) + "!",-;
 	mes "[Lucias]";
-	mes "That's a nice name.  Now, let";
-	mes "me explain about our research";
-	mes "objectives.";
+	mes "That's a nice name.";
+	mes "Now, let me explain about our research objectives.";
 	next;
 	mes "[Lucias]";
 	mes "My area of expertise is monsters.";
-	mes "I'm sure that you've encountered";
-	mes "and defeated many monsters by now.";
+	mes "I'm sure that you've encountered and defeated many monsters by now.";
 	mes "Am I right?";
 	next;
 		menu "You're quite right",-,"Well, not really...",L_Menu2_2;
 		mes "[Lucias]";
 		mes "Really?";
-		mes "I hope your background knowledge is";
-		mes "diverse.  My class isn't a cakewalk";
-		mes "by any means.";
+		mes "I hope your background knowledge is diverse.";
+		mes "My class isn't a cakewalk by any means.";
 		next;
 		goto L_Menu2_3;
 	L_Menu2_2:
@@ -695,16 +599,14 @@ L_Menu2_1:
 //If you respond negatively
 		mes "[Lucias]";
 		mes "You might be at a disadvantage.";
-		mes "My coursework assumes a lot of";
-		mes "background knowledge.  My class";
-		mes "wasn't designed to be a cakewalk...";
+		mes "My coursework assumes a lot of background knowledge.";
+		mes "My class wasn't designed to be a cakewalk...";
 		next;
 //==================================
 L_Menu2_3:
 	mes "[Lucias]";
 	mes "So, shall we get started?";
-	mes "You'll learn a lot in this class";
-	mes "if you're vigilant.";
+	mes "You'll learn a lot in this class if you're vigilant.";
 	next;
 		set @sagerand,0;
 		set @sagerand,rand(3);
@@ -736,8 +638,7 @@ L_Menu2_3:
 		next;
 	L_Menu2_6:
 		mes "[Lucias]";
-		mes "We'll continue once you've";
-		mes "gathered those.";
+		mes "We'll continue once you've gathered those.";
 		close;
 L_Menu3_1:
 	if ((countitem(1050) >= 5) && (countitem(960) >= 5) && (countitem(963) >= 5) && (job2nd_sage2 == 1)) goto L_Menu3_4;
@@ -766,81 +667,62 @@ L_Menu3_1:
 		close;
 L_Menu3_4:
 	mes "[Lucias]";
-	mes "Well, you have the items, but";
-	mes "I can't be sure if you bought them";
-	mes "or collected them yourself.";
+	mes "Well, you have the items, but I can't be sure if you bought them or collected them yourself.";
 	next;
 	mes "[Lucias]";
-	mes "There is a similarity in the";
-	mes "characteristics of the monsters that";
-	mes "drop those items.  Do you know what it is?";
+	mes "There is a similarity in the characteristics of the monsters that drop those items.";
+	mes "Do you know what it is?";
 	next;
 		menu "Water element affinity",L_Menu3_5,"They're fish and shells",L_Menu3_5,"They were quite active",-,"They're monsters",-;
 //==================================
 		mes "[Lucias]";
 		mes "...I'm disappointed in you.";
-		mes "The correct answer is that all of the";
-		mes "monsters have water element affinity.";
-		mes "Monsters that live in an aquatic";
-		mes "environment have evolved bodies";
-		mes "adapted to that environment.";
+		mes "The correct answer is that all of the monsters have water element affinity.";
+		mes "Monsters that live in an aquatic environment have evolved bodies adapted to that environment.";
 //==================================
 		next;
 		goto L_Menu3_6;
 	L_Menu3_5:
 		mes "[Lucias]";
-		mes "Right!  Most aquatic monsters have";
-		mes "water element affinity because they're";
-		mes "adapted to their environment.  Fish and";
-                mes "shells evolved in a logical way.";
+		mes "Right!";
+		mes "Most aquatic monsters have water element affinity because they're adapted to their environment.";
+		mes "Fish and shells evolved in a logical way.";
 		next;
 	L_Menu3_6:
 		mes "[Lucias]";
-		mes "Not every fish and shell has water";
-		mes "element affinity, but you can count on";
-                mes "it as a general rule.";
-		mes "Now, which type of magic do you think";
-		mes "would be most effective against them?";
+		mes "Not every fish and shell has water element affinity, but you can count on it as a general rule.";
+		mes "Now, which type of magic do you think would be most effective against them?";
 		next;
 		menu "Lightning Bolt",L_Menu3_7,"Firebolt",-,"Thunderstorm",L_Menu3_8,"Frost Deva",-;
 //==================================
 //mes–¢‰ñŽû
 		mes "[Lucias]";
 		mes "That's not correct.";
-		mes "You need to use magic like";
-		mes "Lightning Bolt or Thunderstorm.";
-		mes "Check the elemental affinity matrix";
-		mes "again.";
+		mes "You need to use magic like Lightning Bolt or Thunderstorm.";
+		mes "Check the elemental affinity matrix again.";
 		next;
 //==================================
 		goto L_Menu3_9;
 	L_Menu3_7:
 		mes "[Lucias]";
 		mes "Great!  That's right!";
-		mes "Using Lightning Bolt"
-		mes "is an easy way to victory.";
+		mes "Using Lightning Bolt is an easy way to victory.";
 		next;
 		mes "[Lucias]";
-		mes "You need to be careful of monsters";
-		mes "like the Penomeni and starfish because";
-		mes "their attribute is different.";
+		mes "You need to be careful of monsters like the Penomeni and starfish because their attribute is different.";
 		next;
 		goto L_Menu3_9;
 	L_Menu3_8:
 		mes "[Lucias]";
 		mes "Great!  That's right!";
-		mes "Using Thunderstorm"
-		mes "is an easy way to victory.";
+		mes "Using Thunderstorm is an easy way to victory.";
 		next;
 		mes "[Lucias]";
-		mes "You need to be careful of monsters";
-		mes "like the Penomeni and starfish because";
-		mes "their attribute is different.";
+		mes "You need to be careful of monsters like the Penomeni and starfish because their attribute is different.";
 		next;
 	L_Menu3_9:
 		mes "[Lucias]";
-		mes "Next, let's turn our attention";
-		mes "to insectoid monsters.";
+		mes "Next, let's turn our attention to insectoid monsters.";
 		next;
 		set @sagerand,rand(3);
 		mes "[Lucias]";
@@ -899,26 +781,17 @@ L_Menu4_4:
 	set job2nd_sage2,7;
 	mes "[Lucias]";
 	mes "Excellent.  You've done well.";
-	mes "I hope you were also dilligent";
-	mes "in observing your surroundings";
-	mes "when you collected the items.";
+	mes "I hope you were also dilligent in observing your surroundings when you collected the items.";
 	next;
 	mes "[Lucias]";
-	mes "With insects, you'll need to";
-	mes "carefully consider which magic";
-	mes "to use, since insects have affinity";
-	mes "with a variety of elements.";
+	mes "With insects, you'll need to carefully consider which magic to use, since insects have affinity with a variety of elements.";
 	next;
 	mes "[Lucias]";
-	mes "You should also be aware that";
-	mes "Thief hiding and Assassin cloaking";
-	mes "aren't effective against some";
-	mes "insects.";
+	mes "You should also be aware that Thief hiding and Assassin cloaking aren't effective against some insects.";
 	next;
 	mes "[Lucias]";
 	mes "Insects can also act in groups.";
-	mes "Often the insect bosses will have";
-	mes "considerable numbers of subordinates";
+	mes "Often the insect bosses will have considerable numbers of subordinates.";
 	next;
 	mes "[Lucias]";
 	mes "Ant Lord Maya...";
@@ -926,26 +799,20 @@ L_Menu4_4:
 	mes "Goblin Chief Goldfinger...";
 	next;
 	mes "[Lucias]";
-	mes "If you face a boss monster";
-	mes "alone, you had best prepare";
-	mes "to die.";
-	mes "You ought to take a group of";
-	mes "friends to face these creatures";
-	mes "down.";
+	mes "If you face a boss monster alone, you had best prepare to die.";
+	mes "You ought to take a group of friends to face these creatures down.";
 	next;
 	mes "[Lucias]";
-	mes "Well, you've studied quite a";
-	mes "bit.  Now you need to write";
-	mes "a thesis.";
-	mes "You need some materials before";
-	mes "you can begin writing it, however.";
+	mes "Well, you've studied quite a bit.";
+	mes "Now you need to write a thesis.";
+	mes "You need some materials before you can begin writing it, however.";
 	mes "They are:";
 	next;
 	mes "[Lucias]";
-	mes "^3051FD1x Bird Feather^000000 for your writing instrument.";
-	mes "^3051FD1x Beast Hide^000000 for the pages.";
-	mes "^3051FD1x Shavings^000000 to bind the pages.";
-	mes "^3051FD1x India Ink^000000" for your ink.;
+	mes "^3051FD1x Feather of Birds^000000 for your writing instrument.";
+	mes "^3051FD1x Animal Skin^000000 for the pages.";
+	mes "^3051FD1x Trunk^000000 to bind the pages.";
+	mes "^3051FD1x Squid Ink^000000 for your ink.";
 	mes "^3051FD1x Empty Bottle^000000 to store your ink.";
 	next;
 	mes "[Lucias]";
@@ -958,16 +825,15 @@ L_Menu5_1:
 	mes "They are:";
 	next;
 	mes "[Lucias]";
-	mes "^3051FD1x Bird Feather^000000 for your writing instrument.";
-	mes "^3051FD1x Beast Hide^000000 for the pages.";
-	mes "^3051FD1x Shavings^000000 to bind the pages.";
-	mes "^3051FD1x India Ink^000000" for your ink.;
+	mes "^3051FD1x Feather of Birds^000000 for your writing instrument.";
+	mes "^3051FD1x Animal Skin^000000 for the pages.";
+	mes "^3051FD1x Trunk^000000 to bind the pages.";
+	mes "^3051FD1x Squid Ink^000000 for your ink.";
 	mes "^3051FD1x Empty Bottle^000000 to store your ink.";
 	next;
 	mes "[Lucias]";
 	mes "You've done great so far.";
-	mes "Just a little more and you can";
-	mes "graduate.";
+	mes "Just a little more and you can graduate.";
 	close;
 L_Menu5_2:
 	delitem 916,1;
@@ -984,8 +850,7 @@ L_Menu5_2:
 	next;
 	mes "[Lucias]";
 	mes "Are you ready to begin?";
-	mes "Let's see if you've acquired enough";
-	mes "knowledge to write a coherent thesis.";
+	mes "Let's see if you've acquired enough knowledge to write a coherent thesis.";
 	next;
 	mes "......";
 	next;
@@ -1013,63 +878,39 @@ L_Menu5_2:
 	mes "......";
 	next;
 	set job2nd_sage,11;
-	getitem2 1550,1,0,0,0,0,0,0,0;
+	getitem 1550,1;
 	mes "[Lucias]";
 	mes "This is pretty good!";
 	mes "I'm proud of you!";
 	next;
 	mes "[Lucias]";
-	mes "Show this to the Headmaster and you'll";
-	mes "be sure to graduate.";
+	mes "Show this to the Headmaster and you'll be sure to graduate.";
 	mes "Good luck.";
 	close;
 L_Menu5_3:
 	mes "[Lucias]";
 	mes "Hmmm?  What's the matter?";
-	mes "You need to show your thesis to";
-	mes "the Headmaster.";
+	mes "You need to show your thesis to the Headmaster.";
 	close;
 L_Menu5_4:
 	mes "[Lucias]";
 	mes "Are you confused about something?";
-	mes "I'm pretty busy, so you need to make";
-	mes "an appointment a week in advance.";
+	mes "I'm pretty busy, so you need to make an appointment a week in advance.";
 	next;
 	mes "[Lucias]";
-	mes "Hahaha...Once you've been a Sage";
-	mes "for awhile, you'll be saying the";
-	mes "same thing.";
+	mes "Hahaha...Once you've been a Sage for awhile, you'll be saying the same thing.";
 	next;
 	mes "[Lucias]";
 	mes "Also, if you have some spare time,";
-	mes "you should head over to the dungeon";
-	mes "and lie down on the floor.  Look up";
-	mes "and study the ceiling.  You might learn something.";
+	mes "you should head over to the dungeon and lie down on the floor.";
+	mes "Look up and study the ceiling.";
+	mes "You might learn something.";
 	close;
 }
 
 //=================================
 //Academy Interior
 //=================================
-
-// More debug NPCs.
-
-yuno_in03.gat,156,35,4	script	flagcontrol	111,{
-	menu "+1",-,"-1",L_Menu1_1,"0",L_Menu1_2;
-	set job2nd_sage,job2nd_sage+1;
-	close;
-L_Menu1_1:
-	set job2nd_sage,job2nd_sage-1;
-	close;
-L_Menu1_2:
-	set job2nd_sage,0;
-	close;
-}
-
-yuno_in03.gat,152,35,4	script	flagcheck	111,{
-	mes " " + job2nd_sage + " ";
-	close;
-}
 
 yuno_in03.gat,154,35,4	script	Academy Staff	742,{
 	if (Class == 16) goto L_Menu6_4;
@@ -1081,49 +922,36 @@ yuno_in03.gat,154,35,4	script	Academy Staff	742,{
 	mes "[Mathias]";
 	mes "Hello.";
 	mes "This is the Shubaichul Magic Academy?";
-	mes "You seem to be a Magician.  How can";
-	mes "I help you?";
+	mes "You seem to be a Magician.";
+	mes "How can I help you?";
 	next;
 	menu "Sage class-change information",-,"I want to apply for admission to the Academy",L_Menu3_1,"Forget it",L_Menu2;
 		mes "[Mathias]";
 		mes "You want to change class to Sage?";
-		mes "I can't just change your class right";
-		mes "here.";
+		mes "I can't just change your class right here.";
 		next;
 		mes "[Mathias]";
-		mes "You need to complete a program";
-		mes "of rigorous coursework and";
-		mes "research.";
+		mes "You need to complete a program of rigorous coursework and research.";
 		next;
 		mes "[Mathias]";
 		mes "Once you graduate from the academy,";
 		mes "you can change class.";
-		mes "In order to proceed, you need to";
-		mes "pay tuition and take";
-		mes "the placement test.";
+		mes "In order to proceed, you need to pay tuition and take the placement test.";
 		next;
 		mes "[Mathias]";
-		mes "Only those who have an ";
-		mes "^3051FDAncient Scroll^000000 and a ^3051FDKeen Eye^000000";
-		mes "can have tuition waived.";
+		mes "Only those who have an ^3051FDOld Magic Book^000000 and a ^3051FDNecklace Of Wisdom^000000 can have tuition waived.";
 		next;
 		mes "[Mathias]";
-		mes "Once you've paid the fee, you";
-		mes "first take the placement test.";
-		mes "If you score highly enough to be";
-		mes "placed in our program, you then";
-		mes "perform research according to your placement.";
+		mes "Once you've paid the fee, you first take the placement test.";
+		mes "If you score highly enough to be placed in our program, you then perform research according to your placement.";
 		mes "Finally, you must prepare and defend a thesis.";
 		next;
 		mes "[Mathias]";
-		mes "The Headmaster decides whether or";
-		mes "not the thesis meets standards for";
-		mes "graduation.  If he approves, you can";
-		mes "formally begin your career as a Sage.";
+		mes "The Headmaster decides whether or not the thesis meets standards for graduation.";
+		mes "If he approves, you can formally begin your career as a Sage.";
 		next;
 		mes "[Mathias]";
-		mes "If you're interested, you need";
-		mes "only file an application to get started.";
+		mes "If you're interested, you need only file an application to get started.";
 		mes "Have a good day.";
 		close;
 L_Menu2:
@@ -1138,16 +966,12 @@ L_Menu1_1:
 	mes "This is Shubaichul Magic Academy.";
 	next;
 	mes "[Mathias]";
-	mes "We do research on magic and monsters";
-	mes "here.  We also train fledgling Sages.";
+	mes "We do research on magic and monsters here.";
+	mes "We also train fledgling Sages.";
 	next;
 	mes "[Mathias]";
-	mes "Any Magician who is at or";
-	mes "above class level 40 can apply";
-	mes "for admission to the Academy.";
-	mes "Once you complete our prescribed process";
-	mes "for degree acquisition, you can";
-	mes "become a Sage.";
+	mes "Any Magician who is at or above class level 40 can apply for admission to the Academy.";
+	mes "Once you complete our prescribed process for degree acquisition, you can become a Sage.";
 	next;
 	mes "[Mathias]";
 	mes "Good bye.";
@@ -1158,72 +982,52 @@ L_Menu3_1:
 	next;
 	mes "[Mathias]";
 	mes "In order to enter the Academy,";
-	mes "you need to be a Magician of";
-	mes "class level 40 or above.  You";
-	mes "will also need to pay";
-	mes "tuition to cover instruction";
-	mes "and materials.";
+	mes "you need to be a Magician of class level 40 or above.";
+	mes "You will also need to pay tuition to cover instruction and materials.";
 	next;
 	mes "[Mathias]";
 	mes "Tuition is 70,000Zeny.";
-	mes "If you have an ";
-	mes "^3051FDAncient Scroll^000000 and a ^3051FDKeen Eye^000000,";
-	mes "the tuition fee will be waived.";
+	mes "If you have an ^3051FDOld Magic Book^000000 and a ^3051FDNecklace Of Wisdom^000000, the tuition fee will be waived.";
 	next;
 	mes "[Mathias]";
-	mes "So, you would like to apply for";
-	mes "admission?";
+	mes "So, you would like to apply for admission?";
 	next;
 	menu "Yes, I would",L_Menu5_5,"Tuition is too expensive!",-,"I'll try again later",L_Menu3_2;
 		mes "[Mathias]";
-		mes "Well...we need the tuition money";
-		mes "to cover instruction and";
-		mes "materials...";
+		mes "Well...we need the tuition money to cover instruction and materials...";
 		next;
 		menu "Isn't there another way?",-,"I'll try again later.",L_Menu3_2;
 		set job2nd_sage,2;
 		mes "[Mathias]";
-		mes "Well...Perhaps there is.  I can";
-		mes "lower the tuition to 30000 Zeny if";
-		mes "you can bring us some materials we";
-		mes "need for our research department:";
+		mes "Well...Perhaps there is.  I can lower the tuition to 30000 Zeny if you can bring us some materials we need for our research department:";
 		next;
 		mes "[Mathias]";
 		mes "Specifically, we need:";
-		mes "^3051FD50x Bird Feather^000000";
+		mes "^3051FD50x Feather of Birds^000000";
 		mes "^3051FD50x Soft Fur^000000";
 		mes "^3051FD50x Clover^000000";
 		mes "^3051FD50x Feathers^000000";
 		next;
 		mes "[Mathias]";
-		mes "If you can get all that, I'll";
-		mes "discount the fee to 30000 Zeny.";
-		mes "Please do your best to collect";
-		mes "them.";
+		mes "If you can get all that, I'll discount the fee to 30000 Zeny.";
+		mes "Please do your best to collect them.";
 		next;
 		mes "[Mathias]";
-		mes "Of course, you can also";
-		mes "acquire 70000 Zeny instead";
-		mes "of gathering the items if";
-		mes "you wish.";
+		mes "Of course, you can also acquire 70000 Zeny instead of gathering the items if you wish.";
 		next;
-//==================================
-//mes–¢‰ñŽû
 		mes "[Mathias]";
-		mes "Please do your best to collect";
-		mes "the items.  See you later.";
+		mes "Please do your best to collect the items.";
+		mes "See you later.";
 		close;
-//==================================
 	L_Menu3_2:
 		mes "[Mathias]";
-		mes "Oh, alright.  Take your";
-		mes "time.";
+		mes "Oh, alright.";
+		mes "Take your time.";
 		mes "Thanks for stopping by.";
 		close;
 L_Menu5_1:
 	mes "[Mathias]";
-	mes "So, would you like to apply";
-	mes "for admission?";
+	mes "So, would you like to apply for admission?";
 	next;
 	if (JobLevel < 40) goto L_Menu5_9;
 	if ((countitem(1006) >= 1) && (countitem(1007) >= 1)) goto L_Menu5_4;
@@ -1232,14 +1036,13 @@ L_Menu5_1:
 		set job2nd_sage,3;
 		mes "[Mathias]";
 		mes "I see you have 70000 Zeny.";
-		mes "I'll take that for tuition.  You";
-		mes "are now enrolled into the school.";
+		mes "I'll take that for tuition. You are now enrolled into the school.";
 		next;
 	L_Menu5_5:
 		if (JobLevel < 40) goto L_Menu5_9;
 		mes "[Mathias]";
-		mes "We need your signature on this";
-		mes "form to proceed.  Please sign at the X.";
+		mes "We need your signature on this form to proceed.";
+		mes "Please sign at the X.";
 		next;
 		menu "" + strcharinfo(0) + "",-;
 		mes "[Mathias]";
@@ -1253,23 +1056,20 @@ L_Menu5_1:
 			if (Zeny < 70000) goto L_Menu5_2;
 			set Zeny,Zeny-70000;
 			set job2nd_sage,3;
-//==================================
-//mes–¢‰ñŽû
+
 			mes "[Mathias]";
 		        mes "I see you have 70000 Zeny.";
-		        mes "I'll take that for tuition.  You";
-		        mes "are now enrolled into the school.";
+		        mes "I'll take that for tuition.";
+			mes "You are now enrolled into the school.";
 			next;
-//==================================
+
 		L_Menu5_6:
 			mes "[Mathias]";
-			mes "First, you need to take the placement";
-			mes "test from Professor Kreitos.";
+			mes "First, you need to take the placement test from Professor Kreitos.";
 			next;
 			mes "[Mathias]";
-			mes "Professor Kreitos is in the";
-			mes "Academy library.  It's on";
-			mes "the far left side of the building.";
+			mes "Professor Kreitos is in the Academy library.";
+			mes "It's on the far left side of the building.";
 			next;
 			mes "[Mathias]";
 			mes "Good luck on the test.";
@@ -1277,39 +1077,31 @@ L_Menu5_1:
 		L_JobMax:
 			set job2nd_sage,3;
 			mes "[Mathias]";
-			mes "You've trained yourself up to the";
-			mes "maximum class level for Magicians!";
-			mes "In that case, I'll give you a full";
-			mes "scholarship!";
+			mes "You've trained yourself up to the maximum class level for Magicians!";
+			mes "In that case, I'll give you a full scholarship!";
 			next;
 			mes "[Mathias]";
-			mes "Now, all you need to do is";
-			mes "go take the placement test.";
+			mes "Now, all you need to do is go take the placement test.";
 			next;
 			mes "[Mathias]";
-			mes "Go see Professor Kreitos in";
-			mes "the library on the far left side";
-			mes "of the building.";
+			mes "Go see Professor Kreitos in the library on the far left side of the building.";
 			close;
 	L_Menu5_2:
 		if (job2nd_sage != 2) goto L_Menu5_8;
 		if ((countitem(916) >= 50) && (countitem(914) >= 50) && (countitem(949) >= 50) && (countitem(705) >= 50)) goto L_Menu5_3;
 		mes "[Mathias]";
-		mes "You don't seem to have the materials";
-		mes "yet.";
+		mes "You don't seem to have the materials yet.";
 		next;
 		mes "[Mathias]";
 		mes "You need to gather:";
-		mes "^3051FD50x Bird Feather^000000";
+		mes "^3051FD50x Feather of Birds^000000";
 		mes "^3051FD50x Soft Fur^000000";
 		mes "^3051FD50x Clover^000000";
 		mes "^3051FD50x Feathers^000000";
 		next;
 		mes "[Mathias]";
-		mes "If you can get all that, I'll";
-		mes "discount the fee to 30000 Zeny.";
-		mes "Please do your best to collect";
-		mes "them.";
+		mes "If you can get all that, I'll discount the fee to 30000 Zeny.";
+		mes "Please do your best to collect them.";
 		close;
 	L_Menu5_3:
 //==================================
@@ -1322,10 +1114,9 @@ L_Menu5_1:
 		set Zeny,Zeny-30000;
 		set job2nd_sage,3;
 		mes "[Mathias]";
-		mes "It seems like you have the";
-		mes "materials I asked for and";
-		mes "30000 Zeny.  Congratulations.  You're";
-		mes "now enrolled in the Academy.";
+		mes "It seems like you have the materials I asked for and 30000 Zeny.";
+		mes "Congratulations.";
+		mes "You're now enrolled in the Academy.";
 		set job2nd_sage,3;
 		next;
 		goto L_Menu5_5;
@@ -1334,9 +1125,8 @@ L_Menu5_1:
 		delitem 1007,1;
 		set job2nd_sage,3;
 		mes "[Mathias]";
-		mes "Oh, you have the special";
-		mes "items.  I'll accept those in lieu";
-		mes "of tuition.";
+		mes "Oh, you have the special items.";
+		mes "I'll accept those in lieu of tuition.";
 		next;
 		goto L_Menu5_5;
 	L_Menu5_7:
@@ -1344,9 +1134,8 @@ L_Menu5_1:
 		delitem 1007,1;
 		set job2nd_sage,3;
 		mes "[Mathias]";
-		mes "Oh, you have the special";
-		mes "items.  I'll accept those in lieu";
-		mes "of tuition.";
+		mes "Oh, you have the special items.";
+		mes "I'll accept those in lieu of tuition.";
 		next;
 		goto L_Menu5_6;
 	L_Menu5_8:
@@ -1357,29 +1146,23 @@ L_Menu5_1:
 	L_Menu5_9:
 		mes "[Mathias]";
 		mes "Your class level is too low.";
-		mes "Complete some more training and";
-		mes "return here.";
+		mes "Complete some more training and return here.";
 		close;
 //==================================
 L_Menu6_1:
 	mes "[Mathias]";
-	mes "Hmmm?  Did you forget what you need";
-	mes "to do next?";
-	mes "Head over and see Professor Kreitos";
-	mes "on the left side of the building.";
+	mes "Hmmm?  Did you forget what you need to do next?";
+	mes "Head over and see Professor Kreitos on the left side of the building.";
 	close;
 L_Menu6_2:
 	mes "[Mathias]";
-	mes "Oh, forgive me.  I have so";
-	mes "much to do that I can't help";
-	mes "you at the moment.  Again, I";
-	mes "apologize...";
+	mes "Oh, forgive me.  I have so much to do that I can't help you at the moment.";
+	mes "Again, I apologize...";
 	close;
 L_Menu6_3:
 	mes "[Mathias]";
 	mes "Oh!  Did you finish your thesis?";
-	mes "You need to see Headmaster Keiron so he";
-	mes "can evaluate it.";
+	mes "You need to see Headmaster Keiron so he can evaluate it.";
 	next;
 	mes "[Mathias]";
 	mes "If he approves, you can graduate!";
@@ -1388,42 +1171,14 @@ L_Menu6_3:
 L_Menu6_4:
 	mes "[Mathias]";
 	mes "Welcome, colleague.";
-	mes "How is your research coming";
-	mes "along?";
+	mes "How is your research coming along?";
 	next;
 	mes "[Mathias]";
-	mes "In order to be a truly great";
-	mes "researcher, you need to supplement";
-	mes "your book-based research with";
-	mes "encounters with real monsters.";
+	mes "In order to be a truly great researcher, you need to supplement your book-based research with encounters with real monsters.";
 	next;
 	mes "[Mathias]";
-	mes "If you know others with what it";
-	mes "takes to become a Sage, please";
-	mes "send them here.  Give my regards";
-	mes "to my other colleagues, also.";
-	close;
-}
-
-// RPG Advocate sez: OMG MORE DEBUG NPCs!!!!!!!111111
-
-yuno_in03.gat,174,189,4	script	flagcontrol3	111,{
-	menu "+1",-,"-1",L_Menu1_1,"10",L_Menu1_2,"0",L_Menu1_3;
-	set sagecheck,sagecheck+1;
-	close;
-L_Menu1_1:
-	set sagecheck,sagecheck-1;
-	close;
-L_Menu1_2:
-	set sagecheck,10;
-	close;
-L_Menu1_3:
-	set sagecheck,0;
-	close;
-}
-
-yuno_in03.gat,173,189,4	script	flagcheck3	111,{
-	mes " " + sagecheck + " ";
+	mes "If you know others with what it takes to become a Sage, please send them here.";
+	mes "Give my regards to my other colleagues, also.";
 	close;
 }
 
@@ -1437,54 +1192,43 @@ yuno_in03.gat,169,180,4	script	Test Professor	755,{
 	if (job2nd_sage == 9) goto L_Menu4_2;
 	if (job2nd_sage == 11) goto L_Menu4_4;
 	mes "[Hermes]";
-	mes "Hello, I'm Hermes.  I am";
-	mes "part of the skill testing";
-	mes "staff.  Are you a Sage candidate?";
+	mes "Hello, I'm Hermes.  I am part of the skill testing staff.";
+	mes "Are you a Sage candidate?";
 	next;
 	if (job2nd_sage == 3) goto L_Menu1_2;
 	if (job2nd_sage >= 3) goto L_Menu1_2;
 	mes "[Hermes]";
-	mes "Oh, alright.  First you need to enroll and";
-	mes "take the placement test.";
+	mes "Oh, alright.";
+	mes "First you need to enroll and take the placement test.";
 	close;
 L_Menu1_1:
 	mes "[Hermes]";
-	mes "This is Shubaichul";
-	mes "Magic Academy.";
+	mes "This is Shubaichul Magic Academy.";
 	next;
 	mes "[Hermes]";
-	mes "There are Sages that are less";
-	mes "magicians than researchers.  Having";
-	mes "a party supporting this kind of";
-	mes "person is extremely important.";
+	mes "There are Sages that are less magicians than researchers.";
+	mes "Having a party supporting this kind of person is extremely important.";
 	next;
 	mes "[Hermes]";
-	mes "Keep supporting your party";
-	mes "to the best of your ability.";
+	mes "Keep supporting your party to the best of your ability.";
 	mes "That's all you need to do.";
 	close;
 L_Menu1_2:
 	mes "[Hermes]";
-	mes "You need to take the placement";
-	mes "test from Kreitos before you";
-	mes "can take my test.";
+	mes "You need to take the placement test from Kreitos before you can take my test.";
 	close;
 L_Menu2_1:
 	set job2nd_sage,6;
 	mes "[Hermes]";
-	mes "Oh?  You took and passed the placement";
-	mes "test?  Now you need to take the skill";
-	mes "test from me.";
+	mes "Oh?  You took and passed the placement test?";
+	mes "Now you need to take the skill test from me.";
 	next;
 	mes "[Hermes]";
 	mes "The rules for the skill test are simple.";
-	mes "You need to kill all the monsters within";
-	mes "the prescribed time limit.";
+	mes "You need to kill all the monsters within the prescribed time limit.";
 	next;
 	mes "[Hermes]";
-	mes "There's an old proverb that one experience";
-	mes "is worth a hundred words, so why not";
-	mes "try it once?";
+	mes "There's an old proverb that one experience is worth a hundred words, so why not try it once?";
 	next;
 	menu "Sounds good",-,"I'm not ready yet",L_Menu2_2;
 		mes "[Hermes]";
@@ -1500,8 +1244,7 @@ L_Menu2_1:
 		close;
 L_Menu2_3:
 	mes "[Hermes]";
-	mes "Are you ready to take the skill";
-	mes "test?";
+	mes "Are you ready to take the skill test?";
 	mes "It's not too tough.";
 	next;
 	mes "[Hermes]";
@@ -1519,48 +1262,36 @@ L_Menu2_3:
 L_Menu3_1:
 	mes "[Hermes]";
 	mes "Good job!  You passed";
-	mes "the skill test!  Now you";
-	mes "can proceed to the research phase!";
+	mes "the skill test!  Now you can proceed to the research phase!";
 	next;
 	mes "[Hermes]";
-	mes "Before I decide your research";
-	mes "concentration, let's look at";
-	mes "your score on the placement";
-	mes "test and the amount of time you";
-	mes "spent in the skill test.";
+	mes "Before I decide your research concentration, let's look at your score on the placement test and the amount of time you spent in the skill test.";
 	next;
 	mes "[Hermes]";
 	mes "Hmmm...";
 	mes "Looking good.";
 	next;
+
 //It's not clear how the script decides
+
 	if (sagecheck >= 12) goto L_Menu3_2;
 	set job2nd_sage,8;
 	mes "[Hermes]";
-	mes "It looks like monster research";
-	mes "would be your best bet.";
+	mes "It looks like monster research would be your best bet.";
 	next;
 	mes "[Hermes]";
-	mes "In order to gain the necessary";
-	mes "information to put together";
-	mes "a coherent research paper,";
-	mes "you should take the biology";
-	mes "course from Professor Lucias.";
+	mes "In order to gain the necessary information to put together a coherent research paper,";
+	mes "you should take the biology course from Professor Lucias.";
 	next;
 	goto L_Menu3_4;
 L_Menu3_2:
 	set job2nd_sage,9;
 	mes "[Hermes]";
-	mes "It looks like we have a budding";
-	mes "elemental magic researcher here.";
-	mes "This field is fundamental to";
-	mes "the advancement of magical knowledge.";
+	mes "It looks like we have a budding elemental magic researcher here.";
+	mes "This field is fundamental to the advancement of magical knowledge.";
 	next;
 	mes "[Hermes]";
-	mes "You need to take a course from";
-	mes "Professor Ebeshi in the biotech";
-	mes "lab to gain a deeper understanding";
-	mes "of elemental magic.";
+	mes "You need to take a course from Professor Ebeshi in the biotech lab to gain a deeper understanding of elemental magic.";
 	next;
 L_Menu3_4:
 	mes "[Hermes]";
@@ -1568,41 +1299,31 @@ L_Menu3_4:
 	close;
 L_Menu4_1:
 	mes "[Hermes]";
-	mes "Weren't you listening?  You";
-	mes "need to see Professor Lucias";
-	mes "so you can begin your study of";
-        mes "monster biology.";
+	mes "Weren't you listening?";
+	mes "You need to see Professor Lucias so you can begin your study of monster biology.";
 	close;
 L_Menu4_2:
 	mes "[Hermes]";
-	mes "Weren't you listening?  You";
-	mes "need to see Professor Ebeshi";
-	mes "so you can begin your study of";
-        mes "elemental magic.";
+	mes "Weren't you listening?";
+	mes "You need to see Professor Ebeshi so you can begin your study of elemental magic.";
 	close;
 L_Menu4_4:
 	mes "[Hermes]";
-	mes "Great job on completing your";
-	mes "thesis, but you need to show";
-	mes "it to the Headmaster.  He's the";
-	mes "one who will judge whether or";
-	mes "not you graduate.";
+	mes "Great job on completing your thesis, but you need to show it to the Headmaster.";
+	mes "He's the one who will judge whether or not you graduate.";
 	close;
 L_Menu4_5:
 	mes "[Hermes]";
 	mes "How are you?";
-	mes "Your face reveals that you've";
-	mes "endured a lot of stress lately.";
+	mes "Your face reveals that you've endured a lot of stress lately.";
 	next;
 	mes "[Hermes]";
 	mes "As stressful as hands-on research is,";
-	mes "it is still fundamentally different";
-	mes "from research using abstract concepts.";
+	mes "it is still fundamentally different from research using abstract concepts.";
 	next;
 	mes "[Hermes]";
 	mes "Of course, if you go to difficult dungeons,";
-	mes "there's no shame in bringing a friend or";
-	mes "five to help you out.";
+	mes "there's no shame in bringing a friend or five to help you out.";
 	close;
 }
 
@@ -1611,8 +1332,7 @@ yuno_in03.gat,62,176,3	script	History Professor	109,{
 	if (Class != 2) goto L_Menu1_1;
 	if (job2nd_sage == 11) goto L_Menu2_1;
 	mes "[Sapien]";
-	mes "You don't seem sure of your";
-	mes "intended direction of study.";
+	mes "You don't seem sure of your intended direction of study.";
 	mes "Perhaps you should consider it...";
 	close;
 L_Menu1_1:
@@ -1620,23 +1340,18 @@ L_Menu1_1:
 	mes "Yes, I teach history.";
 	next;
 	mes "[Sapien]";
-	mes "As the present fades into";
-	mes "memory, it becomes the past.";
-	mes "The kwoledge we have acquired in";
-	mes "the past is the bridge between the present";
-        mes "and the future.";
+	mes "As the present fades into memory, it becomes the past.";
+	mes "The kwoledge we have acquired in the past is the bridge between the present and the future.";
 	next;
 	mes "[Sapien]";
 	mes "You should study your own past, too.";
-	mes "By understanding what's happened to";
-	mes "you already, you can blaze a trail into";
-        mes "the future unhindered by unresolved problems.";
+	mes "By understanding what's happened to you already,";
+	mes "you can blaze a trail into the future unhindered by unresolved problems.";
 	close;
 L_Menu2_1:
 	mes "[Sapien]";
 	mes "What are you doing?";
-	mes "Hurry up and show the Headmaster";
-	mes "your thesis before you lose it!";
+	mes "Hurry up and show the Headmaster your thesis before you lose it!";
 	close;
 L_Menu2_2:
 	mes "[Sapien]";
@@ -1645,15 +1360,13 @@ L_Menu2_2:
 	mes "Congratulations on graduating.";
 	next;
 	mes "[Sapien]";
-	mes "The present can only be understood";
-	mes "by understanding the past.  Such understanding";
-	mes "allows us to envision our future.";
+	mes "The present can only be understood by understanding the past.";
+	mes "Such understanding allows us to envision our future.";
 	next;
 	mes "[Sapien]";
 	mes "You should study your own past, too.";
-	mes "By understanding what's happened to";
-	mes "you already, you can blaze a trail into";
-        mes "the future unhindered by unresolved problems.";
+	mes "By understanding what's happened to you already,";
+	mes "you can blaze a trail into the future unhindered by unresolved problems.";
 	close;
 }
 
@@ -1670,29 +1383,23 @@ yuno_in03.gat,105,177,4	script	Placement Test Professor	754,{
 	mes "You want to be a Sage, I take it.";
 	next;
 	mes "[Kreitos]";
-	mes "You need to formally enroll";
-	mes "in the Academy before I can";
-	mes "help you any further.";
+	mes "You need to formally enroll in the Academy before I can help you any further.";
 	close;
 L_Menu1_1:
 	mes "[Kreitos]";
-	mes "Oh, you're not interested";
-	mes "in our brand of magic?";
+	mes "Oh, you're not interested in our brand of magic?";
 	mes "That's alright...";
 	next;
 	mes "[Kreitos]";
-	mes "Anyone who teaches others and";
-	mes "has a good heart is of value";
-	mes "to society.  Please keep that in";
-	mes "mind.";
+	mes "Anyone who teaches others and has a good heart is of value to society.";
+	mes "Please keep that in mind.";
 	close;
 L_Menu1_2:
 	set job2nd_sage,4;
 	set sagecheck,10;
 	mes "[Kreitos]";
-	mes "It looks like you've enrolled";
-	mes "in the Shubaichul Magic";
-	mes "Academy.  Is that right?";
+	mes "It looks like you've enrolled in the Shubaichul Magic Academy.";
+	mes "Is that right?";
 	next;
 	mes "[Kreitos]";
 	mes "So, let me find your paperwork...";
@@ -1701,16 +1408,12 @@ L_Menu1_2:
 	mes "Let's start the placement test.";
 	next;
 		mes "[Kreitos]";
-		mes "This test consists of twenty";
-		mes "questions concerning the entire";
-		mes "world.  If you score at least";
-		mes "80 points, you'll be placed in";
-		mes "our program.  Each correct answer";
-                mes "is worth 5 points.";
+		mes "This test consists of twenty questions concerning the entire world.";
+		mes "If you score at least 80 points, you'll be placed in our program.";
+		mes "Each correct answer is worth 5 points.";
 		next;
 		mes "[Kreitos]";
-		mes "If you cancel, you'll have";
-		mes "to start over, so be careful.";
+		mes "If you cancel, you'll have to start over, so be careful.";
 		next;
 		goto L_Menu2_2;
 	L_Menu2_1:
@@ -1720,8 +1423,7 @@ L_Menu1_2:
 		next;
 		mes "[Kreitos]";
 		mes "The passing grade is as before.";
-		mes "You need to score 80 points, with";
-		mes "each question being worth 5 points.";
+		mes "You need to score 80 points, with each question being worth 5 points.";
 		next;
 		mes "[Kreitos]";
 		mes "So, let's get started.";
@@ -1734,455 +1436,332 @@ L_Menu1_2:
 		set @sage_test1,rand(3);
 		if (@sage_test1 == 1) goto L_Test2_1;
 		if (@sage_test1 == 2) goto L_Test3_1;
-// RPG Advocate sez: There are some monsters and game concepts mentioned here for which
-// I can only give an approximate translation since I don't play RO.  Names in brackets
-// preceded by a question mark indicate such a monster or concept.  These words have
-// been left as direct transliteration to romaji from the source katakana.
-	//==================================
-	//Written Test: Route 1.
-	//==================================
-			mes "1.";
-			mes "Which one isn't sold in Morok's";
-			mes "jewel shop?";
+
+//==================================
+//Written Test: Route 1.
+//==================================
+			mes "1. Which one isn't sold in Morocc's jewel shop?";
 			next;
-menu "Topaz",L_Test1_1,"Garnet",-,"Diamond",L_Test1_1,"Sapphire",L_Test1_1;
+			menu "Topaz",L_Test1_1,"Garnet",-,"Diamond",L_Test1_1,"Sapphire",L_Test1_1;
 			set @sage_test2,@sage_test2+5;
 			goto L_Test1_1;
 		L_Test1_1:
-			mes "2.";
-			mes "In which town can you not buy monster food?";
+			mes "2. In which town can you not buy monster food?";
 			next;
-			menu "Prontera",L_Test1_2,"Morok",L_Test1_2,"Aldeberon",-,"Alberta",L_Test1_2;
+			menu "Prontera",L_Test1_2,"Morocc",L_Test1_2,"Aldebaran",-,"Alberta",L_Test1_2;
 			set @sage_test2,@sage_test2+5;
 		L_Test1_2:
-			mes "3.";
-			mes "Which town is closest to the forest maze?";
+			mes "3. Which town is closest to the forest maze?";
 			next;
-			menu "Prontera",-,"Morok",L_Test1_3,"Gefin",L_Test1_3,"Fayon",L_Test1_3;
+			menu "Prontera",-,"Morocc",L_Test1_3,"Geffen",L_Test1_3,"Payon",L_Test1_3;
 			set @sage_test2,@sage_test2+5;
 		L_Test1_3:
-			mes "4.";
-			mes "Which of these monsters is of a different";
-			mes "type than the other three?";
+			mes "4. Which of these monsters is of a different race than the other three?";
 			next;
-			menu "[?Mukaa]",L_Test1_4,"Drops",L_Test1_4,"Plankton",L_Test1_4,"[?Penomena]",-;
+			menu "Muka",L_Test1_4,"Drops",L_Test1_4,"Plankton",L_Test1_4,"Penomena",-;
 			set @sage_test2,@sage_test2+5;
 		L_Test1_4:
-			mes "5.";
-			mes "All these monsters except one have";
-			mes "the same elemental affinity.  Which one has";
-                        mes "the different affinity?";
+			mes "5.  All these monsters except one have the same elemental affinity.";
+			mes "Which one has the different affinity?";
 			next;
-			menu "[?Dokepi]",L_Test1_5,"Isis",L_Test1_5,"Gais",-,"[?Devil Chi]",L_Test1_5;
+			menu "Dokebi",L_Test1_5,"Isis",L_Test1_5,"Giearth",-,"Deviruchi",L_Test1_5;
 			set @sage_test2,@sage_test2+5;
 		L_Test1_5:
-			mes "6.";
-			mes "Which one differs in approximate";
-			mes "size from the others?";
+			mes "6. Which one differs in approximate size from the others?";
 			next;
-			menu "[???]",L_Test1_6,"Horn",L_Test1_6,"Metalia",L_Test1_6,"Algus",-;
+			menu "Male Thief Bug",L_Test1_6,"Horn",L_Test1_6,"Metaller",L_Test1_6,"Argos",-;
 			set @sage_test2,@sage_test2+5;
 		L_Test1_6:
-			mes "7.";
-			mes "Which of these monsters doesn't drop";
-			mes "the Ig Drasil leaf?";
+			mes "7.  Which of these monsters doesn't drop the Iggydrasil leaf?";
 			next;
-			menu "Maldok",-,"Bafumet Jr.",L_Test1_7,"Angel Ring",L_Test1_7,"Wanderer",L_Test1_7;
+			menu "Marduk",-,"Baphomet Jr.",L_Test1_7,"Angeling",L_Test1_7,"Wander Man",L_Test1_7;
 			set @sage_test2,@sage_test2+5;
 		L_Test1_7:
-			mes "8.";
-			mes "Which of these people isn't related";
-			mes "to someone who can perform a class change to priest?";
+			mes "8.  Which of these people isn't related to someone who can perform a class change to priest?";
 			next;
-			menu "Aldefun",-,"Thomas",L_Test1_8,"Windsor",L_Test1_8,"Sashil",L_Test1_8;
+			menu "Peter S. Alberto",-,"Thomas Bishop",L_Test1_8,"Windser Banedict",L_Test1_8,"Sesil Magrita",L_Test1_8;
 			set @sage_test2,@sage_test2+5;
 		L_Test1_8:
-			mes "9.";
-			mes "Which doesn't live in";
-			mes "Morok?";
+			mes "9. Which doesn't live in Morocc?";
 			next;
-			menu "Abdul",L_Test1_9,"Aragam",L_Test1_9,"Antonio",-,"Sado",L_Test1_9;
+			menu "Muda Armani",L_Test1_9,"Aragham",L_Test1_9,"Antonio",-,"Abldul",L_Test1_9;
 			set @sage_test2,@sage_test2+5;
 		L_Test1_9:
-			mes "10.";
-			mes "Which Kapra has the";
-			mes "pretty blue hair?";
+			mes "10.  Which Kapra has the pretty blue hair?";
 			next;
-			menu "Deflute",-,"Teering",L_Test1_10,"Glaris",L_Test1_10,"W",L_Test1_10;
+			menu "Pavianne",-,"Debril",L_Test1_10,"Claris",L_Test1_10,"Tayelin",L_Test1_10;
 			set @sage_test2,@sage_test2+5;
 		L_Test1_10:
-			mes "11.";
-			mes "Which one isn't necessary to";
-			mes "unlock the Fire Wall skill?";
+			mes "11.  Which one isn't necessary to unlock the Fire Wall skill?";
 			next;
 			menu "Firebolt Lv4",L_Test1_11,"Napalm Beat Lv4",-,"Fireball Lv5",L_Test1_11,"Sight Lv1",L_Test1_11;
 			set @sage_test2,@sage_test2+5;
 		L_Test1_11:
-			mes "12.";
-			mes "When the skill 'SP Restoration Lv6'";
-			mes "is active, how much SP does";
-			mes "the skill restore every ten";
-			mes "seconds?";
+			mes "12.  When the skill 'SP Restoration Lv6' is active, how much SP does the skill restore every ten seconds?";
 			next;
-			menu "14",L_Test1_12,"16",L_Test1_12,"18",-,"21",L_Test1_12;
+			menu "14 sp",L_Test1_12,"16 sp",L_Test1_12,"18 sp",-,"21 sp",L_Test1_12;
 			set @sage_test2,@sage_test2+5;
 		L_Test1_12:
-			mes "13.";
-			mes "How much weight is given to INT";
-			mes "improvement at Magician class level 33?";
+			mes "13. If you are a magician with job lv. 33, how many additional stat points will you get for int?";
 			next;
 			menu "7",L_Test1_13,"6",L_Test1_13,"5",L_Test1_13,"4",-;
 			set @sage_test2,@sage_test2+5;
 		L_Test1_13:
-			mes "14.";
-			mes "If the Archer skill 'Concentration Up Lv5'";
-			mes "is active, how much SP will it consume?";
+			mes "14.  If the Archer skill 'Concentration Up Lv5' is active, how much SP will it consume?";
 			next;
 			menu "45 / 140sec",-,"50 / 140sec",L_Test1_14,"45 / 150sec",L_Test1_14,"50 / 150sec",L_Test1_14;
 			set @sage_test2,@sage_test2+5;
 		L_Test1_14:
-			mes "15.";
-			mes "Which one isn't necessary to";
-			mes "unlock the Blacksmith skill";
-			mes "'Maximize Power'?";
+			mes "15. Which one isn't necessary to unlock the Blacksmith skill 'Maximize Power'?";
 			next;
-			menu "Hilt Bending",L_Test1_15,"Skin Tempering",-,"Hammer Fall",L_Test1_15,"Perfect Weapon",L_Test1_15;
+			menu "Hilt Bending",L_Test1_15,"Skin Tempering",-,"Hammer Fall",L_Test1_15,"Weapon Perfection",L_Test1_15;
 			set @sage_test2,@sage_test2+5;
 		L_Test1_15:
-			mes "16.";
-			mes "What is the defense power and";
-			mes "supplemental ability of a Ribbon?";
+			mes "16. What is the defense power and supplemental ability of a Ribbon?";
 			next;
 			menu "0 / SP +20",L_Test1_16,"0 / SP +30",L_Test1_16,"1 / SP +20",-,"1 / SP +30",L_Test1_16;
 			set @sage_test2,@sage_test2+5;
 		L_Test1_16:
-			mes "17.";
-			mes "Which class can't equip a";
-			mes "Saint Robe?";
+			mes "17. Which class can't equip a Saint Robe?";
 			next;
 		//Swordsmen can't equip it either as of this writing.
-			menu "Swordsman",L_Test1_17,"Merchant",L_Test1_17,"Thief",-,"Acolyte",L_Test1_17;
+			menu "Swordsman",-,"Merchant",L_Test1_17,"Thief",-,"Acolyte",L_Test1_17;
 			set @sage_test2,@sage_test2+5;
 		L_Test1_17:
-			mes "18.";
-			mes "Which status ailment can't be";
-			mes "removed with a Green Potion?";
+			mes "18. Which status ailment can't be removed with a Green Potion?";
 			next;
 			menu "Mute",L_Test1_18,"Poison",L_Test1_18,"Blind",L_Test1_18,"Cursed",-;
 			set @sage_test2,@sage_test2+5;
 		L_Test1_18:
-			mes "19.";
-			mes "What is the name of the ancient";
-			mes "kingdom from which Gefin descends?";
+			mes "19. What is the name of the ancient kingdom from which Geffen descends?";
 			next;
-			menu "Gefin",L_Test1_19,"Gefnia",-,"Gefdoria",L_Test1_19,"Gefria",L_Test1_19;
+			menu "Gefin",L_Test1_19,"Geffenia",-,"Gefdoria",L_Test1_19,"Gefria",L_Test1_19;
 			set @sage_test2,@sage_test2+5;
 		L_Test1_19:
-			mes "20.";
-			mes "Which tree is said to be the world's";
-			mes "root?";
+			mes "20. Which tree is said to be the world's root?";
 			next;
-			menu "Ig Drasil",-,"Idrasil",L_Menu2_3,"Master",L_Menu2_3,"Old Tree",L_Menu2_3;
+			menu "Igg Drasil",-,"Idrasil",L_Menu2_3,"Master",L_Menu2_3,"Old Tree",L_Menu2_3;
 			set @sage_test2,@sage_test2+5;
 			goto L_Menu2_3;
 	//==================================
 	//Written Test: Route 2.
 	//==================================
 		L_Test2_1:
-			mes "1.";
-			mes "Which isn't sold in Gefin's";
-			mes "magic shop?";
+			mes "1. Which isn't sold in Geffen's magic shop?";
 			next;
-			menu "Mentor",-,"Wand",L_Test2_2,"Circlet",L_Test2_2,"Silver Robe",L_Test2_2;
+			menu "Mantle",-,"Wand",L_Test2_2,"Circlet",L_Test2_2,"Silver Robe",L_Test2_2;
 			set @sage_test2,@sage_test2+5;
 		L_Test2_2:
-			mes "2.";
-			mes "Which town doesn't sell blades?";
+			mes "2. Which town doesn't sell blades?";
 			next;
-			menu "Prontera",L_Test2_3,"Izarude",L_Test2_3,"Aldeberon",-,"Fayon",L_Test2_3;
+			menu "Prontera",L_Test2_3,"Izlude",L_Test2_3,"Aldebaran",-,"payon",L_Test2_3;
 			set @sage_test2,@sage_test2+5;
 		L_Test2_3:
-			mes "3.";
-			mes "Which town is nearest to";
-			mes "Glast Heim?";
+			mes "3. Which town is nearest to Glast Heim?";
 			next;
-			menu "Prontera",L_Test2_4,"Gefin",-,"Morok",L_Test2_4,"Fayon",L_Test2_4;
+			menu "Prontera",L_Test2_4,"Geffen",-,"Morocc",L_Test2_4,"Payon",L_Test2_4;
 			set @sage_test2,@sage_test2+5;
 		L_Test2_4:
-			mes "4.";
-			mes "Which monster's type differs";
-			mes "from the other three?";
+			mes "4.  Which monster's type differs from the other three?";
 			next;
-			menu "[?Hitode]",L_Test2_5,"[?Maruku]",L_Test2_5,"[?Marusu]",L_Test2_5,"Marine",-;
+			menu "Aster",L_Test2_5,"Marc",L_Test2_5,"Marse",L_Test2_5,"Marin",-;
 			set @sage_test2,@sage_test2+5;
 		L_Test2_5:
-			mes "5.";
-			mes "Which monster's elemental affinity";
-			mes "is different from the others?";
+			mes "5. Which monster's elemental affinity is different from the others?";
 			next;
-			menu "Desert Wolf Cub",L_Test2_6,"Smoky",-,"[?Pikki]"",L_Test2_6,"[?Choko]",L_Test2_6;
+			menu "Desert Wolf Babe",L_Test2_6,"Smokie",-,"Picky",L_Test2_6,"Choco",L_Test2_6;
 			set @sage_test2,@sage_test2+5;
 		L_Test2_6:
-			mes "6.";
-			mes "Which monster is in a different size";
-			mes "class than the others?";
+			mes "6. Which monster is in a different size class than the others?";
 			next;
-			menu "Drake",-,"Wraith",L_Test2_7,"Evil Druid",L_Test2_7,"[?Kaarittsu] Bag",L_Test2_7;
+			menu "Drake",-,"Wraith",L_Test2_7,"Evil Druid",L_Test2_7,"Khalitzburg",L_Test2_7;
 			set @sage_test2,@sage_test2+5;
 		L_Test2_7:
-			mes "7.";
-			mes "Which monster doesn't drop";
-			mes "Pracon?";
+			mes "7. Which monster doesn't drop Phracon?";
 			next;
-			menu "Pupa",L_Test2_8,"Condor",-,"Savage Baby",L_Test2_8,"Desert Wolf Cub",L_Test2_8;
+			menu "Pupa",L_Test2_8,"Condor",-,"Savage Baby",L_Test2_8,"Desert Wolf Babe",L_Test2_8;
 			set @sage_test2,@sage_test2+5;
 		L_Test2_8:
-			mes "8.";
-			mes "Who isn't involved in the Blacksmith";
-			mes "class change?";
+			mes "8. Who isn't involved in the Blacksmith class change?";
 			next;
-			menu "Baith",L_Test2_9,"Hyuke",L_Test2_9,"Barkdale",-,"Mittmeyer",L_Test2_9;
+// =========================
+// Acording To mRO Site And eAthena Blacksmith Script the following ppl looking like ppl listed here are:
+// - Baisulitst - looks like some1 listed by mRO
+// - Wickebine - mRO has him as option listed
+// - Gromgast - mRO has him as option listed
+// - Mitmayer - translator has him listed as option
+// == Conclusion == I took the following:
+// =========================
+			menu "Baisulitst",L_Test2_9,"Wickebine",L_Test2_9,"Barkdale",-,"Mitmayer",L_Test2_9;
 			set @sage_test2,@sage_test2+5;
 		L_Test2_9:
-			mes "9.";
-			mes "Who doesn't live in Aldeberon?";
+			mes "9.  Who doesn't live in Aldebaran?";
 			next;
-			menu "RS125",L_Test2_10,"Maasaru",-,"Mansuta",L_Test2_10,"Eisenberg",L_Test2_10;
+			menu "RS125",L_Test2_10,"Maasaru",-,"Munster",L_Test2_10,"Isenberg",L_Test2_10;
 			set @sage_test2,@sage_test2+5;
 		L_Test2_10:
-			mes "10.";
-			mes "Who is the youngest person";
-			mes "in the Kapra organization?";
+			mes "10. Who is the youngest person in the Kapra organization?";
 			next;
-			menu "Deflute",L_Test2_11,"Teering",L_Test2_11,"Garis",L_Test2_11,"W",-;
+			menu "Deflute",L_Test2_11,"Claris",L_Test2_11,"Tayelin",L_Test2_11,"Curly Sue",-;
 			set @sage_test2,@sage_test2+5;
 		L_Test2_11:
-			mes "11.";
-			mes "When you use the skill 'Safety Wall Lv6',";
-			mes "how much SP is consumed and how many";
-			mes "attacks will it block?";
+			mes "11. When you use the skill 'Safety Wall Lv6', how much SP is consumed and how many attacks will it block?";
 			next;
 			menu "SP 40, 6bl",L_Test2_12,"SP 35, 6bl",L_Test2_12,"SP 35, 7bl",L_Test2_12,"SP 40, 7bl",-;
 			set @sage_test2,@sage_test2+5;
 		L_Test2_12:
-			mes "12.";
-			mes "When you use 'Napalm Beat Lv6'.";
-			mes "what is the attack power relative to MATK?";
+			mes "12. When you use 'Napalm Beat Lv6', what is the attack power relative to MATK?";
 			next;
 			menu "1.2x MATK",L_Test2_13,"1.3x MATK",-,"1.4x MATK",L_Test2_13,"1.5x MATK",L_Test2_13;
 			set @sage_test2,@sage_test2+5;
 		L_Test2_13:
-			mes "13.";
-			mes "Which one catalyzes the reaction of";
-			mes "Liquid #4 during the Magician class change test?";
+			mes "13. Which one catalyzes the reaction of Liquid #4 during the Magician class change test?";
 			next;
-			menu "Blue Gemstone",L_Test2_14,"Red Gemstone",L_Test2_14,"Orange Gemstone",L_Test2_14,"Transparent Gemstone",-;
+			menu "Blue Gemstone",L_Test2_14,"Red Gemstone",L_Test2_14,"Orange Gemstone",L_Test2_14,"Carat Diamond",-;
 			set @sage_test2,@sage_test2+5;
 		L_Test2_14:
-			mes "14.";
-			mes "What is the damage multiplier and";
-			mes "SP consumption for 'Bash Lv6'?";
+			mes "14. What is the damage multiplier and SP consumption for 'Bash Lv6'?";
 			next;
 			menu "250% / 8",L_Test2_15,"280% / 8",L_Test2_15,"280% / 15",-,"310% / 15",L_Test2_15;
 			set @sage_test2,@sage_test2+5;
 		L_Test2_15:
-			mes "15.";
-			mes "Which isn't necessary";
-			mes "to unlock the Hunter skill";
-			mes "'Claymore Trap'?";
+			mes "15.  Which isn't necessary to unlock the Hunter skill 'Claymore Trap'?";
 			next;
 			menu "Remove Trap",-,"Land Mine",L_Test2_16,"Ankle Snare",L_Test2_16,"Flash",L_Test2_16;
 			set @sage_test2,@sage_test2+5;
 		L_Test2_16:
-			mes "16.";
-			mes "What is the defense power";
-			mes "and supplemental ability of a Veil?";
+			mes "16. What is the defense power and supplemental ability of a Veil?";
 			next;
 			menu "0 / MDEF +3",L_Test2_17,"0 / MDEF +5",-,"1 / MDEF +3",L_Test2_17,"1 / MDEF +5",L_Test2_17;
 			set @sage_test2,@sage_test2+5;
 		L_Test2_17:
-			mes "17.";
-			mes "Which class can't equip a";
-			mes "Longcoat?";
+			mes "17.  Which class can't equip a Coat?";
 			next;
-		//Anyone but a novice can equip them as of this writing.
-			menu "Swordsman",L_Test2_18,"Merchant",L_Test2_18,"Thief",L_Test2_18,"Magician",-;
+			menu "Swordsman",L_Test2_18,"Magician",L_Test2_18,"Thief",L_Test2_18,"Novice",-;
 			set @sage_test2,@sage_test2+5;
 		L_Test2_18:
-			mes "18.";
-			mes "Which item isn't blue in color?";
+			mes "18. Which item isn't blue in color?";
 			next;
-			menu "Alcohol",L_Test2_19,"[?Detorimin]",L_Test2_19,"[?Karubooderu]",-,"Blue Herb",L_Test2_19;
+			menu "Alcohol",L_Test2_19,"Detrimindexta",-,"Karvodailnirol",L_Test2_19,"Blue Herb",L_Test2_19;
 			set @sage_test2,@sage_test2+5;
 		L_Test2_19:
-			mes "19.";
-			mes "Which item did the god Odin";
-			mes "use to create the world?";
+			mes "19. Which item did the god Odin use to create the world?";
 			next;
-			menu "Yomir's Heart,L_Test2_20,"Yomir's Nail",-,"Yomir's Tooth",L_Test2_20,"Yomir's Stuff",L_Test2_20;
+//			menu "Yomir's Heart",L_Test2_20,"Yomir's Nail",-,"Yomir's Tooth",L_Test2_20,"Yomir's Stuff",L_Test2_20;
+// All answers correct untill i know the real answer, only Stuff is wrong cause that NOT it
+			menu "Yomir's Heart",-,"Yomir's Nail",-,"Yomir's Tooth",-,"Yomir's Stuff",L_Test2_20;
 			set @sage_test2,@sage_test2+5;
 		L_Test2_20:
-			mes "20.";
-			mes "Which metal can change the";
-			mes "fate of the world?";
+			mes "20. Which metal can change the fate of the world?";
 			next;
-			menu "Enbertakon",L_Menu2_3,"Enberium",-,"Enbera",L_Menu2_3,"Pracon",L_Menu2_3;
+			menu "Envertacon",L_Menu2_3,"Emperium",-,"Enbera",L_Menu2_3,"Phracon",L_Menu2_3;
 			set @sage_test2,@sage_test2+5;
 			goto L_Menu2_3;
-	//==================================
-	//Written Test: Route 3.
-	//==================================
+//==================================
+//Written Test: Route 3.
+//==================================
 		L_Test3_1:
-			mes "1.";
-			mes "Which of these items isn't sold";
-			mes "at Prontera's knicknack shop?";
+			mes "1.Which of these items isn't sold at Prontera's knicknack shop?";
 			next;
-			menu "White Plate",L_Test3_2,"Red Picture Frame",L_Test3_2,"Flower",-,"Glass Ball",L_Test3_2;
+			menu "White Plate",L_Test3_2,"Red Frame",L_Test3_2,"Flower",-,"Glass Ball",L_Test3_2;
 			set @sage_test2,@sage_test2+5;
 		L_Test3_2:
-			mes "2.";
-			mes "Which town doesn't sell stilettos?";
-				next;
-				menu "Prontera",-,"Morok",L_Test3_3,"Gefin",L_Test3_3,"Rutee",L_Test3_3;
+			mes "2. Which town doesn't sell stilettos?";
+			next;
+			menu "Prontera",-,"Morocc",L_Test3_3,"Gefen",L_Test3_3,"Lutie",L_Test3_3;
 			set @sage_test2,@sage_test2+5;
 		L_Test3_3:
-			mes "3.";
-			mes "Which town is closest to";
-			mes "Turtle Island?";
+			mes "3. Which town is closest to Turtle Island?";
 			next;
-			menu "Aldeberon",L_Test3_4,"Alberta",-,"Komodo",L_Test3_4,"Izarude",L_Test3_4;
+			menu "Aldebaran",L_Test3_4,"Alberta",-,"Comodo",L_Test3_4,"Izlude",L_Test3_4;
 			set @sage_test2,@sage_test2+5;
 		L_Test3_4:
-			mes "4.";
-			mes "Which monster is of a different";
-			mes "monster type than the other three?";
+			mes "4. Which monster is of a different monster race than the other three?";
 			next;
-			menu "Leg Lure",L_Test3_5,"Beast",L_Test3_5,"Furry Rudra",L_Test3_5,"[?Hitode]",-;
+			menu "Raggler",L_Test3_5,"Pest",L_Test3_5,"Frilldora",L_Test3_5,"Aster",-;
 			set @sage_test2,@sage_test2+5;
 		L_Test3_5:
-			mes "5.";
-			mes "Which monster has a different elemental";
-			mes "affinity than the other three?";
+			mes "5. Which monster has a different elemental affinity than the other three?";
 			next;
-			menu "Mantis",L_Test3_6,"Metalia",-,"Rokkuu",L_Test3_6,"Horn",L_Test3_6;
+			menu "Mantis",L_Test3_6,"Metaller",-,"Rokker",L_Test3_6,"Horn",L_Test3_6;
 			set @sage_test2,@sage_test2+5;
 		L_Test3_6:
-			mes "6.";
-			mes "Which monster is in a different size class";
-			mes "than the others?";
+			mes "6. Which monster is in a different size class than the others?";
 			next;
-			menu "Redrick",-,"Redrick Archer",L_Test3_7,"Wanderer",L_Test3_7,"Dark Flame",L_Test3_7;
+			menu "Raydric",-,"Raydric Archer",L_Test3_7,"Wander Man",L_Test3_7,"Dark Flame",L_Test3_7;
 			set @sage_test2,@sage_test2+5;
 		L_Test3_7:
-			mes "7.";
-			mes "Which monster doesn't drop alcohol?";
+			mes "7. Which monster doesn't drop alcohol?";
 			next;
 			menu "Horn",L_Test3_8,"Plankton",L_Test3_8,"Poison Spore",-,"Toad",L_Test3_8;
 			set @sage_test2,@sage_test2+5;
 		L_Test3_8:
-			mes "8.";
-			mes "Which isn't involved in the";
-			mes "Knight class change?";
+			mes "8. Which isn't involved in the Knight class change?";
 			next;
-			menu "Jumuze",L_Test3_9,"Thomas",-,"Eimi",L_Test3_9,"Edmund",L_Test3_9;
+// =========================
+// Acording To mRO Site And eAthena Knight Script the following ppl looking like ppl listed here
+// =========================
+			menu "James Syracuse",L_Test3_9,"Thomas Bishop",-,"Amy Veattris",L_Test3_9,"Edmond Groster",L_Test3_9;
 			set @sage_test2,@sage_test2+5;
 		L_Test3_9:
-			mes "9.";
-			mes "Which of these people doesn't live";
-			mes "in Prontera?";
+			mes "9. Which of these people doesn't live in Prontera?";
 			next;
-			menu "Nami",L_Test3_10,"Aldefun",-,"Thomas",L_Test3_10,"Hilgren",L_Test3_10;
+			menu "Nami",L_Test3_10,"Aldefun",-,"Thomas",L_Test3_10,"Hollengrhen",L_Test3_10;
 			set @sage_test2,@sage_test2+5;
 		L_Test3_10:
-                        // Secret question added by RPG Advocate.
-                        if (@sage_test2 >= 35) goto L_Secret_Question;
-			mes "10.";
-			mes "Which Kapra wears glasses?";
+			mes "10. Which Kapra wears glasses?";
 			next;
-			menu "Deflute",L_Test3_11,"Teering",L_Test3_11,"Garis",-,"W",L_Test3_11;
+			menu "Deflute",L_Test3_11,"Tayelin",L_Test3_11,"Leilah",-,"Debril",L_Test3_11;
 			set @sage_test2,@sage_test2+5;
-                L_Secret_Question:
-                        mes "10.";
-			mes "Which is RPG Advocate's favorite";
-			mes "fabric?";
-			next;
-			menu "Polyester",L_Test3_SQLose,"Rayon",L_Test3_SQLose,"Velvet",-,"Wool",L_Test3_SQLose;
-                        set @sage_test2,@sage_test2+20;
-                        goto L_Test3_11;
-                L_Test3_SQLose:
-                        set @sage_test2,@sage_test2-10;
 		L_Test3_11:
-			mes "11.";
-			mes "How much SP does it cost to";
-			mes "use 'Thunderstorm Lv7'?";
+			mes "11. How much SP does it cost to use 'Thunderstorm Lv7'?";
 			next;
 			menu "49",L_Test3_12,"59",-,"69",L_Test3_12,"74",L_Test3_12;
 			set @sage_test2,@sage_test2+5;
 		L_Test3_12:
-			mes "12.";
-			mes "If you have 50% of your SP";
-			mes "left, how much damage will";
-			mes "'Energy Coat' block and how";
-			mes "much SP will be consumed?";
+			mes "12. If you have 50% of your SP left, how much damage will 'Energy Coat' block and how much SP will be consumed?";
 			next;
 			menu "24% blocked SP1.5% consumed",L_Test3_13,"24% blocked SP2% consumed",L_Test3_13,"18% blocked SP1.5% consumed",L_Test3_13,"18% blocked SP2% consumed",-;
 			set @sage_test2,@sage_test2+5;
 		L_Test3_13:
-			mes "13.";
-			mes "Which element cannot";
-			mes "be used in bolt form by a Magician?";
+			mes "13. Which element cannot be used in bolt form by a Magician?";
 			next;
 			menu "Water",L_Test3_14,"Earth",-,"Fire",L_Test3_14,"Wind",L_Test3_14;
 			set @sage_test2,@sage_test2+5;
 		L_Test3_14:
-			mes "14.";
-			mes "When a thief has the skill";
-			mes "'Double Attack Lv7', what is";
-			mes "the trigger probability and attack";
-			mes "power multiplier?";
+			mes "14. When a thief has the skill 'Double Attack Lv7', what is the trigger probability and attack power multiplier?";
 			next;
 			menu "35% / 120%",L_Test3_15,"35% / 140%",-,"40% / 120%",L_Test3_15,"40% / 140%",L_Test3_15;
 			set @sage_test2,@sage_test2+5;
 		L_Test3_15:
-			mes "15.";
-			mes "Which of these isn't necessary";
-			mes "to unlock the Priest skill";
-			mes "'Magnus Exorcism'?";
+			mes "15. Which of these isn't necessary to unlock the Priest skill 'Magnus Exorcism'?";
 			next;
-			menu "Divine Protection",-,"Heal",L_Test3_16,"Life",L_Test3_16,"Aqua Benedicta",L_Test3_16;
+			menu "Divine Protection",-,"Heal",L_Test3_16,"Revive",L_Test3_16,"Aqua Benedicta",L_Test3_16;
 			set @sage_test2,@sage_test2+5;
 		L_Test3_16:
-			mes "16.";
-			mes "What is the defense power and";
-			mes "supplemental ability of a Rabbit Headband?";
+			mes "16. What is the defense power and supplemental ability of a Rabbit Headband?";
 			next;
 			menu "1 / LUK +2",L_Test3_17,"1 / LUK +5",L_Test3_17,"2 / LUK +2",-,"2 / LUK +5",L_Test3_17;
 			set @sage_test2,@sage_test2+5;
 		L_Test3_17:
-			mes "17.";
-			mes "Which class can't equip armor?";
+			mes "17. Which class can't equip armor?";
 			next;
 			menu "Swordsman",L_Test3_18,"Merchant",L_Test3_18,"Thief",L_Test3_18,"Archer",-;
 			set @sage_test2,@sage_test2+5;
 		L_Test3_18:
-			mes "18.";
-			mes "Which item completely restores";
-			mes "HP and SP?";
+			mes "18. Which item completely restores HP and SP?";
 			next;
 			menu "Royal Jelly",L_Test3_19,"Ig Drasil Seed",L_Test3_19,"Ig Drasil Fruit",-,"Master Fruit",L_Test3_19;
 			set @sage_test2,@sage_test2+5;
 		L_Test3_19:
-			mes "19.";
-			mes "What's the name of the king";
-			mes "of Rune-Midgard?";
+			mes "19. What's the name of the king of Rune-Midgard?";
 			next;
 			menu "Trisdan III",L_Test3_20,"Tristan III",-,"Traisda III",L_Test3_20,"Trist III",L_Test3_20;
 			set @sage_test2,@sage_test2+5;
 		L_Test3_20:
-			mes "20.";
-			mes "Which god do Crusaders serve?";
+			mes "20. Which god do Crusaders serve?";
 			next;
-			menu "Odin",-,"Loki",L_Menu2_3,"Tooru",L_Menu2_3,"Aragamsaree"",L_Menu2_3;
+			menu "Odin",-,"Loki",L_Menu2_3,"Tooru",L_Menu2_3,"Aragamsaree",L_Menu2_3;
 			set @sage_test2,@sage_test2+5;
 	L_Menu2_3:
 		mes "[Kreitos]";
@@ -2197,7 +1776,7 @@ menu "Topaz",L_Test1_1,"Garnet",-,"Diamond",L_Test1_1,"Sapphire",L_Test1_1;
 			if (@sage_test2 < 80) goto L_Menu2_4;
 			mes "[Kreitos]";
 			mes "All done.";
-			mes "You scored" + @sage_test2 + " points.";
+			mes "You scored " + @sage_test2 + " points.";
 			mes "Looking good.";
 			mes "You've scored highly enough to pass.";
 			next;
@@ -2209,65 +1788,47 @@ menu "Topaz",L_Test1_1,"Garnet",-,"Diamond",L_Test1_1,"Sapphire",L_Test1_1;
 			mes "You scored " + @sage_test2 + " points.";
 			mes "......";
 			mes "Sorry, that's not good enough.";
-                        if (sagecheck <= 0) goto L_Advo_Insult;
 			next;
 			mes "[Kreitos]";
-			mes "We exepect our students to have";
-			mes "command of much information about the";
-			mes "world.  Learn some more and come back.";
+			mes "We exepect our students to have command of much information about the world.";
+			mes "Learn some more and come back.";
                         mes "You can take the test again then.";
 			close;
-                // Secret dialogue if you fail repeatedly!!
-                // Added by RPG Advocate
-                L_Advo_Insult:  
-                        next;
-                        mes "[Kreitos]";
-			mes "u must b rly stupid or sumthin";
-			mes "uve faled teh placmnt test 10 tiems";
-			mes "u need 2 b mor observnt wen ur";
-                        mes "playing ro";
-                        close;
-		L_Menu2_5:
-			set sagecheck,sagecheck+1;
+ 		L_Menu2_5:
 			mes "[Kreitos]";
 			mes "All done.";
 			mes "You scored " + @sage_test2 + " points.";
 			mes "Amazing.  You did wonderfully.";
-			mes "There is no doubt you'll";
-			mes "make a great Sage.";
+			mes "There is no doubt you'll make a great Sage.";
 			next;
 		L_Menu2_6:
 			set job2nd_sage,5;
 			mes "[Kreitos]";
-			mes "Alright.  You've completed";
-			mes "the placement test.  Now you need";
-			mes "to take the skill test from Professor Hermes.";
+			mes "Alright.";
+			mes "You've completed the placement test.";
+			mes "Now you need to take the skill test from Professor Hermes.";
 			close;
 L_Menu3_1:
 	mes "[Kreitos]";
-	mes "Heh?  Do you love tests so much that";
-	mes "you want to take the placement test again?";
+	mes "Heh?";
+	mes "Do you love tests so much that you want to take the placement test again?";
 	next;
 	mes "[Kreitos]";
-	mes "Go see Professor Hermes and take";
-	mes "the skill test.  Future Sages";
-	mes "can't be slacking off.";
+	mes "Go see Professor Hermes and take the skill test.";
+	mes "Future Sages can't be slacking off.";
 	close;
 L_Menu3_2:
 	mes "[Kreitos]";
-	mes "I'm busy grading other students'";
-	mes "exams at the moment.  If you need";
-	mes "something, please see me later.";
+	mes "I'm busy grading other students' exams at the moment.";
+	mes "If you need something, please see me later.";
 	close;
 L_Menu3_3:
 	mes "[Kreitos]";
-	mes "It's great that you finished your";
-	mes "thesis, but I don't grade those.";
+	mes "It's great that you finished your thesis, but I don't grade those.";
 	next;
 	mes "[Kreitos]";
 	mes "Show that to Headmaster Keiron.";
-	mes "He'll judge whether or not it's quality";
-	mes "warrants your graduation.";
+	mes "He'll judge whether or not it's quality warrants your graduation.";
 	close;
 L_Menu3_4:
 	mes "[Kreitos]";
@@ -2275,18 +1836,13 @@ L_Menu3_4:
 	mes "Do you want to take more classes?";
 	next;
 	mes "[Kreitos]";
-	mes "I know it feels great to have";
-	mes "graduated, but you've got to keep";
-	mes "learning.  You might burn out if";
-	mes "you become complacent and never";
-	mes "venture out of the library once";
-	mes "in a while.  Danger is exhilerating.";
+	mes "I know it feels great to have graduated, but you've got to keep learning.";
+	mes "You might burn out if you become complacent and never venture out of the library once in a while.";
+	mes "Danger is exhilerating.";
 	next;
 	mes "[Kreitos]";
-	mes "Don't forget to keep notes about your";
-	mes "journies.  They can come in handy";
-	mes "when you want to teach others about";
-	mes "a subject you've studied.";
+	mes "Don't forget to keep notes about your journies.";
+	mes "They can come in handy when you want to teach others about a subject you've studied.";
 	close;
 }
 
@@ -2300,19 +1856,15 @@ job_sage.gat	mapflag	nosave	SavePoint
 
 job_sage.gat,50,165,4	script	Skill Test Coordinator::jobsage_wroom	700,{
 	mes "[Skill Test Coordinator]";
-	mes "Welcome to the Sage skill";
-	mes "test.  Please go to the waiting";
-	mes "area if you want to take the test.";
+	mes "Welcome to the Sage skill test.";
+	mes "Please go to the waiting area if you want to take the test.";
 	next;
 	mes "[Skill Test Coordinator]";
-	mes "Others are being tested at";
-	mes "the moment.  When it's time";
-	mes "for you to be tested, we'll";
-	mes "call your name.";
+	mes "Others are being tested at the moment.";
+	mes "When it's time for you to be tested, we'll call your name.";
 	next;
 	mes "[Skill Test Coordinator]";
-	mes "It takes around 5-10";
-	mes "minutes to test one person.";
+	mes "It takes around 5-10 minutes to test one person.";
 	close;
 OnInit:
 	waitingroom "Test Waiting Area",10,"jobsage_wroom::OnStart",1;
