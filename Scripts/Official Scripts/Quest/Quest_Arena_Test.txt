@@ -6,7 +6,7 @@
 //
 // Arena Test Quest - Non Player Character Locations
 //
-// - Receptionist -> prt_are_in: 99,85
+// - Receptionist -> prt_are_in: 97,30
 //   Enable the Arena Test.
 //
 // - Guide -> force_map1: 99,20
@@ -41,7 +41,7 @@
 //
 //========================================================================================
 
-prt_are_in.gat,99,85,4	script	"Receptionist"	124,{
+prt_are_in.gat,97,30,4	script	"Receptionist"	124,{
 	return;
  OnInit:
 	waitingroom "Time Attack!(1P)",2;
