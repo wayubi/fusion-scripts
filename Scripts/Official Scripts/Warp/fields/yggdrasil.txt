@@ -1,0 +1,5 @@
+um_dun02.gat,125,163	warp	warpUmDun01	1,1,yggdrasil01.gat,40,63
+yggdrasil01.gat,36,62	warp	warpUmDun02	1,1,um_dun02.gat,126,147
+yggdrasil01.gat,271,51	warp	warpYgg02	1,1,yggdrasil01.gat,26,196
+yggdrasil01.gat,26,193	warp	warpYgg03	1,1,yggdrasil01.gat,269,53
+yggdrasil01.gat,249,262	warp	warpYgg04	1,1,nif_fild01.gat,315 66
