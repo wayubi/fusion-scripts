@@ -82,6 +82,7 @@ lou_fild01.gat,190,100,4 script "Taka" 726,{
 	mes "Ready to leave?";
 	mes "Probably had lots of fun exploring.";
 	mes "Are you really ready to leave?";
+      next;
 	menu "Time to go home!",L_MENU_1,"I will stay a bit longer",-;
 	mes "[Taka]";
 	mes "Alright! Roger that.";
