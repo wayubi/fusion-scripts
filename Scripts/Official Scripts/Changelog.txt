@@ -9,10 +9,11 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.003
 ----------------------------------------------------------------------------------------------------
+- Mob\field\gef_fild.txt - Updated, reorganised Geffen Fields Monster Spawns [Muad_Dib]
 - GvG\gefg_cas0#.txt - Changed variable type for skill/guardian checks. [Tsusai]
 - GvG\aldeg_cas0#.txt - Changed variable type for skill/guardian checks. [Tsusai]
 - Event\Event_Making.txt - Correcting Cake Hat requirements. [Tsusai]
-- Job\Job_Super_Novice.txt - Chaned some text parts. [Muad_Dib] 
+- Job\Job_Super_Novice.txt - Changed some text parts. [Muad_Dib] 
 - Event\Event_Sign.txt - Added event sign. [Muad_Dib]
 - Quest\Quest_skill\Thief_Skill.txt - file added. [nestor_zulueta]
 - Quest\Quest_skill\NPC_Novice_skill.txt - file added. [nestor_zulueta]
