@@ -18,6 +18,9 @@
 // - William -> morocc_in: 142,100
 //   Give information and make Stop Post Quest.
 //
+// - Teacher -> prt_in: 38,108
+//   Give information and make PhD Hat Quest.
+//
 //========================================================================================
 
 payon_in01.gat,103,111,4	script	"Granny"	103,{
@@ -424,25 +427,21 @@ alberta_in.gat,59,139,4	script	学生帽爺	120,{
 		close;
 }
 
-//----------------------------------
-// 学者帽
-//----------------------------------
-
-prt_in.gat,38,108,4	script	学者帽先生	53,{
+prt_in.gat,38,108,4	script	"Teacher"	53,{
 	checkitem 710,1,-,L_SUB_1;
 	checkitem 703,1,-,L_SUB_1;
 	checkitem 606,1,-,L_SUB_1;
 	checkitem 708,1,-,L_SUB_1;
-	mes "[先生]";
-	mes "あら、まあ…貴方が持っているその花は…";
+	mes "[Teacher]";
+	mes "Oh .. Those Flowers in your hand are ..";
 	next;
-	menu "花を見せる",-,"花を渡す",L_MENU_1,"やめる",L_MENU_2;
-		mes "[先生]";
-		mes "や、やはり…その花はわたくしが探している4種類の花ですね…";
-		mes "わたくしにこの花をくださいませんか…？";
+	menu "Show Flowers",-,"Present Flowers",L_MENU_1,"Cancel",L_MENU_2;
+		mes "[Teacher]";
+		mes "Ah .. Definately ..They are 4 kinds of Flowers I was looking for ..";
+		mes "Would you give them to me?...";
 		next;
-		mes "[先生]";
-		mes "もし、くださるのなら…わ、わたくしの一番大切な物を貴方に…";
+		mes "[Teacher]";
+		mes "If you would... I'll... give you my precious item.";
 		close;
 	L_MENU_1:
 		checkadditem 5012,1,-,L_START_1;
@@ -455,57 +454,57 @@ prt_in.gat,38,108,4	script	学者帽先生	53,{
 		delitem 606,1;
 		delitem 708,1;
 		additem 5012,1;
-		mes "[先生]";
-		mes "本当にありがとうございます.生まれてからこんな親切な好意は初めてです。";
-		mes "約束とおりにわたくしの大切な物を差しあげましょう。";
-		mes "わたくしが卒業した時の帽子です。わたくしの大切な追憶が残っている物です。";
-		mes "ぜひ…受け取ってください…大切にしてくださいね。";
+		mes "[Teacher]";
+		mes "I really really appreciate you what you've done for me.I mean I am really grateful.";
+		mes "I will give my precious item for you as I promise you.";
+		mes "This is a Hat worn on my Graduation Day in University. It reminds me of my happy School days.";
+		mes "Please take this...";
 		close;
 	L_SUB_2:
-		mes "[先生]";
-		mes "あ…よく見たらわたくしが探している花ではありませんネ…";
-		mes "はあ…間違いでした…すみません…";
+		mes "[Teacher]";
+		mes "Ah...now that I look closely, these aren't the flowers I'm looking for.";
+		mes "Haa...I may have confused you...sorry.";
 		close;
 	L_MENU_2:
 		close;
 	L_SUB_1:
-		mes "[先生]";
-		mes "花…という物は本当に美しいですね？";
+		mes "[Teacher]";
+		mes "Don't you think...Flower is pretty?";
 		next;
-		menu "対話する",-,"やめる",L_MENU_3;
-			mes "[先生]";
-			mes "幼い頃、わたくしは友たちと遊ぶ事ができず、勉強ばかりの者でした。";
-			mes "その時が懐かしいですが…悔いはありません。その代わり、若いうちに全ての高等教育を習う事ができましたからです。";
+		menu "Talk",-,"Quit",L_MENU_3;
+			mes "[Teacher]";
+			mes "When I was young,I didn't play around with buddies but I studied myself all the time.";
+			mes "Sometimes I regret what I did in my young days... but it is not a big deal now. Through hard Study,I finished entire educational courses ealier than other friends.";
 			next;
-			mes "[先生]";
-			mes "しかし…友たちが1人もいないのは本当に悲しい事でした。";
-			mes "勉強の時…疲れている時…わたくしの話しを聞いてくれる友たちの存在が欲しかったのです。";
-			mes "そして、ある日わたくしは最高の友たちと出会ったのです。";
+			mes "[Teacher]";
+			mes "However...I was sad because I had no pal around.";
+			mes "When I got a hard time to study..I needed someone who could listen to me.";
+			mes "After all, the other day,finally I met my best friend.";
 			next;
-			mes "[先生]";
-			mes "誰も手を加えない花壇で美しく生えた一本の花を見て…";
-			mes "わたくしはその花と同じ運命を持ったことを直感したのです。";
+			mes "[Teacher]";
+			mes "When I saw a Pretty Flower blooming on the abandoned Garden...";
+			mes "I realised It was my friend which had the same fate of me.";
 			next;
-			mes "[先生]";
-			mes "他の人には何もない一本の花に過ぎないかも知れません…ですが、わたくしにはとても大切な力になってくれたのです。";
-			mes "わたくしがこのように先生になれた事も…あの花のお陰、と言っても過言ではありません。";
+			mes "[Teacher]";
+			mes "Even though, to others it is a Common and Normal Flower.. to me She gave the reason of Studying again.";
+			mes "I could achieve my goal because of her.";
 			next;
-			mes "[先生]";
-			mes "そして…わたくしは…その友たちから頂いた愛に礼を言いたいと思っているのです。";
-			mes "花についてたくさんの研究をしてわたくしの町…いえ、もっともっと全世界まで、花でいっぱいにしたいのです。";
+			mes "[Teacher]";
+			mes "So.. recently..I am trying to repay to her.";
+			mes "Now I am studying Flowers, and I will cover whole world with Flowers.";
 			next;
-			mes "[先生]";
-			mes "その為には…たくさんの花が必要ですが…";
-			mes "わたくしは出かけた経験があまりにもないので…難しいのです…";
-			mes "^3355FF幻想の花^000000 と ^3355FFヒナレ^000000 と ^3355FFアロエ^000000 そして ^3355FFメント^000000... この花を見つけてくださるのなら、わたくしの大切な物を差しあげましょう…";
+			mes "[Teacher]";
+			mes "To Accomplish my work..I need buches of flowers...";
+			mes "But for me,who rarely goes outside,.. It is really hard to find flowers as many as I need.";
+			mes "I need 1 ^3355FFDreamy Flower^000000 ,1 ^3355FFHinalle^000000,1 ^3355FFAloe^000000 and 1 ^3355FFMent^000000... If you can bring them to me,I could give you my treasue...";
 			close;
 	L_MENU_3:
-			mes "[先生]";
-			mes "いつかはこの世が花でいっぱいになる、美しい所になるように頑張ります！";
+			mes "[Teacher]";
+			mes "One of thesedays I will cover whole world with Flowers.";
 			close;
 	L_START_1:
-		mes "[先生]";
-		mes "重量オーバーです。";
+		mes "[Teacher]";
+		mes "You are overweight.";
 		close;
 }
 
