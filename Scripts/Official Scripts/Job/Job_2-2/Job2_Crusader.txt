@@ -96,7 +96,7 @@ close;
 L_QUESTACTIVE:
 check QUEST_1 = 1,L_Q1,L_Q2;
 L_Q1:
-mes "[Crusader]"
+mes "[Crusader]";
 mes "Welcome back, so lets see what you have brought me.";
 next;
 checkitem 957,10,-,L_NAIL;
