@@ -105,6 +105,9 @@
 // - kafra Personnel -> louyang: 211,104
 //   Storage, Rent Cart, kafraPass
 //
+// - kafra Personnel -> gonryun: 159,122
+//   Storage, Rent Cart, kafraPass
+//
 //========================================================================================
 
 yuno.gat,159,207,4 script "kafra Personnel" 114,{
@@ -6776,3 +6779,135 @@ louyang.gat,211,104,6	script	"kafra Personnel"	115,{
 		cutin "kafra_03",255;
 		close;
 }
+
+gonryun.gat,159,122,6	script	"kafra Personnel"	116,{
+	set @kafra_COUPON = 0;
+	cutin "kafra_02",2;
+	mes "[kafra Personnel]";
+	mes "Welcome.";
+	mes "kafra Services is always by your side.";
+	next;
+ L_START_1:
+	check @kafra_COUPON = 1,-,L_SUB_0_1;
+		mes "[kafra Personnel]";
+		mes "How may I help you?";
+		next;
+ L_SUB_0_1:
+	menu "Save",L_MENU_1,"Storage Service",L_MENU_2,"Cart Rental Service",L_MENU_4,"Use kafra Coupon",L_MENU_5,"Quit",L_MENU_7;
+	L_MENU_1:
+		save "gonryun",160,62;
+		mes "[kafra Personnel]";
+		mes "Your respawn point has saved.";
+		check @kafra_COUPON = 0,-,L_SUB_1_2;
+			mes "Thank you for using kafra Services.";
+			goto L_EXIT;
+	L_SUB_1_2:
+			next;
+			goto L_START_1;
+	L_MENU_2:
+		getskilllevel 1,@storagecheck;
+		check @storagecheck >= 6,L_SUB_2_1,-;
+			mes "[kafra Personnel]";
+			mes "You need to have Basic Skills level 6";
+			mes "in order to use the storage service.";
+			check @kafra_COUPON = 0,-,L_ROOT_2_1;
+				goto L_EXIT;
+		L_ROOT_2_1:
+				next;
+				goto L_START_1;
+	L_SUB_2_1:
+		check @kafra_COUPON = 0,-,L_SUB_2_2;
+			check Zeny < 40,-,L_ROOT_2_2;
+				mes "[kafra Personnel]";
+				mes "You don't have enough money.";
+				mes "The storage usage fee is 40 Zeny.";
+				goto L_EXIT;
+		L_ROOT_2_2:
+			set Zeny -= 40,0;
+			store;
+			goto L_EXIT;
+	L_SUB_2_2:
+		store;
+		goto L_EXIT;
+	L_MENU_4:
+		check Job != 5,-,L_SUB_4_1;
+		check Job != 10,-,L_SUB_4_1;
+		check Job != 18,-,L_SUB_4_1;
+		check Job != 29,-,L_SUB_4_1;
+		check Job != 34,-,L_SUB_4_1;
+		check Job != 42,-,L_SUB_4_1;
+			mes "[kafra Personnel]";
+			mes "I am sorry.";
+			mes "The Cart service is only provided for";
+			mes "Merchants, High Merchants, Blacksmiths, Whitesmiths, Alchemists and Creators.";
+			check @kafra_COUPON = 0,-,L_ROOT_4_1;
+				goto L_EXIT;
+			L_ROOT_4_1:
+				next;
+				goto L_START_1;
+		L_SUB_4_1:
+			check @kafra_COUPON = 0,-,L_SUB_4_2;
+				mes "[kafra Personnel]";
+	   			mes "The Cart Fee is 800 Zeny.";
+	    	   		mes "To rent a cart";
+				next;
+   				menu "Rent a Cart.",L_MENU_4_1,"Cancel",L_MENU_4_2;
+		L_MENU_4_1:
+				getskilllevel 39,@skilllv_pushcart; 
+				check @skilllv_pushcart => 1,-,L_skill;
+				check Zeny < 800,-,L_ROOT_4_2; 
+        	 		mes "[kafra Personnel]";
+       				mes "Dear. you don't have enough Money.";
+	       			mes "The Cart Fee is 800 Zeny.";
+				goto L_EXIT;
+		L_skill:
+				mes "You do not have the skill PushCart.";
+				mes "You can't get a cart without that."
+				goto L_EXIT;
+		L_ROOT_4_2:
+				set Zeny -= 800,0;
+				check option == 0,-,L_MENU_4_3;
+				option 0,1;
+				goto L_EXIT;
+		L_MENU_4_2:
+				mes "[kafra Personnel]";
+  				mes "Thank you.";
+   				mes "Please come again.";
+				goto L_EXIT;
+		L_MENU_4_3:
+				mes "[kafra Personnel]";
+				mes "Sorry you already have a cart.";
+				next;
+				goto L_EXIT;
+		L_SUB_4_2:
+			check option == 0,-,L_MENU_4_3;
+			option 0,1;
+			goto L_START_1;
+	L_MENU_5:
+		check @kafra_COUPON = 1,-,L_ROOT_5_1;
+			mes "[kafra Personnel]";
+			mes "You are now using a kafra Coupon.";
+			next;
+			goto L_START_1;
+		L_ROOT_5_1:
+			checkitem 1084,1,L_SUB_5_1,-;
+				mes "[kafra Personnel]";
+				mes "You need a kafra Coupon.";
+				goto L_EXIT;
+		L_SUB_5_1:
+			delitem 1084,1;
+			set @kafra_COUPON = 1;
+			mes "[kafra Personnel]";
+			mes "You have used your kafra Coupon.";
+			next;
+			goto L_START_1;
+	L_MENU_7:
+		mes "[kafra Personnel]";
+		mes "We strive for perfection in our service.";
+		mes "Rest assured that kafra Corporation will always be there to help you.";
+		mes "Thank you for your business.";
+ L_EXIT:
+		cutin "kafra_02",255;
+		close;
+}
+

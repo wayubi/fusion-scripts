@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.004
 ----------------------------------------------------------------------------------------------------
+- Town\Town_Kafra.txt - Added Gonryun kafra. [Muad_Dib]
 - Mob\dungeon\lou_dun.txt. - Edited the spawns [Muad_Dib]
 - Mob\field\lou_fild.txt . - Edited the spawns [Muad_Dib]
 - Mob\dungeon\gl_dun.txt - Updated, Glastheim Monster Spawns. [Muad_Dib]
