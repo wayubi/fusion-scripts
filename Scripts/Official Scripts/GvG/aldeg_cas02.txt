@@ -25,7 +25,7 @@
 
 aldeg_cas02.gat,82,71,2	script	"Hohenschwangau"	722,{
 	guildreg "aldeg_cas02";
-	check guildid == 0,-,L_START_1;because
+	check guildid == 0,-,L_START_1;
       mes "[ Edict of the Divine Rune Midgard Kingdom ]"
       mes "                                            ";
       mes "1.Follow the ordinance of the Divine Rune Midgard Kingdom,";
