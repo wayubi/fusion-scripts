@@ -28,6 +28,7 @@
 //   gefg_cas03.gat,125,250
 //   gefg_cas03.gat,89,159
 //   gefg_cas04.gat,24,149
+//   gefg_cas05.gat,99,200
 //  
 //   Updates:
 //    Colus, 20040321: Fixed negative IDs leading to crash.  Don't use -1.
