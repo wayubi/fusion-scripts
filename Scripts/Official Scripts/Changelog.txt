@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.003
 ----------------------------------------------------------------------------------------------------
+- Job\Job_Super_Novice.txt - Made a little change. [Muad_Dib] 
 - shop\yuno.txt - Added Novice Breastplate to armor dealer. [Muad_Dib]
 - Town\Town_Kafra.txt - remove line l_quest to avoid error. [nestor_zulueta]
 - Event\Event_Making.txt - change grampa location. [nestor_zulueta]
