@@ -1,6 +1,9 @@
 --------------------------------------------------------------------------------
  Fusion 1.213 - January ???, 2005
 -------------------------------------------------------------------------------- 
+- 01-13-05: Shop\Payon.txt - Removed Arrow Quivers shop. [Muad_Dib]
+- 01-13-05: Event\Event_Arrow_Quiver.txt - Added Npc that creates arrow quivers. [Muad_Dib]
+- 01-13-05: Event\Event_Jellopy.txt - Updated Npc should work now. [Muad_Dib]
 - 01-08-05: Mob\field\yuno_fild.txt - Fixed the green plants on field 11. [Muad_Dib]
 - 01-04-05: Mob\field\yuno_fild.txt - Changed Angeling to Archangeling(wrong translation). [Muad_Dib]
 - 01-04-05: Mob\field\yuno_fild.txt - Added the new Official Mobs. [Muad_Dib]
