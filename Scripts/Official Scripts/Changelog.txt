@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.004
 ----------------------------------------------------------------------------------------------------
+- Job\ - Edited/corrected assassin, knight, Priest and Hunter scripts. [Muad_Dib]
 - Mob\ - Edited/corrected some spawns. [Muad_Dib]
 - Town\Town_Gonryun.txt - Reorganised Town Lutie. [Muad_Dib]
 - Mob\ - Edited/corrected some spawns. [Muad_Dib]
