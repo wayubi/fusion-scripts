@@ -7,7 +7,7 @@
 // Lutie Town - Non Player Character Locations
 // - Original script by kalen.
 //
-// - Santa -> aldebaran: 168,168
+// - Mr. Claus -> aldebaran: 223,222
 //   Gives information about lutie and can warp you there.
 //
 // - Santa -> xmas_in: 100,96
@@ -39,60 +39,48 @@
 //
 //========================================================================================
 
-aldebaran.gat,168,168,4	script "Santa" 718,{
-	mes "[Santa]";
-	mes "Ho Ho Ho~";
+aldebaran.gat,223,222,4	script "Mr. Claus" 718,{
+	mes "[Mr. Claus]";
 	mes "Merry Christmas!!";
-	mes "Merry Christmas - All of you !";
+	mes "I wish you all happiness!";
 	next;
-	menu "Info about Lutie",-,"Move to the `Lutie'",L1,"Cancel",L2;
-	mes "[Santa]";
-	mes "^3355FF' Lutie '^000000,the Fantastic Christmas Town!!";
-	mes "Where the Christmas Spirit abound Year around,";
-	mes "The place filled with Appetizing Cakes-,";
-	mes "Tiny little Toy Soldiersand all things you can imagine!!";
+	menu "Where did you come from?",-,"Take me to ^3355FF Lutie^000000!",L_Take,"Cancel",L_Cancel;
+	mes "[Mr. Claus]";
+      mes "I come from the incredible and wonderful
+	mes "Fantasy City of ^3355FFLutie^000000!!";
+      mes "There are so many delicious Cakes!...";
+	mes "Toys!....Gifts! In this wonderful";
+	mes "Fantasy world!";
 	next;
-	mes "[Santa]";
-	mes "Ho Ho Ho~";
-	mes "Beautiful Amazing land!";
-	mes "Where the Christmas Spirit abound Year around,";
-	mes "In Festive atmosphere.";
+	mes "[Mr. Claus]";
+	mes "In Lutie, It's Christmas every day";
+	mes "all year long!";
+	mes "Happiness and Joy in every part of the city!";
+	mes "It's a very mystical place!";
 	next;
-	mes "[Santa]";
-	mes "I am a Santa Claus guiding people";
-	mes "to Lutie,the Christmas Town.";
-	mes "Young Man -";
-	mes "You can be my guest.Do you want to try?";
+	mes "[Mr. Claus]";
+	mes "Does this place sound great or";
+	mes "what!";
+      next;
+	mes "[Mr. Claus]";
+	mes "Then what are you waiting for!";
+	mes "You might even meet the big boss";
+      mes "man Santa Claus!
 	close;
-L1:
-	mes "[Santa]";
-	mes "Ho Ho Ho~";
-	mes "The only place get to the Lutie";
-	mes "in the world . .";
-	mes "is located here,";	
-	mes "Aldebaran !";
-	next;
-	mes "[Santa]";
-	mes "I hereby keep this place -";
-	mes "to personally transport people who want to visit Lutie.";
-	mes "Please ask Santa in there,if you want to go out the town.";
-	mes "My friend Santa in there will let you know,";
-	mes "the way get out of Lutie~ ";
-	next;
-	mes "[Santa]";
-	mes "Ho Ho Ho~";
-	mes "Well,are you ready,young man ?";
-	mes "Merry Christmas!!";
-	mes "Have a nice trip!";
+L_Take:
+	mes "[Mr. Claus]";
+	mes "You really want to go to the best";
+	mes "city in the world!";
 	next;
 	   warp "xmas_fild01",78,68;
       close;
-L2:
-	mes "[Santa]";
-	mes "Ho Ho Ho~";
-	mes "If you want to visit Lutie,";
-	mes "Be my guest anytime you want~.";
-	mes "Well Merry Christmas,Young Man,Merry Christmas!!";
+L_Cancel:
+	mes "[Mr. Claus]";
+	mes "Well...if you want to go to";
+	mes "Lutie...";
+	mes "Come to me any time and let me";
+	mes "know...";
+      mes "Good luck and Merry Christmas!";
 	close;
 }
 

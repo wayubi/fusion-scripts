@@ -9,6 +9,8 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.005
 ----------------------------------------------------------------------------------------------------
+- Town\Town_Aldebaran.txt - Updated Al De Baran Town script. [Muad_Dib]
+- Town\Town_Lutie.txt - Updated Lutie Warper. [Muad_Dib]
 - Event\Event_Clocktower.txt - Added Event Clocktower. [Muad_Dib]
 - Town\Town_Aldebaran.txt - Moved Bell Keeper to Event_Clocktower. [Muad_Dib]
 - shop\payon.txt - Updated Payon shops. [Muad_Dib]
