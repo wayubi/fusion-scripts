@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
 Fusion NPC Pack - 1.002
 ----------------------------------------------------------------------------------------------------
+- Event\Event_Solution.txt - Fixed page header [mudvayne]
 - Event\Event_Rental.txt - Fixed page header, mising [npc name], enabled Crusader support for peco breeder. [mudvayne]
 - Event\Event_Doll.txt - Fixed page header, cleaned up script, removed unused comments. [mudvayne]
 - Event\Event_Card-Seller.txt - Fixed page header, cleaned up script. [mudvayne]

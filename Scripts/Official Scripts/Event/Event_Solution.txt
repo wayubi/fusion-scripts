@@ -1,3 +1,19 @@
+//========================================================================================
+// »» The Fusion Project ««
+// Copyright (c) 2004, Cobax Information Systems
+// http://fusion.cobax.net/
+// ---------------------------------------------------------------------------------------
+//
+// Solution Item Provider - Non Player Character Locations
+//
+// - Ponka-Hontas -> moc_ruins: 91,150
+//   With one empty testube he provide morocc solution for mage quest.
+//
+// - Dollshoi -> pay_arche: 122,100
+//   With one empty testube he provide payon solution for mage quest.
+//
+//========================================================================================
+
 moc_ruins.gat,91,150,5	script	"Ponka-Hontas"	93,{
 	mes "[Mage Guildsman]";
 	mes "You want the Solution? Then give me at least 1 Empty Testube.";
