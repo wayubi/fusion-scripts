@@ -10,7 +10,7 @@
  Fusion NPC Pack - 1.004
 ----------------------------------------------------------------------------------------------------
 - Mob\other\job_quests.txt- Updated, reorganised Job Quests Monster Spawns. [Muad_Dib]
-- Mob\other\pvp_n.txt- Updated, reorganised Pvp Room Monster Spawns. [Muad_Dib]
+- Mob\other\pvp_n.txt- Reorganised Pvp Room Monster Spawns. [Muad_Dib]
 - Mob\other\xmas_town.txt- Updated, reorganised Lutie Town Monster Spawns. [Muad_Dib]
 - Mob\other\xmas_mob.txt - Added Xmass monsters mob file. [Muad_Dib]
 - Event\Event_Sign.txt - Removed Event_Sign cuase i found some new stuff that was totally different. [Tsusai]
