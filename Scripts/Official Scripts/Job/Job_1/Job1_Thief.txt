@@ -340,6 +340,8 @@ moc_prydb1.gat,42,133,2	script	"Comrade"	118,{
 					goto PASS;
 		PASS:
 			mes "'You passed the official Thief Test, I ask you to join us.'";
+			getitemamount 1069, @x;
+			getitemamount 1070, @var;
 			delitem 1070,@X;
 			delitem 1069,@Y;
 			set JobLevel = 1,0;
