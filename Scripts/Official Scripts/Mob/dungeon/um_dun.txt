@@ -5,6 +5,7 @@
 // ---------------------------------------------------------------------------------------
 //
 // Umbala Dungeon - Monster Spawn Information
+// - Credits to Jathena.
 //
 //========================================================================================
 
@@ -12,16 +13,17 @@
 // - Umbala Dungeon 01
 //========================================================================================
 
-um_dun01.gat,0,0,0,0    monster   "Argiope" 1099,35,0,0,0
-um_dun01.gat,0,0,0,0    monster   "Brilight" 1211,15,0,0,0
-um_dun01.gat,0,0,0,0    monster   "Stem Worm" 1215,15,0,0,0
-um_dun01.gat,0,0,0,0    monster   "Poison Spore" 1077,25,0,0,0
+um_dun01.gat,0,0,0,0	monster	"Stainer" 1174,35,0,0,0
+um_dun01.gat,0,0,0,0	monster	"Dustiness" 1114,15,0,0,0
+um_dun01.gat,0,0,0,0	monster	"Wootan Fighter" 1499,30,0,0,0
+um_dun01.gat,0,0,0,0	monster	"Stone Shooter" 1495,20,0,0,0 
 
 //========================================================================================
 // - Umbala Dungeon 02
 //========================================================================================
 
-um_dun02.gat,0,0,0,0    monster   "Tri Joint" 1279,25,0,0,0
-um_dun02.gat,0,0,0,0    monster   "Giant Spider" 1304,25,0,0,0
-um_dun02.gat,0,0,0,0    monster   "Elder" 1377,10,0,0,0
-um_dun02.gat,0,0,0,0	monster   "Live Peach Tree" 1410,25,0,0,0
+um_dun02.gat,0,0,0,0	monster	"Wootan Fighter" 1499,35,0,0,0
+um_dun02.gat,0,0,0,0	monster	"Wootan Shooter" 1498,25,0,0,0
+um_dun02.gat,0,0,0,0	monster	"Dryad" 1493,10,0,0,0
+um_dun02.gat,0,0,0,0	monster	"Wooden Golem" 1497,25,0,0,0
+um_dun02.gat,0,0,0,0	monster	"Stone Shooter" 1495,25,0,0,0

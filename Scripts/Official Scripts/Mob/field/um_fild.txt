@@ -5,6 +5,7 @@
 // ---------------------------------------------------------------------------------------
 //
 // Umbala Fields Mob - Monster Spawn Locations
+// - Credits to Jathena.
 //
 //========================================================================================
 
@@ -12,31 +13,37 @@
 // - Umbala Field 01
 //========================================================================================
 
-um_fild01.gat,0,0,0,0 monster "Poison Toad" 1402,15,0,0,0
-um_fild01.gat,0,0,0,0 monster "Green Plant" 1080,30,0,0,0
-um_fild01.gat,0,0,0,0 monster "Poison Snake" 1025,40,0,0,0
-um_fild01.gat,0,0,0,0 monster "Creamy" 1018,15,0,0,0
-um_fild01.gat,0,0,0,0 monster "Flora" 1118,25,0,0,0
-um_fild01.gat,0,0,0,0 monster "Choco" 1214,1,150000,150000,0
-um_fild01.gat,0,0,0,0 monster "Baby Leopard" 1415,15,0,0,0
-um_fild01.gat,0,0,0,0 monster "Brilight" 1211,25,0,0,0
+um_fild01.gat,0,0,0,0	monster	"Stem Worm"	1215,15,0,0,0
+um_fild01.gat,0,0,0,0	monster	"Wootan Fighter" 1499,40,0,0,0
+um_fild01.gat,0,0,0,0	monster	"Dryad" 1493,15,0,0,0
+um_fild01.gat,0,0,0,0	monster	"Harpy" 1376,25,0,0,0
+
 
 //========================================================================================
 // - Umbala Field 02
 //========================================================================================
 
-// - No Monsters Here
+um_fild02.gat,0,0,0,0	monster	"Dustiness" 1114,25,0,0,0
+um_fild02.gat,0,0,0,0	monster	"Kind Beetle" 1494,15,0,0,0
+um_fild02.gat,0,0,0,0	monster	"Wootan Fighter" 1499,30,0,0,0
+um_fild02.gat,0,0,0,0	monster     "Wootan Shooter" 1498,20,0,0,0
 
 //========================================================================================
-// - Umbala Field 02
+// - Umbala Field 03
 //========================================================================================
 
-um_fild03.gat,0,0,0,0 monster "Poison Toad" 1402,25,0,0,0
-um_fild03.gat,0,0,0,0 monster "Green Plant" 1080,20,0,0,0
-um_fild03.gat,0,0,0,0 monster "Poison Snake" 1025,30,0,0,0
-um_fild03.gat,0,0,0,0 monster "Stem Worm" 1215,15,0,0,0
-um_fild03.gat,0,0,0,0 monster "Wolf" 1013,20,0,0,0
-um_fild03.gat,0,0,0,0 monster "Vagabond Wolf" 1092,1,150000,150000,0
-um_fild03.gat,0,0,0,0 monster "Argiope" 1099,20,0,0,0
-um_fild03.gat,0,0,0,0 monster "Brilight" 1211,25,0,0,0
-um_fild03.gat,0,0,0,0 monster "Werewolf" 1022,1,300000,300000,0
+um_fild03.gat,0,0,0,0	monster	"Pest"	1256,25,0,0,0
+//um_fild03.gat,0,0,0,0	monster	"フェアリーフ"	????,30,0,0,0
+um_fild03.gat,0,0,0,0	monster	"Alligator" 1271,15,0,0,0
+um_fild03.gat,0,0,0,0	monster	"Dragon Tail" 1321,20,0,0,0
+um_fild03.gat,0,0,0,0	monster	"Gryphon"	1447,1,150000,150000,1
+
+//========================================================================================
+// - Umbala Field 04
+//========================================================================================
+
+um_fild04.gat,0,0,0,0	monster	"Stainer" 1174,25,0,0,0
+um_fild04.gat,0,0,0,0	monster	"Kind Beetle" 1494,20,0,0,0
+um_fild04.gat,0,0,0,0	monster	"Wootan Shooter" 1498,20,0,0,0
+um_fild04.gat,0,0,0,0	monster	"Wootan Fighter"	1499,30,0,0,0
+um_fild04.gat,0,0,0,0	monster	"Choco" 1214,1,0,0,0
