@@ -56,58 +56,58 @@ L_START_1:
 	close;
 }
 aldeg_cas04.gat,164,90,2	script	"Wuerzburg"	722,{
-	script alde_gldF04;
+	script aldeg_casF04;
 }
 aldeg_cas04.gat,143,209,2	script	"Wuerzburg"	722,{
-	script alde_gldF04;
+	script aldeg_casF04;
 }
 aldeg_cas04.gat,129,193,2	script	"Wuerzburg"	722,{
-	script alde_gldF04;
+	script aldeg_casF04;
 }
 aldeg_cas04.gat,112,206,2	script	"Wuerzburg"	722,{
-	script alde_gldF04;
+	script aldeg_casF04;
 }
 aldeg_cas04.gat,113,212,2	script	"Wuerzburg"	722,{
-	script alde_gldF04;
+	script aldeg_casF04;
 }
 aldeg_cas04.gat,77,117,2	script	"Wuerzburg"	722,{
-	script alde_gldF04;
+	script aldeg_casF04;
 }
 aldeg_cas04.gat,186,42,2	script	"Wuerzburg"	722,{
-	script alde_gldF04;
+	script aldeg_casF04;
 }
 aldeg_cas04.gat,30,69,2	script	"Wuerzburg"	722,{
-	script alde_gldF04;
+	script aldeg_casF04;
 }
 aldeg_cas04.gat,55,97,2	script	"Wuerzburg"	722,{
-	script alde_gldF04;
+	script aldeg_casF04;
 }
 aldeg_cas04.gat,45,98,2	script	"Wuerzburg"	722,{
-	script alde_gldF04;
+	script aldeg_casF04;
 }
 aldeg_cas04.gat,33,116,2	script	"Wuerzburg"	722,{
-	script alde_gldF04;
+	script aldeg_casF04;
 }
 aldeg_cas04.gat,130,180,2	script	"Wuerzburg"	722,{
-	script alde_gldF04;
+	script aldeg_casF04;
 }
 aldeg_cas04.gat,129,193,2	script	"Wuerzburg"	722,{
-	script alde_gldF04;
+	script aldeg_casF04;
 }
 aldeg_cas04.gat,142,209,2	script	"Wuerzburg"	722,{
-	script alde_gldF04;
+	script aldeg_casF04;
 }
 aldeg_cas04.gat,33,107,2	script	"Wuerzburg"	722,{
-	script alde_gldF04;
+	script aldeg_casF04;
 }
 aldeg_cas04.gat,133,220,2	script	"Wuerzburg"	722,{
-	script alde_gldF04;
+	script aldeg_casF04;
 }
 aldeg_cas04.gat,169,22,2	script	"Wuerzburg"	722,{
-	script alde_gldF04;
+	script aldeg_casF04;
 }
 aldeg_cas04.gat,169,15,2	script	"Wuerzburg"	722,{
-	script alde_gldF04;
+	script aldeg_casF04;
 }
 
 aldeg_cas04.gat,45,88,0	script	"Kafra Service"	117,{

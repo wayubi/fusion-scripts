@@ -9,7 +9,8 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.002
 ----------------------------------------------------------------------------------------------------
-- NPC\npc_skill_get.txt - Translated Father Clifford, Blizzardriss, Nami, Blma, Prontera General, & RuRumuni. - [Tsusai]
+- GvG\aldeg_cas02-05.txt - Corrected scriptlabel commands. [Tsusai]
+- NPC\npc_skill_get.txt - Translated Father Clifford, Blizzardriss, Nami, Blma, Prontera General, & RuRumuni. [Tsusai]
 - GvG\payg_cas01.txt - Added OnInits to flags for emblem display w/o activating (rest to come). [Colus]
 - GvG\npc_gflag.txt - Added OnInits to flags for emblem display w/o activating. [Colus]
 - Warp\towns\Niflheim.txt - Fixed erronous warps. [mudvayne]
