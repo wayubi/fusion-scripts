@@ -407,3 +407,137 @@ prt_maze02,110,69,0	script	"Guard"	105,{
 	close;
 }
 
+prt_church.gat,103,76,5	script	"Garnet"	64,{
+	mes "[Garnet]";
+	mes "Oh~ you want to find pleasure in helping other people? But you don't know how to do so?";
+	mes "Fortunately we have abilities to help and support other people.";
+	next;
+	mes "[Garnet]";
+	mes "We can heal people of exhausted condition or awake their potentials hidden deep inside.";
+	mes "Ahem...Feel free to ask me anything. The priest scolds me for being lousy pretty much everyday, BUT I KNOW everything about theories. "
+	next;
+	menu "About Heal",HEAL,"About Cure",CURE,"About Increase AGI",AGI,"About Angelus",ANGELUS,"About Blessing",BLESSING,"About Warp Portal",WARP,"End Conversation",END;
+	HEAL:
+		mes "[Garnet]";
+		mes "You can recover either you or someone else's HP with 'Heal'.";
+		mes "Once you reach level 2 'Heal', you'll be able to learn 'Cure', which can treat abnormal status.";
+		mes "If you've used 'Heal' while you were Acolyte, then as a priest you can create 'Sanctuary' the HP recovering area.";
+		next;
+		mes "[Garnet]";
+		mes "Between you and me...if you use Cure skill on Undead monsters, it will actually inflict damage, not recovery, on them. ";
+		mes "Ah~ Don't forget to hold 'Shift' key when you use it though.. Ahem~ Shhhhh~~!";
+		close;
+	CURE:			
+		mes "[Garnet]";
+		mes "Cure can bring you back to normal from any abnormal status.";
+		mes "You've gotta have level 2 'Heal' in order to learn Cure, though.";
+		close;
+	AGI:
+		mes "[Garnet]";
+		mes "Your Agility goes up, once casted. It makes you to attack faster ";
+		mes "and to evade attacks from monsters quickly. ";
+		mes "By the way, level 3 'Heal' is required to learn 'Increase AGI'. ";
+		close;
+	ANGELUS:				
+		mes "[Garnet]";
+		mes "You can use 'Angelus' in order to increase Defense of either other party members or yourself.";
+		mes "Now remember. You only can use it on members in your party. ";
+		next;
+		mes "[Garnet]";
+		mes " First, in order to acquire 'Angelus', Level 3 'Divine Protection' is mandatory. ";
+		mes "And if you practice 'Angelus', you'll be able to use 'Kyrie Eleison' ";
+		mes "which make you evade initial attack automatically.";
+		close;
+	BLESSING:
+		mes "[Garnet]";
+		mes "'Blessing' increases STR,DEX, and INT temporarily.";
+		mes "I am sure this skill will be a great advantage for your friends.";
+		next;
+		mes "[Garnet]";
+		mes "'Blessing', like 'Angelus', also require you to know 'Divine Protection'. But you'll need to have two more level.";
+		mes "That is, Level 5 'Divine Protection' for 'Blessing'.";
+		close;
+	WARP:
+		mes "[Garnet]";
+		mes "In order to open 'Warp Portal' you should first know how to 'Teleport'.";
+		mes "And 'Buwach' has to be learned first to learn 'Teleport'. ";
+		mes "'Buwach' can spot invisible monsters. ";
+		next;
+		mes "[Garnet]";
+		mes "Once you can open 'Warp Portal', depending on skill level, you can remember up to 4 different places.";
+		mes "But at least one place must be saved with Kafra employee.";
+		next;
+		mes "[Garnet]";
+		mes "Well..it's a bit of hassle, but you have to be physically at a place you want to warp to and save the position first.";
+		mes "This can be very dangerous in some areas so be quick~. Go in, save, and 'Teleport' out!";
+		mes "Also 'Warp Portal' skill consumes such a huge amount of energy, ";
+		next;
+		mes "[Garnet]";
+		mes "so you MUST use 'Blue Gemstone' as a Catalyst. ";
+		mes "One more thing, you cannot Warp to the inside of dungeons so don't even waste your time and effort to go into one to save the position.";
+		close;
+	END:
+		mes "[Garnet]";
+		mes "Hehehe, did I just show off too much in front of the expert? Hehe. Be Happy whatever you do~~!";
+		close;
+}
+
+prt_church.gat,103,71,0	script	"Henson"	120,{
+		mes "[Henson]";
+		mes "Not only helping others";
+		mes " but also purifying poor souls turned into the Undead is our duty as well.";
+		mes "In order to successfully accomplish our duty, we have to learn skills and practice them very hard. Well, What was it you wanted to ask me about?";
+		next;
+		menu "About Divine Protection",DP,"About Demon Bane",DB,"About Decrease AGI",DA,"About Signum Crusis ",SC,"About Pneuma",P,"About Ruwach",R,"About Teleport",T,"End conversation.",END;
+		DP:
+			mes "[Henson]";
+			mes "If you want to improve your Defense against the Undead, it is a good idea to learn this skill called, 'Divine Protection'. ";
+			mes "It is the most basic skill you'll need, and it doesn't even have time limit or anything, anyway. ";
+			next;
+			mes "[Henson]";
+			mes "If you bring it up to level 3, then a skill called 'Demon Bane' will be available for you. By the way 'Demon Bane' increases your attack against the Undead. ";
+			mes "With 'Divine Protection' on foundation, several high class skills such as 'Angelus' and 'Blessing' will be available for you.";
+			close;
+		DB:
+			mes "[Henson]";
+			mes "'Demon Bane' is for improving your attack against the Undead.";
+			mes "Well, you have to know 'Divine Protection' at least a little, and like for 'Divine Protection' you don't have to worry about something like time limit for 'Demon Bane'.";
+			next;
+			mes "[Henson]";
+			mes "Also you have to achieve level 3 'Demon Bane' to use a skill called 'Signum Crusis' which lowers the Defense of the Undead and monsters of Dark property.";
+			close;
+		DA:
+			mes "[Henson]";
+			mes "Once you use this skill, you can slow the movement of the monster down as well as its attack and evade speed. ";
+			mes "If you want to use this skill, you have to learn 'Increase AGI' first.";
+			close;
+		SC:
+			mes "[Henson]";
+			mes "You can lower the defense of the Undead and Dark property monster with this, and the range is very wide.";
+			mes "The successful rate, however, is pretty low since it is a very difficult skill. Do not be disappointed even if you don't successfully use this skill all the time. But don't forget!"
+			next;
+			mes "[Henson]";
+			mes "You'll need level 3 'Demon Bane' to acquire this skill.";
+			close;
+		P:
+			mes "[Henson]";
+			mes "Once you master 'Warp Portal', you can learn this skill.";
+			mes "It generates some sort of barrier around a certain range where you'll be perfectly safe from all long-range attacks. Basically you will be in risk-free zone from the monsters who attack from a distance.";
+			close;
+		R:
+			mes "[Henson]";
+			mes "You can see invisible or hidden monsters with this skill. 'Teleport' is only available when you first learn this skill.";
+			close;
+		T:
+			mes "[Henson]";
+			mes "'Teleport' requires the skill called 'Ruwach' before it can be available.";
+			mes "You can neither choose nor know where you'll end up, but if it's mastered, you can 'Teleport' to the position where you saved with Kafra employee.";
+			next;
+			mes "[Henson]";
+			mes "Then you can learn 'Warp Portal' that can teleport other people to any place you remember.";
+			clsoe;
+		END:
+			mes "[Henson]";
+			mes "If you're still not certain, you are always welcome!"
+			close;
+}
