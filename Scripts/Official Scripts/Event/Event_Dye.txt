@@ -439,7 +439,7 @@ Y1:
 	next;
 	close;
 BLUE:
-	checkitem 509,20,-,C1;
+	checkitem 510,20,-,C1;
 	checkitem 973,1,-,C1;
 	checkitem 713,1,-,C1;
 	check zeny >= 3500,-,C1;
@@ -447,7 +447,7 @@ BLUE:
 	mes "Ok!I would belive you would have everything ready...would you like to start the process?";
 	menu "Yes",-,"No",END;
 	set zeny -= 3500;
-	delitem 509,20;
+	delitem 510,20;
 	delitem 973,1;
 	delitem 713,1;
 	additem 978,1;
@@ -458,7 +458,7 @@ C1:
 	next;
 	close;
 GREEN:
-	checkitem 509,10,-,G1;
+	checkitem 510,5,-,G1;
 	checkitem 511,20,-,G1;
 	checkitem 508,20,-,G1;
 	checkitem 973,1,-,G1;
@@ -469,7 +469,7 @@ GREEN:
 	mes "Ok!I would belive you would have everything ready...would you like to start the process?";
 	menu "Yes",-,"No",END;
 	set zeny -= 5000;
-	delitem 509,10;
+	delitem 510,5;
 	delitem 511,20;
 	delitem 508,20;
 	delitem 973,1;
@@ -506,7 +506,7 @@ O1:
 	next;
 	close;
 PURPLE:
-	checkitem 509,10,-,P1;
+	checkitem 510,10,-,P1;
 	checkitem 507,30,-,P1;
 	checkitem 973,1,-,P1;
 	checkitem 974,1,-,P1;
@@ -516,7 +516,7 @@ PURPLE:
 	mes "Ok!I would belive you would have everything ready...would you like to start the process?";
 	menu "Yes",-,"No",END;
 	set zeny -= 5000;
-	delitem 509,10;
+	delitem 510,10;
 	delitem 507,30;
 	delitem 973,1;
 	delitem 974,1;

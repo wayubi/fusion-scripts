@@ -9,6 +9,8 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.005
 ----------------------------------------------------------------------------------------------------
+- Event\Event_Dye.txt - fixed fixed various dye colours requirements. [Muad_Dib]
+- Event\Event_Making.txt - fixed cake hat requirements. [Muad_Dib]
 - Job\Job2_Sage.txt - fixed a tag. [Muad_Dib]
 
 ----------------------------------------------------------------------------------------------------

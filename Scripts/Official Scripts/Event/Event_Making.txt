@@ -1693,12 +1693,12 @@ L_MENU_9:
 	checkitem 529,10,-,L_ROOT_1;
 	checkitem 530,5,-,L_ROOT_1;
 	checkitem 538,15,-,L_ROOT_1;
-	checkitem 539,300,-,L_ROOT_1;
+	checkitem 539,20,-,L_ROOT_1;
 	checkitem 999,10,-,L_ROOT_1;
-	delitem 529,100;
+	delitem 529,10;
 	delitem 530,5;
 	delitem 538,15;
-	delitem 539,300;
+	delitem 539,20;
 	delitem 999,10;
 	additem 5024,1;
 	goto L_ROOT_2;
