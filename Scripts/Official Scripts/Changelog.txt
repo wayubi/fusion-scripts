@@ -1,6 +1,9 @@
 --------------------------------------------------------------------------------
  Fusion 1.213 - August 29th, 2004
 --------------------------------------------------------------------------------
+- 07-17-04: Event\Event_Making.txt - Alberta hat merchant now shows correctrequirements. [Muad_Dib]
+- 07-17-04: Mob\field\nif_fild.txt - Updated Spawns. [Muad_Dib]
+- 07-17-04: Mob\other\niflheim_town.txt - Added Spawns. [Muad_Dib]
 - 07-16-04: Mob\other\job_quests.txt - Updated novice map name. [Tsusai]
 - 07-14-04: shop\geffen.txt - Deleted npc that sold ori's and elu's.. [Muad_Dib]
 - 07-12-04: Warp\dungeons\gefenia_dun.txt - Added Gefenia warps. [Muad_Dib]

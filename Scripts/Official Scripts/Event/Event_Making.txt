@@ -880,7 +880,7 @@ L_ROOT_1:
 		mes "I brought these hats so I can sell them and use the money for my vacation here..";
 		mes "but now it looks like I have to wear one~";
 		next;
-		menu "Sunday Hat!!?",L_SUB_1_1,"Wizardry Hat?!?",L_SUB_1_2,"Magician Hat??!??",L_SUB_1_2;
+		menu "Sunday Hat!!?",L_SUB_1_1,"Wizardry Hat?!?",L_SUB_1_2,"Magician Hat??!??",L_SUB_1_3;
 		L_SUB_1_1:
 			checkitem 1059,250,-,L_SUB_1_1X;
 			checkitem 2221,1,-,L_SUB_1_1X;
