@@ -1,6 +1,7 @@
 --------------------------------------------------------------------------------
  Fusion 1.213 - December ??th, 2004
 -------------------------------------------------------------------------------- 
+- 12-01-04: Town\Town_Niflheim.txt - Updated with inputstr. [Muad_Dib]
 - 11-30-04: Town\Town_Niflheim.txt - Touchups. [Tsusai]
 - 11-30-04: Ontouch updates over various files. [Tsusai]
 - 11-30-04: Town\Town_Niflheim.txt - Added reseteventmob. [Muad_Dib]

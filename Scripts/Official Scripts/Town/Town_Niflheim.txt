@@ -78,11 +78,11 @@ niflheim.gat,182,167,0	script "Spirit" 802,{
 
 niflheim.gat,184,199,5 script "Little Girl" 793,{
 	mes "[Sairin]";
-		check niflheimlost2 == 1,L_thanks,-;
-		check niflheimlost == 1,L_foundhim,-;
-		check lostgirl == 1,L_sure2,-;
+		check niflheimlost2 = 1,L_thanks,-;
+		check niflheimlost = 1,L_foundhim,-;
+		check lostgirl = 1,L_sure2,-;
 	mes "Sir, will you please help me?";
-		check Job == 0,L_Novice,-;
+		check Job = 0,L_Novice,-;
 	next;
 	menu "Yes",-,"No",M_no;
 	mes "[Sairin]";
@@ -121,8 +121,8 @@ M_no:
 
 nif_fild01.gat,213,268,5 script "Little Boy" 797,{
 	mes "[Marius]";
-		check niflheimlost == 1,L_alreadydone,-;
-		check lostgirl == 1,L_sure2,-;
+		check niflheimlost = 1,L_alreadydone,-;
+		check lostgirl = 1,L_sure2,-;
 	mes "Sairin...where are you?";
 	close;
 L_alreadydone:
@@ -266,7 +266,7 @@ L_MENU3:
 	menu "Necktie.",L_score,"Necklace.",L_score,"Nero.",L_score,"^FFFFFFNictu.^000000",-;
 		set @nif_t += 10;
 L_score:
-		check @nif_t == 30,L_sucess1,-;
+		check @nif_t = 30,L_sucess1,-;
 	mes "[Aesop Bruce]";
 	mes "Hahahaha!! Your prayers were wrong!!";
 	mes "Time to face deathohohohoho,";
@@ -307,8 +307,8 @@ niflheim.gat,224,243,3 script "Alager" 795,{
 	mes "I'm going to eat you...";
 	next;
 	mes "-Chomp bite slurp-";
-		check nif_quest1 == 1,L_end,-;
-		check nif_q_done == 1,L_end,-;
+		check nif_quest1 = 1,L_end,-;
+		check nif_q_done = 1,L_end,-;
 		percentdamage 60,0;
 	next;
 	mes "[Alager]";
@@ -343,31 +343,26 @@ nif_in.gat,105,81,3 script "Grey" 794,{
 	next;
 		check nif_quest2 = 1,L_end,-;	
 		check nif_q_done = 1,L_end,-;
-		random @nif_random 4;
+		random @nif_random 3;
 	mes "[Grey]";
 	mes "Heh, let me give you a little exam!";
 	mes "Repeat line no. ' $[@nif_random] ' of the poem";
 	mes "that you have just heard to me!";
 	next;
-		input @inputstr;
-		check @nif_random = 2,L_RAN_2,-;
-		check @nif_random = 3,L_RAN_3,-;
-		check @nif_random = 4,L_RAN_4,-;
-		check @nif_random = 1,L_RAN_1,-;	
+		inputstr $@input;
+		check @nif_random = 1,L_RAN_2,-;
+		check @nif_random = 2,L_RAN_3,-;
+		check @nif_random = 3,L_RAN_4,-;
+		check @nif_random = 0,L_RAN_1,-;	
 L_RAN_1:
-		set @str1$ = "When the sun sets in the western hills,";
-	goto L_RAN_B;
+		checkstr $@input = "When the sun sets in the western hills,",L_RAN_SC,L_Pay;
 L_RAN_2:
-		set @str1$ = "Where points the velvet gloom of dawn,";
-	goto L_RAN_B;
+		checkstr $@input = "Where points the velvet gloom of dawn,",L_RAN_SC,L_Pay;
 L_RAN_3:
-		set @str1$ = "The beautiful melody surrounding thy soul,";
-	goto L_RAN_B;
+		checkstr $@input = "The beautiful melody surrounding thy soul,",L_RAN_SC,L_Pay;
 L_RAN_4:
-		set @str1$ = "Is the key from Lord Death's wrath.";
-	goto L_RAN_B;
-L_RAN_B:
-		check @inputstr == @str1$,L_RAN_SC,-;
+		checkstr $@input = "Is the key from Lord Death's wrath.",L_RAN_SC,L_Pay;
+L_Pay:
 	mes "[Grey]";
 	mes "Aih... If you had paid more attention,";
 	mes "you would have known the correct answer!";
@@ -402,8 +397,8 @@ nif_in.gat,31,20,3 script "Kurtz" 794,{
 	mes "Business nowadays is really bad...";
 	mes "Back when i used to be alive,";
 	mes "my business was this bad too~!";
-		check nif_quest3 == 1,L_Close,-;
-		check nif_q_done == 1,L_Close,-;
+		check nif_quest3 = 1,L_Close,-;
+		check nif_q_done = 1,L_Close,-;
 	next;
 	mes "[Kurtz]";
 	mes "Hey! You there! Dump this for me";
@@ -420,8 +415,8 @@ L_Close:
 }
 
 niflheim.gat,169,71,5 script "#1" 111,2,2,{
-		check nif_q_done == 1,L_end,-;
-		check nif_quest4 == 1,L_end,-;
+		check nif_q_done = 1,L_end,-;
+		check nif_quest4 = 1,L_end,-;
 	mes "- In the nearby tombs -";
 	mes "- you see something -";
 	mes "- half buried in the ground -";
@@ -437,8 +432,8 @@ L_end:
 }
 
 niflheim.gat,208,103,5 script "#2" 111,2,2,{
-		check nif_q_done == 1,L_end,-;
-		check nif_quest5 == 1,L_key2,-;
+		check nif_q_done = 1,L_end,-;
+		check nif_quest5 = 1,L_key2,-;
 		check nif_quest5 >= 2,L_end,-;
 	mes "- In the nearby tombs -";
 	mes "- you see something -";
@@ -467,10 +462,10 @@ L_end:
 
 nif_in.gat,115,181,5 script "#4" 111,3,3,{
 	mes "- You see a huge old piano -";
-		check nif_q_done == 0,-,L_Check2; 
+		check nif_q_done = 0,-,L_Check2; 
 	mes "- with a few keys missing  -";
 L_Check2:
-		check nif_q_done ==1,-,L_Check3;
+		check nif_q_done =1,-,L_Check3;
 	mes "- with one key missing -";
 L_Check3:
 		check nif_q_done == 0,-,L_Close; 
