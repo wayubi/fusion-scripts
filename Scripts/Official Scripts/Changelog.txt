@@ -1,6 +1,7 @@
 --------------------------------------------------------------------------------
  Fusion 1.213 - August 29th, 2004
 --------------------------------------------------------------------------------
+- 07-06-04: shop\tur_dun.txt - Added Luxury Glasses. [Muad_Dib]
 - 07-06-04: Mob\other\dragon_boat_festival_mob.txt - Added Dragon Boat Festival Mobs. [Muad_Dib]
 - 07-06-04: Mob\field\nif_fild.txt - Fixed Ghostring Spawn. [Muad_Dib]
 - 07-06-04: Town\Town_Kafra.txt - Removed Amatsu, Gon Ryune, Umbala Kafra's and added official ones. [Muad_Dib]
