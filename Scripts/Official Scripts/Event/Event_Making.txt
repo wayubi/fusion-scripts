@@ -1106,7 +1106,7 @@ L_MENU_1:
 	mes "We will make the Bao Bao for you right away.";
 	next;
 	delitem 10007,1;
-	delitem 969,50;
+	delitem 968,50;
 	additem 5042,1;
 	mes "[Zic]";
 	mes "Tah Dah!!!^FF0000DBao Bao^000000.. Please Take it!
