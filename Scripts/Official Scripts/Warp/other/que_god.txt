@@ -18,3 +18,9 @@ que_god01.gat,46,80,0	warp	que_god01-warp007	2,2,que_god01.gat,50,52
 que_god01.gat,50,55,0	warp	que_god01-warp008	2,2,que_god01.gat,46,83
 que_god01.gat,63,89,0	warp	que_god01-warp009	2,2,que_god01.gat,87,93
 que_god01.gat,84,93,0	warp	que_god01-warp010	2,2,que_god01.gat,60,89
+
+//======================== Temp warps ====================================================
+yuno.gat,134,84,0	warp	que_god01-warp009	2,2,que_god01.gat,98,83
+que_god01.gat,98,80,0	warp	que_god01-warp010	2,2,yuno.gat,137,84
+//========================================================================================
+

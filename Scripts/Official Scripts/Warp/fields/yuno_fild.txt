@@ -1,14 +1,26 @@
-aldebaran.gat,140,244,0	warp	warp1883	1,1,yuno_fild01.gat,209,22
-yuno_fild01.gat,209,17,0	warp	warp1884	1,1,aldebaran.gat,140,239
-yuno_fild01.gat,287,366,0	warp	warp1885	1,1,yuno_fild02.gat,291,20
-yuno_fild02.gat,288,17,0	warp	warp1886	1,1,yuno_fild01.gat,287,361
-yuno_fild01.gat,71,376,0	warp	warp1887	1,1,yuno_fild02.gat,69,30
-yuno_fild02.gat,69,25,0	warp	warp1888	1,1,yuno_fild01.gat,71,371
-yuno_fild02.gat,21,337,0	warp	warp1889	1,1,yuno_fild03.gat,373,327
-yuno_fild03.gat,380,331,0	warp	warp1890	1,1,yuno_fild02.gat,26,337
-yuno_fild03.gat,23,162,0	warp	warp1891	1,1,yuno_fild04.gat,369,146
-yuno_fild04.gat,374,150,0	warp	warp1892	1,1,yuno_fild03.gat,28,162
-yuno_fild03.gat,34,140,0	warp	warp1893	1,1,mag_dun01.gat,238,237
-yuno_fild03.gat,22,79,0	warp	warp1897	1,1,yuno_fild04.gat,366,80
-yuno_fild04.gat,373,83,0	warp	warp1898	1,1,yuno_fild03.gat,27,79
-yuno_fild04.gat,231,285,0	warp	warp1899	1,1,yuno.gat,158,28
+//========================================================================================
+// »» The Fusion Project ««
+// Copyright (c) 2004, Cobax Information Systems
+// http://cobax.net/
+// ---------------------------------------------------------------------------------------
+//
+// Juno Field Warps - Warp Locations
+//
+//========================================================================================
+
+yuno.gat,158,13,0			warp	junofieldwarp001	1,1,yuno_fild04.gat,231,284
+yuno_fild04.gat,231,288,0	warp	junofieldwarp002	1,1,yuno.gat,158,16
+aldebaran.gat,140,244,0		warp	junofieldwarp003	1,1,yuno_fild01.gat,209,22
+yuno_fild01.gat,209,17,0	warp	junofieldwarp004	1,1,aldebaran.gat,140,239
+yuno_fild01.gat,287,366,0	warp	junofieldwarp005	1,1,yuno_fild02.gat,291,20
+yuno_fild02.gat,288,17,0	warp	junofieldwarp006	1,1,yuno_fild01.gat,287,361
+yuno_fild01.gat,71,376,0	warp	junofieldwarp007	1,1,yuno_fild02.gat,69,30
+yuno_fild02.gat,69,25,0		warp	junofieldwarp008	1,1,yuno_fild01.gat,71,371
+yuno_fild02.gat,21,337,0	warp	junofieldwarp009	1,1,yuno_fild03.gat,373,327
+yuno_fild03.gat,380,331,0	warp	junofieldwarp010	1,1,yuno_fild02.gat,26,337
+yuno_fild03.gat,23,162,0	warp	junofieldwarp011	1,1,yuno_fild04.gat,369,146
+yuno_fild04.gat,374,150,0	warp	junofieldwarp012	1,1,yuno_fild03.gat,28,162
+yuno_fild03.gat,34,140,0	warp	junofieldwarp013	1,1,mag_dun01.gat,238,237
+yuno_fild03.gat,22,79,0		warp	junofieldwarp014	1,1,yuno_fild04.gat,366,80
+yuno_fild04.gat,373,83,0	warp	junofieldwarp015	1,1,yuno_fild03.gat,27,79
+yuno_fild04.gat,231,285,0	warp	junofieldwarp016	1,1,yuno.gat,158,28

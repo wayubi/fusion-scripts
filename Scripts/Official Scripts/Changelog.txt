@@ -1,6 +1,9 @@
 --------------------------------------------------------------------------------
  Fusion 1.213 - August 29th, 2004
 --------------------------------------------------------------------------------
+- 09-14-04: Warp/fields\yuno_fild.txt - Updated Warps. [Muad_Dib]
+- 09-14-04: Warp/other\que_god.txt - Added temp warp. [Muad_Dib]
+- 09-14-04: Warp/towns\Yuno.txt - Updated Warps. [Muad_Dib]
 - 09-13-04: Warp\other\que_god.txt - Added new warps. [Muad_Dib]
 - 09-12-04: Event\Event_Dye.txt - Fixed a menu setting. [Muad_Dib]
 - 09-12-04: Town\Town_Prontera.txt - Updated header and added new sprite for a npc. [Muad_Dib]
