@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.005
 ----------------------------------------------------------------------------------------------------
+- shop\morocc.txt - Updated Morroc Jeweler. [Muad_Dib]
 - GvG\gefg_cas0#.txt - Fixed mes error. [Muad_Dib]
 - GvG\payg_cas0#.txt - Fixed mes error. [Muad_Dib]
 - GvG\aldeg_cas0#.txt - Fixed mes error. [Muad_Dib]
