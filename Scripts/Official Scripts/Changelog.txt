@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.004
 ----------------------------------------------------------------------------------------------------
+- Mob\dungeon\tur_dun.txt - Updated, reorganised Comodo Dungeon Monster Spawns. [Muad_Dib]
 - Mob\dungeon\beach_dun.txt - Updated, reorganised Comodo Dungeon Monster Spawns. [Muad_Dib]
 - Mob\dungeon\gef_dun.txt - Updated, reorganised Geffen Tower Dungeon Monster Spawns. [Muad_Dib]
 - Town\Town_Gonryun.txt - Added 1st version of Town Gonryun untill i get a more updated translation. [Muad_Dib]
