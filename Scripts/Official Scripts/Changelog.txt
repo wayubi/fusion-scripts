@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.003
 ----------------------------------------------------------------------------------------------------
+- Job\Job_Newbie.txt - Fixed incorrect answers display. [Muad_Dib]
 - Job\Job1_Magician.txt - fixed magician quest. with a few of the fixes from FouLou [Muad_Dib]
 - Town\Town_Kafra.txt - Removed cart cart rental from the coalmine npc based on information from RagnaInfo. [Muad_Dib]
 - Town\Town_Kafra.txt - Relocated the prontera field01 npc based on information from RagnaInfo. [Muad_Dib]

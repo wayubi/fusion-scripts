@@ -1530,17 +1530,17 @@ new_zone04.gat,60,149,4	script	Helper	55,{
 		L_LOOP_2:
 			set @JOB_NUMBER += 1;
 			goto L_LOOP;
-	L_START_2:
-   		mes "[Helper]";
-		check NOV_1ST_COS == 0,-,L_SCORE_1;
-		goto L_SCORE_2;
-	L_SCORE_1:
-   		mes "1st Course : [NOV_1ST_COS] / 6 Points";
-	L_SCORE_2:
-		check @2ND_COURSE_C == 0,-,L_SCORE_3;
-		goto L_SCORE_4;
-	L_SCORE_3:
-   		mes "2nd Course : [@2ND_COURSE_C]  / 10 Points ";
+      L_START_2:
+              mes "[Helper]";
+              check NOV_1ST_COS == 0,-,L_SCORE_1;
+              goto L_SCORE_2;
+      L_SCORE_1:
+              mes "1st Course: $[NOV_1ST_COS] / 6 Points.";
+      L_SCORE_2:
+              check @2ND_COURSE_C == 0,-,L_SCORE_3;
+              goto L_SCORE_4;
+      L_SCORE_3:
+              mes "2nd Course: $[@2ND_COURSE_C] / 10 Points.
 	L_SCORE_4:
 		next;
    		mes "[Helper]";
