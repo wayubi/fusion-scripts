@@ -1,6 +1,7 @@
 --------------------------------------------------------------------------------
  Fusion 1.213 - August 29th, 2004
 -------------------------------------------------------------------------------- 
+- 10-13-04: Event\Event_Nenkaras.txt - Fixed a couple of typo's. [Muad_Dib]
 - 10-12-04: Warps\*\*.txt - Modified all used random warp uses. [Tsusai]
 - 10-10-04: Warps\dungeons\Glast Heim.txt - Fixed the random warp. [Tsusai]
 - 10-10-04: Town\Guide\xxxx_Guide.txt - Added Fixed Guides in seperate scripts. [Muad_Dib]

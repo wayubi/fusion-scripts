@@ -53,7 +53,7 @@ L_HEAL:
 	   check BaseLevel <= 75,L_HEAL_LV75,-;
 	   check BaseLevel <= 99,L_HEAL_LV100,-;
 	mes "[Sammy]";
-	mes "Unluckly there isn't a room avilible.";
+	mes "Unluckly there isn't a room available.";
 	close;
 L_HEAL_LV15:
 	next;
@@ -182,7 +182,7 @@ L_HEAL:
 	   check BaseLevel <= 75,L_HEAL_LV75,-;
 	   check BaseLevel <= 99,L_HEAL_LV100,-;
       mes "[Ahlma]";
-	mes "Unluckly there isn't a room avilible.";
+	mes "Unluckly there isn't a room available.";
 	close;
 L_HEAL_LV15:
 	next;
@@ -311,7 +311,7 @@ L_HEAL:
 	   check BaseLevel <= 75,L_HEAL_LV75,-;
 	   check BaseLevel <= 99,L_HEAL_LV100,-;
       mes "[Moira]";
-	mes "Unluckly there isn't a room avilible.";
+	mes "Unluckly there isn't a room available.";
 	close;
 L_HEAL_LV15:
 	next;
@@ -440,7 +440,7 @@ L_HEAL:
 	   check BaseLevel <= 75,L_HEAL_LV75,-;
 	   check BaseLevel <= 99,L_HEAL_LV100,-;
       mes "[Tina]";
-	mes "Unluckly there isn't a room avilible.";
+	mes "Unluckly there isn't a room available.";
 	close;
 L_HEAL_LV15:
 	next;
@@ -569,7 +569,7 @@ L_HEAL:
 	   check BaseLevel <= 75,L_HEAL_LV75,-;
 	   check BaseLevel <= 99,L_HEAL_LV100,-;
       mes "[Betty]";
-	mes "Unluckly there isn't a room avilible.";
+	mes "Unluckly there isn't a room available.";
 	close;
 L_HEAL_LV15:
 	next;
@@ -698,7 +698,7 @@ L_HEAL:
 	   check BaseLevel <= 75,L_HEAL_LV75,-;
 	   check BaseLevel <= 99,L_HEAL_LV100,-;
       mes "[Sun Hee]";
-	mes "Unluckly there isn't a room avilible.";
+	mes "Unluckly there isn't a room available.";
 	close;
 L_HEAL_LV15:
 	next;
@@ -827,7 +827,7 @@ L_HEAL:
 	   check BaseLevel <= 75,L_HEAL_LV75,-;
 	   check BaseLevel <= 99,L_HEAL_LV100,-;
       mes "[Suzie]";
-	mes "Unluckly there isn't a room avilible.";
+	mes "Unluckly there isn't a room available.";
 	close;
 L_HEAL_LV15:
 	next;
@@ -956,7 +956,7 @@ L_HEAL:
 	   check BaseLevel <= 75,L_HEAL_LV75,-;
 	   check BaseLevel <= 99,L_HEAL_LV100,-;
       mes "[Shala]";
-	mes "Unluckly there isn't a room avilible.";
+	mes "Unluckly there isn't a room available.";
 	close;
 L_HEAL_LV15:
 	next;
