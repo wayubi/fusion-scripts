@@ -29,7 +29,10 @@
 //   gefg_cas03.gat,89,159
 //   gefg_cas04.gat,24,149
 //   gefg_cas05.gat,99,200
-//  
+//   nguild_prt.gat,95,32
+//   nguild_alde.gat,34,248
+//   nguild_pay.gat,215,50
+//   nguild_gef.gat,34,140
 //
 //========================================================================================
 
@@ -551,5 +554,89 @@ KAFRA:
 FIN:
 	enablenpc "gefg_cas05","CastleCheck1",0;
 	enablenpc "gefg_cas05","CastleCheck",0;
+	return;
+}
+
+nguild_prt.gat,95,32,0	script	"CastleCheck"	111,{
+OnInit:
+	guildreg "nguild_prt";
+	set @GD = 0;
+	check guildid == 0,KAFRA,-;
+Start:
+	check @GD != 8,-,KAFRA;
+	getguardstatus @GD,@NSTATUS;
+	check @NSTATUS == 0,ADD,-;
+	callguard @GD;
+	ADD:
+		set @GD += 1;
+		goto Start;
+KAFRA:
+	check guildkafra == 0,-,FIN;
+	enablenpc "nguild_prt","Kafra Service",0;
+FIN:
+	enablenpc "nguild_prt","CastleCheck",0;
+	return;
+}
+
+nguild_alde.gat,34,248,0	script	"CastleCheck"	111,{
+OnInit:
+	guildreg "nguild_alde";
+	set @GD = 0;
+	check guildid == 0,KAFRA,-;
+Start:
+	check @GD != 8,-,KAFRA;
+	getguardstatus @GD,@NSTATUS;
+	check @NSTATUS == 0,ADD,-;
+	callguard @GD;
+	ADD:
+		set @GD += 1;
+		goto Start;
+KAFRA:
+	check guildkafra == 0,-,FIN;
+	enablenpc "nguild_aldeg","Kafra Service",0;
+FIN:
+	enablenpc "nguild_aldeg","CastleCheck",0;
+	return;
+}
+
+nguild_pay.gat,215,50,0	script	"CastleCheck"	111,{
+OnInit:
+	guildreg "nguild_pay";
+	set @GD = 0;
+	check guildid == 0,KAFRA,-;
+Start:
+	check @GD != 8,-,KAFRA;
+	getguardstatus @GD,@NSTATUS;
+	check @NSTATUS == 0,ADD,-;
+	callguard @GD;
+	ADD:
+		set @GD += 1;
+		goto Start;
+KAFRA:
+	check guildkafra == 0,-,FIN;
+	enablenpc "nguild_pay","Kafra Service",0;
+FIN:
+	enablenpc "nguild_pay","CastleCheck",0;
+	return;
+}
+
+nguild_gef.gat,34,140,0	script	"GuardianRecaller"	111,{
+OnInit:
+	guildreg "nguild_gef";
+	set @GD = 0;
+	check guildid == 0,KAFRA,-;
+Start:
+	check @GD != 8,-,KAFRA;
+	getguardstatus @GD,@NSTATUS;
+	check @NSTATUS == 0,ADD,-;
+	callguard @GD;
+	ADD:
+		set @GD += 1;
+		goto Start;
+KAFRA:
+	check guildkafra == 0,-,FIN;
+	enablenpc "nguild_gef","Kafra Service",0;
+FIN:
+	enablenpc "nguild_gef","GuardianRecaller",0;
 	return;
 }
