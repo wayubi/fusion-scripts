@@ -25,7 +25,7 @@
 //========================================================================================
 
 // By KyuubiKitsune 2-06-04 modified by icbob
-prt_castle.gat,34,103,4 script "Crusader" 752,{
+prt_castle.gat,34,103,2 script "Crusader" 752,{
 mes "[Crusader]";
 mes "Hello, may I ask that you state your purpose?";
 next;
