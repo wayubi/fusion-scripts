@@ -1,6 +1,7 @@
 --------------------------------------------------------------------------------
  Fusion 1.212 - June 30th, 2004
 --------------------------------------------------------------------------------
+- 06-28-04: Event\Event_NGuild.txt - added Novice WoE event workers (Phases 7 & 8). [Tsusai]
 - 06-28-04: Job\Job_2-1\Job2_Wizard.txt - figured out how to restart timers w/o deleting and remaking. [Tsusai]
 - 06-28-04: Job\Job_2-1\Job2_Knight.txt - figured out how to restart timers w/o deleting and remaking. [Tsusai]
 - 06-28-04: Job\Job_2-1\Job2_Knight.txt - merged some parts of the winzer test together to avoid timer problems. [Tsusai]
