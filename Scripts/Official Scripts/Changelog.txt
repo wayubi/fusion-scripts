@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.005 (Fusion 1.212)
 ----------------------------------------------------------------------------------------------------
+- 06-08-04: Warp\dungeons\Glast_Heim.txt - Fixed random warp until OnTouch is made. [Tsusai]
 - 06-08-04: Warp\dungeons\ClockTower.txt - Added jAthena version, including missing random warps. [Tsusai]
 - 06-08-04: Warp\dungeons\c_tower.txt - Moved to archive. [Tsusai]
 - 06-08-04: Warp\dungeons\alde_dun.txt - Moved to archive. [Tsusai]
