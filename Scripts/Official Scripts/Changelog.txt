@@ -1,6 +1,7 @@
 --------------------------------------------------------------------------------
  Fusion 1.212 - June 30th, 2004
 --------------------------------------------------------------------------------
+- 07-02-04: Town\Town_Juno.txt - added 2 missing npc bain and bajin.[nestor_zulueta]
 - 07-02-04: Event\Event_Dye.txt - added some variable for alchemist job quest.[nestor_zulueta]
 - 06-30-04: Town\Town_Prontera.txt - Moved a npc out of a black part. [Muad_Dib]
 - 06-30-04: Warp\towns\Amatsu.txt - Fixed a warp that got you stuck. [Muad_Dib]
