@@ -9,6 +9,9 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.005
 ----------------------------------------------------------------------------------------------------
+- Town\Town_Guide.txt - Updated Comodo Guides. [Muad_Dib]
+- Town\Town_Kafra.txt - Updated Comodo Kafra. [Muad_Dib]
+- Town\Town_Comodo.txt - Updated Town Comodo. [Muad_Dib]
 - shop\morocc.txt - Updated Morroc Jeweler. [Muad_Dib]
 - GvG\gefg_cas0#.txt - Fixed mes error. [Muad_Dib]
 - GvG\payg_cas0#.txt - Fixed mes error. [Muad_Dib]

@@ -821,13 +821,13 @@ morocc.gat,54,97,6	script	Guide	707,{
 
 //Comodo Guide Translated By SilentDragon
 
-comodo.gat,322,178,4	script	"Cocomo"	700,{
+comodo.gat,322,178,4 script "Native Cocomo" 700,{
 	mes "[Cocomo]";
 	mes "Welcome to Comodo, the gambling city.";
 	mes "I can help you to find buildings easily, feel free to ask me anytime.";
 	mes "Please choose the building you're searching:";
 	next;
-	menu "Casino",L_MENU_1,"Stage^3355FF(Bard/Dancer Job Change)^000000",L_MENU_2,"Armory",L_MENU_3,"Kit Shop",L_MENU_4,"Seashell Shop",L_MENU_5,"Kapra's Corp",L_MENU_6,"Mayor's House",L_MENU_7,"Pub",L_MENU_8,"Encampment",L_MENU_9,"Cancel",L_MENU_10;
+	menu "Casino",L_MENU_1,"Hula dancing Stage^3355FF(Dancer Job Change)^000000",L_MENU_2,"Weapon and Armor Shop",L_MENU_3,"Tool Shop",L_MENU_4,"Tourist Shop",L_MENU_5,"Kapra Corp. Western Branch",L_MENU_6,"Chief's House",L_MENU_7,"Pub",L_MENU_8,"Camp Ground",L_MENU_9,"End conversation",L_MENU_10;
 	L_MENU_1:
 		viewpoint 1,140,98,1,0xFF6633;
 		mes "^FF6633+^000000 -> Casino";
@@ -836,35 +836,35 @@ comodo.gat,322,178,4	script	"Cocomo"	700,{
 		close;
 	L_MENU_2:
 		viewpoint 1,188,168,2,0x0000FF;
-		mes "^0000FF+^000000 -> Stage";
+		mes "^0000FF+^000000 -> Hula dancing Stage";
 		mes "Check out the stage located center of town.";
-		mes "If you really enjoy the atmosphere of the stage, you should consider about becoming a bard or a dancer. ^3355FF(Bard/Dancer Job Change)^000000";
+		mes "If you really enjoy the atmosphere of the stage, you should consider about becoming a dancer. ^3355FF(Dancer Job Change)^000000";
 		close;
 	L_MENU_3:
 		viewpoint 1,266,70,3,0x00FFFF;
-		mes "^00FFFF+^000000 -> Armory";
-		mes "The Armory is located south-east edge of town.";
+		mes "^00FFFF+^000000 -> Weapon and Armor Shop";
+		mes "The Weapon and Armor Shop is located south-east edge of town.";
 		close;
 	L_MENU_4:
 		viewpoint 1,86,128,4,0x515151;
-		mes "^515151+^000000 -> Kit Shop";
+		mes "^515151+^000000 -> Tool Shop";
 		mes "The Kit shop is located south-west of town.";
 		close;
 	L_MENU_5:
 		viewpoint 1,298,124,5,0x3355FF;
-		mes "^3355FF+^000000 -> Seashell Shop";
-		mes "You should visit the seashell shop for some rare seashell found only at the shores of Comodo.";
+		mes "^3355FF+^000000 -> Tourist Shop";
+		mes "You should visit the Tourist shop for some rare seashell found only at the shores of Comodo.";
 		close;
 	L_MENU_6:
 		viewpoint 1,136,202,6,0xFF5555;
-		mes "^FF5555+^000000 -> Kapra's Corp";
+		mes "^FF5555+^000000 -> Kapra Corp. Western Branch";
 		mes "Yep, the Kapra's Corp will stay with you wherever you go, even here in Comodo!";
 		mes "You could find the Kapras near the center of town.";
 		close;
 	L_MENU_7:
 		viewpoint 1,114,294,7,0xFF5555;
-		mes "^FF5555+^000000 -> Mayor's House";
-		mes "Well, that's obviously where the mayor resides.";
+		mes "^FF5555+^000000 -> Chief's House";
+		mes "Well, that's obviously where the chief resides.";
 		mes "You should pay a visit to him once in a while, he's a great man when you get to know him.";
 		close;
 	L_MENU_8:
@@ -875,8 +875,8 @@ comodo.gat,322,178,4	script	"Cocomo"	700,{
 		close;
 	L_MENU_9:
 		viewpoint 1,210,308,9,0xFF5555;
-		mes "^FF5555+^000000 -> Encampment";
-		mes "The camping ground is simply a great place to hang out with your familty or companions.";
+		mes "^FF5555+^000000 -> Camp Ground";
+		mes "The Camp Ground is simply a great place to hang out with your familty or companions.";
 		mes "Sit around the camp fire and enjoy the wonderful tropical weather and surroundings of Comodo!";
 		close;
 	L_MENU_10:
@@ -886,13 +886,13 @@ comodo.gat,322,178,4	script	"Cocomo"	700,{
 		close;
 }
 
-comodo.gat,176,350,4	script	"Nutcoco"	700,{
+comodo.gat,176,350,4 script "Native Nutcoco" 700,{
 	mes "[Nutcoco]";
 	mes "Welcome to Comodo, the gambling city.";
 	mes "I can help you to find buildings easily, feel free to ask me anytime.";
 	mes "Please choose the building you're searching:";
 	next;
-	menu "Casino",L_MENU_1,"Stage^3355FF(Bard/Dancer Job Change)^000000",L_MENU_2,"Armory",L_MENU_3,"Kit Shop",L_MENU_4,"Seashell Shop",L_MENU_5,"Kapra's Corp",L_MENU_6,"Mayor's House",L_MENU_7,"Pub",L_MENU_8,"Encampment",L_MENU_9,"Cancel",L_MENU_10;
+	menu "Casino",L_MENU_1,"Hula dancing Stage^3355FF(Dancer Job Change)^000000",L_MENU_2,"Weapon and Armor Shop",L_MENU_3,"Tool Shop",L_MENU_4,"Tourist Shop",L_MENU_5,"Kapra Corp. Western Branch",L_MENU_6,"Chief's House",L_MENU_7,"Pub",L_MENU_8,"Camp Ground",L_MENU_9,"End conversation",L_MENU_10;
 	L_MENU_1:
 		viewpoint 1,140,98,1,0xFF6633;
 		mes "^FF6633+^000000 -> Casino";
@@ -901,35 +901,35 @@ comodo.gat,176,350,4	script	"Nutcoco"	700,{
 		close;
 	L_MENU_2:
 		viewpoint 1,188,168,2,0x0000FF;
-		mes "^0000FF+^000000 -> Stage";
+		mes "^0000FF+^000000 -> Hula dancing Stage";
 		mes "Check out the stage located center of town.";
-		mes "If you really enjoy the atmosphere of the stage, you should consider about becoming a bard or a dancer. ^3355FF(Bard/Dancer Job Change)^000000";
+		mes "If you really enjoy the atmosphere of the stage, you should consider about becoming a dancer. ^3355FF(Dancer Job Change)^000000";
 		close;
 	L_MENU_3:
 		viewpoint 1,266,70,3,0x00FFFF;
-		mes "^00FFFF+^000000 -> Armory";
-		mes "The Armory is located south-east edge of town.";
+		mes "^00FFFF+^000000 -> Weapon and Armor Shop";
+		mes "The Weapon and Armor Shop is located south-east edge of town.";
 		close;
 	L_MENU_4:
 		viewpoint 1,86,128,4,0x515151;
-		mes "^515151+^000000 -> Kit Shop";
+		mes "^515151+^000000 -> Tool Shop";
 		mes "The Kit shop is located south-west of town.";
 		close;
 	L_MENU_5:
 		viewpoint 1,298,124,5,0x3355FF;
-		mes "^3355FF+^000000 -> Seashell Shop";
-		mes "You should visit the seashell shop for some rare seashell found only at the shores of Comodo.";
+		mes "^3355FF+^000000 -> Tourist Shop";
+		mes "You should visit the Tourist shop for some rare seashell found only at the shores of Comodo.";
 		close;
 	L_MENU_6:
 		viewpoint 1,136,202,6,0xFF5555;
-		mes "^FF5555+^000000 -> Kapra's Corp";
+		mes "^FF5555+^000000 -> Kapra Corp. Western Branch";
 		mes "Yep, the Kapra's Corp will stay with you wherever you go, even here in Comodo!";
 		mes "You could find the Kapras near the center of town.";
 		close;
 	L_MENU_7:
 		viewpoint 1,114,294,7,0xFF5555;
-		mes "^FF5555+^000000 -> Mayor's House";
-		mes "Well, that's obviously where the mayor resides.";
+		mes "^FF5555+^000000 -> Chief's House";
+		mes "Well, that's obviously where the chief resides.";
 		mes "You should pay a visit to him once in a while, he's a great man when you get to know him.";
 		close;
 	L_MENU_8:
@@ -940,8 +940,8 @@ comodo.gat,176,350,4	script	"Nutcoco"	700,{
 		close;
 	L_MENU_9:
 		viewpoint 1,210,308,9,0xFF5555;
-		mes "^FF5555+^000000 -> Encampment";
-		mes "The camping ground is simply a great place to hang out with your familty or companions.";
+		mes "^FF5555+^000000 -> Camp Ground";
+		mes "The Camp Ground is simply a great place to hang out with your familty or companions.";
 		mes "Sit around the camp fire and enjoy the wonderful tropical weather and surroundings of Comodo!";
 		close;
 	L_MENU_10:
@@ -951,15 +951,14 @@ comodo.gat,176,350,4	script	"Nutcoco"	700,{
 		close;
 }
 
-
-comodo.gat,37,219,4	script	"Papaya"	700,{
+comodo.gat,37,219,4 script "Native Papaya" 700,{
 	mes "[Papaya]";
  	mes "The night of pleasure continues for 24 hours";
 	mes "Welcome to Comodo, the gambling city.";
 	mes "I can help you to find buildings easily, feel free to ask me anytime.";
 	mes "Please choose the building you're searching:";
 	next;
-	menu "Casino",L_MENU_1,"Stage^3355FF(Bard/Dancer Job Change)^000000",L_MENU_2,"Armory",L_MENU_3,"Kit Shop",L_MENU_4,"Seashell Shop",L_MENU_5,"Kapra's Corp",L_MENU_6,"Mayor's House",L_MENU_7,"Pub",L_MENU_8,"Encampment",L_MENU_9,"Cancel",L_MENU_10;
+	menu "Casino",L_MENU_1,"Hula dancing Stage^3355FF(Dancer Job Change)^000000",L_MENU_2,"Weapon and Armor Shop",L_MENU_3,"Tool Shop",L_MENU_4,"Tourist Shop",L_MENU_5,"Kapra Corp. Western Branch",L_MENU_6,"Chief's House",L_MENU_7,"Pub",L_MENU_8,"Camp Ground",L_MENU_9,"End conversation",L_MENU_10;
 	L_MENU_1:
 		viewpoint 1,140,98,1,0xFF6633;
 		mes "^FF6633+^000000 -> Casino";
@@ -968,35 +967,35 @@ comodo.gat,37,219,4	script	"Papaya"	700,{
 		close;
 	L_MENU_2:
 		viewpoint 1,188,168,2,0x0000FF;
-		mes "^0000FF+^000000 -> Stage";
+		mes "^0000FF+^000000 -> Hula dancing Stage";
 		mes "Check out the stage located center of town.";
-		mes "If you really enjoy the atmosphere of the stage, you should consider about becoming a bard or a dancer. ^3355FF(Bard/Dancer Job Change)^000000";
+		mes "If you really enjoy the atmosphere of the stage, you should consider about becoming a dancer. ^3355FF(Dancer Job Change)^000000";
 		close;
 	L_MENU_3:
 		viewpoint 1,266,70,3,0x00FFFF;
-		mes "^00FFFF+^000000 -> Armory";
-		mes "The Armory is located south-east edge of town.";
+		mes "^00FFFF+^000000 -> Weapon and Armor Shop";
+		mes "The Weapon and Armor Shop is located south-east edge of town.";
 		close;
 	L_MENU_4:
 		viewpoint 1,86,128,4,0x515151;
-		mes "^515151+^000000 -> Kit Shop";
+		mes "^515151+^000000 -> Tool Shop";
 		mes "The Kit shop is located south-west of town.";
 		close;
 	L_MENU_5:
 		viewpoint 1,298,124,5,0x3355FF;
-		mes "^3355FF+^000000 -> Seashell Shop";
-		mes "You should visit the seashell shop for some rare seashell found only at the shores of Comodo.";
+		mes "^3355FF+^000000 -> Tourist Shop";
+		mes "You should visit the Tourist shop for some rare seashell found only at the shores of Comodo.";
 		close;
 	L_MENU_6:
 		viewpoint 1,136,202,6,0xFF5555;
-		mes "^FF5555+^000000 -> Kapra's Corp";
+		mes "^FF5555+^000000 -> Kapra Corp. Western Branch";
 		mes "Yep, the Kapra's Corp will stay with you wherever you go, even here in Comodo!";
 		mes "You could find the Kapras near the center of town.";
 		close;
 	L_MENU_7:
 		viewpoint 1,114,294,7,0xFF5555;
-		mes "^FF5555+^000000 -> Mayor's House";
-		mes "Well, that's obviously where the mayor resides.";
+		mes "^FF5555+^000000 -> Chief's House";
+		mes "Well, that's obviously where the chief resides.";
 		mes "You should pay a visit to him once in a while, he's a great man when you get to know him.";
 		close;
 	L_MENU_8:
@@ -1007,8 +1006,8 @@ comodo.gat,37,219,4	script	"Papaya"	700,{
 		close;
 	L_MENU_9:
 		viewpoint 1,210,308,9,0xFF5555;
-		mes "^FF5555+^000000 -> Encampment";
-		mes "The camping ground is simply a great place to hang out with your familty or companions.";
+		mes "^FF5555+^000000 -> Camp Ground";
+		mes "The Camp Ground is simply a great place to hang out with your familty or companions.";
 		mes "Sit around the camp fire and enjoy the wonderful tropical weather and surroundings of Comodo!";
 		close;
 	L_MENU_10:

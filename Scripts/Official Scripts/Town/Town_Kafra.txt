@@ -5027,7 +5027,7 @@ comodo.gat,195,150,4	script	"Kafra Personnel"	721,{
 		mes "[Kafra Personnel]";
 		mes "Please pick your destination.";
 		next;
-		menu "Paro's Light -> 800 z",L_MENU_3_1,"Morroc -> 1500 z",L_MENU_3_2,"Cancel",L_MENU_3_3;
+		menu "Comodo's Paros Lighthouse -> 800 z",L_MENU_3_1,"Morroc -> 1500 z",L_MENU_3_2,"Cancel",L_MENU_3_3;
 		L_MENU_3_1:
 			check @Kafra_COUPON = 0,-,L_SUB_3_1;
 				check Zeny < 800,-,L_ROOT_3_1;
