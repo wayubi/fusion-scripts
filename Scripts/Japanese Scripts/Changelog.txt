@@ -1,6 +1,8 @@
 --------------------------------------------------------------------------------
  Fusion 1.212 - June 30th, 2004
 --------------------------------------------------------------------------------
+- 06-11-04: added untranslated npc_job_supernovice [Tsusai]
+- 06-11-04: added untranslated readme [Tsusai]
 - 06-10-04: added untranslated town_gonryun [Muad_Dib]
 - 06-10-04: added untranslated town_umbala [Muad_Dib]
 - 06-05-04: npc_event_yuno translated [RPG Advocate]
