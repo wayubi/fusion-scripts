@@ -278,6 +278,7 @@ EndJobMerQE9:
 JobMerQua:
 	mes "Ok, Press Next Button!";
 	next;
+	check SkillPoint = 0,-,moresk;
 	mes "[Chief Mahnsoo]";
 	mes "Congratulations!";
 	JobChange 5;
@@ -288,6 +289,11 @@ JobMerQua:
 	mes "[Chief Mahnsoo]";
 	mes "(The Message you delivered by my personal request....errr.....You've forgotten...???...Never Mind...Well done.)";
 	goto JobMerQua1;
+moresk:
+	mes "[Chief Mahnsoo]";
+	mes "Please use all your remaining skills";
+	mes "Then talk to me again.";
+	close;
 JobMerQ2E7o8:
 	mes "[Chief Mahnsoo]";
 	mes "(Aaand....I will give you some reward money for Delivering the Message. I hope you will help me next time~)";
