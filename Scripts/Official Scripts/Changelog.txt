@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.003
 ----------------------------------------------------------------------------------------------------
+- GvG\gefg_cas0#.txt - Added Geffen Emblem Flag Support. [icbob]
 - GvG\aldeg_cas0#.txt - Added Aldebaran Emblem Flag Support. [icbob]
 - Warp\other\valkyrie.txt - Created txt of warps. [Tsusai]
 - Warp\other\force_map.txt - Updated mapname of moved warp. [Tsusai]

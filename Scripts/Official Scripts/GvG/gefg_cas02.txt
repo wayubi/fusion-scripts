@@ -24,15 +24,14 @@
 //========================================================================================
 
 gef_fild13.gat,303,243,4	script	"Eeyorbriggar"	722,{
-	scriptlabel gef_fild13F02;
 	guildreg "gefg_cas02";
 	check guildid == 0,-,L_START_1;
-	mes "       [ Kingdom of Prontera ]";
-	mes "1. As Law of Prontera";
+	mes "       [ Kingdom of Payon ]";
+	mes "1. As Law of Payon";
 	mes "    this guild base isn't taken by";
 	mes "    any guild yet.";
 	next;
-	mes "       [ Kingdom of Prontera ]";
+	mes "       [ Kingdom of Payon ]";
 	mes "2. In order to take this guild base,";
 	mes "    you must defeat all the guardians";
 	mes "    that protect the guild base and";
@@ -40,38 +39,124 @@ gef_fild13.gat,303,243,4	script	"Eeyorbriggar"	722,{
 	mes "    take over the guild base.";
 	close;
 L_START_1:
-	mes "       [ Kingdom of Prontera ]";
-	mes "1. As law of Prontera this base is now";
+	mes "       [ Kingdom of Payon ]";
+	mes "1. As law of Payon this base is now";
 	mes "    $guildname guild's guild";
 	mes "    base.";
 	next;
-	mes "       [ Kingdom of Prontera ]";
+	mes "       [ Kingdom of Payon ]";
 	mes "2.  $guildname Guild master is";
 	mes "    $guildmaster, and any of you";
 	mes "    have a beef, raise your sword to ";
 	mes "    honor yourself.";
 	close;
+OnInit:
+	guildreg "gefg_cas02";
+	return;
 }
 gef_fild13.gat,312,243,4	script	"Eeyorbriggar"	722,{
-	script gef_fild13F02;
+	guildreg "gefg_cas02";
+	check guildid == 0,-,L_START_1;
+	mes "       [ Kingdom of Payon ]";
+	mes "1. As Law of Payon";
+	mes "    this guild base isn't taken by";
+	mes "    any guild yet.";
+	next;
+	mes "       [ Kingdom of Payon ]";
+	mes "2. In order to take this guild base,";
+	mes "    you must defeat all the guardians";
+	mes "    that protect the guild base and";
+	mes "    eliminate the EMPERIUM to";
+	mes "    take over the guild base.";
+	close;
+L_START_1:
+	mes "       [ Kingdom of Payon ]";
+	mes "1. As law of Payon this base is now";
+	mes "    $guildname guild's guild";
+	mes "    base.";
+	next;
+	mes "       [ Kingdom of Payon ]";
+	mes "2.  $guildname Guild master is";
+	mes "    $guildmaster, and any of you";
+	mes "    have a beef, raise your sword to ";
+	mes "    honor yourself.";
+	close;
+OnInit:
+	guildreg "gefg_cas02";
+	return;
 }
 gef_fild13.gat,290,243,4	script	"Eeyorbriggar"	722,{
-	script gef_fild13F02;
+	guildreg "gefg_cas02";
+	check guildid == 0,-,L_START_1;
+	mes "       [ Kingdom of Payon ]";
+	mes "1. As Law of Payon";
+	mes "    this guild base isn't taken by";
+	mes "    any guild yet.";
+	next;
+	mes "       [ Kingdom of Payon ]";
+	mes "2. In order to take this guild base,";
+	mes "    you must defeat all the guardians";
+	mes "    that protect the guild base and";
+	mes "    eliminate the EMPERIUM to";
+	mes "    take over the guild base.";
+	close;
+L_START_1:
+	mes "       [ Kingdom of Payon ]";
+	mes "1. As law of Payon this base is now";
+	mes "    $guildname guild's guild";
+	mes "    base.";
+	next;
+	mes "       [ Kingdom of Payon ]";
+	mes "2.  $guildname Guild master is";
+	mes "    $guildmaster, and any of you";
+	mes "    have a beef, raise your sword to ";
+	mes "    honor yourself.";
+	close;
+OnInit:
+	guildreg "gefg_cas02";
+	return;
 }
 gef_fild13.gat,324,243,4	script	"Eeyorbriggar"	722,{
-	script gef_fild13F02;
+	guildreg "gefg_cas02";
+	check guildid == 0,-,L_START_1;
+	mes "       [ Kingdom of Payon ]";
+	mes "1. As Law of Payon";
+	mes "    this guild base isn't taken by";
+	mes "    any guild yet.";
+	next;
+	mes "       [ Kingdom of Payon ]";
+	mes "2. In order to take this guild base,";
+	mes "    you must defeat all the guardians";
+	mes "    that protect the guild base and";
+	mes "    eliminate the EMPERIUM to";
+	mes "    take over the guild base.";
+	close;
+L_START_1:
+	mes "       [ Kingdom of Payon ]";
+	mes "1. As law of Payon this base is now";
+	mes "    $guildname guild's guild";
+	mes "    base.";
+	next;
+	mes "       [ Kingdom of Payon ]";
+	mes "2.  $guildname Guild master is";
+	mes "    $guildmaster, and any of you";
+	mes "    have a beef, raise your sword to ";
+	mes "    honor yourself.";
+	close;
+OnInit:
+	guildreg "gefg_cas02";
+	return;
 }
 
 gefg_cas02.gat,65,130,5	script	"Eeyorbriggar"	722,{
-	scriptlabel gefg_casF02;
 	guildreg "gefg_cas02";
 	check guildid == 0,-,L_START_1;
-	mes "       [ Kingdom of Prontera ]";
-	mes "1. As Law of Prontera";
+	mes "       [ Kingdom of Payon ]";
+	mes "1. As Law of Payon";
 	mes "    this guild base isn't taken by";
 	mes "    any guild yet.";
 	next;
-	mes "       [ Kingdom of Prontera ]";
+	mes "       [ Kingdom of Payon ]";
 	mes "2. In order to take this guild base,";
 	mes "    you must defeat all the guardians";
 	mes "    that protect the guild base and";
@@ -79,35 +164,206 @@ gefg_cas02.gat,65,130,5	script	"Eeyorbriggar"	722,{
 	mes "    take over the guild base.";
 	close;
 L_START_1:
-	mes "       [ Kingdom of Prontera ]";
-	mes "1. As law of Prontera this base is now";
+	mes "       [ Kingdom of Payon ]";
+	mes "1. As law of Payon this base is now";
 	mes "    $guildname guild's guild";
 	mes "    base.";
 	next;
-	mes "       [ Kingdom of Prontera ]";
+	mes "       [ Kingdom of Payon ]";
 	mes "2.  $guildname Guild master is";
 	mes "    $guildmaster, and any of you";
 	mes "    have a beef, raise your sword to ";
 	mes "    honor yourself.";
 	close;
+OnInit:
+	guildreg "gefg_cas02";
+	return;
 }
 gefg_cas02.gat,30,123,5	script	"Eeyorbriggar"	722,{
-	script gefg_casF02;
+	guildreg "gefg_cas02";
+	check guildid == 0,-,L_START_1;
+	mes "       [ Kingdom of Payon ]";
+	mes "1. As Law of Payon";
+	mes "    this guild base isn't taken by";
+	mes "    any guild yet.";
+	next;
+	mes "       [ Kingdom of Payon ]";
+	mes "2. In order to take this guild base,";
+	mes "    you must defeat all the guardians";
+	mes "    that protect the guild base and";
+	mes "    eliminate the EMPERIUM to";
+	mes "    take over the guild base.";
+	close;
+L_START_1:
+	mes "       [ Kingdom of Payon ]";
+	mes "1. As law of Payon this base is now";
+	mes "    $guildname guild's guild";
+	mes "    base.";
+	next;
+	mes "       [ Kingdom of Payon ]";
+	mes "2.  $guildname Guild master is";
+	mes "    $guildmaster, and any of you";
+	mes "    have a beef, raise your sword to ";
+	mes "    honor yourself.";
+	close;
+OnInit:
+	guildreg "gefg_cas02";
+	return;
 }
 gefg_cas02.gat,65,139,6	script	"Eeyorbriggar"	722,{
-	script gefg_casF02;
+	guildreg "gefg_cas02";
+	check guildid == 0,-,L_START_1;
+	mes "       [ Kingdom of Payon ]";
+	mes "1. As Law of Payon";
+	mes "    this guild base isn't taken by";
+	mes "    any guild yet.";
+	next;
+	mes "       [ Kingdom of Payon ]";
+	mes "2. In order to take this guild base,";
+	mes "    you must defeat all the guardians";
+	mes "    that protect the guild base and";
+	mes "    eliminate the EMPERIUM to";
+	mes "    take over the guild base.";
+	close;
+L_START_1:
+	mes "       [ Kingdom of Payon ]";
+	mes "1. As law of Payon this base is now";
+	mes "    $guildname guild's guild";
+	mes "    base.";
+	next;
+	mes "       [ Kingdom of Payon ]";
+	mes "2.  $guildname Guild master is";
+	mes "    $guildmaster, and any of you";
+	mes "    have a beef, raise your sword to ";
+	mes "    honor yourself.";
+	close;
+OnInit:
+	guildreg "gefg_cas02";
+	return;
 }
 gefg_cas02.gat,37,177,6	script	"Eeyorbriggar"	722,{
-	script gefg_casF02;
+	guildreg "gefg_cas02";
+	check guildid == 0,-,L_START_1;
+	mes "       [ Kingdom of Payon ]";
+	mes "1. As Law of Payon";
+	mes "    this guild base isn't taken by";
+	mes "    any guild yet.";
+	next;
+	mes "       [ Kingdom of Payon ]";
+	mes "2. In order to take this guild base,";
+	mes "    you must defeat all the guardians";
+	mes "    that protect the guild base and";
+	mes "    eliminate the EMPERIUM to";
+	mes "    take over the guild base.";
+	close;
+L_START_1:
+	mes "       [ Kingdom of Payon ]";
+	mes "1. As law of Payon this base is now";
+	mes "    $guildname guild's guild";
+	mes "    base.";
+	next;
+	mes "       [ Kingdom of Payon ]";
+	mes "2.  $guildname Guild master is";
+	mes "    $guildmaster, and any of you";
+	mes "    have a beef, raise your sword to ";
+	mes "    honor yourself.";
+	close;
+OnInit:
+	guildreg "gefg_cas02";
+	return;
 }
 gefg_cas02.gat,37,168,6	script	"Eeyorbriggar"	722,{
-	script gefg_casF02;
+	guildreg "gefg_cas02";
+	check guildid == 0,-,L_START_1;
+	mes "       [ Kingdom of Payon ]";
+	mes "1. As Law of Payon";
+	mes "    this guild base isn't taken by";
+	mes "    any guild yet.";
+	next;
+	mes "       [ Kingdom of Payon ]";
+	mes "2. In order to take this guild base,";
+	mes "    you must defeat all the guardians";
+	mes "    that protect the guild base and";
+	mes "    eliminate the EMPERIUM to";
+	mes "    take over the guild base.";
+	close;
+L_START_1:
+	mes "       [ Kingdom of Payon ]";
+	mes "1. As law of Payon this base is now";
+	mes "    $guildname guild's guild";
+	mes "    base.";
+	next;
+	mes "       [ Kingdom of Payon ]";
+	mes "2.  $guildname Guild master is";
+	mes "    $guildmaster, and any of you";
+	mes "    have a beef, raise your sword to ";
+	mes "    honor yourself.";
+	close;
+OnInit:
+	guildreg "gefg_cas02";
+	return;
 }
 gefg_cas02.gat,68,47,2	script	"Eeyorbriggar"	722,{
-	script gefg_casF02;
+	guildreg "gefg_cas02";
+	check guildid == 0,-,L_START_1;
+	mes "       [ Kingdom of Payon ]";
+	mes "1. As Law of Payon";
+	mes "    this guild base isn't taken by";
+	mes "    any guild yet.";
+	next;
+	mes "       [ Kingdom of Payon ]";
+	mes "2. In order to take this guild base,";
+	mes "    you must defeat all the guardians";
+	mes "    that protect the guild base and";
+	mes "    eliminate the EMPERIUM to";
+	mes "    take over the guild base.";
+	close;
+L_START_1:
+	mes "       [ Kingdom of Payon ]";
+	mes "1. As law of Payon this base is now";
+	mes "    $guildname guild's guild";
+	mes "    base.";
+	next;
+	mes "       [ Kingdom of Payon ]";
+	mes "2.  $guildname Guild master is";
+	mes "    $guildmaster, and any of you";
+	mes "    have a beef, raise your sword to ";
+	mes "    honor yourself.";
+	close;
+OnInit:
+	guildreg "gefg_cas02";
+	return;
 }
 gefg_cas02.gat,68,36,2	script	"Eeyorbriggar"	722,{
-	script gefg_casF02;
+	guildreg "gefg_cas02";
+	check guildid == 0,-,L_START_1;
+	mes "       [ Kingdom of Payon ]";
+	mes "1. As Law of Payon";
+	mes "    this guild base isn't taken by";
+	mes "    any guild yet.";
+	next;
+	mes "       [ Kingdom of Payon ]";
+	mes "2. In order to take this guild base,";
+	mes "    you must defeat all the guardians";
+	mes "    that protect the guild base and";
+	mes "    eliminate the EMPERIUM to";
+	mes "    take over the guild base.";
+	close;
+L_START_1:
+	mes "       [ Kingdom of Payon ]";
+	mes "1. As law of Payon this base is now";
+	mes "    $guildname guild's guild";
+	mes "    base.";
+	next;
+	mes "       [ Kingdom of Payon ]";
+	mes "2.  $guildname Guild master is";
+	mes "    $guildmaster, and any of you";
+	mes "    have a beef, raise your sword to ";
+	mes "    honor yourself.";
+	close;
+OnInit:
+	guildreg "gefg_cas02";
+	return;
 }
 
 gefg_cas02.gat,23,66,3	script	"Kafra Service"	117,{
