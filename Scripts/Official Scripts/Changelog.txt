@@ -9,6 +9,9 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.005
 ----------------------------------------------------------------------------------------------------
+- shop\payon.txt - Updated Payon shops. [Muad_Dib]
+- shop\geffen.txt - Updated Geffen shops. [Muad_Dib]
+- shop\yuno.txt - Updated Yuno shops. [Muad_Dib]
 - Town\Town_Juno.txt - Updated Town Juno. [Tezuka]
 - Changelog.txt - fixed the \ in the web addresses to / [Tsusai]
 - Town\Town_Kafra.txt - Updated Comodo kafra prices.=. [Muad_Dib]
