@@ -4,13 +4,215 @@
 
 // ŠX
 
-prontera.gat,54,240,6	script	Man	97,{
-	mes "[Man]";
-	mes "The Bug form of creamy, ^000077Fabre^000000 will first change to ^000077Pupa^000000, then turn into ^000077Creamy^000000";
-	mes "One day, I was on my way to Geffen, I actually saw it change, it really sickens me.";
+prontera.gat,54,240,6	script	"Tono"	97,{
+	mes "[Tono]";
+	mes "Did you know? The larva of Creamy is Fabre.";
+	mes "The pupa stage of Fabre is simply called Pupa. "
+	mes "As you can imagine, there is another monster metamorphic out in the desert.";
 	next;
-	mes "[Man]";
-	mes "But everyone here seems to be killing them without thinking what will happen when it extincts...";
+	mes "[Tono]";
+	mes "That's it! It is Peco Peco.";
+	mes "The infant of Peco Peco is called Picky.";
+	mes "Unlike colorful Peco Peco, Picky is very cute, isn't it?"
+	close;
+}
+
+prontera.gat,160,133,2	script	"YuPi"	102,{
+	mes "[YuPi]";
+	mes "Among monsters of the same form, there are some more ferocious than others.";
+	mes "If you ever even touch them by mistakes, you'd better prepare yourself for what you've done.";
+	next;
+	mes "[YuPi]";
+	mes "You can tell differences them by their body color.";
+	mes "The more aggressive characteristic monster is, the dangerous color it has.";
+	close;
+}
+
+prontera.gat,149,202,2	script	"YuNa"	700,{
+	mes "[YuNa]";
+	mes "Odin is the god we serve. Odin is the god of wisdom and war.";
+	mes "He decisively abandon his one eye in order to acquire wisdom. The statue in the middle of the water fountain over there is sculptured after the god himself.";
+	next;
+	mes "[YuNa]";
+	mes "But it is really sorrowful and such a shame because, I don't know who the sculptor was, he did it all wrong.";
+	mes "The statue is just totally different from Odin we all know..."; 
+	mes "He insisted that it was his artistic view or something...."; 
+	next;
+	mes "[Yuna]";
+	mes "Look~ He doesn't have a broad brimmed hat. Not only that he's not even riding Sleipnir. This is just totally unacceptable~!";
+	close;
+}
+
+prt_in.gat,180,20,2	script	"Bartender"	61,{
+	mes "[Bartender]";
+	mes "Phew~ more and more people are crawling in these days.";
+	mes "I am getting tired and tired everyday, though business has never been better...";
+	mes "To tell the truth, it's getting hard to get ingredients. ";
+	next;
+	mes "[Bartender]";
+	mes "As you probably know, wandering out of towns, there are so much more monsters recently. I dare to step outside of this town, budy. ";
+	mes "Think about it. How can I possibly make my Ultra Nice Special Super menus with just regular stuff? ";
+	next;
+	mes "[Bartender]";
+	mes "I don't use just any ingredients on the market. I use those directly from Super heavy level hunters I personally hired. ";
+	mes "Extreme FRESH, if I might add. ";
+	mes "But it's getting very hard to get enough of what I need even from them. ";
+	next;
+	mes "[Bartender]";
+	mes "If things don't change... my special menu 'Sour Crunches' and 'Tasty Yum-Yum ' will disappear from people's memory, sob..sob..";
+	next;
+	menu "''Sour Crunches'?",SC,"'Tasty Yum-Yum '?",TYY,"Who care.",WC;
+	SC:
+		mes "[Bartender]";
+		mes "Special Ant is the essential ingredient for it. It can be found in this Ant Hell on the way to the desert city Morroc. ";
+		mes "Well...the problem is that the number of ants grows unimaginably and they also get very brutal. Most of hunters don't even think about going near there.";
+		next;
+		mes "[Bartender]";
+		mes "I can see soon-to-be-finished fate of my pub... Phew~~ ";
+		next;
+	TYY:
+		mes "[Bartender]";
+		mes "it is a very tasty dish prepared with Grasshoppers that can be caught around the area passed the forest to the west. THE BEST dish we have! ";
+		mes "Those grasshoppers became very brutal and, moreover, the enormous number of bees appeared out of nowhere. It's almost impossible to get it. ";
+		next;
+		mes "[Bartender]";
+		mes " I can see soon-to-be-finished fate of my pub... Phew~~ ";
+		next;
+	WC:
+		mes "[Bartender]";
+		mes "Anyways, be careful and take care of yourself~.";
+		close;
+}
+
+prt_in.gat,173,24,2	script	"Shevild"	85,{
+	mes "[Shevild]";
+	mes "Hey~Hey~ Come on over and have a drink, man. I'll tell you exciting stories. ";
+	mes "Do not judge me from how I look. I've been everywhere you can imagine around Prontera. ";
+	mes "I've been to places packed with monsters, but they also have the greatest view. ";
+	next;
+	menu "Where can I find those places?",WHERE,"Never mind",CANCEL1;
+	WHERE:
+		mes "[Shevild]";
+		mes "In spite of how I may look, I'm a all around-player~~!!! ";
+		mes "When people go on hunting, I carry weapons and stuff.. or I deliver this and that...";
+		mes "Well.. Some people say 'isn't that a job for an errand boy?' ";
+		next;
+		mes "[Shevild]";
+		mes "but personally I am very proud of myself and what I'm doing. You should know how harsh the world can be to you, right?";
+		mes "But for me, nothing stands on my way to accomplish my job~Ahem! ";
+		next;
+		mes "[Shevild]";
+		mes "Anyways, thanks to my career, I've been able to visit so many interesting places where nobody has ever visited before....";
+		mes "Oh~ that's the true charm of my job..."; 
+		mes "Hm...Now...that mysterious dungeon and the dangerous forest come to my mind. ";
+		next;
+		menu "The mysterious Dungeon?",DUNGEON,"The dangerous forest?",FOREST,"End conversation",CANCEL2;
+		DUNGEON:
+			mes "[Shevild]";
+			mes "Hm.. yeah..yeah..a while ago I followed the hunters to the very mysterious dungeon to the north of Prontera. ";
+			next;
+			mes "[Shevild]";
+			mes "The rumor says monsters are very tough there, but you could get as valuable goods as the high risk.";
+			mes "So I followed highly professional hunters there. But as soon as we stepped into the dungeon, the maze is confusing as hell...";
+			next;
+			mes "[Shevild]";
+			mes "No matter which direction you moved forward, it seemed like you were ending up at the same position where you started. ";
+			mes "So we just came back out with empty-handed. I really want to challenge the dungeon again sometime. ";
+			next;
+			menu "How can I get there?",DIRECTIONS_D,"End conversation ",CANCEL3;
+			DIRECTIONS_D:
+				mes "[Shevild]";
+				mes "Huh? What?! Haven't you even wandered around just outside of Prontera yet, man? ";
+				mes "Alriht, alright. I'll tell you. If you go north from the castle of Prontera, the dungeon is at the edge of the north-west side of the forest. ";
+				close;
+			CANCEL3:
+				mes "[Shevild]";
+				mes "Okay.. Always watch out while you're traveling out there~ pal!";
+				close;
+		FOREST:
+			mes "[Shevild]";
+	  		mes "There is a splendid ruin to the north-east of Prontera. I went there a while ago to deliver something to the priest there.";
+	  		mes "Before the ruin, there located a forest full of monkeys and raccoons. ";
+	  		next;
+	  		mes "[Shevild]";
+	  		mes "You have to be very cautious. As soon as you drop something on the ground, a monkey jumps out of nowhere and snatches it. ";
+	  		next;
+			menu "How can I get there?",DIRECTIONS_F,"End conversation ",CANCEL4;
+			DIRECTIONS_F:
+				mes "[Shevild]";
+				mes "The direction might sound a little confusing, but it really isn't, actually. Go out to the north and keep going to the east. Then you will find it. ";
+				mes "If you want to go there, you'd better watch out for grasses attacking you ferociously. ";
+				close;
+			CANCEL4:
+				mes "[Shevild]";
+				mes " Okay.. Always watch out when you're traveling out there, pal~";
+ 				close;
+		CANCEL2:
+			mes "[Shevild]";
+			mes " Okay.. Always watch out when you're traveling out there, pal~";
+			close;
+	CANCEL1:
+		mes "[Shevild]";
+		mes "Sure...if you wanna hear more, come back here anytime. No problem~~";
+		close;
+}
+
+prt_in.gat,177,20,2	script	"TenSue"	97,{
+	random @RAND,3;
+	check @RAND == 0,Topic1,-;
+	check @RAND == 1,Topic2,-;
+	check @RAND == 2,Topic3,Topic3;
+	Topic1:
+		mes "[TenSue]";
+		mes "What? You are sick and tired of killing monsters on fields and dungeons?";
+		mes "Hahaha, it seems like you are very confident in your training. If you think so... ";
+		mes "why don't you visit Izlude, the satellite of Prontera. ";
+		next;
+		mes "[TenSue]";
+		mes "Cool Event Corp. or something has opened up the arenas called Time Limit Fight and Battle Ordeal, ";
+		mes "filling young people's thirst for more excitement...";
+		mes "Well.. Of course you will have to pay a little.";
+		next;
+		mes "[TenSue]";
+		mes "Are you gonna give it a shot?";
+		close;
+	Topic2:
+		mes "[TenSue]";
+		mes "One time I walked all the way to a place called 'Aldebaran'. It was very dangerous trip with all those monsters...";
+		mes "Some of monsters just keep following and attacking me although I did nothing to harm them. That made the trip even more dangerous...";
+		next;
+		mes "[TenSue]";
+		mes "well.. Nonetheless, scenic views on the way were so magnificent that I truly believe it was worth trying...";
+		mes "A canal surrounding 'Alderaran' makes the city more distinguishably beautiful. ";
+		next;
+		mes "[TenSue]";
+		mes "Moreover Kafra main branch located there so you can expect great services. Haha. Don't forget to visit there once.";
+	    	close;
+	Topic3:
+		mes "[TenSue]";
+		mes "Our Prontera is presently under the reign of Tristram the 3rd. Everything we have now is only avaiable thanks to his Majesty. ";
+		next;
+		mes "[TenSue]";
+		mes "But you know those outsiders at the corner of Prontera? Why do we have to accept them all the time...I really think that is NOT necessary at all.";
+		mes "His Majesty ...well...is waaaaaaay to generous..";
+		close;
+}
+
+prt_in.gat,177,18,2	script	"Marvin"	80,{
+	mes "[Marvin]";
+	mes "Usually you can bring your skill level up to 10. So some people get nervous about selecting which one they should learn.";
+	next;
+	mes "[Marvin]";
+	mes "'Hm..if I learn this, I won't be able to learn that..' or 'Uh-huh? With that skill, will I have enough points to master this skill?' Like this...";
+	mes "BUT every rule has an EXCEPTION~~. Not all skills have to level 10 to be mastered. Ta-da~~ ... Ahem...";
+	next;
+	mes "[Marvin]";
+	mes "You can master some skills when they are level 5. Even better, some skills only requires 1 or 2.";
+	mes "How pitiful would it be if you don't learn a tremendously useful skill only because you are nervous.";
+	next;
+	mes "[Marvin]";
+	mes "Therefore, don't just go ahead and learn anything either. Collect some information about skills and plan ahead.";
+	mes "That way, you can use your valuable skill points very wisely without wasting any.";
 	close;
 }
 

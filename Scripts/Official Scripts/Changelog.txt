@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.003
 ----------------------------------------------------------------------------------------------------
+- Town\Town_Prontera.txt - Added Tono, YuPi, YuNa, Bartender, Shevild, TenSue & Marvin. [Tsusai]
 - Event\Event_Doll.txt - Fixed Spore Doll section. [Tsusai]
 - Town\Town_Kafra.txt - Updated pontera warping prices/Kpoints to the latest kRO patch information. [Tsusai]
 - NPC\npc_skill_get.txt - Added Bard and Dancer support for the arrow creation and charge arrow quests. [Tsusai]
