@@ -1870,12 +1870,13 @@ aldeg_cas04.gat,196,86,0	warp	warp1850	1,1,aldeg_cas04.gat,49,57
 aldeg_cas04.gat,49,53,0	warp	warp1851	1,1,aldeg_cas04.gat,196,82
 aldeg_cas04.gat,78,88,0	warp	warp1852	1,1,aldeg_cas04.gat,174,58
 aldeg_cas04.gat,22,88,0	warp	warp1853	1,1,aldeg_cas04.gat,192,41
-aldeg_cas04.gat,50,132,0	warp	warp1854	1,1,aldeg_cas04.gat,74,88
+aldeg_cas04.gat,50,132,0	warp	warp1854	1,1,aldeg_cas04.gat,129,210
 aldeg_cas04.gat,21,123,0	warp	warp1855	1,1,aldeg_cas04.gat,125,168
 aldeg_cas04.gat,121,168,0	warp	warp1856	1,1,aldeg_cas04.gat,25,123
 aldeg_cas04.gat,156,210,0	warp	warp1857	1,1,aldeg_cas04.gat,169,97
 aldeg_cas04.gat,108,210,0	warp	warp1858	1,1,aldeg_cas04.gat,186,92
-aldeg_cas04.gat,132,209,0	warp	warp1859	1,1,aldeg_cas04.gat,14,196
+aldeg_cas04.gat,132,231,0	warp	warp1859	1,1,aldeg_cas04.gat,14,196
+aldeg_cas04.gat,132,209,0	warp	warp1859a	1,1,aldeg_cas04.gat,50,129
 aldeg_cas04.gat,17,196,0	warp	warp1860	1,1,aldeg_cas04.gat,132,228
 aldeg_cas05.gat,216,107,0	warp	warp1861	1,1,alde_gld.gat,264,90
 aldeg_cas05.gat,194,71,0	warp	warp1862	1,1,aldeg_cas05.gat,129,194
