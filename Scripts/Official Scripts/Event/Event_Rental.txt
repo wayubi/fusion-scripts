@@ -54,7 +54,7 @@ prontera.gat,52,350,5	script	"PecoPeco Breeder"	105,{
 in_hunter.gat,146,99,3	script	"Falcon Fancier"	105,{
 	mes "[Falcon Fancier]";
 		check Job == 11,L_BUY_FALCON,-; 
-		check Job == 33,L_BUY_FALCON,L_SONLY; 
+		check Job == 35,L_BUY_FALCON,L_SONLY; 
 			L_BUY_FALCON:
 				mes "Need a Falcon for hunting?! Give me 2500 Zeny then.";
 				next;

@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.005
 ----------------------------------------------------------------------------------------------------
+- Event\Event_Rental.txt - Falcon Fancenier now checks for Sniper instead of High Wizard. [Muad_Dib]
 - Quest\Quest_Skill\NPC_Novice_Skill - Added more up to date version of the novice skill quests. [Muad_Dib]
 - Mob\dungeon\xmas_dun - Fixed Mastering spawn. [Muad_Dib]
 - Job\Job1_Swordman.txt - Put back in changes cause it works server sided. [Muad_Dib]
