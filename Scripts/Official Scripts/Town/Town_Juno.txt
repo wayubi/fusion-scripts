@@ -95,7 +95,7 @@ L4:
 	mes "I hope you will be attracted to live in Yuno as well.";
 	close;
 }
-yuno.gat,184,173,4	script	Impressor	729,{
+yuno.gat,184,173,4	script	"Impressor"	729,{
 	mes "[Impressor]";
 	mes "Scholar's city,";
 	mes "^0000ff'Yuno'^000000";
@@ -114,7 +114,7 @@ yuno.gat,184,173,4	script	Impressor	729,{
 	mes "South: Minetta";
 	close;
 }
-yuno.gat,260,98,4	script	Icla	742,{
+yuno.gat,260,98,4	script	"Icla"	742,{
 	mes "[Icla]";
 	mes "Yuferos. this is the ancient land,";
 	mes "the city where men who could control Ymir's heart lived....";
@@ -127,7 +127,7 @@ yuno.gat,260,98,4	script	Icla	742,{
 	mes "if so, then first become a human being. Only when you empty your mind you'd achieve strength.";
 	close;
 }
-yuno.gat,305,207,4	script	Sycla	68,{
+yuno.gat,305,207,4	script	"Sycla"	68,{
 	mes "[Sycla]";
 	mes "From a long time ago, one person who's into strange research has been";
 	mes "living in Yuno, always making trouble in this neighborhood...";
@@ -148,7 +148,7 @@ yuno.gat,305,207,4	script	Sycla	68,{
 	mes "maybe this was made by that mad scientist......";
 	close;
 }
-yuno_in03.gat,25,39,4	script	Meto	121,{
+yuno_in03.gat,25,39,4	script	"Meto"	121,{
 	mes "[Meto]";
 	mes "today, tomorrow, even the next day i'll continue researching....";
 	mes "kak kak kak , my whole life will be dedicated to making..";
@@ -174,7 +174,7 @@ yuno_in03.gat,30,102,4	script	"Lucius Kelsus"	121,{
 	mes "and, if you find any rare monster, tell me. I'll pay you a lot for that information.";
 	close;
 }
-yuno_in03.gat,179,44,4	script	Shishi	55,{
+yuno_in03.gat,179,44,4	script	"Shishi"	55,{
 	mes "[Shishi]";
 	mes "my name is Shishi. I one of 3 brains who live in this town.";
 	mes " well, there aren't many scientists in this town, but one of three brains is really a great thing! Ahem!";
@@ -192,43 +192,7 @@ yuno_in03.gat,155,32,4	script	"Meteous Silf"	735,{
 	mes "If you have any mage friends, let them know of this place.  Have a nice day. ";
 	close;
 }
-yuno_in03.gat,106,177,4	script	"Cleitos Berdo"	743,{
-	mes "[Cleitos Berdo]";
-	mes "Welcome to Sage Castle";
-	mes "Do you want to become a Sage?";
-	next;
-	menu "Change job into a Sage",L_Menu1,"Requirements",L_Menu2,"End",-;
-	close;
-	L_Menu1:
-	mes "[Cleitos Berdo]";
-	mes "First I'll check if all the requirements have been met.";
-	next;
-	check Job == 2,-,L_Menu1_F1;
-	check JobLevel >= 40,-,L_Menu1_F2;
-	set JobLevel = 1,0;
-	jobchange 9;
-	mes "[Cleitos Berdo]";
-	mes "Congradulations, you are now a Sage!";
-	close;
-	L_Menu1_F1:
-	mes "[Cleitos Berdo]";
-	mes "You must be a magician before you can become a Sage.";
-	close;
-	L_Menu1_F2:
-	mes "[Cleitos Berdo]";
-	mes "You must be at least Job Level 40 to become a Sage.";
-	close;
-	L_Menu2:
-	mes "[Cleitos Berdo]";
-	mes "To become a Sage you must complete the following:";
-	mes "Become a Magician";
-	mes "Job Level 40";
-	next;
-	mes "[Cleitos Berdo]";
-	mes "Good luck.";
-	mes "I also recommend you use up all your skills first.";
-	close;
-}
+
 yuno_in03.gat,169,180,4	script	"Hermes Tris"	86,{
 	mes "[Hermes Tris]";
 	mes "Welcome.  This is Shubaicherville Magic academy";
@@ -306,7 +270,7 @@ yuno.gat,165,283,4	script	"Yuno Soldier"	105,{
 	mes "it got such name 'cause the passing-by geography scholar got eaten away during his research.";
 	close;
 }
-yuno.gat,156,87,4	script	Man	105,{
+yuno.gat,156,87,4	script	"Man"	105,{
 	mes "[Yigonglyukchichi]";
 	mes "If you go north from Al De Baran,";
 	mes "you will get to Magma Plane named [El Mas Plauteau].";
@@ -337,7 +301,7 @@ yuno_in03.gat,244,31,2	script	"Ebeshi Jorge"	120,{
 	mes "Hohoho, nothing really to look at? still, enjoy yourself here before you go~ hohoho";
 	close;
 }
-yuno.gat,163,328,4	script	Escla	735,{
+yuno.gat,163,328,4	script	"Escla"	735,{
 	mes "[Escla]";
 	mes "I've seen it before. Ahhh, i remember... A floating paper was flying around in the air helplessly... ";
 	mes "as if it couldn't resist the wind...was what i thought,";
@@ -359,381 +323,26 @@ yuno.gat,163,328,4	script	Escla	735,{
 	mes "It's a paper from old books of Juno, containing Juno's ancient wisdom... I thought, Such a thing could happen, eh...";
 	close;
 }
-yuno_in01.gat,17,95,4	script	Stancle	99,{
+yuno_in01.gat,17,95,4	script	"Stancle"	99,{
 	mes "[Stancle]";
 	mes "I'm one of the scientists in this city, stancle.";
 	mes "It will benefit you if you remember my name.";
 	close;
 }
-yuno_in01.gat,19,182,3	script	????	55,{
+yuno_in01.gat,19,182,3	script	"????"	55,{
 	mes "?????";
 	close;
 }
-yuno_in01.gat,103,158,4	script	?????	98,{
+yuno_in01.gat,103,158,4	script	"?????"	98,{
 	mes "?????";
 	close;
 }
-yuno_in01.gat,99,153,2	script	?????	47,{
+yuno_in01.gat,99,153,2	script	"?????"	47,{
 	mes "??????";
 	close;
 }
-yuno_in01.gat,164,27,4	script	Dillemat	88,{
-	mes "[Dillemat]";
-	mes "If you bring Rough Oridecons and";
-	mes "Rough Eluniums to me,";
-	mes "I can refine them for you";
-	mes "However, you must bring 5 of each.";
-	next;
-	menu "Make Oridecon",-,"Make Elunium",L_MENU_1,"Ask about enchanted stones",L_MENU_2;
-		checkitem 756,5,-,L_START_1;
-		delitem 756,5;
-		additem 984,1;
-		mes "[Dillemat]";
-		mes "As prmised, here's your oridecon.";
-		mes "Come back again anytime.";
-		close;
-	L_START_1:
-		mes "[Dillemat]";
-		mes "Huh? You're kidding, right?";
-		mes "Didn't I say I can't make you";
-		mes "an oridecon unless you bring me";
-		mes "5 rough ones.";
-		close;
-	L_MENU_1:
-		checkitem 757,5,-,L_START_2;
-		delitem 757,5;
-		additem 985,1;
-		mes "[Dillemat]";
-		mes "As prmosed, here's your elunium.";
-		mes "Come back again anytime.";
-		close;
-	L_START_2:
-		mes "[Dillemat]";
-		mes "Huh? You're kidding, right?";
-		mes "Didn't I say I can't make you";
-		mes "an elunium unless you bring me";
-		mes "5 rough ones.";
-		close;
-	L_MENU_2:
-		mes "[Dillemat]";
-		mes "Enchanted stones, huh ....";
-		mes "Well, in 20 years of my life as a";
-		mes "stonesmith I've hear of it many";
-		mes "times...though I've never seen it before.";
-		mes "what i heard is this: there are";
-		mes "enchanted stones out there which";
-		mes "possesses different elemental";
-		mes "properties - Water, Earth, Fire, Wind.
-		next;
-		mes "[Dillemat]";
-		mes "If someone combines an Enchanted Stone";
-		mes "with a weapon while smithing, that weapon";
-		mes "will possess the same porperty as the stone";
-		mes "of course, that person needs to be skillful";
-		mes "enough to work on it.";
- 		close;
-}
-yuno_in01.gat,171,21,4	script	Disturb	88,{
-		lockitem 1;
-		mes "[Disturb]";
-		mes "I am the Armsmith and I can refine any weapon and armor.";
-		mes "Tell me which equipment you wish to refine.";
-		next;
-		equipmenu @POSITION,@WEAPONLEVEL,@REFINELEVEL;
-		check @POSITION == 0,L_LOOT_7,-;
-		check @WEAPONLEVEL == 99,-,L_START_1;
-		check @POSITION == 1,-,L_LOOT_1;
-			mes "[Disturb]";
-			mes "You want me to refine that dumb brain of yours?";
-			goto L_EXIT;
-	L_LOOT_1:
-		check @POSITION == 2,-,L_LOOT_2;
-			mes "[Disturb]";
-			mes "Let me melt your body with my heat!";
-			goto L_EXIT;
-	L_LOOT_2:
-		check @POSITION == 3,-,L_LOOT_3;
-			mes "[Disturb]";
-			mes "I can't make your left hand into some super weapon.";
-			goto L_EXIT;
-	L_LOOT_3:
-		check @POSITION == 4,-,L_LOOT_4;
-			mes "[Disturb]";
-			mes "Even with modern science, I can't make your right hand into a drill.";
-			goto L_EXIT;
-	L_LOOT_4:
-		check @POSITION == 5,-,L_LOOT_5;
-			mes "[Disturb]";
-			mes "You're not wearing any robe!";
-			goto L_EXIT;
-	L_LOOT_5:
-		check @POSITION == 6,-,L_LOOT_6;
-			mes "[Disturb]";
-			mes "Your feet sure stink!";
-			goto L_EXIT;
-	L_LOOT_6:
-		check @POSITION <= 8,-,L_LOOT_7;
-			mes "[Disturb]";
-			mes "So where's this accesory of yours?";
-			goto L_EXIT;
-	L_LOOT_7:
-			mes "[Disturb]";
-			mes "What did you say you want to refine?";
-			mes "Its some other item, right?";
-			goto L_EXIT;
-	L_START_1:
-		check @REFINELEVEL == 99,-,L_START_2;
-			mes "[Disturb]";
-			mes "That item can't be refined.";
-			goto L_EXIT;
-	L_START_2:
-		check @REFINELEVEL == 10,-,L_START_3;
-			mes "[Disturb]";
-			mes "I can't refine that item anymore.";
-			goto L_EXIT;
-	L_START_3:
-		check @WEAPONLEVEL == 0,-,L_START_4;
-			mes "[Disturb]";
-			mes "To refine that, I'll need an";
-			mes "^ff9999Elunium^000000 and";
-			mes "a service fee of 20000 Zeny.";
-			mes "Do you wish to proceed?";
-			next;
-			menu "Yes",-,"No",L_MENU_3_1;
-				set @REF_SUCCESS = 99;
-				check @REFINELEVEL >= 4,-,L_SUB_3_1;
-				check @REFINELEVEL == 4,-,L_LOOT_3_1;
-					set @REF_SUCCESS = 60;
-					goto L_SUB_3_0;
-	L_LOOT_3_1:
-				check @REFINELEVEL <= 6,-,L_LOOT_3_2;
-					set @REF_SUCCESS = 40;
-					goto L_SUB_3_0;
-	L_LOOT_3_2:
-				check @REFINELEVEL <= 8,-,L_LOOT_3_3;
-					set @REF_SUCCESS = 20;
-					goto L_SUB_3_0;
-	L_LOOT_3_3:
-					set @REF_SUCCESS = 10;
-	L_SUB_3_0:
-				mes "[Disturb]";
-				mes "Hold it there! It appears that this has been";
-				mes "refined too many times... It could be";
-				mes "destroyed, it will be rendered useless...";
-				mes "Do you still wish to refine it?";
-				next;
-				menu "Yes",L_SUB_3_1,"No",-;
-					mes "[Disturb]";
-					mes "Good decision.";
-					mes "I don't feel good destroying another";
-					mes "person's weapons with my hands....";
-					goto L_EXIT;
-	L_SUB_3_1:
-					checkitem 985,1,-,L_SUB_3_2;
-					check Zeny >= 20000,-,L_SUB_3_2;
- 					delitem 985,1;
- 					set Zeny -= 20000,0;
-					goto L_START_8;
-	L_SUB_3_2:
-				mes "[Disturb]";
-				mes "Is that all you've got?";
-				mes "Sorry, but it's not enough to cover";
-				mes "the cost of the materials.";
-				mes "I can't just do this for free, you know.";
-				goto L_EXIT;
-	L_MENU_3_1:
-				mes "[Disturb]";
-				mes "If you don't want to, that's fine ...";
-				goto L_EXIT;
-	L_START_4:
-		check @WEAPONLEVEL == 1,-,L_START_5;
-			mes "[Disturb]";
-			mes "You want to refine a Level 1 weapon?";
-			mes "To refine that, I'll need a ^ff9999Phracon^000000";
-			mes "and a service fee of 500 zeny.";
-			mes "Do you wish to proceed?";
-			next;
-			menu "Yes",-,"No",L_MENU_3_1;
-				set @REF_SUCCESS = 99;
-				check @REFINELEVEL >= 7,-,L_SUB_4_1;
-				check @REFINELEVEL == 7,-,L_LOOT_4_1;
-					set @REF_SUCCESS = 60;
-					goto L_SUB_4_0;
-	L_LOOT_4_1:
-				check @REFINELEVEL == 8,-,L_LOOT_4_2;
-					set @REF_SUCCESS = 40;
-					goto L_SUB_4_0;
-	L_LOOT_4_2:
-					set @REF_SUCCESS = 20;
-	L_SUB_4_0:
-				mes "[Disturb]";
-				mes "Hold it there! It appears that this has been";
-				mes "refined too many times... It could be";
-				mes "destroyed if it's refined further.";
-				mes "If it's destroyed, it will be rendered useless...";
-				mes "Do you still wish to refine it?";
-				next;
-				menu "Yes",L_SUB_4_1,"No",-;
-					mes "[Disturb]";
-					mes "Good decision.";
-					mes "I don't feel good destroying another";
-					mes "person's weapons with my hands....";
-					goto L_EXIT;
-	L_SUB_4_1:
-					checkitem 1010,1,-,L_SUB_3_2;
-					check Zeny >= 500,-,L_SUB_3_2;
-					delitem 1010,1;
-					set Zeny -= 500,0;
-					goto L_START_8;
-	L_START_5:
-		check @WEAPONLEVEL == 2,-,L_START_6;
-			mes "[Disturb]";
-			mes "You want to refine a Level 2 weapon?";
-			mes "To refine that, I'll need a ^ff9999Emveretarcon^000000";
-			mes "and a service fee of 2000 zeny.";
-			mes "Do you wish to proceed?";
-			next;
-			menu "Yes",-,"No",L_MENU_3_1;
-				set @REF_SUCCESS = 99;
-				check @REFINELEVEL >= 6,-,L_SUB_5_1;
-				check @REFINELEVEL == 6,-,L_LOOT_5_1;
-					set @REF_SUCCESS = 60;
-					goto L_SUB_5_0;
-	L_LOOT_5_1:
-				check @REFINELEVEL == 7,-,L_LOOT_5_2;
-					set @REF_SUCCESS = 40;
-					goto L_SUB_5_0;
-	L_LOOT_5_2:
-					set @REF_SUCCESS = 20;
-	L_SUB_5_0:
-				mes "[Disturb]";
-				mes "Hold it there! It appears that this has been";
-				mes "refined too many times... It could be";
-				mes "destroyed if it's refined further.";
-				mes "If it's destroyed, it will be rendered useless...";
-				mes "Do you still wish to refine it?";
-				next;
-				menu "Yes",L_SUB_5_1,"No",-;
-					mes "[Disturb]";
-					mes "Good decision.";
-					mes "I don't feel good destroying another";
-					mes "person's weapons with my hands....";
-					goto L_EXIT;
-	L_SUB_5_1:
-					checkitem 1011,1,-,L_SUB_3_2;
-					check Zeny >= 2000,-,L_SUB_3_2;
-					delitem 1011,1;
-					set Zeny -= 2000,0;
-					goto L_START_8;
-	L_START_6:
-		check @WEAPONLEVEL == 3,-,L_START_7;
-			mes "[Disturb]";
-			mes "You want to refine a Level 3 weapon?";
-			mes "To refine that, I'll need a ^ff9999Oridecon^000000";
-			mes "and a service fee of 25000 zeny.";
-			mes "Do you wish to proceed?";
-			next;
-			menu "Yes",-,"No",L_MENU_3_1;
-				set @REF_SUCCESS = 99;
-				check @REFINELEVEL >= 5,-,L_SUB_6_1;
-				check @REFINELEVEL == 5,-,L_LOOT_6_1;
-					set @REF_SUCCESS = 60;
-					goto L_SUB_6_0;
-	L_LOOT_6_1:
-				check @REFINELEVEL == 6,-,L_LOOT_6_2;
-					set @REF_SUCCESS = 50;
-					goto L_SUB_6_0;
-	L_LOOT_6_2:
-					set @REF_SUCCESS = 20;
-	L_SUB_6_0:
-				mes "[Disturb]";
-				mes "Hold it there! It appears that this has been";
-				mes "refined too many times... It could be";
-				mes "destroyed if it's refined further.";
-				mes "If it's destroyed, it will be rendered useless...";
-				mes "Do you still wish to refine it?";
-				next;
-				menu "Yes",L_SUB_6_1,"No",-;
-					mes "[Disturb]";
-					mes "Good decision.";
-					mes "I don't feel good destroying another";
-					mes "person's weapons with my hands....";
-					goto L_EXIT;
-	L_SUB_6_1:
-					checkitem 984,1,-,L_SUB_3_2;
-					check Zeny >= 25000,-,L_SUB_3_2;
-					delitem 984,1;
-					set Zeny -= 25000,0;
-					goto L_START_8;
-	L_START_7:
-			mes "[Disturb]";
-			mes "You want to refine a Level 4 weapon?";
-			mes "To refine that, I'll need a ^ff9999Oridecon^000000";
-			mes "and a service fee of 50000 zeny.";
-			mes "Do you wish to proceed?";
-			next;
-			menu "Yes",-,"No",L_MENU_3_1;
-				set @REF_SUCCESS = 99;
-				check @REFINELEVEL >= 4,-,L_SUB_7_1;
-				check @REFINELEVEL == 4,-,L_LOOT_7_1;
-					set @REF_SUCCESS = 60;
-					goto L_SUB_7_0;
-	L_LOOT_7_1:
-				check @REFINELEVEL <= 6,-,L_LOOT_7_2;
-					set @REF_SUCCESS = 40;
-					goto L_SUB_7_0;
-	L_LOOT_7_2:
-				check @REFINELEVEL <= 8,-,L_LOOT_7_3;
-					set @REF_SUCCESS = 20;
-					goto L_SUB_7_0;
-	L_LOOT_7_3:
-					set @REF_SUCCESS = 10;
-	L_SUB_7_0:
-				mes "[Disturb]";
-				mes "Hold it there! It appears that this has been";
-				mes "refined too many times... It could be";
-				mes "destroyed if it's refined further.";
-				mes "If it's destroyed, it will be rendered useless...";
-				mes "Do you still wish to refine it?";
-				next;
-				menu "Yes",L_SUB_7_1,"No",-;
-					mes "[Disturb]";
-					mes "Good decision.";
-					mes "I don't feel good destroying another";
-					mes "person's weapons with my hands....";
-					goto L_EXIT;
-	L_SUB_7_1:
-					checkitem 984,1,-,L_SUB_3_2;
-					check Zeny >= 50000,-,L_SUB_3_2;
-					delitem 984,1;
-					set Zeny -= 50000,0;
-	L_START_8:
-		mes "[Disturb]";
-		mes "Clang! Clang! Clang!!";
-		next;
-		random @REF_RAND,100;
-		check @REF_RAND < @REF_SUCCESS,-,L_START_9;
-			set @REFINELEVEL += 1;
-			refinery @POSITION,0,@REFINELEVEL;
-			mes "[Disturb]";
-			mes "There you go!";
-			mes "It's been awhile since I've attained such perfection.";
-			mes "Aren't you happy now that your weapon is stronger?";
-			goto L_EXIT;
-	L_START_9:
-			refinery @POSITION,1,0;
-			mes "[Disturb]";
-			mes "Oh noooooo......";
-			next;
-			mes "[Disturb]";
-			mes "Sorry!";
-			mes "Your weapon broke during the refining process...";
-			mes "See! Didn't I say earlier not to force me to do it?";
-	L_EXIT:
-		lockitem 0;
-		close;
-}
-yuno.gat,166,111,4	script	Remorpheous	120,{
+
+yuno.gat,166,111,4	script	"Remorpheous"	120,{
 	mes "[Remorpheous]";
 	mes "^0000ff 'Apocalypse'^000000";
 	mes "He, an artificial human being,";

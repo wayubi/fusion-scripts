@@ -9,6 +9,9 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.002
 ----------------------------------------------------------------------------------------------------
+- Town\Town_Juno.txt - Moved 3 npc to there respected files, fixed missing " in npc names. [mudvayne]
+- Job\Job22_Sage.txt - Moved this job changer from Town_Juno.txt here. [mudvayne]
+- Town\Town_Siglude.txt - Moved the two Town_Juno.txt forge npcs here. [mudvayne]
 - Warp\town\Izlude.txt - Removed unneeded double warp (warp0417). [Tsusai]
 - Warp\town\Niflheim.txt - Added Niflheim town warps. [Tsusai]
 - Warp\fields\nif_fild.txt - Added Niflheim field warps. [Tsusai]
