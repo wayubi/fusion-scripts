@@ -1,7 +1,7 @@
 ====================================================================================================
  »» The Fusion Project ««
  Copyright (c) 2004, Cobax Information Systems
- http://fusion.cobax.net/
+ http:\\fusion.cobax.net\
 ----------------------------------------------------------------------------------------------------
  Scripts Change Logs
 ====================================================================================================
@@ -9,13 +9,14 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.004
 ----------------------------------------------------------------------------------------------------
+- Town\Town_LouYang.txt - Updated header and a warp coordinate. [Muad_Dib]
 - town\town_kafra.txt - change prices and location of teleport services of all kafra in alberta based on ragnamart [nestor_zulueta]
 - town\town_kafra.txt - change prices and location of teleport services of kafra in izlude based on ragnamart [nestor_zulueta]
-- Mob/dungeon/alde_dun.txt - Updated, reorganised Clock Tower Basement Dungeon Monster Spawns. [Muad_Dib]
-- Mob/dungeon/anthell_dun.txt - Updated, reorganised Ant Hell Dungeon Monster Spawns. [Muad_Dib]
-- Mob/dungeon/c_tower_dun.txt - Updated, reorganised Clock Tower Dungeon Monster Spawns. [Muad_Dib]
-- Mob/dungeon/iz_dun.txt - Updated, reorganised Bibalan Dungeon Monster Spawns. [Muad_Dib]
-- Mob/dungeon/mjo_dun.txt - Updated, reorganised Coal Mine Dungeon Monster Spawns. [Muad_Dib]
+- Mob\dungeon\alde_dun.txt - Updated, reorganised Clock Tower Basement Dungeon Monster Spawns. [Muad_Dib]
+- Mob\dungeon\anthell_dun.txt - Updated, reorganised Ant Hell Dungeon Monster Spawns. [Muad_Dib]
+- Mob\dungeon\c_tower_dun.txt - Updated, reorganised Clock Tower Dungeon Monster Spawns. [Muad_Dib]
+- Mob\dungeon\iz_dun.txt - Updated, reorganised Bibalan Dungeon Monster Spawns. [Muad_Dib]
+- Mob\dungeon\mjo_dun.txt - Updated, reorganised Coal Mine Dungeon Monster Spawns. [Muad_Dib]
 - Town\Town_Kafra.txt - Corrected Izlude Kafra's script labels. [Tsusai]
 - Mob\dungeon\lou_dun.txt added Town louYang Dungeon mob based on kro screenshots. [Muad_Dib]
 - Mob\field\lou_fild.txt added Town louYang field mob based on kro screenshots. [Muad_Dib]
@@ -53,8 +54,8 @@
 - GvG\npc_guardiankafra.txt - Updated Header. [Tsusai]
 - Quest\Quest_skill\Thief_Skill.txt - Corrected Header NPC info. [Tsusai]
 - Mob\field\gef_fild.txt - Updated, reorganised Geffen Fields Monster Spawns. [Muad_Dib]
-- GvG\gefg_cas0#.txt - Changed variable type for skill/guardian checks. [Tsusai]
-- GvG\aldeg_cas0#.txt - Changed variable type for skill/guardian checks. [Tsusai]
+- GvG\gefg_cas0#.txt - Changed variable type for skill\guardian checks. [Tsusai]
+- GvG\aldeg_cas0#.txt - Changed variable type for skill\guardian checks. [Tsusai]
 - Event\Event_Making.txt - Correcting Cake Hat requirements. [Tsusai]
 - Job\Job_Super_Novice.txt - Changed some text parts. [Muad_Dib] 
 - Event\Event_Sign.txt - Added event sign. [Muad_Dib]
@@ -146,8 +147,8 @@
 - GvG\aldeg_cas0#.txt - Fixes missing Guardian bug and Kafra service bug in all Aldebaran Guild castles. [icbob]
 - GvG\npc_guardiankafra.txt - Fixes missing Guardian bug and Kafra service at prtg_cas01. [Tsusai]
 - GvG\*_cas0*.txt - Updated Kafra Services storage check. [Tsusai]
-- NPC\npc_skill_get.txt - Finalized the novice skill quests, replaced variable w/ quest item. [Tsusai]
-- NPC\npc_skill_get.txt - Fixed/Added Novice Skill Quests. [Tsusai]
+- NPC\npc_skill_get.txt - Finalized the novice skill quests, replaced variable w\ quest item. [Tsusai]
+- NPC\npc_skill_get.txt - Fixed\Added Novice Skill Quests. [Tsusai]
 - Town\Town_Kafra.txt - Fixed Storage check typo. [Tsusai]
 - NPC\npc_skill_get.txt - Converted to english some assassin quests texts. [Tsusai]
 - Town\Town_Kafra.txt - Fixed Storage check. [Tsusai]
@@ -163,7 +164,7 @@
 - Warp\other\valkyrie.txt - Created txt of warps. [Tsusai]
 - Warp\other\force_map.txt - Updated mapname of moved warp. [Tsusai]
 - Warp\other\Arena_Test.txt - Moved one warp to Warp\other\force_map.txt [Tsusai]
-- GvG\npc_gflag.txt - Finished Emblem/Text support for all town flags and corrected typos. [Tsusai]
+- GvG\npc_gflag.txt - Finished Emblem\Text support for all town flags and corrected typos. [Tsusai]
 - GvG\npc_gflag.txt - Added Payon Emblem Flag Support and Missing Flags. [Tsusai]
 - GvG\payg_cas0#.txt - Added Payon Emblem Flag Support. [Tsusai]
 - GvG\npc_gflag.txt - Added Prontera Emblem Flag Support. [Tsusai]
@@ -179,9 +180,9 @@
 - Town\Town_Kafra.txt - Disabled Kafra saving in Abandoned Mine Dungeon, Orc Dungeon, Pyramid Dungeon, Sunken Ship, Byalan, and Archer Town. [Tsusai]
 - Town\Town_Prontera.txt - Added Tono, YuPi, YuNa, Bartender, Shevild, TenSue & Marvin. [Tsusai]
 - Event\Event_Doll.txt - Fixed Spore Doll section. [Tsusai]
-- Town\Town_Kafra.txt - Updated pontera warping prices/Kpoints to the latest kRO patch information. [Tsusai]
+- Town\Town_Kafra.txt - Updated pontera warping prices\Kpoints to the latest kRO patch information. [Tsusai]
 - NPC\npc_skill_get.txt - Added Bard and Dancer support for the arrow creation and charge arrow quests. [Tsusai]
-- NPC\npc_skill_get.txt - Rolled back to version released w/ 1.2.0.9 and added alexkreux's Moving Recovery. [Tsusai]
+- NPC\npc_skill_get.txt - Rolled back to version released w\ 1.2.0.9 and added alexkreux's Moving Recovery. [Tsusai]
 - NPC\npc_skill_get.txt - Updated item descriptions for the thief and auto-berserk. [Tsusai]
 - NPC\npc_skill_get.txt - Translated the rest of the platinum skills except Berserk. [Tsusai]
 - Event\Event_Making.txt - Fixed Bao Bao requirements. [mudvayne]
@@ -209,14 +210,14 @@
 - NPC\npc_skill_get.txt - Fixed ;; mistake. [Tsusai]
 - GvG\aldeg_cas02-05.txt - Corrected scriptlabel commands. [Tsusai]
 - NPC\npc_skill_get.txt - Translated Father Clifford, Blizzardriss, Nami, Blma, Prontera General, & RuRumuni. [Tsusai]
-- GvG\payg_cas01.txt - Added OnInits to flags for emblem display w/o activating (rest to come). [Colus]
-- GvG\npc_gflag.txt - Added OnInits to flags for emblem display w/o activating. [Colus]
+- GvG\payg_cas01.txt - Added OnInits to flags for emblem display w\o activating (rest to come). [Colus]
+- GvG\npc_gflag.txt - Added OnInits to flags for emblem display w\o activating. [Colus]
 - Warp\towns\Niflheim.txt - Fixed erronous warps. [mudvayne]
 - Event\Event_MobTim.txt - Finished translating Tammy. [Tsusai]
 - Event\Event_MobTim.txt - Finished translating Shogo. [Tsusai]
 - GvG\npc_gflag.txt - Fixed next error command. [mudvayne]
 - Original\Original_Arena.txt - Moved to archive, not official. [mudvayne]
-- Event\Event_Making.txt - Moved berserk platinum skills to NPC/npc_skill_get.txt [mudvayne]
+- Event\Event_Making.txt - Moved berserk platinum skills to NPC\npc_skill_get.txt [mudvayne]
 - Town\Town_Juno.txt - Moved 3 npc to there respected files, fixed missing " in npc names. [mudvayne]
 - Job\Job22_Sage.txt - Moved this job changer from Town_Juno.txt here. [mudvayne]
 - Town\Town_Siglude.txt - Moved the two Town_Juno.txt forge npcs here. [mudvayne]
@@ -253,8 +254,8 @@
 - NPC\npc_skill_get.txt - Fixed AL_Holylight Job requirements. [AlexKreuz]
 - Warp\warp_arena_room.txt - Added new warp portals. [Tsusai]
 - Warp\warp_amatsu.txt - Corrected warps to gain access to levels 4 and 5 in the castle. [Tsusai]
-- Town\Town_Siglude.txt - Fixed, can't refine accesories and mid/low headgears and fixed the chance of success. [mudvayne]
-- Warp\warp.txt - Corrected/Added Warps in Al De Baron Guild Castle 4. [Tsusai]
+- Town\Town_Siglude.txt - Fixed, can't refine accesories and mid\low headgears and fixed the chance of success. [mudvayne]
+- Warp\warp.txt - Corrected\Added Warps in Al De Baron Guild Castle 4. [Tsusai]
 - Shop\Shop.txt - Added Umbala shop entry. [mudvayne]
 - Town\Town_Umbala.txt - Removed shops entry here and moved to shop.txt. [mudvayne]
 - Town\Town_Kafra.txt - Added the kafra from other Town_X.txt files. [mudvayne]
@@ -273,7 +274,7 @@
 - Town\Town_Siglude.txt - Enabled Vurewell, Sade, Begnahd and Kahlamanlith Npcs. [mudvayne]
 - Event\Event_KafraP.txt - Translated Kafra point leader and removed useless comments. [mudvayne]
 - Event\Event_Making.txt - Added Young Man and Tempestra Npc, alot of new Hat Quest. [mudvayne]
-- Original\Original_Nenkaras.txt - Translated Inn Maid Sammy/Ahlma Npcs. [mudvayne]
+- Original\Original_Nenkaras.txt - Translated Inn Maid Sammy\Ahlma Npcs. [mudvayne]
 - Town\Town_Siglude.txt - Translated Vurewell, Sade, Begnahd and Kahlamanlith, Phracon and Emveretarcon provider, also fixed missing " in npc names. [mudvayne]
 - Event\Event_MobTim.txt - Translated all 90% of Monster Tamer Shogo. [Tsusai]
 - Event\Event_Making.txt - Corrected accidental script error. [Tsusai]
@@ -311,40 +312,40 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.001
 ----------------------------------------------------------------------------------------------------
-- Fixed: Event/Event_Potion.txt - Variable typo, and the npc is working [mudvayne]
-- Fixed: Town/Town_Kapra.txt - Can't dupe items with Kapra's Cart Rental [mudvayne]
-- Updated: Town/Town_Kapra.txt - Cart Rental support for Alchimist [mudvayne]
-- Added: Mob/mob_umb.txt - Umbala monster definitions. [AlexKreuz]
-- Added: Town/Town_Umbala.txt - Umbala NPC scripts. [AlexKreuz]
-- Added: Warp/Warp_Umbala.txt - Umbala warp definitions. [AlexKreuz]
+- Fixed: Event\Event_Potion.txt - Variable typo, and the npc is working [mudvayne]
+- Fixed: Town\Town_Kapra.txt - Can't dupe items with Kapra's Cart Rental [mudvayne]
+- Updated: Town\Town_Kapra.txt - Cart Rental support for Alchimist [mudvayne]
+- Added: Mob\mob_umb.txt - Umbala monster definitions. [AlexKreuz]
+- Added: Town\Town_Umbala.txt - Umbala NPC scripts. [AlexKreuz]
+- Added: Warp\Warp_Umbala.txt - Umbala warp definitions. [AlexKreuz]
 
 ----------------------------------------------------------------------------------------------------
- Fusion NPC Pack - 11/12/2003
+ Fusion NPC Pack - 11\12\2003
 ----------------------------------------------------------------------------------------------------
-- Updated: NPC/npc_skill_get.txt - Pointed Scale -> Tough Scalelike Stem. [AlexKreuz]
-- Updated: Shop/shop.txt - Thief Clothes: 7400Z -> 74000Z. [AlexKreuz]
-- Updated: Shop/shop.txt - Glaive: 1200Z -> 20000Z. [AlexKreuz]
+- Updated: NPC\npc_skill_get.txt - Pointed Scale -> Tough Scalelike Stem. [AlexKreuz]
+- Updated: Shop\shop.txt - Thief Clothes: 7400Z -> 74000Z. [AlexKreuz]
+- Updated: Shop\shop.txt - Glaive: 1200Z -> 20000Z. [AlexKreuz]
 
 ----------------------------------------------------------------------------------------------------
- Fusion NPC Pack - 11/03/2003
+ Fusion NPC Pack - 11\03\2003
 ----------------------------------------------------------------------------------------------------
-- Renamed: Job/Job_Merchant.txt [AlexKreuz]
-- Updated: Shop/shop.txt [AlexKreuz]
-- Replaced: Town/Town_Aldebaran.txt [L0ne_W0lf]
-- Replaced: Town/Town_Alberta.txt [L0ne_W0lf]
-- Replaced: Town/Town_Amatsu.txt [L0ne_W0lf]
-- Replaced: Town/Town_Comodo.txt [L0ne_W0lf]
-- Replaced: Town/Town_Guide.txt [L0ne_W0lf]
-- Replaced: Town/Town_Izlude.txt [L0ne_W0lf]
-- Replaced: Town/Town_Payon.txt [L0ne_W0lf]
-- Replaced: Town/Town_Prontera.txt [L0ne_W0lf]
-- Replaced: Town/Town_Juno.txt [L0ne_W0lf]
-- Replaced: Warp/warp.txt [L0ne_W0lf]
-- Added: GvG/*.* [L0ne_W0lf]
-- Deleted: Map/*.* [AlexKreuz]
+- Renamed: Job\Job_Merchant.txt [AlexKreuz]
+- Updated: Shop\shop.txt [AlexKreuz]
+- Replaced: Town\Town_Aldebaran.txt [L0ne_W0lf]
+- Replaced: Town\Town_Alberta.txt [L0ne_W0lf]
+- Replaced: Town\Town_Amatsu.txt [L0ne_W0lf]
+- Replaced: Town\Town_Comodo.txt [L0ne_W0lf]
+- Replaced: Town\Town_Guide.txt [L0ne_W0lf]
+- Replaced: Town\Town_Izlude.txt [L0ne_W0lf]
+- Replaced: Town\Town_Payon.txt [L0ne_W0lf]
+- Replaced: Town\Town_Prontera.txt [L0ne_W0lf]
+- Replaced: Town\Town_Juno.txt [L0ne_W0lf]
+- Replaced: Warp\warp.txt [L0ne_W0lf]
+- Added: GvG\*.* [L0ne_W0lf]
+- Deleted: Map\*.* [AlexKreuz]
 
 ----------------------------------------------------------------------------------------------------
- Fusion NPC Pack - 11/01/2003
+ Fusion NPC Pack - 11\01\2003
 ----------------------------------------------------------------------------------------------------
 - Initial Package Released [AlexKreuz]
 
@@ -372,12 +373,12 @@ Thanks, and good luck.
 Relevant Links
 
 - The Fusion Project
-- http://www.izlude.net
+- http:\\www.izlude.net
 
 - The Weiss BBS
-- http://eweiss.sourceforge.net/forums
+- http:\\eweiss.sourceforge.net\forums
 
 - The DarkWeiss Forums
-- http://dweiss.sigh.org/forum
+- http:\\dweiss.sigh.org\forum
 
 - IRC: irc.mircx.com - #weiss
