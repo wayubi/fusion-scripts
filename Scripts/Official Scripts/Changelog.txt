@@ -9,6 +9,8 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.005
 ----------------------------------------------------------------------------------------------------
+- Shop\amatsu.txt - Updated amatsu shops. [Muad_Dib]
+- Town\Town_amatsu.txt - Corrected some minor bits. [ Muad_Dib]
 - Job\Job1_Swordman.txt - Added 3 Broadcasts. [Muad_Dib]
 - Archive\ - Commented out all  the npc placements so they don't stand in the way of future/existing scripts. [Muad_Dib]
 - Warp\other\PvP.txt - Added jAthena PvP room warps. [Tsusai]
