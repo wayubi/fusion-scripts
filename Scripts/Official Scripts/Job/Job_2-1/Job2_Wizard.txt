@@ -1242,7 +1242,7 @@ job_wizard.gat,99,94,4 script "Helper" 102,{
 	mes "It shouldn't take too long.";
 	close;
 OnInit:
-	waitingroom "Waiting Room",1;
+	waitingroom "Waiting Room",2;
 	check \@WizMobs = 0,start,-;
 		return;
 	start:

@@ -1,6 +1,7 @@
 --------------------------------------------------------------------------------
  Fusion 1.213 - August 29th, 2004
 --------------------------------------------------------------------------------
+- 07-06-04: Job\Job_2-1\Job2_Wizard.txt - increased waiting room size to 2 (how did it get smaller?) [Tsusai]
 - 07-06-04: shop\tur_dun.txt - Added Luxury Glasses. [Muad_Dib]
 - 07-06-04: Mob\other\dragon_boat_festival_mob.txt - Added Dragon Boat Festival Mobs. [Muad_Dib]
 - 07-06-04: Mob\field\nif_fild.txt - Fixed Ghostring Spawn. [Muad_Dib]
