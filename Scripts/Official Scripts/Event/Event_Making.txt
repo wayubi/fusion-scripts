@@ -33,6 +33,9 @@
 // - Grampa -> alberta_in: 59,139
 //   Give information and make Boy's Cap Quest.
 //
+// - Mistic Lady -> payon_in01: 103,79
+//   Give information and make Ear Muf Quest.
+//
 //========================================================================================
 
 payon_in01.gat,103,111,4	script	"Granny"	103,{
@@ -127,50 +130,46 @@ geffen_in.gat,144,166,4	script	"Blacksmith"	63,{
 		close;
 }
 
-//----------------------------------
-// 耳当て
-//----------------------------------
-
-payon_in01.gat,103,79,4	script	不思議な乙女	76,{
-	mes "[不思議な乙女]";
+payon_in01.gat,103,79,4	script	"Mistic Lady"	76,{
+	mes "[Mistic Lady]";
 	mes ". . . . . .";
-	mes "自分の家門では代をつなぎ .. 寒い冬にも耐えられるように考案した保温用の^3355FF'耳せん'^000000を作って売っております。";
-	mes "この近所は暖かい地域であるため、 鋭い程の寒さが分からない人だけで収入が少なくて、 延命さえ厳しいです ..";
-	mes "もし、寒いところへ旅立つのなら、 私に作らせていただく^3355FF' 耳当て '^000000はいかがでしょうか ..";
+	mes "My Family have produced and sold the special Winter product  ^3355FF'Ear Muffs'^000000 for many years..";
+	mes "We just moved in here, but unfortunately the Weather is always Warm so we hardly live with our Job...";
+	mes "If you plan to travel to the cold area I suggest you to prepare ^3355FF'Ear Muffs'^000000..";
 	next;
-	mes "[不思議な乙女]";
+	mes "[Mistic Lady]";
 	mes ". . . . . .";
-	mes  "耳当ては自分の 家門の 生活名品でございます..  ^FF3355'  呪われたルビー '^000000 と ^3311AA' ヘッドフォン '^000000 一つずつ ..";
-	mes "そして ^3355FF' 柔らかい毛 200  個 '^000000 に ^DDDD00' 5000 ゼニ'^000000 で作らせて頂きます。";
+	mes "Ear Muffs is the special product of my family's own. We provide it to customers with ^FF3355'1 Cursed Rubi '^000000, ^3311AA' 1 Headset '^000000..";
+	mes " ^3355FF' 200 Feathers '^000000 and  ^DDDD00' 5000 Zeny '^000000.";
 	next;
-	menu "では、 お願いします",-,"結構です",L_MENU_1;
+	menu "Oh Yeah?It sounds Good.",-,"No thank you,Ma'am.",L_MENU_1;
 		checkitem 724,1,-,L_SUB_1;
 		checkitem 949,200,-,L_SUB_1;
 		checkitem 5001,1,-,L_SUB_1;
 		check Zeny >= 5000,-,L_SUB_1;
-		mes "[不思議な乙女]";
+		mes "[Mistic Lady]";
 		mes ". . . . .";
 		delitem 724,1;
 		delitem 949,200;
 		delitem 5001,1;
 		set Zeny -= 5000,0;
-		mes "ありがとうございます。 これ...作っておいた余分の 耳当てを差し上げます。";
+		mes "I will give you this ready-made one.";
 		additem 2283,1;
 		next;
-		mes "[不思議な乙女]";
+		mes "[Mistic Lady]";
 		mes ". . . . .";
-		mes "我が家の物品をご購入頂き、ありがとうございます。 性能については 絶対後悔なさることはございません ..";
+		mes "Thank you for buying our product.You won't regret to purchase our Ear Muffs.This one is the satisfaction Guaranteed.";
 		close;
 	L_SUB_1:
-		mes "[不思議な乙女]";
+		mes "[Mistic Lady]";
 		mes ". . . . .";
-		mes ". . . . . お客さん .. お揃いのアイテムが足りますね ..";
-		mes "どうか安い費用と負担のない 条件で作らせて頂きたいですが..自分達も厳しい状況でして..";
+		mes ". . . . . Dear .. You don't have enough money and items ..";
+		mes "We can't afford you if you don't bring every items needed. Discount is not served.Please understand we have to make our living...";
 		close;
 	L_MENU_1:
-		mes "[不思議な乙女]";
+		mes "[Mistic Lady]";
 		mes ". . . . .";
-		mes "縁があれば又会えるでしょう ..";
+		mes "That's fine.I believe we will meet one of these days  ..";
 		mes ". . . . .";
 		close;
 }
