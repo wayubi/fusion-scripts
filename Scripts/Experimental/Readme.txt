@@ -6,3 +6,5 @@ Use with fusion scripts only and not any personal ones at the moment.
 This also serves as a way to work on a script and then move it into _OLD later, overwriting if necessary.  Like the name says, it's all experimental.
 
 -Tsusai
+
+PS: Only whom ever posts it in here has the power to move it!!!!

@@ -5,6 +5,7 @@
 ----------------------------------------------------------------------------------------------------
  Experimental Scripts Change Logs
 ====================================================================================================
+05-05-2004: npc_guardiankafra.txt - Tested and moved into _OLD directory. [Tsusai]
 05-04-2004: npc_guardiankafra.txt - Corrected few tags, needs final syntax testing. [Tsusai]
 05-04-2004: npc_guardiankafra.txt - Shorten old version. [icbob]
 
