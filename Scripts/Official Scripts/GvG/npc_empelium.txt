@@ -28,3 +28,7 @@ prtg_cas02.gat,158,174,0,0	monster	"Emperium" 1288,1,0,0,1
 prtg_cas03.gat,16,220,0,0	monster	"Emperium" 1288,1,0,0,1
 prtg_cas04.gat,291,14,0,0	monster	"Emperium" 1288,1,0,0,1
 prtg_cas05.gat,266,266,0,0	monster	"Emperium" 1288,1,0,0,1
+nguild_alde.gat,216,23,0,0	monster	"Emperium" 1288,1,0,0,1
+nguild_gef.gat,198,182,0,0	monster	"Emperium" 1288,1,0,0,1
+nguild_pay.gat,138,138,0,0	monster	"Emperium" 1288,1,0,0,1
+nguild_prt.gat,197,197,0,0	monster	"Emperium" 1288,1,0,0,1

@@ -1,6 +1,7 @@
 --------------------------------------------------------------------------------
  Fusion 1.212 - June 30th, 2004
 --------------------------------------------------------------------------------
+- 06-26-04: GvG\npc_empelium.txt - Added Emperium locations for Novice Guild (Phase 2/8). [Tsusai]
 - 06-26-04: Warp\guilds\nguild.txt - Added Novice guild castle warps (Phase 1/8). [Tsusai]
 - 06-26-04: Job_Job_2-2\Job2_Crusader.txt - Corrected a ; syntax error. [Tsusai]
 - 06-26-04: Job\Job_2-1\Job2_Wizard.txt - Mob test reinserted. [Tsusai]
