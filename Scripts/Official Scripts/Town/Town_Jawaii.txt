@@ -1,0 +1,33 @@
+//========================================================================================
+// »» The Fusion Project ««
+// Copyright (c) 2004, Cobax Information Systems
+// http://fusion.cobax.net/
+// ---------------------------------------------------------------------------------------
+//
+// Jawaii Town - Non Player Character Locations
+//
+// - Sailor -> jawaii: 39,125
+//   Warps you back to Izlude.
+//
+// - Sailor -> jawaii: 39,125
+//   Sailor that is repairing his ship.
+//
+//========================================================================================
+
+jawaii.gat,235,110,7 script "Sailor" 100,{
+	mes "[Sailor]";
+	mes "Wanna return?";
+	next;
+	menu "Yeah,I am Tired to Death.",L_Menu1,"Nope I love this place.",-;
+	close;
+L_Menu1:
+	   warp "izlude",176,182;
+	close;
+}
+
+jawaii.gat,114,262,6 script "Sailor" 100,{
+	mes "[Sailor]";
+	mes "I'm sorry. but this ship ain't going anywhere.";
+	mes "It got damaged on the last crossover, and now it needs repairs.";
+	close;
+}

@@ -1,6 +1,10 @@
 --------------------------------------------------------------------------------
  Fusion 1.212 - June 30th, 2004
 --------------------------------------------------------------------------------
+
+- 06-26-04: Town\Town_Jawaii.txt - Contains warper back to izlude. [Muad_Dib]
+- 06-26-04: Event\Event_Making.txt - Fixed PH.D Quest. [Muad_Dib]
+- 06-26-04: Town\Town_Izlude.txt - Added link to jawaii. [Muad_Dib]
 - 06-24-04: Event\Event_PvP.txt - changed waiting room sizes to 1. [Tsusai]
 - 06-23-04: Job\Job_2-1\Job2_Wizard_MobTest.txt - Changed \@Testing to \@WizMobs AND mobs will re-set/reinforce it when they die. [Tsusai]
 - 06-22-04: Warp\newbies\new_zone.txt - commented out blacany access warps due to reconstruction of training grounds. [Tsusai]

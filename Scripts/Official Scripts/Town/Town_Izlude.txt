@@ -293,7 +293,9 @@ izlude.gat,201,181,1 script "Sailor" 100,{
 	mes "Hey Everybody, Attention!";
 	mes " Come and Ride the Wind with a Fascinated Ship!!! Come on! Hurry up!";
 	next;
-	menu "Byalan Island-> 150 Zeny",-,"Alberta -> 500 Zeny.",L_Menu2,"Turtle Dungeon-> 900 Zeny.",L_Menu3,"Cancel.",-;
+
+//	menu "Byalan Island -> 150 Zeny",-,"Alberta -> 500 Zeny.",L_Menu2,"Turtle Dungeon -> 900 Zeny.",L_Menu3,"Cancel.",-;
+	menu "Byalan Island -> 150 Zeny",-,"Alberta -> 500 Zeny.",L_Menu2,"Turtle Dungeon -> 900 Zeny.",L_Menu3,"Jawaii -> 500 Zeny.",L_Menu4,"Cancel.",-;
 	   check Zeny >= 150,-,L_Menu1_F;
 	   set Zeny -= 150,0;
 	   warp "izlu2dun",107,50;
@@ -319,6 +321,16 @@ L_Menu3:
 L_Menu3_F:
 	mes "[Sailor]";
 	mes "900 Zeny! Only 900 Zeny for Riding!";
+	close;
+////This info is not 100% sure///////
+L_Menu4:
+	   check Zeny >= 500,-,L_Menu4_F;
+	   set Zeny -= 500,0;
+	   warp "jawaii",239,114;
+      close;
+L_Menu4_F:
+	mes "[Sailor]";
+	mes "500 Zeny! Only 500 Zeny for Riding!";
 	close;
 }
 
