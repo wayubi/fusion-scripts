@@ -1,26 +1,25 @@
 //========================================================================================
 // »» The Fusion Project ««
 // Copyright (c) 2004, Cobax Information Systems
-// http://fusion.cobax.net/
+// http://cobax.net/
 // ---------------------------------------------------------------------------------------
 //  
-// Arena Warp Portals
-//  -Written by Icbob
+// Arena Room Warps - Warp Portals Location
 //
 //========================================================================================
 
-//---Doors(left side)---------------------------
-arena_room.gat,83,47,0 warp warp0003 1,2,arena_room.gat,65,12
-arena_room.gat,67,12,0 warp warp0004 1,2,arena_room.gat,85,47
-arena_room.gat,38,23,0 warp warp0005 2,1,arena_room.gat,38,51
-arena_room.gat,38,49,0 warp warp0006 2,1,arena_room.gat,38,21
-arena_room.gat,12,31,0 warp warp0007 2,1,arena_room.gat,11,92
-arena_room.gat,11,90,0 warp warp0008 2,1,arena_room.gat,12,29
+arena_room.gat,115,72,0		warp	arena_roomwarp001	2,2,arena_room.gat,138,51
+arena_room.gat,136,53,0		warp	arena_roomwarp001	2,2,arena_room.gat,113,74
+arena_room.gat,84,72,0		warp	arena_roomwarp001	2,2,arena_room.gat,61,51
+arena_room.gat,63,53,0		warp	arena_roomwarp001	2,2,arena_room.gat,86,74
+arena_room.gat,76,87,0		warp	arena_roomwarp001	2,2,arena_room.gat,46,87
+arena_room.gat,49,87,0		warp	arena_roomwarp001	2,2,arena_room.gat,79,87
+arena_room.gat,123,87,0		warp	arena_roomwarp001	2,2,arena_room.gat,153,87
+arena_room.gat,150,87,0		warp	arena_roomwarp001	2,2,arena_room.gat,120,87
+arena_room.gat,84,103,0		warp	arena_roomwarp001	2,2,arena_room.gat,64,129
+arena_room.gat,64,126,0		warp	arena_roomwarp001	2,2,arena_room.gat,86,101
+arena_room.gat,115,103,0	warp	arena_roomwarp001	2,2,arena_room.gat,135,129
+arena_room.gat,135,126,0	warp	arena_roomwarp001	2,2,arena_room.gat,113,101
 
-//---Doors(right side)--------------------------
-arena_room.gat,115,47,0 warp warp0009 1,2,arena_room.gat,134,11
-arena_room.gat,132,11,0 warp warp0010 1,2,arena_room.gat,113,47
-arena_room.gat,163,23,0 warp warp0011 2,1,arena_room.gat,164,51
-arena_room.gat,164,49,0 warp warp0012 2,1,arena_room.gat,163,21
-arena_room.gat,190,31,0 warp warp0013 2,1,arena_room.gat,191,93
-arena_room.gat,190,91,0 warp warp0014 2,1,arena_room.gat,190,29
+
+

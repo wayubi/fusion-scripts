@@ -1,6 +1,7 @@
 --------------------------------------------------------------------------------
  Fusion 1.213 - August 29th, 2004
 --------------------------------------------------------------------------------
+- 09-07-04: Warp\other\arena_room.txt - Made new warps cause kRO changed the map. [Muad_Dib]
 - 09-07-04: Town\Town_Morocc.txt - Added new mRO npc's and npc emotions. [Muad_Dib]
 - 09-07-04: Town\Town_Izlude.txt - Added npc emotions. [Muad_Dib]
 - 09-07-04: Town\Town_Prontera.txt - Added new mRO npc's and npc emotions. [Muad_Dib]
