@@ -1,177 +1,141 @@
-//----------------------------------------------------------------------
-// スクリプト : Event_MobtTim v1.0
-//----------------------------------------------------------------------
+//========================================================================================
+// ｻｻ The Fusion Project ｫｫ
+// Copyright (c) 2004, Cobax Information Systems
+// http://fusion.cobax.net/
+// ---------------------------------------------------------------------------------------
+//
+// Alberta Town - Non Player Character Locations
+//
+// - Iwado -> alberta_in: 173,76
+//   Transform items into Monsters Taming items, Monster Juice, Singing Flower, Wild Flower
+//
+// - モンスターテイマー ->  izlude_in: 129,64
+//   Don't know what it does.
+//
+// - モンスターテイマー -> aldeba_in 168,175
+//   Don't know what it does yet.
+//
+//========================================================================================
 
-//----------------------------------
-// モンスタージュース/歌う花/野生花
-//----------------------------------
-
-alberta_in.gat,173,76,4	script	モンスターテイマー	125,{
-	mes "[イワド]";
-	mes "時はいまや";
-	mes "モンスターテイミングの時代！ ";
-	mes "君もかわいいモンスターとの";
-	mes "意思疎通のため";
-	mes "モンスターたちの嗜好品を集めなければならない";
-	mes "必要性を感じないかい？！";
+alberta_in.gat,173,76,4	script	"Iwado"	125,{
+	mes "[Iwado]";
+	mes "At the height of the era of monster taming!";
+	mes "Don't you feel to need to gather monster items in able to communicate with the cute monsters!?";
 	next;
-	menu "^3355FF' モンスターテイミング '^000000 に関して",-,"^3355FF' モンスタージュース '^000000 注文",L_MENU_1,"^3355FF' 歌う花 '^000000 注文",L_MENU_2,"^3355FF' 野生花 '^000000 注文",L_MENU_3,"会話をやめる",L_MENU_4;
-		mes "[イワド]";
-		mes "好きなモンスターとの";
-		mes "コミュニケーションのためなら";
-		mes "必ず用意しなければならない";
-		mes "様々なモンスター嗜好品！";
-		mes "我らモンスターテイマーギルドが";
-		mes "おてごろな条件でご提供します！";
+	menu "'Monster Taming' ?",-,"Order 'Monster Juice'",L_MENU_1,"Order 'Singin Flower'",L_MENU_2,"Order 'Wild Flower'",L_MENU_3,"Cancel",L_MENU_4;
+		mes "[Iwado]";
+		mes "The monster items necessary to communicate with monsters that is a must have!";
+		mes "Us monster tamer guild members' very reasonable offer.";
 		next;
-		mes "[イワド]";
-		mes "非常にクールなアイテムたちを";
-		mes "気軽に手に入れることができる";
-		mes "すてきなシステム！";
-		mes "モンスタージュース！";
-		mes "歌う花！";
-		mes "そして野生花！";
+		mes "[Iwado]";
+		mes "A system that allows you to get your hands on these cool items without a burden!";
+		mes "Monster Juice !";
+		mes "Singing Flower !";
+		mes "aaand.... Wild Flower !";
 		next;
-		mes "[イワド]";
-		mes "モンスタージュースは ^3355FF' 家畜の血 '^000000 １つと";
-		mes "^3355FF' リンゴ '^000000 ２つで交換可能で";
-		mes "歌う花は ^3355FF' 歌う草 '^000000 １つ";
-		mes "そして野生花は ^3355FF' 装飾用花 '^000000 １つと";
-		mes "^3355FF' クローバー '^000000 １つで交換可能です。";
-		mes "幻のアイテムに挑戦してみませんか？！";
+		mes "[Iwado]";
+		mes "To make Monster Juice, you need '1 Animal Gore' '2 Appel'.";
+		mes "'1 Singing Plant' for 1 Singing Flower,";
+		mes "and '1 Fancy Flower' and '1 Clover' for 1 Wild Flower.";
+		mes "Try these fantastic items!";
 		close;
 	L_MENU_1:
-		mes "人間が飲むという次元を";
-		mes "はるかに超越したアイテム！";
-		mes "その名も ^3355FF' モンスタージュース '^000000 !!";
-		mes "酸っぱくて苦々しいこの味はモンスターたちの";
-		mes "趣向にぴったり合った嗜好品 . .";
+		mes "[Iwado]";
+		mes "This is an item that is far beyond what humans can drink!";
+		mes "The name ...... 'Monster Juice' !!";
+		mes "This extremely sour taste is perfect for monsters...";
 		next;
 		checkitem 702,1,-,L_SUB_1;
 		checkitem 512,2,-,L_SUB_1;
-		mes "[イワド]";
-		mes "おお！ モンスタージュースを作ることができる材料を";
-		mes "すべて持っていらっしゃいますね。";
-		mes "すばらしい！";
-		mes "モンスターテイマーのプライドにかけて";
-		mes "すぐに作って差し上げます。";
+		mes "[Iwado]";
+		mes "You have the required items to make a 'Monster Juice' !!
 		next;
-		mes "[イワド]";
-		mes "リンゴ２つと家畜の血～";
+		mes "[Iwado]";
+		mes "I will make one for you!";
 		next;
-		mes "^3355FF- ゴリゴリ ザブザブ ガシャガシャ -^000000";
-		next;
-		mes "[イワド]";
-		mes "はい、できあがりました！";
-		mes "あなたの育てるかわいいモンスターを";
-		mes "大事にしてあげてください。";
-		mes "モンスタージュース！";
+		mes "[Iwado]";
+		mes "Use it well!";
 		delitem 702,1;
 		delitem 512,2;
 		additem 626,1;
 		close;
 	L_SUB_1:
-		mes "[イワド]";
-		mes "モンスタージュースが好きなモンスターを";
-		mes "育てるあなたに ..";
-		mes "モンスタージュースの作り方をひとつ！";
-		mes "^3355FF家畜の血１つ ! リンゴ２つ！^000000";
-		mes "私にもってきてくだされば、その場で";
-		mes "モンスターテイマーのプライドにかけて！";
+		mes "[Iwado]";
+		mes "For the monster owner that loves to use monster juice..";
+		mes "Once recipe for Monster Juice!";
+		mes "If you bring me '1 Animal Gore' and '2 Appel'";
+		mes "With all my pride as a monster tamer...";
 		next;
-		mes "[イワド]";
-		mes "すぐに作って差し上げます！";
+		mes "[Iwado]";
+		mes "I will make it for you!";
 		close;
 	L_MENU_2:
-		mes "人間が聞くという次元を";
-		mes "はるかに超越したアイテム！";
-		mes "その名も ^3355FF' 歌う花 '^000000 !!";
-		mes "咲き乱れては香ばしいこの花はモンスターたちの";
-		mes "趣向にぴったり合った嗜好品 . .";
+		mes "[Iwado]";
+		mes "This is a song that is far beyond human's reach!";
+		mes "The name... 'Singing Flower' !!";
+		mes "Dizzy and scenty.";
+		mes "A perfect item for monsters...";
 		next;
 		checkitem 707,1,-,L_SUB_2;
-		mes "[イワド]";
-		mes "おお！ 歌う花を作ることができる材料を";
-		mes "すべて持っていらっしゃいますね。";
-		mes "すばらしい！";
-		mes "モンスターテイマーのプライドにかけて";
-		mes "すぐに作って差し上げます。";
+		mes "[Iwado]";
+		mes "You have the required items to make a 'Singing Flower' !";
 		next;
-		mes "[イワド]";
-		mes "歌う草～";
+		mes "[Iwado]";
+		mes "I will make one for you";
 		next;
-		mes "^3355FF- サクサク ザクザク グリグリ -^000000";
-		next;
-		mes "[イワド]";
-		mes "はい、できあがりました！";
-		mes "あなたの育てるかわいいモンスターを";
-		mes "大事にしてあげてください。";
-		mes "歌う花 !";
+		mes "[Iwado]";
+		mes "Use it well!";
 		delitem 707,1;
 		additem 629,1;
 		close;
 	L_SUB_2:
-		mes "[イワド]";
-		mes "歌う花が好きなモンスターを";
-		mes "育てるあなたに ..";
-		mes "歌う花の作り方をひとつ！";
-		mes "^3355FF歌う草を１つ！^000000";
-		mes "私にもってきてくだされば、その場で";
-		mes "モンスターテイマーのプライドにかけて！";
+		mes "[Iwado]";
+		mes "For the monster owner";
+		mes "that loves to use Singing Flower..";
+		mes "One way to make 1 Singing Flower!";
+		mes "If you bring me '1 Singing Plant'";
+		mes "With all my pride as a monster tamer...";
 		next;
-		mes "[イワド]";
-		mes "すぐに作って差し上げます！";
+		mes "[Iwado]";
+		mes "I will make one for you right away!";
 		close;
 	L_MENU_3:
-		mes "人間が眺めるという次元を";
-		mes "はるかに超越したアイテム！";
-		mes "その名も ^3355FF' 野生花 '^000000 !!";
-		mes "理解しがたいこのデザインはモンスターたちの";
-		mes "趣向にぴったり合った嗜好品 . .";
+		mes "[Iwado]";
+		mes "This is a flower far beyond what humans can gaze at!";
+		mes "The name 'Wild Flower' !!";
+		mes "A troublesome design!";
+		mes "An item perfect for monsters...";
 		next;
 		checkitem 2207,1,-,L_SUB_3;
 		checkitem 705,1,-,L_SUB_3;
-		mes "[イワド]";
-		mes "おお！ 野生花を作ることができる材料を";
-		mes "すべて持っていらっしゃいますね。";
-		mes "すばらしい！";
-		mes "モンスターテイマーのプライドにかけて";
-		mes "すぐに作って差し上げます。";
+		mes "[Iwado]";
+		mes "You have the required items to make a 'Wild Flower' !"
 		next;
-		mes "[イワド]";
-		mes "装飾用花クローバーこねてこねて～";
+		mes "[Iwado]";
 		next;
-		mes "^3355FF- ビリビリ ゴリゴリ コネコネ -^000000";
+		mes "I will make one for you!";
 		next;
-		mes "[イワド]";
-		mes "はい、できあがりました！";
-		mes "あなたの育てるかわいいモンスターを";
-		mes "大事にしてあげてください。";
-		mes "野生花 !";
+		mes "[Iwado]";
+		mes "Use it well!";
 		delitem 2207,1;
 		delitem 705,1;
 		additem 10009,1;
 		close;
 	L_SUB_3:
-		mes "[イワド]";
-		mes "野生花が好きなモンスターを";
-		mes "育てるあなたに ..";
-		mes "野生花の作り方をひとつ！";
-		mes "^3355FF装飾用花とクローバーを１つずつ！^000000";
-		mes "私にもってきてくだされば、その場で";
-		mes "モンスターテイマーのプライドにかけて！";
+		mes "[Iwado]";
+		mes "For the monster owner";
+		mes "that loves to use Wild Flower..";
+		mes "One way to make 1 Wild Flower!";
+		mes "One of 'Fancy Flower', 'Clover' each!";
+		mes "If you bring them to me";
+		mes "With all my pride as monster tamer...
 		next;
-		mes "[イワド]";
-		mes "すぐに作って差し上げます！";
+		mes "[Iwado]";
+		mes "I will make one for you";
 		close;
 	L_MENU_4:
-		mes "[イワド]";
-		mes "どんなモンスターをそばに置くか";
-		mes "まだ決める事ができていないようですね。";
-		mes "人生のパートナーになるかもしれないので";
-		mes "おろそかに決めないこと ..";
-		mes "ゆっくり考えてみて";
-		mes "決心がついてたら、また訪ねて来てください。";
+		mes "[Iwado]";
+		mes "Please come back when you need Monster Taming items!";
 		close;
 }
 
