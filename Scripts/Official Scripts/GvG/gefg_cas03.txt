@@ -657,28 +657,28 @@ L_MENU_4:
 	next;
 	menu "Soldier 1",L_MENU_1-4,"Soldier 2",L_MENU_2-4,"Soldier 3",L_MENU_3-4,"Archer 1",L_MENU_4-4,"Archer 2",L_MENU_5-4,"Knight 1",L_MENU_6-4,"Knight 2",L_MENU_7-4,"Knight 3",L_MENU_8-4;
 L_MENU_1-4:
-	set GD = 0;
+	set @GD = 0;
 	goto L_GSTART_1;
 L_MENU_2-4:
-	set GD = 1;
+	set @GD = 1;
 	goto L_GSTART_1;
 L_MENU_3-4:
-	set GD = 2;
+	set @GD = 2;
 	goto L_GSTART_1;
 L_MENU_4-4:
-	set GD = 3;
+	set @GD = 3;
 	goto L_GSTART_1;
 L_MENU_5-4:
-	set GD = 4;
+	set @GD = 4;
 	goto L_GSTART_1;
 L_MENU_6-4:
-	set GD = 5;
+	set @GD = 5;
 	goto L_GSTART_1;
 L_MENU_7-4:
-	set GD = 6;
+	set @GD = 6;
 	goto L_GSTART_1;
 L_MENU_8-4:
-	set GD = 7;
+	set @GD = 7;
 	goto L_GSTART_1;
 L_GSTART_1:
 	mes "[  Jyang ]";
@@ -686,22 +686,22 @@ L_GSTART_1:
 	next;
 	menu "Install",L_MENU_1-5,"Cancel",L_MENU_2-5;
 L_MENU_1-5:
-	getgskilllevel 10002,GDSKILL;
-	check GDSKILL == 0,-,L_HAVESKILL_1;
+	getgskilllevel 10002,@GDSKILL;
+	check @GDSKILL == 0,-,L_HAVESKILL_1;
 	mes "[  Jyang ]";
 	mes "Master, you do not have any guild skill to install guardian, if you want to gain skill to install guardian, you must get ^ff0000GUARDIAN SKILL^000000. Guardian Installation has been canceled.";
 	goto L_Exit;
 L_HAVESKILL_1:
-	getguardstatus GD,NSTATUS;
-	check NSTATUS == 0,-,L_HAVEGUARD_1;
+	getguardstatus @GD,@NSTATUS;
+	check @NSTATUS == 0,-,L_HAVEGUARD_1;
 	check Zeny < 1000,-,L_HAVEMONEY_3;
 	mes "[  Jyang ]";
 	mes "You do not have enough money to install guardian, installation has been canceled.";
 	goto L_Exit;
 L_HAVEMONEY_3:
 	set Zeny -= 10000,0;
-	setguardstatus GD,1;
-	callguard GD;
+	setguardstatus @GD,1;
+	callguard @GD;
 	mes "[  Jyang ]";
 	mes "Guardian has been installed, guardian will protect our guild base against enemies.";
 	goto L_Exit;
@@ -721,8 +721,8 @@ L_MENU_5:
 	next;
 	menu "Hire",L_MENU_1-8,"Cancel",L_MENU_2-8;
 L_MENU_1-8:
-	getgskilllevel 10001,GDSKILL;
-	check GDSKILL == 0,-,L_HAVESKILL_2;
+	getgskilllevel 10001,@GDSKILL;
+	check @GDSKILL == 0,-,L_HAVESKILL_2;
 	mes "[  Jyang ]";
 	mes "Master, you havn't contract with Kafra Service Company. In order to contract with Kafra Server is to have ^ff0000KAFRA SKILL^000000 employment has been canceled .";
 	goto L_Exit;
