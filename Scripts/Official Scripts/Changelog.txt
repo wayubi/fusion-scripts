@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.004
 ----------------------------------------------------------------------------------------------------
+- warp\towns\izlude.txt - remove warp going to test guide.
 - Job\Job2_Knight_quest5.txt - Fixed bad NPC IDs for hidden script loaders. [Tsusai]
 - Quest\quest_arena_test.txt - Fixed bad NPC IDs for hidden script loaders. [Tsusai]
 - GvG\npc_guardiankafra.txt - Fixed bad NPC IDs for hidden script loaders. [Tsusai]
