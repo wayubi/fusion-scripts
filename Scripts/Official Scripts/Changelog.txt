@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.004
 ----------------------------------------------------------------------------------------------------
+- Quest\quest_arena_test.txt - Set hidden npc id's to -1 for functionality (away from user so they won't crash). [Tsusai]
 - Town\Town_Morocc.txt - Updated Morocc header. [Muad_Dib]
 - GvG\ - Changed all flag texts. [Muad_Dib]
 - warp\towns\alberta.txt - change warp output location. [nestor_zulueta]
