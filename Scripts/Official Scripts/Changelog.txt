@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.004
 ----------------------------------------------------------------------------------------------------
+- Job\Job2_Knight.txt - Moved To Archive. [Tsusai]
 - Event\Event_Whiteday.txt - changed  a few language errors. [Muad_Dib]
 - Event\Event_Whiteday.txt - added nestor zuleta's event_whiteday. [Muad_Dib]
 - Mob\dungeon\gef_dun.txt - Fixed a spawn that crashed server. [Muad_Dib]
