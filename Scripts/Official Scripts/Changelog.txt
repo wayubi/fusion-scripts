@@ -1,6 +1,7 @@
 --------------------------------------------------------------------------------
  Fusion 1.213 - August 29th, 2004
 --------------------------------------------------------------------------------
+- 09-21-04: Mob\other\town_rose.txt - Added Wild Roses in towns. [Muad_Dib]
 - 09-19-04: Warps\Towns\yuno.txt - Fixed a destination. [Tsusai]
 - 09-18-04: Mob\Old_Mob.rar - Added rar file with old mobs. [Muad_Dib]
 - 09-18-04: Mob\field\xxx_fild.txt - Updated with kRO based spawns. [Muad_Dib]
