@@ -472,7 +472,8 @@ L_START_8:
 		check @BS_ADD == 6,BS_ADD6,-;
 		check @BS_ADD == 7,BS_ADD7,-;
 		check @BS_ADD == 8,BS_ADD8,-;
-		check @BS_ADD == 9,BS_ADD9,BS_ADD10;
+		check @BS_ADD == 9,BS_ADD9,-;
+		check @BS_ADD == 10,BS_ADD10,L_SUB_START_8;
 		BS_ADD1:
 			set @REF_SUCCESS += 1;
 			goto L_SUB_START_8;
@@ -948,7 +949,8 @@ L_START_8:
 		check @BS_ADD == 6,BS_ADD6,-;
 		check @BS_ADD == 7,BS_ADD7,-;
 		check @BS_ADD == 8,BS_ADD8,-;
-		check @BS_ADD == 9,BS_ADD9,BS_ADD10;
+		check @BS_ADD == 9,BS_ADD9,-;
+		check @BS_ADD == 10,BS_ADD10,L_SUB_START_8;
 		BS_ADD1:
 			set @REF_SUCCESS += 1;
 			goto L_SUB_START_8;
@@ -1424,7 +1426,8 @@ L_START_8:
 		check @BS_ADD == 6,BS_ADD6,-;
 		check @BS_ADD == 7,BS_ADD7,-;
 		check @BS_ADD == 8,BS_ADD8,-;
-		check @BS_ADD == 9,BS_ADD9,BS_ADD10;
+		check @BS_ADD == 9,BS_ADD9,-;
+		check @BS_ADD == 10,BS_ADD10,L_SUB_START_8;
 		BS_ADD1:
 			set @REF_SUCCESS += 1;
 			goto L_SUB_START_8;
@@ -1900,7 +1903,8 @@ L_START_8:
 		check @BS_ADD == 6,BS_ADD6,-;
 		check @BS_ADD == 7,BS_ADD7,-;
 		check @BS_ADD == 8,BS_ADD8,-;
-		check @BS_ADD == 9,BS_ADD9,BS_ADD10;
+		check @BS_ADD == 9,BS_ADD9,-;
+		check @BS_ADD == 10,BS_ADD10,L_SUB_START_8;
 		BS_ADD1:
 			set @REF_SUCCESS += 1;
 			goto L_SUB_START_8;
@@ -2251,7 +2255,8 @@ L_START_8:
 		check @BS_ADD == 6,BS_ADD6,-;
 		check @BS_ADD == 7,BS_ADD7,-;
 		check @BS_ADD == 8,BS_ADD8,-;
-		check @BS_ADD == 9,BS_ADD9,BS_ADD10;
+		check @BS_ADD == 9,BS_ADD9,-;
+		check @BS_ADD == 10,BS_ADD10,L_SUB_START_8;
 		BS_ADD1:
 			set @REF_SUCCESS += 1;
 			goto L_SUB_START_8;
