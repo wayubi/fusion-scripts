@@ -15,15 +15,15 @@
 //========================================================================================
 
 prontera.gat,55,350,5	script	"Peco Breeder"	105,{
-	mes "[Peco Breeder]";
 	check Job == 7,L_START_2,-;
 	check Job == 14,-,L_START_1;
 	set @peco_price = 3000;
-	goto L_START_2;
+	goto L_START_2_1;
 L_START_2:
 	set @peco_price = 2500;
 	goto L_START_2_1;
 L_START_2_1:
+		mes "[Peco Breeder]";
 		mes "Hello, want to buy a peco to ride on?";
 		next;
 		menu "Yes",-,"No",L_MENU_1;
@@ -41,13 +41,15 @@ L_START_2_1:
 				set Zeny -= @peco_price,0;
 				option 2,1;
 			L_ROOT_1:
+			mes "[Peco Breeder]";
 			mes "Thanks for stopping by";
-				close;
+			close;
 		L_MENU_1:
 			mes "[Peco Breeder]";
 			mes "Ah well, have a good day then!";
 			close;
 	L_START_1:
+		mes "[Peco Breeder]";
 		mes "Sorry only Knights and Crusaders can ride a Pecos";
 		close;
 }
