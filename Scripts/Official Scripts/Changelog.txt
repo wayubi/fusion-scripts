@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.003
 ----------------------------------------------------------------------------------------------------
+- NPC\npc_skill_get.txt - Added Bard and Dancer support for the arrow creation and charge arrow quests. [Tsusai]
 - NPC\npc_skill_get.txt - Rolled back to version released w/ 1.2.0.9 and added alexkreux's Moving Recovery. [Tsusai]
 - NPC\npc_skill_get.txt - Updated item descriptions for the thief and auto-berserk. [Tsusai]
 - NPC\npc_skill_get.txt - Translated the rest of the platinum skills except Berserk. [Tsusai]

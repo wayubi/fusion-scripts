@@ -579,6 +579,8 @@ LStartLowlv2:
 //---------------------------
 morocc.gat,121,109,5	script	"ƒMƒ‡ƒ‹ƒiƒŠ"	88,{
 	check Job = 3,Lcheck1,-;
+	check Job != 19,-,LStart2;
+	check Job != 20,-,LStart2;
 	check Job != 11,LStartOther,LStart2;
 LCheck1:
 	check JobLevel >= 30,-,LStartLowlv;
@@ -724,6 +726,8 @@ close;
 //---------------------------
 payon.gat,30,94,3	script	"ƒJƒCƒS"	88,{
 	check Job = 3,Lcheck1,-;
+	check Job != 19,-,LStart;
+	check Job != 20,-,LStart;
 	check Job != 11,LStartOther,LStart;
 Lcheck1:
 	check JobLevel >= 35,-,LStartLowlv;
