@@ -4829,25 +4829,25 @@ cmd_fild07.gat,136,134,4	script	"Kafra Personnel"	721,{
 		menu "Comodo -> 500 z",L_MENU_3_1,"Morroc -> 2500 z",L_MENU_3_2,"Cancel",L_MENU_3_3;
 		L_MENU_3_1:
 			check @Kafra_COUPON = 0,-,L_SUB_3_1;
-				check Zeny < 1200,-,L_ROOT_3_1;
+				check Zeny < 500,-,L_ROOT_3_1;
 					mes "[Kafra Personnel]";
 					mes "You don't have enough money.";
 					mes "Please verify the amount of money you have.";
 					goto L_EXIT;
 			L_ROOT_3_1:
-				set Zeny -= 1200,0;
+				set Zeny -= 500,0;
 				set KF_PIT += 120;
 			L_SUB_3_1:
 				warp "comodo",209,143;
 		L_MENU_3_2:
 			check @Kafra_COUPON = 0,-,L_SUB_3_2;
-				check Zeny < 1200,-,L_ROOT_3_2;
+				check Zeny < 2500,-,L_ROOT_3_2;
 					mes "[Kafra Personnel]";
 					mes "You don't have enough money.";
 					mes "Please verify the amount of money you have.";
 					goto L_EXIT;
 			L_ROOT_3_2:
-				set Zeny -= 1200,0;
+				set Zeny -= 2500,0;
 				set KF_PIT += 120;
 			L_SUB_3_2:
 				warp "morocc",156,46;
