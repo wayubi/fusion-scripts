@@ -135,12 +135,12 @@ payon_in02.gat,64,71,4	script	"Archer Guildsman"	85,{
 		DONE:
 			mes "Finally You achieved the Goal. I will promote you right away.";
 			next;
-			set JobLevel = 1,0;
-			check job = 24,HIGH,-;
+			check Job == 24,HIGH,-;
 				jobchange 3;
 				goto CONGRA;
 			HIGH:
 				jobchange 27;
+			CONGRA:
 			mes "[Archer Guildsman]";
 			mes "Congratulations! We expect you to cooperate with us for the future of Archer Guild.";
 			mes "Ah,Your bow has arrived from Bow Making Department. Please take it.";
