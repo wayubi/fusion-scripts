@@ -9,8 +9,8 @@
 // - Iwado -> alberta_in: 173,76
 //   Transform items into Monsters Taming items, Monster Juice, Singing Flower, Wild Flower
 //
-// - モンスターテイマー ->  izlude_in: 129,64
-//   Don't know what it does.
+// - Shogo ->  izlude_in: 129,64
+//   Transform items into Monsters Taming items, Book of the Devil, No Recipient, Horror of Tribe.
 //
 // - モンスターテイマー -> aldeba_in 168,175
 //   Don't know what it does yet.
@@ -139,65 +139,51 @@ alberta_in.gat,173,76,4	script	"Iwado"	125,{
 		close;
 }
 
-//----------------------------------
-// 悪魔召喚書/宛てがない手紙/組織の掟
-//----------------------------------
-
-izlude_in.gat,129,64,4	script	モンスターテイマー	125,{
-	mes "[ショウゴ]";
-	mes "モンスターテイミングに必要な";
-	mes "嗜好品を取りそろえるのに";
-	mes "専念していますかッ？ . . . . .";
-	mes "かわいいペットモンスターたちの";
-	mes "嗜好品を準備してあげましょうッ！";
+izlude_in.gat,129,64,4	script	"Monster Tamer" 125,{
+	mes "[Shogo]";
+	mes "Are you pre-accupied with gathering items for monsters and want a break?";
+	mes "We will gather items for your cute pets.";
 	next;
-	menu "^3355FF' モンスターテイミング '^000000 に関して",-,"^3355FF' 悪魔召喚書 '^000000 注文",L_MENU_1,"^3355FF' 宛てがない手紙 '^000000 注文",L_MENU_2,"^3355FF' 組織の掟 '^000000 注文",L_MENU_3,"会話をやめる",L_MENU_4;
-		mes "[ショウゴ]";
-		mes "好きなモンスターとの";
-		mes "コミュニケーションのためなら";
-		mes "必ず用意しなければならない";
-		mes "様々なモンスター嗜好品ッ！";
-		mes "我らモンスターテイマーギルドが";
-		mes "おてごろな条件でご提供しますッ！";
+	menu "^3355FF'Monster Taming'^000000?",-,"Order ^3355FF'Book of the Devil'^000000",L_MENU_1,"Order ^3355FF'No Recipient'^000000",L_MENU_2,"Order ^3355FF'Horror of Tribe'^000000",L_MENU_3,"Cancel",L_MENU_4;
+		mes "[Shogo]";
+		mes "The monster items necessary to communicate with the monster of your choice!";
+		mes "Us monster tamer guild members have very reasonable deals.";
 		next;
-		mes "[ショウゴ]";
-		mes "非常にクゥールなアイテムたちをッ";
-		mes "気軽に手に入れることができる";
-		mes "すてきなシステムッ！";
-		mes "悪魔召喚書ッ！";
-		mes "宛てがない手紙ッ！";
-		mes "組織の掟ッ！";
+		mes "[Shogo]";
+		mes "A system that allows you to get your hands on these cool items without a burden.";
+		mes "Horror of Tribe!";
+		mes "No Recipent!";
+		mes "Book of the Devil!";
 		next;
-		mes "[ショウゴ]";
-		mes "悪魔召喚書は ^3355FF' 古い魔法書 '^000000 １つと";
-		mes "^3355FF' 亡者の牙 '^000000 ２つで交換可能で";
-		mes "宛てがない手紙は ^3355FF' 古いポートレート '^000000 １つ";
-		mes "そして組織の掟は ^3355FF' 忠節の証 '^000000 １つと";
-		mes "^3355FF' サソリの尻尾 '^000000 １つで交換可能です。";
-		mes "幻のアイテムに挑戦してみませんか？！";
+		mes "[Shogo]";
+		mes "You can exchange ^3355FF'1 Old Magic Book'^000000 and";
+		mes "^3355FF'2 Horrendous Mouth'^000000 for 1 Book of the Devil.";
+		mes "You can exchange ^3355FF'1 Old Portrait'^000000 for 1 No Recipient.";
+		mes "And you can exchange ^3355FF'1 Chibalry Emblem'^000000 and ";
+		mes "^3355FF'1 Scorpion Tail'^000000 for 1 Horror of Tribe.";
+		mes "Try these fantastic items!";
 		close;
 	L_MENU_1:
-		mes "人間が読み解くという次元を";
-		mes "はるかに超越したアイテムッ！";
-		mes "その名も ^3355FF' 悪魔召喚書 '^000000 !!";
-		mes "難しくて理解不能なモンスターたちを呼び出す";
-		mes "神秘的な力を持ったこのアイテムッ";
+		mes "This is an item far beyond what humans can read!";
+		mes "The name ^3355FF'Book of the Devil'^000000 !!";
+		mes "The item that cannot be understood but possessing"
+		mes "the mysterious ability to summon monsters.";
 		next;
 		checkitem 1006,1,-,L_SUB_1;
 		checkitem 958,2,-,L_SUB_1;
-		mes "[ショウゴ]";
+		mes "[Shogo]";
 		mes "おお！ 悪魔召喚書を作ることができる材料を";
 		mes "すべて持っていらっしゃいますねッ。";
 		mes "すばらしいッ！";
 		mes "モンスターテイマーのプライドにかけて";
 		mes "すぐに作って差し上げますッ。";
 		next;
-		mes "[ショウゴ]";
+		mes "[Shogo]";
 		mes "亡者の牙２つと古い魔法書～ッ";
 		next;
 		mes "^3355FF- パッパラパラッ グツグツッ -^000000";
 		next;
-		mes "[ショウゴ]";
+		mes "[Shogo]";
 		mes "はい、できあがりましたッ！";
 		mes "あなたの育てるかわいいモンスターを";
 		mes "大事にしてあげてくださいッ。";
@@ -207,38 +193,36 @@ izlude_in.gat,129,64,4	script	モンスターテイマー	125,{
 		additem 642,1;
 		close;
 	L_SUB_1:
-		mes "[ショウゴ]";
-		mes "悪魔召喚書で召喚できるモンスターを";
-		mes "育てるあなたにッ ..";
-		mes "悪魔召喚書の作り方をひとつ！";
-		mes "^3355FF古い魔法書１つと亡者の牙２つ ^000000";
-		mes "私にもってきてくだされば、その場で";
-		mes "モンスターテイマーのプライドにかけてッ！";
+		mes "[Shogo]";
+		mes "For the owner that raises a monster";
+		mes "that can be summoned using the Book of the Devil...";
+		mes "One way to make 1 Book of the Devil!";
+		mes "^3355FF1 Old Magicbook, 2 Horrendous Mouth^000000!";
+		mes "If you bring me these items,;
+		mes "with all my pride as a monster tamer,";
 		next;
-		mes "[ショウゴ]";
-		mes "すぐに作って差し上げますねッ！";
+		mes "[Shogo]";
+		mes "I will make it for you!";
 		close;
 	L_MENU_2:
-		mes "人間が感じるという次元を";
-		mes "はるかに超越したアイテムッ. .";
-		mes "その名も ^3355FF' 宛てがない手紙 '^000000 !!";
-		mes "誰が誰に送るのか";
-		mes "受け取った方も送った方もわからないこのアイテムッ";
+		mes "This is an item far beyond what a human can feel...";
+		mes "The name ^3355FF'No Recipient'^000000 !!";
+		mes "Neither the reciever nor the sender can tell who sent this item...";
 		next;
 		checkitem 7014,1,-,L_SUB_2;
-		mes "[ショウゴ]";
+		mes "[Shogo]";
 		mes "おお！ 宛てがない手紙を作ることができる材料を";
 		mes "すべて持っていらっしゃいますねッ。";
 		mes "すばらしいッ！";
 		mes "モンスターテイマーのプライドにかけて";
 		mes "すぐに作って差し上げますッ。";
 		next;
-		mes "[ショウゴ]";
+		mes "[Shogo]";
 		mes "古いポートレート～";
 		next;
 		mes "^3355FF- コトコト ジックリジックリ -^000000";
 		next;
-		mes "[ショウゴ]";
+		mes "[Shogo]";
 		mes "はい、できあがりましたッ！";
 		mes "あなたの育てるかわいいモンスターを";
 		mes "大事にしてあげてくださいッ。";
@@ -247,40 +231,39 @@ izlude_in.gat,129,64,4	script	モンスターテイマー	125,{
 		additem 636,1;
 		close;
 	L_SUB_2:
-		mes "[ショウゴ]";
-		mes "宛てがない手紙が好きなモンスターを";
-		mes "育てるあなたに ..";
-		mes "宛てがない手紙の作り方をひとつッ！";
-		mes "^3355FF古いポートレート１つ！^000000";
-		mes "私にもってきてくだされば、その場で";
-		mes "モンスターテイマーのプライドにかけてッ！";
+		mes "[Shogo]";
+		mes "For the monster owner that is fond of No Recipient...";
+		mes "One way to make No Recipient!";
+		mes "^3355FF1 Old Portrait!^000000";
+		mes "If you bring this to me,";
+		mes "with all my pride as a monster tamer,";
 		next;
-		mes "[ショウゴ]";
-		mes "すぐに作って差し上げますねッ！";
+		mes "[Shogo]";
+		mes "I will make it for you!";
 		close;
 	L_MENU_3:
-		mes "人間が味わうという次元を";
-		mes "はるかに超越したアイテムッ！";
-		mes "その名も ^3355FF' 組織の掟 '^000000 !!";
-		mes "組織を重んじるモンスターたちの";
-		mes "趣向にピッタリあった嗜好品ッ . .";
+		mes "This is an item far beyond";
+		mes "what a human can taste!";
+		mes "The name ^3355FF'Horror of Tribe'^000000 !!";
+		mes "A troublesome design!";
+		mes "An item perfect for monsters...";
 		next;
 		checkitem 1004,1,-,L_SUB_3;
 		checkitem 904,1,-,L_SUB_3;
-		mes "[ショウゴ]";
+		mes "[Shogo]";
 		mes "おお！ 組織の掟を作ることができる材料を";
 		mes "すべて持っていらっしゃいますねッ。";
 		mes "すばらしいッ！";
 		mes "モンスターテイマーのプライドにかけて";
 		mes "すぐに作って差し上げますッ。";
 		next;
-		mes "[ショウゴ]";
+		mes "[Shogo]";
 		mes "サソリの尻尾 .. そして";
 		mes "忠節の証まぜてまぜて～ッ";
 		next;
 		mes "^3355FF- がらがら がらがら ぐっちゃ ぐっちゃ -^000000";
 		next;
-		mes "[ショウゴ]";
+		mes "[Shogo]";
 		mes "はい、できあがりましたッ！";
 		mes "あなたの育てるかわいいモンスターを";
 		mes "大事にしてあげてくださいッ。";
@@ -290,26 +273,26 @@ izlude_in.gat,129,64,4	script	モンスターテイマー	125,{
 		additem 635,1;
 		close;
 	L_SUB_3:
-		mes "[ショウゴ]";
-		mes "組織の掟が好きなモンスターを";
-		mes "育てるあなたに ..";
-		mes "組織の掟の作り方をひとつッ！";
-		mes "^3355FF忠節の証ッ！^000000";
-		mes "^3355FFサソリの尻尾１つずつッ！^000000";
-		mes "私にもってきてくだされば、その場で";
-		mes "モンスターテイマーのプライドにかけてッ！";
+		mes "[Shogo]";
+		mes "For the monster owner";
+		mes "who is fond of Horror of Tribe...";
+		mes "One way to make Horror of Tribe!";
+		mes "^3355FF1 Chivalry Emblem!^000000";
+		mes "^3355FF! Scorpion Tail!^000000";
+		mes "If you bring these items to me,";
+		mes "with all my pride as a monster tamer...";
 		next;
-		mes "[ショウゴ]";
-		mes "すぐに作って差し上げますねッ！";
+		mes "[Shogo]";
+		mes "I will make it for you!";
 		close;
 	L_MENU_4:
-		mes "[ショウゴ]";
-		mes "どんなモンスターをそばに置くか";
-		mes "まだ決める事ができていないようですねッ。";
-		mes "人生のパートナーになるかもしれないので";
-		mes "おろそかに決めないことッ ..";
-		mes "ゆっくり考えてみて";
-		mes "決心がついてたら、また訪ねて来てくださいッ。";
+		mes "[Shogo]";
+		mes "Ah..you must have not decided";
+		mes "which monster to raise yet.";
+		mes "Not a decision to be made carelessly, for";
+		mes "they will accompany you throughout your life...";
+		mes "Please take your time";
+		mes "and return when you have decided.";
 		close;
 }
 
