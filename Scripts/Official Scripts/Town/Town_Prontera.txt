@@ -375,7 +375,7 @@ prt_church.gat,27,24,2 script "Sister" 79,{
 	close;
 }
 
-prt_church.gat,84,57,2 script	"Fun"	85,{
+prt_church.gat,96,57,2 script	"Fun"	85,{
 	mes "[Fun]";
 	mes "Are you having fun on your journey?";
 	mes "I wish you a wonderful day everyday here.";
