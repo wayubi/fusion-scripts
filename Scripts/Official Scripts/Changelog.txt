@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.002
 ----------------------------------------------------------------------------------------------------
+- Town\Town_Siglude.txt - Fixed typo errors Vurewell, Sade, Begnahd and Kahlamanlith NPCs. [mudvayne]
 - Event\Event_Dye.txt - Fixed missing " in npc names and header. [mudvayne]
 - Shop\Shop.txt - Moved to new filename system. [mudvayne]
 - Event\ - Removed Event_Card-Seller.txt and Event_NewHatsX.txt and moved to Archive. [mudvayne]
