@@ -1,10 +1,16 @@
-//----------------------------------------------------------------------------------------
-// Card Master NPC - From Weiss, translated by AlexKreuz [Izlude.Net]
-// eWeiss Project 2003 - http://weiss.kittyloaf.net
-//----------------------------------------------------------------------------------------
+//========================================================================================
+// »» The Fusion Project ««
+// Copyright (c) 2004, Cobax Information Systems
+// http://fusion.cobax.net/
+// ---------------------------------------------------------------------------------------
+//
+// Card Gambler - Non Player Character Locations
+//
+// - Card Master -> prt_in: 38,104
+//   Randomly draw cards for 100kz each draw.
+//
+//========================================================================================
 
-
-// Card Master.
 prt_in.gat,38,104,4	script	"Card Master"	47,{
 	mes "[Card Master]";
 	mes "Welcome.";
@@ -13,7 +19,6 @@ prt_in.gat,38,104,4	script	"Card Master"	47,{
 	next;
 	menu "I'll buy some.",-,"No Thanks!",LCard_ED1;
 LCard1:
-// Purchase number of cards and limit restrictions.
 	mes "[Card Master]";
 	mes "How many cards will you purchase?";
 	next;
@@ -25,7 +30,6 @@ LCard1:
 	next;
 	goto LCard1;
 LCard2:
-// Confirms card & zeny amount.
 	mes "[Card Master]";
 	mes "Is $[@F_Card_Num] the correct amount of cards that you'd like to purchase?";
 	next;
@@ -34,22 +38,18 @@ LCard2:
 	set @F_Zeny*100000;
 	check Zeny < @F_Zeny,LCard_ED2,-;
 LCard3:
-// Generates probability for high-grade card.
 	random @F_Card_Lim 9;
 	check @F_Card_Lim = 0,-,LCard4;
 	random @F_Card 148;
 	goto LCard5;
 LCard4:
-// Generates probability for low-grade card.
 	random @F_Card 62;
 LCard5:
-// Issue's card. Pay's money.
 	set @F_Card + 4001;
 	additem @F_Card,1;
 	set @F_Card_Num - 1;
 	check @F_Card_Num = 0,-,LCard3;
 	set Zeny - @F_Zeny;
-// End of conditions.
 LCard_ED1:
 	mes "[Card Master]";
 	mes "Please visit us again soon.";
