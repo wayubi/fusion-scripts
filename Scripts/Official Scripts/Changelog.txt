@@ -9,6 +9,9 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.005
 ----------------------------------------------------------------------------------------------------
+- 05-28-04: Mob\field\gon_fild.txt - Disabled "Baby Leopard" until the DB drops is fixed. [Tsusai]
+- 05-28-04: Mob\field\um_fild.txt - Disabled "Baby Leopard" until the DB drops is fixed. [Tsusai]
+- 05-28-04: Mob\dungeon\gon_dun.txt - Disabled "Baby Leopard" until the DB drops is fixed. [Tsusai]
 - 05-28-04: Event\Event_ClockTower.txt - Made Boy not to display [Gatekeeper Riku]. [Tsusai]
 - 05-27-04: Town\Town_Juno.txt - Updated the Juno soldiers. [Tezuka]
 - 05-26-04: Town\Town_Guide.txt - Added the Gonryun guide translated by Saister. [Muad_Dib]

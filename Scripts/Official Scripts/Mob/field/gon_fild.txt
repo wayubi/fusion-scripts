@@ -14,7 +14,7 @@
 //========================================================================================
 
 gon_fild01.gat,0,0,0,0	monster	"Zipper Bear" 1417,18,0,0,0
-gon_fild01.gat,0,0,0,0	monster	"Baby Leopard" 1415,10,0,0,0
+//gon_fild01.gat,0,0,0,0	monster	"Baby Leopard" 1415,10,0,0,0
 gon_fild01.gat,0,0,0,0	monster	"Green Plant" 1080,5,360000,180000,1
 gon_fild01.gat,0,0,0,0	monster	"Rice Cake Boy" 1409,30,0,0,0
 gon_fild01.gat,0,0,0,0	monster	"Poporing" 1031,25,0,0,0

@@ -18,7 +18,7 @@ um_fild01.gat,0,0,0,0 monster "Poison Snake" 1025,40,0,0,0
 um_fild01.gat,0,0,0,0 monster "Creamy" 1018,15,0,0,0
 um_fild01.gat,0,0,0,0 monster "Flora" 1118,25,0,0,0
 um_fild01.gat,0,0,0,0 monster "Choco" 1214,1,150000,150000,0
-um_fild01.gat,0,0,0,0 monster "Baby Leopard" 1415,15,0,0,0
+//um_fild01.gat,0,0,0,0 monster "Baby Leopard" 1415,15,0,0,0
 um_fild01.gat,0,0,0,0 monster "Brilight" 1211,25,0,0,0
 
 //========================================================================================
