@@ -1,10 +1,12 @@
 --------------------------------------------------------------------------------
  Fusion 1.212 - June 30th, 2004
 -------------------------------------------------------------------------------- 
- - 06-20-04: Added Hats Quest for the 525 patch - Hat Quests\New_Hats_525t.txt. [Yun Qi]
+ - 06-27-04: Added Free All-Jobs Job Changer script (ENG) - Scripts\Custom Scripts\Job Changers\All_Jobs-free.txt. [Yun Qi]
+ - 06-27-04: Added "Job Changers" folder - Scripts\Custom Scripts\Job Changers. [Yun Qi]
+ - 06-20-04: Added Hats Quest for the 525 patch script (ENG) - Hat Quests\New_Hats_525t.txt. [Yun Qi]
  - 06-20-04: Added "Hat Quests" folder - Scripts\Custom Scripts\Quests\Hat Quests. [Yun Qi]
  - 06-20-04: Added "Quests" folder - Scripts\Custom Scripts\Quests. [Yun Qi]
- - 06-11-04: Added Free Stat & Skill Resetter - Stat and Skill Resetters\Dai-In-free.txt . [Yun Qi]
+ - 06-11-04: Added Free Stat & Skill Resetter script (ENG) - Stat and Skill Resetters\Dai-In-free.txt . [Yun Qi]
  - 06-11-04: Added "Stat and Skill Resetters" folder - Scripts\Custom Scripts\Stat and Skill Resetters. [Yun Qi]
  - 06-10-04: Added 40z Prontera Hair Stylist script (ENG) - Hair Stylists\Ashley-40z_input.txt. [Yun Qi]
  - 06-08-04: Added Samurai Warpers script (ENG) - Warpers\SamuraiWarpers_100+300.txt. [Yun Qi]
@@ -13,7 +15,7 @@
  - 06-06-04: Added "Shops" folder - Scripts\Custom Scripts\Shops. [Yun Qi]
  - 06-05-04: Added 40z Prontera Hair Stylist script (ENG) - Hair Stylists\Ashley-40z.txt. [Yun Qi]
  - 06-05-04: Renamed Hair Stylists\Ashley.txt to Ashley-free.txt. [Yun Qi]
- - 06-05-04: Edited Hair Stylists\Ashley.txt - Major overhall. [Yun Qi]
+ - 06-05-04: Edited Hair Stylists\Ashley.txt script (ENG) - Major overhall. [Yun Qi]
  - 06-04-04: Removed all SPN scripts. [Yun Qi]
  - 06-04-04: Edited Hair Stylists\Ashley.txt - Corrected a spelling error. [Yun Qi]
  - 06-04-04: Added 550z Prontera Healer script (SPN) - Healers\Cricket-550z_SPN.txt. [Yun Qi]
