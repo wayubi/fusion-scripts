@@ -2,6 +2,7 @@ asdf
 ----------------------------------------------------------------------------------------------------
 Fusion NPC Pack - 1.002
 ----------------------------------------------------------------------------------------------------
+- Event\Event_MrSmile.txt - Fixed page header, Npc Names and Npc Sprite. [mudvayne]
 - Event\Event_MobTim.txt - Translated Iwado Npc and fixed script header. [mudvayne]
 - Warp\warp.txt - Fixed Prontera Castle Warp Coodrinates For the Empelium Room [Tsusai]
 - GvG\prtg_cas02.txt - Adjusted Prontera Castle Emperium Location and Flags that were supposed to be near it. [Tsusai]

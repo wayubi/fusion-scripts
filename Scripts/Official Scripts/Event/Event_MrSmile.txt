@@ -1,9 +1,32 @@
-//----------------------------------------------------------------------------------------
-// Mr.Smile event - From Weiss, by Hylysi
-// eWeiss Project 2003 - http://revolve.emuxhaven.net/weiss/
-//----------------------------------------------------------------------------------------
+//========================================================================================
+// »» The Fusion Project ««
+// Copyright (c) 2004, Cobax Information Systems
+// http://fusion.cobax.net/
+// ---------------------------------------------------------------------------------------
+//
+// Mr.Smile Quest - Non Player Character Locations
+//
+// - Smile Assistance -> prontera: 157,187
+//   Give informations and transform Mr.Smile Item
+//
+// - Smile Assistance -> morocc: 158,97
+//   Give informations and transform Mr.Smile Item
+//
+// - Smile Assistance -> aldebaran: 136,135
+//   Give informations and transform Mr.Smile Item
+//
+// - Smile Assistance -> geffen: 119,107
+//   Give informations and transform Mr.Smile Item
+//
+// - Smile Assistance -> alberta: 113,53
+//   Give informations and transform Mr.Smile Item
+//
+// - Smile Assistance -> payon: 84,158
+//   Give informations and transform Mr.Smile Item
+//
+//========================================================================================
 
-prontera.gat,157,187,4	script	"Smile Helper"	91,{
+prontera.gat,157,187,4	script	"Smile Assistance"	92,{
 	mes "[Smile Gal]";
 	mes "Hello, how are you? I am the Mr.Smile Supporter. How may I assist you?";
 	next;
@@ -75,7 +98,7 @@ L_Make:
 		close;
 }
 
-morocc.gat,158,97,4	script	"Smile Helper"	91,{
+morocc.gat,158,97,4	script	"Smile Assistance"	92,{
 	mes "[Smile Gal]";
 	mes "Hello, how are you? I am the Mr.Smile Supporter. How may I assist you?";
 	next;
@@ -147,7 +170,7 @@ L_Make:
 		close;
 }
 
-aldebaran.gat,136,135,4	script	"Smile Helper"	91,{
+aldebaran.gat,136,135,4	script	"Smile Assistance"	92,{
 	mes "[Smile Gal]";
 	mes "Hello, how are you? I am the Mr.Smile Supporter. How may I assist you?";
 	next;
@@ -219,7 +242,7 @@ L_Make:
 		close;
 }
 
-geffen.gat,119,107,4	script	"Smile Helper"	91,{
+geffen.gat,119,107,4	script	"Smile Assistance"	92,{
 	mes "[Smile Gal]";
 	mes "Hello, how are you? I am the Mr.Smile Supporter. How may I assist you?";
 	next;
@@ -291,7 +314,7 @@ L_Make:
 		close;
 }
 
-alberta.gat,113,53,4	script	"Smile Helper"	91,{
+alberta.gat,113,53,4	script	"Smile Assistance"	92,{
 	mes "[Smile Gal]";
 	mes "Hello, how are you? I am the Mr.Smile Supporter. How may I assist you?";
 	next;
@@ -363,7 +386,7 @@ L_Make:
 		close;
 }
 
-payon.gat,84,158,4	script	"Smile Helper"	91,{
+payon.gat,84,158,4	script	"Smile Assistance"	92,{
 	mes "[Smile Gal]";
 	mes "Hello, how are you? I am the Mr.Smile Supporter. How may I assist you?";
 	next;
