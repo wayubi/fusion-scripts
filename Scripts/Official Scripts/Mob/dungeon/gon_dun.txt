@@ -1,16 +1,15 @@
 //========================================================================================
 // »» The Fusion Project ««
 // Copyright (c) 2004, Cobax Information Systems
-// http://fusion.cobax.net/
+// http://cobax.net/
 // ---------------------------------------------------------------------------------------
 //
-// Gon Ryun Dungeon Mob - Monster Spawn Locations
-// - Credits to jathena team for original info.
+// Gon Ryune Dungeon - Monster Spawn Locations
 //
 //========================================================================================
 
 //========================================================================================
-// - Gon Ryun Dungeon 01
+// - Gon Ryune Dungeon 01
 //========================================================================================
 
 gon_dun01.gat,0,0,0,0	monster	"Yellow Plant" 1081,10,360000,180000,1
@@ -22,7 +21,7 @@ gon_dun01.gat,0,0,0,0	monster	"Yellow Plant" 1081,10,0,0,0
 gon_dun01.gat,0,0,0,0	monster	"White Plant" 1082,10,0,0,0
 
 //========================================================================================
-// - Gon Ryun Dungeon 02
+// - Gon Ryune Dungeon 02
 //========================================================================================
 
 gon_dun02.gat,0,0,0,0	      monster	"Yellow Plant" 1081,4,0,0,0
@@ -36,16 +35,13 @@ gon_dun02.gat,47,120,16,33	monster	"Live Peach Tree" 1410,1,15000,30000,1
 gon_dun02.gat,250,243,25,34	monster	"Live Peach Tree" 1410,6,15000,30000,1
 gon_dun02.gat,230,203,25,34	monster	"Live Peach Tree" 1410,4,15000,30000,1
 
-
-
-
 //========================================================================================
-// - Gon Ryun Dungeon 03
+// - Gon Ryune Dungeon 03
 //========================================================================================
 
 gon_dun03.gat,0,0,0,0	monster	"White Plant" 1082,4,0,0,0
 gon_dun03.gat,0,0,0,0	monster	"Evil Cloud Hermit" 1412,15,0,0,0
 gon_dun03.gat,0,0,0,0	monster	"Wicked Nymph" 1416,10,0,0,0
 gon_dun03.gat,0,0,0,0	monster	"Wild Ginseng" 1413,10,0,0,0
-gon_dun03.gat,0,0,0,0	monster	"Dark Snake Lord" 1418,1,7200000,3600000,1
+gon_dun03.gat,0,0,0,0	monster	"Dark Snake Lord" 1418,1,1800000,900000,0
 

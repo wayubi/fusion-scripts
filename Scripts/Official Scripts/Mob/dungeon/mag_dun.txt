@@ -1,10 +1,10 @@
 //========================================================================================
 // »» The Fusion Project ««
 // Copyright (c) 2004, Cobax Information Systems
-// http://fusion.cobax.net/
+// http://cobax.net/
 // ---------------------------------------------------------------------------------------
 //
-// Magma Dungeon Mob - Monster Spawn Locations
+// Magma Dungeon - Monster Spawn Locations
 //
 //========================================================================================
 
@@ -28,5 +28,5 @@ mag_dun02.gat,0,0,0,0	monster	"Sky Deleter" 1384,12,0,0,0
 mag_dun02.gat,0,0,0,0	monster	"Gig" 1387,18,0,0,0
 mag_dun02.gat,0,0,0,0	monster	"Blazzer" 1367,15,0,0,0
 mag_dun02.gat,0,0,0,0	monster	"Diabolic" 1382,10,0,0,0
-mag_dun02.gat,0,0,0,0	monster	"Lord of Death" 1373,1,3600000,7200000,1
+
 

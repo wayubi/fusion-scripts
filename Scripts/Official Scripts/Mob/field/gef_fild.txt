@@ -1,10 +1,10 @@
 //========================================================================================
 // »» The Fusion Project ««
 // Copyright (c) 2004, Cobax Information Systems
-// http://fusion.cobax.net/
+// http://cobax.net/
 // ---------------------------------------------------------------------------------------
 //
-// Comodo Fields Mob - Monster Spawn Locations
+// Comodo Fields - Monster Spawn Locations
 //
 //========================================================================================
 
@@ -97,7 +97,7 @@ gef_fild04.gat,0,0,0,0  	monster	"Chonchon" 1011,50,0,0,0
 gef_fild04.gat,0,0,0,0  	monster	"Fabre" 1007,55,0,0,0
 gef_fild04.gat,0,0,0,0  	monster	"Poring" 1002,55,0,0,0
 gef_fild04.gat,0,0,0,0  	monster	"Pupa" 1008,20,0,0,0
-gef_fild04.gat,0,0,0,0  	monster	"Roda" Frog 1012,30,0,0,0
+gef_fild04.gat,0,0,0,0  	monster	"Roda Frog" 1012,30,0,0,0
 gef_fild04.gat,0,0,0,0  	monster	"Willow" 1010,30,0,0,0
 gef_fild04.gat,152,82,5,2	monster	"Green Plant" 1080,3,360000,180000,1
 gef_fild04.gat,224,82,5,2	monster	"Green Plant" 1080,3,360000,180000,1
@@ -239,7 +239,7 @@ gef_fild12.gat,0,0,0,0  	monster	"Kobold" 1133,20,0,0,0
 gef_fild12.gat,0,0,0,0  	monster	"Kobold" 1134,30,0,0,0
 gef_fild12.gat,0,0,0,0  	monster	"Kobold" 1135,30,0,0,0
 gef_fild12.gat,0,0,0,0  	monster	"Kobold Archer" 1282,40,0,0,0
-gef_fild12.gat,0,0,0,0  	monster	"Kobold Leader" 1296,1,240000,120000,1
+gef_fild12.gat,0,0,0,0  	monster	"Kobold Leader" 1296,1,120000,0,0
 gef_fild12.gat,0,0,0,0  	monster	"Poring" 1002,20,0,0,0
 
 //========================================================================================
@@ -249,6 +249,7 @@ gef_fild12.gat,0,0,0,0  	monster	"Poring" 1002,20,0,0,0
 gef_fild13.gat,0,0,0,0  	monster	"Ambernite" 1094,20,0,0,0
 gef_fild13.gat,0,0,0,0  	monster	"Creamy" 1018,40,0,0,0
 gef_fild13.gat,0,0,0,0  	monster	"Poporing" 1031,20,0,0,0
+gef_fild13.gat,0,0,0,0  	monster	"Ghostring" 1120,1,900000,100000,1
 
 //========================================================================================
 // - Geffen Field 14
@@ -257,5 +258,5 @@ gef_fild13.gat,0,0,0,0  	monster	"Poporing" 1031,20,0,0,0
 gef_fild14.gat,0,0,0,0  	monster	"High Orc" 1213,20,0,0,0
 gef_fild14.gat,0,0,0,0  	monster	"Orc Archer" 1189,20,0,0,0
 gef_fild14.gat,0,0,0,0  	monster	"Orc Lady" 1273,40,0,0,0
-gef_fild14.gat,0,0,0,0  	monster	"Orc Hero" 1087,1,3600000,7200000,1
+gef_fild14.gat,0,0,0,0  	monster	"Orc Hero" 1087,1,1800000,3600000,0
 gef_fild14.gat,0,0,0,0  	monster	"Orc Warrior" 1023,20,0,0,0

@@ -1,7 +1,7 @@
 //========================================================================================
 // »» The Fusion Project ««
 // Copyright (c) 2004, Cobax Information Systems
-// http://fusion.cobax.net/
+// http://cobax.net/
 // ---------------------------------------------------------------------------------------
 //
 // Sograt Desert Fields Mob - Monster Spawn Locations
@@ -18,7 +18,7 @@ moc_fild01.gat,0,0,0,0  	monster	"Pecopeco" 1019,25,0,0,0
 moc_fild01.gat,0,0,0,0  	monster	"PecoPeco Egg" 1047,20,0,0,0
 moc_fild01.gat,0,0,0,0  	monster	"Picky" 1049,25,0,0,0
 moc_fild01.gat,0,0,0,0  	monster	"Super Picky" 1050,25,0,0,0
-moc_fild01.gat,194,51,10,10	monster	"Yellow Plant" 1081,10,900000,450000,1
+moc_fild01.gat,194,51,10,10	monster	"Yellow Plant" 1081,10,360000,180000,1
 
 //========================================================================================
 // - Sograt Desert Field 02
@@ -72,7 +72,7 @@ moc_fild04.gat,0,0,0,0  	monster	"Pecopeco" 1019,75,0,0,0
 moc_fild04.gat,0,0,0,0  	monster	"Pecopeco Egg" 1047,10,0,0,0
 moc_fild04.gat,0,0,0,0  	monster	"Picky" 1049,15,0,0,0
 moc_fild04.gat,0,0,0,0  	monster	"Super Picky" 1050,15,0,0,0
-moc_fild04.gat,313,84,10,10	monster	"Yellow Plant" 1081,10,900000,450000,1
+moc_fild04.gat,313,84,10,10	monster	"Yellow Plant" 1081,10,360000,180000,1
 
 //========================================================================================
 // - Sograt Desert Field 05
@@ -101,7 +101,7 @@ moc_fild06.gat,0,0,0,0  	monster	"Muka" 1055,25,0,0,0
 moc_fild06.gat,0,0,0,0  	monster	"Pecopeco Egg" 1047,10,0,0,0
 moc_fild06.gat,0,0,0,0  	monster	"Picky" 1049,20,0,0,0
 moc_fild06.gat,0,0,0,0  	monster	"Super Picky" 1050,20,0,0,0
-moc_fild06.gat,193,203,10,10	monster	"Yellow Plant" 1081,10,900000,450000,1
+moc_fild06.gat,193,203,10,10	monster	"Yellow Plant" 1081,10,360000,180000,1
 
 //========================================================================================
 // - Sograt Desert Field 07
@@ -155,10 +155,10 @@ moc_fild10.gat,198,150,40,30	monster	"Yellow Plant" 1081,10,180000,90000,1
 // - Sograt Desert Field 11
 //========================================================================================
 
-moc_fild11.gat,0,0,0,0  	monster	"Andre" 1095,5,60000,30000,0
+moc_fild11.gat,0,0,0,0  	monster	"Andre" 1095,5,30000,15000,0
 moc_fild11.gat,0,0,0,0  	monster	"Ant Egg" 1097,40,0,0,0
 moc_fild11.gat,0,0,0,0  	monster	"Chonchon" 1011,15,0,0,0
-moc_fild11.gat,0,0,0,0  	monster	"Deniro" 1105,5,60000,30000,0
+moc_fild11.gat,0,0,0,0  	monster	"Deniro" 1105,5,30000,15000,0
 moc_fild11.gat,0,0,0,0   	monster	"Drops" 1113,75,0,0,0
 moc_fild11.gat,0,0,0,0  	monster	"Picky" 1049,10,0,0,0
 moc_fild11.gat,0,0,0,0  	monster	"Super Picky" 1050,10,0,0,0
@@ -262,7 +262,7 @@ moc_fild16.gat,0,0,0,0  	monster	"Sand Man" 1165,40,0,0,0
 
 moc_fild17.gat,0,0,0,0  	monster	"Andre" 1095,30,0,0,0
 moc_fild17.gat,0,0,0,0  	monster	"Drops" 1113,25,0,0,0
-moc_fild17.gat,0,0,0,0  	monster	"Frilldora" 1119,5,60000,30000,0
+moc_fild17.gat,0,0,0,0  	monster	"Frilldora" 1119,5,30000,15000,0
 moc_fild17.gat,0,0,0,0  	monster	"Hode" 1127,35,0,0,0
 moc_fild17.gat,0,0,0,0  	monster	"Metaller" 1058,20,0,0,0
 moc_fild17.gat,0,0,0,0  	monster	"Piere" 1160,30,0,0,0

@@ -1,7 +1,7 @@
 //========================================================================================
 // »» The Fusion Project ««
 // Copyright (c) 2004, Cobax Information Systems
-// http://fusion.cobax.net/
+// http://cobax.net/
 // ---------------------------------------------------------------------------------------
 //
 // Orc Dungeon Mob - Monster Spawn Locations
@@ -12,16 +12,16 @@
 // - Orc Dungeon 01
 //========================================================================================
 
-orcsdun01.gat,167,133,5,5	monster	"Black Mushroom" 1084,5,900000,450000,1
-orcsdun01.gat,67,34,5,5 	monster	"Black Mushroom" 1084,5,900000,450000,1
+orcsdun01.gat,167,133,5,5	monster	"Black Mushroom" 1084,5,450000,225000,1
+orcsdun01.gat,67,34,5,5 	monster	"Black Mushroom" 1084,5,450000,225000,1
 orcsdun01.gat,0,0,0,0	      monster	"White Plant" 1082,5,180000,90000,1
 orcsdun01.gat,0,0,0,0   	monster	"Chonchon" 1011,5,0,0,0
 orcsdun01.gat,0,0,0,0	      monster	"Steel Chonchon" 1042,10,0,0,0
 orcsdun01.gat,0,0,0,0	      monster	"Farmiliar" 1005,15,0,0,0
 orcsdun01.gat,0,0,0,0   	monster	"Martin" 1145,5,0,0,0
 orcsdun01.gat,0,0,0,0   	monster	"Drainliar" 1111,5,0,0,0
-orcsdun01.gat,0,0,0,0         monster     "Orc Zombie" 1153,50,3000,5000,1
-orcsdun01.gat,0,0,0,0   	monster	"Orc Skeleton" 1152,10,30000,60000,1
+orcsdun01.gat,0,0,0,0         monster     "Orc Zombie" 1153,50,1500,2500,0
+orcsdun01.gat,0,0,0,0   	monster	"Orc Skeleton" 1152,10,15000,30000,0
 
 //========================================================================================
 // - Orc Dungeon 02
@@ -32,10 +32,10 @@ orcsdun02.gat,0,0,0,0   	monster	"White Plant" 1082,5,180000,90000,1
 orcsdun02.gat,0,0,0,0   	monster	"Chonchon" 1011,10,0,0,0
 orcsdun02.gat,0,0,0,0   	monster	"Steel Chonchon" 1042,10,0,0,0
 orcsdun02.gat,0,0,0,0   	monster	"Farmiliar" 1005,15,0,0,0
-orcsdun02.gat,0,0,0,0   	monster	"Orc Skeleton" 1152,30,3000,5000,1
-orcsdun02.gat,0,0,0,0   	monster	"Zenorc" 1177,35,3000,5000,1
-orcsdun02.gat,0,0,0,0   	monster	"Orc Archer" 1189,3,1800000,900000,1
-orcsdun02.gat,0,0,0,0   	monster	"Orc Lord" 1190,1,3600000,7200000,1
+orcsdun02.gat,0,0,0,0   	monster	"Orc Skeleton" 1152,30,1500,2500,0
+orcsdun02.gat,0,0,0,0   	monster	"Zenorc" 1177,35,1500,2500,0
+orcsdun02.gat,0,0,0,0   	monster	"Orc Archer" 1189,3,900000,450000,1
+orcsdun02.gat,0,0,0,0   	monster	"Orc Lord" 1190,1,1800000,3600000,1
 
 
 

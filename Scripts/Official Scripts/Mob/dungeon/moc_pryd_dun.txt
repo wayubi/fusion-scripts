@@ -1,10 +1,10 @@
 //========================================================================================
 // »» The Fusion Project ««
 // Copyright (c) 2004, Cobax Information Systems
-// http://fusion.cobax.net/
+// http://cobax.net/
 // ---------------------------------------------------------------------------------------
 //
-// Pyramids Mob - Monster Spawn Locations
+// Pyramids Dungeon - Monster Spawn Locations
 //
 //========================================================================================
 
@@ -12,7 +12,7 @@
 // - Pyramids 01
 //========================================================================================
 
-moc_pryd01.gat,0,0,0,0  	monster	"Mimic" 1191,1,3600000,1800000,1
+moc_pryd01.gat,0,0,0,0  	monster	"Mimic" 1191,1,300000,150000,1
 moc_pryd01.gat,0,0,0,0  	monster	"Farmiliar" 1005,20,0,0,0
 moc_pryd01.gat,0,0,0,0  	monster	"Poporing" 1031,20,0,0,0
 moc_pryd01.gat,0,0,0,0  	monster	"Spore" 1014,30,0,0,0
@@ -33,25 +33,25 @@ moc_pryd02.gat,0,0,0,0 	      monster	"Archer Skeleton"  1016,35,0,0,0
 moc_pryd03.gat,0,0,0,0  	monster	"Archer Skeleton" 1016,15,0,0,0
 moc_pryd03.gat,0,0,0,0  	monster	"Soldier Skeleton" 1028,5,0,0,0
 moc_pryd03.gat,0,0,0,0  	monster	"Drainliar" 1111,15,0,0,0
-moc_pryd03.gat,0,0,0,0  	monster	"Mimic" 1191,2,600000,300000,1
+moc_pryd03.gat,0,0,0,0  	monster	"Mimic" 1191,2,300000,150000,1
 moc_pryd03.gat,0,0,0,0  	monster	"Mummy" 1041,45,0,0,0
 
 //========================================================================================
 // - Pyramids 04
 //========================================================================================
 
-moc_pryd04.gat,0,0,0,0	monster	"Ghoul" 1036,20,0,0,0
-moc_pryd04.gat,0,0,0,0	monster	"Isis" 1029,30,150000,75000,1
-moc_pryd04.gat,0,0,0,0	monster	"Matyr" 1146,20,0,0,0
-moc_pryd04.gat,0,0,0,0	monster	"Mimic" 1191,5,600000,300000,1
-moc_pryd04.gat,0,0,0,0	monster	"Mummy" 1041,45,0,0,0
-moc_pryd04.gat,0,0,0,0	monster	"Osiris" 1038,1,3600000,7200000,1
+moc_pryd04.gat,0,0,0,0		monster	"Ghoul" 1036,20,0,0,0
+moc_pryd04.gat,0,0,0,0		monster	"Isis" 1029,30,75000,37500,1
+moc_pryd04.gat,0,0,0,0		monster	"Matyr" 1146,20,0,0,0
+moc_pryd04.gat,0,0,0,0		monster	"Mimic" 1191,5,300000,150000,1
+moc_pryd04.gat,0,0,0,0		monster	"Mummy" 1041,45,0,0,0
+moc_pryd04.gat,0,0,0,0		monster	"Osiris" 1038,1,1800000,3600000,1
 
 //========================================================================================
 // - Pyramids 05
 //========================================================================================
 
-moc_pryd05.gat,0,0,0,0  	monster	"Ghoul" 1036,5,300000,150000,1
+moc_pryd05.gat,0,0,0,0  	monster	"Ghoul" 1036,5,150000,75000,1
 moc_pryd05.gat,0,0,0,0  	monster	"Minorous" 1149,60,0,0,0
 moc_pryd05.gat,0,0,0,0  	monster	"Mummy" 1041,25,0,0,0
 moc_pryd05.gat,0,0,0,0  	monster	"Verit" 1032,30,0,0,0
@@ -65,4 +65,5 @@ moc_pryd06.gat,0,0,0,0  	monster	"Mummy" 1041,20,0,0,0
 moc_pryd06.gat,0,0,0,0  	monster	"Verit" 1032,10,0,0,0
 moc_pryd06.gat,100,90,80,50	monster	"Ancient Mummy" 1297,10,0,0,0
 moc_pryd06.gat,100,90,80,50	monster	"Mimic" 1191,20,0,0,0
+// KRO ONLY //
 moc_pryd06.gat,0,0,0,0        monster     "Amon Ra" 1511,2,1800000,200000,1

@@ -1,10 +1,10 @@
 //========================================================================================
 // »» The Fusion Project ««
 // Copyright (c) 2004, Cobax Information Systems
-// http://fusion.cobax.net/
+// http://cobax.net/
 // ---------------------------------------------------------------------------------------
 //
-// Niflheim Fields Mob - Monster Spawn Locations
+// Niflheim Fields - Monster Spawn Locations
 //
 //========================================================================================
 

@@ -1,10 +1,10 @@
 //========================================================================================
 // »» The Fusion Project ««
 // Copyright (c) 2004, Cobax Information Systems
-// http://fusion.cobax.net/
+// http://cobax.net/
 // ---------------------------------------------------------------------------------------
 //
-//  Sunken Ship Dungeon Mob - Monster Spawn Locations
+//  Sunken Ship Dungeon - Monster Spawn Locations
 //
 //========================================================================================
 
@@ -12,8 +12,8 @@
 // - Sunken Ship Dungeon 01
 //========================================================================================
 
-treasure01.gat,0,0,0,0  	monster	"Plankton" 1161,10,0,0,0
-treasure01.gat,0,0,0,0  	monster	"Kukre" 1070,10,0,0,0
+treasure01.gat,0,0,0,0  	monster	"Plankton" 1161,10,0,0,1
+treasure01.gat,0,0,0,0  	monster	"Kukre" 1070,10,0,0,1
 treasure01.gat,21,165,5,9	monster	"Kukre" 1070,5,300000,150000,1
 treasure01.gat,107,39,15,15	monster	"Hydra" 1068,1,180000,90000,1
 treasure01.gat,150,162,5,5	monster	"Hydra" 1068,1,300000,100000,1
@@ -106,7 +106,7 @@ treasure01.gat,164,59,12,10	monster	"Whisper" 1179,10,300000,100000,1
 // - Sunken Ship Dungeon 02
 //========================================================================================
 
-treasure02.gat,0,0,0,0	      monster	"Kukre" 1070,20,0,0,0
+treasure02.gat,0,0,0,0	      monster	"Kukre" 1070,20,0,0,1
 treasure02.gat,100,85,0,0	monster	"Hydra" 1068,1,300000,100000,1
 treasure02.gat,100,136,0,0	monster	"Hydra" 1068,1,300000,100000,1
 treasure02.gat,100,143,0,0	monster	"Hydra" 1068,1,300000,100000,1
@@ -152,4 +152,4 @@ treasure02.gat,101,151,10,10	monster	"Mimic" 1191,2,100000,100000,1
 treasure02.gat,101,151,10,10	monster	"Penomena" 1216,4,100000,100000,1
 treasure02.gat,101,126,2,2	monster	"Penomena" 1216,1,1200000,600000,1
 treasure02.gat,101,135,2,2	monster	"Penomena" 1216,1,60000,200000,1
-treasure02.gat,101,151,8,8	monster	"Drake" 1112,1,3600000,7200000,1
+treasure02.gat,101,151,8,8	monster	"Drake" 1112,1,1800000,3600000,1

@@ -1,10 +1,10 @@
 //========================================================================================
 // »» The Fusion Project ««
 // Copyright (c) 2004, Cobax Information Systems
-// http://fusion.cobax.net/
+// http://cobax.net/
 // ---------------------------------------------------------------------------------------
 //
-// Geffen Tower Dungeon Mob - Monster Spawn Locations
+// Geffen Tower Dungeon - Monster Spawn Locations
 //
 //========================================================================================
 
@@ -14,15 +14,16 @@
 
 gef_dun00.gat,121,109,3,3	monster	"Black Mushroom" 1084,3,180000,90000,1
 gef_dun00.gat,89,111,3,3	monster	"Black Mushroom" 1084,3,180000,90000,1
-gef_dun00.gat,114,106,0,0	monster	"Green Plant" 1080,1,300000,150000,1
-gef_dun00.gat,109,121,20,20	monster	"Red Plant" 1078,6,300000,150000,1
-gef_dun00.gat,91,106,20,20	monster	"Red Plant" 1078,6,300000,150000,1
-gef_dun00.gat,109,121,0,0	monster	"Shining Plant" 1083,1,3000000,1500000,1
-gef_dun00.gat,92,108,0,0	monster	"Yellow Plant" 1081,1,300000,150000,1
+gef_dun00.gat,114,106,0,0	monster	"Green Plant" 1080,1,150000,75000,1
+gef_dun00.gat,109,121,20,20	monster	"Red Plant" 1078,6,150000,75000,1
+gef_dun00.gat,91,106,20,20	monster	"Red Plant" 1078,6,150000,75000,1
+gef_dun00.gat,109,121,0,0	monster	"Shining Plant" 1083,1,1500000,750000,1
+gef_dun00.gat,92,108,0,0	monster	"Yellow Plant" 1081,1,150000,75000,1
 gef_dun00.gat,0,0,0,0   	monster	"Farmiliar" 1005,20,0,0,0
 gef_dun00.gat,0,0,0,0   	monster	"Poporing" 1031,15,0,0,0
 gef_dun00.gat,0,0,0,0   	monster	"Poison Spore" 1077,40,0,0,0
 gef_dun00.gat,0,0,0,0   	monster	"Dustiness" 1114,15,0,0,0
+// KRO ONLY //
 gef_dun00.gat,0,0,0,0   	monster	"Hunter Fly" 1035,1,300000,150000,1
 
 //========================================================================================
@@ -47,21 +48,29 @@ gef_dun01.gat,0,0,0,0   	monster	"Bathory" 1102,1,0,0,0
 gef_dun02.gat,0,0,0,0   	monster	"White Plant" 1082,15,180000,90000,1
 gef_dun02.gat,0,0,0,0   	monster	"Argos" 1100,20,0,0,0
 gef_dun02.gat,0,0,0,0   	monster	"Whisper" 1179,20,0,0,0
-gef_dun02.gat,0,0,0,0   	monster	"Jakk" 1130,12,100000,50000,1
+gef_dun02.gat,0,0,0,0   	monster	"Jakk" 1130,12,50000,25000,0
 gef_dun02.gat,0,0,0,0   	monster	"Myst" 1151,10,0,0,0
 gef_dun02.gat,0,0,0,0   	monster	"Marionette" 1143,14,0,0,0
-gef_dun02.gat,0,0,0,0   	monster	"Bathory" 1102,4,300000,100000,1
-gef_dun02.gat,0,0,0,0   	monster	"Nightmare" 1061,8,300000,100000,0
-gef_dun02.gat,0,0,0,0   	monster	"Doppleganger" 1046,1,7200000,3600000,1
+gef_dun02.gat,0,0,0,0   	monster	"Bathory" 1102,4,150000,50000,0
+gef_dun02.gat,0,0,0,0   	monster	"Nightmare" 1061,8,150000,50000,0
+gef_dun02.gat,0,0,0,0   	monster	"Doppleganger" 1046,1,1800000,900000,1
 
 //========================================================================================
 // - Geffen Tower Dungeon 03
 //========================================================================================
 
+gef_dun03.gat,0,0,0,0   	monster	"Deviruchi" 1109,15,0,0,0
+gef_dun03.gat,0,0,0,0   	monster	"Joker" 1131,5,150000,50000,0
+gef_dun03.gat,0,0,0,0   	monster	"Succubus" 1370,10,0,0,0
+gef_dun03.gat,0,0,0,0   	monster	"Incubus" 1374,10,0,0,0
+gef_dun03.gat,0,0,0,0   	monster	"Fake Angel" 1371,5,0,0,0
+gef_dun03.gat,0,0,0,0   	monster	"Dracula" 1389,1,1800000,900000,1
+gef_dun03.gat,0,0,0,0   	monster	"Violy" 1390,10,0,0,0
 gef_dun03.gat,0,0,0,0   	monster	"Shining Plant" 1083,3,1800000,900000,1
 gef_dun03.gat,0,0,0,0   	monster	"White Plant" 1082,10,180000,90000,1
-gef_dun03.gat,0,0,0,0   	monster	"Myst" 1151,20,0,0,0
-gef_dun03.gat,0,0,0,0   	monster	"Deviruchi" 1109,15,0,0,0
-gef_dun03.gat,0,0,0,0   	monster	"Raydric" 1163,15,0,0,0
-gef_dun03.gat,0,0,0,0   	monster	"Joker" 1131,5,300000,100000,1
-gef_dun03.gat,0,0,0,0   	monster	"Khalitzburg" 1132,10,0,0,0
+
+
+
+
+
+

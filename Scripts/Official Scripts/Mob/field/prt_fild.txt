@@ -1,10 +1,10 @@
 //========================================================================================
 // »» The Fusion Project ««
 // Copyright (c) 2004, Cobax Information Systems
-// http://fusion.cobax.net/
+// http://cobax.net/
 // ---------------------------------------------------------------------------------------
 //
-// Prontera Fields Mob - Monster Spawn Locations
+// Prontera Fields - Monster Spawn Locations
 //
 //========================================================================================
 
@@ -19,27 +19,28 @@ prt_fild00.gat,0,0,0,0  	monster	"Lunatic" 1063,35,0,0,0
 prt_fild00.gat,0,0,0,0  	monster	"Pupa" 1008,10,0,0,0
 prt_fild00.gat,0,0,0,0  	monster	"Roda Frog" 1012,15,0,0,0
 prt_fild00.gat,0,0,0,0  	monster	"Hornet" 1004,20,0,0,0
+prt_fild00.gat,227,212,0,0	monster	"Shining Plant" 1083,1,1800000,900000,1
+prt_fild00.gat,285,138,10,10	monster	"Green Plant" 1080,3,360000,180000,1
 
 //========================================================================================
 // - Prontera Field 01
 //========================================================================================
 
-prt_fild01.gat,199,266,3,3	monster	"Blue Plant" 1079,1,900000,450000,1
-prt_fild01.gat,199,266,3,3	monster	"Green Plant" 1080,3,360000,180000,1
 prt_fild01.gat,0,0,0,0	      monster	"Poring" 1002,50,0,0,0
 prt_fild01.gat,0,0,0,0  	monster	"Fabre" 1007,25,0,0,0
 prt_fild01.gat,0,0,0,0  	monster	"Lunatic" 1063,70,0,0,0
 prt_fild01.gat,0,0,0,0  	monster	"Pupa" 1008,5,0,0,0
 prt_fild01.gat,0,0,0,0  	monster	"Roda Frog" 1012,20,0,0,0
+prt_fild01.gat,0,0,0,0  	monster	"Thief Bug" 1051,15,0,0,0
 prt_fild01.gat,0,0,0,0  	monster	"Thief Bug Egg" 1048,10,0,0,0
+prt_fild01.gat,199,266,3,3	monster	"Blue Plant" 1079,1,900000,450000,1
+prt_fild01.gat,199,266,3,3	monster	"Green Plant" 1080,3,360000,180000,1
 
 //========================================================================================
 // - Prontera Field 02
 //========================================================================================
 
 prt_fild02.gat,0,0,0,0  	monster	"Poring" 1002,50,0,0,0
-prt_fild02.gat,0,0,0,0  	monster	"Shining Plant" 1083,2,1800000,900000,1
-prt_fild02.gat,339,309,3,3	monster	"Shining Plant" 1083,1,1800000,900000,1
 prt_fild02.gat,0,0,0,0  	monster	"Fabre" 1007,40,0,0,0
 prt_fild02.gat,0,0,0,0  	monster	"Pupa" 1008,15,0,0,0
 prt_fild02.gat,0,0,0,0  	monster	"Lunatic" 1063,30,0,0,0
@@ -47,16 +48,13 @@ prt_fild02.gat,0,0,0,0  	monster	"Eclipse" 1093,1,1800000,200000,1
 prt_fild02.gat,0,0,0,0  	monster	"Thief Bug" 1051,50,0,0,0
 prt_fild02.gat,0,0,0,0  	monster	"Thief Bug" 1053,15,0,0,0
 prt_fild02.gat,0,0,0,0  	monster	"Mandragora" 1020,75,0,0,0
+prt_fild02.gat,0,0,0,0  	monster	"Shining Plant" 1083,2,1800000,900000,1
+prt_fild02.gat,339,309,3,3	monster	"Shining Plant" 1083,1,1800000,900000,1
 
 //========================================================================================
 // - Prontera Field 03
 //========================================================================================
 
-prt_fild03.gat,296,58,15,15	monster	"Blue Plant" 1079,2,900000,450000,1
-prt_fild03.gat,147,319,5,5	monster	"Green Plant" 1080,5,360000,180000,1
-prt_fild03.gat,148,107,5,5	monster	"Green Plant" 1080,5,360000,180000,1
-prt_fild03.gat,296,58,15,15	monster	"Green Plant" 1080,5,180000,90000,1
-prt_fild03.gat,307,75,5,5	monster	"Green Plant" 1080,5,360000,180000,1
 prt_fild03.gat,0,0,0,0  	monster	"Fabre" 1007,20,0,0,0
 prt_fild03.gat,0,0,0,0  	monster	"Pupa" 1008,15,0,0,0
 prt_fild03.gat,0,0,0,0  	monster	"Lunatic" 1063,30,0,0,0
@@ -64,18 +62,23 @@ prt_fild03.gat,0,0,0,0  	monster	"Thief Bug Egg" 1048,10,0,0,0
 prt_fild03.gat,0,0,0,0  	monster	"Poporing" 1031,25,0,0,0
 prt_fild03.gat,0,0,0,0  	monster	"Creamy" 1018,10,0,0,0
 prt_fild03.gat,0,0,0,0  	monster	"Yoyo" 1057,65,0,0,0
-prt_fild03.gat,0,0,0,0  	monster	"Choco" 1214,3,1800000,200000,1
+prt_fild03.gat,0,0,0,0  	monster	"Choco" 1214,3,900000,100000,1
+prt_fild03.gat,296,58,15,15	monster	"Blue Plant" 1079,2,450000,225000,1
+prt_fild03.gat,147,319,5,5	monster	"Green Plant" 1080,5,360000,180000,1
+prt_fild03.gat,148,107,5,5	monster	"Green Plant" 1080,5,360000,180000,1
+prt_fild03.gat,296,58,15,15	monster	"Green Plant" 1080,5,180000,90000,1
+prt_fild03.gat,307,75,5,5	monster	"Green Plant" 1080,5,360000,180000,1
 
 //========================================================================================
 // - Prontera Field 04
 //========================================================================================
 
-prt_fild04.gat,350,114,10,10	monster	"Green Plant" 1080,5,900000,450000,1
 prt_fild04.gat,0,0,0,0  	monster	"Poring" 1002,35,0,0,0
 prt_fild04.gat,0,0,0,0  	monster	"Hornet" 1004,15,0,0,0
 prt_fild04.gat,0,0,0,0  	monster	"Lunatic" 1063,25,0,0,0
 prt_fild04.gat,0,0,0,0  	monster	"Rocker" 1052,45,0,0,0
 prt_fild04.gat,0,0,0,0  	monster	"Roda Frog" 1012,10,0,0,0
+prt_fild04.gat,350,114,10,10	monster	"Green Plant" 1080,5,900000,450000,1
 
 //========================================================================================
 // - Prontera Field 05
@@ -86,6 +89,8 @@ prt_fild05.gat,0,0,0,0  	monster	"Fabre" 1007,65,0,0,0
 prt_fild05.gat,0,0,0,0  	monster	"Lunatic" 1063,35,0,0,0
 prt_fild05.gat,0,0,0,0  	monster	"Pupa" 1008,15,0,0,0
 prt_fild05.gat,0,0,0,0  	monster	"Roda Frog" 1012,20,0,0,0
+prt_fild04.gat,208,37,10,10	monster	"Blue Plant" 1079,1,450000,225000,1
+prt_fild04.gat,208,37,10,10	monster	"Green Plant" 1080,3,900000,450000,1
 
 //========================================================================================
 // - Prontera Field 06
@@ -98,7 +103,7 @@ prt_fild06.gat,0,0,0,0  	monster	"Thief Bug Egg" 1048,10,0,0,0
 prt_fild06.gat,0,0,0,0  	monster	"Lunatic" 1063,40,0,0,0
 prt_fild06.gat,0,0,0,0  	monster	"Pupa" 1008,10,0,0,0
 prt_fild06.gat,0,0,0,0  	monster	"Roda Frog" 1012,20,0,0,0
-prt_fild06.gat,222,30,40,10	monster	"Green Plant" 1080,15,900000,450000,1
+prt_fild06.gat,222,30,40,10	monster	"Green Plant" 1080,15,450000,225000,1
 
 //========================================================================================
 // - Prontera Field 07
@@ -118,12 +123,13 @@ prt_fild07.gat,0,0,0,0	      monster	"Vocal" 1088,1,1800000,200000,1
 // - Prontera Field 08
 //========================================================================================
 
-prt_fild08.gat,0,0,0,0	monster	"Poring" 1002,80,0,0,0
-prt_fild08.gat,0,0,0,0	monster	"Chonchon" 1011,20,0,0,0
-prt_fild08.gat,0,0,0,0	monster	"Lunatic" 1063,15,0,0,0
-prt_fild08.gat,0,0,0,0	monster	"Pupa" 1008,10,0,0,0
-prt_fild08.gat,0,0,0,0	monster	"Fabre" 1007,40,0,0,0
-prt_fild08.gat,0,0,0,0	monster	"Roda Frog" 1012,15,0,0,0
+prt_fild08.gat,0,0,0,0		monster	"Poring" 1002,80,0,0,0
+prt_fild08.gat,0,0,0,0		monster	"Chonchon" 1011,20,0,0,0
+prt_fild08.gat,0,0,0,0		monster	"Lunatic" 1063,15,0,0,0
+prt_fild08.gat,0,0,0,0		monster	"Pupa" 1008,10,0,0,0
+prt_fild08.gat,0,0,0,0		monster	"Fabre" 1007,40,0,0,0
+prt_fild08.gat,0,0,0,0		monster	"Roda Frog" 1012,15,0,0,0
+prt_fild08.gat,350,114,10,10	monster	"Green Plant" 1080,5,450000,225000,1
 
 //========================================================================================
 // - Prontera Field 09
@@ -136,9 +142,9 @@ prt_fild09.gat,0,0,0,0  	monster	"ChonChon" 1011,25,0,0,0
 prt_fild09.gat,0,0,0,0  	monster	"PecoPeco Egg" 1047,20,0,0,0
 prt_fild09.gat,0,0,0,0  	monster	"Picky" 1049,20,0,0,0
 prt_fild09.gat,0,0,0,0  	monster	"Super Picky" 1050,20,0,0,0
-prt_fild09.gat,237,115,5,5	monster	"Yellow Plant" 1081,3,360000,180000,1
 prt_fild09.gat,0,0,0,0  	monster	"Muka" 1055,5,300000,150000,1
-prt_fild09.gat,0,0,0,0  	monster	"Steel ChonChon" 1042,5,0,0,0
+prt_fild09.gat,0,0,0,0  	monster	"Steel ChonChon" 1042,5,300000,150000,1
+prt_fild09.gat,237,115,5,5	monster	"Yellow Plant" 1081,3,360000,180000,1
 
 //========================================================================================
 // - Prontera Field 10

@@ -1,7 +1,7 @@
 //========================================================================================
 // »» The Fusion Project ««
 // Copyright (c) 2004, Cobax Information Systems
-// http://fusion.cobax.net/
+// http://cobax.net/
 // ---------------------------------------------------------------------------------------
 //
 // Glastheim - Monster Spawn Information
@@ -20,7 +20,7 @@ gl_cas01.gat,0,0,0,0    	monster	"Dark Frame" 1260,20,0,0,0
 gl_cas01.gat,0,0,0,0    	monster	"Rideword" 1195,15,0,0,0
 gl_cas01.gat,0,0,0,0    	monster	"Alice" 1275,1,0,0,0
 gl_cas01.gat,0,0,0,0    	monster	"Khalitzburg" 1132,5,0,0,1
-gl_cas01.gat,0,0,0,0    	monster	"Tirfing" 1204,1,7200000,3600000,1
+gl_cas01.gat,0,0,0,0    	monster	"Tirfing" 1204,1,3600000,1800000,1
 gl_cas01.gat,0,0,0,0    	monster	"Owl Duke" 1320,3,0,0,1
 
 //========================================================================================
@@ -28,7 +28,7 @@ gl_cas01.gat,0,0,0,0    	monster	"Owl Duke" 1320,3,0,0,1
 //========================================================================================
 
 gl_cas02.gat,105,180,0,0	monster	"Whisper" 1185,1,1800000,900000,1
-gl_cas02.gat,102,180,0,0	monster	"Whisper" 1185,1,1800000,900000,1
+gl_cas02.gat,102,180,0,0	monster	"Whisper" 1185,1,9000000,450000,1
 gl_cas02.gat,16,186,10,10	monster	"Marionette" 1143,8,360000,180000,1
 gl_cas02.gat,174,11,8,8  	monster	"Deviruchi" 1109,4,120000,60000,1
 gl_cas02.gat,0,0,0,0	      monster	"Nightmare" 1061,10,0,0,0
@@ -50,10 +50,10 @@ gl_cas02.gat,0,0,0,0	      monster	"Wander Man" 1208,20,0,0,0
 gl_cas02.gat,190,23,1,1 	monster	"Wander Man" 1208,1,360000,180000,1
 gl_cas02.gat,104,145,5,5	monster	"Mysteltainn" 1203,1,7200000,3600000,1
 gl_cas02.gat,0,0,0,0	      monster	"Mysteltainn" 1203,1,7200000,3600000,1
-gl_cas02.gat,104,38,4,4  	monster	"Abyssmal Knight" 1219,1,1800000,900000,1
-gl_cas02.gat,24,35,4,4  	monster	"Abyssmal Knight"1219,1,1800000,900000,1
-gl_cas02.gat,93,177,3,3	      monster	"Abyssmal Knight"1219,1,1800000,900000,1
-gl_cas02.gat,115,177,3,3	monster	"Abyssmal Knight"1219,1,1800000,900000,1
+gl_cas02.gat,104,38,4,4  	monster	"Abyssmal Knight" 1219,1,9000000,450000,1
+gl_cas02.gat,24,35,4,4  	monster	"Abyssmal Knight"1219,1,9000000,450000,1
+gl_cas02.gat,93,177,3,3	      monster	"Abyssmal Knight"1219,1,9000000,450000,1
+gl_cas02.gat,115,177,3,3	monster	"Abyssmal Knight"1219,1,9000000,450000,1
 gl_cas02.gat,182,12,3,3	      monster	"Baphomet" 1039,1,3600000,1800000,1
 
 //========================================================================================
@@ -70,7 +70,7 @@ gl_church.gat,0,0,0,0   	monster	"Whisper" 1179,20,0,0,0
 // - Glastheim Graveyard
 //========================================================================================
 
-gl_chyard.gat,0,0,0,0   	monster	"Dark Lord" 1272,1,3600000,1800000,0
+gl_chyard.gat,0,0,0,0   	monster	"Dark Lord" 1272,1,1800000,900000,0
 gl_chyard.gat,0,0,0,0   	monster	"Ghoul" 1036,25,0,0,0
 gl_chyard.gat,0,0,0,0   	monster	"Hunter Fly" 1035,15,0,0,0
 gl_chyard.gat,0,0,0,0   	monster	"Mimic" 1191,1,0,0,0
@@ -178,16 +178,16 @@ gl_knt02.gat,0,0,0,0	      monster	"Whisper" 1179,10,0,0,0
 gl_knt02.gat,0,0,0,0    	monster	"Raydric" 1163,50,0,0,0
 gl_knt02.gat,0,0,0,0    	monster	"Raydric Archer" 1276,40,0,0,0
 gl_knt02.gat,0,0,0,0	      monster	"Joker" 1131,20,0,0,0
-gl_knt02.gat,243,74,5,5 	monster	"Khalitzburg" 1132,1,1800000,900000,1
-gl_knt02.gat,60,242,5,5 	monster	"Khalitzburg" 1132,1,1800000,900000,1
-gl_knt02.gat,62,80,5,5  	monster	"Khalitzburg" 1132,1,1800000,900000,1
-gl_knt02.gat,82,134,5,5 	monster	"Khalitzburg" 1132,1,1800000,900000,1
-gl_knt02.gat,99,49,5,5  	monster	"Khalitzburg" 1132,1,1800000,900000,1
-gl_knt02.gat,114,194,5,5	monster	"Khalitzburg" 1132,1,1800000,900000,1
-gl_knt02.gat,118,241,5,5	monster	"Khalitzburg" 1132,1,1800000,900000,1
-gl_knt02.gat,196,239,5,5	monster	"Khalitzburg" 1132,1,1800000,900000,1
-gl_knt02.gat,208,45,5,5 	monster	"Khalitzburg" 1132,1,1800000,900000,1
-gl_knt02.gat,232,132,5,5	monster	"Khalitzburg" 1132,1,1800000,900000,1
+gl_knt02.gat,243,74,5,5 	monster	"Khalitzburg" 1132,1,9000000,450000,1
+gl_knt02.gat,60,242,5,5 	monster	"Khalitzburg" 1132,1,9000000,450000,1
+gl_knt02.gat,62,80,5,5  	monster	"Khalitzburg" 1132,1,9000000,450000,1
+gl_knt02.gat,82,134,5,5 	monster	"Khalitzburg" 1132,1,9000000,450000,1
+gl_knt02.gat,99,49,5,5  	monster	"Khalitzburg" 1132,1,9000000,450000,1
+gl_knt02.gat,114,194,5,5	monster	"Khalitzburg" 1132,1,9000000,450000,1
+gl_knt02.gat,118,241,5,5	monster	"Khalitzburg" 1132,1,9000000,450000,1
+gl_knt02.gat,196,239,5,5	monster	"Khalitzburg" 1132,1,9000000,450000,1
+gl_knt02.gat,208,45,5,5 	monster	"Khalitzburg" 1132,1,9000000,450000,1
+gl_knt02.gat,232,132,5,5	monster	"Khalitzburg" 1132,1,9000000,450000,1
 gl_knt02.gat,149,26,5,5 	monster	"Abyssmal Knight" 1219,1,3600000,1800000,1
 gl_knt02.gat,0,0,0,0    	monster	"Bloody Knight" 1268,1,3600000,1800000,1
 
@@ -259,9 +259,9 @@ gl_step.gat,0,0,0,0     	monster	"Wraith" 1192,50,0,0,0
 
 glast_01.gat,0,0,0,0    	monster	"Bathory" 1102,5,180000,90000,1
 glast_01.gat,0,0,0,0    	monster	"Jakk" 1130,5,180000,90000,1
-glast_01.gat,0,0,0,0    	monster	"Abyssmal Knight" 1219,1,7200000,3600000,1
+glast_01.gat,0,0,0,0    	monster	"Abyssmal Knight" 1219,1,3600000,1800000,1
 glast_01.gat,0,0,0,0    	monster	"Myst" 1151,15,0,0,0
 glast_01.gat,0,0,0,0    	monster	"Poison Spore" 1077,10,0,0,0
 glast_01.gat,233,209,15,15	monster	"Blue Plant" 1079,2,900000,450000,1
 glast_01.gat,233,209,15,15	monster	"Green Plant" 1080,8,360000,180000,1
-glast_01.gat,233,209,15,15	monster	"Shining Plant" 1083,1,1800000,900000,1
+glast_01.gat,233,209,15,15	monster	"Shining Plant" 1083,1,9000000,450000,1

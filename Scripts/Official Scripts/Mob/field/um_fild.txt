@@ -1,11 +1,10 @@
 //========================================================================================
 // ｻｻ The Fusion Project ｫｫ
 // Copyright (c) 2004, Cobax Information Systems
-// http://fusion.cobax.net/
+// http://cobax.net/
 // ---------------------------------------------------------------------------------------
 //
-// Umbala Fields Mob - Monster Spawn Locations
-// - Credits to Jathena.
+// Umbala Fields - Monster Spawn Locations
 //
 //========================================================================================
 
@@ -24,7 +23,7 @@ um_fild01.gat,0,0,0,0	monster	"Harpy" 1376,25,0,0,0
 //========================================================================================
 
 um_fild02.gat,0,0,0,0	monster	"Dustiness" 1114,25,0,0,0
-um_fild02.gat,0,0,0,0	monster	"Kind Beetle" 1494,15,0,0,0
+um_fild02.gat,0,0,0,0	monster	"Kind of Beetle" 1494,15,0,0,0
 um_fild02.gat,0,0,0,0	monster	"Wootan Fighter" 1499,30,0,0,0
 um_fild02.gat,0,0,0,0	monster     "Wootan Shooter" 1498,20,0,0,0
 
@@ -32,18 +31,18 @@ um_fild02.gat,0,0,0,0	monster     "Wootan Shooter" 1498,20,0,0,0
 // - Umbala Field 03
 //========================================================================================
 
-um_fild03.gat,0,0,0,0	monster	"Pest"	1256,25,0,0,0
-//um_fild03.gat,0,0,0,0	monster	"フェアリーフ"	????,30,0,0,0
+um_fild03.gat,0,0,0,0	monster	"Pest" 1256,25,0,0,0
+um_fild03.gat,0,0,0,0	monster	"Parasite" 1500,30,0,0,0
 um_fild03.gat,0,0,0,0	monster	"Alligator" 1271,15,0,0,0
 um_fild03.gat,0,0,0,0	monster	"Dragon Tail" 1321,20,0,0,0
-um_fild03.gat,0,0,0,0	monster	"Gryphon"	1447,1,150000,150000,1
+um_fild03.gat,0,0,0,0	monster	"Gryphon" 1447,1,150000,150000,1
 
 //========================================================================================
 // - Umbala Field 04
 //========================================================================================
 
 um_fild04.gat,0,0,0,0	monster	"Stainer" 1174,25,0,0,0
-um_fild04.gat,0,0,0,0	monster	"Kind Beetle" 1494,20,0,0,0
+um_fild04.gat,0,0,0,0	monster	"Kind of Beetle" 1494,20,0,0,0
 um_fild04.gat,0,0,0,0	monster	"Wootan Shooter" 1498,20,0,0,0
-um_fild04.gat,0,0,0,0	monster	"Wootan Fighter"	1499,30,0,0,0
-um_fild04.gat,0,0,0,0	monster	"Choco" 1214,1,0,0,0
+um_fild04.gat,0,0,0,0	monster	"Wootan Fighter" 1499,30,0,0,0
+um_fild04.gat,0,0,0,0	monster	"Choco" 1214,5,0,0,0

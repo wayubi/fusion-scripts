@@ -1,10 +1,10 @@
 //========================================================================================
 // »» The Fusion Project ««
 // Copyright (c) 2004, Cobax Information Systems
-// http://fusion.cobax.net/
+// http://cobax.net/
 // ---------------------------------------------------------------------------------------
 //
-//  Coal Mine Dungeon Mob - Monster Spawn Locations
+//  Coal Mine Dungeon - Monster Spawn Locations
 //
 //========================================================================================
 
@@ -19,8 +19,8 @@ mjo_dun01.gat,0,0,0,0	monster	"Andre" 1095,15,0,0,0
 mjo_dun01.gat,0,0,0,0	monster	"Deniro" 1105,15,0,0,0
 mjo_dun01.gat,0,0,0,0	monster	"Smokie" 1056,20,0,0,0
 mjo_dun01.gat,0,0,0,0	monster	"Drainliar" 1111,40,0,0,0
-mjo_dun01.gat,0,0,0,0	monster	"Giearth" 1121,10,300000,150000,1
-mjo_dun01.gat,0,0,0,0	monster	"Skeleton Worker" 1169,5,300000,150000,1
+mjo_dun01.gat,0,0,0,0	monster	"Giearth" 1121,10,150000,75000,1
+mjo_dun01.gat,0,0,0,0	monster	"Skeleton Worker" 1169,5,150000,75000,1
 mjo_dun01.gat,0,0,0,0	monster	"Martin" 1145,15,0,0,0
 
 //========================================================================================
@@ -35,7 +35,7 @@ mjo_dun02.gat,0,0,0,0	monster	"Skeleton Worker" 1169,25,0,0,0
 // -  Coal Mine Dungeon 03
 //========================================================================================
 
-mjo_dun03.gat,0,0,0,0	monster	"Evil Druid" 1117,5,300000,100000,0
+mjo_dun03.gat,0,0,0,0	monster	"Evil Druid" 1117,5,150000,500000,0
 mjo_dun03.gat,0,0,0,0	monster	"Martin" 1145,15,0,0,0
 mjo_dun03.gat,0,0,0,0	monster	"Myst" 1151,35,0,0,0
 mjo_dun03.gat,0,0,0,0	monster	"Skeleton Worker" 1169,70,0,0,0

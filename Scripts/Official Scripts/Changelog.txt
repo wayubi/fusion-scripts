@@ -1,6 +1,7 @@
 --------------------------------------------------------------------------------
  Fusion 1.213 - August 29th, 2004
 --------------------------------------------------------------------------------
+- 08-18-04: Mob\all files. - Updated all mob spawns, next step will be the way kro has it. [Muad_Dib]
 - 08-12-04: Job\Job_1-1\Job1_Archer.txt - Added missing label that caused server crash. [Tsusai]
 - 08-03-04: Mob\dungeon\gefenia_dun.txt - Addeds Geffenia mobs. [Muad_Dib]
 - 08-03-04: Event\Event_Geffenia.txt - Added geffenia Dungeon Script [Muad_Dib]
