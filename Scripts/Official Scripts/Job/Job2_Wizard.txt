@@ -20,13 +20,13 @@
 //
 // - Water Room -> job_wiz: 1,1
 //   Water Room Mob summoner and timer.
-
+//
 // - watertest -> job_wiz: 0,0
 //   Counts deaths of water mobs and summons more.
 //
 // - Earth Room -> job_wiz: 1,1
 //   Earth Room Mob summoner and timer.
-
+//
 // - earthtest -> job_wiz: 0,0
 //   Counts deaths of earth mobs and summons more.
 //
@@ -1261,7 +1261,7 @@ OnInit:
 		set \@firemob = 0;
 		enablenpc "job_wiz","Earth Room",0;
 		enablenpc "job_wiz","Fire Room",0;
-		enablenpc "job_wiz","Raul",0;
+		enablenpc "job_wiz","Wizard",0;
 		resetmymob "job_wiz";
 		enablenpc "job_wiz","Water Room",1;
 		warpallpc "job_wiz",114,169,2;
@@ -1618,7 +1618,7 @@ job_wiz.gat,0,0,0	script	"firetest"	-1,{
 		End:
 			npctimer 0;
 			set \@Testing = 7;
-			enablenpc "job_wiz","Raul",1;
+			enablenpc "job_wiz","Wizard",1;
 			return;
 }
 
