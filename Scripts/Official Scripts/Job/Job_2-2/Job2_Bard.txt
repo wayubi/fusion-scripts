@@ -10,6 +10,8 @@
 //
 // - Roaming Bard -> comodo: 226,123
 //   Gives quest and jobchange.
+//
+//========================================================================================
 
 comodo.gat,226,123,5	script "Roaming Bard" 741,{
 	check bard_quest = 1,bq1,-;
