@@ -1,0 +1,98 @@
+//========================================================================================
+// »» The Fusion Project ««
+// Copyright (c) 2004, Cobax Information Systems
+// http://fusion.cobax.net/
+// ---------------------------------------------------------------------------------------
+//
+// Dancer / Bard Job Changer - Non Player Character Locations
+//
+// - Performer Guildwomen -> comodo: 189,166
+//   Npc to become a Dancer or a Bard.
+//
+//========================================================================================
+
+comodo.gat,189,166,4 script "Performer Guildwomen" 101,{
+      mes "[Performer Guildwomen]";
+      mes "What is it you are looking for?";
+      next;
+      menu "Change job to Dancer",L_MENU_D_1,"Change job to Bard",L_MENU_B_1,"The Requirements Dancer",L_MENU_D_2,"The Requirements Bard",L_MENU_B_2,"End",-;
+      close;
+L_MENU_D_1:
+      mes "[Performer Guildwomen]";
+      mes "First I'll check if all the requirements have been met.";
+      next;
+         check Job == 3,-,L_MENU1_D1;
+         check JobLevel >= 40,-,L_MENU1_D2;
+         check SkillPoint == 0,-,L_MENU1_D3;
+         check Gender == 0,-,L_MENU1_D4;
+         set JobLevel = 1,0;
+         jobchange 20;
+      mes "[Performer Guildwomen]";
+      mes "Welcome to the Dancer's guild!";
+      close;
+L_MENU_B_1:
+      mes "[Performer Guildwomen]";
+      mes "First I'll check if all the requirements have been met.";
+      next;
+      check Job == 3,-,L_MENU1_B1;
+      check JobLevel >= 40,-,L_MENU1_B2;
+      check SkillPoint == 0,-,L_MENU1_B3;
+      check Gender == 1,-,L_MENU1_B4;
+      set JobLevel = 1,0;
+      jobchange 19;
+      mes "[Performer Guildwomen]";
+      mes "Welcome to the Bard's guild!";
+      close;
+L_MENU1_D1:
+      mes "[Performer Guildwomen]";
+      mes "Other jobs except `Archer' are not permitted to become an Dancer.";
+      close;
+L_MENU1_D2:
+      mes "[Performer Guildwomen]";
+      mes "I can't make u a Dancer with your current joblevel.";
+      close;
+L_MENU1_D3:
+      mes "[Performer Guildwomen]";
+      mes "Please use up all your skills first.";
+      close;
+L_MENU1_D4:
+      mes "[Performer Guildwomen]";
+      mes "You can't change your job to Dancer unless you're female.";
+      close;
+L_MENU_D_2:
+      mes "[Performer Guildwomen]";
+      mes "Archers of Job Level 40 and above may become Dancers.";
+      next;
+      mes "[Performer Guildwomen]";
+      mes "Its a Great Time to become a Bard or Dancer they are in Much demand!";
+      next;
+      mes "[Performer Guildwomen]";
+      mes "You can't miss the perfect chance!";
+      close;
+L_MENU1_B1:
+      mes "[Performer Guildwomen]";
+      mes "Other jobs except `Archer' are not permitted to become an Bard..";
+      close;
+L_MENU1_B2:
+      mes "[Performer Guildwomen]";
+      mes "I can't make u a Bard with your current joblevel.";
+      close;
+L_MENU1_B3:
+      mes "[Performer Guildwomen]";
+      mes "Please use up all your skills first.";
+      close;
+L_MENU1_B4:
+      mes "[Performer Guildwomen]";
+      mes "You can't change your job to Bard unless you're male.";
+      close;
+L_MENU_B_2:
+      mes "[Performer Guildwomen]";
+      mes "Archers of Job Level 40 and above may become Bards.";
+      next;
+      mes "[Performer Guildwomen]";
+      mes "Its a Great Time to become a Bard, as they are in Much demand!.";
+      next;
+      mes "[Performer Guildwomen]";
+      mes "You can't miss the perfect chance!";
+      close;
+}

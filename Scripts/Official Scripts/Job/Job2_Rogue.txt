@@ -1,0 +1,51 @@
+//========================================================================================
+// »» The Fusion Project ««
+// Copyright (c) 2004, Cobax Information Systems
+// http://fusion.cobax.net/
+// ---------------------------------------------------------------------------------------
+//
+// rogue Job Changer - Non Player Character Locations
+//
+// - Rogue's Lady -> moc_fild19: 26,48
+//   Npc where you can become a Rogue.
+//
+//========================================================================================
+
+moc_fild19.gat,26,48,4 script "Rogue's Lady" 750,{
+      mes "[rogue's Lady]";
+      mes "Good Day,This is the Rogues Guild.";
+      next;
+      menu "Change job to rogue",L_MENU1,"The Refuirements",L_MENU2,"End",-;
+      close;
+L_MENU1:
+      mes "[rogue's Lady]";
+      mes "First I'll check if all the refuirements have been met.";
+      next;
+      check Job == 6,-,L_MENU1_F1;
+      check JobLevel >= 40,-,L_MENU1_F2;
+      check SkillPoint == 0,-,L_MENU1_F3;
+      set JobLevel = 1,0;
+      jobchange 17;
+      mes "[rogue's Lady]";
+      mes "Welcome to the rogue's guild!";
+      close;
+L_MENU1_F1:
+      mes "[rogue's Lady]";
+      mes "Other jobs except `Thieves' are not permitted to be Rogue's.";
+      close;
+L_MENU1_F2:
+      mes "[rogue's Lady]";
+      mes "I can't make u a rogue with your current joblevel.";
+      close;
+L_MENU1_F3:
+      mes "[rogue's Lady]";
+      mes "Please use up all your skills first.";
+      close;
+L_MENU2:
+      mes "[rogue's Lady]";
+      mes "Thieves of Job Level 40 and above may become Rogue's";
+      next;
+      mes "[rogue's Lady]";
+      mes "We Rogues Strive to help rid the world of Monster and fill out our pockets with Zeny.";
+      close;
+}
