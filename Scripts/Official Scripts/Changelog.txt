@@ -7,7 +7,7 @@
 ====================================================================================================
 
 ----------------------------------------------------------------------------------------------------
-Fusion NPC Pack - 1.002
+ Fusion NPC Pack - 1.002
 ----------------------------------------------------------------------------------------------------
 - Event\Event_Solution.txt - Fixed page header [mudvayne]
 - Event\Event_Rental.txt - Fixed page header, mising [npc name], enabled Crusader support for peco breeder. [mudvayne]
@@ -23,7 +23,7 @@ Fusion NPC Pack - 1.002
 - GvG\prtg_cas02.txt - Corrected Prontera Castle Emperium Location. [AlexKreuz]
 
 ----------------------------------------------------------------------------------------------------
-Fusion NPC Pack - 1.001
+ Fusion NPC Pack - 1.001
 ----------------------------------------------------------------------------------------------------
 - Fixed: Event/Event_Potion.txt - Variable typo, and the npc is working [mudvayne]
 - Fixed: Town/Town_Kapra.txt - Can't dupe items with Kapra's Cart Rental [mudvayne]
@@ -33,14 +33,14 @@ Fusion NPC Pack - 1.001
 - Added: Warp/Warp_Umbala.txt - Umbala warp definitions. [AlexKreuz]
 
 ----------------------------------------------------------------------------------------------------
-Fusion NPC Pack - 11/12/2003
+ Fusion NPC Pack - 11/12/2003
 ----------------------------------------------------------------------------------------------------
 - Updated: NPC/npc_skill_get.txt - Pointed Scale -> Tough Scalelike Stem. [AlexKreuz]
 - Updated: Shop/shop.txt - Thief Clothes: 7400Z -> 74000Z. [AlexKreuz]
 - Updated: Shop/shop.txt - Glaive: 1200Z -> 20000Z. [AlexKreuz]
 
 ----------------------------------------------------------------------------------------------------
-Fusion NPC Pack - 11/03/2003
+ Fusion NPC Pack - 11/03/2003
 ----------------------------------------------------------------------------------------------------
 - Renamed: Job/Job_Merchant.txt [AlexKreuz]
 - Updated: Shop/shop.txt [AlexKreuz]
@@ -58,7 +58,7 @@ Fusion NPC Pack - 11/03/2003
 - Deleted: Map/*.* [AlexKreuz]
 
 ----------------------------------------------------------------------------------------------------
-Fusion NPC Pack - 11/01/2003
+ Fusion NPC Pack - 11/01/2003
 ----------------------------------------------------------------------------------------------------
 - Initial Package Released [AlexKreuz]
 
