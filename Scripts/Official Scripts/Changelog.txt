@@ -1,9 +1,10 @@
 --------------------------------------------------------------------------------
  Fusion 1.212 - June 30th, 2004
 --------------------------------------------------------------------------------
+- 06-12-04: Warp\towns\umbala.txt - Turned a warp into a scripted warp in anticipation of official script. [Tsusai]
 - 06-12-04: Mob\dungeon\um_dun.txt - Added Jathena Mobs. [Muad_Dib]
 - 06-12-04: Mob\field\um_fild.txt - Added Jathena Mobs. [Muad_Dib]
-- 06-12-04: NPC\npc_clock_tower.txt -  Removed it already exists in Event_Clocl_Tower. [Muad_Dib]
+- 06-12-04: NPC\npc_clock_tower.txt -  Removed it already exists in Event_ClockTower. [Muad_Dib]
 - 06-12-04: Shop\umbala.txt - added OFFICIAL shops from jAthena. [Tsusai]
 - 06-10-04: Warp\other\PvP.txt - Updated top header. [Tsusai]
 - 06-10-04: Warp\guilds\aldeg_cas.txt - Replaced a warp with a random warp. [Tsusai]
