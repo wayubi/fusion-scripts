@@ -24,7 +24,6 @@
 //========================================================================================
 
 aldeg_cas03.gat,176,175,2	script	"Nuernberg"	722,{
-	scriptlabel alde_gcasF03;
 	guildreg "aldeg_cas03";
 	check guildid == 0,-,L_START_1;
 	mes "       [ Kingdom of Aldebaran ]";
@@ -51,60 +50,567 @@ L_START_1:
 	mes "    have a beef, raise your sword to ";
 	mes "    honor yourself.";
 	close;
+OnInit:
+	guildreg "aldeg_cas03";
+return;
 }
 aldeg_cas03.gat,85,103,2	script	"Nuernberg"	722,{
-	script alde_gldF03;
+	guildreg "aldeg_cas03";
+	check guildid == 0,-,L_START_1;
+	mes "       [ Kingdom of Aldebaran ]";
+	mes "1. As Law of Aldebaran";
+	mes "    this guild base isn't taken by";
+	mes "    any guild yet.";
+	next;
+	mes "       [ Kingdom of Aldebaran ]";
+	mes "2. In order to take this guild base,";
+	mes "    you must defeat all the guardians";
+	mes "    that protect the guild base and";
+	mes "    eliminate the EMPERIUM to";
+	mes "    take over the guild base.";
+	close;
+L_START_1:
+	mes "       [ Kingdom of Aldebaran ]";
+	mes "1. As law of Aldebaran this base is now";
+	mes "    $guildname guild's guild";
+	mes "    base.";
+	next;
+	mes "       [ Kingdom of Aldebaran ]";
+	mes "2.  $guildname Guild master is";
+	mes "    $guildmaster, and any of you";
+	mes "    have a beef, raise your sword to ";
+	mes "    honor yourself.";
+	close;
+OnInit:
+	guildreg "aldeg_cas03";
+return;
 }
 aldeg_cas03.gat,77,115,2	script	"Nuernberg"	722,{
-	script alde_gldF03;
+	guildreg "aldeg_cas03";
+	check guildid == 0,-,L_START_1;
+	mes "       [ Kingdom of Aldebaran ]";
+	mes "1. As Law of Aldebaran";
+	mes "    this guild base isn't taken by";
+	mes "    any guild yet.";
+	next;
+	mes "       [ Kingdom of Aldebaran ]";
+	mes "2. In order to take this guild base,";
+	mes "    you must defeat all the guardians";
+	mes "    that protect the guild base and";
+	mes "    eliminate the EMPERIUM to";
+	mes "    take over the guild base.";
+	close;
+L_START_1:
+	mes "       [ Kingdom of Aldebaran ]";
+	mes "1. As law of Aldebaran this base is now";
+	mes "    $guildname guild's guild";
+	mes "    base.";
+	next;
+	mes "       [ Kingdom of Aldebaran ]";
+	mes "2.  $guildname Guild master is";
+	mes "    $guildmaster, and any of you";
+	mes "    have a beef, raise your sword to ";
+	mes "    honor yourself.";
+	close;
+OnInit:
+	guildreg "aldeg_cas03";
+return;
 }
 aldeg_cas03.gat,77,215,2	script	"Nuernberg"	722,{
-	script alde_gldF03;
+	guildreg "aldeg_cas03";
+	check guildid == 0,-,L_START_1;
+	mes "       [ Kingdom of Aldebaran ]";
+	mes "1. As Law of Aldebaran";
+	mes "    this guild base isn't taken by";
+	mes "    any guild yet.";
+	next;
+	mes "       [ Kingdom of Aldebaran ]";
+	mes "2. In order to take this guild base,";
+	mes "    you must defeat all the guardians";
+	mes "    that protect the guild base and";
+	mes "    eliminate the EMPERIUM to";
+	mes "    take over the guild base.";
+	close;
+L_START_1:
+	mes "       [ Kingdom of Aldebaran ]";
+	mes "1. As law of Aldebaran this base is now";
+	mes "    $guildname guild's guild";
+	mes "    base.";
+	next;
+	mes "       [ Kingdom of Aldebaran ]";
+	mes "2.  $guildname Guild master is";
+	mes "    $guildmaster, and any of you";
+	mes "    have a beef, raise your sword to ";
+	mes "    honor yourself.";
+	close;
+OnInit:
+	guildreg "aldeg_cas03";
+return;
 }
 aldeg_cas03.gat,112,107,2	script	"Nuernberg"	722,{
-	script alde_gldF03;
+	guildreg "aldeg_cas03";
+	check guildid == 0,-,L_START_1;
+	mes "       [ Kingdom of Aldebaran ]";
+	mes "1. As Law of Aldebaran";
+	mes "    this guild base isn't taken by";
+	mes "    any guild yet.";
+	next;
+	mes "       [ Kingdom of Aldebaran ]";
+	mes "2. In order to take this guild base,";
+	mes "    you must defeat all the guardians";
+	mes "    that protect the guild base and";
+	mes "    eliminate the EMPERIUM to";
+	mes "    take over the guild base.";
+	close;
+L_START_1:
+	mes "       [ Kingdom of Aldebaran ]";
+	mes "1. As law of Aldebaran this base is now";
+	mes "    $guildname guild's guild";
+	mes "    base.";
+	next;
+	mes "       [ Kingdom of Aldebaran ]";
+	mes "2.  $guildname Guild master is";
+	mes "    $guildmaster, and any of you";
+	mes "    have a beef, raise your sword to ";
+	mes "    honor yourself.";
+	close;
+OnInit:
+	guildreg "aldeg_cas03";
+return;
 }
 aldeg_cas03.gat,112,117,2	script	"Nuernberg"	722,{
-	script alde_gldF03;
+	guildreg "aldeg_cas03";
+	check guildid == 0,-,L_START_1;
+	mes "       [ Kingdom of Aldebaran ]";
+	mes "1. As Law of Aldebaran";
+	mes "    this guild base isn't taken by";
+	mes "    any guild yet.";
+	next;
+	mes "       [ Kingdom of Aldebaran ]";
+	mes "2. In order to take this guild base,";
+	mes "    you must defeat all the guardians";
+	mes "    that protect the guild base and";
+	mes "    eliminate the EMPERIUM to";
+	mes "    take over the guild base.";
+	close;
+L_START_1:
+	mes "       [ Kingdom of Aldebaran ]";
+	mes "1. As law of Aldebaran this base is now";
+	mes "    $guildname guild's guild";
+	mes "    base.";
+	next;
+	mes "       [ Kingdom of Aldebaran ]";
+	mes "2.  $guildname Guild master is";
+	mes "    $guildmaster, and any of you";
+	mes "    have a beef, raise your sword to ";
+	mes "    honor yourself.";
+	close;
+OnInit:
+	guildreg "aldeg_cas03";
+return;
 }
 aldeg_cas03.gat,69,71,2	script	"Nuernberg"	722,{
-	script alde_gldF03;
+	guildreg "aldeg_cas03";
+	check guildid == 0,-,L_START_1;
+	mes "       [ Kingdom of Aldebaran ]";
+	mes "1. As Law of Aldebaran";
+	mes "    this guild base isn't taken by";
+	mes "    any guild yet.";
+	next;
+	mes "       [ Kingdom of Aldebaran ]";
+	mes "2. In order to take this guild base,";
+	mes "    you must defeat all the guardians";
+	mes "    that protect the guild base and";
+	mes "    eliminate the EMPERIUM to";
+	mes "    take over the guild base.";
+	close;
+L_START_1:
+	mes "       [ Kingdom of Aldebaran ]";
+	mes "1. As law of Aldebaran this base is now";
+	mes "    $guildname guild's guild";
+	mes "    base.";
+	next;
+	mes "       [ Kingdom of Aldebaran ]";
+	mes "2.  $guildname Guild master is";
+	mes "    $guildmaster, and any of you";
+	mes "    have a beef, raise your sword to ";
+	mes "    honor yourself.";
+	close;
+OnInit:
+	guildreg "aldeg_cas03";
+return;
 }
 aldeg_cas03.gat,91,69,2	script	"Nuernberg"	722,{
-	script alde_gldF03;
+	guildreg "aldeg_cas03";
+	check guildid == 0,-,L_START_1;
+	mes "       [ Kingdom of Aldebaran ]";
+	mes "1. As Law of Aldebaran";
+	mes "    this guild base isn't taken by";
+	mes "    any guild yet.";
+	next;
+	mes "       [ Kingdom of Aldebaran ]";
+	mes "2. In order to take this guild base,";
+	mes "    you must defeat all the guardians";
+	mes "    that protect the guild base and";
+	mes "    eliminate the EMPERIUM to";
+	mes "    take over the guild base.";
+	close;
+L_START_1:
+	mes "       [ Kingdom of Aldebaran ]";
+	mes "1. As law of Aldebaran this base is now";
+	mes "    $guildname guild's guild";
+	mes "    base.";
+	next;
+	mes "       [ Kingdom of Aldebaran ]";
+	mes "2.  $guildname Guild master is";
+	mes "    $guildmaster, and any of you";
+	mes "    have a beef, raise your sword to ";
+	mes "    honor yourself.";
+	close;
+OnInit:
+	guildreg "aldeg_cas03";
+return;
 }
 aldeg_cas03.gat,108,60,2	script	"Nuernberg"	722,{
-	script alde_gldF03;
+	guildreg "aldeg_cas03";
+	check guildid == 0,-,L_START_1;
+	mes "       [ Kingdom of Aldebaran ]";
+	mes "1. As Law of Aldebaran";
+	mes "    this guild base isn't taken by";
+	mes "    any guild yet.";
+	next;
+	mes "       [ Kingdom of Aldebaran ]";
+	mes "2. In order to take this guild base,";
+	mes "    you must defeat all the guardians";
+	mes "    that protect the guild base and";
+	mes "    eliminate the EMPERIUM to";
+	mes "    take over the guild base.";
+	close;
+L_START_1:
+	mes "       [ Kingdom of Aldebaran ]";
+	mes "1. As law of Aldebaran this base is now";
+	mes "    $guildname guild's guild";
+	mes "    base.";
+	next;
+	mes "       [ Kingdom of Aldebaran ]";
+	mes "2.  $guildname Guild master is";
+	mes "    $guildmaster, and any of you";
+	mes "    have a beef, raise your sword to ";
+	mes "    honor yourself.";
+	close;
+OnInit:
+	guildreg "aldeg_cas03";
+return;
 }
 aldeg_cas03.gat,121,73,2	script	"Nuernberg"	722,{
-	script alde_gldF03;
+	guildreg "aldeg_cas03";
+	check guildid == 0,-,L_START_1;
+	mes "       [ Kingdom of Aldebaran ]";
+	mes "1. As Law of Aldebaran";
+	mes "    this guild base isn't taken by";
+	mes "    any guild yet.";
+	next;
+	mes "       [ Kingdom of Aldebaran ]";
+	mes "2. In order to take this guild base,";
+	mes "    you must defeat all the guardians";
+	mes "    that protect the guild base and";
+	mes "    eliminate the EMPERIUM to";
+	mes "    take over the guild base.";
+	close;
+L_START_1:
+	mes "       [ Kingdom of Aldebaran ]";
+	mes "1. As law of Aldebaran this base is now";
+	mes "    $guildname guild's guild";
+	mes "    base.";
+	next;
+	mes "       [ Kingdom of Aldebaran ]";
+	mes "2.  $guildname Guild master is";
+	mes "    $guildmaster, and any of you";
+	mes "    have a beef, raise your sword to ";
+	mes "    honor yourself.";
+	close;
+OnInit:
+	guildreg "aldeg_cas03";
+return;
 }
 aldeg_cas03.gat,121,73,2	script	"Nuernberg"	722,{
-	script alde_gldF03;
+	guildreg "aldeg_cas03";
+	check guildid == 0,-,L_START_1;
+	mes "       [ Kingdom of Aldebaran ]";
+	mes "1. As Law of Aldebaran";
+	mes "    this guild base isn't taken by";
+	mes "    any guild yet.";
+	next;
+	mes "       [ Kingdom of Aldebaran ]";
+	mes "2. In order to take this guild base,";
+	mes "    you must defeat all the guardians";
+	mes "    that protect the guild base and";
+	mes "    eliminate the EMPERIUM to";
+	mes "    take over the guild base.";
+	close;
+L_START_1:
+	mes "       [ Kingdom of Aldebaran ]";
+	mes "1. As law of Aldebaran this base is now";
+	mes "    $guildname guild's guild";
+	mes "    base.";
+	next;
+	mes "       [ Kingdom of Aldebaran ]";
+	mes "2.  $guildname Guild master is";
+	mes "    $guildmaster, and any of you";
+	mes "    have a beef, raise your sword to ";
+	mes "    honor yourself.";
+	close;
+OnInit:
+	guildreg "aldeg_cas03";
+return;
 }
 aldeg_cas03.gat,75,102,2	script	"Nuernberg"	722,{
-	script alde_gldF03;
+	guildreg "aldeg_cas03";
+	check guildid == 0,-,L_START_1;
+	mes "       [ Kingdom of Aldebaran ]";
+	mes "1. As Law of Aldebaran";
+	mes "    this guild base isn't taken by";
+	mes "    any guild yet.";
+	next;
+	mes "       [ Kingdom of Aldebaran ]";
+	mes "2. In order to take this guild base,";
+	mes "    you must defeat all the guardians";
+	mes "    that protect the guild base and";
+	mes "    eliminate the EMPERIUM to";
+	mes "    take over the guild base.";
+	close;
+L_START_1:
+	mes "       [ Kingdom of Aldebaran ]";
+	mes "1. As law of Aldebaran this base is now";
+	mes "    $guildname guild's guild";
+	mes "    base.";
+	next;
+	mes "       [ Kingdom of Aldebaran ]";
+	mes "2.  $guildname Guild master is";
+	mes "    $guildmaster, and any of you";
+	mes "    have a beef, raise your sword to ";
+	mes "    honor yourself.";
+	close;
+OnInit:
+	guildreg "aldeg_cas03";
+return;
 }
 aldeg_cas03.gat,199,169,2	script	"Nuernberg"	722,{
-	script alde_gldF03;
+	guildreg "aldeg_cas03";
+	check guildid == 0,-,L_START_1;
+	mes "       [ Kingdom of Aldebaran ]";
+	mes "1. As Law of Aldebaran";
+	mes "    this guild base isn't taken by";
+	mes "    any guild yet.";
+	next;
+	mes "       [ Kingdom of Aldebaran ]";
+	mes "2. In order to take this guild base,";
+	mes "    you must defeat all the guardians";
+	mes "    that protect the guild base and";
+	mes "    eliminate the EMPERIUM to";
+	mes "    take over the guild base.";
+	close;
+L_START_1:
+	mes "       [ Kingdom of Aldebaran ]";
+	mes "1. As law of Aldebaran this base is now";
+	mes "    $guildname guild's guild";
+	mes "    base.";
+	next;
+	mes "       [ Kingdom of Aldebaran ]";
+	mes "2.  $guildname Guild master is";
+	mes "    $guildmaster, and any of you";
+	mes "    have a beef, raise your sword to ";
+	mes "    honor yourself.";
+	close;
+OnInit:
+	guildreg "aldeg_cas03";
+return;
 }
 aldeg_cas03.gat,181,179,2	script	"Nuernberg"	722,{
-	script alde_gldF03;
+	guildreg "aldeg_cas03";
+	check guildid == 0,-,L_START_1;
+	mes "       [ Kingdom of Aldebaran ]";
+	mes "1. As Law of Aldebaran";
+	mes "    this guild base isn't taken by";
+	mes "    any guild yet.";
+	next;
+	mes "       [ Kingdom of Aldebaran ]";
+	mes "2. In order to take this guild base,";
+	mes "    you must defeat all the guardians";
+	mes "    that protect the guild base and";
+	mes "    eliminate the EMPERIUM to";
+	mes "    take over the guild base.";
+	close;
+L_START_1:
+	mes "       [ Kingdom of Aldebaran ]";
+	mes "1. As law of Aldebaran this base is now";
+	mes "    $guildname guild's guild";
+	mes "    base.";
+	next;
+	mes "       [ Kingdom of Aldebaran ]";
+	mes "2.  $guildname Guild master is";
+	mes "    $guildmaster, and any of you";
+	mes "    have a beef, raise your sword to ";
+	mes "    honor yourself.";
+	close;
+OnInit:
+	guildreg "aldeg_cas03";
+return;
 }
 aldeg_cas03.gat,192,44,2	script	"Nuernberg"	722,{
-	script alde_gldF03;
+	guildreg "aldeg_cas03";
+	check guildid == 0,-,L_START_1;
+	mes "       [ Kingdom of Aldebaran ]";
+	mes "1. As Law of Aldebaran";
+	mes "    this guild base isn't taken by";
+	mes "    any guild yet.";
+	next;
+	mes "       [ Kingdom of Aldebaran ]";
+	mes "2. In order to take this guild base,";
+	mes "    you must defeat all the guardians";
+	mes "    that protect the guild base and";
+	mes "    eliminate the EMPERIUM to";
+	mes "    take over the guild base.";
+	close;
+L_START_1:
+	mes "       [ Kingdom of Aldebaran ]";
+	mes "1. As law of Aldebaran this base is now";
+	mes "    $guildname guild's guild";
+	mes "    base.";
+	next;
+	mes "       [ Kingdom of Aldebaran ]";
+	mes "2.  $guildname Guild master is";
+	mes "    $guildmaster, and any of you";
+	mes "    have a beef, raise your sword to ";
+	mes "    honor yourself.";
+	close;
+OnInit:
+	guildreg "aldeg_cas03";
+return;
 }
 aldeg_cas03.gat,88,108,2	script	"Nuernberg"	722,{
-	script alde_gldF03;
+	guildreg "aldeg_cas03";
+	check guildid == 0,-,L_START_1;
+	mes "       [ Kingdom of Aldebaran ]";
+	mes "1. As Law of Aldebaran";
+	mes "    this guild base isn't taken by";
+	mes "    any guild yet.";
+	next;
+	mes "       [ Kingdom of Aldebaran ]";
+	mes "2. In order to take this guild base,";
+	mes "    you must defeat all the guardians";
+	mes "    that protect the guild base and";
+	mes "    eliminate the EMPERIUM to";
+	mes "    take over the guild base.";
+	close;
+L_START_1:
+	mes "       [ Kingdom of Aldebaran ]";
+	mes "1. As law of Aldebaran this base is now";
+	mes "    $guildname guild's guild";
+	mes "    base.";
+	next;
+	mes "       [ Kingdom of Aldebaran ]";
+	mes "2.  $guildname Guild master is";
+	mes "    $guildmaster, and any of you";
+	mes "    have a beef, raise your sword to ";
+	mes "    honor yourself.";
+	close;
+OnInit:
+	guildreg "aldeg_cas03";
+return;
 }
 aldeg_cas03.gat,208,145,2	script	"Nuernberg"	722,{
-	script alde_gldF03;
+	guildreg "aldeg_cas03";
+	check guildid == 0,-,L_START_1;
+	mes "       [ Kingdom of Aldebaran ]";
+	mes "1. As Law of Aldebaran";
+	mes "    this guild base isn't taken by";
+	mes "    any guild yet.";
+	next;
+	mes "       [ Kingdom of Aldebaran ]";
+	mes "2. In order to take this guild base,";
+	mes "    you must defeat all the guardians";
+	mes "    that protect the guild base and";
+	mes "    eliminate the EMPERIUM to";
+	mes "    take over the guild base.";
+	close;
+L_START_1:
+	mes "       [ Kingdom of Aldebaran ]";
+	mes "1. As law of Aldebaran this base is now";
+	mes "    $guildname guild's guild";
+	mes "    base.";
+	next;
+	mes "       [ Kingdom of Aldebaran ]";
+	mes "2.  $guildname Guild master is";
+	mes "    $guildmaster, and any of you";
+	mes "    have a beef, raise your sword to ";
+	mes "    honor yourself.";
+	close;
+OnInit:
+	guildreg "aldeg_cas03";
+return;
 }
 aldeg_cas03.gat,207,75,2	script	"Nuernberg"	722,{
-	script alde_gldF03;
+	guildreg "aldeg_cas03";
+	check guildid == 0,-,L_START_1;
+	mes "       [ Kingdom of Aldebaran ]";
+	mes "1. As Law of Aldebaran";
+	mes "    this guild base isn't taken by";
+	mes "    any guild yet.";
+	next;
+	mes "       [ Kingdom of Aldebaran ]";
+	mes "2. In order to take this guild base,";
+	mes "    you must defeat all the guardians";
+	mes "    that protect the guild base and";
+	mes "    eliminate the EMPERIUM to";
+	mes "    take over the guild base.";
+	close;
+L_START_1:
+	mes "       [ Kingdom of Aldebaran ]";
+	mes "1. As law of Aldebaran this base is now";
+	mes "    $guildname guild's guild";
+	mes "    base.";
+	next;
+	mes "       [ Kingdom of Aldebaran ]";
+	mes "2.  $guildname Guild master is";
+	mes "    $guildmaster, and any of you";
+	mes "    have a beef, raise your sword to ";
+	mes "    honor yourself.";
+	close;
+OnInit:
+	guildreg "aldeg_cas03";
+return;
 }
 aldeg_cas03.gat,96,62,2	script	"Nuernberg"	722,{
-	script alde_gldF03;
+	guildreg "aldeg_cas03";
+	check guildid == 0,-,L_START_1;
+	mes "       [ Kingdom of Aldebaran ]";
+	mes "1. As Law of Aldebaran";
+	mes "    this guild base isn't taken by";
+	mes "    any guild yet.";
+	next;
+	mes "       [ Kingdom of Aldebaran ]";
+	mes "2. In order to take this guild base,";
+	mes "    you must defeat all the guardians";
+	mes "    that protect the guild base and";
+	mes "    eliminate the EMPERIUM to";
+	mes "    take over the guild base.";
+	close;
+L_START_1:
+	mes "       [ Kingdom of Aldebaran ]";
+	mes "1. As law of Aldebaran this base is now";
+	mes "    $guildname guild's guild";
+	mes "    base.";
+	next;
+	mes "       [ Kingdom of Aldebaran ]";
+	mes "2.  $guildname Guild master is";
+	mes "    $guildmaster, and any of you";
+	mes "    have a beef, raise your sword to ";
+	mes "    honor yourself.";
+	close;
+OnInit:
+	guildreg "aldeg_cas03";
+return;
 }
 
 aldeg_cas03.gat,118,76,0	script	"Kafra Service"	117,{
