@@ -9,6 +9,9 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.002
 ----------------------------------------------------------------------------------------------------
+- Npc\npc_merchant_guide.txt - Added Merchant guidelines for dummies bookshelf in prontera library. [mudvayne]
+- Npc\npc_bookshelf.txt - Added mage quest bookshelf. [mudvayne]
+- Npc\npc_ancyclopedia.txt -Added Monsters Ancyclopedia in prontera library. [mudvayne]
 - Shop\Shop.txt - Cleaned shops, fixed Comodo Shops, fixed pet merchants, removed carnival shops? (useless) [mudvayne]
 - Shop\Shop.txt - Removed Old Refiners Shops. [mudvayne]
 - Town\Town_Siglude.txt - Enabled Vurewell, Sade, Begnahd and Kahlamanlith Npcs. [mudvayne]

@@ -1,0 +1,110 @@
+//========================================================================================
+// »» The Fusion Project ««
+// Copyright (c) 2004, Cobax Information Systems
+// http://fusion.cobax.net/
+// ---------------------------------------------------------------------------------------
+//
+// Mage Quest, Book Shelf - Non Player Character Locations
+//
+// - Book Shelf -> geffen_in: 176,111
+//   Give informations about how to get the Mage Test Solutions.
+//
+//========================================================================================
+
+geffen_in.gat,176,111,1	script	"Book Shelf"	111,{
+	mes "[Book]";
+	mes "I belong to Geffen Mage Association. Please Hanlde with care.";
+	next;
+	menu "Solution No. 1.",Sol1,"Solution No. 2.",Sol2,"Solution No. 3.",Sol3,"Solution No. 4",Sol4,"Close.",Cancel;
+	Sol1:
+		mes "[Mage Test Solution No. 1]";
+		mes "* Ingredients list *";
+		mes " - Jellopy 2 ea";
+		mes " - Fluff 3 ea";
+		mes " - Milk 1 ea";
+		next;
+		mes "[Mage Test Solution No. 1]";
+		mes "* Solvent Agent *";
+		mes "  Payon Solution";
+		mes "  Where to find: A Small Spring in";
+		mes "  Archer Village, Payon.";
+		next;
+		mes "[Mage Test Solution No. 1]";
+		mes "* Chemical ingredients *";
+		mes " - 8472";
+		next;
+		mes "[Mage Test Solution No. 1]";
+		mes "* A Catalyst *";
+		mes " - Yellow Gemstone";
+		mes "   (Mixing Machine Will provide";
+		mes "   this item.)";
+		close;
+	Sol2:
+		mes "[Mage Test Solution No. 2]";
+		mes "* Ingredients list *";
+		mes " - Jellopy 3 ea";
+		mes " - Fluff 1 ea";
+		mes " - Milk 1 ea";
+		next;
+		mes "[Mage Test Solution No. 2]";
+		mes "* Solvent Agent *";
+		mes " - Not Appliable.";
+		next;
+		mes "[Mage Test Solution No. 2]";
+		mes "* Chemical ingredients *";
+		mes " - 3735";
+		next;
+		mes "[Mage Test Solution No. 2]";
+		mes "* A Catalyst *";
+		mes " - Red Gemstone";
+		mes "   (Mixing Machine Will provide";
+		mes "   this item.)";
+		close;
+	Sol3:
+		mes "[Mage Test Solution No. 3]";
+		mes "* Ingredients list *";
+		mes " - Jellopy 6 ea";
+		mes " - Fluff 1 ea";
+		next;
+		mes "[Mage Test Solution No. 3]";
+		mes "* Solvent Agent *";
+		mes "  Payon Solution";
+		mes "  Where to find: A Small Spring in";
+		mes "  Archer Village, Payon.";
+		next;
+		mes "[Mage Test Solution No. 3]";
+		mes "* Chemical ingredients *";
+		mes " - 2750";
+		next;
+		mes "[Mage Test Solution No. 3]";
+		mes "* A Catalyst *";
+		mes " - Blue Gemstone";
+		mes "   (Mixing Machine Will provide";
+		mes "   this item.)";
+		close;
+	Sol4:
+		mes "[Mage Test Solution No. 4]";
+		mes "* Ingredients list *";
+		mes " - Jellopy 2 ea";
+		mes " - Fluff 3 ea";
+		next;
+		mes "[Mage Test Solution No. 4]";
+		mes "* Solvent Agent *";
+		mes "  Morroc Solution";
+		mes "  Where to find: A Small Spring";
+		mes "  Near the Enterance of Pyramid";
+		mes "  in Morroc.";
+		next;
+		mes "[Mage Test Solution No. 4]";
+		mes "* Chemical ingredients *";
+		mes " - 5429";
+		next;
+		mes "[Mage Test Solution No. 4]";
+		mes "* A Catalyst *";
+		mes " - 1 carat Diamond";
+		mes "   (Mixing Machine Will provide";
+		mes "   this item.)";
+		close;
+	Cancel:
+		close;
+}
