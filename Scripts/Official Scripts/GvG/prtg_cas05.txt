@@ -586,7 +586,7 @@ L_HAVEMONEY_3:
 	mes "Guardian has been installed, guardian will protect our guild base against enemies.";
 	goto L_Exit;
 L_HAVEGUARD_1:
-	mes"[ Reiner ]";
+	mes "[ Reiner ]";
 	mes "Master...you have installed that guardian already.";
 	goto L_Exit;
 L_MENU_2-5:

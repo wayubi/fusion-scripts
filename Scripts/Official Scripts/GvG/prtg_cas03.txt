@@ -612,7 +612,7 @@ goto L_Exit;
 	mes "Guardian has been installed, guardian will protect our guild base against enemies.";
 	goto L_Exit;
 L_HAVEGUARD_1:
-	mes"[ Stick ]";
+	mes "[ Stick ]";
 	mes "Master...you have installed that guardian already.";
 	goto L_Exit;
 L_MENU_2-5:

@@ -1,7 +1,7 @@
 ====================================================================================================
  »» The Fusion Project ««
  Copyright (c) 2004, Cobax Information Systems
- http:/fusion.cobax.net/
+ http://fusion.cobax.net/
 ----------------------------------------------------------------------------------------------------
  Scripts Change Logs
 ====================================================================================================
@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.005
 ----------------------------------------------------------------------------------------------------
+- GvG\prtg_cas0#.txt - Fixed mes error. [Tsusai]
 - Job\Job2_Dancer.txt - Added Some various npc's. [Muad_Dib]
 - Job\Job2_Bard.txt - Updated Bard Jobchange Location. [Muad_Dib]
 - Town\Town_Lutie.txt - Updated various npc's. [Muad_Dib]
