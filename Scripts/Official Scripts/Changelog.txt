@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.002
 ----------------------------------------------------------------------------------------------------
+- NPC\npc_skill_get.txt - Fixed NPC name. [Tsusai]
 - NPC\npc_skill_get.txt - Fixed ;; mistake. [Tsusai]
 - GvG\aldeg_cas02-05.txt - Corrected scriptlabel commands. [Tsusai]
 - NPC\npc_skill_get.txt - Translated Father Clifford, Blizzardriss, Nami, Blma, Prontera General, & RuRumuni. [Tsusai]

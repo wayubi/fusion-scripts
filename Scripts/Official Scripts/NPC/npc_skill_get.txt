@@ -2642,7 +2642,7 @@ LStart1:
 //-----------------------------------------------
 //==== ポケット販売商人(skill_thief_1関連)
 //-----------------------------------------------
-payon.gat,30,120,4	script	"ポケット販売商人"	99,{
+payon.gat,30,120,4	script	"RuRumuni"	99,{
 	mes "[RuRumuni]";
 	mes "Here in Payon Village ";
 	mes "I live surrounded by bow and arrows";
