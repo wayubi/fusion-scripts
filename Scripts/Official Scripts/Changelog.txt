@@ -9,6 +9,11 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.005
 ----------------------------------------------------------------------------------------------------
+- Event\Event_Dye.txt - Fixed a few mes errors. [Muad_Dib]
+- Event\Event_Rental.txt - Changed some text parts. [Muad_Dib]
+- Town\Town_Alberta.txt - Updated Town Alberta (Again Yeah) [Muad_Dib]
+- Town\Town_Geffen.txt - Updated Town Geffen and fixed a next; command. [Muad_Dib]
+- Town\Town_Prontera.txt - Updated Town Prontera. [Muad_Dib]
 - Town\Town_Payon.txt - Updated Town Payon. [Muad_Dib]
 - Town\Town_Izlude.txt - Updated Town Izlude. [Muad_Dib]
 - Town\Town_Alberta.txt - Updated Town Alberta. [Muad_Dib]

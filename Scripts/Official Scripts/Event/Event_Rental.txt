@@ -46,8 +46,8 @@ prontera.gat,52,350,5	script	"PecoPeco Breeder"	105,{
 					mes "Alright. Have a nice day.";
 					close;
 			L_SONLY:
-				mes "How may I assist you?";
-				mes "Peco Peco is only for the Knight and Lord Knight Classes.";
+				mes "What can I do for you?";
+				mes "Our PecoPeco's are only for Knights and Lord Knights.";
 				close;
 }
 
@@ -116,7 +116,7 @@ prontera.gat,231,317,4	script "Grand PecoPeco Breeder" 105,{
 					mes "Alright. Have a nice day.";
 					close;
 			L_SONLY:
-				mes "How may I assist you?";
-				mes "Peco Peco is only for the Crusader and Palladin Classes.";
+				mes "What can I do for you?";
+				mes "Our PecoPeco's are only for Crusaders and Palladins.";
 				close;
 }

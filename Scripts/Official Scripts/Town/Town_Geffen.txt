@@ -1,21 +1,16 @@
-//----------------------------------------------------------------------
-// Partially translated and corrected by Hylysi, some credits to Rentus
-// for translating to english first (i corrected grammar and made it work)
-//----------------------------------------------------------------------
-
-geffen.gat,59,143,0	script	"Lady"	91,{
-	mes "[Womankind]";
+geffen.gat,59,143,0 script "Lady" 91,{
+	mes "[Kind Woman]";
 	mes "Oh, you must be a stranger here. Welcome to Geffen, the city of magic. You must be very tired, aren't you? Why don't you eat some Honey? It will relieve you of your fatigue~";
 	mes "Hornets, the Bee family living in Grassland, gather Honey at the queen bee's Command, for Their entire life. Honey is very sweet and of high nutritive value, so it is the one of high-priced articles.";
 	next;
-	mes "[Womankind]"
+	mes "[Kind Woman]"
 	mes "But it doesn't mean Honey is the best of bee products.";
 	mes "A rumor has it that is nothing compare with the 'Royal Jelly' from the Queen bee.";
 	mes "Ah~thinking of Royal Jelly makes my mouth water~";
 	close;
 }
 
-geffen.gat,156,190,0	script	"Young man"	82,{
+geffen.gat,156,190,0 script "Young man" 82,{
 	mes "[Young Man]";
 	mes "Hmm...Interesting. Hmm... It is very interesting... Oh, you've come at just the right time. Let me tell you this marvellous story.";
 	mes "I found out a mysterious scroll when I was researching magic, it describes the tree named Yggdrasill in which it's leaves, seeds, and fruits have been deeply involved with everything alive in the world and the myth about Yggdrasil created the world.";
@@ -25,7 +20,7 @@ geffen.gat,156,190,0	script	"Young man"	82,{
 	close;
 }
 
-geffen_in.gat,164,109,0	script	"Dark Wizard"	64,{
+geffen_in.gat,164,109,0	script "Dark Wizard" 64,{
 	mes "[Dark Wizard]";
 	mes "Oh...I can feel fresh and mighty spirits. Oh...Is that you? You seem to use magic as well.";
 	mes "Magic...the power of magic is controlled by the rule of cause and effect...";
@@ -39,7 +34,7 @@ geffen_in.gat,164,109,0	script	"Dark Wizard"	64,{
 	close;
 }
 
-geffen.gat,147,26,0	script	"Young man"	97,{
+geffen.gat,147,26,0 script "Young man" 97,{
 	mes "[Young Man]";
 	mes "I heard that somewhere in this world, there is a rare staff which transforms its owner's psychic power into phisycal powers, and endows with destructive force also...";
 	mes "With this, everybody could be as strong as Hercules, despite their lack of muscles. Haw haw...I will take it.";
@@ -51,18 +46,18 @@ geffen.gat,147,26,0	script	"Young man"	97,{
 	close;
 }
 
-geffen.gat,111,48,0	script	"Womankind"	101,{
-	mes "[Womankind]";
+geffen.gat,111,48,0 script "Kind Woman" 101,{
+	mes "[Kind Woman]";
 	mes "Good Day, adventurer? Have you ever happened to see Orcs, the demi-human tribe?";
 	mes "When you go down to the Southward from here, in the deep forest, you will meet Orcs.";
 	next;
-	mes "[Womankind]";
+	mes "[Kind Woman]";
 	mes "They have, as Human, their own language and culture by hearsay.";
 	mes "What I wonder is...Would they whisper sweet nothings and fool around? Hmm...I am so curious.";
 	close;
 }
 
-geffen_in.gat,34,170,0	script	"Young man"	47,{
+geffen_in.gat,34,170,0 script "Young man" 47,{
 	mes "[Young Man]";
 	mes "Hello? Isn't it wonderful, today? I am a promising young Mage. Ahem.";
 	mes "Nowadays, my mental anguish about magic things keeps me awake every night..sigh...Especially, about the weak point of magic, you know.";
@@ -70,192 +65,200 @@ geffen_in.gat,34,170,0	script	"Young man"	47,{
 	mes "[Young Man]";
 	mes "Darn! It was really annoying when I encountered that long-ranged enemy last time. It disrupted magic casting.";
 	mes "After all I realised I need a weapon to counter Such a long-ranged attack from an enemy....But geez..It is not easy to make such a weapon I wish.";
-	mext;
+	next;
 	mes "There should be another way.....Should be.....";
 	mes "Any idea for me?";
 	close;
 }
 
-geffen_in.gat,110,172,0	script	"Christopher"	63,{
+geffen_in.gat,110,172,0	script "Christopher" 63,{
 	mes "[Christopher Guillenrow]";
 	mes "Welcome to Christopher's Workshop.";
 	mes "You can get every item to forge here.";
 	mes "My dear...What business brings you to me?";
 	next;
 	menu "Purchase Anvil",L_MENU_1,"Purchase Forging Item",L_MENU_2,"Purchase Metal",L_MENU_3,"Purify Rough Ores",L_MENU_4,"Cancel",L_MENU_5;
-	L_MENU_1:
-		mes "[Christopher Guillenrow]";
-		mes "A better Anvil gives you more chances to make better weapons, you know.";
-		mes "But it will cost you more money than the common one.";
-		mes "Just get off your chest and choose the best one for your convenience.";
-		next;
-		menu "Anvil - 30,000 Zeny",L_MENU_1A,"Oridecon Anvil - 120,000 Zeny",L_MENU_1B,"Golden Anvil - 300,000 Zeny",L_MENU_1C,"Better Anvil than others.",L_MENU_1D,"Cancel",L_MENU_1E;
-		L_MENU_1A:
-			check Zeny >= 30000,-,L_MENU_1A_1;
-			checkadditem 986,1,-,L_MENU_1A_2;
-			set Zeny -= 30000,0;
-			additem 986,1;
-			mes "[Christopher Guillenrow]";
-			mes "This is the cheapest one but efficient to forge.";
-			mes "Thank you for shopping at my workshop. Feel free to come anytime, whenever you need.";
-			close;
-		L_MENU_1A_1:
-			mes "[Christopher Guillenrow]";
-			mes "I don't think I can let you have this...at lower price. I can't lose my money because of you.";
-			close;
-		L_MENU_1A_2:
-			mes "[Christopher Guillenrow]";
-			mes "Overweight...";
-			close;
-		L_MENU_1B:
-			check Zeny >= 120000,-,L_MENU_1A_1;
-			checkadditem 987,1,-,L_MENU_1A_2;
-			set Zeny -= 120000,0;
-			additem 987,1;
-			mes "[Christopher Guillenrow]";
-			mes "Oh, buddy you have an eye for anvils. This must be the proper anvil for a Blacksmith, right?";
-			mes "Thank you for shopping at my workshop. Feel free to come anytime, whenever you need.";
-			close;
-		L_MENU_1C:
-			check Zeny >= 300000,-,L_MENU_1A_1;
-			checkadditem 988,1,-,L_MENU_1A_2;
-			set Zeny -= 300000,0;
-			additem 988,1;
-			mes "[Christopher Guillenrow]";
-			mes "This one is the best among Anvils in my workshop!";
-			mes "With this, you could rule the Blacksmith world!";
-			mes "Thank you for shopping at my workshop. Feel free to come anytime, whenever you need.";
-			close;
-		L_MENU_1D:
-			mes "[Christopher Guillenrow]";
-			mes "Well sorry but I don't have anvils harder than a golden anvil.";
-			mes "Maybe 'Ringgel' the legendary Anvil maker would have one...But I don't think you can find him somewhere in this world.";
-			close;
-		L_MENU_1E:
-			mes "[Christopher Guillenrow]";
-			mes "Ok, feel free to come anytime, whenever you need. Farewell.";
-			close;
-	L_MENU_2:
-		mes "[Christopher Guillenrow]";
-		mes "A respectable blacksmith uses fine tools!";
-		mes "You will become one with my Anvils.";
-		mes "Choose anything you want.";
-		next;
-		menu "Mini-Furnace - 150 Zeny",L_MENU_2A,"Iron Hammer - 1,000 Zeny",L_MENU_2B,"Golden Hammer- 3,000 Zeny",L_MENU_2C,"Oridecon Hammer - 5,000 Zeny",L_MENU_2D,"Cancel",L_MENU_2E;
-		L_MENU_2A:
-			mes "[Christopher Guillenrow]";
-			mes "It's a tool requisite for Metal refining!!";
-			next;
-			set @BUY_PRICE = 150;
-			set @BUY_ID = 612;
-			goto L_SUB_2;
-		L_MENU_2B:
-			set @BUY_PRICE = 1000;
-			set @BUY_ID = 613;
-			goto L_SUB_2;
-		L_MENU_2C:
-			set @BUY_PRICE = 3000;
-			set @BUY_ID = 614;
-			goto L_SUB_2;
-		L_MENU_2D:
-			set @BUY_PRICE = 5000;
-			set @BUY_ID = 615;
-		L_SUB_2:
-			mes "[Christopher Guillenrow]";
-			mes "So, how many do you wish to buy? If you want to quit, please note the number as '0'.";
-			next;
-			input @BUY_NUM;
-			check @BUY_NUM == 0,L_MENU_2E,-;
-				set @BUY_ZENY = @BUY_NUM;
-				set @BUY_ZENY *= @BUY_PRICE;
-				check Zeny >= @BUY_ZENY,-,L_ROOT_2_1;
-				checkadditem @BUY_ID,@BUY_NUM,-,L_ROOT_2_2;
-				set Zeny -= @BUY_ZENY,0;
-				additem @BUY_ID,@BUY_NUM;
-				mes "[Christopher Guillenrow]";
-				mes "Thank you for shopping at my workshop. Feel free to come anytime, whenever you need.";
-				close;
-			L_ROOT_2_1:
-				mes "[Christopher Guillenrow]";
-				mes "I don't think I can let you have this...at lower price. I can't lose my money because of you.";
-				close;
-			L_ROOT_2_2:
-				mes "[Christopher Guillenrow]";
-				mes "You...look pale. Please adjust the Inventory and come back before purchasing.";
-				close;
-		L_MENU_2E:
-			mes "[Christopher Guillenrow]";
-			mes "Thank you for shopping at my workshop. Feel free to come anytime, whenever you need.";
-			close;
-	L_MENU_3:
-		mes "[Christopher Guillenrow]";
-		mes "I prepare every metal, only high quality ones.";
-		mes "Now then. Which one do you want?";
-		next;
-		menu "Phracon",L_MENU_3A,"Emveretarcon",L_MENU_3B,"Cancel",L_MENU_3C;
-		L_MENU_3A:
-	 		mes "[Christopher Guillenrow]";
- 			mes "Phracon costs 200 zeny per piece.";
-			set @BUY_PRICE = 200;
-			set @BUY_ID = 1010;
-			goto L_SUB_3;
-		L_MENU_3B:
-			mes "1000 zeny per piece";
-			set @BUY_PRICE = 1000;
-			set @BUY_ID = 1011;
-		L_SUB_3:
-			mes "So, how many do you wish to buy? If you want to quit, please note the number as '0'.";
- 			next;
-			input @BUY_NUM;
-			check @BUY_NUM == 0,L_MENU_2E,-;
-				set @BUY_ZENY = @BUY_NUM;
-				set @BUY_ZENY *= @BUY_PRICE;
-				check Zeny >= @BUY_ZENY,-,L_ROOT_2_1;
-				checkadditem 1010,@BUY_NUM,-,L_ROOT_2_2;
-				set Zeny -= @BUY_ZENY,0;
-				additem @BUY_ID,@BUY_NUM;
-				mes "[Christopher Guillenrow]";
-				mes "Thank you for shopping at my workshop. Feel free to come anytime, whenever you need.";
-				close;
-		L_MENU_3C:
-	 		mes "[Christopher Guillenrow]";
- 			mes "Feel free to come anytime, whenever you need. Farewell.";
- 			close;
-	L_MENU_4:
-		mes "[Christopher Guillenrow]";
-		mes "I can purify Oridecon and Elunium.";
-		mes "I can make a cutting Ore out of 5 each rough ones.";
-		mes "Well..Which one do you want to make?";
-		next;
-		menu "Make Oridecon",L_MENU_4A,"Make Elunium",L_MENU_4B,"Cancel",L_MENU_4C;
-		L_MENU_4A:
-			checkitem 756,5,-,L_SUB_4A_1;
-			delitem 756,5;
-			additem 984,1;
-			mes "[Christopher Guillenrow]";
-			mes "Here, this is a Oridecon for you. You will be always welcome here, please come again.";
-			close;
-		L_SUB_4A_1:
-			mes "[Christopher Guillenrow]";
-			mes "I told you I need 5 rough Oridecons for one Oridecon.";
-			close;
-		L_MENU_4B:
-			checkitem 757,5,-,L_SUB_4B_1;
-			delitem 757,5;
-			additem 985,1;
-			mes "[Christopher Guillenrow]";
-			mes "Here, this is Elunium for you. You will be always welcome here, please come again";
-			close;
-		L_SUB_4B_1:
-			mes "[Christopher Guillenrow]";
-			mes "I told you I need 5 rough Eluniums for one Elunium.";
-			close;
-		L_MENU_4C:
-			mes "[Christopher Guillenrow]";
-			mes "Feel free to come anytime whenever you need, farewell.";
-			close;
-	L_MENU_5:
-		mes "[Christopher Guillenrow]";
-		mes "Feel free to come anytime whenever you need, farewell.";
-		close;
+L_MENU_1:
+	mes "[Christopher Guillenrow]";
+	mes "A better Anvil gives you more chances to make better weapons, you know.";
+	mes "But it will cost you more money than the common one.";
+	mes "Just get off your chest and choose the best one for your convenience.";
+	next;
+	menu "Anvil - 30,000 Zeny",L_MENU_1A,"Oridecon Anvil - 120,000 Zeny",L_MENU_1B,"Golden Anvil - 300,000 Zeny",L_MENU_1C,"Better Anvil than others.",L_MENU_1D,"Cancel",L_MENU_1E;
+L_MENU_1A:
+	   check Zeny >= 30000,-,L_MENU_1A_1;
+	   checkadditem 986,1,-,L_MENU_1A_2;
+	   set Zeny -= 30000,0;
+	   additem 986,1;
+	mes "[Christopher Guillenrow]";
+	mes "This is the cheapest one but efficient to forge.";
+	mes "Thank you for shopping at my workshop. Feel free to come anytime, whenever you need.";
+	close;
+L_MENU_1A_1:
+	mes "[Christopher Guillenrow]";
+	mes "I don't think I can let you have this...at lower price. I can't lose my money because of you.";
+	close;
+L_MENU_1A_2:
+	mes "[Christopher Guillenrow]";
+	mes "Overweight...";
+	close;
+L_MENU_1B:
+	   check Zeny >= 120000,-,L_MENU_1A_1;
+	   checkadditem 987,1,-,L_MENU_1A_2;
+	   set Zeny -= 120000,0;
+	   additem 987,1;
+	mes "[Christopher Guillenrow]";
+	mes "Oh, buddy you have an eye for anvils. This must be the proper anvil for a Blacksmith, right?";
+	mes "Thank you for shopping at my workshop. Feel free to come anytime, whenever you need.";
+	close;
+L_MENU_1C:
+	   check Zeny >= 300000,-,L_MENU_1A_1;
+	   checkadditem 988,1,-,L_MENU_1A_2;
+	   set Zeny -= 300000,0;
+	   additem 988,1;
+	mes "[Christopher Guillenrow]";
+	mes "This one is the best among Anvils in my workshop!";
+	mes "With this, you could rule the Blacksmith world!";
+	mes "Thank you for shopping at my workshop. Feel free to come anytime, whenever you need.";
+	close;
+L_MENU_1D:
+	mes "[Christopher Guillenrow]";
+	mes "Well sorry but I don't have anvils harder than a golden anvil.";
+	mes "Maybe 'Ringgel' the legendary Anvil maker would have one...But I don't think you can find him somewhere in this world.";
+	close;
+L_MENU_1E:
+	mes "[Christopher Guillenrow]";
+	mes "Ok, feel free to come anytime, whenever you need. Farewell.";
+	close;
+L_MENU_2:
+	mes "[Christopher Guillenrow]";
+	mes "A respectable blacksmith uses fine tools!";
+	mes "You will become one with my Anvils.";
+	mes "Choose anything you want.";
+	next;
+	menu "Mini-Furnace - 150 Zeny",L_MENU_2A,"Iron Hammer - 1,000 Zeny",L_MENU_2B,"Golden Hammer- 3,000 Zeny",L_MENU_2C,"Oridecon Hammer - 5,000 Zeny",L_MENU_2D,"Cancel",L_MENU_2E;
+L_MENU_2A:
+	mes "[Christopher Guillenrow]";
+	mes "It's a tool requisite for Metal refining!!";
+	next;
+	   set @BUY_PRICE = 150;
+	   set @BUY_ID = 612;
+	goto L_SUB_2;
+L_MENU_2B:
+	   set @BUY_PRICE = 1000;
+	   set @BUY_ID = 613;
+	goto L_SUB_2;
+L_MENU_2C:
+	   set @BUY_PRICE = 3000;
+	   set @BUY_ID = 614;
+	goto L_SUB_2;
+L_MENU_2D:
+	   set @BUY_PRICE = 5000;
+	   set @BUY_ID = 615;
+L_SUB_2:
+	mes "[Christopher Guillenrow]";
+	mes "So, how many do you wish to buy? If you want to quit, please note the number as '0'.";
+	next;
+	   input @BUY_NUM;
+	   check @BUY_NUM == 0,L_MENU_2E,-;
+	   set @BUY_ZENY = @BUY_NUM;
+	   set @BUY_ZENY *= @BUY_PRICE;
+	   check Zeny >= @BUY_ZENY,-,L_ROOT_2_1;
+	   checkadditem @BUY_ID,@BUY_NUM,-,L_ROOT_2_2;
+	   set Zeny -= @BUY_ZENY,0;
+	   additem @BUY_ID,@BUY_NUM;
+	mes "[Christopher Guillenrow]";
+	mes "Thank you for shopping at my workshop. Feel free to come anytime, whenever you need.";
+	close;
+L_ROOT_2_1:
+	mes "[Christopher Guillenrow]";
+	mes "I don't think I can let you have this...at lower price. I can't lose my money because of you.";
+	close;
+L_ROOT_2_2:
+	mes "[Christopher Guillenrow]";
+	mes "You...look pale. Please adjust the Inventory and come back before purchasing.";
+	close;
+L_MENU_2E:
+	mes "[Christopher Guillenrow]";
+	mes "Thank you for shopping at my workshop. Feel free to come anytime, whenever you need.";
+	close;
+L_MENU_3:
+	mes "[Christopher Guillenrow]";
+	mes "I prepare every metal, only high quality ones.";
+	mes "Now then. Which one do you want?";
+	next;
+	menu "Phracon",L_MENU_3A,"Emveretarcon",L_MENU_3B,"Cancel",L_MENU_3C;
+L_MENU_3A:
+	 mes "[Christopher Guillenrow]";
+ 	mes "Phracon costs 200 zeny per piece.";
+	   set @BUY_PRICE = 200;
+	   set @BUY_ID = 1010;
+	goto L_SUB_3;
+L_MENU_3B:
+	mes "1000 zeny per piece";
+	   set @BUY_PRICE = 1000;
+	   set @BUY_ID = 1011;
+L_SUB_3:
+	mes "So, how many do you wish to buy? If you want to quit, please note the number as '0'.";
+ 	next;
+	   input @BUY_NUM;
+	   check @BUY_NUM == 0,L_MENU_2E,-;
+	   set @BUY_ZENY = @BUY_NUM;
+	   set @BUY_ZENY *= @BUY_PRICE;
+	   check Zeny >= @BUY_ZENY,-,L_ROOT_2_1;
+	   checkadditem 1010,@BUY_NUM,-,L_ROOT_2_2;
+	   set Zeny -= @BUY_ZENY,0;
+	   additem @BUY_ID,@BUY_NUM;
+	mes "[Christopher Guillenrow]";
+	mes "Thank you for shopping at my workshop. Feel free to come anytime, whenever you need.";
+	close;
+L_MENU_3C:
+	 mes "[Christopher Guillenrow]";
+ 	mes "Feel free to come anytime, whenever you need. Farewell.";
+ 	close;
+L_MENU_4:
+	mes "[Christopher Guillenrow]";
+	mes "I can purify Oridecon and Elunium.";
+	mes "I can make a cutting Ore out of 5 each rough ones.";
+	mes "Well..Which one do you want to make?";
+	next;
+	menu "Make Oridecon",L_MENU_4A,"Make Elunium",L_MENU_4B,"Cancel",L_MENU_4C;
+L_MENU_4A:
+	   checkitem 756,5,-,L_SUB_4A_1;
+	   delitem 756,5;
+	   additem 984,1;
+	mes "[Christopher Guillenrow]";
+	mes "Here, this is a Oridecon for you. You will be always welcome here, please come again.";
+	close;
+L_SUB_4A_1:
+	mes "[Christopher Guillenrow]";
+	mes "I told you I need 5 rough Oridecons for one Oridecon.";
+	close;
+L_MENU_4B:
+	   checkitem 757,5,-,L_SUB_4B_1;
+	   delitem 757,5;
+	   additem 985,1;
+	mes "[Christopher Guillenrow]";
+	mes "Here, this is Elunium for you. You will be always welcome here, please come again";
+	close;
+L_SUB_4B_1:
+	mes "[Christopher Guillenrow]";
+	mes "I told you I need 5 rough Eluniums for one Elunium.";
+	close;
+L_MENU_4C:
+	mes "[Christopher Guillenrow]";
+	mes "Feel free to come anytime whenever you need, farewell.";
+	close;
+L_MENU_5:
+	mes "[Christopher Guillenrow]";
+	mes "Feel free to come anytime whenever you need, farewell.";
+	close;
+}
+
+geffen.gat,116,58,0 script "Geffen Bulletin" 111,{
+	mes "^993333- The Geffen Bulletin Reads -^000000";
+	mes "Remember Wizard's...It;s not how";
+	mes "many skills you know, it;s the";
+      mes "magic that counts!";
+      close;
 }
