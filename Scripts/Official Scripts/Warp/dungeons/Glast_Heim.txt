@@ -41,16 +41,16 @@ gl_prison.gat,10,70,4	script	""	721,{
 		check @warp = 0,w1,-;
 		check @warp = 1,w2,-;
 		check @warp = 2,w3,-;
-			warp "gl_cas01.gat",163,193; 
+			warp "gl_cas01",163,193; 
 			close;
 			w1:
-				warp "gl_cas01.gat",238,192;
+				warp "gl_cas01",238,192;
 				close;
 			w2:
-				warp "gl_cas01.gat",368,301;
+				warp "gl_cas01",368,301;
 				close;
 			w3:
-				warp "gl_cas01.gat",144,314;
+				warp "gl_cas01",144,314;
 				close;
 }
 gl_sew01.gat,19,21,0	warp	glast0339	1,1,gl_sew02.gat,108,291
