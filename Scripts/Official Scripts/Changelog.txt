@@ -1,6 +1,8 @@
 --------------------------------------------------------------------------------
  Fusion 1.213 - January ???, 2005
 -------------------------------------------------------------------------------- 
+- 01-20-05: Mob\field\lou_fild.txt - Changed Louyang mobs. [Muad_Dib]
+- 01-20-05: Mob\dungeon\lou_dun.txt - Changed Louyang mobs. [Muad_Dib]
 - 01-13-05: Shop\Payon.txt - Removed Arrow Quivers shop. [Muad_Dib]
 - 01-13-05: Event\Event_Arrow_Quiver.txt - Added Npc that creates arrow quivers. [Muad_Dib]
 - 01-13-05: Event\Event_Jellopy.txt - Updated Npc should work now. [Muad_Dib]
@@ -10,11 +12,11 @@
 - 12-31-04: Moved A2J script to archive, it's not official. [Tsusai]
 - 12-31-04: Town\Town_Umbala.txt - Fixed a warp destination. [Tsusai]
 - 12-30-04: Warp\towns\umbala.txt - Corrected my mistake. [Tsusai]
-- 12-30-04: WarpWarp\dungeons\ama_dun.txt - Updated Amatsu warps. [Muad_Dib]
-- 12-30-04: WarpWarp\dungeons\gon_dun.txt - Updated Kunlun warps. [Muad_Dib]
-- 12-30-04: WarpWarp\fields\ama_fild.txt - Updated Amatsu warps. [Muad_Dib]
-- 12-30-04: WarpWarp\fields\gon_fild.txt - Updated Kunlun warps. [Muad_Dib]
-- 12-30-04: WarpWarp\towns\Amatsu.txt - Updated Amatsu warps. [Muad_Dib]
+- 12-30-04: Warp\dungeons\ama_dun.txt - Updated Amatsu warps. [Muad_Dib]
+- 12-30-04: Warp\dungeons\gon_dun.txt - Updated Kunlun warps. [Muad_Dib]
+- 12-30-04: Warp\fields\ama_fild.txt - Updated Amatsu warps. [Muad_Dib]
+- 12-30-04: Warp\fields\gon_fild.txt - Updated Kunlun warps. [Muad_Dib]
+- 12-30-04: Warp\towns\Amatsu.txt - Updated Amatsu warps. [Muad_Dib]
 - 12-30-04: Warp\towns\Gonryon.txt - Updated Kunlun warps. [Muad_Dib]
 - 12-29-04: Warp\dungeons\mag_dun.txt - Updated Magma Dungeon warps. [Muad_Dib]
 - 12-29-04: Mob\field\yuno_fild.txt - Added Plants to the fields. [Muad_Dib]
