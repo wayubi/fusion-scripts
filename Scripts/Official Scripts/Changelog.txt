@@ -1,6 +1,7 @@
 --------------------------------------------------------------------------------
  Fusion 1.213 - August 29th, 2004
 --------------------------------------------------------------------------------
+- 09-13-04: Warp\other\que_god.txt - Added new warps. [Muad_Dib]
 - 09-12-04: Event\Event_Dye.txt - Fixed a menu setting. [Muad_Dib]
 - 09-12-04: Town\Town_Prontera.txt - Updated header and added new sprite for a npc. [Muad_Dib]
 - 09-12-04: Event\Event_PvP.txt - Fixed a few menu options by adding a , [Muad_Dib
