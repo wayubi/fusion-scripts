@@ -65,7 +65,7 @@ yuno_in03.gat,104,115,0	warp	junowarp054	1,1,yuno_in03.gat,219,47
 yuno_in03.gat,244,52,0	warp	junowarp055	1,1,yuno_in03.gat,235,94
 yuno_in03.gat,235,91,0	warp	junowarp056	1,1,yuno_in03.gat,244,49
 yuno_in03.gat,231,58,0	warp	junowarp057	1,1,yuno_in03.gat,239,144
-yuno_in03.gat,239,141,0	warp	junowarp058	1,1,yuno_in03.gat,231,59
+yuno_in03.gat,239,141,0	warp	junowarp058	1,1,yuno_in03.gat,231,55
 yuno_in03.gat,223,167,0	warp	junowarp059	1,1,yuno_in03.gat,96,59
 yuno_in03.gat,96,62,0	warp	junowarp060	1,1,yuno_in03.gat,223,170
 yuno.gat,87,321,0		warp	junowarp061	1,1,yuno_in02.gat,168,61
