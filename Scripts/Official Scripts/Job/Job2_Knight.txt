@@ -1276,6 +1276,7 @@ L_START_1:
 		set \@area2_mobs = 0;
 		set \@area3_mobs = 0;
 		set \@START_KARENA = 1;
+		enablenpc "job_knt","Knight Winzer",0;
 		enablenpc "job_knt","TEST1",1;
 		enablenpc "job_knt","TEST2",0;
 		enablenpc "job_knt","TEST3",0;
@@ -1422,8 +1423,6 @@ job_knt.gat,0,0,0	script	"area2"	-1,{
 		OnTimer5000:
 			npctimer 0;
 			enablenpc "job_knt","TEST3",1;
-//unofficial line next
-			enablenpc "job_knt","Knight Winzer",0;
 			warpallpc "job_knt",143,152,0;
 			return;
 }
@@ -1477,32 +1476,13 @@ job_knt.gat,0,0,0	script	"area3"	-1,{
 	check \@area3_mobs < 7,-,mobdead;
 		return;
 	mobdead:
-//		set job_knight_q = 8;
+		enablenpc "job_knt","Knight Winzer",1;
 		npctimer 0;
-//		npctimer 1;
-//		return;
-//		OnTimer2000:
-//			broadcast "Knight Winzer: ..........",10;
-//			return;
-//		OnTimer3500:
-//			broadcast "Knight Winzer: .....The test have ended.",10;
-//			return;
-//		OnTimer5000:
-//			broadcast "Knight Winzer: .....You can now go see Amy Beatrix.",10;
-//			return;
-//		OnTimer6500:
-//			npctimer 0;
-//			set job_knight_q = 8;
-//			set \@START_KARENA = 0;
-//			warpallpc "prt_in",80,100,0;
-//			return;
-//unofficial ending
-enablenpc "job_knt","Knight Winzer",1;
-return;
+		return;
 }
 
-Unofficial npc to stabilize and complete the quest
 job_knt.gat,143,152,4	script	"Knight Winzer"	733,{
+	npctimer 0;
 	mes "[Knight Winzer]";
 	mes "..........";
 	next;
