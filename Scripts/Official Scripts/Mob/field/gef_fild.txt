@@ -239,7 +239,7 @@ gef_fild12.gat,0,0,0,0  	monster	"Kobold" 1133,20,0,0,0
 gef_fild12.gat,0,0,0,0  	monster	"Kobold" 1134,30,0,0,0
 gef_fild12.gat,0,0,0,0  	monster	"Kobold" 1135,30,0,0,0
 gef_fild12.gat,0,0,0,0  	monster	"Kobold Archer" 1282,40,0,0,0
-gef_fild12.gat,0,0,0,0  	monster	"Kobold Leader" 1296,1,240000,0,0
+gef_fild12.gat,0,0,0,0  	monster	"Kobold Leader" 1296,1,240000,120000,1
 gef_fild12.gat,0,0,0,0  	monster	"Poring" 1002,20,0,0,0
 
 //========================================================================================
@@ -257,5 +257,5 @@ gef_fild13.gat,0,0,0,0  	monster	"Poporing" 1031,20,0,0,0
 gef_fild14.gat,0,0,0,0  	monster	"High Orc" 1213,20,0,0,0
 gef_fild14.gat,0,0,0,0  	monster	"Orc Archer" 1189,20,0,0,0
 gef_fild14.gat,0,0,0,0  	monster	"Orc Lady" 1273,40,0,0,0
-gef_fild14.gat,0,0,0,0  	monster	"Orc Hero" 1087,1,3600000,7200000,0
+gef_fild14.gat,0,0,0,0  	monster	"Orc Hero" 1087,1,3600000,7200000,1
 gef_fild14.gat,0,0,0,0  	monster	"Orc Warrior" 1023,20,0,0,0
