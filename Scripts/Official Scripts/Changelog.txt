@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.004
 ----------------------------------------------------------------------------------------------------
+- Town\Town_Izlude.txt - Cleaned up, added "" to npc names. [Tsusai]
 - Town\Town_Geffen.txt - Added "" to npc names. [Tsusai]
 - Town\Town_Comodo.txt - Corrected a few names and reformated. [Tsusai]
 - Warp\newbies\new_zone.txt - Removed new_#-#.gat warps (maps no longer exist). [Tsusai]
