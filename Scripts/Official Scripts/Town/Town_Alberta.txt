@@ -115,15 +115,21 @@ alberta.gat,58,80,2	script	"Merchant" 189,{
 		close;
 }
 	
-alberta.gat,62,156,2	script	"Phina" 8,{
-    		mes "[Phina]";
+alberta.gat,62,156,2	script	"Phina" 102,{
+    		random @phi 2;
+		check @phi = 0,no1,-;
+		check @phi = 1,no2,-;
+		check @phi = 2,no3,-;
+no1:		
+		mes "[Phina]";
     		mes "This one time, I was walking in the forest and I saw this little green grass sticking out of the ground.";
     		mes "It was soooo cute so I wanted to touch it. And then you know what happened? The grass actually slapped my hand.";
     		next;
     		mes "[Phina]";
     		mes "I was soooooo surprised I backed off a bit. Then I realized it was not a grass but a very small animal.";
     		mes "Don't startle them even by mistakes. Even calm animals can be very dangerous when they are angry.";
-			next;
+		close;
+no2:
     		mes "[Phina]";
     		mes "You know those dumb-looking bears living in a forest connecting Alberta and Payon...";
     		mes "playing around with the flies..making buzz noises?";
@@ -131,11 +137,12 @@ alberta.gat,62,156,2	script	"Phina" 8,{
     		mes "[Phina]";
     		mes "Just for the sake of fun, I threw a twig at one. All of sudden it rushed towards me. I was sooooo scared and quickly moved to the side. Then Bamb!!! It hit the huge tree and the tree crushed into pieces.";
     		mes "I learned the lesson that I shouldn't tempt any animal just in case they might get angry with me.";
-			next;
+		close;
+no3:
     		mes "[Phina]";
     		mes "Did you know? Wolves are much more cooperative than they might seem. If one of them is attacked, then all others will run to help him.";
     		mes "You'd be careful, too, if you ever want to fight one.";
-			close;
+		close;
 }
     
 alberta.gat,93,174,2	script	"Grandma" 103,{
