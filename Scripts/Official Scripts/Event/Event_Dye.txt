@@ -1,7 +1,7 @@
 //========================================================================================
 // »» The Fusion Project ««
 // Copyright (c) 2004, Cobax Information Systems
-// http://cobax.net/
+// http://fusion.cobax.net/
 // ---------------------------------------------------------------------------------------
 //
 // Dye Event - Non Player Character Locations
@@ -30,12 +30,12 @@
 //========================================================================================
 
 alberta_in.gat,133,55,3	script	"Ruitsu"	84,{
-		check MOLGENSTAIN == 2,-,L_START_1;
+		check MOLGENSTEIN == 2,-,L_START_1;
 			mes "[Merchant RUITSU]";
 			mes "Mr. ...";
 			mes "it is how -- or [ having called on the scientist with that amusing head of ? Geffen ]?";
 			next;
-			menu "Talk about MORUGEN Stein.",-,"Go Away",L_MENU_1;
+			menu "Talk about MOLGEN Stein.",-,"Go Away",L_MENU_1;
 				mes "[Merchant RUITSU]";
 				mes "Although that fellow's room was heard by Geffen, has not it visited yet??";
 				mes "... what?...it is already...isn't it useless? An uncanny thing may be made with that solution.";
@@ -62,7 +62,7 @@ alberta_in.gat,133,55,3	script	"Ruitsu"	84,{
 			mes "Although merely considered and cooked at least to somniloquy at first, other new liquids with which it is different from water during long time if commercial work is done came to be found.";
 			close;
 	L_MENU_1_2:
-			set MOLGENSTAIN = 1;
+			set MOLGENSTEIN = 1;
 			mes "[Merchant RUITSU]";
 			mes "... is this that solution? the new thing which has not been seen in fact although I also heard only rumor -- what -- good -- a hand -- putting in -- a shelf";
 			mes "However, although it is regrettable what should be carried out now, I am not dividing. Only that fellow should know all.";
@@ -70,7 +70,7 @@ alberta_in.gat,133,55,3	script	"Ruitsu"	84,{
 			mes "[Merchant RUITSU]";
 			mes "Probably, you who are an adventure person want to surely visit to that chemist and to solve the question.";
 			mes "A chemist's room is obtained in the gratitude which was allowed to carry out the actual thing of the new solution. Since it is an old thing, although he does not remember the detailed position,";
-			mes "The chemist lives in Geffen. Name^0000ffMORUGEN Stein^000000he had said.";
+			mes "The chemist lives in Geffen. Name^0000ffMOLGEN Stein^000000he had said.";
 			next;
 			mes "[Merchant RUITSU]";
 			mes "If it is heard by Geffen, it turns out that it is detailed.";
@@ -83,14 +83,14 @@ alberta_in.gat,133,55,3	script	"Ruitsu"	84,{
 	L_START_2:
 		checkitem 972,1,-,L_START_3;
 		menu "Talk.",L_MENU_1_1,"Talk about KARUBODIRU.",-,"Don't Talk",L_MENU_1_3;
-			set MOLGENSTAIN = 1;
+			set MOLGENSTEIN = 1;
 			mes "[Merchant RUITSU]";
 			mes "... is this the KARUBODIRU? the new thing which has not been seen in fact although I also heard only rumor -- what -- good -- a hand -- putting in -- a shelf.";
 			mes "However, although it is what should be carried out now, I am not dividing. Only that fellow should know all.";
 			next;
 			mes "[Merchant RUITSU]";
 			mes "A chemist's room is obtained in the gratitude which was allowed to carry out the actual thing of the new solution. Since it is an old thing, although he does not remember the detailed position...,";
-			mes "The chemist lives in Geffen. Named^0000ffMORUGEN Stein^000000 he had said.";
+			mes "The chemist lives in Geffen. Named^0000ffMOLGEN Stein^000000 he had said.";
 			next;
 			mes "[Merchant RUITSU]";
 			mes "If it is heard by Geffen, it turns out that it is detailed.";
@@ -99,14 +99,14 @@ alberta_in.gat,133,55,3	script	"Ruitsu"	84,{
 	L_START_3:
 		checkitem 971,1,-,L_START_4;
 		menu "Talk.",L_MENU_1_1,"Talk about KARUBODIRU.",-,"Don't Talk",L_MENU_1_3;
-			set MOLGENSTAIN = 1;
+			set MOLGENSTEIN = 1;
 			mes "[Merchant RUITSU]";
 			mes "... is this the KARUBODIRU? the new thing which has not been seen in fact although I also heard only rumor -- what -- good -- a hand -- putting in -- a shelf..";
 			mes "However, although it is what should be carried out now, I am not dividing. Only that fellow should know all.";
 			next;
 			mes "[Merchant RUITSU]";
 			mes "A chemist's room is obtained in the gratitude which was allowed to carry out the actual thing of the new solution. Since it is an old thing, although he does not remember the detailed position...,";
-			mes "The chemist lives in Geffen. Named^0000ffMORUGEN Stein^000000 he had said.";
+			mes "The chemist lives in Geffen. Named^0000ffMOLGEN Stein^000000 he had said.";
 			next;
 			mes "[Merchant RUITSU]";
 			mes "If it is heard by Geffen, it turns out that it is detailed.";
@@ -136,7 +136,7 @@ L_Talk:
 	mes "It's true that I'm a little excentric because of my quest to gain the power of magic, but I assure that there are others out there that are even stranger than myself.";
 	next;
 	mes "[Geffen residents AURU day phon]";
-	mes "Like that mad scientist ^0000ddMOLGENSTEINshtein^000000.  Anyway, if it were up to you, would you be able to devote your ENTIRE life to one single purpose?";
+	mes "Like that mad scientist ^0000ddMOLGEN STEIN^000000.  Anyway, if it were up to you, would you be able to devote your ENTIRE life to one single purpose?";
 	next;
 	mes "[Geffen residents AURU day phon]";
 	mes "Would you be able to give up everthing else in your life to achieve that goal? Even if it meant risking insanity??";
@@ -145,7 +145,7 @@ L_Talk:
 L_Molgenstain:
 	   set MOLGENSTEIN = 2;
 	mes "[Geffen residents AURU day phon]";
-	mes "MOLGENSTEINshtein? Now that man definatley has a few screws loose.  He's always in the ^0000ddBlasksmith Guild Building^000000 making crazy potions.";
+	mes "MOLGEN STEIN? Now that man definatley has a few screws loose.  He's always in the ^0000ddBlasksmith Guild Building^000000 making crazy potions.";
 	mes "He calls them ^ff0000Mixtures^000000 and ^ff0000Counteragents^000000.  I'm not sure what there used for though.";
 	next;
 	mes "[Geffen residents AURU day phon]";
