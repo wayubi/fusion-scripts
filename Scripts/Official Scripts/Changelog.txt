@@ -9,6 +9,11 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.005
 ----------------------------------------------------------------------------------------------------
+- Event\Event_PVP.txt - Added Nestor Zulueta's pvp script with some missing npc's. [Muad_Dib]
+- Mob\other\pvp_n.txt - Added pvp_n Mob file. [Muad_Dib]
+- Job\Job1_Swordman.txt - Changed the swordsman maps. [Muad_Dib]
+- Mob\other\job_quests.txt - Changed the swordsman maps. [Muad_Dib]
+- Warp\other\job_sword.txt - Changed the swordsman maps, should make the test lag less. [Muad_Dib]
 - Event\Event_Dye.txt - fixed fixed various dye colours requirements. [Muad_Dib]
 - Event\Event_Making.txt - fixed cake hat requirements. [Muad_Dib]
 - Job\Job2_Sage.txt - fixed a tag. [Muad_Dib]
