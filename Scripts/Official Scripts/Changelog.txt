@@ -1,6 +1,7 @@
 --------------------------------------------------------------------------------
  Fusion 1.213 - August 29th, 2004
 --------------------------------------------------------------------------------
+- 09-09-04: Town\Town_Siglude.txt - Added missing Juno metal seller and, added temporarily Repairman npc's. [Muad_Dib]
 - 09-09-04: Quest\Quest_skill\Charged_Arrow.txt - Moved Quest Npc. [Muad_Dib]
 - 09-09-04: Shop\payon.txt - Moved tool dealer. [Muad_Dib]
 - 09-09-04: Town\Town_Siglude.txt - added temporarily Repairman npc's. [Muad_Dib]

@@ -42,11 +42,14 @@
 // Fredrik -> alberta_in: 28,58
 // Refine equipments using Elunium/Oridecon.
 //
-// Dillemat -> yuno_in01: 164,27
+// Dillemat -> yuno_in01: 171,21
 // Transform Rough Elunium/Oridecon into Pures.
 //
-// Disturb -> yuno_in01: 171,21
+// Disturb -> yuno_in01: 164,26
 // Refine equipments using Elunium/Oridecon.
+//
+// Delayt -> yuno_in01: 171,26
+// Proved Phracon and Emveretarcon.
 //
 //========================================================================================
 
@@ -1802,7 +1805,7 @@ L_EXIT:
 	close;
 }
 
-yuno_in01.gat,171,21,4 script	"Disturb" 88,{
+yuno_in01.gat,164,26,4 script	"Disturb" 88,{
 	   lockitem 1;
 	mes "[Disturb]";
 	mes "I am the Armsmith and I can refine any weapon and armor.";
@@ -2116,7 +2119,7 @@ L_EXIT:
 	close;
 }
 
-yuno_in01.gat,164,27,4 script	"Dillemat" 88,{
+yuno_in01.gat,171,21,4 script	"Dillemat" 88,{
 	mes "[Dillemat]";
 	mes "If you bring Rough Oridecons and";
 	mes "Rough Eluniums to me,";
@@ -2173,6 +2176,109 @@ L_MENU_2:
 	close;
 }
 
+yuno_in01.gat,171,26,4 script	"Delayt" 88,{
+	mes "[Delayt]";
+	mes "I,the Honest and Diligent Merchant";
+	mes "sell 2 kinds of Metal for tempering";
+	mes "weaponry of iron or steel.";
+	mes "I have ^007777Phracon^000000 for Lv 1";
+	mes "Weaponry... and ^007777Emveretarcon^000000";
+	mes "for Lv 2 Weaponry. I got many,";
+	mes "many of them... Haha.";
+	next;
+	menu "Phracon - 200z",-,"Emveretarcon - 1000z",L_MENU_1,"Ask wheter he has other Stones.",L_MENU_2;
+	mes "[Delayt]";
+	mes "^007777Phracon^000000 are 200 Zeny each...";
+	   set @BUY_PRICE = 200;
+	   set @BUY_ID = 1010;
+	goto L_START_1;
+L_MENU_1:
+	mes "[Delayt]";
+ 	mes "^007777Emveretarcon^000000 are 1000z each...";
+	   set @BUY_PRICE = 1000;
+	   set @BUY_ID = 1011;
+	goto L_START_1;
+L_MENU_2:
+	mes "[Delayt]";
+	mes "Ahhh!!! You need the Metal for";
+	mes "higher Leveled Weapons.";
+	mes "But you know,Oridecon or Elunim is";
+	mes "very very rare... so difficult to find...";
+	close;
+L_START_1:
+	mes "How many do you wish to Buy? If you";
+	mes "quit, please note the number as 'o'.";
+	next;
+	   input @BUY_NUM;
+	   check @BUY_NUM <= 500,-,L_START_5;
+	   check @BUY_NUM == 0,-,L_START_2;
+	mes "[Delayt]";
+	mes "Deal has canceled.";
+	close;
+L_START_2:
+	   set @BUY_ZENY = @BUY_NUM;
+	   set @BUY_ZENY *= @BUY_PRICE;
+	   check Zeny >= @BUY_ZENY,-,L_START_3;
+	   checkadditem @BUY_ID,@BUY_NUM,-,L_START_4;
+	   set Zeny -= @BUY_ZENY,0;
+	   additem @BUY_ID,@BUY_NUM;
+	mes "[Delayt]";
+	mes "Here you are, thank you for shopping at my shop.";
+	close;
+L_START_3:
+	mes "[Delayt]";
+	mes "Err...you don't have enough Money now.";
+	mes "Well, I am sorry but that's Below cost.";
+	close;
+L_START_4:
+	mes "[Delayt]";
+	mes "You can't wear that many, don't you think?";
+	mes "Reorder your inventory before retrying.";
+	close;
+L_START_5:
+	mes "[Delayt]";
+	mes "You can buy 500 or less.";
+	next;
+	mes "[Delayt]";
+	goto L_START_1;
+}
+
+yuno_in01.gat,167,23,4 script	"Repairman" 88,{
+	mes "[Repairman]";
+	mes "Hey traveler! Do you want to repair";
+	mes "any items?";
+	mes "you can count on me for item";
+	mes "repairs!";
+	next;
+	menu "Actually, I do have some items...",L_Got,"None at the moment.",L_None;
+L_None:
+	mes "[Repairman]";
+	mes "Hohoho... You don't have any";
+	mes "business with me";
+	mes "if you don't have any items to repair.";
+	close;
+//L_Got:
+//	mes "[Repairman]";
+//	mes "Oh, wow. This is incredible!";
+//	mes "You must tkae very good care of your";
+//	mes "things.";
+//	mes "None of your items are damaged?";
+//	mes "if everyone is like you, I'm going";
+//	mes "to be unemployed soon!! Haha.";
+//	close;
+L_Got:
+	mes "[Repairman]";
+	mes "This service is currently not available.";
+	close;
+}
+
+
+//========================================================================================
+//
+// - Added Future Weapon and armor Repair npc's.
+//
+//========================================================================================
+
 payon.gat,143,165,5 script "Repairman" 88,{
 	mes "[Repairman]";
 	mes "Hey traveler! Do you want to repair";
@@ -2202,8 +2308,8 @@ L_Got:
 	close;
 }
 
-prt_in.gat,62,54,2 script "Grendal" 84,{
-	mes "[Grendal]";
+prt_in.gat,62,54,2 script "Repairman" 86,{
+	mes "[Repairman]";
 	mes "Hey traveler! Do you want to repair";
 	mes "any items?";
 	mes "you can count on me for item";
@@ -2211,13 +2317,13 @@ prt_in.gat,62,54,2 script "Grendal" 84,{
 	next;
 	menu "Actually, I do have some items...",L_Got,"None at the moment.",L_None;
 L_None:
-	mes "[Grendal]";
+	mes "[Repairman]";
 	mes "Hohoho... You don't have any";
 	mes "business with me";
 	mes "if you don't have any items to repair.";
 	close;
 //L_Got:
-//	mes "[Grendal]";
+//	mes "[Repairman]";
 //	mes "Oh, wow. This is incredible!";
 //	mes "You must tkae very good care of your";
 //	mes "things.";
@@ -2226,12 +2332,41 @@ L_None:
 //	mes "to be unemployed soon!! Haha.";
 //	close;
 L_Got:
-	mes "[Grendal]";
+	mes "[Repairman]";
 	mes "This service is currently not available.";
 	close;
 }
 
-morocc_in.gat,71,40,2 script	"Dillemat" 99,{
+morocc_in.gat,71,40,2 script	"Repairman" 99,{
+	mes "[Repairman]";
+	mes "Hey traveler! Do you want to repair";
+	mes "any items?";
+	mes "you can count on me for item";
+	mes "repairs!";
+	next;
+	menu "Actually, I do have some items...",L_Got,"None at the moment.",L_None;
+L_None:
+	mes "[Repairman]";
+	mes "Hohoho... You don't have any";
+	mes "business with me";
+	mes "if you don't have any items to repair.";
+	close;
+//L_Got:
+//	mes "[Repairman]";
+//	mes "Oh, wow. This is incredible!";
+//	mes "You must tkae very good care of your";
+//	mes "things.";
+//	mes "None of your items are damaged?";
+//	mes "if everyone is like you, I'm going";
+//	mes "to be unemployed soon!! Haha.";
+//	close;
+L_Got:
+	mes "[Repairman]";
+	mes "This service is currently not available.";
+	close;
+}
+
+alberta_in.gat,31,65,4 script	"Repairman" 86,{
 	mes "[Repairman]";
 	mes "Hey traveler! Do you want to repair";
 	mes "any items?";
