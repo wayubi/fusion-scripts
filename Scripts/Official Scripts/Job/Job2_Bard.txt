@@ -6,12 +6,12 @@
 //
 // Bard Jobchanger - Non Player Character Locations
 //
-// - Wandering Minstrel -> comodo: 198,148
+// - Wandering Minstrel -> comodo: 165,165
 //   Npc to become a Bard.
 //
 //========================================================================================
 
-comodo.gat,198,148,3 script "Wandering Minstrel" 741,{
+comodo.gat,165,165,3 script "Wandering Minstrel" 741,{
       mes "[Wandering Minstrel]";
       mes "What is it you are looking for?";
       next;

@@ -10,7 +10,7 @@
 // - Mr. Claus -> aldebaran: 223,222
 //   Gives information about lutie and can warp you there.
 //
-// - Santa -> xmas_in: 100,96
+// - Santa Claus -> xmas_in: 100,96
 //   Can exchange items.
 //
 // - Snowman -> xmas: 134,112
@@ -34,8 +34,11 @@
 // - Little Boy -> xmas: 206,168
 //   Tells you a story.
 //
-// - Littel Girl -> xmas: 208,168
+// - Little Girl -> xmas: 208,168
 //   Tells you a story.
+//
+// - Willy -> xmas: 126,87 
+//   Boy that is waiting for his mother.
 //
 //========================================================================================
 
@@ -84,13 +87,13 @@ L_Cancel:
 	close;
 }
 
-xmas_in.gat,100,96,4 script "Santa" 718,{
+xmas_in.gat,100,96,4 script "Santa Claus" 718,{
          check xmas_npc = 0,-,LSTART2;
-	mes "[Santa]";
+	mes "[Santa Claus]";
 	mes "I'm Santa Claus.";
 	mes "I have a present for you, let me look in my bag.";
 	next;
-	mes "[Santa]";
+	mes "[Santa Claus]";
 	mes "Yep, I've got a present with your name on it.";
 	mes "Here you are!";
 	   random @santa,5;
@@ -101,40 +104,40 @@ xmas_in.gat,100,96,4 script "Santa" 718,{
 	   check @santa = 4,L0_4,-;
 	   additem 529,5;
 	   set xmas_npc = 1,0;
-	mes "[Santa]";
+	mes "[Santa Claus]";
 	mes "Hope you like your present!";
 	mes "My elves made it especially for you.";
 	close;
 L0_1:
 	   additem 530,3;
 	   set xmas_npc = 1,0;
-	mes "[Santa]";
+	mes "[Santa Claus]";
 	mes "Hope you like your present!";
 	mes "My elves made it especially for you.";
 	close;
 L0_2:
 	   additem 528,1;
 	   set xmas_npc = 1,0;
-	mes "[Santa]";
+	mes "[Santa Claus]";
 	mes "Hmm, you must not have been a very good";
 	mes "person this year.  Do better!";
 	close;
 L0_3:
 	   additem 539,2;
 	   set xmas_npc = 1,0;
-	mes "[Santa]";
+	mes "[Santa Claus]";
 	mes "Hope you like your present!";
 	mes "My elves made it especially for you.";
 	close;
 L0_4:
 	   additem 539,1;
 	   set xmas_npc = 1,0;
-	mes "[Santa]";
+	mes "[Santa Claus]";
 	mes "Hope you like your present!";
 	mes "My elves made it especially for you.";
 	close;
 LSTART2:
-	mes "[Santa]";
+	mes "[Santa Claus]";
 	mes "I'm having a bit of a problem...";
 	mes "Do you care to listen?";
 	next;
@@ -147,51 +150,51 @@ LSTART2:
 	next;
 	   delitem 7034,3;
 	   additem 644,1;
-	mes "[Santa]";
+	mes "[Santa Claus]";
 	mes "There's your reward.";
 	mes "If you get 3 more, I'll give you another.";
 	mes "Hope you get a good item.";
 	close;
 L3:
-	mes "[Santa]";
+	mes "[Santa Claus]";
 	mes "You don't have enough socks as proof.";
 	mes "Go take down those evil Santas";
 	mes "and get more for me and I'll";
 	mes "reward you.";
 	close;
 L1:
-	mes "[Santa]";
+	mes "[Santa Claus]";
 	mes "My problem is this.";
 	mes "There seems to be a man out there";
 	mes "that is impersonating me and spreading";
 	mes "terror throughout the land.";
 	next;
-	mes "[Santa]";
+	mes "[Santa Claus]";
 	mes "Like the Grinch of legend, he's taking";
 	mes "all the children's toys and keeping them";
 	mes "for himself.";
 	next;
-	mes "[Santa]";
+	mes "[Santa Claus]";
 	mes "I'm too busy here creating my batch of ";
 	mes "toys for next year, so I can't go";
 	mes "out and find him myself.";
 	mes "So I would like you to go out and";
 	mes "Destroy this man for me.";
 	next;
-	mes "[Santa]";
+	mes "[Santa Claus]";
 	mes "He has in his posession one of my";
 	mes "magic sacks, however, so he will";
 	mes "escape into it into another place when";
 	mes "you attack him each time.";
 	next;
-	mes "[Santa]";
+	mes "[Santa Claus]";
 	mes "However,";
 	mes "In his haste, he tends to drop things.";
 	mes "If by chance he drops one of his stockings";
 	mes "with holes that he uses to steal the";
 	mes "poor children's toys, pick it up.";
 	next;
-	mes "[Santa]";
+	mes "[Santa Claus]";
 	mes "If you collect 10 of these, I will give";
 	mes "you a prototype mystery box that";
 	mes "I've been keeping around the";
@@ -199,7 +202,7 @@ L1:
 	mes "and saves me a ton of work.";
 	close;
 L2:
-	mes "[Santa]";
+	mes "[Santa Claus]";
 	mes "I see.  Well, at the very least";
 	mes "we shall meet again on Chirstmas morning.";
 	close;
@@ -1110,3 +1113,10 @@ LSTART2:
 	mes "Isn't it amazing ?";
 	close;
 }
+
+xmas.gat,126,87,4 script "Willy" 716,{
+	mes "[Willy]";
+	mes "BrrrRrrrr...";
+	mes "Gosh I hope my mom get's here doon...";
+	mes "I'm FREEZING....";
+      close;
