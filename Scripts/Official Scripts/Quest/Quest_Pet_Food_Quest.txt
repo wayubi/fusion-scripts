@@ -17,7 +17,7 @@
 //
 //========================================================================================
 
-prontera.gat,116,77,4	script	"Liza"	111,{
+prontera.gat,116,77,4	script	"Liza"	96,{
 	check F_Pet_Food_QUEST > 0,L_CHECK_1,-;
 	mes "[Liza]";
 	mes "My Pecopeco seems hungry.";
@@ -144,4 +144,3 @@ LEnd:
 	mes "If you're just fishing around for prices, please leave ...";
 	close;
 }
-

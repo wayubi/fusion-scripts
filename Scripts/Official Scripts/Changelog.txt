@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.002
 ----------------------------------------------------------------------------------------------------
+- Quest\Quest_Pet_Food_Quest.txt - Fixed Lisa Npc Sprite. [mudvayne]
 - Event\Event_Bunny.txt - Fixed Prontera Kafra Employee coordonate. [mudvayne]
 - Town\Town_Kafra.txt - Fixed Center Kafra coordonate and save point. [mudvayne]
 - Npc\npc_merchant_guide.txt - Added Merchant guidelines for dummies bookshelf in prontera library. [mudvayne]
