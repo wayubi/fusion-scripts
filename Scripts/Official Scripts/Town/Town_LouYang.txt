@@ -1,10 +1,10 @@
 //========================================================================================
 // »» The Fusion Project ««
 // Copyright (c) 2004, Cobax Information Systems
-// http://fusion.cobax.net/
+// http://cobax.net/
 // ---------------------------------------------------------------------------------------
 //
-// LoYang Town - Non Player Character Locations
+// Louyang Town - Non Player Character Locations
 //
 // - Taka -> alberta: 245,45
 //   Warps you to LouYang.
@@ -96,4 +96,19 @@ L_MENU_1:
 	next;
 	warp "alberta",242,44;
 	close;
+}
+
+lou_in02.gat,62,183,5 script "" 820,{
+}
+
+lou_in02.gat,58,183,4 script "" 823,{
+}
+
+lou_in02.gat,53,175,1 script "" 822,{
+}
+
+lou_in02.gat,60,175,4 script "" 818,{
+}
+
+lou_in02.gat,43,169,8 script "" 827,{
 }

@@ -5,15 +5,15 @@
 // ---------------------------------------------------------------------------------------
 //
 // Payon Town - Non Player Character Locations
-// Npc placements are mostly based on similar locations.
+// Npc placements are mostly based on kRO screenshots or similar locations.
 //
 // - Lady -> payon : 190,115
 //   Talks a little abouyt the history of payon.
 //
-// - Young Man -> payon : 12,7
+// - Young Man -> payon : 104,62
 //   Talks about monsters and magic.
 //
-// - Young Man -> payon_in01 : 29,115
+// - Young Man -> payon_in01 : 177,91
 //   Says something about his grand father.
 //
 // - Waitress -> payon_in01 : 180,7
@@ -25,13 +25,13 @@
 // - Women -> payon : 190,119
 //   Talks about a fortune tellar.
 //
-// - Drunk -> payon_in01: 181,21
+// - Drunk -> payon: 210,110
 //   A drunk man.
 //
-// - Archer Zakk -> payon_in01: 172,88
+// - Archer Zakk -> payon_in01: 47,59
 //   A Payon Archer.
 //
-// - Archer Wolt -> payon_in01: 141,48
+// - Archer Wolt -> payon_in01: 66,64
 //   A Payon Archer.
 //
 // - Archer Joe -> pay_arche: 77,131
@@ -91,8 +91,7 @@ payon.gat,190,115,0 script "Lady" 90,{
 	mes "It is a very tragic situation, for those zombies were at one time beloved members of the Payon community.";
 	close;
 }
-
-payon_in01.gat,12,7,4 script "Young Man" 88,{
+payon_in01.gat,177,91,5 script "Young Man" 88,{
 	mes "[Young Man]";
 	mes "I can see you are a stranger from the appearance of your traveling outfit. You must be a well-experienced fighter otherwise you couldn't successfully arrive at this steep place with all tough those creatures outside.";
 	mes "However you miss something important for fights. You can't defeat those monsters only with might.";
@@ -103,7 +102,7 @@ payon_in01.gat,12,7,4 script "Young Man" 88,{
 	close;
 }
 
-payon.gat,186,175,3 script "Young Man" 88,{
+payon.gat,104,62,5 script "Young Man" 88,{
 	mes "[Young Man]";
 	mes "I still remember the story my grandfather told me long ago about the Amulet that possessed an Evil Power within it.";
 	next;
@@ -292,7 +291,7 @@ L_Menu2:
 	close;
 }
 
-payon_in01.gat,181,21,1	script "Drunk" 120,{
+payon.gat,210,110,4	script "Drunk" 120,{
 	   check Job < 3,-,L_Menu1_F1;
 	mes "[Drunk]";
 	mes "Hey hey! I am wondering how stupid archers who don't know how to aim targets could drink alcohol. Hahaha~!";
@@ -344,7 +343,7 @@ L_Menu3:
 	close;
 }
 
-payon_in01.gat,172,88,5	script "Archer Zakk" 88,{
+payon_in01.gat,47,59,5	script "Archer Zakk" 88,{
 	mes "[Archer Zakk]";
 	mes "I am so worried about one of my pals. He speaks about much crap.";
 	mes "Well he is an expert of archery, but I hate his big mouth...";
@@ -386,7 +385,7 @@ L_Menu3:
 	close;
 }
 
-payon_in01.gat,141,48,2 script "Archer Wolt" 88,{
+payon_in01.gat,66,64,5 script "Archer Wolt" 88,{
 	mes "[Archer Wolt]";
 	mes "Archers should practice as much as they can. Otherwise they won't be an expert.";
 	mes "Are you new here? Howdy!";
@@ -813,3 +812,21 @@ payon.gat,160,185,0 script "Billboard" 111,{
       mes "the beautiful town of payon.";
       close;
 }
+
+// New kRO Npc's
+
+payon.gat,173,238,4 script "" 740,{
+}
+
+payon_in03.gat,75,129,4 script "" 704,{
+}
+
+payon_in03.gat,117,128,4 script "" 704,{
+}
+
+payon_in03.gat,118,119,8 script "" 101,{
+}
+
+payon_in03.gat,131,7,4 script "" 59,{
+}
+

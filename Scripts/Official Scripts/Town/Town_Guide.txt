@@ -475,7 +475,7 @@ payon.gat,148,213,4	script	Guide	708,{
 				mes "[Payon Squad]";
 				mes "'Inn' is located at East around the Centre.";
 				check @COMPASS_CHECK == 1,-,L_SUB_1;
-				viewpoint 1,155,320,4,0xFF00FF;
+				viewpoint 1,223,117,4,0xFF00FF;
 				goto L_SUB_1;
 			L_MENU_1_5:
 				mes "[Payon Squad]";
@@ -493,7 +493,7 @@ payon.gat,148,213,4	script	Guide	708,{
 			viewpoint 2,227,329,1,0xFF0000;
 			viewpoint 2,135,158,2,0xFF00FF;
 			viewpoint 2,227,329,3,0xFF00FF;
-			viewpoint 2,155,320,4,0xFF00FF;
+			viewpoint 2,223,170,4,0xFF00FF;
 			viewpoint 2,155,242,5,0x00FF00;
 			set @COMPASS_CHECK = 0;
 			goto L_START_1;

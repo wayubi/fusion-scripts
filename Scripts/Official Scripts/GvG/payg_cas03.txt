@@ -329,7 +329,7 @@ payg_cas03.gat,9,263,5	script	"Kafra Service"	117,{
 	L_MENU_2_1_1:
 		set Zeny -= 200,0;
 		set KF_PIT += 10;
-		warp "payon",155,205;
+		warp "payon",179,97;
 	L_MENU_2_2:
 		mes "[Kafra Personnel]";
 		mes "Thank you.";

@@ -63,7 +63,7 @@
 // - Kafra Personnel -> alb2trea: 59,69
 //   Storage, Teleport, Rent Cart, Kafra Pass and More services.
 //
-// - Kafra Personnel -> payon: 99,116
+// - Kafra Personnel -> payon: 181,104
 //   Save, Storage, Teleport, Rent Cart, Kafra Pass and More services.
 //
 // - Kafra Personnel -> pay_arche: 55,123
@@ -198,7 +198,7 @@ yuno.gat,159,207,4 script "Kafra Personnel" 114,{
 				set Zeny -= 1700,0;
 				set KF_PIT += 170;
 			L_SUB_3_3:
-				warp "payon",155,205;
+				warp "payon",179,97;
 		L_MENU_3_4:
 			check @Kafra_COUPON = 0,-,L_SUB_3_4;
 				check Zeny < 1800,-,L_ROOT_3_4;
@@ -767,7 +767,7 @@ prontera.gat,146,89,6 script "Kafra Personnel" 117,{
 				set Zeny -= 1200,0;
 				set KF_PIT += 120;
 			L_SUB_3_3:
-				warp "payon",155,205;
+				warp "payon",179,97;
 		L_MENU_3_4:
 			check @Kafra_COUPON = 0,-,L_SUB_3_4;
 				check Zeny < 1200,-,L_ROOT_3_4;
@@ -1016,7 +1016,7 @@ prontera.gat,282,200,2 script	"Kafra Personnel"	114,{
 				set Zeny -= 1200,0;
 				set KF_PIT += 120;
 			L_SUB_3_3:
-				warp "payon",155,205;
+				warp "payon",179,97;
 		L_MENU_3_4:
 			check @Kafra_COUPON = 0,-,L_SUB_3_4;
 				check Zeny < 1200,-,L_ROOT_3_4;
@@ -1265,7 +1265,7 @@ prontera.gat,151,29,0 script "Kafra Personnel" 115,{
 				set Zeny -= 1200,0;
 				set KF_PIT += 120;
 			L_SUB_3_3:
-				warp "payon",155,205;
+				warp "payon",179,97;
 		L_MENU_3_4:
 			check @Kafra_COUPON = 0,-,L_SUB_3_4;
 				check Zeny < 1200,-,L_ROOT_3_4;
@@ -1514,7 +1514,7 @@ prontera.gat,29,207,6	script	"Kafra Personnel"	113,{
 				set Zeny -= 1200,0;
 				set KF_PIT += 120;
 			L_SUB_3_3:
-				warp "payon",155,205;
+				warp "payon",179,97;
 		L_MENU_3_4:
 			check @Kafra_COUPON = 0,-,L_SUB_3_4;
 				check Zeny < 1200,-,L_ROOT_3_4;
@@ -1758,7 +1758,7 @@ prontera.gat,154,329,4 script "Kafra Personnel" 112,{
 				set Zeny -= 1200,0;
 				set KF_PIT += 120;
 			L_SUB_3_3:
-				warp "payon",155,205;
+				warp "payon",179,97;
 		L_MENU_3_4:
 			check @Kafra_COUPON = 0,-,L_SUB_3_4;
 				check Zeny < 1200,-,L_ROOT_3_4;
@@ -2100,7 +2100,7 @@ izlude.gat,136,88,4	script	"Kafra Personnel"	115,{
 				set Zeny -= 1200,0;
 				set KF_PIT += 120;
 			L_SUB_3_2:
-				warp "payon",155,205;
+				warp "payon",179,97;
 		L_MENU_3_3:
 			check @Kafra_COUPON = 0,-,L_SUB_3_3;
 				check Zeny < 1200,-,L_ROOT_3_3;
@@ -2986,7 +2986,7 @@ morocc.gat,156,97,4	script	"Kafra Personnel"	113,{
 				set Zeny -= 1200,0;
 				set KF_PIT += 120;
 			L_SUB_3_2:
-				warp "payon",155,205;
+				warp "payon",179,97;
 		L_MENU_3_3:
 			check @Kafra_COUPON = 0,-,L_SUB_3_3;
 				check Zeny < 1800,-,L_ROOT_3_3;
@@ -3219,7 +3219,7 @@ morocc.gat,160,258,4	script	"Kafra Personnel"	114,{
 				set Zeny -= 1200,0;
 				set KF_PIT += 120;
 			L_SUB_3_2:
-				warp "payon",155,205;
+				warp "payon",179,97;
 		L_MENU_3_3:
 			check @Kafra_COUPON = 0,-,L_SUB_3_3;
 				check Zeny < 1800,-,L_ROOT_3_3;
@@ -3562,7 +3562,7 @@ alberta.gat,28,229,0	script	"Kafra Personnel"	116,{
 				set Zeny -= 1200,0;
 				set KF_PIT += 120;
 			L_SUB_3_1:
-				warp "payon",155,205;
+				warp "payon",179,97;
 		L_MENU_3_2:
 			check @Kafra_COUPON = 0,-,L_SUB_3_2;
 				check Zeny < 1800,-,L_ROOT_3_2;
@@ -3766,7 +3766,7 @@ alberta.gat,113,60,6	script	"Kafra Personnel"	112,{
 				set Zeny -= 1200,0;
 				set KF_PIT += 120;
 			L_SUB_3_1:
-				warp "payon",155,205;
+				warp "payon",179,97;
 		L_MENU_3_2:
 			check @Kafra_COUPON = 0,-,L_SUB_3_2;
 				check Zeny < 1800,-,L_ROOT_3_2;
@@ -4038,7 +4038,7 @@ alb2trea.gat,59,69,6	script	"Kafra Personnel"	117,{
 		close;
 }
 
-payon.gat,165,212,4	script	"Kafra Personnel"	113,{
+payon.gat,181,104,4	script	"Kafra Personnel"	113,{
 	set @Kafra_COUPON = 0;
 	cutin "Kafra_05",2;
 	mes "[Kafra Personnel]";
@@ -4057,7 +4057,7 @@ payon.gat,165,212,4	script	"Kafra Personnel"	113,{
 			save "pay_fild01",342,348;
 			goto L_SUB_1_1;
 	L_MENU_1_3:
-			save "payon",155,205;
+			save "payon",179,97;
 	L_SUB_1_1:
 		mes "[Kafra Personnel]";
 		mes "Your position has been saved.";
@@ -5256,7 +5256,7 @@ yuno.gat,151,187,4	script	Kafra Personnel	115,{
 				set Zeny -= 1700,0;
 				set KF_PIT += 170;
 			L_SUB_3_3:
-				warp "payon",155,205;
+				warp "payon",179,97;
 		L_MENU_3_4:
 			check @Kafra_COUPON = 0,-,L_SUB_3_4;
 				check Zeny < 1800,-,L_ROOT_3_4;
@@ -5503,7 +5503,7 @@ yuno.gat,328,108,6	script	"Kafra Personnel"	117,{
 				set Zeny -= 1700,0;
 				set KF_PIT += 170;
 			L_SUB_3_3:
-				warp "payon",155,205;
+				warp "payon",179,97;
 		L_MENU_3_4:
 			check @Kafra_COUPON = 0,-,L_SUB_3_4;
 				check Zeny < 1800,-,L_ROOT_3_4;
@@ -5750,7 +5750,7 @@ yuno.gat,278,221,6	script	"Kafra Personnel"	117,{
 				set Zeny -= 1700,0;
 				set KF_PIT += 170;
 			L_SUB_3_3:
-				warp "payon",155,205;
+				warp "payon",179,97;
 		L_MENU_3_4:
 			check @Kafra_COUPON = 0,-,L_SUB_3_4;
 				check Zeny < 1800,-,L_ROOT_3_4;

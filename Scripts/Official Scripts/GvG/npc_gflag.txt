@@ -806,7 +806,7 @@ OnInit:
 	return;
 }
 
-payon.gat,155,234,4 script "Bright Arbor" 722,{
+payon.gat,165,177,3 script "Bright Arbor" 722,{
 	guildreg "payg_cas01";
 	check guildid == 0,-,L_START_1;
       mes "[ Edict of the Divine Rune Midgard Kingdom ]"
@@ -842,7 +842,7 @@ OnInit:
 	guildreg "payg_cas01";
 	return;
 }
-payon.gat,150,234,4 script "Sacred Altar" 722,{
+payon.gat,165,173,3 script "Sacred Altar" 722,{
 	guildreg "payg_cas02";
 	check guildid == 0,-,L_START_1;
       mes "[ Edict of the Divine Rune Midgard Kingdom ]"
@@ -878,7 +878,7 @@ OnInit:
 	guildreg "payg_cas02";
 	return;
 }
-payon.gat,160,234,4 script "Holy Shadow" 722,{
+payon.gat,165,169,3 script "Holy Shadow" 722,{
 	guildreg "payg_cas03";
 	check guildid == 0,-,L_START_1;
       mes "[ Edict of the Divine Rune Midgard Kingdom ]"
@@ -914,7 +914,7 @@ OnInit:
 	guildreg "payg_cas03";
 	return;
 }
-payon.gat,165,234,4 script "Scarlet Palace" 722,{
+payon.gat,165,165,3 script "Scarlet Palace" 722,{
 	guildreg "payg_cas04";
 	check guildid == 0,-,L_START_1;
       mes "[ Edict of the Divine Rune Midgard Kingdom ]"
@@ -950,7 +950,7 @@ OnInit:
 	guildreg "payg_cas04";
 	return;
 }
-payon.gat,145,234,4 script "Bamboo Grove Hill" 722,{
+payon.gat,165,161,3 script "Bamboo Grove Hill" 722,{
 	guildreg "payg_cas05";
 	check guildid == 0,-,L_START_1;
       mes "[ Edict of the Divine Rune Midgard Kingdom ]"

@@ -1,6 +1,21 @@
 --------------------------------------------------------------------------------
  Fusion 1.213 - August 29th, 2004
 --------------------------------------------------------------------------------
+- 09-04-04: Town\Town_LouYang.txt - Added npc's from kRO screenshot.
+- 09-04-04: Event\Event_Making.txt - Updated Npc placement from kRO screenshots. [Muad_Dib]
+- 09-04-04: Event\Event_MrSmile.txt - Updated Npc placement from kRO screenshots. [Muad_Dib]
+- 09-04-04: Event\Event_Nenkaras.txt - Updated Npc placement from kRO screenshots. [Muad_Dib]
+- 09-04-04: GvG\nguild_pay.txt - Updated Guild kafra warp location. [Muad_Dib]
+- 09-04-04: GvG\npc_gflag.txt - Updated Payon flag locations. [Muad_Dib]
+- 09-04-04: GvG\payg_cas0X.txt - Updated Guild kafra warp location. [Muad_Dib]
+- 09-04-04: Job\Job_2-1\Job2_Blacksmith.txt - Updated Npc placement from kRO screenshots. [Muad_Dib]
+- 09-04-04: Quest\Quest_skill\Charged_Arrow.txt - Updated Npc placement from kRO screenshots. [Muad_Dib]
+- 09-04-04: Shop\payon.txt - Updated Npc placement from kRO screenshots. [Muad_Dib]
+- 09-04-04: Town\Town_Guide.txt - Updated Npc placement from kRO screenshots. [Muad_Dib]
+- 09-04-04: Town\Town_Kafra.txt - Updated Npc placement and save and warp locations from kRO screenshots. [Muad_Dib]
+- 09-04-04: Town\Town_Payon.txt - Updated Npc placement from kRO screenshots. [Muad_Dib]
+- 09-04-04: Town\Town_Siglude.txt - Updated Npc placement from kRO screenshots. [Muad_Dib]
+- 09-04-04: Warp\towns\Payon.txt - Updated warps from kRO Screenshots. [Muad_Dib]
 - 09-02-04: Town\Town_Prontera.txt - Typo in Sign Post. [Tsusai]
 - 09-02-04: Job\Advanced2nd.txt - Added Advanced 2-# changer. [Tsusai]
 - 09-01-04: GvG\npc_gflag.txt - Relocated castle side flags for new Payon map again. [Tsusai]

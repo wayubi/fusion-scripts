@@ -21,7 +21,7 @@
 // - Smile Assistance -> alberta: 113,53
 //   Give informations and transform Mr.Smile Item
 //
-// - Smile Assistance -> payon: 148,232
+// - Smile Assistance -> payon: 186,104
 //   Give informations and transform Mr.Smile Item
 //
 //========================================================================================
@@ -451,7 +451,7 @@ alberta.gat,113,53,4	script	"Smile Assistance"	92,{
 			mes "above.
 			close;
 }
-payon.gat,148,232,4	script	"Smile Assistance"	92,{
+payon.gat,186,104,4	script	"Smile Assistance"	92,{
 	mes "[Smile Girl]";
 	mes "Hi ~ Hi ~";
 	mes "This is Smile Assistance.";

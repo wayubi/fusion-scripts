@@ -677,7 +677,7 @@ L_HEAL_LV100_N:
 	close;
 }
 
-payon_in01.gat,131,62,5 script "Inn Maid" 78,{
+payon_in01.gat,131,62,5 script "Inn Maid" 53,{
       mes "[Sun Hee]";
 	mes "Welcome to Nenkaras Inn";
 	next;
