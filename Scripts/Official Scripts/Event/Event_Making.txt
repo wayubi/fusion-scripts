@@ -54,6 +54,12 @@
 // - Hair Ornament Girl -> comodo: 228,159
 //   Give information and make Cross Hat, Bulb Band, Stripe band and Blue hairband
 //
+// - Vending Machine Man -> xmas: 115,296
+//   Give information about Smokie Hat, Spore Hat, Wonder Nutshell, Rainbow Eggshel, Blush, Chef Hat, Candle, Cake Hat
+//
+// - Vending Machine -> xmas: 114,297
+//   Make Smokie Hat, Spore Hat, Wonder Nutshell, Rainbow Eggshel, Blush, Chef Hat, Candle, Cake Hat
+//
 //========================================================================================
 
 payon_in01.gat,103,111,4	script	"Granny"	103,{
@@ -1662,5 +1668,296 @@ L_SUB_4_1:
 	mes "If you bring all the items then I";
 	mes "will make it for you right away.";
 	mes "Hoo~ see you then~;
+	close;
+}
+xmas.gat,114,297,4	script	"Vending Machine"	111,{
+	mes "[Audi]";
+	mes "- Exciting item vending machine. -";
+	mes "- Thanks to the great Titicupe. -";
+	mes "- Select an item that you want -";
+	mes "- and Put required item -";
+	mes "- in mu mouth. -";
+	next;
+	menu "- notice (must read) -",L_MENU_1,"Raccoon Hat",L_MENU_2,"Spore Hat",L_MENU_3,"Wonder Nutshell",L_MENU_4,"Rainbow Eggshell",L_MENU_5,"Blush",L_MENU_6,"Chef Hat",L_MENU_7,"Candle",L_MENU_8,"Cake Hat",L_MENU_9;
+	close;
+L_MENU_1:
+	mes "[Audi]";
+	mes "Hi~ !";
+	mes "I need to tell you";
+	mes "one important thing";
+	mes "This vending machine is";
+	mes "not equiped to differentiate";
+	mes "special items and ordinary items";
+	next;
+	mes "[Audi]";
+	mes "So If you use itemthat";
+	mes "already have an";
+	mes "applied valuable like a";
+	mes "Monster cart in it or";
+	next;
+	mes "[Audi]";
+	mes "any high level";
+	mes "forget items will";
+	mes "be treated as a normal";
+	mes "item so. When you";
+	mes "try to exchange + generate items";
+	mes "Please put away your valueable";
+	mes "items";
+	next;
+	mes "[Audi]";
+	mes "to the Kafra warehouse";
+	mes "or remove from your body.";
+	mes "This is very important.";
+	mes "Because if when you use";
+	mes "this vending machine and";
+	next;
+	mes "[Audi]";
+	mes "your valueable items";
+	mes "are used by the vending machine.";
+	mes "There will be no refund and";
+	mes "we can not recover that item.";
+	next;
+	mes "[Audi]";
+	mes "Have a great time!";
+	mes "Thank you!";
+	close;
+L_MENU_2:
+	checkitem 2213,1,-,L_ROOT_1;
+	checkitem 1036,20,-,L_ROOT_1;
+	checkitem 7012,200,-,L_ROOT_1;
+	checkitem 7065,300,-,L_ROOT_1;
+	delitem 2213,1;
+	delitem 1036,20;
+	delitem 7012,200;
+	delitem 7065,300;
+	additem 5033,1;
+	goto L_ROOT_2;
+L_MENU_3:
+	checkitem 7033,850,-,L_ROOT_1;
+	checkitem 7068,300,-,L_ROOT_1;
+	checkitem 1015,1,-,L_ROOT_1;
+	delitem 7033,850;
+	delitem 7068,300;
+	delitem 1015,1;
+	additem 5029,1;
+	goto L_ROOT_2;
+L_MENU_4:
+	checkitem 5037,1,-,L_ROOT_1;
+	checkitem 7064,500,-,L_ROOT_1;
+	delitem 5037,1;
+	delitem 7064,500;
+	additem 5050,1;
+	goto L_ROOT_2;
+L_MENU_5:
+	checkitem 5015,1,-,L_ROOT_1;
+	checkitem 978,1,-,L_ROOT_1;
+	checkitem 7030,50,-,L_ROOT_1;
+	delitem 5015,1;
+	delitem 978,1;
+	delitem 7030,50;
+	additem 5039,1;
+	goto L_ROOT_2;
+L_MENU_6:
+	checkitem 7047,100,-,L_ROOT_1;
+	delitem 7047,100;
+	aditem 5040,1;
+	goto L_ROOT_2;
+L_MENU_7:
+	checkitem 539,120,-,L_ROOT_1;
+	checkitem 982,1,-,L_ROOT_1;
+	checkitem 949,300,-,L_ROOT_1;
+	checkitem 1036,450,-,L_ROOT_1;
+	delitem 539,120;
+	delitem 982,1;
+	delitem 949,300;
+	delitem 1036,450;
+	additem 5026,1;
+	goto L_ROOT_2;
+L_MENU_8:
+	checkitem 2279,1,-,L_ROOT_1;
+	checkitem 7035,50,-,L_ROOT_1;
+	checkitem 526,100,-,L_ROOT_1;
+	delitem 2279,1;
+	delitem 7035,50;
+	delitem 526,100;
+	additem 5028,1;
+	goto L_ROOT_2;
+L_MENU_9:
+	checkitem 529,100,-,L_ROOT_1;
+	checkitem 530,5,-,L_ROOT_1;
+	checkitem 538,15,-,L_ROOT_1;
+	checkitem 539,300,-,L_ROOT_1;
+	checkitem 999,10,-,L_ROOT_1;
+	delitem 529,100;
+	delitem 530,5;
+	delitem 538,15;
+	delitem 539,300;
+	delitem 999,10;
+	additem 5024,1;
+	goto L_ROOT_2;
+L_ROOT_2:
+	mes "[Audi]";
+	mes "- Tah Dah!!! -";
+	mes "- Item done -";
+	mes "- Please Take it! -";
+	close;
+L_ROOT_1:
+	mes "[Audi]";
+	mes "- Piiiiiiii!! -";
+	mes "- Ups! Ups! -";
+	mes "- lack of items -";
+	mes "- Ups! Ups! -";
+	mes "Don't think I'm a fool.";
+	close;
+}
+
+xmas.gat,117,296,4	script	"Vending Machine Man"	704,{
+	mes "[Titicupe]";
+	mes "Ha ha ha ha ha ha";
+	mes "..You have arrived";
+	mes "I'm the manager";
+	mes "of the Toy Factory!!";
+	mes "I have eyes open";
+	mes "on new business!";
+	next;
+	menu "Talk to him about the vending machine",L_MENU_1,"Items in the vending machine",L_MENU_2,"Stop talking",L_MENU_3;
+	close;
+L_MENU_1:
+	mes "[Titicupe]";
+	mes "Can you see a little snowman";
+	mes "left side of me. can you?";
+	mes "If you look at his mouth closely";
+	mes "you can find out that it was";
+	mes "builted to that huge size.";
+	mes "It has its purpose you see.";
+	next;
+	mes "[Titicupe]";
+	mes "it can swallow any thing.";
+	mes ".. feel bad hah?";
+	mes "Try to put your";
+	mes "hands,legs, and even your head";
+	mes "inside.";
+	mes "Everything goes in.";
+	mes "Hohoho. However";
+	next;
+	mes "[Titicupe]";
+	mes "this is a";
+	mes "vending machine wich you";
+	mes "can get fashionable items from.";
+	mes "You have to provide some";
+	mes "items when you want to get";
+	mes "something from it.";
+	next;
+	mes "[Titicupe]";
+	mes "It will Pour right";
+	mes "out to snowman's mouth!!";
+	mes "If you do that, you can";
+	mes "get the items you have";
+	mes "always dreamed for";
+	mes "Ha ha ha ha ha~~~";
+	next;
+	goto L_MENU_3;
+L_MENU_2:
+	mes "[Titicupe]";
+	mes "Ho ho ho ho~";
+	mes "Do you have";
+	mes "any questions?";
+	mes "Just ask me";
+	mes "I'm a genius. ha ha~";
+	next;
+	menu "Racoon Hat",L_SUB_2_1,"Spore Hat",L_SUB_2_2,"Wonder Nutshell",L_SUB_2_3,"Rainbow Eggshell",L_SUB_2_4,"Blush",L_SUB_2_5,"Chef Hat",L_SUB_2_6,"Candle",L_SUB_2_7,"Cake Hat",L_SUB_2_8,"End Conversation",L_MENU_3;
+	close;
+	L_SUB_2_1:
+		mes "[Titicupe]";
+		mes "Raccon Hat?";
+		mes "1 Kitty Band";
+		mes "20 Dragon Scale";
+		mes "200 Tough Scalelike Stem";
+		mes "300 Sea-otter Fur";
+		next;
+		goto L_ROOT_2;
+	L_SUB_2_2:
+		mes "[Titicupe]";
+		mes "Spore Hat?";
+		mes "850 Poison Spore";
+		mes "300 Burnt Tree";
+		mes "1 Tongue";
+		next;
+		goto L_ROOT_2;
+	L_SUB_2_3:
+		mes "[Titicupe]";
+		mes "Wonder Nutshell?";
+		mes "1 Apple Hat";
+		mes "500 Wing of Dragonfly";
+		next;
+		goto L_ROOT_2;
+	L_SUB_2_4:
+		mes "[Titicupe]";
+		mes "Rainbow Eggshell?";
+		mes "1 Egg Shell";
+		mes "1 Cobaltblue Dyestuffs";
+		mes "50 Claw of Desert Wolf";
+		next;
+		goto L_ROOT_2;
+	L_SUB_2_5:
+		mes "[Titicupe]";
+		mes "Blush?!";
+		mes "You!";
+		mes "You know something ha ha?!";
+		mes "he he. anyway";
+		mes "100 Alice's Apron";
+		next;
+		goto L_ROOT_2;
+	L_SUB_2_6:
+		mes "[Titicupe]";
+		mes "Chef Hat?";
+		mes "120 Piece of Cake";
+		mes "1 White Dyestuffs";
+		mes "300 Feather";
+		mes "450 Dragon Scale";
+		next;
+		goto L_ROOT_2;
+	L_SUB_2_7:
+		mes "[Titicupe]";
+		mes "Candle?";
+		mes "1 Bomb Wick";
+		mes "50 Matchstick";
+		mes "100 Royal Jelly";
+		next;
+		goto L_ROOT_2;
+	L_SUB_2_8:
+		mes "[Titicupe]";
+		mes "Cake Hat?";
+		mes "100 Candy";
+		mes "5 Candy Cane";
+		mes "15 Well-baked Cookie";
+		mes "20 Piece Of Cake";
+		mes "10 Steel";
+		next;
+		goto L_ROOT_2;
+	L_ROOT_2:
+		mes "[Titicupe]";
+		mes "So happy!!";
+		mes "I'm a genius";
+		mes "Ho ho ho";
+		mes "Ho ho ho ho";
+		close;
+L_MENU_3:
+	mes "[Titicupe]";
+	mes "I'm a genius!!";
+	mes "The world will be amazed!";
+	mes "for my magnificient creation";
+	mes "of these beatiful";
+	mes "and so cool items";
+	mes "Ke-ke-ke";
+	next;
+	mes "[Titicupe]";
+	mes "- Toy factory manager -";
+	mes "- Titicupe is jumping -";
+	mes "- around and pointing -";
+	mes "- snowman with very -";
+	mes "- uproarious attitude -";
+	mes "- and he looks very -";
+	mes "- very veyr happy -";
 	close;
 }
