@@ -1,6 +1,10 @@
 --------------------------------------------------------------------------------
  Fusion 1.213 - August 29th, 2004
 --------------------------------------------------------------------------------
+- 09-16-04: Npc\npc_kafra_corp.txt - Renamed Kafra Service name to Kafra Employee. [Muad_Dib]
+- 09-16-04: Event\Kafra_P.txt - Renamed kafra points to special reserve points. [Muad_Dib]
+- 09-16-04: Shop\jawaii.txt - Had better merchant translations. [Muad_Dib]
+- 09-16-04: Shop\nifheim.txt - Had better merchant translations. [Muad_Dib]
 - 09-16-04: Town\Town_Prontera.txt - Removed duplicate npc. [Muad_Dib]
 - 09-16-04: Town\Town_Izlude.txt - Removed old jawaii warp option. [Muad_Dib]
 - 09-16-04: Town\Town_Jawaii.txt - Added Japanese jawaii. [Muad_Dib]

@@ -1,32 +1,32 @@
 //========================================================================================
 // »» The Fusion Project ««
 // Copyright (c) 2004, Cobax Information Systems
-// http://fusion.cobax.net/
+// http://cobax.net/
 // ---------------------------------------------------------------------------------------
 //
 //  Kafra Main Office - Non Player Character Locations
 //
-// - Kafra Jasmine -> aldeba_in: 24,245
+// - Kafra Employee -> aldeba_in: 24,245
 //   Gives info on kafra service 
 //
-// - Kafra Pavianne -> aldeba_in: 81,166
+// - Kafra Employee -> aldeba_in: 81,166
 //   Sells Kafra Pass
 //
-// - Kafra Curly Sue -> aldeba_in: 91,244
+// - Kafra Employee -> aldeba_in: 91,244
 //   Just a normal chat.
 //
-// - Kafra Leilah -> aldeba_in: 96,181
+// - Kafra Employee -> aldeba_in: 96,181
 //   Save, Storage, Teleport, Rent Cart, kafra Pass and More services.
 //
-// - Kafra Roxie -> aldeba_in: 148,244
+// - Kafra Employee -> aldeba_in: 148,244
 //   Just a normal chat.
 //
-// - Kafra Blossom -> aldeba_in: 83,244
+// - Kafra Employee -> aldeba_in: 83,244
 //   Just a normal chat.
 //
 //========================================================================================
 
-aldeba_in.gat,24,245,4	script	"Kafra Service"	115,{
+aldeba_in.gat,24,245,4	script	"Kafra Employee"	115,{
 	cutin "kafra_03",2;
 	mes "[Kafra Jasmine]";
 	mes "Hi~ I am Kafra No. 1 Type Jasmine.";
@@ -81,7 +81,7 @@ L2:
 	close;
 }
 
-aldeba_in.gat,81,166,4	script	"Kafra Service"	117,{
+aldeba_in.gat,81,166,4	script	"Kafra Employee"	117,{
 	cutin "kafra_01",2;
 	mes "[Kafra Pavianne]";
 	mes "Welcome! I'm Kafra service's the first Kafra Type 'Pavianne'";
@@ -130,7 +130,7 @@ aldeba_in.gat,81,166,4	script	"Kafra Service"	117,{
                	close;
 }
 
-aldeba_in.gat,91,244,4	script	"Kafra Service"	112,{
+aldeba_in.gat,91,244,4	script	"Kafra Employee"	112,{
 	cutin "kafra_06",2;
 	mes "[Kafra Curly Sue]";
 	mes "Hello, hello?!!";
@@ -157,7 +157,7 @@ aldeba_in.gat,91,244,4	script	"Kafra Service"	112,{
 		close;
 }
 
-aldeba_in.gat,96,181,4	script	"Kafra Service"	113,{
+aldeba_in.gat,96,181,4	script	"Kafra Employee"	113,{
 	set @KAFRA_COUPON = 0;
 	cutin "kafra_05",2;
 	mes "[Kafra Leilah]";
@@ -362,7 +362,7 @@ aldeba_in.gat,96,181,4	script	"Kafra Service"	113,{
 		close;
 }
 
-aldeba_in.gat,148,244,4	script "Kafra Roxie" 114,{
+aldeba_in.gat,148,244,4	script "Kafra Employee" 114,{
 	cutin "kafra_04",2;
 	mes "[Kafra Roxie]";
 	mes "Welcome! I'm Kafra type 'Roxie'.  Let me let you in on a special secret about the Kafras!";
@@ -392,7 +392,7 @@ aldeba_in.gat,148,244,4	script "Kafra Roxie" 114,{
 	close;
 }
 
-aldeba_in.gat,83,244,4 script	"Kafra Blossom" 116,{
+aldeba_in.gat,83,244,4 script	"Kafra Employee" 116,{
 	cutin "kafra_02",2;
 	mes "[Kafra Blossom]";
 	mes "..... Pavianne is soooo old school! She's too stubborn is what it is...";
