@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.003
 ----------------------------------------------------------------------------------------------------
+- Event\Event_Making.txt - Fixed Phantom of Opera requirements. [mudvayne]
 - Job\Job1_Thief.txt - Added theif quest. [Storm_Queenie]
 - Job\Job1_Swordman.txt - Added swordmen quest. [Storm_Queenie]
 - Job\Job1_Magician.txt - Added magician quest. [Storm_Queenie]
