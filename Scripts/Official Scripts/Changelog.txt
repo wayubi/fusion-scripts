@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.003
 ----------------------------------------------------------------------------------------------------
+- Mob\field\pay_fild.txt - Updated Payon Fields Monster Spawns [Muad_Dib]
 - Mob\field\gon_fild.txt - Updated Gon Ryun Fields Monster Spawns [Muad_Dib]
 - Mob\field\xmass_fild.txt - Updated Lutie Fields Monster Spawns [Muad_Dib]
 - Mob\field\yuno_fild.txt - Updated Yuno Fields Monster Spawns [Muad_Dib]
@@ -21,7 +22,7 @@
 - Job\Job2_Sage.txt - Added a temp changer until more quest info is known. (Requested on Bugtracker) [Muad_Dib]
 - Job\Job2_Monk.txt - Added a temp changer until more quest info is known. (Requested on Bugtracker) [Muad_Dib]
 - Job\Job_Super_Novice.txt - Added a temp changer until more quest info is known. (Requested on Bugtracker) [Muad_Dib] 
-- Town\Town_Amatsu.txt - Replaced Town_Amatsu with a tottaly new One. [Muad_Dib]
+- Town\Town_Amatsu.txt - Replaced Town_Amatsu with a tottaly new one. [Muad_Dib]
 - Town\Town_Kafra.txt - Moved a Amatsu Kafra. [Muad_Dib]
 - Job\Job2_Knight_quest.txt - Fixed bad NPC IDs for hidden script loaders. [Colus]
 - Quest\quest_arena_test.txt - Fixed bad NPC IDs for hidden script loaders. [Colus]
