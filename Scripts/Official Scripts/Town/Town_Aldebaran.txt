@@ -69,9 +69,6 @@
 // - Town Girl -> aldebaran: 146,124
 //   Say stuff about the Assassin Guild.
 //
-// -  Keeper A -> aldebaran: 143,136
-//   Tell players important informations about the clock tower and random warps.
-//
 //========================================================================================
 
 aldebaran.gat,113,70,4	script	"Munster"	48,{
@@ -764,49 +761,4 @@ aldebaran.gat,146,124,4	script	"Town Girl"	101,{
 		mes "[Nastasia]";
 		mes "In order to fight against those kinds, you'll need ore DEX, right?";
 		close;
-}
-
-aldebaran.gat,143,136,4	script	"Bell Keeper A"	89,{
-	mes "[Bell Keeper]";
-	mes "Let me introduce myself, I am 'Monster A' the keeper of Al De Baran Clock Tower,in Committee of 'Heaven on Earth'.";
-	mes "So you looks like taking great interest in this tower. Do you want me to inform a good tip?";
-	next;
-	menu "About Clock Tower.",L_Menu1,"About Committe of 'Heaven on Earth'.",L_Menu2,"Quit",-;
-	close;
-		L_Menu1:
-			mes "[Bell Keeper]";
-			mes "Every floor of this tower is connected each other by a certain device.";
-			mes "That is a device called 'Warp Gear'.";
-			next;
-			mes "[Bell Keeper]";
-			mes "Even though warps existing everywhere in the clock tower are connected each other,";
-			mes "you should be careful with 'Random Warp' which transports you into the unknown spot.";
-			mes "If you don't want to be apart from your friends all of a sudden, be advised.. ";
-			next;
-			mes "[Bell Keeper]";
-			mes "I will give you another useful tip,Random warps are shown in green colour on the mini-map.So keep your eyes on the mini-map.";
-			mes "Have a good time with bunch of watches. Huhuhuhuh...";
-			close;
-		L_Menu2:
-			mes "[Bell Keeper]";
-			mes "Ho~Have you ever happen to hear of committee of 'Heaven on Earth'?!";
-			next;
-			menu "Yup,I have",L_Menu3,"What are they?",-;
-			mes "[Bell Keeper]";
-			mes "Ouch,I didn't expect anyone still could be ignorant of our committee.. Tell you what.";
-			mes "We are trying to build a Heaven on earth,especially in this place, Al De Baran. For the start,we built this clock tower.";
-			next;
-			mes "[Bell Keeper]";
-			mes "We drew up a plan of Glast Heim a long time ago.";
-			mes "You will see great achievements of our own in many places.";
-			close;
-				L_Menu3:
-					mes "[Bell Keeper]";
-					mes "Muhahahaha,good good.Now I am so glad that we make a reputation all over the Rune-Midgard as you know us.";
-					mes "What a great day to meet a adventurer like you! I would like to present  you this.";
-					next;
-					mes "[Bell Keeper]";
-					mes "Oops..where did I leave it...";
-					mes "Oh well well~ it seems I left the present I intended to give you in the control room at the 4th floor.I promise I will give it to you next time. See you later.";
-					close;
 }

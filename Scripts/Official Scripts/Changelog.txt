@@ -9,6 +9,8 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.005
 ----------------------------------------------------------------------------------------------------
+- Event\Event_Clocktower.txt - Added Event Clocktower. [Muad_Dib]
+- Town\Town_Aldebaran.txt - Moved Bell Keeper to Event_Clocktower. [Muad_Dib]
 - shop\payon.txt - Updated Payon shops. [Muad_Dib]
 - shop\geffen.txt - Updated Geffen shops. [Muad_Dib]
 - shop\yuno.txt - Updated Yuno shops. [Muad_Dib]
