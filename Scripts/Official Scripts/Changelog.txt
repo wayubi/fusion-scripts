@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.004
 ----------------------------------------------------------------------------------------------------
+- Event\Event_Rental.txt - Redid entire script w/ official text and form. [Tsusai]
 - Mob\other\pvp_n.txt - Removed, map no longer exists. [Tsusai]
 - Event\Event_Rental.txt - Modified the Grand Peco Rental NPC. [Tsusai]
 - Town\Town_Amatsu.txt - Changed one part of the text. [Muad_Dib]
