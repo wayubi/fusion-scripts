@@ -25,7 +25,7 @@ alberta_in.gat,180,34,0	warp	warp0030	2,2,alberta.gat,117,42
 alberta_in.gat,189,89,0	warp	warp0031	2,2,alberta.gat,102,153
 alberta.gat,15,234,0	warp	warp0032	2,5,pay_fild03.gat,388,63
 alberta.gat,33,42,0	warp	warp0033	2,2,alberta_in.gat,74,44
-alberta.gat,65,233,0	warp	warp0034	2,3,alberta_in.gat,69,141
+alberta.gat,65,233,0	warp	warp0034	2,3,alberta_in.gat,20,141
 alberta.gat,93,205,0	warp	warp0035	2,2,alberta_in.gat,114,134
 alberta.gat,98,153,0	warp	warp0036	2,2,alberta_in.gat,185,89
 alberta.gat,99,221,0	warp	warp0037	2,2,alberta_in.gat,122,161
