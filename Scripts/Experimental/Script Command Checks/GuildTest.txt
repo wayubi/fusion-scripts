@@ -1,3 +1,5 @@
+// Add this to territory_db --> prt_are01,"Test Script Site"
+
 prt_are01.gat,150,195,0,0	monster	"Emperium" 1288,1,0,0,1
 
 prt_are01.gat,147,152,5	script	"Guild and Guild Castle"	811,{
