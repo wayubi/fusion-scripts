@@ -5,6 +5,7 @@
 // ---------------------------------------------------------------------------------------
 //
 // Yuno Fields - Monster Spawn Locations
+// Based upon jathena mobs.
 //
 //========================================================================================
 
@@ -12,42 +13,44 @@
 // - Yuno Field 01
 //========================================================================================
 
-yuno_fild01.gat,0,0,0,0	 monster	"Poring" 1002,10,0,0,0
-yuno_fild01.gat,0,0,0,0	 monster	"Grand Peco" 1369,15,0,0,0
-yuno_fild01.gat,0,0,0,0	 monster	"Dustiness" 1114,10,0,0,0
-yuno_fild01.gat,0,0,0,0	 monster	"Poporing" 1031,10,0,0,0
+yuno_fild01.gat,0,0,0,0		monster	"Poring"		1002,40,0,0,0
+yuno_fild01.gat,0,0,0,0		monster	"Poporing"		1031,30,0,0,0
+yuno_fild01.gat,0,0,0,0		monster	"Dustiness"		1114,20,0,0,0
+yuno_fild01.gat,0,0,0,0		monster	"Grand Peco"	1369,20,0,0,0
 
 //========================================================================================
 // - Yuno Field 02
 //========================================================================================
 
-yuno_fild02.gat,0,0,0,0	 monster	"Archangeling" 1388,1,1800000,900000,1
-yuno_fild02.gat,0,0,0,0	 monster	"Driller" 1380,10,0,0,0
-yuno_fild02.gat,0,0,0,0	 monster	"Dustiness" 1114,10,0,0,0
-yuno_fild02.gat,0,0,0,0	 monster	"Geographer" 1368,12,0,0,0
-yuno_fild02.gat,0,0,0,0	 monster	"Grand Peco" 1369,20,0,0,0
-yuno_fild02.gat,0,0,0,0	 monster	"Poring" 1002,10,0,0,0
-yuno_fild02.gat,0,0,0,0	 monster	"Sleeper" 1386,20,0,0,0
+yuno_fild02.gat,0,0,0,0		monster	"Poring"		1002,10,0,0,0
+yuno_fild02.gat,0,0,0,0		monster	"Dustiness"		1114,5,0,0,0
+yuno_fild02.gat,0,0,0,0		monster	"Geographer"	1368,15,0,0,0
+yuno_fild02.gat,0,0,0,0		monster	"Grand Peco"	1369,40,0,0,0
+yuno_fild02.gat,0,0,0,0		monster	"The Paper"		1375,5,0,0,0
+yuno_fild02.gat,0,0,0,0		monster	"Driller"		1380,15,0,0,0
+yuno_fild02.gat,0,0,0,0		monster	"Sleeper"		1386,15,0,0,0
+yuno_fild02.gat,0,0,0,0		monster	"Archangeling"	1388,1,3600000,1800000,1
 
 //========================================================================================
 // - Yuno Field 03
 //========================================================================================
 
-yuno_fild03.gat,0,0,0,0	 monster	"Sleeper" 1386,12,0,0,0
-yuno_fild03.gat,0,0,0,0  monster    "Demon Pungus" 1378,10,0,0,0
-yuno_fild03.gat,0,0,0,0  monster	"Geographer" 1368,12,0,0,0
-yuno_fild03.gat,0,0,0,0  monster    "Goat" 1372,10,0,0,0
-yuno_fild03.gat,0,0,0,0  monster    "Harpy" 1376,10,0,0,0
-yuno_fild03.gat,0,0,0,0  monster    "The Paper" 1375,10,0,0,0
+yuno_fild03.gat,0,0,0,0		monster	"Geographer"	1368,10,0,0,0
+yuno_fild03.gat,0,0,0,0		monster	"Goat"		1372,20,0,0,0
+yuno_fild03.gat,0,0,0,0		monster	"The Paper"		1375,10,0,0,0
+yuno_fild03.gat,0,0,0,0		monster	"Harpy"		1376,5,0,0,0
+yuno_fild03.gat,0,0,0,0		monster	"Demon Pungus"	1378,20,0,0,0
+yuno_fild03.gat,0,0,0,0		monster	"Sleeper		1386,5,0,0,0
 
 //========================================================================================
 // - Yuno Field 04
 //========================================================================================
 
-yuno_fild04.gat,0,0,0,0	 monster	"Geographer" 1368,12,0,0,0
-yuno_fild04.gat,0,0,0,0  monster    "Goat" 1372,10,0,0,0
-yuno_fild04.gat,0,0,0,0  monster    "Harpy" 1376,10,0,0,0
-yuno_fild04.gat,0,0,0,0	 monster	"Poring" 1002,10,0,0,0
-yuno_fild04.gat,0,0,0,0	 monster	"Sleeper" 1386,12,0,0,0
-yuno_fild04.gat,0,0,0,0	 monster	"Elder" 1377,10,0,0,0
+yuno_fild04.gat,0,0,0,0		monster	"Poring"		1002,40,0,0,0
+yuno_fild04.gat,0,0,0,0		monster	"Geographer"	1368,10,0,0,0
+yuno_fild04.gat,0,0,0,0		monster	"Goat"		1372,10,0,0,0
+yuno_fild04.gat,0,0,0,0		monster	"The Paper"		1375,10,0,0,0
+yuno_fild04.gat,0,0,0,0		monster	"Harpy"		1376,5,0,0,0
+yuno_fild04.gat,0,0,0,0		monster	"Driller"		1380,10,0,0,0
+yuno_fild04.gat,0,0,0,0		monster	"Sleeper"		1386,5,0,0,0
 

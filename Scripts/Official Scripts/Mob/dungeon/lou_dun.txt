@@ -12,27 +12,27 @@
 // - Louyang Dungeon 01
 //========================================================================================
 
-lou_dun01.gat,0,0,0,0	monster  "Sidewinder" 1037,20,0,0,0
-lou_dun01.gat,0,0,0,0	monster  "Horong"	1129,10,0,0,0
-lou_dun01.gat,0,0,0,0	monster  "Leib Olmai" 1306,5,0,0,0
-lou_dun01.gat,0,0,0,0	monster  "Dancing Dragon" 1514,10,0,0,0
-lou_dun01.gat,0,0,0,0	monster  "Zipper Bear" 1417,10,0,0,0
-lou_dun01.gat,0,0,0,0	monster  "Li Me Mang Ryang" 1516,5,0,0,0
+lou_dun01.gat,0,0,0,0	monster  "Sidewinder" 		1037,20,0,0,0
+lou_dun01.gat,0,0,0,0	monster  "Horong"			1129,10,0,0,0
+lou_dun01.gat,0,0,0,0	monster  "Leib Olmai" 		1306,5,0,0,0
+lou_dun01.gat,0,0,0,0	monster  "Dancing Dragon" 	1514,10,0,0,0
+lou_dun01.gat,0,0,0,0	monster  "Zipper Bear" 		1417,10,0,0,0
+lou_dun01.gat,0,0,0,0	monster  "Li Me Mang Ryang" 	1516,5,0,0,0
 
 //========================================================================================
 // - Louyang Dungeon 02
 //========================================================================================
 
-lou_dun02.gat,0,0,0,0	monster  "Munak" 1026,15,0,0,0
-lou_dun02.gat,0,0,0,0	monster  "Bongun" 1188,15,0,0,0
-lou_dun02.gat,0,0,0,0	monster  "Hyegun" 1512,20,0,0,0
-lou_dun02.gat,0,0,0,0	monster  "Dancing Dragon" 1514,10,0,0,0
+lou_dun02.gat,0,0,0,0	monster  "Munak" 			1026,15,0,0,0
+lou_dun02.gat,0,0,0,0	monster  "Bongun" 		1188,15,0,0,0
+lou_dun02.gat,0,0,0,0	monster  "Hyegun" 		1512,20,0,0,0
+lou_dun02.gat,0,0,0,0	monster  "Dancing Dragon" 	1514,10,0,0,0
 
 //========================================================================================
 // - Louyang Dungeon 03
 //========================================================================================
 
-lou_dun03.gat,0,0,0,0	monster  "Wander Man" 1208,20,0,0,0
+lou_dun03.gat,0,0,0,0	monster  "Wander Man" 		1208,20,0,0,0
 lou_dun03.gat,0,0,0,0	monster  "Evil Cloud Hermit" 1412,10,0,0,0
-lou_dun03.gat,0,0,0,0	monster  "Wicked Nymph" 1416,10,0,0,0
-lou_dun03.gat,0,0,0,0	monster  "Civil Servant" 1513,15,0,0,0
+lou_dun03.gat,0,0,0,0	monster  "Wicked Nymph" 	1416,10,0,0,0
+lou_dun03.gat,0,0,0,0	monster  "Civil Servant" 	1513,15,0,0,0

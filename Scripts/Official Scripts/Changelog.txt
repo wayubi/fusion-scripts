@@ -1,6 +1,9 @@
 --------------------------------------------------------------------------------
  Fusion 1.213 - August 29th, 2004
 --------------------------------------------------------------------------------
+- 09-18-04: Mob\Old_Mob.rar - Added rar file with old mobs. [Muad_Dib]
+- 09-18-04: Mob\field\xxx_fild.txt - Updated with kRO based spawns. [Muad_Dib]
+- 09-18-04: Mob\dungeon\xxx_dun.txt - Updated with kRO based spaens. [Muad_Dib]
 - 09-18-04: Town\kafra\Umbala_Kafra.txt - Fixed menu. [Muad_Dib]
 - 09-18-04: Town\Town_Gonryun.txt - Renamed to the iro name. [Muad_Dib]
 - 09-18-04: Town\Town_Guide.txt - Added japanese Niflheim guide. [Muad_Dib]
