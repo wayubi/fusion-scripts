@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.004
 ----------------------------------------------------------------------------------------------------
+- Town\Town_Gonryun.txt - Reorganised Town Lutie. [Muad_Dib]
 - Mob\ - Edited/corrected some spawns. [Muad_Dib]
 - Mob\dungeon\pay_dun.txt - Redid the payon Dungeon Spawns. [Muad_Dib]
 - Town\Town_Gonryun.txt - Corrected warp destination error back to Alberta. [Tsusai]
