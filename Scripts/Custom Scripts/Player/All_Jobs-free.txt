@@ -4,20 +4,20 @@
 // http://fusion.cobax.net/
 // ---------------------------------------------------------------------------------------
 //
-// - Minister of Free Jobs -> prontera 164 183
+// - Faberau -> prontera 164 183
 // 	Job Changer for all jobs, including 2-3(Advanced 2nd Job) and Super Novice.
 //
 // =======================================================================================
 
-prontera.gat,164,183,4 script "Minister of Free Jobs" 110,{
-	mes "[Minister of Free Jobs]";
+prontera.gat,164,183,4 script "Faberau" 87,{
+	mes "[Faberau]";
 	mes "Greetings $charaname!";
 	next;
-	mes "[Minister of Free Jobs]";
+	mes "[Faberau]";
 	mes "I guess you want to change your class?";
 	next;
 	menu "Yes",-,"No",L_NEVERMIND;
-		mes "[Minister of Free Jobs]";
+		mes "[Faberau]";
 		mes "Let me check your possibilities...";
 		next;
 		goto L_CHECKJOB;
@@ -32,7 +32,7 @@ prontera.gat,164,183,4 script "Minister of Free Jobs" 110,{
 		check Job > 30,L_NOMOREJOBS,L_HIGH2ND;
 	L_JOBNOVICE:
 		check JobLevel = 10,-,L_REQJLEVEL;
-		mes "[Minister of Free Jobs]";
+		mes "[Faberau]";
 		mes "Ah, young one, this is a list of the classes you can improve.";
 		mes " ";
 		next;
@@ -64,10 +64,10 @@ prontera.gat,164,183,4 script "Minister of Free Jobs" 110,{
 			goto L_SETJOBLEVEL;
 		L_SUPERNOVICE:
 			check BaseLevel = 60,-,L_REQBLEVEL;
-			mes "[Minister of Free Jobs]";
+			mes "[Faberau]";
 			mes "Before I change you to Super Novice, I will tell you that this choice is permanent, you can't change later to other classes.";
 			next;
-			mes "[Minister of Free Jobs]";
+			mes "[Faberau]";
 			mes "So, are you really sure that do you want to change?";
 			next;
 			menu "Yes",-,"No",L_NEVERMIND;
@@ -75,7 +75,7 @@ prontera.gat,164,183,4 script "Minister of Free Jobs" 110,{
 				goto L_SETJOBLEVEL;
 	L_1STCLASS:
 		check JobLevel > 39,-,L_REQJLEVEL;
-		mes "[Minister of Free Jobs]";
+		mes "[Faberau]";
 		mes "Ah, I can see you've got more experience. I'll give you right away your options...";
 		next;
 		goto L_CHECK1ST;
@@ -142,14 +142,14 @@ prontera.gat,164,183,4 script "Minister of Free Jobs" 110,{
 	L_JOBHIGHNOV:
 		check BaseLevel > 98,-,L_REQBLEVEL;
 		check JobLevel > 49,-,L_REQJLEVEL;
-		mes "[Minister of Free Jobs]";
+		mes "[Faberau]";
 		mes "Ah! So you want to aspire for the 2-3 advanced classes? First you'll need to turn to novice again...";
 		next;
-		mes "[Minister of Free Jobs]";
+		mes "[Faberau]";
 		mes "Is that ok with you?";
 		next;
 		menu "Yes",-,"No",L_NEVERMIND;
-			mes "[Minister of Free Jobs]";
+			mes "[Faberau]";
 			mes "Ok, you asked for it...";
 			next;
 			ccolor 0;
@@ -164,7 +164,7 @@ prontera.gat,164,183,4 script "Minister of Free Jobs" 110,{
 	L_HIGH1st:
 		check Job = 24,-,L_NOJOBS;
 		check JobLevel = 10,-,L_REQJLEVEL;
-		mes "[Minister of Free Jobs]";
+		mes "[Faberau]";
 		mes "Ah! I can see you have a lot of free time to make it this far... ^_^";
 		mes "I'll change you right away if that is ok with you.";
 		next;
@@ -194,7 +194,7 @@ prontera.gat,164,183,4 script "Minister of Free Jobs" 110,{
 			goto L_SETJOBLEVEL;
 	L_HIGH2ND:
 		check JobLevel > 39,-,L_REQJLEVEL;
-		mes "[Minister of Free Jobs]";
+		mes "[Faberau]";
 		mes "What? You still here? I guess you're a real RO Fanatic...";
 		mes "Here is the list of posibilities...";
 		next;
@@ -262,32 +262,32 @@ prontera.gat,164,183,4 script "Minister of Free Jobs" 110,{
 		set JobLevel = 1,0;
 		close;
 	L_SKILLPOINT:
-		mes "[Minister of Free Jobs]";
+		mes "[Faberau]";
 		mes "You need to spend all your skill points before changing your class.";
 		close;
 	L_NOJOBS:
 		check Job = 22,-,L_ERRSUPERNOV;
-		mes "[Minister of Free Jobs]";
+		mes "[Faberau]";
 		mes "You need to change clothes, before you can change your job.";
 		close;
 	L_ERRSUPERNOV:
-		mes "[Minister of Free Jobs]";
+		mes "[Faberau]";
 		mes "The choice of Super Novice is permanent! You can't change jobs now!";
 		close;
 	L_NOMOREJOBS:
-		mes "[Minister of Free Jobs]";
+		mes "[Faberau]";
 		mes "There arent any more Jobs for you to change into.. make another character or something! :P";
 		close;
 	L_REQBLEVEL:
-		mes "[Minister of Free Jobs]";
+		mes "[Faberau]";
 		mes "You need more base levels, in order to change to the class you selected.";
 		close;
 	L_REQJLEVEL:
-		mes "[Minister of Free Jobs]";
+		mes "[Faberau]";
 		mes "You need more job levels, in order to change to the class you selected.";
 		close;
 	L_NEVERMIND:
-		mes "[Minister of Free Jobs]";
+		mes "[Faberau]";
 		mes "Well, come back, if you ever change your mind. ^,^";
 		close;
 }
