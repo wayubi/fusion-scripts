@@ -1396,7 +1396,7 @@ OnInit:
 		callmob "job_wiz",120,102,"Hode",1127,0,"earthtest";
 		callmob "job_wiz",111,93,"Savage",1166,0,"earthtest";
 		callmob "job_wiz",120,93,"Giearth",1121,0,"earthtest";
-		callmob "job_wiz",107,98,"Bigfoot",106001,"earthtest";
+		callmob "job_wiz",107,98,"Bigfoot",1060,0,"earthtest";
 		callmob "job_wiz",124,98,"Ork Warrior",1023,0,"earthtest";
 		callmob "job_wiz",104,86,"Vitata",1176,0,"earthtest";
 		callmob "job_wiz",127,86,"Mantis",1139,0,"earthtest";
