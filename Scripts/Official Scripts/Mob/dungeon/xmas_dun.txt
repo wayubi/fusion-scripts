@@ -1,3 +1,34 @@
+//========================================================================================
+// »» The Fusion Project ««
+// Copyright (c) 2004, Cobax Information Systems
+// http://fusion.cobax.net/
+// ---------------------------------------------------------------------------------------
+//
+// Toy Factory - Monster Spawn Information
+//
+// - Toy Factory Warehouse - xmas_dun01
+//   - Cruiser, Quantity: 15, Spawn Waiting Period: Instant
+//   - Santa Goblin, Quantity: 20, Spawn Waiting Period: Instant
+//   - Angeling, Quantity: 1, Spawn Waiting Period: 1 Hour
+//   - Chepet, Quantity: 1, Spawn Waiting Period: 20 Minutes
+//   - Cookie, Quantity: 15, Spawn Waiting Period: Instant
+//   - Santa Cookie, Quantity: 30, Spawn Waiting Period: Instant
+//   - Drops, Quantity: 10, Spawn Waiting Period: Instant
+//   - Marine, Quantity: 20, Spawn Waiting Period: Instant
+//   - Mastering, Quantity: 1, Spawn Waiting Period: 30 Minutes
+//   - Mystcase, Quantity: 5, Spawn Waiting Period: Instant
+//   - Poporing, Quantity: 20, Spawn Waiting Period: Instant
+//   - Poring, Quantity: 10, Spawn Waiting Period: Instant
+//
+//  - Toy Classifying Room - xmas_dun02
+//   - Santa Goblin, Quantity: 10, Spawn Waiting Period: Instant
+//   - Santa Cookie, Quantity: 20, Spawn Waiting Period: Instant
+//   - Cruiser, Quantity: 35, Spawn Waiting Period: Instant
+//   - Knight of Windstorm, Quantity: 1, Spawn Waiting Period: 1 Hour
+//   - Mystcase, Quantity: 60, Spawn Waiting Period: Instant
+//
+//========================================================================================
+
 xmas_dun01.gat,0,0,0,0	monster	Cruiser 1248,15,0,0,0
 xmas_dun01.gat,0,0,0,0	monster	Santa_Goblin 1245,20,0,0,0
 xmas_dun01.gat,0,0,0,0	monster	Angeling 1096,1,3600000,1800000,0
