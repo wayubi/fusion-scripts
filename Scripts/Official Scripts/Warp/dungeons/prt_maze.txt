@@ -200,7 +200,6 @@ prt_maze03.gat,5,186,0	warp	prtm3	1,1,prt_maze03.gat,151,134
 
 //3rd Floor No.02
 prt_maze03.gat,58,194,0	script	""	45,1,1,{
-OnTouch:
 	random @warp 100;
 	check @warp <= 25,w1,-;
 	check @warp <= 50,w2,-;
@@ -322,7 +321,6 @@ prt_maze03.gat,5,58,0	warp	prtm3	1,1,prt_maze03.gat,191,15
 
 //3rd Floor No.17
 prt_maze03.gat,74,74,0	script	""	45,1,1,{
-OnTouch:
 	random @warp,100;
 	check @warp <= 25,w1,-;
 	check @warp <= 50,w2,-;
@@ -361,7 +359,6 @@ prt_maze03.gat,85,56,0	warp	prtm3	1,1,prt_maze03.gat,176,31
 prt_maze03.gat,137,74,0	warp	prtm3	1,1,prt_maze03.gat,102,168
 //To No.3-3//
 prt_maze03.gat,139,45,0	script	""	45,1,1,{
-OnTouch:
 	random @warp,100;
 	check @warp <= 25,w1,-;
 	check @warp <= 50,w2,-;
@@ -416,7 +413,6 @@ prt_maze03.gat,85,13,0	warp	prtm3	1,1,prt_maze03.gat,23,8
 
 //3rd Floor No.24
 prt_maze03.gat,154,22,0	script	""	45,1,1,{
-OnTouch:
 	random @warp,100;
 	check @warp <= 25,w1,-;
 	check @warp <= 50,w2,-;

@@ -23,21 +23,18 @@ sword_2-1.gat,224,206,0 warp jobsword4 1,1,sword_3-1.gat,10,168
 //sword_3-1.gat,192,169,0 warp jobsword5 1,1,sword_3-1.gat,215,167
 
 sword_1-1.gat,192,245,0 script	""	45,1,1,{
-OnTouch:	      
 		broadcast "Applicant $charaname, has passed the 1st course.",10; 
 		warp "sword_1-1",215,244;
 		return;
 }
 
 sword_2-1.gat,192,206,0 script	""	45,1,1,{
-OnTouch:
          	broadcast "Applicant $charaname, has passed the 2nd course.",10; 
 	   	warp "sword_2-1",215,205;
 		return;
 }
 
 sword_3-1.gat,192,169,0 script	""	45,1,1,{
-OnTouch:
         	broadcast "Applicant $charaname, has passed the 3rd course.",10; 
 		warp "sword_3-1",215,167;
 		return;

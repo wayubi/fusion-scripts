@@ -250,43 +250,23 @@ L_book2:
 	mes "Don't disrupt my restingggaaahh!!";
 		warp "niflheim",34,162;
 L_book3:
-		set nif_t = 0;
+		set @nif_t = 0;
 		random @nif_random1 10;
 	mes "[Aesop Bruce]";
 	mes "Ahahaha.... i see you are brave!!";
 	mes "Start reading your prayersahahahah!!";
 	next;
 L_MENU1:
-	menu "Clover.",L_MENU1_1,"Klaatu.",L_MENU1_2,"Kleitos.",L_MENU1_3;
-L_MENU1_1:
-	goto L_MENU2;
-L_MENU1_2:
-		set nif_t += 10;
-	goto L_MENU2;
-L_MENU1_3: 
-	goto L_MENU2;
+	menu "Clover.",L_MENU2,"Klaatu.",-,"Kleitos.",L_MENU2;
+		set @nif_t += 10;
 L_MENU2:
-	menu "Verit.",L_MENU2_1,"Veritas.",L_MENU2_2,"Verata.",L_MENU2_3;
-L_MENU2_1:
-	goto L_MENU3;
-L_MENU2_2: 
-	goto L_MENU3;
-L_MENU2_3:
-		set nif_t += 10;
-	goto L_MENU3;
+	menu "Verit.",L_MENU3,"Veritas.",L_MENU3,"Verata.",-;
+		set @nif_t += 10;
 L_MENU3:
-	menu "Necktie.",L_MENU3_1,"Necklace.",L_MENU3_2,"Nero.",L_MENU3_3,"^FFFFFFNictu.^000000",L_MENU3_4;
-L_MENU3_1: 
-	goto L_score;
-L_MENU3_2: 
-	goto L_score;
-L_MENU3_3:
-	goto L_score;
-L_MENU3_4:
-		set nif_t += 10;
-	goto L_score;
+	menu "Necktie.",L_score,"Necklace.",L_score,"Nero.",L_score,"^FFFFFFNictu.^000000",-;
+		set @nif_t += 10;
 L_score:
-		check nif_t == 30,L_sucess1,-;
+		check @nif_t == 30,L_sucess1,-;
 	mes "[Aesop Bruce]";
 	mes "Hahahaha!! Your prayers were wrong!!";
 	mes "Time to face deathohohohoho,";
@@ -377,19 +357,15 @@ nif_in.gat,105,81,3 script "Grey" 794,{
 L_RAN_1:
 		set @str1$ = "When the sun sets in the western hills,";
 	goto L_RAN_B;
-	
 L_RAN_2:
 		set @str1$ = "Where points the velvet gloom of dawn,";
 	goto L_RAN_B;
-
 L_RAN_3:
 		set @str1$ = "The beautiful melody surrounding thy soul,";
 	goto L_RAN_B;
-
 L_RAN_4:
 		set @str1$ = "Is the key from Lord Death's wrath.";
 	goto L_RAN_B;
-
 L_RAN_B:
 		check @inputstr == @str1$,L_RAN_SC,-;
 	mes "[Grey]";
@@ -444,7 +420,6 @@ L_Close:
 }
 
 niflheim.gat,169,71,5 script "#1" 111,2,2,{
-OnTouch:
 		check nif_q_done == 1,L_end,-;
 		check nif_quest4 == 1,L_end,-;
 	mes "- In the nearby tombs -";
@@ -462,7 +437,6 @@ L_end:
 }
 
 niflheim.gat,208,103,5 script "#2" 111,2,2,{
-OnTouch:
 		check nif_q_done == 1,L_end,-;
 		check nif_quest5 == 1,L_key2,-;
 		check nif_quest5 >= 2,L_end,-;
@@ -492,7 +466,6 @@ L_end:
 }
 
 nif_in.gat,115,181,5 script "#4" 111,3,3,{
-OnTouch:
 	mes "- You see a huge old piano -";
 		check nif_q_done == 0,-,L_Check2; 
 	mes "- with a few keys missing  -";
@@ -523,7 +496,6 @@ L_Close:
 }
 
 nif_in.gat,118,151,5 script "#5" 111,3,3,{
-OnTouch:
 		check nif_q_done != 1,L_Close,-;
 	mes "- The very moment the long shadow -";
 	mes "- of your body falls on the piano -";

@@ -9,13 +9,11 @@
 //========================================================================================
 
 umbala.gat,220,189,0 script "" 45,1,1,{
-OnTouch:	
 	check event_umbala == 7,Warp,-;
-		mes "[*Unknown*]";
-		mes "You aren't allowed in here. Go away!";
-		close;
+		return;
 	Warp:
 		warp "um_in",32,71;
+		return;
 }
 um_in.gat,28,70,0    warp  umbalawarp002   1,1,umbala.gat,217,187 
 umbala.gat,125,157,0 warp  umbalawarp003   1,1,um_in.gat,155,114 
