@@ -9,7 +9,7 @@
 //
 // =======================================================================================
 
-prontera.gat,164,183,4 script "Faberau" 87,{
+prontera.gat,164,320,4 script "Faberau" 87,{
 	mes "[Faberau]";
 	mes "Greetings $charaname!";
 	next;
