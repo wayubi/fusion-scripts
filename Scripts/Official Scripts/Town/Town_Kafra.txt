@@ -4771,9 +4771,14 @@ cmd_fild07.gat,136,134,4	script	"Kafra Personnel"	721,{
 	set @Kafra_COUPON = 0;
 	cutin "Kafra_07",2;
 	mes "[Kafra Personnel]";
-	mes "Welcome.";
-	mes "Kafra Service is always by your";
-	mes "side. Also, Kafra Service West Division promises high-quality service with our improved service program.";
+	mes "Welcome to Kafra Corporation. The";
+	mes "Kafra services are always by your";
+	mes "side.";
+	mes "The Western Division of the Kafra";
+	mes "Corporation";
+	mes "promises higer quality service";
+	mes "through several different program";
+	mes "revisions.";
 	next;
  L_START_1:
 	check @Kafra_COUPON = 1,-,L_SUB_0_1;
@@ -4783,7 +4788,7 @@ cmd_fild07.gat,136,134,4	script	"Kafra Personnel"	721,{
  L_SUB_0_1:
 	menu "Save",L_MENU_1,"Storage Service",L_MENU_2,"Teleport Service",L_MENU_3,"Cart Rental Service",L_MENU_4,"Use Kafra Coupon",L_MENU_5,"Collected Points Inquiry",L_MENU_6,"End",L_MENU_7;
 	L_MENU_1:
-		save "cmd_fild07",127,134;
+		save "cmd_fild07",126,133;
 		mes "[Kafra Personnel]";
 		mes "Your position has been saved.";
 		check @Kafra_COUPON = 0,-,L_SUB_1_2;

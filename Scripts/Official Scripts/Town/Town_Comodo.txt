@@ -686,80 +686,111 @@ L_MENU_2:
 
 // Lighthouse Guide
 
-cmd_fild07.gat,192,58,4	script	"Lighthouse Guide"	100,{
+cmd_fild07.gat,192,58,4	script "Rahasu" 100,{
 	mes "[Rahasu]";
 	mes "Good morning, I am Rahasu your guide to the";
 	mes "^3355FF`lighthouses'^000000!";
 	mes "Do you wish to learn more about these lighthouses?";
 	next;
 	menu "Learn more about the lighthouses",-,"Cancel",L_MENU_1;
-		mes "[Rahasu]";
-		mes "As you probably have noticed, there are two huge lighthouses located in this area.";
-		mes "Both of these lighhouses were used to signal nearby fortresses of incoming invasions many years ago.";
-		next;
-		mes "[Rahasu]";
-		mes "Too bad tourists can not enter these lighthouses yet, because they are still under heavy restrictions.";
-		mes "There are many, many beautiful paintings inside.";
-		close;
-	L_MENU_1:
-		mes "[Rahasu]";
-		mes "That's too bad, hope you could find some time to learn more about these ancient structures.";
-		close;
+	mes "[Rahasu]";
+	mes "As you probably have noticed, there are two huge lighthouses located in this area.";
+	mes "Both of these lighhouses were used to signal nearby fortresses of incoming invasions many years ago.";
+	next;
+	mes "[Rahasu]";
+	mes "Too bad tourists can not enter these lighthouses yet, because they are still under heavy restrictions.";
+	mes "There are many, many beautiful paintings inside.";
+	close;
+L_MENU_1:
+	mes "[Rahasu]";
+	mes "That's too bad, hope you could find some time to learn more about these ancient structures.";
+	close;
 }
 
 // Lighthouse Guide
 
-cmd_fild07.gat,52,280,4	script	"Lighthouse Guide"	100,{
+cmd_fild07.gat,52,280,4	script "Hallosu" 100,{
 	mes "[Hallosu]";
-	mes "That's correct, this is one of the two lighthouses in this area.";
-	mes "However, I can not let anyone go in yet because the lighthouse's interior is still under reconstruction.";
+	mes "Hello, this is one of the lighthouses";
+	mes "among many that make up the Paro Lighthouse.";
+	mes "You can not enter at this time";
+	mes "due to renovation of the Paros Lighthouse.";
+	mes "Once we have restored the interior you,";
+	mes "will be able to visit our lighthouse.";
 	next;
 	mes "[Hallosu]";
-	mes "We hope to have a grand opening soon, thank you for your time!";
-	mes "^3355FF(The guard is very nervous)^000000";
+	mes "We plan to open our doors to";
+	mes "the public very soon!";
+	mes "Please return after our";
+	mes "renovation is complet.";
+	mes "^3355FF(the gate keeper seems anxious)^000000";
 	close;
 }
 
 // Ship Sailor
 
-cmd_fild07.gat,299,83,4	script	"Sailor"	100,{
-		mes "[Zain]";
-		mes "Hello my friend, where do you wish to go?";
-		next;
-		menu "Alberta -> 600 zeny.",L_Menu1,"Izlude -> 800 zeny.",L_Menu2,"‚Quit",-;
-				close;
-			L_Menu1:
-				check Zeny >= 600,-,L_Menu1_F;
-				set Zeny -= 600,0;
-     				warp "alberta",192,169;
-					L_Menu1_F:
-						mes "[Zain]";
-						mes "Umm, you do not have enough zeny.";
-     						close;
-     			L_Menu2:
-				check Zeny >= 800,-,L_Menu1_F;
-				set Zeny -= 800,0;
-     				warp "izlude",176,182;
+cmd_fild07.gat,299,83,4	script "Zain" 100,{
+	mes "[Zain]";
+	mes "If you wish to travel to";
+	mes "Izlude or alberta, plaese use our";
+	mes "'Reudelus'connecting route.";
+	mes "We thank you for considering";
+	mes "Reudelus as one of your travel";
+	mes "options.";
+	mes "Will you be joining us on our";
+	mes "voyage?";
+	next;
+	menu "Alberta Fare = 600 Zeny.",L_Menu1,"Izlude Fare = 800 Zeny.",L_Menu2,"‚end conversation",-;
+	mes "[Zain]";
+	mes "Thank you for choosing 'Reudelus'!";
+	mes "We are grateful for your choice in us.";
+      close;
+L_Menu1:
+	   check Zeny >= 600,-,L_Menu1_F;
+	   set Zeny -= 600,0;
+     	   warp "alberta",192,169;
+      close;
+L_Menu1_F:
+	mes "[Zain]";
+	mes "Umm, you do not have enough zeny.";
+     	close;
+L_Menu2:
+	   check Zeny >= 800,-,L_Menu1_F;
+	   set Zeny -= 800,0;
+     	   warp "izlude",176,182;
+      close;
 }
 
-cmd_fild07.gat,94,134,4	script	"Sailor"	100,{
-		mes "[Sarumane]";
-		mes "Hello my friend, where do you wish to go?";
-		next;
-		menu "Alberta -> 600 zeny.",L_Menu1,"Izlude -> 800 zeny.",L_Menu2,"‚Quit",-;
-				close;
-			L_Menu1:
-				check Zeny >= 600,-,L_Menu1_F;
-				set Zeny -= 600,0;
-     				warp "alberta",192,169;
-					L_Menu1_F:
-						mes "[Sarumane]";
-						mes "Umm, you do not have enough zeny.";
-     						close;
-     			L_Menu2:
-				check Zeny >= 800,-,L_Menu1_F;
-				set Zeny -= 800,0;
-     				warp "izlude",176,182;
+cmd_fild07.gat,94,134,4	script "Sarumane"	100,{
+	mes "[Sarumane]";
+	mes "If you wish to travel to";
+	mes "Izlude or alberta, plaese use our";
+	mes "'Reudelus'connecting route.";
+	mes "We thank you for considering";
+	mes "Reudelus as one of your travel";
+	mes "options.";
+	mes "Will you be joining us on our";
+	mes "voyage?";
+	next;
+	menu "Alberta Fare = 600 Zeny.",L_Menu1,"Izlude Fare = 800 Zeny.",L_Menu2,"‚end conversation",-;
+	mes "[Sarumane]";
+	mes "Thank you for choosing 'Reudelus'!";
+	mes "We are grateful for your choice in us.";
+      close;
+L_Menu1:
+	   check Zeny >= 600,-,L_Menu1_F;
+	   set Zeny -= 600,0;
+     	   warp "alberta",192,169;
+      close;
+L_Menu1_F:
+	mes "[Sarumane]";
+	mes "Umm, you do not have enough zeny.";
+     	close;
+L_Menu2:
+	   check Zeny >= 800,-,L_Menu1_F;
+	   set Zeny -= 800,0;
+     	   warp "izlude",176,182;
+      close;
 }
 
 // Cheese Maniac
