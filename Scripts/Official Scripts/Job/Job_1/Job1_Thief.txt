@@ -18,8 +18,11 @@
 //========================================================================================
 
 moc_prydb1.gat,39,129,5	script	"Thief Guide"	69,{
+	check job == 30,ERR0,-;
 	check Job == 6,ERR0,-;
+	check Job == 24,Nov,-;
 	check Job == 0,-,ERR1;
+	Nov:
 	check Thief_Quest >= 2,RETURNS,-;
 	check Thief_Quest == 1,QUEST_GIVEN,GIVE_QUEST;
 	RETURNS:
@@ -268,8 +271,11 @@ EXIT:
 }
 
 moc_prydb1.gat,42,133,2	script	"Comrade"	118,{
+	check Job == 30,ERR0,-;
 	check Job == 6,ERR0,-;
+	check Job == 24,Nov,-;
 	check Job == 0,-,ERR1;
+	Nov:
 	check Thief_Quest >= 2,CHECK,-;
 	check Thief_Quest >= 1,LUK,ERR3;
 	LUK:
@@ -345,7 +351,12 @@ moc_prydb1.gat,42,133,2	script	"Comrade"	118,{
 			delitem 1070,@X;
 			delitem 1069,@Y;
 			set JobLevel = 1,0;
-			jobchange 6;
+			check job = 24,HIGH,-;
+				jobchange 6;
+				goto Congra;
+			HIGH:
+				jobchange 30;
+			Congra:
 			next;
 			mes "[Brad]";
 			mes "'Also I Sincerely Congrate you to be a Thief.'";
@@ -391,7 +402,10 @@ EXIT:
 
 moc_ruins.gat,141,125,3	script	"Bogus Man"	83,{
 	check Job == 6,ERR0,-;
+	check Job == 30,ERR0,-;
+	check Job == 24,Nov,-;
 	check Job == 0,-,ERR1;
+	Nov:
 	check Thief_Quest >= 2,OK2,-;
 	check Thief_Quest >= 1,OK,-;
 		mes "[Bogus Man]";

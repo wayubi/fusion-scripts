@@ -10,7 +10,7 @@
 //   Gives Quest to Novice wanting to become Mage.
 //
 // - Mixing Machine -> geffen_in: 164,112
-//   Mixes Ingrediants for REQuired Potion, to finish Quest.
+//   Mixes Ingrediants for Required Potion, to finish Quest.
 //
 // - Ponka Hontas -> moc_ruins: 101,125
 //   Gives Quest applicant Potion for 50z and empty test tube.
@@ -25,399 +25,454 @@
 
 geffen_in.gat,164,124,4	script "Mage Guildsman"	123,{
 	mes "[Mage Guildsman]";
-	mes "Yo. What's up?";
+	mes "Yo.What's up?";
 	next;
-	menu "I want to be a Mage.",-,"Tell me the Requirements.",REQ,"Nothing, Pretty Much.",EXIT;
-	mes "[Mage Guildsman]";
-	   check Job == 4,ERR0,-;
-	   check Job == 0,-,ERR1;
-	   check JobLevel == 10,-,ERR2;
-	   check SkillPoint == 0,-,ERR2;
-	   check Mage_Quest >= 1,QUEST_DONE,-;
-	mes "Wanna be a Mage? Hmmm.....";
-	next;
-	   check Gender == 0,FEMALE,MALE;
-	FEMALE:
-	mes "... Oh, what a Hot Babe you are~~ I like the type of Girl like you~";
-	goto CONTINUE;
-MALE:
-	mes "... Hey Look at you.. I think you are kinda Cute. Not my taste though..";
-	goto CONTINUE;
-CONTINUE:
-	mes "Hmm.. By the way You said that you wanna be a Mage?";
-	mes "Then... Sign up the Mage Application First.";
-	next;	
-	menu "Sign Up.",-,"QUIT.",QUIT;
-	mes "[Mage Guildsman]";
-	mes "Yeah.. Ok Sign on here.... Oh~ You are very good at Spelling~ Cool. Alright.";
-	mes "Your name is... $charaname .";
-	next;
-	mes "[Mage Guildsman]";
-	mes "I will give you the test...";
-	   random @RAND,100;
-	   check @RAND <= 25,Q1,-;
-	   check @RAND <= 50,Q2,-;
-	   check @RAND <= 75,Q3,-;
-	   check @RAND <= 100,Q4,EXIT;
-Q1:
-	mes "Make the Mixed Solution No.1 and bring it back to me.";
-	   set Mage_Quest = 1;
-	goto FINAL;
-Q2:
-	mes "Make the Mixed Solution No.2 and bring it back to me.";
-	   set Mage_Quest = 2;
-	goto FINAL;
-Q3:
-	mes "Make the Mixed Solution No.3 and bring it back to me.";
-	   set Mage_Quest = 3;
-	goto FINAL;
-Q4:
-	mes "Make the Mixed Solution No.4 and it bring back to me.";
-	   set Mage_Quest = 4;
-	goto FINAL;
-QUIT:
-	mes "[Mage Guildsman]";
-	mes "Whatttt?! You told me that you wanna be a Mage, How can you change your mind so Quickly!?";
-	close;
-FINAL:
-	next;
-	   additem 1092,1;
-	mes "[Mage Guildsman]";
-	mes "You can refer Neccessary Datas to the Guide Book in this Guild. Figure it out by yourself.";
-	mes "Also you can use the machine in the Center to mix the Solution.";
-	mes "Good Luck~";
-	close;
-QUEST_DONE:
-	mes "Okay, Let's start to check...";
-	next;
-	mes "[Mage Guildsman]";
-	check Mage_Mixed == 1,CONT,-;
-	   set Mage_Mixed = 0;
-	mes "Where's the Solution I asked...? I can't check it out if you don't show me, can I?";
-	close;
-CONT:
-	   check Mage_Quest == 1,QD1,-;
-	   check Mage_Quest == 2,QD2,-;
-	   check Mage_Quest == 3,QD3,-;
-	   check Mage_Quest == 4,QD4,EXIT;
-QD1:
-	   checkitem 1071,1,DONE1,-;
-	mes "....... Darn it. This is not exactly what I asked. What you have to do is.....";
-	mes "Mix up the Mixed Solution No.1 and Bring back to me.";
-	mes "I taking this messed solution from you, so you have to start mixing from the begining..." 
-	mes "I'm recommending you to try again...";
-	   set Mage_Mixed = 0;
-	   checkitem 1085,1,REMOVE2,-;
-	   checkitem 1086,1,REMOVE3,-;
-	   checkitem 1087,1,REMOVE4,-;
-	   checkitem 1090,1,REMOVE5,-;
-	close;
-QD2:
-	   checkitem 1085,1,DONE2,-;
-	mes "....... Darn it. This is not exactly what I asked. What you have to do is.....";
-	mes "Mix up the Mixed Solution No.2 and Bring back to me.";
-	mes "I taking this messed solution from you, so you have to start mixing from the begining..." 
-	mes "I'm recommending you to try again...";
-	   set Mage_Mixed = 0;
-	   checkitem 1071,1,REMOVE1,-;
-	   checkitem 1086,1,REMOVE3,-;
-	   checkitem 1087,1,REMOVE4,-;
-	   checkitem 1090,1,REMOVE5,-;
-	close;
-QD3:
-	   checkitem 1086,1,DONE3,-;
-	mes "....... Darn it. This is not exactly what I asked. What you have to do is.....";
-	mes "Mix up the Mixed Solution No.3 and Bring back to me.";
-	mes "I taking this messed solution from you, so you have to start mixing from the begining..." 
-	mes "I'm recommending you to try again...";
-	   set Mage_Mixed = 0;
-	   checkitem 1071,1,REMOVE1,-;
-	   checkitem 1085,1,REMOVE2,-;
-	   checkitem 1087,1,REMOVE4,-;
-	   checkitem 1090,1,REMOVE5,-;
-	close;
-QD4:
-	   checkitem 1087,1,DONE4,-;
-	mes "....... Darn it. This is not exactly what I asked. What you have to do is.....";
-	mes "Mix up the Mixed Solution No.4 and Bring back to me.";
-	mes "I taking this messed solution from you, so you have to start mixing from the begining..." 
-	mes "I'm recommending you to try again...";
-	   set Mage_Mixed = 0;
-	   checkitem 1071,1,REMOVE1,-;
-	   checkitem 1085,1,REMOVE2,-;
-	   checkitem 1086,1,REMOVE3,-;
-	   checkitem 1090,1,REMOVE5,-;
-REMOVE1:
-	delitem 1071,1;
-REMOVE2:
-	   delitem 1085,1;
-REMOVE3:
-	   delitem 1086,1;
-REMOVE4:
-	   delitem 1087,1;
-REMOVE5:
-	   delitem 1090,1;
-	close;
-DONE1:
-	mes "..... Hmm. I can see how hard you tried. Although it is not perfect, but It will be fine.";
-	mes "Alright! You pass the Mage Test. I will promote you right away.";
-	next;
-	mes "[Mage Guildsman]";
-	mes "Ehem... Now you are one of us, the Mages.";
-	mes "I sincerely congratulate you.";
-	next;
-	   delitem 1071,1;
-	   set JobLevel = 1,0;
-	   jobchange 2;
-	   set Zeny += 50,0;
-	mes "[Mage Guildsman]";
-	mes "'Welcome to My World~'";
-      mes "Quate from the Well-Known Movie. Heh heh,I just wanna try this~";
-	mes "Anyway, I congratulate you to join us. ~Let's be friends, Alright?~";
-	close;
-DONE2:
-	mes "..... Hmm. I can see how hard you tried. Although it is not perfect, but It will be fine.";
-	mes "Alright! You pass the Mage Test. I will promote you right away.";
-	next;
-	mes "[Mage Guildsman]";
-	mes "Ehem... Now you are one of us, the Mages.";
-	mes "I sincerely congratulate you.";
-	next;
-	   delitem 1085,1;
-	   set JobLevel = 1,0;
-	   jobchange 2;
-	   set Zeny += 50,0;
-	mes "[Mage Guildsman]";
-	mes "'Welcome to My World~'";
-      mes "Quate from the Well-Known Movie. Heh heh,I just wanna try this~";
-	mes "Anyway, I congratulate you to join us. ~Let's be friends, Alright?~";
-	close;
-DONE3:
-	mes "..... Hmm. I can see how hard you tried. Although it is not perfect, but It will be fine.";
-	mes "Alright! You pass the Mage Test. I will promote you right away.";
-	next;
-	mes "[Mage Guildsman]";
-	mes "Ehem... Now you are one of us, the Mages.";
-	mes "I sincerely congratulate you.";
-	next;
-	   delitem 1086,1;
-	   set JobLevel = 1,0;
-	   jobchange 2;
-	   set Zeny += 50,0;
-	mes "[Mage Guildsman]";
-	mes "'Welcome to My World~'";
-      mes "Quate from the Well-Known Movie. Heh heh,I just wanna try this~";
-	mes "Anyway, I congratulate you to join us. ~Let's be friends, Alright?~";
-	close;
-DONE4:
-	mes "..... Hmm. I can see how hard you tried. Although it is not perfect, but It will be fine.";
-	mes "Alright! You pass the Mage Test. I will promote you right away.";
-	next;
-	mes "[Mage Guildsman]";
-	mes "Ehem... Now you are one of us, the Mages.";
-	mes "I sincerely congratulate you.";
-	next;
-	   delitem 1087,1;
-	   set JobLevel = 1,0;
-	   jobchange 2;
-	   set Zeny += 50,0;
-	mes "[Mage Guildsman]";
-	mes "'Welcome to My World~'";
-      mes "Quate from the Well-Known Movie. Heh heh,I just wanna try this~";
-	mes "Anyway, I congratulate you to join us. ~Let's be friends, Alright?~";
-	close;
-REQ:
-	mes "[Mage Guildsman]";
-	mes "Wanna be a Mage?";
-	   check Gender == 0,REQ_F,REQ_M;
-REQ_F:
-	mes "Be my guest, Lady. I like a Babe like you~";
-	goto REQ_OK;
-REQ_M:
-	mes "Be my guest any time. I like a Hunk like you~";
-	goto REQ_OK;
-REQ_OK:
-	next;
-	mes "[Mage Guildsman]";
-	mes "First of all, you have to reach Novice Job Level 10 and fulfilled all the 'Basic Skills'.";
-	mes "Second, you have to pass the Mage Test.";
-	next;
-	   check Mage_Quest >= 1,QUEST_DONE,-;
-	mes "[Mage Guildsman]";
-	mes "You will get to know the particular Solution for you after signing up the Application Form.";
-	next;
-	mes "[Mage Guildsman]";
-	mes "Let me know when you are ready to become a Mage.";
-	close;
-ERR0:
-	mes "Hey.. Hey.. Haven't you recognised yet??? You are aleady a Mage.";
-	mes "Yeah Whatever.. One of thesedays you will realize the power inside of you when you can make Fire with Mana force.";
-	close;
-ERR1:
-	mes "Hey.. Hey.. Oh, C'mon. Let's quit playing a Game. You know you can't be a mage...you already have another Job.";
-	close;
-ERR2:
-	mes "... What a Bummer.. You didn't meet the requirements at all.";
-	mes "Go back and reach at Novice Job level 10 first. Don't forget you have to learn 'Basic Skills' before everything.";
-	close;
-EXIT:
-	mes "[Mage Guildsman]";
-	mes "Errr..? What's that...?";
-	close;
+	menu "I want to be a Mage.",-,"Tell me the Requirements.",REQ,"Not Pretty Much.",Cancel;
+		mes "[Mage Guildsman]";
+		check job == 4,Mage,-;
+		check job == 26,Mage,-;
+		check job == 24,Nov,-;
+		check job != 0,Other,-;
+		Nov:
+			check job_magician_q >= 1,QUEST_DONE,-;
+    				mes "Wanna be a Mage? Hmmm.....";
+    				next;
+				mes "[Mage Guildsman]";
+				check gender == 1,-,Girl;
+					mes "... Hey Look at you..I think you are kinda Cute? Not my taste though..";
+					goto Continue;
+				Girl:
+					mes "... Oh,what a Hot Babe you are~~ I like the Girl like you~";
+				Continue:
+					mes "Hmm..By the way You said that you wanna be a Mage?";
+   					mes "Then...Sign up the Mage Application First.";
+					next;
+					menu "Sign Up.",-,"Quit.",QUIT;
+						mes "[Mage Guildsman]";
+						mes "Yeah..Ok Sign on here....Oh~ You are very good at Spelling~ Cool.Aright.";
+						mes "Your name is... $charaname .";
+						next;
+						mes "[Mage Guildsman]";
+						mes "I will give you the test...";
+						random @RAND,100;
+						check @RAND <= 25,Q1,-;
+						check @RAND <= 50,Q2,-;
+						check @RAND <= 75,Q3,-;
+						check @RAND <= 100,Q4,Q4;
+						Q1:
+    							mes "Make the Mixed Solution No.1 and bring back to me.";
+    							set job_magician_q = 1;
+							goto Start;
+						Q2:
+    							mes "Make the Mixed Solution No.2 and bring back to me.";
+    							set job_magician_q = 2;
+							goto Start;
+						Q3:
+    							mes "Make the Mixed Solution No.3 and bring back to me.";
+    							set job_magician_q = 3;
+							goto Start;
+						Q4:
+    							mes "Make the Mixed Solution No.4 and bring back to me.";
+    							set job_magician_q = 4;
+    						Start:
+    							next;
+    							additem 1092,1;
+    							mes "[Mage Guildsman]";
+    							mes "You can refer Neccessary Datas to the Guide Book in this Guild. Figure out by yourself.";
+    							mes "Also you can use the machine in the Centre to Mix the Solution.";
+    							mes "Good Luck~";
+    							close;
+    					Quit:
+    						mes "[Mage Guildsman]";
+    						mes "Whatttt?!You told me that  you wanna be a Mage,How can you change your mind so Quickly!?";
+						close;
+    			QUEST_DONE:
+				mes "Yeah..? Ready...?";
+				check Joblevel != 10,-,Solutions;
+	    	   			mes "... What a Bummer.. You didn't meet the requirements at all.";
+	       				mes "Go back and reach at Novice Job level 10 first.Don't forget you have to learn Basic Skills before everything.";
+	       				close;
+				Solutions:
+			       		mes " $charaname 's test was..";
+			       		mes "Making the Mixed Solution No. $[job_magician_q] .";
+			       		mes "Okay,Let's get started to check?";
+					next;
+					mes "[Mage Guildsman]";
+					check job_magician_q == 1,S1,-;
+					check job_magician_q == 2,S2,-;
+					check job_magician_q == 3,S3,-;
+					check job_magician_q == 4,S4,-;
+						S1:
+							checkitem 1071,1,Success,WrongSolution;
+						S2:
+							checkitem 1085,1,Success,WrongSolution;
+						S3:
+							checkitem 1086,1,Success,WrongSolution;
+						S4:
+							checkitem 1087,1,Success,WrongSolution;
+
+							checkitem 1071,1,Success,WrongSolution;
+							delitem 1071,1;
+						S2:
+							checkitem 1085,1,Success,WrongSolution;
+						S3:
+							checkitem 1086,1,Success,WrongSolution;
+						S4:
+							checkitem 1087,1,Success,WrongSolution;
+						WrongSolution:
+		   	       				mes "....... Darn it. This is not exactly what I asked. What you have to do is.....";
+		            	       			mes "Making the Mixed Solution No. $[job_magician_q] and Bring back to me.";
+							set @pass = 1;
+							goto ITEMDELETION;
+						Success:
+					    	       	mes "..... Hmm.I can see how hard you tried. Although it is not perfect,but It will be fine.";
+							mes "Alright! You pass the Mage Test. I will transform you right away.";
+							set @pass = 2;
+						ITEMDELETION:
+							getitemamount 1071,@Sol1;
+							getitemamount 1085,@Sol2;
+							getitemamount 1086,@Sol3;
+							getitemamount 1087,@Sol4;
+							getitemamount 1090,@Sol5;
+							check @Sol1 > 0,-,Check2;
+								delitem 1071,@Sol1;
+							Check2:
+							check @Sol2 > 0,-,Check3;
+								delitem 1085,@Sol2;
+							Check3:
+							check @Sol3 > 0,-,Check4;
+								delitem 1086,@Sol3;
+							Check4:
+							check @Sol4 > 0,-,Check5;
+								delitem 1087,@Sol4;
+							Check5:
+							check @Sol5 > 0,-,Resume;
+								delitem 1090,@Sol5;
+							Resume:
+								check @pass = 1,-,Good;
+									mes "Try again.";
+									Else:
+									close;
+							Good:
+								check @pass = 2,-,Else;
+									next;
+									mes "Ehem...Now you are one of us,the Mages.";
+									mes "I sincerely congratulate you.";
+									next;
+									check job = 24,HIGH,-;
+										jobchange 2;
+										goto CONGRA;
+									HIGH:
+										jobchange 26;
+									CONGRA:
+									set Zeny += 50;
+									mes "[Mage Guildsman]";
+						      			mes "'Welcome to My World~'";
+						      			mes "Quate from the Well-Known Movie. Heh heh,I just wanna try this~";
+					   	  			mes "Anyway,I congratulate you to join us.~Let's be friends,Alright?~";
+					   				close;
+	REQ:
+		mes "[Mage Guildsman]";
+		mes "Wanna be a Mage?";
+    				check gender = 1,-,GIRLY;
+    					mes "Be my guest any time. I like a Hunk like you~";
+					goto Continue2;
+				GIRLY:
+					mes "Be my guest,Lady. I like a Babe like you~";
+				Continue2:
+					next;
+					mes "[Mage Guildsman]";
+					mes "First of all, you have to reach at Novice Level 9 with fulfilled Basic Skills.";
+					mes "Second, you have to pass the Mage Test.";
+					next;
+					check job_magician_q != 0,-,Info;
+						mes "[Mage Guildsman]";
+	        				mes "I will give you the test....";
+	        	       			mes "Make the Mixed Solution No. $[job_magician_q] and Bring back to me.";
+						mes "You can refer Neccessay Datas to the Guide Book in this Guild. Figure out by yourself.";
+						next;
+						mes "[Mage Guildsman]";
+						mes "Let me know when you are ready to become a Mage.";
+						close;
+					Info:
+						mes "[Mage Guildsman]";
+	        				mes "You will get to know the Particular Solution for you after Signing up the Application Form first.";
+						next;
+						mes "[Mage Guildsman]";
+						mes "Let me know when you are ready to become a Mage.";
+						close;
+	Cancel:
+		mes "[Mage Guildsman]";
+		mes "Errr..? What's that...?";
+		close;
+	MissingSolution:
+		mes "Where's the Solution I asked...? I can't check it out if you don't show me,can I?";
+		close;
+	Mage:
+		mes "Hey..Hey..Haven't you recognised yet??? You are aleady a Mage.";
+		mes "Yeah Whatever..One of thesedays you will realise the Power inside of you when you can make a Fire with Psychic Force.";
+		close;
+	Other:
+		mes "Hey..Hey..Oh,C'mon.Let's Quit playing a Game.You know you can't be a Mage because you have another Job.";
+		close;
 }
 
-geffen_in.gat,164,112,1	script "Mixing Machine" 111,{
-	   check Mage_Mixed == 1,BREAK1,-;
+//From Aegis, Converted by Tsusai
+geffen_in.gat,164,112,4	script	"Mixing Machine"	111,{
+	set @solution = 0;
+	set @t_jello = 0;
+	set @t_fluff = 0;
+	set @t_milk = 0;
 	mes "[Mixing Machine]";
-	   checkitem 1071,1,INVALID,-;
-	   checkitem 1085,1,INVALID,-;
-	   checkitem 1086,1,INVALID,-;
-	   checkitem 1087,1,INVALID,-;
-	   checkitem 1090,1,INVALID,-;
-	mes "What solution would you like to make?";
-	   set @Num = 0;
+	mes "This is the Unique Machine only for Mixing Solution of Magic.";
+	mes "And is the property of the Geffen Mage Guild.";
 	next;
-	menu "Solution 1",SOL1,"Solution 2",SOL2,"Solution 3",SOL3,"Solution 4",SOL4;
-SOL1:
-	   checkitem 909,2,-,NO_JEL;
-	   checkitem 914,3,-,NO_FLUFF;
-	   checkitem 519,1,-,NO_MILK;
-	   checkitem 1089,1,-,NO_SOLV;
-	   checkitem 1092,1,-,NO_TEST;
-	   input @Num;
-	   check @Num == 8472,INPUT1,-;
-	   check @Num < 8472,FAIL1,-;
-	   check @Num > 8472,FAIL1,EXIT;
-SOL2:
-	   checkitem 909,3,-,NO_JEL;
-	   checkitem 914,1,-,NO_FLUFF;
-	   checkitem 519,1,-,NO_MILK;
-	   checkitem 1092,1,-,NO_TEST;
-	   input @Num;
-	   check @Num == 3735,INPUT2,-;
-	   check @Num < 3735,FAIL2,-;
-	   check @Num > 3735,FAIL2,EXIT;
-SOL3:
-	   checkitem 909,6,-,NO_JEL;
-	   checkitem 914,1,-,NO_FLUFF;
-	   checkitem 1089,1,-,NO_SOLV;
-	   checkitem 1092,1,-,NO_TEST;
-	   input @Num;
-	   check @Num == 2750,INPUT3,-;
-	   check @Num < 2750,FAIL3,-;
-	   check @Num > 2750,FAIL3,EXIT;
-SOL4:
-	   checkitem 909,2,-,NO_JEL;
-	   checkitem 914,3,-,NO_FLUFF;
-	   checkitem 1088,1,-,NO_SOLV;
-	   checkitem 1092,1,-,NO_TEST;
-	   input @Num;
-	   check @Num == 5429,INPUT4,-;
-	   check @Num < 5429,FAIL4,-;
-	   check @Num > 5429,FAIL4,EXIT;
-INPUT1:
-	mes "Select the Catalyst for your Solution";
-	next;
-	menu "Red Gemstone",FAIL1,"Blue Gemstone",FAIL1,"Yellow Gemstone",-,"Diamond",FAIL1;
-	   delitem 909,2;
-	   delitem 914,3;
-	   delitem 519,1;
-	   delitem 1089,1;
-	   additem 1071,1;
-	   set Mage_Mixed = 1;
-	mes "Mixing complete.";
-	close;
-INPUT2:
-	mes "Select the Catalyst for your Solution";
-	next;
-	menu "Red Gemstone",-,"Blue Gemstone",FAIL2,"Yellow Gemstone",FAIL2,"Diamond",FAIL2;
-	   delitem 909,3;
-	   delitem 914,1;
-	   delitem 519,1;
-	   additem 1085,1;
-	   set Mage_Mixed = 1;
-	mes "Mixing complete.";
-	close;
-INPUT3:
-	mes "Select the Catalyst for your Solution";
-	next;
-	menu "Red Gemstone",FAIL3,"Blue Gemstone",-,"Yellow Gemstone",FAIL3,"Diamond",FAIL3;
-	   delitem 909,6;
-	   delitem 914,1;
-	   delitem 1089,1;
-	   additem 1086,1;
-	   set Mage_Mixed = 1;
-	mes "Mixing complete.";
-	close;
-INPUT4:
-	mes "Select the Catalyst for your Solution";
-	next;
-	menu "Red Gemstone",FAIL4,"Blue Gemstone",FAIL4,"Yellow Gemstone",FAIL4,"Diamond",-;
-	   delitem 909,2;
-	   delitem 914,3;
-	   delitem 1088,1;
-	   additem 1087,1;
-	   set Mage_Mixed = 1;
-	mes "Mixing complete.";
-	close;
-FAIL1:
-	   delitem 909,2;
-	   delitem 914,3;
-	   delitem 519,1;
-	   delitem 1089,1;
-	   additem 1090,1;
-	   set Mage_Mixed = 1;
-	mes "Mixing complete.";
-	close;
-FAIL2:
-	   delitem 909,3;
-	   delitem 914,1;
-	   delitem 519,1;
-	   additem 1090,1;
-	   set Mage_Mixed = 1;
-	mes "Mixing complete.";
-	close;
-FAIL3:
-	   delitem 909,6;
-	   delitem 914,1;
-	   delitem 1089,1;
-	   additem 1090,1;
-	   set Mage_Mixed = 1;
-	mes "Mixing complete.";
-	close;
-FAIL4:
-	   delitem 909,2;
-	   delitem 914,3;
-	   delitem 1088,1;
-	   additem 1090,1;
-	   set Mage_Mixed = 1;
-	mes "Mixing complete.";
-	close;
-NO_TEST:
-	mes "You don't have an empty testtube.";
-	close;	
-NO_JEL:	
-	mes "Not enought jellopy's.";
-	close;
-NO_FLUFF:
-	mes "Not enought Fluff.";
-	close;
-NO_MILK:
-	mes "Not enought Milk.";
-	close;
-NO_SOLV:
-	mes "Not enought solvent.";
-	close;
-INVALID:
-	mes "Please dispose of any mixed solutions in your inventory before initiating mixing process to prevent risk of wrong mixture.";
-	close;
-BREAK1:
-	mes "[Mixing Machine]";
-	mes "Your mixing work already in my database (said machine).;"
-	mes "Go, and show your fusion to Mage Guildsman!;"
-	close;
-EXIT:
-	close;
+	menu "Use Machine.",-,"Cancel.",PFB;
+		mes "[Mixing Machine]";		
+		mes "Choose the Solution you want to Mix.";
+   		next;
+		menu "Payon Solution.",-,"Morroc Solution.",MocSol,"Skip the Menu.",MachineStart;
+			checkitem 1089,1,HavePS,-;
+				NOSOL_1:
+					mes "[Mixing Machine]";
+					mes "Cannot Find the Item. Please Check again.";
+					mes "Finish the Process. Thank you.";
+					close;
+    		     	HavePS:
+				set @solution = 1;
+    		     		goto MachineStart;
+		MocSol:
+			checkitem 1088,1,-,NOSOL_1;
+				set @solution = 2;
+		MachineStart:
+				mes "[Mixing Machine]";
+				mes "Jellopy: $[@t_jello] ea.";
+				mes "Fluff: $[@t_fluff] ea.";
+				mes "Milk: $[@t_milk] ea.";
+				check @solution = 1,PS2,-;
+				check @solution = 2,MS2,-;
+					mes "Solvent Solution : Not Appliable.";
+					goto AddItems;
+				PS2:
+					mes "Solvent Solution : Payon Solution.";
+					goto AddItems;
+				MS2:
+					mes "Solvent Solution : Morroc Solution.";
+				AddItems:
+					next;
+					mes "[Mixing Machine]";
+					mes "Select Items to Mix.";
+					next;
+					menu "Jellopy.",-,"Fluff.",MF,"Milk.",MM,"Finish.",Initiate;
+						input @j_in;
+						check @j_in > 10000,Over10k,-;						
+						set @t_jello + @j_in;
+						goto MachineStart;
+					MF:
+						input @f_in;
+						check @f_in > 10000,Over10k,-;
+						set @t_fluff + @f_in;
+						goto MachineStart;
+					MM:
+						input @m_in;
+						check @m_in > 10000,Over10k,-;
+						set @t_milk + @m_in;
+						goto MachineStart;
+					Over10k:
+                         			        mes "[Mixing Machine]";
+                          			        mes "Over the Limit . Please Adjust as 10000 ea and Less again.";
+                          			        goto MachineStart;
+				Initiate:
+		        		mes "";
+           				mes "Do you initiate into Mixing items? or Continue to Check items?";
+					next;
+					menu "Initiate.",-,"Check items.",MachineStart,"Reset.",Reset;
+						mes "[Mixing Machine]";
+						mes "Please put items into the Drum.";
+						mes "Make sure you cannot adjust or restore items back after once put into the Drum.";
+						mes "Please Consider once again and when you are ready,Press 'Mix' button or 'Finish' button.";
+						next;
+						menu "Press 'Mix' Button.",-,"Press 'Finish' Button.",PFB;
+							mes "[Mixing Machine]";
+							mes "Put Items into the Drum now.";
+							mes "Please wait.";
+							next;
+							checkitem 909,@t_jello,Resume1,-;
+								mes "[Mixing Machine]";
+								mes "Not Enough of Jellopy. Please Check again.";
+								mes "Finish the Mixing Process.Thank you..";
+								close;
+							Resume1:
+								checkitem 914,@t_fluff,Resume2,-;
+									mes "[Mixing Machine]";
+									mes "Not Enough of Fluff. Please Check again.";
+									mes "Finish the Mixing Process.Thank you..";
+									close;
+							Resume2:
+								checkitem 519,@t_milk,Resume3,-;
+									mes "[Mixing Machine]";
+									mes "Not Enough of Milk. Please Check again.";
+									mes "Finish the Mixing Progress.Thank you..";
+									close;
+							Resume3:
+								check @solution > 0,-,SerialIn;
+									check @solution = 1,-,sol2chk;
+										checkitem 1089,1,SerialIn,NoSol4Mix;
+									sol2chk:
+										checkitem 1088,1,SerialIn,-;
+									NoSol4Mix:
+										mes "[Mixing Machine]";
+										mes "Cannot find the Solution. Please Check again.";
+	                                                                        mes "Finish the Mixing Progress.Thank you..";
+    			    			PFB:
+							close;
+           				RESET:
+						set @t_jello = 0;
+						set @t_fluff = 0;
+						set @t_milk = 0;
+						mes "[Mixing Machine]";
+						mes "Reset Competed. Initiate again?";
+       			    			next;
+       			    			menu "Yes.",MachineStart,"No.",-;
+							mes "[Mixing Machine]";
+       							mes "Finish the Process.Thank you.";
+							close;
+			SerialIn:
+				mes "[Mixing Machine]";
+				mes "Please note the serial numbers of Magic Powder.";
+				next;
+				input @serial;
+       			        mes "[Mixing Machine]";
+				check @serial <= 0,SkipSerial,-;
+				check @serial < 1000,Invalid,-;
+				check @serial > 9000,Invalid,SerialConfirmation;
+				SkipSerial:
+					mes "Do you want to skip this Menu?";
+	              			next;
+					menu "Yes.",Stone,"No.",-;
+					goto SerialIn;
+				Invalid:
+    	          			mes "Invalid Serial Numbers.Please Note again.";
+        	      			next;
+					goto SerialIn;
+				SerialConfirmation:
+              			        mes "[Mixing Machine]";
+					mes "The Serial Numbers is #^000000$[@serial]^000000. Positive?";
+					next;
+              			        menu "Positive.",-,"Negative.",SerialIn;
+			Stone:
+				mes "[Mixing Machine]";
+				mes "For the Last, Choose a Catalyst Stone.";
+				next;
+				menu "Yellow Gemstone.",Stone1,"Red Gemstone.",Stone2,"Blue Gemstone.",Stone3,"1carat Diamond.",Stone4,"Skip.",AllGood;
+				Stone1:
+					set @stone = 1;
+					goto AllGood;
+				Stone2:
+					set @stone = 2;
+					goto AllGood;
+				Stone3:
+					set @stone = 3;
+					goto AllGood;
+				Stone4:
+					set @stone = 4;
+			AllGood:
+				mes "[Mixing Machine]";
+				mes "All Set. Initiate the Mixing process.";
+				mes "Please Wait.";
+				next;
+				mes "[Mixing Machine]";
+				mes "- Proverb of the Day -";
+				random @proverb,125;
+				check @proverb <= 25,Pro1,-;
+				check @proverb <= 50,Pro2,-;
+				check @proverb <= 75,Pro3,-;
+				check @proverb <= 100,Pro4,-;
+					mes "'Deliberately Deny the Truth of What was said.'";
+					mes "It means 'When you lie too much to others, they won't Trust  you forever'.";
+					goto MIXMIX;
+				Pro1:
+					mes "'Claw me, and I'll claw thee.'";
+					mes "It means 'You must respect others if you want to be held in respect.'.";
+					goto MIXMIX;
+				Pro2:
+					mes "'In Trust is Treason.'";
+					mes "It means the One who you believe in could harm you'.";
+					goto MIXMIX;
+				Pro3:
+					mes "'Encounter an Enemy on a Log Bridge.'";
+					mes "It means 'When you Harm Another you will be Harmed by him soon under the Unavoidable Situation'.";
+					goto MIXMIX;
+				Pro4:
+					mes "'A good Neighbor is better than a Brother far off..'";
+					mes "It means ' When you're in Danger,You could get helped by a close neighbor rather than your Family at a Distance'.";
+			MIXMIX:
+				next;
+				check @solution = 0,-,HaveSolutions;
+				//Solution 2 (no solution needed)
+					check @t_jello = 3,-,Error;
+					check @t_fluff = 1,-,Error;
+					check @t_milk = 1,-,Error;
+					check @serial = 3735,-,Error;
+					check @stone = 2,-,Error;
+						delitem 909,@t_jello;
+						delitem 914,@t_fluff;
+						delitem 519,@t_milk;
+	    					mes "Mage Test Solution No.2.";
+    						additem 1085,1;
+						goto Finish;
+				HaveSolutions:
+				//Solution 4 (Morroc)
+				check @solution = 2,-,PayonSolutions;
+					check @t_jello = 2,-,Error;
+					check @t_fluff = 3,-,Error;
+					check @t_milk = 0,-,Error;
+					check @serial = 5429,-,Error;
+					check @stone = 4,-,Error;
+						delitem 909,@t_jello;
+						delitem 914,@t_fluff;
+						delitem 1088,1;
+	    					mes "Mage Test Solution No.4.";
+	    					additem 1087,1;
+						goto Finish;
+				PayonSolutions:
+				check @solution = 1,-,Error;
+					//Jellopy count is used to determine which solution used
+					check @t_jello = 2,-,PayonSol2;
+					//Solution 1
+					check @t_fluff = 3,-,Error;
+					check @t_milk = 1,-,Error;
+					check @serial = 8472,-,Error;
+					check @stone = 1,-,Error;
+						delitem 909,@t_jello;
+						delitem 914,@t_fluff;
+						delitem 519,@t_milk;
+						delitem 1089,1;
+	    					mes "Mage Test Solution No.1.";
+	    					additem 1071,1;
+						goto Finish;
+				PayonSol2:
+				//Solution 3
+					check @t_jello = 6,-,Error;
+					check @t_fluff = 1,-,Error;
+					check @t_milk = 0,-,Error;
+					check @serial = 2750,-,Error;
+					check @stone = 3,-,Error;
+						delitem 909,@t_jello;
+						delitem 914,@t_fluff;
+						delitem 1089,1;
+	    					mes "Mage Test Solution No.3.";
+	    					additem 1086,1;
+						goto Finish;
+				Error:
+    					mes "Unexpected Error Occurred.";
+    					additem 1071,1;
+			Finish:
+				next;
+				mes "[Mixing Machine]";
+				mes "Mixing Completed.";
+   				mes "Finish the Progress. Thank you.";
+				close;
 }
 
 moc_ruins.gat,101,125,5	script "Ponka Hontas" 93,{

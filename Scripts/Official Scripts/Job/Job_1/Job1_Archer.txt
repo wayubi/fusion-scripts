@@ -14,11 +14,14 @@
 
 payon_in02.gat,64,71,4	script	"Archer Guildsman"	85,{
 	mes "[Archer Guildsman]";
-	mes "Good Day.How may I help you?";
+	mes "Good Day. How may I help you?";
 	next;
 	menu "I want to be an Archer.",-,"Need the Requirements Tip.",REQ,"No thanks.",EXIT;
 		check Job == 3,ERR0,-;
+		check Job == 27,ERR0,-;
+		check Job == 24,NOV,-;
 		check Job == 0,-,ERR1;
+	NOV:
 		check Archer_Quest >= 1,QUEST_GIVEN,GIVE_QUEST;
 		GIVE_QUEST:
 			mes "[Archer Guildsman]";
@@ -133,7 +136,11 @@ payon_in02.gat,64,71,4	script	"Archer Guildsman"	85,{
 			mes "Finally You achieved the Goal. I will promote you right away.";
 			next;
 			set JobLevel = 1,0;
-			jobchange 3;
+			check job = 24,HIGH,-;
+				jobchange 3;
+				goto CONGRA;
+			HIGH:
+				jobchange 27;
 			mes "[Archer Guildsman]";
 			mes "Congratulations! We expect you to cooperate with us for the future of Archer Guild.";
 			mes "Ah,Your bow has arrived from Bow Making Department. Please take it.";

@@ -42,7 +42,10 @@ izlude_in.gat,74,172,5 script "Sword Master" 119,{
 	next;
 	menu "Job Change",-,"About Swordman.",ABOUT,"About the Job requirements.",REQ,"Cancel.",END;
 	   check Job == 1,ERR0,-;
-	   check Job == 0,-,ERR1;
+	   check Job == 25,ERR0,-;
+	   check Job == 0,START,-;
+	   check Job == 24,-,ERR1;
+START:
 	   check Sword_Quest == 0,GIVE_QUEST,CHECK;
 GIVE_QUEST:
 	mes "[Sword Master]";
@@ -80,7 +83,12 @@ CHECK:
 	mes "I will promote you right away!!";
 	next;
 	   set JobLevel = 1,0;
-	   jobchange 1;
+		check job = 24,HIGH,-;
+	    jobchange 1;
+	    goto CONGRA;
+	   HIGH:
+	    jobchange 25;
+	CONGRA:
 	mes "[Sword Master]";
 	mes "Once again, I congratulate you $charaname , in the meantime - I expect you will be on the go and promote the Swordman Assosiation.";
 	close;
@@ -112,8 +120,10 @@ ABOUT:
 REQ:
 	mes "[Sword Master]";
 	mes "Do you wish to be a swordsman!?";
-	   check Job == 0,-,NONOV;
+	   check Job == 0,WANNABE,-;
+	   check Job == 24,-,NOTNOV;
 	next;
+       WANNABE:
 	mes "[Sword Master]";
 	mes "First, You must learn Basic Skill until Level 9. If you can't qualify this condition,you won't be able to become anything.";
 	next;
@@ -123,8 +133,9 @@ REQ:
 	mes "[Sword Master]";
 	mes "You will be fully qualified with these 2 conditions,you can be a swordman anytime you want.";
 	close;
-NONOV:
+NOTNOV:
 	   check Job == 1,SWORDMAN,-;
+	   check Job == 25,SWORDMAN,-;
 	mes "But, You have another job...? You're a tad too late for a swordsman.";
 	mes "...Still do you want to know about the Swordman...? Yeah.. Alright...";
       close;
@@ -156,7 +167,10 @@ EXIT:
 izlude_in.gat,62,170,6 script "Swordman" 85,{
 	mes "[Swordman]";
 	   check Job == 1,ERR0,-;
-	   check Job == 0,-,ERR1;
+	   check Job == 25,ERR0,-;
+	   check Job == 0,NOV,-;
+	   check Job == 24,-,ERR1;
+	  NOV:
 	   check JobLevel == 10,-,ERR2;
 	   check SkillPoint == 0,-,ERR2;
 	   check Sword_Quest == 4,DONE,-;

@@ -40,8 +40,11 @@ lm:
 	next;
 	menu "I want to be a Merchant.",M0,"Show me the way of Merchant.",M1,"Give me the Requirements.",M2,"Nope, Sir.",MEnd;
 M0:
+	check Job == 29,JobMer,-;
 	check Job == 5,JobMer,-;
+	check Job == 24,NOV,-;
 	check Job == 0,-,JNMaJNN;
+       NOV:
 	mes "[Chief Mahnsoo]";
 	mes "Do you want to be a Merchant? Well...";
 	next;
@@ -281,7 +284,12 @@ JobMerQua:
 	check SkillPoint = 0,-,moresk;
 	mes "[Chief Mahnsoo]";
 	mes "Congratulations!";
-	JobChange 5;
+	check job = 24,HIGH,-;
+		JobChange 5;
+		goto CONGRA;
+	HIGH:
+		jobchange 29;
+    CONGRA:
 	mes "I am so Pleased that you join the Merchant Guild and I hope you will play an Active Part in Rune Midgard Economy.";
 	check message == 2,JobMerQ2E7o8,-;
 	check message == 0,JobMerQua1,-;
@@ -386,6 +394,7 @@ alberta_in.gat,28,29,2	script	"Merchant Guildsman"	83,{
 	menu "I came here for the Merchant Test.",M0,"I came here for a Part Time job.",M1,"Nope,Nothing.",MEnd;
 M0:
 	mes "[Union Staff Kay]";
+	check Job == 29,JobMer,-;
 	check Job == 5,JobMer,-;
 	check job_merchant_q==10,JobMerQE10oE9oE2,-;
 	check job_merchant_q==9,JobMerQE10oE9oE2,-;
