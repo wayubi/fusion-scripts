@@ -1,6 +1,7 @@
 --------------------------------------------------------------------------------
  Fusion 1.213 - August 29th, 2004
 --------------------------------------------------------------------------------
+- 09-18-04: Town\kafra\Umbala_Kafra.txt - Fixed menu. [Muad_Dib]
 - 09-18-04: Town\Town_Gonryun.txt - Renamed to the iro name. [Muad_Dib]
 - 09-18-04: Town\Town_Guide.txt - Added japanese Niflheim guide. [Muad_Dib]
 - 09-18-04: Town\Town_Amatsu.txt - Removed Guide. [Muad_Dib]
