@@ -1,7 +1,7 @@
 ====================================================================================================
  »» The Fusion Project ««
  Copyright (c) 2004, Cobax Information Systems
- http://fusion.cobax.net/
+ http:\\fusion.cobax.net\
 ----------------------------------------------------------------------------------------------------
  Scripts Change Logs
 ====================================================================================================
@@ -9,6 +9,13 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.004
 ----------------------------------------------------------------------------------------------------
+- Job\Job2_Alchemist.txt - moved from new to old folder. [Muad_Dib]
+- Job\Job2_Dancer - Bard.txt - moved from new to old folder. [Muad_Dib]
+- Job\Job2_Monk.txt - moved from new to old folder. [Muad_Dib]
+- Job\Job2_Rogue.txt - moved from new to old folder. [Muad_Dib]
+- Job\Job2_Sage.txt - moved from new to old folder. [Muad_Dib]
+- Job\Job_Super_Novice.txt - moved from new to old folder. [Muad_Dib]
+- Shop\niflheim.txt - moved from new to old folder. [Muad_Dib]
 - shop\comodo.txt - Splitted tur_dun into a seperate file. [Muad_Dib]
 - shop\tur_dun.txt - Added tur_dun shop. [Muad_Dib]
 - Town\Town_Payon.txt - Cleaned up, added "" to npc names. [Tsusai]
@@ -36,10 +43,10 @@
 - shop\comodo.txt - Added extra shop. [Muad_Dib]
 - Mob\dungeon\lou_dun.txt - Edited the spawns on a few new kro screens. [Muad_Dib]
 - Mob\field\lou_fild.txt - Edited the spawns on a few new kro screens. [Muad_Dib]
-- Job\ - Edited/corrected assassin, knight, Priest and Hunter scripts. [Muad_Dib]
-- Mob\ - Edited/corrected some spawns. [Muad_Dib]
+- Job\ - Edited\corrected assassin, knight, Priest and Hunter scripts. [Muad_Dib]
+- Mob\ - Edited\corrected some spawns. [Muad_Dib]
 - Town\Town_Gonryun.txt - Reorganised Town Lutie. [Muad_Dib]
-- Mob\ - Edited/corrected some spawns. [Muad_Dib]
+- Mob\ - Edited\corrected some spawns. [Muad_Dib]
 - Mob\dungeon\pay_dun.txt - Redid the payon Dungeon Spawns. [Muad_Dib]
 - Town\Town_Gonryun.txt - Corrected warp destination error back to Alberta. [Tsusai]
 - shop\umbala.txt - Fixed weapons dealer price. [Muad_Dib]
@@ -56,7 +63,7 @@
 - Job\Job2_Knight_quest5.txt - Fixed bad NPC IDs for hidden script loaders. [Tsusai]
 - Quest\quest_arena_test.txt - Fixed bad NPC IDs for hidden script loaders. [Tsusai]
 - GvG\npc_guardiankafra.txt - Fixed bad NPC IDs for hidden script loaders. [Tsusai]
-- Event\Event_Rental.txt - Redid entire script w/ official text and form. [Tsusai]
+- Event\Event_Rental.txt - Redid entire script w\ official text and form. [Tsusai]
 - Mob\other\pvp_n.txt - Removed, map no longer exists. [Tsusai]
 - Event\Event_Rental.txt - Modified the Grand Peco Rental NPC. [Tsusai]
 - Town\Town_Amatsu.txt - Changed one part of the text. [Muad_Dib]
@@ -455,12 +462,12 @@ Thanks, and good luck.
 Relevant Links
 
 - The Fusion Project
-- http://fusion.cobax.net
+- http:\\fusion.cobax.net
 
 - The Weiss BBS
-- http://eweiss.sourceforge.net/garbage/
+- http:\\eweiss.sourceforge.net\garbage\
 
 - The DarkWeiss Forums
-- http://dweiss.sigh.org/forum/
+- http:\\dweiss.sigh.org\forum\
 
 - IRC: irc.z4znet.com - #fusion
