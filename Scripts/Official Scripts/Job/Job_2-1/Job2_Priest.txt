@@ -1,5 +1,74 @@
-//= Translated By: Pgro Team (OwNaGe)(Aegis)
-//= Converted by: kobra_k88 to eAthena
+//========================================================================================
+// »» The Fusion Project ««
+// Copyright (c) 2004, Cobax Information Systems
+// http://fusion.cobax.net/
+// ---------------------------------------------------------------------------------------
+//
+// Priest Jobchange - Non Player Character Locations
+//   Translated By: Pgro Team (OwNaGe)(Aegis)
+//   Converted by kobra_k88 for eAthena
+//   Converted by Tsusai for Fusion
+//
+// - Father Thomas -> prt_church: 16,41
+//
+//
+// - Father Peter -> job_prist: 24,186
+//   Entry, info, and starts the mob test
+//
+// - Test1 -> job_prist: 1,1
+//   Regulates Room 1: Destroy all Zombies
+//
+// - zombiecounter -> job_prist: 1,1
+//   Makes sure all zombies are killed before activating the warp out
+//
+// - Zombie(1-5) -> job_prist:
+//   Summons X Zombies for a total of 13
+//	23,52 : 3
+//	23,62 : 2
+//	23,72 : 3
+//	23,82 : 2
+//	23,92 : 3
+//
+// - Warp1 -> job_prist: 24,109
+//   Warps only acolytes by touch and will warp all in the room to the next automatically
+//
+// - Test2 -> job_prist: 1,1
+//   Regulates Room 2: Resist Temptation
+//
+// - Deviruchi -> job_prist: 168,45
+//   Tempts player w/ promise of it's card
+//
+// - Doppelganger -> job_prist: 168,80
+//   Tempts player to change into a powerful swordsman like himself
+//
+// - Dark Lord -> job_prist: 168,115
+//   Tempts player to quit in fear
+//
+// - Baphomet -> job_prist: 168,150
+//   Tempts player w/ promise ofriches and power
+//
+// - Warp2 -> job_prist: 168,180
+//   Warps only acolytes by touch and will warp all in the room to the next automatically
+//
+// - Test3 -> job_prist: 1,1
+//   Regulates Room 3: Race to the end
+//
+// - Mummy(1-1) -> job_prist:
+//   Summons 3 Mummies each for a total of 6
+//	97,50
+//	97,65
+//	97,80
+//
+// - Warp3 -> job_prist: 98,105
+//   Warps only acolytes by touch and will warp all in the room out to the church.
+//
+// - GrandTimer -> job_prist: 1,1
+//   Countdown timer
+//
+// - Sister Cecile -> prt_church: 27,24
+//   Final Vows
+//
+//========================================================================================
 
 
 prt_church.gat,16,41,4	script	"Father Thomas"	60,{
@@ -806,7 +875,7 @@ job_prist.gat,168,180,0	script	"Warp2"	45,3,3,{
 		return;
 }
 
-job_prist.gat,0,0,0	script	"Test3"	-1,{
+job_prist.gat,1,1,1	script	"Test3"	-1,{
 	return;
 OnInit:
 	check \@PROOM = 3,Start,-;
