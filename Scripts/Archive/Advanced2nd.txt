@@ -87,7 +87,7 @@
 
 //Valkyrie NPCs
 //Right side going from south to north
-valkyrie.gat,53,32,3	script	"Kafra"	117,{
+//valkyrie.gat,53,32,3	script	"Kafra"	117,{
 	set @Kafra_COUPON = 0;
 	cutin "Kafra_01",2;
 	mes "[Kafra Personnel]";
@@ -137,7 +137,7 @@ valkyrie.gat,53,32,3	script	"Kafra"	117,{
 		close;
 }
 
-valkyrie.gat,53,38,3	script	"Paladin"	752,{
+//valkyrie.gat,53,38,3	script	"Paladin"	752,{
 //Crusader->HighSword->Paladin
 	check job = 14,Rebirth,-;
 	check job = 25,Transform,-;
@@ -235,7 +235,7 @@ valkyrie.gat,53,38,3	script	"Paladin"	752,{
 		close;
 }
 
-valkyrie.gat,53,42,3	script	"Creator"	52,{
+//valkyrie.gat,53,42,3	script	"Creator"	52,{
 //Alchemist->Merchant High->Creator
 	check job = 18,Rebirth,-;
 	check job = 29,Transform,-;
@@ -333,7 +333,7 @@ valkyrie.gat,53,42,3	script	"Creator"	52,{
 		close;
 }
 
-valkyrie.gat,53,46,3	script	"Professor"	743,{
+//valkyrie.gat,53,46,3	script	"Professor"	743,{
 //Sage->Acolyte High->Professor
 	check job = 16,Rebirth,-;
 	check job = 28,Transform,-;
@@ -431,7 +431,7 @@ valkyrie.gat,53,46,3	script	"Professor"	743,{
 		close;
 }
 
-valkyrie.gat,53,50,3	script	"Clown"	122,{
+//valkyrie.gat,53,50,3	script	"Clown"	122,{
 //Bard->High Archer->Clown
 	check job = 19,Rebirth,-;
 	check job = 27,Transform,-;
@@ -529,7 +529,7 @@ valkyrie.gat,53,50,3	script	"Clown"	122,{
 		close;
 }
 
-valkyrie.gat,53,54,3	script	"Gypsy"	741,{
+//valkyrie.gat,53,54,3	script	"Gypsy"	741,{
 //Dancer->High Archer->Gypsy
 	check job = 20,Rebirth,-;
 	check job = 27,Transform,-;
@@ -627,7 +627,7 @@ valkyrie.gat,53,54,3	script	"Gypsy"	741,{
 		close;
 }
 
-valkyrie.gat,53,56,3	script	"Champion"	101,{
+//valkyrie.gat,53,56,3	script	"Champion"	101,{
 //Monk->Acolyte High->Champion
 	check job = 15,Rebirth,-;
 	check job = 28,Transform,-;
@@ -725,7 +725,7 @@ valkyrie.gat,53,56,3	script	"Champion"	101,{
 		close;
 }
 
-valkyrie.gat,53,58,3	script	"Stalker"	747,{
+//valkyrie.gat,53,58,3	script	"Stalker"	747,{
 //Rogue->Theif High->Stalker
 	check job = 17,Rebirth,-;
 	check job = 30,Transform,-;
@@ -824,7 +824,7 @@ valkyrie.gat,53,58,3	script	"Stalker"	747,{
 }
 
 //Left side going from south to north
-valkyrie.gat,44,32,5	script	"Transporter"	124,{
+//valkyrie.gat,44,32,5	script	"Transporter"	124,{
 	mes "Ready to go back?";
 	next;
 	menu "Yes",-,"No",No;
@@ -834,7 +834,7 @@ valkyrie.gat,44,32,5	script	"Transporter"	124,{
 		close;
 }
 
-valkyrie.gat,44,38,5	script	"Lord Knight"	56,{
+//valkyrie.gat,44,38,5	script	"Lord Knight"	56,{
 //Knight->HighSword->Lord Knight
 	check job = 7,Rebirth,-;
 	check job = 25,Transform,-;
@@ -932,7 +932,7 @@ valkyrie.gat,44,38,5	script	"Lord Knight"	56,{
 		close;
 }
 
-valkyrie.gat,44,42,5	script	"High Priest"	60,{
+//valkyrie.gat,44,42,5	script	"High Priest"	60,{
 //Priest->Acolyte High->High Priest
 	check job = 8,Rebirth,-;
 	check job = 28,Transform,-;
@@ -1030,7 +1030,7 @@ valkyrie.gat,44,42,5	script	"High Priest"	60,{
 		close;
 }
 
-valkyrie.gat,44,46,5	script	"High Wizard"	735,{
+//valkyrie.gat,44,46,5	script	"High Wizard"	735,{
 //Wizard->Magician High->High Wizard
 	check job = 9,Rebirth,-;
 	check job = 26,Transform,-;
@@ -1128,7 +1128,7 @@ valkyrie.gat,44,46,5	script	"High Wizard"	735,{
 		close;
 }
 
-valkyrie.gat,44,50,5	script	"Whitesmith"	731,{
+//valkyrie.gat,44,50,5	script	"Whitesmith"	731,{
 //Blacksmith->Merchant High->Whitesmith
 	check job = 10,Rebirth,-;
 	check job = 29,Transform,-;
@@ -1226,7 +1226,7 @@ valkyrie.gat,44,50,5	script	"Whitesmith"	731,{
 		close;
 }
 
-valkyrie.gat,44,55,5	script	"Sniper"	727,{
+//valkyrie.gat,44,55,5	script	"Sniper"	727,{
 //Hunter->Archer High->Sniper
 	check job = 11,Rebirth,-;
 	check job = 27,Transform,-;
@@ -1324,7 +1324,7 @@ valkyrie.gat,44,55,5	script	"Sniper"	727,{
 		close;
 }
 
-valkyrie.gat,44,58,5	script	"Assassin Cross"	725,{
+//valkyrie.gat,44,58,5	script	"Assassin Cross"	725,{
 //Assassin->Theif High->Assassin Cross
 	check job = 12,Rebirth,-;
 	check job = 30,Transform,-;
@@ -1423,7 +1423,7 @@ valkyrie.gat,44,58,5	script	"Assassin Cross"	725,{
 }
 
 //The road to Valhalla
-nif_in.gat,147,31,0	script	"Dusty Scroll"	111,{
+//nif_in.gat,147,31,0	script	"Dusty Scroll"	111,{
 	mes "*You see a scroll*";
 	next;
 	check ymirscroll >= 1,-,Ymir;
@@ -1466,7 +1466,7 @@ nif_in.gat,147,31,0	script	"Dusty Scroll"	111,{
 		close;
 }
 
-nif_in.gat,70,33,6	script	"?"	124,{
+//nif_in.gat,70,33,6	script	"?"	124,{
 	check Road = 1,Ready,-;
 		check ymirscroll = 1,-,NoPower;
 			mes "[?]";
@@ -1519,7 +1519,7 @@ nif_in.gat,70,33,6	script	"?"	124,{
 
 //Easy way NPC
 //Only works with the Valhalla changes (i.e. you don't want to go find a scroll, etc.)
-prontera.gat,159,187,4	script	"Advanced Class Info"	124,{
+//prontera.gat,159,187,4	script	"Advanced Class Info"	124,{
 	check Job < 7,TooLow,-;
 	check Job < 21,Trip1,-;
 	check Job = 22,NoWed,-;
