@@ -9,6 +9,9 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.002
 ----------------------------------------------------------------------------------------------------
+- Warp\town\Niflheim.txt - Added Niflheim town warps. [Tsusai]
+- Warp\fields\nif_fild.txt - Added Niflheim field warps. [Tsusai]
+- Warp\fields\yggdrasil.txt - Added yggdrasil field warps. [Tsusai]
 - Officialized Bunny Band Quest. [AlexKreuz]
 - GvG\npc_gflag.txt - Fixed typo error "cancel". [mudvayne]
 - Town\Town_Aldebaran.txt - Fixed missing " in npc names, translated some npc names, cleaned script. [mudvayne]
