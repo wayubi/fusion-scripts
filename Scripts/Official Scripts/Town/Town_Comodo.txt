@@ -688,23 +688,39 @@ L_MENU_2:
 
 cmd_fild07.gat,192,58,4	script "Rahasu" 100,{
 	mes "[Rahasu]";
-	mes "Good morning, I am Rahasu your guide to the";
-	mes "^3355FF`lighthouses'^000000!";
-	mes "Do you wish to learn more about these lighthouses?";
+	mes "'Rahasu' is what you can call me.";
+	mes "How are you doing? Let me tell you";
+	mes "about ^3355FF`Paros lighthouse'^000000!";
+	mes "I wil educate you a little on the Lighthouse.";
 	next;
-	menu "Learn more about the lighthouses",-,"Cancel",L_MENU_1;
+	menu "about Paros Light House",-,"end conversation",L_MENU_1;
 	mes "[Rahasu]";
-	mes "As you probably have noticed, there are two huge lighthouses located in this area.";
-	mes "Both of these lighhouses were used to signal nearby fortresses of incoming invasions many years ago.";
-	next;
+	mes "Paros Lighthouse was used by";
+	mes "ships for many years. It played";
+	mes "a keyrole in bringing the ships";
+	mes "in from their ocean voyages.";
+	mes "However, now the Lighthouse";
+	mes "sits quietly, out of use.";
+      next;
 	mes "[Rahasu]";
-	mes "Too bad tourists can not enter these lighthouses yet, because they are still under heavy restrictions.";
-	mes "There are many, many beautiful paintings inside.";
+	mes "Without it, the area has had";
+	mes "difficulty in trading and commerce.";
+	mes "The lighthouse is undergoing";
+	mes "interior restoration at the moment.";
+	mes "There are so many beautiful sights";
+	mes "in the tower of that lighthouse...";
 	close;
 L_MENU_1:
 	mes "[Rahasu]";
-	mes "That's too bad, hope you could find some time to learn more about these ancient structures.";
-	close;
+	mes "What a waste....";
+	mes "You really came at a bad time.";
+	mes "The vieuw from the lighthouse is";
+	mes "breathtaking....";
+	mes "You are going to come back?";
+	mes "Right?";
+	mes "If you come back, I will be sure to";
+	mes "show you.";
+      close;
 }
 
 // Lighthouse Guide
@@ -740,7 +756,7 @@ cmd_fild07.gat,299,83,4	script "Zain" 100,{
 	mes "Will you be joining us on our";
 	mes "voyage?";
 	next;
-	menu "Alberta Fare = 600 Zeny.",L_Menu1,"Izlude Fare = 800 Zeny.",L_Menu2,"‚end conversation",-;
+	menu "Alberta Fare = 600 Zeny.",L_Menu1,"Izlude Fare = 800 Zeny.",L_Menu2,"end conversation",-;
 	mes "[Zain]";
 	mes "Thank you for choosing 'Reudelus'!";
 	mes "We are grateful for your choice in us.";
@@ -772,7 +788,7 @@ cmd_fild07.gat,94,134,4	script "Sarumane"	100,{
 	mes "Will you be joining us on our";
 	mes "voyage?";
 	next;
-	menu "Alberta Fare = 600 Zeny.",L_Menu1,"Izlude Fare = 800 Zeny.",L_Menu2,"‚end conversation",-;
+	menu "Alberta Fare = 600 Zeny.",L_Menu1,"Izlude Fare = 800 Zeny.",L_Menu2,"end conversation",-;
 	mes "[Sarumane]";
 	mes "Thank you for choosing 'Reudelus'!";
 	mes "We are grateful for your choice in us.";

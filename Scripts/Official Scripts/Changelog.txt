@@ -9,9 +9,11 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.005
 ----------------------------------------------------------------------------------------------------
+- Town\Town_Comodo.txt - Updated a Paros Lighthouse NPC. [Muad_Dib]
+- Town\Town_Kafra.txt - Updated a few kafra's. [Muad_Dib]
 - Job\Job2_Rogue.txt - Updated change location. [Muad_Dib]
-- Town\Town_Comodo.txt - Updated variuos NPC's. [Muad_Dib]
-- Town\Town_Kafra.txt - Updated Fomodo Field Kafra. [Muad_Dib]
+- Town\Town_Comodo.txt - Updated various NPC's. [Muad_Dib]
+- Town\Town_Kafra.txt - Updated Comodo Field Kafra. [Muad_Dib]
 - Town\Town_Comodo.txt - Updated Serutero NPC. [Muad_Dib]
 - Town\Town_Morocc.txt - Updated Town Morroc. [Muad_Dib]
 - Warp\fields\cmd_fild.txt - Updated a warp [Muad_Dib]

@@ -4826,7 +4826,7 @@ cmd_fild07.gat,136,134,4	script	"Kafra Personnel"	721,{
 		mes "[Kafra Personnel]";
 		mes "Please pick your destination.";
 		next;
-		menu "Comodo -> 1200 z",L_MENU_3_1,"Morroc -> 1200 z",L_MENU_3_2,"Cancel",L_MENU_3_3;
+		menu "Comodo -> 500 z",L_MENU_3_1,"Morroc -> 2500 z",L_MENU_3_2,"Cancel",L_MENU_3_3;
 		L_MENU_3_1:
 			check @Kafra_COUPON = 0,-,L_SUB_3_1;
 				check Zeny < 1200,-,L_ROOT_3_1;
