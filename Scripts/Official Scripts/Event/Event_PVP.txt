@@ -3488,7 +3488,7 @@ pcancel:
 	mes "Thank you, come again.";
 	close;
 }
-alberta_in.gat,62,145,4	script "PVP Guide" 84,{
+alberta_in.gat,26,146,4	script "PVP Guide" 84,{
 	mes "[PVP Guide]";
 	mes "I will guide you through PVP Mode!";
 	mes "If you have any question about"; 
@@ -3573,7 +3573,7 @@ pvpwhat:
 pvpsave:
 	mes "[PVP Guide]";
 	mes "Your respawn point has saved. Thank you.";
-	save "alberta_in",61,143;
+	save "alberta_in",26,143;
       close;
 pvpcancel:
 	mes "[PVP Guide]";
@@ -3581,7 +3581,7 @@ pvpcancel:
 	close;
 }
 
-alberta_in.gat,58,145,4	script "PVP Doorman" 83,{
+alberta_in.gat,22,146,4	script "PVP Doorman" 83,{
 	mes "[PVP Doorman]";
 	mes "I am the PVP waiting room warper.";
 	mes "Please ask my friend 'PVP Guide'";
