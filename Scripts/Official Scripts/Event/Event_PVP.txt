@@ -257,7 +257,7 @@ full:
 	mes "This Arena is Full.";
 	close;
 OnInit:
-	waitingroom "LV 31 ~ LV 40",2;
+	waitingroom "LV 31 ~ LV 40",1;
 	return;
 }
 
@@ -430,7 +430,7 @@ full:
 	mes "This Arena is Full.";
 	close;
 OnInit:
-	waitingroom "LV 41 ~ LV 50",2;
+	waitingroom "LV 41 ~ LV 50",1;
 	return;
 }
 
@@ -603,7 +603,7 @@ full:
 	mes "This Arena is Full.";
 	close;
 OnInit:
-	waitingroom "LV 51 ~ LV 60",2;
+	waitingroom "LV 51 ~ LV 60",1;
 	return;
 }
 
@@ -776,7 +776,7 @@ full:
 	mes "This Arena is Full.";
 	close;
 OnInit:
-	waitingroom "LV 61 ~ LV 70",2;
+	waitingroom "LV 61 ~ LV 70",1;
 	return;
 }
 
@@ -949,7 +949,7 @@ full:
 	mes "This Arena is Full.";
 	close;
 OnInit:
-	waitingroom "LV 71 ~ LV 80",2;
+	waitingroom "LV 71 ~ LV 80",1;
 	return;
 }
 
@@ -1122,7 +1122,7 @@ full:
 	mes "This Arena is Full.";
 	close;
 OnInit:
-	waitingroom "LV 81 ~ LV 90",2;
+	waitingroom "LV 81 ~ LV 90",1;
 	return;
 }
 
@@ -1294,7 +1294,7 @@ full:
 	mes "This Arena is Full.";
 	close;
 OnInit:
-	waitingroom "LV 91 ~ Higher",2;
+	waitingroom "LV 91 ~ Higher",1;
 	return;
 }
 
@@ -1461,7 +1461,7 @@ full:
 	mes "This Arena is Full.";
 	close;
 OnInit:
-	waitingroom "All Levels",2;
+	waitingroom "All Levels",1;
 	return;
 }
 
@@ -1634,7 +1634,7 @@ noenter:
 	mes "I am sorry, only players between level 31 and 40 are permitted to enter this arena.";
 	close;
 OnInit:
-	waitingroom "LV 31 ~ LV 40",2;
+	waitingroom "LV 31 ~ LV 40",1;
 	return;
 }
 
@@ -1807,7 +1807,7 @@ noenter:
 	mes "I am sorry, only players between level 41 and 50 are permitted to enter this arena.";
 	close;
 OnInit:
-	waitingroom "LV 41 ~ LV 50",2;
+	waitingroom "LV 41 ~ LV 50",1;
 	return;
 }
 
@@ -1980,7 +1980,7 @@ noenter:
 	mes "I am sorry, only players between level 51 and 60 are permitted to enter this arena.";
 	close;
 OnInit:
-	waitingroom "LV 51 ~ LV 60",2;
+	waitingroom "LV 51 ~ LV 60",1;
 	return;
 }
 
@@ -2153,7 +2153,7 @@ noenter:
 	mes "I am sorry, only players between level 61 and 70 are permitted to enter this arena.";
 	close;
 OnInit:
-	waitingroom "LV 61 ~ LV 70",2;
+	waitingroom "LV 61 ~ LV 70",1;
 	return;
 }
 
@@ -2326,7 +2326,7 @@ noenter:
 	mes "I am sorry, only players between level 71 and 80 are permitted to enter this arena.";
 	close;
 OnInit:
-	waitingroom "LV 71 ~ LV 80",2;
+	waitingroom "LV 71 ~ LV 80",1;
 	return;
 }
 
@@ -2499,7 +2499,7 @@ noenter:
 	mes "I am sorry, only players between level 81 and 90 are permitted to enter this arena.";
 	close;
 OnInit:
-	waitingroom "LV 81 ~ LV 90",2;
+	waitingroom "LV 81 ~ LV 90",1;
 	return;
 }
 
@@ -2673,7 +2673,7 @@ noenter:
 	mes "I am sorry, only players between level 91 and higher are permitted to enter this arena.";
 	close;
 OnInit:
-	waitingroom "LV 91 ~ Higher",2;
+	waitingroom "LV 91 ~ Higher",1;
 	return;
 }
 
@@ -2840,7 +2840,7 @@ full:
 	mes "This Arena is Full.";
 	close;
 OnInit:
-	waitingroom "All Levels",2;
+	waitingroom "All Levels",1;
 	return;
 }
 
