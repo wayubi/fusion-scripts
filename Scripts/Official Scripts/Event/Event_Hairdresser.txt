@@ -211,8 +211,8 @@ ShowPicF:
 		check @hairf = 15,fhair15show,-;
 		check @hairf = 16,fhair16show,-;
 		check @hairf = 17,fhair17show,-;
-		check @hair = 18,fhair18show,-;
-		check @hair = 19,fhair19show,-;
+		check @hairf = 18,fhair18show,-;
+		check @hairf = 19,fhair19show,-;
 	close;
 fhair1show:
 		cutin "hair_f_01",4;
