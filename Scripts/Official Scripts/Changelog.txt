@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.002
 ----------------------------------------------------------------------------------------------------
+- Event\ - Removed Event_Card-Seller.txt and Event_NewHatsX.txt and moved to Archive. [mudvayne]
 - Event\Event_Making.txt - Added Audi and Titicupe, 8 new quest hat items. [mudvayne]
 - Event\Event_Making.txt - Added Hair Ornament girl, 4 new quest hat items. [mudvayne]
 - Event\Event_Making.txt - Added Isac Mari, 4 new quest hat items. [mudvayne]
