@@ -1,6 +1,13 @@
 --------------------------------------------------------------------------------
  Fusion 1.212 - June 30th, 2004
 --------------------------------------------------------------------------------
+- 06-10-04: Warp\other\PvP.txt - Updated top header. [Tsusai]
+- 06-10-04: Warp\guilds\aldeg_cas.txt - Replaced a warp with a random warp. [Tsusai]
+- 06-10-04: Warp\dungeons\prt_maze.txt - Replaced with jAthena's for more warps and difficulty like official RO's. [Tsusai]
+- 06-10-04: Job\Job_2-1\Job2_Wizard.txt - Added commented lines for future features to make it more official. [Tsusai]
+- 06-10-04: Mob\field\gon_fild.txt - Reenabled "Baby Leopard". [Tsusai]
+- 06-10-04: Mob\field\um_fild.txt - Reenabled "Baby Leopard". [Tsusai]
+- 06-10-04: Mob\dungeon\gon_dun.txt - Reenabled "Baby Leopard". [Tsusai]
 - 06-10-04: Shop\prt_monk.txt - Rolled back nestors change cause it already is in the prontera shop file.. [Muad_Dib]
 - 06-10-04: Shop\prt_monk.txt - Added a shop in prt_monk based on iro sakray. [nestor_zulueta]
 - 06-08-04: Warp\dungeons\pay_dun.txt - Updated one warp to a random warp. [Tsusai]
