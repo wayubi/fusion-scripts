@@ -2466,14 +2466,15 @@ izlu2dun.gat,106,58,4	script	"Kafra Personnel"	116,{
 		mes "How may I help you?";
 		next;
  L_SUB_0_1:
-	menu "Save",L_MENU_1,"Storage Service",L_MENU_2,"Cart Rental Service",L_MENU_4,"Use Kafra Coupon",L_MENU_5,"End",L_MENU_7;
-	L_MENU_1:
-		save "izlu2dun",87,170;
-		mes "[Kafra Personnel]";
-		mes "Your position has been saved.";
-		check @KAFRA_COUPON = 0,-,L_SUB_1_2;
-			mes "Thank you for using Kafra.";
-			goto L_EXIT;
+//	menu "Save",L_MENU_1,"Storage Service",L_MENU_2,"Cart Rental Service",L_MENU_4,"Use Kafra Coupon",L_MENU_5,"End",L_MENU_7;
+	menu "Storage Service",L_MENU_2,"Cart Rental Service",L_MENU_4,"Use Kafra Coupon",L_MENU_5,"End",L_MENU_7;
+//	L_MENU_1:
+//		save "izlu2dun",87,170;
+//		mes "[Kafra Personnel]";
+//		mes "Your position has been saved.";
+//		check @KAFRA_COUPON = 0,-,L_SUB_1_2;
+//			mes "Thank you for using Kafra.";
+//			goto L_EXIT;
 	L_SUB_1_2:
 			next;
 			goto L_START_1;
@@ -3554,14 +3555,15 @@ moc_ruins.gat,59,157,4	script	"Kafra Personnel"	117,{
 		mes "How may I help you?";
 		next;
  L_SUB_0_1:
-	menu "Save",L_MENU_1,"Storage Service",L_MENU_2,"Cart Rental Service",L_MENU_4,"Locate Kafra Personnels",L_MENU_5,"End",L_MENU_7;
-	L_MENU_1:
-		save "moc_ruins",40,144;
-		mes "[Kafra Personnel]";
-		mes "Your position has been saved.";
-		check @KAFRA_COUPON = 0,-,L_SUB_1_2;
-			mes "Thank you for using Kafra.";
-			goto L_EXIT;
+	//menu "Save",L_MENU_1,"Storage Service",L_MENU_2,"Cart Rental Service",L_MENU_4,"Locate Kafra Personnels",L_MENU_5,"End",L_MENU_7;
+	menu "Storage Service",L_MENU_2,"Cart Rental Service",L_MENU_4,"Locate Kafra Personnels",L_MENU_5,"End",L_MENU_7;
+//	L_MENU_1:
+//		save "moc_ruins",40,144;
+//		mes "[Kafra Personnel]";
+//		mes "Your position has been saved.";
+//		check @KAFRA_COUPON = 0,-,L_SUB_1_2;
+//			mes "Thank you for using Kafra.";
+//			goto L_EXIT;
 	L_SUB_1_2:
 			next;
 			goto L_START_1;
@@ -4085,14 +4087,15 @@ alb2trea.gat,59,69,6	script	"Kafra Personnel"	117,{
 		mes "How may I help you?";
 		next;
  L_SUB_0_1:
-	menu "Save",L_MENU_1,"Storage Service",L_MENU_2,"Cart Rental Service",L_MENU_4,"Use Kafra Coupon",L_MENU_5,"End",L_MENU_7;
-	L_MENU_1:
-		save "alb2trea",91,63;
-		mes "[Kafra Personnel]";
-		mes "Your position has been saved.";
-		check @KAFRA_COUPON = 0,-,L_SUB_1_2;
-			mes "Thank you for using Kafra.";
-			goto L_EXIT;
+//	menu "Save",L_MENU_1,"Storage Service",L_MENU_2,"Cart Rental Service",L_MENU_4,"Use Kafra Coupon",L_MENU_5,"End",L_MENU_7;
+	menu "Storage Service",L_MENU_2,"Cart Rental Service",L_MENU_4,"Use Kafra Coupon",L_MENU_5,"End",L_MENU_7;
+//	L_MENU_1:
+//		save "alb2trea",91,63;
+//		mes "[Kafra Personnel]";
+//		mes "Your position has been saved.";
+//		check @KAFRA_COUPON = 0,-,L_SUB_1_2;
+//			mes "Thank you for using Kafra.";
+//			goto L_EXIT;
 	L_SUB_1_2:
 			next;
 			goto L_START_1;
@@ -4393,14 +4396,15 @@ pay_arche.gat,55,123,4	script	"Kafra Personnel"	114,{
 		mes "How may I help you?";
 		next;
  L_SUB_0_1:
-	menu "Save",L_MENU_1,"Storage Service",L_MENU_2,"Cart Rental Service",L_MENU_4,"Use Kafra Coupon",L_MENU_5,"End",L_MENU_7;
-	L_MENU_1:
-		save "pay_arche",50,145;
-		mes "[Kafra Personnel]";
-		mes "Your position has been saved.";
-		check @KAFRA_COUPON = 0,-,L_SUB_1_2;
-			mes "Thank you for using Kafra.";
-			goto L_EXIT;
+//	menu "Save",L_MENU_1,"Storage Service",L_MENU_2,"Cart Rental Service",L_MENU_4,"Use Kafra Coupon",L_MENU_5,"End",L_MENU_7;
+	menu "Storage Service",L_MENU_2,"Cart Rental Service",L_MENU_4,"Use Kafra Coupon",L_MENU_5,"End",L_MENU_7;
+//	L_MENU_1:
+//		save "pay_arche",50,145;
+//		mes "[Kafra Personnel]";
+//		mes "Your position has been saved.";
+//		check @KAFRA_COUPON = 0,-,L_SUB_1_2;
+//			mes "Thank you for using Kafra.";
+//			goto L_EXIT;
 	L_SUB_1_2:
 			next;
 			goto L_START_1;
@@ -5115,9 +5119,10 @@ gef_fild10.gat,72,336,6	script	"Kafra Personnel"	114,{
 		mes "How may I help you?";
 		next;
  L_SUB_0_1:
-	menu "Save",L_MENU_1,"Storage Service",L_MENU_2,"Teleport Service",L_MENU_3,"Cart Rental Service",L_MENU_4,"Use Kafra Coupon",L_MENU_5,"End",L_MENU_7;
-	L_MENU_1:
-		save "gef_fild10",72,331;
+//	menu "Save",L_MENU_1,"Storage Service",L_MENU_2,"Cart Rental Service",L_MENU_4,"Use Kafra Coupon",L_MENU_5,"End",L_MENU_7;
+	menu "Storage Service",L_MENU_2,"Teleport Service",L_MENU_3,"Cart Rental Service",L_MENU_4,"Use Kafra Coupon",L_MENU_5,"End",L_MENU_7;
+//	L_MENU_1:
+//		save "gef_fild10",72,331;
 	L_SUB_1_1:
 		mes "[Kafra Personnel]";
 		mes "Your position has been saved.";
