@@ -1429,10 +1429,11 @@ L1:
 	close;
 L2:
 		check skill_aco = 0,-,L2_1;
-		check Job = 4,L2_0,-;
-		check Job != 8,L2_E,-;
-L2_0:
+		check Job = 8,L2_0,-;
+		check Job = 15,L2_0,-;
+		check Job = 4,-,L2_E;
 		check JobLevel >= 30,-,L2_E;
+L2_0:
 		checkitem 727,1,-,L2_E;
 		checkitem 991,1,-,L2_E;
 		checkitem 2608,1,-,L2_E;

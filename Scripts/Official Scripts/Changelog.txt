@@ -9,7 +9,8 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.002
 ----------------------------------------------------------------------------------------------------
--Warp\warp_arena_room.txt - Added new warp portals. [Tsusai]
+- NPC\npc_skill_get.txt - Fixed AL_Holylight Job requirements. [AlexKreuz]
+- Warp\warp_arena_room.txt - Added new warp portals. [Tsusai]
 - Warp\warp_amatsu.txt - Corrected warps to gain access to levels 4 and 5 in the castle. [Tsusai]
 - Town\Town_Siglude.txt - Fixed, can't refine accesories and mid/low headgears and fixed the chance of success. [mudvayne]
 - Warp\warp.txt - Corrected/Added Warps in Al De Baron Guild Castle 4. [Tsusai]
