@@ -1347,7 +1347,6 @@ OnInit:
 			return;
 		mobdead:
 			set \@START_KARENA = 3;
-			npctimer 0;
 			npctimer 1;
 		Null:	
 			return;
@@ -1422,7 +1421,6 @@ OnInit:
 			return;
 		mobdead:
 			set \@START_KARENA = 6;
-			npctimer 0;
 			npctimer 1;
 		Null:
 			return;

@@ -1286,7 +1286,6 @@ OnInit:
 		check \@watermob = 8,Guardians,-;
 			return;
 	Guardians:
-		npctimer 0;
 		set \@watermob = 0;
 		broadcast "You have killed all the monsters!",10;
 		set \@WizMobs = 3;
@@ -1403,7 +1402,6 @@ OnInit:
 		check \@earthmob = 10,Guardians,-;
 			return;
 	Guardians:
-		npctimer 0;
 		set \@earthmob = 0;
 		broadcast "You have killed all the monsters!",10;
 		set \@WizMobs = 6;
@@ -1520,7 +1518,6 @@ OnInit:
 		check \@firemob = 8,Guardians,-;
 			return;
 	Guardians:
-		npctimer 0;
 		set \@firemob = 0;
 		broadcast "You have killed all the monsters!",10;
 		set \@WizMobs = 9;
