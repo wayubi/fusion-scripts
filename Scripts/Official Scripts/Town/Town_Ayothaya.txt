@@ -1,0 +1,40 @@
+//========================================================================================
+// »» The Fusion Project ««
+// Copyright (c) 2004, Cobax Information Systems
+// http://cobax.net/
+// ---------------------------------------------------------------------------------------
+//
+// Ayothaya Town - Non Player Character Locations
+// - Placeholder npc's.
+// 
+// - Soldier -> ayo_fild01: 118,204
+//   Warps you down a cliff.
+//
+// - Sailor -> ayothaya: 150,65
+//   Warps you back to alberta.
+//
+//========================================================================================
+
+ayo_fild01.gat,118,204,5 script "Soldier" 105,{
+	mes "Soldier";
+	mes "Down this hill lies the old 'Temple Entrance!'";
+	mes "Would you like to go down there?";
+	menu "Yes, send me down",L_Send,"Nevermind",-;
+	mes "Soldier";
+	mes "You can always come back here when you want to go down.";
+	close;
+L_Send:
+		warp ayo_fild02,22,138; 
+	close;
+}
+
+
+ayothaya.gat,150,65,4 script "Sailor" 100,{
+	mes "[Sailor]";
+	mes "Do you wanna return?";
+	menu "Return to Alberta.",L_Menu1,"Quit.",-;
+	close;
+L_Menu1:
+	   warp "alberta",192,169;
+      close;
+}

@@ -1,6 +1,12 @@
 --------------------------------------------------------------------------------
  Fusion 1.213 - August 29th, 2004
 -------------------------------------------------------------------------------- 
+- 10-20-04: Town\Town_Ayothaya.txt - Added Town Ayothaya with placeholder npc's. [Muad_Dib]
+- 10-20-04: Warpdungeons\ayo_dun.txt - Added Ayothaya warps. [Muad_Dib]
+- 10-20-04: Warp\fields\ayo_fild.txt - Added Ayothaya warps. [Muad_Dib]
+- 10-20-04: Warp\towns\Ayothaya.txt - Added Ayothaya warps. [Muad_Dib]
+- 10-20-04: Mob\other\town_rose.txt - Updated with Ayothaya town. [Muad_Dib]
+- 10-20-04: Town\Town_Alberta.txt - Gave sailor temporarily Ayothaya support. [Muad_Dib]
 - 10-17-04: Jobs\*\*.txt - Removed all instances of "set joblevel".  Jobchange does this. [Tsusai]
 - 10-17-04: Event\Event_Hairdresser.txt - Fixed Hairdresser NPC's. [Kalegula]
 - 10-17-04: Event\Event_PVP.txt - Changed Position of the PvP NPC's in Alberta. [Kalegula]

@@ -1,0 +1,13 @@
+//========================================================================================
+// »» The Fusion Project ««
+// Copyright (c) 2004, Cobax Information Systems
+// http://fusion.cobax.net/
+// ---------------------------------------------------------------------------------------
+//
+// Ayothaya Field Warps - Warp Locations
+//
+//========================================================================================
+
+//Field
+ayo_fild02.gat,18,138,0	warp	ayofieldwarp001	2,2,ayo_fild01.gat,114,201
+//ayo_fild01.gat,123,207,0	warp	ayofieldwarp002	2,2,ayo_fild02.gat,21,138
