@@ -1,7 +1,7 @@
 //========================================================================================
 // »» The Fusion Project ««
 // Copyright (c) 2004, Cobax Information Systems
-// http://cobax.net/
+// http://fusion.cobax.net/
 // ---------------------------------------------------------------------------------------
 //
 // Al de Baran Kafra Employees - Non Player Character Locations
@@ -52,13 +52,13 @@ L_ROOT_2_1:
 	goto L_START_1;
 L_SUB_2_1:
 		check @Kafra_PASS = 0,-,L_SUB_2_2;
-		check Zeny < 40,-,L_ROOT_2_2;
+		check Zeny < 20,-,L_ROOT_2_2;
 	mes "[Kafra Employee]";
 	mes "You don't have enough money.";
-	mes "The storage usage fee is 40 Zeny.";
+	mes "The storage usage fee is 20 Zeny.";
 	goto L_EXIT;
 L_ROOT_2_2:
-		set Zeny -= 40,0;
+		set Zeny -= 20,0;
 		store;
 	goto L_EXIT;
 L_SUB_2_2:
@@ -68,19 +68,19 @@ L_MENU_3:
 	mes "[Kafra Employee]";
 	mes "Please pick your destination.";
 	next;
-	menu "Izlude -> 1800z",L_MENU_3_1,"Geffen -> 1200z",L_MENU_3_2,"Juno -> 1200z",L_MENU_3_3,"Coal Mine -> 1700z",L_MENU_3_4,"Cancel",L_MENU_3_5;
+	menu "Geffen -> 1600 z",L_MENU_3_1,"Juno -> 1200 z",L_MENU_3_2,"Coal Mine -> 1700 z",L_MENU_3_3,"Comodo -> 2200 z",L_MENU_3_4,"Cancel",L_MENU_3_5;
 L_MENU_3_1:
 		check @Kafra_Pass = 0,-,L_SUB_3_1;
-		check Zeny < 1800,-,L_ROOT_3_1;
+		check Zeny < 1600,-,L_ROOT_3_1;
 	mes "[Kafra Employee]";
   	mes "Dear. you don't have enough Money.";
    	mes "Please check again.";
 	goto L_EXIT;
 L_ROOT_3_1:
-		set Zeny -= 1800,0;
-		set KF_PIT += 180;
+		set Zeny -= 1600,0;
+		set KF_PIT += 160;
 L_SUB_3_1:
-		warp "izlude",91,105;
+		warp "geffen",120,39;
 L_MENU_3_2:
 		check @Kafra_Pass = 0,-,L_SUB_3_2;
 		check Zeny < 1200,-,L_ROOT_3_2;
@@ -92,31 +92,31 @@ L_ROOT_3_2:
 		set Zeny -= 1200,0;
 		set KF_PIT += 120;
 L_SUB_3_2:
-		warp "geffen",120,39;
+		warp "yuno",157,167;
 L_MENU_3_3:
 		check @Kafra_Pass = 0,-,L_SUB_3_3;
-		check Zeny < 1200,-,L_ROOT_3_3;
+		check Zeny < 1700,-,L_ROOT_3_3;
 	mes "[Kafra Employee]";
   	mes "Dear. you don't have enough Money.";
    	mes "Please check again.";
 	goto L_EXIT;
 L_ROOT_3_3:
-		set Zeny -= 1200,0;
-		set KF_PIT += 120;
+		set Zeny -= 1700,0;
+		set KF_PIT += 170;
 L_SUB_3_3:
-		warp "yuno",157,167;
+		warp "mjolnir_02",79,361;
 L_MENU_3_4:
 		check @Kafra_Pass = 0,-,L_SUB_3_4;
-		check Zeny < 1700,-,L_ROOT_3_4;
+		check Zeny < 2200,-,L_ROOT_3_4;
 	mes "[Kafra Employee]";
   	mes "Dear. you don't have enough Money.";
    	mes "Please check again.";
 	goto L_EXIT;
 L_ROOT_3_4:
-		set Zeny -= 1700,0;
-		set KF_PIT += 170;
+		set Zeny -= 2200,0;
+		set KF_PIT += 220;
 L_SUB_3_4:
-		warp "mjolnir_02",79,361;
+		warp "comodo",209,143;
 L_MENU_3_5:
 		check @Kafra_PASS = 0,-,L_START_1;
 	mes "[Kafra Employee]";
@@ -143,24 +143,25 @@ L_ROOT_4_1:
 L_SUB_4_1:
 	check @Kafra_PASS = 0,-,L_SUB_4_2;
 	mes "[Kafra Employee]";
-	mes "The Cart Fee is 800 Zeny.";
+	mes "The Cart Fee is 600 Zeny.";
 	mes "To rent a cart";
 	next;
    	menu "Rent a Cart.",L_MENU_4_1,"Cancel",L_MENU_4_2;
 L_MENU_4_1:
 		getskilllevel 39,@skilllv_pushcart; 
 		check @skilllv_pushcart => 1,-,L_skill;
-		check Zeny < 800,-,L_ROOT_4_2; 
+		check Zeny < 600,-,L_ROOT_4_2; 
       mes "[Kafra Employee]";
       mes "Dear. you don't have enough Money.";
-	mes "The Cart Fee is 800 Zeny.";
+	mes "The Cart Fee is 600 Zeny.";
 	goto L_EXIT;
 L_skill:
 	mes "You do not have the skill PushCart.";
 	mes "You can't get a cart without that."
 	goto L_EXIT;
 L_ROOT_4_2:
-		set Zeny -= 800,0;
+		set Zeny -= 600,0;
+		set KF_PIT += 60;
 		check option == 0,-,L_MENU_4_3;
 	option 0,1;
 	goto L_EXIT;
@@ -270,13 +271,13 @@ L_ROOT_2_1:
 	goto L_START_1;
 L_SUB_2_1:
 		check @Kafra_PASS = 0,-,L_SUB_2_2;
-		check Zeny < 40,-,L_ROOT_2_2;
+		check Zeny < 100,-,L_ROOT_2_2;
 	mes "[Kafra Employee]";
 	mes "You don't have enough money.";
-	mes "The storage usage fee is 40 Zeny.";
+	mes "The storage usage fee is 100 Zeny.";
 	goto L_EXIT;
 L_ROOT_2_2:
-		set Zeny -= 40,0;
+		set Zeny -= 100,0;
 		store;
 	goto L_EXIT;
 L_SUB_2_2:

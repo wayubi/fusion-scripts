@@ -1,7 +1,7 @@
 //========================================================================================
 // »» The Fusion Project ««
 // Copyright (c) 2004, Cobax Information Systems
-// http://cobax.net/
+// http://fusion.cobax.net/
 // ---------------------------------------------------------------------------------------
 //
 // Umbala Kafra Employees - Non Player Character Locations
@@ -50,13 +50,14 @@ L_ROOT_2_1:
 	goto L_START_1;
 L_SUB_2_1:
 		check @Kafra_PASS = 0,-,L_SUB_2_2;
-		check Zeny < 40,-,L_ROOT_2_2;
+		check Zeny < 120,-,L_ROOT_2_2;
 	mes "[Kafra Employee]";
 	mes "You don't have enough money.";
-	mes "The storage usage fee is 40 Zeny.";
+	mes "The storage usage fee is 120 Zeny.";
 	goto L_EXIT;
 L_ROOT_2_2:
-		set Zeny -= 40,0;
+		set Zeny -= 120,0;
+		set KF_PIT += 12;
 		store;
 	goto L_EXIT;
 L_SUB_2_2:
@@ -66,20 +67,20 @@ L_MENU_3:
 	mes "[Kafra Employee]";
 	mes "Please pick your destination.";
 	next;
-	menu "Comodo -> 800z",L_MENU_3_1,"Cancel",L_MENU_3_3;
+	menu "Comodo -> 1200z",L_MENU_3_1,"Cancel",L_MENU_3_2;
 L_MENU_3_1:
 		check @Kafra_PASS   = 0,-,L_SUB_3_1;
-		check Zeny < 800,-,L_ROOT_3_1;
+		check Zeny < 1200,-,L_ROOT_3_1;
 	mes "[Kafra Employee]";
 	mes "You don't have enough money.";
 	mes "Please verify the amount of money you have.";
 	goto L_EXIT;
 L_ROOT_3_1:
-		set Zeny -= 800,0;
+		set Zeny -= 1200,0;
 		set KF_PIT += 120;
 L_SUB_3_1:
 		warp "comodo",209,143;
-L_MENU_3_3:
+L_MENU_3_2:
 		check @Kafra_PASS   = 0,-,L_START_1;
 	mes "[Kafra Employee]";
 	mes "Thank you very much.";

@@ -1,7 +1,7 @@
 //========================================================================================
 // »» The Fusion Project ««
 // Copyright (c) 2004, Cobax Information Systems
-// http://cobax.net/
+// http://fusion.cobax.net/
 // ---------------------------------------------------------------------------------------
 //
 // Izlude Kafra Employees - Non Player Character Locations
@@ -64,6 +64,7 @@ L_SUB_2_1:
 	goto L_EXIT;
 L_ROOT_2_2:
 		set Zeny -= 40,0;
+		set KF_PIT += 4;
 		store;
 	goto L_EXIT;
 L_SUB_2_2:
@@ -73,55 +74,55 @@ L_MENU_3:
 	mes "[Kafra Employee]";
 	mes "Please pick your destination.";
 	next;
-	menu "Morroc -> 1200z",L_MENU_3_1,"Payon -> 1200z",L_MENU_3_2,"Geffen -> 1200z",L_MENU_3_3,"Al de Baran -> 1800z",L_MENU_3_4,"Cancel",L_MENU_3_5;
+	menu "Comodo -> 2000 z",L_MENU_3_1,"Geffen -> 1800 z",L_MENU_3_2,"Payon -> 1700z",L_MENU_3_3,"Prontera -> 900z",L_MENU_3_4,"Cancel",L_MENU_3_5;
 L_MENU_3_1:
-		check @Kafra_Pass= 0,-,L_SUB_3_1;
-		check Zeny < 1200,-,L_ROOT_3_1;
+		check @Kafra_PASS = 0,-,L_SUB_3_1;
+		check Zeny < 3000,-,L_ROOT_3_1;
 	mes "[Kafra Employee]";
-	mes "You don't have enough money.";
-	mes "Please verify the amount of money you have.";
+  	mes "Dear. you don't have enough Money.";
+   	mes "Please check again.";
 	goto L_EXIT;
 L_ROOT_3_1:
-		set Zeny -= 1200,0;
-		set KF_PIT += 120;
+		set Zeny -= 2000,0;
+		set KF_PIT += 200;
 L_SUB_3_1:
-		warp "morocc",156,46;
+		warp "comodo",209,143;
 L_MENU_3_2:
 		check @Kafra_Pass= 0,-,L_SUB_3_2;
-		check Zeny < 1200,-,L_ROOT_3_2;
+		check Zeny < 1800,-,L_ROOT_3_2;
 	mes "[Kafra Employee]";
 	mes "You don't have enough money.";
 	mes "Please verify the amount of money you have.";
 	goto L_EXIT;
 L_ROOT_3_2:
-		set Zeny -= 1200,0;
-		set KF_PIT += 120;
+		set Zeny -= 1800,0;
+		set KF_PIT += 180;
 L_SUB_3_2:
-		warp "payon",179,97;
+		warp "geffen",120,39;
 L_MENU_3_3:
 		check @Kafra_Pass= 0,-,L_SUB_3_3;
-		check Zeny < 1200,-,L_ROOT_3_3;
+		check Zeny < 1700,-,L_ROOT_3_3;
 	mes "[Kafra Employee]";
 	mes "You don't have enough money.";
 	mes "Please verify the amount of money you have.";
 	goto L_EXIT;
 L_ROOT_3_3:
-		set Zeny -= 1200,0;
-		set KF_PIT += 120;
+		set Zeny -= 1700,0;
+		set KF_PIT += 170;
 L_SUB_3_3:
-		warp "geffen",120,39;
+		warp "payon",179,97;
 L_MENU_3_4:
-		check @Kafra_Pass= 0,-,L_SUB_3_4;
-		check Zeny < 1800,-,L_ROOT_3_4;
+		check @Kafra_PASS = 0,-,L_SUB_3_4;
+		check Zeny < 900,-,L_ROOT_3_4;
 	mes "[Kafra Employee]";
 	mes "You don't have enough money.";
 	mes "Please verify the amount of money you have.";
 	goto L_EXIT;
 L_ROOT_3_4:
-		set Zeny -= 1800,0;
-		set KF_PIT += 180;
+		set Zeny -= 900,0;
+		set KF_PIT += 90;
 L_SUB_3_4:
-		warp "aldebaran",143,110;
+		warp "prontera",116,72;
 L_MENU_3_5:
 		check @Kafra_Pass= 0,-,L_START_1;
 	mes "[Kafra Employee]";
@@ -155,17 +156,18 @@ L_SUB_4_1:
 L_MENU_4_1:
 		getskilllevel 39,@skilllv_pushcart; 
 		check @skilllv_pushcart => 1,-,L_skill;
-		check Zeny < 800,-,L_ROOT_4_2; 
+		check Zeny < 820,-,L_ROOT_4_2; 
       mes "[Kafra Employee]";
       mes "Dear. you don't have enough Money.";
-	mes "The Cart Fee is 800 Zeny.";
+	mes "The Cart Fee is 820 Zeny.";
 	goto L_EXIT;
 L_skill:
 	mes "You do not have the skill PushCart.";
 	mes "You can't get a cart without that."
 	goto L_EXIT;
 L_ROOT_4_2:
-		set Zeny -= 800,0;
+		set Zeny -= 820,0;
+		set KF_PIT += 82;
 		check option == 0,-,L_MENU_4_3;
 	option 0,1;
 	goto L_EXIT;
@@ -363,13 +365,14 @@ L_ROOT_2_1:
 	goto L_START_1;
 L_SUB_2_1:
 		check @Kafra_Pass= 0,-,L_SUB_2_2;
-		check Zeny < 35,-,L_ROOT_2_2;
+		check Zeny < 120,-,L_ROOT_2_2;
 	mes "[Kafra Employee]";
 	mes "You don't have enough money.";
-	mes "The storage usage fee is 35 Zeny.";
+	mes "The storage usage fee is 120 Zeny.";
 	goto L_EXIT;
 L_ROOT_2_2:
-		set Zeny -= 35,0;
+		set Zeny -= 120,0;
+		set KF_PIT += 12;
 		store;
 	goto L_EXIT;
 L_SUB_2_2:
@@ -402,17 +405,18 @@ L_SUB_4_1:
 L_MENU_4_1:
 		getskilllevel 39,@skilllv_pushcart; 
 		check @skilllv_pushcart => 1,-,L_skill;
-		check Zeny < 800,-,L_ROOT_4_2; 
+		check Zeny < 1200,-,L_ROOT_4_2; 
       mes "[Kafra Employee]";
       mes "Dear. you don't have enough Money.";
-	mes "The Cart Fee is 800 Zeny.";
+	mes "The Cart Fee is 1200 Zeny.";
 	goto L_EXIT;
 L_skill:
 	mes "You do not have the skill PushCart.";
 	mes "You can't get a cart without that."
 	goto L_EXIT;
 L_ROOT_4_2:
-		set Zeny -= 800,0;
+		set Zeny -= 1200,0;
+		set KF_PIT += 120;
 		check option == 0,-,L_MENU_4_3;
 		option 0,1;
 	goto L_EXIT;

@@ -1,7 +1,7 @@
 //========================================================================================
 // »» The Fusion Project ««
 // Copyright (c) 2004, Cobax Information Systems
-// http://cobax.net/
+// http://fusion.cobax.net/
 // ---------------------------------------------------------------------------------------
 //
 // Niflheim Kafra Employees - Non Player Character Locations
@@ -39,13 +39,14 @@ L_ROOT_2_1:
 	goto L_START_1;
 L_SUB_2_1:
 		check @Kafra_PASS = 0,-,L_SUB_2_2;
-		check Zeny < 40,-,L_ROOT_2_2;
+		check Zeny < 150,-,L_ROOT_2_2;
 	mes "[Kafra Employee]";
 	mes "You don't have enough money.";
-	mes "The storage usage fee is 40 Zeny.";
+	mes "The storage usage fee is 150 Zeny.";
 	goto L_EXIT;
 L_ROOT_2_2:
-		set Zeny -= 40,0;
+		set Zeny -= 150,0;
+		set KF_PIT += 15;
 		store;
 	goto L_EXIT;
 L_SUB_2_2:
