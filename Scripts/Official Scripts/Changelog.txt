@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.002
 ----------------------------------------------------------------------------------------------------
+- Officialized Bunny Band Quest. [AlexKreuz]
 - GvG\npc_gflag.txt - Fixed typo error "cancel". [mudvayne]
 - Town\Town_Aldebaran.txt - Fixed missing " in npc names, translated some npc names, cleaned script. [mudvayne]
 - Town\Town_Amatsu.txt - Fixed missing " in npc names, cleaned script. [mudvayne]
