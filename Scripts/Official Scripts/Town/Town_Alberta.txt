@@ -778,6 +778,7 @@ alberta.gat,149,54,0 script "Sign" 111,{
 }
 
 alberta.gat,247,122,5 script "Sailor" 709,{
+	   check event_turtle == 1,-,L_Other;
       mes "[Gotanblue]";
       mes "Oh! It's..";
       mes "Your eyes...";
@@ -799,6 +800,14 @@ alberta.gat,247,122,5 script "Sailor" 709,{
       mes "fall into despair, then";
       mes "Don't try to know the";
       mes "truth .....";
+      close;
+L_Other:
+      mes "[Gotanblue]";
+      mes "Ha ha ~What an endless sea!!";
+      mes "We can not measure the size";
+      mes "of it by only gazing from";
+      mes "solid ground. !";
+      mes "Do you follow me?";
       close;
 L_Get:
       mes "[Gotanblue]";

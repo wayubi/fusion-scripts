@@ -48,10 +48,13 @@
 // - Guard -> prontera : 229,104
 //   Guard that welcomes you.
 //
+// - Guard -> prontera : 223,98
+//   Guard that welcomes you.
+//
 // - Guard -> prontera : 52,344
 //   Guard that welcomes you.
 //
-// - Guard -> prontera : 47,399
+// - Guard -> prontera : 47,339
 //   Guard that welcomes you.
 //
 // - Guard -> prontera : 100,69
@@ -408,11 +411,15 @@ prontera.gat,229,104,5 script	"Guard" 105,{
 	   script PronteraGuards;
 }
 
+prontera.gat,223,98,8 script "Guard" 105,{
+	   script PronteraGuards;
+}
+
 prontera.gat,52,344,5 script "Guard" 105,{
 	   script PronteraGuards;
 }
 
-prontera.gat,47,399,5 script "Guard" 105,{
+prontera.gat,47,339,5 script "Guard" 105,{
 	   script PronteraGuards;
 }
 

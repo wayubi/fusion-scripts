@@ -262,3 +262,43 @@ geffen.gat,116,58,0 script "Geffen Bulletin" 111,{
       mes "magic that counts!";
       close;
 }
+
+geffen.gat,113,104,0 script "Billboard" 111,{
+	mes "^993333- The Geffen Billboard Reads -^000000";
+	mes "Selling: Brand new Chon Chon Doll!";
+	mes "what a great gift to a";
+      mes "loved one, contact me now!";
+	mes "- Name seems to be smeared -";
+	mes " ";
+      mes "Buying: Manteau!";
+	mes "I,m freezing and I have no zeny,";
+	mes "please help me!";
+      mes "Contact Edionyus";
+      close;
+}
+
+geffen.gat,168,175,0 script "Sign" 111,{
+	mes "^993333- The Sign Reads -^000000";
+      mes "'Your always welcomed in Geffen'";
+      close;
+}
+
+geffen.gat,120,189,0 script "Sign Post" 111,{
+	mes "^993333- The Sign Post Reads -^000000";
+      mes "North to Geffen Fields";
+      mes "Northeast to Al De Baran";
+      mes "Northwest to Glastheim";
+      mes "East to Geffen Fields";
+      mes "South to Morroc";
+      mes "Southeast to Alberta";
+      mes "Southwest to Comodo";
+      mes "West to Geffen Fields";
+      close;
+}
+
+geffen.gat,61,74,0 script "Sign" 111,{
+	mes "^993333- The Sign Reads -^000000";
+      mes "- Seems to be written in a language";
+      mes "unfamiliar to you -";
+      close;
+}
