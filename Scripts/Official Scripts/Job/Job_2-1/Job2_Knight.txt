@@ -1482,7 +1482,6 @@ job_knt.gat,0,0,0	script	"area3"	-1,{
 }
 
 job_knt.gat,143,152,4	script	"Knight Winzer"	733,{
-	npctimer 0;
 	mes "[Knight Winzer]";
 	mes "..........";
 	next;
