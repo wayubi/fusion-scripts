@@ -307,7 +307,7 @@ payon.gat,79,31,4 script "Bright Arbor" 722,{
 L_START_1:
 	check ismyguild != 0,L_START_2,-;
 	mes "       [ Kingdom of Payon ]";
-	mes "1. As law of Prontera this base is now";
+	mes "1. As law of Payon this base is now";
 	mes "    $guildname 's guild";
 	mes "    base.";
 	next;
@@ -348,7 +348,7 @@ payon.gat,79,35,4 script "Sacred Altar" 722,{
 L_START_1:
 	check ismyguild != 0,L_START_2,-;
 	mes "       [ Kingdom of Payon ]";
-	mes "1. As law of Prontera this base is now";
+	mes "1. As law of Payon this base is now";
 	mes "    $guildname 's guild";
 	mes "    base.";
 	next;
@@ -389,7 +389,7 @@ payon.gat,79,39,4 script "Holy Shadow" 722,{
 L_START_1:
 	check ismyguild != 0,L_START_2,-;
 	mes "       [ Kingdom of Payon ]";
-	mes "1. As law of Prontera this base is now";
+	mes "1. As law of Payon this base is now";
 	mes "    $guildname 's guild";
 	mes "    base.";
 	next;
@@ -430,7 +430,7 @@ payon.gat,79,43,4 script "Scarlet Palace" 722,{
 L_START_1:
 	check ismyguild != 0,L_START_2,-;
 	mes "       [ Kingdom of Payon ]";
-	mes "1. As law of Prontera this base is now";
+	mes "1. As law of Payon this base is now";
 	mes "    $guildname 's guild";
 	mes "    base.";
 	next;
@@ -471,7 +471,7 @@ payon.gat,79,47,4 script "Bamboo Grove Hill" 722,{
 L_START_1:
 	check ismyguild != 0,L_START_2,-;
 	mes "       [ Kingdom of Payon ]";
-	mes "1. As law of Prontera this base is now";
+	mes "1. As law of Aldebaran this base is now";
 	mes "    $guildname 's guild";
 	mes "    base.";
 	next;
@@ -513,7 +513,7 @@ aldebaran.gat,152,97,4 script "Neuschwanstein" 722,{
 L_START_1:
 	check ismyguild != 0,L_START_2,-;
 	mes "       [ Kingdom of Aldebaran ]";
-	mes "1. As law of Prontera this base is now";
+	mes "1. As law of Aldebaran this base is now";
 	mes "    $guildname 's guild";
 	mes "    base.";
 	next;
@@ -532,6 +532,9 @@ L_START_2:
 	close;
 	L_MENU_1:
 		warp "aldeg_cas01",218,170;
+OnInit:
+	guildreg "aldeg_cas01";
+	return;
 }
 aldebaran.gat,149,97,4 script "Hohenschwangau" 722,{
 	guildreg "aldeg_cas02";
@@ -551,7 +554,7 @@ aldebaran.gat,149,97,4 script "Hohenschwangau" 722,{
 L_START_1:
 	check ismyguild != 0,L_START_2,-;
 	mes "       [ Kingdom of Aldebaran ]";
-	mes "1. As law of Prontera this base is now";
+	mes "1. As law of Aldebaran this base is now";
 	mes "    $guildname 's guild";
 	mes "    base.";
 	next;
@@ -570,6 +573,9 @@ L_START_2:
 	close;
 	L_MENU_1:
 		warp "aldeg_cas02",84,74;
+OnInit:
+	guildreg "aldeg_cas02";
+	return;
 }
 aldebaran.gat,134,97,4 script "Nuernberg" 722,{
 	guildreg "aldeg_cas03";
@@ -589,7 +595,7 @@ aldebaran.gat,134,97,4 script "Nuernberg" 722,{
 L_START_1:
 	check ismyguild != 0,L_START_2,-;
 	mes "       [ Kingdom of Aldebaran ]";
-	mes "1. As law of Prontera this base is now";
+	mes "1. As law of Aldebaran this base is now";
 	mes "    $guildname 's guild";
 	mes "    base.";
 	next;
@@ -608,6 +614,9 @@ L_START_2:
 	close;
 	L_MENU_1:
 		warp "aldeg_cas03",118,76;
+OnInit:
+	guildreg "aldeg_cas03";
+	return;
 }
 aldebaran.gat,131,97,4 script "Wuerzburg" 722,{
 	guildreg "aldeg_cas04";
@@ -627,7 +636,7 @@ aldebaran.gat,131,97,4 script "Wuerzburg" 722,{
 L_START_1:
 	check ismyguild != 0,L_START_2,-;
 	mes "       [ Kingdom of Aldebaran ]";
-	mes "1. As law of Prontera this base is now";
+	mes "1. As law of Aldebaran this base is now";
 	mes "    $guildname 's guild";
 	mes "    base.";
 	next;
@@ -646,6 +655,9 @@ L_START_2:
 	close;
 	L_MENU_1:
 		warp "aldeg_cas04",45,88;
+OnInit:
+	guildreg "aldeg_cas04";
+	return;
 }
 aldebaran.gat,128,97,4 script "Rotenburg" 722,{
 	guildreg "aldeg_cas05";
@@ -665,7 +677,7 @@ aldebaran.gat,128,97,4 script "Rotenburg" 722,{
 L_START_1:
 	check ismyguild != 0,L_START_2,-;
 	mes "       [ Kingdom of Aldebaran ]";
-	mes "1. As law of Prontera this base is now";
+	mes "1. As law of Aldebaran this base is now";
 	mes "    $guildname 's guild";
 	mes "    base.";
 	next;
@@ -684,6 +696,9 @@ L_START_2:
 	close;
 	L_MENU_1:
 		warp "aldeg_cas05",31,190;
+OnInit:
+	guildreg "aldeg_cas05";
+	return;
 }
 geffen.gat,109,123,2 script "Repherion" 722,{
 	guildreg "gefg_cas01";
@@ -703,7 +718,7 @@ geffen.gat,109,123,2 script "Repherion" 722,{
 L_START_1:
 	check ismyguild != 0,L_START_2,-;
 	mes "       [ Kingdom of Geffen ]";
-	mes "1. As law of Prontera this base is now";
+	mes "1. As law of Geffen this base is now";
 	mes "    $guildname 's guild";
 	mes "    base.";
 	next;
@@ -722,6 +737,9 @@ L_START_2:
 	close;
 	L_MENU_1:
 		warp "gefg_cas01",83,47;
+OnInit:
+	guildreg "gefg_cas01";
+	return;
 }
 geffen.gat,112,129,1 script "Eeyorbriggar" 722,{
 	guildreg "gefg_cas02";
@@ -741,7 +759,7 @@ geffen.gat,112,129,1 script "Eeyorbriggar" 722,{
 L_START_1:
 	check ismyguild != 0,L_START_2,-;
 	mes "       [ Kingdom of Geffen ]";
-	mes "1. As law of Prontera this base is now";
+	mes "1. As law of Geffen this base is now";
 	mes "    $guildname 's guild";
 	mes "    base.";
 	next;
@@ -760,6 +778,9 @@ L_START_2:
 	close;
 	L_MENU_1:
 		warp "gefg_cas02",23,66;
+OnInit:
+	guildreg "gefg_cas02";
+	return;
 }
 geffen.gat,120,132,8 script "Yesnelph" 722,{
 	guildreg "gefg_cas03";
@@ -779,7 +800,7 @@ geffen.gat,120,132,8 script "Yesnelph" 722,{
 L_START_1:
 	check ismyguild != 0,L_START_2,-;
 	mes "       [ Kingdom of Geffen ]";
-	mes "1. As law of Prontera this base is now";
+	mes "1. As law of Geffen this base is now";
 	mes "    $guildname 's guild";
 	mes "    base.";
 	next;
@@ -798,6 +819,9 @@ L_START_2:
 	close;
 	L_MENU_1:
 		warp "gefg_cas03",116,89;
+OnInit:
+	guildreg "gefg_cas03";
+	return;
 }
 geffen.gat,127,130,7 script "Bergel" 722,{
 	guildreg "gefg_cas04";
@@ -817,7 +841,7 @@ geffen.gat,127,130,7 script "Bergel" 722,{
 L_START_1:
 	check ismyguild != 0,L_START_2,-;
 	mes "       [ Kingdom of Geffen ]";
-	mes "1. As law of Prontera this base is now";
+	mes "1. As law of Geffen this base is now";
 	mes "    $guildname 's guild";
 	mes "    base.";
 	next;
@@ -836,6 +860,9 @@ L_START_2:
 	close;
 	L_MENU_1:
 		warp "gefg_cas04",59,70;
+OnInit:
+	guildreg "gefg_cas04";
+	return;
 }
 geffen.gat,131,123,6 script "Mersetzdeitz" 722,{
 	guildreg "gefg_cas05";
@@ -855,7 +882,7 @@ geffen.gat,131,123,6 script "Mersetzdeitz" 722,{
 L_START_1:
 	check ismyguild != 0,L_START_2,-;
 	mes "       [ Kingdom of Geffen ]";
-	mes "1. As law of Prontera this base is now";
+	mes "1. As law of Geffen this base is now";
 	mes "    $guildname 's guild";
 	mes "    base.";
 	next;
@@ -874,6 +901,9 @@ L_START_2:
 	close;
 	L_MENU_1:
 		warp "gefg_cas05",61,52;
+OnInit:
+	guildreg "gefg_cas05";
+	return;
 }
 
 payon.gat,89,155,4 script "Bright Arbor" 722,{
@@ -894,7 +924,7 @@ payon.gat,89,155,4 script "Bright Arbor" 722,{
 L_START_1:
 	check ismyguild != 0,L_START_2,-;
 	mes "       [ Kingdom of Payon ]";
-	mes "1. As law of Prontera this base is now";
+	mes "1. As law of Payon this base is now";
 	mes "    $guildname 's guild";
 	mes "    base.";
 	next;
@@ -935,7 +965,7 @@ payon.gat,82,155,4 script "Sacred Altar" 722,{
 L_START_1:
 	check ismyguild != 0,L_START_2,-;
 	mes "       [ Kingdom of Payon ]";
-	mes "1. As law of Prontera this base is now";
+	mes "1. As law of Payon this base is now";
 	mes "    $guildname 's guild";
 	mes "    base.";
 	next;
@@ -976,7 +1006,7 @@ payon.gat,97,155,4 script "Holy Shadow" 722,{
 L_START_1:
 	check ismyguild != 0,L_START_2,-;
 	mes "       [ Kingdom of Payon ]";
-	mes "1. As law of Prontera this base is now";
+	mes "1. As law of Payon this base is now";
 	mes "    $guildname 's guild";
 	mes "    base.";
 	next;
@@ -1017,7 +1047,7 @@ payon.gat,103,155,4 script "Scarlet Palace" 722,{
 L_START_1:
 	check ismyguild != 0,L_START_2,-;
 	mes "       [ Kingdom of Payon ]";
-	mes "1. As law of Prontera this base is now";
+	mes "1. As law of Payon this base is now";
 	mes "    $guildname 's guild";
 	mes "    base.";
 	next;
@@ -1058,7 +1088,7 @@ payon.gat,75,155,4 script "Bamboo Grove Hill" 722,{
 L_START_1:
 	check ismyguild != 0,L_START_2,-;
 	mes "       [ Kingdom of Payon ]";
-	mes "1. As law of Prontera this base is now";
+	mes "1. As law of Payon this base is now";
 	mes "    $guildname 's guild";
 	mes "    base.";
 	next;
