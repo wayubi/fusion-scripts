@@ -9,6 +9,10 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.004
 ----------------------------------------------------------------------------------------------------
+- shop\louyang.txt - Added louyang shops. [Muad_Dib]
+- shop\comodo.txt - Added extra shop. [Muad_Dib]
+- Mob\dungeon\lou_dun.txt - Edited the spawns on a few new kro screens. [Muad_Dib]
+- Mob\field\lou_fild.txt - Edited the spawns on a few new kro screens. [Muad_Dib]
 - Job\ - Edited/corrected assassin, knight, Priest and Hunter scripts. [Muad_Dib]
 - Mob\ - Edited/corrected some spawns. [Muad_Dib]
 - Town\Town_Gonryun.txt - Reorganised Town Lutie. [Muad_Dib]
