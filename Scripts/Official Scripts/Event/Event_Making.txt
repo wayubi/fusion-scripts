@@ -197,28 +197,24 @@ alberta_in.gat,122,53,4	script	"Cherokee"	47,{
 		close;
 }
 
-//----------------------------------
-// 停止表示板
-//----------------------------------
-
-morocc_in.gat,142,100,4	script	ステアー	89,{
-	mes "[ステアー]";
-	mes "いらっゃいませ。 我がマックケラーン ステアー家門の自慢の ^3355FF' 停止表示板 '^000000 商店へのご訪問を歓迎致します。";
+morocc_in.gat,142,100,4	script	"Willian"	89,{
+	mes "[Willian]";
+	mes "Welcome to MacMillan's ^3355FF' Post '^000000 Workshop .";
 	next;
-	mes "[ステアー]";
-	mes "ご存じかどうか知りませんが、我が家門は ..";
-	mes "馬車が走ってた、大昔から 250 年の間 交通表示板を専門として製作してきました。";
-	mes "最近にはお飾りとしての技能を持つ ^3355FF' 停止表示板 '^000000を注文製作しております。";
+	mes "[Willian]";
+	mes "My Clan, MacMillan ..";
+	mes "Has been producing Professional Traffic Signal Posts for more than 250 years.";
+	mes "And nowadays we are booking Special Orders with our Unique Ornament, ^3355FF'Stop Post'^000000.";
 	next;
-	menu "^3355FF' 停止表示板 '^000000注文",-,"対話終了",L_MENU_1;
-		mes "[ステアー]";
-		mes "250 年伝統の我が マックケラーン ステアー ^3355FF' 停止表示板 '^000000アクセサリー バージョンは ..";
-		mes "高い視眼性と耐久力を備えた交通表示板の技術力をそのまま繋ぎ";
-		mes "注文なさるお客様達を 満足させることに違いないでしょう。";
+	menu "Could I order one ^3355FF' Stop Post '^000000?",-,"Nah,Not my business.",L_MENU_1;
+		mes "[Willian]";
+		mes "The Ancient Lineage,MacMillan's Unique ornament,^3355FF' Stop Post '^000000 ..";
+		mes "is also Durable as a Traffic Signal on the road, furthermore fits you well as a hair decoration ornament.";
+		mes "We will promise you on the strength of a 100-years guarantee.";
 		next;
-		mes "[ステアー]";
-		mes "^3355FF' 停止表示板 '^000000 を注文するためには ^3355FF' 現金 91100 ゼニ '^000000 と ..";
-		mes "^3355FF' 木屑 50 個 '^000000 そして ^3355FF' 黒い染料 1個 '^000000 が必要です。";
+		mes "[Willian]";
+		mes "For producing ^3355FF'Stop Post'^000000, we need ^3355FF' 91100 Zeny '^000000,";
+		mes "^3355FF'50 Wooden Blocks'^000000 and ^3355FF'1 Black Dyestuffs'^000000.";
 		next;
 		checkitem 1019,50,-,L_SUB_1;
 		checkitem 983,1,-,L_SUB_1;
@@ -227,24 +223,24 @@ morocc_in.gat,142,100,4	script	ステアー	89,{
 		delitem 1019,50;
 		delitem 983,1;
 		set Zeny -= 91100,0;
-		mes "[ステアー]";
-		mes "これ ! 250 年 伝統に輝く マックケラーン ステアー ^3355FF' 停止表示板 '^000000 です !";
-		mes "ご利用頂きありがとうございます。 又いらして下さい !";
+		mes "[Willian]";
+		mes "Here you are! This is the one and only Ornament for you, ^3355FF'Stop Post '^000000!";
+		mes "Thank you for coming by!";
 		additem 2272,1;
 		close;
 	L_SUB_1:
-		mes "[ステアー]";
-		mes "注文に必要な準備物品が不足ではないのでしょうか ?";
-		mes "もう一度ご確認下さい。";
+		mes "[Willian]";
+		mes "Why don't you check the requirements again??";
+		mes "I don't think you brought every items needed.";
 		close;
 	L_MENU_1:
-		mes "[ステアー]";
-		mes "我が マックケラーン ステアーをお尋ね頂き誠にありがとうございます。";
-		mes "お宅の家庭にいつも幸運が満ちるように...";
+		mes "[Willian]";
+		mes "Anyway Thank you for coming by,My Clan,`MacMillan's Workshop.";
+		mes "God Bless You.";
 		close;
 	L_START_1:
-		mes "[ステアー]";
-		mes "重量オーバーです。";
+		mes "[Willian]";
+		mes "You are overweight.";
 		close;
 }
 
