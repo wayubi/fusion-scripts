@@ -9,6 +9,8 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.002
 ----------------------------------------------------------------------------------------------------
+- Warp\Towns\Amatsu.txt - Added 2 houses and renumbered warps. [Tsusai]
+- Quest\Quest_Legendary_Blacksmith.txt - Added the Blacksmith Quest.  [Tsusai]
 - Warp\*.txt - Moved to new filename system. [mudvayne]
 - Mob\*.txt - Moved to new filename system. [mudvayne]
 - GvG\*.txt - Fixed miss placed npcs. [mudvayne]
