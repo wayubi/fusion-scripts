@@ -5,6 +5,7 @@
 ----------------------------------------------------------------------------------------------------
  Experimental Scripts Change Logs
 ====================================================================================================
+11-09-2004: Added Priest quest.  warp to job_prist 24 180 to test. (this still crashes) [Tsusai]
 10-20-2004: Added potential sage quest. [Tsusai]
 05-19-2004: Fixed a mes error in Misc.txt
 05-06-2004: Added Script Command Check folder, to test if any script commands get broken upon core updates. [Tsusai]
