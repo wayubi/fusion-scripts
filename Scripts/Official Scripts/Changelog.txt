@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.003
 ----------------------------------------------------------------------------------------------------
+- Town\Town_Kafra.txt - Relocated the prontera field01 npc based on information from RagnaInfo. [Muad_Dib]
 - Job\Job2_Blacksmith.txt - Complete change to blacksmith quest. [nestor_zulueta] 
 - Town\Town_Kafra.txt - Added item quest for merchant quest. [nestor_zulueta] 
 - Job\Job1_Merchant.txt - Complete change to merchant quest. [nestor_zulueta] 
