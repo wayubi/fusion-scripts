@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.004
 ----------------------------------------------------------------------------------------------------
+- Town\Town_Aldebaran.txt - Updated 'Bell Keeper A' position. [Tsusai]
 - Town\Town_Alberta.txt - Added Babygirl NPC. [Tsusai]
 - Town\Town_Prontera.txt - Added Hensen and Garnet. [Tsusai]
 - Town\Town_Prontera.txt - Removed commented duplicate of Nenkaras Inn. [Tsusai]

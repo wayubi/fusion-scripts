@@ -69,7 +69,7 @@
 // - Town Girl -> aldebaran: 146,124
 //   Say stuff about the Assassin Guild.
 //
-// - Bell Keeper A -> aldebaran: 146,136
+// -  Keeper A -> aldebaran: 143,136
 //   Tell players important informations about the clock tower and random warps.
 //
 //========================================================================================
@@ -766,7 +766,7 @@ aldebaran.gat,146,124,4	script	"Town Girl"	101,{
 		close;
 }
 
-aldebaran.gat,146,136,4	script	"Bell Keeper A"	89,{
+aldebaran.gat,143,136,4	script	"Bell Keeper A"	89,{
 	mes "[Bell Keeper]";
 	mes "Let me introduce myself, I am 'Monster A' the keeper of Al De Baran Clock Tower,in Committee of 'Heaven on Earth'.";
 	mes "So you looks like taking great interest in this tower. Do you want me to inform a good tip?";
