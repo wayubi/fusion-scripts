@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.003
 ----------------------------------------------------------------------------------------------------
+- NPC\npc_skill_get.txt - Finalized the novice skill quests, replaced variable w/ quest item. [Tsusai]
 - NPC\npc_skill_get.txt - Fixed/Added Novice Skill Quests. [Tsusai]
 - Town\Town_Kafra.txt - Fixed Storage check typo. [Tsusai]
 - NPC\npc_skill_get.txt - Converted to english some assassin quests texts. [Tsusai]
