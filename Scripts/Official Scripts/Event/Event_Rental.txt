@@ -1,27 +1,44 @@
-//----------------------------------------------------------------------------------------
-// Bunny Band NPC - From Weiss, translated by GTO
-// eWeiss Project 2003 - http://revolve.emuxhaven.net/weiss/
-//----------------------------------------------------------------------------------------
-
+//========================================================================================
+// »» The Fusion Project ««
+// Copyright (c) 2004, Cobax Information Systems
+// http://fusion.cobax.net/
+// ---------------------------------------------------------------------------------------
+//
+// Breeders - Non Player Character Locations
+//
+// - Peco Breeder -> prontera: 55,350
+//   Rent pecopeco to Knights and Crusaders.
+//
+// - Falcon Breeder -> in_hunter: 146,99
+//   Rent falcon to Hunters.
+//
+//========================================================================================
 
 prontera.gat,55,350,5	script	"Peco Breeder"	105,{
 	mes "[Peco Breeder]";
-	check Job == 7,-,L_START_1;
+	check Job == 7,L_START_2,-;
+	check Job == 14,-,L_START_1;
+	set @peco_price 3000;
+	goto L_START_2;
+L_START_2:
+	set @peco_price 2500;
+	goto L_START_2_1;
+L_START_2_1:
 		mes "Hello, want to buy a peco to ride on?";
 		next;
 		menu "Yes",-,"No",L_MENU_1;
-			check Zeny < 2500,-,L_SUB_1;
+			check Zeny < @peco_price,-,L_SUB_1;
 			mes "[Peco Breeder]";
-			mes "Sorry, but you don't seem to have 2500z on you, come back later.";
+			mes "Sorry, but you don't seem to have $[@peco_price]z on you, come back later.";
 			close;
 		L_SUB_1:
 			mes "[Peco Breeder]";
 			mes "You will! That’s good";
 			mes "Using a Peco won’t only make you look good but it will also make you move faster then walking.";
-			mes "The cost of using a Peco is 2500z";
+			mes "The cost of using a Peco is $[@peco_price]z";
 			next;
 			menu "I'll take one!",-,"Maybe later",L_ROOT_1;
-				set Zeny -= 2500,0;
+				set Zeny -= @peco_price,0;
 				option 2,1;
 			L_ROOT_1:
 			mes "Thanks for stopping by";
@@ -31,7 +48,7 @@ prontera.gat,55,350,5	script	"Peco Breeder"	105,{
 			mes "Ah well, have a good day then!";
 			close;
 	L_START_1:
-		mes "Sorry only Knights can ride a Peco";
+		mes "Sorry only Knights and Crusaders can ride a Pecos";
 		close;
 }
 
