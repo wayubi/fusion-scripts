@@ -1,7 +1,9 @@
 --------------------------------------------------------------------------------
  Fusion 1.212 - June 30th, 2004
 --------------------------------------------------------------------------------
-- 06-14-04: Rempoved translated town_gonryun [Muad_Dib]
+- 06-15-04: Removed translated npc_event_yuno, it is now in Town_Juno.txt [Muad_Dib]
+- 06-15-04: Removed translated npc_job_supernovice, it is now in Job_Super_Novice.txt [Muad_Dib]
+- 06-14-04: Removed translated town_gonryun [Muad_Dib]
 - 06-12-04: Ported the town_umbala, translation needed now [Tsusai]
 - 06-12-04: Disabled npc header lines to avoid unneeded errors [Tsusai]
 - 06-12-04: Removed npc_ctower [Muad_Dib]
