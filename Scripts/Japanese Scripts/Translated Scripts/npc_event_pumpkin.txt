@@ -1,0 +1,387 @@
+//Pumpkin Room Settings
+//(The original was force_1-1.gat.  However, because it intersects with the arena //quest, the map ID 2-1 is used instead. )
+force_2-1.gat,100,100,0,0	monster	Zakk	1130,200,50000,25000
+force_2-1.gat,100,100,0,0	monster	Blade Knight	1268,5,50000,25000
+force_2-1.gat	mapflag	nosave	prontera.gat,156,191
+force_2-1.gat	mapflag	nomemo	dummy
+force_2-1.gat	mapflag	noteleport	dummy
+force_2-1.gat	mapflag	pvp	dummy
+//Event Area Setup
+pvp_2vs2.gat	mapflag	nosave	prontera.gat,156,191
+pvp_2vs2.gat	mapflag	nomemo	dummy
+pvp_2vs2.gat	mapflag	noteleport	dummy
+pvp_2vs2.gat	mapflag	pvp	dummy
+
+prt_monk.gat,225,180,0	script	Genbu	89,{
+	mes "[Genbu]";
+	mes "Those without the blessing of God";
+	mes "cannot enter this holy place.";
+	next;
+	mes "[Genbu]";
+	mes "We monks live a simple life, growing";
+	mes "our beautiful crops.";
+	next;
+	mes "[Genbu]";
+	mes "These continued blessing of good";
+	mes "crops is truly and expression of";
+	mes "God's grace.";
+	next;
+	mes "[Genbu]";
+	mes "We constantly thank God for";
+	mes "continuing to allow us this";
+	mes "humble existence.";
+	next;
+	mes "[Genbu]";
+	mes "Without His divine protection,";
+	mes "the country would surely fall, don't you think?";
+	close;
+}
+gef_fild00.gat,77,212,4	script	Rambunctious Child	716,{
+	mes "[Rambunctious Child]";
+	mes "Damnit!";
+	mes "After I took the candy from the clown,";
+	mes "my parents punished me!";
+	mes "I'll have my revenge someday!";
+	close;
+}
+pvp_2vs2.gat,40,30,4	script	Coward	67,{
+	mes "[Coward]";
+	mes "Is something coming?!";
+	mes "You should flee right away!";
+	next;
+	warp "prt_monk.gat",95,212;
+	end;
+}
+//--------------------------------------------------
+prt_monk.gat,218,175,4	script	Monk	49,{
+	if (pump_event == 1) goto LStart2;
+	mes "[Monk]";
+	mes "We have spent years growing these";
+	mes "magic pumpkins.";
+	mes "We are willing the exchange ten";
+	mes "normal pumpkins for";
+	mes "one magic pumpkin.";
+	next;
+	mes "[Monk]";
+	mes "Interested?";
+	next;
+	menu "Yes",Lyes,"No",-;
+		mes "[Monk]";
+		mes "Are you sure?";
+		mes "They're really declicious!";
+		close;
+	Lyes:
+		if (countitem(535)<10) goto LError;
+		mes "- Acquired Magic Pumpkin! -";
+		delitem 535,10;
+		set pump_event,1;
+		next;
+		mes "[Monk]";
+		mes "Thank you.";
+		mes "The magic pumpkin tastes really good";
+		mes "if you boil it, though it requires some";
+		mes "specialized preparation.";
+		next;
+		mes "[Monk]";
+		mes "If you want to know more, ask";
+		mes "Tanshinchi in the Rutee area.";
+		close;
+	LError:
+		mes "[Monk]";
+		mes "You don't have enough";
+		mes "pumpkins.";
+		mes "You need ten in order to make the trade.";
+		close;
+LStart2:
+	mes "[Monk]";
+	mes "I would love to trade";
+	mes "more magic pumpkins, but";
+	mes "you need to eat the";
+	mes "one you have first.";
+	next;
+	mes "[Monk]";
+	mes "If you want to know about";
+	mes "preparing the magic pumpkin";
+	mes "for consumption, try asking";
+	mes "Tanshinchi in the Rutee area.";
+	close;
+}
+prt_monk.gat,227,162,4	script	Priest-in-Training	753,{
+	if (pump_event == 1) goto LStart2;
+	mes "[Priest-in-Training]";
+	mes "Have you gotten a magic";
+	mes "pumpkin yet?";
+	mes "Our unique crops provide us";
+	mes "with the nourishment we need";
+	mes "to do God's work!";
+	next;
+	mes "[Priest-in-Training]";
+	mes "The magic pumpkin is espeically good.";
+	mes "Everyone should try it at least once.";
+	close;
+LStart2:
+	mes "[Priest-in-Training]";
+	mes "Awesome!  You got a magic pumpkin.";
+	mes "There's a lady who can assist";
+	mes "you in preparing the pumpkin";
+	mes "for consumption.  Would you like";
+	mes "to go visit her?";
+	next;
+	menu "Sure!",L1,"Maybe some other time",-;
+		mes "[Priest-in-Training]";
+		mes "Alright.  Come back when you're ready.";
+		close;
+	L1:
+		mes "[Priest-in-Training]";
+		mes "Alright!";
+		mes "Here we go!";
+		next;
+		warp "xmas_fild01.gat",150,150;
+		end;
+}
+gef_fild00.gat,73,209,4	script	Saint Pierre	715,{
+	if (pump_event == 2) goto LStart3;
+	if ((countitem(536)>=1) || (countitem(530)>=1)) goto LStart2;
+	mes "[Saint Pierre]";
+	mes "Aaahh.";
+	mes "My favorite sweets are";
+	mes "gone.  What am I going to";
+	mes "do now?";
+	next;
+	mes "[Saint Pierre]";
+	mes "Won't you bring me some";
+	mes "sweets to enjoy?";
+	next;
+	menu "Alright",L1_1,"Did the wind just blow?",L1_2,"I'm a bit busy now...",-;
+		mes "[Saint Pierre]";
+		mes "Oh...";
+		mes "I see...";
+		close;
+	L1_1:
+		mes "[Saint Pierre]";
+		mes "Really?!";
+		mes "That's great!";
+		mes "I'll be waiting";
+		next;
+		warp "xmas_dun01.gat",205,17;
+		end;
+	L1_2:
+		mes "[Saint Pierre]";
+		mes "Bah!";
+		mes "Dumbass!";
+		next;
+		warp "prt_monk.gat",182,236;
+		end;
+LStart2:
+	mes "[Saint Pierre]";
+	mes "Oh!";
+	mes "Do you have some sweets for";
+	mes "me?";
+	next;
+	menu "Sure do",L2_1,"No way!",-;
+		mes "[Saint Pierre]";
+		mes "Bah!";
+		close;
+	L2_1:
+		if (countitem(536)>=1) delitem 536,1;
+		if (countitem(530)>=1) delitem 530,1;
+		mes "[Saint Pierre]";
+		mes "Pero pero pero pero";
+		mes "Thanks.";
+		next;
+		menu "You're welcome",-,"Gimme a reward!",L2_1_1;
+			mes "[Saint Pierre]";
+			mes "Pero pero pero pero";
+			close;
+		L2_1_1:
+			mes "[Saint Pierre]";
+			mes "Geez, you're a bit";
+			mes "of a blowhard, aren't you?";
+			mes "I think you need an attitude";
+			mes "adjustment!";
+			mes "Pero pero!";
+			next;
+			warp "prt_monk.gat",95,212;
+			end;
+LStart3:
+	mes "[Saint Pierre]";
+	mes "Ahhh!";
+	mes "Pumpkin candy!";
+	mes "Can I have it";
+	mes "please please please?!";
+	next;
+	menu "Well, since you're so enthusiastic...",L3_1,"It's mine mine mine!",-;
+		mes "[Saint Pierre]";
+		mes "...";
+		mes "Oh, really?  It's mine mine mine now!";
+		mes "Hahahaha!";
+		next;
+		mes "- Pumpkin candy was stolen! -";
+		set pump_event,0;
+		next;
+		mes "[Saint Pierre]";
+		mes "Now scram!";
+		next;
+		warp "prt_monk.gat",95,212;
+		end;
+	L3_1:
+		mes "[Saint Pierre]";
+		mes "Great!";
+		mes "As a token of my gratitude,";
+		mes "I'll present you a gift.";
+		mes "Trick or Treat?";
+		next;
+		menu "Trick",LTrick,"Treat",LTreat;
+//=======================================================
+LTrick:
+	set pump_event,0;
+	set @trick,rand(11);
+	if (@trick == 0) goto Ltri_1;
+	if (@trick == 1) goto Ltri_2;
+	if (@trick == 2) goto Ltri_3;
+	if (@trick == 3) goto Ltri_4;
+	if (@trick == 4) goto Ltri_5;
+	if (@trick == 5) goto Ltri_6;
+	if (@trick == 6) goto Ltri_7;
+	if (@trick == 7) goto Ltri_8;
+	if (@trick == 8) goto Ltri_9;
+	if (@trick == 9) goto Ltri_10;
+	if (@trick == 10) goto Ltri_11;
+Ltri_1:/* Gefin Dungeon (B4F)*/
+	mes "[Saint Pierre]";
+	mes "Zoop!";
+	warp "gef_dun03.gat",138,119;
+	end;
+Ltri_2:/* Glastheim Sewers */
+	mes "[Saint Pierre]";
+	mes "The sewer needs cleaning,";
+	mes "and you're the man for the job!";
+	warp "gl_sew04.gat",293,6;
+	end;
+Ltri_3:/* Glastheim Cave */
+	mes "[Saint Pierre]";
+	mes "You like exploring, don't you?!";
+	warp "gl_dun02.gat",138,72;
+	end;
+Ltri_4:/* Tartar Island Shrine */
+	mes "[Saint Pierre]";
+	mes "You can be king, too!";
+	warp "tur_dun04.gat",100,111;
+	end;
+Ltri_5:/* Izrude Underwater Shrine */
+	mes "[Saint Pierre]";
+	mes "Today is the grand opening of the aquarium!";
+	warp "iz_dun04.gat",130,227;
+	end;
+Ltri_6:/* Aldeberan Clock Tower*/
+	mes "[Saint Pierre]";
+	mes "Why not open a shop?";
+	warp "c_tower4.gat",119,179;
+	end;
+Ltri_7:/* Shipwreck B2F */
+	mes "[Saint Pierre]";
+	mes "Ahoy, Captain!!";
+	warp "tresure02.gat",100,164;
+	end;
+Ltri_8:/* Pumpking Room */
+	mes "[Saint Pierre]";
+	mes "You need guidance!";
+	warp "force_2-1.gat",100,100;
+	end;
+Ltri_9:/* Nogu Road B2F */
+	mes "[Saint Pierre]";
+	mes "Your life is on the fast track!";
+	warp "mag_dun02.gat",212,169;
+	end;
+Ltri_10:/* PvP Event Hour */
+	mes "[Saint Pierre]";
+	mes "I see battle in your future!";
+	warp "pvp_2vs2.gat",19,39;
+	end;
+Ltri_11:/* Shubartsbald Republic Captial Juno */
+	mes "[Saint Pierre]";
+	mes "Strike a pose when you get there!";
+	warp "yuno.gat",210,310;
+	end;
+//=======================================================
+LTreat:/* The probabilities shown were obtained with 500 trials */
+	set pump_event,0;
+	set @treat,rand(100);
+	if ((@treat >= 0) && (@treat < 10)) goto L_Tre_1;
+	if ((@treat >= 10) && (@treat < 20)) goto L_Tre_2;
+	if ((@treat >= 20) && (@treat < 29)) goto L_Tre_3;
+	if ((@treat >= 29) && (@treat < 38)) goto L_Tre_4;
+	if ((@treat >= 38) && (@treat < 47)) goto L_Tre_5;
+	if ((@treat >= 47) && (@treat < 55)) goto L_Tre_6;
+	if ((@treat >= 55) && (@treat < 63)) goto L_Tre_7;
+	if ((@treat >= 63) && (@treat < 69)) goto L_Tre_8;
+	if ((@treat >= 69) && (@treat < 75)) goto L_Tre_9;
+	if ((@treat >= 75) && (@treat < 81)) goto L_Tre_10;
+	if ((@treat >= 81) && (@treat < 85)) goto L_Tre_11;
+	if ((@treat >= 85) && (@treat < 89)) goto L_Tre_12;
+	if ((@treat >= 89) && (@treat < 92)) goto L_Tre_13;
+	if ((@treat >= 92) && (@treat < 94)) goto L_Tre_14;
+	if ((@treat >= 94) && (@treat < 96)) goto L_Tre_15;
+	if ((@treat >= 96) && (@treat < 98)) goto L_Tre_16;
+	if ((@treat >= 98) && (@treat < 100)) goto L_Tre_17;
+L_Tre_1:/* Ice Cream (12.4%) */
+	getitem 536,1;
+	goto LTre_Fin;
+L_Tre_2:/* Clown Nose (10.6%) */
+	getitem 2262,1;
+	goto LTre_Fin;
+L_Tre_3:/* Yellow Gemstone (9.6%) */
+	getitem 715,2;
+	goto LTre_Fin;
+L_Tre_4:/* Huge Jellopi (9.4%) */
+	getitem 7126,1;
+	goto LTre_Fin;
+L_Tre_5:/* Red Gemstone (8.6%) */
+	getitem 716,2;
+	goto LTre_Fin;
+L_Tre_6:/* Blue Gemstone (8%) */
+	getitem 717,2;
+	goto LTre_Fin;
+L_Tre_7:/* Ribbon (8%) */
+	getitem 2209,1;
+	goto LTre_Fin;
+L_Tre_8:/* Sell [?] (5.8%) */
+	getitem 911,1;
+	goto LTre_Fin;
+L_Tre_9:/* Empty Bottle (5.4%) */
+	getitem 713,1;
+	goto LTre_Fin;
+L_Tre_10:/* Empty Potion Bottle (4.8%) */
+	getitem 1093,1;
+	goto LTre_Fin;
+L_Tre_11:/* Empty Test Tube (3.8%) */
+	getitem 1092,1;
+	goto LTre_Fin;
+L_Tre_12:/* Jellopi (3.6%) */
+	getitem 909,1;
+	goto LTre_Fin;
+L_Tre_13:/* Porin Doll (3.4%) */
+	getitem 741,1;
+	goto LTre_Fin;
+L_Tre_14:/* Yellow Slime Potion (2.2%) */
+	getitem 546,1;
+	goto LTre_Fin;
+L_Tre_15:/* White Slime Potion (1.4%) */
+	getitem 547,1;
+	goto LTre_Fin;
+L_Tre_16:/* Red Slime Potion (1.2%) */
+	getitem 545,1;
+	goto LTre_Fin;
+L_Tre_17:/* Gift Box (1.6%) */
+	getitem 644,1;
+	goto LTre_Fin;
+LTre_Fin:
+	mes "[Saint Pierre]";
+	mes "Take this item!";
+	next;
+	mes "[Saint Pierre]";
+	mes "So...?";
+	mes "Is my magic sweet or what?";
+	mes "Pero pero!";
+	close;
+}

@@ -1,0 +1,222 @@
+//
+// This NPC is for arrow-users to buy arrows at a decent price
+// until they can learn the arrow crafting skill.
+// Japanaese script by huge.  Translated by RPG Advocate.
+//
+
+payon.gat,98,57,6	script	Raul    	86,{
+	if (Class==3 || Class==6 || Class==11 || Class==12 || Class==17 || Class==19 || Class==20) goto event;
+
+	mes"[Raul]";
+	mes"Hello, traveller.  How are you?";
+	mes"The weather is perfect.";
+	mes"The flow of the river is relaxing.";
+	close;
+
+event:
+	if (ARROW_NPC) goto again;
+	mes"[Raul]";
+	mes"Hello, traveller.";
+	mes"You seem to be following the path";
+	mes"of the bowman.  I was a hunter, once.";
+	next;
+	mes"[Raul]";
+	mes"However, due to certain difficulties,";
+	mes"I retired...";
+	mes"Despite that, my life has been happy.";
+	next;
+	mes"[Raul]";
+	mes"In order to help you prosper, I'll give";
+	mes"you the rest of the arrows I used a generation ago.";
+	mes"Consider it a professional courtesy.";
+	next;
+	mes"[Raul]";
+	mes"Go talk to the man in the town square.";
+	mes"Tell him I sent you.  He'll give you a";
+	mes"good deal on arrows.";
+	set ARROW_NPC,1;
+	close;
+again:
+	mes"[Raul]";
+	mes"Nice to see you again, traveller.";
+	mes"Did you visit Uncle Badlack at the";
+	mes"town square yet?";
+	close;
+}
+
+payon.gat,100,121,3	script	Badlack 	85,{
+	if(ARROW_NPC) goto buy;
+	if(Sex) goto male;
+	mes"[Badlack]";
+	mes"Eh??";
+	mes"Are you interested in Uncle Badlack?";
+	close;
+
+male:	mes"[Badlack]";
+	mes"Who are you?";
+	mes"I'm not interested in men!";
+	mes"Do you think I'm that kind of person?";
+	mes"Get lost!";
+	close;
+
+buy:	mes"[Badlack]";
+	mes"Oh!  You know Raul?  It's a shame that";
+	mes"he couldn't continue to be a hunter after";
+	mes"the unfortunate incident with his arm.  So, he and I did";
+	mes"the next best thing.  We gathered the best arrows from";
+        mes"around the world for hunters everywhere!";
+	next;
+	mes"[Rual]";
+	mes"Before you buy arrows, be sure that you";
+	mes"won't be encumbered once you finish";
+	mes"the transaction.  I take no responsibility";
+	mes"for anything that happens if you don't.";
+	next;
+	menu 	"Not interested.",hiyakasi,
+		"Arrow x 1000 - 1,000z",arrow00,
+		"Stone Arrow x 500 - 1,500z",arrow01,
+		"Rusty Arrow x 500 - 1,500z",arrow02,
+		"Sharp Arrow x 500 - 1,500z",arrow03,
+		"Iron Arrow x 500 - 1,500z",arrow04,
+		"Steel Arrow x 500 - 1,500z",arrow05,
+		"Silver Arrow x 500 - 1,500z",arrow06,
+		"Burning Arrow x 500 - 2,500z",arrow07,
+		"Icy Arrow x 500 - 2,500z",arrow08,
+		"Wind Arrow x 500 - 2,500z",arrow09,
+		"Crystal Arrow x 500 - 2,500z",arrow10,
+		"Formless Arrow x 500 - 2,500z",arrow11,
+		"Poison Arrow x 500 - 3,500z",arrow12,
+		"Cursed Arrow x 500 - 3,500z",arrow13,
+		"Stun Arrow x 500 - 3,500z",arrow14,
+		"Sleep Arrow x 500 - 3,500z",arrow15,
+		"Flash Arrow x 500 - 3,500z",arrow16,
+		"Silence Arrow x 500 - 3,500z",arrow17,
+		"Shadow Arrow ~500 -> 3,500z",arrow18,
+		"Demonslayer Arrow ~100 -> 40,000z",arrow19,
+		"Oridekon Arrow ~100 -> 50,000z",arrow20;
+
+arrow00:
+	if (Zeny < 1000) goto s_binbo;
+	set Zeny,Zeny-1000;
+	getitem 1750,1000;
+	goto s_last;
+arrow01:
+	if (Zeny < 1500) goto s_binbo;
+	set Zeny,Zeny-1500;
+	getitem 1756,500;
+	goto s_last;
+arrow02:
+	if (Zeny < 1500) goto s_binbo;
+	set Zeny,Zeny-1500;
+	getitem 1762,500;
+	goto s_last;
+arrow03:
+	if (Zeny < 1500) goto s_binbo;
+	set Zeny,Zeny-1500;
+	getitem 1764,500;
+	goto s_last;
+arrow04:
+	if (Zeny < 1500) goto s_binbo;
+	set Zeny,Zeny-1500;
+	getitem 1770,500;
+	goto s_last;
+arrow05:
+	if (Zeny < 1500) goto s_binbo;
+	set Zeny,Zeny-1500;
+	getitem 1753,500;
+	goto s_last;
+arrow06:
+	if (Zeny < 1500) goto s_binbo;
+	set Zeny,Zeny-1500;
+	getitem 1751,500;
+	goto s_last;
+arrow07:
+	if (Zeny < 2500) goto s_binbo;
+	set Zeny,Zeny-2500;
+	getitem 1752,500;
+	goto s_last;
+arrow08:
+	if (Zeny < 2500) goto s_binbo;
+	set Zeny,Zeny-2500;
+	getitem 1759,500;
+	goto s_last;
+arrow09:
+	if (Zeny < 2500) goto s_binbo;
+	set Zeny,Zeny-2500;
+	getitem 1755,500;
+	goto s_last;
+arrow10:
+	if (Zeny < 2500) goto s_binbo;
+	set Zeny,Zeny-2500;
+	getitem 1754,500;
+	goto s_last;
+arrow11:
+	if (Zeny < 2500) goto s_binbo;
+	set Zeny,Zeny-2500;
+	getitem 1757,500;
+	goto s_last;
+arrow12:
+	if (Zeny < 3500) goto s_binbo;
+	set Zeny,Zeny-3500;
+	getitem 1763,500;
+	goto s_last;
+arrow13:
+	if (Zeny < 3500) goto s_binbo;
+	set Zeny,Zeny-3500;
+	getitem 1761,500;
+	goto s_last;
+arrow14:
+	if (Zeny < 3500) goto s_binbo;
+	set Zeny,Zeny-3500;
+	getitem 1758,500;
+	goto s_last;
+arrow15:
+	if (Zeny < 3500) goto s_binbo;
+	set Zeny,Zeny-3500;
+	getitem 1768,500;
+	goto s_last;
+arrow16:
+	if (Zeny < 3500) goto s_binbo;
+	set Zeny,Zeny-3500;
+	getitem 1760,500;
+	goto s_last;
+arrow17:
+	if (Zeny < 3500) goto s_binbo;
+	set Zeny,Zeny-3500;
+	getitem 1769,500;
+	goto s_last;
+arrow18:
+	if (Zeny < 3500) goto s_binbo;
+	set Zeny,Zeny-3500;
+	getitem 1766,500;
+	goto s_last;
+arrow19:
+	if (Zeny < 40000) goto s_binbo;
+	set Zeny,Zeny-4000;
+	getitem 1767,500;
+	goto s_last;
+arrow20:
+	if (Zeny < 50000) goto s_binbo;
+	set Zeny,Zeny-1000;
+	getitem 1765,100;
+	goto s_last;
+
+//After completing the transaction
+s_last:
+	mes"[Badlack]";
+	mes"Thanks.";
+	close;
+//If you don't buy anything
+hiyakasi:
+	mes"[Badlack]";
+	mes"OK.  Good luck, then!";
+	close;
+
+//If you don't have enough money
+s_binbo:
+	mes"[Badlack]";
+	mes"You don't have enough money";
+	mes"I'm here all the time, so please come";
+	mes"back when you have more money.";
+	close;
+}

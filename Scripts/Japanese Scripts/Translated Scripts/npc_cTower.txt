@@ -1,0 +1,208 @@
+//----------------------------------------------------------------------------------------
+// npc_ClockTower - From jRO, by Kalen
+//----------------------------------------------------------------------------------------
+
+//-------------------- [ The Key ( 3F -> 4F ) ] --------------------
+c_tower3.gat,10,249,4	script	Guardian	84,{
+	mes "[Guardian Rick]";
+	mes "Welcome to the floating city";
+	mes "Aldeberan's crown jewel, the";
+	mes "clock tower.";
+	mes "I stand watch at the entrance";
+	mes "to the fourth floor.  If you have";
+	mes "no business here, please leave.";
+	next;
+	menu "Tell me about the tower.",L1,"What's on the 4th floor?",L2,"Take me to the 4th floor.",L3,"Nevermind.",-;
+		mes "[Guardian Rick]";
+		mes "This clock tower is where";
+		mes "three renowned alchemists";
+		mes "did their work.";
+		mes "Please don't touch anything";
+		mes "in the clock tower.";
+		close;
+L1:
+		mes "[Guardian Rick]";
+		mes "In ancient times, Aldeberan was a";
+		mes "mecca for alchemists.  Three distinguished";
+		mes "alchemy teachers occupied this tower:";
+		mes "Burkesmeyer,";
+		mes "Vyripbarsz,"
+		mes "and...";
+		next;
+		mes "[Guardian Rick]";
+		mes "Romerosphire!";
+		mes "At the time the alchemists";
+		mes "constructed this clock tower,";
+		mes "it was considered a magnificent";
+		mes "structure, even considering its";
+		mes "relative lack of height.";
+		next;
+		mes "[Guardian Rick]";
+		mes "Their intent was to build";
+		mes "a structure suitable for";
+		mes "ancient ritual magic.";
+		mes "Before that, they were just";
+		mes "wandering aimlessly.";
+		next;
+		mes "[Guardian Rick]";
+		mes "You may encounter demons";
+		mes "while exploring the tower, so";
+		mes "don't get complacent...";
+		close;
+L2:
+		mes "[Guardian Rick]";
+		mes "In order to protect their";
+		mes "work from demons and agents";
+		mes "of hostile countries, the";
+		mes "alchemists sealed the door";
+		mes "to the fourth floor.  In";
+		mes "order to unseal it, you must";
+		next;
+		mes "[Guardian Rick]";
+		mes "find the key that unlocks it.";
+		mes "One of the demons in this";
+		mes "tower probably has the key.";
+		next;
+		mes "[Guardian Rick]";
+		mes "The key was created ";
+		mes "using extrme alchemical";
+		mes "processes.";
+		next;
+		mes "[Guardian Rick]";
+		mes "Once you find the key,";
+		mes "please come back and";
+		mes "show it to me.";
+		mes "When you do, you can";
+		mes "pass.";
+		next;
+		mes "[Guardian Rick]";
+		mes "If you're tough and";
+		mes "luck is on your side,";
+		mes "you'll probably find it.";
+		mes "...";
+		close;
+L3:
+	if (!(countitem(7026)>=1)) goto L3_1;
+		mes "[Guardian Rick]";
+		mes "I thought as much!  I sensed your";
+		mes "unusual aura from the";
+		mes "moment I met you!";
+		mes "You're ready to go through the door.";
+		mes "Good luck to you.";
+		next;
+		delitem 7026,1;
+		warp "c_tower4.gat",185,44;
+		end;
+L3_1:
+		mes "[Guardian Rick]";
+		mes "...";
+		mes "The alchemists took great";
+		mes "pains to protect their work.";
+		mes "If you don't think you're suited";
+		mes "to try and open the door, you should";
+		mes "get stronger and try again later.";
+		close;
+}
+
+//-------------------- [ The Key ( B3 -> B4 ) ] --------------------
+
+alde_dun03.gat,264,16,4	script	Guardian	101,{
+	mes "[Guardian Eye]";
+	mes "Welcome to the floating city";
+	mes "Aldeberan's crown jewel, the";
+	mes "clock tower.";
+	mes "I stand watch at the entrance";
+	mes "to the fourth basement.  If you have";
+	mes "no business here, please leave.";
+	next;
+	menu "Tell me about the clock tower",L1,"What's on B4F?",L2,"Take me to B4F.",L3,"Nevermind.",-;
+		mes "[Guardian Eye]";
+		mes "This clock tower is where";
+		mes "three renowned alchemists";
+		mes "did their work.";
+		mes "Please don't touch anything";
+		mes "in the clock tower.";
+		close;
+L1:
+		mes "[Guardian Eye]";
+		mes "In ancient times, Aldeberan was a";
+		mes "mecca for alchemists.  Three distinguished";
+		mes "alchemy teachers occupied this tower:";
+		mes "Burkesmeyer,";
+		mes "Vyripbarsz,"
+		mes "and...";
+		next;
+		mes "[Guardian Rick]";
+		mes "Romerosphire!";
+		mes "At the time the alchemists";
+		mes "constructed this clock tower,";
+		mes "it was considered a magnificent";
+		mes "structure, even considering its";
+		mes "relative lack of height.";
+		next;
+		mes "[Guardian Rick]";
+		mes "Their intent was to build";
+		mes "a structure suitable for";
+		mes "ancient ritual magic.";
+		mes "Before that, they were just";
+		mes "wandering aimlessly.";
+		next;
+		mes "[Guardian Rick]";
+		mes "You may encounter demons";
+		mes "while exploring the tower, so";
+		mes "don't get complacent...";
+		close;
+L2:
+		mes "[Guardian Eye]";
+		mes "In order to protect their";
+		mes "work from demons and agents";
+		mes "of hostile countries, the";
+		mes "alchemists sealed the door";
+		mes "to the fourth basement.  In";
+		mes "order to unseal it, you must";
+		next;
+		mes "[Guardian Eye]";
+		mes "find the key that unlocks it";
+		mes "One of the demons in this";
+		mes "tower probably has the key.";
+		next;
+		mes "[Guardian Rick]";
+		mes "The key was created ";
+		mes "using extrme alchemical";
+		mes "processes.";
+		next;
+		mes "[Guardian Rick]";
+		mes "Once you find the key,";
+		mes "please come back and";
+		mes "show it to me.";
+		mes "When you do, you can";
+		mes "pass.";
+		next;
+		mes "[Guardian Rick]";
+		mes "If you're tough and";
+		mes "luck is on your side,";
+		mes "you'll probably find it.";
+		mes "...";
+		close;
+L3:
+	if (!(countitem(7027)>=1)) goto L3_1;
+		mes "[Guardian Eye]";
+		mes "I thought as much!  I sensed your";
+		mes "unusual aura from the";
+		mes "moment I met you!";
+		mes "You're ready to go through the door.";
+		mes "Good luck to you.";
+		next;
+		delitem 7027,1;
+		warp "alde_dun04.gat",79,267;
+		end;
+L3_1:
+		mes "[Guardian Eye]";
+		mes "...";
+		mes "The alchemists took great";
+		mes "pains to protect their work.";
+		mes "If you don't think you're suited";
+		mes "to try and open the door, you should";
+		mes "get stronger and try again later.";
+		close;
+}
