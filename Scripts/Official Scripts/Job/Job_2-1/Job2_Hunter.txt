@@ -28,7 +28,6 @@ L_MENU1:
          check Job == 3,-,L_MENU1_F1;
          check JobLevel > 39,-,L_MENU1_F2;
          check SkillPoint == 0,-,L_MENU1_F3;
-         set JobLevel = 1,0;
          jobchange 11;
       mes "[Hunter]";
       mes "Congradulations, you are now a Hunter!";

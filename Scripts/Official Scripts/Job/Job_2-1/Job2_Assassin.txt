@@ -25,7 +25,6 @@ L_MENU_1:
          check Job == 6,-,L_MENU_1_F1;
          check JobLevel > 39,-,L_MENU_1_F2;
          check SkillPoint == 0,-,L_MENU1_F3;
-         set JobLevel = 1,0;
          jobchange 12;
       mes "[Assassin Clan Member]";
       mes "Congradulations, you are now an Assassin!";

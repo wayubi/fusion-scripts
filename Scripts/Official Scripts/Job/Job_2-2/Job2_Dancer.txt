@@ -46,7 +46,6 @@ L_MENU_D_1:
          check JobLevel >= 40,-,L_MENU1_D2;
          check SkillPoint == 0,-,L_MENU1_D3;
          check Gender == 0,-,L_MENU1_D4;
-         set JobLevel = 1,0;
          jobchange 20;
       mes "[Bijou]";
       mes "Welcome to the Dancer's guild!";

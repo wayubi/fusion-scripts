@@ -350,7 +350,6 @@ moc_prydb1.gat,42,133,2	script	"Comrade"	118,{
 			getitemamount 1070, @var;
 			delitem 1070,@X;
 			delitem 1069,@Y;
-			set JobLevel = 1,0;
 			check job = 24,HIGH,-;
 				jobchange 6;
 				goto Congra;

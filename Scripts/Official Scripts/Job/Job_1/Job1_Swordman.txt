@@ -82,7 +82,6 @@ CHECK:
 	mes "Congratulations $charaname ! Now you are fully qualified for Real Swordsman!";
 	mes "I will promote you right away!!";
 	next;
-	   set JobLevel = 1,0;
 		check job = 24,HIGH,-;
 	    jobchange 1;
 	    goto CONGRA;

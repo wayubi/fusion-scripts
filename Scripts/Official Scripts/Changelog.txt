@@ -1,6 +1,7 @@
 --------------------------------------------------------------------------------
  Fusion 1.213 - August 29th, 2004
 -------------------------------------------------------------------------------- 
+- 10-17-04: Jobs\*\*.txt - Removed all instances of "set joblevel".  Jobchange does this. [Tsusai]
 - 10-17-04: Event\Event_Hairdresser.txt - Fixed Hairdresser NPC's. [Kalegula]
 - 10-17-04: Event\Event_PVP.txt - Changed Position of the PvP NPC's in Alberta. [Kalegula]
 - 10-17-04: Event\Event_Hairdresser.txt - Added Hairdresser to the NPC's. [Kalegula]

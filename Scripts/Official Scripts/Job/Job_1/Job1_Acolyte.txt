@@ -79,7 +79,6 @@ NPCEnd:
 QUEST_DONE:
 	mes "Hmm... Now you are qualified and your name is on the list. All right. I hereby will take your willingness to become Acolyte.";
 	next;
-	   set JobLevel = 1,0;
 	    check job = 24,HIGH,-;
 	     jobchange 4;
 	     goto CONGRA;

@@ -27,7 +27,6 @@ L_MENU1:
       next;
       check JobLevel >= 40,-,L_MENU1_F2;
       check SkillPoint == 0,-,L_MENU1_F3;
-      set JobLevel = 1,0;
       jobchange 17;
       mes "[Rogue Guildsman]";
       mes "Welcome to the rogue's guild!";

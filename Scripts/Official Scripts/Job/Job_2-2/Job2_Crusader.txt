@@ -169,7 +169,6 @@ L_COMPLETION:
 mes "[Crusader]";
 mes "Welcome to our ranks brother $charaname !";
 next;  
-set JobLevel = 1,0;
 jobchange 14;
 close;
 }
