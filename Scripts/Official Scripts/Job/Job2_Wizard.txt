@@ -1460,7 +1460,7 @@ job_wiz.gat,0,0,0	script	"earthtest"	-1,{
 			callmob "job_wiz",114,95,"Mandragora",1020,0,"earthtest";
 			callmob "job_wiz",118,95,"Mandragora",1020,0,"earthtest";
 			callmob "job_wiz",114,99,"Mandragora",1020,0,"earthtest";
-			callmob "job_wiz",118,99,"Mandragora ",1020,0,"earthtest";
+			callmob "job_wiz",118,99,"Mandragora",1020,0,"earthtest";
 			callmob "job_wiz",116,94,"Mandragora",1020,0,"earthtest";
 			callmob "job_wiz",116,100,"Mandragora",1020,0,"earthtest";
 			npctimer 1;
