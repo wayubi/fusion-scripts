@@ -4,7 +4,7 @@
 // http://fusion.cobax.net/
 // ---------------------------------------------------------------------------------------
 //
-// - Faberau -> prontera 164 183
+// - Faberau -> prontera 161 320
 // 	Job Changer for all jobs, including 2-3(Advanced 2nd Job) and Super Novice.
 //		5k for 1st job, 5k for Super Novice, 10k for 2nd job, 20k for Advanced 2nd Job
 //
