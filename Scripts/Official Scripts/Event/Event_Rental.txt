@@ -12,16 +12,15 @@
 // - Falcon Breeder -> in_hunter: 146,99
 //   Rent falcon to Hunters.
 //
+// - Grand Peko Breeder -> prontera: 238,313
+//   Rent pecopeco to Crusaders.
+//
 //========================================================================================
 
 prontera.gat,55,350,5	script	"Peco Breeder"	105,{
-	check Job == 7,L_START_2,-;
-	check Job == 14,-,L_START_1;
-	set @peco_price = 3000;
+	check Job == 7,-,L_START_1;
+	set @peco_price = 2500;
 	goto L_START_2_1;
-	L_START_2:
-		set @peco_price = 2500;
-		goto L_START_2_1;
 	L_START_2_1:
 		mes "[Peco Breeder]";
 		mes "Hello, want to buy a peco to ride on?";
@@ -87,4 +86,38 @@ in_hunter.gat,146,99,2	script	"Falcon Breeder"	105,{
 		mes "[Falcon Breeder]";
 		mes "Sorry only Hunters can have a Falcon";
 		close;
+}
+
+prontera.gat,238,313,3	script	"Grand Peko Breeder"	105,{
+	check Job=14,-,L_noKnight;
+	mes "[Grand Peko Breeder]";
+	mes "So you wish to rent a Grand Peko huh?";
+	mes "It'll cost you 3000 zeny.";
+	next;
+	menu "Rent a Grand Peko",L_peko_yes,"No",L_peko_no;
+	L_peko_yes:
+		check Zeny >= 3000,-,L_peko_nomaney;
+		mes "[Grand Peko Breeder]";
+		mes "That will be 3000 zenys";
+		set Zeny - 3000;
+		next;
+		option 2,0;
+		option 2,1;
+		mes "[Grand Peko Breeder]";
+		mes "... and here is your PecoPeco.";
+		close;
+	L_peko_no:
+		mes "[Grand Peko Breeder]";
+		mes "Alright, continue on.";
+		close;
+ L_peko_nomaney:
+  mes "[Grand Peko Breeder]";
+  mes "I'm sorry...";
+  mes "You don't have enough zeny.";
+  close;
+L_noKnight:
+  mes "[Grand Peko Breeder]";
+  mes "So you wish to ride a PecoPeco?";
+  mes "You can't ride a PecoPeco unless you are a Crusader.";
+ close;
 }

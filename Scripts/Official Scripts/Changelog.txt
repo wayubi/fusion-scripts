@@ -9,8 +9,9 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.003
 ----------------------------------------------------------------------------------------------------
-- GvG\gefg_cas01 - 03.txt - Fixes missing Guardian bug and Kafra service bug [icbob]
-- GvG\aldeg_cas0#.txt - Fixes missing Guardian bug and Kafra service bug in all Aldebaran Guild castles [icbob]
+- Event\Event_Rental.txt - Moved Grand Peko Breeder here and removed crusader support for Peko Breeder. [Tsusai]
+- GvG\gefg_cas01 - 03.txt - Fixes missing Guardian bug and Kafra service bug. [icbob]
+- GvG\aldeg_cas0#.txt - Fixes missing Guardian bug and Kafra service bug in all Aldebaran Guild castles. [icbob]
 - GvG\npc_guardiankafra.txt - Fixes missing Guardian bug and Kafra service at prtg_cas01. [Tsusai]
 - GvG\*_cas0*.txt - Updated Kafra Services storage check. [Tsusai]
 - NPC\npc_skill_get.txt - Finalized the novice skill quests, replaced variable w/ quest item. [Tsusai]

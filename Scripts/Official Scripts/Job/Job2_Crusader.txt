@@ -463,38 +463,3 @@ mes "[Renalds]";
 mes "Hey brother $charaname , how is everything today? Well I hope.";
 close;
 }
-
-// Grand peko breeder -- for Crusaders by icbob
-prontera.gat,238,313,3	script	"Grand Peko Breeder"	105,{
-  check Job=14,-,L_noKnight;
-  mes "[Grand Peko Breeder]";
-  mes "So you wish to rent a Grand Peko huh?";
-  mes "It'll cost you 3000 zeny.";
-  next;
-  menu "Rent a Grand Peko",L_peko_yes,"No",L_peko_no;
- L_peko_yes:
-  check Zeny >= 3000,-,L_peko_nomaney;
-  mes "[Grand Peko Breeder]";
-  mes "That will be 3000 zenys";
-  set Zeny - 3000;
-  next;
-  option 2,0;
-  option 2,1;
-  mes "[Grand Peko Breeder]";
-  mes "... and here is your PecoPeco.";
-  close;
- L_peko_no:
-  mes "[Grand Peko Breeder]";
-  mes "Alright, continue on.";
-  close;
- L_peko_nomaney:
-  mes "[Grand Peko Breeder]";
-  mes "I'm sorry...";
-  mes "You don't have enough zeny.";
-  close;
-L_noKnight:
-  mes "[Grand Peko Breeder]";
-  mes "So you wish to ride a PecoPeco?";
-  mes "You can't ride a PecoPeco unless you are a Crusader.";
- close;
-}
