@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.003
 ----------------------------------------------------------------------------------------------------
+- NPC\npc_skill_get.txt - Updated item descriptions for the thief and auto-berserk. [Tsusai]
 - NPC\npc_skill_get.txt - Translated the rest of the platinum skills except Berserk. [Tsusai]
 - Event\Event_Making.txt - Fixed Bao Bao requirements. [mudvayne]
 - Event\Event_Making.txt - Fixed Phantom of Opera requirements. [mudvayne]

@@ -324,18 +324,13 @@ L1_2:
 		mes "Whatever...";
 		close;
 L1_3:
-		mes "[Leo]";
-		mes "今回私が開発したスキルだ。";
-		mes "バッシュを使う時、君のバッシュ";
-		mes "スキルによって少しスタン状態に";
-		mes "させることができる。";
-		mes "バッシュくらいは身につけているか？";
-		next;
-		mes "[Leo]";
-		mes "どうだ、スタンはかなり効果的な";
-		mes "テクニックだと思うが。";
-		mes "気に入ったらまたおいで。";
-		close;
+	mes "[Leo]";
+	mes "This skill makes it possible to";
+	mes "stun an enemy when you bash it.";
+	mes "By using this skill, you";
+	mes "develop the instinct necessary to";
+	mes "spot an enemy's weakness and exploit it.";
+	close;
 L2:
 	mes "[Leo]";
 	mes "Welcome, young swordsman.";
@@ -388,7 +383,7 @@ L3_1:
 		mes "First you need the skill ^3355FF Bash Lv6 ^000000.";
 		mes "You will also need ^3355FF10x Fire Arrow^000000, ^3355FF10x Silver Arrow^000000,";
 		mes "^3355FF1x Banana Juice^000000,^3355FF30x Tentacle^000000,";
-		mes "and ^3355FF5x Emperor's Jelly^000000.";
+		mes "and ^3355FF5x Royal Jelly^000000.";
 		next;
 		mes "[Leo]";
 		mes "Once you have gathered the materials,";
@@ -508,12 +503,12 @@ L0_2:
 	mes "need to make this skill yours.";
 	next;
 	mes "[Fan]";
-	mes "You need ^3355FF35x Butterfly Powder^000000,";
+	mes "You need ^3355FF35x Powder of Butterfly^000000,";
 	mes "from the heart of a living butterfly.";
 	mes "This will allow you to concentrate.";
-	mes "You also need ^3355FF10x Zealot's Fang^000000,";
-	mes "^3355FF10x Zealot's Nail^000000, and";
-	mes "^3355FF10x Bee Honey^000000!";
+	mes "You also need ^3355FF10x Horrendous Mouth^000000,";
+	mes "^3355FF10x Decayed Nail^000000, and";
+	mes "^3355FF10x Honey^000000!";
 	next;
 	mes "[Fan]";
 	mes "Did you get all that?";
@@ -552,12 +547,12 @@ L1_1:
 		mes "need to make this skill yours.";
 		next;
 		mes "[Fan]";
-		mes "You need ^3355FF35x Butterfly Powder^000000,";
+		mes "You need ^3355FF35x Powder of Butterfly^000000,";
 		mes "from the heart of a living butterfly.";
 		mes "This will allow you to concentrate.";
-		mes "You also need ^3355FF10x Zealot's Fang^000000,";
-		mes "^3355FF10x Zealot's Nail^000000, and";
-		mes "^3355FF10x Bee Honey^000000!";
+		mes "You also need ^3355FF10x Horrendous Mouth^000000,";
+		mes "^3355FF10x Decayed Nail^000000, and";
+		mes "^3355FF10x Honey^000000!";
 		next;
 		mes "[Fan]";
 		mes "Did you get all that?";
@@ -2356,7 +2351,7 @@ L1_0:
 		mes "with a rock floor.";
 		next;
 		mes "[Alcouskou]";
-		mes "By using this Fine Granule";
+		mes "By using this Fine Grit";
 		mes "concoction, you can create";
 		mes "sand anywhere";
 		mes "There's just one problem.";
@@ -2403,7 +2398,7 @@ L1_E:
 		mes "preparations, though.  In order";
 		mes "to make the concoction you will";
 		mes "need to create sand, you must";
-		mes "gather ^3355FF5x Fine Granule^000000.";
+		mes "gather ^3355FF5x Fine Grit^000000.";
 		next;
 		mes "[Alcouskou]";
 		mes "It looks like you're eager to";
@@ -2442,7 +2437,7 @@ L1_2:
 		mes "imitate my movements...";
 		next;
 		mes "[Alcouskou]";
-		mes "ていっ！";
+		mes "eeeyaah!!";
 		mes "^5533FF- Sha Sha -^000000";
 		next;
 		mes "^5533FF- Shaa Shaa -^000000";
@@ -2493,7 +2488,6 @@ L2_0:
  		close;
 L2_E:
  		mes "[Alcouskou]";
- 		mes "[Alcouskou]";
 		mes "One of the worst things that";
 		mes "can happen is when a perfectly";
 		mes "good battle starts going bad.";
@@ -2527,7 +2521,7 @@ L2_E:
 		mes "As part of your training,";
 		mes "you'll need to cast far and";
 		mes "wide for the";
-		mes "^3355FF20x Grasshopper's Toe^000000";
+		mes "^3355FF20x Grasshopper's Leg^000000";
 		mes "that is the key to mastering the art of the Backsliding.";
 		next;
 		mes "[Alcouskou]";
@@ -2614,13 +2608,13 @@ L3_E:
 	mes "between the useful and the useless,";
 	mes "I will ask you to procure three";
 	mes "uncommon objects.  First, you need";
-	mes "to find a ^3355FFGrizzly's Foot^000000.";
+	mes "to find a ^3355FFBear's Foot^000000.";
 	next;
 	mes "[Alcouskou]";
 	mes "Second, travel overland and find a promising and";
-	mes "and exquisite ^3355FFJiargon^000000!";
+	mes "and exquisite ^3355FFZargon^000000!";
 	mes "Then, go deep into the swamp and find";
-	mes "^3355FF5x Demon's Egg^000000!!";
+	mes "^3355FF5x Spawn^000000!!";
 	mes "Do you understand?  Then";
 	mes "go quickly!";
 //-----------------------------------------------
