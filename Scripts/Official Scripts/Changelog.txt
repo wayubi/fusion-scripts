@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.003
 ----------------------------------------------------------------------------------------------------
+- Warp\other\sword.txt - Removed - Map no longer used. [Tsusai]
 - GvG\npc_guardiankafra.txt - Added Payon Castle fixes. [Tsusai]
 - shop\geffen.txt - Updated Geffen shop added items updated prices. [Muad_Dib]
 - shop\izlude.txt - Updated Izlude shop added items updated prices. [Muad_Dib]
