@@ -1,0 +1,12 @@
+====================================================================================================
+ »» The Fusion Project ««
+ Copyright (c) 2004, Cobax Information Systems
+ http://fusion.cobax.net/
+----------------------------------------------------------------------------------------------------
+ Japanese Scripts Change Logs
+====================================================================================================
+ - Notice: When a script has been translated put it into the Translated folder and,
+   delete the Untranslated file.
+====================================================================================================
+- 05-26-04: Untranslated\Turtle_isle.txt - Added Untransalted Turtle Isle Script [Muad_Dib]
+- 05-26-04: Added Japanese Scripts section. [Muad_Dib]
