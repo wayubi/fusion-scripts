@@ -43,7 +43,6 @@
 //   Warp to a random location.
 //
 //========================================================================================
-
 yuno_in05.gat,196,102,0	script	"random"	723,{
 	random @rdmwarp_yuno,3;
 	check @rdmwarp_yuno = 0,L1,-;
