@@ -43,38 +43,38 @@
 payon_in01.gat,103,111,4	script	"Granny"	103,{
 	checkitem 1049,4,-,L_START_1;
 		mes "[Granny]";
-		mes "I wish I could make Clothings for my Grand Children in this festive season..";
-		mes "Could you give me your ^3355FF' Skirt of Virgin '^000000 ..I need Four of it ..Please ?";
+		mes "I wish I could make clothing for my grandchildren in this festive season..";
+		mes "Could you give me your ^3355FF' Skirt of Virgin '^000000 ..I need four of them ..Please ?";
 		mes "I am begging you, Young man..";
 		next;
 		menu "Alright.",-,"No way!",L_MENU_1;
 			checkadditem 2293,1,-,L_START_2;
 			delitem 1049,4;
 			mes "[Granny]";
-			mes "Oh Thank you so much ~ Now I can make Clothings for Kitty Cutty ~";
-			mes ".. Ah..Wait  ..I almost forgot.Well I was a quite popular actress back in my young day...";
-			mes "My members gave me for wedding present when I left the Troupe...I've kept it for the precious memory of my youth.";
+			mes "Oh thank you so much ~ Now I can make clothing for Kitty Cutty ~";
+			mes ".. Ah..Wait  ..I almost forgot. Well I was a quite popular actress back in my young day...";
+			mes "My members gave me a wedding present when I left the Troupe...I've kept it as a precious memory of my youth.";
 			next;
 			additem 2293,1;
 			mes "[Granny]";
-			mes "If it's Okay,I want to give you mine for your Fabrics.";
+			mes "If it's okay, I want to give you mine for your fabrics.";
 			mes "Good Bye ~Young man~!";
 			close;
 	L_MENU_1:
 			mes "[Granny]";
 			mes "Sigh..How can I get  ^3355FF'Skirt of Virgin '^000000 by myself...I am so weak and tired ..Sigh..";
-			mes "I really wanted to make my Babies Happy .....";
+			mes "I really wanted to make my babies Happy .....";
 			close;
 	L_START_1:
 		mes "[Granny]";
-		mes "I gather Mushrooms on the Mountin of Payon Everyday.I didn't even noticed time has come because of my bad memory....";
-		mes ".. Hmm..Now I remember of a festive season in next month.";
-		mes "I wish I could make clothings for my family in this season.";
+		mes "I gather Mushrooms on the Mountin of Payon Everyday. I didn't even noticed the time has come because of my bad memory....";
+		mes ".. Hmm..Now I remember a festive season next month.";
+		mes "I wish I could make clothing for my family in this season.";
 		mes "For that,I need ^3355FF'4 Skirt of Virgin'^000000..";
 		next;
 		mes "[Granny]";
-		mes "Young man,please help me.When you find Some ^3355FF'Skirt of Virgin '^000000..";
-		mes "please bring them to me.I won't forget if you help me...";
+		mes "Young man,please help me. When you find Some ^3355FF'Skirt of Virgin '^000000..";
+		mes "please bring them to me. I won't forget if you help me...";
 		close;
 	L_START_2:
 		mes "[Granny]";
@@ -84,29 +84,29 @@ payon_in01.gat,103,111,4	script	"Granny"	103,{
 
 geffen_in.gat,144,166,4	script	"Blacksmith"	63,{
 	mes "[Blacksmith]";
-	mes "Who am I! I am the one and only Veteran Blacksmith in here! You heard?!";
-	mes "I've been working for 30 years in this hotty, bloody Hellfire!";
+	mes "Who am I! I am the one and only Veteran Blacksmith in here! You hear?!";
+	mes "I've been working here for 30 years in this hotty, bloody Hellfire!";
 	mes "Since I became a Blacksmith, I invented something really incredible. Wanna listen?";
 	next;
-	menu "I'd love to.",L_MENU_1,"Well,I don't think I want.",L_MENU_2;
+	menu "I'd love to.",L_MENU_1,"Well,I don't think I want to.",L_MENU_2;
 	L_MENU_1:
 		mes "[Blacksmith]";
-		mes "We allways make Various Metal products with welding Steel under Horribly Hot circunstances.";
-		mes "So we have to face the hot-air heating and metallic fluid, our face are almost burnt down and sometimes injured during working...";
-		mes "But with this!!!! You dont have to be worried~! So-Called .. ^3355FF' Welding Mask '^000000 !!";
+		mes "We always make various metal products by welding steel under horribly hot circumstances.";
+		mes "So we have to face the hot-air heating and metallic fluid, our faces are almost burnt and sometimes we are injured during working...";
+		mes "But with this!!!! You don't have to be worried~! So-Called .. ^3355FF' Welding Mask '^000000 !!";
 		next;
 		mes "[Blacksmith]";
 		mes "This one keeps your face out of the heat.";
-		mes "This Must be an Most-wannaget ~ ¡Ù Item !";
+		mes "This must be a most-wannaget ~ ¡Ù Item !";
 		mes "So how's that ? If you offer me ^2244FF'50 Steels '^000000 and ^4422FFOnly 2000 Zeny^000000, I will make it for you right away~!!";
 		next;
-		menu "Hm.. Not bad. Alright.",L_SUB_1_1,"No thanks. Useless for me though.",L_SUB_1_2;
+		menu "Hm.. Not bad. Alright.",L_SUB_1_1,"No thanks. Useless to me.",L_SUB_1_2;
 		L_SUB_1_1:
 			
 			checkitem 999,50,-,L_SUB_1_1_1;
 			check zeny >= 2000,-,L_SUB_1_1_1;
 			mes "[Blacksmith]";
-			mes "I like you,Dude ! Alright,I do it right away !!";
+			mes "I like you dude! Alright, I'll make it right away !!";
 			next;
 			delitem 999,50;
 			set zeny -=  2000,0;
@@ -123,8 +123,8 @@ geffen_in.gat,144,166,4	script	"Blacksmith"	63,{
 				close;
 		L_SUB_1_2:
 			mes "[Blacksmith]";
-			mes "Oh Man! You should regret this time. I recommanded it for you not me !";
-			mes "Man, Everyone gets older and older. You should take care of your bloody face before it gets shirinking!";
+			mes "Oh Man! You should regret this. I recommended it for you, not for me!";
+			mes "Man, Everyone gets older and older. You should take care of your bloody face before it starts shirinking!";
 			close;
 	L_MENU_2:
 		mes "[Blacksmith]";
@@ -132,24 +132,24 @@ geffen_in.gat,144,166,4	script	"Blacksmith"	63,{
 		close;
 }
 
-payon_in01.gat,103,79,4	script	"Mistic Lady"	76,{
-	mes "[Mistic Lady]";
+payon_in01.gat,103,79,4	script	"Mystic Lady"	76,{
+	mes "[Mystic Lady]";
 	mes ". . . . . .";
-	mes "My Family have produced and sold the special Winter product  ^3355FF'Ear Muffs'^000000 for many years..";
-	mes "We just moved in here, but unfortunately the Weather is always Warm so we hardly live with our Job...";
+	mes "My family has produced and sold the special Winter product  ^3355FF'Ear Muffs'^000000 for many years..";
+	mes "We've just moved here, but unfortunately the weather is always warm so we hardly live with our Job...";
 	mes "If you plan to travel to the cold area I suggest you to prepare ^3355FF'Ear Muffs'^000000..";
 	next;
-	mes "[Mistic Lady]";
+	mes "[Mystic Lady]";
 	mes ". . . . . .";
-	mes "Ear Muffs is the special product of my family's own. We provide it to customers with ^FF3355'1 Cursed Rubi '^000000, ^3311AA' 1 Headset '^000000..";
+	mes "Ear Muffs is the special product of my family's own. We provide it to customers with ^FF3355'1 Cursed Ruby '^000000, ^3311AA' 1 Headset '^000000..";
 	mes " ^3355FF' 200 Feathers '^000000 and  ^DDDD00' 5000 Zeny '^000000.";
 	next;
-	menu "Oh Yeah?It sounds Good.",-,"No thank you,Ma'am.",L_MENU_1;
+	menu "Oh yeah? It sounds good.",-,"No thank you, Ma'am.",L_MENU_1;
 		checkitem 724,1,-,L_SUB_1;
 		checkitem 949,200,-,L_SUB_1;
 		checkitem 5001,1,-,L_SUB_1;
 		check Zeny >= 5000,-,L_SUB_1;
-		mes "[Mistic Lady]";
+		mes "[Mystic Lady]";
 		mes ". . . . .";
 		delitem 724,1;
 		delitem 949,200;
@@ -158,33 +158,33 @@ payon_in01.gat,103,79,4	script	"Mistic Lady"	76,{
 		mes "I will give you this ready-made one.";
 		additem 2283,1;
 		next;
-		mes "[Mistic Lady]";
+		mes "[Mystic Lady]";
 		mes ". . . . .";
-		mes "Thank you for buying our product.You won't regret to purchase our Ear Muffs.This one is the satisfaction Guaranteed.";
+		mes "Thank you for buying our product. You won't regret purchasing our Ear Muffs. This one is the satisfaction Guaranteed.";
 		close;
 	L_SUB_1:
-		mes "[Mistic Lady]";
+		mes "[Mystic Lady]";
 		mes ". . . . .";
 		mes ". . . . . Dear .. You don't have enough money and items ..";
-		mes "We can't afford you if you don't bring every items needed. Discount is not served.Please understand we have to make our living...";
+		mes "We can't afford you if you don't bring every items needed. Discount is not served. Please understand we have to make our living...";
 		close;
 	L_MENU_1:
-		mes "[Mistic Lady]";
+		mes "[Mystic Lady]";
 		mes ". . . . .";
-		mes "That's fine.I believe we will meet one of these days  ..";
+		mes "That's fine. I believe we will meet one of these days  ..";
 		mes ". . . . .";
 		close;
 }
 
 alberta_in.gat,122,53,4	script	"Cherokee"	47,{
 	mes "[Cherokee]";
-	mes "Hey I am a Horn Collector. Sounds Great,Huh?";
-	mes "What do you think about Animal horns? I think they are worth collecting. You can even wear them on your head.";
+	mes "Hey I am a Horn Collector. Sounds great, huh?";
+	mes "What do you think about animal horns? I think they are worth collecting. You can even wear them on your head.";
 	mes "You can even decorate your house with them, they're great.";
 	next;
 	mes "[Cherokee]";
-	mes "Unfortunately, I realised there's a Horn I don't have yet. It's called ^FF3355'Evil Horn '^000000..";
-	mes "And some might say Evil horn is not an animal horn but a horn of the Devil. Still I really really wish I could have it.";
+	mes "Unfortunately, I realized there's a Horn I don't have yet. It's called ^FF3355'Evil Horn '^000000..";
+	mes "And some might say Evil horn is not an animal horn but a horn of a devil. Still I really, really wish I could have it.";
 	mes "Do you....? Do you have the ^FF3355'Evil Horn '^000000?";
 	mes "If you bring me 20 Evil Horns, I will give you my precious collection, ^3355FF'Antler '^000000. Deal?";
 	next;
@@ -193,12 +193,12 @@ alberta_in.gat,122,53,4	script	"Cherokee"	47,{
 		checkitem 923,20,-,L_SUB_1;
 		delitem 923,20;
 		mes "[Cherokee]";
-		mes "Whoah~! This is the first time I've ever seen a real ^FF3355'Evil Horn'^000000!!";
+		mes "Whoa~! This is the first time I've ever seen a real ^FF3355'Evil Horn'^000000!!";
 		mes "Thank you! I'm a man of my word, here's your reward!";
 		additem 2284,1;
 		next;
 		mes "[Cherokee]";
-		mes "With your great help, I can make my wish come true this time. I appreciate you!";
+		mes "With your great help, I can make my wish come true this time. I appreciate this!";
 		mes "God Bless You ..";
 		close;
 	L_SUB_1:
@@ -207,7 +207,7 @@ alberta_in.gat,122,53,4	script	"Cherokee"	47,{
 		close;
 	L_MENU_1:
 		mes "[Cherokee]";
-		mes "Well that's fine .. Although you seam like a very rude person... I forgive you.";
+		mes "Well that's fine .. Although you seem like a very rude person... I forgive you.";
 		mes "And I know we will speak again ..";
 		close;
 	L_START_1:
@@ -227,8 +227,8 @@ morocc_in.gat,142,100,4	script	"Willian"	89,{
 	next;
 	menu "Could I order one ^3355FF' Stop Post '^000000?",-,"Nah,Not my business.",L_MENU_1;
 		mes "[Willian]";
-		mes "The Ancient Lineage,MacMillan's Unique ornament,^3355FF' Stop Post '^000000 ..";
-		mes "is also Durable as a Traffic Signal on the road, furthermore fits you well as a hair decoration ornament.";
+		mes "The Ancient Lineage, MacMillan's Unique ornament,^3355FF' Stop Post '^000000 ..";
+		mes "is also durable as a Traffic Signal on the road, furthermore fits you well as a hair decoration ornament.";
 		mes "We will promise you on the strength of a 100-years guarantee.";
 		next;
 		mes "[Willian]";
@@ -250,11 +250,11 @@ morocc_in.gat,142,100,4	script	"Willian"	89,{
 	L_SUB_1:
 		mes "[Willian]";
 		mes "Why don't you check the requirements again??";
-		mes "I don't think you brought every items needed.";
+		mes "I don't think you brought every item needed.";
 		close;
 	L_MENU_1:
 		mes "[Willian]";
-		mes "Anyway Thank you for coming by,My Clan,`MacMillan's Workshop.";
+		mes "Anyway Thank you for coming by, My Clan, `MacMillan's Workshop.";
 		mes "God Bless You.";
 		close;
 	L_START_1:
@@ -265,9 +265,9 @@ morocc_in.gat,142,100,4	script	"Willian"	89,{
 
 aldeba_in.gat,152,166,4	script	"Trader"	86,{
 	mes "[Trader]";
-	mes "Muhahaha! I am the Very Famous one,Enigmatic Dealer!";
-	mes "I am Always bustling in and out of Midgard Continent!";
-	mes "Alright.. Here's my Unique and Rare Products from all over the world,You just watch and enjoy!";
+	mes "Muhahaha! I am the very famous Enigmatic Dealer!";
+	mes "I am always bustling in and out of the Midgard Continent!";
+	mes "Alright.. Here's my Unique and Rare Products from all over the world, you just watch and enjoy!";
 	next;
 	mes "[Trader]";
 	mes "(1) · ^3355FFDoctor Band^000000 : 1 Red Bandana + 50 Iron + 1 Cracked Diamond + 3500 Zeny";
@@ -296,8 +296,8 @@ aldeba_in.gat,152,166,4	script	"Trader"	86,{
 		close;
 	L_SUB_1:
 		mes "[Trader]";
-		mes "You,Dullard. Check this requirements again.";
-		mes "You Don't look like an idiot though....C'Mon,Man.Get real.";
+		mes "You dullard. Check this requirements again.";
+		mes "You don't look like an idiot though....C'Mon man, get real.";
 		close;
 	L_MENU_2:
 		checkitem 2247,1,-,L_SUB_2;
@@ -313,8 +313,8 @@ aldeba_in.gat,152,166,4	script	"Trader"	86,{
 		close;
 	L_SUB_2:
 		mes "[Trader]";
-		mes "You,Dullard. Check this requirements again.";
-		mes "You Don't look like an idiot though....C'Mon,Man.Get real.";
+		mes "You dullard. Check this requirements again.";
+		mes "You don't look like an idiot though....C'Mon man, get real.";
 		close;
 	L_MENU_3:
 		checkitem 999,20,-,L_SUB_3;
@@ -325,14 +325,14 @@ aldeba_in.gat,152,166,4	script	"Trader"	86,{
 		set Zeny -= 5000,0;
 		mes "[Trader]";
 		mes "This is pretty nice one.";
-		mes "Well little bit Scary though.. I think it has an Magnetic Attraction. What about your idea?";
+		mes "Well little a bit scary though.. I think it has an Magnetic Attraction. What about your idea?";
 		mes ".. You like it ..Alright.. Take it!";
 		additem 2281,1;
 		close;
 	L_SUB_3:
 		mes "[Trader]";
-		mes "You,Dullard. Check this requirements again.";
-		mes "You Don't look like an idiot though....C'Mon,Man.Get real.";
+		mes "You dullard. Check this requirements again.";
+		mes "You don't look like an idiot though....C'Mon man, get real.";
 		close;
 	L_MENU_4:
 		checkitem 1019,120,-,L_SUB_4;
@@ -340,15 +340,15 @@ aldeba_in.gat,152,166,4	script	"Trader"	86,{
 		delitem 1019,120;
 		set Zeny -= 10000,0;
 		mes "[Trader]";
-		mes "If you have a chance to visit the Uplander Village, Payon, Please go meet the Sakkat Craftsman.";
-		mes "He've never sold Sakkat to other Dealers but to me. Because only me, can recognise its quality. Due its rarity, Sakkat becomes a very Unique and Exceptional product.";
+		mes "If you have a chance to visit the Uplander Village, Payon, please go meet the Sakkat Craftsman.";
+		mes "He've never sold Sakkat to other dealers but to me. Because only me, can recognize its quality. Due its rarity, Sakkat becomes a very unique and exceptional product.";
 		mes "OK! Take it!";
 		additem 2280,1;
 		close;
 	L_SUB_4:
 		mes "[Trader]";
-		mes "You,Dullard. Check this requirements again.";
-		mes "You Don't look like an idiot though....C'Mon,Man.Get real.";
+		mes "You dullard. Check this requirements again.";
+		mes "You don't look like an idiot though....C'Mon man, get real.";
 		close;
 }
 
@@ -358,7 +358,7 @@ alberta_in.gat,59,139,4	script	"Grampa"	120,{
 	next;
 	mes "[Grampa]";
 	mes "When I look on my past life,it seems totally useless ..";
-	mes "Still I feel like young ..";
+	mes "Still I feel young ..";
 	mes "But unfortunately my body doesn't work well ..";
 	mes "Cough !! Cough .. !!";
 	next;
@@ -369,7 +369,7 @@ alberta_in.gat,59,139,4	script	"Grampa"	120,{
 			mes "Tiger's Footskin !!";
 			next;
 	 		mes "[Grampa]";
- 			mes "Gain Strength even taking a look on it! Inflame the Blood even smelling once!";
+ 			mes "Gain Strength even taking a look on it! Inflame the blood by even smelling one!";
 			mes "80 year-old Grampa makes a Boy after grabing one bite of it!!!!";
 			mes "It is the Tiger's Footskin !!";
 			mes "Ohhhh Ohh My God !! Please .. Please give me that .. Please ..";
@@ -391,34 +391,34 @@ alberta_in.gat,59,139,4	script	"Grampa"	120,{
  			close;
 	L_MENU_2:
 		mes "[Grampa";
-		mes "He.. Hey Young one !! Wai .. Wait !";
+		mes "He.. Hey young one !! Wai .. Wait !";
 		close;
 	L_SUB_1:
 		 menu "Talk",-,"Cancel",L_MENU_3;
 	 		mes "[Grampa]";
 			mes "Listen to me .. You have to keep your health as well as you can ..";
-			mes "If you don't treat your body well .. You will regret after you get old ..";
+			mes "If you don't treat your body well .. You will regret it after you get old ..";
 	 		next;
 	 		mes "[Grampa]";
 			mes "To restore youth again,";
-			mes "I took everything good for Health by hearsay,but they didn't work at all ..";
-			mes "After all,I broke up due to spending whole my property into them ..";
+			mes "I took everything good for health by hearsay, but they didn't work at all ..";
+			mes "After all, I'm broke due to spending my whole property into them ..";
 	 		next;
 	 		mes "[Grampa]";
-	 		mes "Now I gave up to restore my youth ..But there is only one thing I wish could do is ..";
+	 		mes "Now I gave up trying to restore my youth ..But there is only one thing I wish I could do is ..";
 			mes "To eat ^3355FFTiger's Footskin^000000,";
 			mes " The King of Invigorant !!";
 			next;
  			mes "[Grampa]";
  			mes "Have you heard ?! Tiger's Footskin ..";
-			mes "When you see,your white hair grows in Black again,When Sniff ,";
-			mes "You get Clairvoyance,when even touch,you can make a Boy at 80 year-old...";
+			mes "When you see, your white hair grows into black again, when sniffed,";
+			mes "You get Clairvoyance, when even touch, you can make a Boy at 80 year-old...";
 			mes "It is The King of Invigorant !";
  			next;
  			mes "[Grampa]";
  			mes "Ahhahh.. Before I died..I wish I could eat 10 Tiger's Footskin..";
-			mes "I could realise my Dearest wishes...";
-			mes "If someone helped me to take them ..";
+			mes "I could realize my dearest wishes...";
+			mes "If someone helped me to complete them ..";
 			mes "I would present him my precious item,^3355FFBoys Cap^000000 without nothing to regret ..";
 			close;
 	L_MENU_3:
@@ -438,15 +438,15 @@ prt_in.gat,38,108,4	script	"Teacher"	53,{
 	checkitem 606,1,-,L_SUB_1;
 	checkitem 708,1,-,L_SUB_1;
 	mes "[Teacher]";
-	mes "Oh .. Those Flowers in your hand are ..";
+	mes "Oh .. those flowers in your hand are ..";
 	next;
 	menu "Show Flowers",-,"Present Flowers",L_MENU_1,"Cancel",L_MENU_2;
 		mes "[Teacher]";
-		mes "Ah .. Definately ..They are 4 kinds of Flowers I was looking for ..";
+		mes "Ah .. Definately ..They are 4 kinds of flowers I was looking for ..";
 		mes "Would you give them to me?...";
 		next;
 		mes "[Teacher]";
-		mes "If you would... I'll... give you my precious item.";
+		mes "If you would... I'll... give you my most precious item.";
 		close;
 	L_MENU_1:
 		checkadditem 5012,1,-,L_START_1;
@@ -460,9 +460,9 @@ prt_in.gat,38,108,4	script	"Teacher"	53,{
 		delitem 708,1;
 		additem 5012,1;
 		mes "[Teacher]";
-		mes "I really really appreciate you what you've done for me.I mean I am really grateful.";
-		mes "I will give my precious item for you as I promise you.";
-		mes "This is a Hat worn on my Graduation Day in University. It reminds me of my happy School days.";
+		mes "I really, really appreciate you for what you've done for me. I mean I am really grateful.";
+		mes "I will you give my precious item for you as I promised.";
+		mes "This is a Hat worn on my graduation day in the university. It reminds me of my happy school days.";
 		mes "Please take this...";
 		close;
 	L_SUB_2:
@@ -474,38 +474,38 @@ prt_in.gat,38,108,4	script	"Teacher"	53,{
 		close;
 	L_SUB_1:
 		mes "[Teacher]";
-		mes "Don't you think...Flower is pretty?";
+		mes "Don't you think...flowers are pretty?";
 		next;
 		menu "Talk",-,"Quit",L_MENU_3;
 			mes "[Teacher]";
-			mes "When I was young,I didn't play around with buddies but I studied myself all the time.";
-			mes "Sometimes I regret what I did in my young days... but it is not a big deal now. Through hard Study,I finished entire educational courses ealier than other friends.";
+			mes "When I was young, I didn't play around with my buddies, but I studied alone all the time.";
+			mes "Sometimes I regret what I did in my young days... but it is not a big deal now. Through hard Study, I finished entire educational courses ealier than my other friends.";
 			next;
 			mes "[Teacher]";
-			mes "However...I was sad because I had no pal around.";
-			mes "When I got a hard time to study..I needed someone who could listen to me.";
-			mes "After all, the other day,finally I met my best friend.";
+			mes "However...I was sad because I had no friends around.";
+			mes "When I got a hard time to study...I needed someone who could listen to me.";
+			mes "After all, the other day, I finally met my best friend.";
 			next;
 			mes "[Teacher]";
-			mes "When I saw a Pretty Flower blooming on the abandoned Garden...";
-			mes "I realised It was my friend which had the same fate of me.";
+			mes "When I saw a Pretty Flower blooming on the abandoned garden...";
+			mes "I realized it was my friend which had the same fate of me.";
 			next;
 			mes "[Teacher]";
-			mes "Even though, to others it is a Common and Normal Flower.. to me She gave the reason of Studying again.";
+			mes "Even though, to others it is a common and normal Flower.. to me, she gave the reason of studying again.";
 			mes "I could achieve my goal because of her.";
 			next;
 			mes "[Teacher]";
 			mes "So.. recently..I am trying to repay to her.";
-			mes "Now I am studying Flowers, and I will cover whole world with Flowers.";
+			mes "Now I am studying flowers, and I will cover the whole world with Flowers.";
 			next;
 			mes "[Teacher]";
-			mes "To Accomplish my work..I need buches of flowers...";
-			mes "But for me,who rarely goes outside,.. It is really hard to find flowers as many as I need.";
-			mes "I need 1 ^3355FFDreamy Flower^000000 ,1 ^3355FFHinalle^000000,1 ^3355FFAloe^000000 and 1 ^3355FFMent^000000... If you can bring them to me,I could give you my treasue...";
+			mes "To accomplish my work..I need bushes of flowers...";
+			mes "But for me, who rarely goes outside, it is really hard to find all the flowers I need.";
+			mes "I need 1 ^3355FFDreamy Flower^000000 ,1 ^3355FFHinalle^000000,1 ^3355FFAloe^000000 and 1 ^3355FFMent^000000... If you can bring them to me, I could give you my treasue...";
 			close;
 	L_MENU_3:
 			mes "[Teacher]";
-			mes "One of thesedays I will cover whole world with Flowers.";
+			mes "One of these days I will cover whole world with flowers.";
 			close;
 	L_START_1:
 		mes "[Teacher]";
@@ -517,13 +517,13 @@ payon_in02.gat,25,71,4	script	"Boy"	86,{
 	checkitem 701,5,-,L_SUB_1;
 		mes "[Boy]";
 		mes "ArrrrGgggghhhh! Ah..No I can't...";
-		mes "Huk.. Now my eyes are even gone mad...They seem so Cute to my eyes... Argh..Nooooooo!!";
+		mes "Huk...now my eyes have even gone mad...They seem so cute to my eyes... Argh..Nooooooo!!";
 		next;
 		menu "Show Ora Ora",-,"Give Ora Ora",L_MENU_1,"Cancel",L_MENU_2;
 			mes "[Boy]";
 			mes "Oooooohhhh!!!";
 			mes "Is..Is this one...this is..Ora Ora...!";
-			mes "I make it short! If..If you give it to me..I will give you my treasure!";
+			mes "I'll make it short! If..if you give it to me..I will give you my treasure!";
 			mes "So..What about my idea? Wanna Deal?";
 			close;
 	L_MENU_1:
@@ -540,9 +540,9 @@ payon_in02.gat,25,71,4	script	"Boy"	86,{
 		next;
 		additem 5004,1;
 		mes "[Boy]";
-		mes "When you wear this on Mouth and start to Breathe... It will filter every dusty things out of your lung.";
-		mes "When I was a Sailor,I picked it up from the sea.";
-		mes "It is nothing but a useless one for me,also you helped me I will give this one for you.";
+		mes "When you wear this on mouth and start to breathe... It will filter every dusty thing out of your lungs.";
+		mes "When I was a Sailor, I picked it up from the sea.";
+		mes "It is nothing but a useless one for me, also you helped me I will give this one for you.";
 		next;
 		mes "[Boy]";
 		mes "Kakakakakaka! By the way I can't wait to use this Ora Ora!";
@@ -551,41 +551,41 @@ payon_in02.gat,25,71,4	script	"Boy"	86,{
 		close;
 	L_MENU_2:
 		mes "[Boy]";
-		mes "Huhuhuhuhu... What If I could not get rid of Thief Bugs...";
-		mes "Only one thing I could do is to Fall in Love with them..Hehehehehehe...";
+		mes "Huhuhuhuhu... What if I could not get rid of Thief Bugs...";
+		mes "Only one thing I could do is to fall in love with them..Hehehehehehe...";
 		close;
 	L_SUB_1:
 		mes "[Boy]";
-		mes "Blahhhhhh! I.. I.. Now I can't take it any more!!!";
+		mes "Blahhhhhh! I.. I.. now I can't take it any more!!!";
 		mes "You little stinky filthy Bastards!!!";
 		next;
-		menu "Continu",-,"Cancel",L_MENU_3;
+		menu "Continue",-,"Cancel",L_MENU_3;
 			mes "[Boy]";
 			mes "Anyway I think my past life was really eventful.";
 			mes "My both parents passed away when I was a little kid...So I had to work for my living. It was a really hard time.";
 			next;
 			mes "[Boy]";
-			mes "Ever since I did work for 10 years.. I could afford to buy my own house... my dream,home sweet home.";
+			mes "Ever since I did work for 10 years.. I could afford to buy my own house... my dream, home sweet home.";
 			next;
 			mes "[Boy]";
 			mes "Unfortunately I didn't have much money to buy a nice one I wish for...";
-			mes "And.. I found this house,a Big and Cheaper than earlier one....I bought this without deep thought...";
+			mes "And.. I found this house, bigger and cheaper than the previous one....I bought this without deep thought...";
 			next;
 			mes "[Boy]";
 			mes "Oh Jesus. It revealed as the Heaven for Thief Bugs!!!";
 			next;
 			mes "[Boy]";
-			mes "I tried to do everything I could do...Coaxed them.. Killed them.. It was only..for a moment!";
+			mes "I tried to do everything I could do...coax them...kill them...but, it was only...for a moment!";
 			mes "Lastly I tried to burn down this house....!";
 			next;
 			mes "[Boy]";
-			mes "Gasp..I mean really Do I need...  ^3355FF Ora Ora^000000 to get rid of them?";
-			mes "People say it is very rarely seen from far countries .";
-			mes "If I could afford 5 of it.. I won't have to be frustrated with these Disgusting Bugs any more...";
+			mes "Gasp..I mean do I really need...  ^3355FF Ora Ora^000000 to get rid of them?";
+			mes "People say it is very rarely seen from far away countries.";
+			mes "If I could afford 5 of them...I won't have to be frustrated with these disgusting bugs any more...";
 			close;
 	L_MENU_3:
 			mes "[Boy]";
-			mes "Never endign fight with Bugs...Now I am really tired. I give up..Do as you wish you scumbag...Huhuhuhuhu...";
+			mes "Never ending fights with Bugs...Now I am really tired. I give up..Do as you wish you scumbag...Huhuhuhuhu...";
 			close;
 	L_START_1:
 		mes "[Boy]";
@@ -597,7 +597,7 @@ geffen_in.gat,30,71,4	script	"Eric"	83,{
 	mes "[Eric]";
 	mes "Please listen to my story of my blessed Grandfather.";
 	next;
-	menu "Talk",-,"Ask about the items needed",L_MENU_1,"Maufacture",L_MENU_2,"Quit",L_MENU_3;
+	menu "Talk",-,"Ask about the items needed",L_MENU_1,"Manufacture",L_MENU_2,"Quit",L_MENU_3;
 		mes "[Eric]";
 		mes "My grandfather who passed away a few years ago was special to me";
 		mes "He always stayed with me, taking care of me.";
@@ -688,37 +688,37 @@ geffen_in.gat,30,71,4	script	"Eric"	83,{
 
 morocc_in.gat,76,163,4	script	"Marius"	64,{
 	mes "[Marius]";
-	mes "Howdi - A new customer !";
+	mes "Howdy - A new customer!";
 	mes "Stop!!! I know I know what you're gonna talk about.";
-	mes "You want the Magic Glasses from me,right ?";
+	mes "You want the Magic Glasses from me, right ?";
 	next;
-	menu "What is that ?",-,"Manufacture",L_MENU_1,"Ignore him",L_MENU_2;
+	menu "What is that?",-,"Manufacture",L_MENU_1,"Ignore him",L_MENU_2;
 		mes "[Marius]";
 		mes "Hmm ! Officially it is called as the ' ^3355FFBinoculars^000000 '!";
 		mes "An optical device, such as a pair of field glasses ,";
-		mes "designed for simultaneous use by both eyes !";
+		mes "designed for simultaneous use by both eyes!";
 		mes "And consisting of two small telescopes joined with a single focusing device.";
 		mes "You can make them arranged to produce stereoscopic vision.";
 		next;
 		mes "[Marius]";
-		mes "So? Something,Huh ?!";
+		mes "So? Something, huh ?!";
 		mes "Muhahahahahaha !";
 		mes ". . . . .";
 		mes ".. Errr ? You don't seem to believe what I said?";
-		mes "Oh C'mon,Jerk . It is real !!";
+		mes "Oh C'mon you jerk . It is real!!";
 		next;
 		mes "[Marius]";
-		mes "I will teach you the special ingredients needed in order to create a Binoculars";
-		mes "^3355FF1 Geek Glasses !^000000, ^3355FF100 Steel!^000000 and ^3355FF50000 Zeny^000000 !";
+		mes "I will teach you the special ingredients needed in order to create the Binoculars";
+		mes "^3355FF1 Geek Glasses!^000000, ^3355FF100 Steel!^000000 and ^3355FF50000 Zeny^000000!";
 		close;
 	L_MENU_1:
 		checkitem 2243,1,-,L_SUB_1;
 		checkitem 999,100,-,L_SUB_1;
 		check Zeny >= 50000,-,L_SUB_1;
 		mes "[Marius]";
-		mes "Gr~~~~eat !";
-		mes "This Magic Glasses will be happy";
-		mes "with you,the Nice Master !";
+		mes "Grrrrreat !";
+		mes "These Magic Glasses will be happy";
+		mes "with you, the Nice Master!";
 		next;
 		delitem 2243,1;
 		delitem 999,100;
@@ -730,7 +730,7 @@ morocc_in.gat,76,163,4	script	"Marius"	64,{
 		next;
 		mes "[Marius]";
 		mes "But I must say ..";
-		mes "Don't peep at something you should not look ¢Ý";
+		mes "Don't peep at something you should not look...";
 		mes "Pooffff !";
 		close;
 	L_SUB_1:
@@ -743,9 +743,9 @@ morocc_in.gat,76,163,4	script	"Marius"	64,{
 		mes "[Marius]";
 		mes "Hey you !";
 		mes "Now you're in front of Marius,";
-		mes "Alchemist of the Alchemist.";
+		mes "The Alchemist of the Alchemists.";
 		mes "Do you ignore me,now,Huh???";
-		mes "Come on!! I beat your ass!!!";
+		mes "Come on!! I'll beat your ass!!!";
 		close;
 }
 
