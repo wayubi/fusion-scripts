@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.004
 ----------------------------------------------------------------------------------------------------
+- Shop\Gonryun.txt - Added Japanese Athena shops. [Tsusai]
 - Quest\Quest_skill\Berserk.txt - fixed header. [nestor_zulueta]
 - Warp\dungeon\lou_dun.txt - Added Louyang dungeon warps. [Muad_Dib]
 - Warp\field\lou_fild.txt - Added Louyang field warps. [Muad_Dib]
