@@ -9,6 +9,9 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.004
 ----------------------------------------------------------------------------------------------------
+- Warp\dungeon\lou_dun.txt - Added Louyang dungeon warps. [Muad_Dib]
+- Warp\field\lou_fild.txt - Added Louyang field warps. [Muad_Dib]
+- Warp\town\Louyang.txt - Added Louyang town warps. [Muad_Dib]
 - Changelog.txt - Added version header. [Tsusai]
 - Event\Event_Dye.txt - corrected additem syntax errors on Java Dullihan. [Tsusai]
 - Town\Town_Kafra.txt - added missing L_ROOT_4_1 label on cart rental. [Tsusai]
