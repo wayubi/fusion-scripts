@@ -829,6 +829,7 @@ valkyrie.gat,44,32,5	script	"Transporter"	124,{
 	next;
 	menu "Yes",-,"No",No;
 		warp "prontera",155,155;
+		close;
 		No:
 		close;
 }
