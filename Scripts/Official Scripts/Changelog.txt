@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.004
 ----------------------------------------------------------------------------------------------------
+- Warp\dungeons\gl_prison.txt - Added missing random warp. [Tsusai]
 - Event\Event_Dye.txt - Addeda missing } that crashed the server. [Muad_Dib]
 - Job\Job2_Knight.txt - Added official quest with unofficial workarounds for stability. [Tsusai]
 - Job\Job2_Knight.txt - Moved To Archive. [Tsusai]
