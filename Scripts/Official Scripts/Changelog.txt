@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.003
 ----------------------------------------------------------------------------------------------------
+- Town\Town_Siglude.txt - Added 1% increase of refine success per level of Weapon Research for Blacksmiths. [Tsusai]
 - Town\Town_Kafra.txt - Disabled Kafra saving in Abandoned Mine Dungeon, Orc Dungeon, Pyramid Dungeon, Sunken Ship, Byalan, and Archer Town. [Tsusai]
 - Town\Town_Prontera.txt - Added Tono, YuPi, YuNa, Bartender, Shevild, TenSue & Marvin. [Tsusai]
 - Event\Event_Doll.txt - Fixed Spore Doll section. [Tsusai]

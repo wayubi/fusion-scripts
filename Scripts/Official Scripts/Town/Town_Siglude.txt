@@ -462,6 +462,48 @@ L_START_8:
 	mes "Clang! Clang! Clang!!";
 	next;
 	random @REF_RAND,100;
+		check Job == 10,-,L_SUB_START8;
+		getskilllevel 107,@BS_ADD;
+		check @BS_ADD == 1,BS_ADD1,-;
+		check @BS_ADD == 2,BS_ADD2,-;
+		check @BS_ADD == 3,BS_ADD3,-;
+		check @BS_ADD == 4,BS_ADD4,-;
+		check @BS_ADD == 5,BS_ADD5,-;
+		check @BS_ADD == 6,BS_ADD6,-;
+		check @BS_ADD == 7,BS_ADD7,-;
+		check @BS_ADD == 8,BS_ADD8,-;
+		check @BS_ADD == 9,BS_ADD9,BS_ADD10;
+		BS_ADD1:
+			set @REF_SUCCESS += 1;
+			goto L_SUB_START_8;
+		BS_ADD2:
+			set @REF_SUCCESS += 2;
+			goto L_SUB_START_8;
+		BS_ADD3:
+			set @REF_SUCCESS += 3;
+			goto L_SUB_START_8;
+		BS_ADD4:
+			set @REF_SUCCESS += 4;
+			goto L_SUB_START_8;
+		BS_ADD5:
+			set @REF_SUCCESS += 5;
+			goto L_SUB_START_8;
+		BS_ADD6:
+			set @REF_SUCCESS += 6;
+			goto L_SUB_START_8;
+		BS_ADD7:
+			set @REF_SUCCESS += 7;
+			goto L_SUB_START_8;
+		BS_ADD8:
+			set @REF_SUCCESS += 8;
+			goto L_SUB_START_8;
+		BS_ADD9:
+			set @REF_SUCCESS += 9;
+			goto L_SUB_START_8;
+		BS_ADD10:
+			set @REF_SUCCESS += 10;
+			goto L_SUB_START_8;
+L_SUB_START_8:
 	check @REF_RAND < @REF_SUCCESS,-,L_START_9;
 	set @REFINELEVEL += 1;
 	refinery @POSITION,0,@REFINELEVEL;
@@ -896,6 +938,48 @@ L_START_8:
 	mes "Clang! Clang! Clang!!";
 	next;
 	random @REF_RAND,100;
+		check Job == 10,-,L_SUB_START8;
+		getskilllevel 107,@BS_ADD;
+		check @BS_ADD == 1,BS_ADD1,-;
+		check @BS_ADD == 2,BS_ADD2,-;
+		check @BS_ADD == 3,BS_ADD3,-;
+		check @BS_ADD == 4,BS_ADD4,-;
+		check @BS_ADD == 5,BS_ADD5,-;
+		check @BS_ADD == 6,BS_ADD6,-;
+		check @BS_ADD == 7,BS_ADD7,-;
+		check @BS_ADD == 8,BS_ADD8,-;
+		check @BS_ADD == 9,BS_ADD9,BS_ADD10;
+		BS_ADD1:
+			set @REF_SUCCESS += 1;
+			goto L_SUB_START_8;
+		BS_ADD2:
+			set @REF_SUCCESS += 2;
+			goto L_SUB_START_8;
+		BS_ADD3:
+			set @REF_SUCCESS += 3;
+			goto L_SUB_START_8;
+		BS_ADD4:
+			set @REF_SUCCESS += 4;
+			goto L_SUB_START_8;
+		BS_ADD5:
+			set @REF_SUCCESS += 5;
+			goto L_SUB_START_8;
+		BS_ADD6:
+			set @REF_SUCCESS += 6;
+			goto L_SUB_START_8;
+		BS_ADD7:
+			set @REF_SUCCESS += 7;
+			goto L_SUB_START_8;
+		BS_ADD8:
+			set @REF_SUCCESS += 8;
+			goto L_SUB_START_8;
+		BS_ADD9:
+			set @REF_SUCCESS += 9;
+			goto L_SUB_START_8;
+		BS_ADD10:
+			set @REF_SUCCESS += 10;
+			goto L_SUB_START_8;
+L_SUB_START_8:
 	check @REF_RAND < @REF_SUCCESS,-,L_START_9;
 	set @REFINELEVEL += 1;
 	refinery @POSITION,0,@REFINELEVEL;
@@ -1330,6 +1414,48 @@ L_START_8:
 	mes "Clang! Clang! Clang!!";
 	next;
 	random @REF_RAND,100;
+		check Job == 10,-,L_SUB_START8;
+		getskilllevel 107,@BS_ADD;
+		check @BS_ADD == 1,BS_ADD1,-;
+		check @BS_ADD == 2,BS_ADD2,-;
+		check @BS_ADD == 3,BS_ADD3,-;
+		check @BS_ADD == 4,BS_ADD4,-;
+		check @BS_ADD == 5,BS_ADD5,-;
+		check @BS_ADD == 6,BS_ADD6,-;
+		check @BS_ADD == 7,BS_ADD7,-;
+		check @BS_ADD == 8,BS_ADD8,-;
+		check @BS_ADD == 9,BS_ADD9,BS_ADD10;
+		BS_ADD1:
+			set @REF_SUCCESS += 1;
+			goto L_SUB_START_8;
+		BS_ADD2:
+			set @REF_SUCCESS += 2;
+			goto L_SUB_START_8;
+		BS_ADD3:
+			set @REF_SUCCESS += 3;
+			goto L_SUB_START_8;
+		BS_ADD4:
+			set @REF_SUCCESS += 4;
+			goto L_SUB_START_8;
+		BS_ADD5:
+			set @REF_SUCCESS += 5;
+			goto L_SUB_START_8;
+		BS_ADD6:
+			set @REF_SUCCESS += 6;
+			goto L_SUB_START_8;
+		BS_ADD7:
+			set @REF_SUCCESS += 7;
+			goto L_SUB_START_8;
+		BS_ADD8:
+			set @REF_SUCCESS += 8;
+			goto L_SUB_START_8;
+		BS_ADD9:
+			set @REF_SUCCESS += 9;
+			goto L_SUB_START_8;
+		BS_ADD10:
+			set @REF_SUCCESS += 10;
+			goto L_SUB_START_8;
+L_SUB_START_8:
 	check @REF_RAND < @REF_SUCCESS,-,L_START_9;
 	set @REFINELEVEL += 1;
 	refinery @POSITION,0,@REFINELEVEL;
@@ -1764,6 +1890,48 @@ L_START_8:
 	mes "Clang! Clang! Clang!!";
 	next;
 	random @REF_RAND,100;
+		check Job == 10,-,L_SUB_START8;
+		getskilllevel 107,@BS_ADD;
+		check @BS_ADD == 1,BS_ADD1,-;
+		check @BS_ADD == 2,BS_ADD2,-;
+		check @BS_ADD == 3,BS_ADD3,-;
+		check @BS_ADD == 4,BS_ADD4,-;
+		check @BS_ADD == 5,BS_ADD5,-;
+		check @BS_ADD == 6,BS_ADD6,-;
+		check @BS_ADD == 7,BS_ADD7,-;
+		check @BS_ADD == 8,BS_ADD8,-;
+		check @BS_ADD == 9,BS_ADD9,BS_ADD10;
+		BS_ADD1:
+			set @REF_SUCCESS += 1;
+			goto L_SUB_START_8;
+		BS_ADD2:
+			set @REF_SUCCESS += 2;
+			goto L_SUB_START_8;
+		BS_ADD3:
+			set @REF_SUCCESS += 3;
+			goto L_SUB_START_8;
+		BS_ADD4:
+			set @REF_SUCCESS += 4;
+			goto L_SUB_START_8;
+		BS_ADD5:
+			set @REF_SUCCESS += 5;
+			goto L_SUB_START_8;
+		BS_ADD6:
+			set @REF_SUCCESS += 6;
+			goto L_SUB_START_8;
+		BS_ADD7:
+			set @REF_SUCCESS += 7;
+			goto L_SUB_START_8;
+		BS_ADD8:
+			set @REF_SUCCESS += 8;
+			goto L_SUB_START_8;
+		BS_ADD9:
+			set @REF_SUCCESS += 9;
+			goto L_SUB_START_8;
+		BS_ADD10:
+			set @REF_SUCCESS += 10;
+			goto L_SUB_START_8;
+L_SUB_START_8:
 	check @REF_RAND < @REF_SUCCESS,-,L_START_9;
 	set @REFINELEVEL += 1;
 	refinery @POSITION,0,@REFINELEVEL;
@@ -2073,6 +2241,48 @@ L_START_8:
 	mes "Clang! Clang! Clang!!";
 	next;
 	random @REF_RAND,100;
+		check Job == 10,-,L_SUB_START8;
+		getskilllevel 107,@BS_ADD;
+		check @BS_ADD == 1,BS_ADD1,-;
+		check @BS_ADD == 2,BS_ADD2,-;
+		check @BS_ADD == 3,BS_ADD3,-;
+		check @BS_ADD == 4,BS_ADD4,-;
+		check @BS_ADD == 5,BS_ADD5,-;
+		check @BS_ADD == 6,BS_ADD6,-;
+		check @BS_ADD == 7,BS_ADD7,-;
+		check @BS_ADD == 8,BS_ADD8,-;
+		check @BS_ADD == 9,BS_ADD9,BS_ADD10;
+		BS_ADD1:
+			set @REF_SUCCESS += 1;
+			goto L_SUB_START_8;
+		BS_ADD2:
+			set @REF_SUCCESS += 2;
+			goto L_SUB_START_8;
+		BS_ADD3:
+			set @REF_SUCCESS += 3;
+			goto L_SUB_START_8;
+		BS_ADD4:
+			set @REF_SUCCESS += 4;
+			goto L_SUB_START_8;
+		BS_ADD5:
+			set @REF_SUCCESS += 5;
+			goto L_SUB_START_8;
+		BS_ADD6:
+			set @REF_SUCCESS += 6;
+			goto L_SUB_START_8;
+		BS_ADD7:
+			set @REF_SUCCESS += 7;
+			goto L_SUB_START_8;
+		BS_ADD8:
+			set @REF_SUCCESS += 8;
+			goto L_SUB_START_8;
+		BS_ADD9:
+			set @REF_SUCCESS += 9;
+			goto L_SUB_START_8;
+		BS_ADD10:
+			set @REF_SUCCESS += 10;
+			goto L_SUB_START_8;
+L_SUB_START_8:	
 	check @REF_RAND < @REF_SUCCESS,-,L_START_9;
 	set @REFINELEVEL += 1;
 	refinery @POSITION,0,@REFINELEVEL;
