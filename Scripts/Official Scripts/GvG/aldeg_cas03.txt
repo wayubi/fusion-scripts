@@ -24,7 +24,7 @@
 //========================================================================================
 
 aldeg_cas03.gat,176,175,2	script	"Nuernberg"	722,{
-	scriptlabel aldeg_casF03;
+	scriptlabel alde_gcasF03;
 	guildreg "aldeg_cas03";
 	check guildid == 0,-,L_START_1;
 	mes "       [ Kingdom of Aldebaran ]";

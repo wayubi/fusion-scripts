@@ -24,7 +24,7 @@
 //========================================================================================
 
 aldeg_cas05.gat,170,85,2	script	"Rotenburg"	722,{
-	scriptlabel aldeg_casF05;
+	scriptlabel alde_gcasF05;
 	guildreg "aldeg_cas05";
 	check guildid == 0,-,L_START_1;
 	mes "       [ Kingdom of Aldebaran ]";
