@@ -160,11 +160,11 @@ mjolnir_06.gat,73,339,0,0	monster	"Red Mushroom" 1085,1,180000,90000,1
 // - Mjolnir Field 07
 //========================================================================================
 
-mjolnir_07.gat,0,0,0,0	monster	Ambernite 1094,15,0,0,0
-mjolnir_07.gat,0,0,0,0	monster	Coco 1104,25,0,0,0
-mjolnir_07.gat,0,0,0,0	monster	Horn 1128,65,0,0,0
-mjolnir_07.gat,0,0,0,0	monster	Lunatic 1063,20,0,0,0
-mjolnir_07.gat,0,0,0,0	monster	Poporing 1031,15,0,0,0
+mjolnir_07.gat,0,0,0,0	      monster	"Ambernite" 1094,15,0,0,0
+mjolnir_07.gat,0,0,0,0   	monster	"Coco" 1104,25,0,0,0
+mjolnir_07.gat,0,0,0,0   	monster	"Horn" 1128,65,0,0,0
+mjolnir_07.gat,0,0,0,0   	monster	"Lunatic" 1063,20,0,0,0
+mjolnir_07.gat,0,0,0,0   	monster	"Poporing" 1031,15,0,0,0
 mjolnir_07.gat,140,179,0,0	monster	"Green Plant" 1080,1,180000,90000,1
 mjolnir_07.gat,181,173,0,0	monster	"Green Plant" 1080,1,180000,90000,1
 mjolnir_07.gat,217,185,0,0	monster	"Red Mushroom" 1085,1,180000,90000,1

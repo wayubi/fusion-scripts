@@ -49,7 +49,7 @@ gef_fild02.gat,0,0,0,0  	monster	"Goblin" 1125,18,0,0,0
 gef_fild02.gat,0,0,0,0  	monster	"Goblin" 1126,20,0,0,0
 gef_fild02.gat,0,0,0,0  	monster	"Goblin Archer" 1258,8,0,0,0
 gef_fild02.gat,0,0,0,0  	monster	"Goblin Leader" 1299,1,240000,0,0
-gef_fild02.gat,0,0,0,0  	monster	"Poporing 1031,15,0,0,0
+gef_fild02.gat,0,0,0,0  	monster	"Poporing" 1031,15,0,0,0
 gef_fild02.gat,0,0,0,0  	monster	"Steam Goblin" 1280,2,0,0,0
 gef_fild02.gat,0,0,0,0  	monster	"Yoyo" 1057,25,0,0,0
 gef_fild02.gat,164,194,1,1	monster	"Shining Plant" 1083,1,1800000,900000,1
@@ -152,7 +152,7 @@ gef_fild07.gat,0,0,0,0  	monster	"Fabre" 1007,60,0,0,0
 gef_fild07.gat,0,0,0,0  	monster	"Poring" 1002,60,0,0,0
 gef_fild07.gat,0,0,0,0  	monster	"Pupa" 1008,15,0,0,0
 gef_fild07.gat,0,0,0,0  	monster	"Roda Frog" 1012,30,0,0,0
-gef_fild07.gat,0,0,0,0  	monster	"Stainer 1174,5,300000,150000,1
+gef_fild07.gat,0,0,0,0  	monster	"Stainer" 1174,5,300000,150000,1
 gef_fild07.gat,0,0,0,0  	monster	"Willow" 1010,30,0,0,0
 gef_fild07.gat,122,221,0,0	monster	"Green Plant" 1080,3,360000,180000,1
 gef_fild07.gat,122,221,0,0	monster	"Green Plant" 1080,3,360000,180000,1

@@ -13,10 +13,10 @@
 // - Amatsu Field 01
 //========================================================================================
 
-ama_fild01.gat,0,0,0,0   	monster	"Poporing"	1031,5,0,0,0
-ama_fild01.gat,0,0,0,0  	monster	"Bigfoot"	1060,8,0,0,0
-ama_fild01.gat,0,0,0,0   	monster	"Karakasa"	1400,25,0,0,0
-ama_fild01.gat,0,0,0,0   	monster	"Poison Toad"	1402,2,0,0,0
+ama_fild01.gat,0,0,0,0        monster	"Poporing" 1031,5,0,0,0
+ama_fild01.gat,0,0,0,0  	monster	"Bigfoot" 1060,8,0,0,0
+ama_fild01.gat,0,0,0,0   	monster	"Karakasa" 1400,25,0,0,0
+ama_fild01.gat,0,0,0,0   	monster	"Poison Toad" 1402,2,0,0,0
 ama_fild01.gat,0,0,0,0  	monster	"Miyabo Ningyo" 1404,2,0,0,0
 ama_fild01.gat,0,0,0,0	      monster	"Kapha" 1406,30,0,0,0
 ama_fild01.gat,0,0,0,0  	monster	"Crab" 1073,10,300000,300000,1

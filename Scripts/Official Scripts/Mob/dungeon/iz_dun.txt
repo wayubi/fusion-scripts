@@ -15,7 +15,7 @@
 iz_dun00.gat,0,0,0,0    	monster	"Black Mushroom" 1084,5,180000,90000,1
 iz_dun00.gat,0,0,0,0    	monster	"Plankton" 1161,65,0,0,0
 iz_dun00.gat,0,0,0,0    	monster	"Kukre" 1070,55,0,0,0
-iz_dun00.gat,0,0,0,0    	monster	""Hydra"" 1068,45,0,0,0
+iz_dun00.gat,0,0,0,0    	monster	"Hydra" 1068,45,0,0,0
 iz_dun00.gat,0,0,0,0    	monster	"Vadon" 1066,45,0,0,0
 iz_dun00.gat,0,0,0,0    	monster	"Marina" 1141,10,0,0,0
 
@@ -27,7 +27,7 @@ iz_dun00.gat,0,0,0,0    	monster	"Marina" 1141,10,0,0,0
 iz_dun01.gat,0,0,0,0    	monster	"Black Mushroom" 1084,10,180000,90000,1
 iz_dun01.gat,0,0,0,0    	monster	"Plankton" 1161,10,0,0,0
 iz_dun01.gat,0,0,0,0    	monster	"Kukre" 1070,35,0,0,0
-iz_dun01.gat,0,0,0,0    	monster	""Hydra"" 1068,30,0,0,0
+iz_dun01.gat,0,0,0,0    	monster	"Hydra" 1068,30,0,0,0
 iz_dun01.gat,0,0,0,0    	monster	"Vadon" 1066,60,0,0,0
 iz_dun01.gat,0,0,0,0    	monster	"Marina" 1141,45,0,0,0
 iz_dun01.gat,0,0,0,0    	monster	"Thara Frog" 1034,55,0,0,0
@@ -37,12 +37,12 @@ iz_dun01.gat,0,0,0,0    	monster	"Cornutus" 1067,15,300000,150000,1
 // - Bibaland Dungeon 02
 //========================================================================================
 
-iz_dun02.gat,0,0,0,0    	monster	"Black Mushroom 1084,15,180000,90000,1
-iz_dun02.gat,0,0,0,0    	monster	""Hydra" 1068,40,0,0,0
-iz_dun02.gat,0,0,0,0    	monster	"Thara Frog 1034,40,0,0,0
-iz_dun02.gat,0,0,0,0    	monster	"Cornutus 1067,60,0,0,0
-iz_dun02.gat,0,0,0,0    	monster	"Marse 1144,40,0,0,0
-iz_dun02.gat,0,0,0,0    	monster	"Obeaune 1044,40,0,0,0
+iz_dun02.gat,0,0,0,0    	monster	"Black Mushroom" 1084,15,180000,90000,1
+iz_dun02.gat,0,0,0,0    	monster	"Hydra" 1068,40,0,0,0
+iz_dun02.gat,0,0,0,0    	monster	"Thara Frog" 1034,40,0,0,0
+iz_dun02.gat,0,0,0,0    	monster	"Cornutus" 1067,60,0,0,0
+iz_dun02.gat,0,0,0,0    	monster	"Marse" 1144,40,0,0,0
+iz_dun02.gat,0,0,0,0    	monster	"Obeaune" 1044,40,0,0,0
 
 //========================================================================================
 // - Bibaland Dungeon 03

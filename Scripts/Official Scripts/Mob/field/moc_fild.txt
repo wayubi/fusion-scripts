@@ -70,8 +70,8 @@ moc_fild04.gat,0,0,0,0  	monster	"Wolf" 1013,20,0,0,0
 moc_fild04.gat,0,0,0,0  	monster	"Drops" 1113,10,0,0,0
 moc_fild04.gat,0,0,0,0  	monster	"Pecopeco" 1019,75,0,0,0
 moc_fild04.gat,0,0,0,0  	monster	"Pecopeco Egg" 1047,10,0,0,0
-moc_fild04.gat,0,0,0,0  	monster	"Picky 1049,15,0,0,0
-moc_fild04.gat,0,0,0,0  	monster	"Super Picky 1050,15,0,0,0
+moc_fild04.gat,0,0,0,0  	monster	"Picky" 1049,15,0,0,0
+moc_fild04.gat,0,0,0,0  	monster	"Super Picky" 1050,15,0,0,0
 moc_fild04.gat,313,84,10,10	monster	"Yellow Plant" 1081,10,900000,450000,1
 
 //========================================================================================
@@ -147,7 +147,7 @@ moc_fild10.gat,0,0,0,0  	monster	"Condor" 1009,20,0,0,0
 moc_fild10.gat,0,0,0,0  	monster	"Pecopeco" 1019,20,0,0,0
 moc_fild10.gat,0,0,0,0  	monster	"Pecopeco Egg" 1047,10,0,0,0
 moc_fild10.gat,0,0,0,0  	monster	"Picky" 1049,30,0,0,0
-moc_fild10.gat,0,0,0,0  	monster	"Super_Picky" 1050,30,0,0,0
+moc_fild10.gat,0,0,0,0  	monster	"Super Picky" 1050,30,0,0,0
 moc_fild10.gat,198,150,40,30	monster	"Green Plant" 1080,5,180000,90000,1
 moc_fild10.gat,198,150,40,30	monster	"Yellow Plant" 1081,10,180000,90000,1
 

@@ -122,18 +122,18 @@ gl_in01.gat,0,0,0,0	      monster	"Wander Man" 1208,1,0,0,0
 // - Glastheim Knights 01
 //========================================================================================
 
-gl_knt01.gat,4,184,0,0	monster	"Black Mushroom" 1084,1,3600000,1800000,1
-gl_knt01.gat,4,185,0,0	monster	"Black Mushroom" 1084,1,3600000,1800000,1
-gl_knt01.gat,5,184,0,0	monster	"Black Mushroom" 1084,1,3600000,1800000,1
-gl_knt01.gat,5,185,0,0	monster	"Black Mushroom" 1084,1,3600000,1800000,1
-gl_knt01.gat,6,184,0,0	monster	"Black Mushroom" 1084,1,3600000,1800000,1
-gl_knt01.gat,6,185,0,0	monster	"Black Mushroom" 1084,1,3600000,1800000,1
-gl_knt01.gat,7,184,0,0	monster	"Black Mushroom" 1084,1,3600000,1800000,1
-gl_knt01.gat,7,185,0,0	monster	"Black Mushroom" 1084,1,3600000,1800000,1
-gl_knt01.gat,8,184,0,0	monster	"Black Mushroom" 1084,1,3600000,1800000,1
-gl_knt01.gat,8,185,0,0	monster	"Black Mushroom" 1084,1,3600000,1800000,1
-gl_knt01.gat,9,184,0,0	monster	"Black Mushroom" 1084,1,3600000,1800000,1
-gl_knt01.gat,9,185,0,0	monster	"Black Mushroom" 1084,1,3600000,1800000,1
+gl_knt01.gat,4,184,0,0  	monster	"Black Mushroom" 1084,1,3600000,1800000,1
+gl_knt01.gat,4,185,0,0  	monster	"Black Mushroom" 1084,1,3600000,1800000,1
+gl_knt01.gat,5,184,0,0  	monster	"Black Mushroom" 1084,1,3600000,1800000,1
+gl_knt01.gat,5,185,0,0  	monster	"Black Mushroom" 1084,1,3600000,1800000,1
+gl_knt01.gat,6,184,0,0  	monster	"Black Mushroom" 1084,1,3600000,1800000,1
+gl_knt01.gat,6,185,0,0  	monster	"Black Mushroom" 1084,1,3600000,1800000,1
+gl_knt01.gat,7,184,0,0  	monster	"Black Mushroom" 1084,1,3600000,1800000,1
+gl_knt01.gat,7,185,0,0  	monster	"Black Mushroom" 1084,1,3600000,1800000,1
+gl_knt01.gat,8,184,0,0  	monster	"Black Mushroom" 1084,1,3600000,1800000,1
+gl_knt01.gat,8,185,0,0  	monster	"Black Mushroom" 1084,1,3600000,1800000,1
+gl_knt01.gat,9,184,0,0  	monster	"Black Mushroom" 1084,1,3600000,1800000,1
+gl_knt01.gat,9,185,0,0  	monster	"Black Mushroom" 1084,1,3600000,1800000,1
 gl_knt01.gat,235,245,0,0	monster	"Mandragora" 1020,1,120000,60000,1
 gl_knt01.gat,235,244,0,0	monster	"Mandragora" 1020,1,120000,60000,1
 gl_knt01.gat,235,243,0,0	monster	"Mandragora" 1020,1,120000,60000,1

@@ -31,7 +31,7 @@ prt_fild01.gat,0,0,0,0  	monster	"Fabre" 1007,25,0,0,0
 prt_fild01.gat,0,0,0,0  	monster	"Lunatic" 1063,70,0,0,0
 prt_fild01.gat,0,0,0,0  	monster	"Pupa" 1008,5,0,0,0
 prt_fild01.gat,0,0,0,0  	monster	"Roda Frog" 1012,20,0,0,0
-prt_fild01.gat,0,0,0,0  	monster	"Thief Bug_Egg" 1048,10,0,0,0
+prt_fild01.gat,0,0,0,0  	monster	"Thief Bug Egg" 1048,10,0,0,0
 
 //========================================================================================
 // - Prontera Field 02
@@ -165,6 +165,3 @@ prt_fild11.gat,0,0,0,0  	monster	"Savage Babe" 1167,65,0,0,0
 prt_fild11.gat,0,0,0,0  	monster	"Yoyo" 1057,5,0,0,0
 prt_fild11.gat,0,0,0,0  	monster	"Elder Willow" 1033,10,0,0,0
 prt_fild11.gat,0,0,0,0  	monster	"Red Mushroom" 1085,11,180000,90000,1
-
-
-

@@ -12,12 +12,12 @@
 // - Yggdrasil 01 
 //========================================================================================
 
-yggdrasil01.gat,0,0,0,0	  monster	"Poring"      1002,35,0,0,0
-yggdrasil01.gat,0,0,0,0	  monster	"Poporing"    1031,25,0,0,0
-yggdrasil01.gat,0,0,0,0	  monster	"Angeling"    1096,1,1800000,200000,1
-yggdrasil01.gat,0,0,0,0	  monster	"Mastering"   1090,1,1800000,200000,1
-yggdrasil01.gat,0,0,0,0	  monster	"Fake Angel"  1371,10,0,0,0
-yggdrasil01.gat,0,0,0,0	  monster	"Dryad"	  1493,5,0,0,0
+yggdrasil01.gat,0,0,0,0	  monster	"Poring" 1002,35,0,0,0
+yggdrasil01.gat,0,0,0,0	  monster	"Poporing" 1031,25,0,0,0
+yggdrasil01.gat,0,0,0,0	  monster	"Angeling" 1096,1,1800000,200000,1
+yggdrasil01.gat,0,0,0,0	  monster	"Mastering" 1090,1,1800000,200000,1
+yggdrasil01.gat,0,0,0,0	  monster	"Fake Angel" 1371,10,0,0,0
+yggdrasil01.gat,0,0,0,0	  monster	"Dryad" 1493,5,0,0,0
 yggdrasil01.gat,0,0,0,0	  monster	"Beetle King" 1494,5,0,0,0
-yggdrasil01.gat,0,0,0,0	  monster	"Parasite"	  1500,5,0,0,0
+yggdrasil01.gat,0,0,0,0	  monster	"Parasite" 1500,5,0,0,0
 yggdrasil01.gat,0,0,0,0	  monster	"Green Plant" 1080,10,0,0,0

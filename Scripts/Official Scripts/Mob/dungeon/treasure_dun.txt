@@ -153,10 +153,3 @@ treasure02.gat,101,151,10,10	monster	"Penomena" 1216,4,100000,100000,1
 treasure02.gat,101,126,2,2	monster	"Penomena" 1216,1,1200000,600000,1
 treasure02.gat,101,135,2,2	monster	"Penomena" 1216,1,60000,200000,1
 treasure02.gat,101,151,8,8	monster	"Drake" 1112,1,3600000,7200000,1
-
-
-
-
-
-
-
