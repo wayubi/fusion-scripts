@@ -9,6 +9,8 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.003
 ----------------------------------------------------------------------------------------------------
+- Job\Job2_Crusader.txt - Added Grand Peko Breeder. [icbob]
+- Job\Job2_Knight.txt - Fixed Pecopeco Breeder miss spelled label. [icbob]
 - GvG\gefg_cas0#.txt - Added Geffen Emblem Flag Support. [icbob]
 - GvG\aldeg_cas0#.txt - Added Aldebaran Emblem Flag Support. [icbob]
 - Warp\other\valkyrie.txt - Created txt of warps. [Tsusai]
