@@ -1,5 +1,5 @@
 //= Translated By: Pgro Team (OwNaGe)(Aegis)
-//= Converted by: kobra_k88.
+//= Converted by: kobra_k88 to eAthena
 
 
 prt_church.gat,16,41,4	script	"Father Thomas"	60,{
@@ -410,11 +410,15 @@ OnInit:
 		resetmymob "job_prist";
 		set \@PROOM = 1;
 		set \@Temptation = 4;
+		enablenpc "job_prist","Test1",1;
 		enablenpc "job_prist","Test2",0;
 		enablenpc "job_prist","Test3",0;
 		enablenpc "job_prist","Warp1",0;
 		enablenpc "job_prist","Warp2",0;
-		enablenpc "job_prist","Test1",1;
+		enablenpc "job_prist","Deviruchi",0;
+		enablenpc "job_prist","Doppelganger",0;
+		enablenpc "job_prist","Dark Lord",0;
+		enablenpc "job_prist","Baphomet",0;
 		warpallpc "job_prist",24,44,0;
 		return;
 }
@@ -434,29 +438,26 @@ OnInit:
 		npctimer 1;
 		return;
 	OnTimer500:
-		areabroadcast "job_prist",8,34,39,109,"[Father Peter]: In order to pass this trial, you will have to kill all of the zomibes that appear.",10;
+		areabroadcast "job_prist",8,34,39,109," [Father Peter]: In order to pass this trial, you will have to kill all of the zomibes that appear.",10;
 		return;
 	OnTimer2500:
 		npctimer 0;
 		remotenpctimer "GrandTimer",1;
-		areabroadcast "job_prist",8,34,39,109,"[Father Peter]: Move slowly and take your time.",10;
+		areabroadcast "job_prist",8,34,39,109," [Father Peter]: Move slowly and take your time.",10;
+		set \@PROOM = 2;
 		enablenpc "job_prist","Test1",0;
 		return;
 }
 
 job_prist.gat,1,1,1	script	"zombiecounter"	-1,{
-	check \@PROOM = 1,Counter,-;
+	set \@mobs + 1;
+	check \@mobs = 13,Progress,-;
 		return;
-	Counter:
-		set \@mobs + 1;
-		broadcast " $[\@mobs] ";
-		check \@mobs = 13,Progress,-;
-			return;
-		Progress:
-			enablenpc "job_prist","Warp1",1;
-			remotenpctimer "Warp1",1;
-			areabroadcast "job_prist",8,34,39,109,"[Father Peter]: Well done my child.  Enter the warp to start the next test.",10;
-			return;
+	Progress:
+		enablenpc "job_prist","Warp1",1;
+		remotenpctimer "Warp1",1;
+		areabroadcast "job_prist",8,34,39,109," [Father Peter]: Well done my child.  Enter the warp to start the next test.",10;
+		return;
 }
 
 //Z-Z-Z-Z-ZOMBIES!!!! AAAAAHHHHH!!!!!
@@ -504,9 +505,8 @@ job_prist.gat,24,109,1	script	"Warp1"	45,3,3,{
 		return;
 	OnTimer30000:
 		npctimer 0;
-		//resetmymob "job_prist";
 		set \@PROOM = 2;
-		enablenpc "job_prist",Test2",1;
+		enablenpc "job_prist","Test2",1;
 		areawarp "job_prist",8,34,39,109,"job_prist",168,17;
 		return;
 }
@@ -521,12 +521,12 @@ OnInit:
 		enablenpc "job_prist","Doppelganger",1;
 		enablenpc "job_prist","Dark Lord",1;
 		enablenpc "job_prist","Baphomet",1;
-		broadcast "PIE";
 		npctimer 1;
 		return;
-	OnTimer500:
+	OnTimer5000:
 		npctimer 0;
-		areabroadcast "job_prist",160,14,175,178,"[Father Peter]: This trial will test the strength of your will and your commitment to God!",10;
+		areabroadcast "job_prist",160,14,175,178," [Father Peter]: This trial will test the strength of your will and your commitment to God!",10;
+		//broadcast "[Father Peter]: This trial will test the strength of your will and your commitment to God!",10;
 		return;
 }
 
@@ -593,13 +593,12 @@ job_prist.gat,168,45,4	script	"Deviruchi"	738,8,0,{
 				mes "[Deviruchi]";
 				mes "One day, you'll regret and want to come back to me!";
 				set \@Temptation - 1;
-broadcast "$[\@Temptation]";
-				check \@Temptation = 0,-,Progress;
+				check \@Temptation != 0,-,Progress;
 					enablenpc "job_prist","Deviruchi",0;
 					close;
 				Progress:
 					enablenpc "job_prist","Warp2",1;
-					areabroadcast "job_prist",160,14,175,178,"[Father Peter]: Excellent! You have shown great courage! Use the warp to move on to the next room.",10;
+					areabroadcast "job_prist",160,14,175,178," [Father Peter]: Excellent! You have shown great courage! Use the warp to move on to the next room.",10;
 					remotenpctimer "Warp2",1;
 					enablenpc "job_prist","Deviruchi",0;
 					close;
@@ -667,13 +666,12 @@ job_prist.gat,168,80,4	script	"Doppelganger"	739,8,0,{
 				mes "[Doppelganger]";
 				mes "If i see you next time, iam gonna make you die painfully.";
 				set \@Temptation - 1;
-broadcast "$[\@Temptation]";
-				check \@Temptation = 0,-,Progress;
+				check \@Temptation != 0,-,Progress;
 					enablenpc "job_prist","Doppelganger",0;
 					close;
 				Progress:
 					enablenpc "job_prist","Warp2",1;
-					areabroadcast "job_prist",160,14,175,178,"[Father Peter]: Excellent! You have shown great courage! Use the warp to move on to the next room.",10;
+					areabroadcast "job_prist",160,14,175,178," [Father Peter]: Excellent! You have shown great courage! Use the warp to move on to the next room.",10;
 					remotenpctimer "Warp2",1;
 					enablenpc "job_prist","Doppelganger",0;
 					close;
@@ -728,13 +726,12 @@ job_prist.gat,168,115,4	script	"Dark Lord"	737,8,0,{
 				mes "[Dark Lord]";
 				mes "If i see you again, iam gonna kill you.";
 				set \@Temptation - 1;
-broadcast "$[\@Temptation]";
-				check \@Temptation = 0,-,Progress;
+				check \@Temptation != 0,-,Progress;
 					enablenpc "job_prist","Dark Lord",0;
 					close;
 				Progress:
 					enablenpc "job_prist","Warp2",1;
-					areabroadcast "job_prist",160,14,175,178,"[Father Peter]: Excellent! You have shown great courage! Use the warp to move on to the next room.",10;
+					areabroadcast "job_prist",160,14,175,178," [Father Peter]: Excellent! You have shown great courage! Use the warp to move on to the next room.",10;
 					remotenpctimer "Warp2",1;
 					enablenpc "job_prist","Dark Lord",0;
 					close;
@@ -790,13 +787,12 @@ job_prist.gat,168,150,4	script	"Baphomet"	736,8,0,{
 			mes "[Baphomet]";
 			mes "OKay go now.";
 				set \@Temptation - 1;
-broadcast "$[\@Temptation]";
-				check \@Temptation = 0,-,Progress;
+				check \@Temptation != 0,-,Progress;
 					enablenpc "job_prist","Baphomet",0;
 					close;
 				Progress:
 					enablenpc "job_prist","Warp2",1;
-					areabroadcast "job_prist",160,14,175,178,"[Father Peter]: Excellent! You have shown great courage! Use the warp to move on to the next room.",10;
+					areabroadcast "job_prist",160,14,175,178," [Father Peter]: Excellent! You have shown great courage! Use the warp to move on to the next room.",10;
 					remotenpctimer "Warp2",1;
 					enablenpc "job_prist","Baphomet",0;
 					close;
@@ -860,59 +856,140 @@ job_prist.gat,98,105,0	script	"Warp3"	45,2,2,{
 		return;
 	OnTimer500:
 		npctimer 0;
-		areabroadcast "job_prist",90,34,105,105,"[Father Peter]: This is the last trial you must face my child.  Have faith, I know you can pass it!",10;
+		areabroadcast "job_prist",90,34,105,105," [Father Peter]: This is the last trial you must face my child.  Have faith, I know you can pass it!",10;
 		set \@PROOM = 0;
 		return;
 }
 
-job_prist.gat,1,1,1	script	"GrandTimer"	139,{
+job_prist.gat,1,1,1	script	"GrandTimer"	-1,{
 	return;
 OnTimer3000:
-	areabroadcast "job_prist",8,34,39,109,"[Father Peter]: You will have 5 minutes to pass all 3 trials starting now.",10;
+	areabroadcast "job_prist",8,34,39,109," [Father Peter]: You will have 5 minutes to pass all 3 trials starting now.",10;
 	return;
 OnTimer33000:
 	//donpcevent "Father Peter::OnStart";
 	return;
 OnTimer63000:
-	setstr $@Time = "You have 4 minutes left!";
-	//donpcevent "Father Peter::OnStart";
-	goto AnnouncePrst;
+	check \@PROOM = 1,Broad1,-;
+	check \@PROOM = 2,Broad2,-;
+	check \@PROOM = 3,Broad3,-;
+		return;
+	Broad1:
+		areabroadcast "job_prist",8,34,39,109," [Father Peter]: You have 4 minutes left!",10;
+		return;
+	Broad2:
+		areabroadcast "job_prist",160,14,175,178,"[Father Peter]: You have 4 minutes left!",10;
+		return;
+	Broad3:
+		areabroadcast "job_prist",90,34,105,105,"[Father Peter]: You have 4 minutes left!",10;
+		return;
 OnTimer93000:
 	//donpcevent "Father Peter::OnStart";
 	return;
 OnTimer123000:
-	setstr $@Time = "You have 3 minutes left!";
-	//donpcevent "Father Peter::OnStart";
-	goto AnnouncePrst;
+	check \@PROOM = 1,Broad1,-;
+	check \@PROOM = 2,Broad2,-;
+	check \@PROOM = 3,Broad3,-;
+		return;
+	Broad1:
+		areabroadcast "job_prist",8,34,39,109," [Father Peter]: You have 3 minutes left!",10;
+		return;
+	Broad2:
+		areabroadcast "job_prist",160,14,175,178,"[Father Peter]: You have 3 minutes left!",10;
+		return;
+	Broad3:
+		areabroadcast "job_prist",90,34,105,105,"[Father Peter]: You have 3 minutes left!",10;
+		return;
 OnTimer153000:
 	//donpcevent "Father Peter::OnStart";
 	return;
 OnTimer183000:
-	setstr $@Time = "You have 2 minutes left!";
-	//donpcevent "Father Peter::OnStart";
-	goto AnnouncePrst;
+	check \@PROOM = 1,Broad1,-;
+	check \@PROOM = 2,Broad2,-;
+	check \@PROOM = 3,Broad3,-;
+		return;
+	Broad1:
+		areabroadcast "job_prist",8,34,39,109," [Father Peter]: You have 2 minutes left!",10;
+		return;
+	Broad2:
+		areabroadcast "job_prist",160,14,175,178,"[Father Peter]: You have 2 minutes left!",10;
+		return;
+	Broad3:
+		areabroadcast "job_prist",90,34,105,105,"[Father Peter]: You have 2 minutes left!",10;
+		return;
 OnTimer213000:
 	//donpcevent "Father Peter::OnStart";
 	return;
 OnTimer243000:
-	setstr $@Time = "You have 1 minute left!";
-	//donpcevent "Father Peter::OnStart";
-	goto AnnouncePrst;
+	check \@PROOM = 1,Broad1,-;
+	check \@PROOM = 2,Broad2,-;
+	check \@PROOM = 3,Broad3,-;
+		return;
+	Broad1:
+		areabroadcast "job_prist",8,34,39,109," [Father Peter]: You have 1 minute left!",10;
+		return;
+	Broad2:
+		areabroadcast "job_prist",160,14,175,178,"[Father Peter]: You have 1 minute left!",10;
+		return;
+	Broad3:
+		areabroadcast "job_prist",90,34,105,105,"[Father Peter]: You have 1 minute left!",10;
+		return;
 OnTimer273000:
-	setstr $@Time = "You have 30 seconds left!";
-	//donpcevent "Father Peter::OnStart";
-	goto AnnouncePrst;
+	check \@PROOM = 1,Broad1,-;
+	check \@PROOM = 2,Broad2,-;
+	check \@PROOM = 3,Broad3,-;
+		return;
+	Broad1:
+		areabroadcast "job_prist",8,34,39,109," [Father Peter]: You have 30 seconds left!",10;
+		return;
+	Broad2:
+		areabroadcast "job_prist",160,14,175,178,"[Father Peter]: You have 30 seconds left!",10;
+		return;
+	Broad3:
+		areabroadcast "job_prist",90,34,105,105,"[Father Peter]: You have 30 seconds left!",10;
+		return;
 OnTimer293000:
-	setstr $@Time = "You have 10 seconds left!";
-	goto AnnouncePrst;
-	return;
+	check \@PROOM = 1,Broad1,-;
+	check \@PROOM = 2,Broad2,-;
+	check \@PROOM = 3,Broad3,-;
+		return;
+	Broad1:
+		areabroadcast "job_prist",8,34,39,109," [Father Peter]: You have 10 seconds left!",10;
+		return;
+	Broad2:
+		areabroadcast "job_prist",160,14,175,178,"[Father Peter]: You have 10 seconds left!",10;
+		return;
+	Broad3:
+		areabroadcast "job_prist",90,34,105,105,"[Father Peter]: You have 10 seconds left!",10;
+		return;
 OnTimer2970000:
-	setstr $@Time = "You have 5 seconds left.";
-	goto AnnouncePrst;
-	return;
+	check \@PROOM = 1,Broad1,-;
+	check \@PROOM = 2,Broad2,-;
+	check \@PROOM = 3,Broad3,-;
+		return;
+	Broad1:
+		areabroadcast "job_prist",8,34,39,109," [Father Peter]: You have 5 seconds left!",10;
+		return;
+	Broad2:
+		areabroadcast "job_prist",160,14,175,178,"[Father Peter]: You have 5 seconds left!",10;
+		return;
+	Broad3:
+		areabroadcast "job_prist",90,34,105,105,"[Father Peter]: You have 5 seconds left!",10;
+		return;
 OnTimer302000:
-	setstr $@Time = "Time is up. You failed the test.";
-	goto AnnouncePrst;
+	check \@PROOM = 1,Broad1,-;
+	check \@PROOM = 2,Broad2,-;
+	check \@PROOM = 3,Broad3,-;
+		return;
+	Broad1:
+		areabroadcast "job_prist",8,34,39,109," [Father Peter]: Time is up. You failed the test.",10;
+		return;
+	Broad2:
+		areabroadcast "job_prist",160,14,175,178,"[Father Peter]: Time is up. You failed the test.",10;
+		return;
+	Broad3:
+		areabroadcast "job_prist",90,34,105,105,"[Father Peter]: Time is up. You failed the test.",10;
+		return;
 OnTimer306000:
 	npctimer 0;
 	check \@PROOM = 1,Warp1,-;
@@ -931,20 +1008,6 @@ OnTimer306000:
 		resetmymob "job_prist";
 		set \@PROOM = 0;
 		//donpcevent "Father Peter::OnStart";
-		return;
-AnnouncePrst:
-	check \@PROOM = 1,Broad1,-;
-	check \@PROOM = 2,Broad2,-;
-	check \@PROOM = 3,Broad3,-;
-		return;
-	Broad1:
-		areabroadcast "job_prist",8,34,39,109,"[Father Peter]: $@Time .",10;
-		return;
-	Broad2:
-		areabroadcast "job_prist",160,14,175,178,"[Father Peter]: $@Time .",10;
-		return;
-	Broad3:
-		areabroadcast "job_prist",90,34,105,105,"[Father Peter]: $@Time .",10;
 		return;
 }
 

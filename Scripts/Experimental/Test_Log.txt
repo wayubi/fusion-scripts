@@ -5,6 +5,7 @@
 ----------------------------------------------------------------------------------------------------
  Experimental Scripts Change Logs
 ====================================================================================================
+11-10-2004: Everything seems to work minus some thing.  layout fully works. [Tsusai]
 11-10-2004: More updates.  Progress from room 1 to 2 (mummy to temptation) does not work. [Tsusai]
 11-09-2004: Added Priest quest.  warp to job_prist 24 180 to test. (this still crashes) [Tsusai]
 10-20-2004: Added potential sage quest. [Tsusai]
