@@ -1,6 +1,7 @@
 --------------------------------------------------------------------------------
  Fusion 1.213 - August 29th, 2004
 --------------------------------------------------------------------------------
+- 09-01-04: GvG\npc_gflag.txt - Relocated castle side flags for new Payon map again. [Tsusai]
 - 09-01-04: Event\Event_Making.txt - Updated Payon Npc's placement. [Muad_Dib]
 - 09-01-04: Event\Event_MrSmile.txt - Updated Payon Npc's placement. [Muad_Dib]
 - 09-01-04: Event\Event_NGuild.txt - Updated Payon Npc's placement. [Muad_Dib]
