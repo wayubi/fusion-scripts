@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.003
 ----------------------------------------------------------------------------------------------------
+- Town\Town_Kafra.txt - added missing L_ROOT_4_1 label on cart rental. [Tsusai]
 - Warp\other\job_sword.txt - Corrected the swordsman test warps. [Colus]
 - Job\Job1_Merchant - added no skill left requirement. [nestor_zulueta]
 - Town\Town_Kafra.txt - made a little change on kafra on babylan island. [nestor_zulueta]

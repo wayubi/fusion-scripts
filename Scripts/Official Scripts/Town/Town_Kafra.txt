@@ -2175,6 +2175,9 @@ prt_fild05.gat,290,224,4	script	"kafra Personnel"	114,{
 			mes "Merchants, High Merchants, Blacksmiths, Whitesmiths, Alchemists and Creators.";
 			check @kafra_COUPON = 0,-,L_ROOT_4_1;
 				goto L_EXIT;
+			L_ROOT_4_1:
+				next;
+				goto L_START_1;
 		L_SUB_4_1:
 			check @kafra_COUPON = 0,-,L_SUB_4_2;
 				mes "[kafra Personnel]";
