@@ -1,12 +1,50 @@
-//----------------------------------------------------------------------
-// Script : Town_Siglude v1.0
-//----------------------------------------------------------------------
+//========================================================================================
+// ｻｻ The Fusion Project ｫｫ
+// Copyright (c) 2004, Cobax Information Systems
+// http://fusion.cobax.net/
+// ---------------------------------------------------------------------------------------
+//
+// Refiner and providers - Non Player Character Locations
+//
+// Dietrich -> prt_in: 63,69
+// Transform Rough Elunium/Oridecon into Pures.
+//
+// Vurewell -> prt_in: 56,68
+// Proved Phracon and Emveretarcon.
+//
+// Hollgrehenn -> prt_in: 63,60
+// Refine equipments using Elunium/Oridecon.
+//
+// Abdul -> morocc_in: 72,32
+// Transform Rough Elunium/Oridecon into Pures.
+//
+// Sade -> morocc_in: 63,32
+// Proved Phracon and Emveretarcon.
+//
+// Aragham -> morocc_in: 73,38
+// Refine equipments using Elunium/Oridecon.
+//
+// Hakhim -> payon_in01: 81,31
+// Transform Rough Elunium/Oridecon into Pures.
+//
+// Begnahd -> payon_in01: 95,19
+// Proved Phracon and Emveretarcon.
+//
+// Antonio -> payon_in01: 90,31
+// Refine equipments using Elunium/Oridecon.
+//
+// Xenophon -> alberta_in: 21,63
+// Transform Rough Elunium/Oridecon into Pures.
+//
+// Kahlamanlith -> alberta_in: 13,71
+// Proved Phracon and Emveretarcon.
+//
+// Fredrik -> alberta_in: 28,58
+// Refine equipments using Elunium/Oridecon.
+//
+//========================================================================================
 
-// ----------------------------
-// --- 金物屋青年プロンテラ ---
-// ----------------------------
-
-prt_in.gat,63,69,4	script	Dietrich	84,{
+prt_in.gat,63,69,4	script	"Dietrich"	84,{
 	mes "[Dietrich]";
 	mes "If you bring Rough Oridecons and";
 	mes "Rough Eluniums to me,";
@@ -65,45 +103,43 @@ prt_in.gat,63,69,4	script	Dietrich	84,{
 
 // This guy is replaced by an NPC shop selling said stones
 // ----------------------------------------------------------------------------------
-//prt_in.gat,56,68,4	script	ブルウェル	86,{
-//	mes "[ブルウェル]";
-//	mes "鉄や鋼鉄の武器を製錬する時に";
-//	mes "使える金属を売っています。";
-//	mes "1レベルの武器製錬に使える";
-//	mes "^007777プラコン^000000 と";
-//	mes "2レベルの武器製錬に使える";
-//	mes "^007777エンベルタコン^000000 があります。";
+//prt_in.gat,56,68,4	script	"Vurewell"	86,{
+//	mes "[Vurewell]";
+//	mes "I, the Honest and Diligent Merchant";
+//	mes "sell 2 kinds of Metal for tempering";
+//	mes "weaponry of iron or steel.";
+//	mes "I have ^007777Phracon^000000 for Lv 1";
+//	mes "Weaponry... and ^007777Emveretarcon^000000 for Lv";
+//	mes "2 Weaponry. I got many, many of them... Haha.";
 //	next;
-//	menu "プラコン購入",-,"エンベルタコン購入",L_MENU_1,"他の金属はないか聞いてみる",L_MENU_2;
-//		mes "[ブルウェル]";
-//		mes "プラコンは1個200Zenyです。";
+//	menu "Phracon - 200z",-,"Emveretarcon - 1000z",L_MENU_1,"Ask wheter he has other Stones.",L_MENU_2;
+//		mes "[Vurewell]";
+//		mes "^007777Phracon^000000 are 200 Zeny each...";
 //		set @BUY_PRICE = 200;
 //		set @BUY_ID = 1010;
 //		goto L_START_1;
 //	L_MENU_1:
-//		mes "[ブルウェル]";
-// 		mes "エンベルタコンは";
-//		mes "1個1000Zenyです。";
+//		mes "[Vurewell]";
+// 		mes "^007777Emveretarcon^000000 are 1000z each...";
 //		set @BUY_PRICE = 1000;
 //		set @BUY_ID = 1011;
 //		goto L_START_1;
 //	L_MENU_2:
-//		mes "[ブルウェル]";
-//		mes "1レベルと2レベルの武器より";
-//		mes "レベルが高い武器を精錬するための";
-//		mes "金属ですね。";
-//		mes "もうご存知かもしれませんが、 ";
-//		mes "オリデオコンとエルニウムは";
-//		mes "手に入れるのがすごく難しくてね…";
+//		mes "[Vurewell]";
+//		mes "Ahhh!!! You need the Metal for";
+//		mes "higher Leveled Weapons.";
+//		mes "But you know, Oridecon or Elunim is";
+//		mes "very very rare... so difficult to find...";
 //		close;
 //	L_START_1:
-//		mes "いくつ購入しますか？";
-//		mes "＜０＞でキャンセルできます。";
+//		mes "How many do you wish to Buy? If you";
+//		mes "quit, please note the number as 'o'.";
 //		next;
 //		input @BUY_NUM;
+//		check @BUY_NUM <= 500,-,L_START_5;
 //		check @BUY_NUM == 0,-,L_START_2;
-//		mes "[ブルウェル]";
-//		mes "取引中止ですね。";
+//		mes "[Vurewell]";
+//		mes "Deal has canceled.";
 //		close;
 //	L_START_2:
 //		set @BUY_ZENY = @BUY_NUM;
@@ -112,26 +148,28 @@ prt_in.gat,63,69,4	script	Dietrich	84,{
 //		checkadditem @BUY_ID,@BUY_NUM,-,L_START_4;
 //		set Zeny -= @BUY_ZENY,0;
 //		additem @BUY_ID,@BUY_NUM;
-//		mes "[ブルウェル]";
-//		mes "$[@BUY_NUM]個お買い上げ！";
-//		mes "ありがとうございます！";
+//		mes "[Vurewell]";
+//		mes "Here you are, thank you for shopping at my shop.";
 //		close;
 //	L_START_3:
-//		mes "[ブルウェル]";
-//		mes "あれ？お客さん…";
-//		mes "お金が足りませんね。";
-//		mes "すみませんが、うちも商売だから";
-//		mes "損するわけにはいかないんですよ。";
+//		mes "[Vurewell]";
+///		mes "Err...you don't have enough Money now.";
+//		mes "Well, I am sorry but that's Below cost.";
 //		close;
 //	L_START_4:
-//		mes "[ブルウェル]";
-//		mes "荷物が多いですね。";
-//		mes "持ち物を整理してから";
-//		mes "またおこしください。";
+//		mes "[Vurewell]";
+//		mes "You can't wear that many, don't you think?";
+//		mes "Reorder your inventory before retrying.";
 //		close;
+//	L_START_5:
+//		mes "[Vurewell]";
+//		mes "You can buy 500 or less.";
+//		next;
+//		mes "[Vurewell]";
+//		goto L_START_1;
 //}
 
-prt_in.gat,63,60,4	script	Hollgrehenn	85,{
+prt_in.gat,63,60,4	script	"Hollgrehenn"	85,{
 		lockitem 1;
 		mes "[Hollgrehenn]";
 		mes "I am the Armsmith and I can refine any weapon and armor.";
@@ -433,11 +471,7 @@ prt_in.gat,63,60,4	script	Hollgrehenn	85,{
 		close;
 }
 
-// ----------------------------
-// ----- 金物屋青年モロク -----
-// ----------------------------
-
-morocc_in.gat,72,32,4	script	Abdul	99,{
+morocc_in.gat,72,32,4	script	"Abdul"	99,{
 	mes "[Abdul]";
 	mes "If you bring Rough Oridecons and";
 	mes "Rough Eluniums to me,";
@@ -496,45 +530,43 @@ morocc_in.gat,72,32,4	script	Abdul	99,{
 
 // This guy is replaced by an NPC shop selling said stones
 // ----------------------------------------------------------------------------------
-//morocc_in.gat,63,32,4	script	サド	99,{
-//	mes "[サド]";
-//	mes "鉄や鋼鉄の武器を製錬する時に";
-//	mes "使える金属を売っています。";
-//	mes "1レベルの武器製錬に使える";
-//	mes "^007777プラコン^000000 と";
-//	mes "2レベルの武器製錬に使える";
-//	mes "^007777エンベルタコン^000000 があります。";
+//morocc_in.gat,63,32,4	script	"Sade"	99,{
+//	mes "[Sade]";
+//	mes "I, the Honest and Diligent Merchant";
+//	mes "sell 2 kinds of Metal for tempering";
+//	mes "weaponry of iron or steel.";
+//	mes "I have ^007777Phracon^000000 for Lv 1";
+//	mes "Weaponry... and ^007777Emveretarcon^000000 for Lv";
+//	mes "2 Weaponry. I got many, many of them... Haha.";
 //	next;
-//	menu "プラコン購入",-,"エンベルタコン購入",L_MENU_1,"他の金属はないか聞いてみる",L_MENU_2;
-//		mes "[サド]";
-//		mes "プラコンは1個200Zenyです。";
+//	menu "Phracon - 200z",-,"Emveretarcon - 1000z",L_MENU_1,"Ask wheter he has other Stones.",L_MENU_2;
+//		mes "[Sade]";
+//		mes "^007777Phracon^000000 are 200 Zeny each...";
 //		set @BUY_PRICE = 200;
 //		set @BUY_ID = 1010;
 //		goto L_START_1;
 //	L_MENU_1:
-//		mes "[サド]";
-//		mes "エンベルタコンは";
-//		mes "1個1000Zenyです。";
+//		mes "[Sade]";
+// 		mes "^007777Emveretarcon^000000 are 1000z each...";
 //		set @BUY_PRICE = 1000;
 //		set @BUY_ID = 1011;
 //		goto L_START_1;
 //	L_MENU_2:
-//		mes "[サド]";
-//		mes "1レベルと2レベルの武器より";
-//		mes "レベルが高い武器を精錬するための";
-//		mes "金属ですね。";
-//		mes "もうご存知かもしれませんが、 ";
-//		mes "オリデオコンとエルニウムは";
-//		mes "手に入れるのがすごく難しくてね…";
+//		mes "[Sade]";
+//		mes "Ahhh!!! You need the Metal for";
+//		mes "higher Leveled Weapons.";
+//		mes "But you know, Oridecon or Elunim is";
+//		mes "very very rare... so difficult to find...";
 //		close;
 //	L_START_1:
-//		mes "いくつ購入しますか？";
-//		mes "＜０＞でキャンセルできます。";
+//		mes "How many do you wish to Buy? If you";
+//		mes "quit, please note the number as 'o'.";
 //		next;
 //		input @BUY_NUM;
+//		check @BUY_NUM <= 500,-,L_START_5;
 //		check @BUY_NUM == 0,-,L_START_2;
-//		mes "[サド]";
-//		mes "取引中止ですね。";
+//		mes "[Sade]";
+//		mes "Deal has canceled.";
 //		close;
 //	L_START_2:
 //		set @BUY_ZENY = @BUY_NUM;
@@ -543,26 +575,28 @@ morocc_in.gat,72,32,4	script	Abdul	99,{
 //		checkadditem @BUY_ID,@BUY_NUM,-,L_START_4;
 //		set Zeny -= @BUY_ZENY,0;
 //		additem @BUY_ID,@BUY_NUM;
-//		mes "[サド]";
-//		mes "$[@BUY_NUM]個お買い上げ！";
-//		mes "ありがとうございます！";
+//		mes "[Sade]";
+//		mes "Here you are, thank you for shopping at my shop.";
 //		close;
 //	L_START_3:
-//		mes "[サド]";
-//		mes "あれ？お客さん…";
-//		mes "お金が足りませんね。";
-//		mes "すみませんが、うちも商売だから";
-//		mes "損するわけにはいかないんですよ。";
+//		mes "[Sade]";
+///		mes "Err...you don't have enough Money now.";
+//		mes "Well, I am sorry but that's Below cost.";
 //		close;
 //	L_START_4:
-//		mes "[サド]";
-//		mes "荷物が多いですね。";
-//		mes "持ち物を整理してから";
-//		mes "またおこしください。";
+//		mes "[Sade]";
+//		mes "You can't wear that many, don't you think?";
+//		mes "Reorder your inventory before retrying.";
 //		close;
+//	L_START_5:
+//		mes "[Sade]";
+//		mes "You can buy 500 or less.";
+//		next;
+//		mes "[Sade]";
+//		goto L_START_1;
 //}
 
-morocc_in.gat,73,38,4	script	Aragham	99,{
+morocc_in.gat,73,38,4	script	"Aragham"	99,{
 		lockitem 1;
 		mes "[Aragham Salre]";
 		mes "I'm the Armsmith of the desert~";
@@ -865,11 +899,7 @@ morocc_in.gat,73,38,4	script	Aragham	99,{
 		close;
 }
 
-// ----------------------------
-// --- 金物屋青年フェイヨン ---
-// ----------------------------
-
-payon_in01.gat,81,31,4	script	Hakhim	88,{
+payon_in01.gat,81,31,4	script	"Hakhim"	88,{
 	mes "[Hakhim]";
 	mes "If you bring Rough Oridecons and";
 	mes "Rough Eluniums to me,";
@@ -928,45 +958,43 @@ payon_in01.gat,81,31,4	script	Hakhim	88,{
 
 // This guy is replaced by an NPC shop selling said stones
 // ----------------------------------------------------------------------------------
-//payon_in01.gat,95,19,4	script	ベグナド	88,{
-//	mes "[ベグナド]";
-//	mes "鉄や鋼鉄の武器を製錬する時に";
-//	mes "使える金属を売っています。";
-//	mes "1レベルの武器製錬に使える";
-//	mes "^007777プラコン^000000 と";
-//	mes "2レベルの武器製錬に使える";
-//	mes "^007777エンベルタコン^000000 があります。";
+//payon_in01.gat,95,19,4	script	"Begnahd"	88,{
+//	mes "[Begnahd]";
+//	mes "I, the Honest and Diligent Merchant";
+//	mes "sell 2 kinds of Metal for tempering";
+//	mes "weaponry of iron or steel.";
+//	mes "I have ^007777Phracon^000000 for Lv 1";
+//	mes "Weaponry... and ^007777Emveretarcon^000000 for Lv";
+//	mes "2 Weaponry. I got many, many of them... Haha.";
 //	next;
-//	menu "プラコン購入",-,"エンベルタコン購入",L_MENU_1,"他の金属はないか聞いてみる",L_MENU_2;
-//		mes "[ベグナド]";
-//		mes "プラコンは1個200Zenyです。";
+//	menu "Phracon - 200z",-,"Emveretarcon - 1000z",L_MENU_1,"Ask wheter he has other Stones.",L_MENU_2;
+//		mes "[Begnahd]";
+//		mes "^007777Phracon^000000 are 200 Zeny each...";
 //		set @BUY_PRICE = 200;
 //		set @BUY_ID = 1010;
 //		goto L_START_1;
 //	L_MENU_1:
-//		mes "[ベグナド]";
-// 		mes "エンベルタコンは";
-//		mes "1個1000Zenyです。";
+//		mes "[Begnahd]";
+// 		mes "^007777Emveretarcon^000000 are 1000z each...";
 //		set @BUY_PRICE = 1000;
 //		set @BUY_ID = 1011;
 //		goto L_START_1;
 //	L_MENU_2:
-//		mes "[ベグナド]";
-//		mes "1レベルと2レベルの武器より";
-//		mes "レベルが高い武器を精錬するための";
-//		mes "金属ですね。";
-//		mes "もうご存知かもしれませんが、 ";
-//		mes "オリデオコンとエルニウムは";
-//		mes "手に入れるのがすごく難しくてね…";
+//		mes "[Begnahd]";
+//		mes "Ahhh!!! You need the Metal for";
+//		mes "higher Leveled Weapons.";
+//		mes "But you know, Oridecon or Elunim is";
+//		mes "very very rare... so difficult to find...";
 //		close;
 //	L_START_1:
-//		mes "いくつ購入しますか？";
-//		mes "＜０＞でキャンセルできます。";
+//		mes "How many do you wish to Buy? If you";
+//		mes "quit, please note the number as 'o'.";
 //		next;
 //		input @BUY_NUM;
+//		check @BUY_NUM <= 500,-,L_START_5;
 //		check @BUY_NUM == 0,-,L_START_2;
-//		mes "[ベグナド]";
-//		mes "取引中止ですね。";
+//		mes "[Begnahd]";
+//		mes "Deal has canceled.";
 //		close;
 //	L_START_2:
 //		set @BUY_ZENY = @BUY_NUM;
@@ -975,26 +1003,28 @@ payon_in01.gat,81,31,4	script	Hakhim	88,{
 //		checkadditem @BUY_ID,@BUY_NUM,-,L_START_4;
 //		set Zeny -= @BUY_ZENY,0;
 //		additem @BUY_ID,@BUY_NUM;
-//		mes "[ベグナド]";
-//		mes "$[@BUY_NUM]個お買い上げ！";
-//		mes "ありがとうございます！";
+//		mes "[Begnahd]";
+//		mes "Here you are, thank you for shopping at my shop.";
 //		close;
 //	L_START_3:
-//		mes "[ベグナド]";
-//		mes "あれ？お客さん…";
-//		mes "お金が足りませんね。";
-//		mes "すみませんが、うちも商売だから";
-//		mes "損するわけにはいかないんですよ。";
+//		mes "[Begnahd]";
+///		mes "Err...you don't have enough Money now.";
+//		mes "Well, I am sorry but that's Below cost.";
 //		close;
 //	L_START_4:
-//		mes "[ベグナド]";
-//		mes "荷物が多いですね。";
-//		mes "持ち物を整理してから";
-//		mes "またおこしください。";
+//		mes "[Begnahd]";
+//		mes "You can't wear that many, don't you think?";
+//		mes "Reorder your inventory before retrying.";
 //		close;
+//	L_START_5:
+//		mes "[Begnahd]";
+//		mes "You can buy 500 or less.";
+//		next;
+//		mes "[Begnahd]";
+//		goto L_START_1;
 //}
 
-payon_in01.gat,90,31,4	script	Antonio	88,{
+payon_in01.gat,90,31,4	script	"Antonio"	88,{
 		lockitem 1;
 		mes "[Antonio]";
 		mes "I am the Armsmith and I can refine any weapon and armor.";
@@ -1296,12 +1326,7 @@ payon_in01.gat,90,31,4	script	Antonio	88,{
 		close;
 }
 
-
-// -------------------------------
-// --- 金物屋青年 (アルベルタ) ---
-// -------------------------------
-
-alberta_in.gat,21,63,5	script	Xenophon	84,{
+alberta_in.gat,21,63,5	script	"Xenophon"	84,{
 	mes "[Xenophon Zolotas]";
 	mes "If you bring Rough Oridecons and";
 	mes "Rough Eluniums to me,";
@@ -1360,45 +1385,43 @@ alberta_in.gat,21,63,5	script	Xenophon	84,{
 
 // This guy is replaced by an NPC shop selling said stones
 // ----------------------------------------------------------------------------------
-//alberta_in.gat,13,71,4	script	カラマンリス	86,{
-//	mes "[カラマンリス]";
-//	mes "鉄や鋼鉄の武器を製錬する時に";
-//	mes "使える金属を売っています。";
-//	mes "1レベルの武器製錬に使える";
-//	mes "^007777プラコン^000000 と";
-//	mes "2レベルの武器製錬に使える";
-//	mes "^007777エンベルタコン^000000 があります。";
+//alberta_in.gat,13,71,4	script	"Kahlamanlith"	86,{
+//	mes "[Kahlamanlith]";
+//	mes "I, the Honest and Diligent Merchant";
+//	mes "sell 2 kinds of Metal for tempering";
+//	mes "weaponry of iron or steel.";
+//	mes "I have ^007777Phracon^000000 for Lv 1";
+//	mes "Weaponry... and ^007777Emveretarcon^000000 for Lv";
+//	mes "2 Weaponry. I got many, many of them... Haha.";
 //	next;
-//	menu "プラコン購入",-,"エンベルタコン購入",L_MENU_1,"他の金属はないか聞いてみる",L_MENU_2;
-//		mes "[カラマンリス]";
-//		mes "プラコンは1個200Zenyです。";
+//	menu "Phracon - 200z",-,"Emveretarcon - 1000z",L_MENU_1,"Ask wheter he has other Stones.",L_MENU_2;
+//		mes "[Kahlamanlith]";
+//		mes "^007777Phracon^000000 are 200 Zeny each...";
 //		set @BUY_PRICE = 200;
 //		set @BUY_ID = 1010;
 //		goto L_START_1;
 //	L_MENU_1:
-// 		mes "[カラマンリス]";
-// 		mes "エンベルタコンは";
-//		mes "1個1000Zenyです。";
+//		mes "[Kahlamanlith]";
+// 		mes "^007777Emveretarcon^000000 are 1000z each...";
 //		set @BUY_PRICE = 1000;
 //		set @BUY_ID = 1011;
 //		goto L_START_1;
 //	L_MENU_2:
-//		mes "[カラマンリス]";
-//		mes "1レベルと2レベルの武器より";
-//		mes "レベルが高い武器を精錬するための";
-//		mes "金属ですね。";
-//		mes "もうご存知かもしれませんが、 ";
-//		mes "オリデオコンとエルニウムは";
-//		mes "手に入れるのがすごく難しくてね…";
+//		mes "[Kahlamanlith]";
+//		mes "Ahhh!!! You need the Metal for";
+//		mes "higher Leveled Weapons.";
+//		mes "But you know, Oridecon or Elunim is";
+//		mes "very very rare... so difficult to find...";
 //		close;
 //	L_START_1:
-//		mes "いくつ購入しますか？";
-//		mes "＜０＞でキャンセルできます。";
+//		mes "How many do you wish to Buy? If you";
+//		mes "quit, please note the number as 'o'.";
 //		next;
 //		input @BUY_NUM;
+//		check @BUY_NUM <= 500,-,L_START_5;
 //		check @BUY_NUM == 0,-,L_START_2;
-//		mes "[カラマンリス]";
-//		mes "取引中止ですね。";
+//		mes "[Kahlamanlith]";
+//		mes "Deal has canceled.";
 //		close;
 //	L_START_2:
 //		set @BUY_ZENY = @BUY_NUM;
@@ -1407,26 +1430,28 @@ alberta_in.gat,21,63,5	script	Xenophon	84,{
 //		checkadditem @BUY_ID,@BUY_NUM,-,L_START_4;
 //		set Zeny -= @BUY_ZENY,0;
 //		additem @BUY_ID,@BUY_NUM;
-//		mes "[カラマンリス]";
-//		mes "$[@BUY_NUM]個お買い上げ！";
-//		mes "ありがとうございます！";
+//		mes "[Kahlamanlith]";
+//		mes "Here you are, thank you for shopping at my shop.";
 //		close;
 //	L_START_3:
-//		mes "[カラマンリス]";
-//		mes "あれ？お客さん…";
-//		mes "お金が足りませんね。";
-//		mes "すみませんが、うちも商売だから";
-//		mes "損するわけにはいかないんですよ。";
+//		mes "[Kahlamanlith]";
+//		mes "Err...you don't have enough Money now.";
+//		mes "Well, I am sorry but that's Below cost.";
 //		close;
 //	L_START_4:
-//		mes "[カラマンリス]";
-//		mes "荷物が多いですね。";
-//		mes "持ち物を整理してから";
-//		mes "またおこしください。";
+//		mes "[Kahlamanlith]";
+//		mes "You can't wear that many, don't you think?";
+//		mes "Reorder your inventory before retrying.";
 //		close;
+//	L_START_5:
+//		mes "[Kahlamanlith]";
+//		mes "You can buy 500 or less.";
+//		next;
+//		mes "[Kahlamanlith]";
+//		goto L_START_1;
 //}
 
-alberta_in.gat,28,58,4	script	Fredrik	85,{
+alberta_in.gat,28,58,4	script	"Fredrik"	85,{
 		lockitem 1;
 		mes "[Fredrik Hermanthorn]";
 		mes "I am the Armsmith and I can refine any weapon and armor.";
@@ -1727,5 +1752,3 @@ alberta_in.gat,28,58,4	script	Fredrik	85,{
 		lockitem 0;
 		close;
 }
-
-
