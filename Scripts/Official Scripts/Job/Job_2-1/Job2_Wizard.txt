@@ -1264,6 +1264,9 @@ OnInit:
 	check \@Testing = 0,start,-;
 		return;
 	start:
+		enablenpc "job_wiz","Raul",0;
+//This next line doesn't work anyways, because OnInit 
+//doesn't know who is triggering that npc
 //		setstr $\@yourname = $charaname;
 		set \@Testing = 1;
 		set \@watermob = 0;
@@ -1271,7 +1274,7 @@ OnInit:
 		set \@firemob = 0;
 		enablenpc "job_wiz","Earth Room",0;
 		enablenpc "job_wiz","Fire Room",0;
-		enablenpc "job_wiz","Wizard",0;
+		enablenpc "job_wiz","Raul",0;
 		resetmymob "job_wiz";
 		enablenpc "job_wiz","Water Room",1;
 		warpallpc "job_wiz",114,169,2;
@@ -1296,6 +1299,7 @@ OnInit:
 		return;
 	OnTimer1000:
 		broadcast "Room of Water, testing will begin.",10;
+		enablenpc "job_wiz","Raul",0;
 		return;
 	OnTimer2000:
 		broadcast "3 min left",10;
@@ -1343,14 +1347,16 @@ job_wiz.gat,0,0,0	script	"watertest"	-1,{
 		return;
 	WaterMobs:
 		set \@watermob += 1;
+		broadcast "$[\@watermob] monster(s) dead.";
 		check \@watermob = 8,Guardians,-;
 			return;
 		Guardians:
 			npctimer 0;
 			enablenpc "job_wiz","Water Room",0;
+			enablenpc "job_wiz","Raul",0;
 			set \@watermob = 0;
-			broadcast "You have killed all the monsters!",10;
-//			broadcast "$[$\@yourname] has killed all the monsters!",10;
+//			broadcast "You have killed all the monsters!",10;
+			broadcast "$[$\@yourname] has killed all the monsters!",10;
 			set \@Testing = 2;
 			callmob "job_wiz",114,169,"Marine Sphere",1142,0,"watertest";
 			callmob "job_wiz",112,169,"Hydra",1068,0,"watertest";
@@ -1386,6 +1392,7 @@ job_wiz.gat,0,0,0	script	"watertest"	-1,{
 			return;
 	WaterGate:
 		set \@watermob += 1;
+		broadcast "$[\@watermob] monster(s) dead.";
 		check \@watermob = 5,End,-;
 			return;
 		End:
@@ -1424,6 +1431,7 @@ OnInit:
 		return;
 	OnTimer3000:
 		broadcast "Kill all the monsters within the time limit.",10;
+		enablenpc "job_wiz","Raul",0;
 		return;
 	OnTimer33000:
 		broadcast "2min 30sec left.",10;
@@ -1518,6 +1526,7 @@ job_wiz.gat,0,0,0	script	"earthtest"	-1,{
 //			broadcast "$[$\@yourname] has succenssfully defeated the guards!",10;
 			set \@Testing = 5;
 			enablenpc "job_wiz","Fire Room",1;
+			enablenpc "job_wiz","Raul",0;
 			warpallpc "job_wiz",46,99,0;
 			return;
 }
@@ -1641,11 +1650,12 @@ job_wiz.gat,0,0,0	script	"firetest"	-1,{
 		End:
 			npctimer 0;
 			set \@Testing = 7;
-			enablenpc "job_wiz","Wizard",1;
+			enablenpc "job_wiz","Raul",1;
 			return;
 }
 
-job_wiz.gat,44,99,4	script	"Wizard"	735,{
+job_wiz.gat,44,99,4	script	"Raul"	735,{
+	mes "[Raul]";
 	mes "Ha! You lived.";
 	mes "Time to warp you back.";
 	mes "Talk to the Guild Clerk...";
