@@ -1,5 +1,5 @@
-//=========================================== <Payon> ===================================
-payon.gat,163,139,0	script	"Lady"	90,{
+
+payon.gat,163,139,0 script "Lady" 90,{
 	mes "[Lady]";
 	mes "Back to our history, we had a hard time making our living in this village, Payon. People lived in Penury so even they couldn't afford for the dead to rest in peace. Some people threw their dead family into the cave near the village.";
 	mes "So in that Cave,it has rumored there are many walking Zombies which could have never gone Beyond the Realm.Ahhh...Spooky...";
@@ -8,7 +8,8 @@ payon.gat,163,139,0	script	"Lady"	90,{
 	mes "Their rotten bodies can't leave the cold, dark and damp cave...They just want the warmth of humans coming from the outer-world, that's why they keep attacking people without intentions...It's a spooky but tragic story...";
 	close;
 }
-payon_in.gat,171,138,0	script	"Young Man"	88,{
+
+payon_in.gat,171,138,0 script	"Young Man"	88,{
 	mes "[Young Man]";
 	mes "I can see you are a stranger from the appearance of your traveling outfit. You must be a well-experienced fighter otherwise you couldn't successfully arrive at this steep place with all tough those creatures outside.";
 	mes "However you miss something important for fights. You can't defeat those monsters only with might.";
@@ -18,7 +19,8 @@ payon_in.gat,171,138,0	script	"Young Man"	88,{
 	mes "If you study magics, works will be easier... If you don't,you'd better accompany with somebody using magic.";
 	close;
 }
-payon.gat,29,115,0	script	"Young Man"	88,{
+
+payon.gat,29,115,0 script "Young Man" 88,{
 	mes "[Young Man]"
 	mes "I still remember the story from my grand father with blessed memories. People say there is an Amulet possessing evil power within which can awaken the dead from the grave.";
 	mes "Well I'm not sure it's true or not, but if so, I wonder what would happen when I summon my grand father from the realm with it....";
@@ -28,8 +30,8 @@ payon.gat,29,115,0	script	"Young Man"	88,{
 	mes "Eeeeeeeeekkkkk?! Wasn't it my grampa? Wa, wahhhhhhhh...";
 	close;
 }
-//========== Ladies in Payon Pub ==
-payon_in01.gat,104,183,0	script	"Waitress"	90,{
+
+payon_in01.gat,104,183,0 script "Waitress" 90,{
 	mes "[Pub Lady]";
 	mes "People in this place seem to be busy all the time, they come and go to be Archers or to buy arrows, I have to stick with this small shop.";
 	mes "I feell so melancholy and bored.";
@@ -40,67 +42,67 @@ payon_in01.gat,104,183,0	script	"Waitress"	90,{
 	next;
 	mes "[Pub Lady]";
 	mes "Where can I find the right person who is a really hot, sexy hunk, and who can take me out of this small place?";
-	check Gender=1,-,LStartF;
+	   check Gender=1,-,LStartF;
   	mes "[Pub Lady]";
   	mes "Hello, mister?";
-   	LStartF:
-   		mes "[Pub Lady]";
-   		mes "Hello, lady?";
-		next;
-		mes "[Pub Lady]";
-		mes "Grandma the fortuneteller told me that I would meet great luck in the near future!"; 
-		mes "But look at me, what's wrong with me!! I am leaving a managable life everyday!!";
-		mes "Oh..boy. What a dumb wishy-washy person I am.";
-		next;
-		mes "[Pub Lady]";
-		mes "I am so sorry, I should haven't said this to you. Now I am acting like i'm stupid.";  
- 		mes "I am sorry dear, please forgive my misbehaviour.";
-		next;
-		mes "[Pub Lady]";
-		mes "So, how may I help you? ";
-		menu "Have you ever heard of Zombies?",L_menu1,"I want to have my fortune told.",L_menu2,"I need some booze.",L_menu3,"I'm good",L_menu4;
-		L_menu1:
-			mes "[Pub Lady]";
-			mes "Zombies are the walking dead. You can easily spot them in this village, Payon.";
-			mes "It's rumored that they fear holiness. That's why Archers prefer to use arrows made out of holy metal, silver against Zombies.";
-  			next;
-			mes "[Pub Lady]";
-			mes "Legend says the chief of this town used silver arrows against walking zombies that used to be his brethren, to enlighten their souls to rest in peace.";
- 			mes "We believe only this way, zombies can be leaded to the peaceful world beyond the realm.";
-			next;
-			mes "[Pub Lady]";
-			mes "You might not agree on our tradition which respects the diseased.";
-			next;
-			mes "[Pub Lady]";
-			mes "Somehow I would like to appreciate the chief to enlighten my grandfather's poor soul.";
-			close;
-		L_menu2:
-			mes "[Pub Lady]";
-			mes "Oh! I must say she is really an extraordinary person. Well, it could be your luck, she doesn't hang around here much as she used to do.";
- 			next;
-			mes "[Pub Lady]";
-			mes "On the first place, she stayed here to mind her business, but ever since the chief recognized her talent, she's stayed in the central palace."
-			mes "You'd better go to there if you want to see her.";
-			close;
-		L_menu3:
-			mes "[Pub Lady]";
-			mes "I am so sorry they're all sold out and we can't afford to prepare alchohol anymore due to hostile creatures out there.";
-			mes "My master built a very strict rule of his own, that is we only provide the best drinks to customers.";
-			next;
-			mes "[Pub Lady]";
-			mes "So please come later again.";
-			next;
-			mes "[Pub Lady]";
-			mes "Sorry for your inconvenience.";
-			close;
-		L_menu4:
-			mes "[Pub Lady]";
-			mes "Have a nice day, dear.";
-			mes "Sob...I wish I could be in bed of roses.";
- 			close;
+   LStartF:
+   	mes "[Pub Lady]";
+   	mes "Hello, lady?";
+	next;
+	mes "[Pub Lady]";
+	mes "Grandma the fortuneteller told me that I would meet great luck in the near future!"; 
+	mes "But look at me, what's wrong with me!! I am leaving a managable life everyday!!";
+	mes "Oh..boy. What a dumb wishy-washy person I am.";
+	next;
+	mes "[Pub Lady]";
+	mes "I am so sorry, I should haven't said this to you. Now I am acting like i'm stupid.";  
+ 	mes "I am sorry dear, please forgive my misbehaviour.";
+	next;
+	mes "[Pub Lady]";
+	mes "So, how may I help you? ";
+	menu "Have you ever heard of Zombies?",L_menu1,"I want to have my fortune told.",L_menu2,"I need some booze.",L_menu3,"I'm good",L_menu4;
+L_menu1:
+	mes "[Pub Lady]";
+	mes "Zombies are the walking dead. You can easily spot them in this village, Payon.";
+	mes "It's rumored that they fear holiness. That's why Archers prefer to use arrows made out of holy metal, silver against Zombies.";
+  	next;
+	mes "[Pub Lady]";
+	mes "Legend says the chief of this town used silver arrows against walking zombies that used to be his brethren, to enlighten their souls to rest in peace.";
+ 	mes "We believe only this way, zombies can be leaded to the peaceful world beyond the realm.";
+	next;
+	mes "[Pub Lady]";
+	mes "You might not agree on our tradition which respects the diseased.";
+	next;
+	mes "[Pub Lady]";
+	mes "Somehow I would like to appreciate the chief to enlighten my grandfather's poor soul.";
+	close;
+L_menu2:
+	mes "[Pub Lady]";
+	mes "Oh! I must say she is really an extraordinary person. Well, it could be your luck, she doesn't hang around here much as she used to do.";
+ 	next;
+	mes "[Pub Lady]";
+	mes "On the first place, she stayed here to mind her business, but ever since the chief recognized her talent, she's stayed in the central palace."
+	mes "You'd better go to there if you want to see her.";
+	close;
+L_menu3:
+	mes "[Pub Lady]";
+	mes "I am so sorry they're all sold out and we can't afford to prepare alchohol anymore due to hostile creatures out there.";
+	mes "My master built a very strict rule of his own, that is we only provide the best drinks to customers.";
+	next;
+	mes "[Pub Lady]";
+	mes "So please come later again.";
+	next;
+	mes "[Pub Lady]";
+	mes "Sorry for your inconvenience.";
+	close;
+L_menu4:
+	mes "[Pub Lady]";
+	mes "Have a nice day, dear.";
+	mes "Sob...I wish I could be in bed of roses.";
+ 	close;
 }
-//======== Payon Guard ==
-payon.gat,93,162,3	script	"Guardsman"	105,{
+
+payon.gat,93,162,3 script "Guardsman" 105,{
 	mes "[Guardsman]";
 	mes "This is the central palace of Payon.";
 	mes "Even though we open this place to public in obedience to the head of the tribe's order..you must be orderly inside.";
@@ -109,8 +111,8 @@ payon.gat,93,162,3	script	"Guardsman"	105,{
 	mes "Besides we disarm your equipments for the preservation of public peace.Please cooperate.";
 	close;
 }
-//======== Payon Guard ==
-payon_in01.gat,69,90,3	script	"Chief Guardsman"	105,{
+
+payon_in01.gat,69,90,3 script "Chief Guardsman"	105,{
 	mes "[Chief Guardsman]";
 	mes "What brings you here?";
 	next;
@@ -121,7 +123,7 @@ payon_in01.gat,69,90,3	script	"Chief Guardsman"	105,{
 	mes "And I disarm your equipments for the preservation of public peace.";
 	close;
 }
-//==================================  Payon Lady  ==
+
 payon.gat,166,140,1	script	"Woman"	66,{
 	mes "[Woman]";
 	mes "Welcome to payon. You must of had a hard time while passing through the forest. How was your travel?";
@@ -130,38 +132,38 @@ payon.gat,166,140,1	script	"Woman"	66,{
 	next;
 	mes "[Woman]";
 	mes "To be honest, things are getting tough because of those creatures...sigh...";
-	check Gender=1,-,LStartF;
-		mes "Mister, you look as strong as a rocker! How many monsters have you killed?";
-		mes "Would you mind if I introduce a place for you to hunt?";
-	LStartF:
-		mes "Lady how many monsters have you killed?";
-		mes "I know the best place for a hunt, you will be able to fill your pocket with money there. How's it sound?";
-    		next;
-	    	mes "[Woman]";
-	    	mes "Oh well, I happened to know we have a cave in the middle of the village.";
-	    	mes "Are you interested in that place?";
-	    	mes "Just head north of town, pass a forest and head north-west.";
-	    	mes "You will realise when you are at the place with the smell of stinky monsters.";
-		next;
-		menu "It sounds dangerous."L_menu1,"I think I need to fully prepare for that place.",L_menu2,"Lady, you wear nice clothing~",L_menu3;
-		L_menu1:
-			mes "[Woman]";
-			mes "Come on, you coward~. It's just nothing but a simple cave filled with normal monsters.";
-			mes "It is quite safe so even we established an archer village near the cave to prevent incident~ hohoho~";
-			close;
-		L_menu2:
-			mes "[Woman]";
-			mes "Hoho...don't worry for preparation. There is a tool dealer in front of the cave, you can purchase items you need.";
-			mes "He is my husband...oops, he is a man very close to me. Hoho, Hoho...";
-			close;
-		L_menu3:
-			mes "[Woman]";
-			mes "Oh hohohoho! Did you notice? This is in-style in Prontera thesedays!";
-			mes "Women in this town don't know anything about Fashion! My husband sells young and naive customers pups to present me these clothing...oh ho oh hoho...";
-			close;
+	   check Gender=1,-,LStartF;
+	mes "Mister, you look as strong as a rocker! How many monsters have you killed?";
+	mes "Would you mind if I introduce a place for you to hunt?";
+LStartF:
+	mes "Lady how many monsters have you killed?";
+	mes "I know the best place for a hunt, you will be able to fill your pocket with money there. How's it sound?";
+    	next;
+	mes "[Woman]";
+	mes "Oh well, I happened to know we have a cave in the middle of the village.";
+	mes "Are you interested in that place?";
+	mes "Just head north of town, pass a forest and head north-west.";
+	mes "You will realise when you are at the place with the smell of stinky monsters.";
+      next;
+      menu "It sounds dangerous."L_menu1,"I think I need to fully prepare for that place.",L_menu2,"Lady, you wear nice clothing~",L_menu3;
+L_menu1:
+	mes "[Woman]";
+	mes "Come on, you coward~. It's just nothing but a simple cave filled with normal monsters.";
+	mes "It is quite safe so even we established an archer village near the cave to prevent incident~ hohoho~";
+	close;
+L_menu2:
+	mes "[Woman]";
+	mes "Hoho...don't worry for preparation. There is a tool dealer in front of the cave, you can purchase items you need.";
+	mes "He is my husband...oops, he is a man very close to me. Hoho, Hoho...";
+	close;
+L_menu3:
+	mes "[Woman]";
+	mes "Oh hohohoho! Did you notice? This is in-style in Prontera thesedays!";
+	mes "Women in this town don't know anything about Fashion! My husband sells young and naive customers pups to present me these clothing...oh ho oh hoho...";
+	close;
 }
-//==================================  Payon Woman B  =======
-payon.gat,163,142,5	script	"Woman"	66,{
+
+payon.gat,163,142,5 script "Woman" 66,{
 	mes "[Jim's Mother]";
 	mes "Oh boy there she goes again. She is a confirmed gossip.";
 	mes "Please don't take her first impression as our village's. Not all of us here at Payon are big mouths. She gets too excited with one time fortune telling.";
@@ -439,155 +441,170 @@ pay_arche.gat,77,131,2	script	"Archer Joe"	88,{
 		mes "Ummm... you don't have to be shy before me..";
 		close;	
 }
-//================================== Monster Scholar Vuicokk =======
-payon_in01.gat,164,165,2	script	"Monster Scholar"	98,{
+
+payon_in01.gat,164,165,2 script "Monster Scholar" 98,{
 	mes "[Monster Scholar Vuicokk]";
 	mes "Nice to meet you. I am Vuicokk the cholar in the monster research organization of Rune Midgard.";
 	mes "Do you have any questions about monsters of Rune Midgard?";
 	next;
 	menu "Late News.",L_menu1,"Undead Monster.",L_menu2,"Monster Research Organization.",L_menu3;
-	L_menu1:
-		mes "[Monster Scholar Vuicokk]";
-		mes "Payon is located deep inside the forest, you can easily get attacked by monster troops.";
-		mes "Besides a dangerous cave is near the town.";
-		next;
-		mes "[Monster Scholar Vuicokk]";
-		mes "Especially in the cave, monsters of undead attribute are spotted here and there, monster academic world is paying attention on the cave.";
-		mes "My mission in here is analysing their characters.";
-		close;
-	L_menu2:
-		mes "[Monster Scholar Vuicokk]";
-		mes "The remarkable feature of them is found in their origin.";
-		mes "Most of the monsters used to be the payon people who need to rest in peace by now.";
-		mes "Somehow their lost souls are wandering about the realm.";
-		next;
-		mes "[Monster Scholar Vuicokk]";
-		mes "It is totally classified from other monsters mutated from living creatures.";
-		mes "So our king takes great interest in Zombies,";
-		mes "Because they used to be the people who belonged to Rune Midgard when they were alive.";
-		next;
-		mes "[Monster Scholar Vuicokk]";
-		mes "His Majesty Tristram 3rd greatly encourages us to discover how to get rid of all the undead in this world.";
-		mes "We will try to eradicate sources of the undead as soon as we can, in compliance with the promise with families of them, in obedience to the king's order.";
-		next;
-		mes "[Monster Scholar Vuicokk]";
-		mes "I am sure to succeed.";
-		close;
-	L_menu3:
-		mes "[Monster Scholar Vuicokk]";
-		mes "Monster Research Organization has been formed as occasion demands to counter monsters that keep spawning without limit in our land.";
-		mes "The talent from all around the world are gathered in this organization to study the origin of monsters and to to feagure out how to defeat.";
-		next;
-		mes "[Monster Scholar Vuicokk]";
-		mes "Of course it is not that easy as you expect. We've studied them at the sacrifice of our lives.";
-		next;
-		mes "[Monster Scholar Vuicokk]";
-		mes "There have been countless amount of victims damaged by monsters during the mission...";
-		mes "However nothing can stop us. It is for you and our land, Rune-Midgard Kindom!";
-		next;
-		mes "[Monster Scholar Vuicokk]";
-		mes "Oops, I am so sorry to get too excited. I'm sorry.";
-		mes "Hmm hmm...anyway if you happened to meet Scholars like me, please treat them well.";
-		mes "Somehow we are carrying on this job for you not only for us.";
-		close;
+L_menu1:
+	mes "[Monster Scholar Vuicokk]";
+	mes "Payon is located deep inside the forest, you can easily get attacked by monster troops.";
+	mes "Besides a dangerous cave is near the town.";
+	next;
+	mes "[Monster Scholar Vuicokk]";
+	mes "Especially in the cave, monsters of undead attribute are spotted here and there, monster academic world is paying attention on the cave.";
+	mes "My mission in here is analysing their characters.";
+	close;
+L_menu2:
+	mes "[Monster Scholar Vuicokk]";
+	mes "The remarkable feature of them is found in their origin.";
+	mes "Most of the monsters used to be the payon people who need to rest in peace by now.";
+	mes "Somehow their lost souls are wandering about the realm.";
+	next;
+	mes "[Monster Scholar Vuicokk]";
+	mes "It is totally classified from other monsters mutated from living creatures.";
+	mes "So our king takes great interest in Zombies,";
+	mes "Because they used to be the people who belonged to Rune Midgard when they were alive.";
+	next;
+	mes "[Monster Scholar Vuicokk]";
+	mes "His Majesty Tristram 3rd greatly encourages us to discover how to get rid of all the undead in this world.";
+	mes "We will try to eradicate sources of the undead as soon as we can, in compliance with the promise with families of them, in obedience to the king's order.";
+	next;
+	mes "[Monster Scholar Vuicokk]";
+	mes "I am sure to succeed.";
+	close;
+L_menu3:
+	mes "[Monster Scholar Vuicokk]";
+	mes "Monster Research Organization has been formed as occasion demands to counter monsters that keep spawning without limit in our land.";
+	mes "The talent from all around the world are gathered in this organization to study the origin of monsters and to to feagure out how to defeat.";
+	next;
+	mes "[Monster Scholar Vuicokk]";
+	mes "Of course it is not that easy as you expect. We've studied them at the sacrifice of our lives.";
+	next;
+	mes "[Monster Scholar Vuicokk]";
+	mes "There have been countless amount of victims damaged by monsters during the mission...";
+	mes "However nothing can stop us. It is for you and our land, Rune-Midgard Kindom!";
+	next;
+	mes "[Monster Scholar Vuicokk]";
+	mes "Oops, I am so sorry to get too excited. I'm sorry.";
+	mes "Hmm hmm...anyway if you happened to meet Scholars like me, please treat them well.";
+	mes "Somehow we are carrying on this job for you not only for us.";
+	close;
 }
-//==================================  Chief  =======
+
 payon_in01.gat,136,147,2	script	"Chief"	120,{
-	check BaseLevel =< 30,-,L_Menu1;
-	random @R_SEL_NUM,2; 
-	check @R_SEL_NUM == 0,-,T_TALK0; 
+	   check BaseLevel =< 30,-,L_Menu1;
+	   random @R_SEL_NUM,2; 
+	   check @R_SEL_NUM == 0,-,T_TALK0; 
 	mes "[Guard]";
 	mes "Hey hey! Show your respect to the chief!";
 	close;
-	T_TALK0:
-		check @R_SEL_NUM == 1,-,T_TALK2;
-		mes "[Guard]";
-		mes "Hey! I said...";
-		next;
-		mes "[Chief]";
-		mes "That's fine, I am ok. It's been a long time since I talked to such young people.";
-		next;
-		menu "Please tell me about Payon.",L_menu1,"Where the guards come from?",L_menu2,"Please tell me about the cave.",L_menu3,"I am wondering what archer does.",L_menu4,"I am wondering what hunter does.",L_menu5;
-		L_menu1:
-			mes "[Chief]";
-			mes "Payon is the city of highlanders, who'be been self-supporting and self-sufficient.";
-			mes "Although our ancestors couldn't take civillized cultural benefits as much as farmers or citizens did, they knew how to make their living without help.";
-			mes "Young acting power motivated them to survive from the elemetal forces. We, payon people including females have learned how to go hunt and how to protect ourselves from danger.";
-			next;
-			mes "[Chief]";
-			mes "I heard of weak young people who fear fields or dungeons filled with monsters. But to us, battle against monsters is a part of our lives.";
-			mes "That's why his majesty Tristram 3rd expects us to teach young people how to efficiently fight against evil creatures.";
-			close;
-		L_menu2:
-			mes "[Chief]";
-			mes "Prontera has sent civil servants to Payon as I was young.";
-			mes "Royal troops, Kafra ladies, officers...at first we used to argue due to different customs.";
-			mes "However I cannot deny they've helped to activate foreign trade with other countries briskly.";
-			next;
-			mes "[Chief]";
-			mes "Now young people outside Payon constitute themselves Payon villagers...I could hardly imagine this scene when I was young. Hh huh...";
-			mes "I am very pleased to see them. Even though they came from other places they love Payon.";
-			close;
-		L_menu3:
-			mes "[Chief]";
-			mes "The cave up North is the place I used to goto sometimes.";
-			mes "It was harder then now, evil creatures that I'd never seen kept respawning inside without limit.";
-			mes "Present monsters are...different from the monsters we used to fight with.";
-			next;
-			mes "[Chief]";
-			mes "Have you ever happened to see? A lasting grudge coming out of the cave...it was caused from the dead who never came back after going inside the cave to protect this village.";
-			next;
-			mes "[Chief]";
-			mes "Those walking dead make another victim...ah...I am too old to endure such a severe pain...I am too old...";
-			next;
-			mes "[Chief]";
-			mes "I can do anything to stop the dead.....I can do anything....";
-			close;
-		L_menu4:
-			mes "[Chief]";
-			mes "We gather enough wood from the huge forest surrounding Payon.";
-			mes "It is a natural benefit that we own excellent archers. You might think Forest welcomes archers to practice bowing, but it takes the side opposite yours."
-			next;
-			mes "[Chief]";
-			mes "The forest aids you in hiding yourself, blocking the way of enemies who must approch to attack.";
-			mes "Archers are dexterous to attack dull enemies from a long distance.";
-			next;
-			mes "[Chief]";
-			mes "Besides...there is an expected merit being inside the forest. When I was young I was out of arrows while fighting against monsters in the woods, but arrows dropped by monsters saved my life from them. Muhahahaha!";
-			close;
-		L_menu5:
-			mes "[Chief]";
-			mes "As foreign cultures were introduced in Payon, the battle style of ours has been changed.";
-			mes "Especially explosive compound and technology have remarkably affected on people's life style. It seems people were not satisfied only with bows and arrows to fight.";
-			next;
-			mes "[Chief]";
-			mes "Trapping skills which enable to hunt monsters easier were invented, so the previous Chief granted them a name of hunter.";
-			mes "Even though it was all the go on the first place, trapping is a really dangerous skill, we hardly approve the youth to be hunters.";
-			next;
-			mes "[Chief]";
-			mes "People who have enough responsibility on themselves can challange on the class.";
-			close;
-			next;
-	T_TALK2:
-		check @R_SEL_NUM == 3,-,T_TALK3;
-		mes "[Chief]";
-		mes "Tired... I'd better take a rest then. Take care of yourself.";
-		close;
-	T_TALK3:
-		mes "[Guard]";
-		mes "The Chief is taking a rest. Would you mind if I ask you to come back later?";
-		close;
+T_TALK0:
+	   check @R_SEL_NUM == 1,-,T_TALK2;
+	mes "[Guard]";
+	mes "Hey! I said...";
+	next;
+	mes "[Chief]";
+	mes "That's fine, I am ok. It's been a long time since I talked to such young people.";
+	next;
+	menu "Please tell me about Payon.",L_menu1,"Where the guards come from?",L_menu2,"Please tell me about the cave.",L_menu3,"I am wondering what archer does.",L_menu4,"I am wondering what hunter does.",L_menu5;
+L_menu1:
+	mes "[Chief]";
+	mes "Payon is the city of highlanders, who'be been self-supporting and self-sufficient.";
+	mes "Although our ancestors couldn't take civillized cultural benefits as much as farmers or citizens did, they knew how to make their living without help.";
+	mes "Young acting power motivated them to survive from the elemetal forces. We, payon people including females have learned how to go hunt and how to protect ourselves from danger.";
+	next;
+	mes "[Chief]";
+	mes "I heard of weak young people who fear fields or dungeons filled with monsters. But to us, battle against monsters is a part of our lives.";
+	mes "That's why his majesty Tristram 3rd expects us to teach young people how to efficiently fight against evil creatures.";
+	close;
+L_menu2:
+	mes "[Chief]";
+	mes "Prontera has sent civil servants to Payon as I was young.";
+	mes "Royal troops, Kafra ladies, officers...at first we used to argue due to different customs.";
+	mes "However I cannot deny they've helped to activate foreign trade with other countries briskly.";
+	next;
+	mes "[Chief]";
+	mes "Now young people outside Payon constitute themselves Payon villagers...I could hardly imagine this scene when I was young. Hh huh...";
+	mes "I am very pleased to see them. Even though they came from other places they love Payon.";
+	close;
+L_menu3:
+	mes "[Chief]";
+	mes "The cave up North is the place I used to goto sometimes.";
+	mes "It was harder then now, evil creatures that I'd never seen kept respawning inside without limit.";
+	mes "Present monsters are...different from the monsters we used to fight with.";
+	next;
+	mes "[Chief]";
+	mes "Have you ever happened to see? A lasting grudge coming out of the cave...it was caused from the dead who never came back after going inside the cave to protect this village.";
+	next;
+	mes "[Chief]";
+	mes "Those walking dead make another victim...ah...I am too old to endure such a severe pain...I am too old...";
+	next;
+	mes "[Chief]";
+	mes "I can do anything to stop the dead.....I can do anything....";
+	close;
+L_menu4:
+	mes "[Chief]";
+	mes "We gather enough wood from the huge forest surrounding Payon.";
+	mes "It is a natural benefit that we own excellent archers. You might think Forest welcomes archers to practice bowing, but it takes the side opposite yours."
+	next;
+	mes "[Chief]";
+	mes "The forest aids you in hiding yourself, blocking the way of enemies who must approch to attack.";
+	mes "Archers are dexterous to attack dull enemies from a long distance.";
+	next;
+	mes "[Chief]";
+	mes "Besides...there is an expected merit being inside the forest. When I was young I was out of arrows while fighting against monsters in the woods, but arrows dropped by monsters saved my life from them. Muhahahaha!";
+	close;
+L_menu5:
+	mes "[Chief]";
+	mes "As foreign cultures were introduced in Payon, the battle style of ours has been changed.";
+	mes "Especially explosive compound and technology have remarkably affected on people's life style. It seems people were not satisfied only with bows and arrows to fight.";
+	next;
+	mes "[Chief]";
+	mes "Trapping skills which enable to hunt monsters easier were invented, so the previous Chief granted them a name of hunter.";
+	mes "Even though it was all the go on the first place, trapping is a really dangerous skill, we hardly approve the youth to be hunters.";
+	next;
+	mes "[Chief]";
+	mes "People who have enough responsibility on themselves can challange on the class.";
+	close;
+	next;
+T_TALK2:
+	   check @R_SEL_NUM == 3,-,T_TALK3;
+	mes "[Chief]";
+	mes "Tired... I'd better take a rest then. Take care of yourself.";
+	close;
+T_TALK3:
+	mes "[Guard]";
+	mes "The Chief is taking a rest. Would you mind if I ask you to come back later?";
+	close;
 }
-//==================================  Guard  =======
-payon_in01.gat,129,140,2	script	"Guard"	105,{
-	check BaseLevel =< 30,-,L_Menu1;
-		mes "[Guard]";
-		mes "Yo yo yo, you are not allowed to come in.";
-		mes "Go outside.";
-		close;
-	L_Menu1:
+
+payon_in01.gat,129,140,2 script "Guard" 105,{
+	   check BaseLevel =< 30,-,L_Menu1;
+	mes "[Guard]";
+	mes "Yo yo yo, you are not allowed to come in.";
+	mes "Go outside.";
+	close;
+L_Menu1:
 	mes "[Guard]"
 	mes "Sorry but you are not allowed to come in.";
 	mes "Please leave.";
 	close;
+}
+
+payon.gat,82,129,0 script "Payon Bulletin" 111,{
+	mes "^993333- The Payon Bulletin Reads -^000000";
+      mes "Welcome, and enjoy your stay in";
+      mes "the beautiful town of payon.";
+      close;
+}
+
+payon.gat,27,175,0 script "Sign" 111,{
+	mes "^993333- The Sign Reads -^000000";
+      mes "^9999FFVilla De Payon Shoppe^000000";
+      mes "Weapons, Armor and Accessories";
+      mes "'We Never Close!'";
+      close;
 }

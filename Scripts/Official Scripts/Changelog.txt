@@ -1,7 +1,7 @@
 ====================================================================================================
  »» The Fusion Project ««
  Copyright (c) 2004, Cobax Information Systems
- http://fusion.cobax.net/
+ http:\\fusion.cobax.net\
 ----------------------------------------------------------------------------------------------------
  Scripts Change Logs
 ====================================================================================================
@@ -9,6 +9,14 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.005
 ----------------------------------------------------------------------------------------------------
+- Event\Event_Reset_Skill.txt - Added Event Reset Skill. [Muad_Dib]
+- Event\Event_Doll.txt - Updated Event Doll. [Muad_Dib]
+- Job\Job1_Merchant.txt - Fixed a wrong command. [Muad_Dib]
+- Quest\Quest_skill\Crazy_Uproar_Quest.txt - Updated Crazy Uproar Quest. [Muad_Dib]
+- Shop\alberta.txt - Updated Alberta shops. [Muad_Dib]
+- Shop\prontera.txt - Updated Prontera shops. [Muad_Dib]
+- Town\Town_Alberta.txt - Updated Town Alberta.(A bit more research needed to finish it.) [Muad_Dib]
+- Town\Town_Payon.txt - Updated Town payon. [Muad_Dib]
 - GvG\npc_guardiankafra.txt - Simplified the script again. [Tsusai]
 - GvG\pay_cas02.txt - Fixed a mes error. [Tsusai]
 - Shop\yuno.txt - Updated Yuno shops. [Muad_Dib]
@@ -18,14 +26,14 @@
 - Shop\amatsu.txt - Updated amatsu shops. [Muad_Dib]
 - Town\Town_amatsu.txt - Corrected some minor bits. [ Muad_Dib]
 - Job\Job1_Swordman.txt - Added 3 Broadcasts. [Muad_Dib]
-- Archive\ - Commented out all  the npc placements so they don't stand in the way of future/existing scripts. [Muad_Dib]
+- Archive\ - Commented out all  the npc placements so they don't stand in the way of future\existing scripts. [Muad_Dib]
 - Warp\other\PvP.txt - Added jAthena PvP room warps. [Tsusai]
 - Job\Job1_Magician.txt - Fixed the quest item requirements. [Muad_Dib]
-- Event\Event_Prontera_Sewers.txt - Seperated from Town_Prontera.txt and updated/cleaned the script . [Muad_Dib]
+- Event\Event_Prontera_Sewers.txt - Seperated from Town_Prontera.txt and updated\cleaned the script . [Muad_Dib]
 - Original\*.* - Removed. [Tsusai].
 - Town\Town_Prontera.txt - Moved info from Original_Nenkaras.txt to here. [Tsusai].
 - Town\Town_Prontera.txt - Reorganised town prontera. [Muad_Dib]
-- GvG\npc_guardiankafra.txt - Simplified the script. [Tsusai/icbob]
+- GvG\npc_guardiankafra.txt - Simplified the script. [Tsusai\icbob]
 - Event\Event_Rental.txt - Falcon Fancenier now checks for Sniper instead of High Wizard. [Muad_Dib]
 - Quest\Quest_Skill\NPC_Novice_Skill - Added more up to date version of the novice skill quests. [Muad_Dib]
 - Mob\dungeon\xmas_dun - Fixed Mastering spawn. [Muad_Dib]

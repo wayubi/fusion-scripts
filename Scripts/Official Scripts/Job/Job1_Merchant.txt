@@ -510,11 +510,11 @@ M001Cont:
 	goto M0Cont3;	
 c3:
 	check @jam == 2989396,M000JobMerQ2E3,-;
-	getitem 1083,1;
+	delitem 1083,1;
 	goto M0Cont3;
 c4:
  	check @jam == 2191737,M000JobMerQ2E4,-;
-	getitem 1083,1;
+	delitem 1083,1;
 	goto M0Cont3;
 M000JobMerQ2E3:
 	additem 1081,1;
