@@ -1,13 +1,33 @@
-//NPCs
-//Go to Amatsu NPC alberta (242,92) 
-//Kafra amatsu (102,149) 
-//Tools merchant ama_in01 (24,30) 
-//Armor merchant NPC ama_in01 (89,27) 
-//Arms merchant NPC ama_in01 (102,27) 
-//Japanese vinegared rice delicacies Grand Master ama_in01 (162,17) 
-//Selling: Japanese vinegared rice delicacies Full-set 700z / one piece 74 
-//Selling: Sushi full-set 350 / one piece 37 
-
+//========================================================================================
+// »» The Fusion Project ««
+// Copyright (c) 2004, Cobax Information Systems
+// http://fusion.cobax.net/
+// ---------------------------------------------------------------------------------------
+//
+// Amatsu Town - Non Player Character Locations
+//
+// - Grand Master -> ama_in01: 167,17
+//   Say please order at the table.
+//
+// - Amatsu Event Worker -> amatsu.gat,194,79
+//   Warp back to prontera free.
+//
+// - Amatsu Event Worker -> prontera.gat,158,191
+//   Warp to amatsu free.
+//
+// - Crusader -> amatsu.gat,192,89
+//   Say the town is deserted.
+//
+// - Mysterious Wizard -> amatsu.gat,193,90
+//   Say the town is deserted.
+//
+// - Tourist -> amatsu.gat,223,222
+//   Say amatsu town is beatiful.
+//
+// - Elf -> amatsu.gat,171,173
+//   Talk about a GM house?.
+//
+//========================================================================================
 
 ama_in01.gat,167,17,1	script	"Grand Master"	100,{
 	mes "Please order at the table.";
