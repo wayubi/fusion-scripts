@@ -36,6 +36,9 @@
 // - Paul -> alberta: 195,151
 //   Warps from Alberta to Pirate Ghost Ship dungeon.
 //
+// - Babygirl -> alberta: 117,135
+//   Talks about wanting a Yoyo doll.
+//
 //========================================================================================
 
 alberta.gat,97,51,0	script	"Merchant" 84,{
@@ -218,4 +221,10 @@ alberta.gat,195,151,2	script	"Paul" 84,{
 					mes "[Paul]";
 					mes "Please come later.";
 					close;
-}								
+}
+
+alberta.gat,117,135,0	script	"Babygirl"	96,{
+	mes "Dolls~ I want dolls. I hope my daddy will buy me a doll on my next birthday.";
+	mes "Which one will be good....? Mmm, I want Yoyo the Monkey Doll this time. Hehe... Yoyo is so cute!";
+	close;
+}
