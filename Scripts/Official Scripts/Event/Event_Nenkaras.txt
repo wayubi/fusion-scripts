@@ -419,7 +419,7 @@ L_HEAL_LV100_N:
 	close;
 }
 
-alberta_in.gat,58,147,6	script "Inn Maid" 53,{
+alberta_in.gat,58,147,4	script "Inn Maid" 53,{
       mes "[Tina]";
 	mes "Welcome to Nenkaras [South] Inn";
 	next;

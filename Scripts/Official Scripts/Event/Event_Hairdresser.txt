@@ -9,7 +9,7 @@
 //
 //========================================================================================
 
-alberta_in.gat,59,142,6	script "Stylist" 91,{
+alberta_in.gat,55,142,6	script "Stylist" 91,{
 	mes "[Veronica]";
 	mes "Welcome~~Welcome~~";
 	mes "Welcome to the one of the best Hair shop, Veronikas Beauty Saloon!!";

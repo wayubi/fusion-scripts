@@ -80,10 +80,10 @@
 // - PVP Doorman -> morocc_in: 144,142
 //   Warps you to on eof the waitingrooms.
 //
-// - PVP Guide -> alberta_in: 62,145
+// - PVP Guide -> alberta_in: 26,146
 //   Gives you PVP Arena information.
 //
-// - PVP Doorman -> alberta_in: 58,145
+// - PVP Doorman -> alberta_in: 22,146
 //   Warps you to on eof the waitingrooms.
 //
 //========================================================================================
