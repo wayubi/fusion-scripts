@@ -293,7 +293,7 @@ aldeba_in.gat,152,166,4	script	"Trader"	86,{
 	mes "[Trader]";
 	mes "(1) · ^3355FFDoctor Band^000000 : 1 Red Bandana + 50 Iron + 1 Cracked Diamond + 3500 Zeny";
 	mes "(2) · ^3355FFFeather Bonnet^000000 : 1 Romantic Gent + 300 Feather of Birds + 500 Zeny";
-	mes "(3) · ^3355FFPhantom of Opera^000000 : 20 Steel + 1 Singing Plant + 5000 Zeny";
+	mes "(3) · ^3355FFPhantom of Opera^000000 : 20 Iron + 1 Singing Plant + 5000 Zeny";
 	mes "(4) · ^3355FFSakkat^000000 : 120 Trunk + 10000 Zeny";
 	next;
 	menu "Doctor Hat",L_MENU_1,"Feather Bonnet",L_MENU_2,"Phantom of Opera",L_MENU_3,"Sakkat",L_MENU_4;
