@@ -21,7 +21,7 @@ um_in.gat,160,125,3	shop	武器商人	789,1501:120,1504:1600,1507:9000,1510:16000,15
 //	ウンバラへの道NPC(umbala_patch)	by かる
 //======================================================================
 
-comodo.gat,170,137,7 script ラエド 84,{
+//comodo.gat,170,137,7 script ラエド 84,{
 		close;
 On_Emotion20:
 		emotion 20;end;
@@ -42,16 +42,16 @@ comodo.gat,171,137,1	script	ヘイス	92,{
 		mes "[ラエド]";
 		mes "僕達も宝を探しに行こう！";
 		next;
-		donpcevent "ラエド::On_Emotion29";
-		emotion 29;
+//		donpcevent "ラエド::On_Emotion29";
+//		emotion 29;
 		mes "[ヘイス]";
 		mes "そうしようー!!";
 		next;
 		mes "[ラエド]";
 		mes "………………";
 		next;
-		donpcevent "ラエド::On_Emotion29";
-		emotion 20;
+//		donpcevent "ラエド::On_Emotion29";
+//		emotion 20;
 		mes "[ラエド]";
 		mes "けど、あいつがそう簡単に教えて";
 		mes "くれるのかなぁ？";
@@ -61,7 +61,7 @@ Lwhat_1:
 		mes "[ラエド]";
 		mes "わっ、いつから聞いていたんだ?!";
 		next;
-		emotion 29;
+//		emotion 29;
 		mes "[ヘイス]";
 		mes "え、あなたも宝物の話が聞きたいの？";
 		mes "もちろん、重要なことを知る為には";
@@ -69,15 +69,15 @@ Lwhat_1:
 		mes "こと……分かってるよね？";
 		next;
 		mes "[ラエド、ヘイス]";
-		donpcevent "ラエド::On_Emotion29";
-		emotion 29;
+//		donpcevent "ラエド::On_Emotion29";
+//		emotion 29;
 		mes "1000Zenyくれたら、";
 		mes "教えてあげるよ！";
 			next;
 		menu "1000Zenyを払う",Lzeny_1,"払わない",Lzeny_2;
 Lzeny_1:
-	if (Zeny < 1000) goto Lzeny_no;
-	set Zeny,Zeny-1000;
+	check Zeny < 1000,Lzeny_no,-;
+	set Zeny -= 1000;
 		mes "[ヘイス]";
 		mes "ふふ、本当は友達にしか教えないこと";
 		mes "なんだけどね！";
@@ -105,7 +105,7 @@ Lzeny_1:
 		mes "それで僕達も宝を探しに行こうー";
 		mes "ってわけさ!!";
 		next;
-		emotion 20;
+//		emotion 20;
 		mes "[ヘイス]";
 		mes "けど問題は、ニルスが私達に";
 		mes "宝物がある場所を教えてくれるの";
@@ -129,8 +129,8 @@ Lwhere_1:
 		mes "それじゃ、頑張ってねー！";
 		close;
 Lzeny_2:
-		donpcevent "ラエド::On_Emotion20";
-		emotion 20;
+//		donpcevent "ラエド::On_Emotion20";
+//		emotion 20;
 		mes "[ヘイス]";
 		mes "ふん！嫌なら、あっちへ行って！";
 		close;
@@ -235,7 +235,7 @@ cmd_in01.gat,164,115,1	script	ニルス	731,{
 //==================================================================
 //お金⇒肉
 umbala.gat,70,106,3	script	ウータン族の子供#1	781,{
-if (event_umbala<3) goto LumWord;
+check event_umbala < 3,LumWord,-;
 	mes "[？？？]";
 	mes "あれ？あなたは、";
 	mes "私達ウンバラの者じゃないね？";
@@ -243,14 +243,14 @@ if (event_umbala<3) goto LumWord;
 	mes "[？？？]";
 	mes "びっくりだけど、嬉しい！";
 	mes "私はハタン。";
-	emotion 18;
+//	emotion 18;
 	next;
 	mes "[ハタン]";
 	mes "……でも、残念だけど今は";
 	mes "あなたと遊ぶことはできないの。";
 	mes "この間、私の家に突然、雷が落ちて";
 	mes "屋根が壊れてしまったの……";
-	emotion 28;
+//	emotion 28;
 	next;
 	mes "[ハタン]";
 	mes "……！";
@@ -261,32 +261,32 @@ if (event_umbala<3) goto LumWord;
 	mes "してるみたいだから、すこーしお金を";
 	mes "わけてくれない？人間族はけっこう";
 	mes "余裕があるんじゃないの！お願い！";
-	emotion 28;
+//	emotion 28;
 	next;
 	menu "うなずく",-,"首を横に振る",Lend2;
-	if (Zeny<1000) goto LError2;
+	check Zeny < 1000,LError2,-;
 		mes "[ハタン]";
 		mes "うわぁっ!!";
 		mes "あなたは本当にいい人～！";
 		mes "わーい！";
-		set Zeny,Zeny-1000;
-		getitem 517,1;
-		emotion 19;
+		set Zeny -= 1000;
+		additem 517,1;
+//		emotion 19;
 		next;
 		mes "[ハタン]";
 		mes "私からのお礼。ありがとう。";
-		emotion 18;
+//		emotion 18;
 		close;
 Lend2:
 	mes "[ハタン]";
 	mes "…………そっか。";
-	emotion 28;
+//	emotion 28;
 	close;
 LError2:
 	mes "[ハタン]";
 	mes "何よ！ホントは貧しいくせに、";
 	mes "お金がある振りをするなんて……";
-	emotion 32;
+//	emotion 32;
 	close;
 LumWord:
 	mes "[？？？]";
@@ -296,7 +296,7 @@ LumWord:
 	mes "[？？？]";
 	mes "ウムバ! ウムバウムバ！";
 	mes "ウムバウムバハタンババ。";
-	emotion 18;
+//	emotion 18;
 	next;
 	mes "[ハタン]";
 	mes "……ウムバ、ウムバウムバウムバ";
@@ -304,7 +304,7 @@ LumWord:
 	mes "ウムババウムウムバウムバウムババ";
 	mes "ウムバウムバ";
 	mes "……ウムバウムバババウムバ……";
-	emotion 28;
+//	emotion 28;
 	next;
 	mes "[ハタン]";
 	mes "…………！";
@@ -315,37 +315,37 @@ LumWord:
 	mes "ウムバウムバウムバウムバウムバ！";
 	mes "ウムバウムウムウムババウムバ";
 	mes "ウムフムバ！ウムバ！";
-	emotion 28;
+//	emotion 28;
 	next;
 	menu "うなずく",-,"首を横に振る",Lend;
-	if (Zeny<1000) goto LError;
+	check Zeny < 1000,LError,-;
 		mes "[ハタン]";
 		mes "ウムバウムバ!!";
 		mes "ウム～バウムバ～ウム～バウムバ～";
 		mes "ウム～バウムバ～ウム～バウムバ～。";
-		set Zeny,Zeny-1000;
-		getitem 517,1;
-		emotion 19;
+		set Zeny -= 1000;
+		additem 517,1;
+//		emotion 19;
 		next;
 		mes "[ハタン]";
 		mes "ウムバウムバウムバウム～。";
-		emotion 18;
+//		emotion 18;
 		close;
 Lend:
 	mes "[ハタン]";
 	mes "…………ウムバ……";
-	emotion 28;
+//	emotion 28;
 	close;
 LError:
 	mes "[ハタン]";
 	mes "ウム～ウムムバンバ！";
-	emotion 32;
+//	emotion 32;
 	close;
 }
 
 //肉→ゼロピ・クローバー・綿毛
 umbala.gat,59,243,5	script	ウータン族の子供#4	787,{
-if (event_umbala<3) goto LumWord;
+check event_umbala < 3,LumWord,-;
 	mes "[コタン]";
 	mes "…………";
 	mes "……ううっ。";
@@ -353,22 +353,22 @@ if (event_umbala<3) goto LumWord;
 	mes "……肉、くれ。";
 	next;
 	menu "あげる",-,"あげない",L2;
-	if (countitem(517)<1) goto LError;
+	checkitem 517,1,-,LError;
 		mes "[コタン]";
 		mes "いいの？ありがとう。";
 		mes "これお礼、あげる。";
-		emotion 10;
+//		emotion 10;
 		delitem 517,1;
-		getitem 909,2;
-		getitem 914,2;
-		getitem 705,2;
+		additem 909,2;
+		additem 914,2;
+		additem 705,2;
 		close;
 	L2:
 		mes "[コタン]";
 		mes "…………";
 		mes "……お腹すいた。";
 		mes "……肉、食べたい。";
-		emotion 28;
+//		emotion 28;
 		close;
 LError:
 	mes "[コタン]";
@@ -376,7 +376,7 @@ LError:
 	mes "ある振りするなんて！";
 	mes "ウータン族、嘘つかれる";
 	mes "大嫌い!!";
-	emotion 6;
+//	emotion 6;
 	close;
 LumWord:
 	mes "[？？？]";
@@ -384,31 +384,31 @@ LumWord:
 	mes "……ウムバ。";
 	mes "…………ウムババ。";
 	mes "……フムバ。";
-	emotion 11;
+//	emotion 11;
 	next;
 	menu "ウムバ",-,"ウムバブ",Lu2;
-	if (countitem(517)<1) goto LuError;
+	checkitem 517,1,-,LuError;
 		mes "[？？？]";
 		mes "ウムバウムバウムババババ。";
 		mes "ウムババババウム。";
-		emotion 10;
+//		emotion 10;
 		delitem 517,1;
-		getitem 909,2;
-		getitem 914,2;
-		getitem 705,2;
+		additem 909,2;
+		additem 914,2;
+		additem 705,2;
 		close;
 	Lu2:
 		mes "[？？？]";
 		mes "…………";
 		mes "…………ウングバ。";
 		mes "……ウムバババ。";
-		emotion 28;
+//		emotion 28;
 		close;
 LuError:
 	mes "[？？？]";
 	mes "ウムバウムウムフムブバババ！";
 	mes "ウムバウムバババウムバウムブ！";
-	emotion 6;
+//	emotion 6;
 	close;
 }
 
@@ -416,8 +416,8 @@ LuError:
 //骸骨門
 //==============================================================================
 umbala.gat,221,193,1	script	 #骸骨門	111,{
-	if (event_umbala==7) goto LwarpNoText;
-	set @ryumon,0;
+	check event_umbala==7,LwarpNoText,-;
+	set @ryumon = 0;
 	mes "^3355FFなんとなく気持ち悪い骸骨が門の";
 	mes "そばにある。門は堅く閉ざされていて、";
 	mes "中へ入ることができない。内部に人気が";
@@ -437,38 +437,41 @@ umbala.gat,221,193,1	script	 #骸骨門	111,{
 			mes "^3355FF左側の眼には何もしなかった。^000000";
 			next;
 			goto LRight;
-		L1_2:/*Blue*/
-			if (countitem(717)<1) goto L1_2_e;
+		L1_2:
+			//Blue
+			checkitem 717,1,-,L1_2_e;
 				mes "^3355FF持っていたブルージェムストーンを";
 				mes "骸骨の左側の眼にはめてみた。^000000";
 				next;
 				delitem 717,1;
-				getitem 717,1;
-				set @ryumon,1;
+				additem 717,1;
+				set @ryumon = 1;
 				mes "^3355FFジェムストーンは転がる音を立てて、";
 				mes "骸骨の口から出てきた。^000000";
 				next;
 				goto LRight;
-		L1_3:/*Yellow*/
-			if (countitem(715)<1) goto L1_3_e;
+		L1_3:
+			//Yellow
+			checkitem 715,1,-,L1_3_e;
 				mes "^3355FF持っていたイエロージェムストーンを";
 				mes "骸骨の左側の眼にはめてみた。^000000";
 				next;
 				delitem 715,1;
-				getitem 715,1;
-				set @ryumon,2;
+				additem 715,1;
+				set @ryumon = 2;
 				mes "^3355FFジェムストーンは転がる音を立てて、";
 				mes "骸骨の口から出てきた。^000000";
 				next;
 				goto LRight;
-		L1_4:/*Red*/
-			if (countitem(716)<1) goto L1_4_e;
+		L1_4:
+			//Red
+			checkitem 716,1,-,L1_4_e;
 				mes "^3355FF持っていたレッドジェムストーンを";
 				mes "骸骨の左側の眼にはめてみた。^000000";
 				next;
 				delitem 716,1;
-				getitem 716,1;
-				set @ryumon,3;
+				additem 716,1;
+				set @ryumon = 3;
 				mes "^3355FFジェムストーンは転がる音を立てて、";
 				mes "骸骨の口から出てきた。^000000";
 				next;
@@ -493,38 +496,41 @@ umbala.gat,221,193,1	script	 #骸骨門	111,{
 			mes "^3355FF右側の眼には何もしなかった。^000000";
 			next;
 			goto Lfin;
-		L2_2:/*Blue*/
-			if (countitem(717)<1) goto L2_2_e;
+		L2_2:
+			//Blue
+			checkitem 717,1,-,L2_2_e;
 				mes "^3355FF持っていたブルージェムストーンを";
 				mes "骸骨の右側の眼にはめてみた。^000000";
 				next;
 				delitem 717,1;
-				getitem 717,1;
-				set @ryumon,@ryumon+10;
+				additem 717,1;
+				set @ryumon + 10;
 				mes "^3355FFジェムストーンは転がる音を立てて、";
 				mes "骸骨の口から出てきた。^000000";
 				next;
 				goto Lfin;
-		L2_3:/*Yellow*/
-			if (countitem(715)<1) goto L2_3_e;
+		L2_3:
+			//Yellow
+			checkitem 715,1,-,L2_3_e;
 				mes "^3355FF持っていたイエロージェムストーンを";
 				mes "骸骨の右側の眼にはめてみた。^000000";
 				next;
 				delitem 715,1;
-				getitem 715,1;
-				set @ryumon,@ryumon+20;
+				additem 715,1;
+				set @ryumon + 20;
 				mes "^3355FFジェムストーンは転がる音を立てて、";
 				mes "骸骨の口から出てきた。^000000";
 				next;
 				goto Lfin;
-		L2_4:/*Red*/
-			if (countitem(716)<1) goto L2_4_e;
+		L2_4:
+			//Red
+			checkitem 716,1,-,L2_4_e;
 				mes "^3355FF持っていたレッドジェムストーンを";
 				mes "骸骨の右側の眼にはめてみた。^000000";
 				next;
 				delitem 716,1;
-				getitem 716,1;
-				set @ryumon,@ryumon+30;
+				additem 716,1;
+				set @ryumon + 30;
 				mes "^3355FFジェムストーンは転がる音を立てて、";
 				mes "骸骨の口から出てきた。^000000";
 				next;
@@ -551,12 +557,16 @@ umbala.gat,221,193,1	script	 #骸骨門	111,{
 				mes "………………………………";
 				mes "………………………………^000000";
 				next;
-				if ((event_umbala<6) && (@ryumon==33)) goto Lwarp;
-				if ((event_umbala>=6) && (@ryumon==13)) goto Lwarp;
-					mes "^3355FF何も起きなかった。";
-					mes "骸骨が笑う声がしたが、";
-					mes "気のせいだと思う事にした。^000000";
-					close;
+				check event_umbala < 6,-,2ndCheck;
+					check @ryumon == 33,Lwarp,-;
+				2ndCheck:
+				check event_umbala >= 6,-,NewEnd;
+					check @ryumon == 13,Lwarp,-;
+					NewEnd:
+						mes "^3355FF何も起きなかった。";
+						mes "骸骨が笑う声がしたが、";
+						mes "気のせいだと思う事にした。^000000";
+						close;
 				Lwarp:
 					mes "^3355FF骸骨のがらんとした眼から、";
 					mes "ゴトリゴトリという音が聞こえ、";
@@ -565,8 +575,8 @@ umbala.gat,221,193,1	script	 #骸骨門	111,{
 					mes "向かっていた。^000000";
 					next;
 				LwarpNoText:
-					warp "um_in.gat",32,71;
-					end;
+					warp "um_in",32,71;
+					close;
 Lend:
 	mes "^3355FF叩いても開かない門を開けることは";
 	mes "難しいと思ったので、諦めてそのまま";
@@ -578,11 +588,13 @@ Lend:
 //Umbala Event
 //==============================================================================
 um_in.gat,39,122,5	script	ウータン族酋長	784,{
-	if (event_umbala==1) goto LStart2;
-	if (event_umbala==2) goto LStart3;
-	if ((event_umbala==3) || (event_umbala==6) || (event_umbala==7)) goto LStart4;
-	if (event_umbala==4) goto LStart5;
-	if (event_umbala==5) goto LStart6;
+	check event_umbala = 1,LStart2,-;
+	check event_umbala = 2,LStart3,-;
+	check event_umbala = 3,LStart4,-;
+	check event_umbala = 4,LStart5,-;
+	check event_umbala = 5,LStart6,-;
+	check event_umbala = 6,LStart4,-;
+	check event_umbala = 7,LStart4,-;
 	mes "[カルカタン]";
 	mes "ホッホッ、人間族じゃな。";
 	mes "ウータン族の村は初めてかね？";
@@ -634,7 +646,7 @@ um_in.gat,39,122,5	script	ウータン族酋長	784,{
 	mes "事じゃが、それよりも心意気がもっと";
 	mes "大事じゃということを忘れんように";
 	mes "のう……";
-	set event_umbala,1;
+	set event_umbala = 1;
 	close;
 LStart2:
 	mes "[カルカタン]";
@@ -651,7 +663,7 @@ LStart2:
 	next;
 	menu "ウータン族の言葉を学びたいです",-,"ウムババウムババ？",L2,"特にないです",L3;
 //本来中下段装備のみ(下の場合中段と下段装備していればOKになる)
-		if ((getequipisequiped(9)>0) && (getequipisequiped(10)>0)) goto L1_mask;
+//		if ((getequipisequiped(9)>0) && (getequipisequiped(10)>0)) goto L1_mask;
 		mes "[カルカタン]";
 		mes "そなたはまだ、わしらウータン族を理解";
 		mes "出来ていないようじゃね……文化が異な";
@@ -718,7 +730,7 @@ LStart2:
 		mes "[カルカタン]";
 		mes "これらを全部用意してきたら、わしらの";
 		mes "言葉を教えてやろう。";
-		set event_umbala,2;
+		set event_umbala = 2;
 		close;
 	L2:
 		mes "[カルカタン]";
@@ -754,7 +766,12 @@ LStart2:
 		mes "記憶にも長く残るんじゃがね。";
 		close;
 LStart3:
-	if ((countitem(7151)>=10) && (countitem(7111)>=5) && (countitem(1024)>=1) && (countitem(916)>=1)) goto Lchkok;
+	checkitem 7151,10,-,LowItem;
+	checkitem 7111,5,-,LowItem;
+	checkitem 1024,1,-,LowItem;
+	checkitem 916,1,Lchkok,LowItem;
+//	if ((countitem(7151)>=10) && (countitem(7111)>=5) && (countitem(1024)>=1) && (countitem(916)>=1)) goto Lchkok;
+	LowItem:
 	mes "[カルカタン]";
 	mes "まだ準備が不十分なようじゃのう……";
 	mes "もしや必要なものを忘れたのでは";
@@ -796,14 +813,15 @@ Lchkok:
 	delitem 7111,5;
 	delitem 1024,1;
 	delitem 916,1;
-	set event_umbala,3;
+	set event_umbala = 3;
 	next;
 	mes "[カルカタン]";
 	mes "では、また何かあったら訪ねて";
 	mes "きなされ。わしもできる限り、";
 	mes "そなたを助けてやるからな。";
 	close;
-LStart4:/*fin*/
+LStart4:
+//fin
 	mes "[カルカタン]";
 	mes "まだ何か用かの？";
 	mes "できるものなら、村周辺を案内してあげ";
@@ -844,10 +862,10 @@ LStart5:
 	mes "しかし、プツチャルタンはシャーマンと";
 	mes "いう特殊な立場だからのう。わしが代わ";
 	mes "りに受けとることとなる。よいな。";
-	set event_umbala,5;
+	set event_umbala = 5;
 	close;
 LStart6:
-if (countitem(2278)>=1) goto Lsmileok;
+	checkitem 2278,1,Lsmileok,-;
 	mes "[カルカタン]";
 	mes "^3377FFスマイルマスク^000000を1個じゃと言わなかっ";
 	mes "たか？それがなければ、彼女は絶対に";
@@ -864,7 +882,7 @@ Lsmileok:
 	mes "プツチァルタンに贈り物として与え";
 	mes "なければならんのじゃが……ホッホッ。";
 	delitem 2278,1;
-	set event_umbala,6;
+	set event_umbala = 6;
 	next;
 	mes "[カルカタン]";
 	mes "プツチャルタンには、手助けを許すと";
@@ -875,10 +893,11 @@ Lsmileok:
 }
 
 um_in.gat,44,71,2	script	ウータン族シャーマン	782,{
-if (event_umbala<3) goto LumWord;
-if ((event_umbala==4) || (event_umbala==5)) goto LStart2;
-if (event_umbala==6) goto LStart3;
-if (event_umbala==7) goto LStart4;
+	check event_umbala < 3,LumWord,-;
+	check event_umbala = 4,LStart2,-;
+	check event_umbala = 5,LStart2,-;
+	check event_umbala = 6,LStart3,-;
+	check event_umbala = 7,LStart4,-;
 	mes "[プツチァルタン]";
 	mes "人間が私達ウータン族の村まで訪ねて";
 	mes "くるようになるとは、思いませんでした";
@@ -906,7 +925,7 @@ if (event_umbala==7) goto LStart4;
 	mes "い。また、村の人々にはあまり関わら";
 	mes "ないようにしなさい……私達は皆、";
 	mes "静かに暮したいのです。";
-	set event_umbala,4;
+	set event_umbala = 4;
 	close;
 LStart2:
 	mes "[プツチァルタン]";
@@ -932,13 +951,13 @@ LStart3:
 	mes "私はしばしの間、準備をしなければなり";
 	mes "ません。ですから、必要になったら声を";
 	mes "掛けなさい。";
-	set event_umbala,7;
+	set event_umbala = 7;
 	close;
 LStart4:
-	set @umchange[1],0;
-	set @umchange[2],0;
-	set @umchange[3],0;
-	set @umchange[4],0;
+	set @umchange[1] = 0;
+	set @umchange[2] = 0;
+	set @umchange[3] = 0;
+	set @umchange[4] = 0;
 	mes "[プツチァルタン]";
 	mes "助力を要する人間よ……私の能力が";
 	mes "役立つかどうかは分かりませんが、";
@@ -963,28 +982,32 @@ L1:
 	next;
 	menu "地属性",L1_1,"水属性",L1_2,"火属性",L1_3,"風属性",L1_4;
 	L1_1:
-		if (countitem(947)<15) goto L1_1e;
-		set @umchange[1],947;
-		set @umchange[2],15;
-		set @umchange[3],993;
+//		if (countitem(947)<15) goto L1_1e;
+		checkitem 947,15,-,L1_1e;
+		set @umchange[1] = 947;
+		set @umchange[2] = 15;
+		set @umchange[3] = 993;
 		goto L1_ketugou;
 	L1_2:
-		if (countitem(946)<20) goto L1_2e;
-		set @umchange[1],946;
-		set @umchange[2],20;
-		set @umchange[3],991;
+//		if (countitem(946)<20) goto L1_2e;
+		checkitem 946,20,-,L1_2e;
+		set @umchange[1] = 946;
+		set @umchange[2] = 20;
+		set @umchange[3] = 991;
 		goto L1_ketugou;
 	L1_3:
-		if (countitem(904)<20) goto L1_3e;
-		set @umchange[1],904;
-		set @umchange[2],20;
-		set @umchange[3],990;
+//		if (countitem(904)<20) goto L1_3e;
+		checkitem 904,20,-,L1_3e;
+		set @umchange[1] = 904;
+		set @umchange[2] = 20;
+		set @umchange[3] = 990;
 		goto L1_ketugou;
 	L1_4:
-		if (countitem(1013)<25) goto L1_4e;
-		set @umchange[1],1013;
-		set @umchange[2],25;
-		set @umchange[3],992;
+//		if (countitem(1013)<25) goto L1_4e;
+		checkitem 1013,25,-,L1_4e;
+		set @umchange[1] = 1013;
+		set @umchange[2] = 25;
+		set @umchange[3] = 992;
 		goto L1_ketugou;
 	L1_ketugou:
 		mes "[プツチァルタン]";
@@ -996,13 +1019,35 @@ L1:
 		next;
 	L1_input:
 		input @umchange[4];
-		if (@umchange[4]==0) goto L1_cancel;
-		if (@umchange[4]>9) goto L1_numError;
-		set @umchange[4],1;/*1以上でなそうなので*/
+//		if (@umchange[4]==0) goto L1_cancel;
+//		if (@umchange[4]>9) goto L1_numError;
+//Converted below?
+		check @umchange[4] == 0,L1_cancel,-;
+		check @umchange[4] > 9,L1_numError,-;
+		set @umchange[4] = 1;
+//		1以上でなそうなので
 		mes "[プツチァルタン]";
-		if (@umchange[1]==947) mes "この沸いている釜に、その角を";
-		if (@umchange[1]==904) mes "この沸いている釜に、その尾を";
-		if ((@umchange[1]==1013) && (@umchange[1]==946)) mes "この沸いている釜に、その皮を";
+//		if (@umchange[1]==947) mes "この沸いている釜に、その角を";
+//		if (@umchange[1]==904) mes "この沸いている釜に、その尾を";
+//		if ((@umchange[1]==1013) && (@umchange[1]==946)) mes "この沸いている釜に、その皮を";
+//Converted Below?
+		check @umchange[1] == 947,-,Check2;
+			mes "この沸いている釜に、その角を";
+			goto Continue;
+	Check2:
+		check @umchange[1] == 904,-,Check3;
+			mes "この沸いている釜に、その尾を";
+			goto Continue;
+	Check3:
+		check @umchange[1] == 1013,-,Check4;
+			mes "この沸いている釜に、その皮を";
+			goto Continue;
+	Check4:
+		check @umchange[1] == 946,-,Continue;
+			mes "この沸いている釜に、その皮を";
+			goto Continue;
+	Continue:
+//End Possible Conversion
 		mes "入れなさい。私は神聖な呪文を";
 		mes "唱えます。君は先程の数字を心に思い";
 		mes "描きなさい。それでも、力が集まるかは";
@@ -1016,7 +1061,7 @@ L1:
 		mes "スヌタムバ、アブルムバ！ウンバ！シ！";
 		next;
 		delitem @umchange[1],@umchange[2];
-		getitem @umchange[3],@umchange[4];
+		additem @umchange[3],@umchange[4];
 		mes "[プツチァルタン]";
 		mes "こちらが、君が望んだ属性原石になり";
 		mes "ます。自然に存在する物から呪術で";
@@ -1082,35 +1127,55 @@ L2:
 	next;
 	menu "地属性",L2_1,"水属性",L2_2,"火属性",L2_3,"風属性",L2_4;
 	L2_1:
-	if (countitem(997)<1) goto L2_1e;
-		set @umchange[1],997;
-		set @umchange[2],1;
-		set @umchange[3],993;
+//	if (countitem(997)<1) goto L2_1e;
+	checkitem 997,1,-,L2_1e;
+		set @umchange[1] = 997;
+		set @umchange[2] = 1;
+		set @umchange[3] = 993;
 		goto L2_bunkai;
 	L2_2:
-	if (countitem(995)<1) goto L2_2e;
-		set @umchange[1],995;
-		set @umchange[2],1;
-		set @umchange[3],991;
+//	if (countitem(995)<1) goto L2_2e;
+	checkitem 995,1,-,L2_2e;
+		set @umchange[1] = 995;
+		set @umchange[2] = 1;
+		set @umchange[3] = 991;
 		goto L2_bunkai;
 	L2_3:
-	if (countitem(994)<1) goto L2_3e;
-		set @umchange[1],994;
-		set @umchange[2],1;
-		set @umchange[3],990;
+//	if (countitem(994)<1) goto L2_3e;
+	checkitem 994,1,-,L2_3e;
+		set @umchange[1] = 994;
+		set @umchange[2] = 1;
+		set @umchange[3] = 990;
 		goto L2_bunkai;
 	L2_4:
-	if (countitem(996)<1) goto L2_4e;
-		set @umchange[1],996;
-		set @umchange[2],1;
-		set @umchange[3],992;
+//	if (countitem(996)<1) goto L2_4e;
+	checkitem 996,1,-,L2_4e;
+		set @umchange[1] = 996;
+		set @umchange[2] = 1;
+		set @umchange[3] = 992;
 		goto L2_bunkai;
 	L2_bunkai:
 		mes "[プツチァルタン]";
-		if (@umchange[1]==997) mes "君が持ってきた大地の結晶を結合";
-		if (@umchange[1]==995) mes "君が持ってきた氷結された神秘を結合";
-		if (@umchange[1]==994) mes "君が持ってきた火炎の心を結合";
-		if (@umchange[1]==996) mes "君が持ってきた荒れ狂う風の結晶を結合";
+//		if (@umchange[1]==997) mes "君が持ってきた大地の結晶を結合";
+//		if (@umchange[1]==995) mes "君が持ってきた氷結された神秘を結合";
+//		if (@umchange[1]==994) mes "君が持ってきた火炎の心を結合";
+//		if (@umchange[1]==996) mes "君が持ってきた荒れ狂う風の結晶を結合";
+			check @umchange[1] == 997,-,L2_Check2;
+				mes "君が持ってきた大地の結晶を結合";
+				goto Continue2;
+		L2_Check2:
+			check @umchange[1] == 995,-,L2_Check3;
+				mes "君が持ってきた氷結された神秘を結合";
+				goto Continue2;
+		L2_Check3:
+			check @umchange[1] == 994,-,L2_Check4;
+				mes "君が持ってきた火炎の心を結合";
+				goto Continue2;
+		L2_Check4:
+			check @umchange[1] == 996,-,Continue2;
+				mes "君が持ってきた荒れ狂う風の結晶を結合";
+				goto Continue2;
+	Continue2:
 		mes "される以前の姿に戻してみましょう。";
 		mes "1から9までのうち、君が好きな数字を";
 		mes "一つ選びなさい。属性の分解を";
@@ -1118,12 +1183,23 @@ L2:
 		next;
 	L2_input:
 		input @umchange[4];
-		if (@umchange[4]==0) goto L2_cancel;
-		if (@umchange[4]>9) goto L2_numError;
+//		if (@umchange[4]==0) goto L2_cancel;
+//		if (@umchange[4]>9) goto L2_numError;
 //計算適当
-		set @umchange[4],rand(5)+@umchange[4];
-		if (@umchange[4]>10) set @umchange[4],@umchange[4]-10;
-		if (@umchange[4]<5) set @umchange[4],@umchange[4]+5;
+		check @umchange[4] == 0,L2_cancel,-;
+		check @umchange[4] > 9,L2_numError,-;
+//		set @umchange[4],rand(5)+@umchange[4];
+		random @rand 5;
+		set @umchange + @rand;
+//		if (@umchange[4]>10) set @umchange[4],@umchange[4]-10;
+//		if (@umchange[4]<5) set @umchange[4],@umchange[4]+5;
+		check @umchange[4] > 10,-,Add_Check;
+			set @umchange - 10;
+			goto Continue3;
+	Add_Check:
+		check @umchange[4] < 5,-,Continue3;
+			set @umchange + 5;
+	Continue3:
 		mes "[プツチァルタン]";
 		mes "では、その属性石をそこに置いて";
 		mes "ください。私は神聖な言葉を唱えます。";
@@ -1139,14 +1215,14 @@ L2:
 		mes "クン、ツン、ラクラクン！ウンバ！ハ！";
 		next;
 		delitem @umchange[1],@umchange[2];
-		getitem @umchange[3],@umchange[4];
+		additem @umchange[3],@umchange[4];
 		mes "[プツチァルタン]";
 		mes "こちらが、君が望んだ属性原石になり";
 		mes "ます。自然に存在する物から呪術で";
 		mes "作り出したものです……目的を";
 		mes "よく考えてから使うようにしなさい。";
 		close;
-2_cancel:
+L2_cancel:
 	mes "[プツチァルタン]";
 	mes "望まないのですね。それも一つの選択";
 	mes "でしょう。後で、もし助けが必要に";
@@ -1186,7 +1262,6 @@ L2_4e:
 	mes "荒れ狂う風の姿が隠されている結晶、";
 	mes "風の属性石が一つ必要です。";
 	mes "^3377FFラフウィンドが1個^000000";
-	goto L2_empty;
 L2_empty:
 	next;
 	mes "[プツチァルタン]";
@@ -1202,12 +1277,12 @@ LumWord:
 	mes "ウムババウムババウムバウムババウムバ";
 	mes "フムウムバウムバ。";
 	next;
-	warp "umbala.gat",217,186;
-	end;
+	warp "umbala",217,186;
+	close;
 }
 
 umbala.gat,177,153,3	script	パスト	97,{
-	if (event_umbala>=3) emotion 0;
+//	if (event_umbala>=3) emotion 0;
 	mes "[パスト]";
 	mes "うわっ！人間じゃないですか！";
 	mes "こんな人里離れた所で人間に";
@@ -1237,7 +1312,7 @@ umbala.gat,177,153,3	script	パスト	97,{
 	mes "彼らの心も笑っていると思っては";
 	mes "いけないのです。分かります？";
 	next;
-	emotion 28;
+//	emotion 28;
 	mes "[パスト]";
 	mes "もし言葉が通じていたら……私達の";
 	mes "言語を知っている人は悩むでしょう……";
@@ -1277,7 +1352,7 @@ umbala.gat,80,146,4	script	ユーキ	753,{
 }
 
 um_in.gat,101,73,3	script	ウェナタン	783,{
-if (event_umbala<3) goto LumWord;
+	check event_umbala < 3,LumWord,-;
 	mes "[ウェナタン]";
 	mes "はぁ……夜になると現われて";
 	mes "訳もなく横をうろついて、大騷ぎを";
@@ -1293,7 +1368,7 @@ LumWord:
 }
 
 um_in.gat,94,123,5	script	ベルツタン	783,{
-if (event_umbala<3) goto LumWord;
+	check event_umbala < 3,LumWord,-;
 	mes "[ベルツタン]";
 	mes "もう……ウムポコリオタンは変態";
 	mes "みたいな奴よ！いくら大嫌いだと";
@@ -1310,7 +1385,7 @@ LumWord:
 }
 
 umbala.gat,140,157,6	script	ウータン族の青年#1	785,{
-if (event_umbala<3) goto LumWord;
+	check event_umbala < 3,LumWord,-;
 	mes "[セイルタン]";
 	mes "バンジージャンプはすごく危ない。";
 	mes "命がけなんだ。だからそれを";
@@ -1326,7 +1401,7 @@ LumWord:
 }
 
 umbala.gat,146,157,4	script	ウータン族の青年#2	786,{
-if (event_umbala<3) goto LumWord;
+	check event_umbala < 3,LumWord,-;
 	mes "[アロタン]";
 	mes "バンジージャンプを無事に成功させる";
 	mes "のは、とても大変。だから、無事に成功";
@@ -1341,7 +1416,7 @@ LumWord:
 }
 
 umbala.gat,149,165,4	script	ウータン族の子供#3	781,{
-if (event_umbala<3) goto LumWord;
+	check event_umbala < 3,LumWord,-;
 	mes "[クリューバタン]";
 	mes "あんなに高い所から落ちるのは";
 	mes "とても恐ろしいです。ところが";
@@ -1358,7 +1433,7 @@ LumWord:
 }
 
 umbala.gat,92,159,4	script	ベルタン	785,{
-if (event_umbala<3) goto LumWord;
+	check event_umbala < 3,LumWord,-;
 	mes "[ベルタン]";
 	mes "ウンバラの住民の肌は、";
 	mes "どうして真っ黒いのかなぁ？";
@@ -1380,12 +1455,12 @@ LumWord:
 	next;
 	mes "[？？？？]";
 	mes "ウムバウムババウングホ。";
-	emotion 28;
+//	emotion 28;
 	close;
 }
 
 umbala.gat,194,104,4	script	ウータン族の子供#2	787,{
-if (event_umbala<3) goto LumWord;
+	check event_umbala < 3,LumWord,-;
 	mes "[ブルカタン]";
 	mes "外の人？";
 	mes "バンジージャンプをしてみたいの？";
@@ -1424,7 +1499,7 @@ LumWord:
 }
 
 umbala.gat,193,208,6	script	ウータン族の青年#3	789,{
-if (event_umbala<3) goto LumWord;
+	check event_umbala < 3,LumWord,-;
 	mes "[フェイタン]";
 	mes "俺も若い頃、バンジージャンプをした。";
 	mes "危うく死にかけたが、成功したよ。その";
@@ -1441,7 +1516,7 @@ LumWord:
 }
 
 umbala.gat,139,205,4	script	ウータン族の青年#5	785,{
-if (event_umbala<3) goto LumWord;
+	check event_umbala < 3,LumWord,-;
 	mes "[ツナタン]";
 	mes "久しぶりに見る外人だね！";
 	mes "ここはバンジージャンプをする所だ。";
@@ -1484,7 +1559,7 @@ LumWord:
 }
 
 um_in.gat,158,71,3	script	ウータン族の住民	787,{
-if (event_umbala<3) goto LumWord;
+	check event_umbala < 3,LumWord,-;
 	mes "[ムタクタン]";
 	mes "ウンバラは、木がとーっても多い！";
 	mes "僕ムタクタン、木が大好きなの。";
@@ -1495,7 +1570,7 @@ if (event_umbala<3) goto LumWord;
 	mes "ウンバラにあるんだけど、僕よりも";
 	mes "すっごく大きくて一番長い木！";
 	mes "世界中で一番大きいはずだよ！";
-	emotion 33;
+//	emotion 33;
 	next;
 	mes "[ムタクタン]";
 	mes "あ！本当なんだよ！ものすごく";
@@ -1513,13 +1588,13 @@ if (event_umbala<3) goto LumWord;
 	mes "でね、その木の実はおいしいんだ！";
 	mes "今までこんなにおいしい実は、食べた";
 	mes "ことない。本当だよ！";
-	emotion 21;
+//	emotion 21;
 	next;
 	mes "[ムタクタン]";
 	mes "ちょっと酸っぱくて甘ったるい……";
 	mes "食べるといつの間にか元気になって、";
 	mes "気分がとてもよくなる実なんだ!!";
-	emotion 21;
+//	emotion 21;
 	next;
 	mes "[ムタクタン]";
 	mes "それに不思議なお話もあるの。この間、";
@@ -1533,7 +1608,7 @@ if (event_umbala<3) goto LumWord;
 	mes "きっと、その木は森が大好きな";
 	mes "ウンバラ族のために、空から";
 	mes "やってきた贈り物だと思うんだ。";
-	emotion 28;
+//	emotion 28;
 	next;
 	mes "[ムタクタン]";
 	mes "村の北にあるから、一度行ってみてよ。";
@@ -1549,7 +1624,7 @@ LumWord:
 }
 
 umbala.gat,145,217,3	script	チャビバタン	783,{
-if (event_umbala<3) goto LumWord;
+	check event_umbala < 3,LumWord,-;
 	mes "[チャビバタン]";
 	mes "ふぅ……ウムポコリオタンは奥さんが";
 	mes "いるみたいです。なのにどうして、";
@@ -1566,7 +1641,7 @@ LumWord:
 }
 
 um_in.gat,139,48,5	script	プレネタン	783,{
-if (event_umbala<3) goto LumWord;
+	check event_umbala < 3,LumWord,-;
 	mes "[プレネタン]";
 	mes "全く、この人はすぐ浮気する";
 	mes "んだから……ああ！今度やったら、";
@@ -1578,22 +1653,22 @@ LumWord:
 	mes "ウムバウムバウガウガ";
 	mes "ウムバウムババババババ！";
 	mes "ウムバウム！";
-	emotion 6;
+//	emotion 6;
 	next;
 	mes "[プレネタン]";
 	mes "ウムバウムバウムバウムバウムバ";
 	mes "ウムバババババウガウ！";
 	mes "ウガウガウムババウムバウム！";
-	emotion 24;
+//	emotion 24;
 	next;
-	emotion 27;
+//	emotion 27;
 	close;
-On_emo:
-emotion 6;end;
+//On_emo:
+//emotion 6;end;
 }
 
 um_in.gat,144,45,5	script	ウムポコリオタン	789,{
-if (event_umbala<3) goto LumWord;
+	check event_umbala < 3,LumWord,-;
 	mes "[ウムポコリオタン]";
 	mes "うう……うちの家内は乱暴";
 	mes "過ぎるよ……痛い痛い。";
@@ -1609,16 +1684,16 @@ LumWord:
 	mes "ウムバウムバ…………";
 	mes "ウムバウがウガウ！";
 	mes "ウムバウムウムババウムバウガガ。";
-	emotion 18;
+//	emotion 18;
 	next;
-	donpcevent "プレネタン::On_emo";
+//	donpcevent "プレネタン::On_emo";
 	close;
 }
 
 //==============================================================================
 //Bungee jumping!
 //==============================================================================
-umbala.gat,140,197,0	script	#シボンヌチェック	139,0,1,{
+//umbala.gat,140,197,0	script	#シボンヌチェック	139,0,1,{
 set @jumprand,rand(4);
 if (@jumprand == 1) goto L1;
 if (@jumprand == 2) goto L2;
@@ -1626,23 +1701,26 @@ if (@jumprand == 3) goto L3;
 mapannounce "umbala.gat","バンジージャンプ台: " + strcharinfo(0) + " : イ～ヤッホ～～～ゥ！",8;
 end;
 
-L1:/*死亡*/
+L1:
+//死亡
 mapannounce "umbala.gat","バンジージャンプ台: " + strcharinfo(0) + " : ウギャアアアアアアアア～～～!!",8;
 	percentheal -100,0;
 end;
 
-L2:/*HP50%のダメージ*/
+L2:
+//HP50%のダメージ*/
 mapannounce "umbala.gat","バンジージャンプ台: " + strcharinfo(0) + " : キャアアアアアアア～～～！",8;
 	percentheal -50,0;
 end;
 
-L3:/*HP99%のダメージ*/
+L3:
+//HP99%のダメージ
 mapannounce "umbala.gat","バンジージャンプ台: " + strcharinfo(0) + " : ウワアアアアアアア～～～！",8;
 	percentheal -99,0;
 end;
 }
 
-umbala.gat,136,195,0	script	#ワープポイント	139,1,1,{
-	warp "umbala.gat",145,166;
+//umbala.gat,136,195,0	script	#ワープポイント	139,1,1,{
+	warp "umbala",145,166;
 	end;
 }
