@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.004
 ----------------------------------------------------------------------------------------------------
+- Job\Job_Newbie.txt - Reorganised Job_Newbie. [Muad_Dib]
 - Town\Town_Kafra.txt - Changed a Louyang kafra option. [Muad_Dib]
 - shop\louyang.txt - Added louyang shops. [Muad_Dib]
 - shop\comodo.txt - Added extra shop. [Muad_Dib]
