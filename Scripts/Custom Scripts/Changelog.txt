@@ -1,7 +1,9 @@
 --------------------------------------------------------------------------------
  Fusion 1.212 - June 30th, 2004
 -------------------------------------------------------------------------------- 
- - 06-27-04: Added Free All-Jobs Job Changer script (ENG) - Scripts\Custom Scripts\Job Changers\All_Jobs-free.txt. [Yun Qi]
+ - 06-30-04: Added Status Point and Skill Point adding script (ENG) - Character Enhancers\Stat+Skill_Adder.txt. [Yun Qi]
+ - 06-30-04: Added "Character Enhancers" folder - Scripts\Custom Scripts\Character Enhancers. [Yun Qi]
+ - 06-27-04: Added Free All-Jobs Job Changer script (ENG) - Job Changers\All_Jobs-free.txt. [Yun Qi]
  - 06-27-04: Added "Job Changers" folder - Scripts\Custom Scripts\Job Changers. [Yun Qi]
  - 06-20-04: Added Hats Quest for the 525 patch script (ENG) - Hat Quests\New_Hats_525t.txt. [Yun Qi]
  - 06-20-04: Added "Hat Quests" folder - Scripts\Custom Scripts\Quests\Hat Quests. [Yun Qi]
