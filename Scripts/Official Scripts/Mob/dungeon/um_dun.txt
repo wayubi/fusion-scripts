@@ -1,7 +1,27 @@
-um_dun01.gat,0,0,0,0 monster "Argiope" 1099,35,0,0,0
-um_dun01.gat,0,0,0,0 monster "Brilight" 1211,15,0,0,0
-um_dun01.gat,0,0,0,0 monster "Stem Worm" 1215,15,0,0,0
-um_dun01.gat,0,0,0,0 monster "Poison Spore" 1077,25,0,0,0
-um_dun02.gat,0,0,0,0 monster "Tri Joint" 1279,25,0,0,0
-um_dun02.gat,0,0,0,0 monster "Giant Spider" 1304,25,0,0,0
-um_dun02.gat,0,0,0,0 monster "Elder" 1377,10,0,0,0
+//========================================================================================
+// »» The Fusion Project ««
+// Copyright (c) 2004, Cobax Information Systems
+// http://fusion.cobax.net/
+// ---------------------------------------------------------------------------------------
+//
+// Umbala Dungeon - Monster Spawn Information
+//
+//========================================================================================
+
+//========================================================================================
+// - Umbala Dungeon 01
+//========================================================================================
+
+um_dun01.gat,0,0,0,0    monster   "Argiope" 1099,35,0,0,0
+um_dun01.gat,0,0,0,0    monster   "Brilight" 1211,15,0,0,0
+um_dun01.gat,0,0,0,0    monster   "Stem Worm" 1215,15,0,0,0
+um_dun01.gat,0,0,0,0    monster   "Poison Spore" 1077,25,0,0,0
+
+//========================================================================================
+// - Umbala Dungeon 02
+//========================================================================================
+
+um_dun02.gat,0,0,0,0    monster   "Tri Joint" 1279,25,0,0,0
+um_dun02.gat,0,0,0,0    monster   "Giant Spider" 1304,25,0,0,0
+um_dun02.gat,0,0,0,0    monster   "Elder" 1377,10,0,0,0
+um_dun02.gat,0,0,0,0	monster   "Live Peach Tree" 1410,25,0,0,0

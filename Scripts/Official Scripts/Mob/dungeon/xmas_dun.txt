@@ -6,43 +6,30 @@
 //
 // Toy Factory - Monster Spawn Information
 //
-// - Toy Factory Warehouse - xmas_dun01
-//   - Cruiser, Quantity: 15, Spawn Waiting Period: Instant
-//   - Santa Goblin, Quantity: 20, Spawn Waiting Period: Instant
-//   - Angeling, Quantity: 1, Spawn Waiting Period: 1 Hour
-//   - Chepet, Quantity: 1, Spawn Waiting Period: 20 Minutes
-//   - Cookie, Quantity: 15, Spawn Waiting Period: Instant
-//   - Santa Cookie, Quantity: 30, Spawn Waiting Period: Instant
-//   - Drops, Quantity: 10, Spawn Waiting Period: Instant
-//   - Marine, Quantity: 20, Spawn Waiting Period: Instant
-//   - Mastering, Quantity: 1, Spawn Waiting Period: 30 Minutes
-//   - Mystcase, Quantity: 5, Spawn Waiting Period: Instant
-//   - Poporing, Quantity: 20, Spawn Waiting Period: Instant
-//   - Poring, Quantity: 10, Spawn Waiting Period: Instant
-//
-//  - Toy Classifying Room - xmas_dun02
-//   - Santa Goblin, Quantity: 10, Spawn Waiting Period: Instant
-//   - Santa Cookie, Quantity: 20, Spawn Waiting Period: Instant
-//   - Cruiser, Quantity: 35, Spawn Waiting Period: Instant
-//   - Knight of Windstorm, Quantity: 1, Spawn Waiting Period: 1 Hour
-//   - Mystcase, Quantity: 60, Spawn Waiting Period: Instant
-//
 //========================================================================================
 
-xmas_dun01.gat,0,0,0,0	monster	Cruiser 1248,15,0,0,0
-xmas_dun01.gat,0,0,0,0	monster	Santa_Goblin 1245,20,0,0,0
-xmas_dun01.gat,0,0,0,0	monster	Angeling 1096,1,3600000,1800000,0
-xmas_dun01.gat,0,0,0,0	monster	Chepet 1250,1,1200000,900000,0
-xmas_dun01.gat,0,0,0,0	monster	Cookie 1265,15,0,0,0
-xmas_dun01.gat,0,0,0,0	monster	Santa_Cookie 1246,30,0,0,0
-xmas_dun01.gat,0,0,0,0	monster	Drops 1113,10,0,0,0
-xmas_dun01.gat,0,0,0,0	monster	Marine 1242,20,0,0,0
-xmas_dun01.gat,0,0,0,0	monster	Mastering 1090,1,1800000,900000,0
-xmas_dun01.gat,0,0,0,0	monster	Mystcase 1249,5,0,0,0
-xmas_dun01.gat,0,0,0,0	monster	Poporing 1031,20,0,0,0
-xmas_dun01.gat,0,0,0,0	monster	Poring 1002,10,0,0,0
-xmas_dun02.gat,0,0,0,0	monster	Santa_Goblin 1245,10,0,0,0
-xmas_dun02.gat,0,0,0,0	monster	Santa_Cookie 1246,20,0,0,0
-xmas_dun02.gat,0,0,0,0	monster	Cruiser 1248,35,0,0,0
-xmas_dun02.gat,0,0,0,0	monster	Knight_of_Windstorm 1251,1,3600000,7200000,0
-xmas_dun02.gat,0,0,0,0	monster	Mystcase 1249,60,0,0,0
+//========================================================================================
+// - Toy Factory Dungeon 01
+//========================================================================================
+
+xmas_dun01.gat,0,0,0,0	monster	"Poring" 1002,10,0,0,0
+xmas_dun01.gat,0,0,0,0	monster	"Mastering" 1090,0,0,0
+xmas_dun01.gat,0,0,0,0	monster	"Drops" 1113,10,0,0,0
+xmas_dun01.gat,0,0,0,0	monster	"Poporing" 1031,20,0,0,0
+xmas_dun01.gat,0,0,0,0	monster	"Marin" 1242,20,0,0,0
+xmas_dun01.gat,0,0,0,0	monster	"Angeling 1096,1,3600000,1800000,1
+xmas_dun01.gat,0,0,0,0	monster	"Santa Goblin" 1245,20,0,0,0
+xmas_dun01.gat,0,0,0,0	monster	"Cookie" 1265,15,0,0,0
+xmas_dun01.gat,0,0,0,0	monster	"Santa Cookie" 1246,30,0,0,0
+xmas_dun01.gat,0,0,0,0	monster	"Mystcase" 1249,5,0,0,0
+xmas_dun01.gat,0,0,0,0	monster	"Marionette" 1143,1,1200000,900000,1
+
+//========================================================================================
+// - Toy Factory Dungeon 02
+//========================================================================================
+
+xmas_dun02.gat,0,0,0,0	monster	"Santa Cookie" 1246,20,0,0,0
+xmas_dun02.gat,0,0,0,0	monster	"Cruiser" 1248,35,0,0,0
+xmas_dun02.gat,0,0,0,0	monster	"Mystcase" 1249,60,0,0,0
+xmas_dun02.gat,0,0,0,0	monster	"Stormy Knight" 1251,1,3600000,7200000,1
+
