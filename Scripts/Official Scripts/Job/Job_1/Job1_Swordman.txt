@@ -1,7 +1,7 @@
 //========================================================================================
 // »» The Fusion Project ««
 // Copyright (c) 2004, Cobax Information Systems
-// http://fusion.cobax.net/
+// http://cobax.net/
 // ---------------------------------------------------------------------------------------
 //
 // Swordman Quest - Non Player Character Locations
@@ -116,6 +116,7 @@ ABOUT:
 	mes "[Sword Master]";
 	mes "Simple but enough explanation for Freshman like you.";
 	mes "Aside from this,in my personal opinion,'Swordman' is the world-wide best job with great appearance!";
+	   emotion 18;
 	close;
 REQ:
 	mes "[Sword Master]";
@@ -142,14 +143,18 @@ NOTNOV:
 SWORDMAN:
 	mes "....but you're already a Swordsman...?";
 	mes "...Still do you want to know about the Swordman...? Yeah.. Alright...";
+	   emotion 18;
 	close;
 END:
 	mes "[Sword Master]";
 	mes "Enjoy your youth before you lose it~~";
+	emotion 18;
+
 	close;
 ERR0:
 	mes "[Sword Master]";
 	mes "Muhahaha! You must be kidding me! You are already a swordman.";
+	   emotion 18;
 	close;
 ERR1:
 	mes "[Sword Master]";
@@ -214,32 +219,41 @@ BYE1:
 	close;
 BYE2:
 	mes "[Test Hall Staff]";
-	mes "Who are you?! This place for the Swordman Test, You are not belong to here! Leave now!";
+	mes "Who are you?! This place for the Swordman Test, You do not belong here! Leave now!";
 	next;
 	   warp "izlude_in",66,170;
 	close;
 CONTINUE1:
 	mes "[Test Hall Staff]";
-	mes "So are you the one who wants be a swordy? Alright! You look reliable!!";
-	mes "Relax yourself and keep up the good work. This is not a diffecult course.";
-	   set Sword_Quest += 1;
+	mes "So you want to take the test huh? You look confident.. that's good.  Stay relaxed and do your best. This is not a difficult test.";
 	next;
+	mes "[Test Hall Staff]";
+	mes "Are you ready?";
+	next;
+	menu "Let me at it!!",L_Menu_1,"Ah..maybe later..",L_Menu_2;
+L_Menu_1:
+	   set Sword_Quest += 1;
+	   save "izlude_in",39,170;
 	   warp "sword_1-1",10,245;
+	close;
+L_Menu_2:
+	mes "[Test Hall Staff]";
+	mes "Check back with me when you are ready.";
 	close;
 CONTINUE2:
 	mes "[Test Hall Staff]";
-	mes "Retesting....? Whatsoever, I like the man like you who never be afraid of challange! Now,drink this and cheer up!";
-	   additem 512,5;
+	mes "Taking the test over?.... Keep your head up. I like those who never back down from a challange! Now take this and cheer up!";
+	additem 512,3;
 	   set Sword_Quest += 1;
 	next;
-	warp "sword_1-1",10,245;
-	close;
+	goto L_Menu_1;
 CONTINUE3:
 	mes "[Test Hall Staff]";
-	mes "Don't ever give up! Now retesting!";
+	mes "Don't give up! I know you will pass this time!";
+	mes "(you catch him whispering '...loooooseerrr...')";
+	getitem 512,5;
 	next;
-	warp "sword_1-1",10,245;
-	close;
+	goto L_Menu_1;
 }
 
 izlude_in.gat,30,175,4 script "Swordman" 92,{
@@ -268,9 +282,9 @@ izlude_in.gat,30,175,4 script "Swordman" 92,{
 }
 
 sword_1-1.gat,230,245,2	script "Medic" 105,{
-	heal 1000,1000;
+	   percentheal 100,100;
 	mes "[Medic]";
-	mes "This is the 1st check point!";
+	mes "This is the 1st check point! You're doing great!";
 	mes "I shall heal you $charaname .";
 	close;
 }
@@ -293,9 +307,9 @@ NO:
 }
 
 sword_2-1.gat,230,207,2	script "Medic" 105,{
-	heal 1000,1000;
+	   percentheal 100,100;
 	mes "[Medic]";
-	mes "This is the 2nd check point!";
+	mes "This is the 2nd check point! Keep up the good work!";
 	mes "I shall heal you $charaname .";
 	close;
 }
@@ -320,9 +334,11 @@ NO:
 sword_3-1.gat,223,167,2 script "Mae" 92,{
          broadcast "Applicant $charaname, has successfully passed the test.",1; 
 	mes "[Mae]";
-	mes "I sincerely congratulate you $charaname for passing the test!";
-	mes "I already sent your test result to the Job Department. Please inquire at the Officer in Centre. Thank you.";
+	mes "I sincerely congratulate you for passing the test!";
+	mes "I've already sent your test results to the 'Master Swordsman'.";
+	mes "Please inquire with him about your results. Thank you.";
 	next;
+	   percentheal 100, 100;
 	   set Sword_Quest = 4;
 	   warp "izlude_in",66,173;
 	close;

@@ -1,7 +1,7 @@
 //========================================================================================
 // »» The Fusion Project ««
 // Copyright (c) 2004, Cobax Information Systems
-// http://fusion.cobax.net/
+// http://cobax.net/
 // ---------------------------------------------------------------------------------------
 //
 // Alberta Town - Non Player Character Locations
@@ -62,8 +62,19 @@ alberta.gat,97,51,0 script "Fabian" 84,{
 
 alberta.gat,53,39,0 script "Merchant" 86,{
 	mes "[Merchant]";
-	mes "Oh, you look like a stranger, huh? Welcome to Alberta. By the way, excuse me for a while. I am thinking of some great plans.";
-	mes "I happened to hear there is a store selling unique armors which resist magic in Geffen. If I can circulate them in bulk, I will be rich in no time.";
+	mes "Oh, you look like a stranger.  Welcome to Alberta.";
+	   emotion 0;
+	next;
+	mes "[Merchant]";
+	mes "I was just brainstorming on some ideas I have for my business.";
+	next;
+	mes "[Merchant]";
+	mes "You see, I heard that there is a store in Geffen that sells unique armor that is resistant to magic attacks.";
+	mes "If I could somehow get them in bulk for a low price and sell them to the people in other towns......";
+	next;
+	mes "[Merchant]";
+	mes "Cha-ching! (you see dollar signs in her eyes)";
+	   emotion 8;
 	close;
 }
 
@@ -89,6 +100,9 @@ L_menu1:
 L_sub1:
 	mes "[Drunken old man]";
 	mes "Come again? Never heard of it?";
+	   emotion 1;
+	next;
+	mes "[Drunken old man]";
 	mes "Stupid! Everybody knew notorious pirateship `Going Mary'! hiccup~";
 	next;
 	mes "[Drunken old man]";
@@ -101,6 +115,7 @@ L_sub1:
 	next;
 	mes "[Drunken old man]";
 	mes "Phew~~ sob sob.. God I miss everyone... Now I'm depressed. Go away now.";
+	   emotion 28;
 	close;
 L_sub2:
 	mes "[Drunken old man]";
@@ -109,10 +124,12 @@ L_sub2:
 	next;
 	mes "[Drunken old man]";
 	mes "Phew~~ sob sob.. God I miss everyone¡¦ Now I'm depressed. Go away now.";
+	   emotion 28;
 	close;
 L_menu2:
 	mes "[Drunken old man]";
 	mes "That's right! Go AWAY~";
+	   emotion 32;
 	close;
 }
 	
@@ -144,6 +161,9 @@ no1:
     	next;
     	mes "[Phina]";
     	mes "I was soooooo surprised I backed off a bit. Then I realized it was not a grass but a very small animal.";
+	   emotion 0;
+      next;
+    	mes "[Phina]";
     	mes "Don't startle them even by mistakes. Even calm animals can be very dangerous when they are angry.";
 	close;
 no2:
@@ -152,7 +172,11 @@ no2:
     	mes "playing around with the flies..making buzz noises?";
     	next;
     	mes "[Phina]";
-    	mes "Just for the sake of fun, I threw a twig at one. All of sudden it rushed towards me. I was sooooo scared and quickly moved to the side. Then Bamb!!! It hit the huge tree and the tree crushed into pieces.";
+    	mes "Just for the sake of fun, I threw a twig at one. All of sudden it rushed towards me.";
+	mes " I was sooooo scared and quickly moved to the side. Then Bamb!!! It hit the huge tree and the tree crushed into pieces.";
+	   emotion 16;
+    	next;
+    	mes "[Phina]";
     	mes "I learned the lesson that I shouldn't tempt any animal just in case they might get angry with me.";
 	close;
 no3:

@@ -1,7 +1,7 @@
 //========================================================================================
 // »» The Fusion Project ««
 // Copyright (c) 2004, Cobax Information Systems
-// http://fusion.cobax.net/
+// http://cobax.net/
 // ---------------------------------------------------------------------------------------
 //
 // Alde Baran Town - Non Player Character Locations
@@ -230,6 +230,7 @@ L_Menu1:
 	mes "But aggressive and hostile monsters owns the mountain,";
 	mes "It is almost impossible to succesfully pass through,";
 	mes "You did a good job so far";
+	   emotion 21;
 	close;
 L_Menu2:
 	mes "[Isenberg]";
@@ -369,24 +370,31 @@ L_Menu3:
 
 aldebaran.gat,86,228,4 script	"Little Kid" 62,{
 	mes "[Bebe]";
-	mes "A while ago I went out for a walk toward Mt.Mjolnir, carrying 'Bebevang', a little hog with me.";
+	mes "A while ago I went out for a walk toward Mt.Mjolnir, carrying q 'Savage Bebe', with me.";
 	mes "Bebevang is a kind of baby wild boar of pink colour, it's very cute and pretty.";
 	next;
-	menu "Story of Bebevang",L_Menu1,"About Mt.Mjolnir",L_Menu2,"End Conversation",-;
+	menu "Story of Savage Bebe",L_Menu1,"About Mt.Mjolnir",L_Menu2,"End Conversation",-;
 	mes "[Bebe]";
-	mes "Ah?! Where is my Bebevang..?";
-	mes "Bebevang! Where are you!";
+	mes "Ah?! Where is my Savage Bebe..?";
+	mes "Savage Bebe! Where are you!";
+	   emotion 20;
 	close;
 L_Menu1:
 	mes "[Bebe]";
 	mes "I was walking up a narrow lane,";
-	mes "out of the blue, a giant and ugly plant initiated to attack me and my Bebevang!";
-	mes "I was so surprised so I ran away from it a distance,";
+	mes "out of the blue, a giant and ugly plant initiated to attack me and my Savage Bebe!";
+	   emotion 0;
+	next;
+	mes "[Bebe]";
+      mes "I was so surprised so I ran away from it a distance,";
 	mes "And threw stones against it(I know it was coward and silly blow!) it withstood my attack without a rolling...";
 	mes "It must have really strong!";
 	next;
 	mes "[Bebe]";
 	mes "There was another surprising thing about it, it was a huge flower with a Human face!!";
+	   emotion 19;
+	next;
+	mes "[Bebe]";
 	mes "Don't ever think of getting near it.";
 	mes "It will bite off you to death !";
 	close;
@@ -481,8 +489,12 @@ L_Menu1:
 aldeba_in.gat,223,121,4	script "Horrible-looking Man"	63,{
 	mes "[Evil-Looking Guy]";
 	mes "Hey dude. Don't you think it's rude enough for a stranger to enter the other's house?";
+	   emotion 1;
+	next;
+	mes "[Evil-Looking Guy]";
 	mes "Now you make me upset.";
 	mes "What makes you come into my house and talk to me?";
+	   emotion 32;
 	next;
 	mes "[Evil-Looking Guy]";
 	mes "Ah alright, alright. Let's quit playing.";
@@ -492,7 +504,8 @@ aldeba_in.gat,223,121,4	script "Horrible-looking Man"	63,{
 	mes "[Evil-Looking Guy]";
 	mes "Whattt!!! Get the heck out of my house!!!";
 	mes "If a cop, show me a search warrant.";
-	mes "If a member of my family, moon your ass so I can see a family marc on it!";
+	mes "If a member of my family, then pull down your pants so I can look at our family mark!";
+	   emotion 0;
 	close;
 L_Menu1:
 	mes "[Evil-Looking Guy]";
@@ -542,28 +555,33 @@ aldeba_in.gat,152,48,4 script	"Giddy Fellow" 97,{
 	mes "[Giddy Fellow]";
 	mes "E..E..E..Emergenc----y!!!";
 	mes "I CANNOT find my per chicken anywhere!! ";
+	   emotion 23;
 	next;
 	menu "What's the name of it?",L_Menu1,". . . . .",-;
 	mes "[Giddy Fellow]";
 	mes "It's 'The Great Picky ' ..";
 	mes "SOB SOB SOB Gosh..What am I gonna do?!~";
 	mes "Please find my cutty for meee~~~";
+	   emotion 28;
 	next;
 	menu "Dude~! It's such a common name~",-,". . . . .",L_Err;
  	mes "[Giddy Fellow]";
 	mes "Wha-What are you talking about!!";
 	mes "My 'The Great Picky ' is ";
 	mes " the one and only cutest chicken in this wide whole WORLD for Christ's sake~!";
+	   emotion 1;
 	close;
 L_Err:
 	mes "[Giddy Fellow]";
 	mes "Don't you laugh at me~! I don't have any siblings";
 	mes " so my cute chicken is like a younger brother to me! SOB SOB SOB SOB";
+	   emotion 28;
 	close;
 L_Menu1:
 	mes "[Giddy Fellow]";
 	mes "Don't you laugh at me~! I don't have any siblings";
 	mes " so my cute chicken is like a younger brother to me! SOB SOB SOB SOB";
+	   emotion 28;
 	close;
 }
 
@@ -627,6 +645,7 @@ L_Menu3:
 	mes "You're over-zealous!";
 	mes "If you ever get a partner who's as distractive as you...";
 	mes "You'll cause a LOT of trouble for the neighbors!";
+	   emotion 18;
 	close;
 L_Menu4:
 	mes "[Master]";
@@ -638,6 +657,7 @@ L_Menu5:
       mes "Wake up~! Till when are you gonna live in a dream world";
 	mes "looking for an unreachable ideal girl?";
 	mes "Be realistic!";
+	   emotion 0;
 	close;
 L_Menu6:
 	mes "[Master]";
@@ -647,9 +667,13 @@ L_Menu6:
 	close;
 L_Menu7:
 	mes "[Master]";
-	mes "Wha-what!"; 
-	mes "Thirst for young girls~~!!";
+	mes "Wha-what!";
+         emotion 0;
+	next;
+ 	mes "[Master]";
+	mes "A thirst for young girls~~!!";
 	mes "It's a c-c-crime!";
+         emotion 19;
 	close;
 }
 
@@ -657,10 +681,14 @@ aldebaran.gat,60,70,4 script "Senorita" 69,{
 	mes "[Senorita Sylvia]";
 	mes "I came all the way here from Prontera because I heard there is Kafra Main Office somewhere at the city of Al De Baran";
 	mes "B-B-But... sob";
+	mes "It's been 5 hours since I was looking for it.";
+	   emotion 28;
 	next;
 	mes "[Senorita Sylvia]";
-	mes "It's been 5 hours since I was looking for it.";
-	mes "Where the hell is it~~~?!";	
+	mes "Where the hell is it~~~?!";
+	   emotion 6;
+	next;
+	mes "[Senorita Sylvia]";	
 	mes "I look like smart, but actually I am sooooo bad with directions. ¡ËA";
 	next;
 	mes "[Senorita Sylvia]";
@@ -669,6 +697,7 @@ aldebaran.gat,60,70,4 script "Senorita" 69,{
 	menu "Please continue.",L_Menu1,"Not really.",-;
 	mes "[Senorita Sylvia]";
 	mes "Whatever.....";
+	   emotion 32;
 	close;
 L_Menu1:
 	mes "[Senorita Sylvia]";
@@ -686,16 +715,19 @@ aldebaran.gat,93,80,4 script "Crane leg" 48,{
 	mes "[Daniel]";
 	mes "With waterways everywhere, the city of Al De Baran is such a wonderful place.";
 	mes "B-U-T!";
+	   emotion 0;
 	next;
 	mes "[Daniel]";
 	mes "Last night on the way to see my girl friend.";
 	mes "without telling my parents, I fell into one of those waterways, spraining my ankle.";
 	mes "So I couldn't enjoy my date in the middle of night.";
+	   emotion 7;
 	next;
 	menu "Gosh, that's too bad.",L_Menu1,"So what happended?",-;
 	mes "[Daniel]";
 	mes "Huh? Sob sob";
 	mes "you think I am a stupid idiot, right? ";
+	   emotion 28;
 	close;
 L_Menu1:
 	mes "[Daniel]";
@@ -718,7 +750,11 @@ aldebaran.gat,180,46,4 script	"Asian" 88,{
 	next;
 	mes "[Joo Jahk]";
 	mes "But.... Do you think I could drink water from it though?";
+	   emotion 20;
+	next;
+	mes "[Joo Jahk]";
 	mes "Well. I already did but I am still concerned";
+	   emotion 4;
 	next;
 	menu "Continue.",L_Menu1,"End Conversation",-;
 	mes "[Joo Jahk]";
@@ -758,6 +794,7 @@ L_Menu1:
 	mes "Ah~ now I remember! I saw a very interesting monster.";
 	mes "Just a few days ago, I saw a Poring with wings of Heaven's angel around the Mjollnir forest surrounding Al De Baran.";
 	mes "I swear!";
+	   emotion 0;
 	next;
 	mes "[Gavin]";
 	mes "It was jumping around with other ordinary Porings.";
@@ -774,6 +811,9 @@ aldebaran.gat,146,124,4	script "Town Girl" 101,{
 	mes "[Nastasia]";
 	mes "are illegal?";
 	mes ". . . . .";
+	   emotion 1;
+	next;
+	mes "[Nastasia]";
 	mes "And do they collect eDanielonal tutition?";
 	next;
 	menu "Continue conversation.",L_Menu1,"End Conversation.",-;

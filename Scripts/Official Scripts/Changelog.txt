@@ -1,6 +1,11 @@
 --------------------------------------------------------------------------------
  Fusion 1.213 - August 29th, 2004
 --------------------------------------------------------------------------------
+- 09-06-04: Town\Town_Alberta.txt - Fixed 2 npc's and added npc emotions. [Muad_Dib]
+- 09-06-04: Town\Town_Aldebaran.txt - Renamed Umbala references to Umbla. [Muad_Dib]
+- 09-06-04: Town\Town_Geffen.txt - Added new mRO npc's and npc emotions. [Muad_Dib]
+- 09-06-04: Town\Town_Comodo.txt - Fixed lots typos and added npc emotions. [Muad_Dib]
+- 09-06-04: Job\Job1_Swordman.txt - Added Percentheal and npc emotions. [Muad_Dib]
 - 09-06-04: Town\Town_Turtle_Island.txt - Added npc emotions.
 - 09-06-04: Town\Town_Umbala.txt - Renamed Umbala references to Umbla.
 - 09-06-04: Event\Event_Rental.txt - Fixed small hunter in Falcon Renter. [Muad_Dib]
