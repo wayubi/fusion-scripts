@@ -5,46 +5,47 @@
 // ===============================================================================================================================
 // XMAS Town Gate NPC . Warp Santa ' Shutown ' =============================================================================================
 // ===============================================================================================================================
-aldebaran.gat,168,168,4	script	"Link Santa"	718,{
-	mes "[Shutown]";
+aldebaran.gat,168,168,4	script	"Santa"	718,{
+	mes "[Santa]";
 	mes "Ho Ho Ho~";
 	mes "Merry Christmas!!";
 	mes "Merry Christmas - All of you !";
 	next;
 	menu "Info about Lutie",-,"Move to the `Lutie'",L1,"Cancel",L2;
-		mes "[Shutown]";
+		mes "[Santa]";
 		mes "^3355FF' Lutie '^000000,the Fantastic Christmas Town!!";
 		mes "Where the Christmas Spirit abound Year around,";
 		mes "The place filled with Appetizing Cakes-,";
 		mes "Tiny little Toy Soldiersand all things you can imagine!!";
 		next;
-		mes "[Shutown]";
+		mes "[Santa]";
 		mes "Ho Ho Ho~";
 		mes "Beautiful Amazing land!";
 		mes "Where the Christmas Spirit abound Year around,";
 		mes "In Festive atmosphere.";
 		next;
-		mes "[Shutown]";
+		mes "[Santa]";
 		mes "I am a Santa Claus guiding people";
 		mes "to Lutie,the Christmas Town.";
 		mes "Young Man -";
 		mes "You can be my guest.Do you want to try?";
 		close;
 L1:
-		mes "[Shutown]";
+		mes "[Santa]";
 		mes "Ho Ho Ho~";
 		mes "The only place get to the Lutie";
 		mes "in the world . .";
 		mes "is located here,";
 		mes "Aldebaran !";
 		next;
-		mes "[Shutown]";
+		mes "[Santa]";
 		mes "I hereby keep this place -";
 		mes "to personally transport people who want to visit Lutie.";
 		mes "Please ask Santa in there,if you want to go out the town.";
 		mes "My friend Santa in there will let you know,";
 		mes "the way get out of Lutie~ ";
 		next;
+		mes "[Santa]";
 		mes "Ho Ho Ho~";
 		mes "Well,are you ready,young man ?";
 		mes "Merry Christmas!!";
@@ -52,7 +53,7 @@ L1:
 		next;
 		warp "xmas_fild01",78,68;
 L2:
-		mes "[Shutown]";
+		mes "[Santa]";
 		mes "Ho Ho Ho~";
 		mes "If you want to visit Lutie,";
 		mes "Be my guest anytime you want~.";

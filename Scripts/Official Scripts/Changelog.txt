@@ -9,6 +9,8 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.003
 ----------------------------------------------------------------------------------------------------
+- Town\Town_Lutie.txt - Change santa's name. [nestor_zulueta]
+- Warps\npcs\Santa_Link - removed double npc. The aldebaran santa is much better. [nestor_zulueta]
 - Town\Town_Guide.txt - added my aldebaran guide. [nestor_zulueta]
 - Town\Town_Aldebaran.txt - Remove guide. [nestor_zulueta]
 - Mob\field\cmd_fild.txt - Updated Comodo Fields Monster Spawns [Muad_Dib]
