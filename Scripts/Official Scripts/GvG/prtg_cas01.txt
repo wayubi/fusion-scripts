@@ -178,7 +178,11 @@ L_START_1:
 	mes "    have a beef, raise your sword to ";
 	mes "    honor yourself.";
 	close;
+OnInit:
+	guildreg "prtg_cas01";
+return;
 }
+
 prtg_cas01.gat,64,56,4	script	"Kriemhild"	722,{
 	guildreg "prtg_cas01";
 	check guildid == 0,-,L_START_1;
@@ -844,6 +848,7 @@ OnInit:
 	guildreg "prtg_cas01";
 return;
 }
+
 prtg_cas01.gat,15,208,0	script	" "	111,{
 	mes " ";
 	mes "There is little switch over here would you like to pull the switch down?";

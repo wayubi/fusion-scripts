@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.003
 ----------------------------------------------------------------------------------------------------
+- GvG\prtg_cas01.txt - Added a missing OnInit command to a flag. [Tsusai]
 - GvG\npc_guardiankafra.txt - Updated Header. [Tsusai]
 - Quest\Quest_skill\Thief_Skill.txt - Corrected Header NPC info. [Tsusai]
 - Mob\field\gef_fild.txt - Updated, reorganised Geffen Fields Monster Spawns [Muad_Dib]
