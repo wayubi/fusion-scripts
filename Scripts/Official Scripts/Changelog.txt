@@ -142,6 +142,7 @@
 - GvG\prtg_cas02.txt - Adjusted Prontera Castle Emperium Location and Flags that were supposed to be near it. [Tsusai]
 - GvG\npc_gflag.txt - Corrected Geffen and Aldebaron Flags to looks for coresponding Empelliums. [Tsusai]
 - GvG\prtg_cas02.txt - Corrected Prontera Castle Emperium Location. [AlexKreuz]
+- Town\Town_Siglude.txt - Fixed missing label. [icbob]
 
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.001

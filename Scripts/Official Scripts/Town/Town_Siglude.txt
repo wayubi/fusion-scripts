@@ -462,7 +462,7 @@ L_START_8:
 	mes "Clang! Clang! Clang!!";
 	next;
 	random @REF_RAND,100;
-		check Job == 10,-,L_SUB_START8;
+		check Job == 10,-,L_SUB_START_8;
 		getskilllevel 107,@BS_ADD;
 		check @BS_ADD == 1,BS_ADD1,-;
 		check @BS_ADD == 2,BS_ADD2,-;
@@ -939,7 +939,7 @@ L_START_8:
 	mes "Clang! Clang! Clang!!";
 	next;
 	random @REF_RAND,100;
-		check Job == 10,-,L_SUB_START8;
+		check Job == 10,-,L_SUB_START_8;
 		getskilllevel 107,@BS_ADD;
 		check @BS_ADD == 1,BS_ADD1,-;
 		check @BS_ADD == 2,BS_ADD2,-;
@@ -1416,7 +1416,7 @@ L_START_8:
 	mes "Clang! Clang! Clang!!";
 	next;
 	random @REF_RAND,100;
-		check Job == 10,-,L_SUB_START8;
+		check Job == 10,-,L_SUB_START_8;
 		getskilllevel 107,@BS_ADD;
 		check @BS_ADD == 1,BS_ADD1,-;
 		check @BS_ADD == 2,BS_ADD2,-;
@@ -1893,7 +1893,7 @@ L_START_8:
 	mes "Clang! Clang! Clang!!";
 	next;
 	random @REF_RAND,100;
-		check Job == 10,-,L_SUB_START8;
+		check Job == 10,-,L_SUB_START_8;
 		getskilllevel 107,@BS_ADD;
 		check @BS_ADD == 1,BS_ADD1,-;
 		check @BS_ADD == 2,BS_ADD2,-;
@@ -2245,7 +2245,7 @@ L_START_8:
 	mes "Clang! Clang! Clang!!";
 	next;
 	random @REF_RAND,100;
-		check Job == 10,-,L_SUB_START8;
+		check Job == 10,-,L_SUB_START_8;
 		getskilllevel 107,@BS_ADD;
 		check @BS_ADD == 1,BS_ADD1,-;
 		check @BS_ADD == 2,BS_ADD2,-;
