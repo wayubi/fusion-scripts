@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.004
 ----------------------------------------------------------------------------------------------------
+- Town\Town_Kafra.txt - Changed 2 kafra locations. [Muad_Dib]
 - Quest\quest_arena_test.txt - Set hidden npc id's to -1 for functionality (away from user so they won't crash). [Tsusai]
 - Town\Town_Morocc.txt - Updated Morocc header. [Muad_Dib]
 - GvG\ - Changed all flag texts. [Muad_Dib]
@@ -25,8 +26,8 @@
 - Changelog.txt - Updated links at the footer. [Tsusai]
 - Town\Town_Kafra.txt - Updated Amatsu Kafras. [Tsusai]
 - Town\Town_Kafra.txt - Added Gonryun kafra. [Muad_Dib]
-- Mob\dungeon\lou_dun.txt. - Edited the spawns [Muad_Dib]
-- Mob\field\lou_fild.txt . - Edited the spawns [Muad_Dib]
+- Mob\dungeon\lou_dun.txt - Edited the spawns [Muad_Dib]
+- Mob\field\lou_fild.txt - Edited the spawns [Muad_Dib]
 - Mob\dungeon\gl_dun.txt - Updated, Glastheim Monster Spawns. [Muad_Dib]
 - Mob\dungeon\moc_pryd_dun.txt - Updated, Pyramids Monster Spawns. [Muad_Dib]
 - Mob\other\yggdrasil_mob.txt - Added Yggdrasil01 Monster Spawns. [Muad_Dib]

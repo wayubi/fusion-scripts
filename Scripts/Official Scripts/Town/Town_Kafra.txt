@@ -30,7 +30,7 @@
 // - Kafra Personnel -> prontera: 29,207
 //   Save, Storage, Teleport, Rent Cart, Kafra Pass and More services.
 //
-// - Kafra Personnel -> prt_gld: 157,248
+// - Kafra Personnel -> prontera: 154,329
 //   Save, Storage, Teleport, Rent Cart, Kafra Pass and More services.
 //
 // - Kafra Personnel -> prt_fild05: 290,224
@@ -102,7 +102,7 @@
 // - Kafra Personnel -> mjolnir_02: 82,362
 //   Storage, Teleport, Rent Cart, KafraPass
 //
-// - Kafra Personnel -> louyang: 211,104
+// - Kafra Personnel -> louyang: 210,104
 //   Storage, Rent Cart, KafraPass
 //
 // - Kafra Personnel -> gonryun: 159,122
@@ -1905,7 +1905,7 @@ prontera.gat,29,207,6	script	"Kafra Personnel"	113,{
 		close;
 }
 
-prt_gld.gat,157,248,0 script "Kafra Personnel" 112,{
+prontera.gat,154,329,0 script "Kafra Personnel" 112,{
 	set @Kafra_COUPON = 0;
 	cutin "Kafra_06",2;
 	mes "[Kafra Personnel]";
@@ -1920,7 +1920,7 @@ prt_gld.gat,157,248,0 script "Kafra Personnel" 112,{
  L_SUB_0_1:
 	menu "Save",L_MENU_1,"Storage Service",L_MENU_2,"Teleport Service",L_MENU_3,"Cart Rental Service",L_MENU_4,"Use Kafra Coupon",L_MENU_5,"Quit",L_MENU_7;
 	L_MENU_1:
-		save "prt_fild01",198,51;
+		save "prontera",156,324;
 		mes "[Kafra Personnel]";
 		mes "Your position has been saved.";
 		check @Kafra_COUPON = 0,-,L_SUB_1_2;
@@ -6655,9 +6655,9 @@ mjolnir_02.gat,82,362,6	script	"Kafra Personnel"	116,{
 		close;
 }
 
-louyang.gat,211,104,6	script	"Kafra Personnel"	115,{
+louyang.gat,210,104,6	script	"Kafra Personnel"	116,{
 	set @Kafra_COUPON = 0;
-	cutin "Kafra_03",2;
+	cutin "Kafra_02",2;
 	mes "[Kafra Personnel]";
 	mes "Welcome.";
 	mes "Kafra Services is always by your side.";
@@ -6782,7 +6782,7 @@ louyang.gat,211,104,6	script	"Kafra Personnel"	115,{
 		mes "Rest assured that Kafra Corporation will always be there to help you.";
 		mes "Thank you for your business.";
  L_EXIT:
-		cutin "Kafra_03",255;
+		cutin "Kafra_02",255;
 		close;
 }
 
