@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.004
 ----------------------------------------------------------------------------------------------------
+- Mob\dungeon\gef_dun.txt - Fixed a spawn that crashed server. [Muad_Dib]
 - Warp\town\Louyang.txt - Corrected a warp. [Muad_Dib]
 - Job\Job_Newbie.txt - Reorganised Job_Newbie. [Muad_Dib]
 - Town\Town_Kafra.txt - Changed a Louyang kafra option. [Muad_Dib]
