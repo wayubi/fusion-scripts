@@ -1,6 +1,8 @@
 --------------------------------------------------------------------------------
  Fusion 1.212 - June 30th, 2004
 --------------------------------------------------------------------------------
+- 06-30-04: Warp\towns\Amatsu.txt - Fixed a warp that got you stuck. [Muad_Dib]
+- 06-30-04: Shop\payon.txt - Changed a sprite that did not show. [Muad_Dib]
 - 06-28-04: Job\Job_1\Job1_Theif.txt - Now removes all mushrooms you might have. [Tsusai]
 - 06-28-04: Event\Event_NGuild.txt - added Novice WoE event workers (Phases 7 & 8). [Tsusai]
 - 06-28-04: Job\Job_2-1\Job2_Wizard.txt - figured out how to restart timers w/o deleting and remaking. [Tsusai]
@@ -57,7 +59,7 @@
 - 06-12-04: Mob\field\um_fild.txt - Added Jathena Mobs. [Muad_Dib]
 - 06-12-04: NPC\npc_clock_tower.txt -  Removed it already exists in Event_ClockTower. [Muad_Dib]
 - 06-12-04: Shop\umbala.txt - added OFFICIAL shops from jAthena. [Tsusai]
-- 06-10-04: Warp\other\PvP.txt - Updated top header. [Tsusai]
+- 06ena. [Tsusai]-10-04: Warp\other\PvP.txt - Updated top header. [Tsusai]
 - 06-10-04: Warp\guilds\aldeg_cas.txt - Replaced a warp with a random warp. [Tsusai]
 - 06-10-04: Warp\dungeons\prt_maze.txt - Replaced with jAthena's for more warps and difficulty like official RO's. [Tsusai]
 - 06-10-04: Job\Job_2-1\Job2_Wizard.txt - Added commented lines for future features to make it more official. [Tsusai]

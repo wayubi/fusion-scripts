@@ -33,4 +33,4 @@ ama_in02.gat,127,163,0	warp	amatsuwarp022	1,1,ama_in02.gat,220,161
 amatsu.gat,160,140,0	warp	amatsuwarp023	1,1,ama_in01.gat,175,122
 ama_in01.gat,175,120,0	warp	amatsuwarp024	1,2,amatsu.gat,160,138
 amatsu.gat,266,125,0	warp	amatsuwarp025	1,1,ama_in01.gat,29,176
-ama_in01.gat,31,176,0	warp	amatsuwarp026	1,1,amatsu.gat,264,125
+ama_in01.gat,31,176,0	warp	amatsuwarp026	1,1,amatsu.gat,269,125
