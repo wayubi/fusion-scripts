@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.002
 ----------------------------------------------------------------------------------------------------
+- Warp/towns\Nifelheim.txt - Fixed erronous warps. [mudvayne]
 - Event\Event_MobTim.txt - Finished translating Tammy. [Tsusai]
 - Event\Event_MobTim.txt - Finished translating Shogo. [Tsusai]
 - GvG\npc_gflag.txt - Fixed next error command. [mudvayne]
