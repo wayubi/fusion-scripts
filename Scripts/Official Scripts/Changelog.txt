@@ -9,6 +9,8 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.005
 ----------------------------------------------------------------------------------------------------
+- Mob\dungeon\gon_dun.txt - Edited the spawns. [Muad_Dib]
+- Mob\field\gon_fild.txt - Edited the spawns. [Muad_Dib]
 - Event\Event_PVP.txt - Added Nestor Zulueta's pvp script with some missing npc's. [Muad_Dib]
 - Mob\other\pvp_n.txt - Added pvp_n Mob file. [Muad_Dib]
 - Job\Job1_Swordman.txt - Changed the swordsman maps. [Muad_Dib]
