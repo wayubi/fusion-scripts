@@ -33,10 +33,10 @@ ama_in02.gat,56,42,0	warp	ama0017	1,1,ama_in02.gat,59,144
 ama_in02.gat,59,141,0	warp	ama0018	1,1,ama_in02.gat,56,41
 
 //3rd floor -> 4th floor 
-ama_in02.gat,224,45,0	warp	ama0019	1,1,ama_in02.gat,88,235
-ama_in02.gat,224,45,0	warp	ama0020	1,1,ama_in02.gat,88,235
+ama_in02.gat,59,160,0	warp	ama0019	1,1,ama_in02.gat,214,150
+ama_in02.gat,214,148,0	warp	ama0020	1,1,ama_in02.gat,59,158
 
-//4th floor -> 5th floor(?) 
+//4th floor -> Attic 
 ama_in02.gat,222,161,0	warp	ama0021	1,1,ama_in02.gat,130,163
 ama_in02.gat,127,163,0	warp	ama0022	1,1,ama_in02.gat,220,161
 
