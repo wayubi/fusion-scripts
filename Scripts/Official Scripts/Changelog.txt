@@ -9,6 +9,11 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.004
 ----------------------------------------------------------------------------------------------------
+- Mob/dungeon/alde_dun.txt - Updated, reorganised Clock Tower Basement Dungeon Monster Spawns. [Muad_Dib]
+- Mob/dungeon/anthell_dun.txt - Updated, reorganised Ant Hell Dungeon Monster Spawns. [Muad_Dib]
+- Mob/dungeon/c_tower_dun.txt - Updated, reorganised Clock Tower Dungeon Monster Spawns. [Muad_Dib]
+- Mob/dungeon/iz_dun.txt - Updated, reorganised Bibalan Dungeon Monster Spawns. [Muad_Dib]
+- Mob/dungeon/mjo_dun.txt - Updated, reorganised Coal Mine Dungeon Monster Spawns. [Muad_Dib]
 - Town\Town_Kafra.txt - Corrected Izlude Kafra's script labels. [Tsusai]
 - Mob\dungeon\lou_dun.txt added Town louYang Dungeon mob based on kro screenshots. [Muad_Dib]
 - Mob\field\lou_fild.txt added Town louYang field mob based on kro screenshots. [Muad_Dib]
