@@ -1,50 +1,55 @@
-//----------------------------------------------------------------------
-// スクリプト : Event_Making v1.0
-//----------------------------------------------------------------------
+//========================================================================================
+// ｻｻ The Fusion Project ｫｫ
+// Copyright (c) 2004, Cobax Information Systems
+// http://fusion.cobax.net/
+// ---------------------------------------------------------------------------------------
+//
+// Item Making Quests - Non Player Character Locations
+//
+// - Granny -> payon_in01: 103,111
+//   Give information and make Pretend Murdered Quest.
+//
+//========================================================================================
 
-//----------------------------------
-// 演劇の小道具
-//----------------------------------
-
-payon_in01.gat,103,111,4	script	おばあさん	103,{
+payon_in01.gat,103,111,4	script	"Granny"	103,{
 	checkitem 1049,4,-,L_START_1;
-		mes "[フェイヨンおばあさん]";
-		mes "ホッホッ .. 今度の名節にうちの子達にあげる上着つくりに要る ..";
-		mes "青年の持っている ^3355FF' 乙女の裾 '^000000 をすこしだけ .. 四着だけ，分けてくれないかね ?";
-		mes "お願い，青年さんよ ..";
+		mes "[Granny]";
+		mes "I wish I could make Clothings for my Grand Children in this festive season..";
+		mes "Could you give me your ^3355FF' Skirt of Virgin '^000000 ..I need Four of it ..Please ?";
+		mes "I am begging you, Young man..";
 		next;
-		menu "渡す",-,"断る",L_MENU_1;
+		menu "Alright.",-,"No way!",L_MENU_1;
 			checkadditem 2293,1,-,L_START_2;
 			delitem 1049,4;
-			mes "[フェイヨンおばあさん]";
-			mes "本当にありがとう ~ 青年さん． もう上着がつくれる ~";
-			mes ".. ほっほっ .. あっ  ， そうだ。 これは私が若い頃，人気あった時代に演劇をやってたけどね ..";
-			mes "結婚することになって，劇団を出る当時に持ってきた劇団のマスコートみたいなモンだよ ..";
+			mes "[Granny]";
+			mes "Oh Thank you so much ~ Now I can make Clothings for Kitty Cutty ~";
+			mes ".. Ah..Wait  ..I almost forgot.Well I was a quite popular actress back in my young day...";
+			mes "My members gave me for wedding present when I left the Troupe...I've kept it for the precious memory of my youth.";
 			next;
 			additem 2293,1;
-			mes "[フェイヨンおばあさん]";
-			mes "これでも良かったら .. どうぞ";
-			mes "元気で～";
+			mes "[Granny]";
+			mes "If it's Okay,I want to give you mine for your Fabrics.";
+			mes "Good Bye ~Young man~!";
 			close;
 	L_MENU_1:
-			mes "[フェイヨンおばあさん]";
-			mes "まいったね .. このばばの力で ^3355FF' 乙女の裾 '^000000 をどうやって ..";
-			mes "目の前が真っ暗ね，真っ暗 .....";
+			mes "[Granny]";
+			mes "Sigh..How can I get  ^3355FF'Skirt of Virgin '^000000 by myself...I am so weak and tired ..Sigh..";
+			mes "I really wanted to make my Babies Happy .....";
 			close;
 	L_START_1:
-		mes "[フェイヨンおばあさん]";
-		mes "毎日フェイヨン後の山にのぼり， 茸狩りだけ一生懸命やって，今月もいつのまに過ぎたかわからんね．";
-		mes ".. そういうと次の月は名節だね";
-		mes "今年の名節には，何がなんでも家族に新しい上着を作ってあげたいね";
-		mes "上着の材料の ^3355FF' 乙女の裾 '^000000 が 四着ぐらい必要だけど..";
+		mes "[Granny]";
+		mes "I gather Mushrooms on the Mountin of Payon Everyday.I didn't even noticed time has come because of my bad memory....";
+		mes ".. Hmm..Now I remember of a festive season in next month.";
+		mes "I wish I could make clothings for my family in this season.";
+		mes "For that,I need ^3355FF'4 Skirt of Virgin'^000000..";
 		next;
-		mes "[フェイヨンおばあさん]";
-		mes "私が青年さんに一つ頼みたい． もし，あちこち旅をする途中に  ^3355FF' 乙女の裾　 '^000000 と言うものをみつけたら ..";
-		mes "その時は，必ずもう一度ここにきてくれよ． この老人が持っているものはないけど恩恵はわすれないからね ..";
+		mes "[Granny]";
+		mes "Young man,please help me.When you find Some ^3355FF'Skirt of Virgin '^000000..";
+		mes "please bring them to me.I won't forget if you help me...";
 		close;
 	L_START_2:
-		mes "[フェイヨンおばあさん]";
-		mes "重量オーバーです。";
+		mes "[Granny]";
+		mes "You are overweight";
 		close;
 }
 
