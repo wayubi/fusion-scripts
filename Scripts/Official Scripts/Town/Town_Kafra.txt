@@ -9,7 +9,7 @@
 // - kafra Personnel -> yuno: 159,207
 //   Save, Storage, Teleport, Rent Cart, kafra Pass and More services.
 //
-// - kafra Personnel -> amatsu: 120,163
+// - kafra Personnel -> amatsu: 192,151
 //   Save, Storage, Teleport, Rent Cart, kafra Pass and More services.
 //
 // - kafra Personnel -> aldebaran: 144,118
@@ -350,7 +350,7 @@ yuno.gat,159,207,4 script "kafra Personnel" 114,{
 		close;
 }
 
-amatsu.gat,120,163,4 script "kafra Personnel"	117,{
+amatsu.gat,192,152,4 script "kafra Personnel"	117,{
 	set @kafra_COUPON = 0;
 	cutin "kafra_01",2;
 	mes "[kafra Personnel]";
