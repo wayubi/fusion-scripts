@@ -1138,13 +1138,9 @@ aldebaran.gat,241,136,4	script	Soldier	105,{
 script Guidealdebaran;
 }
 
-//===========================
-// - Translated by Saister.
-//===========================
-
-gonryun.gat,163,60,4 script "Gonryun Guide" 780,{ 
+gonryun.gat,163,60,4 script "Gon Ryune Guide" 780,{ 
       mes "[Ha Wonch]"; 
-      mes "Welcome to Gonryun!"; 
+      mes "Welcome to Gon Ryune!"; 
       mes "A thriving place"; 
       mes "which is always full of people!"; 
 next; 
@@ -1191,6 +1187,6 @@ L5:
       goto L_End; 
 L_End: 
       mes "Please enjoy yourself"; 
-      mes "at the wonderful Gonryun mountains!"; 
+      mes "at the wonderful Gon Ryune mountains!"; 
       close;
 }
