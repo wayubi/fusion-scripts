@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion 1.212
 ----------------------------------------------------------------------------------------------------
+ - 06-04-04: Edited Hair Stylists\Ashley.txt - Corrected a spelling error. [Yun Qi]
  - 06-03-04: Added 550z Prontera Healer script (SPN) - Healers\Cricket-550z_SPN.txt [Yun Qi]
  - 06-03-04: Added free Prontera Hair Stylist script (ENG) - Hair Stylists\Ashley.txt [Yun Qi]
  - 06-03-04: Added "Hair Stylists" folder - Scripts\Custom\Hair Stylists [Yun Qi]
