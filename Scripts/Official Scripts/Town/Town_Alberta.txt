@@ -1,7 +1,42 @@
-//----------------------------------------------------------------------------------------
-// Town_Alberta(updated) - From Weiss, full scripts by Hylysi
-// eWeiss Project 2003 - http://revolve.emuxhaven.net/weiss/
-//----------------------------------------------------------------------------------------
+//========================================================================================
+// »» The Fusion Project ««
+// Copyright (c) 2004, Cobax Information Systems
+// http://fusion.cobax.net/
+// ---------------------------------------------------------------------------------------
+//
+// Alberta Town - Non Player Character Locations
+//
+// - Merchant -> alberta: 97,51
+//   Gives short introduction on cards.
+//
+// - Merchant -> alberta: 53,39
+//   Informs about magic armor shop in geffen.
+//
+// - Young Man -> alberta_in: 20,183
+//   Informs about legendary weapon, Gungnir.
+//
+// - Drunken Old Man -> alberta: 131,139
+//   Informs about mysterious flame sword.
+//
+// - Merchant -> alberta: 58,80
+//   Gives short introduction about Merchant skills Discount and Overcharge.
+//
+// - Phina -> alberta: 62,156
+//   Gives short introduction on passive monsters becoming aggressive.
+//   
+// - Grandma -> alberta: 93,174
+//   Informs about the Pirate Ghost Ship dungeon.
+//
+// - Sailor -> alberta: 189,151
+//   Warps from Alberta to Pirate Ghost Ship dungeon or Izlude.
+//
+// - Sailor -> alb2trea: 39,50
+//   Warps from Pirate Ghost Ship dungeon to Alberta.
+//
+// - Paul -> alberta: 195,151
+//   Warps from Alberta to Pirate Ghost Ship dungeon.
+//
+//========================================================================================
 
 alberta.gat,97,51,0	script	Merchant 84,{
 	mes "[Merchant]";
@@ -24,12 +59,12 @@ alberta_in.gat,20,183,0	script	"Young Man"	49,{
 }
 
 alberta.gat,131,139,2	script	"Drunken old man" 84,{
-		mes "[Drunken old man]";
-		mes "hiccup.... Huh?.... Wh-what are you staring at? Get lost!!";
-		next;
-		menu "Stay.",L_menu1,"Leave him alone.",L_menu2;
-			L_menu1:
-					mes "[Drunken old man]";
+        mes "[Drunken old man]";
+        mes "hiccup.... Huh?.... Wh-what are you staring at? Get lost!!";
+        next;
+        menu "Stay.",L_menu1,"Leave him alone.",L_menu2;
+            L_menu1:
+	    mes "[Drunken old man]";
 					mes "Hahahaha hiccup... So you got some nerve..";
 					mes "he.. I look worthless now, but I used to be a sailor of the infamous `Going Mary'.";
 					next;
