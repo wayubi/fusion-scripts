@@ -1,27 +1,27 @@
 //====================================================================
-//Ragnarok Online EP4.0(J) Ordeal of the Fear          by かる・Kalen
+//Ragnarok Online EP4.0(J) Ordeal of the Fear          by Kalen
 //====================================================================
-///////////event_umbala一部仕様変更///////////
-//Phase1.言語取得
-//1	(酋長)初回会話成立
-//2	(酋長)言語取得Itemを聞いた
-//3	(酋長)言語取得成立(NPCの言葉理解)
+///////////event_umbala一Specifications///////////
+//Phase1.Learning the Language
+//1	(Elder)First discussion
+//2	(Elder)Asking about learning the language
+//3	(Elder)Final step (understanding NPC speech)
 //------------------------------------------
-//Phase2.分解結合
-//4	(Shaman)会話成立(酋長の許可を貰いに)
-//5	(酋長)許可の条件を聞いた
-//6	(酋長)許可完了
-//7	(Shaman)許可後会話成立(結合分解使用可、WarpFlee)
+//Phase2.Create Essence/Dismantle Stone
+//4	(Shaman)Get permission to speak with her from the chief
+//5	(Elder)Ask about conditions needed to be fulfilled to get permission
+//6	(Elder)Get permission
+//7	(Shaman)Use the shaman to create essences and dismantle elemental stones.
 //////////////////////////////////////////////
 
-um_in.gat,104,124,3	shop	道具商人	788,512:15,515:15,535:15,516:15,513:15,517:50,528:60,537:1000,601:60,602:300,645:800,656:1500,610:4000
-um_in.gat,160,125,3	shop	武器商人	789,1501:120,1504:1600,1507:9000,1510:16000,1513:41000,1519:23000,1807:53000,1811:58000,1809:67000
+um_in.gat,104,124,3	shop	Instrument Merchant	788,512:15,515:15,535:15,516:15,513:15,517:50,528:60,537:1000,601:60,602:300,645:800,656:1500,610:4000
+um_in.gat,160,125,3	shop	Weapon Merchant 789,1501:120,1504:1600,1507:9000,1510:16000,1513:41000,1519:23000,1807:53000,1811:58000,1809:67000
 
 //======================================================================
-//	ウンバラへの道NPC(umbala_patch)	by かる
+//	NPCs on the road to Umbala
 //======================================================================
 
-//comodo.gat,170,137,7 script ラエド 84,{
+//comodo.gat,170,137,7 script Reid 84,{
 		close;
 On_Emotion20:
 		emotion 20;end;
@@ -29,334 +29,320 @@ On_Emotion29:
 		emotion 29;end;
 }
 
-comodo.gat,171,137,1	script	ヘイス	92,{
-		mes "[ラエド]";
-		mes "ものすごい宝が、隠されているに";
-		mes "違いない！";
+comodo.gat,171,137,1	script	Heath	92,{
+		mes "[Reid]";
+		mes "There's a huuuuuuuge treasure hidden";
+		mes "somewhere around here!";
 		next;
-		mes "[ヘイス]";
-		mes "宝物を探せ出したら、私達を";
-		mes "「馬鹿コンビ」と呼ぶ人も";
-		mes "いなくなるね!!";
+		mes "[Heath]";
+		mes "If only we could get our hands on it,";
+		mes "the people who call us the 'Dunce Duo'";
+		mes "will certainly have to eat their words!!";
 		next;
-		mes "[ラエド]";
-		mes "僕達も宝を探しに行こう！";
+		mes "[Reid]";
+		mes "We'll keep looking as long as it takes!";
 		next;
-//		donpcevent "ラエド::On_Emotion29";
+//		donpcevent "Reid::On_Emotion29";
 //		emotion 29;
-		mes "[ヘイス]";
-		mes "そうしようー!!";
+		mes "[Heath]";
+		mes "Hey, Reid, come on!";
 		next;
-		mes "[ラエド]";
-		mes "………………";
+		mes "[Reid]";
+		mes "............";
 		next;
-//		donpcevent "ラエド::On_Emotion29";
+//		donpcevent "Reid::On_Emotion29";
 //		emotion 20;
-		mes "[ラエド]";
-		mes "けど、あいつがそう簡単に教えて";
-		mes "くれるのかなぁ？";
+		mes "[Reid]";
+		mes "Okay, okay...I'm coming.";
 		next;
-		menu "何のこと？宝物？",Lwhat_1;
+		menu "Hey, wait!  Treasure?",Lwhat_1;
 Lwhat_1:
-		mes "[ラエド]";
-		mes "わっ、いつから聞いていたんだ?!";
+		mes "[Reid]";
+		mes "You mean you've never heard of it?!";
 		next;
 //		emotion 29;
-		mes "[ヘイス]";
-		mes "え、あなたも宝物の話が聞きたいの？";
-		mes "もちろん、重要なことを知る為には";
-		mes "それなりの物が必要だって";
-		mes "こと……分かってるよね？";
+		mes "[Heath]";
+		mes "Oh, you want to hear the story of the";
+		mes "treasure, huh?  Well, how imporant";
+		mes "is it to you, really?";
 		next;
-		mes "[ラエド、ヘイス]";
-//		donpcevent "ラエド::On_Emotion29";
+		mes "[Reid and Heath]";
+//		donpcevent "Reid::On_Emotion29";
 //		emotion 29;
-		mes "1000Zenyくれたら、";
-		mes "教えてあげるよ！";
+		mes "Important enough for you to";
+		mes "cough up 1000 zeny?!";
 			next;
-		menu "1000Zenyを払う",Lzeny_1,"払わない",Lzeny_2;
+		menu "Alright.  I'll be a sucker today",Lzeny_1,"Dream on, Dunce Duo!",Lzeny_2;
 Lzeny_1:
 	check Zeny < 1000,Lzeny_no,-;
 	set Zeny -= 1000;
-		mes "[ヘイス]";
-		mes "ふふ、本当は友達にしか教えないこと";
-		mes "なんだけどね！";
+		mes "[Heath]";
+		mes "Alright, my 'friend'. listen up.";
 		next;
-		mes "[ラエド]";
-		mes "……実はこの間、この村の有名な";
-		mes "冒険家ニルスが旅行から帰って";
-		mes "来たんだ。で、その時のこと";
-		mes "なんだけど、";
+		mes "[Reid]";
+		mes "A famous adventurer named Niles";
+		mes "returned to this village from his";
+		mes "adventures abroad.";
+		mes "He was dragging...";
 		next;
-		mes "[ヘイス]";
-		mes "(小声で)";
-		mes "両手に大きな箱を持っていたの。";
+		mes "[Heath]";
+		mes "...(Whisperwhisperwhisper)";
+		mes "a really big box along behind him!!";
 		next;
-		mes "[ラエド]";
-		mes "密かに真夜中に帰って来たってことは、";
-		mes "他人に見られたくないってことだろ？";
+		mes "[Reid]";
+		mes "He returned during the dead of night,";
+		mes "hoping no one would see his cargo.";
 		next;
-		mes "[ヘイス]";
-		mes "大きな箱に入った貴重なもの……";
-		mes "これはもう、宝物しか";
-		mes "有り得ないでしょ!!";
+		mes "[Heath]";
+		mes "There has to be something";
+		mes "valuable in that box!";
+		mes "There's no other explanation!";
 		next;
-		mes "[ラエド]";
-		mes "それで僕達も宝を探しに行こうー";
-		mes "ってわけさ!!";
+		mes "[Reid]";
+		mes "I'm on a search for that box!";
+		mes "I'm going to find it!";
 		next;
 //		emotion 20;
-		mes "[ヘイス]";
-		mes "けど問題は、ニルスが私達に";
-		mes "宝物がある場所を教えてくれるの";
-		mes "かってこと……";
+		mes "[Heath]";
+		mes "There's just one problem.";
+		mes "We don't have the slightest";
+		mes "idea where Niles put the treasure.";
 		next;
-		mes "[ラエド]";
-		mes "ニルスはいつも、僕達をバカに";
-		mes "するんだよ!!もう!!";
+		mes "[Reid]";
+		mes "Niles is making us look foolish!";
 		next;
-		menu "そのニルスという人は、どこにいるの？",Lwhere_1;
+		menu "Where is Niles now?",Lwhere_1;
 Lwhere_1:
-		mes "[ラエド]";
-		mes "村の北にいるよ。";
+		mes "[Reid]";
+		mes "He's on the north side of the village.";
 		next;
-		mes "[ヘイス]";
-		mes "いいことを教えてあげたんだから、";
-		mes "あなたも何か分かったら絶対、";
-		mes "教えてよね！";
+		mes "[Heath]";
+		mes "I hope this information was worth";
+		mes "it.";
 		next;
-		mes "[ラエド、ヘイス]";
-		mes "それじゃ、頑張ってねー！";
+		mes "[Reid and Heath]";
+		mes "It was certainly worth it to us!";
+                mes "Heh heh heh!";
 		close;
 Lzeny_2:
-//		donpcevent "ラエド::On_Emotion20";
+//		donpcevent "Reid::On_Emotion20";
 //		emotion 20;
-		mes "[ヘイス]";
-		mes "ふん！嫌なら、あっちへ行って！";
+		mes "[Heath]";
+		mes "Whaaaaat?!  I swear that our marks";
+                mes "aren't as gullible as they used to be.";
+                mes "How are we supposed to make an honest zeny?!";
 		close;
 Lzeny_no:
-		mes "[ラエド]";
-		mes "ふん！お金がないんなら、";
-		mes "情報は教えられないね。";
+		mes "[Reid]";
+		mes "Hey!  Come back when you're not dirt";
+		mes "poor!  Gotta spend money to make money, right?";
 		close;
 }
 
-cmd_in01.gat,175,120,3	script	イリヤ	69,{
-		mes "[イリヤ]";
-		mes "あそこの隅のテーブルにいらっしゃる";
-		mes "方が、冒険家のニルスさんです。";
-		mes "あちこち旅行をしているらしく、面白い";
-		mes "話をたくさんしてくださるそうです。";
+cmd_in01.gat,175,120,3	script	Iria	69,{
+		mes "[Iria]";
+		mes "That guy over at the far table";
+		mes "in the corner is the adventurer";
+		mes "Niles.  He seems to have a wealth";
+		mes "of stories about his many adventures.";
 		next;
-		mes "[イリヤ]";
-		mes "今度は一体、どこに行って来たのか……";
-		mes "「やはり俺は、人に教えるのが";
-		mes "苦手なようだ」と言いながら";
-		mes "「はっはっはっ」と笑うだけなのです。";
+		mes "[Iria]";
+		mes "He's always so boisterous, saying things";
+		mes "like 'Will your journey lead you to fame,";
+		mes "or to certain death?!'";
 		next;
-		mes "[イリヤ]";
-		mes "何故か、ニルスさんを訪ねてくる人が";
-		mes "後を絶ちません……本当に一体、どこに";
-		mes "行って来たのでしょうね？";
+		mes "[Iria]";
+		mes "Nevertheless, anyone who talks to Niles";
+		mes "for any length of time seems to be invariably";
+		mes "inspired by his passion.";
 		close;
 }
 
-cmd_in01.gat,164,115,1	script	ニルス	731,{
-		mes "[ニルス]";
-		mes "……うん？何？";
-		mes "ああー、お前もあの変なデマを聞いて";
-		mes "来た馬鹿か？まぁ、無理もないか……";
-		mes "くっくっくっく。";
+cmd_in01.gat,164,115,1	script	Niles	731,{
+		mes "[Niles]";
+		mes "Oh?";
+		mes "Another fool come to ask about";
+		mes "that idiotic rumor circulating";
+		mes "around town?";
 		next;
-		mes "[ニルス]";
-		mes "世界最高の宝物うんぬん話は、みんなの";
-		mes "誤解なんだよ。宝物みたいなものでは";
-		mes "なく、実際は俺のコレクション";
-		mes "だったってだけだよ。";
+		mes "[Niles]";
+		mes "The story about me finding a great";
+		mes "treasure is a big misunderstanding.";
+		mes "In reality, it's just my collection";
+		mes "of modest finds.";
 		next;
-		mes "[ニルス]";
-		mes "だけどな……「そこ」が実際に存在した";
-		mes "という事実……その事実を俺の二つの目";
-		mes "が確認したってだけでも、貴重な宝石を";
-		mes "得たのと同じかもしれないだろう。";
+		mes "[Niles]";
+		mes "That said, I think I have a lead";
+		mes "on a potentially lucrative ";
+		mes "item just waiting to be found.";
 		next;
-		mes "[ニルス]";
-		mes "ここ！この村コモド！";
-		mes "何故か洞窟が小さすぎると思わないか？";
+		mes "[Niles]";
+		mes "Don't you think that cave";
+		mes "near Komodo village is interesting?";
 		next;
-		mes "[ニルス]";
-		mes "それで俺は考えたんだよ……隠された";
-		mes "何かがあるんじゃないかって……";
+		mes "[Niles]";
+		mes "I think a large jewel may be";
+		mes "hidden within its confines.";
 		next;
-		mes "[ニルス]";
-		mes "それで！結局、探すことにしたのさ。";
-		mes "今まで誰も見つけることができなかった";
-		mes "「そこ」へ行くための道を!!";
+		mes "[Niles]";
+		mes "Until recently, we didn't know how to";
+		mes "reach the cave.";
 		next;
-		mes "[ニルス]";
-		mes "……………………";
+		mes "[Niles]";
+		mes ".............";
 		next;
-		mes "[ニルス]";
-		mes "…………おい？";
+		mes "[Niles]";
+		mes ".......Hm?";
 		next;
-		mes "[ニルス]";
-		mes "こういう時、「ドドン!!」ていう";
-		mes "效果音でも出るとこなんじゃないか?!";
-		mes "つまんねぇな……";
+		mes "[Niles]";
+		mes "Is your mind set on going there?!";
+		mes "Can you imagine what you'll find?!";
 		next;
-		mes "[ニルス]";
-		mes "は？お前、俺に「そこ」へどうやって";
-		mes "行くのか、「そこ」に何があるって";
-		mes "聞く気か!?";
+		mes "[Niles]";
+		mes "Doesn't just talking about it make";
+		mes "you want to go on an adventure?!!!";
 		next;
-		mes "[ニルス]";
-		mes "俺がここまで喋ったんだから!!";
-		mes "本当の探険家なら!!!!";
+		mes "[Niles]";
+		mes "Just break down any barrier in your";
+		mes "path and trust your primal instincts";
+		mes "to guide you to your goal!";
 		next;
-		mes "[ニルス]";
-		mes "「あああああっ！早く知りたくてしょう";
-		mes "がない!!」という顔で、すぐに門を";
-		mes "蹴飛ばして走って行く！";
-		mes "そして動物のような感覚と本能で";
-		mes "「そこ」を自力で探し出すんだ!!";
+		mes "[Niles]";
+		mes "Go!  Quickly!";
 		next;
-		mes "[ニルス]";
-		mes "さあ！早く！行け!!!!!!";
-		next;
-		mes "[ニルス]";
-		mes "お前が見つけるのは、眩しい未知の";
-		mes "世界か!?もしくは、死への落とし穴か!?";
-		mes "くはっはっはっ!!!!";
+		mes "[Niles]";
+		mes "Will you find the path to fame on";
+		mes "your journey, or the path to certain";
+		mes "death?!  Hahahaha!!!!";
 		close;
 }
 
 //==================================================================
-//	ウンバラNPC＆クエスト(umbala_pacth) 	byかる mod by kalen
+//	Umbala NPCs and Quests
 //==================================================================
-//お金⇒肉
-umbala.gat,70,106,3	script	ウータン族の子供#1	781,{
+//Trade money for meat
+umbala.gat,70,106,3	script	Utan Child#1	781,{
 check event_umbala < 3,LumWord,-;
 	mes "[？？？]";
-	mes "あれ？あなたは、";
-	mes "私達ウンバラの者じゃないね？";
+	mes "Hello!  I'm a member of";
+	mes "the Utan tribe.";
 	next;
 	mes "[？？？]";
-	mes "びっくりだけど、嬉しい！";
-	mes "私はハタン。";
+	mes "My name is Hatan!  Nice to";
+	mes "meet you.";
 //	emotion 18;
 	next;
-	mes "[ハタン]";
-	mes "……でも、残念だけど今は";
-	mes "あなたと遊ぶことはできないの。";
-	mes "この間、私の家に突然、雷が落ちて";
-	mes "屋根が壊れてしまったの……";
+	mes "[Hatan]";
+	mes "...I can't play now, because";
+	mes "a recent thunderstorm caused";
+	mes "the roof of our house to become";
+	mes "cracked...";
 //	emotion 28;
 	next;
-	mes "[ハタン]";
-	mes "……！";
+	mes "[Hatan]";
+	mes "...!";
 	next;
-	mes "[ハタン]";
-	mes "そうだ！ちょっとだけ、お願い";
-	mes "していい？あなた達人間はいい生活を";
-	mes "してるみたいだから、すこーしお金を";
-	mes "わけてくれない？人間族はけっこう";
-	mes "余裕があるんじゃないの！お願い！";
+	mes "[Hatan]";
+	mes "Hey!  You guys seem pretty well";
+	mes "off.  Do you think you could";
+	mes "give us a little zeny";
+	mes "so we can fix the crack?";
+	mes "Please!";
 //	emotion 28;
 	next;
-	menu "うなずく",-,"首を横に振る",Lend2;
+	menu "Nod",-,"Shake Head",Lend2;
 	check Zeny < 1000,LError2,-;
-		mes "[ハタン]";
-		mes "うわぁっ!!";
-		mes "あなたは本当にいい人～！";
-		mes "わーい！";
+		mes "[Hatan]";
+		mes "Yay!!";
+		mes "You're the best!!";
 		set Zeny -= 1000;
 		additem 517,1;
 //		emotion 19;
 		next;
-		mes "[ハタン]";
-		mes "私からのお礼。ありがとう。";
+		mes "[Hatan]";
+		mes "Please take this as a token of my gratitude.";
 //		emotion 18;
 		close;
 Lend2:
-	mes "[ハタン]";
-	mes "…………そっか。";
+	mes "[Hatan]";
+	mes "...Awwwww.";
 //	emotion 28;
 	close;
 LError2:
-	mes "[ハタン]";
-	mes "何よ！ホントは貧しいくせに、";
-	mes "お金がある振りをするなんて……";
+	mes "[Hatan]";
+	mes "Well, maybe I misunderestimated your";
+	mes "wealth, but you shouldn't lie...";
 //	emotion 32;
 	close;
 LumWord:
 	mes "[？？？]";
-	mes "ウムバ。";
-	mes "ウムバルウムウムババウムバ。";
+	mes "Umba!";
+	mes "Umbaluwababawamuba.";
 	next;
 	mes "[？？？]";
-	mes "ウムバ! ウムバウムバ！";
-	mes "ウムバウムバハタンババ。";
+	mes "Umba!  Umbaumba!";
+	mes "Umbabama Hatan baba.";
 //	emotion 18;
 	next;
-	mes "[ハタン]";
-	mes "……ウムバ、ウムバウムバウムバ";
-	mes "ウムバウムバウムバウムバババ";
-	mes "ウムババウムウムバウムバウムババ";
-	mes "ウムバウムバ";
-	mes "……ウムバウムバババウムバ……";
+	mes "[Hatan]";
+	mes "...Umba, Umbaumbaumba.";
+	mes "Umbaumbaumbababa.";
+	mes "Umbabawaumbaumbaba.";
+	mes "Umbaumba.";
+	mes "...Umbaumbamabababumba.";
 //	emotion 28;
 	next;
-	mes "[ハタン]";
-	mes "…………！";
+	mes "[Hatan]";
+	mes "...!";
 	next;
-	mes "[ハタン]";
-	mes "ウムバ！";
-	mes "ウムバウムバウムババウムババ";
-	mes "ウムバウムバウムバウムバウムバ！";
-	mes "ウムバウムウムウムババウムバ";
-	mes "ウムフムバ！ウムバ！";
+	mes "[Hatan]";
+	mes "Umba!";
+	mes "Umbaumbaumbababa.";
+	mes "Umbababaumbawabaumba!";
+	mes "Umbaumbaumbababa.";
+	mes "wamfuba!  Umba!";
 //	emotion 28;
 	next;
-	menu "うなずく",-,"首を横に振る",Lend;
+	menu "Nod",-,"Shake Head",Lend;
 	check Zeny < 1000,LError,-;
-		mes "[ハタン]";
-		mes "ウムバウムバ!!";
-		mes "ウム～バウムバ～ウム～バウムバ～";
-		mes "ウム～バウムバ～ウム～バウムバ～。";
+		mes "[Hatan]";
+		mes "Umbaumba!!";
+		mes "Um!-babaumba-baumba-.";
+		mes "Umba-umba-Umbabawamamaba!";
 		set Zeny -= 1000;
 		additem 517,1;
 //		emotion 19;
 		next;
-		mes "[ハタン]";
-		mes "ウムバウムバウムバウム～。";
+		mes "[Hatan]";
+		mes "Umbaumba....";
 //		emotion 18;
 		close;
 Lend:
-	mes "[ハタン]";
-	mes "…………ウムバ……";
+	mes "[Hatan]";
+	mes "....Umba....";
 //	emotion 28;
 	close;
 LError:
-	mes "[ハタン]";
-	mes "ウム～ウムムバンバ！";
+	mes "[Hatan]";
+	mes "Umba-Umbana!";
 //	emotion 32;
 	close;
 }
 
-//肉→ゼロピ・クローバー・綿毛
-umbala.gat,59,243,5	script	ウータン族の子供#4	787,{
+//Trade Meat for Clover, ???, and Soft Fur 
+umbala.gat,59,243,5	script	Utan Child#4	787,{
 check event_umbala < 3,LumWord,-;
-	mes "[コタン]";
-	mes "…………";
-	mes "……ううっ。";
-	mes "……肉欲しい。";
-	mes "……肉、くれ。";
+	mes "[Kotan]";
+	mes ".....";
+	mes ".....";
+	mes "...I want meat.";
+	mes "...Gimme meat!";
 	next;
-	menu "あげる",-,"あげない",L2;
+	menu "Sure",-,"No way!",L2;
 	checkitem 517,1,-,LError;
-		mes "[コタン]";
-		mes "いいの？ありがとう。";
-		mes "これお礼、あげる。";
+		mes "[Kotan]";
+		mes "Hey, thanks!";
+		mes "Take these!";
 //		emotion 10;
 		delitem 517,1;
 		additem 909,2;
@@ -364,33 +350,32 @@ check event_umbala < 3,LumWord,-;
 		additem 705,2;
 		close;
 	L2:
-		mes "[コタン]";
-		mes "…………";
-		mes "……お腹すいた。";
-		mes "……肉、食べたい。";
+		mes "[Kotan]";
+		mes "......";
+		mes "...I'm hungry!";
+		mes "...Gimme meat!";
 //		emotion 28;
 		close;
 LError:
-	mes "[コタン]";
-	mes "なんだよ、肉ないのに！";
-	mes "ある振りするなんて！";
-	mes "ウータン族、嘘つかれる";
-	mes "大嫌い!!";
+	mes "[Kotan]";
+	mes "Hey!  You said you have";
+	mes "meat!  So you were lying?";
+	mes "I hate you!";
 //	emotion 6;
 	close;
 LumWord:
 	mes "[？？？]";
-	mes "…………";
-	mes "……ウムバ。";
-	mes "…………ウムババ。";
-	mes "……フムバ。";
+	mes "....";
+	mes "....";
+	mes "...Umbaba!";
+	mes "...Famba!";
 //	emotion 11;
 	next;
-	menu "ウムバ",-,"ウムバブ",Lu2;
+	menu "Umba",-,"Umbabu",Lu2;
 	checkitem 517,1,-,LuError;
 		mes "[？？？]";
-		mes "ウムバウムバウムババババ。";
-		mes "ウムババババウム。";
+		mes "Umbaumbaumbababa.";
+		mes "Umbababauma.";
 //		emotion 10;
 		delitem 517,1;
 		additem 909,2;
@@ -399,163 +384,164 @@ LumWord:
 		close;
 	Lu2:
 		mes "[？？？]";
-		mes "…………";
-		mes "…………ウングバ。";
-		mes "……ウムバババ。";
+		mes "....";
+		mes "......Unguba!";
+		mes "....Umbababa.";
 //		emotion 28;
 		close;
 LuError:
 	mes "[？？？]";
-	mes "ウムバウムウムフムブバババ！";
-	mes "ウムバウムバババウムバウムブ！";
+	mes "Umbawamufumabababa!";
+	mes "Umbabababaumbaumbu!";
 //	emotion 6;
 	close;
 }
 
 //==============================================================================
-//骸骨門
+//Skeletal Gate
 //==============================================================================
-umbala.gat,221,193,1	script	 #骸骨門	111,{
+umbala.gat,221,193,1	script	 #Skeletal Gate	111,{
 	check event_umbala==7,LwarpNoText,-;
 	set @ryumon = 0;
-	mes "^3355FFなんとなく気持ち悪い骸骨が門の";
-	mes "そばにある。門は堅く閉ざされていて、";
-	mes "中へ入ることができない。内部に人気が";
-	mes "感じられる。中に誰かいるようだ。^000000";
+	mes "^3355FFThe gate is shaped like a skeleton";
+	mes "You cannot pass this point as the gate is";
+	mes "locked.  You hear sounds coming from the";
+	mes "inside.^000000";
 	next;
-	menu "骸骨をよく見てみる",-,"やめる",Lend;
-		mes "^3355FF白い骸骨の両目が開いている。よく";
-		mes "見ると、ジェムストーンをはめられる";
-		mes "くらいの穴がある。反対側の柱にも";
-		mes "骸骨はあるが、そちらにはそのような";
-		mes "穴は見当たらなかった。^000000";
+	menu "Examine the skeleton",-,"Nothing",Lend;
+		mes "^3355FFWhen you examine the gate";
+		mes "carefully, you notice that there";
+		mes "is a hole about the size of a gemstone";
+		mes "on the left side of the gate about where
+                mes "the skeleton's left eye should be.  There is";
+		mes "a matching hole on the other side.^000000";
 		next;
-		mes "^3355FF左側の眼が見える。";
-		mes "どうしようか？^000000";
+		mes "^3355FFWhat you would like to";
+		mes "to do with the left socket?^000000";
 		next;
-		menu "そのままにする",-,"ブルージェムストーンをはめてみる",L1_2,"イエロージェムストーンをはめてみる",L1_3,"レッドジェムストーンをはめてみる",L1_4;
-			mes "^3355FF左側の眼には何もしなかった。^000000";
+		menu "Nothing",-,"Insert a Blue Gemstone",L1_2,"Insert a Yellow Gemstone",L1_3,"Insert a Red Gemstone",L1_4;
+			mes "^3355FFNothing was inserted into the left socket.^000000";
 			next;
 			goto LRight;
 		L1_2:
 			//Blue
 			checkitem 717,1,-,L1_2_e;
-				mes "^3355FF持っていたブルージェムストーンを";
-				mes "骸骨の左側の眼にはめてみた。^000000";
+				mes "^3355FFYou inserted a Blue Gemstone into the";
+				mes "left socket.^000000";
 				next;
 				delitem 717,1;
 				additem 717,1;
 				set @ryumon = 1;
-				mes "^3355FFジェムストーンは転がる音を立てて、";
-				mes "骸骨の口から出てきた。^000000";
+				mes "^3355FFA rolling sound can be heard, and";
+				mes "the gemstone comes out of the skeleton's                                 mouth.^000000";
 				next;
 				goto LRight;
 		L1_3:
 			//Yellow
 			checkitem 715,1,-,L1_3_e;
-				mes "^3355FF持っていたイエロージェムストーンを";
-				mes "骸骨の左側の眼にはめてみた。^000000";
+				mes "^3355FFYou inserted a Yellow Gemstone into the";
+				mes "left socket.^000000";
 				next;
 				delitem 715,1;
 				additem 715,1;
 				set @ryumon = 2;
-				mes "^3355FFジェムストーンは転がる音を立てて、";
-				mes "骸骨の口から出てきた。^000000";
+				mes "^3355FFA rolling sound can be heard, and";
+				mes "the gemstone comes out of the skeleton's                                            mouth.^000000";
 				next;
 				goto LRight;
 		L1_4:
 			//Red
 			checkitem 716,1,-,L1_4_e;
-				mes "^3355FF持っていたレッドジェムストーンを";
-				mes "骸骨の左側の眼にはめてみた。^000000";
+				mes "^3355FFYou inserted a Red Gemstone into the";
+				mes "left socket.^000000";
 				next;
 				delitem 716,1;
 				additem 716,1;
 				set @ryumon = 3;
-				mes "^3355FFジェムストーンは転がる音を立てて、";
-				mes "骸骨の口から出てきた。^000000";
+			        mes "^3355FFA rolling sound can be heard, and";
+				mes "the gemstone comes out of the skeleton's                                            mouth.^000000";
 				next;
 				goto LRight;
 			L1_2_e:
-				mes "^3355FFブルージェムストーンを";
+				mes "^3355FFYou don't have a Blue Gemstone.";
 				goto L1_e;
 			L1_3_e:
-				mes "^3355FFイエロージェムストーンを";
+				mes "^3355FFYou don't have a Yellow Gemstone.";
 				goto L1_e;
 			L1_4_e:
-				mes "^3355FFレッドジェムストーンを";
+				mes "^3355FFYou don't have a Red Gemstone.";
 			L1_e:
-				mes "一つも持っていなかった。仕方なく";
-				mes "左側の眼は、そのままにしておいた。^000000";
+				mes "Therefore, nothing was inserted into";
+				mes "the left socket.^000000";
 				next;
 	LRight:
-		mes "^3355FF右側の眼が見える。";
-		mes "どうしようか？^000000";
+		mes "^3355FFWhat about the right";
+		mes "socket?^000000";
 		next;
-		menu "そのままにする",-,"ブルージェムストーンをはめてみる",L2_2,"イエロージェムストーンをはめてみる",L2_3,"レッドジェムストーンをはめてみる",L2_4;
-			mes "^3355FF右側の眼には何もしなかった。^000000";
+		menu "Nothing",-,"Insert a Blue Gemstone",L2_2,"Insert a Yellow Gemstone",L2_3,"Insert a Red Gemstone",L2_4;
+			mes "^3355FFNothing was inserted into the right socket.^000000";
 			next;
 			goto Lfin;
 		L2_2:
 			//Blue
 			checkitem 717,1,-,L2_2_e;
-				mes "^3355FF持っていたブルージェムストーンを";
-				mes "骸骨の右側の眼にはめてみた。^000000";
+				mes "^3355FFYou inserted a Blue Gemstone into the";
+				mes "left socket.^000000";
 				next;
 				delitem 717,1;
 				additem 717,1;
 				set @ryumon + 10;
-				mes "^3355FFジェムストーンは転がる音を立てて、";
-				mes "骸骨の口から出てきた。^000000";
+				mes "^3355FFA rolling sound can be heard, and";
+				mes "the gemstone comes out of the skeleton's                                            mouth.^000000";
 				next;
 				goto Lfin;
 		L2_3:
 			//Yellow
 			checkitem 715,1,-,L2_3_e;
-				mes "^3355FF持っていたイエロージェムストーンを";
-				mes "骸骨の右側の眼にはめてみた。^000000";
+				mes "^3355FFYou inserted a Yellow Gemstone into the";
+				mes "left socket.^000000";
 				next;
 				delitem 715,1;
 				additem 715,1;
 				set @ryumon + 20;
-				mes "^3355FFジェムストーンは転がる音を立てて、";
-				mes "骸骨の口から出てきた。^000000";
+				mes "^3355FFA rolling sound can be heard, and";
+				mes "the gemstone comes out of the skeleton's                                            mouth.^000000";
 				next;
 				goto Lfin;
 		L2_4:
 			//Red
 			checkitem 716,1,-,L2_4_e;
-				mes "^3355FF持っていたレッドジェムストーンを";
-				mes "骸骨の右側の眼にはめてみた。^000000";
+				mes "^3355FFYou inserted a Red Gemstone into the";
+				mes "left socket.^000000";
 				next;
 				delitem 716,1;
 				additem 716,1;
 				set @ryumon + 30;
-				mes "^3355FFジェムストーンは転がる音を立てて、";
-				mes "骸骨の口から出てきた。^000000";
+				mes "^3355FFA rolling sound can be heard, and";
+				mes "the gemstone comes out of the skeleton's                                            mouth.^000000";
 				next;
 				goto Lfin;
 			L2_2_e:
-				mes "^3355FFブルージェムストーンを";
+				mes "^3355FFYou don't have a Blue Gemstone.";
 				goto L2_e;
 			L2_3_e:
-				mes "^3355FFイエロージェムストーンを";
+				mes "^3355FFYou don't have a Yellow Gemstone.";
 				goto L2_e;
 			L2_4_e:
-				mes "^3355FFレッドジェムストーンを";
+				mes "^3355FFYou don't have a Red Gemstone.";
 			L2_e:
-				mes "一つも持っていなかった。仕方なく";
-				mes "右側の眼は、そのままにしておいた。^000000";
+				mes "Therefore, nothing was inserted into";
+				mes "the right socket.^000000";
 				next;
 			Lfin:
-				mes "^3355FF……………………^000000";
+				mes "^3355FF..........^000000";
 				next;
-				mes "^3355FF………………………………";
-				mes "………………………………^000000";
+				mes "^3355FF...................";
+				mes ".....................^000000";
 				next;
-				mes "^3355FF………………………………";
-				mes "………………………………";
-				mes "………………………………^000000";
+				mes "^3355FF.......................";
+				mes ".........................";
+				mes ".........................^000000";
 				next;
 				check event_umbala < 6,-,2ndCheck;
 					check @ryumon == 33,Lwarp,-;
@@ -563,31 +549,31 @@ umbala.gat,221,193,1	script	 #骸骨門	111,{
 				check event_umbala >= 6,-,NewEnd;
 					check @ryumon == 13,Lwarp,-;
 					NewEnd:
-						mes "^3355FF何も起きなかった。";
-						mes "骸骨が笑う声がしたが、";
-						mes "気のせいだと思う事にした。^000000";
+						mes "^3355FFNothing happened.";
+						mes "You hear a faint laugh, but";
+						mes "decide that it's all in";                                                           mes "your head.^000000";
 						close;
 				Lwarp:
-					mes "^3355FF骸骨のがらんとした眼から、";
-					mes "ゴトリゴトリという音が聞こえ、";
-					mes "門が開いた。門が開くと同時に";
-					mes "無意識のうちに足が建物の中へと";
-					mes "向かっていた。^000000";
+					mes "^3355FFA rumbling sound can be";
+					mes "heard as the gate opens.";
+					mes "As you step across the threshold.";
+					mes "you feel as if you're walking in";
+					mes "into the arms of death itself.^000000";
 					next;
 				LwarpNoText:
 					warp "um_in",32,71;
 					close;
 Lend:
-	mes "^3355FF叩いても開かない門を開けることは";
-	mes "難しいと思ったので、諦めてそのまま";
-	mes "去ることにした。^000000";
+	mes "^3355FFAfter hitting the gate a few";
+	mes "times with no result, you decide to give";
+	mes "up.^000000";
 	close;
 }
 
 //==============================================================================
 //Umbala Event
 //==============================================================================
-um_in.gat,39,122,5	script	ウータン族酋長	784,{
+um_in.gat,39,122,5	script	Utan Tribal Elder	784,{
 	check event_umbala = 1,LStart2,-;
 	check event_umbala = 2,LStart3,-;
 	check event_umbala = 3,LStart4,-;
@@ -595,175 +581,153 @@ um_in.gat,39,122,5	script	ウータン族酋長	784,{
 	check event_umbala = 5,LStart6,-;
 	check event_umbala = 6,LStart4,-;
 	check event_umbala = 7,LStart4,-;
-	mes "[カルカタン]";
-	mes "ホッホッ、人間族じゃな。";
-	mes "ウータン族の村は初めてかね？";
-	mes "初めて来た人間族らは、誰でも";
-	mes "そんな顔をしているもんじゃよ。";
+	mes "[Karukatan]";
+	mes "Aha, You're new to the Utan";
+	mes "family's little village, aren't";
+	mes "you?  I would remember such a face";
+	mes "had I met you before.";
 	next;
-	mes "[カルカタン]";
-	mes "言葉がまったく通じず、どこでどんな";
-	mes "ことが起きているか知ることさえ";
-	mes "出来んもんじゃから、本当に歯がゆい";
-	mes "じゃろうね……ホッホッホー。";
-	mes "とにかく訪ねてきたことを歓迎するよ。";
+	mes "[Karukatan]";
+	mes "We know there is a wide world around";
+	mes "us, but the there is something to";
+	mes "be appreciated in the simple life";
+	mes "we lead here.";
 	next;
-	mes "[カルカタン]";
-	mes "わしはカルカタン。ウータン族の酋長で";
-	mes "村のあらゆる事を決めておる。";
+	mes "[Karukatan]";
+	mes "All decisions in the village are made";
+	mes "by me or with my input";
 	next;
-	mes "[カルカタン]";
-	mes "ん？わしだけ、人間族の言葉を喋る";
-	mes "のが不思議そうなじゃな、ホッホッ。";
-	mes "わしが人間族の言葉を喋れるのは、";
-	mes "いつじゃったか、この村にやってきた";
-	mes "人間族の探険家のおかげなんじゃ。";
+	mes "[Karukatan]";
+	mes "You want to know how I speak your";
+	mes "language when it seems no one else in";
+	mes "the village does?  A fair question.";
+	mes "I picked up your tongue from the";
+	mes "adventurers who sometimes pass";
+        mes "through this village.";
 	next;
-	mes "[カルカタン]";
-	mes "その人間族がここに来たのは、ずいぶん";
-	mes "前の事じゃった……今はまたどこを探険";
-	mes "しておるのかの。わしは人間族の言語と";
-	mes "文化、その他にも様々なことを教えても";
-	mes "らった。そしてわしは人間族に、ウータ";
-	mes "ン族の言語を教えてあげたんじゃ。";
+	mes "[Karukatan]";
+	mes "Some outsiders have also settled near here";
+	mes "over time.  In exchange for information";
+	mes "about their customs and culture, I";
+	mes "teach them the language and customs";
+	mes "of the Utan tribe.";
 	next;
-	mes "[カルカタン]";
-	mes "そなたもウータン族の言語を学びたけれ";
-	mes "ば、わしらの文化を少しでも理解しよう";
-	mes "と努力するんじゃな。言葉が通じなくと";
-	mes "も、服装や生活などの様子は、十分に";
-	mes "感じて、見ることができるからのう。";
+	mes "[Karukatan]";
+	mes "If you want to learn our language,";
+	mes "you must immerse yourselves in";
+	mes "our customs and cultural traditions.";
+	mes "You should even try and look as much";
+	mes "like us as you can.";
 	next;
-	mes "[カルカタン]";
-	mes "むやみにわしらの事を外の者に教える";
-	mes "訳にはいかんからのう……もし悪い人間";
-	mes "族がわしらの言語を学んだら、わしらが";
-	mes "危険になるもんじゃからね。";
+	mes "[Karukatan]";
+	mes "I hope you're worthy of my confidence.";
+	mes "Some members of the tribe have expressed";
+	mes "the sentiment that welcoming outsiders";
+	mes "is dangerous to the village.";
 	next;
-	mes "[カルカタン]";
-	mes "もしわしらの言葉を学ぶ気になったら、";
-	mes "再びわしを訪ねてきなさい。見かけも大";
-	mes "事じゃが、それよりも心意気がもっと";
-	mes "大事じゃということを忘れんように";
-	mes "のう……";
+	mes "[Karukatan]";
+	mes "When you want to begin learning the";
+	mes "language, come and visit me.  Don't";
+	mes "forget to make yourself appear as";
+	mes "much like us as you can.";
 	set event_umbala = 1;
 	close;
 LStart2:
-	mes "[カルカタン]";
-	mes "ホホ、人間族の者よ。村をたくさん見て";
-	mes "回ったかね？人間族を初めて見るウータ";
-	mes "ン族もおるから、驚いて隠れてしまう者";
-	mes "がいたりするんじゃ。なので、";
-	mes "そなたがどう感じたか心配じゃが……";
+	mes "[Karukatan]";
+	mes "Ahh, have you looked around the";
+	mes "village a bit?  Did other people";
+	mes "from the tribe hide from you when";
+	mes "they saw you?  Don't worry.  They";
+	mes "were just surprised to see a new face.";
 	next;
-	mes "[カルカタン]";
-	mes "それで、何か用かね？";
-	mes "村を見物する分には問題ないと思うが";
-	mes "何か悩み事でもあるのかね？";
+	mes "[Karukatan]";
+	mes "Hmm?  You need something from me?";
+	mes "How can I make your stay in the village";
+	mes "more pleasent?";
 	next;
-	menu "ウータン族の言葉を学びたいです",-,"ウムババウムババ？",L2,"特にないです",L3;
-//本来中下段装備のみ(下の場合中段と下段装備していればOKになる)
+	menu "I want to learn the tribal language",-,"Umbaumbaba?",L2,"Forget it",L3;
 //		if ((getequipisequiped(9)>0) && (getequipisequiped(10)>0)) goto L1_mask;
-		mes "[カルカタン]";
-		mes "そなたはまだ、わしらウータン族を理解";
-		mes "出来ていないようじゃね……文化が異な";
-		mes "り言葉が通じないというだけで、理解";
-		mes "しようと努力をすることすら諦めてし";
-		mes "まうとは、駄目な奴じゃのう。";
+		mes "[Karukatan]";
+		mes "Well, in order to understand our";
+		mes "language, you need to assimilate";
+		mes "our cultural values, too.  Trying to";
+		mes "understand a language in the context of an";
+		mes "alien culture is foolish, right?";
 		next;
-		mes "[カルカタン]";
-		mes "そう、そんな表情さえウータン族に";
-		mes "とっては、恐怖の対象になるんじゃ。";
-		mes "いざという時、大事なことを伝える";
-		mes "ことができずに、表に現われること";
-		mes "だけですべてのものを判断して";
-		mes "しまったりするんじゃ。";
-		next;
-		mes "[カルカタン]";
-		mes "もう少し、歩き回ってみるんじゃな。";
-		mes "言葉を学びたいのなら、どんな風に";
-		mes "話して聞けばいいかを、知るとよい";
-		mes "のではないかな。そして理解できた";
-		mes "というのなら、またわしを訪ねてくる";
-		mes "とよい。";
-		next;
-		mes "[カルカタン]";
-		mes "それはさておき、わしの仮面、";
-		mes "ウータン族最新の流行なんじゃが……";
-		mes "かなり素敵ではないか？";
-		mes "どう？どうじゃ？";
+		mes "[Karukatan]";
+		mes "Besides, if the tribesmen in the";
+		mes "village fear you, how will you";
+		mes "ever get them to speak with you?";
+		mes "You should try making yourself";
+		mes "look like us in order to be more";
+		mes "accepted.";
 		close;
 	L1_mask:
-		mes "[カルカタン]";
-		mes "ホッホッ、素敵な仮面じゃね。わしら";
-		mes "ウータン族も仮面を好むんじゃよ。";
-		mes "自分本来の顔と表情を隠し話すことに";
-		mes "よって、お互いの考えをより深く理解";
-		mes "できることがあるんじゃ。";
+		mes "[Karukatan]";
+		mes "What a cute mask.  The Utan tribe";
+		mes "appreciates its traditional masks";
+		mes "because sometimes by hiding your";
+		mes "face, you can express more geniune";
+		mes "feelings.";
 		next;
-		mes "[カルカタン]";
-		mes "だから、普段は仮面を被って話をする";
-		mes "んじゃ。仮面を被ることがむしろ、";
-		mes "より真実の心を伝えることができる";
-		mes "という、わしらの信頼に繋がって";
-		mes "いるんじゃ。";
+		mes "[Karukatan]";
+		mes "Over time, the mask itself";
+		mes "has come to symbolize trust among";
+		mes "the members of the Utan tribe.";
 		next;
-		mes "[カルカタン]";
-		mes "そなたなら、わしらの言葉を学んでも";
-		mes "よさそうじゃな。約束どおり、わしらの";
-		mes "言葉を教えてやろう。じゃが、人間族が";
-		mes "ウータン語を聞いて話すためには、";
-		mes "いくつかの準備が必要なんじゃ……";
+		mes "[Karukatan]";
+		mes "Now that you're prepared, I will";
+		mes "begin teaching you the Utan";
+		mes "language as promised.  First,";
+		mes "you need to make some preparations,";
+		mes "however...";
 		next;
-		mes "[カルカタン]";
-		mes "そう、紙じゃ、紙が必要じゃ。わしも";
-		mes "人間族から紙をもらったおかげで、";
-		mes "言葉を学ぶことができたんじゃ。";
+		mes "[Karukatan]";
+		mes "First, I need some paper.  With";
+		mes "paper, I can write down the words";
+		mes "I intend to teach.";
 		next;
-		mes "[カルカタン]";
-		mes "よいかな。^3377FF油紙^000000を10枚、^3377FFなめらかな紙^000000を";
-		mes "5枚。そして、紙に書くための何かが";
-		mes "必要じゃったはずなんじゃが……";
-		mes "そうじゃ、^3377FF墨汁^000000を1個と^3377FF鳥の羽毛^000000を";
-		mes "1個じゃ。";
+		mes "[Karukatan]";
+		mes "I need ^3377FF10x Oily Paper^000000, and ^3377FF5x Smooth Paper^000000.";
+		mes "I also need something to write with.";
+		mes "of course.";
+		mes "For that, ^3377FF1x India Ink^000000 and ^3377FF1x Bird Feather^000000";
+		mes "will do nicely.";
 		next;
-		mes "[カルカタン]";
-		mes "これらを全部用意してきたら、わしらの";
-		mes "言葉を教えてやろう。";
+		mes "[Karukatan]";
+		mes "Once you get these, I can start";
+		mes "teaching you the language.";
 		set event_umbala = 2;
 		close;
 	L2:
-		mes "[カルカタン]";
-		mes "ホッホッ、音を真似するだけでは、何も";
-		mes "伝えることはできないじゃろう。言葉";
-		mes "というのは、考えを伝えるために皆で";
-		mes "決めた約束事ではないのかね？";
-		mes "そのように思わないかね？";
+		mes "[Karukatan]";
+		mes "Haha.  Only imitating the sound";
+		mes "of the words is useless.  Even";
+		mes "though it sounds random, there is";
+		mes "a specific way of combining the";
+		mes "words.";
 		next;
-		mes "[カルカタン]";
-		mes "たまに人間族は、そういう約束事の意味";
-		mes "すら忘れたかのように話をするから、";
-		mes "あまり心が伝わらないみたいじゃね。";
-		mes "同じ人種にも関わらず通訳が必要";
-		mes "なんてのう……";
+		mes "[Karukatan]";
+		mes "Also, our language has depends a";
+		mes "a lot on emotion to convey its";
+		mes "meaning.  Outsiders can't pick up";
+		mes "the subtlety right away, even though";
+		mes "we're the same race, ";
 		next;
-		mes "[カルカタン]";
-		mes "わしらウータン族の言葉に、本当に";
-		mes "関心があるんじゃったら、もう少し";
-		mes "努力してみるんじゃな。そうした後";
-		mes "でも、まだわしらの言葉を学びたい";
-		mes "と思ったら、わしを訪ねてきなされ。";
+		mes "[Karukatan]";
+		mes "It seems you have an interest";
+		mes "in learning the language of the";
+		mes "Utan tribe.  If that's the case,";
+		mes "come visit me and I'll teach you.";
 		next;
-		mes "[カルカタン]";
-		mes "音ではない言葉というものの意味を";
-		mes "教えてやるからな。ホッホッ。";
+		mes "[Karukatan]";
+		mes "Then, you won't sound so silly.";
 		close;
 	L3:
-		mes "[カルカタン]";
-		mes "特に当てもなく、旅をするのもよい";
-		mes "じゃろう。じゃが、何か目的を決めて";
-		mes "旅をする方が、もっとやりがいがあって";
-		mes "記憶にも長く残るんじゃがね。";
+		mes "[Karukatan]";
+		mes "Ah.  If you want to continue your";
+		mes "trip, please keep this village in";
+		mes "your memories.";
 		close;
 LStart3:
 	checkitem 7151,10,-,LowItem;
@@ -772,185 +736,178 @@ LStart3:
 	checkitem 916,1,Lchkok,LowItem;
 //	if ((countitem(7151)>=10) && (countitem(7111)>=5) && (countitem(1024)>=1) && (countitem(916)>=1)) goto Lchkok;
 	LowItem:
-	mes "[カルカタン]";
-	mes "まだ準備が不十分なようじゃのう……";
-	mes "もしや必要なものを忘れたのでは";
-	mes "ないかね？また教えてやるから、忘れ";
-	mes "ないうちに、必ず手に入れてきなされ。";
+	mes "[Karukatan]";
+	mes "It seems you've not yet prepared the";
+	mes "proper items.  Did you forget what";
+	mes "you need to gather before I can";
+	mes "teach you the language?  You need to gather";
 	next;
-	mes "[カルカタン]";
-	mes "^3377FF油紙^000000を10枚、";
-	mes "^3377FFなめらかな紙^000000を5枚、";
-	mes "^3377FF墨汁^000000を1個、";
-	mes "^3377FF鳥の羽毛^000000を1個じゃ。";
-	mes "全部用意したら、言葉を教えてやろう。";
+	mes "[Karukatan]";
+	mes "^3377FF10x Oily Paper^000000,";
+	mes "^3377FF5x Smooth Paper^000000,";
+	mes "^3377FF1x India Ink^000000, and";
+	mes "^3377FF1x Bird Feather^000000.";
+	mes "Once you have gathered those, I can teach";
+        mes "you Utan tribal language.";
 	close;
 Lchkok:
-	mes "[カルカタン]";
-	mes "よし。全ての準備が整ったようじゃね。";
-	mes "では、教えてやろう。これをやれば、";
-	mes "そなたもわしらウータン族と話すことが";
-	mes "できるよ。";
+	mes "[Karukatan]";
+	mes "Good.  You've prepared all the";
+	mes "necessary materials.  Now, I can";
+	mes "begin to teach you the Utan tribal";
+	mes "language.";
 	next;
-	mes "[カルカタン]";
-	mes "…………";
+	mes "[Karukatan]";
+	mes "............";
 	next;
-	mes "[カルカタン]";
-	mes "………………";
-	mes "……………………";
+	mes "[Karukatan]";
+	mes "............";
+	mes "............";
 	next;
-	mes "[カルカタン]";
-	mes "………………";
-	mes "……………………";
-	mes "………………………………";
+	mes "[Karukatan]";
+	mes "............";
+	mes "............";
+	mes "............";
 	next;
-	mes "[カルカタン]";
-	mes "さあ、終わったな。今まで息苦しかった";
-	mes "気持ちを開放して、他のウータン族の";
-	mes "人々にも話しかけてみるんじゃな。";
-	mes "対話は本当に重要じゃ。";
+	mes "[Karukatan]";
+	mes "Do you feel more enlightened now?";
+	mes "Try talking to others in the Utan";
+	mes "tribe.  They'll warm up to your quickly";
+	mes "now that you speak the language.";
 	delitem 7151,10;
 	delitem 7111,5;
 	delitem 1024,1;
 	delitem 916,1;
 	set event_umbala = 3;
 	next;
-	mes "[カルカタン]";
-	mes "では、また何かあったら訪ねて";
-	mes "きなされ。わしもできる限り、";
-	mes "そなたを助けてやるからな。";
+	mes "[Karukatan]";
+	mes "If you need something while you're";
+	mes "here, don't hesitate to visit me.";
 	close;
 LStart4:
 //fin
-	mes "[カルカタン]";
-	mes "まだ何か用かの？";
-	mes "できるものなら、村周辺を案内してあげ";
-	mes "たいんじゃが、わしはここを絶対に";
-	mes "離れることができない立場なんじゃよ。";
+	mes "[Karukatan]";
+	mes "Do you need something?";
+	mes "If you need someone to guide you around";
+	mes "the village, you should ask someone else.";
+	mes "I can't leave here right now.";
 	next;
-	mes "[カルカタン]";
-	mes "一族を導く立場というのは、そんなに";
-	mes "たやすいものではないんじゃ。";
-	mes "そなたもわしのような立場になったら、";
-	mes "どういうことかを理解できるんじゃろう";
-	mes "がね。すまんが、一人で見物して";
-	mes "きなされ。";
+	mes "[Karukatan]";
+	mes "The best way to get a feel for";
+	mes "the village is to just walk";
+	mes "around and see the sights.  By doing";
+	mes "that, you can form a personal";
+	mes "bond with the village.";
 	close;
 LStart5:
-	mes "[カルカタン]";
-	mes "ホッホッ、久しぶりじゃのう。";
-	mes "話しは聞いておるよ。";
+	mes "[Karukatan]";
+	mes "Oh, it seems you're enjoying yourself here.";
+	mes "You need something else?";
 	next;
-	mes "[カルカタン]";
-	mes "プツチァルタンに何か頼みたいことが";
-	mes "あるんじゃね。わざわざわしの許しを";
-	mes "得なくてもいいんじゃが……でも、";
-	mes "彼女がそう言うのなら、わしも何か";
-	mes "しなきゃならんのう。";
+	mes "[Karukatan]";
+	mes "It seems you want to ask the";
+	mes "shaman Putsuchiratan something";
+	mes "and you're seeking my permission";
+	mes "to do so.";
 	next;
-	mes "[カルカタン]";
-	mes "ふむ……そんなに大変なことじゃなくて";
-	mes "いいんじゃが……そうじゃな、人間族の";
-	mes "仮面が一つあればよさそうじゃ……";
-	mes "仮面ならプツチァルタンも十分";
-	mes "満足するはずじゃろう、どうじゃ？";
+	mes "[Karukatan]";
+	mes "Well...There's a mask from";
+	mes "abroad that Putsuchiratan and I";
+	mes "have both always desired.  Putsuchiratan";
+	mes "heard about it some time ago.";
 	next;
-	mes "[カルカタン]";
-	mes "^3377FFスマイルマスク^000000を1個じゃ。";
-	mes "仮面を受けとることは、ウータン族に";
-	mes "とって最高の栄誉と言えるんじゃよ。";
-	mes "しかし、プツチャルタンはシャーマンと";
-	mes "いう特殊な立場だからのう。わしが代わ";
-	mes "りに受けとることとなる。よいな。";
+	mes "[Karukatan]";
+	mes "If I could have the ^3377FFSmile Mask^000000,";
+	mes "it would be a great honor, but";
+	mes "I promised I would give it to";
+	mes "to Putsuchiratan as a gift if I ever";
+	mes "came across one.  If you can find a Smile Mask for me,";
+        mes "I'll give you permission to speak with her.";
 	set event_umbala = 5;
 	close;
 LStart6:
 	checkitem 2278,1,Lsmileok,-;
-	mes "[カルカタン]";
-	mes "^3377FFスマイルマスク^000000を1個じゃと言わなかっ";
-	mes "たか？それがなければ、彼女は絶対に";
-	mes "手伝ってくれないんじゃよ。";
-	mes "彼女に許可を与えることが出来る";
-	mes "数少ない存在がわしだと言うことを";
-	mes "そなたは理解しておられるかな？";
+	mes "[Karukatan]";
+	mes "Did you find the ^3377FFSmile Mask^000000 yet?";
+	mes "In order to let you see the shaman,";
+	mes "you need to collect one.";
+	mes "A gift will put Putsuchiritan in";
+	mes "a good mood, also.";
 	close;
 Lsmileok:
-	mes "[カルカタン]";
-	mes "ホホ、持って来たようじゃな。そう、";
-	mes "まさしくこれが、一度被ってみたかった";
-	mes "仮面じゃ。もちろんこの仮面は、後で";
-	mes "プツチァルタンに贈り物として与え";
-	mes "なければならんのじゃが……ホッホッ。";
+	mes "[Karukatan]";
+	mes "Ahh!  It's a Smile Mask!";
+	mes "I would really like to put this";
+	mes "on just once, but I promised to";
+	mes "give this to Putsuchiritan as";
+	mes "a gift.";
 	delitem 2278,1;
 	set event_umbala = 6;
 	next;
-	mes "[カルカタン]";
-	mes "プツチャルタンには、手助けを許すと";
-	mes "伝えておこう。彼女に会って、話を聞い";
-	mes "てみなさい。きっと彼女の能力は";
-	mes "大きな助けとなるじゃろう。";
+	mes "[Karukatan]";
+	mes "I'll tell Putsuchiritan to allow you";
+	mes "to meet with her.  I'm certain that you";
+	mes "will find her talents to be a tremendous";
+	mes "help on your journey.";
 	close;
 }
 
-um_in.gat,44,71,2	script	ウータン族シャーマン	782,{
+um_in.gat,44,71,2	script	Utan Tribe Shaman	782,{
 	check event_umbala < 3,LumWord,-;
 	check event_umbala = 4,LStart2,-;
 	check event_umbala = 5,LStart2,-;
 	check event_umbala = 6,LStart3,-;
 	check event_umbala = 7,LStart4,-;
-	mes "[プツチァルタン]";
-	mes "人間が私達ウータン族の村まで訪ねて";
-	mes "くるようになるとは、思いませんでした";
-	mes "……大自然がこのような変化に対して";
-	mes "どんなお言葉をくださるかは、まだ";
-	mes "分かりません。";
+	mes "[Putsuchiritan]";
+	mes "I will not see outsiders that are";
+	mes "not from the Utan tribe.";
+	mes "...There are many things about the";
+	mes "nature of our society that you do";
+	mes "not yet understand.";
 	next;
-	mes "[プツチァルタン]";
-	mes "君達人間は恐ろしい種族……手に触れる";
-	mes "すべてのものを所有するために、手段を";
-	mes "選びませんし、足に触れるすべての";
-	mes "場所へ行くために、どんな代価も支払い";
-	mes "ます。";
+	mes "[Putsuchiritan]";
+	mes "Others of your type will do anything";
+	mes "to set foot on land which is sacred";
+	mes "to the Utan tribe.  We fear that";
+	mes "revealing our secrets will expose";
+	mes "use to danger.";
 	next;
-	mes "[プツチァルタン]";
-	mes "君達人間が、私達にどんな影響を及ぼす";
-	mes "のか分かりませんが……私のもとへ";
-	mes "来たということは、君には何か望む";
-	mes "ことがあるのでしょう。";
+	mes "[Putsuchiritan]";
+	mes "What's worse, I don't think that";
+	mes "outsiders understand our desire";
+	mes "to preserve our tribal culture.";
 	next;
-	mes "[プツチァルタン]";
-	mes "けれども、私の能力はウータン族の";
-	mes "ためのものです。もし、助力を願うの";
-	mes "でしたら、酋長様にお許しを得て下さ";
-	mes "い。また、村の人々にはあまり関わら";
-	mes "ないようにしなさい……私達は皆、";
-	mes "静かに暮したいのです。";
+	mes "[Putsuchiritan]";
+	mes "As my talents are foremost for";
+	mes "the use of the Utan tribe, you";
+	mes "must get permission from the elder";
+	mes "if you want my assistance.";
+	mes "Also, don't be stirring up trouble";
+	mes "among the tribesmen.";
 	set event_umbala = 4;
 	close;
 LStart2:
-	mes "[プツチァルタン]";
-	mes "酋長様にお許しを得なさいと、";
-	mes "言いませんでしたか？お許しのない";
-	mes "人間には、どんな助けも与えることは";
-	mes "できません。……さあ、行きなさい。";
+	mes "[Putsuchiritan]";
+	mes "Didn't you hear me?  You need";
+	mes "to get the elder's permission before";
+	mes "I can help you.";
 	close;
 LStart3:
-	mes "[プツチァルタン]";
-	mes "お許しを得てきたようですね……あまり";
-	mes "気は進みませんが、手伝ってあげること";
-	mes "にしましょう。";
+	mes "[Putsuchiritan]";
+	mes "You seem to have gotten permission from";
+	mes "the elder.  Fine, I'll help you, though";
+	mes "I don't really want to.";
 	next;
-	mes "[プツチァルタン]";
-	mes "自然物の隠された力を合わせる、または";
-	mes "固く結合された力を分ける……私の能力";
-	mes "でそれらを行うことが出来ます。";
-	mes "君達が属性石と呼ぶもののこと";
-	mes "です……";
+	mes "[Putsuchiritan]";
+	mes "I can call forth hidden talents";
+	mes "buried deep within your psyche";
+	mes "and tap the power hidden in";
+	mes "elemental stones.";
 	next;
-	mes "[プツチァルタン]";
-	mes "私はしばしの間、準備をしなければなり";
-	mes "ません。ですから、必要になったら声を";
-	mes "掛けなさい。";
+	mes "[Putsuchiritan]";
+	mes "I need to prepare my rituals.";
+	mes "When you're ready to proceed, please";
+	mes "talk to me again.";
 	set event_umbala = 7;
 	close;
 LStart4:
@@ -958,29 +915,29 @@ LStart4:
 	set @umchange[2] = 0;
 	set @umchange[3] = 0;
 	set @umchange[4] = 0;
-	mes "[プツチァルタン]";
-	mes "助力を要する人間よ……私の能力が";
-	mes "役立つかどうかは分かりませんが、";
-	mes "手伝ってあげましょう。";
+	mes "[Putsuchiritan]";
+	mes "I don't know whether my talents";
+	mes "will be useful to you, but I'll";
+	mes "help you anyway.";
 	next;
-	mes "[プツチァルタン]";
-	mes "それでは、なにを望みますか？";
-	mes "属性の結合、分解……結合には自然物、";
-	mes "分解には属性石が必要です。";
+	mes "[Putsuchiritan]";
+	mes "I can create elemental essence from natural objects,";
+	mes "or, dismantle elemental stones into their component essences.";
+        mes "Which would you like to do?";
 	next;
-	menu "属性の結合",L1,"属性の分解",L2,"やめる",-;
-		mes "[プツチァルタン]";
-		mes "望まないのですね。それも一つの選択";
-		mes "でしょう。私の助けが必要になったら";
-		mes "また訪ねてきなさい。";
+	menu "Create Essence",L1,"Dismantle Elemental Stone",L2,"Nothing",-;
+		mes "[Putsuchiritan]";
+		mes "If you don't wish my help at the moment,";
+		mes "that's fine.  When you do, please come";
+		mes "by again.";
 		close;
 L1:
-	mes "[プツチァルタン]";
-	mes "属性の結合……どんな属性を結合したい";
-	mes "のでしょうか？地、水、火、風……君が";
-	mes "今、望む属性を言いなさい。";
+	mes "[Putsuchiritan]";
+	mes "Which elemental essence would you";
+	mes "like to create?  I can create earth, water,";
+	mes "fire, and wind essence.";
 	next;
-	menu "地属性",L1_1,"水属性",L1_2,"火属性",L1_3,"風属性",L1_4;
+	menu "Earth",L1_1,"Water",L1_2,"Fire",L1_3,"Wind",L1_4;
 	L1_1:
 //		if (countitem(947)<15) goto L1_1e;
 		checkitem 947,15,-,L1_1e;
@@ -1010,12 +967,12 @@ L1:
 		set @umchange[3] = 992;
 		goto L1_ketugou;
 	L1_ketugou:
-		mes "[プツチァルタン]";
-		mes "大自然の力によって、その隠された";
-		mes "力の源泉を一つに集めてみましょう。";
-		mes "1から9までのうち、君が好きな数字を";
-		mes "一つ選びなさい。属性の結合を";
-		mes "望まないなら、0を選びなさい。";
+		mes "[Putsuchiritan]";
+		mes "Now, I will try to tap the";
+		mes "source of power hidden deep within";
+		mes "you.  Choose a number between 1 and 9.";
+		mes "If you don't want to create essence";
+		mes "after all, choose 0.";
 		next;
 	L1_input:
 		input @umchange[4];
@@ -1025,107 +982,106 @@ L1:
 		check @umchange[4] == 0,L1_cancel,-;
 		check @umchange[4] > 9,L1_numError,-;
 		set @umchange[4] = 1;
-//		1以上でなそうなので
-		mes "[プツチァルタン]";
-//		if (@umchange[1]==947) mes "この沸いている釜に、その角を";
-//		if (@umchange[1]==904) mes "この沸いている釜に、その尾を";
-//		if ((@umchange[1]==1013) && (@umchange[1]==946)) mes "この沸いている釜に、その皮を";
+		mes "[Putsuchiritan]";
+//		if (@umchange[1]==947) mes "The horn begins to vibrate.";
+//		if (@umchange[1]==904) mes "The tail begins to vibrate.";
+//		if ((@umchange[1]==1013) && (@umchange[1]==946)) mes "The skin begins to vibrate.";
 //Converted Below?
 		check @umchange[1] == 947,-,Check2;
-			mes "この沸いている釜に、その角を";
+			mes "The horn begins to vibrate.";
 			goto Continue;
 	Check2:
 		check @umchange[1] == 904,-,Check3;
-			mes "この沸いている釜に、その尾を";
+			mes "The tail begins to vibrate.";
 			goto Continue;
 	Check3:
 		check @umchange[1] == 1013,-,Check4;
-			mes "この沸いている釜に、その皮を";
+			mes "The skin begins to vibrate.";
 			goto Continue;
 	Check4:
 		check @umchange[1] == 946,-,Continue;
-			mes "この沸いている釜に、その皮を";
+			mes "The skin begins to vibrate.";
 			goto Continue;
 	Continue:
 //End Possible Conversion
-		mes "入れなさい。私は神聖な呪文を";
-		mes "唱えます。君は先程の数字を心に思い";
-		mes "描きなさい。それでも、力が集まるかは";
-		mes "分かりませんが……";
+		mes "I will now chant a holy mantra.";
+		mes "Imagine the number in your mind";
+		mes "and imagine power radiating forth from";
+		mes "your body.";
 		next;
-		mes "[プツチァルタン]";
-		mes "アムバ、オムバ、ザンバ！ウンバ！チ！";
-		mes "ウムタウム、エウルカバ！ウンバ！ハ！";
-		mes "ジュル、フムバ、ルララ！ウンバ！ラ！";
-		mes "ダムツハ、オムババラカ！ウンバ！シ！";
-		mes "スヌタムバ、アブルムバ！ウンバ！シ！";
+		mes "[Putsuchiritan]";
+		mes "Amba Omba Sanba!  Unba Chi!";
+		mes "Wanbatauma Eurukaba!  Unba!  Ba!";
+		mes "Jyur!  Fumuba  Rurara!  Wamba!  Ra!";
+		mes "Damtsuha Ombabaraka! Unba! Shi!";
+		mes "Sukatamba Aburumba! Umba! Shi!";
 		next;
 		delitem @umchange[1],@umchange[2];
 		additem @umchange[3],@umchange[4];
-		mes "[プツチァルタン]";
-		mes "こちらが、君が望んだ属性原石になり";
-		mes "ます。自然に存在する物から呪術で";
-		mes "作り出したものです……目的を";
-		mes "よく考えてから使うようにしなさい。";
+		mes "[Putsuchiritan]";
+		mes "There.  Your inner power has converted";
+		mes "these objects from nature into";
+		mes "elemental essence.  Put";
+		mes "it to good use.";
 		close;
 L1_cancel:
-	mes "[プツチァルタン]";
-	mes "望まないのですね。それも一つの選択";
-	mes "でしょう。後で、もし助けが必要に";
-	mes "なったら、また訪ねてきなさい。";
+	mes "[Putsuchiritan]";
+	mes "If you don't wish my help at the moment,";
+	mes "that's fine.  When you do, please come";
+	mes "by again.";
 	close;
 L1_numError:
-	mes "[プツチァルタン]";
-	mes "1から9までの中で選ばなければ";
-	mes "なりません。重要なことですから、";
-	mes "本当に好きな数字を選ぶように";
-	mes "しなさい。";
+	mes "[Putsuchiritan]";
+	mes "You must choose a number between";
+	mes "1 and 9.  It is very important that";
+	mes "you choose the number most dear to";
+	mes "your heart.";
 	next;
 	goto L1_input;
 L1_1e:
-	mes "[プツチァルタン]";
-	mes "地属性……地の気に満ちている自然物が";
-	mes "必要です。林の中に住み、大地の気で";
-	mes "一杯になったホルン……そうホルンの";
-	mes "^3377FF硬い角が15個^000000必要です。";
+	mes "[Putsuchiritan]";
+	mes "Earth...You need that which is";
+	mes "a friend of the earth.  Explore";
+	mes "the verdant forest and find";
+	mes "^3377FF15x Horn^000000 for the ritual.";
 	goto L1_empty;
 L1_2e:
-	mes "[プツチァルタン]";
-	mes "水属性……水の気に満ちている自然物が";
-	mes "必要です。全身に水気を含んで、堅く";
-	mes "身を包むアンバーナイト……そう";
-	mes "^3377FFカタシムリの皮が20個^000000必要です。";
+	mes "[Putsuchiritan]";
+	mes "Water...You need that which is";
+	mes "saturated with water.  Explore";
+	mes "the area around here and find";
+	mes "^3377FF20x Katashimuri Skin^000000 for the ritual.";
 	goto L1_empty;
 L1_3e:
-	mes "[プツチァルタン]";
-	mes "火属性……火の気に満ちている";
-	mes "自然物が必要です。砂漠の熱気を";
-	mes "全身に受けながら生きている";
-	mes "スコーピオン……そう、^3377FFサソリの尻尾^000000が";
-	mes "^3377FF20個^000000必要です。";
+	mes "[Putsuchiritan]";
+	mes "Fire...You need that which";
+	mes "can withstand the roiling heat";
+	mes "of perpetual flame.  Explore the";
+	mes "desert and find ^3377FF20x Scorpion Tail^000000";
+	mes "for the ritual.";
 	goto L1_empty;
 L1_4e:
-	mes "[プツチァルタン]";
-	mes "風属性……風の気に満ちている";
-	mes "自然物が必要です。小さな羽で";
-	mes "軽やかに飛び回るスタイナー……";
-	mes "その^3377FF華麗な蟲の皮^000000が";
-	mes "^3377FF25個^000000必要です。";
+	mes "[Putsuchiritan]";
+	mes "Wind...You need that which";
+	mes "has an easy camaraderie with";
+	mes "the sky itself.";
+	mes "You need ^3377FF25x Radiant Pelt^000000";
+	mes "to complete the ritual.";
 L1_empty:
 	next;
-	mes "[プツチァルタン]";
-	mes "必要な自然物はそれだけです……";
-	mes "準備ができたら、また訪ねてきなさい。";
-	mes "私はいつでもここにいますから。。";
+	mes "[Putsuchiritan]";
+	mes "Once you've prepared these";
+	mes "objects from nature, please return here";
+	mes "so we can complete the ritual.";
 	close;
 //----------------------------------------------------------
 L2:
-	mes "[プツチァルタン]";
-	mes "属性の分解……どんな属性を分解したい";
-	mes "のでしょうか？地、水、火、風……君が";
-	mes "今、持っている属性を言いなさい。";
+	mes "[Putsuchiritan]";
+	mes "What type of stone would you like to";
+	mes "dismantle?  Please choose earth, water,";
+	mes "fire, or wind.";
 	next;
-	menu "地属性",L2_1,"水属性",L2_2,"火属性",L2_3,"風属性",L2_4;
+	menu "Earth",L2_1,"Water",L2_2,"Fire",L2_3,"Wind",L2_4;
 	L2_1:
 //	if (countitem(997)<1) goto L2_1e;
 	checkitem 997,1,-,L2_1e;
@@ -1155,37 +1111,37 @@ L2:
 		set @umchange[3] = 992;
 		goto L2_bunkai;
 	L2_bunkai:
-		mes "[プツチァルタン]";
-//		if (@umchange[1]==997) mes "君が持ってきた大地の結晶を結合";
-//		if (@umchange[1]==995) mes "君が持ってきた氷結された神秘を結合";
-//		if (@umchange[1]==994) mes "君が持ってきた火炎の心を結合";
-//		if (@umchange[1]==996) mes "君が持ってきた荒れ狂う風の結晶を結合";
+		mes "[Putsuchiritan]";
+//		if (@umchange[1]==997) mes "I will dismantle your earth crystal";
+//		if (@umchange[1]==995) mes "I will dismantle your frozen crystal";
+//		if (@umchange[1]==994) mes "I will dismantle your heart of flame";
+//		if (@umchange[1]==996) mes "I will dismantle your rough wind stone";
 			check @umchange[1] == 997,-,L2_Check2;
-				mes "君が持ってきた大地の結晶を結合";
+				mes "I will dismantle your earth crystal";
 				goto Continue2;
 		L2_Check2:
 			check @umchange[1] == 995,-,L2_Check3;
-				mes "君が持ってきた氷結された神秘を結合";
+				mes "I will dismantle your frozen crystal";
 				goto Continue2;
 		L2_Check3:
 			check @umchange[1] == 994,-,L2_Check4;
-				mes "君が持ってきた火炎の心を結合";
+				mes "I will dismantle your heart of flame";
 				goto Continue2;
 		L2_Check4:
 			check @umchange[1] == 996,-,Continue2;
-				mes "君が持ってきた荒れ狂う風の結晶を結合";
+				mes "I will dismantle your rough wind stone";
 				goto Continue2;
 	Continue2:
-		mes "される以前の姿に戻してみましょう。";
-		mes "1から9までのうち、君が好きな数字を";
-		mes "一つ選びなさい。属性の分解を";
-		mes "望まないなら、0を選びなさい。";
+		mes "into its component essence.";
+		mes "Choose a number between 1 and 9.";
+		mes "If you don't want me to dismantle the";
+		mes "stone, choose 0.";
 		next;
 	L2_input:
 		input @umchange[4];
 //		if (@umchange[4]==0) goto L2_cancel;
 //		if (@umchange[4]>9) goto L2_numError;
-//計算適当
+//Calculating number of essences
 		check @umchange[4] == 0,L2_cancel,-;
 		check @umchange[4] > 9,L2_numError,-;
 //		set @umchange[4],rand(5)+@umchange[4];
@@ -1200,465 +1156,457 @@ L2:
 		check @umchange[4] < 5,-,Continue3;
 			set @umchange + 5;
 	Continue3:
-		mes "[プツチァルタン]";
-		mes "では、その属性石をそこに置いて";
-		mes "ください。私は神聖な言葉を唱えます。";
-		mes "君は先程の数字を心に思い描きなさい。";
-		mes "それでも、完全に分解できるかは";
-		mes "分かりませんが……";
+		mes "[Putsuchiritan]";
+		mes "Please place the elemental stone";
+		mes "inside this holy circle.  I will chant a";
+		mes "a mantra.  I don't know if I can";
+		mes "completely dismantle the stone,";
+		mes "but here goes...";
 		next;
-		mes "[プツチァルタン]";
-		mes "ウンバ、ウンバ、カラム！ウンバ！タ！";
-		mes "ルクラ、ウクレレ、ウン！ウンバ！カ！";
-		mes "アンブラカ、タブラカン！ウンバ！ラ！";
-		mes "オンバルヅ、ザン、クヌ！ウンバ！ク！";
-		mes "クン、ツン、ラクラクン！ウンバ！ハ！";
+		mes "[Putsuchiritan]";
+		mes "Unba Unba Karama!  Unba!  Ta!";
+		mes "Rukara!  Ukarere!  Un!  Unba!  Ka!";
+		mes "Anburaka Taburaka Taburakan!  Unba Ra!";
+		mes "Onbaruzu Zan Kata!  Unba Ka!";
+		mes "Kan Tsun Rakarakan!  Unba!  Ha!";
 		next;
 		delitem @umchange[1],@umchange[2];
 		additem @umchange[3],@umchange[4];
-		mes "[プツチァルタン]";
-		mes "こちらが、君が望んだ属性原石になり";
-		mes "ます。自然に存在する物から呪術で";
-		mes "作り出したものです……目的を";
-		mes "よく考えてから使うようにしなさい。";
+		mes "[Putsuchiritan]";
+		mes "The elemental stone has been";
+		mes "dismantled into its natural";
+		mes "essence.  Please put it to";
+		mes "good use.";
 		close;
 L2_cancel:
-	mes "[プツチァルタン]";
-	mes "望まないのですね。それも一つの選択";
-	mes "でしょう。後で、もし助けが必要に";
-	mes "なったら、また訪ねてきなさい。";
+	mes "[Putsuchiritan]";
+	mes "If you don't wish my help at the moment,";
+	mes "that's fine.  When you do, please come";
+	mes "by again.";
 	close;
 L2_numError:
-	mes "[プツチァルタン]";
-	mes "1から9までの中で選ばなければ";
-	mes "なりません。重要なことですから、";
-	mes "本当に好きな数字を選ぶように";
-	mes "しなさい。";
+	mes "[Putsuchiritan]";
+	mes "You must choose a number between";
+	mes "1 and 9.  It is very important that";
+	mes "you choose the number most dear to";
+	mes "your heart.";
 	next;
 	goto L2_input;
-L2_1e:	mes "[プツチァルタン]";
-	mes "地属性を分解したいのですか……";
-	mes "大地の気が一杯に満ちた結晶、";
-	mes "地の属性石が一つ必要です。";
-	mes "^3377FFグレイトネイチャが1個^000000";
+L2_1e:	mes "[Putsuchiritan]";
+	mes "You need to have";
+	mes "^3377FF1x Great Nature^000000";
+	mes "to disassemble into its";
+	mes "component essence.";
 	goto L2_empty;
 L2_2e:
-	mes "[プツチァルタン]";
-	mes "水属性を分解したいのですか……";
-	mes "大洋の流れの神秘を氷結した";
-	mes "水の属性石が一つ必要です。";
-	mes "^3377FFミスティックフローズンが1個^000000";
+	mes "[Putsuchiritan]";
+	mes "You need to have";
+	mes "^3377FF1x Mystic Frozen^000000";
+	mes "to disassemble into its";
+	mes "component essence.";
 	goto L2_empty;
 L2_3e:
-	mes "[プツチァルタン]";
-	mes "火属性を分解したいのですか……";
-	mes "燃える火炎の心を持った結晶、";
-	mes "火の属性石が一つ必要です。";
-	mes "^3377FFフレイムハートが1個^000000";
+	mes "[Putsuchiritan]";
+	mes "You need to have";
+	mes "^3377FF1x Flaming Heart^000000";
+	mes "to disassemble into its";
+	mes "component essence.";
 	goto L2_empty;
 L2_4e:
-	mes "[プツチァルタン]";
-	mes "風属性を分解したいのですか……";
-	mes "荒れ狂う風の姿が隠されている結晶、";
-	mes "風の属性石が一つ必要です。";
-	mes "^3377FFラフウィンドが1個^000000";
+	mes "[Putsuchiritan]";
+	mes "You need to have";
+	mes "^3377FF1x Rough Wind^000000";
+	mes "to disassemble into its";
+	mes "component essence.";
 L2_empty:
 	next;
-	mes "[プツチァルタン]";
-	mes "必要な属性石はそれだけです……";
-	mes "準備ができたら、また訪ねてきなさい。";
-	mes "私はいつでもここにいますから。";
+	mes "[Putsuchiritan]";
+	mes "Once you have the necessary stone,";
+	mes "please come back and visit me";
+	mes "so that the ritual can be completed.";
 	close;
 LumWord:
 	mes "[？？？？？]";
-	mes "ウムバウムバウムババウタンウムバウム";
-	mes "ウムバウムバウムバフムウムバウム……";
-	mes "ウムババウムバウムババウムババウムバ";
-	mes "ウムババウムババウムバウムババウムバ";
-	mes "フムウムバウムバ。";
+	mes "Umbaumbaumbaba Utan Umbaba";
+	mes "Umbaumbaumbafumbabauma...";
+	mes "Umbabaumbaumbabaumbabaumba";
+	mes "Umbabaumbabaumbaumbabaumba";
+	mes "Fumbaumba.";
 	next;
 	warp "umbala",217,186;
 	close;
 }
 
-umbala.gat,177,153,3	script	パスト	97,{
+umbala.gat,177,153,3	script	Bast	97,{
 //	if (event_umbala>=3) emotion 0;
-	mes "[パスト]";
-	mes "うわっ！人間じゃないですか！";
-	mes "こんな人里離れた所で人間に";
-	mes "出会えるとは！とても嬉しいですね。";
-	mes "私はパストと言います。";
+	mes "[Bast]";
+	mes "Oh!  Another outsider.  It's";
+	mes "great to encounter another one";
+	mes "in this village!  My name is";
+	mes "Bast.";
 	next;
-	mes "[パスト]";
-	mes "ここは、ウンバラと言う村です。";
-	mes "こんな深い森の中にあるせいか、";
-	mes "他の村とは全然違った文化圏を";
-	mes "形成しています。";
+	mes "[Bast]";
+	mes "Because Umbala village is isolated";
+	mes "within a deep forest, its culture";
+	mes "is unaffected by the steady pull";
+	mes "of progress.";
 	next;
-	mes "[パスト]";
-	mes "肌の色も違いますし、言語も私達が";
-	mes "読み書きするものとは、全く違います";
-	mes "ね。何より、一番戸惑ったのは彼らの";
-	mes "感情表現が私達と違うことでした。";
+	mes "[Bast]";
+	mes "Not only that, but the natives' skin color";
+	mes "and language are also different.";
+	mes "Aren't you confused by their";
+	mes "alien gestures and expressions?";
 	next;
-	mes "[パスト]";
-	mes "もちろん似ている点もあります。";
-	mes "しかし、いくつかの事項に気を付け";
-	mes "なければ、困ったことにになるかも";
-	mes "しれません。いいですか？";
+	mes "[Bast]";
+	mes "Even the things you would expect";
+	mes "to transcend culture have a";
+	mes "different meaning in Umbala.";
 	next;
-	mes "[パスト]";
-	mes "彼らの顔が笑っているからといって、";
-	mes "彼らの心も笑っていると思っては";
-	mes "いけないのです。分かります？";
+	mes "[Bast]";
+	mes "Just because a tribeman's face laughs";
+	mes "doesn't necessarily mean his";
+	mes "heart is laughing.  Understand?";
 	next;
 //	emotion 28;
-	mes "[パスト]";
-	mes "もし言葉が通じていたら……私達の";
-	mes "言語を知っている人は悩むでしょう……";
-	mes "息苦しくてね……!!";
+	mes "[Bast]";
+	mes "Because of that, people in the village";
+	mes "who know our language may have trouble!!";
 	close;
 }
 
-umbala.gat,80,146,4	script	ユーキ	753,{
-	mes "[ユーキ]";
-	mes "ウムバウムバウガウ……ではなく";
-	mes "あなたもやっぱり外の人？";
-	mes "わ～嬉しいなぁ！こういう所で外の";
-	mes "人に会うとは思わなかったよ。";
-	mes "はっはっはっ。";
+umbala.gat,80,146,4	script	Yuki	753,{
+	mes "[Yuki]";
+	mes "Umbaubaugau...Oh!";
+	mes "You're from abroad?  That's";
+	mes "wonderful!  I didn't think that";
+	mes "I would meet someone else from abroad.";
+	mes "Hahaha.";
 	next;
-	mes "[ユーキ]";
-	mes "強い者を捜し回ってここまでやって";
-	mes "来たのはいいんだが、言葉が全然";
-	mes "通じなくてさ……本当に訳が";
-	mes "分からなかったよ。だけど、散々この";
-	mes "言葉を聞いたから、さすがに慣れたね。";
-	mes "はっはっはっ。";
+	mes "[Yuki]";
+	mes "I came here looking for strong";
+	mes "companions, but I was unable";
+	mes "to understand the language.";
+	mes "I had to listen to the language being spoken";
+	mes "for some time before I picked it up.";
+	mes "Hahaha.";
 	next;
-	mes "[ユーキ]";
-	mes "それより、ここってなんか曖昧なんだ。";
-	mes "言葉が通じないのはともかくさ。";
-	mes "男達の種族保存の欲求なのか、いたずら";
-	mes "好きなのか……いや、本当に浮気者だら";
-	mes "けみたいだ。";
+	mes "[Yuki]";
+	mes "The people here seem to want to";
+	mes "preserve their native culture while";
+	mes "eschewing the trappings of modern life.";
+	mes "The tribesmen are really prone to";
+	mes "mischief-making.";
 	next;
-	mes "[ユーキ]";
-	mes "なんか原始に近い関係みたいで、法でも";
-	mes "そういったものを制限してないよう";
-	mes "だし……やっぱ本当に曖昧な感じが";
-	mes "すごくするんだよな。";
+	mes "[Yuki]";
+	mes "The primitive atmosphere here is really";
+	mes "refreshing.  Tribal law is very lax and";
+	mes "doesn't intrude upon one's enjoyment of";
+	mes "the village.  It's really wonderful.";
 	close;
 }
 
-um_in.gat,101,73,3	script	ウェナタン	783,{
+um_in.gat,101,73,3	script	Yunatan 	783,{
 	check event_umbala < 3,LumWord,-;
-	mes "[ウェナタン]";
-	mes "はぁ……夜になると現われて";
-	mes "訳もなく横をうろついて、大騷ぎを";
-	mes "するから本当にたまらないわ！";
-	mes "ウムポコリオタンは姿を見るのも嫌!!";
+	mes "[Yunatan]";
+	mes "I'm standing out here because I";
+	mes "can't stand to lay eyes on";
+	mes "that lecher Wambokoriotan.";
+	mes "I hate his guts!";
 	close;
 LumWord:
-	mes "[ウェナタン]";
-	mes "ウムババ！ウムバウムバウガガ";
-	mes "ウガウガウムバウガウムウム。";
-	mes "ウムババババババババババ。";
+	mes "[Yunatan]";
+	mes "Umbaba!  Umbaumbaugaga";
+	mes "Ugugumubaugaumuumu.";
+	mes "Umbabababababababa.";
 	close;
 }
 
-um_in.gat,94,123,5	script	ベルツタン	783,{
+um_in.gat,94,123,5	script	Bartsutan	783,{
 	check event_umbala < 3,LumWord,-;
-	mes "[ベルツタン]";
-	mes "もう……ウムポコリオタンは変態";
-	mes "みたいな奴よ！いくら大嫌いだと";
-	mes "言っても、すっごくしつこくて。";
-	mes "話もしたくない。ああ……二度と";
-	mes "見たくもないわ。";
+	mes "[Bartsutan]";
+	mes "I want to see Wambokoriotan";
+	mes "morph into an insect so I can";
+	mes "have the satisfaction of crushing";
+	mes "his skull!  I hate him and his";
+	mes "advances!  I wish he would just stay";
+        mes "away from me.";
 	close;
 LumWord:
-	mes "[ベルツタン]";
-	mes "ウムバルウガウムバルウムバウム！";
-	mes "ウム～ウガウガウムバルウム。";
-	mes "ウムバ……ウウム。";
+	mes "[Bartsutan]";
+	mes "Umbarugumbarumbauma!";
+	mes "Umuguugumubarumba.";
+	mes "Umba...uumu.";
 	close;
 }
 
-umbala.gat,140,157,6	script	ウータン族の青年#1	785,{
+umbala.gat,140,157,6	script	Utan Tribe Young Adult#1	785,{
 	check event_umbala < 3,LumWord,-;
-	mes "[セイルタン]";
-	mes "バンジージャンプはすごく危ない。";
-	mes "命がけなんだ。だからそれを";
-	mes "成功させた人は、ウータン族の大人";
-	mes "として認定を受けるんだ。";
+	mes "[Seirutan]";
+	mes "Bungy jumping is extremely dangerous.";
+	mes "As such, completing a successful";
+	mes "jump is a prerequisite for recognition";
+	mes "as an adult in the Utan tribe.";
 	close;
 LumWord:
 	mes "[？？？？？]";
-	mes "ウムバウムバフムバ。";
-	mes "ウウムバウムバウムババウフムバ";
-	mes "ウムバババウムバウムバ。";
+	mes "Umbaumbafumba.";
+	mes "Uwambaunbaumbabaufumba";
+	mes "Umbababaumbaumba.";
 	close;
 }
 
-umbala.gat,146,157,4	script	ウータン族の青年#2	786,{
+umbala.gat,146,157,4	script	Utan Young Adult#2	786,{
 	check event_umbala < 3,LumWord,-;
-	mes "[アロタン]";
-	mes "バンジージャンプを無事に成功させる";
-	mes "のは、とても大変。だから、無事に成功";
-	mes "させた人を祝うために、たくさんの人が";
-	mes "集まって宴会を開くんです。";
+	mes "[Arotan]";
+	mes "Making a safe bungy jump is a";
+	mes "really big deal.  When someone makes";
+	mes "their first jump safely, many people";
+	mes "gather for a large feast.";
 	close;
 LumWord:
 	mes "[？？？？]";
-	mes "ウムバウムバウムババウムババ。";
-	mes "ウムバウムババウムバババウムフムバ。";
+	mes "Umbaumbaumbabaumbaba.";
+	mes "Umbaumbabaumbababaumufumuba.";
 	close;
 }
 
-umbala.gat,149,165,4	script	ウータン族の子供#3	781,{
+umbala.gat,149,165,4	script	Utan Young Adult#3	781,{
 	check event_umbala < 3,LumWord,-;
-	mes "[クリューバタン]";
-	mes "あんなに高い所から落ちるのは";
-	mes "とても恐ろしいです。ところが";
-	mes "私達ウータン族ではあれに挑戦";
-	mes "すると、勇気ある者だと";
-	mes "認められるのです。";
+	mes "[Kryubatan]";
+	mes "I'm really afraid of heights,";
+	mes "so I really don't want to jump,";
+	mes "but I must in order to be";
+	mes "recognized as a courageous";
+	mes "member of the Utan tribe.";
 	close;
 LumWord:
 	mes "[？？？？？？]";
-	mes "ウムバウムバウムバババ。";
-	mes "ウムバウムバウムウムババウムフムバ。";
-	mes "ウムバウムバウムウムバフムバ。";
+	mes "Umbaumbaumbababa.";
+	mes "Umbaumbaumumbabaumfumuba.";
+	mes "Umbaumbaumumubafumba.";
 	close;
 }
 
-umbala.gat,92,159,4	script	ベルタン	785,{
+umbala.gat,92,159,4	script	Hartan	785,{
 	check event_umbala < 3,LumWord,-;
-	mes "[ベルタン]";
-	mes "ウンバラの住民の肌は、";
-	mes "どうして真っ黒いのかなぁ？";
-	mes "…………";
+	mes "[Hartan]";
+	mes "You want to know why our";
+	mes "skin is jet-black?";
+	mes "......";
 	next;
-	mes "[ベルタン]";
-	mes "そっか！";
-	mes "ウンバラの人は、毎日寝る前に";
-	mes "チョコを食べるからなんだ！";
+	mes "[Hartan]";
+	mes "Well...";
+	mes "Every night before we sleep,";
+	mes "we eat lots of chocolate!";
 	next;
-	mes "[ベルタン]";
-	mes "チョコはおいしいもんね～。";
+	mes "[Hartan]";
+	mes "Mmmmmmm...Chocolate...";
 	close;
 LumWord:
 	mes "[？？？？]";
-	mes "ウムバウムバウムバウムバ";
-	mes "ウムバウムバウムバウムバ";
-	mes "ウムバウムバウムバウムバ。";
+	mes "Umbaumbaumba";
+	mes "Umbaumbaumba";
+	mes "Umbaumbaumba";
 	next;
 	mes "[？？？？]";
-	mes "ウムバウムババウングホ。";
+	mes "Umbaumbabaungaha.";
 //	emotion 28;
 	close;
 }
 
-umbala.gat,194,104,4	script	ウータン族の子供#2	787,{
+umbala.gat,194,104,4	script	Utan Tribe Child#2	787,{
 	check event_umbala < 3,LumWord,-;
-	mes "[ブルカタン]";
-	mes "外の人？";
-	mes "バンジージャンプをしてみたいの？";
+	mes "[Burkatan]";
+	mes "An outsider?";
+	mes "Are you here to try bungy jumping?";
 	next;
-	menu "うん",-,"いや",L2;
-		mes "[ブルカタン]";
-		mes "うわー、外の人がやりたいなんて";
-		mes "すごい。ウータン族は、その勇気を";
-		mes "歓迎するよ。";
+	menu "You got it",-,"Well....",L2;
+		mes "[Burkatan]";
+		mes "What courage!";
+		mes "The Utan tribe welcomes those";
+		mes "with courageous hearts.";
 		close;
 	L2:
-		mes "[ブルカタン]";
-		mes "まだ挑戦する気ないんだ……でも、";
-		mes "大人として認められるためには、誰もが";
-		mes "通らなきゃいけない道なんだよ。";
-		mes "僕ももうちょっと大きくなったら、";
-		mes "必ず挑戦して、大人として";
-		mes "認めてもらうんだ！";
+		mes "[Burkatan]";
+		mes "The adults don't want me to even";
+		mes "get close to the bungy jumping area.";
+		mes "In this tribe, bungy jumping is a rite";
+		mes "of passage.  If I can show them that";
+		mes "I'm big enough to brave bungy jumping,";
+		mes "they'll have to recognize me as an adult!";
 		close;
 LumWord:
 	mes "[？？？]";
-	mes "ウムバウムバババウムフムバ。";
-	mes "ウムババウムウムバウムバウムバ。";
+	mes "Umbaumbababaumfumuba.";
+	mes "Umbababaumbabaumbaumba.";
 	next;
-	menu "うん",-,"いや",Lu2;
+	menu "Um...yes?",-,"Nope...",Lu2;
 		mes "[？？？]";
-		mes "ウムバウムウムバウムババ。";
-		mes "ウムバウムバウムウムババ。";
+		mes "Umbaumbaumbababa.";
+		mes "Umbaumbaumubaba.";
 		close;
 	Lu2:
 		mes "[？？？]";
-		mes "ウムバウムバウムウムバ。";
-		mes "ウムバウムバウムババ。";
-		mes "ウムバウムフムババウム。";
+		mes "Umbaumbaumuam.";
+		mes "Umbaumbaumbaba.";
+		mes "Umbaumfumababaumu.";
 		close;
 }
 
-umbala.gat,193,208,6	script	ウータン族の青年#3	789,{
+umbala.gat,193,208,6	script	Utan Child#3	789,{
 	check event_umbala < 3,LumWord,-;
-	mes "[フェイタン]";
-	mes "俺も若い頃、バンジージャンプをした。";
-	mes "危うく死にかけたが、成功したよ。その";
-	mes "時は、達成感で胸が一杯だった。";
-	mes "無謀だと言う人もいるが、けっこういい";
-	mes "伝統だよ。若さの証だと思う。";
+	mes "[Fuitan]";
+	mes "When I was younger, I went bungy";
+	mes "jumping even though it was extremely";
+	mes "dangerous.  I did it, though, and my";
+	mes "chest swelled with a feeling of achievement.";
+	mes "The tradition encourages rash behavior, but";
+        mes "boys will be boys, don't you think?";
 	close;
 LumWord:
 	mes "[？？？？]";
-	mes "ウムバウムバウムババ。";
-	mes "ウムバウムバフムバウムウムババウム。";
-	mes "ウムウムバババウムバフム。";
+	mes "Umbaumbababa.";
+	mes "Umbamubafumabaumumbabamua";
+	mes "Umumbababaumbafuma.";
 	close;
 }
 
-umbala.gat,139,205,4	script	ウータン族の青年#5	785,{
+umbala.gat,139,205,4	script	Utan Tribe Young Adult#5	785,{
 	check event_umbala < 3,LumWord,-;
-	mes "[ツナタン]";
-	mes "久しぶりに見る外人だね！";
-	mes "ここはバンジージャンプをする所だ。";
-	mes "多くのウータン族の若者が、自分の";
-	mes "勇気を証明するために飛び降りる所だ。";
+	mes "[Tsunitan]";
+	mes "Awesome!  I haven't seen an outsider in some time.";
+	mes "You're just in time to watch as";
+	mes "youth from all over the village bungy";
+	mes "jump to prove their courage!";
 	next;
-	mes "[ツナタン]";
-	mes "これ以上先に進むと落ちるから、";
-	mes "覚悟してから行きな。";
+	mes "[Tsunitan]";
+	mes "After you jump, you can use the";
+	mes "cord to climb.  Also, if you search";
+	mes "underwater, you might be able to find";
+	mes "a submerged cave.  Of course, there have";
+	mes "been unlucky souls who have died...";
 	next;
-	mes "[ツナタン]";
-	mes "落ちた後は、綱を辿って登ることが";
-	mes "できる。また、水中をよく探せば、";
-	mes "向こう側へ通じる洞窟が見つかる";
-	mes "はずだ。けど、たまに運のない人が、";
-	mes "そのまま落ちて死ぬ時もある。";
-	next;
-	mes "[ツナタン]";
-	mes "ずっと下を眺めていると、恐怖を感じて";
-	mes "気分が悪くなる場合もあるから";
-	mes "気をつけな。水中には正体不明の";
-	mes "化け物がいるらしいので、長くいると";
-	mes "死ぬかもしれない。";
+	mes "[Tsunitan]";
+	mes "You may also feel sick";
+	mes "as the bottom draws near, because";
+	mes "the ominous shapes of aquatic monsters";
+	mes "drift slowly under the surface.";
+	mes "If you linger underwater, you might die...";
 	close;
 LumWord:
 	mes "[？？？？]";
-	mes "ウムバウムバ！";
-	mes "ウムバウムババババウムウムバ。";
-	mes "ババウムウタンウムバウムババ";
-	mes "ウムバババフム。";
-	mes "ウムフムババウムバウムバウムババ。";
+	mes "Umbaumba!";
+	mes "Umbaumbabababaumumba.";
+	mes "Babaum Utan Umbaumbaba";
+	mes "Umbababafumu.";
+	mes "Umfumubabaumbaumbaumbaba.";
 	next;
 	mes "[？？？？]";
-	mes "ウムバフムマババウムバ。";
-	mes "ウムババタンウムバウムバ。";
-	mes "ウムム、ウムバウムバウムバウム。";
-	mes "ウムババウムバウムバウムウムウム。";
-	mes "ウムバウムバウムバフム。";
+	mes "Umbafumumababaumba.";
+	mes "Umbabatanumbaumba.";
+	mes "Umumu.  Umbaumbaumbaum.";
+	mes "Umbabaumbaumbaumubaamum.";
+	mes "Umbaumbaumbafumu.";
 	close;
 }
 
-um_in.gat,158,71,3	script	ウータン族の住民	787,{
+um_in.gat,158,71,3	script	Utan Tribesman	787,{
 	check event_umbala < 3,LumWord,-;
-	mes "[ムタクタン]";
-	mes "ウンバラは、木がとーっても多い！";
-	mes "僕ムタクタン、木が大好きなの。";
-	mes "えヘヘ。";
+	mes "[Mutakutan]";
+	mes "Umbala has enough interesting trees";
+	mes "that studying them never gets old!";
 	next;
-	mes "[ムタクタン]";
-	mes "その中でも特に大好きな木があるんだ！";
-	mes "ウンバラにあるんだけど、僕よりも";
-	mes "すっごく大きくて一番長い木！";
-	mes "世界中で一番大きいはずだよ！";
+	mes "[Mutakutan]";
+	mes "My favorite tree near Umbala is huge!";
+	mes "It stretches into the sky as far";
+	mes "as the eye can see!";
+	mes "It's supposed to be the tallest tree in the world!";
 //	emotion 33;
 	next;
-	mes "[ムタクタン]";
-	mes "あ！本当なんだよ！ものすごく";
-	mes "大きくて、とーっても古いみたい。";
-	mes "とーっても大きくて、全然てっぺんが";
-	mes "見えないの。";
+	mes "[Mutakutan]";
+	mes "It's so old and large that";
+	mes "the top can't even be seen!";
 	next;
-	mes "[ムタクタン]";
-	mes "木をいくら登ってもてっぺんが";
-	mes "見えなくて……しょうがないから降りて";
-	mes "きちゃった。これでも僕は木登りが得意";
-	mes "なんだよ！えっへん！";
+	mes "[Mutakutan]";
+	mes "Even after climbing the tree";
+	mes "to quite a height, the top was not";
+	mes "in sight.  I consider myself";
+	mes "a tree-climbing expert, so this";
+        mes "was quite distressing.";
 	next;
-	mes "[ムタクタン]";
-	mes "でね、その木の実はおいしいんだ！";
-	mes "今までこんなにおいしい実は、食べた";
-	mes "ことない。本当だよ！";
+	mes "[Mutakutan]";
+	mes "That said, the fruit I was able";
+	mes "to pick off of some of the higher";
+	mes "branches is yummy!";
 //	emotion 21;
 	next;
-	mes "[ムタクタン]";
-	mes "ちょっと酸っぱくて甘ったるい……";
-	mes "食べるといつの間にか元気になって、";
-	mes "気分がとてもよくなる実なんだ!!";
+	mes "[Mutakutan]";
+	mes "It has a slightly sour taste.  Eating";
+	mes "it makes me feel all tingly inside!!";
 //	emotion 21;
 	next;
-	mes "[ムタクタン]";
-	mes "それに不思議なお話もあるの。この間、";
-	mes "村のお爺ちゃんがひどい病気になって、";
-	mes "死にそうになったんだ。";
+	mes "[Mutakutan]";
+	mes "At the same time, a terrible illness";
+	mes "was ravaging Umbala village.";
 	next;
-	mes "[ムタクタン]";
-	mes "その時に、その木の葉で作った薬を一つ";
-	mes "飲んだんだけど……そしたら、急に";
-	mes "元気になって起き上がったんだよ!!";
-	mes "きっと、その木は森が大好きな";
-	mes "ウンバラ族のために、空から";
-	mes "やってきた贈り物だと思うんだ。";
+	mes "[Mutakutan]";
+	mes "The elder's health was declining";
+	mes "and he was in danger of dying, but";
+	mes "when I gave him a piece of that";
+	mes "fruit, his health improved";
+	mes "dramatically in a short time.  Surely";
+	mes "this fruit was a gift from the forest!";
 //	emotion 28;
 	next;
-	mes "[ムタクタン]";
-	mes "村の北にあるから、一度行ってみてよ。";
-	mes "そうすればあの木のすごさが分かるよ！";
+	mes "[Mutakutan]";
+	mes "The tree is north of the village.  Why";
+	mes "not visit it if you're over that way?";
 	close;
 LumWord:
 	mes "[？？？？]";
-	mes "ウムバウムバウムババウムハ！";
-	mes "ウムバウムバウムバババウムバ";
-	mes "ウムバウムバウムバ";
-	mes "ウムババウムバウムババ。";
+	mes "Umbaumbaumbabaumba!";
+	mes "Umbaumbaumbababaumba";
+	mes "Umbaumbaumba";
+	mes "Umbabaumbaumbaba.";
 	close;
 }
 
-umbala.gat,145,217,3	script	チャビバタン	783,{
+umbala.gat,145,217,3	script	Chibibatan	783,{
 	check event_umbala < 3,LumWord,-;
-	mes "[チャビバタン]";
-	mes "ふぅ……ウムポコリオタンは奥さんが";
-	mes "いるみたいです。なのにどうして、";
-	mes "女性を見るとすぐに追っかけるのか……";
-	mes "分からないです。ウータン族では";
-	mes "ないのかしら？";
+	mes "[Chibibatan]";
+	mes "I want to have some fun with";
+	mes "Wambokoriotan, but after seeing";
+	mes "how his wife can be, I don't know if";
+	mes "I want to end up being on her bad side.";
 	close;
 LumWord:
-	mes "[チャビバタン]";
-	mes "ウムババ～～";
-	mes "ウガウガウムバルウムバルウウウ！";
-	mes "ウガウムバルウガウムバルウガウガガ。";
+	mes "[Chibibatan]";
+	mes "Umbaba.";
+	mes "Ugaugumbarumbaruuuu!";
+	mes "Ugugauwubaruguagumbagua.";
 	close;
 }
 
-um_in.gat,139,48,5	script	プレネタン	783,{
+um_in.gat,139,48,5	script	Purenotan	783,{
 	check event_umbala < 3,LumWord,-;
-	mes "[プレネタン]";
-	mes "全く、この人はすぐ浮気する";
-	mes "んだから……ああ！今度やったら、";
-	mes "殴り倒して見捨てるからね！";
-	mes "あんた!!わかってるの!?";
+	mes "[Purenotan]";
+	mes "See that loser over there?";
+	mes "I'm on to him.  He hasn't";
+	mes "exactly made a secret of his desire";
+	mes "to have an affair or three.";
+        mes "He needs to be smacked in the nuts, HARD.";
 	close;
 LumWord:
-	mes "[プレネタン]";
-	mes "ウムバウムバウガウガ";
-	mes "ウムバウムババババババ！";
-	mes "ウムバウム！";
+	mes "[Purenotan]";
+	mes "Umbaumbaugaga!";
+	mes "Umbaumbabababa!";
+	mes "Umbaumba!";
 //	emotion 6;
 	next;
-	mes "[プレネタン]";
-	mes "ウムバウムバウムバウムバウムバ";
-	mes "ウムバババババウガウ！";
-	mes "ウガウガウムババウムバウム！";
+	mes "[Purenotan]";
+	mes "Umbaumabaumbaumbaba!";
+	mes "Umbababababaugau!";
+	mes "Uguugaumbabaumbagumba!";
 //	emotion 24;
 	next;
 //	emotion 27;
@@ -1667,60 +1615,59 @@ LumWord:
 //emotion 6;end;
 }
 
-um_in.gat,144,45,5	script	ウムポコリオタン	789,{
+um_in.gat,144,45,5	script	Wambokoriotan	789,{
 	check event_umbala < 3,LumWord,-;
-	mes "[ウムポコリオタン]";
-	mes "うう……うちの家内は乱暴";
-	mes "過ぎるよ……痛い痛い。";
+	mes "[Wambokoriotan]";
+	mes "Ahhh...My wife is a real";
+	mes "hothead.  Ouch...ouch.";
 	next;
-	mes "[ウムポコリオタン]";
-	mes "ウェナタン、ベルツタン、";
-	mes "チャビバタン……ううう……ウンバラの";
-	mes "美女達に会いたいよ～。彼女達も私に";
-	mes "会いたいだろうに……うわ～ん、痛い！";
+	mes "[Wambokoriotan]";
+	mes "Yunatan, Bartsutan, Chibibatan...";
+	mes "I want Umbala's babes as much";
+	mes "as they want me...Ouch...ouch!";
 	close;
 LumWord:
-	mes "[ウムポコリオタン]";
-	mes "ウムバウムバ…………";
-	mes "ウムバウがウガウ！";
-	mes "ウムバウムウムババウムバウガガ。";
+	mes "[Wambokoriotan]";
+	mes "Umbaumbaba.....";
+	mes "Umbaugua!";
+	mes "Umbagumumbabagumbagaga!";
 //	emotion 18;
 	next;
-//	donpcevent "プレネタン::On_emo";
+//	donpcevent "Purenotan::On_emo";
 	close;
 }
 
 //==============================================================================
 //Bungee jumping!
 //==============================================================================
-//umbala.gat,140,197,0	script	#シボンヌチェック	139,0,1,{
+//umbala.gat,140,197,0	script	#Shibonochikka	139,0,1,{
 set @jumprand,rand(4);
 if (@jumprand == 1) goto L1;
 if (@jumprand == 2) goto L2;
 if (@jumprand == 3) goto L3;
-mapannounce "umbala.gat","バンジージャンプ台: " + strcharinfo(0) + " : イ～ヤッホ～～～ゥ！",8;
+mapannounce "umbala.gat","Bungy Jumping Area: " + strcharinfo(0) + " : Iyahaaaaahh!",8;
 end;
 
 L1:
-//死亡
-mapannounce "umbala.gat","バンジージャンプ台: " + strcharinfo(0) + " : ウギャアアアアアアアア～～～!!",8;
+//Dead
+mapannounce "umbala.gat","Bungy Jumping Area: " + strcharinfo(0) + " : Ukiyaaaaaaaaaa!",8;
 	percentheal -100,0;
 end;
 
 L2:
-//HP50%のダメージ*/
-mapannounce "umbala.gat","バンジージャンプ台: " + strcharinfo(0) + " : キャアアアアアアア～～～！",8;
+//HP50% Damage
+mapannounce "umbala.gat","Bungy Jumping Area: " + strcharinfo(0) + " : Kyaaaaaaaaaaa!",8;
 	percentheal -50,0;
 end;
 
 L3:
-//HP99%のダメージ
-mapannounce "umbala.gat","バンジージャンプ台: " + strcharinfo(0) + " : ウワアアアアアアア～～～！",8;
+//HP99%の Damage
+mapannounce "umbala.gat","Bungy Jumping Area: " + strcharinfo(0) + " : Waaaaaaaaaah!",8;
 	percentheal -99,0;
 end;
 }
 
-//umbala.gat,136,195,0	script	#ワープポイント	139,1,1,{
+//umbala.gat,136,195,0	script	#Warp Point	139,1,1,{
 	warp "umbala",145,166;
 	end;
 }
