@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion 1.212
 ----------------------------------------------------------------------------------------------------
+ - 2004-06-03: Added free Prontera Healer script (ENG) - Healers\Prontera\Cricket-free.txt [Yun Qi]
  - 2004-06-03: Added 550z Prontera Healer script (ENG) - Healers\Prontera\Cricket-550z.txt [Yun Qi]
  - 2004-06-03: Added "Healers" folder - Scripts\Custom\Healers [Yun Qi]
  - 2004-06-03: Added Russian Roulette script (SPN) - Casino Games\Russian_Roulette_SPN.txt [Yun Qi]
