@@ -1,7 +1,7 @@
 //========================================================================================
 // »» The Fusion Project ««
 // Copyright (c) 2004, Cobax Information Systems
-// http://fusion.cobax.net/
+// http://cobax.net/
 // ---------------------------------------------------------------------------------------
 //
 // Refiner and providers - Non Player Character Locations
@@ -2172,3 +2172,91 @@ L_MENU_2:
 	mes "enough to work on it.";
 	close;
 }
+
+payon.gat,143,165,5 script "Repairman" 88,{
+	mes "[Repairman]";
+	mes "Hey traveler! Do you want to repair";
+	mes "any items?";
+	mes "you can count on me for item";
+	mes "repairs!";
+	next;
+	menu "Actually, I do have some items...",L_Got,"None at the moment.",L_None;
+L_None:
+	mes "[Repairman]";
+	mes "Hohoho... You don't have any";
+	mes "business with me";
+	mes "if you don't have any items to repair.";
+	close;
+//L_Got:
+//	mes "[Repairman]";
+//	mes "Oh, wow. This is incredible!";
+//	mes "You must tkae very good care of your";
+//	mes "things.";
+//	mes "None of your items are damaged?";
+//	mes "if everyone is like you, I'm going";
+//	mes "to be unemployed soon!! Haha.";
+//	close;
+L_Got:
+	mes "[Repairman]";
+	mes "This service is currently not available.";
+	close;
+}
+
+prt_in.gat,62,54,2 script "Grendal" 84,{
+	mes "[Grendal]";
+	mes "Hey traveler! Do you want to repair";
+	mes "any items?";
+	mes "you can count on me for item";
+	mes "repairs!";
+	next;
+	menu "Actually, I do have some items...",L_Got,"None at the moment.",L_None;
+L_None:
+	mes "[Grendal]";
+	mes "Hohoho... You don't have any";
+	mes "business with me";
+	mes "if you don't have any items to repair.";
+	close;
+//L_Got:
+//	mes "[Grendal]";
+//	mes "Oh, wow. This is incredible!";
+//	mes "You must tkae very good care of your";
+//	mes "things.";
+//	mes "None of your items are damaged?";
+//	mes "if everyone is like you, I'm going";
+//	mes "to be unemployed soon!! Haha.";
+//	close;
+L_Got:
+	mes "[Grendal]";
+	mes "This service is currently not available.";
+	close;
+}
+
+morocc_in.gat,71,40,2 script	"Dillemat" 99,{
+	mes "[Repairman]";
+	mes "Hey traveler! Do you want to repair";
+	mes "any items?";
+	mes "you can count on me for item";
+	mes "repairs!";
+	next;
+	menu "Actually, I do have some items...",L_Got,"None at the moment.",L_None;
+L_None:
+	mes "[Repairman]";
+	mes "Hohoho... You don't have any";
+	mes "business with me";
+	mes "if you don't have any items to repair.";
+	close;
+//L_Got:
+//	mes "[Repairman]";
+//	mes "Oh, wow. This is incredible!";
+//	mes "You must tkae very good care of your";
+//	mes "things.";
+//	mes "None of your items are damaged?";
+//	mes "if everyone is like you, I'm going";
+//	mes "to be unemployed soon!! Haha.";
+//	close;
+L_Got:
+	mes "[Repairman]";
+	mes "This service is currently not available.";
+	close;
+}
+
