@@ -15,14 +15,14 @@ alberta.gat,190,173,4	script	Phelix	85,{
 		check event_zelopy == 1,EveZel,-;
 		mes "[Phelix]";
 		mes "What the hell are you doing here?";
-		mes "There is nothing you can get for free in this ship, if you want to get rewarded, Do work!!";
+		mes "There is nothing you can get for free in this ship; if you want to get rewarded, Do work!!";
 		next;
 		mes "[Phelix]";
 		mes "Hmm, however if you bring me 10 Jellopies I will consider to give you 1 potion.";
 		mes "Well, if it's too much burden on you, 3 Jellopies are affordable for 1 sweet potato.";
 		next;
 		mes "[Phelix]";
-		mes "If you have a interest in my offer, catch me later with stuffs required.";
+		mes "If you have a interest in my offer, catch me later with the stuff required.";
 		set event_zelopy = 1;
 		next;
 	EveZel:
@@ -79,7 +79,7 @@ alberta.gat,190,173,4	script	Phelix	85,{
 		mes "Come again whenever you want.";
 		close;	
 	NoJel4Red:
-		mes "Ouch! It's not enough. I said 10 Jellopies go with 1 Red Potion.. Do you understand?";
+		mes "Ouch! It's not enough. I said 10 Jellopies go with 1 Red Potion. Do you understand?";
 		close;
 	M0end:
 		close;
