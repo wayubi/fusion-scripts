@@ -101,73 +101,71 @@ prt_in.gat,63,69,4	script	"Dietrich"	84,{
 		close;
 }
 
-// This guy is replaced by an NPC shop selling said stones
-// ----------------------------------------------------------------------------------
-//prt_in.gat,56,68,4	script	"Vurewell"	86,{
-//	mes "[Vurewell]";
-//	mes "I, the Honest and Diligent Merchant";
-//	mes "sell 2 kinds of Metal for tempering";
-//	mes "weaponry of iron or steel.";
-//	mes "I have ^007777Phracon^000000 for Lv 1";
-//	mes "Weaponry... and ^007777Emveretarcon^000000 for Lv";
-//	mes "2 Weaponry. I got many, many of them... Haha.";
-//	next;
-//	menu "Phracon - 200z",-,"Emveretarcon - 1000z",L_MENU_1,"Ask wheter he has other Stones.",L_MENU_2;
-//		mes "[Vurewell]";
-//		mes "^007777Phracon^000000 are 200 Zeny each...";
-//		set @BUY_PRICE = 200;
-//		set @BUY_ID = 1010;
-//		goto L_START_1;
-//	L_MENU_1:
-//		mes "[Vurewell]";
-// 		mes "^007777Emveretarcon^000000 are 1000z each...";
-//		set @BUY_PRICE = 1000;
-//		set @BUY_ID = 1011;
-//		goto L_START_1;
-//	L_MENU_2:
-//		mes "[Vurewell]";
-//		mes "Ahhh!!! You need the Metal for";
-//		mes "higher Leveled Weapons.";
-//		mes "But you know, Oridecon or Elunim is";
-//		mes "very very rare... so difficult to find...";
-//		close;
-//	L_START_1:
-//		mes "How many do you wish to Buy? If you";
-//		mes "quit, please note the number as 'o'.";
-//		next;
-//		input @BUY_NUM;
-//		check @BUY_NUM <= 500,-,L_START_5;
-//		check @BUY_NUM == 0,-,L_START_2;
-//		mes "[Vurewell]";
-//		mes "Deal has canceled.";
-//		close;
-//	L_START_2:
-//		set @BUY_ZENY = @BUY_NUM;
-//		set @BUY_ZENY *= @BUY_PRICE;
-//		check Zeny >= @BUY_ZENY,-,L_START_3;
-//		checkadditem @BUY_ID,@BUY_NUM,-,L_START_4;
-//		set Zeny -= @BUY_ZENY,0;
-//		additem @BUY_ID,@BUY_NUM;
-//		mes "[Vurewell]";
-//		mes "Here you are, thank you for shopping at my shop.";
-//		close;
-//	L_START_3:
-//		mes "[Vurewell]";
-///		mes "Err...you don't have enough Money now.";
-//		mes "Well, I am sorry but that's Below cost.";
-//		close;
-//	L_START_4:
-//		mes "[Vurewell]";
-//		mes "You can't wear that many, don't you think?";
-//		mes "Reorder your inventory before retrying.";
-//		close;
-//	L_START_5:
-//		mes "[Vurewell]";
-//		mes "You can buy 500 or less.";
-//		next;
-//		mes "[Vurewell]";
-//		goto L_START_1;
-//}
+prt_in.gat,56,68,4	script	"Vurewell"	86,{
+	mes "[Vurewell]";
+	mes "I, the Honest and Diligent Merchant";
+	mes "sell 2 kinds of Metal for tempering";
+	mes "weaponry of iron or steel.";
+	mes "I have ^007777Phracon^000000 for Lv 1";
+	mes "Weaponry... and ^007777Emveretarcon^000000 for Lv";
+	mes "2 Weaponry. I got many, many of them... Haha.";
+	next;
+	menu "Phracon - 200z",-,"Emveretarcon - 1000z",L_MENU_1,"Ask wheter he has other Stones.",L_MENU_2;
+		mes "[Vurewell]";
+		mes "^007777Phracon^000000 are 200 Zeny each...";
+		set @BUY_PRICE = 200;
+		set @BUY_ID = 1010;
+		goto L_START_1;
+	L_MENU_1:
+		mes "[Vurewell]";
+ 		mes "^007777Emveretarcon^000000 are 1000z each...";
+		set @BUY_PRICE = 1000;
+		set @BUY_ID = 1011;
+		goto L_START_1;
+	L_MENU_2:
+		mes "[Vurewell]";
+		mes "Ahhh!!! You need the Metal for";
+		mes "higher Leveled Weapons.";
+		mes "But you know, Oridecon or Elunim is";
+		mes "very very rare... so difficult to find...";
+		close;
+	L_START_1:
+		mes "How many do you wish to Buy? If you";
+		mes "quit, please note the number as 'o'.";
+		next;
+		input @BUY_NUM;
+		check @BUY_NUM <= 500,-,L_START_5;
+		check @BUY_NUM == 0,-,L_START_2;
+		mes "[Vurewell]";
+		mes "Deal has canceled.";
+		close;
+	L_START_2:
+		set @BUY_ZENY = @BUY_NUM;
+		set @BUY_ZENY *= @BUY_PRICE;
+		check Zeny >= @BUY_ZENY,-,L_START_3;
+		checkadditem @BUY_ID,@BUY_NUM,-,L_START_4;
+		set Zeny -= @BUY_ZENY,0;
+		additem @BUY_ID,@BUY_NUM;
+		mes "[Vurewell]";
+		mes "Here you are, thank you for shopping at my shop.";
+		close;
+	L_START_3:
+		mes "[Vurewell]";
+		mes "Err...you don't have enough Money now.";
+		mes "Well, I am sorry but that's Below cost.";
+		close;
+	L_START_4:
+		mes "[Vurewell]";
+		mes "You can't wear that many, don't you think?";
+		mes "Reorder your inventory before retrying.";
+		close;
+	L_START_5:
+		mes "[Vurewell]";
+		mes "You can buy 500 or less.";
+		next;
+		mes "[Vurewell]";
+		goto L_START_1;
+}
 
 prt_in.gat,63,60,4	script	"Hollgrehenn"	85,{
 		lockitem 1;
@@ -528,73 +526,71 @@ morocc_in.gat,72,32,4	script	"Abdul"	99,{
 		close;
 }
 
-// This guy is replaced by an NPC shop selling said stones
-// ----------------------------------------------------------------------------------
-//morocc_in.gat,63,32,4	script	"Sade"	99,{
-//	mes "[Sade]";
-//	mes "I, the Honest and Diligent Merchant";
-//	mes "sell 2 kinds of Metal for tempering";
-//	mes "weaponry of iron or steel.";
-//	mes "I have ^007777Phracon^000000 for Lv 1";
-//	mes "Weaponry... and ^007777Emveretarcon^000000 for Lv";
-//	mes "2 Weaponry. I got many, many of them... Haha.";
-//	next;
-//	menu "Phracon - 200z",-,"Emveretarcon - 1000z",L_MENU_1,"Ask wheter he has other Stones.",L_MENU_2;
-//		mes "[Sade]";
-//		mes "^007777Phracon^000000 are 200 Zeny each...";
-//		set @BUY_PRICE = 200;
-//		set @BUY_ID = 1010;
-//		goto L_START_1;
-//	L_MENU_1:
-//		mes "[Sade]";
-// 		mes "^007777Emveretarcon^000000 are 1000z each...";
-//		set @BUY_PRICE = 1000;
-//		set @BUY_ID = 1011;
-//		goto L_START_1;
-//	L_MENU_2:
-//		mes "[Sade]";
-//		mes "Ahhh!!! You need the Metal for";
-//		mes "higher Leveled Weapons.";
-//		mes "But you know, Oridecon or Elunim is";
-//		mes "very very rare... so difficult to find...";
-//		close;
-//	L_START_1:
-//		mes "How many do you wish to Buy? If you";
-//		mes "quit, please note the number as 'o'.";
-//		next;
-//		input @BUY_NUM;
-//		check @BUY_NUM <= 500,-,L_START_5;
-//		check @BUY_NUM == 0,-,L_START_2;
-//		mes "[Sade]";
-//		mes "Deal has canceled.";
-//		close;
-//	L_START_2:
-//		set @BUY_ZENY = @BUY_NUM;
-//		set @BUY_ZENY *= @BUY_PRICE;
-//		check Zeny >= @BUY_ZENY,-,L_START_3;
-//		checkadditem @BUY_ID,@BUY_NUM,-,L_START_4;
-//		set Zeny -= @BUY_ZENY,0;
-//		additem @BUY_ID,@BUY_NUM;
-//		mes "[Sade]";
-//		mes "Here you are, thank you for shopping at my shop.";
-//		close;
-//	L_START_3:
-//		mes "[Sade]";
-///		mes "Err...you don't have enough Money now.";
-//		mes "Well, I am sorry but that's Below cost.";
-//		close;
-//	L_START_4:
-//		mes "[Sade]";
-//		mes "You can't wear that many, don't you think?";
-//		mes "Reorder your inventory before retrying.";
-//		close;
-//	L_START_5:
-//		mes "[Sade]";
-//		mes "You can buy 500 or less.";
-//		next;
-//		mes "[Sade]";
-//		goto L_START_1;
-//}
+morocc_in.gat,63,32,4	script	"Sade"	99,{
+	mes "[Sade]";
+	mes "I, the Honest and Diligent Merchant";
+	mes "sell 2 kinds of Metal for tempering";
+	mes "weaponry of iron or steel.";
+	mes "I have ^007777Phracon^000000 for Lv 1";
+	mes "Weaponry... and ^007777Emveretarcon^000000 for Lv";
+	mes "2 Weaponry. I got many, many of them... Haha.";
+	next;
+	menu "Phracon - 200z",-,"Emveretarcon - 1000z",L_MENU_1,"Ask wheter he has other Stones.",L_MENU_2;
+		mes "[Sade]";
+		mes "^007777Phracon^000000 are 200 Zeny each...";
+		set @BUY_PRICE = 200;
+		set @BUY_ID = 1010;
+		goto L_START_1;
+	L_MENU_1:
+		mes "[Sade]";
+ 		mes "^007777Emveretarcon^000000 are 1000z each...";
+		set @BUY_PRICE = 1000;
+		set @BUY_ID = 1011;
+		goto L_START_1;
+	L_MENU_2:
+		mes "[Sade]";
+		mes "Ahhh!!! You need the Metal for";
+		mes "higher Leveled Weapons.";
+		mes "But you know, Oridecon or Elunim is";
+		mes "very very rare... so difficult to find...";
+		close;
+	L_START_1:
+		mes "How many do you wish to Buy? If you";
+		mes "quit, please note the number as 'o'.";
+		next;
+		input @BUY_NUM;
+		check @BUY_NUM <= 500,-,L_START_5;
+		check @BUY_NUM == 0,-,L_START_2;
+		mes "[Sade]";
+		mes "Deal has canceled.";
+		close;
+	L_START_2:
+		set @BUY_ZENY = @BUY_NUM;
+		set @BUY_ZENY *= @BUY_PRICE;
+		check Zeny >= @BUY_ZENY,-,L_START_3;
+		checkadditem @BUY_ID,@BUY_NUM,-,L_START_4;
+		set Zeny -= @BUY_ZENY,0;
+		additem @BUY_ID,@BUY_NUM;
+		mes "[Sade]";
+		mes "Here you are, thank you for shopping at my shop.";
+		close;
+	L_START_3:
+		mes "[Sade]";
+		mes "Err...you don't have enough Money now.";
+		mes "Well, I am sorry but that's Below cost.";
+		close;
+	L_START_4:
+		mes "[Sade]";
+		mes "You can't wear that many, don't you think?";
+		mes "Reorder your inventory before retrying.";
+		close;
+	L_START_5:
+		mes "[Sade]";
+		mes "You can buy 500 or less.";
+		next;
+		mes "[Sade]";
+		goto L_START_1;
+}
 
 morocc_in.gat,73,38,4	script	"Aragham"	99,{
 		lockitem 1;
@@ -956,73 +952,71 @@ payon_in01.gat,81,31,4	script	"Hakhim"	88,{
 		close;
 }
 
-// This guy is replaced by an NPC shop selling said stones
-// ----------------------------------------------------------------------------------
-//payon_in01.gat,95,19,4	script	"Begnahd"	88,{
-//	mes "[Begnahd]";
-//	mes "I, the Honest and Diligent Merchant";
-//	mes "sell 2 kinds of Metal for tempering";
-//	mes "weaponry of iron or steel.";
-//	mes "I have ^007777Phracon^000000 for Lv 1";
-//	mes "Weaponry... and ^007777Emveretarcon^000000 for Lv";
-//	mes "2 Weaponry. I got many, many of them... Haha.";
-//	next;
-//	menu "Phracon - 200z",-,"Emveretarcon - 1000z",L_MENU_1,"Ask wheter he has other Stones.",L_MENU_2;
-//		mes "[Begnahd]";
-//		mes "^007777Phracon^000000 are 200 Zeny each...";
-//		set @BUY_PRICE = 200;
-//		set @BUY_ID = 1010;
-//		goto L_START_1;
-//	L_MENU_1:
-//		mes "[Begnahd]";
-// 		mes "^007777Emveretarcon^000000 are 1000z each...";
-//		set @BUY_PRICE = 1000;
-//		set @BUY_ID = 1011;
-//		goto L_START_1;
-//	L_MENU_2:
-//		mes "[Begnahd]";
-//		mes "Ahhh!!! You need the Metal for";
-//		mes "higher Leveled Weapons.";
-//		mes "But you know, Oridecon or Elunim is";
-//		mes "very very rare... so difficult to find...";
-//		close;
-//	L_START_1:
-//		mes "How many do you wish to Buy? If you";
-//		mes "quit, please note the number as 'o'.";
-//		next;
-//		input @BUY_NUM;
-//		check @BUY_NUM <= 500,-,L_START_5;
-//		check @BUY_NUM == 0,-,L_START_2;
-//		mes "[Begnahd]";
-//		mes "Deal has canceled.";
-//		close;
-//	L_START_2:
-//		set @BUY_ZENY = @BUY_NUM;
-//		set @BUY_ZENY *= @BUY_PRICE;
-//		check Zeny >= @BUY_ZENY,-,L_START_3;
-//		checkadditem @BUY_ID,@BUY_NUM,-,L_START_4;
-//		set Zeny -= @BUY_ZENY,0;
-//		additem @BUY_ID,@BUY_NUM;
-//		mes "[Begnahd]";
-//		mes "Here you are, thank you for shopping at my shop.";
-//		close;
-//	L_START_3:
-//		mes "[Begnahd]";
-///		mes "Err...you don't have enough Money now.";
-//		mes "Well, I am sorry but that's Below cost.";
-//		close;
-//	L_START_4:
-//		mes "[Begnahd]";
-//		mes "You can't wear that many, don't you think?";
-//		mes "Reorder your inventory before retrying.";
-//		close;
-//	L_START_5:
-//		mes "[Begnahd]";
-//		mes "You can buy 500 or less.";
-//		next;
-//		mes "[Begnahd]";
-//		goto L_START_1;
-//}
+payon_in01.gat,95,19,4	script	"Begnahd"	88,{
+	mes "[Begnahd]";
+	mes "I, the Honest and Diligent Merchant";
+	mes "sell 2 kinds of Metal for tempering";
+	mes "weaponry of iron or steel.";
+	mes "I have ^007777Phracon^000000 for Lv 1";
+	mes "Weaponry... and ^007777Emveretarcon^000000 for Lv";
+	mes "2 Weaponry. I got many, many of them... Haha.";
+	next;
+	menu "Phracon - 200z",-,"Emveretarcon - 1000z",L_MENU_1,"Ask wheter he has other Stones.",L_MENU_2;
+		mes "[Begnahd]";
+		mes "^007777Phracon^000000 are 200 Zeny each...";
+		set @BUY_PRICE = 200;
+		set @BUY_ID = 1010;
+		goto L_START_1;
+	L_MENU_1:
+		mes "[Begnahd]";
+ 		mes "^007777Emveretarcon^000000 are 1000z each...";
+		set @BUY_PRICE = 1000;
+		set @BUY_ID = 1011;
+		goto L_START_1;
+	L_MENU_2:
+		mes "[Begnahd]";
+		mes "Ahhh!!! You need the Metal for";
+		mes "higher Leveled Weapons.";
+		mes "But you know, Oridecon or Elunim is";
+		mes "very very rare... so difficult to find...";
+		close;
+	L_START_1:
+		mes "How many do you wish to Buy? If you";
+		mes "quit, please note the number as 'o'.";
+		next;
+		input @BUY_NUM;
+		check @BUY_NUM <= 500,-,L_START_5;
+		check @BUY_NUM == 0,-,L_START_2;
+		mes "[Begnahd]";
+		mes "Deal has canceled.";
+		close;
+	L_START_2:
+		set @BUY_ZENY = @BUY_NUM;
+		set @BUY_ZENY *= @BUY_PRICE;
+		check Zeny >= @BUY_ZENY,-,L_START_3;
+		checkadditem @BUY_ID,@BUY_NUM,-,L_START_4;
+		set Zeny -= @BUY_ZENY,0;
+		additem @BUY_ID,@BUY_NUM;
+		mes "[Begnahd]";
+		mes "Here you are, thank you for shopping at my shop.";
+		close;
+	L_START_3:
+		mes "[Begnahd]";
+		mes "Err...you don't have enough Money now.";
+		mes "Well, I am sorry but that's Below cost.";
+		close;
+	L_START_4:
+		mes "[Begnahd]";
+		mes "You can't wear that many, don't you think?";
+		mes "Reorder your inventory before retrying.";
+		close;
+	L_START_5:
+		mes "[Begnahd]";
+		mes "You can buy 500 or less.";
+		next;
+		mes "[Begnahd]";
+		goto L_START_1;
+}
 
 payon_in01.gat,90,31,4	script	"Antonio"	88,{
 		lockitem 1;
@@ -1383,73 +1377,71 @@ alberta_in.gat,21,63,5	script	"Xenophon"	84,{
 		close;
 }
 
-// This guy is replaced by an NPC shop selling said stones
-// ----------------------------------------------------------------------------------
-//alberta_in.gat,13,71,4	script	"Kahlamanlith"	86,{
-//	mes "[Kahlamanlith]";
-//	mes "I, the Honest and Diligent Merchant";
-//	mes "sell 2 kinds of Metal for tempering";
-//	mes "weaponry of iron or steel.";
-//	mes "I have ^007777Phracon^000000 for Lv 1";
-//	mes "Weaponry... and ^007777Emveretarcon^000000 for Lv";
-//	mes "2 Weaponry. I got many, many of them... Haha.";
-//	next;
-//	menu "Phracon - 200z",-,"Emveretarcon - 1000z",L_MENU_1,"Ask wheter he has other Stones.",L_MENU_2;
-//		mes "[Kahlamanlith]";
-//		mes "^007777Phracon^000000 are 200 Zeny each...";
-//		set @BUY_PRICE = 200;
-//		set @BUY_ID = 1010;
-//		goto L_START_1;
-//	L_MENU_1:
-//		mes "[Kahlamanlith]";
-// 		mes "^007777Emveretarcon^000000 are 1000z each...";
-//		set @BUY_PRICE = 1000;
-//		set @BUY_ID = 1011;
-//		goto L_START_1;
-//	L_MENU_2:
-//		mes "[Kahlamanlith]";
-//		mes "Ahhh!!! You need the Metal for";
-//		mes "higher Leveled Weapons.";
-//		mes "But you know, Oridecon or Elunim is";
-//		mes "very very rare... so difficult to find...";
-//		close;
-//	L_START_1:
-//		mes "How many do you wish to Buy? If you";
-//		mes "quit, please note the number as 'o'.";
-//		next;
-//		input @BUY_NUM;
-//		check @BUY_NUM <= 500,-,L_START_5;
-//		check @BUY_NUM == 0,-,L_START_2;
-//		mes "[Kahlamanlith]";
-//		mes "Deal has canceled.";
-//		close;
-//	L_START_2:
-//		set @BUY_ZENY = @BUY_NUM;
-//		set @BUY_ZENY *= @BUY_PRICE;
-//		check Zeny >= @BUY_ZENY,-,L_START_3;
-//		checkadditem @BUY_ID,@BUY_NUM,-,L_START_4;
-//		set Zeny -= @BUY_ZENY,0;
-//		additem @BUY_ID,@BUY_NUM;
-//		mes "[Kahlamanlith]";
-//		mes "Here you are, thank you for shopping at my shop.";
-//		close;
-//	L_START_3:
-//		mes "[Kahlamanlith]";
-//		mes "Err...you don't have enough Money now.";
-//		mes "Well, I am sorry but that's Below cost.";
-//		close;
-//	L_START_4:
-//		mes "[Kahlamanlith]";
-//		mes "You can't wear that many, don't you think?";
-//		mes "Reorder your inventory before retrying.";
-//		close;
-//	L_START_5:
-//		mes "[Kahlamanlith]";
-//		mes "You can buy 500 or less.";
-//		next;
-//		mes "[Kahlamanlith]";
-//		goto L_START_1;
-//}
+alberta_in.gat,13,71,4	script	"Kahlamanlith"	86,{
+	mes "[Kahlamanlith]";
+	mes "I, the Honest and Diligent Merchant";
+	mes "sell 2 kinds of Metal for tempering";
+	mes "weaponry of iron or steel.";
+	mes "I have ^007777Phracon^000000 for Lv 1";
+	mes "Weaponry... and ^007777Emveretarcon^000000 for Lv";
+	mes "2 Weaponry. I got many, many of them... Haha.";
+	next;
+	menu "Phracon - 200z",-,"Emveretarcon - 1000z",L_MENU_1,"Ask wheter he has other Stones.",L_MENU_2;
+		mes "[Kahlamanlith]";
+		mes "^007777Phracon^000000 are 200 Zeny each...";
+		set @BUY_PRICE = 200;
+		set @BUY_ID = 1010;
+		goto L_START_1;
+	L_MENU_1:
+		mes "[Kahlamanlith]";
+ 		mes "^007777Emveretarcon^000000 are 1000z each...";
+		set @BUY_PRICE = 1000;
+		set @BUY_ID = 1011;
+		goto L_START_1;
+	L_MENU_2:
+		mes "[Kahlamanlith]";
+		mes "Ahhh!!! You need the Metal for";
+		mes "higher Leveled Weapons.";
+		mes "But you know, Oridecon or Elunim is";
+		mes "very very rare... so difficult to find...";
+		close;
+	L_START_1:
+		mes "How many do you wish to Buy? If you";
+		mes "quit, please note the number as 'o'.";
+		next;
+		input @BUY_NUM;
+		check @BUY_NUM <= 500,-,L_START_5;
+		check @BUY_NUM == 0,-,L_START_2;
+		mes "[Kahlamanlith]";
+		mes "Deal has canceled.";
+		close;
+	L_START_2:
+		set @BUY_ZENY = @BUY_NUM;
+		set @BUY_ZENY *= @BUY_PRICE;
+		check Zeny >= @BUY_ZENY,-,L_START_3;
+		checkadditem @BUY_ID,@BUY_NUM,-,L_START_4;
+		set Zeny -= @BUY_ZENY,0;
+		additem @BUY_ID,@BUY_NUM;
+		mes "[Kahlamanlith]";
+		mes "Here you are, thank you for shopping at my shop.";
+		close;
+	L_START_3:
+		mes "[Kahlamanlith]";
+		mes "Err...you don't have enough Money now.";
+		mes "Well, I am sorry but that's Below cost.";
+		close;
+	L_START_4:
+		mes "[Kahlamanlith]";
+		mes "You can't wear that many, don't you think?";
+		mes "Reorder your inventory before retrying.";
+		close;
+	L_START_5:
+		mes "[Kahlamanlith]";
+		mes "You can buy 500 or less.";
+		next;
+		mes "[Kahlamanlith]";
+		goto L_START_1;
+}
 
 alberta_in.gat,28,58,4	script	"Fredrik"	85,{
 		lockitem 1;
