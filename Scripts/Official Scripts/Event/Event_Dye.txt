@@ -583,7 +583,7 @@ DONE:
 	close;
 END:
 	close;
-
+}
 
 prt_in.gat,284,168,3	script	"Jineda inlay full"	55,{
 		mes "[Jineda]";
