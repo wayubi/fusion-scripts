@@ -258,7 +258,7 @@ gef_tower.gat,42,86,0	warp	warp0246	1,1,gef_tower.gat,38,157
 gef_tower.gat,44,36,0	warp	warp0247	1,1,gef_tower.gat,106,162
 gef_tower.gat,52,135,0	warp	warp0248	2,1,gef_tower.gat,158,169
 gef_tower.gat,52,181,0	warp	warp0249	4,1,geffen.gat,120,110
-gef_tower.gat,60,34,0	warp	warp0250	1,1,gef_tower.gat,60,90
+gef_tower.gat,60,34,0	warp	warp0250	1,1,gef_tower.gat,62,90
 gef_tower.gat,62,87,0	warp	warp0251	1,1,gef_tower.gat,60,30
 gef_tower.gat,66,156,0	warp	warp0252	2,1,gef_tower.gat,42,90
 gef_tower.gat,106,69,0	warp	warp0253	1,1,gef_tower.gat,106,112
@@ -1980,4 +1980,3 @@ yuno_in05.gat,196,194,0	warp	warp1958	1,1,yuno_in02.gat,89,13
 yuno_in05.gat,153,141,0	warp	warp1959	1,1,yuno_in05.gat,192,102
 yuno_in05.gat,31,167,0	warp	warp1960	1,1,yuno_in05.gat,50,84
 yuno_in05.gat,50,88,0	warp	warp1961	1,1,yuno_in02.gat,89,13
-
