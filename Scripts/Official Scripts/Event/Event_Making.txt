@@ -613,78 +613,79 @@ payon_in02.gat,25,71,4	script	酸素マスク青年	86,{
 		close;
 }
 
-//----------------------------------
-// ヘッドフォン
-//----------------------------------
+//-----------------------------------------------
+// Eric the Headphone Maker
+// Rewritten to match iRO
+// Completion text translated
+// Gramatically corrected as best as possible.
+//-----------------------------------------------
 
-geffen_in.gat,30,71,4	script	ゼンハイザ	83,{
-	mes "[ゼンハイザ]";
-	mes "うちの祖父の発明の話しを聞いていただけませんか？";
+geffen_in.gat,30,71,4	script	Eric	83,{
+	mes "[Eric]";
+	mes "Please listen to my story of my blessed Grandfather.";
 	next;
-	menu "対話する",-,"その発明品に必要な材料を聞く",L_MENU_1,"製作を頼む",L_MENU_2,"やめる",L_MENU_3;
-		mes "[ゼンハイザ]";
-		mes "何年前亡くなった私の祖父は";
-		mes "私にとっては特別な存在でした。";
-		mes "いつも仕事で忙しい父親より、";
-		mes "私のことをいつも心配してくれたのです。";
+	menu "Talk",-,"Ask about the items needed",L_MENU_1,"Maufacture",L_MENU_2,"Quit",L_MENU_3;
+		mes "[Eric]";
+		mes "My grandfather who passed away a few years ago was special to me";
+		mes "He always stayed with me, taking care of me.";
+		mes "Even better than my busy working old man";
 		next;
-		mes "[ゼンハイザ]";
-		mes "それで祖父の書斎はいつも私の遊び場でした。";
-		mes "私は祖父と一緒に本を読んだり、会話したりして、";
-		mes "世の中のいろんな知識を学ぶことができました。";
+		mes "[Eric]";
+		mes "To me, his library was always like a 'Fairyland'.";
+		mes "I spent most of the time in his library";
 		next;
-		mes "[ゼンハイザ]";
-		mes "祖父が亡くなってからも私は";
-		mes "祖父の追憶を思い出したら";
-		mes "祖父の書斎で本を読んだりしたのです。";
+		mes "[Eric]";
+		mes "I learned a lot of things from his books in the library.";
+		mes "Grandfather was interested in Alchemy and Music.";
+		mes "His library was filled with many mysterious old books.";
 		next;
-		mes "[ゼンハイザ]";
-		mes "ある日…";
-		mes "いつものように祖父の書斎で本を読んでいる時、";
-		mes "そこで珍しい設計図を発見したのです。";
+		mes "[Eric]";
+		mes "One day...";
+		mes "As usual, I went to the library,";
+		mes "And I discovered an interesting design drawing.";
 		next;
-		mes "[ゼンハイザ]";
-		mes "設計図の内容は";
-		mes "耳にすれば、蓄音機の音が細い線を通して";
-		mes "聞こえる素晴らしい道具でした。";
+		mes "[Eric]";
+		mes "It showed some instrument which looked as ear muffs,";
+		mes "When worn on the head, sound as music or a whisper could";
+		mes "transmitted to the ears through a thin wire.";
 		next;
-		mes "[ゼンハイザ]";
-		mes "私は…亡くなった祖父が設計した、";
-		mes "この発明品を完成させたいと思ったのです。";
-		mes "そして、他の錬金術師に設計図をみせましたが、";
-		mes "みんな判らないという答えでしたので。";
+		mes "[Eric]";
+		mes "I guess...that it is my grandfather's work.";
+		mes "That's why I made up my mind to produce that item.";
+		mes "For that, I met a few Alchemists and asked them to produce it.";
+		mes "They rejected my offer because they couldn't afford to produce it due to the lack of knowledge.";
 		next;
-		mes "[ゼンハイザ]";
-		mes "仕方なく自ら作ろうと思ったのです。";
-		mes "数年間の勉強の末…";
-		mes "やっとあの設計図を理解し、構造がわかってきたのです。";
-		mes "しかし…それを作るための材料を集めるのは本当に難しい事です。";
+		mes "[Eric]";
+		mes "After all I thought I'd gotta make it myself...";
+		mes "So I researched for a few years...";
+		mes "Now that I have full knowledge related to that thing.";
+		mes "But!!!...I couldn't gather articles to make it.";
 		next;
-		mes "[ゼンハイザ]";
-		mes "その材料さえあれば今すぐでも、";
-		mes "祖父の遺産を作ることができます。";
-		mes "もし…関心があれば、";
-		mes "私にあの材料を集めて来てください。";
+		mes "[Eric]";
+		mes "If I could get those articles.";
+		mes "I could produce it right away.";
+		mes "If...you have any interest in my idea.";
+		mes "Could you bring them to me?";
 		next;
-		mes "[ゼンハイザ]";
-		mes "私は祖父の望みだった<それ>を";
-		mes "完成させたいだけなのです。";
-		mes "材料を持って来てくれれば、完成された物は貴方に差し上げます.その材料は貴方の物ですし…";
+		mes "[Eric]";
+		mes "Only I wanna do is...";
+		mes "Achieve my goal to remember what my grandfather had done.";
+		mes "If oyu ask me to carry it along with you, i wouldn't mind.";
 		close;
 	L_MENU_1:
-		mes "[ゼンハイザ]";
-		mes "^3355FF鋼鉄^000000 ^FF555540^000000 個";
-		mes "^3355FFオリデオコン^000000 ^FF55551^000000 個";
-		mes "^3355FFアルコール^000000 ^FF55551^000000 個";
-		mes "^3355FF石炭^000000 ^FF55551^000000 個";
-		mes "です。";
+		mes "[Eric]";
+		mes "^3355FFSteel^000000 ^FF555540^000000 個";
+		mes "^3355FFOridecon^000000 ^FF55551^000000 個";
+		mes "^3355FFAlcohol^000000 ^FF55551^000000 個";
+		mes "^3355FFCoal^000000 ^FF55551^000000 個";
+		mes "These are the items needed for my grandfather's masterpiece.";
 		close;
 	L_MENU_2:
 		checkitem 999,40,-,L_SUB_1;
 		checkitem 984,1,-,L_SUB_1;
 		checkitem 970,1,-,L_SUB_1;
 		checkitem 1003,1,-,L_SUB_1;
-		mes "[ゼンハイザ]";
+		mes "[Eric]";
 		mes "（トン！トン！トン！）";
 		delitem 999,40;
 		delitem 984,1;
@@ -692,23 +693,23 @@ geffen_in.gat,30,71,4	script	ゼンハイザ	83,{
 		delitem 1003,1;
 		next;
 		additem 5001,1;
-		mes "[ゼンハイザ]";
-		mes "ありがとうございました！";
-		mes "おかげさまで祖父の遺産が完成できました！";
-		mes "これを祖父に見せたかったんです…";
+		mes "[Eric]";
+		mes "Thank you!";
+		mes "My grandfather's item has been completed successfully!";
+		mes "I wanted to show grandfather this.";
 		next;
-		mes "[ゼンハイザ]";
-		mes "前に言ったようにこれは受け取ってください。";
-		mes "私はこれが作れた事が証明しただけでも充分うれしいです。";
+		mes "[Eric]";
+		mes "This should be do what it is believed to.";
+		mes "As for me, I am glad enough that I have proven that this could be made.";
 		close;
 	L_SUB_1:
-		mes "[ゼンハイザ]";
-		mes "ありがとう。…ですが、これではちょっと足りません。";
-		mes "もうちょっとあればできそうですが…";
+		mes "[Eric]";
+		mes "Thank you for trying to help me...but you didn't bring all the items I need.";
+		mes "I think you will make it soon though...";
 		close;
 	L_MENU_3:
-		mes "[ゼンハイザ]";
-		mes "さよなら。";
+		mes "[Eric]";
+		mes "Farewell.";
 		close;
 }
 
