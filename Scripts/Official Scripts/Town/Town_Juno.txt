@@ -235,18 +235,26 @@ yuno.gat,305,207,4	script	"Sage Syklah"	735,{
 	mes "creature."
 	close;
 }
-yuno_in03.gat,25,39,4	script	"Meto"	121,{
-	mes "[Meto]";
-	mes "today, tomorrow, even the next day i'll continue researching....";
-	mes "kak kak kak , my whole life will be dedicated to making..";
+yuno_in03.gat,26,39,4	script	"Metto"	709,{
+	mes "[Metto]";
+	mes "in the Lab today,in the Lab";
+	mes "Tommorrow! Everyday is filled with";
+	mes "research! Even if it takes my";
+	mes "entire life, I will not give up";
+	mes "until I have made a new Juno...";
 	Next;
-	mes "[Meto]";
-	mes "NEW YUNO, my own kingdom.";
-	mes "to do so, first, i'll have to find out why this place is floating in the air,";
-	mes "nd have to research..... if i do so, making my own kingdom isn't just a dream!";
+	mes "[Metto]";
+	mes "A new Juno in which all will bask";
+	mes "in the light of my genius!!!";
+	mes "If I can just harness the power";
+	mes "of flight...";
+	mes "I know I can do it!";
 	Next;
-	mes "[Meto]";
-	mes "Wagen thinks my research means nothing, but I, protected by the god, won't fall for such false belief!";
+	mes "[Metto]";
+	mes "^ff0000Wagen^000000 said that my ideas was crazy";
+	mes "and impossible. But I am no fool,";
+	mes "I won't be swayed by his words of";
+	mes "mockery!";
 	close;
 }
 yuno_in03.gat,30,102,4	script	"Lucius Kelsus"	121,{
@@ -293,42 +301,52 @@ yuno_in03.gat,169,180,4	script	"Hermes Tris"	86,{
 	mes "Just walking together would tell you how they can handle situations well. ";
 	close;
 }
-yuno_in03.gat,62,176,4	script	"Lailas Sapien"	123,{
-	mes "[Lailas Sapien]";
-	mes "Welcome.  I'm a history professor";
-	Next;
-	mes "[Lailas Sapien]";
-	mes "This world is created upon a long history piled up for a long long time.";
-	mes "Therefore, if you know the past, that menas you know the present and even the future. ";
-   	Next;
-   	mes "[Lailas Sapien]";
-   	mes "You should look into your past as well.  Then you will see the way to your future";
+yuno_in03.gat,62,176,4	script	"History Professor"	109,{
+	mes "[Saphien Layless]";
+	mes "I am not sure if you have business";
+	mes "with me, but please come back";
+	mes "later.";
+	mes "I have some issues to think";
+   	mes "about..";
    	close;
 }
-yuno.gat,263,320,4	script	"Yuno Soldier"	105,{
-	mes "[Yuno Soldier]";
+yuno.gat,263,320,4	script	"Juno Soldier"	105,{
+	mes "[Juno Soldier]";
 	mes "Welcome to Juno,the city of";
 	mes "noble-mindedness.";
 	Next;
-	mes "[Yuno Soldier]";
-	mes "There is a holy shield for Crusaders called 'The Messenger of the God'.";
+	mes "[Juno Soldier]";
+	mes "There is a holy shield named";
+	mes "'Sacred Mission'which can only be";
+	mes "used by Crusaders.";
+	mes "Its a long and narrow shield,";
+	mes "with an angel wing engraved in the";
+	mes "center of the front side.";
 	Next;
-	mes "[Yuno Soldier]";
-	mes "It looks like a long shield with a angel's wing image on its center.";
-	mes " It is especially strong against undead or demons.";
+	mes "[Juno Soldier]";
+	mes "It's especially very powerful";
+	mes "against";
+	mes "undead or devil monsters.";
 	close;
 }
-yuno.gat,227,292,4	script	"Yuno Soldier"	105,{
-	mes "[Yuno Soldier]";
+yuno.gat,227,292,4	script	"Juno Soldier"	105,{
+	mes "[Juno Soldier]";
 	mes "Welcome to Juno,the city of";
 	mes "noble-mindedness.";
 	Next;
-	mes "[Yuno Soldier]";
-	mes "Around the City of Juno, there is fallen angel that fakes himself as the real angel, named 'Fake Angel'.";
+	mes "[Juno Soldier]";
+	mes "Near Juno, there exists a fallen";
+	mes "angel named as 'False Angel'";
+	mes "that pretends to be an innocent";
+	mes "angel.";
+	mes "It pretends to bless adventurers";
+	mes "and then stabs them in the back";
+	mes "without warning.";
 	Next;
-	mes "[Yuno Soldier]";
-	mes "This one fakes itself as the real angel, and acts as if it's blessing travelers, and attacks them.";
-	mes "It looks all beautiful, so it's bad if you fall for its appearance.";
+	mes "[Juno Soldier]";
+	mes "Do not be attracted by its";
+	mes "beautiful appearance.";
+	mes "otherwise, you will be in trouble.";
 	close;
 }
 yuno.gat,150,283,4	script	"Juno Soldier"	105,{
@@ -360,17 +378,28 @@ yuno.gat,150,283,4	script	"Juno Soldier"	105,{
 	mes "you might get a lot of damage on yourself and even get your armor and weapon broken.";
 	close;
 }
-yuno.gat,165,283,4	script	"Yuno Soldier"	105,{
-	mes "[Yuno Soldier]";
+yuno.gat,165,283,4	script	"Juno Soldier"	105,{
+	mes "[Juno Soldier]";
 	mes "Welcome to Juno,the city of";
 	mes "noble-mindedness.";
 	Next;
-	mes "[Yuno Soldier]";
+	mes "[Juno Soldier]";
 	mes "'Geographer'";
-	mes "Thus, even if it's far away, you can't think less of it.";
+	mes "That monster looks like a flower";
+	mes "actively blooming out of the";
+	mes "ground.";
+	mes "Strangely, it can extend its body a";
+	mes "long distance.";
+	mes "so it is pretty dangerous, even if";
+	mes "you're far away from it.";
 	Next;
-	mes "[Yuno Soldier]";
-	mes "it got such name 'cause the passing-by geography scholar got eaten away during his research.";
+	mes "[Juno Soldier]";
+	mes "The name of this monster originated";
+	mes "from a story about a poor";
+	mes "geographer";
+	mes "who, unfortunately, was eaten by";
+	mes "this monster while he was";
+	mes "studying.";
 	close;
 }
 yuno.gat,157,87,4	script	"A Citizen of Juno"	102,{
@@ -490,7 +519,7 @@ yuno_in01.gat,99,153,2	script	"?????"	47,{
 }
 
 yuno.gat,165,111,4	script	"Juno Sage"	123,{
-	mes "[Remorpheous]";
+	mes "[Le Morpheus]";
 	mes "^0000ff'Apocalypse'^000000";
 	mes "It is the name of an android that";
 	mes "used to guard Juno a long time";
@@ -502,14 +531,6 @@ yuno.gat,165,111,4	script	"Juno Sage"	123,{
 	mes "comrades and enemies any more."
 	mes "Sadly, the andriod is nothing but a ";
 	mes "monster now";
-	Next;
-	mes "[Remorpheous]";
-	mes "....similar to Robot. After living for a long time,";
-	mes "its A.I. totally screwed up, it couldn't recognize friend of foe anymore";
-	mes "so without consideration of friends or foe....";
-	Next;
-	mes "[Remorpheous]";
-	mes ".... it became a monster that attacks anyone regardless";
 	close;
 }
 yuno.gat,337,227,4	script	"Juno Granny"	123,{

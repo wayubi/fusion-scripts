@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.005
 ----------------------------------------------------------------------------------------------------
+- 05-27-04: Town\Town_Juno.txt - Updated the Juno soldiers. [Tezuka]
 - 05-26-04: Town\Town_Guide.txt - Added the Gonryun guide translated by Saister. [Muad_Dib]
 - 05-25-04: Mob\field\gef_fild.txt - Added Goblin Leader. [Muad_Dib]
 - 05-24-04: Town\Town_Siglude.txt - Turned my Weapon Research fix from 40 lines to 2. [Tsusai]
