@@ -1,6 +1,7 @@
 --------------------------------------------------------------------------------
- Fusion 1.213 - November 26th, 2004
+ Fusion 1.213 - December ??th, 2004
 -------------------------------------------------------------------------------- 
+- 11-30-04: Town\Town_Niflheim.txt - Added eventresetmob. [Muad_Dib]
 - 11-20-04: Town\Town_Niflheim.txt - Added 1st Version(semi working) of Town Niflheim. [Muad_Dib]
 - 11-20-04: Warpdungeons\ayo_dun.txt - Updated Ayothaya Dungeon warps. [Muad_Dib]
 - 11-20-04: Town\Town_Jawaii.txt - Changed Dancer Names. [Muad_Dib]

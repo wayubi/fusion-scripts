@@ -33,30 +33,6 @@ M_show:
 	close;
 }
 
-//Not sure how this exactly should activate yet.
-//prontera.gat,164,161,4	script	Traveler::NifTrav	68,{
-//	mes "[Traveler]";
-//	mes "I've come across some strange things in my time. Things you'd have to see to belive. Have you heard of Niffleheim, the City of the Dead?";
-//	next;
-//	menu "Show me, please...",M_show, "Sounds scarey...Nevermind...",-;
-//
-//	mes "[Traveler]";
-//	mes "A wise choice by any means...";
-//	close;
-//M_show:
-//	warp "niflheim.gat",202,171;
-//	close;
-//}
-//-	script	EDNifTrav	-1,{
-//OnInit:
-//OnMinute00:
-//	disablenpc "NifTrav";
-//	end;
-//OnMinute56:
-//	enablenpc "NifTrav";
-//	end;
-//}
-
 niflheim.gat,52,174,3 script "Kirz" 796,{
 	mes "[Kirz]";
 	mes "Humans are not allowed here!";
@@ -168,7 +144,7 @@ L_sure2:
 
 niflheim.gat,195,211,5 script "Gigantia" 796,{
 	mes "[Gigantia]";
-	mes "Lord of Death sees everything...";
+	mes "The Lord of Death sees everything...";
 	close;
 }
 
@@ -252,8 +228,7 @@ L_end:
 }
 
 niflheim.gat,350,258,5 script "Cursed Soul" 802,{
-      resetmymob niflheim;
-//	killmonster "niflheim.gat","mymob";
+     		reseteventmob niflheim,nifmob;
 	mes "[Aesop Bruce]";
 	mes "I feel a strong curse on youaaaahhhhh";
 	mes "I shall deny your existanceahhhhhhh";
@@ -266,8 +241,7 @@ L_book1:
 	mes "Don't you touch my bookssssahhh!!";
 	mes "Ahahaha, i curse you for being bitten, torn and clawed at!!";
 	mes "Forever binded to this curse!!";
-      	callmob niflheim,350,258,"Rideword" 1478,1;  
-//	monster "niflheim.gat",350,258,"Rideword",1478,1,"mymob";
+      	callmob niflheim,350,258,"Rideword" 1478,1,nifmob;  
 	close;
 L_book2:
 	mes "[Aesop Bruce]";
@@ -317,20 +291,13 @@ L_score:
 	mes "Hahahaha!! Your prayers were wrong!!";
 	mes "Time to face deathohohohoho,";
 	mes "May you be cured forevahahahaha!!";
-//	monster "niflheim.gat",349,256,"Orc Skeleton",1462,1,"mymob";
-//	monster "niflheim.gat",347,258,"Orc Skeleton",1462,1,"mymob";
-//	monster "niflheim.gat",347,254,"Orc Skeleton",1462,1,"mymob";
-//	monster "niflheim.gat",350,252,"Orc Skeleton",1462,1,"mymob";
-//	monster "niflheim.gat",344,255,"Orc Skeleton",1462,1,"mymob";
-//	monster "niflheim.gat",348,252,"Orc Skeleton",1462,1,"mymob";
-//	monster "niflheim.gat",347,259,"Orc Skeleton",1462,1,"mymob";
-      	callmob niflheim,349,256,"Orc Skeleton" 1478,1;  
-      	callmob niflheim,347,258,"Orc Skeleton" 1478,1;  
-      	callmob niflheim,347,254,"Orc Skeleton" 1478,1;  
-      	callmob niflheim,350,252,"Orc Skeleton" 1478,1;  
-      	callmob niflheim,344,253,"Orc Skeleton" 1478,1;  
-      	callmob niflheim,348,252,"Orc Skeleton" 1478,1;  
-      	callmob niflheim,347,259,"Orc Skeleton" 1478,1;  
+      	callmob niflheim,349,256,"Orc Skeleton" 1478,1,nifmob;  
+      	callmob niflheim,347,258,"Orc Skeleton" 1478,1,nifmob;  
+      	callmob niflheim,347,254,"Orc Skeleton" 1478,1,nifmob;  
+      	callmob niflheim,350,252,"Orc Skeleton" 1478,1,nifmob;  
+      	callmob niflheim,344,253,"Orc Skeleton" 1478,1,nifmob;  
+      	callmob niflheim,348,252,"Orc Skeleton" 1478,1,nifmob;  
+      	callmob niflheim,347,259,"Orc Skeleton" 1478,1,nifmob;  
 	close;
 L_sucess1:
 		check @nif_random1 == 10,L_sucess2,-;
@@ -394,37 +361,37 @@ nif_in.gat,105,81,3 script "Grey" 794,{
 	mes "^FF0000The beautiful melody surrounding thy soul,^000000";
 	mes "^FF0000Is the key from Lord Death's wrath.^000000";
 	next;
-		check nif_quest2 == 1,L_end,-;	
-		check nif_q_done == 1,L_end,-;
+		check nif_quest2 = 1,L_end,-;	
+		check nif_q_done = 1,L_end,-;
 		random @nif_random 4;
 	mes "[Grey]";
 	mes "Heh, let me give you a little exam!";
 	mes "Repeat line no. ' $[@nif_random] ' of the poem";
 	mes "that you have just heard to me!";
 	next;
-	input @inputstr1$;
-		check @nif_random == 2,L_RAN_2,-;
-		check @nif_random == 3,L_RAN_3,-;
-		check @nif_random == 4,L_RAN_4,-;
-		check @nif_random == 1,L_RAN_1,-;	
+		input @inputstr;
+		check @nif_random = 2,L_RAN_2,-;
+		check @nif_random = 3,L_RAN_3,-;
+		check @nif_random = 4,L_RAN_4,-;
+		check @nif_random = 1,L_RAN_1,-;	
 L_RAN_1:
-//		set @str1$,"When the sun sets in the western hills,";
+		set @str1$ = "When the sun sets in the western hills,";
 	goto L_RAN_B;
 	
 L_RAN_2:
-//		set @str1$,"Where points the velvet gloom of dawn,";
+		set @str1$ = "Where points the velvet gloom of dawn,";
 	goto L_RAN_B;
 
 L_RAN_3:
-//		set @str1$,"The beautiful melody surrounding thy soul,";
+		set @str1$ = "The beautiful melody surrounding thy soul,";
 	goto L_RAN_B;
 
 L_RAN_4:
-//		set @str1$,"Is the key from Lord Death's wrath.";
+		set @str1$ = "Is the key from Lord Death's wrath.";
 	goto L_RAN_B;
 
 L_RAN_B:
-		check @inputstr1$ == @str1$,L_RAN_SC,-;
+		check @inputstr == @str1$,L_RAN_SC,-;
 	mes "[Grey]";
 	mes "Aih... If you had paid more attention,";
 	mes "you would have known the correct answer!";
