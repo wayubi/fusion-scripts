@@ -66,6 +66,21 @@
 // - Rotenburg -> aldebaran: 128,97
 //   Information about guild base ownerships
 //
+// - Bright Arbor -> payon: 89,155
+//   Information about guild base ownerships
+//
+// - Sacred Altar -> payon: 82,155
+//   Information about guild base ownerships
+//
+// - Holy Shadow -> payon: 97,155
+//   Information about guild base ownerships
+//
+// - Scarlet Palace -> payon: 103,155
+//   Information about guild base ownerships
+//
+// - Bamboo Grove Hill -> payon: 75,155
+//   Information about guild base ownerships
+//
 //========================================================================================
 
 prontera.gat,156,192,4 script "Kriemhild" 722,{
@@ -311,6 +326,9 @@ L_START_2:
 	close;
 	L_MENU_1:
 		warp "payg_cas01",212,108;
+OnInit:
+	guildreg "payg_cas01";
+	return;
 }
 payon.gat,79,35,4 script "Sacred Altar" 722,{
 	guildreg "payg_cas02";
@@ -349,6 +367,9 @@ L_START_2:
 	close;
 	L_MENU_1:
 		warp "payg_cas02",22,275;
+OnInit:
+	guildreg "payg_cas02";
+	return;
 }
 payon.gat,79,39,4 script "Holy Shadow" 722,{
 	guildreg "payg_cas03";
@@ -387,6 +408,9 @@ L_START_2:
 	close;
 	L_MENU_1:
 		warp "payg_cas03",9,263;
+OnInit:
+	guildreg "payg_cas03";
+	return;
 }
 payon.gat,79,43,4 script "Scarlet Palace" 722,{
 	guildreg "payg_cas04";
@@ -425,6 +449,9 @@ L_START_2:
 	close;
 	L_MENU_1:
 		warp "payg_cas04",40,235;
+OnInit:
+	guildreg "payg_cas04";
+	return;
 }
 payon.gat,79,47,4 script "Bamboo Grove Hill" 722,{
 	guildreg "payg_cas05";
@@ -463,6 +490,9 @@ L_START_2:
 	close;
 	L_MENU_1:
 		warp "payg_cas05",276,227;
+OnInit:
+	guildreg "payg_cas05";
+	return;
 }
 
 aldebaran.gat,152,97,4 script "Neuschwanstein" 722,{
@@ -844,4 +874,210 @@ L_START_2:
 	close;
 	L_MENU_1:
 		warp "gefg_cas05",61,52;
+}
+
+payon.gat,89,155,4 script "Bright Arbor" 722,{
+	guildreg "payg_cas01";
+	check guildid == 0,-,L_START_1;
+	mes "       [ Kingdom of Payon ]";
+	mes "1. As Law of Payon";
+	mes "    this guild base isn't taken by";
+	mes "    any guild yet.";
+	next;
+	mes "       [ Kingdom of Payon ]";
+	mes "2. In order to take this guild base,";
+	mes "    you must defeat all the guardians";
+	mes "    that protecting guild base and";
+	mes "    eliminate the EMPERIUM to";
+	mes "    take over the guild base.";
+	close;
+L_START_1:
+	check ismyguild != 0,L_START_2,-;
+	mes "       [ Kingdom of Payon ]";
+	mes "1. As law of Prontera this base is now";
+	mes "    $guildname 's guild";
+	mes "    base.";
+	next;
+	mes "       [ Kingdom of Payon ]";
+	mes "2.  $guildname Guild master is";
+	mes "    $guildmaster, and any of you";
+	mes "    have a problem, raise your sword to ";
+	mes "    honor yourself.";
+	close;
+L_START_2:
+	mes "[Vibration of Man's Voice]";
+	mes "The brave soldiers...";
+	mes "Would you like to go back?";
+	next;
+	menu "Go back to guild base.",L_MENU_1,"Cancel",-;
+	close;
+	L_MENU_1:
+		warp "payg_cas01",212,108;
+OnInit:
+	guildreg "payg_cas01";
+	return;
+}
+payon.gat,82,155,4 script "Sacred Altar" 722,{
+	guildreg "payg_cas02";
+	check guildid == 0,-,L_START_1;
+	mes "       [ Kingdom of Payon ]";
+	mes "1. As Law of Payon";
+	mes "    this guild base isn't taken by";
+	mes "    any guild yet.";
+	next;
+	mes "       [ Kingdom of Payon ]";
+	mes "2. In order to take this guild base,";
+	mes "    you must defeat all the guardians";
+	mes "    that protecting guild base and";
+	mes "    eliminate the EMPERIUM to";
+	mes "    take over the guild base.";
+	close;
+L_START_1:
+	check ismyguild != 0,L_START_2,-;
+	mes "       [ Kingdom of Payon ]";
+	mes "1. As law of Prontera this base is now";
+	mes "    $guildname 's guild";
+	mes "    base.";
+	next;
+	mes "       [ Kingdom of Payon ]";
+	mes "2.  $guildname Guild master is";
+	mes "    $guildmaster, and any of you";
+	mes "    have a problem, raise your sword to ";
+	mes "    honor yourself.";
+	close;
+L_START_2:
+	mes "[Vibration of Man's Voice]";
+	mes "The brave soldiers...";
+	mes "Would you like to go back?";
+	next;
+	menu "Go back to guild base.",L_MENU_1,"Cancel",-;
+	close;
+	L_MENU_1:
+		warp "payg_cas02",22,275;
+OnInit:
+	guildreg "payg_cas02";
+	return;
+}
+payon.gat,97,155,4 script "Holy Shadow" 722,{
+	guildreg "payg_cas03";
+	check guildid == 0,-,L_START_1;
+	mes "       [ Kingdom of Payon ]";
+	mes "1. As Law of Payon";
+	mes "    this guild base isn't taken by";
+	mes "    any guild yet.";
+	next;
+	mes "       [ Kingdom of Payon ]";
+	mes "2. In order to take this guild base,";
+	mes "    you must defeat all the guardians";
+	mes "    that protecting guild base and";
+	mes "    eliminate the EMPERIUM to";
+	mes "    take over the guild base.";
+	close;
+L_START_1:
+	check ismyguild != 0,L_START_2,-;
+	mes "       [ Kingdom of Payon ]";
+	mes "1. As law of Prontera this base is now";
+	mes "    $guildname 's guild";
+	mes "    base.";
+	next;
+	mes "       [ Kingdom of Payon ]";
+	mes "2.  $guildname Guild master is";
+	mes "    $guildmaster, and any of you";
+	mes "    have a problem, raise your sword to ";
+	mes "    honor yourself.";
+	close;
+L_START_2:
+	mes "[Vibration of Man's Voice]";
+	mes "The brave soldiers...";
+	mes "Would you like to go back?";
+	next;
+	menu "Go back to guild base.",L_MENU_1,"Cancel",-;
+	close;
+	L_MENU_1:
+		warp "payg_cas03",9,263;
+OnInit:
+	guildreg "payg_cas03";
+	return;
+}
+payon.gat,103,155,4 script "Scarlet Palace" 722,{
+	guildreg "payg_cas04";
+	check guildid == 0,-,L_START_1;
+	mes "       [ Kingdom of Payon ]";
+	mes "1. As Law of Payon";
+	mes "    this guild base isn't taken by";
+	mes "    any guild yet.";
+	next;
+	mes "       [ Kingdom of Payon ]";
+	mes "2. In order to take this guild base,";
+	mes "    you must defeat all the guardians";
+	mes "    that protecting guild base and";
+	mes "    eliminate the EMPERIUM to";
+	mes "    take over the guild base.";
+	close;
+L_START_1:
+	check ismyguild != 0,L_START_2,-;
+	mes "       [ Kingdom of Payon ]";
+	mes "1. As law of Prontera this base is now";
+	mes "    $guildname 's guild";
+	mes "    base.";
+	next;
+	mes "       [ Kingdom of Payon ]";
+	mes "2.  $guildname Guild master is";
+	mes "    $guildmaster, and any of you";
+	mes "    have a problem, raise your sword to ";
+	mes "    honor yourself.";
+	close;
+L_START_2:
+	mes "[Vibration of Man's Voice]";
+	mes "The brave soldiers...";
+	mes "Would you like to go back?";
+	next;
+	menu "Go back to guild base.",L_MENU_1,"Cancel",-;
+	close;
+	L_MENU_1:
+		warp "payg_cas04",40,235;
+OnInit:
+	guildreg "payg_cas04";
+	return;
+}
+payon.gat,75,155,4 script "Bamboo Grove Hill" 722,{
+	guildreg "payg_cas05";
+	check guildid == 0,-,L_START_1;
+	mes "       [ Kingdom of Payon ]";
+	mes "1. As Law of Payon";
+	mes "    this guild base isn't taken by";
+	mes "    any guild yet.";
+	next;
+	mes "       [ Kingdom of Payon ]";
+	mes "2. In order to take this guild base,";
+	mes "    you must defeat all the guardians";
+	mes "    that protecting guild base and";
+	mes "    eliminate the EMPERIUM to";
+	mes "    take over the guild base.";
+	close;
+L_START_1:
+	check ismyguild != 0,L_START_2,-;
+	mes "       [ Kingdom of Payon ]";
+	mes "1. As law of Prontera this base is now";
+	mes "    $guildname 's guild";
+	mes "    base.";
+	next;
+	mes "       [ Kingdom of Payon ]";
+	mes "2.  $guildname Guild master is";
+	mes "    $guildmaster, and any of you";
+	mes "    have a problem, raise your sword to ";
+	mes "    honor yourself.";
+	close;
+L_START_2:
+	mes "[Vibration of Man's Voice]";
+	mes "The brave soldiers...";
+	mes "Would you like to go back?";
+	next;
+	menu "Go back to guild base.",L_MENU_1,"Cancel",-;
+	close;
+	L_MENU_1:
+		warp "payg_cas05",276,227;
+OnInit:
+	guildreg "payg_cas05";
+	return;
 }
