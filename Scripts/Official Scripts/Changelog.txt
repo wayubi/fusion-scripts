@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.003
 ----------------------------------------------------------------------------------------------------
+- Event\Event_Sign.txt - Added event sign. [Muad_Dib]
 - Quest\Quest_skill\Thief_Skill.txt - file added. [nestor_zulueta]
 - Quest\Quest_skill\NPC_Novice_skill.txt - file added. [nestor_zulueta]
 - Quest\Quest_skill\Moving_Recovery.txt - file added. [nestor_zulueta]

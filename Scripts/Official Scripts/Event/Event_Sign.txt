@@ -1,0 +1,108 @@
+//========================================================================================
+// »» The Fusion Project ««
+// Copyright (c) 2004, Cobax Information Systems
+// http://fusion.cobax.net/
+// ---------------------------------------------------------------------------------------
+//
+// Map Sign Event - Non Player Character Locations
+// - Created by Chris Eisensmith & Syberaptor
+//
+// - Map Sign -> prontera: 165,305
+//   Shows you the worldmap.
+//
+// - Map Sign -> alberta: 35,241
+//   Shows you the worldmap.
+//
+// - Map Sign -> payon: 82,129
+//   Shows you the worldmap.
+//
+// - Map Sign -> morocc: 32,174
+//   Shows you the worldmap.
+//
+// - Map Sign -> geffen: 168,176
+//   Shows you the worldmap.
+//
+// - Map Sign -> aldebaran: 133,104
+//   Shows you the worldmap.
+//
+// - Map Sign -> izlude: 125,116
+//   Shows you the worldmap.
+//
+//========================================================================================
+
+prontera.gat,165,305,0 script "Map Sign" 111,{ 
+      cutin "sign_map_pr",2;
+      mes "Welcome to Prontera!";
+      mes "Below is a map of Rune Midgard to help you alone your way.";
+      next;
+      mes "May your path always be clear.";
+      mes "We hope you enjoy your stay!";
+      cutin "sign_map_pr",255;
+      close;
+}
+
+alberta.gat,35,241,0 script "Map Sign" 111,{ 
+      cutin "sign_map_al",2;
+      mes "Welcome to Alberta!";
+      mes "Below is a map of Rune Midgard to help you alone your way.";
+      next;
+      mes "May your path always be clear.";
+      mes "We hope you enjoy your stay!";
+      cutin "sign_map_al",255;
+      close;
+}
+
+payon.gat,82,129,0 script "Map Sign" 111,{ 
+      cutin "sign_map_pa",2;   
+      mes "Welcome to Payon!";
+      mes "Below is a map of Rune Midgard to help you alone your way.";
+      next;
+      mes "May your path always be clear.";
+      mes "We hope you enjoy your stay!";
+      cutin "sign_map_pa",255;
+      close;
+}
+
+morocc.gat,32,174,0 script "Map Sign" 111,{ 
+      cutin "sign_map_mo",2;
+      mes "Welcome to Morocc!";
+      mes "Below is a map of Rune Midgard to help you alone your way.";
+      next;
+      mes "May your path always be clear.";
+      mes "We hope you enjoy your stay!";
+      cutin "sign_map_mo",255;
+      close;
+}
+
+geffen.gat,168,176,0 script "Map Sign" 111,{ 
+      cutin "sign_map_ge",2;
+      mes "Welcome to Geffen!";
+      mes "Below is a map of Rune Midgard to help you alone your way.";
+      next;
+      mes "May your path always be clear.";
+      mes "We hope you enjoy your stay!";
+      cutin "sign_map_ge",255;
+      close;
+}
+
+aldebaran.gat,133,104,0 script "Map Sign" 111,{ 
+      cutin "sign_map_de",2;
+      mes "Welcome to Aldebaran!";
+      mes "Below is a map of Rune Midgard to help you alone your way.";
+      next;
+      mes "May your path always be clear.";
+      mes "We hope you enjoy your stay!";
+      cutin "sign_map_de",255;
+      close;
+}
+
+izlude.gat,125,116,0 script "Map Sign" 111,{ 
+      cutin "sign_map_iz",2;
+      mes "Welcome to Izlude!";
+      mes "Below is a map of Rune Midgard to help you alone your way.";
+      next;
+      mes "May your path always be clear.";
+      mes "We hope you enjoy your stay!";
+      cutin "sign_map_iz",255;
+      close;
+}
