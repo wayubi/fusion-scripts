@@ -1,62 +1,104 @@
-// Novice Place
-new_zone03.gat,0,0,0,0	monster	Fabre_ 1184,40,0,0,0
+//========================================================================================
+// »» The Fusion Project ««
+// Copyright (c) 2004, Cobax Information Systems
+// http://fusion.cobax.net/
+// ---------------------------------------------------------------------------------------
+//
+// Job Quests Mob - Monster Spawn Locations
+//
+//========================================================================================
 
-// Thief Jobchange Quest
-job_thief1.gat,0,0,0,0	monster	Mushroom 1182,180,0,0,0
-job_thief1.gat,0,0,0,0	monster	Fabre_ 1184,50,0,0,0
-job_thief1.gat,0,0,0,0	monster	Chonchon_ 1183,50,0,0,0
-job_thief1.gat,0,0,0,0	monster	Spore 1014,30,0,0,0
+//========================================================================================
+// - Novice Place Mob
+//========================================================================================
 
-// Swordsman Jobchange Quest
-//mobs part1
-job_sword1.gat,58,27,10,10 monster Fabre 1184,5,0,0,0
-job_sword1.gat,30,75,10,10 monster Fabre 1184,5,0,0,0
-job_sword1.gat,51,106,10,10 monster Fabre 1184,2,0,0,0
-job_sword1.gat,10,46,10,10 monster ChonChon 1183,2,0,0,0
+new_zone03.gat,0,0,0,0  	monster	"Fabre" 1184,40,0,0,0
 
-//mobs part2
-job_sword1.gat,211,29,10,10 monster Fabre 1184,5,0,0,0
-job_sword1.gat,230,34,10,10 monster ChonChon 1183,2,0,0,0
-job_sword1.gat,239,61,10,10 monster Fabre 1184,5,0,0,0
-job_sword1.gat,234,108,10,10 monster Fabre 1184,5,0,0,0
-job_sword1.gat,196,111,10,10 monster Fabre 1184,5,0,0,0
-job_sword1.gat,200,63,10,10 monster ChonChon 1183,2,0,0,0
-job_sword1.gat,98,201,10,10 monster Farmiliar 1005,1,0,0,0
+//========================================================================================
+// - Thief Quest Mob
+//========================================================================================
 
-//mobs part3
-job_sword1.gat,145,121,10,10 monster ChonChon 1183,1,0,0,0
-job_sword1.gat,96,103,10,10 monster ChonChon 1183,2,0,0,0
-job_sword1.gat,139,103,10,10 monster ChonChon 1183,1,0,0,0
-job_sword1.gat,121,85,10,10 monster ChonChon 1183,2,0,0,0
-job_sword1.gat,150,66,10,10 monster ChonChon 1183,1,0,0,0
-job_sword1.gat,139,103,10,10 monster ChonChon 1183,3,0,0,0
-job_sword1.gat,151,49,10,10 monster ChonChon 1183,1,0,0,0
-job_sword1.gat,159,17,10,10 monster Fabre 1184,5,0,0,0
-job_sword1.gat,127,23,10,10 monster Fabre 1184,5,0,0,0
-job_sword1.gat,122,15,10,10 monster Fabre 1184,5,0,0,0
+job_thief1.gat,0,0,0,0  	monster	"Mushroom" 1182,180,0,0,0
+job_thief1.gat,0,0,0,0  	monster	"Fabre" 1184,50,0,0,0
+job_thief1.gat,0,0,0,0  	monster	"Chonchon" 1183,50,0,0,0
+job_thief1.gat,0,0,0,0  	monster	"Spore" 1014,30,0,0,0
+
+//========================================================================================
+// - Swordsman Quest Mob Part 1
+//========================================================================================
+
+job_sword1.gat,58,27,10,10    monster      "Fabre" 1184,5,0,0,0
+job_sword1.gat,30,75,10,10    monster      "Fabre" 1184,5,0,0,0
+job_sword1.gat,51,106,10,10   monster      "Fabre" 1184,2,0,0,0
+job_sword1.gat,10,46,10,10    monster      "Chonchon" 1183,2,0,0,0
+
+//========================================================================================
+// - Swordsman Quest Mob Part 2
+//========================================================================================
+
+job_sword1.gat,211,29,10,10   monster      "Fabre" 1184,5,0,0,0
+job_sword1.gat,230,34,10,10   monster      "Chonchon" 1183,2,0,0,0
+job_sword1.gat,239,61,10,10   monster      "Fabre" 1184,5,0,0,0
+job_sword1.gat,234,108,10,10  monster      "Fabre" 1184,5,0,0,0
+job_sword1.gat,196,111,10,10  monster      "Fabre" 1184,5,0,0,0
+job_sword1.gat,200,63,10,10   monster      "Chonchon" 1183,2,0,0,0
+job_sword1.gat,98,201,10,10   monster      "Farmiliar" 1005,1,0,0,0
+
+//========================================================================================
+// - Swordsman Quest Mob Part 3
+//========================================================================================
+
+job_sword1.gat,145,121,10,10  monster      "Chonchon" 1183,1,0,0,0
+job_sword1.gat,96,103,10,10   monster      "Chonchon" 1183,2,0,0,0
+job_sword1.gat,139,103,10,10  monster      "Chonchon" 1183,1,0,0,0
+job_sword1.gat,121,85,10,10   monster      "Chonchon" 1183,2,0,0,0
+job_sword1.gat,150,66,10,10   monster      "Chonchon" 1183,1,0,0,0
+job_sword1.gat,139,103,10,10  monster      "Chonchon" 1183,3,0,0,0
+job_sword1.gat,151,49,10,10   monster      "Chonchon" 1183,1,0,0,0
+job_sword1.gat,159,17,10,10   monster      "Fabre" 1184,5,0,0,0
+job_sword1.gat,127,23,10,10   monster      "Fabre" 1184,5,0,0,0
+job_sword1.gat,122,15,10,10   monster      "Fabre" 1184,5,0,0,0
 
 
-// Mage Jobchange Quest
-// 2f
-gef_tower.gat,48,101,0,0	monster	Elder_Willow 1033,3,5000,2000,1
-gef_tower.gat,48,95,0,0	monster	Yoyo 1057,3,5000,2000,1
-gef_tower.gat,54,101,0,0	monster	Steel_Chonchon 1042,3,5000,2000,1
-// 3f
-gef_tower.gat,51,41,0,0	monster	Elder_Willow 1033,3,5000,2000,1
-gef_tower.gat,53,27,0,0	monster	Yoyo 1057,3,5000,2000,1
-gef_tower.gat,36,40,0,0	monster	Steel_Chonchon 1042,3,5000,2000,1
-// 4f
-gef_tower.gat,119,169,0,0	monster	Elder_Willow 1033,3,5000,2000,1
-gef_tower.gat,112,160,0,0	monster	Yoyo 1057,3,5000,2000,1
-gef_tower.gat,104,170,0,0	monster	Steel_Chonchon 1042,3,5000,2000,1
-gef_tower.gat,112,172,0,0	monster	Hydra 1068,3,5000,2000,1
-// 5f
-gef_tower.gat,106,107,0,0	monster	Elder_Willow 1033,3,5000,2000,1
-gef_tower.gat,111,106,0,0	monster	Yoyo 1057,3,5000,2000,1
-gef_tower.gat,113,116,0,0	monster	Steel_Chonchon 1042,3,5000,2000,1
-gef_tower.gat,111,105,0,0	monster	Hydra 1068,3,5000,2000,1
-// 6f
-gef_tower.gat,108,65,0,0	monster	Elder_Willow 1033,3,5000,2000,1
-gef_tower.gat,112,73,0,0	monster	Yoyo 1057,3,5000,2000,1
-gef_tower.gat,118,63,0,0	monster	Steel_Chonchon 1042,3,5000,2000,1
-gef_tower.gat,107,61,0,0	monster	Hydra 1068,3,5000,2000,1
+//========================================================================================
+// - Mage Quest Mob 2f
+//========================================================================================
+
+gef_tower.gat,48,101,0,0	monster	"Elder Willow" 1033,3,5000,2000,1
+gef_tower.gat,48,95,0,0	      monster	"Yoyo" 1057,3,5000,2000,1
+gef_tower.gat,54,101,0,0	monster	"Steel Chonchon" 1042,3,5000,2000,1
+
+//========================================================================================
+// - Mage Quest Mob 3f
+//========================================================================================
+
+gef_tower.gat,51,41,0,0 	monster	"Elder Willow" 1033,3,5000,2000,1
+gef_tower.gat,53,27,0,0 	monster	"Yoyo" 1057,3,5000,2000,1
+gef_tower.gat,36,40,0,0 	monster	"Steel Chonchon" 1042,3,5000,2000,1
+
+//========================================================================================
+// - Mage Quest Mob 4f
+//========================================================================================
+
+gef_tower.gat,119,169,0,0	monster	"Elder Willow" 1033,3,5000,2000,1
+gef_tower.gat,112,160,0,0	monster	"Yoyo" 1057,3,5000,2000,1
+gef_tower.gat,104,170,0,0	monster	"Steel Chonchon" 1042,3,5000,2000,1
+gef_tower.gat,112,172,0,0	monster	"Hydra" 1068,3,5000,2000,1
+
+//========================================================================================
+// - Mage Quest Mob 5f
+//========================================================================================
+
+gef_tower.gat,106,107,0,0	monster	"Elder Willow" 1033,3,5000,2000,1
+gef_tower.gat,111,106,0,0	monster	"Yoyo" 1057,3,5000,2000,1
+gef_tower.gat,113,116,0,0	monster	"Steel Chonchon" 1042,3,5000,2000,1
+gef_tower.gat,111,105,0,0	monster	"Hydra" 1068,3,5000,2000,1
+
+//========================================================================================
+// - Mage Quest Mob 6f
+//========================================================================================
+
+gef_tower.gat,108,65,0,0	monster	"Elder Willow" 1033,3,5000,2000,1
+gef_tower.gat,112,73,0,0	monster	"Yoyo" 1057,3,5000,2000,1
+gef_tower.gat,118,63,0,0	monster	"Steel Chonchon" 1042,3,5000,2000,1
+gef_tower.gat,107,61,0,0	monster	"Hydra" 1068,3,5000,2000,1
