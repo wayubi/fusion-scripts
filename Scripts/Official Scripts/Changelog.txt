@@ -9,6 +9,12 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.002
 ----------------------------------------------------------------------------------------------------
+- Shop\Shop.txt - Added Umbala shop entry. [mudvayne]
+- Town\Town_Umbala.txt - Removed shops entry here and moved to shop.txt [mudvayne]
+- Town\Town_Kafra.txt - Added the kafra from other Town_X.txt files. [mudvayne]
+- Town\Town_Umbala.txt - Removed 1 kafra and moved to Town_Kafra.txt. [mudvayne]
+- Town\Town_Juno.txt - Removed 3 kafra and moved to Town_Kafra.txt. [mudvayne]
+- Town\Town_amatsu.txt - Remove a kafra and moved to Town_Kafra.txt. [mudvayne]
 - Town\Town_Kafra.txt - Fixed Push Cart Skill check, Fixed " in npc names, Fixed all npc names to Kafra Personnel. [mudvayne]
 - Quest\Quest_Pet_Food_Quest.txt - Fixed Lisa Npc Sprite. [mudvayne]
 - Event\Event_Bunny.txt - Fixed Prontera Kafra Employee coordonate. [mudvayne]
