@@ -76,9 +76,9 @@ prt_church.gat,16,41,4	script	"Father Thomas"	60,{
 					set @Section1 = 0;
 					set @Section2 = 0;
 					set @Section3 = 0;
-					getareausers "job_prist.gat",8,34,39,109,@Section1;
-					getareausers "job_prist.gat",160,14,175,178,@Section2;
-					getareausers "job_prist.gat",90,34,105,105,@Section3;
+					getareausers "job_prist",8,34,39,109,@Section1;
+					getareausers "job_prist",160,14,175,178,@Section2;
+					getareausers "job_prist",90,34,105,105,@Section3;
 					check @Section1 = 1,Warp1,-;
 					check @Section2 = 1,Warp2,-;
 					check @Section3 = 1,Warp3,-;
@@ -320,11 +320,11 @@ prt_church.gat,16,41,4	script	"Father Thomas"	60,{
 			mes "God, please endow $charaname with the strength and courage to fight evil and help mankind.";
 			next;
 			jobchange 8;
-//!@#			callfunc "F_ClearJobVar";
+			//!@#	callfunc "F_ClearJobVar";
 			mes "[Father Thomas]";
 			mes "You are now a Priest.  As a Priest, you can now help a lot of people in the name of God.";
 			next;
-			getitem JBLVL, 1;
+			additem JLVL,1;
 			mes "[Father Thomas]";
 			mes "Here, take this book as a reward for successfully completing the tests.  This book will help you understand more about god.";
 			next;
@@ -399,68 +399,65 @@ job_prist.gat,24,186,4	script	"Father Peter"	110,{
 			mes "Maybe because its your first time thats why your scared.";
 			mes "You can come back when you get more courage.";
 			next;
-			warp "prt_church.gat", 16, 37;
+			warp "prt_church",16,37;
 			close;
 OnInit:
 	waitingroom "Priest Test Waiting Room",2;
-	set @Section1 = 0;
-	set @Section2 = 0;
-	set @Section3 = 0;
-	set @Total = 0;
-	getareausers "job_prist.gat",8,34,39,109,@Section1;
-	getareausers "job_prist.gat",160,14,175,178,@Section2;
-	getareausers "job_prist.gat",90,34,105,105,@Section3;
-	set @Total + @Section1;
-	set @Total += @Section2;
-	set @Total += @Section3;
-	check @Total > 0,-,Start;
+	check \@PriestRoom = 0,Start,-;
 		return;	
 	Start:
-		resetmymob "job_prist.gat";
-		enablenpc "job_prist","Test1",1;
-		enablenpc "job_prist","Test2",0;
-		enablenpc "job_prist","Test3",0;
+		resetmymob "job_prist";
+		enablenpc "job_prist","test1",1;
+		enablenpc "job_prist","test2",0;
+		enablenpc "job_prist","test3",0;
 		enablenpc "job_prist","Warp1",0;
 		enablenpc "job_prist","Warp2",0;
 		enablenpc "job_prist","Warp3",0;
+		enablenpc "job_prist","Zombie1",0;
+		enablenpc "job_prist","Zombie2",0;
+		enablenpc "job_prist","Zombie3",0;
+		enablenpc "job_prist","Zombie4",0;
+		enablenpc "job_prist","Zombie5",0;
 		set \@PriestRoom = 1;
 		set \@Temptation = 99;
-		warpallpc "job_prist",24,44,2;
+		donpcevent "test1","null";
+		warpallpc "job_prist",24,44,0;
 		return;
 }
 
-job_prist.gat,1,1,1	script	"Test2"	-1,{
-OnInit:
+job_prist.gat,1,1,1	script	"test1"	-1,{
 	check \@PriestRoom = 1,Start,-;
 		return;
 	Start:
-		enablenpc "Zombie1";
-		enablenpc "Zombie2";
-		enablenpc "Zombie3";
-		enablenpc "Zombie4";
-		enablenpc "Zombie5";
-		set \@mobs = 13;
+		enablenpc "job_prist","Zombie1",1;
+		enablenpc "job_prist","Zombie2",1;
+		enablenpc "job_prist","Zombie3",1;
+		enablenpc "job_prist","Zombie4",1;
+		enablenpc "job_prist","Zombie5",1;
+		set \@mobs = 0;
 		npctimer 1;
 		return;
-OnTimer500:
-	areabroadcast "job_prist",8,34,39,109,"[Father Peter]: In order to pass this trial, you will have to kill all of the zomibes that appear.",10;
-	return;
-OnTimer2500:
-	npctimer 0;
-	remotenpctimer "GrandTimer",1;
-	areabroadcast "job_prist",8,34,39,109,"[Father Peter]: Move slowly and take your time.",10;
-	return;
+	OnTimer500:
+		areabroadcast "job_prist",8,34,39,109," [Father Peter]: In order to pass this trial, you will have to kill all of the zomibes that appear.",10;
+		return;
+	OnTimer2500:
+		npctimer 0;
+		remotenpctimer "GrandTimer",1;
+		areabroadcast "job_prist",8,34,39,109," [Father Peter]: Move slowly and take your time.",10;
+		enablenpc "job_prist","test1",0;
+		return;
 }
 
-job_prist.gat,1,1,1	script	"ZombieCounter"	-1,{
+job_prist.gat,1,1,1	script	"zombiecounter"	-1,{
 	check \@PriestRoom = 1,Counter,-;
 		return;
 	Counter:
-		set \@mobs -= 1;
-		check \@mobs > 0,-,Progress;
+		set \@mobs + 1;
+		broadcast " $[\@mobs] ";
+		check \@mobs = 13,Progress,-;
 			return;
 		Progress:
-			enablenpc "job_prist","Warp1";
+			enablenpc "job_prist","Warp1",1;
 			areabroadcast "job_prist",8,34,39,109,"[Father Peter]: Well done my child.  Enter the warp to start the next test.",10;
 			remotenpctimer "Warp1",1;
 			return;
@@ -468,39 +465,39 @@ job_prist.gat,1,1,1	script	"ZombieCounter"	-1,{
 
 //Z-Z-Z-Z-ZOMBIES!!!! AAAAAHHHHH!!!!!
 job_prist.gat,23,52,1	script	"Zombie1"	139,16,0,{
-	callmob "job_prist",24,52,"Robbery",1015,1,"ZombieCounter";
-	callmob "job_prist",18,25,"Evilness",1015,1,"ZombieCounter";
-	callmob "job_prist",30,52,"Jealousy",1015,1,"ZombieCounter";
+	callmob "job_prist",24,52,"Robbery",1015,1,"zombiecounter";
+	callmob "job_prist",18,25,"Evilness",1015,1,"zombiecounter";
+	callmob "job_prist",30,52,"Jealousy",1015,1,"zombiecounter";
 	enablenpc "job_prist","Zombie1",0;
 	return;
 }
 
 job_prist.gat,23,62,1	script	"Zombie2"	139,16,0,{
-	callmob "job_prist",21,62,"Anger",1015,1,"ZombieCounter";
-	callmob "job_prist",27,62,"Wonderness",1015,1,"ZombieCounter";
+	callmob "job_prist",21,62,"Anger",1015,1,"zombiecounter";
+	callmob "job_prist",27,62,"Wonderness",1015,1,"zombiecounter";
 	enablenpc "job_prist","Zombie2",0;
 	return;
 }
 
 job_prist.gat,23,72,1	script	"Zombie3"	139,16,0,{
-	callmob "job_prist",24,72,"Cockyness",1015,1,"ZombieCounter";
-	callmob "job_prist",18,72,"Slutty",1015,1,"ZombieCounter";
-	callmob "job_prist",30,72,"Lazyness",1015,1,"ZombieCounter";
+	callmob "job_prist",24,72,"Cockyness",1015,1,"zombiecounter";
+	callmob "job_prist",18,72,"Slutty",1015,1,"zombiecounter";
+	callmob "job_prist",30,72,"Lazyness",1015,1,"zombiecounter";
 	enablenpc "job_prist","Zombie3",0;
 	return;
 }
 
 job_prist.gat,23,82,1	script	"Zombie4"	139,16,0,{
-	callmob "job_prist",21,82,"Greed",1015,1,"ZombieCounter";
-	callmob "job_prist",27,82,"Greedyness",1015,1,"ZombieCounter";
+	callmob "job_prist",21,82,"Greed",1015,1,"zombiecounter";
+	callmob "job_prist",27,82,"Greedyness",1015,1,"zombiecounter";
 	enablenpc "job_prist","Zombie4",0;
 	return;
 }
 
 job_prist.gat,23,92,1	script	"Zombie5"	139,16,0,{
-	callmob "job_prist",24,92,"Faithless",1015,1,"ZombieCounter";
-	callmob "job_prist",18,92,"Non-believer",1015,1,"ZombieCounter";
-	callmob "job_prist",30,92,"Scaryness",1015,1,"ZombieCounter";
+	callmob "job_prist",24,92,"Faithless",1015,1,"zombiecounter";
+	callmob "job_prist",18,92,"Non-believer",1015,1,"zombiecounter";
+	callmob "job_prist",30,92,"Scaryness",1015,1,"zombiecounter";
 	enablenpc "job_prist","Zombie5",0;
 	return;
 }
@@ -512,13 +509,14 @@ job_prist.gat,24,109,1	script	"Warp1"	45,3,3,{
 OnTimer30000:
 	npctimer 0;
 	set \@PriestRoom = 2;
-	areawarp "job_prist.gat",8,34,39,109,"job_prist.gat",168,17;
+	areawarp "job_prist",8,34,39,109,"job_prist",168,17;
 	resetmymob "job_prist";
 	enablenpc "job_prist",Test2",1;
 	return;
 }
 
-job_prist.gat,1,1,0	script	"Test2"	-1,{
+//job_prist.gat,0,0,0	script	"test2"	-1,{
+	return;
 OnInit:
 	check \@PriestRoom = 2,Start,-;
 		return;
@@ -546,7 +544,7 @@ OnTimer500:
 	return;
 }
 
-job_prist.gat,168,45,4	script	"Deviruchi"	738,8,0,{
+//job_prist.gat,168,45,4	script	"Deviruchi"	738,8,0,{
 	check job = 4,Aco,-;
 		mes "[Deviruchi]";
 		mes "Hey, whats priest like you doing in a place like this? go back to town. You like wasting you time here eh?";
@@ -613,7 +611,7 @@ job_prist.gat,168,45,4	script	"Deviruchi"	738,8,0,{
 				close;
 }
 
-job_prist.gat,168,80,4	script	"Doppelganger"	739,8,0,{
+//job_prist.gat,168,80,4	script	"Doppelganger"	739,8,0,{
 	check job = 4,Aco,-;
 		mes "[Doppelganger]";
 		mes "What good is it to be here?.";
@@ -679,7 +677,7 @@ job_prist.gat,168,80,4	script	"Doppelganger"	739,8,0,{
 				close;
 }
 
-job_prist.gat,168,115,4	script	Dark Lord	737,8,0,{
+//job_prist.gat,168,115,4	script	"Dark Lord"	737,8,0,{
 	check job = 4,Aco,-;
 		mes "[Dark Lord]";
 		mes "Let you feel hatred and anger!!";
@@ -727,12 +725,12 @@ job_prist.gat,168,115,4	script	Dark Lord	737,8,0,{
 				next;
 				mes "[Dark Lord]";
 				mes "If i see you again, iam gonna kill you.";
-				doeventnpc "Test2","";
+				donpcevent "Test2","";
 				enablenpc "job_prist","Dark Lord",0;
 				close;
 }
 
-job_prist.gat,168,150,4	script	Baphomet	736,8,0,{
+//job_prist.gat,168,150,4	script	"Baphomet"	736,8,0,{
 	check job = 4,Aco,-;
 		mes "[Baphomet]";
 		mes "Annoying Priests...";
@@ -759,7 +757,7 @@ job_prist.gat,168,150,4	script	Baphomet	736,8,0,{
 		mes "I think you should give up being a priest and just accept my deal.";
 		mes "If you accept my deal, the world is yours.";
 		next;
-		menu"I give up being a priest.",-, "Devil be GONE!",ThePowerOfChristCompellsYou;
+		menu "I give up being a priest.",-,"Devil be GONE!",ThePowerOfChristCompellsYou;
 			mes "[Baphomet]";
 			mes "Okay, let us sign the contract...";
 			mes "you will not forget this...";
@@ -786,7 +784,7 @@ job_prist.gat,168,150,4	script	Baphomet	736,8,0,{
 			close;
 }
 	
-job_prist.gat,168,180,0	script	"Warp2"	45,3,3,{
+//job_prist.gat,168,180,0	script	"Warp2"	45,3,3,{
 	check job = 8,-,OnTimer30000;
 		return;
 	OnTimer30000:
@@ -795,11 +793,12 @@ job_prist.gat,168,180,0	script	"Warp2"	45,3,3,{
 		npctimer 0;
 		resetmymob "job_prist";
 		remotenpctimer "Warp3",1;
-		areawarp "job_prist.gat", 160, 14, 175, 178, "job_prist.gat", 98, 40;
+		areawarp "job_prist",160,14,175,178,"job_prist",98,40;
 		return;
 }
 
-job_prist.gat,1,1,1	script	"Test3"	-1,{
+//job_prist.gat,0,0,0	script	"test3"	-1,{
+	return;
 OnInit:
 	check \@PriestRoom = 3,Start,-;
 		return;
@@ -811,8 +810,8 @@ OnInit:
 }
 
 job_prist.gat,97,50,0	script	"Mummy1"	139,8,1,{
-	callmob "job_prist", 93, 55, "ca", 1041,1;
-	callmob "job_prist", 102, 55, "ah", 1041,1;
+	callmob "job_prist",93,55,"ca",1041,1;
+	callmob "job_prist",102,55,"ah",1041,1;
 	enablenpc "job_prist","Mummy1",0;
 	return;
 }
@@ -831,7 +830,7 @@ job_prist.gat,97,80,0	script	"Mummy3"	139,8,1,{
 	return;
 }
 
-job_prist.gat,98,105,0	script	"Warp3"	45,2,2,{
+//job_prist.gat,98,105,0	script	"Warp3"	45,2,2,{
 	check job = 8,-,Start;
 		return;
 	Start:
@@ -843,10 +842,11 @@ job_prist.gat,98,105,0	script	"Warp3"	45,2,2,{
 	OnTimer500:
 		npctimer 0;
 		areabroadcast "job_prist",90,34,105,105,"[Father Peter]: This is the last trial you must face my child.  Have faith, I know you can pass it!",10;
+		set \@PriestRoom = 0;
 		return;
 }
 
-job_prist.gat,1,1,1	script	"GrandTimer"	-1,{
+job_prist.gat,1,1,1	script	"GrandTimer"	139,{
 	return;
 OnTimer3000:
 	areabroadcast "job_prist.gat",8,34,39,109,"[Father Peter]: You will have 5 minutes to pass all 3 trials starting now.",10;
@@ -855,44 +855,44 @@ OnTimer33000:
 	//donpcevent "Father Peter::OnStart";
 	return;
 OnTimer63000:
-	set $@Time = "You have 4 minutes left!";
+	setstr $@Time = "You have 4 minutes left!";
 	//donpcevent "Father Peter::OnStart";
 	goto AnnouncePrst;
 OnTimer93000:
 	//donpcevent "Father Peter::OnStart";
 	return;
 OnTimer123000:
-	set $@Time = "You have 3 minutes left!";
+	setstr $@Time = "You have 3 minutes left!";
 	//donpcevent "Father Peter::OnStart";
 	goto AnnouncePrst;
 OnTimer153000:
 	//donpcevent "Father Peter::OnStart";
 	return;
 OnTimer183000:
-	set $@Time = "You have 2 minutes left!";
+	setstr $@Time = "You have 2 minutes left!";
 	//donpcevent "Father Peter::OnStart";
 	goto AnnouncePrst;
 OnTimer213000:
 	//donpcevent "Father Peter::OnStart";
 	return;
 OnTimer243000:
-	set $@Time = "You have 1 minute left!";
+	setstr $@Time = "You have 1 minute left!";
 	//donpcevent "Father Peter::OnStart";
 	goto AnnouncePrst;
 OnTimer273000:
-	set $@Time = "You have 30 seconds left!";
+	setstr $@Time = "You have 30 seconds left!";
 	//donpcevent "Father Peter::OnStart";
 	goto AnnouncePrst;
 OnTimer293000:
-	set $@Time = "You have 10 seconds left!";
+	setstr $@Time = "You have 10 seconds left!";
 	goto AnnouncePrst;
 	return;
 OnTimer2970000:
-	set $@Time = "You have 5 seconds left.";
+	setstr $@Time = "You have 5 seconds left.";
 	goto AnnouncePrst;
 	return;
 OnTimer302000:
-	set $@Time = "Time is up. You failed the test.";
+	setstr $@Time = "Time is up. You failed the test.";
 	goto AnnouncePrst;
 OnTimer306000:
 	npctimer 0;
@@ -904,12 +904,13 @@ OnTimer306000:
 		areawarp "job_prist",8,34,39,109,"prt_church",16,37;
 		goto Finish;
 	Warp2:
-		areawarp "job_prist",160,14,175,178,"prt_church,16,37;
+		areawarp "job_prist",160,14,175,178,"prt_church",16,37;
 		goto Finish;
 	Warp3:
 		areawarp "job_prist",90,34,105,105,"prt_church",16,37;
 	Finish:
 		resetmymob "job_prist";
+		set \@PriestRoom = 0;
 		//donpcevent "Father Peter::OnStart";
 		return;
 AnnouncePrst:
@@ -918,13 +919,13 @@ AnnouncePrst:
 	check \@PriestRoom = 3,Broad3,-;
 		return;
 	Broad1:
-		areabroadcast "job_prist.gat",8,34,39,109,"[Father Peter]: " $@Time .",10;
+		areabroadcast "job_prist",8,34,39,109,"[Father Peter]: $@Time .",10;
 		return;
 	Broad2:
-		areabroadcast "job_prist.gat",160, 14, 175, 178, "[Father Peter]: " $@Time .",10;
+		areabroadcast "job_prist",160,14,175,178,"[Father Peter]: $@Time .",10;
 		return;
 	Broad3:
-		areabroadcast "job_prist.gat",  90, 34, 105,105, "[Father Peter]: " $@Time .",10;
+		areabroadcast "job_prist",90,34,105,105,"[Father Peter]: $@Time .",10;
 		return;
 }
 
@@ -969,10 +970,14 @@ prt_church.gat,27,24,4	script	"Sister Cecile"	79,{
 		mes "Since you are still a novice, think carefully about what job you wish to take.";
 		close;
 	Prst:
-		if(sex == 1) mes "God bless you, brother priest.";
-		if(sex == 0) mes "God bless you, sister priest.";
-		mes "I wish you all the best.  Keep your faith strong and remeber that God loves all, and so should you.";
-		close;
+		check gender = 0,Girla,-;		
+			mes "God bless you, brother priest.";
+			goto Conta;
+		Girla:
+			mes "God bless you, sister priest.";
+		Conta:
+			mes "I wish you all the best.  Keep your faith strong and remeber that God loves all, and so should you.";
+			close;
 	Aco:
 		check PRIEST_Q = 1,Test1,-;
 		check PRIEST_Q = 2,Test2,-;
@@ -1009,7 +1014,7 @@ prt_church.gat,27,24,4	script	"Sister Cecile"	79,{
 				mes "Please relax and take a break.  The church should feel like your home.";
 				close;
 		Start:
-			Check PRIEST_Q2 == 1,L_ReTest,-;
+			Check PRIEST_Q2 == 1,ReTest,-;
 				mes "Good job, you successfully completed the second quest...!";
 				mes "You are now really close to becoming a priest.";
 				next;
@@ -1019,7 +1024,7 @@ prt_church.gat,27,24,4	script	"Sister Cecile"	79,{
 					goto Cont2;
 				Girl2:
 					mes "If you want to become a priestess, the last step is to answer my questions honestly.";
-				Cont2;
+				Cont2:
 					mes "Please be honest and answer my question.";
 					next;
 					mes "[Sister Cecile]";
@@ -1191,7 +1196,7 @@ prt_church.gat,27,24,4	script	"Sister Cecile"	79,{
 				mes "God bless you...";
 				mes "When you complete the second quest, come back here.";
 				close;
-	L_Done:
+	Done:
 		mes "Congratulations on finishing the tests.  Please see Father Thomas so that he can make you a Priest.";
 		close;
 }
