@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.005 (Fusion 1.212)
 ----------------------------------------------------------------------------------------------------
+- 06-08-04: Warp\dungeons\pay_dun.txt - Updated one warp to a random warp. [Tsusai]
 - 06-08-04: Warp\towns\Yuno.txt - changed random warps to sprite id 723 because 45 won't work until OnTouch. [Tsusai]
 - 06-08-04: Event\Event_Bunny.txt - Added other town NPCs but disabled for users to activate. [Tsusai]
 - 06-08-04: Archive\Event_Bunny.txt - Removed [Tsusai]

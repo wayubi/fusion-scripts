@@ -4,7 +4,24 @@ pay_dun01.gat,15,33,0	warp	warp0945	2,6,pay_dun00.gat,181,33
 pay_dun01.gat,286,25,0	warp	warp0946	2,7,pay_dun02.gat,19,63
 pay_dun02.gat,16,63,0	warp	warp0947	2,7,pay_dun01.gat,283,28
 pay_dun02.gat,137,128,0	warp	warp0948	4,1,pay_dun03.gat,155,159
-pay_dun03.gat,127,62,0	warp	warp0949	1,2,pay_dun04.gat,201,204
+pay_dun03.gat,127,62,4	script	payd04r	723,{
+	random @warp 4;
+	check @warp == 0,w1,-;
+	check @warp == 1,w2,-;
+	check @warp == 2,w3,w4;
+w1:
+	warp "pay_dun04",201,204;
+	return;
+w2:
+	warp "pay_dun04",193,43;
+	return;
+w3:
+	warp "pay_dun04",43,40;
+	return;
+w4:
+	warp "pay_dun04",34,202;
+	return;
+}
 pay_dun03.gat,155,161,0	warp	warp0950	2,1,pay_dun02.gat,137,126
 pay_dun04.gat,32,204,0	warp	warp0951	2,1,pay_dun03.gat,125,62
 pay_dun04.gat,40,37,0	warp	warp0952	2,2,pay_dun03.gat,125,62
