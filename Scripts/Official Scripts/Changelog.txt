@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.004
 ----------------------------------------------------------------------------------------------------
+- town\town_kafra.txt - change prices and location of teleport services of all kafra in alberta based on ragnamart [nestor_zulueta]
 - town\town_kafra.txt - change prices and location of teleport services of kafra in izlude based on ragnamart [nestor_zulueta]
 - Mob/dungeon/alde_dun.txt - Updated, reorganised Clock Tower Basement Dungeon Monster Spawns. [Muad_Dib]
 - Mob/dungeon/anthell_dun.txt - Updated, reorganised Ant Hell Dungeon Monster Spawns. [Muad_Dib]

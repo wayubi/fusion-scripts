@@ -3765,44 +3765,56 @@ alberta.gat,28,229,0	script	"kafra Personnel"	116,{
 		mes "[kafra Personnel]";
 		mes "Please pick your destination.";
 		next;
-		menu "Payon -> 1200 z",L_MENU_3_1,"Prontera -> 1800 z",L_MENU_3_2,"Morroc -> 1800 z",L_MENU_3_3,"Cancel",L_MENU_3_4;
+		menu "Payon -> 1300 z",L_MENU_3_1,"Prontera -> 2100 z",L_MENU_3_2,"Morroc -> 2200 z",L_MENU_3_3,"Comodo -> 2400 z",L_MENU_3_4,"Cancel",L_MENU_3_5;
 		L_MENU_3_1:
 			check @kafra_COUPON = 0,-,L_SUB_3_1;
-				check Zeny < 1200,-,L_ROOT_3_1;
+				check Zeny < 1300,-,L_ROOT_3_1;
 					mes "[kafra Personnel]";
 					mes "You don't have enough money.";
 					mes "Please verify the amount of money you have.";
 					goto L_EXIT;
 			L_ROOT_3_1:
-				set Zeny -= 1200,0;
-				set KF_PIT += 120;
+				set Zeny - 1300;
+				set KF_PIT + 130;
 			L_SUB_3_1:
 				warp "payon",69,100;
 		L_MENU_3_2:
 			check @kafra_COUPON = 0,-,L_SUB_3_2;
-				check Zeny < 1800,-,L_ROOT_3_2;
+				check Zeny < 2100,-,L_ROOT_3_2;
 					mes "[kafra Personnel]";
 					mes "You don't have enough money.";
 					mes "Please verify the amount of money you have.";
 					goto L_EXIT;
 			L_ROOT_3_2:
-				set Zeny -= 1800,0;
-				set KF_PIT += 180;
+				set Zeny - 2100;
+				set KF_PIT + 210;
 			L_SUB_3_2:
 				warp "prontera",116,72;
 		L_MENU_3_3:
 			check @kafra_COUPON = 0,-,L_SUB_3_3;
-				check Zeny < 1800,-,L_ROOT_3_3;
+				check Zeny < 2200,-,L_ROOT_3_3;
 					mes "[kafra Personnel]";
 					mes "You don't have enough money.";
 					mes "Please verify the amount of money you have.";
 					goto L_EXIT;
 			L_ROOT_3_3:
-				set Zeny -= 1800,0;
-				set KF_PIT += 180;
+				set Zeny - 2200;
+				set KF_PIT + 220;
 			L_SUB_3_3:
 				warp "morocc",156,46;
 		L_MENU_3_4:
+			check @kafra_COUPON = 0,-,L_SUB_3_4;
+				check Zeny < 1800,-,L_ROOT_3_4;
+					mes "[kafra Personnel]";
+					mes "You don't have enough money.";
+					mes "Please verify the amount of money you have.";
+					goto L_EXIT;
+			L_ROOT_3_4:
+				set Zeny - 2400;
+				set KF_PIT + 240;
+			L_SUB_3_4:
+				warp "comodo",209,143;
+		L_MENU_3_5:
 			check @kafra_COUPON = 0,-,L_START_1;
 				mes "[kafra Personnel]";
 				mes "Thank you.";
@@ -3967,44 +3979,56 @@ alberta.gat,113,60,6	script	"kafra Personnel"	112,{
 		mes "[kafra Personnel]";
 		mes "Please pick your destination.";
 		next;
-		menu "Payon -> 1200 z",L_MENU_3_1,"Prontera -> 1800 z",L_MENU_3_2,"Morroc -> 1800 z",L_MENU_3_3,"Cancel",L_MENU_3_4;
+		menu "Payon -> 1300 z",L_MENU_3_1,"Prontera -> 2100 z",L_MENU_3_2,"Morroc -> 2200 z",L_MENU_3_3,"Comodo -> 2400 z",L_MENU_3_4,"Cancel",L_MENU_3_5;
 		L_MENU_3_1:
 			check @kafra_COUPON = 0,-,L_SUB_3_1;
-				check Zeny < 1200,-,L_ROOT_3_1;
+				check Zeny < 1300,-,L_ROOT_3_1;
 					mes "[kafra Personnel]";
 					mes "You don't have enough money.";
 					mes "Please verify the amount of money you have.";
 					goto L_EXIT;
 			L_ROOT_3_1:
-				set Zeny -= 1200,0;
-				set KF_PIT += 120;
+				set Zeny - 1300;
+				set KF_PIT + 130;
 			L_SUB_3_1:
 				warp "payon",69,100;
 		L_MENU_3_2:
 			check @kafra_COUPON = 0,-,L_SUB_3_2;
-				check Zeny < 1800,-,L_ROOT_3_2;
+				check Zeny < 2100,-,L_ROOT_3_2;
 					mes "[kafra Personnel]";
 					mes "You don't have enough money.";
 					mes "Please verify the amount of money you have.";
 					goto L_EXIT;
 			L_ROOT_3_2:
-				set Zeny -= 1800,0;
-				set KF_PIT += 180;
+				set Zeny - 2100;
+				set KF_PIT + 210;
 			L_SUB_3_2:
 				warp "prontera",116,72;
 		L_MENU_3_3:
 			check @kafra_COUPON = 0,-,L_SUB_3_3;
-				check Zeny < 1800,-,L_ROOT_3_3;
+				check Zeny < 2200,-,L_ROOT_3_3;
 					mes "[kafra Personnel]";
 					mes "You don't have enough money.";
 					mes "Please verify the amount of money you have.";
 					goto L_EXIT;
 			L_ROOT_3_3:
-				set Zeny -= 1800,0;
-				set KF_PIT += 180;
+				set Zeny - 2200;
+				set KF_PIT + 220;
 			L_SUB_3_3:
 				warp "morocc",156,46;
 		L_MENU_3_4:
+			check @kafra_COUPON = 0,-,L_SUB_3_4;
+				check Zeny < 1800,-,L_ROOT_3_4;
+					mes "[kafra Personnel]";
+					mes "You don't have enough money.";
+					mes "Please verify the amount of money you have.";
+					goto L_EXIT;
+			L_ROOT_3_4:
+				set Zeny - 2400;
+				set KF_PIT + 240;
+			L_SUB_3_4:
+				warp "comodo",209,143;
+		L_MENU_3_5:
 			check @kafra_COUPON = 0,-,L_START_1;
 				mes "[kafra Personnel]";
 				mes "Thank you.";
