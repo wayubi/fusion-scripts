@@ -16,11 +16,58 @@
 // - Main Warps
 //========================================================================================
 
-sword_1-1.gat,192,245,0 warp jobsword1 1,1,sword_1-1.gat,215,243
+sword_1-1.gat,192,245,0 warp jobsword1 1,1,sword_1-1.gat,215,244
 sword_1-1.gat,224,244,0 warp jobsword2 1,1,sword_2-1.gat,10,207
 sword_2-1.gat,192,206,0 warp jobsword3 1,1,sword_2-1.gat,215,205
 sword_2-1.gat,224,206,0 warp jobsword4 1,1,sword_3-1.gat,10,168
-sword_3-1.gat,192,169,0 warp jobsword5 1,1,sword_3-1.gat,215,168
+sword_3-1.gat,192,169,0 warp jobsword5 1,1,sword_3-1.gat,215,167
+
+
+//========================================================================================
+// - Random warps for Broadcast purposes
+//========================================================================================
+
+//sword_1-1.gat,192,244,0 script "random" 45,{
+	      random @warp,1;
+		check @warp = 0,Swordwarp1,-;
+		check @warp = 1,Swordwarp1-1,-;
+         broadcast "Applicant $charaname, has passed the 1st course.",0; 
+	   warp "sword_1-1",215,244;
+Swordwarp1:         
+         broadcast "Applicant $charaname, has passed the 1st course.",0; 
+	   warp "sword_1-1",215,244;
+Swordwarp1-1:         
+         broadcast "Applicant $charaname, has passed the 1st course.",0; 
+	   warp "sword_1-1",215,244;
+}
+
+\\sword_2-1.gat,193,207,0 script "random" 45,{
+	      random @warp,1;
+		check @warp = 0,Swordwarp2,-;
+		check @warp = 1,Swordwarp2-2,-;
+         broadcast "Applicant $charaname, has passed the 2nd course.",0; 
+	   warp "sword_2-1",215,205;
+Swordwarp2:         
+         broadcast "Applicant $charaname, has passed the 2nd course.",0; 
+	   warp "sword_2-1",215,205;
+Swordwarp2-2:         
+         broadcast "Applicant $charaname, has passed the 2nd course.",0; 
+	   warp "sword_2-1",215,205;
+}
+
+//sword_3-1.gat,193,168,0 script "random" 45,{
+	      random @warp,1;
+		check @warp = 0,Swordwarp3,-;
+		check @warp = 1,Swordwarp3-3,-;
+         broadcast "Applicant $charaname, has passed the 3rd course.",0; 
+	   warp "sword_3-1",215,167;
+Swordwarp3:         
+         broadcast "Applicant $charaname, has passed the 3rd course.",0; 
+	   warp "sword_3-1",215,167;
+Swordwarp3-3:         
+         broadcast "Applicant $charaname, has passed the 3rd course.",0; 
+	   warp "sword_3-1",215,167;
+}
 
 //========================================================================================
 // - Trap Hall Warps 1
@@ -213,6 +260,10 @@ sword_1-1.gat,66,117,0 warp jobexit1 1,1,sword_1-1.gat,10,245
 sword_2-1.gat,240,117,0 warp jobexit2 1,1,sword_2-1.gat,10,207
 sword_3-1.gat,162,27,0 warp jobexit3 1,1,sword_3-1.gat,10,168
 sword_3-1.gat,97,27,0 warp jobexit3 1,1,sword_3-1.gat,10,168
+
+
+
+
 
 
 
