@@ -598,34 +598,90 @@ cmd_fild04.gat,267,137,4	script	"Kid"	703,{
 
 // Saint Darmain Keeper
 
-moc_fild12.gat,35,303,4	script	"Saint Darmain Keeper"	59,{
+moc_fild12.gat,35,303,4	script "Serutero"	59,{
 	mes "[Serutero]";
-	mes "Good day, my name is Serutero and I am the gatekeeper for the road to Saint Darmain.";
-	mes "Do wish to proceed to Saint Darmain?";
+      mes "Hello, I am Serutero!
+	mes "These days I guard the roads";
+      mes "that lead to the fortress of Saint Darmain.";
+	mes "Are you sure you want to continue?";
+	mes "If you really want to go to";
+      mes "Saint Darmain,";
+	mes "then you may continue.";
 	next;
-	menu "Proceed to Saint Darmain",-,"Learn more about Saint Darmain",L_MENU_1,"Cancel",L_MENU_2;
-		mes "[Serutero]";
-		mes "Good luck out there, things could get rough, so be extra careful.";
-		warp "cmd_fild08",331,319;
-	L_MENU_1:
-		mes "[Serutero]";
-		mes "Long time ago, due to many waves of invasion by monsters in Saint Darmain, many defensive structures were constructed to keep the peace.";
-		mes "And slowly, Saint Darmain became a natural fortress.";
-		mes "During an invasion, the southern edge of Saint Darmain's lighthouse also sends warning signals to surrounding cities.";
-		next;
-		mes "[Serutero]";
-		mes "Because of the vastness of all the defensive structures, Saint Darmain is also commonly known as";
-		mes "^3355FF` Fortress Saint Darmain '^000000.";
-		next;
-		mes "[Serutero]";
-		mes "If you are looking for the lighthouse, proceed in the direction of south-west.";
-		close;
-	L_MENU_2:
-		mes "[Serutero]";
-		mes "If you ever become exhausted on your journey, you should stop by the nearby island of";
-		mes "^3355FF`Comodo'^000000 City.";
-		mes "The tropical weather over there is a brand new experience for most people.";
-		close;
+	menu "Continue to Saint Darmain's Fortress",-,"about Saint Darmain",L_MENU_1,"end conversation",L_MENU_2;
+	mes "[Serutero]";
+	mes "I see you want to continue";
+      mes "to Saint Darmain's Fortress ..";
+	mes "I wish you a worth while journey.";
+	mes "may your travel be blessed and";
+      mes "fortunate.";
+	mes ".....";
+	   warp "cmd_fild08",331,319;
+      close;
+L_MENU_1:
+	mes "[Serutero]";
+	mes "Since long ago, the province of";
+      mes "Saint Darmain";
+	mes "has been victim of invasion after";
+	mes "invasion.";
+      mes "Neighboring armies would";
+	mes "continually";
+      mes "be pillaging the lanbd and it's";
+	mes "people.";
+	mes "To defend themselves from this";
+      mes "continued";
+	mes "violation of their homes, the";
+      mes "people developed...";
+	next;
+	mes "[Serutero]";
+	mes "a smoke signal communication";
+      mes "method.";
+	mes "This gave the people time to";
+	mes "prepare their defenses";
+      mes "and fortify their cities.";
+	mes "with this technique, they were able";
+      mes "to survive the ravages of war,";
+	mes "that tore their country.";
+	mes "^3355FF' New Saint Dermain '^000000 was formed.";
+      next;
+	mes "[Serutero]";
+	mes "However, this was not the end of";
+      mes "Saint Dermain.";
+	mes "as the neighboring province of";
+	mes "Comodo became stronger and";
+      mes "more influental, they annexed";
+	mes "Saint Dermain. As time";
+      mes "passed they lost interest in";
+	mes "Saint Dermain.";
+	mes "Saint Dermain is now, but a forgotten";
+      mes "land..."; 
+      next;
+	mes "[Serutero]";
+	mes "Recently, the area had gone";
+      mes "into a revolution. A new";
+	mes "government was put into power.";
+	mes "Then the monsters came.";
+      mes "The monsters took over everything.";
+	mes "No man could set step into the land";
+      mes "of Saint Dermain.";
+	mes "Saint Dermain became nothing but a";
+	mes "monster hell.";
+      next;
+	mes "[Serutero]";
+	mes "If you are looking for the Paros";
+      mes "Lighthouse island,";
+	mes "you can find it to the soutwest.";
+	mes "I wish you luck and hope the";
+	mes "best in your voyage.";
+	close;
+L_MENU_2:
+	mes "[Serutero]";
+	mes "If you ever become exhausted of your journey,";
+      mes " you should stop by the nearby island of";
+	mes "^3355FF`Comodo'^000000 City.";
+	mes "The tropical weather over there is a";
+      mes "brand new experience for most people.";
+	close;
 }
 
 // Lighthouse Guide
