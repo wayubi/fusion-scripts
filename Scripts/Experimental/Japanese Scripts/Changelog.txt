@@ -8,5 +8,6 @@
  - Notice: When a script has been translated put it into the Translated folder and,
    delete the Untranslated file.
 ====================================================================================================
-- 05-26-04: Untranslated\Turtle_isle.txt - Added Untransalted Turtle Isle Script [Muad_Dib]
+- 05-27-04: Untranslated\Event_Carnival.txt - Added Untranslated Carnival Script [Muad_Dib]
+- 05-26-04: Untranslated\Turtle_Isle.txt - Added Untranslated Turtle Isle Script [Muad_Dib]
 - 05-26-04: Added Japanese Scripts section. [Muad_Dib]
