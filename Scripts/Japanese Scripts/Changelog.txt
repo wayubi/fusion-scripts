@@ -1,6 +1,13 @@
 --------------------------------------------------------------------------------
  - Japanese scripts changelog
 --------------------------------------------------------------------------------
+- 09-15-04: Added translated Rogue.txt. - by eathena [Muad_Dib]
+- 09-15-04: Added untranslated npc_town_gonryun.txt - newer version. [Muad_Dib]
+- 09-15-04: Added untranslated npc_town_comodo.txt - newer version. [Muad_Dib]
+- 09-15-04: Added untranslated npc_town_niflheim.txt - new town. [Muad_Dib]
+- 09-15-04: Added untranslated npc_event_hats2.txt - new hat quests. [Muad_Dib]
+- 09-15-04: Added untranslated npc_kafra_guide.txt - new kafra and guide. [Muad_Dib]
+- 09-15-04: Added untranslated Town_Jawaii.txt - new town. [Muad_Dib]
 - 09-15-04: Removed translated npc_event_arrow. [Muad_Dib]
 - 09-15-04: Removed translated npc_event_pumpkin. [Muad_Dib]
 - 09-15-04: Removed translated npc_job_alche. [Muad_Dib]
