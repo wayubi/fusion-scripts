@@ -9,8 +9,20 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.003
 ----------------------------------------------------------------------------------------------------
+- Quest\Quest_skill\Thief_Skill.txt - file added. [nestor_zulueta]
+- Quest\Quest_skill\NPC_Novice_skill.txt - file added. [nestor_zulueta]
+- Quest\Quest_skill\Moving_Recovery.txt - file added. [nestor_zulueta]
+- Quest\Quest_skill\Holy_Light.txt - file added. [nestor_zulueta]
+- Quest\Quest_skill\Fatal_Blow.txt - file added. [nestor_zulueta]
+- Quest\Quest_skill\Energy_Coat.txt - file added. [nestor_zulueta]
+- Quest\Quest_skill\Crazy_Uproar_Quest.txt - file added. [nestor_zulueta]
+- Quest\Quest_skill\Charged_Arrow.txt - file added. [nestor_zulueta]
+- Quest\Quest_skill\Change_Cart.txt - file added. [nestor_zulueta]
+- Quest\Quest_skill\Cart_Revolution.txt - file added. [nestor_zulueta]
+- Quest\Quest_skill\Berserk.txt - file added. [nestor_zulueta]
+- Quest\Quest_skill\Arrow_Crafting.txt - file added. [nestor_zulueta]
 - Npc\npc_skill_get.txt - removed and moved to archieve. [nestor_zulueta]
-- Quest\Questskill - added new folder. [nestor_zulueta]
+- Quest\Quest_skill - added new folder. [nestor_zulueta]
 - Job\Job2_Wizard.txt - Complete change to Wizard quest. [nestor_zulueta] 
 - Job\Job_Super_Novice.txt - Fixed header. [Muad_Dib] 
 - Town\Town_Aldebaran.txt - Removed 2nd guide. [Muad_Dib]
