@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.004
 ----------------------------------------------------------------------------------------------------
+- shop\umbala.txt - Fixed weapons dealer price. [Muad_Dib]
 - Town\Town_Kafra.txt - Corrected Amatsu Kafra menu labels. [Tsusai]
 - GvG\aldeg_cas02.txt - Corrected label check error. [Tsusai]
 - Town\Town_Kafra.txt - Changed a few kafra faceing positions. [Muad_Dib]
