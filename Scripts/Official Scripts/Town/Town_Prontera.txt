@@ -109,35 +109,35 @@
 
 prontera.gat,54,240,6 script "Tono" 97,{
 	mes "[Tono]";
-	mes "Did you know? The larva of Creamy is Fabre.";
+	mes "Did you know that the larva of Creamy is Fabre.";
 	mes "The pupa stage of Fabre is simply called Pupa. "
-	mes "As you can imagine, there is another monster metamorphic out in the desert.";
+	mes "As you can imagine, there is another metamorphic monster out in the desert.";
 	next;
 	mes "[Tono]";
-	mes "That's it! It is Peco Peco.";
-	mes "The infant of Peco Peco is called Picky.";
-	mes "Unlike colorful Peco Peco, Picky is very cute, isn't it?"
+	mes "That's it! It's the Peco Peco.";
+	mes "An infant Peco Peco is called a Picky.";
+	mes "Unlike the colorful Peco Pecos, Pickys are very cute, don't you agree?"
 	close;
 }
 
 prontera.gat,160,133,2 script	"YuPi" 102,{
 	mes "[YuPi]";
 	mes "Among monsters of the same form, there are some more ferocious than others.";
-	mes "If you ever even touch them by mistakes, you'd better prepare yourself for what you've done.";
+	mes "If you even touch them by mistake, you'd better prepare yourself for what you've done.";
 	next;
 	mes "[YuPi]";
-	mes "You can tell differences them by their body color.";
-	mes "The more aggressive characteristic monster is, the dangerous color it has.";
+	mes "You can tell differences in them by their body color.";
+	mes "The more aggressive the monster is, the more dangerous looking color it will have.";
 	close;
 }
 
 prontera.gat,149,202,2 script	"YuNa" 700,{
 	mes "[YuNa]";
-	mes "Odin is the god of wisdom and war.  He couragously removed one of his eyes in order to acquire ultimate wisdom. ";
+	mes "Odin is the god of wisdom and war.  He courageously removed one of his eyes in order to acquire ultimate wisdom. ";
 	next;
 	mes "[YuNa]";
 	mes "The statue in the middle of the water fountain over there is sculpted after the god himself.";
-	mes "I don't know who the sculptor was, which is a pitty because.... becasue....";
+	mes "I don't know who the sculptor was, which is a pitty because.... because....";
 	next;
 	mes "[YuNa]";
 	mes "HE DID IT ALL WRONG!!";
@@ -147,74 +147,74 @@ prontera.gat,149,202,2 script	"YuNa" 700,{
 	mes "The statue is just totally different from the Odin we all know! He insisted that it was his artistic view or something....";
 	next;
 	mes "[YuNa]";
-	mes "Look~ He doesn't have a broad brimmed hat.... he's not even riding Sleipnir.... this is just totally unacceptable~!";
+	mes "Look...He doesn't have a broad brimmed hat.... he's not even riding Sleipnir.... this is just totally unacceptable!";
 	   emotion 32;
 	close;
 }
 
 prt_in.gat,181,21,2 script "Bartender" 61,{
 	mes "[Bartender]";
-	mes "Phew~ more and more people are crawling in these days.";
-	mes "I am getting tired and tired everyday, though business has never been better...";
+	mes "Phew...more and more people are crawling in these days.";
+	mes "I am getting more everyday, though business has never been better...";
 	mes "To tell the truth, it's getting hard to get ingredients. ";
 	next;
 	mes "[Bartender]";
-	mes "As you probably know, wandering out of towns, there are so much more monsters recently. I dare to step outside of this town, budy. ";
-	mes "Think about it. How can I possibly make my Ultra Nice Special Super menus with just regular stuff? ";
+	mes "As you probably know, wandering around outside of town is no longer safe, what with all of the monsters that have appeared recently. I dare to step outside of this city walls, buddy. ";
+	mes "Think about it. How can I possibly make my Ultra Nice Super Special menus with just regular stuff? ";
 	next;
 	mes "[Bartender]";
-	mes "I don't use just any ingredients on the market. I use those directly from Super heavy level hunters I personally hired. ";
+	mes "I don't use just any ingredients on the market. I use only the freshest, most precious ingredients directly from Super heavy level hunters I've personally hired. ";
 	mes "Extreme FRESH, if I might add. ";
-	mes "But it's getting very hard to get enough of what I need even from them. ";
+	mes "But it's getting very hard to get enough of what I need, even from them. ";
 	next;
 	mes "[Bartender]";
-	mes "If things don't change... my special menu 'Sour Crunches' and 'Tasty Yum-Yum ' will disappear from people's memory, sob..sob..";
+	mes "If things don't change... my special menu 'Sour Crunches' and 'Tasty Yum-Yums' will disappear from people's memory, sob..sob..";
 	   emotion 28;
 	next;
-	menu "''Sour Crunches'?",SC,"'Tasty Yum-Yum '?",TYY,"Who care.",WC;
+	menu "'Sour Crunches'?",SC,"'Tasty Yum-Yums'?",TYY,"Who cares.",WC;
 SC:
 	mes "[Bartender]";
-	mes "Special Ant is the essential ingredient for it. It can be found in this Ant Hell on the way to the desert city Morroc. ";
-	mes "Well...the problem is that the number of ants grows unimaginably and they also get very brutal. Most of hunters don't even think about going near there.";
+	mes "Special Ant is the essential ingredient for them. It can be found in Ant Hell on the way to the desert city Morroc. ";
+	mes "Well...the problem is that the number of ants grows unimaginably and they also get very brutal. Most of the hunters don't even think about going near there.";
 	next;
 	mes "[Bartender]";
-	mes "I can see soon-to-be-finished fate of my pub... Phew~~ ";
+	mes "I can see the soon-to-be-finished fate of my pub... Phew... ";
 	next;
 TYY:
 	mes "[Bartender]";
-	mes "it is a very tasty dish prepared with Grasshoppers that can be caught around the area passed the forest to the west. THE BEST dish we have! ";
-	mes "Those grasshoppers became very brutal and, moreover, the enormous number of bees appeared out of nowhere. It's almost impossible to get it. ";
+	mes "They are a very tasty treat prepared with Grasshoppers that can be caught around the area past the forest to the west. THE BEST dish we have! ";
+	mes "Those grasshoppers became very brutal and, moreover, an enormous number of bees appeared out of nowhere. Now It's almost impossible to get it. ";
 	next;
 	mes "[Bartender]";
-	mes " I can see soon-to-be-finished fate of my pub... Phew~~ ";
+	mes " I can see soon-to-be-finished fate of my pub... Phew...";
 	next;
 WC:
 	mes "[Bartender]";
-	mes "Anyways, be careful and take care of yourself~.";
+	mes "Anyways, be careful and take care of yourself.";
 	close;
 }
 
 prt_in.gat,173,24,2 script "Shevild" 85,{
 	mes "[Shevild]";
-	mes "Hey~Hey~ Come on over and have a drink, man. I'll tell you exciting stories. ";
-	mes "Do not judge me from how I look. I've been everywhere you can imagine around Prontera. ";
+	mes "Hey! Hey! Come on over and have a drink man. I'll tell you some exciting stories.";
+	mes "Don't judge me by how I look. I've been everywhere you can imagine around Prontera.";
 	mes "I've been to places packed with monsters, but they also have the greatest view. ";
 	next;
 	menu "Where can I find those places?",WHERE,"Never mind",CANCEL1;
       close;
 WHERE:
 	mes "[Shevild]";
-	mes "In spite of how I may look, I'm a all around-player~~!!! ";
+	mes "In spite of how I may look, I'm a all-around player!!!";
 	mes "When people go on hunting, I carry weapons and stuff.. or I deliver this and that...";
 	mes "Well.. Some people say 'isn't that a job for an errand boy?' ";
 	next;
 	mes "[Shevild]";
-	mes "but personally I am very proud of myself and what I'm doing. You should know how harsh the world can be to you, right?";
-	mes "But for me, nothing stands on my way to accomplish my job~Ahem! ";
+	mes "But personally I am very proud of myself and what I'm doing. You should know how harsh the world can be to you, right?";
+	mes "But for me, nothing stands in my way to accomplish my job...Ahem! ";
 	next;
 	mes "[Shevild]";
-	mes "Anyways, thanks to my career, I've been able to visit so many interesting places where nobody has ever visited before....";
-	mes "Oh~ that's the true charm of my job..."; 
+	mes "Anyways, thanks to my career, I've been able to visit many interesting places that other people don't know exist....";
+	mes "Oh, that's the true charm of my job..."; 
 	mes "Hm...Now...that mysterious dungeon and the dangerous forest come to my mind. ";
 	   emotion 20;
 	next;
@@ -222,53 +222,53 @@ WHERE:
       close;
 DUNGEON:
 	mes "[Shevild]";
-	mes "Hm.. yeah..yeah..a while ago I followed the hunters to the very mysterious dungeon to the north of Prontera. ";
+	mes "Hm.. yeah..yeah..a while ago I followed the hunters to the very mysterious dungeon to the north of Prontera.";
 	next;
 	mes "[Shevild]";
-	mes "The rumor says monsters are very tough there, but you could get as valuable goods as the high risk.";
-	mes "So I followed highly professional hunters there. But as soon as we stepped into the dungeon, the maze is confusing as hell...";
+	mes "The rumor says monsters are very tough there, but you can find goods just as valuable as the high risk you must face.";
+	mes "So I followed highly professional hunters there. But as soon as we stepped into the dungeon, the maze confused the hell out of me...";
 	next;
 	mes "[Shevild]";
-	mes "No matter which direction you moved forward, it seemed like you were ending up at the same position where you started. ";
-	mes "So we just came back out with empty-handed. I really want to challenge the dungeon again sometime. ";
+	mes "No matter which direction you moved forward, it seemed like you were ending up at the same position where you started.";
+	mes "So we just came back out empty handed. I really want to challenge the dungeon again sometime.";
 	next;
-	menu "How can I get there?",DIRECTIONS_D,"End conversation ",CANCEL3;
+	menu "How can I get there?",DIRECTIONS_D,"End conversation",CANCEL3;
       close;
 DIRECTIONS_D:
 	mes "[Shevild]";
-	mes "Huh? What?! Haven't you even wandered around just outside of Prontera yet, man? ";
-	mes "Alriht, alright. I'll tell you. If you go north from the castle of Prontera, the dungeon is at the edge of the north-west side of the forest. ";
+	mes "Huh? What?! Haven't you even wandered around just outside of Prontera yet man?";
+	mes "Alright, alright. I'll tell you. If you go north from the castle of Prontera, the dungeon is at the edge of the north-west side of the forest.";
 	close;
 CANCEL3:
       mes "[Shevild]";
-	mes "Okay.. Always watch out while you're traveling out there~ pal!";
+	mes "Okay.. Always watch out while you're traveling out there pal!";
 	close;
 FOREST:
 	mes "[Shevild]";
 	mes "There is a splendid ruin to the north-east of Prontera. I went there a while ago to deliver something to the priest there.";
-	mes "Before the ruin, there located a forest full of monkeys and raccoons. ";
+	mes "Before the ruin, there is a forest full of monkeys and raccoons.";
 	next;
 	mes "[Shevild]";
-	mes "You have to be very cautious. As soon as you drop something on the ground, a monkey jumps out of nowhere and snatches it. ";
+	mes "You have to be very cautious. As soon as you drop something on the ground, a monkey jumps out of nowhere and snatches it.";
 	next;
       menu "How can I get there?",DIRECTIONS_F,"End conversation ",CANCEL4;
       close;
 DIRECTIONS_F:
 	mes "[Shevild]";
-	mes "The direction might sound a little confusing, but it really isn't, actually. Go out to the north and keep going to the east. Then you will find it. ";
-	mes "If you want to go there, you'd better watch out for grasses attacking you ferociously. ";
+	mes "My directions might sound a little confusing, but they really aren't. Go out of the city to the north-east. Keep going until you find it.";
+	mes "If you want to go there, you'd better watch out for grasses that will attack you ferociously.";
 	close;
 CANCEL4:
 	mes "[Shevild]";
-	mes " Okay.. Always watch out when you're traveling out there, pal~";
+	mes " Okay.. Always watch out when you're traveling out there pal";
  	close;
 CANCEL2:
       mes "[Shevild]";
-	mes " Okay.. Always watch out when you're traveling out there, pal~";
+	mes " Okay.. Always watch out when you're traveling out there pal";
 	close;
 CANCEL1:
 	mes "[Shevild]";
-	mes "Sure...if you wanna hear more, come back here anytime. No problem~~";
+	mes "Sure...if you wanna hear more, come back here anytime. No problem";
 	close;
 }
 
@@ -280,11 +280,11 @@ prt_in.gat,177,20,2 script "Tensue"	97,{
 Topic1:
 	mes "[Tensue]";
 	mes "What? You are sick and tired of killing monsters on fields and dungeons?";
-	mes "Hahaha, it seems like you are very confident in your training. If you think so... ";
-	mes "why don't you visit Izlude, the satellite of Prontera. ";
+	mes "Hahaha, it seems like you are very confident in your training. If you think so...";
+	mes "why don't you visit Izlude, the satellite of Prontera.";
 	next;
 	mes "[Tensue]";
-	mes "Cool Event Corp. or something has opened up the arenas called Time Limit Fight and Battle Ordeal, ";
+	mes "Cool Event Corp. or something has opened up the arenas called Time Limit Fight and Battle Ordeal,";
 	mes "filling young people's thirst for more excitement...";
 	mes "Well.. Of course you will have to pay a little.";
 	next;
@@ -294,22 +294,22 @@ Topic1:
 Topic2:
 	mes "[Tensue]";
 	mes "One time I walked all the way to a place called 'Aldebaran'. It was very dangerous trip with all those monsters...";
-	mes "Some of monsters just keep following and attacking me although I did nothing to harm them. That made the trip even more dangerous...";
+	mes "Some of the monsters just kept following and attacking me although I did nothing to harm them. That made the trip even more dangerous...";
 	next;
 	mes "[Tensue]";
 	mes "well.. Nonetheless, scenic views on the way were so magnificent that I truly believe it was worth trying...";
 	mes "A canal surrounding 'Alderaran' makes the city more distinguishably beautiful. ";
 	next;
 	mes "[Tensue]";
-	mes "Moreover Kafra main branch located there so you can expect great services. Haha. Don't forget to visit there once.";
+	mes "Moreover Kafra Corp. main branch located there so you can expect great service. Haha. Don't forget to visit there at least once.";
 	close;
 Topic3:
 	mes "[Tensue]";
-	mes "Our Prontera is presently under the reign of Tristram the 3rd. Everything we have now is only avaiable thanks to his Majesty. ";
+	mes "Our Prontera is presently under the reign of Tristram the 3rd. Everything we have now is only avaiable thanks to his Majesty.";
 	next;
 	mes "[Tensue]";
 	mes "But you know those outsiders at the corner of Prontera? Why do we have to accept them all the time...I really think that is NOT necessary at all.";
-	mes "His Majesty ...well...is waaaaaaay to generous..";
+	mes "His Majesty ...well...he's waaaaaaay too generous..";
 	close;
 }
 
@@ -319,64 +319,64 @@ prt_in.gat,177,18,2 script "Marvin"	80,{
 	next;
 	mes "[Marvin]";
 	mes "'Hm..if I learn this, I won't be able to learn that..' or 'Uh-huh? With that skill, will I have enough points to master this skill?' Like this...";
-	mes "BUT every rule has an EXCEPTION~~. Not all skills have to level 10 to be mastered. Ta-da~~ ... Ahem...";
+	mes "BUT every rule has an EXCEPTION. Not all skills have to level 10 to be mastered. Ta-da ... Ahem...";
 	next;
 	mes "[Marvin]";
-	mes "You can master some skills when they are level 5. Even better, some skills only requires 1 or 2.";
-	mes "How pitiful would it be if you don't learn a tremendously useful skill only because you are nervous.";
+	mes "You can master some skills when they are level 5. Even better, some skills only require 1 or 2 points.";
+	mes "How pitiful would it be if you didn't learn a tremendously useful skill only because you were nervous.";
 	next;
 	mes "[Marvin]";
-	mes "Therefore, don't just go ahead and learn anything either. Collect some information about skills and plan ahead.";
+	mes "Therefore, don't just go ahead and learn any random skill. Collect some information about skills and plan ahead.";
 	mes "That way, you can use your valuable skill points very wisely without wasting any.";
 	close;
 }
 
 prontera.gat,106,116,5 script "Girl" 91,{
 	mes "[Girl]";
-	mes "Me and my family was out for a nice picnic in the holiday.  While we're looking for a quite place to sit, deep inside the forest, we saw something incredible.  It was a huge army of bees!";
+	mes "My family and I were out for a nice picnic during the holiday.  While looking for a quite place to sit, deep inside the forest, we saw something incredible.  It was a huge army of bees!";
 	next;
 	mes "[Girl]";
-	mes "I have never saw that many bees in my life!  But what suprised me is that they all seems to be listen to a queen bee.";
-	mes "She was using a Honeycomb to control all the worker bees.  If every man in this world can be control like that, how wonderful it'll be!";
+	mes "I have never seen that many bees in my life!  But what suprised me is that they all seem listen to a queen bee.";
+	mes "She was using a Honeycomb to control all the worker bees.  If every man in this world can be controled like that, how wonderful it'd be!";
 	close;
 }
 
-prt_in.gat,178,92,0 script "Curator of Library"	57,{
+prt_in.gat,178,92,0 script "Library Curator"	57,{
 	mes "[Curator Guiss]";
 	mes "Our library keeps records of monsters in various dungeons scattered around Rune-Midgard.";
 	mes "They are categorized according to each dungeon where the specific monster resides. Needless to say, every record is very easily accessible.";
 	next;
 	mes "[Curator Guiss]";
-	mes "There are also must-read books for adventures on the top shelves. Please take your time and read those.";
+	mes "There are also must-read books for adventurers on the top shelves. Please take your time and read those.";
 	next;
 	mes "[Curator Guiss]";
-	mes "The library next door has organized records of monsters according to thier properties.";
+	mes "The library next door has organized records of monsters according to their properties.";
 	mes "If you are interested, you should stop by there, too.";
 	close;
 }
 
 prt_in.gat,175,50,0 script "Librarian Ellen" 71,{
 	mes "[Librarian Ellen]";
-	mes "Welcome. You can find books about monsters, organized by thier properties here. There are also books about Merchant and Blacksmith skills.";
+	mes "Welcome. You can find books about monsters organized by their properties here. There are also books about Merchant and Blacksmith skills.";
 	next;
 	mes "[Librarian Ellen]";
-	mes "Ah~! The library next door also has many interesting reading materials so please visit there too.";
+	mes "Ah! The library next door also has many interesting reading materials so please visit there too.";
 	close;
 }
 
 prt_in.gat,87,92,4 script "Knight" 65,{
 	mes "[Knight]";
-	mes "I wish I could attck and defend at the same time. You know,when you use the weapon which have to grip with both hands, your defence will be weaker than usual because you can't hold a shield at the same time...";
-	mes "There should be the weapon which covers the weakness.";
+	mes "I wish I could attck and defend at the same time. You know, when you use a weapon that you have to hold with both hands, your defence will be weaker than usual because you can't hold a shield at the same time...";
+	mes "There should be a weapon which covers the weakness.";
 	next;
 	mes "[Knight]";
-	mes "If I could make that weapon,definately it would show me the money... oh well.";
+	mes "If I could make that weapon, it would definately help me earn some money... oh well.";
 	close;
 }
 
 prt_church.gat,27,24,2 script "Sister" 79,{
 	mes "[Sister]";
-	mes "We as priests, are all against using blade weapons.  Because we want to convert the monsters, not killing them.";
+	mes "We as priests, are all against using blade weapons.  Because we want to convert the monsters, not kill them.";
 	close;
 }
 
@@ -391,21 +391,21 @@ prt_church.gat,96,57,2 script	"Fun"	85,{
 
 prt_in.gat,47,141,1 script "Old Man" 56,{
 	mes "[Old Man]";
-	mes "It's been so long for anyone to go into the sewer.  Recently, I heard from people saying it's been infested by ^000077Thief bugs!^000000";
+	mes "It's been so long since anyone has gone into the sewer.  Recently, I heard from people saying it's been infested by ^000077Thief bugs!^000000";
 	next;
 	mes "[Old Man]";
-	mes "Anyways, its growth in population size so fast, we can't even use them as food.  Feels like they can survive even if the whole world is destroyed!!";
+	mes "Anyway, with their fast growth in population size, we can't even use them as food.  I think they could survive even if the whole world is destroyed!!";
 	close;
 }
 
 prt_in.gat,26,31,4 script "Old Man" 97,{
 	mes "[Old Man]";
-	mes "You might not believe me whatn I saw in ^000077Culvet Sewer^000000!";
-	mes "My family has been maintaining the sewer system for 3 generations, I have the knowledge of all of my anciesters about the sewer.";
+	mes "You might not believe what I saw in ^000077Culvet Sewer^000000!";
+	mes "My family has been maintaining the sewer system for 3 generations, I have the knowledge of all of my ancestors about the sewer.";
 	mes "When I was in the 4th floor, I saw a shining ^000077Thief Bug^000000 in the dark!";
 	next;
 	mes "[Old Man]";
-	mes "A shining thief bug!  How can a thief bug shin like that?  I guess anywhere in the world there's something that shins like that";
+	mes "A shining thief bug!  How can a thief bug shine like that?  I guess anywhere in the world there's something that shines like that.";
 	close;
 }
 
@@ -434,27 +434,27 @@ prontera.gat,47,339,5 script "Guard" 105,{
 
 prt_maze02,100,69,5 script "Guard" 105,{
 	mes "[Guard]";
-	mes "Hey, I don't get your point but I say you should take a rest in home rather than go inside the forest.Don't you ever be told the Demon lurks there?";
-	mes "Naturally,Nobody came back on the hoof so I am not sure whether it really exists or not... well,Do as you want,dude.I am not your mother.";
+	mes "Hey, I don't get your point but I say you should go home and rest rather than go inside the forest.  Don't you know the 'Demon' lurks there?";
+	mes "Naturally, Nobody came back on the hoof so I am not sure whether it really exists or not... well, Do as you want, dude.  I'm not your mother.";
 	close;
 }
 
 prt_maze02,110,69,5 script "Guard" 105,{
 	mes "[Guard]";
-	mes "Phew...That geek who went inside last time, never returned either.";
-	mes "I tried to stop him so many times but he never took it seriously.He told me he needed herbs.";
+	mes "Phew...That geek who went inside last time never returned either.";
+	mes "I tried to stop him so many times but he never took me seriously.  He told me he needed herbs.";
 	mes "If I were him, I would never give up my life for stupid herbs.";
 	close;
 }
 
 prt_church.gat,103,76,5	script "Garnet" 64,{
 	mes "[Garnet]";
-	mes "Oh~ you want to find pleasure in helping other people? But you don't know how to do so?";
+	mes "Oh, you want to find pleasure in helping other people? But you don't know how to do so?";
 	mes "Fortunately we have abilities to help and support other people.";
 	next;
 	mes "[Garnet]";
 	mes "We can heal people of exhausted condition or awake their potentials hidden deep inside.";
-	mes "Ahem...Feel free to ask me anything. The priest scolds me for being lousy pretty much everyday, BUT I KNOW everything about theories. "
+	mes "Ahem...Feel free to ask me anything. The priest scolds me for being lousy pretty much everyday, BUT I KNOW everything about theories."
 	next;
 	menu "About Heal",HEAL,"About Cure",CURE,"About Increase AGI",AGI,"About Angelus",ANGELUS,"About Blessing",BLESSING,"About Warp Portal",WARP,"End Conversation",END;
       close;
@@ -495,7 +495,7 @@ BLESSING:
 	mes "I am sure this skill will be a great advantage for your friends.";
 	next;
 	mes "[Garnet]";
-	mes "'Blessing', like 'Angelus', also require you to know 'Divine Protection'. But you'll need to have two more level.";
+	mes "'Blessing', like 'Angelus', also requires you to know 'Divine Protection'. But you'll need to have two more levels.";
 	mes "That is, Level 5 'Divine Protection' for 'Blessing'.";
 	close;
 WARP:
@@ -510,8 +510,8 @@ WARP:
 	next;
 	mes "[Garnet]";
 	mes "Well..it's a bit of hassle, but you have to be physically at a place you want to warp to and save the position first.";
-	mes "This can be very dangerous in some areas so be quick~. Go in, save, and 'Teleport' out!";
-	mes "Also 'Warp Portal' skill consumes such a huge amount of energy, ";
+	mes "This can be very dangerous in some areas so be quick. Go in, save, and 'Teleport' out!";
+	mes "Also, the 'Warp Portal' skill consumes such a huge amount of energy, ";
 	next;
 	mes "[Garnet]";
 	mes "so you MUST use 'Blue Gemstone' as a Catalyst. ";
@@ -519,26 +519,26 @@ WARP:
 	close;
 END:
 	mes "[Garnet]";
-	mes "Hehehe, did I just show off too much in front of the expert? Hehe. Be Happy whatever you do~~!";
+	mes "Hehehe, did I just show off too much in front of the expert? Hehe. Be Happy whatever you do!";
 	close;
 }
 
 prt_church.gat,103,71,0	script "Henson" 120,{
 	mes "[Henson]";
-	mes "Not only helping others";
-	mes " but also purifying poor souls turned into the Undead is our duty as well.";
+	mes "Not only helping others,";
+	mes "but also purifying poor souls turned into the Undead is our duty as well.";
 	mes "In order to successfully accomplish our duty, we have to learn skills and practice them very hard. Well, What was it you wanted to ask me about?";
 	next;
-	menu "About Divine Protection",DP,"About Demon Bane",DB,"About Decrease AGI",DA,"About Signum Crusis ",SC,"About Pneuma",P,"About Ruwach",R,"About Teleport",T,"End conversation.",END;
+	menu "About Divine Protection",DP,"About Demon Bane",DB,"About Decrease AGI",DA,"About Signum Crusis",SC,"About Pneuma",P,"About Ruwach",R,"About Teleport",T,"End conversation.",END;
       close;
 DP:
 	mes "[Henson]";
-	mes "If you want to improve your Defense against the Undead, it is a good idea to learn this skill called, 'Divine Protection'. ";
+	mes "If you want to improve your Defense against the Undead, it is a good idea to learn the skill called 'Divine Protection'.";
 	mes "It is the most basic skill you'll need, and it doesn't even have time limit or anything, anyway. ";
 	next;
 	mes "[Henson]";
-	mes "If you bring it up to level 3, then a skill called 'Demon Bane' will be available for you. By the way 'Demon Bane' increases your attack against the Undead. ";
-	mes "With 'Divine Protection' on foundation, several high class skills such as 'Angelus' and 'Blessing' will be available for you.";
+	mes "If you bring it up to level 3, then a skill called 'Demon Bane' will be available for you. By the way, 'Demon Bane' increases your attack against the Undead.";
+	mes "With 'Divine Protection' as foundation, several high class skills such as 'Angelus' and 'Blessing' will be available for you.";
 	close;
 DB:
 	mes "[Henson]";
@@ -546,17 +546,17 @@ DB:
 	mes "Well, you have to know 'Divine Protection' at least a little, and like for 'Divine Protection' you don't have to worry about something like time limit for 'Demon Bane'.";
 	next;
 	mes "[Henson]";
-	mes "Also you have to achieve level 3 'Demon Bane' to use a skill called 'Signum Crusis' which lowers the Defense of the Undead and monsters of Dark property.";
+	mes "Also you have to achieve level 3 'Demon Bane' to use a skill called 'Signum Crusis' which lowers the Defense of the Undead and monsters of the Dark property.";
 	close;
 DA:
 	mes "[Henson]";
-	mes "Once you use this skill, you can slow the movement of the monster down as well as its attack and evade speed. ";
+	mes "Once you use this skill, you can slow the movement of the monster down as well as its attack and evade speed.";
 	mes "If you want to use this skill, you have to learn 'Increase AGI' first.";
 	close;
 SC:
 	mes "[Henson]";
-	mes "You can lower the defense of the Undead and Dark property monster with this, and the range is very wide.";
-	mes "The successful rate, however, is pretty low since it is a very difficult skill. Do not be disappointed even if you don't successfully use this skill all the time. But don't forget!"
+	mes "You can lower the defense of the Undead and Dark property monsters with this, and the range is very wide.";
+	mes "The successful rate, however, is pretty low since it is a very difficult skill. Do not be disappointed even if you don't successfully use this skill all the time."
 	next;
 	mes "[Henson]";
 	mes "You'll need level 3 'Demon Bane' to acquire this skill.";
@@ -580,7 +580,7 @@ T:
 	close;
 END:
 	mes "[Henson]";
-	mes "If you're still not certain, you are always welcome!"
+	mes "If you're still not certain, think it over and come back soon."
 	close;
 }
 
@@ -617,23 +617,23 @@ prontera.gat,147,305,0 script "Sign" 111,{
 prontera.gat,165,305,0 script "Billboard" 111,{
 	mes "^993333- The Billboard Reads -^000000";
       mes "We hope you enjoy your stay in";
-      mes "prontera.";
+      mes "Prontera.";
       close;
 }
 
 prontera.gat,150,326,0 script "Sign" 111,{
 	mes "^993333- The Sign Reads -^000000";
       mes "Citizens of Prontera are Welcomed";
-      mes "in the Prontere Castle.";
+      mes "in the Prontera Castle.";
       close;
 }
 
 prontera.gat,158,214,0 script "Sign Post" 111,{
 	mes "^993333- The Sign Post Reads -^000000";
-      mes "North to Prontere Castle";
+      mes "North to Prontera Castle";
       mes "North to Al De Baran";
       mes "Northwest to Geffen";
-      mes "East to Prontere Fields";
+      mes "East to Prontera Fields";
       mes "South to Prontera Fields";
       mes "Southeast to Alberta";
       mes "Southwest to Morroc";
@@ -682,7 +682,7 @@ prontera,216,70,4 script "Strife" 48,{
          check Job == 1,L_Swordie,-; 
 	   check event_swordie == 1,L_Fight,-;
       mes "[Strife]";
-      mes "I am gonna be an awesome knight.";
+      mes "I'm gonna be an awesome knight.";
       mes "To obtain that, I am training. Heh";
       mes "Heh Heh...";
       mes "But first, I must become a swordie.";
@@ -708,7 +708,7 @@ L_Swordie:
       mes "not even a swordie...?";
       next;
       mes "[Strife]";
-      mes "i know. I know. In order to become";
+      mes "I know. I know. In order to become";
       mes "a knight, I must first become a";
       mes "swordie.";
       mes "That's why I am training so hard.";
@@ -736,7 +736,7 @@ L_Ofcourse:
       mes "[Strife]";
       mes "To become a swordie, you must go to";
       mes "Prontera's satelite city of";
-      mes "Izlude. You must go take a test";
+      mes "Izlude and take a test";
       mes "there.";
       mes "I failed the test miserably once...";
       mes "But I will not fail again!";
@@ -767,7 +767,7 @@ prontera.gat,78,150,3 script "Dairenne" 90,{
 L_Menu:
 	mes "[Town girl Dairenne]";
          check Gender == 1,-,L_Not;
-      mes "I'm not sure if your into Girllie Dress Stuff..Hohoho..but...";
+      mes "I'm not sure if your into Girly Dress Stuff..Hohoho..but...";
 L_Not:
 	mes "These days, the most interesting topic around here is beautiful dresses Dyed in various Colors.";
 	next;
@@ -789,7 +789,7 @@ prontera.gat,106,117,6 script "Merideth" 91,{
 	mes "We chose to go to a somewhat secluded area and were amazed at what we saw."; 
 	next;
 	mes "[Merideth]";
-	mes "A HUGE swarm of hornets!! I never saw anything like it! But what was even more surprising was the Queen Bee.";
+	mes "A HUGE swarm of bees!! I never saw anything like it! But what was even more surprising was the Queen Bee.";
 	mes "The fact that she could control all of them with such ease....";
 	   emotion 23;
 	next;

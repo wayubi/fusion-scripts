@@ -1,6 +1,7 @@
 --------------------------------------------------------------------------------
  Fusion 1.213 - August 29th, 2004
 -------------------------------------------------------------------------------- 
+- 10-24-04: Town\Town_Prontera.txt - Fixed Typos/Grammar in Official town npc's. [Kai]
 - 10-20-04: Town\Town_Ayothaya.txt - Added Town Ayothaya with placeholder npc's. [Muad_Dib]
 - 10-20-04: Warpdungeons\ayo_dun.txt - Added Ayothaya warps. [Muad_Dib]
 - 10-20-04: Warp\fields\ayo_fild.txt - Added Ayothaya warps. [Muad_Dib]
