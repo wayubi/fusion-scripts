@@ -343,17 +343,19 @@ nif_in.gat,105,81,3 script "Grey" 794,{
 	next;
 		check nif_quest2 = 1,L_end,-;	
 		check nif_q_done = 1,L_end,-;
-		random @nif_random 3;
+		//random number 0 to 3 (4 total)
+		random @nif_random 4;
+		//going from 0-3 to 1-4 for logic
+		set @nif_random + 1;
 	mes "[Grey]";
 	mes "Heh, let me give you a little exam!";
 	mes "Repeat line no. ' $[@nif_random] ' of the poem";
 	mes "that you have just heard to me!";
 	next;
 		inputstr $@input;
-		check @nif_random = 1,L_RAN_2,-;
-		check @nif_random = 2,L_RAN_3,-;
-		check @nif_random = 3,L_RAN_4,-;
-		check @nif_random = 0,L_RAN_1,-;	
+		check @nif_random = 1,L_RAN_1,-;
+		check @nif_random = 2,L_RAN_2,-;
+		check @nif_random = 3,L_RAN_3,L_RAN_4;
 L_RAN_1:
 		checkstr $@input = "When the sun sets in the western hills,",L_RAN_SC,L_Pay;
 L_RAN_2:

@@ -1,6 +1,8 @@
 --------------------------------------------------------------------------------
  Fusion 1.213 - December ??th, 2004
 -------------------------------------------------------------------------------- 
+- 12-02-04: Town\Town_Niflhein.txt - changed some logic in the prayer exam. [Tsusai]
+- 12-02-04: Town\Town_Umbala.txt - Moved bungie warp to warps section as a pure warp. [Tsusai]
 - 12-02-04: Event\Event_KafraP.txt - Changed Reward Sweet Potato with Carrots. [Muad_Dib]
 - 12-02-04: Quest\Quest_skill\Cart_Revolution.txt - Updated With OnTouch. [Muad_Dib]
 - 12-02-04: Quest\Quest_skill\Crazy_Uproar_Quest.txt - Updated with OnTouch. [Muad_Dib]

@@ -1609,7 +1609,6 @@ um_in.gat,144,45,5	script	"Wambokoriotan"	789,{
 //Bungee jumping!
 //==============================================================================
 umbala.gat,140,197,0 script "Bungy Jumping" 139,0,1,{
-OnTouch:
 	random @jumprand,100;
 	check @jumprand <= 25,L1,-;
 	check @jumprand <= 50,L2,-;
@@ -1631,11 +1630,5 @@ L3:
 	broadcast "Bungy Jumping Area: $charaname : Waaaaaaaaaah!",10;
 	percentdamage 99,0;
 	warp "nif_in",68,14;
-	return;
-}
-
-umbala.gat,136,195,0 script "Bungee Fall"	139,1,1,{
-OnTouch:
-	warp "umbala",145,166;
 	return;
 }
