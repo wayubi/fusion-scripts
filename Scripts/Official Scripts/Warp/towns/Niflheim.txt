@@ -1,25 +1,26 @@
-//armory
-niflheim.gat,220,169,0	warp	warpNifl06	1,1,nif_in.gat,14,88
-nif_in.gat,11,88,0	warp	warpNifl07	1,1,niflheim.gat,218,170
+//========================================================================================
+// »» The Fusion Project ««
+// Copyright (c) 2004, Cobax Information Systems
+// http://fusion.cobax.net/
+// ---------------------------------------------------------------------------------------
+//
+// Niflheim Town Warps - Warp Locations
+//
+//========================================================================================
 
-//itemshop
-niflheim.gat,220,199,0	warp	warpNifl08	1,1,nif_in.gat,138,16
-nif_in.gat,135,13,0	warp	warpNifl09	1,1,niflheim.gat,218,197
-
-//bighouse
-niflheim.gat,255,194,0	warp	warpNifl10	1,1,nif_in.gat,20,156
-nif_in.gat,18,154,0	warp	warpNifl11	1,1,niflheim.gat,254,192
-nif_in.gat,65,172,0	warp	warpNifl12	1,1,nif_in.gat,139,174
-nif_in.gat,140,171,0	warp	warpNifl13	1,1,nif_in,65,169
-
-//warehouse
-niflheim.gat,230,249,0	warp	warpNifl14	1,1,nif_in.gat,23,13
-nif_in.gat,23,10,0	warp	warpNifl15	1,1,niflheim.gat,227,251
-nif_in.gat,34,34,0	warp	warpNifl16	1,1,nif_in.gat,88,32
-nif_in.gat,88,29,0	warp	warpNifl17	1,1,nif_in.gat,33,30
-
-//house2
-niflheim.gat,188,208,0	warp	WarpNifl18	1,1,nif_in.gat,156,80
-nif_in.gat,154,78,0	warp	warpNifl19	1,1,niflheim.gat,188,205
-nif_in.gat,169,82,0	warp	warpNifl20	1,1,nif_in.gat,188,106
-nif_in.gat,186,105,0	warp	warpNifl21	1,1,nif_in.gat,167,82
+niflheim.gat,220,169,0	warp	niflheimwarp001	1,1,nif_in.gat,14,88
+nif_in.gat,11,88,0	warp	niflheimwarp002	1,1,niflheim.gat,218,170
+niflheim.gat,220,199,0	warp	niflheimwarp003	1,1,nif_in.gat,138,16
+nif_in.gat,135,13,0	warp	niflheimwarp004	1,1,niflheim.gat,218,197
+niflheim.gat,255,194,0	warp	niflheimwarp005	1,1,nif_in.gat,20,156
+nif_in.gat,18,154,0	warp	niflheimwarp006	1,1,niflheim.gat,254,192
+nif_in.gat,65,172,0	warp	niflheimwarp007	1,1,nif_in.gat,139,174
+nif_in.gat,140,171,0	warp	niflheimwarp008	1,1,nif_in,65,169
+niflheim.gat,230,249,0	warp	niflheimwarp009	1,1,nif_in.gat,23,13
+nif_in.gat,23,10,0	warp	niflheimwarp010	1,1,niflheim.gat,227,251
+nif_in.gat,34,34,0	warp	niflheimwarp011	1,1,nif_in.gat,88,32
+nif_in.gat,88,29,0	warp	niflheimwarp012	1,1,nif_in.gat,33,30
+niflheim.gat,188,208,0	warp	niflheimwarp013	1,1,nif_in.gat,156,80
+nif_in.gat,154,78,0	warp	niflheimwarp014	1,1,niflheim.gat,188,205
+nif_in.gat,169,82,0	warp	niflheimwarp015	1,1,nif_in.gat,188,106
+nif_in.gat,186,105,0	warp	niflheimwarp016	1,1,nif_in.gat,167,82

@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.004
 ----------------------------------------------------------------------------------------------------
+- Warp\town\ - Reorganised rest of that folder. [Muad_Dib]
 - Warp\dungeons\gl_cas.txt - Moved to archive. [Tsusai]
 - Warp\dungeons\gl_church.txt - Moved to archive. [Tsusai]
 - Warp\dungeons\gl_chyard.txt - Moved to archive. [Tsusai]
