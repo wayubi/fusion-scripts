@@ -765,60 +765,7 @@ aldebaran.gat,146,124,4	script	"Town Girl"	101,{
 		mes "In order to fight against those kinds, you'll need ore DEX, right?";
 		close;
 }
-aldebaran.gat,139,63,4	script	"Soldier"	105,{
-	mes "[Al De Baran Guard]";
-	mes "I am just any ordinary guard you could find in any other cityies!!";
-	mes "I am in charge of Service Guide of Al De Baran Garrison, and";
-	mes "the name is Al De Baran Guard (No Name) !!";
-	mes "I will guide you though our town!";
-	next;
-	menu "Get location Guide.",L_Menu1,"End conversation.",-;
-	mes "[Al De Baran Guard]";
-	mes "We are sworn to protect Al De Baran!!";
-	close;
-		L_Menu1:
-			mes "[Al De Baran Guard]";
- viewpoint 1,30,210,1,0xFFFF6633;
- viewpoint 1,52,180,1,0xFF0000FF;
- viewpoint 1,210,210,1,0xFF00FFFF;
- viewpoint 1,218,84,1,0xFF515151;
- viewpoint 1,178,54,1,0xFF3355FF;
- viewpoint 1,36,36,1,0xFFFF5555;
- mes "^FF6633+^000000 -> Kafra Main Office"
- mes "^0000FF+^000000 -> Weapon Shop"
- mes "^00FFFF+^000000 -> Sorcerer Guild (closed)"
- mes "^515151+^000000 -> Pub"
- mes "^3355FF+^000000 -> Item Shop"
- mes "^FF5555+^000000 -> Chemical Acadamey (closed)"
-			close;
-}
-aldebaran.gat,241,136,4	script	"Soldier"	105,{
-		mes "[Al De Baran Guard]";
-	mes "I am just any ordinary guard you could find in any other cityies!!";
-	mes "I am in charge of Service Guide of Al De Baran Garrison, and";
-	mes "the name is Al De Baran Guard (No Name) !!";
-	mes "I will guide you though our town!";
-	next;
-	menu "Get location Guide.",L_Menu1,"End conversation.",-;
-	mes "[Al De Baran Guard]";
-	mes "We are sworn to protect Al De Baran!!";
-	close;
-		L_Menu1:
-			mes "[Al De Baran Guard]";
- viewpoint 1,30,210,1,0xFFFF6633;
- viewpoint 1,52,180,1,0xFF0000FF;
- viewpoint 1,210,210,1,0xFF00FFFF;
- viewpoint 1,218,84,1,0xFF515151;
- viewpoint 1,178,54,1,0xFF3355FF;
- viewpoint 1,36,36,1,0xFFFF5555;
- mes "^FF6633+^000000 -> Kafra Main Office"
- mes "^0000FF+^000000 -> Weapon Shop"
- mes "^00FFFF+^000000 -> Sorcerer Guild (closed)"
- mes "^515151+^000000 -> Pub"
- mes "^3355FF+^000000 -> Item Shop"
- mes "^FF5555+^000000 -> Chemical Acadamey (closed)"
-			close;
-}
+
 aldebaran.gat,146,136,4	script	"Bell Keeper A"	89,{
 	mes "[Bell Keeper]";
 	mes "Let me introduce myself, I am 'Monster A' the keeper of Al De Baran Clock Tower,in Committee of 'Heaven on Earth'.";
