@@ -30,6 +30,9 @@
 // - Marius -> morocc_in: 76,163
 //   Give information and make Binoculars Quest.
 //
+// - Grampa -> alberta_in: 59,139
+//   Give information and make Boy's Cap Quest.
+//
 //========================================================================================
 
 payon_in01.gat,103,111,4	script	"Granny"	103,{
@@ -352,87 +355,83 @@ aldeba_in.gat,152,166,4	script	ある商人	86,{
 		close;
 }
 
-//----------------------------------
-// 学生帽
-//----------------------------------
-
-alberta_in.gat,59,139,4	script	学生帽爺	120,{
-	mes "[爺]";
-	mes "やれやれ… ";
+alberta_in.gat,59,139,4	script	"Grampa"	120,{
+	mes "[Grampa]";
+	mes "Gasp ..Gasp";
 	next;
-	mes "[爺]";
-	mes "人生というのは虚しいもんじゃの…";
-	mes "気持ちは若頃のままだのに… ";
-	mes "やっぱり年には勝てないじゃの…";
-	mes "コホ !! コホ .. !!";
+	mes "[Grampa]";
+	mes "When I look on my past life,it seems totally useless ..";
+	mes "Still I feel like young ..";
+	mes "But unfortunately my body doesn't work well ..";
+	mes "Cough !! Cough .. !!";
 	next;
 	checkitem 1030,10,-,L_SUB_1;
-	 	menu "虎の足裏を見せる",-,"虎の足裏を学生帽に交換する",L_MENU_1,"やめる",L_MENU_2;
- 			mes "[爺]";
- 			mes "おお！こ、これが噂の…";
- 			mes "虎の足裏！";
+	 	menu "Show him Tiger's Footskin.",-,"Exchange it with Boys Cap.",L_MENU_1,"Cancel",L_MENU_2;
+ 			mes "[Grampa]";
+ 			mes "Ohhh !! Th ..This is the one..by hearsay ..";
+			mes "Tiger's Footskin !!";
 			next;
-	 		mes "[爺]";
- 			mes "見るだけで力が湧いてくる！匂うだけで血が沸いてくる！";
-			mes "もし飲んだら、おしまいの90歳爺も元気旺盛になる！";
-			mes "あの足裏かい！！！！";
- 			mes "おおおおおっと！ぜひ…それをわしにくれ…早く…";
- 			close;
+	 		mes "[Grampa]";
+ 			mes "Gain Strength even taking a look on it! Inflame the Blood even smelling once!";
+			mes "80 year-old Grampa makes a Boy after grabing one bite of it!!!!";
+			mes "It is the Tiger's Footskin !!";
+			mes "Ohhhh Ohh My God !! Please .. Please give me that .. Please ..";
+			close;
 	L_MENU_1:
 		checkitem 1030,10,-,L_SUB_2;
 		checkadditem 5016,1,-,L_START_1;
 			delitem 1030,10;
 			additem 5016,1;
-			mes "[爺]";
-			mes "あ、ありがたいじゃ！！";
-			mes "これでわしも若さが戻せるかもしれない！";
-			mes "早く飲まなくちゃだめじゃの～！ !";
+			mes "[Grampa]";
+			mes "T .. Tahnk you !!";
+			mes "Now I can be vigorous again with this item !";
+			mes "I will eat this thing right away !";
 			close;
 	L_SUB_2:
- 			mes "[爺]";
- 			mes "渇！この悪者！";
- 			mes "ない物で騙そうとすると天罰に当たるじゃ！";
+ 			mes "[Grampa]";
+ 			mes "You scoundrel!";
+ 			mes "If you don't have the stuff and try to cheat me, the wrath of Heaven will befall you!";
  			close;
 	L_MENU_2:
-		mes "[爺]";
-		mes "お、おい！若者！ま、待ってくれ！";
+		mes "[Grampa";
+		mes "He.. Hey Young one !! Wai .. Wait !";
 		close;
 	L_SUB_1:
-		 menu "対話する",-,"やめる",L_MENU_3;
-	 		mes "[爺]";
-	 		mes "よく聞くのじゃ…何より健康が一番のじゃ.";
-	 		mes "若い時に体に無理をすると…年取って苦労するもんじゃ。";
+		 menu "Talk",-,"Cancel",L_MENU_3;
+	 		mes "[Grampa]";
+			mes "Listen to me .. You have to keep your health as well as you can ..";
+			mes "If you don't treat your body well .. You will regret after you get old ..";
 	 		next;
-	 		mes "[爺]";
-	 		mes "若い頃の健康を戻せるため、";
-			mes "体に良いという物は全部食べてみたが、";
-	 		mes "結局、何も効かず、財産だけ全部使ってしまったのじゃ。";
+	 		mes "[Grampa]";
+			mes "To restore youth again,";
+			mes "I took everything good for Health by hearsay,but they didn't work at all ..";
+			mes "After all,I broke up due to spending whole my property into them ..";
 	 		next;
-	 		mes "[爺]";
-	 		mes "わしはもうあきらめたじゃが、1つだけ未練があれば、";
-	 		mes "今までまだ薬の中の薬である";
-			mes "^3355FF虎の足裏^000000 を飲めなかった事じゃ。";
+	 		mes "[Grampa]";
+	 		mes "Now I gave up to restore my youth ..But there is only one thing I wish could do is ..";
+			mes "To eat ^3355FFTiger's Footskin^000000,";
+			mes " The King of Invigorant !!";
+			next;
+ 			mes "[Grampa]";
+ 			mes "Have you heard ?! Tiger's Footskin ..";
+			mes "When you see,your white hair grows in Black again,When Sniff ,";
+			mes "You get Clairvoyance,when even touch,you can make a Boy at 80 year-old...";
+			mes "It is The King of Invigorant !";
  			next;
- 			mes "[爺]";
- 			mes "聞いた事はあるかい？！虎の足裏…";
- 			mes "見るだけで力が湧いてくる！匂うだけで血が沸いてくる！";
-			mes "もし飲んだら、おしまいの90歳爺も元気旺盛になる！";
-			mes "名薬の中の名薬のじゃ！";
- 			next;
- 			mes "[爺]";
- 			mes "ああ…死ぬ前にあれを10個飲む事ができれば…";
-			mes "その他に願いなどないのじゃ…。";
- 			mes "もし誰かが虎の足裏を10個持っていれば…わしの唯一の財産、";
-			mes "追憶の ^3355FF学生帽^000000 をあげてもかまわないのじゃ。";
+ 			mes "[Grampa]";
+ 			mes "Ahhahh.. Before I died..I wish I could eat 10 Tiger's Footskin..";
+			mes "I could realise my Dearest wishes...";
+			mes "If someone helped me to take them ..";
+			mes "I would present him my precious item,^3355FFBoys Cap^000000 without nothing to regret ..";
 			close;
 	L_MENU_3:
-			mes "[爺]";
-			mes "コホ !! コホ .. !!";
-			mes "と…虎…虎の…あ、足裏…コホ、コホ .. !!";
-			close;
+		mes "[Grampa]";
+		mes "Cough Cough !! ..";
+		mes "Tiger ....Tiger's ..... Foot ..... skin .....Cough Cough !!";
+		close;
 	L_START_1:
-		mes "[爺]";
-		mes "重量オーバーです。";
+		mes "[Grampa]";
+		mes "You are overweight";
 		close;
 }
 
