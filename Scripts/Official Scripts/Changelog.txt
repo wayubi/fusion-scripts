@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.003
 ----------------------------------------------------------------------------------------------------
+- GvG\ - Added Cart rental support for High merchant, Whitesmith and Creator to all castles kafras. [Muad_Dib]
 - Town\Town_Kafra.txt - Added Cart rental support for High merchant, Whitesmith and Creator. [Muad_Dib]
 - Town\Town_Siglude.txt - Corrected one thing of the conversation display. [Muad_Dib]
 - Job\Job2_Crusader.txt - Deleted Grand Peko Breeder due to being obsolete with Event_Rental.txt. [Muad_Dib]

@@ -571,9 +571,12 @@ prtg_cas02.gat,71,36,4	script	"Kafra Service"	117,{
 		check Job != 5,-,L_SUB_3_1;
 		check Job != 10,-,L_SUB_3_1;
 		check Job != 18,-,L_SUB_3_1;
+		check Job != 29,-,L_SUB_3_1;
+		check Job != 34,-,L_SUB_3_1;
+		check Job != 42,-,L_SUB_3_1;
 			mes "[Kafra Personnel]";
-			mes "I'm very sorry.";
-			mes "The cart service is available to merchants and blacksmiths only.";
+			mes "I'm very sorry. The cart service is available only to";
+			mes "Merchants, High Merchants, Blacksmiths, Whitesmiths, Alchemists and Creators.";
 			goto L_EXIT;
 		L_SUB_3_1:
 			mes "[Kafra Personnel]";
