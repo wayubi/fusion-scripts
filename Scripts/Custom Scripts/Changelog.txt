@@ -1,7 +1,8 @@
 --------------------------------------------------------------------------------
  Fusion 1.213 - August 29th, 2004
 --------------------------------------------------------------------------------
- - 07-13-04: Morroc and payon warper now actually warp to alberta instead of aldebaran. (ENG) - Map\SamuraiWarpers_100+300.txt. [Muad_Dib]
+ - 07-13-04: Added a City Census NPC script (ENG) - Recreation\Census.txt. [Yun Qi]
+ - 07-13-04: Edited Morocc and Payon warpers (ENG) - Map\SamuraiWarpers_100+300.txt. [Muad_Dib]
  - 07-10-04: Edited Recreation\Mob_Killer.txt script (ENG) - Added Lable. [Yun Qi]
  - 07-10-04: Edited Player\All_Jobs-zeny.txt script (ENG) - Changed sprite. [Yun Qi]
  - 07-10-04: Edited Player\Stat+Skill_Adder.txt script (ENG) - Lowered Prices. [Yun Qi]
