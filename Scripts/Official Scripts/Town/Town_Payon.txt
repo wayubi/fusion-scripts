@@ -1,5 +1,5 @@
 //=========================================== <Payon> ===================================
-payon.gat,163,139,0	script	Lady	90,{
+payon.gat,163,139,0	script	"Lady"	90,{
 	mes "[Lady]";
 	mes "Back to our history, we had a hard time making our living in this village, Payon. People lived in Penury so even they couldn't afford for the dead to rest in peace. Some people threw their dead family into the cave near the village.";
 	mes "So in that Cave,it has rumored there are many walking Zombies which could have never gone Beyond the Realm.Ahhh...Spooky...";
@@ -29,14 +29,14 @@ payon.gat,29,115,0	script	"Young Man"	88,{
 	close;
 }
 //========== Ladies in Payon Pub ==
-payon_in01.gat,104,183,0	script	Waitress	90,{
-	mes	"[Pub Lady]";
+payon_in01.gat,104,183,0	script	"Waitress"	90,{
+	mes "[Pub Lady]";
 	mes "People in this place seem to be busy all the time, they come and go to be Archers or to buy arrows, I have to stick with this small shop.";
-    mes "I feell so melancholy and bored.";
+	mes "I feell so melancholy and bored.";
  	next;
 	mes "[Pub Lady]";
 	mes "I am sick and tired of noodle soup. I have to take too many showers to get rid of the smell.";
-    mes "But it isn't easy to deodorize..sigh...";
+	mes "But it isn't easy to deodorize..sigh...";
 	next;
 	mes "[Pub Lady]";
 	mes "Where can I find the right person who is a really hot, sexy hunk, and who can take me out of this small place?";
@@ -62,12 +62,12 @@ payon_in01.gat,104,183,0	script	Waitress	90,{
 		L_menu1:
 			mes "[Pub Lady]";
 			mes "Zombies are the walking dead. You can easily spot them in this village, Payon.";
-        	mes "It's rumored that they fear holiness. That's why Archers prefer to use arrows made out of holy metal, silver against Zombies.";
+			mes "It's rumored that they fear holiness. That's why Archers prefer to use arrows made out of holy metal, silver against Zombies.";
   			next;
 			mes "[Pub Lady]";
 			mes "Legend says the chief of this town used silver arrows against walking zombies that used to be his brethren, to enlighten their souls to rest in peace.";
  			mes "We believe only this way, zombies can be leaded to the peaceful world beyond the realm.";
-	    	next;
+			next;
 			mes "[Pub Lady]";
 			mes "You might not agree on our tradition which respects the diseased.";
 			next;
@@ -80,12 +80,12 @@ payon_in01.gat,104,183,0	script	Waitress	90,{
  			next;
 			mes "[Pub Lady]";
 			mes "On the first place, she stayed here to mind her business, but ever since the chief recognized her talent, she's stayed in the central palace."
-        	mes "You'd better go to there if you want to see her.";
+			mes "You'd better go to there if you want to see her.";
 			close;
 		L_menu3:
 			mes "[Pub Lady]";
 			mes "I am so sorry they're all sold out and we can't afford to prepare alchohol anymore due to hostile creatures out there.";
-        	mes "My master built a very strict rule of his own, that is we only provide the best drinks to customers.";
+			mes "My master built a very strict rule of his own, that is we only provide the best drinks to customers.";
 			next;
 			mes "[Pub Lady]";
 			mes "So please come later again.";
@@ -100,13 +100,13 @@ payon_in01.gat,104,183,0	script	Waitress	90,{
  			close;
 }
 //======== Payon Guard ==
-payon.gat,93,162,3	script	Guardsman	105,{
+payon.gat,93,162,3	script	"Guardsman"	105,{
 	mes "[Guardsman]";
-	mes "This is the central palace of payon.";
+	mes "This is the central palace of Payon.";
 	mes "Even though we open this place to public in obedience to the head of the tribe's order..you must be orderly inside.";
 	next;
 	mes "[Guardsman]";
-	mes "Besides we have strict rules against violence here your for the preservation of public peace. Please cooperate.";
+	mes "Besides we disarm your equipments for the preservation of public peace.Please cooperate.";
 	close;
 }
 //======== Payon Guard ==
@@ -122,7 +122,7 @@ payon_in01.gat,69,90,3	script	"Chief Guardsman"	105,{
 	close;
 }
 //==================================  Payon Lady  ==
-payon.gat,166,140,1	script	Woman	66,{
+payon.gat,166,140,1	script	"Woman"	66,{
 	mes "[Woman]";
 	mes "Welcome to payon. You must of had a hard time while passing through the forest. How was your travel?";
 	mes "Numbers of tourist has been reduced due to enormous monsters outside, Payon is becoming a quiet town.";
@@ -136,12 +136,12 @@ payon.gat,166,140,1	script	Woman	66,{
 	LStartF:
 		mes "Lady how many monsters have you killed?";
 		mes "I know the best place for a hunt, you will be able to fill your pocket with money there. How's it sound?";
-    	next;
-    	mes "[Woman]";
-    	mes "Oh well, I happened to know we have a cave in the middle of the village.";
-    	mes "Are you interested in that place?";
-    	mes "Just head north of town, pass a forest and head north-west.";
-    	mes "You will realise when you are at the place with the smell of stinky monsters.";
+    		next;
+	    	mes "[Woman]";
+	    	mes "Oh well, I happened to know we have a cave in the middle of the village.";
+	    	mes "Are you interested in that place?";
+	    	mes "Just head north of town, pass a forest and head north-west.";
+	    	mes "You will realise when you are at the place with the smell of stinky monsters.";
 		next;
 		menu "It sounds dangerous."L_menu1,"I think I need to fully prepare for that place.",L_menu2,"Lady, you wear nice clothing~",L_menu3;
 		L_menu1:
@@ -161,7 +161,7 @@ payon.gat,166,140,1	script	Woman	66,{
 			close;
 }
 //==================================  Payon Woman B  =======
-payon.gat,163,142,5	script	Woman	66,{
+payon.gat,163,142,5	script	"Woman"	66,{
 	mes "[Jim's Mother]";
 	mes "Oh boy there she goes again. She is a confirmed gossip.";
 	mes "Please don't take her first impression as our village's. Not all of us here at Payon are big mouths. She gets too excited with one time fortune telling.";
@@ -191,7 +191,7 @@ payon.gat,163,142,5	script	Woman	66,{
 			close;
 }
 //==================================  Payon Drunk  =======
-payon_in01.gat,95,181,1	script	Drunk	120,{
+payon_in01.gat,95,181,1	script	"Drunk"	120,{
 	check Job < 3,-,L_Menu1_F1;
 	mes "[Drunk]";
 	mes "Hey hey! I am wondering how stupid archers who don't know how to aim targets could drink alcohol. Hahaha~!";
@@ -492,7 +492,7 @@ payon_in01.gat,164,165,2	script	"Monster Scholar"	98,{
 		close;
 }
 //==================================  Chief  =======
-payon_in01.gat,136,147,2	script	Chief	120,{
+payon_in01.gat,136,147,2	script	"Chief"	120,{
 	check BaseLevel =< 30,-,L_Menu1;
 	random @R_SEL_NUM,2; 
 	check @R_SEL_NUM == 0,-,T_TALK0; 
@@ -579,12 +579,12 @@ payon_in01.gat,136,147,2	script	Chief	120,{
 		close;
 }
 //==================================  Guard  =======
-payon_in01.gat,129,140,2	script	Guard	105,{
+payon_in01.gat,129,140,2	script	"Guard"	105,{
 	check BaseLevel =< 30,-,L_Menu1;
-	mes "[Guard]";
-	mes "Yo yo yo, you are not allowed to come in.";
-	mes "Go outside.";
-	close;
+		mes "[Guard]";
+		mes "Yo yo yo, you are not allowed to come in.";
+		mes "Go outside.";
+		close;
 	L_Menu1:
 	mes "[Guard]"
 	mes "Sorry but you are not allowed to come in.";
