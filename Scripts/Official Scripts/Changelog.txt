@@ -9,6 +9,8 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.003
 ----------------------------------------------------------------------------------------------------
+- Mob\field\um_fild.txt - Updated, reorganised Umbala Fields Monster Spawns [Muad_Dib]
+- Mob\field\xmas.txt - Updated, reorganised Lutie Fields Monster Spawns [Muad_Dib]
 - Mob\field\mjolnir_fild.txt - Updated, reorganised Mount Mjolnir Fields Monster Spawns [Muad_Dib]
 - GvG\prtg_cas01.txt - Added a missing OnInit command to a flag. [Tsusai]
 - GvG\npc_guardiankafra.txt - Updated Header. [Tsusai]
