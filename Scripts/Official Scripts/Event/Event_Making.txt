@@ -1148,6 +1148,7 @@ L_ROOT_2:
 	menu "I can treat you if you want a yellow potion.",L_MENU_1,"....get it yourself.",L_MENU_1;
 	L_MENU_1:
 		checkitem 503,1,-,L_START_1;
+		delitem 503,1;
 		set npc_tempestra = 1;
 		mes "[Tempestra]";
 		mes "Ah~ thank you so much.";
