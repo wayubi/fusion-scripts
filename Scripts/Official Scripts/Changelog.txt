@@ -1,6 +1,7 @@
 --------------------------------------------------------------------------------
  Fusion 1.212 - June 30th, 2004
 --------------------------------------------------------------------------------
+- 06-20-04: Job\Job_2-1\Job2_Wizard.txt - Turned \@ vars to \ vars for testing. [Tsusai]
 - 06-20-04: Job\Job_2-1\Job2_Wizard.txt - Modified Water Test for testing. [Tsusai]
 - 06-20-04: GvG\aldeg_cas01.txt - Deleted an extra close; [Tsusai]
 - 06-20-04: Job\Job_2-1\Job2_Wizard.txt - added a debug line for bug finding. [Tsusai]
