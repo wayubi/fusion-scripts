@@ -1,6 +1,9 @@
 --------------------------------------------------------------------------------
  Fusion 1.213 - August 29th, 2004
 --------------------------------------------------------------------------------
+- 09-08-04: Warp\other\Force_Map.txt - Updated warping destination. [Tsusai]
+- 09-08-04: Quest\Quest_Arena_Test.txt - Updated warping destination. [Tsusai]
+- 09-08-04: Job\Job_1-1\Job1_Swordsman.txt - fixed getitem to additem. [Tsusai]
 - 09-07-04: Quest\quest_arena_test.txt - Moved npc to updated prt_are_in map coordinate. [Muad_Dib]
 - 09-07-04: Warp\town\Prontera.txt - Removed prt_are_in warps. [Muad_Dib]
 - 09-07-04: Warp\town\Izlude.txt - Removed prt_are_in warps. [Muad_Dib]

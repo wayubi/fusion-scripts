@@ -172,7 +172,7 @@ force_map1.gat,10,56,4	script	"Advancer"	111,{
  OnTimer122000:
 	npctimer 0;
 	set \@START_ARENA = 0;
-	warpallpc "prt_are_in",99,80,0;
+	warpallpc "prt_are_in",97,14,0;
 	return;
 }
 

@@ -25,7 +25,7 @@ force_map1.gat,174,44,0	warp	warp0132	1,1,force_map1.gat,174,69
 force_map1.gat,174,65,0	warp	warp0133	1,1,force_map1.gat,174,40
 force_map1.gat,174,134,0	warp	warp0134	1,1,force_map1.gat,174,159
 force_map1.gat,174,155,0	warp	warp0135	1,1,force_map1.gat,174,130
-force_map1.gat,99,124,0	warp	warp9001	1,1,prt_are_in.gat,169,152
+force_map1.gat,99,124,0	warp	warp9001	1,1,prt_are_in.gat,97,14
 //unused, here for reference
 force_map2.gat,25,93,0	warp	force2_1	1,1,force_map2.gat,25,118
 force_map2.gat,25,114,0	warp	force2_2	1,1,force_map2.gat,25,89
@@ -49,7 +49,7 @@ force_map2.gat,158,78,0	warp	force2_19	1,1,force_map2.gat,111,78
 force_map2.gat,158,178,0	warp	force2_20	1,1,force_map2.gat,133,178
 force_map2.gat,173,93,0	warp	force2_21	1,1,force_map2.gat,173,118
 force_map2.gat,173,114,0	warp	force2_22	1,1,force_map2.gat,173,89
-force_map2.gat,21,178,0	warp	force2_23	1,1,prt_are_in.gat,169,152
+force_map2.gat,21,178,0	warp	force2_23	1,1,prt_are_in.gat,97,14
 force_map3.gat,10,100,0	warp	force3_1	1,1,force_map3.gat,25,180
 force_map3.gat,19,10,0	warp	force3_2	1,1,force_map3.gat,19,185
 force_map3.gat,19,29,0	warp	force3_3	1,1,force_map3.gat,19,54
@@ -88,7 +88,7 @@ force_map3.gat,179,90,0	warp	force3_35	1,1,force_map3.gat,19,143
 force_map3.gat,179,109,0	warp	force3_36	1,1,force_map3.gat,179,132
 force_map3.gat,179,128,0	warp	force3_37	1,1,force_map3.gat,179,105
 force_map3.gat,179,170,0	warp	force3_38	1,1,force_map3.gat,139,143
-force_map3.gat,99,186,0	warp	force3_39	1,1,prt_are_in.gat,169,152
+force_map3.gat,99,186,0	warp	force3_39	1,1,prt_are_in.gat,97,14
 //Server Side Map System Warps			
 force_1-1.gat,25,44,0	warp	force1-1_1	1,1,force_1-1.gat,25,69
 force_1-1.gat,25,65,0	warp	force1-1_2	1,1,force_1-1.gat,25,40
@@ -107,7 +107,7 @@ force_1-1.gat,174,44,0	warp	force1-1_14	1,1,force_1-1.gat,174,69
 force_1-1.gat,174,65,0	warp	force1-1_15	1,1,force_1-1.gat,174,40
 force_1-1.gat,174,134,0	warp	force1-1_16	1,1,force_1-1.gat,174,159
 force_1-1.gat,174,155,0	warp	force1-1_17	1,1,force_1-1.gat,174,130
-force_1-1.gat,99,124,0	warp	force1-1_18	1,1,prt_are_in.gat,169,152
+force_1-1.gat,99,124,0	warp	force1-1_18	1,1,prt_are_in.gat,97,14
 force_1-2.gat,25,93,0	warp	force1-2_1	1,1,force_1-2.gat,25,118
 force_1-2.gat,25,114,0	warp	force1-2_2	1,1,force_1-2.gat,25,89
 force_1-2.gat,33,178,0	warp	force1-2_3	1,1,force_1-2.gat,59,178
@@ -130,7 +130,7 @@ force_1-2.gat,158,78,0	warp	force1-2_19	1,1,force_1-2.gat,111,78
 force_1-2.gat,158,178,0	warp	force1-2_20	1,1,force_1-2.gat,133,178
 force_1-2.gat,173,93,0	warp	force1-2_21	1,1,force_1-2.gat,173,118
 force_1-2.gat,173,114,0	warp	force1-2_22	1,1,force_1-2.gat,173,89
-force_1-2.gat,21,178,0	warp	force1-2_23	1,1,prt_are_in.gat,169,152
+force_1-2.gat,21,178,0	warp	force1-2_23	1,1,prt_are_in.gat,97,14
 force_1-3.gat,10,100,0	warp	force1-3_1	1,1,force_1-3.gat,25,180
 force_1-3.gat,19,10,0	warp	force1-3_2	1,1,force_1-3.gat,19,185
 force_1-3.gat,19,29,0	warp	force1-3_3	1,1,force_1-3.gat,19,54
@@ -169,7 +169,7 @@ force_1-3.gat,179,90,0	warp	force1-3_35	1,1,force_1-3.gat,19,143
 force_1-3.gat,179,109,0	warp	force1-3_36	1,1,force_1-3.gat,179,132
 force_1-3.gat,179,128,0	warp	force1-3_37	1,1,force_1-3.gat,179,105
 force_1-3.gat,179,170,0	warp	force1-3_38	1,1,force_1-3.gat,139,143
-force_1-3.gat,99,186,0	warp	force1-3_39	1,1,prt_are_in.gat,169,152
+force_1-3.gat,99,186,0	warp	force1-3_39	1,1,prt_are_in.gat,97,14
 force_2-1.gat,25,44,0	warp	force2-1_1	1,1,force_2-1.gat,25,69
 force_2-1.gat,25,65,0	warp	force2-1_2	1,1,force_2-1.gat,25,40
 force_2-1.gat,25,134,0	warp	force2-1_3	1,1,force_2-1.gat,25,159
@@ -187,7 +187,7 @@ force_2-1.gat,174,44,0	warp	force2-1_14	1,1,force_2-1.gat,174,69
 force_2-1.gat,174,65,0	warp	force2-1_15	1,1,force_2-1.gat,174,40
 force_2-1.gat,174,134,0	warp	force2-1_16	1,1,force_2-1.gat,174,159
 force_2-1.gat,174,155,0	warp	force2-1_17	1,1,force_2-1.gat,174,130
-force_2-1.gat,99,124,0	warp	force2-1_18	1,1,prt_are_in.gat,169,152
+force_2-1.gat,99,124,0	warp	force2-1_18	1,1,prt_are_in.gat,97,14
 force_2-2.gat,25,93,0	warp	force2-2_1	1,1,force_2-2.gat,25,118
 force_2-2.gat,25,114,0	warp	force2-2_2	1,1,force_2-2.gat,25,89
 force_2-2.gat,33,178,0	warp	force2-2_3	1,1,force_2-2.gat,59,178
@@ -210,7 +210,7 @@ force_2-2.gat,158,78,0	warp	force2-2_19	1,1,force_2-2.gat,111,78
 force_2-2.gat,158,178,0	warp	force2-2_20	1,1,force_2-2.gat,133,178
 force_2-2.gat,173,93,0	warp	force2-2_21	1,1,force_2-2.gat,173,118
 force_2-2.gat,173,114,0	warp	force2-2_22	1,1,force_2-2.gat,173,89
-force_2-2.gat,21,178,0	warp	force2-2_23	1,1,prt_are_in.gat,169,152
+force_2-2.gat,21,178,0	warp	force2-2_23	1,1,prt_are_in.gat,97,14
 force_2-3.gat,10,100,0	warp	force2-3_1	1,1,force_2-3.gat,25,180
 force_2-3.gat,19,10,0	warp	force2-3_2	1,1,force_2-3.gat,19,185
 force_2-3.gat,19,29,0	warp	force2-3_3	1,1,force_2-3.gat,19,54
@@ -249,7 +249,7 @@ force_2-3.gat,179,90,0	warp	force2-3_35	1,1,force_2-3.gat,19,143
 force_2-3.gat,179,109,0	warp	force2-3_36	1,1,force_2-3.gat,179,132
 force_2-3.gat,179,128,0	warp	force2-3_37	1,1,force_2-3.gat,179,105
 force_2-3.gat,179,170,0	warp	force2-3_38	1,1,force_2-3.gat,139,143
-force_2-3.gat,99,186,0	warp	force2-3_39	1,1,prt_are_in.gat,169,152
+force_2-3.gat,99,186,0	warp	force2-3_39	1,1,prt_are_in.gat,97,14
 force_3-1.gat,25,44,0	warp	force3-1_1	1,1,force_3-1.gat,25,69
 force_3-1.gat,25,65,0	warp	force3-1_2	1,1,force_3-1.gat,25,40
 force_3-1.gat,25,134,0	warp	force3-1_3	1,1,force_3-1.gat,25,159
@@ -267,7 +267,7 @@ force_3-1.gat,174,44,0	warp	force3-1_14	1,1,force_3-1.gat,174,69
 force_3-1.gat,174,65,0	warp	force3-1_15	1,1,force_3-1.gat,174,40
 force_3-1.gat,174,134,0	warp	force3-1_16	1,1,force_3-1.gat,174,159
 force_3-1.gat,174,155,0	warp	force3-1_17	1,1,force_3-1.gat,174,130
-force_3-1.gat,99,124,0	warp	force3-1_18	1,1,prt_are_in.gat,169,152
+force_3-1.gat,99,124,0	warp	force3-1_18	1,1,prt_are_in.gat,97,14
 force_3-2.gat,25,93,0	warp	force3-2_1	1,1,force_3-2.gat,25,118
 force_3-2.gat,25,114,0	warp	force3-2_2	1,1,force_3-2.gat,25,89
 force_3-2.gat,33,178,0	warp	force3-2_3	1,1,force_3-2.gat,59,178
@@ -290,7 +290,7 @@ force_3-2.gat,158,78,0	warp	force3-2_19	1,1,force_3-2.gat,111,78
 force_3-2.gat,158,178,0	warp	force3-2_20	1,1,force_3-2.gat,133,178
 force_3-2.gat,173,93,0	warp	force3-2_21	1,1,force_3-2.gat,173,118
 force_3-2.gat,173,114,0	warp	force3-2_22	1,1,force_3-2.gat,173,89
-force_3-2.gat,21,178,0	warp	force3-2_23	1,1,prt_are_in.gat,169,152
+force_3-2.gat,21,178,0	warp	force3-2_23	1,1,prt_are_in.gat,97,14
 force_3-3.gat,10,100,0	warp	force3-3_1	1,1,force_3-3.gat,25,180
 force_3-3.gat,19,10,0	warp	force3-3_2	1,1,force_3-3.gat,19,185
 force_3-3.gat,19,29,0	warp	force3-3_3	1,1,force_3-3.gat,19,54
@@ -329,4 +329,4 @@ force_3-3.gat,179,90,0	warp	force3-3_35	1,1,force_3-3.gat,19,143
 force_3-3.gat,179,109,0	warp	force3-3_36	1,1,force_3-3.gat,179,132
 force_3-3.gat,179,128,0	warp	force3-3_37	1,1,force_3-3.gat,179,105
 force_3-3.gat,179,170,0	warp	force3-3_38	1,1,force_3-3.gat,139,143
-force_3-3.gat,99,186,0	warp	force3-3_39	1,1,prt_are_in.gat,169,152
+force_3-3.gat,99,186,0	warp	force3-3_39	1,1,prt_are_in.gat,97,14

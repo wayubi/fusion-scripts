@@ -251,7 +251,7 @@ CONTINUE3:
 	mes "[Test Hall Staff]";
 	mes "Don't give up! I know you will pass this time!";
 	mes "(you catch him whispering '...loooooseerrr...')";
-	getitem 512,5;
+	additem 512,5;
 	next;
 	goto L_Menu_1;
 }
