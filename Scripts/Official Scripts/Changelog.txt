@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.003
 ----------------------------------------------------------------------------------------------------
+- Warp\other\force_map.txt - Updated mapname of moved warp. [Tsusai]
 - Warp\other\Arena_Test.txt - Moved one warp to Warp\other\force_map.txt [Tsusai]
 - GvG\npc_gflag.txt - Finished Emblem/Text support for all town flags and corrected typos. [Tsusai]
 - GvG\npc_gflag.txt - Added Payon Emblem Flag Support and Missing Flags. [Tsusai]

@@ -15,6 +15,7 @@ force_map1.gat,174,44,0	warp	warp0132	1,1,force_map1.gat,174,69
 force_map1.gat,174,65,0	warp	warp0133	1,1,force_map1.gat,174,40
 force_map1.gat,174,134,0	warp	warp0134	1,1,force_map1.gat,174,159
 force_map1.gat,174,155,0	warp	warp0135	1,1,force_map1.gat,174,130
+force_map1.gat,99,124,0	warp	warp9001	1,1,prt_are_in.gat,169,152
 force_map2.gat,25,93,0	warp	warp0136	1,1,force_map2.gat,25,118
 force_map2.gat,25,114,0	warp	warp0137	1,1,force_map2.gat,25,89
 force_map2.gat,33,178,0	warp	warp0138	1,1,force_map2.gat,59,178
