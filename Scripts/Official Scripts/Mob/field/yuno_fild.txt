@@ -1,0 +1,24 @@
+yuno_fild01.gat,0,0,0,0  monster "Cremy Fear" 1293,15,0,0,0
+yuno_fild01.gat,0,0,0,0  monster "Geographer" 1368,10,0,0,0
+yuno_fild01.gat,0,0,0,0  monster "Giant Spider" 1304,10,0,0,0
+yuno_fild01.gat,0,0,0,0  monster "Raptice" 1027,10,0,0,0
+yuno_fild02.gat,0,0,0,0  monster "Demon Punk" 1378,10,0,0,0
+yuno_fild02.gat,0,0,0,0  monster "Geographer" 1368,10,0,0,0
+yuno_fild02.gat,0,0,0,0  monster "Giant Hornet" 1303,10,0,0,0
+yuno_fild02.gat,0,0,0,0  monster "Gig" 1387,10,0,0,0
+yuno_fild02.gat,0,0,0,0  monster "Goat" 1372,10,0,0,0
+yuno_fild03.gat,0,0,0,0  monster "Caterpillar" 1300,10,0,0,0
+yuno_fild03.gat,0,0,0,0  monster "Deleter(Earth)" 1385,10,0,0,0
+yuno_fild03.gat,0,0,0,0  monster "Deleter(Sky)" 1384,10,0,0,0
+yuno_fild03.gat,0,0,0,0  monster "Demon Punk" 1378,10,0,0,0
+yuno_fild03.gat,0,0,0,0  monster "Killer Mantis"
+yuno_fild04.gat,0,0,0,0  monster "Deleter(Earth)" 1385,10,0,0,0
+yuno_fild04.gat,0,0,0,0  monster "Deleter(Sky)" 1384,10,0,0,0
+yuno_fild04.gat,0,0,0,0  monster "Demon Punk" 1378,10,0,0,0
+yuno_fild04.gat,0,0,0,0  monster "Goat" 1372,10,0,0,0
+yuno_fild04.gat,0,0,0,0  monster "Caterpillar" 1300,10,0,0,0
+yuno_fild05.gat,0,0,0,0  monster "Deleter(Sky)" 1384,10,0,0,0
+yuno_fild05.gat,0,0,0,0  monster "Goat" 1372,10,0,0,0
+yuno_fild05.gat,0,0,0,0  monster "Giant Spider" 1304,10,0,0,0
+yuno_fild05.gat,0,0,0,0  monster "Giant Hornet" 1303,10,0,0,0
+yuno_fild05.gat,0,0,0,0  monster "Geographer" 1368,10,0,0,0

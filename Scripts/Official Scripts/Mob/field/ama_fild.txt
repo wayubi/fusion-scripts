@@ -1,0 +1,21 @@
+ama_fild01.gat,0,0,0,0	monster	"Cookie" 1246,8,0,0,0
+ama_fild01.gat,0,0,0,0	monster	"Geographer" 1368,20,0,0,0
+ama_fild01.gat,0,0,0,0	monster	"Poring" 1002,15,0,0,0
+//ama_fild01.gat,0,0,0,0	monster	"Kapha" 1406,10,0,0,0
+ama_fild01.gat,0,0,0,0	monster	"Grand Peco" 1369,8,0,0,0
+ama_fild01.gat,0,0,0,0	monster	"Dokebi" 1110,8,0,0,0
+ama_fild01.gat,0,0,0,0	monster	"Elder Willow" 1033,8,0,0,0
+ama_fild01.gat,0,0,0,0	monster	"Giant Spider" 1303,3,300000,300000,0
+ama_fild01.gat,0,0,0,0	monster	"Giant Hornet" 1304,3,300000,300000,0
+ama_fild01.gat,0,0,0,0	monster	"Sohee" 1170,8,0,0,0
+//ama_fild01.gat,0,0,0,0	monster	"Shinobi" 1401,3,0,0,0
+ama_fild01.gat,0,0,0,0	monster	"Crab" 1073,1,300000,300000,0
+ama_fild01.gat,0,0,0,0	monster	"Crab" 1073,1,300000,300000,0
+ama_fild01.gat,0,0,0,0	monster	"Crab" 1073,1,300000,300000,0
+ama_fild01.gat,0,0,0,0	monster	"Crab" 1073,1,300000,300000,0
+ama_fild01.gat,0,0,0,0	monster	"Crab" 1073,1,300000,300000,0
+ama_fild01.gat,0,0,0,0	monster	"Crab" 1073,1,300000,300000,0
+ama_fild01.gat,0,0,0,0	monster	"Crab" 1073,1,300000,300000,0
+ama_fild01.gat,0,0,0,0	monster	"Crab" 1073,1,300000,300000,0
+ama_fild01.gat,0,0,0,0	monster	"Crab" 1073,1,300000,300000,0
+ama_fild01.gat,0,0,0,0	monster	"Crab" 1073,1,300000,300000,0

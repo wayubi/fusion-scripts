@@ -1,0 +1,2 @@
+xmas.gat,0,0,0,0	monster	Sasquatch 1243,1,3600000,7200000,0
+xmas.gat,0,0,0,0	monster	Santa_Poring 1062,3,60000,30000,0

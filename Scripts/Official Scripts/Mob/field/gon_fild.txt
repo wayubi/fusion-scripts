@@ -1,0 +1,7 @@
+gon_fild01.gat,0,0,0,0	monster	"Eclipse" 1093,2,300000,300000,0
+gon_fild01.gat,0,0,0,0	monster	"Geographer" 1368,20,0,0,0
+gon_fild01.gat,0,0,0,0	monster	"Elder Willow" 1033,10,0,0,0
+gon_fild01.gat,0,0,0,0	monster	"Grand Peco" 1369,5,0,0,0
+gon_fild01.gat,0,0,0,0	monster	"Am Mut" 1301,3,300000,300000,0
+gon_fild01.gat,0,0,0,0	monster	"Cookie" 1265,10,0,0,0
+gon_fild01.gat,0,0,0,0	monster	"Sohee" 1170,10,0,0,0

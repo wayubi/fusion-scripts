@@ -1,6 +1,3 @@
-//BEGIN Amatsu
-//----------------------------------------------------------------------------
-//ama_dun01
 ama_dun01.gat,0,0,0,0	monster	"Dokebi" 1110,8,0,0,0
 ama_dun01.gat,0,0,0,0	monster	"Karakasa" 1400,15,0,0,0
 ama_dun01.gat,0,0,0,0	monster	"Miyaba Ningyu" 1404,5,0,0,0
@@ -13,8 +10,6 @@ ama_dun01.gat,0,0,0,0	monster	"Sage Worm" 1281,3,0,0,0
 ama_dun01.gat,0,0,0,0	monster	"Rybio" 1201,3,0,0,0
 ama_dun01.gat,0,0,0,0	monster	"Khalitzburg" 1132,1,300000,300000,0
 //ama_dun01.gat,0,0,0,0	monster	"Treasure Box" 1333,10,300000,600000,0
-
-//ama_dun02
 ama_dun02.gat,0,0,0,0	monster	"Caterpillar" 1300,10,0,0,0
 ama_dun02.gat,0,0,0,0	monster	"Dokebi" 1110,15,0,0,0
 ama_dun02.gat,0,0,0,0	monster	"Greatest General" 1277,5,0,0,0
@@ -24,8 +19,6 @@ ama_dun02.gat,0,0,0,0	monster	"Leib_Olmai" 1306,5,0,0,0
 ama_dun02.gat,0,0,0,0	monster	"Tengu" 1405,20,0,0,0
 ama_dun02.gat,0,0,0,0	monster	"Cat o' Nine Tails" 1307,1,600000,600000,0,
 //ama_dun02.gat,0,0,0,0	monster	"Treasure Box" 1343,10,300000,600000,0
-
-//ama_dun03
 ama_dun03.gat,0,0,0,0	monster	"Apocalipse" 1365,2,300000,300000,0
 ama_dun03.gat,0,0,0,0	monster	"Archangeling" 1388,2,300000,300000,0
 ama_dun03.gat,0,0,0,0	monster	"Bloody Knight" 1268,1,300000,300000,0
@@ -42,28 +35,3 @@ ama_dun03.gat,0,0,0,0	monster	"Jirtus" 1200,1,600000,600000,0
 ama_dun03.gat,0,0,0,0	monster	"Bapho Jr." 1101,8,0,0,0
 ama_dun03.gat,0,0,0,0	monster	"Wraith Dead" 1291,3,300000,300000,0
 //ama_dun03.gat,0,0,0,0	monster	"Treasure Box" 1353,10,300000,600000,0
-
-//ama_fild01
-ama_fild01.gat,0,0,0,0	monster	"Cookie" 1246,8,0,0,0
-ama_fild01.gat,0,0,0,0	monster	"Geographer" 1368,20,0,0,0
-ama_fild01.gat,0,0,0,0	monster	"Poring" 1002,15,0,0,0
-//ama_fild01.gat,0,0,0,0	monster	"Kapha" 1406,10,0,0,0
-ama_fild01.gat,0,0,0,0	monster	"Grand Peco" 1369,8,0,0,0
-ama_fild01.gat,0,0,0,0	monster	"Dokebi" 1110,8,0,0,0
-ama_fild01.gat,0,0,0,0	monster	"Elder Willow" 1033,8,0,0,0
-ama_fild01.gat,0,0,0,0	monster	"Giant Spider" 1303,3,300000,300000,0
-ama_fild01.gat,0,0,0,0	monster	"Giant Hornet" 1304,3,300000,300000,0
-ama_fild01.gat,0,0,0,0	monster	"Sohee" 1170,8,0,0,0
-//ama_fild01.gat,0,0,0,0	monster	"Shinobi" 1401,3,0,0,0
-ama_fild01.gat,0,0,0,0	monster	"Crab" 1073,1,300000,300000,0
-ama_fild01.gat,0,0,0,0	monster	"Crab" 1073,1,300000,300000,0
-ama_fild01.gat,0,0,0,0	monster	"Crab" 1073,1,300000,300000,0
-ama_fild01.gat,0,0,0,0	monster	"Crab" 1073,1,300000,300000,0
-ama_fild01.gat,0,0,0,0	monster	"Crab" 1073,1,300000,300000,0
-ama_fild01.gat,0,0,0,0	monster	"Crab" 1073,1,300000,300000,0
-ama_fild01.gat,0,0,0,0	monster	"Crab" 1073,1,300000,300000,0
-ama_fild01.gat,0,0,0,0	monster	"Crab" 1073,1,300000,300000,0
-ama_fild01.gat,0,0,0,0	monster	"Crab" 1073,1,300000,300000,0
-ama_fild01.gat,0,0,0,0	monster	"Crab" 1073,1,300000,300000,0
-
-//----------------------------------------------------------------------------
