@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.004
 ----------------------------------------------------------------------------------------------------
+- Town\Town_Kafra.txt - Changed a Louyang kafra option. [Muad_Dib]
 - shop\louyang.txt - Added louyang shops. [Muad_Dib]
 - shop\comodo.txt - Added extra shop. [Muad_Dib]
 - Mob\dungeon\lou_dun.txt - Edited the spawns on a few new kro screens. [Muad_Dib]

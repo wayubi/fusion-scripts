@@ -6651,11 +6651,11 @@ mjolnir_02.gat,82,362,6	script	"Kafra Personnel"	116,{
 		mes "Rest assured that Kafra Corporation will always be there to help you.";
 		mes "Thank you for your business.";
  L_EXIT:
-		cutin "Kafra_02",255;
+		cutin "Kafra_04",255;
 		close;
 }
 
-louyang.gat,210,104,6	script	"Kafra Personnel"	116,{
+louyang.gat,210,104,4 script	"Kafra Personnel"	116,{
 	set @Kafra_COUPON = 0;
 	cutin "Kafra_02",2;
 	mes "[Kafra Personnel]";
@@ -6670,11 +6670,16 @@ louyang.gat,210,104,6	script	"Kafra Personnel"	116,{
  L_SUB_0_1:
 	menu "Save",L_MENU_1,"Storage Service",L_MENU_2,"Cart Rental Service",L_MENU_4,"Use Kafra Coupon",L_MENU_5,"Quit",L_MENU_7;
 	L_MENU_1:
-		save "louyang",217,101;
+		menu "Save outside town",-,"Save inside town",L_MENU_1_1;
+			save "prt_fild06",33,192;
+			goto L_SUB_1_1;
+	L_MENU_1_1:
+		      save "louyang",217,101;
+	L_SUB_1_1:
 		mes "[Kafra Personnel]";
-		mes "Your respawn point has saved.";
+		mes "Your position has been saved.";
 		check @Kafra_COUPON = 0,-,L_SUB_1_2;
-			mes "Thank you for using Kafra Services.";
+			mes "Thank you for using Kafra.";
 			goto L_EXIT;
 	L_SUB_1_2:
 			next;
