@@ -593,9 +593,9 @@ Start:
 		goto Start;
 KAFRA:
 	check guildkafra == 0,-,FIN;
-	enablenpc "nguild_aldeg","Kafra Service",0;
+	enablenpc "nguild_alde","Kafra Service",0;
 FIN:
-	enablenpc "nguild_aldeg","CastleCheck",0;
+	enablenpc "nguild_alde","CastleCheck",0;
 	return;
 }
 

@@ -1,7 +1,8 @@
 --------------------------------------------------------------------------------
  Fusion 1.213 - August 29th, 2004
 --------------------------------------------------------------------------------
-
+- 07-05-04: GvG\npc_guardiankafra.txt - Corrected Spelling mistakes in enablenpc commands. [Tsusai]
+- 07-05-04: Job\Novice\Job_Novice.txt - Updated NPC mapnames. [Tsusai]
 
 
 --------------------------------------------------------------------------------

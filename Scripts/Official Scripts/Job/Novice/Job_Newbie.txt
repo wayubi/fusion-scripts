@@ -7,98 +7,98 @@
 // Newbie Training Grounds - Non Player Character Locations
 // - Original Script by Cryshandylan.
 //
-// - Bulletin Board -> new_zone01: 66,114
+// - Bulletin Board -> new_1-1: 66,114
 //   Board that welcomes you.
 //
-// - Guard -> new_zone01: 117,116
+// - Guard -> new_1-1: 117,116
 //   Guard that welcomes you.
 //
-// - Guard -> new_zone01: 117,107
+// - Guard -> new_1-1: 117,107
 //   Guard that welcomes you.
 //
-// - Usher -> new_zone02: 100,29
+// - Usher -> new_1-2: 100,29
 //   Warps you to training grounds or gives direct acces to ragnarok.
 //
-// - Leo Von Frisch -> new_zone02: 84,115
+// - Leo Von Frisch -> new_1-2: 84,115
 //   Takes your 1st test.
 //
-// - NPC Master -> new_zone02: 160,183
+// - NPC Master -> new_1-2: 160,183
 //   Gives you some tips.
 //
-// - Kafra -> new_zone02: 158,158
+// - Kafra -> new_1-2: 158,158
 //   Kafra that doesn't want to talk with you.
 //
-// - Guide -> new_zone02: 160,158
+// - Guide -> new_1-2: 160,158
 //   Guide that doesn't want to talk with you.
 //
-// - Guide -> new_zone02: 183,183
+// - Guide -> new_1-2: 183,183
 //   Gives advice and tell you some rules.
 //
-// - Helper -> new_zone02: 78,101
+// - Helper -> new_1-2: 78,101
 //   Warps you to 2nd registario office when you completed the 1st test.
 //
-// - Helper -> new_zone02: 39,183
+// - Helper -> new_1-2: 39,183
 //   Sign you up for the 2nd course.
 //
-// - Helper -> new_zone02: 16,183
+// - Helper -> new_1-2: 16,183
 //   Approves 2nd test.
 //
-// - Helper -> new_zone04: 100,29
+// - Helper -> new_1-4: 100,29
 //   Warps you to the 3rd course.
 //
-// - Helper -> new_zone04: 20,69
+// - Helper -> new_1-4: 20,69
 //   Gives personality test.
 //
-// - Helper -> new_zone04: 20,109
+// - Helper -> new_1-4: 20,109
 //   Gives 2nd test.
 //
-// - Helper -> new_zone04: 60,249
+// - Helper -> new_1-4: 60,249
 //   Gives test results, let you enter the real world.
 //
-// - Helper -> new_zone04: 19,186
+// - Helper -> new_1-4: 19,186
 //   Swordsman agency helper.
 //
-// - Helper -> new_zone04: 59,186
+// - Helper -> new_1-4: 59,186
 //   Archer agency helper.
 //
-// - Helper -> new_zone04: 99,186
+// - Helper -> new_1-4: 99,186
 //   Thief agency helper.
 //
-// - Helper -> new_zone04: 139,186
+// - Helper -> new_1-4: 139,186
 //   Mage agency helper.
 //
-// - Helper -> new_zone04: 179,186
+// - Helper -> new_1-4: 179,186
 //   Acolyte agency helper.
 //
-// - Helper -> new_zone04: 179,146
+// - Helper -> new_1-4: 179,146
 //   Merchant agency helper.
 //
-// - Monsters Expert -> new_zone02: 115,115
+// - Monsters Expert -> new_1-2: 115,115
 //   Talks about some monsters.
 //
-// - Guide -> new_zone02: 99,156
+// - Guide -> new_1-2: 99,156
 //   Guide that tell you to go back.
 //
-// - Training Ground Chief -> new_zone02: 157,124
+// - Training Ground Chief -> new_1-2: 157,124
 //   Chief that tells you to go back.
 //
 //========================================================================================
 
-new_zone01.gat,66,114,4	script "Bulletin Board"	111,{
+new_1-1.gat,66,114,4	script "Bulletin Board"	111,{
 	mes "^FF0000=================================^000000";
 	mes "^FF0000 ==^000000 ^E40CAA[Welcome] ^CC0000to^FF9000Training ^0000FFGrounds^E40CAA [Welcome] ^FF0000==^000000";
 	mes "^FF0000=================================^000000";
 	close;
 }
 
-new_zone01.gat,117,116,2 script "Guard" 105,{
+new_1-1.gat,117,116,2 script "Guard" 105,{
 	mes "[Guard]";
 	mes "Welcome~ Now  you're in Training Ground~";
 	mes "Please go inside the Castle.";
 	close;
 }
 
-new_zone01.gat,117,107,2 script "Guard" 105,{
+new_1-1.gat,117,107,2 script "Guard" 105,{
 	mes "[Guard]";
 	   random @R_SEL_NUM,2;
 	   check @R_SEL_NUM == 0,-,L_START_1;
@@ -111,7 +111,7 @@ L_START_1:
 	close;
 }
 
-new_zone02.gat,100,29,4	script "Usher" 86,{
+new_1-2.gat,100,29,4	script "Usher" 86,{
 	mes "[Usher]";
 	mes "Welcome to ^FF0000Training Ground^000000 .";
 	mes "Please choose ^0099FFIntroduction^000000 first if you need to check detailed information about Training Ground.";
@@ -129,7 +129,7 @@ new_zone02.gat,100,29,4	script "Usher" 86,{
 	mes "I will lead you into the Hall.";
 	next;
 L_SUB_1:
-	warp "new_zone02",100,70;
+	warp "new_1-2",100,70;
       close;
 L_MENU_1:
 	mes "[Usher]";
@@ -210,7 +210,7 @@ L_MENU_3:
 	close;
 }
 
-new_zone02.gat,100,113,4 script "Guide" 83,{
+new_1-2.gat,100,113,4 script "Guide" 83,{
 	mes "[Guide]";
 	   random @R_SEL_NUM,2;
 	   check @R_SEL_NUM == 0,-,L_START_1;
@@ -260,7 +260,7 @@ L_MENU_1:
 	close;
 }
 
-new_zone02.gat,81,110,4	script "Newbie Instructor" 84,{
+new_1-2.gat,81,110,4	script "Newbie Instructor" 84,{
 	mes "[Newbie Instructor]";
 	mes "Ho? A Rookie? So,are you gonna get some education from Sir Leo Von Frisch?";
 	mes "Well~I must say he is sorta restless person,so that he tends to skip important issues while training.";
@@ -368,7 +368,7 @@ L_SUB_1:
 	close;
 }
 
-new_zone02.gat,84,115,4	script "Leo Von Frisch"	85,{
+new_1-2.gat,84,115,4	script "Leo Von Frisch"	85,{
          check NOV_1_2_COS_C >= 7,-,L_START_1;
 	mes "[Leo Von Frisch]";
 	mes "Um? What's matter? My class is over. Your next course would be 'NPC Guide'....";
@@ -930,7 +930,7 @@ L_MENU_2:
 	close;
 }
 
-new_zone02.gat,160,183,5 script "NPC Master" 83,{
+new_1-2.gat,160,183,5 script "NPC Master" 83,{
 	   check NOV_1_2_COS_C <= 6,-,L_START_1;
 	mes "[NPC Master]";
 	mes "You are supposed not to be here yet. Attend 'Sir Leo Von Frisch''s Lesson first.";
@@ -1012,17 +1012,17 @@ L_START_6:
 	close;
 }
 
-new_zone02.gat,158,158,0 script "Kafra" 94,{
+new_1-2.gat,158,158,0 script "Kafra" 94,{
 	mes "Please leave me alone.";
 	close;
 }
 
-new_zone02.gat,160,158,0 script "Guide" 105,{
+new_1-2.gat,160,158,0 script "Guide" 105,{
 	mes "Please leave me alone.";
 	close;
 }
 
-new_zone02.gat,183,183,3 script "Guide" 95,{
+new_1-2.gat,183,183,3 script "Guide" 95,{
 	   check NOV_1_2_COS_C <= 6,-,L_START_1;
    	mes "[Manner Master]";
    	mes "Eh..Ah...Not here not yet.. Well..What I mean is...Well..uh...";
@@ -1157,21 +1157,21 @@ L_ROOT_1:
    	close;
 }
 
-new_zone02.gat,78,101,6	script "Helper" 105,{
+new_1-2.gat,78,101,6	script "Helper" 105,{
    	mes "[Helper]";
 	   check NOV_1_2_COS_C == 9,-,L_START_1;
 	mes "You just finished 1st course...OK.I will let you go to the 2nd registration office.";
 	next;
 	   set NOV_1_2_COS_C = 0;
 	   set NOV_GET_ITEM01 = 0;
-	   warp "new_zone02",44,171;
+	   warp "new_1-2",44,171;
       close;
 L_START_1:
    	mes "I am a helper who will guide you to the 2nd registration office.Please attend all classes in 1st course First.";
    	close;
 }
 
-new_zone02.gat,39,183,3	script "Helper" 92,{
+new_1-2.gat,39,183,3	script "Helper" 92,{
 	   check NOV_1_2_COS_C == 1,-,L_START_1;
 	mes "[Helper]";
 	mes "You can ask the helper located in left side when you are ready for 2nd course.";
@@ -1194,7 +1194,7 @@ L_START_1:
 	close;
 }
 
-new_zone02.gat,16,183,5	script "Helper" 84,{
+new_1-2.gat,16,183,5	script "Helper" 84,{
 	   check NOV_1_2_COS_C == 2,-,L_START_5;
 	mes "[Helper]";
 	   set NOV_GET_ITEM01 += 1;
@@ -1208,7 +1208,7 @@ new_zone02.gat,16,183,5	script "Helper" 84,{
 	mes "Congratulations.";
 	next;
 	   set NOV_GET_ITEM01 = 11;
-	warp "new_zone04",100,12;
+	warp "new_1-4",100,12;
       close;
 	L_MENU_1:
 	mes "[Helper]";
@@ -1231,7 +1231,7 @@ L_START_2:
 	mes "Congratulations.";
 	next;
 	   set NOV_GET_ITEM01 = 11;
-	   warp "new_zone04",100,12;
+	   warp "new_1-4",100,12;
       close;
 L_MENU_2:
 	mes "[Helper]";
@@ -1247,7 +1247,7 @@ L_START_4:
 	mes "[Helper]";
 	mes "We wish you luck!";
 	next;
-	   warp "new_zone03",96,21;
+	   warp "new_1-3",96,21;
       close;
 L_MENU_3:
 	mes "[Helper]";
@@ -1264,9 +1264,9 @@ L_START_5:
 	   set NOV_GET_ITEM01 = 0;
 	mes "[Helper]";
 	mes "Well ..We wish you luck.";
-	   save "new_zone02",23,188;
+	   save "new_1-2",23,188;
 	next;
-	   warp "new_zone03",96,21;
+	   warp "new_1-3",96,21;
       close;
 L_MENU_4:
 	mes "[Helper]";
@@ -1279,7 +1279,7 @@ L_START_6:
  	close;
 }
 
-new_zone04.gat,100,29,4	script "Helper" 54,{
+new_1-4.gat,100,29,4	script "Helper" 54,{
 	   set NOV_1_2_COS_C = 0;
    	mes "[Helper]";
    	mes "Nice to meet you...Newbie!! I don't have much time to talk.I just tell you the basic details.";
@@ -1290,7 +1290,7 @@ new_zone04.gat,100,29,4	script "Helper" 54,{
 	mes "[Helper]";
       mes "The guide will inform you details! Bye!";
 	next;
-	   warp "new_zone04",19,54;
+	   warp "new_1-4",19,54;
       close;
 L_MENU_1:
 	mes "[Helper]";
@@ -1298,7 +1298,7 @@ L_MENU_1:
 	close;
 }
 
-new_zone04.gat,20,69,4 script "Helper" 67,{
+new_1-4.gat,20,69,4 script "Helper" 67,{
    	mes "[Helper]";
 	mes "Here we are.From now on we will have 1st personality test.";
    	mes "Take it easy and choose right one for you .";
@@ -1426,11 +1426,11 @@ L_START_15:
   	mes "[Helper]";
    	mes "You just finish the 1st test. Congratulations";
 	mes "You can go to the next test right away.";
-	   warp "new_zone04",20,94;
+	   warp "new_1-4",20,94;
       close;
 }
 
-new_zone04.gat,20,109,4	script "Helper" 48,{
+new_1-4.gat,20,109,4	script "Helper" 48,{
    	mes "[Helper]";
    	mes "We start 2nd test right now!";
    	mes "Take it easy and choose right answer for you!";
@@ -1557,11 +1557,11 @@ L_START_9:
    	mes "[Helper]";
    	mes "Now you finished 2nd test! Good job!!";
 	mes "You can go to the result room now.";
-  	   warp "new_zone04",59,134;
+  	   warp "new_1-4",59,134;
       close;
 }
 
-new_zone04.gat,60,149,4	script "Helper" 55,{
+new_1-4.gat,60,149,4	script "Helper" 55,{
    	mes "[Helper]";
    	mes "Congratulations~!You finished whole courses by yourself!";
 	mes "You should remember what you've learned from Training Ground.It would be usefull to you.";
@@ -1760,30 +1760,30 @@ L_MENU_1:
 	mes "[Helper]";
 	mes "Ok.I will let you go to the Job Agency room.";
 	   check @JOB_NUMBER_CHK == 0,-,L_START_10;
-	   warp "new_zone04",20,176;
+	   warp "new_1-4",20,176;
       close;
 L_START_10:
 	   check @JOB_NUMBER_CHK == 1,-,L_START_11;
-	   warp "new_zone04",60,176;
+	   warp "new_1-4",60,176;
       close;
 L_START_11:
 	   check @JOB_NUMBER_CHK == 2,-,L_START_12;
-	   warp "new_zone04",100,176;
+	   warp "new_1-4",100,176;
       close;
 L_START_12:
 	   check @JOB_NUMBER_CHK == 3,-,L_START_13;
-	   warp "new_zone04",140,176;
+	   warp "new_1-4",140,176;
       close;
 L_START_13:
          check @JOB_NUMBER_CHK == 4,-,L_START_14;
-	   warp "new_zone04",180,176;
+	   warp "new_1-4",180,176;
       close;
 L_START_14:
-	   warp "new_zone04",180,134;
+	   warp "new_1-4",180,134;
       close;
 }
 
-new_zone04.gat,19,186,4	script "Helper" 105,{
+new_1-4.gat,19,186,4	script "Helper" 105,{
 	   save "izlude_in",121,165;
    	mes "['Swordman'Agency Helper]";
    	mes "Wecome!";
@@ -1809,7 +1809,7 @@ L_SUB_1:
       close;
 }
 
-new_zone04.gat,59,186,4	script "Helper" 105,{
+new_1-4.gat,59,186,4	script "Helper" 105,{
 	   save "payon_in02",21,71;
    	mes "['`Archer' Agency Helper]";
    	mes "Wecome!";
@@ -1829,7 +1829,7 @@ L_SUB_1:
       close;
 }
 
-new_zone04.gat,99,186,4	script "Helper" 105,{
+new_1-4.gat,99,186,4	script "Helper" 105,{
 	   save "morocc",154,50;
    	mes "[`Thief'Agency Helper]";
    	mes "Wecome!";
@@ -1849,7 +1849,7 @@ L_SUB_1:
       close;
 }
 
-new_zone04.gat,139,186,4 script "Helper" 105,{
+new_1-4.gat,139,186,4 script "Helper" 105,{
 	   save "geffen",120,60;
    	mes "['Mage'Agency Helper]";
    	mes "Wecome!";
@@ -1868,7 +1868,7 @@ L_SUB_1:
       close;
 }
 
-new_zone04.gat,179,186,4 script "Helper" 105,{
+new_1-4.gat,179,186,4 script "Helper" 105,{
 	save "prontera",273,354;
    	mes "['Acolyte'Agency Helper]";
    	mes "Wecome!";
@@ -1887,7 +1887,7 @@ L_SUB_1:
 	warp "prontera",273,354;
 }
 
-new_zone04.gat,179,146,4 script "Helper" 105,{
+new_1-4.gat,179,146,4 script "Helper" 105,{
 	   save "alberta",116,57;
    	mes "['Merchant'Agency Helper]";
    	mes "Wecome!";
@@ -1906,7 +1906,7 @@ L_SUB_1:
       close;
 }
 
-new_zone02.gat,115,115,4 script "Monster Expert" 93,{
+new_1-2.gat,115,115,4 script "Monster Expert" 93,{
 	mes "[Monster Expert]";
 	mes "Hello My name is `Rane' the Monster Expert in Rune-Midagrd Kingdom.";
 	mes "I'll explain things about Monsters,Briefly.";
@@ -1925,14 +1925,14 @@ new_zone02.gat,115,115,4 script "Monster Expert" 93,{
 	close;
 }
 
-new_zone02.gat,99,156,4	script "Guide" 105,{
+new_1-2.gat,99,156,4	script "Guide" 105,{
 	mes "[Guide]";
 	mes "Hey Hey Where are you going? There is nothing for the Newbie like you in upstairs.";
 	mes "Go take Required Trainings!";
 	close;
 }
 
-new_zone01.gat,157,124,4 script "Training Ground Chief" 56,{
+new_1-1.gat,157,124,4 script "Training Ground Chief" 56,{
 	mes "[Training Ground Chief]";
 	mes "Umm...? Aren't you a Freshman? You have a lot of guts to dare to come up.";
 	mes "Didn't that Guide stop you?";
