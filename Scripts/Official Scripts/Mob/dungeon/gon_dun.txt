@@ -34,7 +34,7 @@ gon_dun02.gat,37,110,20,38	monster	"Live Peach Tree" 1410,2,10000,30000,1
 gon_dun02.gat,27,100,16,33	monster	"Live Peach Tree" 1410,1,15000,30000,1
 gon_dun02.gat,47,120,16,33	monster	"Live Peach Tree" 1410,1,15000,30000,1
 gon_dun02.gat,250,243,25,34	monster	"Live Peach Tree" 1410,6,15000,30000,1
-gon_dun02.gat,230,203,25,34	monster	"Live Peach Tree"1410,4,15000,30000,1
+gon_dun02.gat,230,203,25,34	monster	"Live Peach Tree" 1410,4,15000,30000,1
 
 
 
