@@ -42,7 +42,7 @@ L_Warp2:
          warp "gl_dun02",221,261;
       close;
 L_Warp3:
-         warp "gl_dun01t",215,101;
+         warp "gl_dun01",215,101;
       close;
 L_Warp4:
          warp "gl_dun01",237,170;
@@ -60,7 +60,7 @@ L_Warp8:
          warp "alde_dun04",173,152;
       close;
 L_Warp9:
-         warp "c_tower04",110,73;
+         warp "c_tower4",110,73;
       close;
 L_Walk:
 	mes "[Dark Transporter Worker]";
