@@ -6671,7 +6671,7 @@ louyang.gat,210,104,4 script	"Kafra Personnel"	116,{
 	menu "Save",L_MENU_1,"Storage Service",L_MENU_2,"Cart Rental Service",L_MENU_4,"Use Kafra Coupon",L_MENU_5,"Quit",L_MENU_7;
 	L_MENU_1:
 		menu "Save outside town",-,"Save inside town",L_MENU_1_1;
-			save "prt_fild06",33,192;
+			save "lou_fild01",233,340;
 			goto L_SUB_1_1;
 	L_MENU_1_1:
 		      save "louyang",217,101;
