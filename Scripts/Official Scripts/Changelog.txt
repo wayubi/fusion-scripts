@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.002
 ----------------------------------------------------------------------------------------------------
+- Event\Event_Making.txt - Added Young Man and Tempestra Npc, alot of new Hat Quest. [mudvayne]
 - Original\Original_Nenkaras.txt - Translated Inn Maid Sammy/Ahlma Npcs. [mudvayne]
 - Town\Town_Siglude.txt - Translated Vurewell, Sade, Begnahd and Kahlamanlith, Phracon and Emveretarcon provider, also fixed missing " in npc names. [mudvayne]
 - Event\Event_MobTim.txt - Translated all 90% of Monster Tamer Shogo. [Tsusai]
