@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.005
 ----------------------------------------------------------------------------------------------------
+- Job\Job2_Wizard.txt - Corrected a menu and set function. [Tsusai]
 - Mob\field\lou_fld.txt - Added Hatii Baby. 2004/05/21 [Muad_Dib via Tezuka]
 - Mob\dungeon\lou_dun.txt - Added Hatii Baby. 2004/05/21 [Muad_Dib via Tezuka]
 - Mob\field\xmas_fld.txt - Added Hatii Baby. 2004/05/21 [Muad_Dib via Tezuka]

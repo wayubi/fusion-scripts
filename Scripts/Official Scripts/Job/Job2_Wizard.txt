@@ -72,7 +72,7 @@ no0:
 	mes "Hey! What brings you all the way up here?";
 	mes "You want to be a wizard, right?";
 	next;
-	choose menu "Of course!",ofco,"Not really -.-;",notre;
+	menu "Of course!",ofco,"Not really -.-;",notre;
 ofco:
 	mes "[Guild Clerk]";
 	mes "Of course, that's always the reason.";
@@ -740,8 +740,7 @@ change13:
 	next;
 	menu "Baby Desert Wolf",q57,"Farmiliar",q58,"Tie",q59,"Don't Know",q60;
 q57:
-	var wizard_t = wizard_t + 10
-	goto change14;
+	set @wizard_t + 10;
 q58:
 	goto change14;
 q59:
