@@ -238,7 +238,7 @@ amatsu.gat,194,79,4 script "Captain" 709,{
 	mes "Have a good trip.";
 	close;
 L_MENU_1:
-	mes "[Carter Moores]";;
+	mes "[Carter Moores]";
 	mes "Set sail.";
 	mes "Don't know if you are bringing back any";
 	mes "souvenirs.";
