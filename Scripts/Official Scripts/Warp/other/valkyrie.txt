@@ -1,12 +1,14 @@
 //========================================================================================
 // »» The Fusion Project ««
 // Copyright (c) 2004, Cobax Information Systems
-// http://fusion.cobax.net/
+// http://cobax.net/
 // ---------------------------------------------------------------------------------------
 //  
 // Valkyrie Warp Portals
-//  -Written by Tsusai
+// - Original info by jathena
 //
 //========================================================================================
-valkyrie.gat,49,65,0	warp	warpva01	1,1,valkyrie.gat,49,75
-valkyrie.gat,49,73,0	warp	warpva01	1,1,valkyrie.gat,49,62
+
+valkyrie.gat,49,7,0	warp	valkyriewarp001	1,1,yuno_in05.gat,49,61
+valkyrie.gat,49,66,0	warp	valkyriewarp0012	1,1,valkyrie.gat,49,76
+valkyrie.gat,49,73,0	warp	valkyriewarp003	1,1,valkyrie.gat,49,63

@@ -1,6 +1,7 @@
 --------------------------------------------------------------------------------
  Fusion 1.213 - August 29th, 2004
 --------------------------------------------------------------------------------
+- 09-14-04: Warp\other\valkyrie.txt - Updated with jathena warps. [Muad_Dib]
 - 09-14-04: Mob\other\jawaii_mob.txt - Added jathena mobs. [Muad_Dib]
 - 09-14-04: Shop\jawaii.txt - Added jathena shops. [Muad_Dib]
 - 09-14-04: Mob\dungeon\um_dun.txt - Updated with jathena mobs. [Muad_Dib]
