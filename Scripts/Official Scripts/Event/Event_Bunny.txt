@@ -6,7 +6,7 @@
 //
 // Bunny Band Quests - Non Player Character Locations
 //
-// - Kafra Employee -> prontera: 147,172
+// - Kafra Employee -> prontera: 146,87
 //   Give informations and make Bunny Band.
 //
 // - Kafra Employee -> geffen: 116,62
@@ -23,7 +23,7 @@
 //
 //========================================================================================
 
-prontera.gat,147,172,6	script	"Kafra Employee"	83,{
+prontera.gat,146,87,6	script	"Kafra Employee"	83,{
 	check KAFRA_XMAS == 0,-,L_START_1;
 		mes "[Kafra]";
 		mes "^529DFFSpecial Festival, ^FF0000Bunny Band ^529DFFquest!!^000000";

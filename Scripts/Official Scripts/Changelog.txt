@@ -9,6 +9,8 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.002
 ----------------------------------------------------------------------------------------------------
+- Event\Event_Bunny.txt - Fixed Prontera Kafra Employee coordonate. [mudvayne]
+- Town\Town_Kafra.txt - Fixed Center Kafra coordonate and save point. [mudvayne]
 - Npc\npc_merchant_guide.txt - Added Merchant guidelines for dummies bookshelf in prontera library. [mudvayne]
 - Npc\npc_bookshelf.txt - Added mage quest bookshelf. [mudvayne]
 - Npc\npc_ancyclopedia.txt -Added Monsters Ancyclopedia in prontera library. [mudvayne]

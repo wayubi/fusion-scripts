@@ -856,7 +856,7 @@ prontera.gat,248,42,0	script	"Kafra Personnel"	116,{
 // < Prontera - Center >
 //----------------------------------
 
-prontera.gat,147,174,6	script	"Kafra Personnel"	117,{
+prontera.gat,146,89,6	script	"Kafra Personnel"	117,{
 	set @KAFRA_COUPON = 0;
 	cutin "kafra_01",2;
 	mes "[Kafra Personnel]";
@@ -871,7 +871,7 @@ prontera.gat,147,174,6	script	"Kafra Personnel"	117,{
  L_SUB_0_1:
 	menu "Save",L_MENU_1,"Storage Service",L_MENU_2,"Teleport Service",L_MENU_3,"Cart Rental Service",L_MENU_4,"Use Kafra Coupon",L_MENU_5,"Locate Kafra Personnels",L_MENU_6,"Quit",L_MENU_7;
 	L_MENU_1:
-		save "prontera",156,181;
+		save "prontera",116,72;
 		mes "[Kafra Personnel]";
 		mes "Your position has been saved.";
 		check @KAFRA_COUPON = 0,-,L_SUB_1_2;
