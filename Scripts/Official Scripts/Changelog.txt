@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.004
 ----------------------------------------------------------------------------------------------------
+- Town\Town_Comodo.txt - Corrected a few names and reformated. [Tsusai]
 - Warp\newbies\new_zone.txt - Removed new_#-#.gat warps (maps no longer exist). [Tsusai]
 - Town\Town_Aldebaran.txt - Updated 'Bell Keeper A' position. [Tsusai]
 - Town\Town_Alberta.txt - Added Babygirl NPC. [Tsusai]
