@@ -2117,8 +2117,8 @@ L_1:
 	mes "You want to get some bandage?";
 	mes "Do you know how we";
 	mes "acquire these bandages?";
-	mes "In a pyramid nearby Morroc ";;
-	mes "deep inside the dungeon will you find the bandage ";;
+	mes "In a pyramid nearby Morroc ";
+	mes "deep inside the dungeon will you find the bandage ";
 	next;
 	mes "[Dread Lord]";
 	mes "We acquire rotten bandages from ";
