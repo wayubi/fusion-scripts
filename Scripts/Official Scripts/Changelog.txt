@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.002
 ----------------------------------------------------------------------------------------------------
+- Event\Event_MobTim.txt - Finished translating Tammy. [Tsusai]
 - Event\Event_MobTim.txt - Finished translating Shogo. [Tsusai]
 - GvG\npc_gflag.txt - Fixed next error command. [mudvayne]
 - Original\Original_Arena.txt - Moved to archive, not official. [mudvayne]
