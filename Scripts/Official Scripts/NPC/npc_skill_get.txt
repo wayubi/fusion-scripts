@@ -6,52 +6,52 @@
 //
 // Platinum Skills - Non Player Character Locations
 //
-// - 騎士団兵器係 -> prt_in.gat,79,94
+// - 騎士団兵器係 -> prt_in: 79,94
 //   Quest for Berserk platinum skill.
 //
-// - 騎士デトマソ -> izlude_in.gat,175,130
+// - 騎士デトマソ -> izlude_in: 175,130
 //   Quest for Moving Hp recovery platinum skill.
 //
-// - レオンフォンプリシュ -> prt_in.gat,75,88
+// - レオンフォンプリシュ -> prt_in: 75,88
 //   Quest for Fatal blow platinum skill.
 //
-// - ファン -> prt_in.gat,94,57
+// - ファン -> prt_in: 94,57
 //   Quest for ? platinum skill.
 //
-// - Roberto -> morocc.gat,121,109
+// - Roberto -> morocc: 121,109
 //   Quest for Arrow crafting platinum skill.
 //
-// - Jason -> payon.gat,30,94
+// - Jason -> payon: 30,94
 //   Quest for Charge arrow platinum skill.
 //
-// - Necko -> alberta.gat,83,96
+// - Necko -> alberta: 83,96
 //   Quest for Lord exclamation platinum skill.
 //
-// - Charlron -> alberta.gat,119,221
+// - Charlron -> alberta: 119,221
 //   Quest for Change cart platinum skill.
 //
-// - コサンス -> alberta.gat,232,106
+// - コサンス -> alberta: 232,106
 //   Quest for Cart revolution platinum skill.
 //
-// - Father Clifford -> prt_church.gat,173,23
+// - Father Clifford -> prt_church: 173,23
 //   Quest for Holy light platinum skill.
 //
-// - Great Magician -> geffen_in.gat,151,119
+// - Great Magician -> geffen_in: 151,119
 //   Quest for Energy coat platinum skill.
 //
-// - Nami -> prt_in.gat,234,133
+// - Nami -> prt_in: 234,133
 //   Quest for First aid platinum skill.
 //
-// - Prontera Knight -> prt_in.gat,73,87
+// - Prontera Knight -> prt_in: 73,87
 //   Quest for Act dead platinum skill.
 //
-// - Dread Lord -> prt_castle.gat,175,146
+// - Dread Lord -> prt_castle: 175,146
 //   Quest for ? platinum skill.
 //
-// - アルコスク -> moc_prydb1.gat,154,128
+// - アルコスク -> moc_prydb1: 154,128
 //   Quest for thieves platinum skills.
 //
-// - RuRumuni -> payon.gat,30,120
+// - RuRumuni -> payon: 30,120
 //   Quest for ? platinum skill.
 //
 //========================================================================================
