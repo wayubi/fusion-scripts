@@ -1267,7 +1267,7 @@ prontera.gat,282,200,2	script	"Kafra Personnel"	114,{
 				warp "morocc",156,46;
 		L_MENU_3_4a:
 			check @KAFRA_COUPON = 0,-,L_SUB_3_4a;
-				check Zeny < 20==1800,-,L_ROOT_3_4a;
+				check Zeny < 1800,-,L_ROOT_3_4a;
 					mes "[Kafra Personnel]";
 					mes "You don't have enough money.";
 					mes "Please verify the amount of money you have.";
@@ -3135,7 +3135,7 @@ morocc.gat,156,97,4	script	"Kafra Personnel"	113,{
 		mes "[Kafra Personnel]";
 		mes "Please pick your destination.";
 		next;
-		menu "Comodo -> 1800 z",L_MENU_3_0,"Prontera -> 1200 z",L_MENU_3_1,"Payon -> 1200 z",L_MENU_3_2,"Alberta -> 1800 z",L_MENU_3_3,"Paros Lighthouse" -> 1200 z",L_MENU_3_4,"Cancel",L_MENU_3_5;
+		menu "Comodo -> 1800 z",L_MENU_3_0,"Prontera -> 1200 z",L_MENU_3_1,"Payon -> 1200 z",L_MENU_3_2,"Alberta -> 1800 z",L_MENU_3_3,"Paros Lighthouse -> 1200 z",L_MENU_3_4,"Cancel",L_MENU_3_5;
 		L_MENU_3_0:
 			check @KAFRA_COUPON = 0,-,L_SUB_3_0;
 				check Zeny < 1800,-,L_ROOT_3_0;
@@ -3363,7 +3363,7 @@ morocc.gat,160,258,4	script	"Kafra Personnel"	114,{
 		mes "[Kafra Personnel]";
 		mes "Please pick your destination.";
 		next;
-		menu "Comodo -> 1800 z",L_MENU_3_0,"Prontera -> 1200 z",L_MENU_3_1,"Payon -> 1200 z",L_MENU_3_2,"Alberta -> 1800 z",L_MENU_3_3,"Paros Lighthouse" -> 1200 z",L_MENU_3_4,"Cancel",L_MENU_3_5;
+		menu "Comodo -> 1800 z",L_MENU_3_0,"Prontera -> 1200 z",L_MENU_3_1,"Payon -> 1200 z",L_MENU_3_2,"Alberta -> 1800 z",L_MENU_3_3,"Paros Lighthouse -> 1200 z",L_MENU_3_4,"Cancel",L_MENU_3_5;
 		L_MENU_3_0:
 			check @KAFRA_COUPON = 0,-,L_SUB_3_0;
 				check Zeny < 1800,-,L_ROOT_3_0;
