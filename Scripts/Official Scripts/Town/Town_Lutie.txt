@@ -400,6 +400,7 @@ L0_8:
 	mes "Please visit me from time to time,and take a chitchat with me.";
 	mes "See you soon -";
 	mes "Merry Christmas!!";
+	set lutie_quest = 1;
 	close;
 L0_A:
 	   additem 529,10;
@@ -410,6 +411,7 @@ L0_A:
 	mes "Please visit me from time to time,and take a chitchat with me.";
 	mes "See you soon -";
 	mes "Merry Christmas!!";
+	set lutie_quest = 1;
 	close;
 L0_B:
 	   additem 530,5;
@@ -420,6 +422,7 @@ L0_B:
 	mes "Please visit me from time to time,and take a chitchat with me.";
 	mes "See you soon -";
 	mes "Merry Christmas!!";
+	set lutie_quest = 1;
 	close;
 L0_C:
 	   additem 530,10;
@@ -430,6 +433,7 @@ L0_C:
 	mes "Please visit me from time to time,and take a chitchat with me.";
 	mes "See you soon -";
 	mes "Merry Christmas!!";
+	set lutie_quest = 1;
 	close;
 L0_D:
 	   additem 539,1;
@@ -440,6 +444,7 @@ L0_D:
 	mes "Please visit me from time to time,and take a chitchat with me.";
 	mes "See you soon -";
 	mes "Merry Christmas!!";
+	set lutie_quest = 1;
 	close;
 L0_E:
 	   additem 539,2;
@@ -450,6 +455,7 @@ L0_E:
 	mes "Please visit me from time to time,and take a chitchat with me.";
 	mes "See you soon -";
 	mes "Merry Christmas!!";
+	set lutie_quest = 1;
 	close;
 L0_F:
 	   additem 538,5;
@@ -460,6 +466,7 @@ L0_F:
 	mes "Please visit me from time to time,and take a chitchat with me.";
 	mes "See you soon -";
 	mes "Merry Christmas!!";
+	set lutie_quest = 1;
 	close;
 L0_G:
 	   additem 538,10;
@@ -470,6 +477,7 @@ L0_G:
 	mes "Please visit me from time to time,and take a chitchat with me.";
 	mes "See you soon -";
 	mes "Merry Christmas!!";
+	set lutie_quest = 1;
 	close;
 L0_9:
 	mes "[Snowysnow]";

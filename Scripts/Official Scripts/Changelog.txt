@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.005 (Fusion 1.212)
 ----------------------------------------------------------------------------------------------------
+- 06-08-04: Town\Town_Lutie.txt - added some variables for bard quest. [nestor_zulueta]
 - 06-05-04: Job\Job2_Knight.txt - Few tuneups. [Tsusai]
 - 06-05-04: Event\Event_Making.txt - Added a missing "; to the zic npc. [Muad_Dib]
 - 06-05-04: Event\Event_ClockTower.txt - Updated the 2 guardians. [Muad_Dib]
