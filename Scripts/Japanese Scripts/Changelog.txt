@@ -1,6 +1,7 @@
 --------------------------------------------------------------------------------
  - Japanese scripts changelog
 --------------------------------------------------------------------------------
+- 10-14-04: Added untranslated npc_job_transmigration.txt - Added jA Rebirth npcs [Tsusai]
 - 10-13-04: Updated translated npc_job_sage.txt. - Added update english sage quest [Muad_Dib]
 - 09-16-04: Added translated Rogue.txt. - Actually commiting the scripts work better [Muad_Dib]
 - 09-15-04: Added translated Rogue.txt. - by eathena [Muad_Dib]
