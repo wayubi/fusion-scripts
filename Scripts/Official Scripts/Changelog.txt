@@ -1,6 +1,7 @@
 --------------------------------------------------------------------------------
  Fusion 1.213 - August 29th, 2004
 --------------------------------------------------------------------------------
+- 07-07-04: Event\Event_NGuild.txt - Changed checkstr to check. [Tsusai]
 - 07-07-04: shop\niflheim.txt - Fixed Bastard Sword Price. [Muad_Dib]
 - 07-06-04: Town\Town_Umbala.txt - Cleaned up and added official script. [Tsusai]
 - 07-06-04: Job\Job_2-1\Job2_Wizard.txt - increased waiting room size to 2 (how did it get smaller?) [Tsusai]

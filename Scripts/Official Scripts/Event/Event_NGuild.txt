@@ -7,12 +7,18 @@ n_castle.gat,102,102,4	script	"Novice WoE Event Worker"	125,{
 	menu "Yes",towns,"No",-;
 		close;
 	towns:
-		checkstr $ntown = "Prontera",W_pron,-;
-		checkstr $ntown = "Izlude",W_izlud,-;
-		checkstr $ntown = "Geffen",W_geff,-;
-		checkstr $ntown = "Alberta",W_alber,-;
-		checkstr $ntown = "Payon",W_payon,-;
-		checkstr $ntown = "Morocc",W_moro,-;
+//		checkstr $ntown = "Prontera",W_pron,-;
+//		checkstr $ntown = "Izlude",W_izlud,-;
+//		checkstr $ntown = "Geffen",W_geff,-;
+//		checkstr $ntown = "Alberta",W_alber,-;
+//		checkstr $ntown = "Payon",W_payon,-;
+//		checkstr $ntown = "Morocc",W_moro,-;
+		check $ntown = "Prontera",W_pron,-;
+		check $ntown = "Izlude",W_izlud,-;
+		check $ntown = "Geffen",W_geff,-;
+		check $ntown = "Alberta",W_alber,-;
+		check $ntown = "Payon",W_payon,-;
+		check $ntown = "Morocc",W_moro,-;
 			close;
 		W_pron: 
 			warp prontera,155,180; 
