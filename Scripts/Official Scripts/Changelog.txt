@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.003
 ----------------------------------------------------------------------------------------------------
+- Town\Town_Siglude.txt - Corrected one thing of the display. [Muad_Dib]
 - Job\Job2_Crusader.txt - Deleted Grand Peko Breeder due to being obsolete with Event_Rental.txt. [Muad_Dib]
 - Job\Job2_Hunter.txt - Deleted Hunter Breeder due to being obsolete with Event_Rental.txt. [Muad_Dib]
 - Job\Job2_Knight.txt - Deleted Peco breeder due to being obsolete with Event_Rental.txt. [Muad_Dib]
