@@ -16,7 +16,7 @@ yuno_in03.gat,106,177,4	script "Cleitos Berdo" 743,{
 	mes "Welcome to Sage Castle";
 	mes "Do you want to become a Sage?";
 	next;
-	menu "Change job into a Sage",L_Menu1,"Requirements",L_MENU_2,"End",-;
+	menu "Change job into a Sage",L_MENU_1,"Requirements",L_MENU_2,"End",-;
 	close;
 L_MENU_1:
 	mes "[Cleitos Berdo]";
