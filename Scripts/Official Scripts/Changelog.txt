@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.003
 ----------------------------------------------------------------------------------------------------
+- Mob\field\mjolnir_fild.txt - Updated, reorganised Mount Mjolnir Fields Monster Spawns [Muad_Dib]
 - GvG\prtg_cas01.txt - Added a missing OnInit command to a flag. [Tsusai]
 - GvG\npc_guardiankafra.txt - Updated Header. [Tsusai]
 - Quest\Quest_skill\Thief_Skill.txt - Corrected Header NPC info. [Tsusai]
