@@ -1,6 +1,7 @@
 --------------------------------------------------------------------------------
  Fusion 1.213 - August 29th, 2004
 --------------------------------------------------------------------------------
+- 08-30-04: GvG\npc_gflag.txt - Disabled old river flags because new Payon river is too small. Looking for new spot. [Tsusai]
 - 08-30-04: GvG\npc_gflag.txt - Relocated castle side flags for new Payon map. [Tsusai]
 - 08-30-04: Warp\towns\Payon.txt - Current progress in the new payon warps. [Muad_Dib]
 - 08-30-04: Warp\guilds\payg_cas.txt - Removed a payon warp. [Muad_Dib]
