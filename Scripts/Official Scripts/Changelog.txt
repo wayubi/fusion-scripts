@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.005
 ----------------------------------------------------------------------------------------------------
+- GvG\pay_cas02.txt - Fixed a mes error. [Tsusai]
 - Shop\yuno.txt - Updated Yuno shops. [Muad_Dib]
 - Shop\amatsu.txt - Updated Amatsu shops. [Muad_Dib]
 - Archive\ - Commented out warps. [Tsusai]
