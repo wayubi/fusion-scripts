@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.005
 ----------------------------------------------------------------------------------------------------
+- Job\Job2_Knight.txt - Added Lord Knight support for buying Claymores. [Tsusai]
 - Event\Event_Reset_Skill.txt - Added Event Reset Skill. [Muad_Dib]
 - Event\Event_Doll.txt - Updated Event Doll. [Muad_Dib]
 - Job\Job1_Merchant.txt - Fixed a wrong command. [Muad_Dib]

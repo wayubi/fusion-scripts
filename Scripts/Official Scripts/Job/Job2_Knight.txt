@@ -2021,7 +2021,9 @@ job_knt.gat,143,57,4	script	"Knight Edmund"	734,{
 
 prt_in.gat,84,93,4	script	"Knight Grey"	119,{
 check job == 1,Swordie,-;
-check job == 7,-,OtherClass;
+check job == 7,Claymore,-;
+check job == 31,Claymore,OtherClass;
+Claymore:
 	mes "[Knight Grey]";
 	mes "I don't know how to talk about a claymore... its a knight's best weapon";
 	mes "Yes. ^3355FF' Claymore '^000000 !! every knight should have one!";
