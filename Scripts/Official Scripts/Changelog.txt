@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.004
 ----------------------------------------------------------------------------------------------------
+- Mob\other\pvp_n.txt - Removed, map no longer exists. [Tsusai]
 - Event\Event_Rental.txt - Modified the Grand Peco Rental NPC. [Tsusai]
 - Town\Town_Amatsu.txt - Changed one part of the text. [Muad_Dib]
 - Town\Town_Kafra.txt - Commented out Umbala Kafra's Teleport. [Tsusai]
