@@ -21,8 +21,8 @@ aldebaran.gat,139,63,4 script "Soldier" 105,{
 	mes "I amjust any ordinary guard you";
 	mes "could find on any other town!!";
 	mes "I am in charge of the Service Guide of";
-	mes "the Al De Barab Garrison, and";
-	mes "the name is Al De Barab Guard (No Name) !!";
+	mes "the Al De Baran Garrison, and";
+	mes "the name is Al De Baran Guard (No Name) !!";
 	mes "I will guide you through our town!";
 	next;
 	menu "Get location Guide.",-,"End conversation.",L_End;
