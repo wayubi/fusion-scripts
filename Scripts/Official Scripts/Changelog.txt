@@ -9,7 +9,9 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.003
 ----------------------------------------------------------------------------------------------------
-- shop\Prontera.txt - Updated Prontera shop added items updated prices. [Muad_Dib]
+- shop\geffen.txt - Updated Geffen shop added items updated prices. [Muad_Dib]
+- shop\izlude.txt - Updated Izlude shop added items updated prices. [Muad_Dib]
+- shop\prontera.txt - Updated Prontera shop added items updated prices. [Muad_Dib]
 - GvG\npc_guardiankafra.txt - Moved Aldebaran fixes here. [Tsusai]
 - GvG\npc_guardiankafra.txt - Finished fixing Prontera Castle Guardian and Kafra service bug. [Tsusai]
 - Warp\fields\prt_fild.txt - Fixed warp destination bug (#602). [Tsusai]
