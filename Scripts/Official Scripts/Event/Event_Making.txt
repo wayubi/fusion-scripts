@@ -30,7 +30,7 @@
 // - Marius -> morocc_in: 76,163
 //   Give information and make Binoculars Quest.
 //
-// - Grampa -> alberta_in: 59,139
+// - Grampa -> alberta_in: 29,142
 //   Give information and make Boy's Cap Quest.
 //
 // - Mystic Lady -> payon_in01: 103,79
@@ -373,7 +373,7 @@ aldeba_in.gat,152,166,4	script	"Trader"	86,{
 		close;
 }
 
-alberta_in.gat,59,139,4	script	"Grampa"	120,{
+alberta_in.gat,29,142,4	script	"Grampa"	120,{
 	mes "[Grampa]";
 	mes "Gasp ..Gasp";
 	next;
