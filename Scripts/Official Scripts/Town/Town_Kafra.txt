@@ -811,21 +811,78 @@ aldebaran.gat,144,118,4	script "kafra Personnel" 117,{
 
 prontera.gat,248,42,0 script "kafra Personnel" 116,{
 	cutin "kafra_02",2;
-	check 1ST_JOB_QUEST != 1,-,L_START_1;
-		mes "[kafra Personnel]";
-		mes "Welcome, this is kafra Corp.";
+	check loc == 1,-,Kafra;
+	check job_merchant_q == 8,JobMerQE8oE7,-;
+	check job_merchant_q == 7,JobMerQE8oE7,-;
+	check job_merchant_q == 6,JobMerQE8oE7,-; 
+	check job_merchant_q == 5,JobMerQE8oE7,-;
+	checkitem 3027,0,JobMerQE8oE9,-;
+	mes "^FF0000***** ERROR *****^000000";
+JobMerQE8oE7:
+	mes "[Kafra]";
+	mes "Delivery from the Merchant Guild? Oh, yes! Alright, Please put down here....";
+	checkitem 1081,1,MerBox123E1,-;
+	checkitem 1082,1,MerBox123E1,-;
+	checkitem 1083,1,MerBox123E1,-;
+	mes "Excuse me.. Where's the Delivery....?";
+	cutin "kafra_02",255;
+	close;
+MerBox123E1:
+	mes "I really appreciate for what you've done. You must be Really tired to come here from the Distance~";
+	next;
+	mes "[Kafra]";
+	mes "Let me check its Serial Numbers. Hmm....";
+	check job_merchant_q2 == 1,JobMerQ2E1,-;
+	check job_merchant_q2 == 2,JobMerQ2E2,-;
+	mes ".....Umm? This is...??";
+	next;
+	mes "[Kafra]";
+	mes "Oh, Dear. I don't think it's the Right one we ordered. It should have the serial numbers as either of 2485741 or 2328137.";
+	mes "I am so afraid there were something worng during passage.";
+	cutin "kafra_02",255;
+	close;
+JobMerQ2E1:
+	checkitem 1081,0,-,MerBox1NE0;
+MerBox1NE0:
+	mes "2485741.. Yes, This is the Right one we ordered~ I guess you need a Receipt. I will give it to you right away.";
+	set job_merchant_q = 8;
+	delitem 1081,1;
+	additem 1073,1;
+	goto JobMerQ2Cont;
+JobMerQ2E2:
+	checkitem 1082,0,-,MerBox2NE0;
+MerBox2NE0:
+	mes "2328137.. Yes, This is the Right one we ordered~ I guess you need a Receipt. I will give it to you right away.";
+	set job_merchant_q = 7;
+	delitem 1082,1;
+	additem 1074,1;
+	goto JobMerQ2Cont;
+JobMerQ2Cont:
+	next;
+	mes "[Kafra]";
+	mes "I really appreciate you for what you've done so far.";
+	cutin "kafra_02",255;
+	close;
+JobMerQE8oE9:
+	mes "[Kafra]";
+	mes "Good Day~ Have you got something more to do here?";
+	cutin "kafra_02",255;
+	close;
+Kafra:
+		mes "[Kafra Personnel]";
+		mes "Welcome, this is Kafra Corp.";
 		mes "Please note that the";
 		mes "Swordman Guild has moved";
 		mes "to Izlude.";
 		next;
-		mes "[kafra Personnel]";
-		mes "kafra Corp does provides a";
+		mes "[Kafra Personnel]";
+		mes "Kafra Corp does provides a";
 		mes "teleport service from here to";
 		mes "Izlude for 600 zeny.";
 		next;
-		menu "Use it",-,"Use kafra Coupon",L_MENU_1,"End",L_MENU_2;
+		menu "Use it",-,"Use Kafra Coupon",L_MENU_1,"End",L_MENU_2;
 			check Zeny < 600,-,L_ROOT_1;
-			mes "[kafra Personnel]";
+			mes "[Kafra Personnel]";
 			mes "You don't have enough money.";
 			goto L_EXIT;
 		L_ROOT_1:
@@ -834,86 +891,17 @@ prontera.gat,248,42,0 script "kafra Personnel" 116,{
 			warp "izlude",94,103;
 		L_MENU_1:
 			checkitem 1084,1,L_ROOT_2,-;
-			mes "[kafra Personnel]";
-			mes "So, you would like to use a kafra Coupon.";
+			mes "[Kafra Personnel]";
+			mes "So, you would like to use a Kafra Coupon.";
 			mes "... and the coupon, where is it?";
 			goto L_EXIT;
 		L_ROOT_2:
 			delitem 1084,1;
 			warp "izlude",94,103;
 		L_MENU_2:
-			mes "[kafra Personnel]";
+			mes "[Kafra Personnel]";
 			mes "Thank you very much.";
 			goto L_EXIT;
-	L_START_1:
-		check JOB_MERCHANT_Q <= 8,-,L_SUB_2;
-		check JOB_MERCHANT_Q >= 7,-,L_SUB_2;
-			check NOV_3_MERCHANT = 0,-,L_EXIT;
-			mes "[kafra Personnel]";
-			mes "Good afternoon.";
-			mes "Do you have a business here?";
-			goto L_EXIT;
-	L_SUB_2:
-		check JOB_MERCHANT_Q <= 6,-,L_SUB_2;
-		check JOB_MERCHANT_Q >= 5,-,L_SUB_2;
-		mes "[kafra Personnel]";
-		mes "You're here to deliver a package from the Merchant Guild?";
-		mes "Great! Please bring it here...";
-			checkitem 1081,1,L_SUB_3,-;
-			checkitem 1082,1,L_SUB_3,-;
-			checkitem 1091,1,L_SUB_3,L_SUB_4;
-	L_SUB_3:
-			mes "What a heavy box ...";
-			mes "Thank you for carrying it all the way.";
-			goto L_SUB_5;
-	L_SUB_4:
-			mes "Um ... where's the package..?";
-			goto L_EXIT;
-	L_SUB_5:
-		next;
-		mes "[kafra Personnel]";
-		mes "I'll need to check the package delivery number.";
-		mes "Let's see ....";
-		check JOB_MERCHANT_Q2 = 1,-,L_SUB_7;
-			checkitem 1081,1,-,L_START_2;
-			mes "2485741... yes,";
-			mes "This is the package we ordered.";
-			mes "You'll need a delivery confirmation receipt right?";
-			mes "I'll issue one now.";
-			delitem 1081,1;
-			additem 1073,1;
-			goto L_START_3;
-	L_SUB_7:
-		check JOB_MERCHANT_Q2 = 2,-,L_START_2;
-			checkitem 1082,1,-,L_START_2;
-			mes "2328137...yes.";
-			mes "This is the package we ordered.";
-			mes "You'll need a delivery confirmation receipt right?";
-			mes "I'll issue one now.";
-			delitem 1082,1;
-			additem 1074,1;
-			goto L_START_3;
-	L_START_2:
-		mes "......Huh?";
-		mes "This number ...?";
-		next;
-		mes "[kafra Personnel]";
-		mes "Um, this package is not for this destination.";
-		mes "The numbers for packages from the Merchant Guild";
-		mes "for this location are 2485741 and 2328137.";
-		mes "Could there have been a mistake?";
-		goto L_EXIT;
-	L_START_3:
-		check JOB_MERCHANT_Q = 6,-,L_SUB_3_1;
-		set JOB_MERCHANT_Q = 8;
-		goto L_SUB_3_2;
-	L_SUB_3_1:
-		set JOB_MERCHANT_Q = 7;
-	L_SUB_3_2:
-		set 1ST_JOB_QUEST = 5;
-		next;
-		mes "[kafra Personnel]";
-		mes "It must have been tough coming such a long way here.";
 	L_EXIT:
 		cutin "kafra_02",255;
 		close;
@@ -2444,6 +2432,93 @@ izlude.gat,136,88,4	script	"kafra Personnel"	115,{
 }
 
 izlu2dun.gat,106,58,4	script	"kafra Personnel"	116,{
+	cutin "kafra_02",2;
+	check loc == 4,-,Kafra;
+	check job_merchant_q == 8,JobMerQE8oE7,-;
+	check job_merchant_q == 7,JobMerQE8oE7,-;
+	check job_merchant_q == 6,JobMerQE6oE5,-; 
+	check job_merchant_q == 5,JobMerQE6oE5,-; 
+JobMerQE8oE7:
+	checkitem 1072,1,-,JobMerQE8oE7Cont;
+JobMerQE8oE7Cont:
+	menu "Excuse me.",M0;
+M0:
+	mes "[Kafra]";
+	mes "Yes?";
+	cutin "kafra_02",255;
+	close;
+JobMerQE6oE5:
+	mes "[Kafra]";
+	mes "Delivery from the Merchant Guild?? Ah, Right! Yes! I almost forgot.";
+	mes "Okay, Please put down here....";
+	checkitem 1081,1,MerBox123E1,-;
+	checkitem 1082,1,MerBox123E1,-;
+	checkitem 1083,1,MerBox123E1,-;
+	mes ".... I think our orders are almost one Box of Oversized and Heavy.... But you seem to carry it on without difficulty.";
+	close;
+MerBox123E1:
+	next;
+	mes "[Kafra]";
+	mes "Let me check its Serial numbers, I have to give the receipt to you anyhow.";
+	check job_merchant_q2 == 7,JobMerQ2E7,-;
+	check job_merchant_q2 == 8,JobMerQ2E8,-;
+	next;
+	mes "[Kafra]";
+	mes "......? Excuse me! I think you gave me the wrong one.";
+	mes "Our order should have the serial numbers as either of 3318702 or 3543625...";
+	cutin "kafra_02",255;
+	close;
+JobMerQ2E7:
+	checkitem 1081,1,MerBox1NE0,-;
+MerBox1NE0:
+	mes "Um.... 3012685. Yes! This is the right one we ordered. Here, your receipt.";
+	set job_merchant_q = 8;
+	delitem 1081,1;
+	additem 1079,1;
+	goto JobMerQ2Cont;
+JobMerQ2E8:
+	checkitem 1082,1,MerBox2NE0,-;
+MerBox2NE0:
+	mes "Um.... 3543625. Yes! This is the right one we ordered. Here, your receipt.";
+	set job_merchant_q = 7;
+	delitem 1082,1;
+	additem 1080,1;
+	goto JobMerQ2Cont;
+JobMerQ2Cont:
+	check job_merchant_q == 6,JobMerQE6,-;
+	goto JobMerQ2Cont1;
+JobMerQE6:
+	goto JobMerQ2Cont1;
+JobMerQ2Cont1:
+	checkitem 1072,1,DevMsg,-;
+	goto DevMsgCont;
+DevMsg:
+	menu "This is from Mr. Mahnsoo...",M1;
+M1:
+	set message = 2;
+	delitem 1072,1;
+	set nov_3_merchant = 11;
+	mes "[Kapra's]";
+	mes "Oh,My good Lord! Mr. Mansoo wrote me a Letter? Thank you, Thank you~";
+	mes "I though he would send one one of thesedays, but I've never expected it would be so soon like this time~";
+	goto DevMsgCont;
+DevMsgCont:
+	next;
+	mes "[Kafra]";
+	mes "I really appreciate you for what you've done so far. This is my Small Gift for you to lay my heart.";
+	mes "I hope you will help me next time.";
+	random @TEMP 2;
+	goto R0;
+R0:
+	check @TEMP == 0,-,R1;
+	additem 513,3;
+	cutin "kafra_02",255;
+	close;
+R1:
+	additem 512,3;
+	cutin "kafra_02",255;
+	close;	
+kafra:
 	set @kafra_COUPON = 0;
 	cutin "kafra_02",2;
 	check 1ST_JOB_QUEST != 4,-,L_QUEST;
@@ -2569,88 +2644,7 @@ izlu2dun.gat,106,58,4	script	"kafra Personnel"	116,{
 		mes "Rest assured that kafra Corporation will always be there to help you.";
 		mes "Thank you for your business.";
 		goto L_EXIT;
- L_QUEST:
-	check JOB_MERCHANT_Q <= 8,-,L_Q_START_1;
-	check JOB_MERCHANT_Q >= 7,-,L_Q_START_1;
-		checkitem 1072,1,-,L_EXIT;
-			mes "[kafra Personnel]";
-		mes "Yes, how can I help you?";
-			goto L_EXIT;
- L_Q_START_1:
-	check JOB_MERCHANT_Q <= 6,-,L_EXIT;
-	check JOB_MERCHANT_Q >= 5,-,L_EXIT;
-		mes "[kafra Personnel]";
-		mes "Eh? You're from the Merchant Guild?";
-		mes "... Ah! That's right! How could I forget~";
-		mes "Okay, please put it here ...";
-			checkitem 1081,1,L_Q_START_2,-;
-			checkitem 1082,1,L_Q_START_2,-;
-			checkitem 1091,1,L_Q_START_2,-;
-		mes "There should only be 1 box delivered here but ...";
-		goto L_EXIT;
- L_Q_START_2:
-	mes "Good job bringing it here, thanks~";
-	next;
-	mes "[kafra Personnel]";
-	mes "In order to issue a delivery confirmation receipt,";
-	mes "I'll need to check the package delivery number.";
-	next;
-		check JOB_MERCHANT_Q2 = 7,-,L_Q_SUB_1;
-			checkitem 1081,1,-,L_EXIT;
-				mes "Let's see ... 3012685 ... Yup!";
-				mes "This is the package we ordered.";
-				mes "Here's the delivery confirmation receipt.";
-				delitem 1081,1;
-				additem 1079,1;
-				next;
-				goto L_Q_START_3;
-	L_Q_SUB_1:
-		check JOB_MERCHANT_Q2 = 8,-,L_Q_SUB_2;
-			checkitem 1082,1,-,L_EXIT;
-				mes "Let's see ... 3543625 ... Yup!";
-				mes "This is the package we ordered.";
-				mes "Here's the delivery confirmation receipt.";
-				delitem 1082,1;
-				additem 1080,1;
-				next;
-				goto L_Q_START_3;
-	L_Q_SUB_2:
-		mes "[kafra Personnel]";
-		mes "...... ? ..... Um ....";
-		mes "Could you have made a mistake with the destination?";
-		mes "The numbers for packages from the Merchant Guild";
-		mes "for this location are 3318702 and 3543625.";
-		goto L_EXIT;
- L_Q_START_3:
-	check JOB_MERCHANT_Q = 6,-,L_Q_SUB_3;
-	set JOB_MERCHANT_Q = 8;
-	goto L_Q_SUB_4;
-	L_Q_SUB_3:
-		set JOB_MERCHANT_Q = 7;
-	L_Q_SUB_4:
-		set 1ST_JOB_QUEST = 5;
-		checkitem 1072,1,-,L_Q_START_4;
-			delitem 1072,1;
-			set NOV_3_MERCHANT = 11;
-			next;
-		mes "[kafra Personnel]";
-		mes "Oh my! A letter from Chief Mansu? Kyaa~";
-		mes "Thank you so much~";
-		mes "I knew this letter was coming, but I";
-		mes "never thought it would be this fast.";
-		next;
- L_Q_START_4:
-	mes "[kafra Personnel]";
-	mes "You did a great job bringing this here from so far.";
-	mes "Although it's such a trivial thing, thank you!";
-	mes "I look forward to serving you next time!";
-		random @MERCHANT_JOB2,2;
-		check @MERCHANT_JOB2 = 0,-,L_Q_START_5;
-			additem 513,3;
-			goto L_EXIT;
- L_Q_START_5:
-		additem 512,3;
- L_EXIT:
+  L_EXIT:
 		cutin "kafra_02",255;
 		close;
 }

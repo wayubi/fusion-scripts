@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.003
 ----------------------------------------------------------------------------------------------------
+- Town\Town_Kafra.txt - deleted some extra codes for merchant quest. [nestor_zulueta] 
 - Town\Town_Siglude.txt - Corrected typo when looking for a bug this version doesn't seem to have. [Muad_Dib]
 - Job\Job_Newbie.txt - Fixed incorrect answers display. [Muad_Dib]
 - Job\Job1_Magician.txt - fixed magician quest. with a few of the fixes from FouLou [Muad_Dib]
