@@ -9,6 +9,8 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.004
 ----------------------------------------------------------------------------------------------------
+- shop\comodo.txt - Splitted tur_dun into a seperate file. [Muad_Dib]
+- shop\tur_dun.txt - Added tur_dun shop. [Muad_Dib]
 - Town\Town_Payon.txt - Cleaned up, added "" to npc names. [Tsusai]
 - Town\Town_Morocc.txt - Cleaned up, added missing npcs. [Tsusai]
 - Town\Town_Izlude.txt - Cleaned up, added "" to npc names. [Tsusai]
