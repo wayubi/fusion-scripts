@@ -5,9 +5,8 @@
 // ---------------------------------------------------------------------------------------
 //
 //  Kafra Main Office - Non Player Character Locations
-//   -Created by Nestor Zulueta
 //
-// - Kapra Jasmine -> aldeba_in: 24,245
+// - Kafra Jasmine -> aldeba_in: 24,245
 //   Gives info on kafra service 
 //
 // - Kafra Pavianne -> aldeba_in: 81,166
@@ -19,49 +18,65 @@
 // - Kafra Leilah -> aldeba_in: 96,181
 //   Save, Storage, Teleport, Rent Cart, kafra Pass and More services.
 //
+// - Kafra Roxie -> aldeba_in: 148,244
+//   Just a normal chat.
+//
+// - Kafra Blossom -> aldeba_in: 83,244
+//   Just a normal chat.
+//
 //========================================================================================
 
 aldeba_in.gat,24,245,4	script	"Kafra Service"	115,{
 	cutin "kafra_03",2;
-	mes "[Kapra Jasmine]";
+	mes "[Kafra Jasmine]";
 	mes "Hi~ I am Kafra No. 1 Type Jasmine.";
 	mes "Thank you for comming all the way to Kafra Main Office here at Al De Baran!";
 	next;
-	mes "[Kapra Jasmine]";
-	mes "Our Kapra Service is always together with our customers!";
-	mes "Our Kapra Service has a history and legacy of 5 thousand 8 hundred years old...";
+	mes "[Kafra Jasmine]";
+	mes "Our Kafra Service is always together with our customers!";
+	mes "Our Kafra Service has a history and legacy of 5 thousand 8 hundred years old...";
 	mes "Blah-blah-blah.....";
 	next;
 	menu "FIVE THOUSNAD AND EIGHT HUNDRED YEARS?!",L0,"Ahh~ Shut Up!",L1,"You go a boyfriend?",L2;
 	L0:
-	mes "[Kapra Jasmine]";
+	mes "[Kafra Jasmine]";
 	mes "Shut UP! And listen! It to me a week to memorice this!";
 	mes "I've got poor memory unlike other Kafra agents!";
-	mes "..... Eh!... What did I just say...";
+	   emotion 6;
+	mes "[Kafra Jasmine]";
 	next;
-	mes "[Kapra Jasmine]";
+	mes "..... Eh!... What did I just say...";
+	   emotion 19;
+	next;
+	mes "[Kafra Jasmine]";
 	mes "Hohohoho. S-sorry... I-it was a show, a standing comedy...";
 	mes "Right... Dream Show only for Ka-Kafra customers~!";
+	   emotion 4;
 	mes "(but a solo show)";
 	cutin "kafra_03",255;
 	close;
 L1:
-	mes "[Kapra Jasmine]";
+	mes "[Kafra Jasmine]";
 	mes ". . . . .";
+	   emotion 6;
+    	next;
+	mes "[Kafra Jasmine]";
 	mes "I was the member of Kafra Garrion before I joined Kafra Service Team...";
 	mes "The speciality was 'Bash'!!";
 	mes "I'm trying to be feminine and live a quiet life";
 	mes "So please don't tempt me...";
+	   emotion 32;
 	cutin "kafra_03",255;
 	close;
 L2:
-	mes "[Kapra Jasmine]";
+	mes "[Kafra Jasmine]";
 	mes "My, my~. Kafra Service has a ridiculous rule that no Agent can have a boyfriend";
 	mes ". . . . .";
 	mes ". . . . . . . . . .";
 	next;
-	mes "[Kapra Jasmine]";
+	mes "[Kafra Jasmine]";
 	mes "Just kidding~~ Hehe";
+	   emotion 18;
 	cutin "kafra_03",255;
 	close;
 }
@@ -69,10 +84,10 @@ L2:
 aldeba_in.gat,81,166,4	script	"Kafra Service"	117,{
 	cutin "kafra_01",2;
 	mes "[Kafra Pavianne]";
-	mes "Welcome! I'm Kafra service's the first Kapra Type 'Pavianne'";
+	mes "Welcome! I'm Kafra service's the first Kafra Type 'Pavianne'";
 	next;
 	mes "[Kafra Pavianne]";
-	mes "Our Kapra Service is always trying to meet 100% customers satisfaction based on 3 principles, Trust, Devotion and Truest.";
+	mes "Our Kafra Service is always trying to meet 100% customers satisfaction based on 3 principles, Trust, Devotion and Truest.";
 	mes "With complete Service training and supervision, we serve our customers to meet thier needs.";
 	next;
 	menu "Buy Kafra Pass",L0,"What is Kafra Pass",L1,"Good Bye",L3;
@@ -81,8 +96,9 @@ aldeba_in.gat,81,166,4	script	"Kafra Service"	117,{
 		additem 1084,1;
 		set Zeny - 2000;
 		mes "[Kafra Pavianne]";
-		mes "Thank you for using our Kapra Service all the time!";
+		mes "Thank you for using our Kafra Service all the time!";
 		mes "Have a Nice Day!";
+		   emotion 15;
 		cutin "kafra_01",255;
 		close;
 	L1:
@@ -103,7 +119,8 @@ aldeba_in.gat,81,166,4	script	"Kafra Service"	117,{
 	L3:
 		mes "[Kafra Pavianne]";
 		mes "Thank you for using Kafra Service!";
-		mes "It was Kafra Pavianne";
+		mes "I'm Kafra Pavianne, and it was a pleasure to assist you.";
+		   emotion 15;
 		cutin "kafra_01",255;
 		close;
 	NeedZenys:
@@ -129,6 +146,7 @@ aldeba_in.gat,91,244,4	script	"Kafra Service"	112,{
 		mes ". . . . .";
 		mes "Sob sob ...";
 		mes "I am no a KID!!";
+		    emotion 28;
 		cutin "kafra_06",255;
 		close;
 	LEnd:
@@ -158,7 +176,8 @@ aldeba_in.gat,96,181,4	script	"Kafra Service"	113,{
 		mes "[Kafra Leilah]";
 		mes "Your position has been saved.";
 		check @KAFRA_COUPON = 0,-,L_SUB_1_2;
-			mes "Thank you for using Kafra.";
+			mes "Thank you for using Kafra Services.";
+			emotion 15;
 			goto L_EXIT;
 	L_SUB_1_2:
 			next;
@@ -341,4 +360,66 @@ aldeba_in.gat,96,181,4	script	"Kafra Service"	113,{
  L_EXIT:
 		cutin "kafra_05",255;
 		close;
+}
+
+aldeba_in.gat,148,244,4	script "Kafra Roxie" 114,{
+	cutin "kafra_04",2;
+	mes "[Kafra Roxie]";
+	mes "Welcome! I'm Kafra type 'Roxie'.  Let me let you in on a special secret about the Kafras!";
+	next;
+	mes "[Kafra Roxie]";
+	mes "You know... Our Kafra Service wasn't originally called Kafra.... Well what do you think it was?~";
+	next;
+	mes "[Kafra Roxie]";
+	mes "TaDa~ Surprisingly it was.... Ka....";
+	next;
+	mes "[Kafra Roxie]";
+	mes "(Ring Ring Ring) Oh... my phone... Sorry please wait...";
+	next;
+	mes "[Kafra Roxie]";
+	mes "Hi, Kafra Type Roxie here.... Huh! Director, sir!... Yes!... Yes!... I understand! ..... Sure!... Ah... Huh?!";
+	next;
+	mes "[Kafra Roxie]";
+	mes "No-no sir!.... Yes I understand!!";
+	next;
+	mes "[Kafra Roxie]";
+	mes "(*Click*) ..... Heh heh....";
+	next;
+	mes "[Kafra Roxie]";
+	mes "Uh... please ignore what I was talking about earlier. Hahaha.....heh...";
+	   emotion 4;
+	cutin "kafra_04",255;
+	close;
+}
+
+aldeba_in.gat,83,244,4 script	"Kafra Blossom" 116,{
+	cutin "kafra_02",2;
+	mes "[Kafra Blossom]";
+	mes "..... Pavianne is soooo old school! She's too stubborn is what it is...";
+	   emotion 32;
+	next;
+	mes "[Kafra Blossom]";
+	mes "We should be trying to make our customers' experience more unique, with new and creative ideas...";
+	next;
+	mes "[Kafra Blossom]";
+	mes "Anyways... WEELLLLCOOMMME!!!~~ I am Kafra type ^3333ffBlossom^000000.";
+	mes "Please don't forget to continue using our Kafra Services, and ask for me, ^3333ffBlossom^000000!";
+	next;
+	menu "I'm an admirer of you~!",L_0,"Ehhaha",L_1;
+L_0:
+	mes "[Kafra Blossom]";
+	mes "Really! Thank you sooo much!! Here is... my... autograph...";
+	   emotion 15;
+	next;
+	mes "[Kafra Blossom]";
+	mes "Don't bother to look in your Item Iventory for it.  It won't be there... tehehe... for my autograph will remail winthin your heart.";
+	   emotion 33;
+	cutin "kafra_02",255;
+	close;
+L_1:
+	mes "[Kafra Blossom]";
+	mes "Huh? . . . . . That's all? Phew~ such a dull customer...";
+	   emotion 1;
+	cutin "kafra_02",255;
+	close;
 }
