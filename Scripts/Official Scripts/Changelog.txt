@@ -1,6 +1,9 @@
 --------------------------------------------------------------------------------
  Fusion 1.213 - August 29th, 2004
 --------------------------------------------------------------------------------
+- 08-30-04: Warp\towns\Payon.txt - Current progress in the new payon warps. [Muad_Dib]
+- 08-30-04: Warp\guilds\payg_cas.txt - Removed a payon warp. [Muad_Dib]
+- 08-30-04: Warp\fieldss\pay_fild.txt - Removed a payon warp. [Muad_Dib]
 - 08-30-04: npc\npc_kafra_corp.txt - Added Npc emotions, text and 2 missing kafra's from mRO screens. [Muad_Dib]
 - 08-30-04: Event\Event_Dragon_Boat_Festival.txt - Updated location to new payon map. [Muad_Dib]
 - 08-30-04: Event\Event_Prontera_Sewers.txt - Added Npc emotions and text from mRO screens. [Muad_Dib]
