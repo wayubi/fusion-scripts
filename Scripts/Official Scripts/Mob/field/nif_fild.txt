@@ -31,7 +31,7 @@ nif_fild02.gat,0,0,0,0        monster     "Bloody Murderer" 1507,5,0,0,0
 nif_fild02.gat,0,0,0,0  	monster	"Hylozoist" 1510,20,0,0,0
 nif_fild02.gat,0,0,0,0  	monster	"Dullahan" 1504,5,300000,300000,1
 nif_fild02.gat,0,0,0,0  	monster	"Whisper" 1179,15,0,0,0
-nif_fild02.gat,0,0,0,0  	monster	"Ghostring" 1120,21440000,7200000,1
+nif_fild02.gat,0,0,0,0  	monster	"Ghostring" 1120,1,21440000,7200000,1
 nif_fild02.gat,0,0,0,0  	monster	"Jakk" 1130,10,0,0,0
 //nif_fild02.gat,0,0,0,0  	monster	"Hollow Poring" ????,1,28800000,7200000,1
 
