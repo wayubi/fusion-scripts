@@ -44,7 +44,7 @@ yuno_fild03.gat,0,0,0,0		monster	"Sidewinder"	1037,5,0,0,0
 yuno_fild03.gat,0,0,0,0		monster	"Poporing"		1031,20,0,0,0
 yuno_fild03.gat,0,0,0,0		monster	"Marin"		1242,20,0,0,0
 yuno_fild03.gat,0,0,0,0		monster	"Geographer"	1368,15,0,0,0
-yuno_fild03.gat,0,0,0,0		monster	"Angeling"		1096,1,3600000,1800000,1
+yuno_fild03.gat,0,0,0,0		monster	"Archangeling"	1388,1,3600000,1800000,1
 yuno_fild03.gat,0,0,0,0		monster	"Red Plant"		1078,15,180000,90000,1
 yuno_fild03.gat,0,0,0,0		monster	"Green Plant"	1080,50,180000,90000,1
 yuno_fild03.gat,0,0,0,0		monster	"Yellow Plant"	1081,20,360000,180000,1

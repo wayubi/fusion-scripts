@@ -1,6 +1,7 @@
 --------------------------------------------------------------------------------
  Fusion 1.213 - January ???, 2005
 -------------------------------------------------------------------------------- 
+- 01-04-05: Mob\field\yuno_fild.txt - Changed Angeling to Archangeling(wrong translation). [Muad_Dib]
 - 01-04-05: Mob\field\yuno_fild.txt - Added the new Official Mobs. [Muad_Dib]
 - 12-31-04: Moved A2J script to archive, it's not official. [Tsusai]
 - 12-31-04: Town\Town_Umbala.txt - Fixed a warp destination. [Tsusai]
