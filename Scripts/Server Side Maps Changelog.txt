@@ -1,0 +1,112 @@
+====================================================================================================
+ »» The Fusion Project ««
+ Copyright (c) 2004, Cobax Information Systems
+ http://fusion.cobax.net/
+----------------------------------------------------------------------------------------------------
+ Server Sided Maps Logs
+====================================================================================================
+
+- 06-01-2004: Updated the Server Side Map Pack. [Muad_Dib]
+
+----------------------------------------------------------------------------------------------------
+ Content Server Sided Maps - afm and af2 1.50 format (Fusion 1.212)
+----------------------------------------------------------------------------------------------------
+
+- force_1-1
+- force_1-2
+- force_1-3
+- force_2-1
+- force_2-2
+- force_2-3
+- force_3-1
+- force_3-2
+- force_3-3
+- nguild_alde
+- nguild_gef
+- nguild_pay
+- nguild_prt
+- pvp_n_room
+- pvp_y_room
+- pvp_n_1-1                       
+- pvp_n_1-2                       
+- pvp_n_1-3                       
+- pvp_n_1-4                       
+- pvp_n_1-5                       
+- pvp_n_2-1                       
+- pvp_n_2-2                       
+- pvp_n_2-3                       
+- pvp_n_2-4                       
+- pvp_n_2-5                       
+- pvp_n_3-1                       
+- pvp_n_3-2                       
+- pvp_n_3-3                       
+- pvp_n_3-4                       
+- pvp_n_3-5                       
+- pvp_n_4-1                       
+- pvp_n_4-2                       
+- pvp_n_4-3                       
+- pvp_n_4-4                       
+- pvp_n_4-5                       
+- pvp_n_5-1                       
+- pvp_n_5-2                       
+- pvp_n_5-3                       
+- pvp_n_5-4                       
+- pvp_n_5-5                       
+- pvp_n_6-1                       
+- pvp_n_6-2                       
+- pvp_n_6-3                       
+- pvp_n_6-4                       
+- pvp_n_6-5                       
+- pvp_n_7-1                       
+- pvp_n_7-2                       
+- pvp_n_7-3                       
+- pvp_n_7-4                       
+- pvp_n_7-5                       
+- pvp_n_8-1                       
+- pvp_n_8-2                       
+- pvp_n_8-3                       
+- pvp_n_8-4                       
+- pvp_n_8-5                       
+- pvp_y_1-1                       
+- pvp_y_1-2                       
+- pvp_y_1-3                       
+- pvp_y_1-4                       
+- pvp_y_1-5                       
+- pvp_y_2-1                       
+- pvp_y_2-2                       
+- pvp_y_2-3                       
+- pvp_y_2-4                       
+- pvp_y_2-5                       
+- pvp_y_3-1                       
+- pvp_y_3-2                       
+- pvp_y_3-3                       
+- pvp_y_3-4                       
+- pvp_y_3-5                       
+- pvp_y_4-1                       
+- pvp_y_4-2                       
+- pvp_y_4-3                       
+- pvp_y_4-4                       
+- pvp_y_4-5                       
+- pvp_y_5-1                       
+- pvp_y_5-2                       
+- pvp_y_5-3                       
+- pvp_y_5-4                       
+- pvp_y_5-5                       
+- pvp_y_6-1                       
+- pvp_y_6-2                       
+- pvp_y_6-3                       
+- pvp_y_6-4                       
+- pvp_y_6-5                       
+- pvp_y_7-1                       
+- pvp_y_7-2                       
+- pvp_y_7-3                       
+- pvp_y_7-4                       
+- pvp_y_7-5                       
+- pvp_y_8-1                       
+- pvp_y_8-2                       
+- pvp_y_8-3                       
+- pvp_y_8-4                       
+- pvp_y_8-5  
+- sword_1-1
+- sword_2-1
+- sword_3-1                     
