@@ -8,23 +8,33 @@ job_thief1.gat,0,0,0,0	monster	Chonchon_ 1183,50,0,0,0
 job_thief1.gat,0,0,0,0	monster	Spore 1014,30,0,0,0
 
 // Swordsman Jobchange Quest
-job_sword1.gat.gat,35,78,0,0	monster	Fabre_ 1184,3,60000,30000,0
-job_sword1.gat.gat,50,108,0,0	monster	Fabre_ 1184,3,60000,30000,0
-job_sword1.gat.gat,61,28,0,0	monster	Fabre_ 1184,3,60000,30000,0
-job_sword1.gat.gat,61,92,0,0	monster	Fabre_ 1184,3,60000,30000,0
-job_sword1.gat.gat,110,112,0,0	monster	Fabre_ 1184,2,60000,30000,0
-job_sword1.gat.gat,161,94,0,0	monster	Fabre_ 1184,2,60000,30000,0
-job_sword1.gat.gat,130,76,0,0	monster	Fabre_ 1184,2,60000,30000,0
-job_sword1.gat.gat,103,58,0,0	monster	Fabre_ 1184,2,60000,30000,0
-job_sword1.gat.gat,130,24,0,0	monster	Fabre_ 1184,5,60000,30000,0
-job_sword1.gat.gat,201,36,0,0	monster	Fabre_ 1184,2,60000,30000,0
-job_sword1.gat.gat,201,16,0,0	monster	Fabre_ 1184,2,60000,30000,0
-job_sword1.gat.gat,239,44,0,0	monster	Fabre_ 1184,3,60000,30000,0
-job_sword1.gat.gat,239,76,0,0	monster	Fabre_ 1184,2,60000,30000,0
-job_sword1.gat.gat,231,101,0,0	monster	Fabre_ 1184,2,60000,30000,0
-job_sword1.gat.gat,234,117,0,0	monster	Fabre_ 1184,2,60000,30000,0
-job_sword1.gat.gat,198,91,0,0	monster	Fabre_ 1184,2,60000,30000,0
-job_sword1.gat.gat,200,63,0,0	monster	Fabre_ 1184,2,60000,30000,0
+//mobs part1
+job_sword1.gat,58,27,10,10 monster Fabre 1184,5,0,0,0
+job_sword1.gat,30,75,10,10 monster Fabre 1184,5,0,0,0
+job_sword1.gat,51,106,10,10 monster Fabre 1184,2,0,0,0
+job_sword1.gat,10,46,10,10 monster ChonChon 1183,2,0,0,0
+
+//mobs part2
+job_sword1.gat,211,29,10,10 monster Fabre 1184,5,0,0,0
+job_sword1.gat,230,34,10,10 monster ChonChon 1183,2,0,0,0
+job_sword1.gat,239,61,10,10 monster Fabre 1184,5,0,0,0
+job_sword1.gat,234,108,10,10 monster Fabre 1184,5,0,0,0
+job_sword1.gat,196,111,10,10 monster Fabre 1184,5,0,0,0
+job_sword1.gat,200,63,10,10 monster ChonChon 1183,2,0,0,0
+job_sword1.gat,98,201,10,10 monster Farmiliar 1005,1,0,0,0
+
+//mobs part3
+job_sword1.gat,145,121,10,10 monster ChonChon 1183,1,0,0,0
+job_sword1.gat,96,103,10,10 monster ChonChon 1183,2,0,0,0
+job_sword1.gat,139,103,10,10 monster ChonChon 1183,1,0,0,0
+job_sword1.gat,121,85,10,10 monster ChonChon 1183,2,0,0,0
+job_sword1.gat,150,66,10,10 monster ChonChon 1183,1,0,0,0
+job_sword1.gat,139,103,10,10 monster ChonChon 1183,3,0,0,0
+job_sword1.gat,151,49,10,10 monster ChonChon 1183,1,0,0,0
+job_sword1.gat,159,17,10,10 monster Fabre 1184,5,0,0,0
+job_sword1.gat,127,23,10,10 monster Fabre 1184,5,0,0,0
+job_sword1.gat,122,15,10,10 monster Fabre 1184,5,0,0,0
+
 
 // Mage Jobchange Quest
 // 2f

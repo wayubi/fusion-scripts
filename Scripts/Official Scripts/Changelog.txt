@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.003
 ----------------------------------------------------------------------------------------------------
+- Mob\other\job_quests.txt - Updated monsters in the job_sword map. [Tsusai]
 - Warp\other\job_sword.txt - Added warps to get out of fallen area caused by traps. [Tsusai]
 - Warp\other\job_sword.txt - Added hidden trap warps. [Tsusai]
 - Warp\other\sword.txt - Removed - Map no longer used. [Tsusai]
