@@ -1,0 +1,432 @@
+//========================================================================================
+// »» The Fusion Project ««
+// Copyright (c) 2004, Cobax Information Systems
+// http://fusion.cobax.net/
+// ---------------------------------------------------------------------------------------
+//
+// Gonryun Town - Non Player Character Locations
+// - Translated by Makenshi
+//
+// - Gonryun Ambassador -> alberta: 245,69
+//   Npc that can warp you to gonryun.
+//
+// - Gonryun Ambassador -> gon_fild01: 255,79
+//   Npc that can warp you back to alberta.
+//
+// - Gonryun Ambassador -> gon_fild01: 187,239
+//   Npc that shows you the way.
+//
+// - Gonryun Ambassador -> gonryun: 153,64
+//   Npc that can warp you back to the gonryun port.
+//
+// - Chow Yun Fat -> gonryun: 200,82
+//   Talks about a festival.
+//
+// - John Woo -> gonryun: 173,27
+//   A kid that wants to know what alcohol tastes like.
+//
+// - Drunk Man -> gonryun: 165,16
+//   Dude that drank too much.
+//
+// - Girl -> gonryun: 139,142
+//   A girl that has been robbed by visitors.
+//
+// - Gate Guardian -> gonryun: 113,135
+//   Guards the mayors house.
+//
+// - Gate Guardian -> gonryun: 113,127
+//   Guards the mayors house.
+//
+// - Woman -> gon_in: 18,27
+//   Woman in mayors house.
+//
+// - Mayor -> gon_in: 17,93
+//   The mayor of town gonryun.
+//
+// - Mr. Chen -> gonryun: 119,111
+//   Man that talks about the mayor.
+//
+// - Strange Dude -> gonryun: 100,241
+//   Man that says he is busy.
+//
+// - Zheng Mei Jeng -> gonryun: 181,161
+//   A man that tells you one of gonryun's problems.
+//
+// - Jowey Han -> gonryun: 237,225
+//   Someone that lost his dagger.
+//
+// - Kentucky -> gon_in: 73,82
+//   Dude that is very worried.
+//
+// - Soldier -> gonryun: 166,196
+//   A soldier in front of the dungeon entrance.
+//
+// - Guide -> gonryun: 169,71
+//   A guide that tells you something about gonryun.
+//
+//========================================================================================
+
+alberta.gat,245,69,4 script "Gonryun Ambassador" 776,{
+	mes "[Wabajo]";
+	mes "Hi, I welcome everyone,";
+	mes "To my hometown Gonryun,";
+	mes "A totally different place from ,";
+	mes "The Kingdom of Rune Midgard.";
+	mes "I feel honoured to be the,";
+	mes "Host for all these great guests.";
+	next;
+	menu "Ask about Gonryun.",L_MENU_1,"Go to Gonryun.",L_MENU_2,"Cancel.",L_MENU_2_2;
+      close;
+L_MENU_1:
+	mes "[Wabajo]";
+	mes "Gonryun is a great place for";
+	mes "tourists from the other continent";
+	mes "With those tiny houses built by";
+	mes "Dwarf families, if you follow the";
+	mes "Rainbow pillar past it, it will";
+	mes "Be a road that leads to the sky.";
+	next;
+	mes "[Wabajo]";
+	mes "I heard that there is a city floating";
+	mes "somewhere on the continent.";
+	mes "We Gon'ers don't even use any";
+	mes "magical devices to see the beautiful";
+	mes "views from the sky.";
+	next;
+	mes "[Wabajo]";
+	mes "Gonyrun's specialty is the huge ass";
+	mes "beat bums and the tasty asian pears,";
+	mes "and of course the dangerous dungeon.";
+	mes "If you want to go there,";
+	mes "be prepared to get your ass whooped.";
+	next;
+	mes "[Wabajo]";
+	mes "Then, if you are interested,";
+	mes "Come talk to me, to be able to serve,";
+	mes "Guests from continent is my greatest honor";
+L_MENU_2_2:
+	mes "[Wabajo]";
+	mes "If you want to head over this way again,";
+	mes "come talk to me. To be able to serve guests";
+	mes "from the other continent is my greatest honor.";
+	close;
+L_MENU_2:
+	mes "[Wabajo]";
+	mes "However sailing to gonryun can be dangerous.";
+	mes "So we are asking a travelling fee to sail to";
+	mes "Gonryun, if you pay 10,000 zeny";
+	mes "your return trip will be free.";
+	next;
+	mes "[Wabajo]";
+	mes "Ready to go ?";
+	next;
+	menu "Yea",L_MENU_2_1,"Cancel",L_MENU_2_2;
+      close;
+L_MENU_2_1:
+	mes "[Wabajo]";
+      check zeny >= 10000,-,L_ERROR; 
+      set zeny -= 10000;
+	mes "Alright, get you ass moving!";
+	next;
+	warp "gon_fild01",258,82;
+	close;
+L_ERROR:
+	mes "[Wabajo]";
+	mes "I'm very sorry, but you need";
+	mes "10,000 zeny  for the trip,";
+	mes "please check the amount";
+	mes "of zeny you have with you,";
+	mes "Thank you.";
+	close;
+}
+
+gon_fild01.gat,255,79,6	script "Gonryun Ambassador" 776,{
+	mes "[Wabajo]";
+	mes "Had a nice trip?";
+	mes "It's about time to leave!";
+	mes "The ship for your return is ready.";
+	next;
+	menu "Return to Alberta.",L_YES,"Cancel",L_NO;
+      close
+L_YES:
+	mes "[Wabajo]";
+	mes "Then let's go";
+	next;
+	warp "alberta.",243,67;
+	close;
+L_NO:
+	mes "[Wabajo]";
+	mes "Then stay longer!";
+	mes "There are many other places here in";
+	mes "Gonryun you haven't visited yet.";
+	close;
+}
+
+gon_fild01.gat,187,239,4 script "Gonryun Ambassador" 776,{
+	mes "[Higen]";
+	mes "Please go straight ahead.";
+	mes "I hope you will have many";
+	mes "Fond memories of Gonryun";
+	mes "before you leave.";
+	close;
+}
+
+gonryun.gat,153,64,0 script "Gonryun Ambassador" 776,{
+	mes "[Harugi]";
+	mes "I hope you had a nice stay,";
+	mes "here in Gonryun,";
+	mes "We will take you back in moment.";
+	next;
+	menu "Return to the port",L_YES,"Cancel",L_YES;
+      close;
+L_YES:
+	mes "[Harugi]";
+	mes "Set sail!";
+	next;
+	warp "gon_fild01",258,82;
+	close;
+L_NO:
+	mes "[Harugi]";
+	mes "Then please stay a bit longer!";
+	mes "There are many places in Gonryun";
+	mes "You haven't visited yet";
+	close;
+}
+
+gonryun.gat,200,82,3 script "Chow Yun Fat" 774,{
+	mes "[Chow Yun Fat]";
+	mes "Celebrations are the best,";
+	mes "That's why I love the merry";
+	mes "Festivals in in this village.";
+	close;
+}
+
+gon_in.gat,173,27,2 script "John Woo" 774,{
+	mes "[John Woo]";
+	mes "Indeed, Looking at my age,";
+	mes "no one wants to sell me any alcohol";
+	mes "The grown ups love it so much,";
+	mes "I wonder what it tastes like.";
+	next;
+	mes "[John Woo]";
+	mes "But even a child like me,";
+	mes "Can enjoy drinking the sweet tea,";
+	mes "Can't remember when it was,";
+	mes "Whenever i think of tea,";
+	mes "I get all thirsty.";
+	close;
+}
+
+gon_in.gat,165,16,4 script "Drunk Man" 748,{
+//	emotion 19;
+	mes "[Drunk Man]";
+	mes "I got a big headache.";
+	mes "It could be a fact cause I";
+	mes "drank a lot yesterday.";
+	close;
+}
+
+gonryun.gat,139,142,0 script "Girl" 772,{
+//	emotion 9;
+	mes "[Shian Shiao]";
+	mes ".............";
+	mes "I was so happy because are a lot";
+	mes "of visitors here, but then someone";
+	mes "Robbed me.... *sob*";
+	close;
+}
+
+gonryun.gat,113,135,6 script "Gate Guardian" 780,{
+	mes "[Gate Guardian]";
+	mes "Welcome, This is";
+	mes "Sven's, the Gonryun";
+	mes "Leader's, home.";
+	next;
+	mes "[Gate Guardian]";
+	mes "Nothing bad should happen,";
+	mes "But, if you do some stupid shit...";
+	mes "We'll stab you!";
+	next;
+	mes "[Gate Guardian]";
+	mes "That shouldn't happen";
+	mes "So don't worry,";
+	mes "Hope your interview goes well.";
+	close;
+}
+
+gonryun.gat,113,127,6 script "Gate Guardian" 780,{
+	mes "[Gate Guardian]";
+	mes "Welcome, This is";
+	mes "Sven's, the Gonryun";
+	mes "Leader's, home.";
+	next;
+	mes "[Gate Guardian]";
+	mes "Nothing bad should happen,";
+	mes "But, if you do some stupid shit...";
+	mes "We'll stab you!";
+	next;
+	mes "[Gate Guardian]";
+	mes "That shouldn't happen";
+	mes "So don't worry,";
+	mes "Hope your interview goes well.";
+	close;
+}
+
+gon_in.gat,18,27,4 script "Women" 771,{
+	mes "[Takali]";
+	mes "Hahahahahaha";
+	mes "Who's this, isn't this the honored";
+	mes "VIP foreigner? Haha.";
+	next;
+	menu "Hi",L_MENU_1,"Where is the mayor ?",L_MENU_2;
+L_MENU_1:
+	mes "[Takali]";
+	mes "Hi,";
+	mes "Haven't seen a visitor in a long time";
+	mes "Some I can't offer much";
+	mes "But please enjoy your stay! Hahaha";
+	close;
+L_MENU_2:
+	mes "[Takali]";
+	mes "My husband is upstairs";
+      check Gender = 1,-,L_WOMAN;
+	mes "You look pretty handsome too,";
+	mes "But you still have a way to go to compare with him.";
+	mes "Hahahaha.";
+	close;
+L_WOMAN:
+	mes "You look nice and gentle,";
+	mes "But compared to me, you still have a way to go.";
+	mes "I hope you won't mind, hahahaha";
+	close;
+}
+
+gon_in.gat,17,93,4 script "Mayor" 775,{
+	mes "[Shi Yen Wun]";
+	mes "Ah, welcome,";
+	mes "I am the mayor of this town.";
+	mes "My name is Shi Yen Wun,";
+	mes "welcome to Gonryun";
+	next;
+	mes "[Shi Yen Wun]";
+	mes "To tell the truth, up till recently,";
+	mes "Gonryun has been pretty isolated.";
+	mes "But recent contact with Alberta";
+	mes "brought some visitors.";
+	next;
+	mes "[Shi Yen Wun]";
+	mes "Before now, this place was too isolated,";
+	mes "So, people here aren't very nice to outsiders.";
+	next;
+	mes "[Shi Yen Wun]";
+	mes "Safety is becoming an issue recently.";
+	mes "But since you're here enjoy yourself!";
+	close;
+}
+
+gonryun.gat,119,111,4 script "Mr. Chen" 89,{
+	mes "[Mr. Chen]";
+	mes "The mayor is a very open person";
+	mes "But just because of that,";
+	mes "Some people don't like him very much.";
+	next;
+	mes "[Mr. Chen]";
+	mes "But because of him, our town";
+	mes "Has become much more open then it used to be.";
+	mes "Hopefully there won't be any goofballs";
+	mes "Randomly appearing.";
+	close;
+}
+
+gonryun.gat,100,241,0 script "Strange Dude" 733,{
+//	emotion 9;
+	mes "[Void]";
+	mes "Uh huh, I am busy right";
+	mes "now please come back later.";
+	close;
+}
+
+gonryun.gat,268,88,4 script "Liang Chun Po" 776,{
+	mes "[Liang Chun Po]";
+	mes "We are a independent people,";
+	mes "no conquerers ever defeated us.";
+	mes "Because they always fell in";
+	mes "love with this blessed land.";
+	next;
+	mes "[Liang Chun Po]";
+	mes "I believe, the victory is ours!";
+	mes "Then will we rise out of the shadow!";
+	close;
+}
+
+gonryun.gat,181,161,4 script "Zheng Mei Jeng" 773,{
+	mes "[Zheng Mei Jeng]";
+	mes "All the men in Gonryun";
+	mes "are all energetic and enduring,";
+	mes "but recently these men";
+	mes "can not find a wife.";
+	next;
+	mes "[Zheng Mei Jeng]";
+	mes "This is because the popoulation";
+	mes "of men increased, so there aren't";
+	mes "enough women. I don't even know";
+	mes "If my son will find himself wife.*Sob*";
+	close;
+}
+
+gonryun.gat,237,225,4 script "Jowey Han" 776,{
+	mes "[Jowey Han]";
+	mes "Ahhhh... What should I do?";
+	mes "How could I lose my dagger!";
+	mes "Ahhhhhh";
+	next;
+	mes "[Jowey Han]";
+	mes "I want to go down,";
+	mes "But I'm afraid of the monsters";
+	mes "...God, this is frustrating!";
+	close;
+}
+
+gon_in.gat,73,82,4 script "Kentucky" 778,{
+	mes "[Kentucky]";
+	mes "¡K¡K¡K¡K¡K¡K";
+	next;
+	mes "[Kentucky]";
+	mes "*Sob*......";
+	mes "I'm so worried, WORRIED";
+	close;
+}
+
+gonryun.gat,166,196,4 script "Soldier" 780,{
+	mes "[Wajo]";
+	mes "Did you know this";
+	mes "place used to be a temple ?";
+	mes "Since God knows when some";
+	mes "unqualified spirits didn't";
+	mes "change into a spirit and";
+	mes "moved in here, which became";
+	mes "The monsters nest eventually.";
+	close;
+}
+
+gonryun.gat,169,71,4 script "Guide" 770,{
+	mes "[Lee Shin Min]";
+	mes "Welcome,";
+	mes "Before going to the town,";
+	mes "did you take a look at the bottom of our town ?";
+	mes "We have built the buildings outside our town this";
+	mes "Time.";
+	next;
+	mes "[Lee Shin Min]";
+	mes "In order to see all of the";
+	mes "Kingdom of Rune Midgard";
+	mes "We made a really small model.";
+	mes "Because we were shut off to the";
+	mes "Outside, although it's tiring";
+	mes "We put much effort into making it.";
+	next;
+	mes "[Lee Shin Min]";
+	mes "If you look everywhere, you";
+	mes "will find many beautiful scenes.";
+	close;
+}

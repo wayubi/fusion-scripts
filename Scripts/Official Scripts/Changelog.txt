@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.004
 ----------------------------------------------------------------------------------------------------
+- Town\Town_Gonryun.txt - Added 1st version of Town Gonryun untill i get a more updated translation. [Muad_Dib]
 - Town\Town_Kafra.txt - Rolled back nestor's changes. [Tsusai]
 - Shop\Gonryun.txt - Translated the shop names. [Muad_Dib]
 - Town\Town_LouYang.txt - Updated header and a warp coordinate. [Muad_Dib]
