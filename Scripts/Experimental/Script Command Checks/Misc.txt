@@ -39,7 +39,7 @@ prt_are01.gat,147,147,7	script	"Misc Commands"	811,{
 	mes "I will heal your sp";
 	next;
 	heal 0,30000;
-	mes"I will heal all";
+	mes "I will heal all";
 	next;
 	heal 30000,30000;
 	mes "i will show a picture of a card i am about to add";
