@@ -9,7 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.003
 ----------------------------------------------------------------------------------------------------
-- Job\Job_Super_Novice.txt - Added Super Novice Job Quest untill the exact info is known. [Muad_Dib] 
+- Job\Job_Super_Novice.txt - Fixed header. [Muad_Dib] 
 - Town\Town_Aldebaran.txt - Removed 2nd guide. [Muad_Dib]
 - Town\Town_Lutie.txt - Change santa's name. [nestor_zulueta]
 - Warps\npcs\Santa_Link - removed double npc. The aldebaran santa is much better. [nestor_zulueta]
