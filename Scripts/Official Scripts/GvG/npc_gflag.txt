@@ -86,31 +86,26 @@
 prontera.gat,156,192,4 script "Kriemhild" 722,{
 	guildreg "prtg_cas01";
 	check guildid == 0,-,L_START_1;
-	mes "       [ Kingdom of Prontera ]";
-	mes "1. As Law of Prontera";
-	mes "    this guild base isn't taken by";
-	mes "    any guild yet.";
-	next;
-	mes "       [ Kingdom of Prontera ]";
-	mes "2. In order to take this guild base,";
-	mes "    you must defeat all the guardians";
-	mes "    that protecting guild base and";
-	mes "    eliminate the EMPERIUM to";
-	mes "    take over the guild base.";
-	close;
+      mes "[ Edict of the Divine Rune Midgard Kingdom ]"
+      mes "                                            ";
+      mes "1.Follow the ordinance of the Divine Rune Midgard Kingdom,";
+      mes "  we approve that this place can be claimed by every guild.";
+      next;
+      mes "2.In order to ^FF0000claim^000000 this Guild Castle,";
+      mes "  you need to ^FF0000eliminate^000000 the ^FF0000emperium^000000 .";
+      close;
 L_START_1:
 	check ismyguild != 0,L_START_2,-;
-	mes "       [ Kingdom of Prontera ]";
-	mes "1. As law of Prontera this base is now";
-	mes "    $guildname 's guild";
-	mes "    base.";
-	next;
-	mes "       [ Kingdom of Prontera ]";
-	mes "2.  $guildname Guild master is";
-	mes "    $guildmaster, and any of you";
-	mes "    have a problem, raise your sword to ";
-	mes "    honor yourself.";
-	close;
+      mes "[ Edict of the Divine Rune Midgard Kingdom ]";
+      mes "                                            ";
+      mes "1.Follow the ordinance of the Divine Rune Midgard Kingdom,";
+      mes "  we approve that this place is in the private possesion of";
+      mes "  ^FF0000$guildname's^000000 Guild.";
+      next;
+      mes "2.The Guild Master of ^FF0000$guildname^000000 is ^FF0000$guildmaster^000000.";
+      mes "  If there is anyone who objects to this, prove your strength and honour";
+      mes "  with a steel blade in your hand.";
+      close;
 L_START_2:
 	mes "[Vibration of Man's Voice]";
 	mes "The brave soldiers...";
@@ -127,31 +122,26 @@ OnInit:
 prontera.gat,146,194,3 script "Swanhild" 722,{
 	guildreg "prtg_cas02";
 	check guildid == 0,-,L_START_1;
-	mes "       [ Kingdom of Prontera ]";
-	mes "1. As Law of Prontera";
-	mes "    this guild base isn't taken by";
-	mes "    any guild yet.";
-	next;
-	mes "       [ Kingdom of Prontera ]";
-	mes "2. In order to take this guild base,";
-	mes "    you must defeat all the guardians";
-	mes "    that protecting guild base and";
-	mes "    eliminate the EMPERIUM to";
-	mes "    take over the guild base.";
-	close;
+      mes "[ Edict of the Divine Rune Midgard Kingdom ]"
+      mes "                                            ";
+      mes "1.Follow the ordinance of the Divine Rune Midgard Kingdom,";
+      mes "  we approve that this place can be claimed by every guild.";
+      next;
+      mes "2.In order to ^FF0000claim^000000 this Guild Castle,";
+      mes "  you need to ^FF0000eliminate^000000 the ^FF0000emperium^000000 .";
+      close;
 L_START_1:
 	check ismyguild != 0,L_START_2,-;
-	mes "       [ Kingdom of Prontera ]";
-	mes "1. As law of Prontera this base is now";
-	mes "    $guildname 's guild";
-	mes "    base.";
-	next;
-	mes "       [ Kingdom of Prontera ]";
-	mes "2.  $guildname Guild master is";
-	mes "    $guildmaster, and any of you";
-	mes "    have a problem, raise your sword to ";
-	mes "    honor yourself.";
-	close;
+      mes "[ Edict of the Divine Rune Midgard Kingdom ]";
+      mes "                                            ";
+      mes "1.Follow the ordinance of the Divine Rune Midgard Kingdom,";
+      mes "  we approve that this place is in the private possesion of";
+      mes "  ^FF0000$guildname's^000000 Guild.";
+      next;
+      mes "2.The Guild Master of ^FF0000$guildname^000000 is ^FF0000$guildmaster^000000.";
+      mes "  If there is anyone who objects to this, prove your strength and honour";
+      mes "  with a steel blade in your hand.";
+      close;
 L_START_2:
 	mes "[Vibration of Man's Voice]";
 	mes "The brave soldiers...";
@@ -168,31 +158,26 @@ OnInit:
 prontera.gat,143,203,2 script "Fadhgridh" 722,{
 	guildreg "prtg_cas03";
 	check guildid == 0,-,L_START_1;
-	mes "       [ Kingdom of Prontera ]";
-	mes "1. As Law of Prontera";
-	mes "    this guild base isn't taken by";
-	mes "    any guild yet.";
-	next;
-	mes "       [ Kingdom of Prontera ]";
-	mes "2. In order to take this guild base,";
-	mes "    you must defeat all the guardians";
-	mes "    that protecting guild base and";
-	mes "    eliminate the EMPERIUM to";
-	mes "    take over the guild base.";
-	close;
+      mes "[ Edict of the Divine Rune Midgard Kingdom ]"
+      mes "                                            ";
+      mes "1.Follow the ordinance of the Divine Rune Midgard Kingdom,";
+      mes "  we approve that this place can be claimed by every guild.";
+      next;
+      mes "2.In order to ^FF0000claim^000000 this Guild Castle,";
+      mes "  you need to ^FF0000eliminate^000000 the ^FF0000emperium^000000 .";
+      close;
 L_START_1:
 	check ismyguild != 0,L_START_2,-;
-	mes "       [ Kingdom of Prontera ]";
-	mes "1. As law of Prontera this base is now";
-	mes "    $guildname 's guild";
-	mes "    base.";
-	next;
-	mes "       [ Kingdom of Prontera ]";
-	mes "2.  $guildname Guild master is";
-	mes "    $guildmaster, and any of you";
-	mes "    have a problem, raise your sword to ";
-	mes "    honor yourself.";
-	close;
+      mes "[ Edict of the Divine Rune Midgard Kingdom ]";
+      mes "                                            ";
+      mes "1.Follow the ordinance of the Divine Rune Midgard Kingdom,";
+      mes "  we approve that this place is in the private possesion of";
+      mes "  ^FF0000$guildname's^000000 Guild.";
+      next;
+      mes "2.The Guild Master of ^FF0000$guildname^000000 is ^FF0000$guildmaster^000000.";
+      mes "  If there is anyone who objects to this, prove your strength and honour";
+      mes "  with a steel blade in your hand.";
+      close;
 L_START_2:
 	mes "[Vibration of Man's Voice]";
 	mes "The brave soldiers...";
@@ -209,31 +194,26 @@ OnInit:
 prontera.gat,167,203,6 script "Skoegul" 722,{
 	guildreg "prtg_cas04";
 	check guildid == 0,-,L_START_1;
-	mes "       [ Kingdom of Prontera ]";
-	mes "1. As Law of Prontera";
-	mes "    this guild base isn't taken by";
-	mes "    any guild yet.";
-	next;
-	mes "       [ Kingdom of Prontera ]";
-	mes "2. In order to take this guild base,";
-	mes "    you must defeat all the guardians";
-	mes "    that protecting guild base and";
-	mes "    eliminate the EMPERIUM to";
-	mes "    take over the guild base.";
-	close;
+      mes "[ Edict of the Divine Rune Midgard Kingdom ]"
+      mes "                                            ";
+      mes "1.Follow the ordinance of the Divine Rune Midgard Kingdom,";
+      mes "  we approve that this place can be claimed by every guild.";
+      next;
+      mes "2.In order to ^FF0000claim^000000 this Guild Castle,";
+      mes "  you need to ^FF0000eliminate^000000 the ^FF0000emperium^000000 .";
+      close;
 L_START_1:
 	check ismyguild != 0,L_START_2,-;
-	mes "       [ Kingdom of Prontera ]";
-	mes "1. As law of Prontera this base is now";
-	mes "    $guildname 's guild";
-	mes "    base.";
-	next;
-	mes "       [ Kingdom of Prontera ]";
-	mes "2.  $guildname Guild master is";
-	mes "    $guildmaster, and any of you";
-	mes "    have a problem, raise your sword to ";
-	mes "    honor yourself.";
-	close;
+      mes "[ Edict of the Divine Rune Midgard Kingdom ]";
+      mes "                                            ";
+      mes "1.Follow the ordinance of the Divine Rune Midgard Kingdom,";
+      mes "  we approve that this place is in the private possesion of";
+      mes "  ^FF0000$guildname's^000000 Guild.";
+      next;
+      mes "2.The Guild Master of ^FF0000$guildname^000000 is ^FF0000$guildmaster^000000.";
+      mes "  If there is anyone who objects to this, prove your strength and honour";
+      mes "  with a steel blade in your hand.";
+      close;
 L_START_2:
 	mes "[Vibration of Man's Voice]";
 	mes "The brave soldiers...";
@@ -250,31 +230,26 @@ OnInit:
 prontera.gat,165,194,5 script "Gondul" 722,{
 	guildreg "prtg_cas05";
 	check guildid == 0,-,L_START_1;
-	mes "       [ Kingdom of Prontera ]";
-	mes "1. As Law of Prontera";
-	mes "    this guild base isn't taken by";
-	mes "    any guild yet.";
-	next;
-	mes "       [ Kingdom of Prontera ]";
-	mes "2. In order to take this guild base,";
-	mes "    you must defeat all the guardians";
-	mes "    that protecting guild base and";
-	mes "    eliminate the EMPERIUM to";
-	mes "    take over the guild base.";
-	close;
+      mes "[ Edict of the Divine Rune Midgard Kingdom ]"
+      mes "                                            ";
+      mes "1.Follow the ordinance of the Divine Rune Midgard Kingdom,";
+      mes "  we approve that this place can be claimed by every guild.";
+      next;
+      mes "2.In order to ^FF0000claim^000000 this Guild Castle,";
+      mes "  you need to ^FF0000eliminate^000000 the ^FF0000emperium^000000 .";
+      close;
 L_START_1:
 	check ismyguild != 0,L_START_2,-;
-	mes "       [ Kingdom of Prontera ]";
-	mes "1. As law of Prontera this base is now";
-	mes "    $guildname 's guild";
-	mes "    base.";
-	next;
-	mes "       [ Kingdom of Prontera ]";
-	mes "2.  $guildname Guild master is";
-	mes "    $guildmaster, and any of you";
-	mes "    have a problem, raise your sword to ";
-	mes "    honor yourself.";
-	close;
+      mes "[ Edict of the Divine Rune Midgard Kingdom ]";
+      mes "                                            ";
+      mes "1.Follow the ordinance of the Divine Rune Midgard Kingdom,";
+      mes "  we approve that this place is in the private possesion of";
+      mes "  ^FF0000$guildname's^000000 Guild.";
+      next;
+      mes "2.The Guild Master of ^FF0000$guildname^000000 is ^FF0000$guildmaster^000000.";
+      mes "  If there is anyone who objects to this, prove your strength and honour";
+      mes "  with a steel blade in your hand.";
+      close;
 L_START_2:
 	mes "[Vibration of Man's Voice]";
 	mes "The brave soldiers...";
@@ -292,31 +267,26 @@ OnInit:
 payon.gat,79,31,4 script "Bright Arbor" 722,{
 	guildreg "payg_cas01";
 	check guildid == 0,-,L_START_1;
-	mes "       [ Kingdom of Payon ]";
-	mes "1. As Law of Payon";
-	mes "    this guild base isn't taken by";
-	mes "    any guild yet.";
-	next;
-	mes "       [ Kingdom of Payon ]";
-	mes "2. In order to take this guild base,";
-	mes "    you must defeat all the guardians";
-	mes "    that protecting guild base and";
-	mes "    eliminate the EMPERIUM to";
-	mes "    take over the guild base.";
-	close;
+      mes "[ Edict of the Divine Rune Midgard Kingdom ]"
+      mes "                                            ";
+      mes "1.Follow the ordinance of the Divine Rune Midgard Kingdom,";
+      mes "  we approve that this place can be claimed by every guild.";
+      next;
+      mes "2.In order to ^FF0000claim^000000 this Guild Castle,";
+      mes "  you need to ^FF0000eliminate^000000 the ^FF0000emperium^000000 .";
+      close;
 L_START_1:
 	check ismyguild != 0,L_START_2,-;
-	mes "       [ Kingdom of Payon ]";
-	mes "1. As law of Payon this base is now";
-	mes "    $guildname 's guild";
-	mes "    base.";
-	next;
-	mes "       [ Kingdom of Payon ]";
-	mes "2.  $guildname Guild master is";
-	mes "    $guildmaster, and any of you";
-	mes "    have a problem, raise your sword to ";
-	mes "    honor yourself.";
-	close;
+      mes "[ Edict of the Divine Rune Midgard Kingdom ]";
+      mes "                                            ";
+      mes "1.Follow the ordinance of the Divine Rune Midgard Kingdom,";
+      mes "  we approve that this place is in the private possesion of";
+      mes "  ^FF0000$guildname's^000000 Guild.";
+      next;
+      mes "2.The Guild Master of ^FF0000$guildname^000000 is ^FF0000$guildmaster^000000.";
+      mes "  If there is anyone who objects to this, prove your strength and honour";
+      mes "  with a steel blade in your hand.";
+      close;
 L_START_2:
 	mes "[Vibration of Man's Voice]";
 	mes "The brave soldiers...";
@@ -333,31 +303,26 @@ OnInit:
 payon.gat,79,35,4 script "Sacred Altar" 722,{
 	guildreg "payg_cas02";
 	check guildid == 0,-,L_START_1;
-	mes "       [ Kingdom of Payon ]";
-	mes "1. As Law of Payon";
-	mes "    this guild base isn't taken by";
-	mes "    any guild yet.";
-	next;
-	mes "       [ Kingdom of Payon ]";
-	mes "2. In order to take this guild base,";
-	mes "    you must defeat all the guardians";
-	mes "    that protecting guild base and";
-	mes "    eliminate the EMPERIUM to";
-	mes "    take over the guild base.";
-	close;
+      mes "[ Edict of the Divine Rune Midgard Kingdom ]"
+      mes "                                            ";
+      mes "1.Follow the ordinance of the Divine Rune Midgard Kingdom,";
+      mes "  we approve that this place can be claimed by every guild.";
+      next;
+      mes "2.In order to ^FF0000claim^000000 this Guild Castle,";
+      mes "  you need to ^FF0000eliminate^000000 the ^FF0000emperium^000000 .";
+      close;
 L_START_1:
 	check ismyguild != 0,L_START_2,-;
-	mes "       [ Kingdom of Payon ]";
-	mes "1. As law of Payon this base is now";
-	mes "    $guildname 's guild";
-	mes "    base.";
-	next;
-	mes "       [ Kingdom of Payon ]";
-	mes "2.  $guildname Guild master is";
-	mes "    $guildmaster, and any of you";
-	mes "    have a problem, raise your sword to ";
-	mes "    honor yourself.";
-	close;
+      mes "[ Edict of the Divine Rune Midgard Kingdom ]";
+      mes "                                            ";
+      mes "1.Follow the ordinance of the Divine Rune Midgard Kingdom,";
+      mes "  we approve that this place is in the private possesion of";
+      mes "  ^FF0000$guildname's^000000 Guild.";
+      next;
+      mes "2.The Guild Master of ^FF0000$guildname^000000 is ^FF0000$guildmaster^000000.";
+      mes "  If there is anyone who objects to this, prove your strength and honour";
+      mes "  with a steel blade in your hand.";
+      close;
 L_START_2:
 	mes "[Vibration of Man's Voice]";
 	mes "The brave soldiers...";
@@ -374,31 +339,26 @@ OnInit:
 payon.gat,79,39,4 script "Holy Shadow" 722,{
 	guildreg "payg_cas03";
 	check guildid == 0,-,L_START_1;
-	mes "       [ Kingdom of Payon ]";
-	mes "1. As Law of Payon";
-	mes "    this guild base isn't taken by";
-	mes "    any guild yet.";
-	next;
-	mes "       [ Kingdom of Payon ]";
-	mes "2. In order to take this guild base,";
-	mes "    you must defeat all the guardians";
-	mes "    that protecting guild base and";
-	mes "    eliminate the EMPERIUM to";
-	mes "    take over the guild base.";
-	close;
+      mes "[ Edict of the Divine Rune Midgard Kingdom ]"
+      mes "                                            ";
+      mes "1.Follow the ordinance of the Divine Rune Midgard Kingdom,";
+      mes "  we approve that this place can be claimed by every guild.";
+      next;
+      mes "2.In order to ^FF0000claim^000000 this Guild Castle,";
+      mes "  you need to ^FF0000eliminate^000000 the ^FF0000emperium^000000 .";
+      close;
 L_START_1:
 	check ismyguild != 0,L_START_2,-;
-	mes "       [ Kingdom of Payon ]";
-	mes "1. As law of Payon this base is now";
-	mes "    $guildname 's guild";
-	mes "    base.";
-	next;
-	mes "       [ Kingdom of Payon ]";
-	mes "2.  $guildname Guild master is";
-	mes "    $guildmaster, and any of you";
-	mes "    have a problem, raise your sword to ";
-	mes "    honor yourself.";
-	close;
+      mes "[ Edict of the Divine Rune Midgard Kingdom ]";
+      mes "                                            ";
+      mes "1.Follow the ordinance of the Divine Rune Midgard Kingdom,";
+      mes "  we approve that this place is in the private possesion of";
+      mes "  ^FF0000$guildname's^000000 Guild.";
+      next;
+      mes "2.The Guild Master of ^FF0000$guildname^000000 is ^FF0000$guildmaster^000000.";
+      mes "  If there is anyone who objects to this, prove your strength and honour";
+      mes "  with a steel blade in your hand.";
+      close;
 L_START_2:
 	mes "[Vibration of Man's Voice]";
 	mes "The brave soldiers...";
@@ -415,31 +375,26 @@ OnInit:
 payon.gat,79,43,4 script "Scarlet Palace" 722,{
 	guildreg "payg_cas04";
 	check guildid == 0,-,L_START_1;
-	mes "       [ Kingdom of Payon ]";
-	mes "1. As Law of Payon";
-	mes "    this guild base isn't taken by";
-	mes "    any guild yet.";
-	next;
-	mes "       [ Kingdom of Payon ]";
-	mes "2. In order to take this guild base,";
-	mes "    you must defeat all the guardians";
-	mes "    that protecting guild base and";
-	mes "    eliminate the EMPERIUM to";
-	mes "    take over the guild base.";
-	close;
+      mes "[ Edict of the Divine Rune Midgard Kingdom ]"
+      mes "                                            ";
+      mes "1.Follow the ordinance of the Divine Rune Midgard Kingdom,";
+      mes "  we approve that this place can be claimed by every guild.";
+      next;
+      mes "2.In order to ^FF0000claim^000000 this Guild Castle,";
+      mes "  you need to ^FF0000eliminate^000000 the ^FF0000emperium^000000 .";
+      close;
 L_START_1:
 	check ismyguild != 0,L_START_2,-;
-	mes "       [ Kingdom of Payon ]";
-	mes "1. As law of Payon this base is now";
-	mes "    $guildname 's guild";
-	mes "    base.";
-	next;
-	mes "       [ Kingdom of Payon ]";
-	mes "2.  $guildname Guild master is";
-	mes "    $guildmaster, and any of you";
-	mes "    have a problem, raise your sword to ";
-	mes "    honor yourself.";
-	close;
+      mes "[ Edict of the Divine Rune Midgard Kingdom ]";
+      mes "                                            ";
+      mes "1.Follow the ordinance of the Divine Rune Midgard Kingdom,";
+      mes "  we approve that this place is in the private possesion of";
+      mes "  ^FF0000$guildname's^000000 Guild.";
+      next;
+      mes "2.The Guild Master of ^FF0000$guildname^000000 is ^FF0000$guildmaster^000000.";
+      mes "  If there is anyone who objects to this, prove your strength and honour";
+      mes "  with a steel blade in your hand.";
+      close;
 L_START_2:
 	mes "[Vibration of Man's Voice]";
 	mes "The brave soldiers...";
@@ -456,31 +411,26 @@ OnInit:
 payon.gat,79,47,4 script "Bamboo Grove Hill" 722,{
 	guildreg "payg_cas05";
 	check guildid == 0,-,L_START_1;
-	mes "       [ Kingdom of Payon ]";
-	mes "1. As Law of Payon";
-	mes "    this guild base isn't taken by";
-	mes "    any guild yet.";
-	next;
-	mes "       [ Kingdom of Payon ]";
-	mes "2. In order to take this guild base,";
-	mes "    you must defeat all the guardians";
-	mes "    that protecting guild base and";
-	mes "    eliminate the EMPERIUM to";
-	mes "    take over the guild base.";
-	close;
+      mes "[ Edict of the Divine Rune Midgard Kingdom ]"
+      mes "                                            ";
+      mes "1.Follow the ordinance of the Divine Rune Midgard Kingdom,";
+      mes "  we approve that this place can be claimed by every guild.";
+      next;
+      mes "2.In order to ^FF0000claim^000000 this Guild Castle,";
+      mes "  you need to ^FF0000eliminate^000000 the ^FF0000emperium^000000 .";
+      close;
 L_START_1:
 	check ismyguild != 0,L_START_2,-;
-	mes "       [ Kingdom of Payon ]";
-	mes "1. As law of Aldebaran this base is now";
-	mes "    $guildname 's guild";
-	mes "    base.";
-	next;
-	mes "       [ Kingdom of Payon ]";
-	mes "2.  $guildname Guild master is";
-	mes "    $guildmaster, and any of you";
-	mes "    have a problem, raise your sword to ";
-	mes "    honor yourself.";
-	close;
+      mes "[ Edict of the Divine Rune Midgard Kingdom ]";
+      mes "                                            ";
+      mes "1.Follow the ordinance of the Divine Rune Midgard Kingdom,";
+      mes "  we approve that this place is in the private possesion of";
+      mes "  ^FF0000$guildname's^000000 Guild.";
+      next;
+      mes "2.The Guild Master of ^FF0000$guildname^000000 is ^FF0000$guildmaster^000000.";
+      mes "  If there is anyone who objects to this, prove your strength and honour";
+      mes "  with a steel blade in your hand.";
+      close;
 L_START_2:
 	mes "[Vibration of Man's Voice]";
 	mes "The brave soldiers...";
@@ -498,31 +448,26 @@ OnInit:
 aldebaran.gat,152,97,4 script "Neuschwanstein" 722,{
 	guildreg "aldeg_cas01";
 	check guildid == 0,-,L_START_1;
-	mes "       [ Kingdom of Aldebaran ]";
-	mes "1. As Law of Aldebaran";
-	mes "    this guild base isn't taken by";
-	mes "    any guild yet.";
-	next;
-	mes "       [ Kingdom of Aldebaran ]";
-	mes "2. In order to take this guild base,";
-	mes "    you must defeat all the guardians";
-	mes "    that protecting guild base and";
-	mes "    eliminate the EMPERIUM to";
-	mes "    take over the guild base.";
-	close;
+      mes "[ Edict of the Divine Rune Midgard Kingdom ]"
+      mes "                                            ";
+      mes "1.Follow the ordinance of the Divine Rune Midgard Kingdom,";
+      mes "  we approve that this place can be claimed by every guild.";
+      next;
+      mes "2.In order to ^FF0000claim^000000 this Guild Castle,";
+      mes "  you need to ^FF0000eliminate^000000 the ^FF0000emperium^000000 .";
+      close;
 L_START_1:
 	check ismyguild != 0,L_START_2,-;
-	mes "       [ Kingdom of Aldebaran ]";
-	mes "1. As law of Aldebaran this base is now";
-	mes "    $guildname 's guild";
-	mes "    base.";
-	next;
-	mes "       [ Kingdom of Aldebaran ]";
-	mes "2.  $guildname Guild master is";
-	mes "    $guildmaster, and any of you";
-	mes "    have a problem, raise your sword to ";
-	mes "    honor yourself.";
-	close;
+      mes "[ Edict of the Divine Rune Midgard Kingdom ]";
+      mes "                                            ";
+      mes "1.Follow the ordinance of the Divine Rune Midgard Kingdom,";
+      mes "  we approve that this place is in the private possesion of";
+      mes "  ^FF0000$guildname's^000000 Guild.";
+      next;
+      mes "2.The Guild Master of ^FF0000$guildname^000000 is ^FF0000$guildmaster^000000.";
+      mes "  If there is anyone who objects to this, prove your strength and honour";
+      mes "  with a steel blade in your hand.";
+      close;
 L_START_2:
 	mes "[Vibration of Man's Voice]";
 	mes "The brave soldiers...";
@@ -539,31 +484,26 @@ OnInit:
 aldebaran.gat,149,97,4 script "Hohenschwangau" 722,{
 	guildreg "aldeg_cas02";
 	check guildid == 0,-,L_START_1;
-	mes "       [ Kingdom of Aldebaran ]";
-	mes "1. As Law of Aldebaran";
-	mes "    this guild base isn't taken by";
-	mes "    any guild yet.";
-	next;
-	mes "       [ Kingdom of Aldebaran ]";
-	mes "2. In order to take this guild base,";
-	mes "    you must defeat all the guardians";
-	mes "    that protecting guild base and";
-	mes "    eliminate the EMPERIUM to";
-	mes "    take over the guild base.";
-	close;
+      mes "[ Edict of the Divine Rune Midgard Kingdom ]"
+      mes "                                            ";
+      mes "1.Follow the ordinance of the Divine Rune Midgard Kingdom,";
+      mes "  we approve that this place can be claimed by every guild.";
+      next;
+      mes "2.In order to ^FF0000claim^000000 this Guild Castle,";
+      mes "  you need to ^FF0000eliminate^000000 the ^FF0000emperium^000000 .";
+      close;
 L_START_1:
 	check ismyguild != 0,L_START_2,-;
-	mes "       [ Kingdom of Aldebaran ]";
-	mes "1. As law of Aldebaran this base is now";
-	mes "    $guildname 's guild";
-	mes "    base.";
-	next;
-	mes "       [ Kingdom of Aldebaran ]";
-	mes "2.  $guildname Guild master is";
-	mes "    $guildmaster, and any of you";
-	mes "    have a problem, raise your sword to ";
-	mes "    honor yourself.";
-	close;
+      mes "[ Edict of the Divine Rune Midgard Kingdom ]";
+      mes "                                            ";
+      mes "1.Follow the ordinance of the Divine Rune Midgard Kingdom,";
+      mes "  we approve that this place is in the private possesion of";
+      mes "  ^FF0000$guildname's^000000 Guild.";
+      next;
+      mes "2.The Guild Master of ^FF0000$guildname^000000 is ^FF0000$guildmaster^000000.";
+      mes "  If there is anyone who objects to this, prove your strength and honour";
+      mes "  with a steel blade in your hand.";
+      close;
 L_START_2:
 	mes "[Vibration of Man's Voice]";
 	mes "The brave soldiers...";
@@ -580,31 +520,26 @@ OnInit:
 aldebaran.gat,134,97,4 script "Nuernberg" 722,{
 	guildreg "aldeg_cas03";
 	check guildid == 0,-,L_START_1;
-	mes "       [ Kingdom of Aldebaran ]";
-	mes "1. As Law of Aldebaran";
-	mes "    this guild base isn't taken by";
-	mes "    any guild yet.";
-	next;
-	mes "       [ Kingdom of Aldebaran ]";
-	mes "2. In order to take this guild base,";
-	mes "    you must defeat all the guardians";
-	mes "    that protecting guild base and";
-	mes "    eliminate the EMPERIUM to";
-	mes "    take over the guild base.";
-	close;
+      mes "[ Edict of the Divine Rune Midgard Kingdom ]"
+      mes "                                            ";
+      mes "1.Follow the ordinance of the Divine Rune Midgard Kingdom,";
+      mes "  we approve that this place can be claimed by every guild.";
+      next;
+      mes "2.In order to ^FF0000claim^000000 this Guild Castle,";
+      mes "  you need to ^FF0000eliminate^000000 the ^FF0000emperium^000000 .";
+      close;
 L_START_1:
 	check ismyguild != 0,L_START_2,-;
-	mes "       [ Kingdom of Aldebaran ]";
-	mes "1. As law of Aldebaran this base is now";
-	mes "    $guildname 's guild";
-	mes "    base.";
-	next;
-	mes "       [ Kingdom of Aldebaran ]";
-	mes "2.  $guildname Guild master is";
-	mes "    $guildmaster, and any of you";
-	mes "    have a problem, raise your sword to ";
-	mes "    honor yourself.";
-	close;
+      mes "[ Edict of the Divine Rune Midgard Kingdom ]";
+      mes "                                            ";
+      mes "1.Follow the ordinance of the Divine Rune Midgard Kingdom,";
+      mes "  we approve that this place is in the private possesion of";
+      mes "  ^FF0000$guildname's^000000 Guild.";
+      next;
+      mes "2.The Guild Master of ^FF0000$guildname^000000 is ^FF0000$guildmaster^000000.";
+      mes "  If there is anyone who objects to this, prove your strength and honour";
+      mes "  with a steel blade in your hand.";
+      close;
 L_START_2:
 	mes "[Vibration of Man's Voice]";
 	mes "The brave soldiers...";
@@ -621,31 +556,26 @@ OnInit:
 aldebaran.gat,131,97,4 script "Wuerzburg" 722,{
 	guildreg "aldeg_cas04";
 	check guildid == 0,-,L_START_1;
-	mes "       [ Kingdom of Aldebaran ]";
-	mes "1. As Law of Aldebaran";
-	mes "    this guild base isn't taken by";
-	mes "    any guild yet.";
-	next;
-	mes "       [ Kingdom of Aldebaran ]";
-	mes "2. In order to take this guild base,";
-	mes "    you must defeat all the guardians";
-	mes "    that protecting guild base and";
-	mes "    eliminate the EMPERIUM to";
-	mes "    take over the guild base.";
-	close;
+      mes "[ Edict of the Divine Rune Midgard Kingdom ]"
+      mes "                                            ";
+      mes "1.Follow the ordinance of the Divine Rune Midgard Kingdom,";
+      mes "  we approve that this place can be claimed by every guild.";
+      next;
+      mes "2.In order to ^FF0000claim^000000 this Guild Castle,";
+      mes "  you need to ^FF0000eliminate^000000 the ^FF0000emperium^000000 .";
+      close;
 L_START_1:
 	check ismyguild != 0,L_START_2,-;
-	mes "       [ Kingdom of Aldebaran ]";
-	mes "1. As law of Aldebaran this base is now";
-	mes "    $guildname 's guild";
-	mes "    base.";
-	next;
-	mes "       [ Kingdom of Aldebaran ]";
-	mes "2.  $guildname Guild master is";
-	mes "    $guildmaster, and any of you";
-	mes "    have a problem, raise your sword to ";
-	mes "    honor yourself.";
-	close;
+      mes "[ Edict of the Divine Rune Midgard Kingdom ]";
+      mes "                                            ";
+      mes "1.Follow the ordinance of the Divine Rune Midgard Kingdom,";
+      mes "  we approve that this place is in the private possesion of";
+      mes "  ^FF0000$guildname's^000000 Guild.";
+      next;
+      mes "2.The Guild Master of ^FF0000$guildname^000000 is ^FF0000$guildmaster^000000.";
+      mes "  If there is anyone who objects to this, prove your strength and honour";
+      mes "  with a steel blade in your hand.";
+      close;
 L_START_2:
 	mes "[Vibration of Man's Voice]";
 	mes "The brave soldiers...";
@@ -662,31 +592,26 @@ OnInit:
 aldebaran.gat,128,97,4 script "Rotenburg" 722,{
 	guildreg "aldeg_cas05";
 	check guildid == 0,-,L_START_1;
-	mes "       [ Kingdom of Aldebaran ]";
-	mes "1. As Law of Aldebaran";
-	mes "    this guild base isn't taken by";
-	mes "    any guild yet.";
-	next;
-	mes "       [ Kingdom of Aldebaran ]";
-	mes "2. In order to take this guild base,";
-	mes "    you must defeat all the guardians";
-	mes "    that protecting guild base and";
-	mes "    eliminate the EMPERIUM to";
-	mes "    take over the guild base.";
-	close;
+      mes "[ Edict of the Divine Rune Midgard Kingdom ]"
+      mes "                                            ";
+      mes "1.Follow the ordinance of the Divine Rune Midgard Kingdom,";
+      mes "  we approve that this place can be claimed by every guild.";
+      next;
+      mes "2.In order to ^FF0000claim^000000 this Guild Castle,";
+      mes "  you need to ^FF0000eliminate^000000 the ^FF0000emperium^000000 .";
+      close;
 L_START_1:
 	check ismyguild != 0,L_START_2,-;
-	mes "       [ Kingdom of Aldebaran ]";
-	mes "1. As law of Aldebaran this base is now";
-	mes "    $guildname 's guild";
-	mes "    base.";
-	next;
-	mes "       [ Kingdom of Aldebaran ]";
-	mes "2.  $guildname Guild master is";
-	mes "    $guildmaster, and any of you";
-	mes "    have a problem, raise your sword to ";
-	mes "    honor yourself.";
-	close;
+      mes "[ Edict of the Divine Rune Midgard Kingdom ]";
+      mes "                                            ";
+      mes "1.Follow the ordinance of the Divine Rune Midgard Kingdom,";
+      mes "  we approve that this place is in the private possesion of";
+      mes "  ^FF0000$guildname's^000000 Guild.";
+      next;
+      mes "2.The Guild Master of ^FF0000$guildname^000000 is ^FF0000$guildmaster^000000.";
+      mes "  If there is anyone who objects to this, prove your strength and honour";
+      mes "  with a steel blade in your hand.";
+      close;
 L_START_2:
 	mes "[Vibration of Man's Voice]";
 	mes "The brave soldiers...";
@@ -703,31 +628,26 @@ OnInit:
 geffen.gat,109,123,2 script "Repherion" 722,{
 	guildreg "gefg_cas01";
 	check guildid == 0,-,L_START_1;
-	mes "       [ Kingdom of Geffen ]";
-	mes "1. As Law of Geffen";
-	mes "    this guild base isn't taken by";
-	mes "    any guild yet.";
-	next;
-	mes "       [ Kingdom of Geffen ]";
-	mes "2. In order to take this guild base,";
-	mes "    you must defeat all the guardians";
-	mes "    that protecting guild base and";
-	mes "    eliminate the EMPERIUM to";
-	mes "    take over the guild base.";
-	close;
+      mes "[ Edict of the Divine Rune Midgard Kingdom ]"
+      mes "                                            ";
+      mes "1.Follow the ordinance of the Divine Rune Midgard Kingdom,";
+      mes "  we approve that this place can be claimed by every guild.";
+      next;
+      mes "2.In order to ^FF0000claim^000000 this Guild Castle,";
+      mes "  you need to ^FF0000eliminate^000000 the ^FF0000emperium^000000 .";
+      close;
 L_START_1:
 	check ismyguild != 0,L_START_2,-;
-	mes "       [ Kingdom of Geffen ]";
-	mes "1. As law of Geffen this base is now";
-	mes "    $guildname 's guild";
-	mes "    base.";
-	next;
-	mes "       [ Kingdom of Geffen ]";
-	mes "2.  $guildname Guild master is";
-	mes "    $guildmaster, and any of you";
-	mes "    have a problem, raise your sword to ";
-	mes "    honor yourself.";
-	close;
+      mes "[ Edict of the Divine Rune Midgard Kingdom ]";
+      mes "                                            ";
+      mes "1.Follow the ordinance of the Divine Rune Midgard Kingdom,";
+      mes "  we approve that this place is in the private possesion of";
+      mes "  ^FF0000$guildname's^000000 Guild.";
+      next;
+      mes "2.The Guild Master of ^FF0000$guildname^000000 is ^FF0000$guildmaster^000000.";
+      mes "  If there is anyone who objects to this, prove your strength and honour";
+      mes "  with a steel blade in your hand.";
+      close;
 L_START_2:
 	mes "[Vibration of Man's Voice]";
 	mes "The brave soldiers...";
@@ -744,31 +664,26 @@ OnInit:
 geffen.gat,112,129,1 script "Eeyorbriggar" 722,{
 	guildreg "gefg_cas02";
 	check guildid == 0,-,L_START_1;
-	mes "       [ Kingdom of Geffen ]";
-	mes "1. As Law of Geffen";
-	mes "    this guild base isn't taken by";
-	mes "    any guild yet.";
-	next;
-	mes "       [ Kingdom of Geffen ]";
-	mes "2. In order to take this guild base,";
-	mes "    you must defeat all the guardians";
-	mes "    that protecting guild base and";
-	mes "    eliminate the EMPERIUM to";
-	mes "    take over the guild base.";
-	close;
+      mes "[ Edict of the Divine Rune Midgard Kingdom ]"
+      mes "                                            ";
+      mes "1.Follow the ordinance of the Divine Rune Midgard Kingdom,";
+      mes "  we approve that this place can be claimed by every guild.";
+      next;
+      mes "2.In order to ^FF0000claim^000000 this Guild Castle,";
+      mes "  you need to ^FF0000eliminate^000000 the ^FF0000emperium^000000 .";
+      close;
 L_START_1:
 	check ismyguild != 0,L_START_2,-;
-	mes "       [ Kingdom of Geffen ]";
-	mes "1. As law of Geffen this base is now";
-	mes "    $guildname 's guild";
-	mes "    base.";
-	next;
-	mes "       [ Kingdom of Geffen ]";
-	mes "2.  $guildname Guild master is";
-	mes "    $guildmaster, and any of you";
-	mes "    have a problem, raise your sword to ";
-	mes "    honor yourself.";
-	close;
+      mes "[ Edict of the Divine Rune Midgard Kingdom ]";
+      mes "                                            ";
+      mes "1.Follow the ordinance of the Divine Rune Midgard Kingdom,";
+      mes "  we approve that this place is in the private possesion of";
+      mes "  ^FF0000$guildname's^000000 Guild.";
+      next;
+      mes "2.The Guild Master of ^FF0000$guildname^000000 is ^FF0000$guildmaster^000000.";
+      mes "  If there is anyone who objects to this, prove your strength and honour";
+      mes "  with a steel blade in your hand.";
+      close;
 L_START_2:
 	mes "[Vibration of Man's Voice]";
 	mes "The brave soldiers...";
@@ -785,31 +700,26 @@ OnInit:
 geffen.gat,120,132,8 script "Yesnelph" 722,{
 	guildreg "gefg_cas03";
 	check guildid == 0,-,L_START_1;
-	mes "       [ Kingdom of Geffen ]";
-	mes "1. As Law of Geffen";
-	mes "    this guild base isn't taken by";
-	mes "    any guild yet.";
-	next;
-	mes "       [ Kingdom of Geffen ]";
-	mes "2. In order to take this guild base,";
-	mes "    you must defeat all the guardians";
-	mes "    that protecting guild base and";
-	mes "    eliminate the EMPERIUM to";
-	mes "    take over the guild base.";
-	close;
+      mes "[ Edict of the Divine Rune Midgard Kingdom ]"
+      mes "                                            ";
+      mes "1.Follow the ordinance of the Divine Rune Midgard Kingdom,";
+      mes "  we approve that this place can be claimed by every guild.";
+      next;
+      mes "2.In order to ^FF0000claim^000000 this Guild Castle,";
+      mes "  you need to ^FF0000eliminate^000000 the ^FF0000emperium^000000 .";
+      close;
 L_START_1:
 	check ismyguild != 0,L_START_2,-;
-	mes "       [ Kingdom of Geffen ]";
-	mes "1. As law of Geffen this base is now";
-	mes "    $guildname 's guild";
-	mes "    base.";
-	next;
-	mes "       [ Kingdom of Geffen ]";
-	mes "2.  $guildname Guild master is";
-	mes "    $guildmaster, and any of you";
-	mes "    have a problem, raise your sword to ";
-	mes "    honor yourself.";
-	close;
+      mes "[ Edict of the Divine Rune Midgard Kingdom ]";
+      mes "                                            ";
+      mes "1.Follow the ordinance of the Divine Rune Midgard Kingdom,";
+      mes "  we approve that this place is in the private possesion of";
+      mes "  ^FF0000$guildname's^000000 Guild.";
+      next;
+      mes "2.The Guild Master of ^FF0000$guildname^000000 is ^FF0000$guildmaster^000000.";
+      mes "  If there is anyone who objects to this, prove your strength and honour";
+      mes "  with a steel blade in your hand.";
+      close;
 L_START_2:
 	mes "[Vibration of Man's Voice]";
 	mes "The brave soldiers...";
@@ -826,31 +736,26 @@ OnInit:
 geffen.gat,127,130,7 script "Bergel" 722,{
 	guildreg "gefg_cas04";
 	check guildid == 0,-,L_START_1;
-	mes "       [ Kingdom of Geffen ]";
-	mes "1. As Law of Geffen";
-	mes "    this guild base isn't taken by";
-	mes "    any guild yet.";
-	next;
-	mes "       [ Kingdom of Geffen ]";
-	mes "2. In order to take this guild base,";
-	mes "    you must defeat all the guardians";
-	mes "    that protecting guild base and";
-	mes "    eliminate the EMPERIUM to";
-	mes "    take over the guild base.";
-	close;
+      mes "[ Edict of the Divine Rune Midgard Kingdom ]"
+      mes "                                            ";
+      mes "1.Follow the ordinance of the Divine Rune Midgard Kingdom,";
+      mes "  we approve that this place can be claimed by every guild.";
+      next;
+      mes "2.In order to ^FF0000claim^000000 this Guild Castle,";
+      mes "  you need to ^FF0000eliminate^000000 the ^FF0000emperium^000000 .";
+      close;
 L_START_1:
 	check ismyguild != 0,L_START_2,-;
-	mes "       [ Kingdom of Geffen ]";
-	mes "1. As law of Geffen this base is now";
-	mes "    $guildname 's guild";
-	mes "    base.";
-	next;
-	mes "       [ Kingdom of Geffen ]";
-	mes "2.  $guildname Guild master is";
-	mes "    $guildmaster, and any of you";
-	mes "    have a problem, raise your sword to ";
-	mes "    honor yourself.";
-	close;
+      mes "[ Edict of the Divine Rune Midgard Kingdom ]";
+      mes "                                            ";
+      mes "1.Follow the ordinance of the Divine Rune Midgard Kingdom,";
+      mes "  we approve that this place is in the private possesion of";
+      mes "  ^FF0000$guildname's^000000 Guild.";
+      next;
+      mes "2.The Guild Master of ^FF0000$guildname^000000 is ^FF0000$guildmaster^000000.";
+      mes "  If there is anyone who objects to this, prove your strength and honour";
+      mes "  with a steel blade in your hand.";
+      close;
 L_START_2:
 	mes "[Vibration of Man's Voice]";
 	mes "The brave soldiers...";
@@ -867,31 +772,26 @@ OnInit:
 geffen.gat,131,123,6 script "Mersetzdeitz" 722,{
 	guildreg "gefg_cas05";
 	check guildid == 0,-,L_START_1;
-	mes "       [ Kingdom of Geffen ]";
-	mes "1. As Law of Geffen";
-	mes "    this guild base isn't taken by";
-	mes "    any guild yet.";
-	next;
-	mes "       [ Kingdom of Geffen ]";
-	mes "2. In order to take this guild base,";
-	mes "    you must defeat all the guardians";
-	mes "    that protecting guild base and";
-	mes "    eliminate the EMPERIUM to";
-	mes "    take over the guild base.";
-	close;
+      mes "[ Edict of the Divine Rune Midgard Kingdom ]"
+      mes "                                            ";
+      mes "1.Follow the ordinance of the Divine Rune Midgard Kingdom,";
+      mes "  we approve that this place can be claimed by every guild.";
+      next;
+      mes "2.In order to ^FF0000claim^000000 this Guild Castle,";
+      mes "  you need to ^FF0000eliminate^000000 the ^FF0000emperium^000000 .";
+      close;
 L_START_1:
 	check ismyguild != 0,L_START_2,-;
-	mes "       [ Kingdom of Geffen ]";
-	mes "1. As law of Geffen this base is now";
-	mes "    $guildname 's guild";
-	mes "    base.";
-	next;
-	mes "       [ Kingdom of Geffen ]";
-	mes "2.  $guildname Guild master is";
-	mes "    $guildmaster, and any of you";
-	mes "    have a problem, raise your sword to ";
-	mes "    honor yourself.";
-	close;
+      mes "[ Edict of the Divine Rune Midgard Kingdom ]";
+      mes "                                            ";
+      mes "1.Follow the ordinance of the Divine Rune Midgard Kingdom,";
+      mes "  we approve that this place is in the private possesion of";
+      mes "  ^FF0000$guildname's^000000 Guild.";
+      next;
+      mes "2.The Guild Master of ^FF0000$guildname^000000 is ^FF0000$guildmaster^000000.";
+      mes "  If there is anyone who objects to this, prove your strength and honour";
+      mes "  with a steel blade in your hand.";
+      close;
 L_START_2:
 	mes "[Vibration of Man's Voice]";
 	mes "The brave soldiers...";
@@ -909,31 +809,26 @@ OnInit:
 payon.gat,89,155,4 script "Bright Arbor" 722,{
 	guildreg "payg_cas01";
 	check guildid == 0,-,L_START_1;
-	mes "       [ Kingdom of Payon ]";
-	mes "1. As Law of Payon";
-	mes "    this guild base isn't taken by";
-	mes "    any guild yet.";
-	next;
-	mes "       [ Kingdom of Payon ]";
-	mes "2. In order to take this guild base,";
-	mes "    you must defeat all the guardians";
-	mes "    that protecting guild base and";
-	mes "    eliminate the EMPERIUM to";
-	mes "    take over the guild base.";
-	close;
+      mes "[ Edict of the Divine Rune Midgard Kingdom ]"
+      mes "                                            ";
+      mes "1.Follow the ordinance of the Divine Rune Midgard Kingdom,";
+      mes "  we approve that this place can be claimed by every guild.";
+      next;
+      mes "2.In order to ^FF0000claim^000000 this Guild Castle,";
+      mes "  you need to ^FF0000eliminate^000000 the ^FF0000emperium^000000 .";
+      close;
 L_START_1:
 	check ismyguild != 0,L_START_2,-;
-	mes "       [ Kingdom of Payon ]";
-	mes "1. As law of Payon this base is now";
-	mes "    $guildname 's guild";
-	mes "    base.";
-	next;
-	mes "       [ Kingdom of Payon ]";
-	mes "2.  $guildname Guild master is";
-	mes "    $guildmaster, and any of you";
-	mes "    have a problem, raise your sword to ";
-	mes "    honor yourself.";
-	close;
+      mes "[ Edict of the Divine Rune Midgard Kingdom ]";
+      mes "                                            ";
+      mes "1.Follow the ordinance of the Divine Rune Midgard Kingdom,";
+      mes "  we approve that this place is in the private possesion of";
+      mes "  ^FF0000$guildname's^000000 Guild.";
+      next;
+      mes "2.The Guild Master of ^FF0000$guildname^000000 is ^FF0000$guildmaster^000000.";
+      mes "  If there is anyone who objects to this, prove your strength and honour";
+      mes "  with a steel blade in your hand.";
+      close;
 L_START_2:
 	mes "[Vibration of Man's Voice]";
 	mes "The brave soldiers...";
@@ -950,31 +845,26 @@ OnInit:
 payon.gat,82,155,4 script "Sacred Altar" 722,{
 	guildreg "payg_cas02";
 	check guildid == 0,-,L_START_1;
-	mes "       [ Kingdom of Payon ]";
-	mes "1. As Law of Payon";
-	mes "    this guild base isn't taken by";
-	mes "    any guild yet.";
-	next;
-	mes "       [ Kingdom of Payon ]";
-	mes "2. In order to take this guild base,";
-	mes "    you must defeat all the guardians";
-	mes "    that protecting guild base and";
-	mes "    eliminate the EMPERIUM to";
-	mes "    take over the guild base.";
-	close;
+      mes "[ Edict of the Divine Rune Midgard Kingdom ]"
+      mes "                                            ";
+      mes "1.Follow the ordinance of the Divine Rune Midgard Kingdom,";
+      mes "  we approve that this place can be claimed by every guild.";
+      next;
+      mes "2.In order to ^FF0000claim^000000 this Guild Castle,";
+      mes "  you need to ^FF0000eliminate^000000 the ^FF0000emperium^000000 .";
+      close;
 L_START_1:
 	check ismyguild != 0,L_START_2,-;
-	mes "       [ Kingdom of Payon ]";
-	mes "1. As law of Payon this base is now";
-	mes "    $guildname 's guild";
-	mes "    base.";
-	next;
-	mes "       [ Kingdom of Payon ]";
-	mes "2.  $guildname Guild master is";
-	mes "    $guildmaster, and any of you";
-	mes "    have a problem, raise your sword to ";
-	mes "    honor yourself.";
-	close;
+      mes "[ Edict of the Divine Rune Midgard Kingdom ]";
+      mes "                                            ";
+      mes "1.Follow the ordinance of the Divine Rune Midgard Kingdom,";
+      mes "  we approve that this place is in the private possesion of";
+      mes "  ^FF0000$guildname's^000000 Guild.";
+      next;
+      mes "2.The Guild Master of ^FF0000$guildname^000000 is ^FF0000$guildmaster^000000.";
+      mes "  If there is anyone who objects to this, prove your strength and honour";
+      mes "  with a steel blade in your hand.";
+      close;
 L_START_2:
 	mes "[Vibration of Man's Voice]";
 	mes "The brave soldiers...";
@@ -991,31 +881,26 @@ OnInit:
 payon.gat,97,155,4 script "Holy Shadow" 722,{
 	guildreg "payg_cas03";
 	check guildid == 0,-,L_START_1;
-	mes "       [ Kingdom of Payon ]";
-	mes "1. As Law of Payon";
-	mes "    this guild base isn't taken by";
-	mes "    any guild yet.";
-	next;
-	mes "       [ Kingdom of Payon ]";
-	mes "2. In order to take this guild base,";
-	mes "    you must defeat all the guardians";
-	mes "    that protecting guild base and";
-	mes "    eliminate the EMPERIUM to";
-	mes "    take over the guild base.";
-	close;
+      mes "[ Edict of the Divine Rune Midgard Kingdom ]"
+      mes "                                            ";
+      mes "1.Follow the ordinance of the Divine Rune Midgard Kingdom,";
+      mes "  we approve that this place can be claimed by every guild.";
+      next;
+      mes "2.In order to ^FF0000claim^000000 this Guild Castle,";
+      mes "  you need to ^FF0000eliminate^000000 the ^FF0000emperium^000000 .";
+      close;
 L_START_1:
 	check ismyguild != 0,L_START_2,-;
-	mes "       [ Kingdom of Payon ]";
-	mes "1. As law of Payon this base is now";
-	mes "    $guildname 's guild";
-	mes "    base.";
-	next;
-	mes "       [ Kingdom of Payon ]";
-	mes "2.  $guildname Guild master is";
-	mes "    $guildmaster, and any of you";
-	mes "    have a problem, raise your sword to ";
-	mes "    honor yourself.";
-	close;
+      mes "[ Edict of the Divine Rune Midgard Kingdom ]";
+      mes "                                            ";
+      mes "1.Follow the ordinance of the Divine Rune Midgard Kingdom,";
+      mes "  we approve that this place is in the private possesion of";
+      mes "  ^FF0000$guildname's^000000 Guild.";
+      next;
+      mes "2.The Guild Master of ^FF0000$guildname^000000 is ^FF0000$guildmaster^000000.";
+      mes "  If there is anyone who objects to this, prove your strength and honour";
+      mes "  with a steel blade in your hand.";
+      close;
 L_START_2:
 	mes "[Vibration of Man's Voice]";
 	mes "The brave soldiers...";
@@ -1032,31 +917,26 @@ OnInit:
 payon.gat,103,155,4 script "Scarlet Palace" 722,{
 	guildreg "payg_cas04";
 	check guildid == 0,-,L_START_1;
-	mes "       [ Kingdom of Payon ]";
-	mes "1. As Law of Payon";
-	mes "    this guild base isn't taken by";
-	mes "    any guild yet.";
-	next;
-	mes "       [ Kingdom of Payon ]";
-	mes "2. In order to take this guild base,";
-	mes "    you must defeat all the guardians";
-	mes "    that protecting guild base and";
-	mes "    eliminate the EMPERIUM to";
-	mes "    take over the guild base.";
-	close;
+      mes "[ Edict of the Divine Rune Midgard Kingdom ]"
+      mes "                                            ";
+      mes "1.Follow the ordinance of the Divine Rune Midgard Kingdom,";
+      mes "  we approve that this place can be claimed by every guild.";
+      next;
+      mes "2.In order to ^FF0000claim^000000 this Guild Castle,";
+      mes "  you need to ^FF0000eliminate^000000 the ^FF0000emperium^000000 .";
+      close;
 L_START_1:
 	check ismyguild != 0,L_START_2,-;
-	mes "       [ Kingdom of Payon ]";
-	mes "1. As law of Payon this base is now";
-	mes "    $guildname 's guild";
-	mes "    base.";
-	next;
-	mes "       [ Kingdom of Payon ]";
-	mes "2.  $guildname Guild master is";
-	mes "    $guildmaster, and any of you";
-	mes "    have a problem, raise your sword to ";
-	mes "    honor yourself.";
-	close;
+      mes "[ Edict of the Divine Rune Midgard Kingdom ]";
+      mes "                                            ";
+      mes "1.Follow the ordinance of the Divine Rune Midgard Kingdom,";
+      mes "  we approve that this place is in the private possesion of";
+      mes "  ^FF0000$guildname's^000000 Guild.";
+      next;
+      mes "2.The Guild Master of ^FF0000$guildname^000000 is ^FF0000$guildmaster^000000.";
+      mes "  If there is anyone who objects to this, prove your strength and honour";
+      mes "  with a steel blade in your hand.";
+      close;
 L_START_2:
 	mes "[Vibration of Man's Voice]";
 	mes "The brave soldiers...";
@@ -1073,31 +953,26 @@ OnInit:
 payon.gat,75,155,4 script "Bamboo Grove Hill" 722,{
 	guildreg "payg_cas05";
 	check guildid == 0,-,L_START_1;
-	mes "       [ Kingdom of Payon ]";
-	mes "1. As Law of Payon";
-	mes "    this guild base isn't taken by";
-	mes "    any guild yet.";
-	next;
-	mes "       [ Kingdom of Payon ]";
-	mes "2. In order to take this guild base,";
-	mes "    you must defeat all the guardians";
-	mes "    that protecting guild base and";
-	mes "    eliminate the EMPERIUM to";
-	mes "    take over the guild base.";
-	close;
+      mes "[ Edict of the Divine Rune Midgard Kingdom ]"
+      mes "                                            ";
+      mes "1.Follow the ordinance of the Divine Rune Midgard Kingdom,";
+      mes "  we approve that this place can be claimed by every guild.";
+      next;
+      mes "2.In order to ^FF0000claim^000000 this Guild Castle,";
+      mes "  you need to ^FF0000eliminate^000000 the ^FF0000emperium^000000 .";
+      close;
 L_START_1:
 	check ismyguild != 0,L_START_2,-;
-	mes "       [ Kingdom of Payon ]";
-	mes "1. As law of Payon this base is now";
-	mes "    $guildname 's guild";
-	mes "    base.";
-	next;
-	mes "       [ Kingdom of Payon ]";
-	mes "2.  $guildname Guild master is";
-	mes "    $guildmaster, and any of you";
-	mes "    have a problem, raise your sword to ";
-	mes "    honor yourself.";
-	close;
+      mes "[ Edict of the Divine Rune Midgard Kingdom ]";
+      mes "                                            ";
+      mes "1.Follow the ordinance of the Divine Rune Midgard Kingdom,";
+      mes "  we approve that this place is in the private possesion of";
+      mes "  ^FF0000$guildname's^000000 Guild.";
+      next;
+      mes "2.The Guild Master of ^FF0000$guildname^000000 is ^FF0000$guildmaster^000000.";
+      mes "  If there is anyone who objects to this, prove your strength and honour";
+      mes "  with a steel blade in your hand.";
+      close;
 L_START_2:
 	mes "[Vibration of Man's Voice]";
 	mes "The brave soldiers...";

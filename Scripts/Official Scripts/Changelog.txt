@@ -9,6 +9,8 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.004
 ----------------------------------------------------------------------------------------------------
+- Town\Town_Morocc.txt - Updated Morocc header. [Muad_Dib]
+- GvG\ - Changed all flag texts. [Muad_Dib]
 - warp\towns\alberta.txt - change warp output location. [nestor_zulueta]
 - warp\towns\izlude.txt - remove warp going to test guide. [nestor_zulueta]
 - Job\Job2_Knight_quest5.txt - Fixed bad NPC IDs for hidden script loaders. [Tsusai]

@@ -26,30 +26,25 @@
 pay_gld.gat,321,298,2	script	"Holy Shadow"	722,{
 	guildreg "payg_cas03";
 	check guildid == 0,-,L_START_1;
-	mes "       [ Kingdom of Payon ]";
-	mes "1. As Law of Payon";
-	mes "    this guild base isn't taken by";
-	mes "    any guild yet.";
-	next;
-	mes "       [ Kingdom of Payon ]";
-	mes "2. In order to take this guild base,";
-	mes "    you must defeat all the guardians";
-	mes "    that protect the guild base and";
-	mes "    eliminate the EMPERIUM to";
-	mes "    take over the guild base.";
-	close;
+      mes "[ Edict of the Divine Rune Midgard Kingdom ]"
+      mes "                                            ";
+      mes "1.Follow the ordinance of the Divine Rune Midgard Kingdom,";
+      mes "  we approve that this place can be claimed by every guild.";
+      next;
+      mes "2.In order to ^FF0000claim^000000 this Guild Castle,";
+      mes "  you need to ^FF0000eliminate^000000 the ^FF0000emperium^000000 .";
+      close;
 L_START_1:
-	mes "       [ Kingdom of Payon ]";
-	mes "1. As law of Payon this base is now";
-	mes "    $guildname guild's guild";
-	mes "    base.";
-	next;
-	mes "       [ Kingdom of Payon ]";
-	mes "2.  $guildname Guild master is";
-	mes "    $guildmaster, and any of you";
-	mes "    have a beef, raise your sword to ";
-	mes "    honor yourself.";
-	close;
+      mes "[ Edict of the Divine Rune Midgard Kingdom ]";
+      mes "                                            ";
+      mes "1.Follow the ordinance of the Divine Rune Midgard Kingdom,";
+      mes "  we approve that this place is in the private possesion of";
+      mes "  ^FF0000$guildname's^000000 Guild.";
+      next;
+      mes "2.The Guild Master of ^FF0000$guildname^000000 is ^FF0000$guildmaster^000000.";
+      mes "  If there is anyone who objects to this, prove your strength and honour";
+      mes "  with a steel blade in your hand.";
+      close;
 OnInit:
 	guildreg "payg_cas03";
 	return;
@@ -57,30 +52,25 @@ OnInit:
 pay_gld.gat,321,289,2	script	"Holy Shadow"	722,{
 	guildreg "payg_cas03";
 	check guildid == 0,-,L_START_1;
-	mes "       [ Kingdom of Payon ]";
-	mes "1. As Law of Payon";
-	mes "    this guild base isn't taken by";
-	mes "    any guild yet.";
-	next;
-	mes "       [ Kingdom of Payon ]";
-	mes "2. In order to take this guild base,";
-	mes "    you must defeat all the guardians";
-	mes "    that protect the guild base and";
-	mes "    eliminate the EMPERIUM to";
-	mes "    take over the guild base.";
-	close;
+      mes "[ Edict of the Divine Rune Midgard Kingdom ]"
+      mes "                                            ";
+      mes "1.Follow the ordinance of the Divine Rune Midgard Kingdom,";
+      mes "  we approve that this place can be claimed by every guild.";
+      next;
+      mes "2.In order to ^FF0000claim^000000 this Guild Castle,";
+      mes "  you need to ^FF0000eliminate^000000 the ^FF0000emperium^000000 .";
+      close;
 L_START_1:
-	mes "       [ Kingdom of Payon ]";
-	mes "1. As law of Payon this base is now";
-	mes "    $guildname guild's guild";
-	mes "    base.";
-	next;
-	mes "       [ Kingdom of Payon ]";
-	mes "2.  $guildname Guild master is";
-	mes "    $guildmaster, and any of you";
-	mes "    have a beef, raise your sword to ";
-	mes "    honor yourself.";
-	close;
+      mes "[ Edict of the Divine Rune Midgard Kingdom ]";
+      mes "                                            ";
+      mes "1.Follow the ordinance of the Divine Rune Midgard Kingdom,";
+      mes "  we approve that this place is in the private possesion of";
+      mes "  ^FF0000$guildname's^000000 Guild.";
+      next;
+      mes "2.The Guild Master of ^FF0000$guildname^000000 is ^FF0000$guildmaster^000000.";
+      mes "  If there is anyone who objects to this, prove your strength and honour";
+      mes "  with a steel blade in your hand.";
+      close;
 OnInit:
 	guildreg "payg_cas03";
 	return;
@@ -88,30 +78,25 @@ OnInit:
 pay_gld.gat,327,304,1	script	"Holy Shadow"	722,{
 	guildreg "payg_cas03";
 	check guildid == 0,-,L_START_1;
-	mes "       [ Kingdom of Payon ]";
-	mes "1. As Law of Payon";
-	mes "    this guild base isn't taken by";
-	mes "    any guild yet.";
-	next;
-	mes "       [ Kingdom of Payon ]";
-	mes "2. In order to take this guild base,";
-	mes "    you must defeat all the guardians";
-	mes "    that protect the guild base and";
-	mes "    eliminate the EMPERIUM to";
-	mes "    take over the guild base.";
-	close;
+      mes "[ Edict of the Divine Rune Midgard Kingdom ]"
+      mes "                                            ";
+      mes "1.Follow the ordinance of the Divine Rune Midgard Kingdom,";
+      mes "  we approve that this place can be claimed by every guild.";
+      next;
+      mes "2.In order to ^FF0000claim^000000 this Guild Castle,";
+      mes "  you need to ^FF0000eliminate^000000 the ^FF0000emperium^000000 .";
+      close;
 L_START_1:
-	mes "       [ Kingdom of Payon ]";
-	mes "1. As law of Payon this base is now";
-	mes "    $guildname guild's guild";
-	mes "    base.";
-	next;
-	mes "       [ Kingdom of Payon ]";
-	mes "2.  $guildname Guild master is";
-	mes "    $guildmaster, and any of you";
-	mes "    have a beef, raise your sword to ";
-	mes "    honor yourself.";
-	close;
+      mes "[ Edict of the Divine Rune Midgard Kingdom ]";
+      mes "                                            ";
+      mes "1.Follow the ordinance of the Divine Rune Midgard Kingdom,";
+      mes "  we approve that this place is in the private possesion of";
+      mes "  ^FF0000$guildname's^000000 Guild.";
+      next;
+      mes "2.The Guild Master of ^FF0000$guildname^000000 is ^FF0000$guildmaster^000000.";
+      mes "  If there is anyone who objects to this, prove your strength and honour";
+      mes "  with a steel blade in your hand.";
+      close;
 OnInit:
 	guildreg "payg_cas03";
 	return;
@@ -119,30 +104,25 @@ OnInit:
 pay_gld.gat,333,254,4	script	"Holy Shadow"	722,{
 	guildreg "payg_cas03";
 	check guildid == 0,-,L_START_1;
-	mes "       [ Kingdom of Payon ]";
-	mes "1. As Law of Payon";
-	mes "    this guild base isn't taken by";
-	mes "    any guild yet.";
-	next;
-	mes "       [ Kingdom of Payon ]";
-	mes "2. In order to take this guild base,";
-	mes "    you must defeat all the guardians";
-	mes "    that protect the guild base and";
-	mes "    eliminate the EMPERIUM to";
-	mes "    take over the guild base.";
-	close;
+      mes "[ Edict of the Divine Rune Midgard Kingdom ]"
+      mes "                                            ";
+      mes "1.Follow the ordinance of the Divine Rune Midgard Kingdom,";
+      mes "  we approve that this place can be claimed by every guild.";
+      next;
+      mes "2.In order to ^FF0000claim^000000 this Guild Castle,";
+      mes "  you need to ^FF0000eliminate^000000 the ^FF0000emperium^000000 .";
+      close;
 L_START_1:
-	mes "       [ Kingdom of Payon ]";
-	mes "1. As law of Payon this base is now";
-	mes "    $guildname guild's guild";
-	mes "    base.";
-	next;
-	mes "       [ Kingdom of Payon ]";
-	mes "2.  $guildname Guild master is";
-	mes "    $guildmaster, and any of you";
-	mes "    have a beef, raise your sword to ";
-	mes "    honor yourself.";
-	close;
+      mes "[ Edict of the Divine Rune Midgard Kingdom ]";
+      mes "                                            ";
+      mes "1.Follow the ordinance of the Divine Rune Midgard Kingdom,";
+      mes "  we approve that this place is in the private possesion of";
+      mes "  ^FF0000$guildname's^000000 Guild.";
+      next;
+      mes "2.The Guild Master of ^FF0000$guildname^000000 is ^FF0000$guildmaster^000000.";
+      mes "  If there is anyone who objects to this, prove your strength and honour";
+      mes "  with a steel blade in your hand.";
+      close;
 OnInit:
 	guildreg "payg_cas03";
 	return;
@@ -151,30 +131,25 @@ OnInit:
 payg_cas03.gat,236,54,2	script	"Holy Shadow"	722,{
 	guildreg "payg_cas03";
 	check guildid == 0,-,L_START_1;
-	mes "       [ Kingdom of Payon ]";
-	mes "1. As Law of Payon";
-	mes "    this guild base isn't taken by";
-	mes "    any guild yet.";
-	next;
-	mes "       [ Kingdom of Payon ]";
-	mes "2. In order to take this guild base,";
-	mes "    you must defeat all the guardians";
-	mes "    that protect the guild base and";
-	mes "    eliminate the EMPERIUM to";
-	mes "    take over the guild base.";
-	close;
+      mes "[ Edict of the Divine Rune Midgard Kingdom ]"
+      mes "                                            ";
+      mes "1.Follow the ordinance of the Divine Rune Midgard Kingdom,";
+      mes "  we approve that this place can be claimed by every guild.";
+      next;
+      mes "2.In order to ^FF0000claim^000000 this Guild Castle,";
+      mes "  you need to ^FF0000eliminate^000000 the ^FF0000emperium^000000 .";
+      close;
 L_START_1:
-	mes "       [ Kingdom of Payon ]";
-	mes "1. As law of Payon this base is now";
-	mes "    $guildname guild's guild";
-	mes "    base.";
-	next;
-	mes "       [ Kingdom of Payon ]";
-	mes "2.  $guildname Guild master is";
-	mes "    $guildmaster, and any of you";
-	mes "    have a beef, raise your sword to ";
-	mes "    honor yourself.";
-	close;
+      mes "[ Edict of the Divine Rune Midgard Kingdom ]";
+      mes "                                            ";
+      mes "1.Follow the ordinance of the Divine Rune Midgard Kingdom,";
+      mes "  we approve that this place is in the private possesion of";
+      mes "  ^FF0000$guildname's^000000 Guild.";
+      next;
+      mes "2.The Guild Master of ^FF0000$guildname^000000 is ^FF0000$guildmaster^000000.";
+      mes "  If there is anyone who objects to this, prove your strength and honour";
+      mes "  with a steel blade in your hand.";
+      close;
 OnInit:
 	guildreg "payg_cas03";
 	return;
@@ -182,30 +157,25 @@ OnInit:
 payg_cas03.gat,236,45,2	script	"Holy Shadow"	722,{
 	guildreg "payg_cas03";
 	check guildid == 0,-,L_START_1;
-	mes "       [ Kingdom of Payon ]";
-	mes "1. As Law of Payon";
-	mes "    this guild base isn't taken by";
-	mes "    any guild yet.";
-	next;
-	mes "       [ Kingdom of Payon ]";
-	mes "2. In order to take this guild base,";
-	mes "    you must defeat all the guardians";
-	mes "    that protect the guild base and";
-	mes "    eliminate the EMPERIUM to";
-	mes "    take over the guild base.";
-	close;
+      mes "[ Edict of the Divine Rune Midgard Kingdom ]"
+      mes "                                            ";
+      mes "1.Follow the ordinance of the Divine Rune Midgard Kingdom,";
+      mes "  we approve that this place can be claimed by every guild.";
+      next;
+      mes "2.In order to ^FF0000claim^000000 this Guild Castle,";
+      mes "  you need to ^FF0000eliminate^000000 the ^FF0000emperium^000000 .";
+      close;
 L_START_1:
-	mes "       [ Kingdom of Payon ]";
-	mes "1. As law of Payon this base is now";
-	mes "    $guildname guild's guild";
-	mes "    base.";
-	next;
-	mes "       [ Kingdom of Payon ]";
-	mes "2.  $guildname Guild master is";
-	mes "    $guildmaster, and any of you";
-	mes "    have a beef, raise your sword to ";
-	mes "    honor yourself.";
-	close;
+      mes "[ Edict of the Divine Rune Midgard Kingdom ]";
+      mes "                                            ";
+      mes "1.Follow the ordinance of the Divine Rune Midgard Kingdom,";
+      mes "  we approve that this place is in the private possesion of";
+      mes "  ^FF0000$guildname's^000000 Guild.";
+      next;
+      mes "2.The Guild Master of ^FF0000$guildname^000000 is ^FF0000$guildmaster^000000.";
+      mes "  If there is anyone who objects to this, prove your strength and honour";
+      mes "  with a steel blade in your hand.";
+      close;
 OnInit:
 	guildreg "payg_cas03";
 	return;
@@ -213,30 +183,25 @@ OnInit:
 payg_cas03.gat,259,66,4	script	"Holy Shadow"	722,{
 	guildreg "payg_cas03";
 	check guildid == 0,-,L_START_1;
-	mes "       [ Kingdom of Payon ]";
-	mes "1. As Law of Payon";
-	mes "    this guild base isn't taken by";
-	mes "    any guild yet.";
-	next;
-	mes "       [ Kingdom of Payon ]";
-	mes "2. In order to take this guild base,";
-	mes "    you must defeat all the guardians";
-	mes "    that protect the guild base and";
-	mes "    eliminate the EMPERIUM to";
-	mes "    take over the guild base.";
-	close;
+      mes "[ Edict of the Divine Rune Midgard Kingdom ]"
+      mes "                                            ";
+      mes "1.Follow the ordinance of the Divine Rune Midgard Kingdom,";
+      mes "  we approve that this place can be claimed by every guild.";
+      next;
+      mes "2.In order to ^FF0000claim^000000 this Guild Castle,";
+      mes "  you need to ^FF0000eliminate^000000 the ^FF0000emperium^000000 .";
+      close;
 L_START_1:
-	mes "       [ Kingdom of Payon ]";
-	mes "1. As law of Payon this base is now";
-	mes "    $guildname guild's guild";
-	mes "    base.";
-	next;
-	mes "       [ Kingdom of Payon ]";
-	mes "2.  $guildname Guild master is";
-	mes "    $guildmaster, and any of you";
-	mes "    have a beef, raise your sword to ";
-	mes "    honor yourself.";
-	close;
+      mes "[ Edict of the Divine Rune Midgard Kingdom ]";
+      mes "                                            ";
+      mes "1.Follow the ordinance of the Divine Rune Midgard Kingdom,";
+      mes "  we approve that this place is in the private possesion of";
+      mes "  ^FF0000$guildname's^000000 Guild.";
+      next;
+      mes "2.The Guild Master of ^FF0000$guildname^000000 is ^FF0000$guildmaster^000000.";
+      mes "  If there is anyone who objects to this, prove your strength and honour";
+      mes "  with a steel blade in your hand.";
+      close;
 OnInit:
 	guildreg "payg_cas03";
 	return;
@@ -244,30 +209,25 @@ OnInit:
 payg_cas03.gat,266,66,4	script	"Holy Shadow"	722,{
 	guildreg "payg_cas03";
 	check guildid == 0,-,L_START_1;
-	mes "       [ Kingdom of Payon ]";
-	mes "1. As Law of Payon";
-	mes "    this guild base isn't taken by";
-	mes "    any guild yet.";
-	next;
-	mes "       [ Kingdom of Payon ]";
-	mes "2. In order to take this guild base,";
-	mes "    you must defeat all the guardians";
-	mes "    that protect the guild base and";
-	mes "    eliminate the EMPERIUM to";
-	mes "    take over the guild base.";
-	close;
+      mes "[ Edict of the Divine Rune Midgard Kingdom ]"
+      mes "                                            ";
+      mes "1.Follow the ordinance of the Divine Rune Midgard Kingdom,";
+      mes "  we approve that this place can be claimed by every guild.";
+      next;
+      mes "2.In order to ^FF0000claim^000000 this Guild Castle,";
+      mes "  you need to ^FF0000eliminate^000000 the ^FF0000emperium^000000 .";
+      close;
 L_START_1:
-	mes "       [ Kingdom of Payon ]";
-	mes "1. As law of Payon this base is now";
-	mes "    $guildname guild's guild";
-	mes "    base.";
-	next;
-	mes "       [ Kingdom of Payon ]";
-	mes "2.  $guildname Guild master is";
-	mes "    $guildmaster, and any of you";
-	mes "    have a beef, raise your sword to ";
-	mes "    honor yourself.";
-	close;
+      mes "[ Edict of the Divine Rune Midgard Kingdom ]";
+      mes "                                            ";
+      mes "1.Follow the ordinance of the Divine Rune Midgard Kingdom,";
+      mes "  we approve that this place is in the private possesion of";
+      mes "  ^FF0000$guildname's^000000 Guild.";
+      next;
+      mes "2.The Guild Master of ^FF0000$guildname^000000 is ^FF0000$guildmaster^000000.";
+      mes "  If there is anyone who objects to this, prove your strength and honour";
+      mes "  with a steel blade in your hand.";
+      close;
 OnInit:
 	guildreg "payg_cas03";
 	return;
@@ -275,30 +235,25 @@ OnInit:
 payg_cas03.gat,34,31,4	script	"Holy Shadow"	722,{
 	guildreg "payg_cas03";
 	check guildid == 0,-,L_START_1;
-	mes "       [ Kingdom of Payon ]";
-	mes "1. As Law of Payon";
-	mes "    this guild base isn't taken by";
-	mes "    any guild yet.";
-	next;
-	mes "       [ Kingdom of Payon ]";
-	mes "2. In order to take this guild base,";
-	mes "    you must defeat all the guardians";
-	mes "    that protect the guild base and";
-	mes "    eliminate the EMPERIUM to";
-	mes "    take over the guild base.";
-	close;
+      mes "[ Edict of the Divine Rune Midgard Kingdom ]"
+      mes "                                            ";
+      mes "1.Follow the ordinance of the Divine Rune Midgard Kingdom,";
+      mes "  we approve that this place can be claimed by every guild.";
+      next;
+      mes "2.In order to ^FF0000claim^000000 this Guild Castle,";
+      mes "  you need to ^FF0000eliminate^000000 the ^FF0000emperium^000000 .";
+      close;
 L_START_1:
-	mes "       [ Kingdom of Payon ]";
-	mes "1. As law of Payon this base is now";
-	mes "    $guildname guild's guild";
-	mes "    base.";
-	next;
-	mes "       [ Kingdom of Payon ]";
-	mes "2.  $guildname Guild master is";
-	mes "    $guildmaster, and any of you";
-	mes "    have a beef, raise your sword to ";
-	mes "    honor yourself.";
-	close;
+      mes "[ Edict of the Divine Rune Midgard Kingdom ]";
+      mes "                                            ";
+      mes "1.Follow the ordinance of the Divine Rune Midgard Kingdom,";
+      mes "  we approve that this place is in the private possesion of";
+      mes "  ^FF0000$guildname's^000000 Guild.";
+      next;
+      mes "2.The Guild Master of ^FF0000$guildname^000000 is ^FF0000$guildmaster^000000.";
+      mes "  If there is anyone who objects to this, prove your strength and honour";
+      mes "  with a steel blade in your hand.";
+      close;
 OnInit:
 	guildreg "payg_cas03";
 	return;
@@ -306,30 +261,25 @@ OnInit:
 payg_cas03.gat,43,31,4	script	"Holy Shadow"	722,{
 	guildreg "payg_cas03";
 	check guildid == 0,-,L_START_1;
-	mes "       [ Kingdom of Payon ]";
-	mes "1. As Law of Payon";
-	mes "    this guild base isn't taken by";
-	mes "    any guild yet.";
-	next;
-	mes "       [ Kingdom of Payon ]";
-	mes "2. In order to take this guild base,";
-	mes "    you must defeat all the guardians";
-	mes "    that protect the guild base and";
-	mes "    eliminate the EMPERIUM to";
-	mes "    take over the guild base.";
-	close;
+      mes "[ Edict of the Divine Rune Midgard Kingdom ]"
+      mes "                                            ";
+      mes "1.Follow the ordinance of the Divine Rune Midgard Kingdom,";
+      mes "  we approve that this place can be claimed by every guild.";
+      next;
+      mes "2.In order to ^FF0000claim^000000 this Guild Castle,";
+      mes "  you need to ^FF0000eliminate^000000 the ^FF0000emperium^000000 .";
+      close;
 L_START_1:
-	mes "       [ Kingdom of Payon ]";
-	mes "1. As law of Payon this base is now";
-	mes "    $guildname guild's guild";
-	mes "    base.";
-	next;
-	mes "       [ Kingdom of Payon ]";
-	mes "2.  $guildname Guild master is";
-	mes "    $guildmaster, and any of you";
-	mes "    have a beef, raise your sword to ";
-	mes "    honor yourself.";
-	close;
+      mes "[ Edict of the Divine Rune Midgard Kingdom ]";
+      mes "                                            ";
+      mes "1.Follow the ordinance of the Divine Rune Midgard Kingdom,";
+      mes "  we approve that this place is in the private possesion of";
+      mes "  ^FF0000$guildname's^000000 Guild.";
+      next;
+      mes "2.The Guild Master of ^FF0000$guildname^000000 is ^FF0000$guildmaster^000000.";
+      mes "  If there is anyone who objects to this, prove your strength and honour";
+      mes "  with a steel blade in your hand.";
+      close;
 OnInit:
 	guildreg "payg_cas03";
 	return;

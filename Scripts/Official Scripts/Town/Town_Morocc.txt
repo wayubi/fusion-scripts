@@ -1,9 +1,33 @@
-//----------------------------------------------------------------------------------------
-// Morocc Town - From Weiss, translated by Rentus, some corrections by Hylysi
-// eWeiss Project 2003 - http://revolve.emuxhaven.net/weiss/
-//----------------------------------------------------------------------------------------
+//========================================================================================
+// »» The Fusion Project ««
+// Copyright (c) 2004, Cobax Information Systems
+// http://fusion.cobax.net/
+// ---------------------------------------------------------------------------------------
+//
+// Morocc Town - Non Player Character Locations
+// - Translated by Rentus
+//
+// - Towner -> morocc: 68,260 
+//   Talks about the piramids.
+//
+// - Grampa -> morocc_in: 190,100
+//   Talks about his pyramids research.
+//
+// - Towner -> morocc: 116,266
+//   Talks about the Desert Wolf.
+//
+// - Towner -> morocc: 208,85
+//   Talks about the trading business.
+//
+// - Towner -> morocc: 150,50
+//   Talks about Jewels.
+//
+// - Towner -> morocc: 44,180
+//   A drunk man.   
+//
+//========================================================================================
 
-morocc.gat,68,260,0	script	Towner	99,{
+morocc.gat,68,260,0 script "Towner" 99,{
 	mes "[Towner]";
 	mes "Those giant, triangular buildings at the corner of Morroc are called as pyramids.... They have been here for thousands and thousands of years.";
 	next;
@@ -16,7 +40,7 @@ morocc.gat,68,260,0	script	Towner	99,{
 	close;
 }
 
-morocc_in.gat,112,122,0	script	Grampa	61,{
+morocc_in.gat,112,122,0	script "Grampa" 61,{
 	mes "[Old Scholar]";
 	mes "I've devoted my life to the pyramid research. Nothing has been revealed yet, but I assure you that biggest pyramid holds within the Tomb of the Ancient King.";
 	next;
@@ -25,7 +49,7 @@ morocc_in.gat,112,122,0	script	Grampa	61,{
 	close;
 }
 
-morocc.gat,116,266,0	script	Towner	85,{
+morocc.gat,116,266,0 script "Towner" 85,{
 	mes "[Towner]";
 	mes "I can tell you the most horrible creature of the desert is the Wolf, yeah it is. It even gulps down Peco Peco Eggs.";
 	mes "Moreover, those damn punks roam about in a group all the time. And then one of fellas gets attacked, all take a sudden turn into Violence.";
@@ -36,7 +60,7 @@ morocc.gat,116,266,0	script	Towner	85,{
 	close;
 }
 
-morocc.gat,208,85,0	script	Towner	83,{
+morocc.gat,208,85,0 script "Towner" 83,{
 	mes "[Towner]";
 	mes "My job is the trade business, I keep coming and going between Morroc and Prontera due to my job. I can't even count how many times I've been across the hot, dry Desert.";
 	next;
@@ -49,7 +73,7 @@ morocc.gat,208,85,0	script	Towner	83,{
 	close;
 }
 
-morocc.gat,150,50,0	script	Towner	85,{
+morocc.gat,150,50,0 script "Towner" 85,{
 	mes "[Lapidary]";
 	mes "Queen of the jewelry is the diamond. Nobody could deny its beautiful and lucid appearance when looked at once. So it costs a lot zeny to purchase...";
 	next;
@@ -61,8 +85,8 @@ morocc.gat,150,50,0	script	Towner	85,{
 	close;
 }
 
-morocc.gat,44,180,0	script	Towner	89,{
-mes "[Drunk Man]";
+morocc.gat,44,180,0 script "Towner" 89,{
+      mes "[Drunk Man]";
 	mes "Heh Heh...Hiccup! Oh, are you a stranger here? Nice to meet ya, buddy! So how's your trip?";
 	mes "This was predestined that you and I meet at this time, I will tell you what, Hiccup. It is I who just heard from the Pub, you know..?";
 	next;
