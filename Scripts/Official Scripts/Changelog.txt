@@ -9,6 +9,8 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.004
 ----------------------------------------------------------------------------------------------------
+- Mob/dungeon/mag_dun.txt - Updated, reorganised Magma Dungeon Monster Spawns. [Muad_Dib]
+- Mob/dungeon/prt_maze_dun.txt - Updated, reorganised Prontera Maze Dungeon Monster Spawns. [Muad_Dib]
 - npc\npc_kafra_corp.txt - file added. [nestor_zulueta]
 - Shop\Gonryun.txt - Added Japanese Athena shops. [Tsusai]
 - Quest\Quest_skill\Berserk.txt - fixed header. [nestor_zulueta]
@@ -27,8 +29,8 @@
 - Event\Event_Making.txt - change grampa location. [nestor_zulueta]
 - Town\Town_Alberta.txt - fixed npc id of phina and added random message. [nestor_zulueta]
 - Warp\towns\Alberta.txt - fixed warp linking to young man and grampa. [nestor_zulueta]
-- Mob\field\moc_fild.txt - Updated, reorganised Morocc Fields. Monster Spawns. [Muad_Dib]
-- Mob\field\nif_fild.txt - added Niflheim Fields Monster Spawns. [Muad_Dib]
+- Mob\field\moc_fild.txt - Updated, reorganised Morocc Fields Monster Spawns. [Muad_Dib]
+- Mob\field\nif_fild.txt - added Niflheim Fields Monster Spawns [Muad_Dib]
 - Mob\field\um_fild.txt - Updated, reorganised Umbala Fields Monster Spawns. [Muad_Dib]
 - Mob\field\xmas.txt - Updated, reorganised Lutie Fields Monster Spawns. [Muad_Dib]
 - Mob\field\mjolnir_fild.txt - Updated, reorganised Mount Mjolnir Fields Monster Spawns. [Muad_Dib]
