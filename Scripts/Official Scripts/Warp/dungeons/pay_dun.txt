@@ -5,10 +5,10 @@ pay_dun01.gat,286,25,0	warp	warp0946	2,7,pay_dun02.gat,19,63
 pay_dun02.gat,16,63,0	warp	warp0947	2,7,pay_dun01.gat,283,28
 pay_dun02.gat,137,128,0	warp	warp0948	4,1,pay_dun03.gat,155,159
 pay_dun03.gat,127,62,4	script	warp0949	723,{
-	random @warp 4;
-	check @warp == 0,w1,-;
-	check @warp == 1,w2,-;
-	check @warp == 2,w3,w4;
+	random @warp,100;
+	check @warp <= 25,w1,-;
+	check @warp <= 50,w2,-;
+	check @warp <= 75,w3,w4;
 w1:
 	warp "pay_dun04",201,204;
 	return;

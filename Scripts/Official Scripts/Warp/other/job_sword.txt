@@ -41,7 +41,7 @@ Swordwarp1-1:
 	   warp "sword_1-1",215,244;
 }
 
-\\sword_2-1.gat,193,207,0 script "random" 45,{
+//sword_2-1.gat,193,207,0 script "random" 45,{
 	      random @warp,1;
 		check @warp = 0,Swordwarp2,-;
 		check @warp = 1,Swordwarp2-2,-;

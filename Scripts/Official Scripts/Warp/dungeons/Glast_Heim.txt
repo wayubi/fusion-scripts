@@ -36,11 +36,11 @@ gl_knt02.gat,289,138,0	warp	glast0335	1,1,gl_knt01.gat,292,144
 gl_prison1.gat,62,187,0	warp	glast0336	1,1,gl_sew01.gat,258,255
 gl_prison1.gat,150,10,0	warp	glast0337	1,1,gl_prison.gat,149,178
 gl_prison.gat,149,183,0	warp	glast0338	1,1,gl_prison1.gat,150,14
-gl_prison.gat,10,70,4	script	""	721,{
-	random @warp,2;
-		check @warp = 0,w1,-;
-		check @warp = 1,w2,-;
-		check @warp = 2,w3,-;
+gl_prison.gat,10,70,4	script	""	723,{
+	random @warp,100;
+		check @warp <= 25,w1,-;
+		check @warp <= 50,w2,-;
+		check @warp <= 75,w3,-;
 			warp "gl_cas01",163,193; 
 			close;
 			w1:

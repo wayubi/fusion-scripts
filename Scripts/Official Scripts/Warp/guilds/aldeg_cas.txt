@@ -69,10 +69,10 @@ aldeg_cas04.gat,108,210,0	warp	warp1858	1,1,aldeg_cas04.gat,186,92
 aldeg_cas04.gat,132,209,0	warp	warp1859a	1,1,aldeg_cas04.gat,50,129
 aldeg_cas04.gat,17,196,0	warp	warp1860	1,1,aldeg_cas04.gat,132,228
 aldeg_cas04.gat,132,231,4	script	aldg408r	723,{
-	random @warp 4;
-	check @warp = 0,w1,-;
-	check @warp = 1,w2,-;
-	check @warp = 2,w3,w4;
+	random @warp,100;
+	check @warp <= 25,w1,-;
+	check @warp <= 50,w2,-;
+	check @warp <= 75,w3,w4;
 w1:
 	warp "aldeg_cas04",170,100;
 	return;

@@ -74,10 +74,11 @@ yuno_in02.gat,82,14,0	warp	junowarp063	1,1,yuno_in05.gat,192,194
 yuno_in05.gat,196,194,0	warp	junowarp064	1,1,yuno_in02.gat,85,14
 yuno_in05.gat,31,167,0	warp	junowarp065	1,1,yuno_in05.gat,50,85
 yuno_in05.gat,50,88,0	warp	junowarp066	1,1,yuno_in02.gat,85,14
+
 yuno_in05.gat,196,102,0	script	"random"	723,{
-	random @rdmwarp_yuno,3;
-	check @rdmwarp_yuno = 0,L1,-;
-	check @rdmwarp_yuno = 1,L2,-;
+	random @rdmwarp_yuno,100;
+	check @rdmwarp_yuno <= 33,L1,-;
+	check @rdmwarp_yuno <= 66,L2,-;
 		warp "yuno_in05",169,102;
 L1:
 		warp "yuno_in05",128,82;
@@ -85,9 +86,9 @@ L2:
 		warp "yuno_in05",156,141;
 }
 yuno_in05.gat,181,116,0	script	"random"	723,{
-	random @rdmwarp_yuno,3;
-	check @rdmwarp_yuno = 0,L1,-;
-	check @rdmwarp_yuno = 1,L2,-;
+	random @rdmwarp_yuno,100;
+	check @rdmwarp_yuno <= 33,L1,-;
+	check @rdmwarp_yuno <= 66,L2,-;
 		warp "yuno_in05",181,94;
 L1:
 		warp "yuno_in05",176,13;
@@ -95,23 +96,23 @@ L2:
 		warp "yuno_in05",136,75;
 }
 yuno_in05.gat,165,102,0	script	"random"	723,{
-	random @rdmwarp_yuno,2;
-	check @rdmwarp_yuno = 0,L1,-;
+	random @rdmwarp_yuno,100;
+	check @rdmwarp_yuno < 50,L1,-;
 		warp "yuno_in05",192,102;
 L1:
 		warp "yuno_in05",145,82;
 }
 yuno_in05.gat,181,91,0	script	"random"	723,{
-	random @rdmwarp_yuno,2;
-	check @rdmwarp_yuno = 0,L1,-;
+	random @rdmwarp_yuno,100;
+	check @rdmwarp_yuno < 50,L1,-;
 		warp "yuno_in05",181,112;
 L1:
 		warp "yuno_in05",176,48;
 }
 yuno_in05.gat,148,82,0	script	"random"	723,{
-	random @rdmwarp_yuno,3;
-	check @rdmwarp_yuno = 0,L1,-;
-	check @rdmwarp_yuno = 1,L2,-;
+	random @rdmwarp_yuno,100;
+	check @rdmwarp_yuno <= 33,L1,-;
+	check @rdmwarp_yuno <= 66,L2,-;
 		warp "yuno_in05",169,102;
 L1:
 		warp "yuno_in05",128,82;
@@ -119,16 +120,16 @@ L2:
 		warp "yuno_in05",156,141;
 }
 yuno_in05.gat,125,82,0	script	"random"	723,{
-	random @rdmwarp_yuno,2;
-	check @rdmwarp_yuno = 0,L1,-;
+	random @rdmwarp_yuno,100;
+	check @rdmwarp_yuno < 50,L1,-;
 		warp "yuno_in05",192,102;
 L1:
 		warp "yuno_in05",145,82;
 }
 yuno_in05.gat,136,71,0	script	"random"	723,{
-	random @rdmwarp_yuno,3;
-	check @rdmwarp_yuno = 0,L1,-;
-	check @rdmwarp_yuno = 1,L2,-;
+	random @rdmwarp_yuno,100;
+	check @rdmwarp_yuno <= 33,L1,-;
+	check @rdmwarp_yuno <= 66,L2,-;
 		warp "yuno_in05",181,112;
 L1:
 		warp "yuno_in05",16,185;
@@ -136,9 +137,9 @@ L2:
 		warp "yuno_in05",176,48;
 }
 yuno_in05.gat,16,188,0	script	"random"	723,{
-	random @rdmwarp_yuno,3;
-	check @rdmwarp_yuno = 0,L1,-;
-	check @rdmwarp_yuno = 1,L2,-;
+	random @rdmwarp_yuno,100;
+	check @rdmwarp_yuno <= 33,L1,-;
+	check @rdmwarp_yuno <= 66,L2,-;
 		warp "yuno_in05",181,94;
 L1:
 		warp "yuno_in05",176,13;
@@ -146,16 +147,16 @@ L2:
 		warp "yuno_in05",136,75;
 }
 yuno_in05.gat,176,9,0	script	"random"	723,{
-	random @rdmwarp_yuno,2;
-	check @rdmwarp_yuno = 0,L1,-;
+	random @rdmwarp_yuno,100;
+	check @rdmwarp_yuno < 50,L1,-;
 		warp "yuno_in05",181,112;
 L1:
 		warp "yuno_in05",176,48;
 }
 yuno_in05.gat,176,52,0	script	"random"	723,{
-	random @rdmwarp_yuno,3;
-	check @rdmwarp_yuno = 0,L1,-;
-	check @rdmwarp_yuno = 1,L2,-;
+	random @rdmwarp_yuno,100;
+	check @rdmwarp_yuno <= 33,L1,-;
+	check @rdmwarp_yuno <= 66,L2,-;
 		warp "yuno_in05",181,94;
 L1:
 		warp "yuno_in05",176,13;
@@ -163,9 +164,9 @@ L2:
 		warp "yuno_in05",136,75;
 }
 yuno_in05.gat,40,178,0	script	"random"	723,{
-	random @rdmwarp_yuno,3;
-	check @rdmwarp_yuno = 0,L1,-;
-	check @rdmwarp_yuno = 1,L2,-;
+	random @rdmwarp_yuno,100;
+	check @rdmwarp_yuno <= 33,L1,-;
+	check @rdmwarp_yuno <= 66,L2,-;
 		warp "yuno_in05",181,94;
 L1:
 		warp "yuno_in05",176,13;
@@ -173,9 +174,9 @@ L2:
 		warp "yuno_in05",136,75;
 }
 yuno_in05.gat,47,186,0	script	"random"	723,{
-	random @rdmwarp_yuno,3;
-	check @rdmwarp_yuno = 0,L1,-;
-	check @rdmwarp_yuno = 1,L2,-;
+	random @rdmwarp_yuno,100;
+	check @rdmwarp_yuno <= 33,L1,-;
+	check @rdmwarp_yuno <= 66,L2,-;
 		warp "yuno_in05",181,94;
 L1:
 		warp "yuno_in05",176,13;

@@ -7,9 +7,9 @@ c_tower2.gat,273,26,0	warp	clt005	1,1,c_tower1.gat,235,223
 //random 2-1
 //warp clt006r
 c_tower2.gat,13,288,4	script	""	723,{
-	random @warp 3;
-	check @warp == 0,w1,-;
-	check @warp == 1,w2,w3;
+	random @warp,100;
+	check @warp <= 33,w1,-;
+	check @warp <= 66,w2,w3;
 w1:
 	warp "c_tower2",13,282;
 	return;
@@ -23,9 +23,9 @@ w3:
 //random 2-2
 //warp clt007r
 c_tower2.gat,233,267,4	script	""	723,{
-	random @warp 3;
-	check @warp == 0,w1,-;
-	check @warp == 1,w2,w3;
+	random @warp,100;
+	check @warp <= 33,w1,-;
+	check @warp <= 66,w2,w3;
 	w1:
 		warp "c_tower2",288,267;
 		return;
@@ -48,8 +48,8 @@ c_tower3.gat,146,8,0	warp	clt013	1,1,c_tower1.gat,235,223
 //random3-1
 //warp clt014r
 c_tower3.gat,163,252,4	script	""	723,{
-	random @warp 2;
-	check @warp == 0,w1,w2;
+	random @warp,50;
+	check @warp <= 25,w1,w2;
 w1:
 	warp "c_tower3",168,252;
 	return;
@@ -60,9 +60,9 @@ w2:
 //random3-2
 //warp clt015r
 c_tower3.gat,240,7,4	script	""	723,{
-	random @warp 3;
-	check @warp == 0,w1,-;
-	check @warp == 1,w2,w3;
+	random @warp,100;
+	check @warp <= 33,w1,-;
+	check @warp <= 66,w2,w3;
 w1:
 	warp "c_tower2",13,282;
 	return;
@@ -76,9 +76,9 @@ w3:
 //random3-3
 //warp clt016r
 c_tower3.gat,252,24,4	script	""	723,{
-	random @warp 3;
-	check @warp == 0,w1,-;
-	check @warp == 1,w2,w3;
+	random @warp,100;
+	check @warp <= 33,w1,-;
+	check @warp <= 66,w2,w3;
 w1:
 	warp "c_tower2",228,267;
 	return;
@@ -102,10 +102,10 @@ c_tower4.gat,204,57,0	warp	clt026	1,1,c_tower4.gat,65,77
 //random4-1
 //warp clt027r
 c_tower4.gat,75,156,4	script	""	723,{
-	random @warp 4;
-	check @warp == 0,w1,-;
-	check @warp == 1,w2,-;
-	check @warp == 2,w3,w4
+	random @warp,100;
+	check @warp <= 25,w1,-;
+	check @warp <= 50,w2,-;
+	check @warp <= 75,w3,w4
 w1:
 	warp "c_tower3",168,252;
 	return;
@@ -122,10 +122,10 @@ w4:
 //random4-2
 //warp clt028r
 c_tower4.gat,68,79,4	script	""	723,{
-	random @warp 4;
-	check @warp == 0,w1,-;
-	check @warp == 1,w2,-;
-	check @warp == 2,w3,w4
+	random @warp,100;
+	check @warp <= 25,w1,-;
+	check @warp <= 50,w2,-;
+	check @warp <= 75,w3,w4
 w1:
 	warp "c_tower2",13,282;
 	return;
@@ -142,10 +142,10 @@ w4:
 //random4-3
 //warp clt029r
 c_tower4.gat,142,151,4	script	""	723,{
-	random @warp 4;
-	check @warp == 0,w1,-;
-	check @warp == 1,w2,-;
-	check @warp == 2,w3,w4
+	random @warp,100;
+	check @warp <= 25,w1,-;
+	check @warp <= 50,w2,-;
+	check @warp <= 75,w3,w4
 w1:
 	warp "c_tower3",168,252;
 	return;
@@ -162,10 +162,10 @@ w4:
 //random4-4
 //warp clt030r
 c_tower4.gat,151,96,4	script	""	723,{
-	random @warp 4;
-	check @warp == 0,w1,-;
-	check @warp == 1,w2,-;
-	check @warp == 2,w3,w4
+	random @warp,100;
+	check @warp <= 25,w1,-;
+	check @warp <= 50,w2,-;
+	check @warp <= 75,w3,w4
 w1:
 	warp "c_tower2",228,267;
 	return;
@@ -182,10 +182,10 @@ w4:
 //random4-5
 //warp clt031r
 c_tower4.gat,189,40,4	script	""	723,{
-	random @warp 4;
-	check @warp == 0,w1,-;
-	check @warp == 1,w2,-;
-	check @warp == 2,w3,w4
+	random @warp,100;
+	check @warp <= 25,w1,-;
+	check @warp <= 50,w2,-;
+	check @warp <= 75,w3,w4
 w1:
 	warp "c_tower2",228,267;
 	return;
@@ -209,8 +209,8 @@ alde_dun02.gat,187,234,0	warp	ald007	2,2,c_tower3.gat,65,147
 //randomB2
 //warp clt008r
 alde_dun02.gat,267,41,4	script	""	723,{
-	random @warp 1;
-	check @warp == 0,w1,w2;
+	random @warp,100;
+	check @warp < 50,w1,w2;
 w1:
 	warp "c_tower3",168,252;
 	return;
@@ -227,9 +227,9 @@ alde_dun03.gat,276,48,0	warp	ald012	2,2,c_tower1.gat,235,223
 //randomB3-1
 //warp clt014r
 alde_dun03.gat,130,125,4	script	""	723,{
-	random @warp 2;
-	check @warp == 0,w1,-;
-	check @warp == 1,w2,w3;
+	random @warp,100;
+	check @warp <= 33,w1,-;
+	check @warp <= 66,w2,w3;
 w1:
 	warp "c_tower2",228,267;
 	return;
@@ -243,9 +243,9 @@ w3:
 //random3-2
 //warp clt015r
 alde_dun03.gat,171,127,4	script	""	723,{
-	random @warp 2;
-	check @warp == 0,w1,-;
-	check @warp == 1,w2,w3;
+	random @warp,100;
+	check @warp <= 33,w1,-;
+	check @warp <= 66,w2,w3;
 w1:
 	warp "c_tower2",13,282;
 	return;
@@ -264,10 +264,10 @@ alde_dun04.gat,208,58,0	warp	aldd20	2,2,alde_dun04.gat,268,74
 alde_dun04.gat,272,74,0	warp	aldd021	2,2,alde_dun04.gat,204,62
 //warp clt022r
 alde_dun04.gat,80,34,4	script	""	723,{
-	random @warp 2;
-	check @warp == 0,w1,-;
-	check @warp == 1,w2,-;
-	check @warp == 2,w3,w4;
+	random @warp,100;
+	check @warp <= 25,w1,-;
+	check @warp <= 50,w2,-;
+	check @warp <= 75,w3,w4
 w1:
 	warp "c_tower2",13,282;
 	return;
