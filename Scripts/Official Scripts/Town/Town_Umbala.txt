@@ -6,12 +6,12 @@
 //
 // Umbala Town - Non Player Character Locations
 //
-// - Umbala Healer -> yuno: 159,207
+// - Umbala Healer -> um_in: 39,125
 //   Heal Wounds free?
 //
 //========================================================================================
 
-um_in.gat,39,125,4	script	"Umbala Healer"	71,{
+um_in.gat,39,125,4 script "Umbala Healer" 71,{
 	mes "[Umbala Healer]";
 	mes "Welcome. Do you need healing?";
 	next;
