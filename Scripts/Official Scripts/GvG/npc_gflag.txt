@@ -101,7 +101,7 @@ L_START_2:
 	mes "The brave soldiers...";
 	mes "Would you like to go back?";
 	next;
-	menu "Go back to guild base.",L_MENU_1,"Cancle",-;
+	menu "Go back to guild base.",L_MENU_1,"Cancel",-;
 	close;
 	L_MENU_1:
 		warp "prtg_cas01",96,173;
@@ -139,7 +139,7 @@ L_START_2:
 	mes "The brave soldiers...";
 	mes "Would you like to go back?";
 	next;
-	menu "Go back to guild base.",L_MENU_1,"Cancle",-;
+	menu "Go back to guild base.",L_MENU_1,"Cancel",-;
 	close;
 	L_MENU_1:
 		warp "prtg_cas02",71,36;
@@ -177,7 +177,7 @@ L_START_2:
 	mes "The brave soldiers...";
 	mes "Would you like to go back?";
 	next;
-	menu "Go back to guild base.",L_MENU_1,"Cancle",-;
+	menu "Go back to guild base.",L_MENU_1,"Cancel",-;
 	close;
 	L_MENU_1:
 		warp "prtg_cas03",181,215;
@@ -215,7 +215,7 @@ L_START_2:
 	mes "The brave soldiers...";
 	mes "Would you like to go back?";
 	next;
-	menu "Go back to guild base.",L_MENU_1,"Cancle",-;
+	menu "Go back to guild base.",L_MENU_1,"Cancel",-;
 	close;
 	L_MENU_1:
 		warp "prtg_cas04",258,247;
@@ -253,7 +253,7 @@ L_START_2:
 	mes "The brave soldiers...";
 	mes "Would you like to go back?";
 	next;
-	menu "Go back to guild base.",L_MENU_1,"Cancle",-;
+	menu "Go back to guild base.",L_MENU_1,"Cancel",-;
 	close;
 	L_MENU_1:
 		warp "prtg_cas05",52,41;
@@ -292,7 +292,7 @@ L_START_2:
 	mes "The brave soldiers...";
 	mes "Would you like to go back?";
 	next;
-	menu "Go back to guild base.",L_MENU_1,"Cancle",-;
+	menu "Go back to guild base.",L_MENU_1,"Cancel",-;
 	close;
 	L_MENU_1:
 		warp "payg_cas01",212,108;
@@ -330,7 +330,7 @@ L_START_2:
 	mes "The brave soldiers...";
 	mes "Would you like to go back?";
 	next;
-	menu "Go back to guild base.",L_MENU_1,"Cancle",-;
+	menu "Go back to guild base.",L_MENU_1,"Cancel",-;
 	close;
 	L_MENU_1:
 		warp "payg_cas02",22,275;
@@ -368,7 +368,7 @@ L_START_2:
 	mes "The brave soldiers...";
 	mes "Would you like to go back?";
 	next;
-	menu "Go back to guild base.",L_MENU_1,"Cancle",-;
+	menu "Go back to guild base.",L_MENU_1,"Cancel",-;
 	close;
 	L_MENU_1:
 		warp "payg_cas03",9,263;
@@ -406,7 +406,7 @@ L_START_2:
 	mes "The brave soldiers...";
 	mes "Would you like to go back?";
 	next;
-	menu "Go back to guild base.",L_MENU_1,"Cancle",-;
+	menu "Go back to guild base.",L_MENU_1,"Cancel",-;
 	close;
 	L_MENU_1:
 		warp "payg_cas04",40,235;
@@ -444,7 +444,7 @@ L_START_2:
 	mes "The brave soldiers...";
 	mes "Would you like to go back?";
 	next;
-	menu "Go back to guild base.",L_MENU_1,"Cancle",-;
+	menu "Go back to guild base.",L_MENU_1,"Cancel",-;
 	close;
 	L_MENU_1:
 		warp "payg_cas05",276,227;
@@ -483,7 +483,7 @@ L_START_2:
 	mes "The brave soldiers...";
 	mes "Would you like to go back?";
 	next;
-	menu "Go back to guild base.",L_MENU_1,"Cancle",-;
+	menu "Go back to guild base.",L_MENU_1,"Cancel",-;
 	close;
 	L_MENU_1:
 		warp "aldeg_cas01",218,170;
@@ -521,7 +521,7 @@ L_START_2:
 	mes "The brave soldiers...";
 	mes "Would you like to go back?";
 	next;
-	menu "Go back to guild base.",L_MENU_1,"Cancle",-;
+	menu "Go back to guild base.",L_MENU_1,"Cancel",-;
 	close;
 	L_MENU_1:
 		warp "aldeg_cas02",84,74;
@@ -559,7 +559,7 @@ L_START_2:
 	mes "The brave soldiers...";
 	mes "Would you like to go back?";
 	next;
-	menu "Go back to guild base.",L_MENU_1,"Cancle",-;
+	menu "Go back to guild base.",L_MENU_1,"Cancel",-;
 	close;
 	L_MENU_1:
 		warp "aldeg_cas03",118,76;
@@ -597,7 +597,7 @@ L_START_2:
 	mes "The brave soldiers...";
 	mes "Would you like to go back?";
 	next;
-	menu "Go back to guild base.",L_MENU_1,"Cancle",-;
+	menu "Go back to guild base.",L_MENU_1,"Cancel",-;
 	close;
 	L_MENU_1:
 		warp "aldeg_cas04",45,88;
@@ -635,7 +635,7 @@ L_START_2:
 	mes "The brave soldiers...";
 	mes "Would you like to go back?";
 	next;
-	menu "Go back to guild base.",L_MENU_1,"Cancle",-;
+	menu "Go back to guild base.",L_MENU_1,"Cancel",-;
 	close;
 	L_MENU_1:
 		warp "aldeg_cas05",31,190;
@@ -673,7 +673,7 @@ L_START_2:
 	mes "The brave soldiers...";
 	mes "Would you like to go back?";
 	next;
-	menu "Go back to guild base.",L_MENU_1,"Cancle",-;
+	menu "Go back to guild base.",L_MENU_1,"Cancel",-;
 	close;
 	L_MENU_1:
 		warp "gefg_cas01",83,47;
@@ -711,7 +711,7 @@ L_START_2:
 	mes "The brave soldiers...";
 	mes "Would you like to go back?";
 	next;
-	menu "Go back to guild base.",L_MENU_1,"Cancle",-;
+	menu "Go back to guild base.",L_MENU_1,"Cancel",-;
 	close;
 	L_MENU_1:
 		warp "gefg_cas02",23,66;
@@ -749,7 +749,7 @@ L_START_2:
 	mes "The brave soldiers...";
 	mes "Would you like to go back?";
 	next;
-	menu "Go back to guild base.",L_MENU_1,"Cancle",-;
+	menu "Go back to guild base.",L_MENU_1,"Cancel",-;
 	close;
 	L_MENU_1:
 		warp "gefg_cas03",116,89;
@@ -787,7 +787,7 @@ L_START_2:
 	mes "The brave soldiers...";
 	mes "Would you like to go back?";
 	next;
-	menu "Go back to guild base.",L_MENU_1,"Cancle",-;
+	menu "Go back to guild base.",L_MENU_1,"Cancel",-;
 	close;
 	L_MENU_1:
 		warp "gefg_cas04",59,70;
@@ -825,7 +825,7 @@ L_START_2:
 	mes "The brave soldiers...";
 	mes "Would you like to go back?";
 	next;
-	menu "Go back to guild base.",L_MENU_1,"Cancle",-;
+	menu "Go back to guild base.",L_MENU_1,"Cancel",-;
 	close;
 	L_MENU_1:
 		warp "gefg_cas05",61,52;
