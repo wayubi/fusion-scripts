@@ -1,6 +1,7 @@
 --------------------------------------------------------------------------------
  Fusion 1.213 - August 29th, 2004
 --------------------------------------------------------------------------------
+- 10-05-04: Mob\dungeon\prt_sewb_dun.txt - GTB update. [Tsusai]
 - 09-25-04: Mob\dungeon\gld_dun.txt - Fixed DoppelGanger spawn. [Tsusai]
 - 09-21-04: Town\Town_Jawaii.txt - Added English jawaii. [Muad_Dib]
 - 09-21-04: Town\Town_Guide.txt - Added English Niflheim guide. [Muad_Dib]

@@ -49,7 +49,7 @@ prt_sewb4.gat,0,0,0,0	monster	"Thief Bug Egg"	1048,40,0,0,0
 prt_sewb4.gat,0,0,0,0	monster	"Thief Bug"		1051,60,0,0,0
 prt_sewb4.gat,0,0,0,0	monster	"Thief Bug"		1053,60,0,0,0
 prt_sewb4.gat,0,0,0,0	monster	"Male Thief Bug"	1054,60,0,0,0
-prt_sewb4.gat,0,0,0,0	monster	"Golden Thieg Bug" 1086,1,3600000,7200000,0
+prt_sewb4.gat,0,0,0,0	monster	"Golden Thief Bug" 1086,1,3600000,7200000,0
 prt_sewb4.gat,0,0,0,0	monster	"Drainliar"		1111,3,0,0,0
 prt_sewb4.gat,0,0,0,0	monster	"Cramp"		1209,3,0,0,0
 
