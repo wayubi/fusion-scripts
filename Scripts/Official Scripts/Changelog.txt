@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.002
 ----------------------------------------------------------------------------------------------------
+- Event\Event_Dye.txt - Fixed missing " in npc names and header. [mudvayne]
 - Shop\Shop.txt - Moved to new filename system. [mudvayne]
 - Event\ - Removed Event_Card-Seller.txt and Event_NewHatsX.txt and moved to Archive. [mudvayne]
 - Event\Event_Making.txt - Added Audi and Titicupe, 8 new quest hat items. [mudvayne]

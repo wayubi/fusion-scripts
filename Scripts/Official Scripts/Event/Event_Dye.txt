@@ -1,10 +1,35 @@
-//----------------------------------------------------------------------------------------
-// Hair Dye Event - From Weiss, translated by Ziganow, Bug Fixes by AlexKreuz [Izlude.Net]
-// eWeiss Project 2003 - http://weiss.kittyloaf.net
-//----------------------------------------------------------------------------------------
+//========================================================================================
+// »» The Fusion Project ««
+// Copyright (c) 2004, Cobax Information Systems
+// http://fusion.cobax.net/
+// ---------------------------------------------------------------------------------------
+//
+// Dye Event - Non Player Character Locations
+//
+// - Ruitsu -> alberta_in: 133,55
+//   Need description.
+//
+// - Auru day phon -> geffen: 184,114
+//   Need description.
+//
+// - Morugen Stain -> geffen_in: 141,140
+//   Need description.
+//
+// - Dairen -> prontera: 78,150
+//   Need description.
+//
+// - Zabadorihan -> morocc_in: 146,99
+//   Need description.
+//
+// - Jineda inlay full -> prt_in.gat: 284,168
+//   Need description.
+//
+// - Yobichi -> prt_in.gat: 243,168
+//   Need description.
+//
+//========================================================================================
 
-
-alberta_in.gat,133,55,3	script	RUITSU	84,{
+alberta_in.gat,133,55,3	script	"Ruitsu"	84,{
 		check MOLGENSTAIN == 2,-,L_START_1;
 			mes "[Merchant RUITSU]";
 			mes "Mr. ...";
@@ -91,7 +116,7 @@ alberta_in.gat,133,55,3	script	RUITSU	84,{
 		menu "Talk",L_MENU_1_1,"Leave alone",L_MENU_1_3;
 }
 
-geffen.gat,184,114,6	script	"AURU day phon"	82,{
+geffen.gat,184,114,6	script	"Auru day phon"	82,{
 		check MOLGENSTAIN == 2,-,L_START_2;
 			mes "[Geffen residents   AURU day phon]";
 			mes "Did fate lead us once again? It was waiting for you to come.";
@@ -145,7 +170,7 @@ geffen.gat,184,114,6	script	"AURU day phon"	82,{
 			close;
 }
 
-geffen_in.gat,141,140,3	script	"MORUGEN Stain"	121,{
+geffen_in.gat,141,140,3	script	"Morugen Stain"	121,{
 		check MOLGENSTAIN == 3,-,L_START_3;
 		mes "[Chemist   MORUGEN Stein]";
 		mes "HIHIHIHI .... A way is just . HIHIHIHI.... HIHIHIHIHITSU";
@@ -311,7 +336,7 @@ geffen_in.gat,141,140,3	script	"MORUGEN Stain"	121,{
 		close;
 }
 
-prontera.gat,78,150,3	script	Dairen	90,{
+prontera.gat,78,150,3	script	"Dairen"	90,{
 		mes "[Maiden of a village   Dairen]";
 		mes "such ... these days -- an open space -- people -- many -- double -- it is coarse";
 		mes "What -- this dust - being dirty ... isn't all it a good reason just because it is a capital?";
@@ -332,7 +357,7 @@ prontera.gat,78,150,3	script	Dairen	90,{
 			close;
 }
 
-morocc_in.gat,146,99,3	script	Zabadorihan	58,{
+morocc_in.gat,146,99,3	script	"Zabadorihan"	58,{
 		mes "[Zabadorihan]";
 		mes " ... the weather is true -- it is hot . -- such weather   To making dye, it is tight.";
 		next;
@@ -656,7 +681,7 @@ prt_in.gat,284,168,3	script	"Jineda inlay full"	55,{
 			close;
 }
 
-prt_in.gat,243,168,4	script	Yobichi	91,{
+prt_in.gat,243,168,4	script	"Yobichi"	91,{
  	mes "[Yobobichi]";
 	check Gender == 1,-,L_SUB_1;
 		mes "Welcome.";
