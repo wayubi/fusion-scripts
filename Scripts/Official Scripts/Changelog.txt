@@ -9,6 +9,9 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.004
 ----------------------------------------------------------------------------------------------------
+- Job\Job2_Knight_quest5.txt - Fixed bad NPC IDs for hidden script loaders. [Tsusai]
+- Quest\quest_arena_test.txt - Fixed bad NPC IDs for hidden script loaders. [Tsusai]
+- GvG\npc_guardiankafra.txt - Fixed bad NPC IDs for hidden script loaders. [Tsusai]
 - Event\Event_Rental.txt - Redid entire script w/ official text and form. [Tsusai]
 - Mob\other\pvp_n.txt - Removed, map no longer exists. [Tsusai]
 - Event\Event_Rental.txt - Modified the Grand Peco Rental NPC. [Tsusai]
