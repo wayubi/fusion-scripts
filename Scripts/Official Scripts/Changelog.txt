@@ -1,7 +1,9 @@
 --------------------------------------------------------------------------------
  Fusion 1.212 - June 30th, 2004
 --------------------------------------------------------------------------------
-- 06-22-04: Warp\Jawaii.txt - Added Jawaii warps. [Muad_Dib]
+- 06-22-04: Job\Job_2-1\Job2_Wizard_MobTest.txt - Created and controls Mob test. [Tsusai]
+- 06-22-04: Job\Job_2-1\Job2_Wizard.txt - Moved mob test. [Tsusai]
+- 06-22-04: Warp\towns\Jawaii.txt - Added Jawaii warps. [Muad_Dib]
 - 06-22-04: Mob\field\nif_fild.txt - Updated Niflheim mon spawns. [Muad_Dib]
 - 06-22-04: Warp\dungeons\lou_dun.txt - - Updated Louyang warps. [Muad_Dib]
 - 06-22-04: Warp\fields\lou_fild.txt - Updated Louyang warps. [Muad_Dib]
