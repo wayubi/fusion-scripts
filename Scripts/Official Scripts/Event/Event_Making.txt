@@ -102,7 +102,6 @@ geffen_in.gat,144,166,4	script	"Blacksmith"	63,{
 		next;
 		menu "Hm.. Not bad. Alright.",L_SUB_1_1,"No thanks. Useless to me.",L_SUB_1_2;
 		L_SUB_1_1:
-			
 			checkitem 999,50,-,L_SUB_1_1_1;
 			check zeny >= 2000,-,L_SUB_1_1_1;
 			mes "[Blacksmith]";

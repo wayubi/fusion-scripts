@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.002
 ----------------------------------------------------------------------------------------------------
+- Event\Event_Making.txt - Corrected accidental script error. - [Tsusai]
 - Event\Event_Making.txt - Corrected grammar and spelling mistakes. [Tsusai]
 - Town\Town_Alberta.txt - Fixed the missing " in npc names. [mudvayne]
 - Quest\Quest_Pet_Food_Quest.txt - Fixed the missing .gat in npc mapname, Fixed page header and cleaned script. [mudvayne]
