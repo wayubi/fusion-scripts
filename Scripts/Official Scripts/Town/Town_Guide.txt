@@ -1018,3 +1018,123 @@ comodo.gat,37,219,4	script	"Papaya"	700,{
 		close;
 }
 
+//Aldebaran Guide
+aldebaran.gat,139,63,4	script	Soldier	105,{
+scriptlabel Guidealdebaran;
+cutin "prt_soldier",2;
+		mes "[Al De Baran Guard]";
+		mes "Welcome to Al de Baran,";
+		mes "We can help you to find Buildings easily,";
+		mes "feel free to inquire at us anytime.";
+		mes "Please Choose a menu `Notice'";
+		mes "if you are a beginner of Ragnarok.";
+		next;
+		mes "[Al De Baran Guard]";
+		mes "Please choose what you wish to do from the menu.";
+		mes "Thank you.";
+	L_START_1:
+		next;
+		menu "View Buildings",L_MENU_1,"Wipe all indications on Mini-Map",L_MENU_2,"Notice",L_MENU_3,"Cancel",L_MENU_4;
+		L_MENU_1:
+			check @COMPASS_CHECK == 0,-,L_MENU_1_ROOT;
+			mes "[Al De Baran Guard]";
+			mes "Please choose a Menu first.";
+			mes "Do you want me to leave indications on the Mini-Map?";
+			next;
+			menu "Yes",-,"No",L_MENU_1_ROOT;
+			set @COMPASS_CHECK = 1;
+		L_MENU_1_ROOT:
+			mes "[Al De Baran Guard]";
+			mes "Please select your destination.";
+		L_SUB_1:
+			next;
+			menu "Kafra Main Office",L_MENU_1_1,"Weapon Shop",L_MENU_1_2,"PUB",L_MENU_1_3,"Item Shop",L_MENU_1_4,"Chemical Academy",L_MENU_1_5,"Cancel",L_cancel;
+			L_MENU_1_1:
+				mes "[Al De Baran Guard]";
+				mes "The Kafra Main Office is";
+				mes "located at the top left of the map.";
+				check @COMPASS_CHECK == 1,-,L_SUB_1;
+				viewpoint 1,56,222,1,0xFF6633;
+				goto L_SUB_1;
+			L_MENU_1_2:
+				mes "[Al De Baran Guard]";
+				mes "The weapon shop is located near ";
+				mes "Kafra Main Office.";
+				mes "Most people go there to buy a";
+				mes "good knife."
+				check @COMPASS_CHECK == 1,-,L_SUB_1;
+				viewpoint 1,72,195,2,0x0000FF;
+				goto L_SUB_1;
+			L_MENU_1_3:
+				mes "[Al De Baran Guard]";
+				mes "The PUB most people go here";
+				mes "to chat or get some useful";
+				mes "items.";
+				check @COMPASS_CHECK == 1,-,L_SUB_1;
+				viewpoint 1,231,107,3,0x00FFFF;
+				goto L_SUB_1;
+			L_MENU_1_4:
+				mes "[Al De Baran Guard]";
+				mes "'Item Shop'";
+				check @COMPASS_CHECK == 1,-,L_SUB_1;
+				viewpoint 1,197,66,4,0x515151;
+				goto L_SUB_1;
+			L_MENU_1_5:
+				mes "[Al De Baran Guard]";
+				mes "'Chemical Academy' is located.";
+				mes "Go there if you want to be a";
+				mes "Alchemist. Located at top right";
+				mes "most of the map can't miss it.";
+				check @COMPASS_CHECK == 1,-,L_SUB_1;
+				viewpoint 1,221,219,5,0x3355FF;
+				goto L_SUB_1;
+			L_cancel:
+				mes "[Al De Baran Guard]";
+				mes "If you want to remove location marks, Please choose 'Wipe all Indications on Mini-Map'.";
+				mes "Thank you.";
+				goto L_START_1;
+		L_MENU_2:
+			mes "[Al De Baran Guard]";
+			mes "All Map indications have been removed";
+			viewpoint 2,56,222,1,0xFF6633;
+			viewpoint 2,72,195,2,0x0000FF;
+			viewpoint 2,231,107,3,0x00FFFF;
+			viewpoint 2,197,66,4,0x515151;
+			viewpoint 2,221,219,5,0x3355FF;
+			set @COMPASS_CHECK = 0;
+			goto L_START_1;
+		L_MENU_3:
+			mes "[Al De Baran Guard]";
+			mes "We altered the";
+			mes "Location Guide into";
+			mes "the Newest Digital Style,";
+			mes "out of the";
+			mes "former Analog One.";
+			next;
+			mes "[Al De Baran Guard]";
+			mes "Don't forget to refer to";
+			mes "the Mini-Map";
+			mes "on the Upper-Right";
+			mes "of your the Screen.";
+			next;
+			mes "[Al De Baran Guard]";
+			mes "If you can't see the Mini-Map,";
+			mes " just use Shortcut 'ctrl+tab'";
+			mes " or Click 'map' button on the Basic Information Window.";
+			next;
+			mes "[Al De Baran Guard]";
+			mes "After that, Click";
+			mes "^3355FF -  ^000000button on the Mini-Map";
+			mes "until whole buildings";
+			mes "are shown on it.";
+			goto L_START_1;
+		L_MENU_4:
+			mes "[Prontera Squad]";
+			mes "Good Bye.";
+			cutin "prt_soldier",255;
+			close;
+}
+
+aldebaran.gat,241,136,4	script	Soldier	105,{
+script Guidealdebaran;
+}

@@ -69,12 +69,6 @@
 // - Town Girl -> aldebaran: 146,124
 //   Say stuff about the Assassin Guild.
 //
-// - Soldier -> aldebaran: 139,63
-//   Aldeberan guide soldier.
-//
-// - Soldier -> aldebaran: 241,136
-//   Aldeberan guide soldier.
-//
 // - Bell Keeper A -> aldebaran: 146,136
 //   Tell players important informations about the clock tower and random warps.
 //
