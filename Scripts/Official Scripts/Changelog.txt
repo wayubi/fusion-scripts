@@ -9,6 +9,16 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.004
 ----------------------------------------------------------------------------------------------------
+- Warp\dungeons\gl_cas.txt - Moved to archive. [Tsusai]
+- Warp\dungeons\gl_church.txt - Moved to archive. [Tsusai]
+- Warp\dungeons\gl_chyard.txt - Moved to archive. [Tsusai]
+- Warp\dungeons\gl_dun.txt - Moved to archive. [Tsusai]
+- Warp\dungeons\gl_in.txt - Moved to archive. [Tsusai]
+- Warp\dungeons\gl_knt.txt - Moved to archive. [Tsusai]
+- Warp\dungeons\gl_prison.txt - Moved to archive. [Tsusai]
+- Warp\dungeons\gl_sew.txt - Moved to archive. [Tsusai]
+- Warp\dungeons\gl_step.txt - Moved to archive. [Tsusai]
+- Warp\dungeons\glast_01.txt - Moved to archive. [Tsusai]
 - Warp\dungeons\Glast_Heim.txt - Combined all separate warp files and renames all warps. [Tsusai]
 - Warp\town\ - Reorganised a few warp scripts. [Muad_Dib]
 - Job\Job2_Alchemist.txt - moved from new to old folder. [Muad_Dib]
