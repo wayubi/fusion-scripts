@@ -9,13 +9,13 @@
 ----------------------------------------------------------------------------------------------------
  Fusion 1.212
 ----------------------------------------------------------------------------------------------------
- - 2004-06-03: Added 550z Prontera Healer script (SPN) - Healers\Cricket-550z_SPN.txt [Yun Qi]
- - 2004-06-03: Added free Prontera Hair Stylist script (ENG) - Hair Stylists\Ashley.txt [Yun Qi]
- - 2004-06-03: Added "Hair Stylists" folder - Scripts\Custom\Hair Stylists [Yun Qi]
- - 2004-06-03: Added free Prontera Healer script (ENG) - Healers\Cricket-free.txt [Yun Qi]
- - 2004-06-03: Added 550z Prontera Healer script (ENG) - Healers\Cricket-550z.txt [Yun Qi]
- - 2004-06-03: Added "Healers" folder - Scripts\Custom\Healers [Yun Qi]
- - 2004-06-03: Added Russian Roulette script (SPN) - Casino Games\Russian_Roulette_SPN.txt [Yun Qi]
- - 2004-06-02: Added Russian Roulette script (ENG) - Casino Games\Russian_Roulette.txt [Yun Qi]
- - 2004-06-02: Added "Casion Games" folder - Scripts\Custom\Casino Games [Yun Qi]
- - 2004-06-02: Added changelog.txt file. [AlexKreuz]
+ - 06-03-04: Added 550z Prontera Healer script (SPN) - Healers\Cricket-550z_SPN.txt [Yun Qi]
+ - 06-03-04: Added free Prontera Hair Stylist script (ENG) - Hair Stylists\Ashley.txt [Yun Qi]
+ - 06-03-04: Added "Hair Stylists" folder - Scripts\Custom\Hair Stylists [Yun Qi]
+ - 06-03-04: Added free Prontera Healer script (ENG) - Healers\Cricket-free.txt [Yun Qi]
+ - 06-03-04: Added 550z Prontera Healer script (ENG) - Healers\Cricket-550z.txt [Yun Qi]
+ - 06-03-04: Added "Healers" folder - Scripts\Custom\Healers [Yun Qi]
+ - 06-03-04: Added Russian Roulette script (SPN) - Casino Games\Russian_Roulette_SPN.txt [Yun Qi]
+ - 06-02-04: Added Russian Roulette script (ENG) - Casino Games\Russian_Roulette.txt [Yun Qi]
+ - 06-02-04: Added "Casion Games" folder - Scripts\Custom\Casino Games [Yun Qi]
+ - 06-02-04: Added changelog.txt file. [AlexKreuz]
