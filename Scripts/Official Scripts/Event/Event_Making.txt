@@ -33,8 +33,8 @@
 // - Grampa -> alberta_in: 59,139
 //   Give information and make Boy's Cap Quest.
 //
-// - Mistic Lady -> payon_in01: 103,79
-//   Give information and make Ear Muf Quest.
+// - Mystic Lady -> payon_in01: 103,79
+//   Give information and make Ear Muff Quest.
 //
 // - Trader -> aldeba_in: 152,166
 //   Give information and make Doctor Band, Feather Bonnet, Phantom of Opera and Sakkat.
