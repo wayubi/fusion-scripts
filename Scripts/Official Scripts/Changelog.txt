@@ -9,6 +9,11 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.004
 ----------------------------------------------------------------------------------------------------
+- Mob/dungeon/lou_dun.txt added Town louYang Dungeon mob based on kro screenshots. [Muad_Dib]
+- Mob/field/lou_fild.txt added Town louYang field mob based on kro screenshots. [Muad_Dib]
+- Town/Town_LouYang.txt - added Town louYang with 2 warpers based on kro screenshots. [Muad_Dib]
+- Town\Town_Kafra.txt - added town LouYang kafra based on kro screenshots. [Muad_Dib]
+- Mob\dungeon\prt_maze_dun.txt - Updated, reorganised Prontera Maze 3rd level Dungeon Monster Spawns . [Muad_Dib]
 - GvG\payg_cas02.txt - Fixed duplicate location script header error. [Tsusai]
 - Quest\Quest_Skill\NPC_Novice_Skill - Turned nametag variable into item. [Tsusai]
 - Mob\dungeon\mag_dun.txt - Updated, reorganised Magma Dungeon Monster Spawns. [Muad_Dib]
