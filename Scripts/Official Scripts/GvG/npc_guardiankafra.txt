@@ -28,10 +28,13 @@
 //   gefg_cas03.gat,125,250
 //   gefg_cas03.gat,89,159
 //   gefg_cas04.gat,24,149
+//  
+//   Updates:
+//    Colus, 20040321: Fixed negative IDs leading to crash.  Don't use -1.
 //
 //========================================================================================
 
-prtg_cas01.gat,95,32,0	script	"CastleCheck"	-1,{
+prtg_cas01.gat,95,32,0	script	"CastleCheck"	32767,{
 OnInit:
 	guildreg "prtg_cas01";
 	check guildid == 0,-,GD0;
@@ -93,7 +96,7 @@ FIN:
 	return;
 }
 
-prtg_cas02.gat,168,18,0	script	"CastleCheck"	-1,{
+prtg_cas02.gat,168,18,0	script	"CastleCheck"	32767,{
 OnInit:
 	guildreg "prtg_cas02";
 	check guildid == 0,-,GD0;
@@ -155,7 +158,7 @@ FIN:
 	return;
 }
 
-prtg_cas03.gat,168,18,0	script	"CastleCheck"	-1,{
+prtg_cas03.gat,168,18,0	script	"CastleCheck"	32767,{
 OnInit:
 	guildreg "prtg_cas03";
 	check guildid == 0,-,GD0;
@@ -217,7 +220,7 @@ FIN:
 	return;
 }
 
-prtg_cas04.gat,86,18,0	script	"CastleCheck"	-1,{
+prtg_cas04.gat,86,18,0	script	"CastleCheck"	32767,{
 OnInit:
 	guildreg "prtg_cas04";
 	check guildid == 0,-,GD0;
@@ -279,7 +282,7 @@ FIN:
 	return;
 }
 
-prtg_cas05.gat,17,238,0	script	"CastleCheck"	-1,{
+prtg_cas05.gat,17,238,0	script	"CastleCheck"	32767,{
 OnInit:
 	guildreg "prtg_cas05";
 	check guildid == 0,-,GD0;
@@ -341,7 +344,7 @@ FIN:
 	return;
 }
 
-aldeg_cas01.gat,34,248,0	script	"CastleCheck"	-1,{
+aldeg_cas01.gat,34,248,0	script	"CastleCheck"	32767,{
 OnInit:
 	guildreg "aldeg_cas01";
 	check guildid == 0,-,GD0;
@@ -403,7 +406,7 @@ FIN:
 	return;
 }
 
-aldeg_cas02.gat,88,163,0	script	"CastleCheck"	-1,{
+aldeg_cas02.gat,88,163,0	script	"CastleCheck"	32767,{
 OnInit:
 	guildreg "aldeg_cas02";
 	check guildid == 0,-,GD0;
@@ -465,7 +468,7 @@ FIN:
 	return;
 }
 
-aldeg_cas03.gat,114,286,0	script	"CastleCheck"	-1,{
+aldeg_cas03.gat,114,286,0	script	"CastleCheck"	32767,{
 OnInit:
 	guildreg "aldeg_cas03";
 	check guildid == 0,-,GD0;
@@ -527,7 +530,7 @@ FIN:
 	return;
 }
 
-aldeg_cas04.gat,149,17,0	script	"CastleCheck"	-1,{
+aldeg_cas04.gat,149,17,0	script	"CastleCheck"	32767,{
 OnInit:
 	guildreg "aldeg_cas04";
 	check guildid == 0,-,GD0;
@@ -589,7 +592,7 @@ FIN:
 	return;
 }
 
-aldeg_cas05.gat,216,103,0	script	"CastleCheck"	-1,{
+aldeg_cas05.gat,216,103,0	script	"CastleCheck"	32767,{
 OnInit:
 	guildreg "aldeg_cas05";
 	check guildid == 0,-,GD0;
@@ -651,7 +654,7 @@ FIN:
 	return;
 }
 
-payg_cas01.gat,215,50,0	script	"CastleCheck"	-1,{
+payg_cas01.gat,215,50,0	script	"CastleCheck"	32767,{
 OnInit:
 	guildreg "payg_cas01";
 	check guildid == 0,-,GD0;
@@ -713,7 +716,7 @@ FIN:
 	return;
 }
 
-payg_cas02.gat,270,55,0	script	"CastleCheck"	-1,{
+payg_cas02.gat,270,55,0	script	"CastleCheck"	32767,{
 OnInit:
 	guildreg "payg_cas02";
 	check guildid == 0,-,GD0;
@@ -775,7 +778,7 @@ FIN:
 	return;
 }
 
-payg_cas03.gat,225,30,0	script	"CastleCheck"	-1,{
+payg_cas03.gat,225,30,0	script	"CastleCheck"	32767,{
 OnInit:
 	guildreg "payg_cas03";
 	check guildid == 0,-,GD0;
@@ -837,7 +840,7 @@ FIN:
 	return;
 }
 
-payg_cas04.gat,250,270,0	script	"CastleCheck"	-1,{
+payg_cas04.gat,250,270,0	script	"CastleCheck"	32767,{
 OnInit:
 	guildreg "payg_cas04";
 	check guildid == 0,-,GD0;
@@ -899,7 +902,7 @@ FIN:
 	return;
 }
 
-payg_cas05.gat,60,230,0	script	"CastleCheck"	-1,{
+payg_cas05.gat,60,230,0	script	"CastleCheck"	32767,{
 OnInit:
 	guildreg "payg_cas05";
 	check guildid == 0,-,GD0;
@@ -962,7 +965,7 @@ FIN:
 }
 
 
-gefg_cas01.gat,34,140,0	script	"GuardianRecaller"	-1,{
+gefg_cas01.gat,34,140,0	script	"GuardianRecaller"	32767,{
 OnInit:
 	guildreg "gefg_cas01";
 	check guildkafra == 0,-,FIN;
@@ -1022,7 +1025,7 @@ FIN:
 	return;
 }
 
-gefg_cas02.gat,70,143,0	script	"GuardianRecaller"	-1,{
+gefg_cas02.gat,70,143,0	script	"GuardianRecaller"	32767,{
 OnInit:
 	guildreg "gefg_cas02";
 	check guildkafra == 0,-,FIN;
@@ -1082,7 +1085,7 @@ FIN:
 	return;
 }
 
-gefg_cas03.gat,60,286,0	script	"GuardianRecaller1"	-1,{
+gefg_cas03.gat,60,286,0	script	"GuardianRecaller1"	32767,{
 OnInit:
 	guildreg "gefg_cas03";
 	check guildkafra == 0,-,FIN;
@@ -1146,7 +1149,7 @@ FIN:
 }
 
 
-gefg_cas03.gat,100,280,0	script	"GuardianRecaller2"	-1,{
+gefg_cas03.gat,100,280,0	script	"GuardianRecaller2"	32767,{
 OnInit:
 	guildreg "gefg_cas03";
 	check guildkafra == 0,-,FIN;
@@ -1209,7 +1212,7 @@ FIN:
 	return;
 }
 
-gefg_cas03.gat,125,250,0	script	"GuardianRecaller2"	-1,{
+gefg_cas03.gat,125,250,0	script	"GuardianRecaller2"	32767,{
 OnInit:
 	guildreg "gefg_cas03";
 	check guildkafra == 0,-,FIN;
@@ -1273,7 +1276,7 @@ FIN:
 }
 
 
-gefg_cas03.gat,89,159,0	script	"GuardianRecaller"	-1,{
+gefg_cas03.gat,89,159,0	script	"GuardianRecaller"	32767,{
 OnInit:
 	guildreg "gefg_cas03";
 	check guildkafra == 0,-,FIN;
@@ -1336,7 +1339,7 @@ FIN:
 	return;
 }
 
-gefg_cas04.gat,24,149,0	script	"CastleCheck"	-1,{
+gefg_cas04.gat,24,149,0	script	"CastleCheck"	32767,{
 OnInit:
 	guildreg "gefg_cas04";
 	check guildid == 0,-,GD0;
@@ -1398,7 +1401,7 @@ FIN:
 	return;
 }
 
-gefg_cas05.gat,11,134,0	script	"CastleCheck1"	-1,{
+gefg_cas05.gat,11,134,0	script	"CastleCheck1"	32767,{
 OnInit:
 	guildreg "gefg_cas05";
 	check guildid == 0,-,GD0;
@@ -1462,7 +1465,7 @@ FIN:
 }
 
 
-gefg_cas05.gat,99,200,0	script	"CastleCheck"	-1,{
+gefg_cas05.gat,99,200,0	script	"CastleCheck"	32767,{
 OnInit:
 	guildreg "gefg_cas05";
 	check guildid == 0,-,GD0;
