@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.003
 ----------------------------------------------------------------------------------------------------
+- Event\Event_Bunny.txt - Copied to Archive
 - Town\Town_Kafra.txt - Corrected Errors [Tsusai]
 - Town\Town_Kafra.txt - Updated remaining warp destinations and prices. [Tsusai]
 - Town\Town_Siglude.txt - Corrected 1% increase. [Tsusai]
