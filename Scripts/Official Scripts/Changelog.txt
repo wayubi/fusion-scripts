@@ -9,6 +9,9 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.005 (Fusion 1.212)
 ----------------------------------------------------------------------------------------------------
+- 06-08-04: Warp\dungeons\ClockTower.txt - Added jAthena version, including missing random warps. [Tsusai]
+- 06-08-04: Warp\dungeons\c_tower.txt - Moved to archive. [Tsusai]
+- 06-08-04: Warp\dungeons\alde_dun.txt - Moved to archive. [Tsusai]
 - 06-08-04: Job\Job_2-2\Job2_Bard.txt - Bard Change Job Quest added. [nestor_zulueta]
 - 06-08-04: Job\ - Organized Job Folder. [nestor_zulueta]
 - 06-08-04: Town\Town_Lutie.txt - Added some variables for bard quest. [nestor_zulueta]
