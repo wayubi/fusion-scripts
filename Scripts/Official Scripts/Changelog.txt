@@ -1,6 +1,7 @@
 --------------------------------------------------------------------------------
  Fusion 1.212 - June 30th, 2004
 --------------------------------------------------------------------------------
+- 06-16-04: Warp\other\job_sword.txt - Fixed Faulty Hidden Warps. [Muad_Dib]
 - 06-15-04: Job\Job_2-1\Job2_Wizard.txt - Meus deus... Uploaded my copy with debug lines on the first mob test. [Tsusai]
 - 06-15-04: Town\Town_Amatsu.txt - Updated and activated npc emotions. [Muad_Dib]
 - 06-15-04: Warp\newbies\new_zone.txt - Updated and now includes server side map entries. [Tsusai]
