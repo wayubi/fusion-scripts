@@ -1,7 +1,7 @@
 ====================================================================================================
  »» The Fusion Project ««
  Copyright (c) 2004, Cobax Information Systems
- http:\\fusion.cobax.net\
+ http://fusion.cobax.net/
 ----------------------------------------------------------------------------------------------------
  Scripts Change Logs
 ====================================================================================================
@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.004
 ----------------------------------------------------------------------------------------------------
+- Town\Town_Kafra.txt - Rolled back nestor's changes. [Tsusai]
 - Shop\Gonryun.txt - Translated the shop names. [Muad_Dib]
 - Town\Town_LouYang.txt - Updated header and a warp coordinate. [Muad_Dib]
 - town\town_kafra.txt - change prices and location of teleport services of all kafra in alberta based on ragnamart [nestor_zulueta]
