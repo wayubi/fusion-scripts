@@ -279,7 +279,7 @@ payon.gat,97,116,4  script	 "Samurai Warper" 	767,{
 	close;
     ALBE:
 	set Zeny - 100;
-	warp aldebaran,142,68;
+	warp alberta,117,56;
 	close;
     IZLU:
 	set Zeny - 100;
@@ -648,7 +648,7 @@ morocc.gat,151,100,5	script "Samurai Warper"		767,{
 	close;
     ALBE:
 	set Zeny - 100;
-	warp aldebaran,142,68;
+	warp alberta,117,56;
 	close;
     COMO:
 	set Zeny - 100;
