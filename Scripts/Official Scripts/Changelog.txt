@@ -2,6 +2,7 @@ asdf
 ----------------------------------------------------------------------------------------------------
 Fusion NPC Pack - 1.002
 ----------------------------------------------------------------------------------------------------
+- Warp\warp.txt - Fixed Prontera Warp Coodrinates For the Empelium Room [Tsusai]
 - GvG\prtg_cas02.txt - Adjusted Prontera Castle Emperium Location and Flags that were supposed to be near it. [Tsusai]
 - GvG\npc_gflag.txt - Corrected Geffen and Aldebaron Flags to looks for coresponding Empelliums. [Tsusai]
 - GvG\prtg_cas02.txt - Corrected Prontera Castle Emperium Location. [AlexKreuz]
