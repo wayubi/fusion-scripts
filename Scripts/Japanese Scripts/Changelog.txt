@@ -1,6 +1,7 @@
 --------------------------------------------------------------------------------
  Fusion 1.212 - June 30th, 2004
 --------------------------------------------------------------------------------
+- 06-20-04: Moved translated npc_job_sage to the translated folder. [Muad_Dib]
 - 06-16-04: Removed translated npc_event_alchemist, I added it as Event_Alchemist.txt. [Muad_Dib]
 - 06-15-04: Removed translated npc_town_amatsu, updated Town_Amatsu with it. [Muad_Dib]
 - 06-15-04: Removed translated npc_town_guide, is already translated. [Muad_Dib]
