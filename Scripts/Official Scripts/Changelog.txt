@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.004
 ----------------------------------------------------------------------------------------------------
+- Town\Town_Amatsu.txt - Changed one part of the text. [Muad_Dib]
 - Town\Town_Kafra.txt - Commented out Umbala Kafra's Teleport. [Tsusai]
 - Changelog.txt - Updated links at the footer. [Tsusai]
 - Town\Town_Kafra.txt - Updated Amatsu Kafras. [Tsusai]

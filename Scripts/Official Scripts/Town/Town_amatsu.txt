@@ -498,10 +498,10 @@ L_MENU_0:
 	goto L_END;
 L_MENU_1:
 	mes "[Kuruchi]";
-	mes "(c)M(c)|,(c)M(c)|,狐狸在跟著我來";
-	mes "原來是(r)陬菄偺W喜歡的東西";
-	mes "豆皮(c)堐悇O我的最愛";
-	mes "一天可以吃上三次啊";
+      mes "Prayer Teacher? The fox is adjoined."; 
+      mes "Because I have a liking for the fox.";
+      mes "Fox noodles are my favourite.";
+      mes "I can even eat them 3 times in one day"; 
 	set event_amatsu = 3;
 	goto L_END;
 L_MENU_2:
