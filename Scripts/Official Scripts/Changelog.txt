@@ -1,6 +1,7 @@
 --------------------------------------------------------------------------------
- Fusion 1.213 - January ???, 2005
+ Fusion 1.213 - January 28th, 2005
 -------------------------------------------------------------------------------- 
+- 01-25-05: Final preparation for 1.213 release. [AlexKreuz]
 - 01-20-05: Mob\field\lou_fild.txt - Changed Louyang mobs. [Muad_Dib]
 - 01-20-05: Mob\dungeon\lou_dun.txt - Changed Louyang mobs. [Muad_Dib]
 - 01-13-05: Shop\Payon.txt - Removed Arrow Quivers shop. [Muad_Dib]
