@@ -1198,7 +1198,7 @@ LumWord:
 	mes "Umbabaumbabaumbaumbabaumba";
 	mes "Fumbaumba.";
 	next;
-	warp "Umbla",217,186;
+	warp "Umbala",217,186;
 	close;
 }
 

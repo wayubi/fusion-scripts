@@ -1,6 +1,7 @@
 --------------------------------------------------------------------------------
  Fusion 1.213 - January ???, 2005
 -------------------------------------------------------------------------------- 
+- 12-31-04: Town\Town_Umbala.txt - Fixed a warp destination. [Tsusai]
 - 12-30-04: Warp\towns\umbala.txt - Corrected my mistake. [Tsusai]
 - 12-30-04: WarpWarp\dungeons\ama_dun.txt - Updated Amatsu warps. [Muad_Dib]
 - 12-30-04: WarpWarp\dungeons\gon_dun.txt - Updated Kunlun warps. [Muad_Dib]
