@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.003
 ----------------------------------------------------------------------------------------------------
+- Warp\other\in_duncer.txt - Added Dancer guild warps. [Tsusai]
 - Job\Job2_Crusader.txt - Added First half of Crusader quest by  KyuubiKitsune. [icbob]
 - Warp\other\alde_alche.txt - Found correct warp portals and added them to a new txt. [Tsusai]
 - Warp\towns\aldebaran.txt - Removed Alchemist warps. [Tsusai]
