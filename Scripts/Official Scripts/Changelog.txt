@@ -1,6 +1,13 @@
 --------------------------------------------------------------------------------
  Fusion 1.213 - August 29th, 2004
 --------------------------------------------------------------------------------
+- 09-12-04: Event\Event_PvP.txt - Ficed a few menu options by addign a , [Muad_Dib
+- 09-12-04: GvG\nguild_###.txt - Added missing ; to close a few lines properly. [Muad_Dib]
+- 09-12-04: GvG\gefg_cas0#.txt - Added missing ; to close a few lines properly. [Muad_Dib]
+- 09-12-04: GvG\aldeg_cas0#.txt - Added missing ; to close a few lines properly. [Muad_Dib]
+- 09-12-04: GvG\payg_cas0#.txt - Added missing ; to close a few lines properly. [Muad_Dib]
+- 09-12-04: GvG\prtg_cas0#.txt - Added missing ; to close a few lines properly. [Muad_Dib]
+- 09-12-04: Town\Town_Jawaii.txt - Added Bartender npc dunno what he says/does yet. [Muad_Dib]
 - 09-10-04: Job\Novice\Job_Novice.txt - Updated payon save and warp coordinates. [Muad_Dib]
 - 09-09-04: Town\Town_Siglude.txt - Added missing Juno metal seller and, added temporarily Repairman npc's. [Muad_Dib]
 - 09-09-04: Quest\Quest_skill\Charged_Arrow.txt - Moved Quest Npc. [Muad_Dib]

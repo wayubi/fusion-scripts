@@ -2945,7 +2945,7 @@ prt_in.gat,52,140,5	script	"PVP Doorman"	83,{
 	mes "if you are curious about PVP Mode.";
 	mes "You can get description and advice.";
 	next;
-        menu "^FF5533PVP Nightmare Mode^000000 'waiting room'",nightmare,"^3355FFPVP Yoyo Mode^000000 'waiting room'",yoyo,"End conversation"pcancel;
+        menu "^FF5533PVP Nightmare Mode^000000 'waiting room'",nightmare,"^3355FFPVP Yoyo Mode^000000 'waiting room'",yoyo,"End conversation",pcancel;
 nightmare:
 	mes "[PVP Doorman]"
 	mes "Nightmare Mode"
@@ -3106,7 +3106,7 @@ payon_in01.gat,6,55,5	script	"PVP Doorman"	83,{
 	mes "if you are curious about PVP Mode.";
 	mes "You can get description and advice.";
 	next;
-        menu "^FF5533PVP Nightmare Mode^000000 'waiting room'",nightmare,"^3355FFPVP Yoyo Mode^000000 'waiting room'",yoyo,"End conversation"pcancel;
+        menu "^FF5533PVP Nightmare Mode^000000 'waiting room'",nightmare,"^3355FFPVP Yoyo Mode^000000 'waiting room'",yoyo,"End conversation",pcancel;
 nightmare:
 	mes "[PVP Doorman]"
 	mes "Nightmare Mode"
@@ -3267,7 +3267,7 @@ geffen_in.gat,67,64,5	script	"PVP Doorman"	83,{
 	mes "if you are curious about PVP Mode.";
 	mes "You can get description and advice.";
 	next;
-        menu "^FF5533PVP Nightmare Mode^000000 'waiting room'",nightmare,"^3355FFPVP Yoyo Mode^000000 'waiting room'",yoyo,"End conversation"pcancel;
+        menu "^FF5533PVP Nightmare Mode^000000 'waiting room'",nightmare,"^3355FFPVP Yoyo Mode^000000 'waiting room'",yoyo,"End conversation",pcancel;
 nightmare:
 	mes "[PVP Doorman]"
 	mes "Nightmare Mode"
@@ -3428,7 +3428,7 @@ morocc_in.gat,144,142,5	script	"PVP Doorman"	83,{
 	mes "if you are curious about PVP Mode.";
 	mes "You can get description and advice.";
 	next;
-        menu "^FF5533PVP Nightmare Mode^000000 'waiting room'",nightmare,"^3355FFPVP Yoyo Mode^000000 'waiting room'",yoyo,"End conversation"pcancel;
+        menu "^FF5533PVP Nightmare Mode^000000 'waiting room'",nightmare,"^3355FFPVP Yoyo Mode^000000 'waiting room'",yoyo,"End conversation",pcancel;
 nightmare:
 	mes "[PVP Doorman]"
 	mes "Nightmare Mode"
@@ -3588,7 +3588,7 @@ alberta_in.gat,58,145,4	script "PVP Doorman" 83,{
 	mes "if you are curious about PVP Mode.";
 	mes "You can get description and advice.";
 	next;
-        menu "^FF5533PVP Nightmare Mode^000000 'waiting room'",nightmare,"^3355FFPVP Yoyo Mode^000000 'waiting room'",yoyo,"End conversation"pcancel;
+        menu "^FF5533PVP Nightmare Mode^000000 'waiting room'",nightmare,"^3355FFPVP Yoyo Mode^000000 'waiting room'",yoyo,"End conversation",pcancel;
 nightmare:
 	mes "[PVP Doorman]"
 	mes "Nightmare Mode"

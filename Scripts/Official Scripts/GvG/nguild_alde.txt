@@ -635,7 +635,7 @@ L_MENU_8-4:
 	goto L_GSTART_1;
 L_GSTART_1:
 	mes "[ Arl Fredo II ]";
-	mes "Would you really like to install the guardian? You need^ff0000 10,000 ^000000zeny to install."
+	mes "Would you really like to install the guardian? You need^ff0000 10,000 ^000000zeny to install.";
 	next;
 	menu "Install",L_MENU_1-5,"Cancel",L_MENU_2-5;
 L_MENU_1-5:

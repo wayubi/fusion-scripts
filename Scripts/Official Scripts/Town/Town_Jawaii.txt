@@ -15,6 +15,9 @@
 // - Dancer -> jawaii_in: 
 //   Eight Dancers that show emotions.
 //
+// - Bartenders -> jawaii_in: 27,124
+//   Don't know what he does or say.
+//
 //========================================================================================
 
 jawaii.gat,235,110,7 script "Sailor" 100,{
@@ -82,5 +85,8 @@ jawaii_in.gat,30,100,4 script "Dancer" 724,{
 On_Emotion30:
 	emotion 30;
 	return;
+}
+
+jawaii_in.gat,27,124,5 script "Bartender" 46,{
 }
 
