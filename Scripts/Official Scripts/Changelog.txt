@@ -1,14 +1,6 @@
-====================================================================================================
- »» The Fusion Project ««
- Copyright (c) 2004, Cobax Information Systems
- http://fusion.cobax.net/
-----------------------------------------------------------------------------------------------------
- Scripts Change Logs
-====================================================================================================
-
-----------------------------------------------------------------------------------------------------
- Fusion NPC Pack - 1.005 (Fusion 1.212)
-----------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+ Fusion 1.212 - June 30th, 2004
+--------------------------------------------------------------------------------
 - 06-08-04: Warp\dungeons\pay_dun.txt - Updated one warp to a random warp. [Tsusai]
 - 06-08-04: Warp\towns\Yuno.txt - changed random warps to sprite id 723 because 45 won't work until OnTouch. [Tsusai]
 - 06-08-04: Event\Event_Bunny.txt - Added other town NPCs but disabled for users to activate. [Tsusai]
@@ -147,9 +139,9 @@
 - Event\Event_Making.txt - fixed cake hat requirements. [Muad_Dib]
 - Job\Job2_Sage.txt - fixed a tag. [Muad_Dib]
 
-----------------------------------------------------------------------------------------------------
- Fusion NPC Pack - 1.004 (Fusion 1.211)
-----------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+ Fusion 1.211 - April 30th, 2004
+--------------------------------------------------------------------------------
 - Mob\dungeon\lou_dun.txt - Edited the spawns. [Muad_Dib]
 - Mob\field\lou_fild.txt - Edited the spawns. [Muad_Dib]
 - Warp\guilds\*_gld.txt - Moved to archive. [Tsusai]
@@ -370,9 +362,9 @@
 - GvG\npc_guardiankafra.txt - Fixed Geffen Castle Guardian and Kafra service bug. [icbob]
 - event\Event_Dye.txt replaced Zabadorihan NPC with Owl,s Java Dullihan NPC. [Muad_Dib]
 
-----------------------------------------------------------------------------------------------------
- Fusion NPC Pack - 1.003 (Fusion 1.210)
-----------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+ Fusion 1.210 - March 13th, 2004
+--------------------------------------------------------------------------------
 - shop\amatsu.txt - Updated Amatsu shops added items updated prices. [Muad_Dib]
 - shop\lutie.txt - Updated Lutie shops added items updated prices. [Muad_Dib]
 - shop\umbala.txt - Updated Umbala shops added items updated prices. [Muad_Dib]
