@@ -235,7 +235,7 @@ gon_in.gat,173,27,2 script "Kuuhao" 774,{
 }
 
 gon_in.gat,165,16,4 script "Drunken Man" 748,{
-//	emotion 19;
+	    emotion 19;
 	mes "[Solbun]";
 	mes "U-uuuuuuuuuuuuuu.";
 	mes "I drank waaaaay too much yesterday...";
@@ -360,7 +360,7 @@ gonryun.gat,119,111,4 script "Chun Onsoku" 89,{
 }
 
 gonryun.gat,100,241,0 script "Strange Dude" 733,{
-//	emotion 9;
+	   emotion 9;
 	mes "[Sanso]";
 	mes "Grumble...";
 	mes "I'm busy!  Don't bother me!";
