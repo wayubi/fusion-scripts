@@ -26,8 +26,8 @@ prontera.gat,164,183,4 script "Faberau" 87,{
 		check Job != 22,-,L_NOJOBS;
 		check Job != 23,-,L_ERRSUPERNOV;
 		check SkillPoint = 0,-,L_SKILLPOINT;
-		check Job > 0,-,L_JOB1stCLASS;
-		check Job > 6,-,L_2ndCLASS;
+		check Job > 0,-,L_JOBNOVICE;
+		check Job > 6,-,L_1STCLASS;
 		check Job > 21,-,L_JOBHIGHNOV;
 		check Job > 24,-,L_HIGH1st;
 		check Job > 30,L_NOMOREJOBS,L_HIGH2ND;
@@ -88,7 +88,7 @@ prontera.gat,164,183,4 script "Faberau" 87,{
 				set Zeny -= 5000,0;
 				jobchange 23;
 				goto L_SETJOBLEVEL;
-	L_2ndCLASS:
+	L_1STCLASS:
 		check JobLevel > 39,-,L_REQJLEVEL;
 		mes "[Faberau]";
 		mes "Ah, I can see you've got more experience. I'll give you right away your options...";
