@@ -175,21 +175,21 @@ loadpay:
 	check @num = 5,c5,-;
 	check @num = 6,c6,-;
 	check @num = 7,c7,-;
-	warp "pvp_y_1-3",69,100;
+	warp "pvp_y_1-3",179,97;
 c0:
-	warp "pvp_y_1-3",30,169;
+	warp "pvp_y_1-3",88,176;
 c1:
 	warp "pvp_y_1-3",111,100;
 c2:
-	warp "pvp_y_1-3",65,157;
+	warp "pvp_y_1-3",95,58;
 c3:
 	warp "pvp_y_1-3",114,156;
 c4:
-	warp "pvp_y_1-3",90,40;
+	warp "pvp_y_1-3",170,165;
 c5:
-	warp "pvp_y_1-3",165,134;
+	warp "pvp_y_1-3",170,220;
 c6:
-	warp "pvp_y_1-3",174,181;
+	warp "pvp_y_1-3",220,210;
 c7:
 	warp "pvp_y_1-3",165,67;
 loadalb:
@@ -348,21 +348,21 @@ loadpay:
 	check @num = 5,c5,-;
 	check @num = 6,c6,-;
 	check @num = 7,c7,-;
-	warp "pvp_y_2-3",69,100;
+	warp "pvp_y_2-3",179,97;
 c0:
-	warp "pvp_y_2-3",30,169;
+	warp "pvp_y_2-3",88,176;
 c1:
 	warp "pvp_y_2-3",111,100;
 c2:
-	warp "pvp_y_2-3",65,157;
+	warp "pvp_y_2-3",95,58;
 c3:
 	warp "pvp_y_2-3",114,156;
 c4:
-	warp "pvp_y_2-3",90,40;
+	warp "pvp_y_2-3",170,165;
 c5:
-	warp "pvp_y_2-3",165,134;
+	warp "pvp_y_2-3",170,220;
 c6:
-	warp "pvp_y_2-3",174,181;
+	warp "pvp_y_2-3",220,210;
 c7:
 	warp "pvp_y_2-3",165,67;
 loadalb:
@@ -521,21 +521,21 @@ loadpay:
 	check @num = 5,c5,-;
 	check @num = 6,c6,-;
 	check @num = 7,c7,-;
-	warp "pvp_y_3-3",69,100;
+	warp "pvp_y_3-3",179,97;
 c0:
-	warp "pvp_y_3-3",30,169;
+	warp "pvp_y_3-3",88,176;
 c1:
 	warp "pvp_y_3-3",111,100;
 c2:
-	warp "pvp_y_3-3",65,157;
+	warp "pvp_y_3-3",95,58;
 c3:
 	warp "pvp_y_3-3",114,156;
 c4:
-	warp "pvp_y_3-3",90,40;
+	warp "pvp_y_3-3",170,165;
 c5:
-	warp "pvp_y_3-3",165,134;
+	warp "pvp_y_3-3",170,220;
 c6:
-	warp "pvp_y_3-3",174,181;
+	warp "pvp_y_3-3",220,210;
 c7:
 	warp "pvp_y_3-3",165,67;
 loadalb:
@@ -694,21 +694,21 @@ loadpay:
 	check @num = 5,c5,-;
 	check @num = 6,c6,-;
 	check @num = 7,c7,-;
-	warp "pvp_y_4-3",69,100;
+	warp "pvp_y_4-3",179,97;
 c0:
-	warp "pvp_y_4-3",30,169;
+	warp "pvp_y_4-3",88,176;
 c1:
 	warp "pvp_y_4-3",111,100;
 c2:
-	warp "pvp_y_4-3",65,157;
+	warp "pvp_y_4-3",95,58;
 c3:
 	warp "pvp_y_4-3",114,156;
 c4:
-	warp "pvp_y_4-3",90,40;
+	warp "pvp_y_4-3",170,165;
 c5:
-	warp "pvp_y_4-3",165,134;
+	warp "pvp_y_4-3",170,220;
 c6:
-	warp "pvp_y_4-3",174,181;
+	warp "pvp_y_4-3",220,210;
 c7:
 	warp "pvp_y_4-3",165,67;
 loadalb:
@@ -867,21 +867,21 @@ loadpay:
 	check @num = 5,c5,-;
 	check @num = 6,c6,-;
 	check @num = 7,c7,-;
-	warp "pvp_y_5-3",69,100;
+	warp "pvp_y_5-3",179,97;
 c0:
-	warp "pvp_y_5-3",30,169;
+	warp "pvp_y_5-3",88,176;
 c1:
 	warp "pvp_y_5-3",111,100;
 c2:
-	warp "pvp_y_5-3",65,157;
+	warp "pvp_y_5-3",95,58;
 c3:
 	warp "pvp_y_5-3",114,156;
 c4:
-	warp "pvp_y_5-3",90,40;
+	warp "pvp_y_5-3",170,165;
 c5:
-	warp "pvp_y_5-3",165,134;
+	warp "pvp_y_5-3",170,220;
 c6:
-	warp "pvp_y_5-3",174,181;
+	warp "pvp_y_5-3",220,210;
 c7:
 	warp "pvp_y_5-3",165,67;
 loadalb:
@@ -1040,21 +1040,21 @@ loadpay:
 	check @num = 5,c5,-;
 	check @num = 6,c6,-;
 	check @num = 7,c7,-;
-	warp "pvp_y_6-3",69,100;
+	warp "pvp_y_6-3",179,97;
 c0:
-	warp "pvp_y_6-3",30,169;
+	warp "pvp_y_6-3",88,176;
 c1:
 	warp "pvp_y_6-3",111,100;
 c2:
-	warp "pvp_y_6-3",65,157;
+	warp "pvp_y_6-3",95,58;
 c3:
 	warp "pvp_y_6-3",114,156;
 c4:
-	warp "pvp_y_6-3",90,40;
+	warp "pvp_y_6-3",170,165;
 c5:
-	warp "pvp_y_6-3",165,134;
+	warp "pvp_y_6-3",170,220;
 c6:
-	warp "pvp_y_6-3",174,181;
+	warp "pvp_y_6-3",220,210;
 c7:
 	warp "pvp_y_6-3",165,67;
 loadalb:
@@ -1212,21 +1212,21 @@ loadpay:
 	check @num = 5,c5,-;
 	check @num = 6,c6,-;
 	check @num = 7,c7,-;
-	warp "pvp_y_7-3",69,100;
+	warp "pvp_y_7-3",179,97;
 c0:
-	warp "pvp_y_7-3",30,169;
+	warp "pvp_y_7-3",88,176;
 c1:
 	warp "pvp_y_7-3",111,100;
 c2:
-	warp "pvp_y_7-3",65,157;
+	warp "pvp_y_7-3",95,58;
 c3:
 	warp "pvp_y_7-3",114,156;
 c4:
-	warp "pvp_y_7-3",90,40;
+	warp "pvp_y_7-3",170,165;
 c5:
-	warp "pvp_y_7-3",165,134;
+	warp "pvp_y_7-3",170,220;
 c6:
-	warp "pvp_y_7-3",174,181;
+	warp "pvp_y_7-3",220,210;
 c7:
 	warp "pvp_y_7-3",165,67;
 loadalb:
@@ -1383,21 +1383,21 @@ loadpay:
 	check @num = 5,c5,-;
 	check @num = 6,c6,-;
 	check @num = 7,c7,-;
-	warp "pvp_y_8-3",69,100;
+	warp "pvp_y_8-3",179,97;
 c0:
-	warp "pvp_y_8-3",30,169;
+	warp "pvp_y_8-3",88,176;
 c1:
 	warp "pvp_y_8-3",111,100;
 c2:
-	warp "pvp_y_8-3",65,157;
+	warp "pvp_y_8-3",95,58;
 c3:
 	warp "pvp_y_8-3",114,156;
 c4:
-	warp "pvp_y_8-3",90,40;
+	warp "pvp_y_8-3",170,165;
 c5:
-	warp "pvp_y_8-3",165,134;
+	warp "pvp_y_8-3",170,220;
 c6:
-	warp "pvp_y_8-3",174,181;
+	warp "pvp_y_8-3",220,210;
 c7:
 	warp "pvp_y_8-3",165,67;
 loadalb:

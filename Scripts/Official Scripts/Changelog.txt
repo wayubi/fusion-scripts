@@ -1,6 +1,8 @@
 --------------------------------------------------------------------------------
  Fusion 1.213 - August 29th, 2004
 --------------------------------------------------------------------------------
+- 09-06-04: Event\Event_Rental.txt - Fixed small hunter in Falcon Renter. [Muad_Dib]
+- 09-06-04: Event\Event_PvP.txt - Updated Yoyo mode payon map warps. [Muad_Dib]
 - 09-04-04: Town\Town_LouYang.txt - Added npc's from kRO screenshot.
 - 09-04-04: Event\Event_Making.txt - Updated Npc placement from kRO screenshots. [Muad_Dib]
 - 09-04-04: Event\Event_MrSmile.txt - Updated Npc placement from kRO screenshots. [Muad_Dib]

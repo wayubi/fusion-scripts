@@ -54,7 +54,7 @@ prontera.gat,52,350,5	script	"PecoPeco Breeder"	105,{
 				mes "What can I do for you?";
 				mes "Our PecoPeco's are only for Knights and Lord Knights.";
 				close;
-			L_Got:
+			L_GOT:
 				mes "[PecoPeco Breeder]";
 				mes "Umm... aren't you already riding a Grand PecoPeco??....";
 				emotion 20;
@@ -99,7 +99,7 @@ in_hunter.gat,146,99,3	script	"Falcon Fancier"	105,{
 			L_SONLY:
 				mes "What an asshole! Falcons are only for the Hunter and Sniper Classes !";
 				close;
-L_Got;
+L_GOT:
 				mes "[Falcon Fancier]";
 				mes "You can only have 1 Falcon at a time.";
 				emotion 20;
@@ -142,7 +142,7 @@ prontera.gat,231,317,4	script "Grand PecoPeco Breeder" 105,{
 				mes "What can I do for you?";
 				mes "Our PecoPeco's are only for Crusaders and Palladins.";
 				close;
-			L_Got:
+			L_GOT:
 				mes "[Grand PecoPeco Breeder]";
 				mes "Umm... aren't you already riding a Grand PecoPeco??....";
 				emotion 20;
