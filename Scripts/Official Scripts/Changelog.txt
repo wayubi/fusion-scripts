@@ -1,6 +1,7 @@
 --------------------------------------------------------------------------------
  Fusion 1.212 - June 30th, 2004
 --------------------------------------------------------------------------------
+- 06-15-04: Job\Novice\Job_Super_Novice.txt - Added offical Super Novice Quest. [Muad_Dib]
 - 06-14-04: Town\Town_Gonryun.txt - Activated npc emotions. [Muad_Dib]
 - 06-14-04: Town\Town_Siglude.txt - Added npc emotions. [Muad_Dib]
 - 06-14-04: Town\Town_Guide.txt - Added the Juno Guide. [Muad_Dib]

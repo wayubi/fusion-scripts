@@ -1,136 +1,126 @@
-//Amatsu NPCs
-ama_in01.gat,89,28,4	shop    Merchant1	757,2211:400,2401:400,2403:3500,2501:1000,2503:5000,2101:500,2103:14000,2305:1000,2321:8000,2332:7000,2314:65000,2627:20000
-ama_in01.gat,102,28,4	shop	Merchant2	766,1207:2400,1216:19500,1107:2900,1122:24000,1116:2000,1154:22500,1407:3450,1457:27000,1354:15500,1519:23000
-ama_in01.gat,24,30,4	shop	Merchant3	763,611:40,1750:1,1770:2,611:40,501:50,502:200,503:550,504:1200,506:40,645:800,656:1500,601:60,602:300,1065:100
 
-//=====================================================================
-alberta.gat,245,93,4	script	Merchant Ship Captain	709,{
-	mes "[Walter]";
+alberta.gat,245,93,4 script "Merchant Ship Captain" 709,{
+	mes "[Carter Moores]";
 	mes "Have you heard about;
 	mes "the far away kingdom across the sea
-        mes "that's very different from the 
-        mes "Rune-Midgard Kingdom?";
+      mes "that's very different from the 
+      mes "Rune-Midgard Kingdom?";
 	next;
-	menu "You mean Amatsu?",L1,"Take me there!",L2,"No, and I'm not interested",-;
-		mes "[Walter]";
-		mes "Well, if you want to cross the sea";
-		mes "to Amatsu, look me up.";
-		close;
-	L1:
-		mes "[Walter]";
-		mes "Well, Amatsu was discovered when";
-		mes "a sailor went off-course.";
-		mes "A vicious thunderstorm sent";
-		mes "the sailor and his crew hurdling into";
-		mes "a new landmass...";
-		next;
-		mes "[Walter]";
-		mes "After crashing on shore, the sailor";
-		mes "quickly found Amatsu.";
-		mes "The townspeoeple welcomed the sailor";
-		mes "with open arms, giving him medical";
-		mes "care and food.  The sailor then stayed";
-		mes "there for awhile.";
-		next;
-		mes "[Walter]";
-		mes "After awhile, the sailor was able";
-		mes "to return to Rune-Midgard and";
-		mes "drew a map of Amatsu's approximate";
-		mes "location.  Before dying, he presented";
-		mes "this map to King Tristan III.  The king";
-		mes "then began offering a prize for anyone";
-                mes "who could find the way to Amatsu.";
-		next;
-		mes "[Walter]";
-		mes "With the prize offering and the lure";
-		mes "of lucrative trade with a faraway";
-		mes "land, lots of adventureres tried";
-		mes "to find Amatsu.";
-		next;
-		mes "[Walter]";
-		mes "Every single attempt was a failure.";
-		mes "The nasty currents and incliment";
-		mes "weather were just too much for the";
-		mes "adventurers to handle.  Consumed";
-		mes "with the prospect of the reward and";
-		mes "trading rights, they didn't make";
-                mes "preparations.";
-		next;
-		mes "[Walter]";
-		mes "The way was finally discovered when a";
-		mes "certain person found a secret route.";
-		mes "That person was none other than yours";
-		mes "truly!";
-		mes "I was the first person to initiate";
-		mes "trade relations with Amatsu!";
-		next;
-		mes "[Walter]";
-		mes "After awhile, the trading relationship";
-		mes "became profitable and I expanded";
-		mes "my business to include tourism.";
-		mes "If you want me to take you to";
-		mes "Amatsu, I'm ready and waiting.";
-		close;
-	L2:
-		mes "[Walter]";
-		mes "Oh!  So you want to go to";
-		mes "Amatsu, eh?";
-		mes "It's a pretty hazardous";
-		mes "journey, so the price is pretty high.";
-		next;
-		mes "[Walter]";
-		mes "It's 10000 Zeny for a";
-		mes "round-trip ticket.  You";
-		mes "can use the guest room in my boat.";
-		next;
-		mes "[Walter]";
-		mes "So, are you up for the";
-		mes "trip?";
-		next;
-		menu "OMG YES!",Lgo,"Not really...",-;
-			mes "[Walter]";
-			mes "Are you not curious, or";
-			mes "is my fee too expensive?";
-			close;
-		Lgo:
-			if (Zeny < 10000) goto Lzeny;
-			mes "[Walter]";
-			mes "Alright, let's go!";
-			next;
-			set Zeny,Zeny-10000;
-			warp "amatsu",197,83;
-			end;
-		Lzeny:
-			mes "[Walter]";
-			mes "You don't have enough money!";
-			close;
+	menu "You mean Amatsu?",L_Mean,"Take me there!",L_Take,"No, and I'm not interested",-;
+	mes "[Carter Moores]";
+	mes "Well, if you want to cross the sea";
+	mes "to Amatsu, look me up.";
+	close;
+L_Mean:
+	mes "[Carter Moores]";
+	mes "Well, Amatsu was discovered when";
+	mes "a sailor went off-course.";
+	mes "A vicious thunderstorm sent";
+	mes "the sailor and his crew hurdling into";
+	mes "a new landmass...";
+	next;
+	mes "[Carter Moores]";
+	mes "After crashing on shore, the sailor";
+	mes "quickly found Amatsu.";
+	mes "The townspeoeple welcomed the sailor";
+	mes "with open arms, giving him medical";
+	mes "care and food.  The sailor then stayed";
+	mes "there for awhile.";
+	next;
+	mes "[Carter Moores]";
+	mes "After awhile, the sailor was able";
+	mes "to return to Rune-Midgard and";
+	mes "drew a map of Amatsu's approximate";
+	mes "location.  Before dying, he presented";
+	mes "this map to King Tristan III.  The king";
+	mes "then began offering a prize for anyone";
+      mes "who could find the way to Amatsu.";
+	next;
+	mes "[Carter Moores]";
+	mes "With the prize offering and the lure";
+	mes "of lucrative trade with a faraway";
+	mes "land, lots of adventureres tried";
+	mes "to find Amatsu.";
+	next;
+	mes "[Carter Moores]";
+	mes "Every single attempt was a failure.";
+	mes "The nasty currents and incliment";
+	mes "weather were just too much for the";
+	mes "adventurers to handle.  Consumed";
+	mes "with the prospect of the reward and";
+	mes "trading rights, they didn't make";
+      mes "preparations.";
+	next;
+	mes "[Carter Moores]";
+	mes "The way was finally discovered when a";
+	mes "certain person found a secret route.";
+	mes "That person was none other than yours";
+	mes "truly!";
+	mes "I was the first person to initiate";
+	mes "trade relations with Amatsu!";
+	next;
+	mes "[Carter Moores]";
+	mes "After awhile, the trading relationship";
+	mes "became profitable and I expanded";
+	mes "my business to include tourism.";
+	mes "If you want me to take you to";
+	mes "Amatsu, I'm ready and waiting.";
+	close;
+L_Take:
+	mes "[Carter Moores]";
+	mes "Oh!  So you want to go to";
+	mes "Amatsu, eh?";
+	mes "It's a pretty hazardous";
+	mes "journey, so the price is pretty high.";
+	next;
+	mes "[Carter Moores]";
+	mes "It's 10000 Zeny for a";
+	mes "round-trip ticket.  You";
+	mes "can use the guest room in my boat.";
+	next;
+	mes "[Carter Moores]";
+	mes "So, are you up for the";
+      mes "trip?";
+	next;
+	menu "OMG YES!",L_Go,"Not really...",-;
+	mes "[Carter Moores]";
+	mes "Are you not curious, or";
+	mes "is my fee too expensive?";
+	close;
+L_Go:
+         check zeny >= 10000,-,L_Zeny; 
+	mes "[Carter Moores]";
+	mes "Alright, let's go!";
+	next;
+         set zeny -= 10000;
+	   warp "amatsu",197,83;
+L_Zeny:
+	mes "[Carter Moores]";
+	mes "You don't have enough money!";
+	close;
 }
-//=====================================================================
-amatsu.gat,194,79,4	script	Merchant Ship Captian	709,{
-	mes "[Walter]";
+
+amatsu.gat,194,79,4 script "Merchant Ship Captain" 709,{
+	mes "[Carter Moores]";
 	mes "Are you done looking around in";
 	mes "Amatsu?  Would you like to";
 	mes "return to Alberta now?";
 	next;
-	menu "Back to Alberta",L1,"I'll stay a little longer",-;
-		mes "[Walter]";
-		mes "Take your time.  I'm always ready";
-		mes "to return to Alberta."
-		close;
-	L1:
-		mes "[Walter]";
-		mes "Did you buy something to";
-		mes "bring back for your friends?";
-		mes "Let's go to Alberta.";
-		next;
-		warp "alberta",243,91;
-		end;
-}
-//=====================================================================
-//Amatsu Townspeople
-//=====================================================================
-amatsu.gat,179,107,4	script	Yohane	86,{
+	menu "Back to Alberta",L_Back,"I'll stay a little longer",-;
+	mes "[Carter Moores]";
+	mes "Take your time.  I'm always ready";
+	mes "to return to Alberta."
+	close;
+L_Back:
+	mes "[Carter Moores]";
+	mes "Did you buy something to";
+	mes "bring back for your friends?";
+	mes "Let's go to Alberta.";
 	next;
+	   warp "alberta",243,91;
+}
+
+amatsu.gat,179,107,4 script "Yohane" 86,{
 	mes "[Yohane]";
 	mes "Five years have passed since";
 	mes "I started my business here.";
@@ -156,16 +146,16 @@ amatsu.gat,179,107,4	script	Yohane	86,{
 	mes "sushi and sashimi, though.";
 	close;
 }
-//#=====================================================================
-amatsu.gat,185,116,4	script	Drunk Geezer	765,{
+
+amatsu.gat,185,116,4 script "Drunk Geezer" 765,{
 	mes "[Geezer]";
 	mes "Hic!  I am such a fool.";
 	mes "I hope...Hic!...";
 	mes "she doesn't...Hic!";
 	mes "hurt me!...Hic!";
 	next;
-		menu "An old woman is waiting inside",L1,"I understand how you feel",L2;
-L2:
+	menu "An old woman is waiting inside",L_Old,"I understand how you feel",L_Feel;
+L_Feel:
 	mes "[Geezer]";
 	mes "Kyukuku...I'm glad...";
 	mes "you understand that...hic!";
@@ -177,7 +167,7 @@ L2:
 	mes "when I get home...Kyukukukyu.;
 	mes "....Hic!....";
 	close;
-L1:
+L_Old:
 	mes "[Geezer]";
 	mes "That's my wife...hic!";
 	mes "I hope I don't have to argue with her...";
@@ -194,8 +184,8 @@ L1:
 	mes ".......................";
 	close;
 }
-//=====================================================================
-amatsu.gat,217,179,0	script	Geezette	760,{
+
+amatsu.gat,217,179,0 script "Geezette" 760,{
 	mes "[Hatsu]";
 	mes "My husband is abosrbed in";
 	mes "his gambling.";
@@ -208,12 +198,13 @@ amatsu.gat,217,179,0	script	Geezette	760,{
 	mes "He's become afraid of me...";
 	close;
 }
-//=====================================================================
-ama_in01.gat,162,17,0	script	Sushi Maker	765,{
-	if (event_sushi != 5) goto Ldebags;
-		set event_sushi,0;
-Ldebags:
-	if ((event_sushi >= 1) && (event_sushi <= 3)) goto LStart2;
+
+ama_in01.gat,162,17,0 script "Sushi Maker" 765,{
+	   check event_sushi != 5,L_Debags,-;
+	   set event_sushi = 0;
+L_Debags:
+	   check event_sushi >= 1),L_Start2,-; 
+         check event_sushi <= 3,L_Start2,-;
 	mes "[Magmag]";
 	mes "Wow!  Another customer?";
 	mes "It's been so busy today";
@@ -226,13 +217,13 @@ Ldebags:
 	mes "my sushi to be the best!";
 	mes "Oh?  Did you need something?";
 	next;
-	menu "I want some sushi",L1,"I want some sashimi",L2,"You need some help?",L3,"Nevermind",-;
+	menu "I want some sushi",L_Want,"I want some sashimi",L2,"You need some help?",L3,"Nevermind",-;
 		mes "[Magmag]";
 		mes "Once you taste my fish delicacies,";
 		mes "you won't be able to stop eating them.";
 		mes "Please do come back.";
 		close;
-	L1:
+	L_want:
 		mes "[Magmag]";
 		mes "Great!  You can either buy";
 		mes "one serving for 74 Zeny, or";
@@ -1239,13 +1230,14 @@ LStart3:
 	mes "animal...";
 	close;
 }
-ama_in01.gat,169,173,0	script	SW	720,{
+
+ama_in01.gat,169,173,0 script	"Tokako" 720,{
 	mes "[Tokako]";
 	mes "I wasn't originally a shrine";
 	mes "employee, but then I tried on";
 	mes "my friend Takefumi's clothes";
 	mes "and decided I liked them so much";
-        mes "that I wanted to work here.";
+      mes "that I wanted to work here.";
 	next;
 	mes "[Tokako]";
 	mes "He can be a bit strange sometimes,";
@@ -1261,7 +1253,7 @@ ama_in01.gat,169,173,0	script	SW	720,{
 	close;
 }
 
-amatsu.gat,251,283,4	script	Guide	767,{
+amatsu.gat,251,283,4 script "Guide" 767,{
 	mes "[Guide]";
 	mes "Good evening!";
 	mes "Today is a good day to take";
@@ -1272,35 +1264,35 @@ amatsu.gat,251,283,4	script	Guide	767,{
 	next;
 	menu "Castle",L1,"Tool shop",L2,"Weapon shop",L3,"Bar",L4;
 L1:
-		viewpoint 1,85,235,0,0xFF3355;
-		mes "[Guide]";
-		mes "I marked the castle with a";
-		mes "^FF3355+^000000 on your";
-		mes "minimap.";
-		goto LEnd;
+	   viewpoint 1,85,235,0,0xFF3355;
+	mes "[Guide]";
+	mes "I marked the castle with a";
+	mes "^FF3355+^000000 on your";
+	mes "minimap.";
+	goto LEnd;
 L2:
-		viewpoint 1,96,118,1,0xCE6300;
-		mes "[Guide]";
-		mes "I marked the tool shop with a";
-		mes "^CE6300+^000000 on your";
-		mes "minimap.";
-		goto LEnd;
+	   viewpoint 1,96,118,1,0xCE6300;
+	mes "[Guide]";
+	mes "I marked the tool shop with a";
+	mes "^CE6300+^000000 on your";
+	mes "minimap.";
+	goto LEnd;
 L3:
-		viewpoint 1,132,117,2,0x55FF33;
-		mes "[Guide]";
-		mes "I marked the weapon shop with a";
-		mes "^55FF33+^000000 on your";
-		mes "minimap.";
-		goto LEnd;
+	   viewpoint 1,132,117,2,0x55FF33;
+	mes "[Guide]";
+	mes "I marked the weapon shop with a";
+	mes "^55FF33+^000000 on your";
+	mes "minimap.";
+	goto LEnd;
 L4:
-		viewpoint 1,217,116,3,0x3355FF;
-		mes "[Guide]";
-		mes "I marked the bar with a";
-		mes "^3355FF+^000000 on your";
-		mes "minimap.";
+	   viewpoint 1,217,116,3,0x3355FF;
+	mes "[Guide]";
+	mes "I marked the bar with a";
+	mes "^3355FF+^000000 on your";
+	mes "minimap.";
 LEnd:
-		mes "Please enjoy your stay";
-		mes "in Amatsu.";
-		close;
+	mes "Please enjoy your stay";
+	mes "in Amatsu.";
+	close;
 }
 
