@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.003
 ----------------------------------------------------------------------------------------------------
+- Mob\field\cmd_fild.txt - Updated Comodo Fields Monster Spawns [Muad_Dib]
 - Mob\field\pay_fild.txt - Updated Payon Fields Monster Spawns [Muad_Dib]
 - Mob\field\gon_fild.txt - Updated Gon Ryun Fields Monster Spawns [Muad_Dib]
 - Mob\field\xmass_fild.txt - Updated Lutie Fields Monster Spawns [Muad_Dib]
