@@ -120,7 +120,7 @@ yuno_fild09.gat,0,0,0,0		monster	"Green Plant"	1080,15,180000,90000,1
 yuno_fild11.gat,0,0,0,0		monster	"Sleeper"		1386,55,0,0,0
 yuno_fild11.gat,0,0,0,0		monster	"Geographer"	1368,20,0,0,0
 yuno_fild11.gat,0,0,0,0		monster	"Red Plant"		1078,10,180000,90000,1
-yuno_fild01.gat,0,0,0,0		monster	"Green Plant"	1080,10,180000,90000,1
+yuno_fild11.gat,0,0,0,0		monster	"Green Plant"	1080,10,180000,90000,1
 yuno_fild11.gat,0,0,0,0		monster	"Yellow Plant"	1081,15,360000,180000,1
 
 //========================================================================================
