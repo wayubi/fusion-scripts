@@ -1,0 +1,56 @@
+//========================================================================================
+// »» The Fusion Project ««
+// Copyright (c) 2004, Cobax Information Systems
+// http://fusion.cobax.net/
+// ---------------------------------------------------------------------------------------
+//
+// Niflheim Fields Mob - Monster Spawn Locations
+//
+//========================================================================================
+
+//========================================================================================
+// - Niflheim Field 01
+//========================================================================================
+
+nif_fild01.gat,0,0,0,0  	monster	"Gibbet" 1503,8,0,0,0
+nif_fild01.gat,0,0,0,0  	monster	"Quve" 1508,12,0,0,0
+nif_fild01.gat,0,0,0,0  	monster	"Lude" 1509,12,0,0,0
+nif_fild01.gat,0,0,0,0  	monster	"Ghoul" 1036,8,0,0,0
+nif_fild01.gat,0,0,0,0  	monster	"Loli Ruri" 1505,4,0,0,0
+nif_fild01.gat,0,0,0,0  	monster	"Disguise" 1506,12,0,0,6
+nif_fild01.gat,0,0,0,0  	monster	"Brilight" 1211,8,0,0,0
+nif_fild01.gat,0,0,0,0  	monster	"Whisper" 1179,8,0,0,0
+nif_fild01.gat,0,0,0,0  	monster	"Dullahan" 1504,1,300000,300000,0
+nif_fild01.gat,0,0,0,0        monster     "Bloody Murderer" 1507,5,0,0,0
+nif_fild01.gat,0,0,0,0        monster     "Hylozoist" 1510,5,0,0,0
+nif_fild01.gat,0,0,0,0        monster     "Amon Ra" 1511,2,1800000,200000,1
+
+//========================================================================================
+// - Niflheim Field 02
+//========================================================================================
+
+nif_fild02.gat,0,0,0,0  	monster	"Lude" 1509,15,0,0,0
+nif_fild02.gat,0,0,0,0  	monster	"Hylozoist" 1510,5,0,0,0
+nif_fild02.gat,0,0,0,0  	monster	"Ghoul" 1036,6,0,0,0
+nif_fild02.gat,0,0,0,0  	monster	"Brilight" 1211,4,0,0,0
+nif_fild02.gat,0,0,0,0  	monster	"Gibbet" 1503,15,0,0,0
+nif_fild02.gat,0,0,0,0  	monster	"Loli Ruri" 1505,4,0,0,0
+nif_fild02.gat,0,0,0,0  	monster	"Disguise" 1506,15,0,0,6
+nif_fild02.gat,0,0,0,0  	monster	"Quve" 1508,15,0,0,0
+nif_fild02.gat,0,0,0,0  	monster	"Whisper" 1179,6,0,0,0
+nif_fild02.gat,0,0,0,0  	monster	"Dead Wraith" 1291,4,0,0,0
+nif_fild02.gat,0,0,0,0  	monster	"Drainlair" 1111,5,0,0,0
+nif_fild02.gat,0,0,0,0        monster     "Bloody Murderer" 1507,5,0,0,0
+nif_fild02.gat,0,0,0,0        monster     "Hylozoist" 1510,5,0,0,0
+nif_fild02.gat,0,0,0,0        monster     "Amon Ra" 1511,2,1800000,200000,1
+nif_fild02.gat,0,0,0,0  	monster	"Dullahan" 1504,1,300000,300000,0
+nif_fild02.gat,0,0,0,0  	monster	"Ghostring" 1120,1,1440000,7200000,1
+nif_fild02.gat,0,0,0,0  	monster	"Dracula" 1389,1,1440000,7200000,1
+
+
+
+
+
+
+
+

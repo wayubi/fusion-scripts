@@ -9,6 +9,8 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.003
 ----------------------------------------------------------------------------------------------------
+- Mob\field\moc_fild.txt - Updated, reorganised Morocc Fields Monster Spawns [Muad_Dib]
+- Mob\field\nif_fild.txt - added Niflheim Fields Monster Spawns [Muad_Dib]
 - Mob\field\um_fild.txt - Updated, reorganised Umbala Fields Monster Spawns [Muad_Dib]
 - Mob\field\xmas.txt - Updated, reorganised Lutie Fields Monster Spawns [Muad_Dib]
 - Mob\field\mjolnir_fild.txt - Updated, reorganised Mount Mjolnir Fields Monster Spawns [Muad_Dib]
