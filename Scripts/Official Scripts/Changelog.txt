@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.004
 ----------------------------------------------------------------------------------------------------
+- Town\Town_Kafra.txt - Corrected Amatsu Kafra menu labels. [Tsusai]
 - GvG\aldeg_cas02.txt - Corrected label check error. [Tsusai]
 - Town\Town_Kafra.txt - Changed a few kafra faceing positions. [Muad_Dib]
 - Job\Job2_Knight_quest5.txt - Removed do to incompleteness and bugs (will be replaced). [Tsusai]

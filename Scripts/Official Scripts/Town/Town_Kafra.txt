@@ -5618,14 +5618,14 @@ amatsu.gat,159,256,5	script	"Kafra Personnel"	116,{
 		mes "How may I help you?";
 		next;
  L_SUB_0_1:
-	menu "Save",L_MENU_1,",L_MENU_2,"Teleport Service",L_MENU_3,"Cart Rental Service",L_MENU_4,"Use Kafra Coupon",L_MENU_5,"Collected Points Inquiry",L_MENU_6,"End",L_MENU_7;
+	menu "Save",L_MENU_1,"Storage",L_MENU_2,"Use Teleport Service",L_MENU_3,"Cart Rental Service",L_MENU_4,"Use Kafra Coupon",L_MENU_5,"Collected Points Inquiry",L_MENU_6,"End",L_MENU_7;
 	L_MENU_1:
 		menu "Save inside town",-,"Save outside town",L_MENU_1_1;
 			save "amatsu",247,283;
 			goto L_SUB_1_1;
 		L_MENU_1_1:
 			save "ama_fild01",73,34;
-		L_SUB_1_1;
+		L_SUB_1_1:
 			mes "[Kafra Personnel]";
 			mes "Your position has been saved.";
 			check @Kafra_COUPON = 0,-,L_SUB_1_2;
