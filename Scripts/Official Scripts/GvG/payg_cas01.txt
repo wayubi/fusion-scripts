@@ -24,7 +24,6 @@
 //========================================================================================
 
 pay_gld.gat,125,236,4	script	"Bright Arbor"	722,{
-	scriptlabel pay_gldF01;
 	guildreg "payg_cas01";
 	check guildid == 0,-,L_START_1;
 	mes "       [ Kingdom of Payon ]";
@@ -51,19 +50,105 @@ L_START_1:
 	mes "    have a beef, raise your sword to ";
 	mes "    honor yourself.";
 	close;
+OnInit:
+	guildreg "payg_cas01";
+	return;
 }
 pay_gld.gat,110,233,4	script	"Bright Arbor"	722,{
-	script pay_gldF01;
+	guildreg "payg_cas01";
+	check guildid == 0,-,L_START_1;
+	mes "       [ Kingdom of Payon ]";
+	mes "1. As Law of Payon";
+	mes "    this guild base isn't taken by";
+	mes "    any guild yet.";
+	next;
+	mes "       [ Kingdom of Payon ]";
+	mes "2. In order to take this guild base,";
+	mes "    you must defeat all the guardians";
+	mes "    that protect the guild base and";
+	mes "    eliminate the EMPERIUM to";
+	mes "    take over the guild base.";
+	close;
+L_START_1:
+	mes "       [ Kingdom of Payon ]";
+	mes "1. As law of Payon this base is now";
+	mes "    $guildname guild's guild";
+	mes "    base.";
+	next;
+	mes "       [ Kingdom of Payon ]";
+	mes "2.  $guildname Guild master is";
+	mes "    $guildmaster, and any of you";
+	mes "    have a beef, raise your sword to ";
+	mes "    honor yourself.";
+	close;
+OnInit:
+	guildreg "payg_cas01";
+	return;
 }
 pay_gld.gat,116,233,4	script	"Bright Arbor"	722,{
-	script pay_gldF01;
+	guildreg "payg_cas01";
+	check guildid == 0,-,L_START_1;
+	mes "       [ Kingdom of Payon ]";
+	mes "1. As Law of Payon";
+	mes "    this guild base isn't taken by";
+	mes "    any guild yet.";
+	next;
+	mes "       [ Kingdom of Payon ]";
+	mes "2. In order to take this guild base,";
+	mes "    you must defeat all the guardians";
+	mes "    that protect the guild base and";
+	mes "    eliminate the EMPERIUM to";
+	mes "    take over the guild base.";
+	close;
+L_START_1:
+	mes "       [ Kingdom of Payon ]";
+	mes "1. As law of Payon this base is now";
+	mes "    $guildname guild's guild";
+	mes "    base.";
+	next;
+	mes "       [ Kingdom of Payon ]";
+	mes "2.  $guildname Guild master is";
+	mes "    $guildmaster, and any of you";
+	mes "    have a beef, raise your sword to ";
+	mes "    honor yourself.";
+	close;
+OnInit:
+	guildreg "payg_cas01";
+	return;
 }
 pay_gld.gat,91,239,2	script	"Bright Arbor"	722,{
-	script pay_gldF01;
+	guildreg "payg_cas01";
+	check guildid == 0,-,L_START_1;
+	mes "       [ Kingdom of Payon ]";
+	mes "1. As Law of Payon";
+	mes "    this guild base isn't taken by";
+	mes "    any guild yet.";
+	next;
+	mes "       [ Kingdom of Payon ]";
+	mes "2. In order to take this guild base,";
+	mes "    you must defeat all the guardians";
+	mes "    that protect the guild base and";
+	mes "    eliminate the EMPERIUM to";
+	mes "    take over the guild base.";
+	close;
+L_START_1:
+	mes "       [ Kingdom of Payon ]";
+	mes "1. As law of Payon this base is now";
+	mes "    $guildname guild's guild";
+	mes "    base.";
+	next;
+	mes "       [ Kingdom of Payon ]";
+	mes "2.  $guildname Guild master is";
+	mes "    $guildmaster, and any of you";
+	mes "    have a beef, raise your sword to ";
+	mes "    honor yourself.";
+	close;
+OnInit:
+	guildreg "payg_cas01";
+	return;
 }
 
 payg_cas01.gat,238,67,4	script	"Bright Arbor"	722,{
-	scriptlabel payg_casF01;
 	guildreg "payg_cas01";
 	check guildid == 0,-,L_START_1;
 	mes "       [ Kingdom of Payon ]";
@@ -90,23 +175,165 @@ L_START_1:
 	mes "    have a beef, raise your sword to ";
 	mes "    honor yourself.";
 	close;
+OnInit:
+	guildreg "payg_cas01";
+	return;
 }
 payg_cas01.gat,233,67,4	script	"Bright Arbor"	722,{
-	script payg_casF01;
+	guildreg "payg_cas01";
+	check guildid == 0,-,L_START_1;
+	mes "       [ Kingdom of Payon ]";
+	mes "1. As Law of Payon";
+	mes "    this guild base isn't taken by";
+	mes "    any guild yet.";
+	next;
+	mes "       [ Kingdom of Payon ]";
+	mes "2. In order to take this guild base,";
+	mes "    you must defeat all the guardians";
+	mes "    that protect the guild base and";
+	mes "    eliminate the EMPERIUM to";
+	mes "    take over the guild base.";
+	close;
+L_START_1:
+	mes "       [ Kingdom of Payon ]";
+	mes "1. As law of Payon this base is now";
+	mes "    $guildname guild's guild";
+	mes "    base.";
+	next;
+	mes "       [ Kingdom of Payon ]";
+	mes "2.  $guildname Guild master is";
+	mes "    $guildmaster, and any of you";
+	mes "    have a beef, raise your sword to ";
+	mes "    honor yourself.";
+	close;
+OnInit:
+	guildreg "payg_cas01";
+	return;
 }
 payg_cas01.gat,221,123,4	script	"Bright Arbor"	722,{
-	script payg_casF01;
+	guildreg "payg_cas01";
+	check guildid == 0,-,L_START_1;
+	mes "       [ Kingdom of Payon ]";
+	mes "1. As Law of Payon";
+	mes "    this guild base isn't taken by";
+	mes "    any guild yet.";
+	next;
+	mes "       [ Kingdom of Payon ]";
+	mes "2. In order to take this guild base,";
+	mes "    you must defeat all the guardians";
+	mes "    that protect the guild base and";
+	mes "    eliminate the EMPERIUM to";
+	mes "    take over the guild base.";
+	close;
+L_START_1:
+	mes "       [ Kingdom of Payon ]";
+	mes "1. As law of Payon this base is now";
+	mes "    $guildname guild's guild";
+	mes "    base.";
+	next;
+	mes "       [ Kingdom of Payon ]";
+	mes "2.  $guildname Guild master is";
+	mes "    $guildmaster, and any of you";
+	mes "    have a beef, raise your sword to ";
+	mes "    honor yourself.";
+	close;
+OnInit:
+	guildreg "payg_cas01";
+	return;
 }
 payg_cas01.gat,221,116,4	script	"Bright Arbor"	722,{
-	script payg_casF01;
+	guildreg "payg_cas01";
+	check guildid == 0,-,L_START_1;
+	mes "       [ Kingdom of Payon ]";
+	mes "1. As Law of Payon";
+	mes "    this guild base isn't taken by";
+	mes "    any guild yet.";
+	next;
+	mes "       [ Kingdom of Payon ]";
+	mes "2. In order to take this guild base,";
+	mes "    you must defeat all the guardians";
+	mes "    that protect the guild base and";
+	mes "    eliminate the EMPERIUM to";
+	mes "    take over the guild base.";
+	close;
+L_START_1:
+	mes "       [ Kingdom of Payon ]";
+	mes "1. As law of Payon this base is now";
+	mes "    $guildname guild's guild";
+	mes "    base.";
+	next;
+	mes "       [ Kingdom of Payon ]";
+	mes "2.  $guildname Guild master is";
+	mes "    $guildmaster, and any of you";
+	mes "    have a beef, raise your sword to ";
+	mes "    honor yourself.";
+	close;
+OnInit:
+	guildreg "payg_cas01";
+	return;
 }
 payg_cas01.gat,206,108,4	script	"Bright Arbor"	722,{
-	script payg_casF01;
+	guildreg "payg_cas01";
+	check guildid == 0,-,L_START_1;
+	mes "       [ Kingdom of Payon ]";
+	mes "1. As Law of Payon";
+	mes "    this guild base isn't taken by";
+	mes "    any guild yet.";
+	next;
+	mes "       [ Kingdom of Payon ]";
+	mes "2. In order to take this guild base,";
+	mes "    you must defeat all the guardians";
+	mes "    that protect the guild base and";
+	mes "    eliminate the EMPERIUM to";
+	mes "    take over the guild base.";
+	close;
+L_START_1:
+	mes "       [ Kingdom of Payon ]";
+	mes "1. As law of Payon this base is now";
+	mes "    $guildname guild's guild";
+	mes "    base.";
+	next;
+	mes "       [ Kingdom of Payon ]";
+	mes "2.  $guildname Guild master is";
+	mes "    $guildmaster, and any of you";
+	mes "    have a beef, raise your sword to ";
+	mes "    honor yourself.";
+	close;
+OnInit:
+	guildreg "payg_cas01";
+	return;
 }
 payg_cas01.gat,212,108,4	script	"Bright Arbor"	722,{
-	script payg_casF01;
+	guildreg "payg_cas01";
+	check guildid == 0,-,L_START_1;
+	mes "       [ Kingdom of Payon ]";
+	mes "1. As Law of Payon";
+	mes "    this guild base isn't taken by";
+	mes "    any guild yet.";
+	next;
+	mes "       [ Kingdom of Payon ]";
+	mes "2. In order to take this guild base,";
+	mes "    you must defeat all the guardians";
+	mes "    that protect the guild base and";
+	mes "    eliminate the EMPERIUM to";
+	mes "    take over the guild base.";
+	close;
+L_START_1:
+	mes "       [ Kingdom of Payon ]";
+	mes "1. As law of Payon this base is now";
+	mes "    $guildname guild's guild";
+	mes "    base.";
+	next;
+	mes "       [ Kingdom of Payon ]";
+	mes "2.  $guildname Guild master is";
+	mes "    $guildmaster, and any of you";
+	mes "    have a beef, raise your sword to ";
+	mes "    honor yourself.";
+	close;
+OnInit:
+	guildreg "payg_cas01";
+	return;
 }
-
 payg_cas01.gat,128,58,3	script	"Kafra Service"	117,{
 	guildreg "payg_cas01";
 	cutin "kafra_01",2;
@@ -201,6 +428,9 @@ payg_cas01.gat,128,58,3	script	"Kafra Service"	117,{
  L_EXIT:
 		cutin "kafra_01",255;
 		close;
+OnInit:
+	guildreg "payg_cas01";
+	return;
 }
 payg_cas01.gat,120,58,4	script	"Grunnady"	55,{
 	guildreg "payg_cas01";
@@ -209,13 +439,11 @@ payg_cas01.gat,120,58,4	script	"Grunnady"	55,{
 	mes "I am waiting for my master.";
 	mes "Brave Player! follow your destiny!...";
 	close;
-	return;
 L_HASGUILD_1:
 	check ismymaster == 0,-,L_ISMASTER_1;
 	mes "[ Grunnady ]";
 	mes "I am here to follow ^ff0000 $guildmaster's ^000000 command! where are your guardians!";
 	close;
-	return;
 L_ISMASTER_1:
 	mes "[ Grunnady ]";
 	mes "Welcome Master ^ff0000 $guildmaster ^000000!";
@@ -475,6 +703,8 @@ goto L_Exit;
 	goto L_Exit;
 L_EXIT:
 	close;
+OnInit:
+	guildreg "payg_cas01";
 	return;
 }
 

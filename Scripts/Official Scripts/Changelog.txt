@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.003
 ----------------------------------------------------------------------------------------------------
+- GvG\payg_cas0#.txt - Added Payon Emblem Flag Support. [Tsusai]
 - GvG\npc_gflag.txt - Added Prontera Emblem Flag Support. [Tsusai]
 - GvG\prtg_cas0#.txt - Added Prontera Emblem Flag Support. [Tsusai]
 - Event\Event_Bunny.txt - Now only shows up in Alberta. [Tsusai]

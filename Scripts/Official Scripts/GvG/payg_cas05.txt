@@ -24,7 +24,6 @@
 //========================================================================================
 
 pay_gld.gat,208,268,4	script	"Bamboo Grove Hill"	722,{
-	scriptlabel pay_gldF05;
 	guildreg "payg_cas05";
 	check guildid == 0,-,L_START_1;
 	mes "       [ Kingdom of Payon ]";
@@ -51,18 +50,11 @@ L_START_1:
 	mes "    have a beef, raise your sword to ";
 	mes "    honor yourself.";
 	close;
+OnInit:
+	guildreg "payg_cas05";
+	return;
 }
 pay_gld.gat,199,268,4	script	"Bamboo Grove Hill"	722,{
-	script pay_gldF05;
-}
-pay_gld.gat,190,277,3	script	"Bamboo Grove Hill"	722,{
-	script pay_gldF05;
-}
-pay_gld.gat,187,294,2	script	"Bamboo Grove Hill"	722,{
-	script pay_gldF05;
-}
-payg_cas05.gat,32,249,4	script	"Bamboo Grove Hill"	722,{
-	scriptlabel payg_casF05;
 	guildreg "payg_cas05";
 	check guildid == 0,-,L_START_1;
 	mes "       [ Kingdom of Payon ]";
@@ -89,21 +81,257 @@ L_START_1:
 	mes "    have a beef, raise your sword to ";
 	mes "    honor yourself.";
 	close;
+OnInit:
+	guildreg "payg_cas05";
+	return;
+}
+pay_gld.gat,190,277,3	script	"Bamboo Grove Hill"	722,{
+	guildreg "payg_cas05";
+	check guildid == 0,-,L_START_1;
+	mes "       [ Kingdom of Payon ]";
+	mes "1. As Law of Payon";
+	mes "    this guild base isn't taken by";
+	mes "    any guild yet.";
+	next;
+	mes "       [ Kingdom of Payon ]";
+	mes "2. In order to take this guild base,";
+	mes "    you must defeat all the guardians";
+	mes "    that protect the guild base and";
+	mes "    eliminate the EMPERIUM to";
+	mes "    take over the guild base.";
+	close;
+L_START_1:
+	mes "       [ Kingdom of Payon ]";
+	mes "1. As law of Payon this base is now";
+	mes "    $guildname guild's guild";
+	mes "    base.";
+	next;
+	mes "       [ Kingdom of Payon ]";
+	mes "2.  $guildname Guild master is";
+	mes "    $guildmaster, and any of you";
+	mes "    have a beef, raise your sword to ";
+	mes "    honor yourself.";
+	close;
+OnInit:
+	guildreg "payg_cas05";
+	return;
+}
+pay_gld.gat,187,294,2	script	"Bamboo Grove Hill"	722,{
+	guildreg "payg_cas05";
+	check guildid == 0,-,L_START_1;
+	mes "       [ Kingdom of Payon ]";
+	mes "1. As Law of Payon";
+	mes "    this guild base isn't taken by";
+	mes "    any guild yet.";
+	next;
+	mes "       [ Kingdom of Payon ]";
+	mes "2. In order to take this guild base,";
+	mes "    you must defeat all the guardians";
+	mes "    that protect the guild base and";
+	mes "    eliminate the EMPERIUM to";
+	mes "    take over the guild base.";
+	close;
+L_START_1:
+	mes "       [ Kingdom of Payon ]";
+	mes "1. As law of Payon this base is now";
+	mes "    $guildname guild's guild";
+	mes "    base.";
+	next;
+	mes "       [ Kingdom of Payon ]";
+	mes "2.  $guildname Guild master is";
+	mes "    $guildmaster, and any of you";
+	mes "    have a beef, raise your sword to ";
+	mes "    honor yourself.";
+	close;
+OnInit:
+	guildreg "payg_cas05";
+	return;
+}
+payg_cas05.gat,32,249,4	script	"Bamboo Grove Hill"	722,{
+	guildreg "payg_cas05";
+	check guildid == 0,-,L_START_1;
+	mes "       [ Kingdom of Payon ]";
+	mes "1. As Law of Payon";
+	mes "    this guild base isn't taken by";
+	mes "    any guild yet.";
+	next;
+	mes "       [ Kingdom of Payon ]";
+	mes "2. In order to take this guild base,";
+	mes "    you must defeat all the guardians";
+	mes "    that protect the guild base and";
+	mes "    eliminate the EMPERIUM to";
+	mes "    take over the guild base.";
+	close;
+L_START_1:
+	mes "       [ Kingdom of Payon ]";
+	mes "1. As law of Payon this base is now";
+	mes "    $guildname guild's guild";
+	mes "    base.";
+	next;
+	mes "       [ Kingdom of Payon ]";
+	mes "2.  $guildname Guild master is";
+	mes "    $guildmaster, and any of you";
+	mes "    have a beef, raise your sword to ";
+	mes "    honor yourself.";
+	close;
+OnInit:
+	guildreg "payg_cas05";
+	return;
 }
 payg_cas05.gat,24,249,4	script	"Bamboo Grove Hill"	722,{
-	script payg_casF05;
+	guildreg "payg_cas05";
+	check guildid == 0,-,L_START_1;
+	mes "       [ Kingdom of Payon ]";
+	mes "1. As Law of Payon";
+	mes "    this guild base isn't taken by";
+	mes "    any guild yet.";
+	next;
+	mes "       [ Kingdom of Payon ]";
+	mes "2. In order to take this guild base,";
+	mes "    you must defeat all the guardians";
+	mes "    that protect the guild base and";
+	mes "    eliminate the EMPERIUM to";
+	mes "    take over the guild base.";
+	close;
+L_START_1:
+	mes "       [ Kingdom of Payon ]";
+	mes "1. As law of Payon this base is now";
+	mes "    $guildname guild's guild";
+	mes "    base.";
+	next;
+	mes "       [ Kingdom of Payon ]";
+	mes "2.  $guildname Guild master is";
+	mes "    $guildmaster, and any of you";
+	mes "    have a beef, raise your sword to ";
+	mes "    honor yourself.";
+	close;
+OnInit:
+	guildreg "payg_cas05";
+	return;
 }
 payg_cas05.gat,62,271,0	script	"Bamboo Grove Hill"	722,{
-	script payg_casF05;
+	guildreg "payg_cas05";
+	check guildid == 0,-,L_START_1;
+	mes "       [ Kingdom of Payon ]";
+	mes "1. As Law of Payon";
+	mes "    this guild base isn't taken by";
+	mes "    any guild yet.";
+	next;
+	mes "       [ Kingdom of Payon ]";
+	mes "2. In order to take this guild base,";
+	mes "    you must defeat all the guardians";
+	mes "    that protect the guild base and";
+	mes "    eliminate the EMPERIUM to";
+	mes "    take over the guild base.";
+	close;
+L_START_1:
+	mes "       [ Kingdom of Payon ]";
+	mes "1. As law of Payon this base is now";
+	mes "    $guildname guild's guild";
+	mes "    base.";
+	next;
+	mes "       [ Kingdom of Payon ]";
+	mes "2.  $guildname Guild master is";
+	mes "    $guildmaster, and any of you";
+	mes "    have a beef, raise your sword to ";
+	mes "    honor yourself.";
+	close;
+OnInit:
+	guildreg "payg_cas05";
+	return;
 }
 payg_cas05.gat,57,271,0	script	"Bamboo Grove Hill"	722,{
-	script payg_casF05;
+	guildreg "payg_cas05";
+	check guildid == 0,-,L_START_1;
+	mes "       [ Kingdom of Payon ]";
+	mes "1. As Law of Payon";
+	mes "    this guild base isn't taken by";
+	mes "    any guild yet.";
+	next;
+	mes "       [ Kingdom of Payon ]";
+	mes "2. In order to take this guild base,";
+	mes "    you must defeat all the guardians";
+	mes "    that protect the guild base and";
+	mes "    eliminate the EMPERIUM to";
+	mes "    take over the guild base.";
+	close;
+L_START_1:
+	mes "       [ Kingdom of Payon ]";
+	mes "1. As law of Payon this base is now";
+	mes "    $guildname guild's guild";
+	mes "    base.";
+	next;
+	mes "       [ Kingdom of Payon ]";
+	mes "2.  $guildname Guild master is";
+	mes "    $guildmaster, and any of you";
+	mes "    have a beef, raise your sword to ";
+	mes "    honor yourself.";
+	close;
+OnInit:
+	guildreg "payg_cas05";
+	return;
 }
 payg_cas05.gat,55,252,2	script	"Bamboo Grove Hill"	722,{
-	script payg_casF05;
+	guildreg "payg_cas05";
+	check guildid == 0,-,L_START_1;
+	mes "       [ Kingdom of Payon ]";
+	mes "1. As Law of Payon";
+	mes "    this guild base isn't taken by";
+	mes "    any guild yet.";
+	next;
+	mes "       [ Kingdom of Payon ]";
+	mes "2. In order to take this guild base,";
+	mes "    you must defeat all the guardians";
+	mes "    that protect the guild base and";
+	mes "    eliminate the EMPERIUM to";
+	mes "    take over the guild base.";
+	close;
+L_START_1:
+	mes "       [ Kingdom of Payon ]";
+	mes "1. As law of Payon this base is now";
+	mes "    $guildname guild's guild";
+	mes "    base.";
+	next;
+	mes "       [ Kingdom of Payon ]";
+	mes "2.  $guildname Guild master is";
+	mes "    $guildmaster, and any of you";
+	mes "    have a beef, raise your sword to ";
+	mes "    honor yourself.";
+	close;
+OnInit:
+	guildreg "payg_cas05";
+	return;
 }
 payg_cas05.gat,55,260,2	script	"Bamboo Grove Hill"	722,{
-	script payg_casF05;
+	guildreg "payg_cas05";
+	check guildid == 0,-,L_START_1;
+	mes "       [ Kingdom of Payon ]";
+	mes "1. As Law of Payon";
+	mes "    this guild base isn't taken by";
+	mes "    any guild yet.";
+	next;
+	mes "       [ Kingdom of Payon ]";
+	mes "2. In order to take this guild base,";
+	mes "    you must defeat all the guardians";
+	mes "    that protect the guild base and";
+	mes "    eliminate the EMPERIUM to";
+	mes "    take over the guild base.";
+	close;
+L_START_1:
+	mes "       [ Kingdom of Payon ]";
+	mes "1. As law of Payon this base is now";
+	mes "    $guildname guild's guild";
+	mes "    base.";
+	next;
+	mes "       [ Kingdom of Payon ]";
+	mes "2.  $guildname Guild master is";
+	mes "    $guildmaster, and any of you";
+	mes "    have a beef, raise your sword to ";
+	mes "    honor yourself.";
+	close;
+OnInit:
+	guildreg "payg_cas05";
+	return;
 }
 payg_cas05.gat,276,227,0	script	"Kafra Service"	117,{
 	guildreg "payg_cas05";
@@ -199,6 +427,9 @@ payg_cas05.gat,276,227,0	script	"Kafra Service"	117,{
  L_EXIT:
 		cutin "kafra_01",255;
 		close;
+OnInit:
+	guildreg "payg_cas05";
+	return;
 }
 payg_cas05.gat,275,246,0	script	"Najarf"	55,{
 	guildreg "payg_cas05";
@@ -207,13 +438,11 @@ payg_cas05.gat,275,246,0	script	"Najarf"	55,{
 	mes "I am waiting for my master.";
 	mes "Brave Player! follow your destiny!...";
 	close;
-	return;
 L_HASGUILD_1:
 	check ismymaster == 0,-,L_ISMASTER_1;
 	mes "[ Najarf ]";
 	mes "I am here to follow ^ff0000 $guildmaster's ^000000 command! where are your guardians!";
 	close;
-	return;
 L_ISMASTER_1:
 	mes "[ Najarf ]";
 	mes "Welcome Master ^ff0000 $guildmaster ^000000!";
@@ -473,6 +702,8 @@ L_MENU_8:
 	goto L_Exit;
 L_EXIT:
 	close;
+OnInit:
+	guildreg "payg_cas05";
 	return;
 }
 
