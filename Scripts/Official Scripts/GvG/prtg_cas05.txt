@@ -23,8 +23,7 @@
 //
 //========================================================================================
 
-prt_gld.gat,199,243,6	script	"Gondul"	722,{
-	scriptlabel prt_gldF05;
+prt_gld.gat,199,243,2	script	"Gondul"	722,{
 	guildreg "prtg_cas05";
 	check guildid == 0,-,L_START_1;
 	mes "       [ Kingdom of Prontera ]";
@@ -51,19 +50,105 @@ L_START_1:
 	mes "    have a beef, raise your sword to ";
 	mes "    honor yourself.";
 	close;
+OnInit:
+	guildreg "prtg_cas05";
+	return;
 }
 prt_gld.gat,199,236,2	script	"Gondul"	722,{
-	script prt_gldF05;
+	guildreg "prtg_cas05";
+	check guildid == 0,-,L_START_1;
+	mes "       [ Kingdom of Prontera ]";
+	mes "1. As Law of Prontera";
+	mes "    this guild base isn't taken by";
+	mes "    any guild yet.";
+	next;
+	mes "       [ Kingdom of Prontera ]";
+	mes "2. In order to take this guild base,";
+	mes "    you must defeat all the guardians";
+	mes "    that protect the guild base and";
+	mes "    eliminate the EMPERIUM to";
+	mes "    take over the guild base.";
+	close;
+L_START_1:
+	mes "       [ Kingdom of Prontera ]";
+	mes "1. As law of Prontera this base is now";
+	mes "    $guildname guild's guild";
+	mes "    base.";
+	next;
+	mes "       [ Kingdom of Prontera ]";
+	mes "2.  $guildname Guild master is";
+	mes "    $guildmaster, and any of you";
+	mes "    have a beef, raise your sword to ";
+	mes "    honor yourself.";
+	close;
+OnInit:
+	guildreg "prtg_cas05";
+	return;
 }
 prt_gld.gat,197,243,2	script	"Gondul"	722,{
-	script prt_gldF05;
+	guildreg "prtg_cas05";
+	check guildid == 0,-,L_START_1;
+	mes "       [ Kingdom of Prontera ]";
+	mes "1. As Law of Prontera";
+	mes "    this guild base isn't taken by";
+	mes "    any guild yet.";
+	next;
+	mes "       [ Kingdom of Prontera ]";
+	mes "2. In order to take this guild base,";
+	mes "    you must defeat all the guardians";
+	mes "    that protect the guild base and";
+	mes "    eliminate the EMPERIUM to";
+	mes "    take over the guild base.";
+	close;
+L_START_1:
+	mes "       [ Kingdom of Prontera ]";
+	mes "1. As law of Prontera this base is now";
+	mes "    $guildname guild's guild";
+	mes "    base.";
+	next;
+	mes "       [ Kingdom of Prontera ]";
+	mes "2.  $guildname Guild master is";
+	mes "    $guildmaster, and any of you";
+	mes "    have a beef, raise your sword to ";
+	mes "    honor yourself.";
+	close;
+OnInit:
+	guildreg "prtg_cas05";
+	return;
 }
 prt_gld.gat,197,236,2	script	"Gondul"	722,{
-	script prt_gldF05;
+	guildreg "prtg_cas05";
+	check guildid == 0,-,L_START_1;
+	mes "       [ Kingdom of Prontera ]";
+	mes "1. As Law of Prontera";
+	mes "    this guild base isn't taken by";
+	mes "    any guild yet.";
+	next;
+	mes "       [ Kingdom of Prontera ]";
+	mes "2. In order to take this guild base,";
+	mes "    you must defeat all the guardians";
+	mes "    that protect the guild base and";
+	mes "    eliminate the EMPERIUM to";
+	mes "    take over the guild base.";
+	close;
+L_START_1:
+	mes "       [ Kingdom of Prontera ]";
+	mes "1. As law of Prontera this base is now";
+	mes "    $guildname guild's guild";
+	mes "    base.";
+	next;
+	mes "       [ Kingdom of Prontera ]";
+	mes "2.  $guildname Guild master is";
+	mes "    $guildmaster, and any of you";
+	mes "    have a beef, raise your sword to ";
+	mes "    honor yourself.";
+	close;
+OnInit:
+	guildreg "prtg_cas05";
+	return;
 }
 
 prtg_cas05.gat,19,247,4	script	"Gondul"	722,{
-	scriptlabel prtg_casF04;
 	guildreg "prtg_cas05";
 	check guildid == 0,-,L_START_1;
 	mes "       [ Kingdom of Prontera ]";
@@ -90,27 +175,226 @@ L_START_1:
 	mes "    have a beef, raise your sword to ";
 	mes "    honor yourself.";
 	close;
+OnInit:
+	guildreg "prtg_cas05";
+	return;
 }
 prtg_cas05.gat,19,243,4	script	"Gondul"	722,{
-	script prtg_cas05;
+	guildreg "prtg_cas05";
+	check guildid == 0,-,L_START_1;
+	mes "       [ Kingdom of Prontera ]";
+	mes "1. As Law of Prontera";
+	mes "    this guild base isn't taken by";
+	mes "    any guild yet.";
+	next;
+	mes "       [ Kingdom of Prontera ]";
+	mes "2. In order to take this guild base,";
+	mes "    you must defeat all the guardians";
+	mes "    that protect the guild base and";
+	mes "    eliminate the EMPERIUM to";
+	mes "    take over the guild base.";
+	close;
+L_START_1:
+	mes "       [ Kingdom of Prontera ]";
+	mes "1. As law of Prontera this base is now";
+	mes "    $guildname guild's guild";
+	mes "    base.";
+	next;
+	mes "       [ Kingdom of Prontera ]";
+	mes "2.  $guildname Guild master is";
+	mes "    $guildmaster, and any of you";
+	mes "    have a beef, raise your sword to ";
+	mes "    honor yourself.";
+	close;
+OnInit:
+	guildreg "prtg_cas05";
+	return;
 }
 prtg_cas05.gat,26,247,4	script	"Gondul"	722,{
-	script prtg_cas05;
+	guildreg "prtg_cas05";
+	check guildid == 0,-,L_START_1;
+	mes "       [ Kingdom of Prontera ]";
+	mes "1. As Law of Prontera";
+	mes "    this guild base isn't taken by";
+	mes "    any guild yet.";
+	next;
+	mes "       [ Kingdom of Prontera ]";
+	mes "2. In order to take this guild base,";
+	mes "    you must defeat all the guardians";
+	mes "    that protect the guild base and";
+	mes "    eliminate the EMPERIUM to";
+	mes "    take over the guild base.";
+	close;
+L_START_1:
+	mes "       [ Kingdom of Prontera ]";
+	mes "1. As law of Prontera this base is now";
+	mes "    $guildname guild's guild";
+	mes "    base.";
+	next;
+	mes "       [ Kingdom of Prontera ]";
+	mes "2.  $guildname Guild master is";
+	mes "    $guildmaster, and any of you";
+	mes "    have a beef, raise your sword to ";
+	mes "    honor yourself.";
+	close;
+OnInit:
+	guildreg "prtg_cas05";
+	return;
 }
 prtg_cas05.gat,26,243,4	script	"Gondul"	722,{
-	script prtg_cas05;
+	guildreg "prtg_cas05";
+	check guildid == 0,-,L_START_1;
+	mes "       [ Kingdom of Prontera ]";
+	mes "1. As Law of Prontera";
+	mes "    this guild base isn't taken by";
+	mes "    any guild yet.";
+	next;
+	mes "       [ Kingdom of Prontera ]";
+	mes "2. In order to take this guild base,";
+	mes "    you must defeat all the guardians";
+	mes "    that protect the guild base and";
+	mes "    eliminate the EMPERIUM to";
+	mes "    take over the guild base.";
+	close;
+L_START_1:
+	mes "       [ Kingdom of Prontera ]";
+	mes "1. As law of Prontera this base is now";
+	mes "    $guildname guild's guild";
+	mes "    base.";
+	next;
+	mes "       [ Kingdom of Prontera ]";
+	mes "2.  $guildname Guild master is";
+	mes "    $guildmaster, and any of you";
+	mes "    have a beef, raise your sword to ";
+	mes "    honor yourself.";
+	close;
+OnInit:
+	guildreg "prtg_cas05";
+	return;
 }
 prtg_cas05.gat,249,289,4	script	"Gondul"	722,{
-	script prtg_cas05;
+	guildreg "prtg_cas05";
+	check guildid == 0,-,L_START_1;
+	mes "       [ Kingdom of Prontera ]";
+	mes "1. As Law of Prontera";
+	mes "    this guild base isn't taken by";
+	mes "    any guild yet.";
+	next;
+	mes "       [ Kingdom of Prontera ]";
+	mes "2. In order to take this guild base,";
+	mes "    you must defeat all the guardians";
+	mes "    that protect the guild base and";
+	mes "    eliminate the EMPERIUM to";
+	mes "    take over the guild base.";
+	close;
+L_START_1:
+	mes "       [ Kingdom of Prontera ]";
+	mes "1. As law of Prontera this base is now";
+	mes "    $guildname guild's guild";
+	mes "    base.";
+	next;
+	mes "       [ Kingdom of Prontera ]";
+	mes "2.  $guildname Guild master is";
+	mes "    $guildmaster, and any of you";
+	mes "    have a beef, raise your sword to ";
+	mes "    honor yourself.";
+	close;
+OnInit:
+	guildreg "prtg_cas05";
+	return;
 }
 prtg_cas05.gat,256,289,4	script	"Gondul"	722,{
-	script prtg_cas05;
+	guildreg "prtg_cas05";
+	check guildid == 0,-,L_START_1;
+	mes "       [ Kingdom of Prontera ]";
+	mes "1. As Law of Prontera";
+	mes "    this guild base isn't taken by";
+	mes "    any guild yet.";
+	next;
+	mes "       [ Kingdom of Prontera ]";
+	mes "2. In order to take this guild base,";
+	mes "    you must defeat all the guardians";
+	mes "    that protect the guild base and";
+	mes "    eliminate the EMPERIUM to";
+	mes "    take over the guild base.";
+	close;
+L_START_1:
+	mes "       [ Kingdom of Prontera ]";
+	mes "1. As law of Prontera this base is now";
+	mes "    $guildname guild's guild";
+	mes "    base.";
+	next;
+	mes "       [ Kingdom of Prontera ]";
+	mes "2.  $guildname Guild master is";
+	mes "    $guildmaster, and any of you";
+	mes "    have a beef, raise your sword to ";
+	mes "    honor yourself.";
+	close;
+OnInit:
+	guildreg "prtg_cas05";
+	return;
 }
 prtg_cas05.gat,253,271,4	script	"Gondul"	722,{
-	script prtg_cas05;
+	guildreg "prtg_cas05";
+	check guildid == 0,-,L_START_1;
+	mes "       [ Kingdom of Prontera ]";
+	mes "1. As Law of Prontera";
+	mes "    this guild base isn't taken by";
+	mes "    any guild yet.";
+	next;
+	mes "       [ Kingdom of Prontera ]";
+	mes "2. In order to take this guild base,";
+	mes "    you must defeat all the guardians";
+	mes "    that protect the guild base and";
+	mes "    eliminate the EMPERIUM to";
+	mes "    take over the guild base.";
+	close;
+L_START_1:
+	mes "       [ Kingdom of Prontera ]";
+	mes "1. As law of Prontera this base is now";
+	mes "    $guildname guild's guild";
+	mes "    base.";
+	next;
+	mes "       [ Kingdom of Prontera ]";
+	mes "2.  $guildname Guild master is";
+	mes "    $guildmaster, and any of you";
+	mes "    have a beef, raise your sword to ";
+	mes "    honor yourself.";
+	close;
+OnInit:
+	guildreg "prtg_cas05";
+	return;
 }
 prtg_cas05.gat,273,257,4	script	"Gondul"	722,{
-	script prtg_cas05;
+	guildreg "prtg_cas05";
+	check guildid == 0,-,L_START_1;
+	mes "       [ Kingdom of Prontera ]";
+	mes "1. As Law of Prontera";
+	mes "    this guild base isn't taken by";
+	mes "    any guild yet.";
+	next;
+	mes "       [ Kingdom of Prontera ]";
+	mes "2. In order to take this guild base,";
+	mes "    you must defeat all the guardians";
+	mes "    that protect the guild base and";
+	mes "    eliminate the EMPERIUM to";
+	mes "    take over the guild base.";
+	close;
+L_START_1:
+	mes "       [ Kingdom of Prontera ]";
+	mes "1. As law of Prontera this base is now";
+	mes "    $guildname guild's guild";
+	mes "    base.";
+	next;
+	mes "       [ Kingdom of Prontera ]";
+	mes "2.  $guildname Guild master is";
+	mes "    $guildmaster, and any of you";
+	mes "    have a beef, raise your sword to ";
+	mes "    honor yourself.";
+	close;
+OnInit:
+	guildreg "prtg_cas05";
+	return;
 }
 
 prtg_cas05.gat,52,41,4	script	"Kafra Service"	117,{
@@ -207,6 +491,9 @@ prtg_cas05.gat,52,41,4	script	"Kafra Service"	117,{
  L_EXIT:
 		cutin "kafra_01",255;
 		close;
+OnInit:
+	guildreg "prtg_cas05";
+	return;
 }
 
 prtg_cas05.gat,55,41,0	script	"Reiner"	55,{
@@ -216,13 +503,11 @@ prtg_cas05.gat,55,41,0	script	"Reiner"	55,{
 	mes "I am waiting for my master.";
 	mes "Brave Player! follow your destiny!...";
 	close;
-	return;
 L_HASGUILD_1:
 	check ismymaster == 0,-,L_ISMASTER_1;
 	mes "[ Reiner ]";
 	mes "I am here to follow ^ff0000 $guildmaster's ^000000 command! where are your guardians!";
 	close;
-	return;
 L_ISMASTER_1:
 	mes "[ Reiner ]";
 	mes "Welcome Master ^ff0000 $guildmaster ^000000!";
@@ -482,6 +767,8 @@ L_MENU_8:
 	goto L_Exit;
 L_EXIT:
 	close;
+OnInit:
+	guildreg "prtg_cas05";
 	return;
 }
 

@@ -9,10 +9,13 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.003
 ----------------------------------------------------------------------------------------------------
+- GvG\npc_gflag.txt - Added Prontera Emblem Flag Support. [Tsusai]
+- GvG\prtg_cas0#.txt - Added Prontera Emblem Flag Support. [Tsusai]
 - Event\Event_Bunny.txt - Now only shows up in Alberta. [Tsusai]
 - Event\Event_Bunny.txt - Copied to Archive. [Tsusai]
 - Town\Town_Kafra.txt - Corrected Errors. [Tsusai]
 - Town\Town_Kafra.txt - Updated remaining warp destinations and prices. [Tsusai]
+- Town\Town_Siglude.txt - Corrected Label Error. [icbob]
 - Town\Town_Siglude.txt - Corrected 1% increase. [Tsusai]
 - Town\Town_Kafra.txt - Added Coal Mine Dungeon Kafra. [Tsusai]
 - Town\Town_Siglude.txt - Added 1% increase of refine success per level of Weapon Research for Blacksmiths. [Tsusai]

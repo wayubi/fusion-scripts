@@ -105,6 +105,9 @@ L_START_2:
 	close;
 	L_MENU_1:
 		warp "prtg_cas01",96,173;
+OnInit:
+	guildreg "prtg_cas01";
+	return;
 }
 prontera.gat,146,194,3 script "Swanhild" 722,{
 	guildreg "prtg_cas02";
@@ -143,6 +146,9 @@ L_START_2:
 	close;
 	L_MENU_1:
 		warp "prtg_cas02",71,36;
+OnInit:
+	guildreg "prtg_cas02";
+	return;
 }
 prontera.gat,143,203,2 script "Fadhgridh" 722,{
 	guildreg "prtg_cas03";
@@ -181,6 +187,9 @@ L_START_2:
 	close;
 	L_MENU_1:
 		warp "prtg_cas03",181,215;
+OnInit:
+	guildreg "prtg_cas03";
+	return;
 }
 prontera.gat,167,203,6 script "Skoegul" 722,{
 	guildreg "prtg_cas04";
@@ -219,6 +228,9 @@ L_START_2:
 	close;
 	L_MENU_1:
 		warp "prtg_cas04",258,247;
+OnInit:
+	guildreg "prtg_cas04";
+	return;
 }
 prontera.gat,165,194,5 script "Gondul" 722,{
 	guildreg "prtg_cas05";
@@ -257,6 +269,9 @@ L_START_2:
 	close;
 	L_MENU_1:
 		warp "prtg_cas05",52,41;
+OnInit:
+	guildreg "prtg_cas05";
+	return;
 }
 
 payon.gat,79,31,4 script "Bright Arbor" 722,{
