@@ -9,6 +9,12 @@
 // - Granny -> payon_in01: 103,111
 //   Give information and make Pretend Murdered Quest.
 //
+// - Blacksmith -> geffen_in: 144,166
+//   Give information and make Welding Mask Quest.
+//
+// - Cherokee -> alberta_in: 122,53
+//   Give information and make Antlers Quest.
+//
 //========================================================================================
 
 payon_in01.gat,103,111,4	script	"Granny"	103,{
@@ -49,86 +55,57 @@ payon_in01.gat,103,111,4	script	"Granny"	103,{
 		close;
 	L_START_2:
 		mes "[Granny]";
-		mes "You are overweight";
+		mes "You are overweight.";
 		close;
 }
 
-//----------------------------------
-// 溶接マスク
-//----------------------------------
-
-geffen_in.gat,144,166,4	script	鍛冶屋さん	63,{
-	mes "[鍛冶屋さん]";
-	mes "この俺様が、ベテラン鍛冶屋さんだぜ！";
-	mes "真っ赤に溶けてしまうような";
-	mes "熱気の中で過ごすようになって";
-	mes "30年ぐらい経ったぜ！";
+geffen_in.gat,144,166,4	script	"Blacksmith"	63,{
+	mes "[Blacksmith]";
+	mes "Who am I! I am the one and only Veteran Blacksmith in here! You heard?!";
+	mes "I've been working for 30 years in this hotty, bloody Hellfire!";
+	mes "Since I became a Blacksmith, I invented something really incredible. Wanna listen?";
 	next;
-	mes "[鍛冶屋さん]";
-	mes "長い鍛冶屋生活の間に";
-	mes "一ついいものを発明したんだぜ！";
-	mes "詳しく聞きたいか？";
-	next;
-	menu "教えてください",-,"別に必要ないです",L_MENU_1;
-		mes "[鍛冶屋さん]";
-		mes "想像もできない程の高熱で鋼鉄を溶かし";
-		mes "様々な金属のアイテムを作り出す";
-		mes "俺たち鍛冶屋さんは";
-		mes "いつも精錬中にすごい熱気と";
-		mes "真っ赤に溶けた鉄を相手にするから";
-		mes "肌、特に顔がもたないぜ！";
+	menu "I'd love to.",L_MENU_1,"Well,I don't think I want.",L_MENU_2;
+	L_MENU_1:
+		mes "[Blacksmith]";
+		mes "We allways make Various Metal products with welding Steel under Horribly Hot circunstances.";
+		mes "So we have to face the hot-air heating and metallic fluid, our face are almost burnt down and sometimes injured during working...";
+		mes "But with this!!!! You dont have to be worried~! So-Called .. ^3355FF' Welding Mask '^000000 !!";
 		next;
-		mes "[鍛冶屋さん]";
-		mes "しかし、俺様が発明した";
-		mes "このすげぇアイテムさえあれば";
-		mes "そんな心配とはバイバイだぜ！";
-		mes "その名も… ^3355FF‘溶接マスク’^000000！！";
+		mes "[Blacksmith]";
+		mes "This one keeps your face out of the heat.";
+		mes "This Must be an Most-wannaget ~ ｡ﾙ Item !";
+		mes "So how's that ? If you offer me ^2244FF'50 Steels '^000000 and ^4422FFOnly 2000 Zeny^000000, I will make it for you right away~!!";
 		next;
-		mes "[鍛冶屋さん]";
-		mes "赤々と燃える炎から、君の白いツルツル";
-		mes "スベスベな肌を守ってくれる";
-		mes "超必須アイテムだぜっ！";
-		mes "どう？^2244FF‘鋼鉄 50個’^000000と";
-		mes "たったの^4422FF‘2000 Zeny’^000000で";
-		mes "作ってあげるぜ！";
-		next;
-		menu "いいですね、一つお願いします",-,"意味のないもののようですね",L_MENU_2;
-			checkitem 999,50,-,L_SUB_1;
-			check Zeny >= 2000,-,L_SUB_1;
-			mes "[鍛冶屋さん]";
-			mes "気に入ったよ、君！";
-			mes "今すぐ作ってあげるぜ！！";
-			delitem 999,50;
-			set Zeny -= 2000,0;
+		menu "Hm.. Not bad. Alright.",L_SUB_1_1,"No thanks. Useless for me though.",L_SUB_1_2;
+		L_SUB_1_1:
+			
+			checkitem 999,50,-,L_SUB_1_1_1;
+			check zeny >= 2000,-,L_SUB_1_1_1;
+			mes "[Blacksmith]";
+			mes "I like you,Dude ! Alright,I do it right away !!";
 			next;
-			mes "[鍛冶屋さん]";
-			mes "こいつさえあれば";
-			mes "君は高熱の魅力を";
-			mes "感じることができるぜ！";
-			mes "お客さん♪";
+			delitem 999,50;
+			set zeny -=  2000,0;
 			additem 2292,1;
+			mes "[Blacksmith]";
+			mes "You are the best guy I've ever met!";
+			mes "Bye bye Buddy ~";
 			close;
-	L_SUB_1:
-			mes "[鍛冶屋さん]";
-			mes "こら、鋼鉄や費用が足りないぜ！";
-			mes "俺にどうしろっていうんだ？";
-			mes "君、‘不完全燃焼’って";
-			mes "どんな意味か分かるか？";
-			mes "君みたいな人間にピッタリだぜ！";
-			mes "今すぐ鋼鉄と金を手に入れて来い！";
+			L_SUB_1_1_1:
+				mes "[Blacksmith]";
+				mes "Hey Dork. If you don't have enough steels or money, Get LOST!!";
+				mes "Have you ever heard about Quenching? It's not easy as you think!";
+				mes "Go get some money or whatever my Craft needs!!!!";
+				close;
+		L_SUB_1_2:
+			mes "[Blacksmith]";
+			mes "Oh Man! You should regret this time. I recommanded it for you not me !";
+			mes "Man, Everyone gets older and older. You should take care of your bloody face before it gets shirinking!";
 			close;
 	L_MENU_2:
-		mes "[鍛冶屋さん]";
-		mes "エエッ！";
-		mes "こんな素晴らしいアイテムを断るとは…";
-		mes "物を見る目がないぜ！";
-		mes "あんまり自分の肌を";
-		mes "過信するもんじゃないぜ！";
-		close;
-	L_MENU_1:
-		mes "[鍛冶屋さん]";
-		mes "力抜けること言うね…";
-		mes "もう言うことはない、行ってくれ！";
+		mes "[Blacksmith]";
+		mes "I think I wasted my precious time on you ..I think I have nothing more to say. Go back to your way !";
 		close;
 }
 
@@ -180,47 +157,43 @@ payon_in01.gat,103,79,4	script	不思議な乙女	76,{
 		close;
 }
 
-//----------------------------------
-// 鹿の角
-//----------------------------------
-
-alberta_in.gat,122,53,4	script	青年	47,{
-	mes "[チェロキ]";
-	mes "僕は動物の角を収集するコレクター ! です。";
-	mes "動物の角って、 本当にすばらしいよね。 とっても上品だよ ..  適当に加工して直接頭にかぶってもいいし。";
-	mes "又、家の中ドコでも飾っておくだけでインテリアの価値が高いです。";
+alberta_in.gat,122,53,4	script	"Cherokee"	47,{
+	mes "[Cherokee]";
+	mes "Hey I am a Horn Collector. Sounds Great,Huh?";
+	mes "What do you think about Animal horns? I think they are worth collecting. You can even wear them on your head.";
+	mes "You can even decorate your house with them, they're great.";
 	next;
-	mes "[チェロキ]";
-	mes "でも .. 猥濫なることだけど ^FF3355' 悪魔も角 '^000000 というのは非常に手にいれるのが難しいです ..";
-	mes "動物の角とは離れた収集品といっても、ほんとに欲しいものなんだ..";
-	mes "もしかして ^FF3355' 悪魔の角'^000000 を持ってますか ?";
-	mes "もし 20 本ぐらい もってましたら .. 僕が今までコレクターをしながら、 一生懸命集めた^3355FF' 鹿の角 '^000000 と交換してあげます。";
+	mes "[Cherokee]";
+	mes "Unfortunately, I realised there's a Horn I don't have yet. It's called ^FF3355'Evil Horn '^000000..";
+	mes "And some might say Evil horn is not an animal horn but a horn of the Devil. Still I really really wish I could have it.";
+	mes "Do you....? Do you have the ^FF3355'Evil Horn '^000000?";
+	mes "If you bring me 20 Evil Horns, I will give you my precious collection, ^3355FF'Antler '^000000. Deal?";
 	next;
-	menu "交換しましょう",-,"別に欲しくありません",L_MENU_1;
+	menu "Okay, Deal.",-,"Shut up Dumbo.",L_MENU_1;
 		checkadditem 2284,1,-,L_START_1;
 		checkitem 923,20,-,L_SUB_1;
 		delitem 923,20;
-		mes "[チェロキ]";
-		mes "ウワー 本物の ^FF3355' 悪魔の角 '^000000 ですね !!";
-		mes "ありがとうございます ! 僕が大切にしてた鹿の角を差し上げます !";
+		mes "[Cherokee]";
+		mes "Whoah~! This is the first time I've ever seen a real ^FF3355'Evil Horn'^000000!!";
+		mes "Thank you! I'm a man of my word, here's your reward!";
 		additem 2284,1;
 		next;
-		mes "[チェロキ]";
-		mes "これで僕はもう一度、 本当のコレクターとしての一歩を踏み出すようになりました。 ありがとうございます !";
-		mes "いつも幸福が満ちるように ..";
+		mes "[Cherokee]";
+		mes "With your great help, I can make my wish come true this time. I appreciate you!";
+		mes "God Bless You ..";
 		close;
 	L_SUB_1:
-		mes "[チェロキ]";
-		mes "まだ ^FF3355' 悪魔の角 20 本 '^000000 の準備ができていないようですね。";
+		mes "[Cherokee]";
+		mes "Hmm.. Unfortunately you are not ready for my demand, ^FF3355'20 Evil Horns '^000000.";
 		close;
 	L_MENU_1:
-		mes "[チェロキ]";
-		mes "そうですか ..  いつか 準備できましたら、又お尋ね下さい。";
-		mes "貴方のお旅に幸福が満ちるように ..";
+		mes "[Cherokee]";
+		mes "Well that's fine .. Although you seam like a very rude person... I forgive you.";
+		mes "And I know we will speak again ..";
 		close;
 	L_START_1:
-		mes "[チェロキ]";
-		mes "重量オーバーです。";
+		mes "[Cherokee]";
+		mes "You are overweight";
 		close;
 }
 

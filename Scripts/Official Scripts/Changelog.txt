@@ -9,6 +9,8 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.002
 ----------------------------------------------------------------------------------------------------
+- Event\Event_Making.txt - Translated Cherokee, Antlers Quest. [mudvayne]
+- Event\Event_Making.txt - Translated Blacksmith, Welding Mask Quest. [mudvayne]
 - Event\Event_Making.txt - Translated Granny, Pretend Murderer Quest. [mudvayne]
 - Event\Event_Making.txt - Translated Eric the Earmuff maker, matches iRO with grammar corrections - [Tsusai]
 - Warp\warp.txt - Corrected Geffen Tower staircase warp destination to avoid appearing stuck on a rail - [Tsusai]
