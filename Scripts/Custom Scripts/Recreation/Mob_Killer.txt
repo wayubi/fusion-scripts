@@ -98,6 +98,7 @@ prontera.gat,156,309,6	script	"Hit-man"	732,{
 	mes "[Monster Hit-man]";
 	mes "All monsters in the $[$@mapname] have been captured and killed.";
 	next;
+   OOPS:
 	mes "[Monster Hit-man]";
 	mes "Hope you have a nice day.";
 	close;

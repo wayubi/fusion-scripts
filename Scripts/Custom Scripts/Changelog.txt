@@ -1,6 +1,7 @@
 --------------------------------------------------------------------------------
  Fusion 1.213 - August 29th, 2004
 --------------------------------------------------------------------------------
+ - 07-10-04: Edited Recreation\Mob_Killer.txt script (ENG) - Added Lable. [Yun Qi]
  - 07-10-04: Edited Player\All_Jobs-zeny.txt script (ENG) - Changed sprite. [Yun Qi]
  - 07-10-04: Edited Player\Stat+Skill_Adder.txt script (ENG) - Lowered Prices. [Yun Qi]
  - 07-08-04: Added Valkyrie warper to Samurai Warper script (ENG) - Map\SamuraiWarpers_100+300.txt. [Yun Qi]
