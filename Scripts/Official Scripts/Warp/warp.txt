@@ -1582,9 +1582,9 @@ prtg_cas02.gat,98,21,0	warp	warp1562	1,1,prtg_cas02.gat,64,168
 prtg_cas02.gat,45,21,0	warp	warp1563	1,1,prtg_cas02.gat,203,25
 prtg_cas02.gat,161,41,0	warp	warp1564	1,1,prtg_cas02.gat,57,202
 prtg_cas02.gat,210,41,0	warp	warp1565	1,1,prtg_cas02.gat,84,215
-prtg_cas02.gat,184,44,0	warp	warp1566	1,1,prtg_cas02.gat,190,163
+prtg_cas02.gat,184,44,0	warp	warp1566	1,1,prtg_cas02.gat,157,140
 prtg_cas02.gat,203,21,0	warp	warp1567	1,1,prtg_cas02.gat,45,25
-prtg_cas02.gat,190,160,0	warp	warp1568	1,1,prtg_cas02.gat,184,40
+prtg_cas02.gat,157,136,0	warp	warp1568	1,1,prtg_cas02.gat,184,40
 prtg_cas03.gat,178,85,0	warp	warp1569	1,1,prtg_cas03.gat,82,73
 prtg_cas03.gat,191,55,0	warp	warp1570	1,1,prtg_cas03.gat,190,233
 prtg_cas03.gat,168,8,0	warp	warp1571	1,1,prt_gld.gat,153,137
