@@ -1981,3 +1981,22 @@ yuno_in05.gat,196,194,0	warp	warp1958	1,1,yuno_in02.gat,89,13
 yuno_in05.gat,153,141,0	warp	warp1959	1,1,yuno_in05.gat,192,102
 yuno_in05.gat,31,167,0	warp	warp1960	1,1,yuno_in05.gat,50,84
 yuno_in05.gat,50,88,0	warp	warp1961	1,1,yuno_in02.gat,89,13
+yuno.gat,116,134,0	warp	warp1962	1,1,yuno_in01.gat,116,38
+yuno_in01.gat,116,41,0	warp	warp1963	1,1,yuno.gat,119,136
+//bugtracker addons
+aldebaran.gat,225,224,1	warp	warp1970	1,1,alde_alche.gat,89,66
+alde_alche.gat,89,63,1	warp	warp1971	1,1,aldebaran.gat,223,222
+alde_alche.gat,89,116,1	warp	warp1972	1,1,alde_alche.gat,14,182
+alde_alche.gat,14,185,1	warp	warp1973	1,1,alde_alche.gat,89,114
+alde_alche.gat,17,29,1	warp	warp1974	1,1,alde_alche.gat,19,173
+alde_alche.gat,19,171,1	warp	warp1975	1,1,alde_alche.gat,18,26
+alde_alche.gat,93,18,1	warp	warp1976	1,1,alde_alche.gat,49,77
+alde_alche.gat,46,77,1	warp	warp1977	1,1,alde_alche.gat,90,18
+alde_alche.gat,47,104,1	warp	warp1978	1,1,alde_alche.gat,158,18
+alde_alche.gat,160,18,1	warp	warp1979	1,1,alde_alche,50,104
+alde_alche.gat,42,186,1	warp	warp1980	1,1,alde_alche,114,180
+alde_alche.gat,114,183,1	warp	warp1981	1,1,alde_alche,42,184
+alde_alche.gat,159,163,1	warp	warp1982	1,1,alde_alche,129,77
+alde_alche.gat,132,77,1	warp	warp1983	1,1,alde_alche,161,163
+alde_alche.gat,159,107,1	warp	warp1984	1,1,alde_alche,129,104
+alde_alche.gat,132,104,1	warp	warp1985	1,1,alde_alche,161,107
