@@ -1,7 +1,8 @@
 --------------------------------------------------------------------------------
  Fusion 1.212 - June 30th, 2004
 --------------------------------------------------------------------------------
-
+- 06-26-04: Job\Job_2-1\Job2_Wizard.txt - Mob test reinserted. [Tsusai]
+- 06-26-04: Job\Job_2-1\Job2_Wizard_MobTest.txt - Finalized, and removed.  Content now in Job2_Wizard.txt [Tsusai]
 - 06-26-04: Town\Town_Jawaii.txt - Contains warper back to izlude. [Muad_Dib]
 - 06-26-04: Event\Event_Making.txt - Fixed PH.D Quest. [Muad_Dib]
 - 06-26-04: Town\Town_Izlude.txt - Added link to jawaii. [Muad_Dib]
