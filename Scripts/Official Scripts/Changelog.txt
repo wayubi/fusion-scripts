@@ -9,8 +9,6 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.005
 ----------------------------------------------------------------------------------------------------
-- Job\Job1_Swordman.txt - sword_1-# maps do NOT exist in kRO GRF. [AlexKreuz]
-- Mob\other\job_quests.txt - sword_1-# maps do NOT exist in kRO GRF. [AlexKreuz]
 - Town\Town_Guide.txt - Updated Comodo Guides. [Muad_Dib]
 - Town\Town_Kafra.txt - Updated Comodo Kafra. [Muad_Dib]
 - Town\Town_Comodo.txt - Updated Town Comodo. [Muad_Dib]
