@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.005
 ----------------------------------------------------------------------------------------------------
+- Town\Town_Juno.txt - Updated Town Juno. [Tezuka]
 - Changelog.txt - fixed the \ in the web addresses to / [Tsusai]
 - Town\Town_Kafra.txt - Updated Comodo kafra prices.=. [Muad_Dib]
 - Town\Town_Comodo.txt - Updated a Paros Lighthouse NPC. [Muad_Dib]

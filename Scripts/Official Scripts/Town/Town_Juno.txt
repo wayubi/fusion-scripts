@@ -3,149 +3,235 @@
 //Translated by SilentDragon
 //----------------------------------
 
-yuno.gat,153,47,4	script	"Entrance Girl"	94,{
-	mes "[Miss YunoYun]";
-	mes "Understading the past, Reading through the present, and Predicting the future:";
-	mes "Welcome to the City of Wise Men.";
-	mes "Welcome to Yuno.";
+yuno.gat,153,47,4	script	"Juno Guide"	700,{
+	mes "[Ms. Yoon]";
+	mes "A place that envisions the present,";
+	mes "a place that foresees the future.";
+	mes "This is Juno,";
+	mes "the city of Sages.";
+	mes "J*U*N*O.";
+	mes "Welcome to Juno";
 	next;
-	menu "Weapon and Armor Shops",L1,"Tool Shop",L2,"Sage Castle",L3,"Street of Books",L4,"Yufero Square",L5,"Library of Republic",L6,"Shubaicher Magic School",L7,"Museum of Monsters",L8,"End Conversation",LEnd;
+	menu "Armoury",L1,"Tool Shop",L2,"Sage Castle (Sage Job Change Place)",L3,"Street of Book Stores",L4,"Juphero Plaza",L5,"Library of the Republic",L6,"Schweicherbil Magic Academy",L7,"Monster Museum",L8,"End Conversation",L9;
 L1:
 	viewpoint 1,117,135,1,0xff0000;
-	mes "^ff0000+^000000 -> Weapon and Armor Shops";
-	goto Lgo;
+	mes "[Ms. Yoon]";
+	mes "Please look at the mini map.";
+	mes "^ff0000+^000000 -> Armoury";
+	mes "Thank you, have a good day";
+	goto LEnd;
 L2:
-	viewpoint 1,1,1,2,0xff0000;
-	mes "^ff0000+^000000 -> Tool Shop";
-	goto Lgo;
+	viewpoint 1,1,1,2,0x0000ff;
+	mes "[Ms. Yoon]";
+	mes "Please look at the mini map.";
+	mes "^0000ff+^000000 -> Tool Shop";
+	mes "Thank you, have a good day";
+	goto LEnd;
 L3:
-	viewpoint 1,89,320,3,0xff0000;
-	mes "^ff0000+^000000 -> Sage Castle";
-	goto Lgo;
+	viewpoint 1,89,320,3,0x00ff00;
+	mes "[Ms. Yoon]";
+	mes "Please look at the mini map.";
+	mes "^00ff00+^000000 -> Sage Castle";
+	mes "(Sage Job Change Place)";
+	mes "Thank you, have a good day";
+	goto LEnd;
 L4:
 	viewpoint 1,193,141,4,0xff0000;
-	mes "^ff0000+^000000 -> Street of Books";
-	goto Lgo;
+	mes "[Ms. Yoon]";
+	mes "Please look at the mini map.";
+	mes "^ff0000+^000000 -> Street of Book Stores";
+	mes "Thank you, have a good day";
+	goto LEnd;
 L5:
-	viewpoint 1,157,327,5,0xff0000;
-	mes "^ff0000+^000000 -> Yufero Square";
-	goto Lgo;
+	viewpoint 1,157,327,5,0x0000ff;
+	mes "[Ms. Yoon]";
+	mes "Please look at the mini map.";
+	mes "^0000ff+^000000 -> Juphero Plaza";
+	mes "Thank you, have a good day";
+	goto LEnd;
 L6:
-	viewpoint 1,335,204,6,0xff0000;
-	mes "^ff0000+^000000 -> Library of Republic";
-	goto Lgo;
+	viewpoint 1,335,204,6,0x00ff00;
+	mes "[Ms. Yoon]";
+	mes "Please look at the mini map.";
+	mes "^00ff00+^000000 -> Library of the Republic";
+	mes "Thank you, have a good day";
+	goto LEnd;
 L7:
 	viewpoint 1,323,280,7,0xff0000;
-	mes "^ff0000+^000000 -> Shubaicher Magic School";
-	goto Lgo;
+	mes "[Ms. Yoon]";
+	mes "Please look at the mini map.";
+	mes "^ff0000+^000000 -> Schweicherbil Magic Academy";
+	mes "Thank you, have a good day";
+	goto LEnd;
 L8:
-	viewpoint 1,1,1,8,0xff0000;
-	mes "^ff0000+^000000 -> Museum of Monsters";
-	goto Lgo;
-Lgo:
-	mes "Thank you come again.";
-	close;
+	viewpoint 1,1,1,8,0x0000ff;
+	mes "[Ms. Yoon]";
+	mes "Please look at the mini map.";
+	mes "^0000ff+^000000 -> Monster Museum";
+	mes "Thank you, have a good day";
+	goto LEnd;
+L9:
+	mes "[Ms. Yoon]";
+        mes "A great city of wise men.";
+	mes "A city of Knowledge!";
+	mes "Welcome to Juno.";
+	goto LEnd;
 LEnd:
 	close;
 }
-yuno.gat,158,205,4	script	"Key Maker"	85,{
-	mes "[Key Maker]";
-	mes "Hello , I'm Yuno's maker of special items,";
-	mes "following yuno's old traditions and spirit of making various items";
+yuno.gat,157,205,4	script	"Juno Artisan"	54,{
+	mes "[Artisan]";
+	mes "Mumbling mumbling...";
+	mes "Hello there.";
+	mes "Let me introduce myself.";
+	mes "I am an artisan who tries to";
+	mes "succeed rights and duties of item";
+	mes "makers in Juno";
 	next;
-	menu "About strong weapons.",L1,"About special items",L2,"About traditional foods",L3,"Cancel",L4;
+	menu "About Powerful Equipments.",L1,"About Unique Items",L2,"About Authentic Food",L3,"End Conversation",L4;
 L1:
-	mes "[Key Maker]";
-	mes "^0000ffƒHoly guard^000000 and";
-	mes "^0000ffƒHoly avenger^000000";
-	mes "are holy weapons only for Crusaders.";
-	mes "Each equipment is very light, and attack and defense are quite nice.";
+	mes "[Artisan]";
+	mes "I can suggest ^0000ff'Holy Guards'^000000 and;
+	mes "^0000ff'Holy Avenger,'^000000which are limited";
+	mes "items for Crusaders.";
+	mes "These equipment items are very light and have sufficient";
+	mes "abilities.";
+	mes "Another remarkable thing about them";
+	mes "is";
+	mes "that they posses holy power,";
+	mes "so they're more powerful over some";
+	mes "kinds of monsters such as";
+	mes "undead or ghost";
 	next;
-	mes "[Key Maker]";
-	mes "Something you should focus on is that these have holy power,";
-	mes "which means these are of the Holy property.";
-	next;
-	mes "[Key Maker]";
-	mes "Thus, these work very well against undead or ghost monsters.";
-	mes "however, these are very rare and only a few chosen crusaders will be able to wear them...";
+	mes "[Artisan]";
+	mes "However it is rumored";
+	mes "that only a few chosen Crusaders";
+	mes "are able";
+	mes "to obtain those items because of";
+	mes "its rarity";
 	close;
 L2:
-	mes "[Key Maker]";
-	mes "Round circle inside another circle... and six stars on the circle.. ";
-	mes "this 'old magic formation' is very old looking, but also made very detailed..";
+	mes "[Artisan]";
+	mes "A magic scroll which has a circle";
+	mes "inside another circle..";
+	mes "and a star."
+	mes "Although ^ff0000'Worn-Out Magic Scroll'^000000";
+	mes "seems";
+	mes "very old and exhausted,";
+	mes "It is a very special magic scroll";
+	mes "which is";
 	next;
-	mes "[Key Maker]";
-	mes "... as a kind of magic-formation, quite a many scholars are researching on it.";
-	next;
-	mes "[Key Maker]";
-	mes "...this is an item that looks like it'd be used for high level, difficult, mysterious magic.";
+	mes "[Artisan]";
+	mes "favoured by a lot of sages for";
+	mes "their research.";
+	mes "It seems you can use the item when";
+	mes "you chant a high-leveled magic";
+	mes "spell";
 	close;
 L3:
-	mes "[Key Maker]";
-	mes "^0000ff'popcorn'^000000!!";
-	mes "korean popcorn)!! in old markets - old time's romance!";
-	mes "traditional and original taste that many people loved for a long time!";
-	next;
-	mes "[Key Maker]";
-	mes "ah ah.... 'popcorn'..... i wish i could eat it now.....";
+	mes "[Artisan]";
+	mes "^0000ff'Rice Cake'^000000!!";
+	mes "Yes,it's a traditional food that";
+	mes "has been favoured by a lot of";
+	mes "people.";
+	mes "It reminds you of old memories of";
+	mes "traditional markets!";
+	mes "Ah...that Rice Cake..";
+	mes "I wish I could eat a bit of Rice";
+	mes "Cake right now.";
+	mes "......";
 	close;
 L4:
-	mes "[Key Maker]";
-	mes "'Yuno' is scholar's city, but also, it is a place regular people live in.";
-	mes "I hope you will be attracted to live in Yuno as well.";
+	mes "[Artisan]";
+	mes "Before we talk about Juno as a city";
+	mes "of Sages,";
+	mes "I hope you will understand this";
+	mes "'Juno' is also a place where";
+	mes "ordinary people live together.";
+	mes "Please enjoy the unique atmosphere";
+	mes "of Juno";
 	close;
 }
-yuno.gat,184,173,4	script	"Impressor"	729,{
-	mes "[Impressor]";
-	mes "Scholar's city,";
-	mes "^0000ff'Yuno'^000000";
-	mes "is made of 3 big islands.";
+yuno.gat,184,173,4	script	"Juno Addict"	729,{
+	mes "[Fridrich]";
+	mes "The city of Sages,";
+	mes "^0000ff'Juno,'^000000consists of";
+	mes "3 islands.";
 	next;
-	mes "[Impressor]";
-	mes "They are,";	
-	mes "^0000ffThe island of Glory - Solomon^000000";
-	mes "^ff0000The island of Prosperity - Minetta^000000";
-	mes "^00ff00The island of Wisdom - Snottra^000000";
+	mes "[Fridrich]";
+	mes "Those 3 islands are,";	
+	mes "^0000ff'Solomon,the island of honour,'^000000,";
+	mes "^ff0000'Mineta,the island of prosperity,'^000000,";
+	mes "^00ff00'Snotora,the island of^000000";
+	mes "^00ff00knowledge.'^000000";
 	next;
-	mes "[Impressor]";
-	mes "Each island is located at:";
-	mes "Northwest: Solomon";
-	mes "Northeast: Snottra";
-	mes "South: Minetta";
+	mes "[Fridrich]";
+	mes "The location of each island is";
+	mes "North-west:Solomon";
+	mes "North-east:Snotora";
+	mes "South:Mineta.";
 	close;
 }
-yuno.gat,260,98,4	script	"Icla"	742,{
-	mes "[Icla]";
-	mes "Yuferos. this is the ancient land,";
-	mes "the city where men who could control Ymir's heart lived....";
-	Next;
-	mes "[Icla]";
-	mes "however, they were too into the strength of Ymir's heart, they overused it and were led to self-destruction.";
-	mes "You, in order to achieve wisdom...";
-	Next;
-	mes "[Icla]";
-	mes "if so, then first become a human being. Only when you empty your mind you'd achieve strength.";
+yuno.gat,261,99,4	script	"Sage Yklah"	735,{
+	mes "[Yklah]";
+	mes "0000ffJuphero^000000 -";
+	mes "That was the name of the city that";
+	mes "once existed in ancient times,";
+	mes "where the most intelligent and";
+	mes "talented people used to live,and";
+	mes "lead their lives by controlling the";
+	mes "pieces of Ymir's heart";
+	next;
+	mes "[Yklah]";
+	mes "Unfortunately,they happened to";
+	mes "abuse great power from the pieces";
+	mes "of Ymir's heart";
+	mes "and destroyed themselves.";
+	mes "Young one.If you long to acquire";
+	mes "God's knowledge,";
+	mes "Be humble first.";
+	mes "You won't be able to obtain";
+	mes "anything if you are not willing to";
+	mes "be humble.';
 	close;
 }
-yuno.gat,305,207,4	script	"Sycla"	68,{
-	mes "[Sycla]";
-	mes "From a long time ago, one person who's into strange research has been";
-	mes "living in Yuno, always making trouble in this neighborhood...";
+yuno.gat,305,207,4	script	"Sage Syklah"	735,{
+	mes "[Syklah]";
+	mes "People are talking about a";
+	mes "suspicious man";
+	mes "living somewhere in Juno.";
+	mes "According to hearsay,he's nothing";
+	mes "but a dangerous person";
+	mes "who always immerses himself in some";
+	mes "kind of research.";
 	Next;
-	mes "[Sycla]";
-	mes "people call him, 'Mad Scientist'.";
-	mes "even today, this person is putting all his insane passion into the not-understandable research.";
-	Next;
-	mes "[Sycla]";
-	mes "around Yuno, there is a monster called 'Blazer' among the monsters,";
-	mes "which is made of flames. it uses firebolt and fireball,";
-	Next;
-	mes "[Sycla]";
-	mes "such dangerous magic, and it attacks humans as soon as it spots one.";
-	mes "according to rumors, this blazer is not made by some crazy magician, but..";
-	Next;
-	mes "[Sycla]";
-	mes "maybe this was made by that mad scientist......";
+	mes "[Syklah]";
+	mes "A so called 'Mad Scientist,'";
+	mes "He wastes his time,studying";
+	mes "impratical things";
+	mes "beyond the understanding of normal";
+	mes "people."
+	next;
+	mes "[Syklah]";
+	mes "When you go outside Juno,";
+	mes "you will see a monster named";
+	mes "'Blazer'";
+	mes "that is a ball made of magic";
+	mes "flame.";
+	mes "When you go outside Juno,";
+	mes "you will see a monster named";
+	mes "'Blazer'";
+	mes "that is a ball made of magic";
+	mes "flame.";
+ 	mes "When it finds any living creature,";
+	mes "it starts to cast horrible magic";
+	mes "spells such as Fire Bolt or Fire";
+	mes "Ball.";
+	mes "So it scares the hell out of most";
+	mes "people.";
+	mes "It was rumored that the mad";
+	mes "scientist had made his crazy";
+	mes "creature."
 	close;
 }
 yuno_in03.gat,25,39,4	script	"Meto"	121,{
@@ -220,7 +306,8 @@ yuno_in03.gat,62,176,4	script	"Lailas Sapien"	123,{
 }
 yuno.gat,263,320,4	script	"Yuno Soldier"	105,{
 	mes "[Yuno Soldier]";
-	mes "Welcome to Yuno, the scholar's city where ancient wisdom exists.";
+	mes "Welcome to Juno,the city of";
+	mes "noble-mindedness.";
 	Next;
 	mes "[Yuno Soldier]";
 	mes "There is a holy shield for Crusaders called 'The Messenger of the God'.";
@@ -232,7 +319,8 @@ yuno.gat,263,320,4	script	"Yuno Soldier"	105,{
 }
 yuno.gat,227,292,4	script	"Yuno Soldier"	105,{
 	mes "[Yuno Soldier]";
-	mes "Welcome to City of scholars where wisdom exists, Yuno.";
+	mes "Welcome to Juno,the city of";
+	mes "noble-mindedness.";
 	Next;
 	mes "[Yuno Soldier]";
 	mes "Around the City of Juno, there is fallen angel that fakes himself as the real angel, named 'Fake Angel'.";
@@ -242,55 +330,80 @@ yuno.gat,227,292,4	script	"Yuno Soldier"	105,{
 	mes "It looks all beautiful, so it's bad if you fall for its appearance.";
 	close;
 }
-yuno.gat,150,283,4	script	"Yuno Soldier"	105,{
-	mes "[Yuno Soldier]";
-	mes "Welcome to City of scholars where wisdom exists, Yuno.";
+yuno.gat,150,283,4	script	"Juno Soldier"	105,{
+	mes "[Juno Soldier]";
+	mes "Welcome to Juno,the city of";
+	mes "noble-mindedness.";
 	Next;
-	mes "[Yuno Soldier]";
-	mes "Larva Golem is a stone doll that has a stone heart in which its magical power was induced by magma.";
-	mes "....from the body, it flows...";
+	mes "[Juno Soldier]";
+	mes "There is a monster named 'Lava";
+	mes "Golem.'";
+	mes "It is made out of a stone heart";
+	mes "which happened to amplify";
+	mes "its magic power while being swept";
+	mes "away by molten rock.";
+	mes "Lava dripping from its body is";
 	Next;
-	mes "[Yuno Soldier]";
-	mes "Magma is really hot as to even melt away armor and weapon made with steel.";
-	mes "if you attack thoughtlessly, ";
+	mes "[Juno Soldier]";
+	mes "so hot,it can melt down armor and";
+	mes "weapons that are made out of high";
+	mes "quality steel."
+	mes "You'd better be careful when you";
+	mes "encounter this monster.";
+	mes "It will damage armour and weapons in";
+	mes "the twinkling of an eye,";
+	mes "Not to mention the whallop its";
+	mes "attack inflict on you!";
 	Next;
-	mes "[Yuno Soldier]";
+	mes "[Juno Soldier]";
 	mes "you might get a lot of damage on yourself and even get your armor and weapon broken.";
 	close;
 }
 yuno.gat,165,283,4	script	"Yuno Soldier"	105,{
 	mes "[Yuno Soldier]";
-	mes "Welcome to City of scholars where wisdom exists.";
+	mes "Welcome to Juno,the city of";
+	mes "noble-mindedness.";
 	Next;
 	mes "[Yuno Soldier]";
-	mes "'Geographer', it is a hard shell type thing that grows around flowers from the earth.";
+	mes "'Geographer'";
 	mes "Thus, even if it's far away, you can't think less of it.";
 	Next;
 	mes "[Yuno Soldier]";
 	mes "it got such name 'cause the passing-by geography scholar got eaten away during his research.";
 	close;
 }
-yuno.gat,156,87,4	script	"Man"	105,{
-	mes "[Yigonglyukchichi]";
-	mes "If you go north from Al De Baran,";
-	mes "you will get to Magma Plane named [El Mas Plauteau].";
-	mes "The place where the heat makes it hard for you to breathe...";
+yuno.gat,157,87,4	script	"A Citizen of Juno"	102,{
+	mes "[Hans]";
+	mes "When you go forward north from Al";
+	mes "De Baran....";
+	mes "You will arrive at 'Elmeth Plateau',";
+	mes "a place covered with molten rocks.";
+	mes "On the top of a mountain connected";
+	mes "to the plateau,";
+	mes "You can find a bridge which leads";
+	mes "to this place!";
+	mes "^0000ff'Juno,'^000000the city of Sages.";
 	Next;
-	mes "[Yigonglyukchichi]";
-	mes "This city of [Yuno] has international famous places such as";
+	mes "[Hans]";
+	mes "In this place,Juno";
+	mes "you can visit worldwide famous";
+	mes "places such as";
+	mes "'Juphero Plaza,' ";
+	mes "'Juno Conference Hall,";
+	mes "'Schweicherbil Magic Academy',";
+	mes "or the 'Monster Museum.' ";
 	Next;
-	mes "[Yigonglyukchichi]";
-	mes "`Yufero Square'";
-	mes "`Yuno Conference Court`";
-	mes "`Shubaicher Magic School`";
-	mes "`Museum of Monsters`";
+	mes "[Hans]";
+	mes "Especially the 'Sage Castle,' ";
+	mes "where people can change their job into 'Sage,' ";
+	mes "one of the most luxurious classes.";
+	mes "It's one of the attractions in this";
+	mes "city.";
 	Next;
-	mes "[Yigonglyukchichi]";
-	mes "And Especially, 'Sage Castle' ";
-	mes "where you can change to job 'Sage' is one of the famous interest point.";
-	Next;
-	mes "[Yigonglyukchichi]";
-	mes "Please visit Sage Castle for information on Sage some time during the visit.";
+	mes "[Hans]";
+	mes "If you're interested in the Sage";
+	mes "class,";
+	mes "why don't you go look around the castle?";
 	close;
 }
 yuno_in03.gat,244,31,2	script	"Ebeshi Jorge"	120,{
@@ -301,36 +414,69 @@ yuno_in03.gat,244,31,2	script	"Ebeshi Jorge"	120,{
 	mes "Hohoho, nothing really to look at? still, enjoy yourself here before you go~ hohoho";
 	close;
 }
-yuno.gat,163,328,4	script	"Escla"	735,{
-	mes "[Escla]";
-	mes "I've seen it before. Ahhh, i remember... A floating paper was flying around in the air helplessly... ";
-	mes "as if it couldn't resist the wind...was what i thought,";
-	mes "puhat(laugh)it attacked me all of sudden! Me, the one of three scholars of Yuno.";
+yuno.gat,163,328,4	script	"Sage Esklah"	735,{
+	mes "[Esklah]";
+	mes "I remember I saw it once.";
+	mes "Yeah...I remember..";
+	mes "There was a paper flying in the";
+	mes "air.";
+	mes "So I thought 'Hmm,who lost that";
+	mes "paper?'";
 	Next;
-	mes "[Escla]";
-	mes "As a Sage, I wouldn't lose to such thing, i thought, so i attacked it with a sword.";
-	mes "But that paper was attacking me with quite clever attacks.";
-	Next;
-	mes "[Escla]";
-	mes "It was using its thin body that it would easily get away from my sword. and even if i hit it";
-	mes "i couldn't tell if i hit it or not, 'cause ther was no feeling on my hands.";
-	Next;
-	mes "[Escla]";
-	mes "So finally i used my magic to get rid of that monster.";
-	mes "lAter on, i asked other scholars of this, and his name is 'The Paper'.";
-	Next;
-	mes "[Escla]";
-	mes "It's a paper from old books of Juno, containing Juno's ancient wisdom... I thought, Such a thing could happen, eh...";
+	mes "[Esklah]";
+	mes "Then,suddenly the paper attacked";
+	mes "me!";
+	mes "It attacked me,one of the greatest";
+	mes "sages in JUNO!";
+	mes "So I was like 'Okay,how dare you";
+	mes "attack me,you little paper!!";
+	mes "and struck back using my trusty";
+	mes "sword.";
+	mes "...That paper thing knew how to";
+	mes "annoy its enemies well.";
+	next;
+	mes "[Esklah]"
+	mes "Using its thin paper-like body";
+	mes "it dodged my sword by standing";
+	mes "straight,";
+	mes "also I couldn't tell whether I hit";
+	mes "it or not because it was damn";
+	mes "thin!";
+	mes "Finally,I just used a magic spell"
+	mes "to eliminate that paper.";
+	mes "That monster was so hard to";
+	mes "defeat.";
+	mes "Later I asked about it from the";
+	mes "other sages,";
+	mes "and figured out what it was.";
+	next;
+	mes "[Esklah]"
+	mes "It is called ^0000ff'The Paper.'^000000";
+	mes "People said that it used to be a";
+	mes "part of an old book that contained";
+	mes "a lot of ancient knowledge about";
+	mes "Juno.";
+	mes "And it suddenly become a";
+	mes "monster...isn't it weird?";
 	close;
 }
-yuno_in01.gat,17,95,4	script	"Stancle"	99,{
-	mes "[Stancle]";
-	mes "I'm one of the scientists in this city, stancle.";
-	mes "It will benefit you if you remember my name.";
+yuno_in01.gat,17,95,4	script	"Stangckle"	99,{
+	mes "[Stangckle]";
+	mes "I am one of the scientists in this";
+	mes "village. My name is Stangckle.";
+	mes "You should remember my name,it";
+	mes "may be useful to you in future.";
+
 	close;
 }
-yuno_in01.gat,19,182,3	script	"????"	55,{
-	mes "?????";
+yuno_in01.gat,19,183,3	script	"Kato"	55,{
+	mes "[Kato]";
+	mes "I am a scientist of Artificial";
+	mes "Intelligence and Robotics.";
+	mes "I don't have a specific project";
+	mes "right now,but my latest creation creation,";
+	mes "the 'GreatZ,'is truly a product";
+	mes "of sheer and utter genius";
 	close;
 }
 yuno_in01.gat,103,158,4	script	"?????"	98,{
@@ -342,12 +488,19 @@ yuno_in01.gat,99,153,2	script	"?????"	47,{
 	close;
 }
 
-yuno.gat,166,111,4	script	"Remorpheous"	120,{
+yuno.gat,165,111,4	script	"Juno Sage"	123,{
 	mes "[Remorpheous]";
-	mes "^0000ff 'Apocalypse'^000000";
-	mes "He, an artificial human being,";
-	mes "was the chief of gatekeepers and in charge of public order of the city";
-	mes "of [Yuno] during the Ancient times civilization...";
+	mes "^0000ff'Apocalypse'^000000";
+	mes "It is the name of an android that";
+	mes "used to guard Juno a long time";
+	mes "ago.";
+	mes "It is very similar to a robot.";
+	mes "Because its artificial intelligence";
+	mes "has messed up after a long time,";
+	mes "it does not distinguish between its";
+	mes "comrades and enemies any more."
+	mes "Sadly, the andriod is nothing but a ";
+	mes "monster now";
 	Next;
 	mes "[Remorpheous]";
 	mes "....similar to Robot. After living for a long time,";
@@ -356,5 +509,48 @@ yuno.gat,166,111,4	script	"Remorpheous"	120,{
 	Next;
 	mes "[Remorpheous]";
 	mes ".... it became a monster that attacks anyone regardless";
+	close;
+}
+yuno.gat,337,227,4	script	"Juno Granny"	123,{
+	mes "[Granny]";
+	mes "Here you come...";
+	mes "I am a sage granny who foresees";
+	mes "everything.";
+	mes "Have you heard about the name of a";
+	mes "big boss monster that has been fuzzing";
+	mes "around Juno for a long time?";
+	mes "It's called ^ff0000'Lord of the Dead'^000000";
+	mes "it was rumored to be from another";
+	mes "realm of the dead,"
+	mes "and it carries many undead monsters";
+	mes "with it,intending to lead living";
+	mes "creatures to the cold and icy dead";
+	mes "land.";
+	mes "You have chosen whether you will";
+	mes "challenge the lord of the dead or";
+	mes "not.";
+	mes "All you need to do right now is";
+	mes "understanding why you made the";
+	mes "decision.";
+	close;
+}
+yuno.gat,328,239,4	script	"Juno Fighter"	732,{
+	mes "[Sergiof]";
+	mes "My name is Sergiof,the fighter who";
+	mes "serves Granny.";
+	mes "I will tell you about the ^0000ffGrand^000000";
+	mes "^0000ffPeco^000000 which is a high level Peco";
+	mes "Peco.";
+	mes "Grand Peco is faster than Peco Peco";
+	mes "and has aggressive tendencies,";
+	mes "attacking targets using its strong";
+	mes "bill."
+	next;
+	mes "[Sergiof];
+	mes "And it carries many Peco Pecos with";
+	mes "it.";
+	mes "...Unfortunately it's time for us";
+	mes "to be apart.";
+	mes "Farewell ..";
 	close;
 }
