@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.002
 ----------------------------------------------------------------------------------------------------
+- Warp\town\Izlude.txt - Removed unneeded double warp (warp0417). [Tsusai]
 - Warp\town\Niflheim.txt - Added Niflheim town warps. [Tsusai]
 - Warp\fields\nif_fild.txt - Added Niflheim field warps. [Tsusai]
 - Warp\fields\yggdrasil.txt - Added yggdrasil field warps. [Tsusai]
