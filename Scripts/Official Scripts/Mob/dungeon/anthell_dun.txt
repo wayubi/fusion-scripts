@@ -104,7 +104,6 @@ anthell01.gat,0,0,0,0   	monster	"Andre" 1095,35,0,0,0
 anthell01.gat,0,0,0,0   	monster	"Piere" 1160,35,0,0,0
 anthell01.gat,0,0,0,0   	monster	"Deniro" 1105,35,0,0,0
 anthell01.gat,0,0,0,0   	monster	"Vitata" 1176,20,0,0,0
-
 anthell01.gat,0,0,0,0   	monster	"Phreeoni" 1159,1,3600000,7200000,0
 
 //========================================================================================

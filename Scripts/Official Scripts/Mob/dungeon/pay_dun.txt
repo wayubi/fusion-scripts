@@ -44,9 +44,9 @@ pay_dun02.gat,111,199,10,10	monster	"Black Mushroom" 1084,7,900000,450000,1
 pay_dun02.gat,214,266,0,0	monster	"Red Plant" 1078,1,600000,300000,1
 pay_dun02.gat,0,0,0,0	      monster	"Red Plant" 1078,10,180000,90000,1
 pay_dun02.gat,0,0,0,0	      monster	"White Plant" 1082,5,180000,90000,1
-pay_dun02.gat,227,185,0,0	monster	""Mandragora"" 1020,1,300000,100000,1
-pay_dun02.gat,227,184,0,0	monster	""Mandragora"" 1020,1,300000,100000,1
-pay_dun02.gat,229,183,0,0	monster	""Mandragora"" 1020,1,300000,100000,1
+pay_dun02.gat,227,185,0,0	monster	"Mandragora" 1020,1,300000,100000,1
+pay_dun02.gat,227,184,0,0	monster	"Mandragora" 1020,1,300000,100000,1
+pay_dun02.gat,229,183,0,0	monster	"Mandragora" 1020,1,300000,100000,1
 pay_dun02.gat,107,190,0,0	monster	"Hydra" 1068,1,320000,100000,1
 pay_dun02.gat,108,191,0,0	monster	"Hydra" 1068,1,332000,100000,1
 pay_dun02.gat,109,193,0,0	monster	"Hydra" 1068,1,300000,100000,1
