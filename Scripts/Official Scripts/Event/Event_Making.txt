@@ -24,6 +24,9 @@
 // - Bow -> payon_in02: 25,71
 //   Give information and make Oxygen Mask Quest.
 //
+// - Eric -> geffen_in: 30,71
+//   Give information and make Headset Quest.
+//
 //========================================================================================
 
 payon_in01.gat,103,111,4	script	"Granny"	103,{
@@ -591,14 +594,7 @@ payon_in02.gat,25,71,4	script	"Boy"	86,{
 		close;
 }
 
-//-----------------------------------------------
-// Eric the Headphone Maker
-// Rewritten to match iRO
-// Completion text translated
-// Gramatically corrected as best as possible.
-//-----------------------------------------------
-
-geffen_in.gat,30,71,4	script	Eric	83,{
+geffen_in.gat,30,71,4	script	"Eric"	83,{
 	mes "[Eric]";
 	mes "Please listen to my story of my blessed Grandfather.";
 	next;
@@ -664,7 +660,7 @@ geffen_in.gat,30,71,4	script	Eric	83,{
 		checkitem 970,1,-,L_SUB_1;
 		checkitem 1003,1,-,L_SUB_1;
 		mes "[Eric]";
-		mes "（トン！トン！トン！）";
+		mes "Thump thump ..";
 		delitem 999,40;
 		delitem 984,1;
 		delitem 970,1;
