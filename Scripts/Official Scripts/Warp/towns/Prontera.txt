@@ -1,7 +1,7 @@
 //========================================================================================
 // »» The Fusion Project ««
 // Copyright (c) 2004, Cobax Information Systems
-// http://fusion.cobax.net/
+// http://cobax.net/
 // ---------------------------------------------------------------------------------------
 //
 // Prontera Town Warps - Warp Locations
@@ -27,47 +27,38 @@ prontera.gat,204,192,0	 warp	 warpprontera016	2,2,prt_in.gat,68,134
 prontera.gat,208,154,0	 warp	 warpprontera017	2,2,prt_in.gat,172,29
 prontera.gat,237,317,0	 warp	 warpprontera018	2,2,prt_church.gat,100,60
 prontera.gat,289,203,0	 warp	 warpprontera019	2,3,prt_fild06.gat,27,193
-prt_are_in.gat,31,122,0	 warp	 warpprontera020	1,1,prt_are_in.gat,31,92
-prt_are_in.gat,49,82,0	 warp	 warpprontera021	1,1,prt_are_in.gat,76,82
-prt_are_in.gat,72,82,0	 warp	 warpprontera022	1,1,prt_are_in.gat,44,82
-prt_are_in.gat,99,24,0	 warp	 warpprontera023	1,1,izlude.gat,127,221
-prt_are_in.gat,99,47,0	 warp	 warpprontera024	1,1,prt_are_in.gat,99,76
-prt_are_in.gat,99,72,0	 warp	 warpprontera025	1,1,prt_are_in.gat,99,43
-prt_are_in.gat,127,82,0	 warp	 warpprontera026	1,1,prt_are_in.gat,156,82
-prt_are_in.gat,152,82,0	 warp	 warpprontera027	1,1,prt_are_in.gat,123,82
-prt_are_in.gat,169,122,0 warp	 warpprontera028	1,1,prt_are_in.gat,169,92
-prt_church.gat,31,19,0	 warp	 warpprontera029	1,2,prt_church.gat,94,81
-prt_church.gat,90,81,0	 warp	 warpprontera030	1,2,prt_church.gat,27,19
-prt_church.gat,100,56,0	 warp	 warpprontera031	7,1,prontera.gat,234,314
-prt_church.gat,109,81,0	 warp	 warpprontera032	1,2,prt_church.gat,172,19
-prt_church.gat,168,19,0	 warp	 warpprontera033	1,2,prt_church.gat,105,81
-prt_in.gat,37,65,0	 warp	 warpprontera034	1,3,prt_in.gat,51,65
-prt_in.gat,47,29,0	 warp	 warpprontera035	2,1,prontera.gat,46,67
-prt_in.gat,48,65,0	 warp	 warpprontera036	1,3,prt_in.gat,34,65
-prt_in.gat,53,105,0	 warp	 warpprontera037	1,2,prontera.gat,136,186
-prt_in.gat,60,77,0	 warp	 warpprontera038	2,1,prontera.gat,175,188
-prt_in.gat,68,130,0	 warp	 warpprontera039	2,1,prontera.gat,204,188
-prt_in.gat,69,65,0	 warp	 warpprontera040	1,3,prt_in.gat,85,65
-prt_in.gat,70,143,0	 warp	 warpprontera041	2,1,prt_in.gat,70,165
-prt_in.gat,70,162,0	 warp	 warpprontera042	2,1,prt_in.gat,70,140
-prt_in.gat,80,113,0	 warp	 warpprontera043	2,1,prontera.gat,48,343
-prt_in.gat,82,65,0	 warp	 warpprontera044	1,3,prt_in.gat,66,65
-prt_in.gat,135,71,0	 warp	 warpprontera045	1,2,prontera.gat,136,219
-prt_in.gat,168,124,0	 warp	 warpprontera046	2,1,prontera.gat,174,218
-prt_in.gat,172,33,0	 warp	 warpprontera047	2,1,prontera.gat,205,157
-prt_in.gat,181,55,0	 warp	 warpprontera048	1,2,prontera.gat,192,264
-prt_in.gat,183,97,0	 warp	 warpprontera049	1,2,prontera.gat,120,264
-prt_in.gat,208,179,0	 warp	 warpprontera050	3,1,prontera.gat,76,102
-prt_in.gat,217,163,0	 warp	 warpprontera051	1,3,prt_in.gat,236,163
-prt_in.gat,234,163,0	 warp	 warpprontera052	1,3,prt_in.gat,215,163
-prt_in.gat,240,141,0	 warp	 warpprontera053	3,1,prontera.gat,107,218
-prt_in.gat,248,173,0	 warp	 warpprontera054	3,2,prontera.gat,77,93
-prt_in.gat,254,113,0	 warp	 warpprontera055	3,2,prt_in.gat,256,134
-prt_in.gat,256,131,0	 warp	 warpprontera056	2,2,prt_in.gat,254,110
-prt_in.gat,263,163,0	 warp	 warpprontera057	1,3,prt_in.gat,276,163
-prt_in.gat,274,163,0	 warp	 warpprontera058	1,3,prt_in.gat,261,163
-prt_in.gat,280,68,0	 warp	 warpprontera059	6,6,prontera.gat,147,287
-prt_in.gat,281,36,0	 warp	 warpprontera060	6,6,prontera.gat,147,287
-prt_in.gat,282,100,0	 warp	 warpprontera061	6,6,prontera.gat,147,287
-prt_in.gat,282,179,0	 warp	 warpprontera062	3,1,prontera.gat,87,91
-prt_in.gat,285,130,0	 warp	 warpprontera063	6,6,prontera.gat,147,287
+prt_church.gat,31,19,0	 warp	 warpprontera020	1,2,prt_church.gat,94,81
+prt_church.gat,90,81,0	 warp	 warpprontera021	1,2,prt_church.gat,27,19
+prt_church.gat,100,56,0	 warp	 warpprontera022	7,1,prontera.gat,234,314
+prt_church.gat,109,81,0	 warp	 warpprontera023	1,2,prt_church.gat,172,19
+prt_church.gat,168,19,0	 warp	 warpprontera024	1,2,prt_church.gat,105,81
+prt_in.gat,37,65,0	 warp	 warpprontera025	1,3,prt_in.gat,51,65
+prt_in.gat,47,29,0	 warp	 warpprontera026	2,1,prontera.gat,46,67
+prt_in.gat,48,65,0	 warp	 warpprontera027	1,3,prt_in.gat,34,65
+prt_in.gat,53,105,0	 warp	 warpprontera028	1,2,prontera.gat,136,186
+prt_in.gat,60,77,0	 warp	 warpprontera029	2,1,prontera.gat,175,188
+prt_in.gat,68,130,0	 warp	 warpprontera031	2,1,prontera.gat,204,188
+prt_in.gat,69,65,0	 warp	 warpprontera032	1,3,prt_in.gat,85,65
+prt_in.gat,70,143,0	 warp	 warpprontera033	2,1,prt_in.gat,70,165
+prt_in.gat,70,162,0	 warp	 warpprontera034	2,1,prt_in.gat,70,140
+prt_in.gat,80,113,0	 warp	 warpprontera035	2,1,prontera.gat,48,343
+prt_in.gat,82,65,0	 warp	 warpprontera036	1,3,prt_in.gat,66,65
+prt_in.gat,135,71,0	 warp	 warpprontera037	1,2,prontera.gat,136,219
+prt_in.gat,168,124,0	 warp	 warpprontera038	2,1,prontera.gat,174,218
+prt_in.gat,172,33,0	 warp	 warpprontera039	2,1,prontera.gat,205,157
+prt_in.gat,181,55,0	 warp	 warpprontera040	1,2,prontera.gat,192,264
+prt_in.gat,183,97,0	 warp	 warpprontera041	1,2,prontera.gat,120,264
+prt_in.gat,208,179,0	 warp	 warpprontera042	3,1,prontera.gat,76,102
+prt_in.gat,217,163,0	 warp	 warpprontera043	1,3,prt_in.gat,236,163
+prt_in.gat,234,163,0	 warp	 warpprontera044	1,3,prt_in.gat,215,163
+prt_in.gat,240,141,0	 warp	 warpprontera045	3,1,prontera.gat,107,218
+prt_in.gat,248,173,0	 warp	 warpprontera046	3,2,prontera.gat,77,93
+prt_in.gat,254,113,0	 warp	 warpprontera047	3,2,prt_in.gat,256,134
+prt_in.gat,256,131,0	 warp	 warpprontera048	2,2,prt_in.gat,254,110
+prt_in.gat,263,163,0	 warp	 warpprontera049	1,3,prt_in.gat,276,163
+prt_in.gat,274,163,0	 warp	 warpprontera050	1,3,prt_in.gat,261,163
+prt_in.gat,280,68,0	 warp	 warpprontera051	6,6,prontera.gat,147,287
+prt_in.gat,281,36,0	 warp	 warpprontera052	6,6,prontera.gat,147,287
+prt_in.gat,282,100,0	 warp	 warpprontera053	6,6,prontera.gat,147,287
+prt_in.gat,282,179,0	 warp	 warpprontera054	3,1,prontera.gat,87,91
+prt_in.gat,285,130,0	 warp	 warpprontera055	6,6,prontera.gat,147,287

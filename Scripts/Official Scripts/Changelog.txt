@@ -1,6 +1,10 @@
 --------------------------------------------------------------------------------
  Fusion 1.213 - August 29th, 2004
 --------------------------------------------------------------------------------
+- 09-07-04: Quest\quest_arena_test.txt - Moved npc to updated prt_are_in map coordinate. [Muad_Dib]
+- 09-07-04: Warp\town\Prontera.txt - Removed prt_are_in warps. [Muad_Dib]
+- 09-07-04: Warp\town\Izlude.txt - Removed prt_are_in warps. [Muad_Dib]
+- 09-07-04: Warp\other\prt_are_in.txt - Added new prt_are_in warps cause kRO changed the map. [Muad_Dib]
 - 09-07-04: Warp\other\arena_room.txt - Made new warps cause kRO changed the map. [Muad_Dib]
 - 09-07-04: Town\Town_Morocc.txt - Added new mRO npc's and npc emotions. [Muad_Dib]
 - 09-07-04: Town\Town_Izlude.txt - Added npc emotions. [Muad_Dib]
