@@ -9,6 +9,8 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.005
 ----------------------------------------------------------------------------------------------------
+- Event\Event_Prontera_Sewers.txt - Seperated from Town_Prontera.txt and updated/cleaned the script . [Muad_Dib]
+- Town\Town_Prontera.txt - Reorganised town prontera. [Muad_Dib]
 - GvG\npc_guardiankafra.txt - Simplified the script. [Tsusai/icbob]
 - Event\Event_Rental.txt - Falcon Fancenier now checks for Sniper instead of High Wizard. [Muad_Dib]
 - Quest\Quest_Skill\NPC_Novice_Skill - Added more up to date version of the novice skill quests. [Muad_Dib]
