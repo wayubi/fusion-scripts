@@ -6450,7 +6450,8 @@ mjolnir_02.gat,82,362,6	script	"kafra Personnel"	116,{
 		mes "How may I help you?";
 		next;
  L_SUB_0_1:
-	menu "Storage Service",L_MENU_2,"Cart Rental Service",L_MENU_4,"Use kafra Coupon",L_MENU_5,"End",L_MENU_7;
+//	menu "Storage Service",L_MENU_2,"Cart Rental Service",L_MENU_4,"Use kafra Coupon",L_MENU_5,"End",L_MENU_7;
+	menu "Storage Service",L_MENU_2,"Use kafra Coupon",L_MENU_5,"End",L_MENU_7;
 	L_MENU_2:
 		getskilllevel 1,@storagecheck;
 		check @storagecheck >= 6,L_SUB_2_1,-;
@@ -6476,57 +6477,57 @@ mjolnir_02.gat,82,362,6	script	"kafra Personnel"	116,{
 	L_SUB_2_2:
 		store;
 		goto L_EXIT;
-	L_MENU_4:
-		check Job != 5,-,L_SUB_4_1;
-		check Job != 10,-,L_SUB_4_1;
-		check Job != 18,-,L_SUB_4_1;
-			mes "[kafra Personnel]";
-			mes "I am sorry.";
-			mes "The Cart service is only provided for";
-			mes "Merchant, Blacksmith, and Alchemist classes.";
-			check @kafra_COUPON = 0,-,L_ROOT_4_1;
-				goto L_EXIT;
-			L_ROOT_4_1:
-				next;
-				goto L_START_1;
-		L_SUB_4_1:
-			check @kafra_COUPON = 0,-,L_SUB_4_2;
-				mes "[kafra Personnel]";
-	   			mes "The Cart Fee is 800 Zeny.";
-	    	   		mes "To rent a cart";
-				next;
-   				menu "Rent a Cart.",L_MENU_4_1,"Cancel",L_MENU_4_2;
-		L_MENU_4_1:
-				getskilllevel 39,@skilllv_pushcart; 
-				check @skilllv_pushcart => 1,-,L_skill;
-				check Zeny < 800,-,L_ROOT_4_2; 
-        	 		mes "[kafra Personnel]";
-       				mes "Dear. you don't have enough Money.";
-	       			mes "The Cart Fee is 800 Zeny.";
-				goto L_EXIT;
-		L_skill:
-				mes "You do not have the skill PushCart.";
-				mes "You can't get a cart without that."
-				goto L_EXIT;
-		L_ROOT_4_2:
-				set Zeny -= 800,0;
-				check option == 0,-,L_MENU_4_3;
-				option 0,1;
-				goto L_EXIT;
-		L_MENU_4_2:
-				mes "[kafra Personnel]";
-  				mes "Thank you.";
-   				mes "Please come again.";
-				goto L_EXIT;
-		L_MENU_4_3:
-				mes "[kafra Personnel]";
-				mes "Sorry you already have a cart.";
-				next;
-				goto L_EXIT;
-		L_SUB_4_2:
-			check option == 0,-,L_MENU_4_3;
-			option 0,1;
-			goto L_START_1;
+//	L_MENU_4:
+//		check Job != 5,-,L_SUB_4_1;
+//		check Job != 10,-,L_SUB_4_1;
+//		check Job != 18,-,L_SUB_4_1;
+//			mes "[kafra Personnel]";
+//			mes "I am sorry.";
+//			mes "The Cart service is only provided for";
+//			mes "Merchant, Blacksmith, and Alchemist classes.";
+//			check @kafra_COUPON = 0,-,L_ROOT_4_1;
+//				goto L_EXIT;
+//			L_ROOT_4_1:
+//				next;
+//				goto L_START_1;
+//		L_SUB_4_1:
+//			check @kafra_COUPON = 0,-,L_SUB_4_2;
+//				mes "[kafra Personnel]";
+//	   			mes "The Cart Fee is 800 Zeny.";
+//	    	   		mes "To rent a cart";
+//				next;
+// 				menu "Rent a Cart.",L_MENU_4_1,"Cancel",L_MENU_4_2;
+//		L_MENU_4_1:
+//				getskilllevel 39,@skilllv_pushcart; 
+//				check @skilllv_pushcart => 1,-,L_skill;
+//				check Zeny < 800,-,L_ROOT_4_2; 
+//      	 		mes "[kafra Personnel]";
+//       				mes "Dear. you don't have enough Money.";
+//	       			mes "The Cart Fee is 800 Zeny.";
+//				goto L_EXIT;
+//		L_skill:
+//				mes "You do not have the skill PushCart.";
+//				mes "You can't get a cart without that."
+//				goto L_EXIT;
+//		L_ROOT_4_2:
+//				set Zeny -= 800,0;
+//				check option == 0,-,L_MENU_4_3;
+//				option 0,1;
+//				goto L_EXIT;
+//		L_MENU_4_2:
+//				mes "[kafra Personnel]";
+//				mes "Thank you.";
+//   				mes "Please come again.";
+//				goto L_EXIT;
+//		L_MENU_4_3:
+//				mes "[kafra Personnel]";
+//				mes "Sorry you already have a cart.";
+//				next;
+//				goto L_EXIT;
+//		L_SUB_4_2:
+//			check option == 0,-,L_MENU_4_3;
+//			option 0,1;
+//			goto L_START_1;
 	L_MENU_5:
 		check @kafra_COUPON = 1,-,L_ROOT_5_1;
 			mes "[kafra Personnel]";
