@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.002
 ----------------------------------------------------------------------------------------------------
+- Warp\warp.txt - Added Alde_alche warps. [Tsusai]
 - NPC\npc_skill_get.txt - Fixed AL_Holylight Job requirements. [AlexKreuz]
 - Warp\warp_arena_room.txt - Added new warp portals. [Tsusai]
 - Warp\warp_amatsu.txt - Corrected warps to gain access to levels 4 and 5 in the castle. [Tsusai]
