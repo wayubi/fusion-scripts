@@ -1,7 +1,7 @@
 ====================================================================================================
  »» The Fusion Project ««
  Copyright (c) 2004, Cobax Information Systems
- http:\\fusion.cobax.net\
+ http://fusion.cobax.net/
 ----------------------------------------------------------------------------------------------------
  Scripts Change Logs
 ====================================================================================================
@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.005
 ----------------------------------------------------------------------------------------------------
+- GvG\npc_guardiankafra.txt - Simplified the script. [Tsusai/icbob]
 - Event\Event_Rental.txt - Falcon Fancenier now checks for Sniper instead of High Wizard. [Muad_Dib]
 - Quest\Quest_Skill\NPC_Novice_Skill - Added more up to date version of the novice skill quests. [Muad_Dib]
 - Mob\dungeon\xmas_dun - Fixed Mastering spawn. [Muad_Dib]
