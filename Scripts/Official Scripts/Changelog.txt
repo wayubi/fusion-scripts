@@ -1,6 +1,7 @@
 --------------------------------------------------------------------------------
  Fusion 1.213 - August 29th, 2004
 --------------------------------------------------------------------------------
+- 08-23-04: Town\Town_Umbala.txt - updated bungee w/ percentdamage. [Tsusai]
 - 08-19-04: Event\Event_Dragon_Boat_Festival.txt - Fixed Header and some typos. [Muad_Dib]
 - 08-18-04: Event\Event_Dragon_Boat_Festival.txt - Added Dragon Boat Festival Npc. [Muad_Dib]
 - 08-18-04: Mob\all files. - Updated all mob spawns, next step will be the way kro has it. [Muad_Dib]

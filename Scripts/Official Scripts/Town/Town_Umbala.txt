@@ -1608,31 +1608,28 @@ um_in.gat,144,45,5	script	"Wambokoriotan"	789,{
 //==============================================================================
 //Bungee jumping!
 //==============================================================================
-//umbala.gat,140,197,0	script	#Shibonochikka	139,0,1,{
-//umbala.gat,140,197,0	script	"Bungy Jumping"	139,{
-//PERCENT HEAL DOESN'T DO DAMAGE YET!!!!! DON'T ACTIVATE
+//
+umbala.gat,140,197,0	script	"Bungy Jumping"	139,{
+//don't know how to auto trigger, so.... there, it ain't working, but it can soon - Tsusai
 	random @jumprand,4;
 	check @jumprand == 1,L1,-;
 	check @jumprand == 2,L2,-;
 	check @jumprand == 3,L3,-;
 		broadcast "Bungy Jumping Area: $charaname : Iyahaaaaahh!",10;
 		end;
-	
 	L1:
 		//Dead
 		broadcast "Bungy Jumping Area: $charaname : Ukiyaaaaaaaaaa!",10;
-		percentheal -100,0;
-		end;
-
+		die;
+		return;
 	L2:
 		//HP50% Damage
 		broadcast "Bungy Jumping Area: $charaname : Kyaaaaaaaaaaa!",10;
-		percentheal -50,0;
-		end;
-
+		percentdamage 50,0;
+		return;
 	L3:
 		//HP99%‚Ì Damage
 		broadcast "Bungy Jumping Area: $charaname : Waaaaaaaaaah!",10;
-		percentheal -99,0;
-		end;
+		percentdamage 99,0;
+		return;
 }
