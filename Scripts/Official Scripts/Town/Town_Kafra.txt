@@ -2349,10 +2349,10 @@ izlude.gat,136,88,4	script	"kafra Personnel"	115,{
 					mes "You don't have enough money.";
 					mes "Please verify the amount of money you have.";
 					goto L_EXIT;
-			L_ROOT_3_3:
+			L_ROOT_3_4:
 				set Zeny -= 1800,0;
 				set KF_PIT += 180;
-			L_SUB_3_3:
+			L_SUB_3_4:
 				warp "aldebaran",143,110;
 		L_MENU_3_5:
 			check @kafra_COUPON = 0,-,L_START_1;
