@@ -176,7 +176,7 @@ force_map1.gat,10,56,4	script	"Advancer"	111,{
 	return;
 }
 
-force_map1.gat,0,0,4	script	"area1"	111,{
+force_map1.gat,0,0,4	script	"area1"	-1,{
 	set \@AREA1_MOB += 1;
 	check \@AREA1_MOB < 5,-,L_START_1;
 	return;
@@ -192,7 +192,7 @@ force_map1.gat,0,0,4	script	"area1"	111,{
 	return;
 }
 
-force_map1.gat,0,0,4	script	"area2"	111,{
+force_map1.gat,0,0,4	script	"area2"	-1,{
 	set \@AREA2_MOB += 1;
 	check \@AREA2_MOB < 4,-,L_START_1;
 	return;
@@ -208,7 +208,7 @@ force_map1.gat,0,0,4	script	"area2"	111,{
 	return;
 }
 
-force_map1.gat,0,0,4	script	"area3"	111,{
+force_map1.gat,0,0,4	script	"area3"	-1,{
 	set \@AREA3_MOB += 1;
 	check \@AREA3_MOB < 4,-,L_START_1;
 	return;
@@ -225,7 +225,7 @@ force_map1.gat,0,0,4	script	"area3"	111,{
 	return;
 }
 
-force_map1.gat,0,0,4	script	"area4"	111,{
+force_map1.gat,0,0,4	script	"area4"	-1,{
 	enablenpc "force_map1","Advancer",0;
 	set \@START_ARENA = 0;
 	broadcast "All clearance! Congratulations",10;
@@ -233,7 +233,7 @@ force_map1.gat,0,0,4	script	"area4"	111,{
 	return;
 }
 
-force_map1.gat,0,0,4	script	"area5"	111,{
+force_map1.gat,0,0,4	script	"area5"	-1,{
 	set \@AREA5_MOB += 1;
 	check \@AREA5_MOB < 4,-,L_START_1;
 	return;
@@ -250,7 +250,7 @@ force_map1.gat,0,0,4	script	"area5"	111,{
 	return;
 }
 
-force_map1.gat,0,0,4	script	"area6"	111,{
+force_map1.gat,0,0,4	script	"area6"	-1,{
 	set \@AREA6_MOB += 1;
 	check \@AREA6_MOB < 4,-,L_START_1;
 	return;
@@ -267,7 +267,7 @@ force_map1.gat,0,0,4	script	"area6"	111,{
 	return;
 }
 
-force_map1.gat,0,0,4	script	"area7"	111,{
+force_map1.gat,0,0,4	script	"area7"	-1,{
 	set \@AREA7_MOB += 1;
 	check \@AREA7_MOB < 4,-,L_START_1;
 	return;
@@ -284,7 +284,7 @@ force_map1.gat,0,0,4	script	"area7"	111,{
 	return;
 }
 
-force_map1.gat,0,0,4	script	"area8"	111,{
+force_map1.gat,0,0,4	script	"area8"	-1,{
 	set \@AREA8_MOB += 1;
 	check \@AREA8_MOB < 4,-,L_START_1;
 	return;
