@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.005
 ----------------------------------------------------------------------------------------------------
+- 05-29-04: Mob\dungeon\tur_dun.txt - Updated turtle dungeon mobs. [Muad_Dib]
 - 05-28-04: Mob\field\gon_fild.txt - Disabled "Baby Leopard" until the DB drops is fixed. [Tsusai]
 - 05-28-04: Mob\field\um_fild.txt - Disabled "Baby Leopard" until the DB drops is fixed. [Tsusai]
 - 05-28-04: Mob\dungeon\gon_dun.txt - Disabled "Baby Leopard" until the DB drops is fixed. [Tsusai]
