@@ -11,7 +11,7 @@ alberta_in.gat,66,113,0	warp	warp0016	3,1,alberta_in.gat,66,132
 alberta_in.gat,66,130,0	warp	warp0017	3,1,alberta_in.gat,66,111
 alberta_in.gat,66,153,0	warp	warp0018	3,2,alberta_in.gat,66,174
 alberta_in.gat,66,170,0	warp	warp0019	3,2,alberta_in.gat,66,149
-alberta_in.gat,73,141,0	warp	warp0020	2,3,alberta.gat,61,223
+alberta_in.gat,73,141,0	warp	warp0020	2,3,alberta.gat,138,37
 alberta_in.gat,78,44,0	warp	warp0021	2,5,alberta.gat,37,41
 alberta_in.gat,114,49,0	warp	warp0022	2,2,alberta_in.gat,155,153
 alberta_in.gat,114,97,0	warp	warp0023	2,2,alberta_in.gat,155,175
