@@ -1,6 +1,9 @@
 --------------------------------------------------------------------------------
  Fusion 1.213 - January 1st, 2005
 -------------------------------------------------------------------------------- 
+- 12-28-04: Mob\field\yuno_fild.txt - Updated mobs to the new fields. [Muad_Dib]
+- 12-28-04: Town\Town_Juno.txt - Added Sailor npc on yuno field 11. [Muad_Dib]
+- 12-28-04: Warp\fields\yuno_fild.txt - Updated warps to fit with the new fields. [Muad_Dib]
 - 12-27-04: Shop\Payon.txt - added Arrow Quivers and Status Ailment arrows shop. [Muad_Dib]
 - 12-27-04: Shop\Geffen.txt - added Skill Scrolls shop. [Muad_Dib]
 - 12-27-04: Event\Event_Marriage.txt - Added placeholder npc's for a future wedding script. [Muad_Dib]

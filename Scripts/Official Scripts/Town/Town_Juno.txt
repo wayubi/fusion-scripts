@@ -1,8 +1,3 @@
-//----------------------------------
-//Town_Juno.txt by kalen
-//Translated by SilentDragon
-//Translated by RPG_Advocate
-//----------------------------------
 
 yuno.gat,157,205,4 script "Juno Artisan" 54,{
 	mes "[Artisan]";
@@ -1065,6 +1060,31 @@ L_Start3:
 	mes "but I don't have the available";
 	mes "materials to show Meto how";
 	mes "to apply my engine theory.";
+	close;
+}
+
+yuno_fild11.gat,299,116,0 script "Sailor" 100,{
+	mes "[Sailor]";
+	mes "Hello my friend, where do you wish to go?";
+	next;
+	menu "Alberta = 600 Zeny",L_Alberta,"Izlude = 800 Zeny",L_Izlude,"Cancel",L_End;
+L_Alberta:
+		check Zeny >= 600,-,L_Zeny;
+    		set Zeny -= 600,0;
+		warp "alberta",192,169;
+	close;
+L_Izlude:
+		check Zeny >= 800,-,L_Zeny;
+    		set Zeny -= 800,0;
+		warp "izlude",176,182;
+	close;
+L_Zeny:
+	mes "[Sailor]";
+	mes "Uhmm, you don't have enough zeny.";
+	close;
+L_End:
+	mes "[Sailor]";
+	mes "Thank you, please come again.";
 	close;
 }
 
