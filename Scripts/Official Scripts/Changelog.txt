@@ -9,6 +9,8 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.002
 ----------------------------------------------------------------------------------------------------
+- GvG\payg_cas01.txt - Added OnInits to flags for emblem display w/o activating (rest to come). [Colus]
+- GvG\npc_gflag.txt - Added OnInits to flags for emblem display w/o activating. [Colus]
 - Warp/towns\Niflheim.txt - Fixed erronous warps. [mudvayne]
 - Event\Event_MobTim.txt - Finished translating Tammy. [Tsusai]
 - Event\Event_MobTim.txt - Finished translating Shogo. [Tsusai]

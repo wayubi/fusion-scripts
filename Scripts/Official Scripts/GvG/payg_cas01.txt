@@ -25,6 +25,9 @@
 
 pay_gld.gat,125,236,4	script	"Bright Arbor"	722,{
 	scriptlabel pay_gldF01;
+OnInit:
+	guildreg "payg_cas01";
+return;
 	guildreg "payg_cas01";
 	check guildid == 0,-,L_START_1;
 	mes "       [ Kingdom of Payon ]";
@@ -64,6 +67,9 @@ pay_gld.gat,91,239,2	script	"Bright Arbor"	722,{
 
 payg_cas01.gat,238,67,4	script	"Bright Arbor"	722,{
 	scriptlabel payg_casF01;
+OnInit:
+	guildreg "payg_cas01";
+return;
 	guildreg "payg_cas01";
 	check guildid == 0,-,L_START_1;
 	mes "       [ Kingdom of Payon ]";
