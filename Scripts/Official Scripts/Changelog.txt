@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.004
 ----------------------------------------------------------------------------------------------------
+- Town\Town_Kafra.txt - Changed a few kafra faceing positions. [Muad_Dib]
 - Job\Job2_Knight_quest5.txt - Removed do to incompleteness and bugs (will be replaced). [Tsusai]
 - Town\Town_Kafra.txt - Changed 2 kafra locations. [Muad_Dib]
 - Quest\quest_arena_test.txt - Set hidden npc id's to -1 for functionality (away from user so they won't crash). [Tsusai]

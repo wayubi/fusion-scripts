@@ -1905,7 +1905,7 @@ prontera.gat,29,207,6	script	"Kafra Personnel"	113,{
 		close;
 }
 
-prontera.gat,154,329,0 script "Kafra Personnel" 112,{
+prontera.gat,154,329,4 script "Kafra Personnel" 112,{
 	set @Kafra_COUPON = 0;
 	cutin "Kafra_06",2;
 	mes "[Kafra Personnel]";
