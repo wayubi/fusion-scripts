@@ -1,4 +1,4 @@
-amatsu.gat,207,91,4	script	ミス・アマツ#nomal	758,{
+//amatsu.gat,207,91,4	script	ミス・アマツ#nomal	758,{
 	mes "[蛍ちゃん]";
 	mes "私は、第13代ミス・アマツ";
 	mes "｢蛍｣と申します。";
@@ -42,7 +42,7 @@ LEnd:
 
 }
 
-amatsu.gat,251,283,4	script	案内人	767,{
+//amatsu.gat,251,283,4	script	案内人	767,{
 	mes "[案内人]";
 	mes "ようこそ。";
 	mes "旅をするには良い季節ですね。";
@@ -88,7 +88,7 @@ LEnd:
 
 //[案内要員 - コンロン]
 
-gonryun.gat,163,60,4	script	コンロンガイド	780,{
+//gonryun.gat,163,60,4	script	コンロンガイド	780,{
 	mes "[ハ ウォンチ]";
 	mes "いつも活気に満ちて、熱気があふれ";
 	mes "毎日人々が行き交っている";
@@ -143,7 +143,7 @@ Lend:
 
 //[案内要員 - ウンバラ]
 
-umbala.gat,128,94,4	script	探険家	702,{
+//umbala.gat,128,94,4	script	探険家	702,{
 	mes "[探険家]";
 	mes "ここはとても変な所です。";
 	mes "未開拓のためなのか、";

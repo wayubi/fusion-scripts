@@ -1,7 +1,7 @@
 //====================================================================
 //Ragnarok Online EP4.0(J) Super Novice Jobchange Script
 //====================================================================
-aldeba_in.gat,223,167,3	script	トゼーレ	709,{
+//aldeba_in.gat,223,167,3	script	トゼーレ	709,{
 	if (job_snovice == 1) goto LStart2;
 	if (Class == 23) goto Ltwice;
 	if (Class != 0) goto Lotherjob;
@@ -199,7 +199,7 @@ Lotherjob:
 }
 
 //==============================================================================
-aldeba_in.gat,216,169,5	script	セレイ	86,{
+//aldeba_in.gat,216,169,5	script	セレイ	86,{
 if (Class==23) goto Lsupernovice;
 if (Class!=0) goto Lotherjob;
 Lnovice:
@@ -239,7 +239,7 @@ Lotherjob:
 	close;
 }
 
-aldebaran.gat,54,238,5	script	カプラ職員	117,{
+//aldebaran.gat,54,238,5	script	カプラ職員	117,{
 	if (Class!=23) goto Lotherjob;
 	mes "[カプラ職員]";
 	mes "おや、スーパーノービスですね。";

@@ -1,6 +1,4 @@
-
-
-amatsu.gat,102,149,4	script	カプラ職員#amatsunomal	116,{
+//amatsu.gat,102,149,4	script	カプラ職員#amatsunomal	116,{
 	cutin "kafra_02",2;
 	mes "[カプラ職員]";
 	mes "まったくもう、研修に送ったコは";
@@ -105,7 +103,7 @@ L_EXIT:
 // < コンロン >
 //----------------------------------
 
-gonryun.gat,159,122,4	script	カプラ職員	116,{
+//gonryun.gat,159,122,4	script	カプラ職員	116,{
 	cutin "kafra_02",2;
 	mes "[カプラ職員]";
 	mes "いらっしゃいませ";
@@ -202,7 +200,7 @@ L_EXIT:
 // < ウンバラ >
 //----------------------------------
 
-umbala.gat,87,160,5	script	カプラ職員	721,{
+//umbala.gat,87,160,5	script	カプラ職員	721,{
 	cutin "kafra_07",2;
 	mes "[カプラ職員]";
 	mes "いらっしゃいませ";

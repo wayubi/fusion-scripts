@@ -2,7 +2,7 @@
 // Script : Job_2nd v1.0
 //----------------------------------------------------------------------
 
-prt_in.gat,88,101,4	script	Knight	56,{
+//prt_in.gat,88,101,4	script	Knight	56,{
 		mes "[Prontera Knight]";
 		mes "Good afternoon.";
 		mes "This is the Prontera Knight's Guild.";
@@ -83,7 +83,7 @@ prt_in.gat,88,101,4	script	Knight	56,{
 			close;
 }
 
-prt_church.gat,16,41,4	script	Reverend	60,{
+//prt_church.gat,16,41,4	script	Reverend	60,{
 		mes "[Reverend]";
 		mes "Good afternoon.";
 		mes "This is Prontera Church.";
@@ -164,7 +164,7 @@ prt_church.gat,16,41,4	script	Reverend	60,{
 			close;
 }
 
-in_hunter.gat,100,99,4	script	Hunter	98,{
+//in_hunter.gat,100,99,4	script	Hunter	98,{
 		mes "[Hunter Guild Dude]";
 		mes "Good afternoon.";
 		mes "This is the Hunter Guild.";
@@ -264,7 +264,7 @@ in_hunter.gat,100,99,4	script	Hunter	98,{
 			close;
 }
 
-geffen_in.gat,110,170,0	script	Blacksmith	63,{
+//geffen_in.gat,110,170,0	script	Blacksmith	63,{
 		mes "[Blacksmith Guild Dude]";
 		mes "Good afternoon.";
 		mes "This is the Blacksmith Guild.";
@@ -343,7 +343,7 @@ geffen_in.gat,110,170,0	script	Blacksmith	63,{
 			close;
 }
 
-in_moc_16.gat,19,33,4	script	Assassin	55,{
+//in_moc_16.gat,19,33,4	script	Assassin	55,{
 		mes "[Menacing-Looking Man]";
 		mes "Good afternoon";
 		mes "This is the Assassin Guild.";
@@ -424,7 +424,7 @@ in_moc_16.gat,19,33,4	script	Assassin	55,{
 			close;
 }
 
-gef_tower.gat,111,37,4	script	Mage	70,{
+//gef_tower.gat,111,37,4	script	Mage	70,{
 		mes "[Grumpy Mage Guild Owner]";
 		mes "Good afternoon.";
 		mes "This is the Mage Guild.";
@@ -505,7 +505,7 @@ gef_tower.gat,111,37,4	script	Mage	70,{
 			close;
 }
 
-pay_fild10.gat,148,252,4	script	Hunter2 	98,{
+//pay_fild10.gat,148,252,4	script	Hunter2 	98,{
 	mes "[Hunter Guild Dude]";
 	mes "Good afternoon.";
 	mes "This is the Hunter Guild.";
@@ -532,7 +532,7 @@ in_hunter.gat,55,99,4	script	Class Change Exam	732,{
 //#############
 //Dancer
 //#############
-comodo.gat,193,151,4	script	Volrob	86,{
+//comodo.gat,193,151,4	script	Volrob	86,{
 	mes "[Volrob]";
 	mes "Dancers are primadonas that";
 	mes "attract the gaze of all who";
@@ -558,7 +558,7 @@ L1:
 		end;
 }
 
-job_duncer.gat,95,93,4	script	Boluwaj	101,{
+//job_duncer.gat,95,93,4	script	Boluwaj	101,{
 	mes "[Boluwaj]";
 	mes "Oh, you're from far away?";
 	mes "You came all this way to";
@@ -578,7 +578,7 @@ job_duncer.gat,95,93,4	script	Boluwaj	101,{
 	close;
 }
 // Class Change NPC
-job_duncer.gat,43,93,4	script	Ell	724,{
+//job_duncer.gat,43,93,4	script	Ell	724,{
 	mes "[Ell]";
 	mes "This school is off-limits";
 	mes "to the general public.";
@@ -593,15 +593,15 @@ job_duncer.gat,43,93,4	script	Ell	724,{
 	close;
 }
 
-job_duncer.gat,66,112,4	script	Back Dancer	724,{close;}
-job_duncer.gat,72,112,4	script	Back Dancer	724,{close;}
-job_duncer.gat,63,109,4	script	Back Dancer	724,{close;}
-job_duncer.gat,75,109,4	script	Back Dancer	724,{close;}
+//job_duncer.gat,66,112,4	script	Back Dancer	724,{close;}
+//job_duncer.gat,72,112,4	script	Back Dancer	724,{close;}
+//job_duncer.gat,63,109,4	script	Back Dancer	724,{close;}
+//job_duncer.gat,75,109,4	script	Back Dancer	724,{close;}
 
 //#############
 //monk
 //#############
-prt_monk.gat,59,247,0	script	Priest-in-Training	120,{
+//prt_monk.gat,59,247,0	script	Priest-in-Training	120,{
 	if (@job_monk >= 1) goto Ltwice;
 	mes "[Capital City Guard]";
 	mes "What business do you have";
@@ -695,12 +695,12 @@ OnTouch:
 	mes "Get lost!";
 	close;
 }
-prt_monk.gat,59,247,0	script	Priest-in-Training#sphere 111,4,2,{
+//prt_monk.gat,59,247,0	script	Priest-in-Training#sphere 111,4,2,{
 	doevent "Priest-in-Training::OnTouch";
 	end;
 }
 
-monk_in.gat,99,58,3	script	Elder	60,{
+//monk_in.gat,99,58,3	script	Elder	60,{
 	mes "[Elder]";
 	mes "Be blessed with good fortune,";
 	mes "you who visit this holy place.";
@@ -714,7 +714,7 @@ monk_in.gat,99,58,3	script	Elder	60,{
 	close;
 }
 
-prt_monk.gat,251,255,3	script	Kid	79,{
+//prt_monk.gat,251,255,3	script	Kid	79,{
 	mes "[Kid]";
 	mes "We Monks are God's mouthpiece!";
 	mes "We are also God's divine";
@@ -740,7 +740,7 @@ prt_monk.gat,251,255,3	script	Kid	79,{
 	close;
 }
 
-prt_monk.gat,201,169,4	script	?Commander	746,{
+//prt_monk.gat,201,169,4	script	?Commander	746,{
 	mes "[?Tense Commander]";
 	mes "This is the place to take";
 	mes "the Monk class change exam.";
@@ -750,7 +750,7 @@ prt_monk.gat,201,169,4	script	?Commander	746,{
 	close;
 }
 
-monk_test.gat,329,61,3	script	Sub-Teacher	753,{
+//monk_test.gat,329,61,3	script	Sub-Teacher	753,{
 	mes "[?????]";
 	mes "Welcome to the St. Capitolina";
 	mes "temple.  Please come right this";
@@ -762,7 +762,7 @@ monk_test.gat,329,61,3	script	Sub-Teacher	753,{
 	close;
 }
 
-monk_test.gat,319,139,4	script	Dense Gate	52,{
+//monk_test.gat,319,139,4	script	Dense Gate	52,{
 	mes "[Dense Gate]";
 	mes "Please be quiet.";
 	next;
@@ -777,7 +777,7 @@ monk_test.gat,319,139,4	script	Dense Gate	52,{
 	close;
 }
 
-prt_monk.gat,57,179,1	script	Fortuitous Years	110,{
+//prt_monk.gat,57,179,1	script	Fortuitous Years	110,{
 	mes "[Fortuitous Years]";
 	mes "heaaaaa!";
 	next;
@@ -788,7 +788,7 @@ prt_monk.gat,57,179,1	script	Fortuitous Years	110,{
 //#############
 //rogue
 //#############
-in_rogue.gat,376,23,4	script	Smisrat	57,{
+//in_rogue.gat,376,23,4	script	Smisrat	57,{
 	mes "[Smisrat]";
 	mes "I've talked to customers from";
 	mes "Morok...Gefin...Komodo...";
@@ -805,7 +805,7 @@ in_rogue.gat,376,23,4	script	Smisrat	57,{
 	close;
 }
 
-in_rogue.gat,363,122,4	script	Rogue Guild Dude	747,{
+//in_rogue.gat,363,122,4	script	Rogue Guild Dude	747,{
 	mes "[Mac]";
 	mes "Eh?";
 	mes "What do you want?";
@@ -816,7 +816,7 @@ in_rogue.gat,363,122,4	script	Rogue Guild Dude	747,{
 //#############
 //Bard
 //#############
-comodo.gat,211,155,4 script Wandering Minstrel 741,{
+//comodo.gat,211,155,4 script Wandering Minstrel 741,{
        mes "[Aird]";
        mes "La la la!  Beatuiful, glistening Komodo!";
        mes "So full of beauty and wonder!";
