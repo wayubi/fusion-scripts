@@ -9,6 +9,10 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.003
 ----------------------------------------------------------------------------------------------------
+- shop\amatsu.txt - Updated Amatsu shops added items updated prices. [Muad_Dib]
+- shop\lutie.txt - Updated Lutie shops added items updated prices. [Muad_Dib]
+- shop\umbala.txt - Updated Umbala shops added items updated prices. [Muad_Dib]
+- shop\yuno.txt - Updated Yuno shops added items updated prices. [Muad_Dib]
 - shop\comodo.txt - Updated Comodo shops added items updated prices. [Muad_Dib]
 - shop\payon.txt - Updated Payon shops added items updated prices. [Muad_Dib]
 - shop\morocc.txt - Updated Morocc shops added items updated prices. [Muad_Dib]
