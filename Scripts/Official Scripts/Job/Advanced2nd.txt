@@ -1513,6 +1513,7 @@ nif_in.gat,70,33,6	script	"?"	124,{
 		next;
 		mes "[?]";
 		mes "Some do nothing, but if you find a scroll of some interest, I might be interested in it.";
+		close;
 }
 
 //Easy way NPC
