@@ -25,6 +25,9 @@
 
 alde_gld.gat,61,87,4	script	"Neuschwanstein"	722,{
 	scriptlabel alde_gldF01;
+OnInit:
+	guildreg "aldeg_cas01";
+return;
 	guildreg "aldeg_cas01";
 	check guildid == 0,-,L_START_1;
 	mes "       [ Kingdom of Aldebaran ]";
@@ -63,6 +66,9 @@ alde_gld.gat,51,87,2	script	"Neuschwanstein"	722,{
 }
 aldeg_cas01.gat,30,248,4	script	"Neuschwanstein"	722,{
 	scriptlabel aldeg_casF01;
+OnInit:
+	guildreg "aldeg_cas01";
+return;
 	guildreg "aldeg_cas01";
 	check guildid == 0,-,L_START_1;
 	mes "       [ Kingdom of Aldebaran ]";
