@@ -11,7 +11,7 @@
 // - Alcouskou -> moc_prydb1: 154,128
 //   Bring items to obtain skill. Applicable jobs are Thief , Assasin and Rogue.
 //
-// - Alcouskou -> moc_prydb1: 154,128
+// - RuRumuni -> payon.gat: 28,121
 //   Bring items to receive Leather bag of Infinity.
 //========================================================================================
 

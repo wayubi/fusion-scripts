@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.003
 ----------------------------------------------------------------------------------------------------
+- Quest\Quest_skill\Thief_Skill.txt - Corrected Header NPC info. [Tsusai]
 - Mob\field\gef_fild.txt - Updated, reorganised Geffen Fields Monster Spawns [Muad_Dib]
 - GvG\gefg_cas0#.txt - Changed variable type for skill/guardian checks. [Tsusai]
 - GvG\aldeg_cas0#.txt - Changed variable type for skill/guardian checks. [Tsusai]
