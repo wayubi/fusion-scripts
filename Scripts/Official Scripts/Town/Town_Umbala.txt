@@ -1,7 +1,7 @@
 //========================================================================================
 // »» The Fusion Project ««
 // Copyright (c) 2004, Cobax Information Systems
-// http://fusion.cobax.net/
+// http://cobax.net/
 // ---------------------------------------------------------------------------------------
 //
 // Umbla Town - Non Player Character Locations

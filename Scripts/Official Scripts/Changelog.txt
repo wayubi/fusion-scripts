@@ -1,6 +1,8 @@
 --------------------------------------------------------------------------------
  Fusion 1.213 - August 29th, 2004
 --------------------------------------------------------------------------------
+- 09-06-04: Town\Town_Turtle_Island.txt - Added npc emotions.
+- 09-06-04: Town\Town_Umbala.txt - Renamed Umbala references to Umbla.
 - 09-06-04: Event\Event_Rental.txt - Fixed small hunter in Falcon Renter. [Muad_Dib]
 - 09-06-04: Event\Event_PvP.txt - Updated Yoyo mode payon map warps. [Muad_Dib]
 - 09-04-04: Town\Town_LouYang.txt - Added npc's from kRO screenshot.

@@ -1,7 +1,7 @@
 //========================================================================================
 // »» The Fusion Project ««
 // Copyright (c) 2004, Cobax Information Systems
-// http://fusion.cobax.net/
+// http://cobax.net/
 // ---------------------------------------------------------------------------------------
 //
 // Town Turtle Island - Non Player Character Locations
@@ -135,11 +135,18 @@ alberta_in.gat,19,102,0 script "Letter" 111,{
 alberta_in.gat,23,104,4 script "Turtle grandpa" 120,{
 	mes "[Turtle grandpa]";
       mes "Oops..Burp!!";
+	   emotion 4;
+	next;
+	mes "[Turtle grandpa]";
       mes "I cannot agree with people";
       mes "who belive that Alberta is";
       mes "the center of world trade.";
       mes "We don't even have a nic bar!! ";
+	   emotion 6;
+      next;
+	mes "[Turtle grandpa]";
       mes "Why do I drink in such a place?";
+	   emotion 1;
       next;
       menu "Tell me about Turtle Island",L_Tell,"How can I get there?",L_Get,"Stop talking",-;
 	mes "[Turtle grandpa]";
@@ -165,6 +172,7 @@ L_Tell:
       mes "If it's all just a myth.";
       mes "That legendary fantasy island!";
       mes "I know it has to be true...";
+	   emotion 0;
       next;
 	mes "[Turtle grandpa]";
       mes "If you are a real seman and,";
@@ -180,13 +188,18 @@ L_Tell:
       mes "No! I don't want to";
       mes "talk with someone who";
       mes "has a greedy spirit.";
-      mes "Get out of mu sight!!";
+	   emotion 0;
+      next;
+	mes "[Turtle grandpa]";
+      mes "Get out of my sight!!";
       mes "Go home~";
+	   emotion 6;
       next;
 	mes "[Turtle grandpa]";
       mes "What. you're still here?!";
       mes "Go!";
       mes "Go away-----";
+	   emotion 27;
       close;
 L_Twink:
 	mes "[Turtle grandpa]";
@@ -283,9 +296,13 @@ L_Get:
       mes "Harder to reach,";
       mes "And there is only a small";
       mes "chance to ever return home.";
-      mes "Actually, it;s impossible!";
+      mes "Actually, it's impossible!";
+	   emotion 0;
+      next;
+      mes "[Turtle grandpa]";
       mes "Still, you want to go there?";
       mes "really?";
+	   emotion 1;
       next;
       mes "[Turtle grandpa]";
       mes "Whoops! He he.";
@@ -503,6 +520,7 @@ L_Tell:
       mes "So is it a good place?";
       mes "Turtle island took my";
       mes "dear friends!";
+	   emotion 0;
       mes "Do you understand?!"; 
       next;
       mes "[Gotanblue]";
@@ -567,6 +585,7 @@ L_Tell:
       mes "When a reef suddenly appeared";
       mes "before us, we could not avoid it.";
       mes "our ship got critically damaged.";
+	   emotion 0;
       next;
       mes "[Gotanblue]";
       mes "But at last, after the fog";
@@ -671,6 +690,7 @@ L_Tell:
       mes "[Gotanblue]";
       mes "That land was...";
       mes "Turtle Island!";
+	   emotion 0;
       mes "But it was the opposite";
       mes "side of the island from";
       mes "from where we had left.";
@@ -698,6 +718,7 @@ L_Tell:
       mes "by one trying to get off that";
       mes "cursed island.. They lost hope";
       mes "of our escape, but I could not.";
+	   emotion 23;
       next;
       mes "[Gotanblue]";
       mes "In the end, only myself and";
@@ -711,6 +732,7 @@ L_Tell:
       mes "HsHsHsHsHs. Sorry I cannot help";
       mes "myself. But that is all I can";
       mes "remeber now about Turtle Island.";
+	   emotion 28;
       mes "If you want to learn";
       mes "more details,";
       next;
