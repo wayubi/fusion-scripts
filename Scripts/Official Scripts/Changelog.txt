@@ -9,6 +9,8 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.003
 ----------------------------------------------------------------------------------------------------
+- NPC\npc_skill_get.txt - Converted to english some assassin quests texts. [Tsusai]
+- Town\Town_Kafra.txt - Fixed Storage check. [Tsusai]
 - Warp\other\in_rogue.txt - Added Rogue guild warps. [Tsusai]
 - Warp\other\in_duncer.txt - Added Dancer guild warps. [Tsusai]
 - Job\Job2_Crusader.txt - Added First half of Crusader quest by  KyuubiKitsune. [icbob]
