@@ -7,8 +7,9 @@
 ====================================================================================================
 
 ----------------------------------------------------------------------------------------------------
- Fusion NPC Pack - 1.005
+ Fusion NPC Pack - 1.005 (Fusion 1.212)
 ----------------------------------------------------------------------------------------------------
+- 05-30-04: Town\Town_Kafra.txt - Fixed Izlude Kafra warping bug (0000714). [Tsusai]
 - 05-29-04: Mob\dungeon\tur_dun.txt - Updated turtle dungeon mobs. [Muad_Dib]
 - 05-28-04: Mob\field\gon_fild.txt - Disabled "Baby Leopard" until the DB drops is fixed. [Tsusai]
 - 05-28-04: Mob\field\um_fild.txt - Disabled "Baby Leopard" until the DB drops is fixed. [Tsusai]
@@ -127,7 +128,7 @@
 - Job\Job2_Sage.txt - fixed a tag. [Muad_Dib]
 
 ----------------------------------------------------------------------------------------------------
- Fusion NPC Pack - 1.004
+ Fusion NPC Pack - 1.004 (Fusion 1.211)
 ----------------------------------------------------------------------------------------------------
 - Mob\dungeon\lou_dun.txt - Edited the spawns. [Muad_Dib]
 - Mob\field\lou_fild.txt - Edited the spawns. [Muad_Dib]
@@ -350,7 +351,7 @@
 - event\Event_Dye.txt replaced Zabadorihan NPC with Owl,s Java Dullihan NPC. [Muad_Dib]
 
 ----------------------------------------------------------------------------------------------------
- Fusion NPC Pack - 1.003
+ Fusion NPC Pack - 1.003 (Fusion 1.210)
 ----------------------------------------------------------------------------------------------------
 - shop\amatsu.txt - Updated Amatsu shops added items updated prices. [Muad_Dib]
 - shop\lutie.txt - Updated Lutie shops added items updated prices. [Muad_Dib]

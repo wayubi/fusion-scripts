@@ -2346,8 +2346,8 @@ izlude.gat,136,88,4	script	"Kafra Personnel"	115,{
 			L_SUB_3_3:
 				warp "geffen",120,39;
 		L_MENU_3_4:
-			check @Kafra_COUPON = 0,-,L_SUB_3_3;
-				check Zeny < 1800,-,L_ROOT_3_3;
+			check @Kafra_COUPON = 0,-,L_SUB_3_4;
+				check Zeny < 1800,-,L_ROOT_3_4;
 					mes "[Kafra Personnel]";
 					mes "You don't have enough money.";
 					mes "Please verify the amount of money you have.";
