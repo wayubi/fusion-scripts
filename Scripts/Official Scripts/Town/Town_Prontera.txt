@@ -855,7 +855,7 @@ prontera.gat,158,214,0 script "Sign Post" 111,{
       mes "North to Prontere Castle";
       mes "North to Al De Baran";
       mes "Northwest to Geffen";
-      mes "East to Prontere Fields";
+      mes "East to Prontera Fields";
       mes "South to Prontera Fields";
       mes "Southeast to Alberta";
       mes "Southwest to Morroc";
