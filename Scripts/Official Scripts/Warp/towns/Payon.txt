@@ -5,6 +5,8 @@
 // ---------------------------------------------------------------------------------------
 //
 // Payon Town Warps - Warp Locations
+// - Created by Muad_Dib.
+// - I only Included the new warps not the oldones that still work. 
 //
 //========================================================================================
 
@@ -54,7 +56,7 @@ payon_in01.gat,56,50,0		warp	payonwarp029	2,2,payon.gat,151,124
 
 //Middle Castle
 payon.gat,156,247,0		warp	payonwarp030	2,2,payon_in03.gat,98,117
-payon_in03.gat,98,114,0		warp	payonwarp031	2,2,payon.gat,156,144
+payon_in03.gat,98,114,0		warp	payonwarp031	2,2,payon.gat,156,244
 payon_in03.gat,90,124,0		warp	payonwarp032	2,2,payon_in03.gat,80,124
 payon_in03.gat,83,124,0		warp	payonwarp033	2,2,payon_in03.gat,93,124
 payon_in03.gat,99,133,0		warp	payonwarp034	2,2,payon_in03.gat,99,151

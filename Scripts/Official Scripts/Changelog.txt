@@ -1,6 +1,10 @@
 --------------------------------------------------------------------------------
  Fusion 1.213 - August 29th, 2004
 --------------------------------------------------------------------------------
+- 09-07-04: Town\Town_Morocc.txt - Added new mRO npc's and npc emotions. [Muad_Dib]
+- 09-07-04: Town\Town_Izlude.txt - Added npc emotions. [Muad_Dib]
+- 09-07-04: Town\Town_Prontera.txt - Added new mRO npc's and npc emotions. [Muad_Dib]
+- 09-07-04: Warp\towns\Payon.txt - Fixed a warp coordinate [Muad_Dib]
 - 09-06-04: Town\Town_Alberta.txt - Fixed 2 npc's and added npc emotions. [Muad_Dib]
 - 09-06-04: Town\Town_Aldebaran.txt - Renamed Umbala references to Umbla. [Muad_Dib]
 - 09-06-04: Town\Town_Geffen.txt - Added new mRO npc's and npc emotions. [Muad_Dib]

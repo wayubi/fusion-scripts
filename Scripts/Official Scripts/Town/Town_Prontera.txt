@@ -1,7 +1,7 @@
 //========================================================================================
 // »» The Fusion Project ««
 // Copyright (c) 2004, Cobax Information Systems
-// http://fusion.cobax.net/
+// http://cobax.net/
 // ---------------------------------------------------------------------------------------
 //
 // Prontera Town - Non Player Character Locations
@@ -69,12 +69,6 @@
 // - Henson -> prt_church : 103,71
 //   Talks about acolyte skills.
 //
-// - Inn Maid Sammy -> prt_in: 244,135
-//   Save location and heal regarding levels for some zeny.
-//
-// - Inn Maid Ahlma -> prt_in: 61,141
-//   Save location and heal regarding levels for some zeny.
-//
 // - Prontera Bulletin -> prontera: 136,92
 //   Prontera Bulletin.
 //
@@ -101,6 +95,18 @@
 //
 // - Strife -> prontera: 278,212
 //   Talks about becoming a swordie and a Knight.
+//
+// - Dairenne -> prontera: 78,150 
+//   Just a normal chat.
+//
+// - Meredith -> prontera: 106,117 
+//   Just a normal chat.
+//
+// - Shuger -> prontera: 102,287
+//   Just a normal chat.
+//
+// - Sir Michael -> prt_in: 26,30
+//   Just a normal chat.
 //
 //========================================================================================
 
@@ -130,20 +136,26 @@ prontera.gat,160,133,2 script	"YuPi" 102,{
 
 prontera.gat,149,202,2 script	"YuNa" 700,{
 	mes "[YuNa]";
-	mes "Odin is the god we serve. Odin is the god of wisdom and war.";
-	mes "He decisively abandon his one eye in order to acquire wisdom. The statue in the middle of the water fountain over there is sculptured after the god himself.";
+	mes "Odin is the god of wisdom and war.  He couragously removed one of his eyes in order to acquire ultimate wisdom. ";
 	next;
 	mes "[YuNa]";
-	mes "But it is really sorrowful and such a shame because, I don't know who the sculptor was, he did it all wrong.";
-	mes "The statue is just totally different from Odin we all know..."; 
-	mes "He insisted that it was his artistic view or something...."; 
+	mes "The statue in the middle of the water fountain over there is sculpted after the god himself.";
+	mes "I don't know who the sculptor was, which is a pitty because.... becasue....";
 	next;
 	mes "[YuNa]";
-	mes "Look~ He doesn't have a broad brimmed hat. Not only that he's not even riding Sleipnir. This is just totally unacceptable~!";
+	mes "HE DID IT ALL WRONG!!";
+	emotion 7;
+	next;
+	mes "[YuNa]";
+	mes "The statue is just totally different from the Odin we all know! He insisted that it was his artistic view or something....";
+	next;
+	mes "[YuNa]";
+	mes "Look~ He doesn't have a broad brimmed hat.... he's not even riding Sleipnir.... this is just totally unacceptable~!";
+	emotion 32;
 	close;
 }
 
-prt_in.gat,180,20,2 script "Bartender" 61,{
+prt_in.gat,181,21,2 script "Bartender" 61,{
 	mes "[Bartender]";
 	mes "Phew~ more and more people are crawling in these days.";
 	mes "I am getting tired and tired everyday, though business has never been better...";
@@ -160,6 +172,7 @@ prt_in.gat,180,20,2 script "Bartender" 61,{
 	next;
 	mes "[Bartender]";
 	mes "If things don't change... my special menu 'Sour Crunches' and 'Tasty Yum-Yum ' will disappear from people's memory, sob..sob..";
+	   emotion 28;
 	next;
 	menu "''Sour Crunches'?",SC,"'Tasty Yum-Yum '?",TYY,"Who care.",WC;
 SC:
@@ -206,6 +219,7 @@ WHERE:
 	mes "Anyways, thanks to my career, I've been able to visit so many interesting places where nobody has ever visited before....";
 	mes "Oh~ that's the true charm of my job..."; 
 	mes "Hm...Now...that mysterious dungeon and the dangerous forest come to my mind. ";
+	   emotion 20;
 	next;
 	menu "The mysterious Dungeon?",DUNGEON,"The dangerous forest?",FOREST,"End conversation",CANCEL2;
       close;
@@ -342,20 +356,25 @@ prontera.gat,106,116,5 script "Girl" 91,{
 }
 
 prt_in.gat,178,92,0 script "Curator of Library"	57,{
-	mes "[Guiss]";
-	mes "Right now, it's in the preparation. Please come back later.";
-	mes "Ah, and So is the other one.";
+	mes "[Curator Guiss]";
+	mes "Our library keeps records of monsters in various dungeons scattered around Rune-Midgard.";
+	mes "They are categorized according to each dungeon where the specific monster resides. Needless to say, every record is very easily accessible.";
 	next;
-	mes "[Guiss]";
-	mes "Actually, we have tons of classics which need to be preserved.That's why we open libraries only a couple of times a year.";
-	mes "Don't be sorry for this.";
+	mes "[Curator Guiss]";
+	mes "There are also must-read books for adventures on the top shelves. Please take your time and read those.";
+	next;
+	mes "[Curator Guiss]";
+	mes "The library next door has organized records of monsters according to thier properties.";
+	mes "If you are interested, you should stop by there, too.";
 	close;
 }
 
-prt_in.gat,175,50,0 script "Ellen" 71,{
-	mes "[Ellen]";
-	mes "Ah... Um.. Right now, it is in the preparation... so please come by next time.";
-	mes "Ah! And So is the other one.";
+prt_in.gat,175,50,0 script "Librarian Ellen" 71,{
+	mes "[Librarian Ellen]";
+	mes "Welcome. You can find books about monsters, organized by thier properties here. There are also books about Merchant and Blacksmith skills.";
+	next;
+	mes "[Librarian Ellen]";
+	mes "Ah~! The library next door also has many interesting reading materials so please visit there too.";
 	close;
 }
 
@@ -406,6 +425,7 @@ prt_in.gat,26,31,4 script "Old Man" 97,{
 
 prontera.gat,160,330,8 script	"Guard" 105,{
 	   scriptlabel PronteraGuards;
+	mes "[Guard]";
 	mes "Welcome to Prontera.";
 	close;
 }
@@ -578,234 +598,6 @@ END:
 	close;
 }
 
-prt_in.gat,244,135,2 script "Inn Maid" 53,{
-      mes "[Sammy]";
-	mes "Welcome to Nenkaras [West] Inn";
-	next;
-	menu "Save",L_SAVE,"Heal",L_HEAL,"Quit",-;
-	mes "[Sammy]";
-	mes "I am waiting for a job to do.";
-	close;
-L_SAVE:
-	mes "[Sammy]";
-	mes "Location Saved.";
-	mes "I am waiting for another job to do.";
-	   save "prt_in",238,130;
-	close;
-L_HEAL:
-	   check BaseLevel<=15,L_HEAL_LV15,-;
-	   check BaseLevel<=30,L_HEAL_LV30,-;
-	   check BaseLevel<=50,L_HEAL_LV50,-;
-	   check BaseLevel<=75,L_HEAL_LV75,-;
-	   check BaseLevel<=99,L_HEAL_LV100,-;
-	mes "[Sammy]";
-	mes "Unluckly there isn't a room avilible.";
-	close;
-L_HEAL_LV15:
-	next;
-	mes "[Sammy]";
-	mes "It costs 50z.";
-	next;
-	menu "Yes",-,"No",L_HEAL_LV15_N;
-	   check Zeny>=50,-,L_HEAL_LV15_F;
-	   set Zeny -= 50,0;
-	   heal 30000,30000;
-	close;
-L_HEAL_LV15_F:
-	mes "[Sammy]";
-	mes "You don't have enough money.";
-	close;
-L_HEAL_LV15_N:
-	mes "[Sammy]";
-	mes "I am waiting for another job to do.";
-	close;
-L_HEAL_LV30:
-	mes "[Sammy]";
-	mes "It costs 100z.";
-	next;
-	menu "Yes",-,"No",L_HEAL_LV30_N;
-	   check Zeny>=100,-,L_HEAL_LV30_F;
-	   set Zeny -= 100,0;
-	   heal 30000,30000;
-	close;
-L_HEAL_LV30_F:
-	mes "[Sammy]";
-	mes "You don't have enough money.";
-	close;
-L_HEAL_LV30_N:
-	mes "[Sammy]";
-	mes "I am waiting for another job to do.";
-	close;
-L_HEAL_LV50:
-	next;
-	mes "[Sammy]";
-	mes "It costs 200z.";
-	next;
-	menu "Yes",-,"No",L_HEAL_LV50_N;
-	   check Zeny>=200,-,L_HEAL_LV50_F;
-	   set Zeny -= 200,0;
-	   heal 30000,30000;
-	close;
-L_HEAL_LV50_F:
-	mes "[Sammy]";
-	mes "You don't have enough money.";
-	close;
-L_HEAL_LV50_N:
-	mes "[Sammy]";
-	mes "I am waiting for another job to do.";
-	close;
-L_HEAL_LV75:
-	next;
-	mes "[Sammy]";
-	mes "It costs 300z.";
-	next;
-	menu "Yes",-,"No",L_HEAL_LV75_N;
-	   check Zeny>=300,-,L_HEAL_LV75_F;
-	   set Zeny -= 300,0;
-         heal 30000,30000;
-	close;
-L_HEAL_LV75_F:
-	mes "[Sammy]";
-	mes "You don't have enough money.";
-	close;
-L_HEAL_LV75_N:
-	mes "[Sammy]";
-	mes "I am waiting for another job to do.";
-	close;
-L_HEAL_LV100:
-	next;
-	mes "[Sammy]";
-	mes "It costs 400z.";
-	next;
-	menu "Yes",-,"No",L_HEAL_LV100_N;
-	   check Zeny>=400,-,L_HEAL_LV100_F;
-	   set Zeny -= 400,0;
-	   heal 30000,30000;
-	close;
-L_HEAL_LV100_F:
-	mes "[Sammy]";
-	mes "You don't have enough money.";
-	close;
-L_HEAL_LV100_N:
-	mes "[Sammy]";
-	mes "I am waiting for another job to do.";
-	close;
-}
-
-prt_in.gat,61,141,2 script "Inn Maid" 53,{
-      mes "[Ahlma]";
-	mes "Welcome to Nenkaras [East] Inn.";
-	next;
-	menu "Save",L_SAVE,"Heal",L_HEAL,"Quit",-;
-	mes "[Ahlma]";
-	mes "I am waiting for another job to do.";
-	close;
-L_SAVE:
-      mes "[Ahlma]";
-	mes "Location Saved.";
-	mes "I am waiting for another job to do.";
-	   save "prt_in",64,136;
-	close;
-L_HEAL:
-	   check BaseLevel<=15,L_HEAL_LV15,-;
-	   check BaseLevel<=30,L_HEAL_LV30,-;
-	   check BaseLevel<=50,L_HEAL_LV50,-;
-	   check BaseLevel<=75,L_HEAL_LV75,-;
-	   check BaseLevel<=99,L_HEAL_LV100,-;
-	mes "[Ahlma]";
-	mes "Unluckly there isn't a room avilible";
-	close;
-L_HEAL_LV15:
-	next;
-	mes "[Ahlma]";
-	mes "It costs 50z.";
-	next;
-	menu "Yes",-,"No",L_HEAL_LV15_N;
-	   check Zeny>=50,-,L_HEAL_LV15_F;
-	   set Zeny -= 50,0;
-	   heal 30000,30000;
-	close;
-L_HEAL_LV15_F:
-	mes "[Ahlma]";
-	mes "You don't have enough money.";
-	close;
-L_HEAL_LV15_N:
-	mes "[Ahlma]";
-	mes "I am waiting for another job to do.";
-	close;
-L_HEAL_LV30:
-	mes "[Ahlma]";
-	mes "It costs 100z.";
-	next;
-	menu "Yes",-,"No",L_HEAL_LV30_N;
-	   check Zeny>=100,-,L_HEAL_LV30_F;
-	   set Zeny -= 100,0;
-	   heal 30000,30000;
-	close;
-L_HEAL_LV30_F:
-	mes "[Ahlma]";
-	mes "You don't have enough money.";
-	close;
-L_HEAL_LV30_N:
-	mes "[Ahlma]";
-	mes "I am waiting for another job to do.";
-	close;
-L_HEAL_LV50:
-	next;
-	mes "[Ahlma]";
-	mes "It costs 200z.";
-	next;
-	menu "Yes",-,"No",L_HEAL_LV50_N;
-	   check Zeny>=200,-,L_HEAL_LV50_F;
-	   set Zeny -= 200,0;
-	   heal 30000,30000;
-	close;
-L_HEAL_LV50_F:
-	mes "[Ahlma]";
-	mes "You don't have enough money.";
-	close;
-L_HEAL_LV50_N:
-	mes "[Ahlma]";
-	mes "I am waiting for another job to do.";
-	close;
-L_HEAL_LV75:
-	next;
-	mes "[Ahlma]";
-	mes "It costs 300z.";
-	next;
-	menu "Yes",-,"No",L_HEAL_LV75_N;
-	   check Zeny>=300,-,L_HEAL_LV75_F;
-	   set Zeny -= 300,0;
-	   heal 30000,30000;
-	close;
-L_HEAL_LV75_F:
-	mes "[Ahlma]";
-	mes "You don't have enough money.";
-	close;
-L_HEAL_LV75_N:
-	mes "[Ahlma]";
-	mes "I am waiting for another job to do.";
-	close;
-L_HEAL_LV100:
-	next;
-	mes "[Ahlma]";
-	mes "It costs 400z.";
-	next;
-	menu "Yes",-,"No",L_HEAL_LV100_N;
-	   check Zeny>=400,-,L_HEAL_LV100_F;
-	   set Zeny -= 400,0;
-	   heal 30000,30000;
-	close;
-L_HEAL_LV100_F:
-	mes "[Ahlma]";
-	mes "You don't have enough money.";
-	close;
-L_HEAL_LV100_N:
-	mes "[Ahlma]";
-	mes "I am waiting for another job to do.";
-	close;
-}
-
 prontera.gat,156,197,0 script "Prontera Bulletin" 111,{
 	mes "^993333- The Prontera Bulletin Reads -^000000";
       mes "Wanted: Two Clip Accesories";
@@ -832,7 +624,7 @@ prontera.gat,147,305,0 script "Sign" 111,{
       mes "Note:";
       mes "I lost my cart in Mt. Mjolnir, if";
       mes "someone finds it please tell me, my";
-      mes "life was in that bucked of goods!";
+      mes "life was in that bucket of goods!";
       close;
 }
 
@@ -855,7 +647,7 @@ prontera.gat,158,214,0 script "Sign Post" 111,{
       mes "North to Prontere Castle";
       mes "North to Al De Baran";
       mes "Northwest to Geffen";
-      mes "East to Prontera Fields";
+      mes "East to Prontere Fields";
       mes "South to Prontera Fields";
       mes "Southeast to Alberta";
       mes "Southwest to Morroc";
@@ -869,7 +661,7 @@ prontera.gat,31,212,0 script "Billboard" 111,{
       mes "~WANTED~";
       mes "iROGM01";
       mes "DEAD or ALIVE";
-      mes "*KIll Stealing in Glast Heim*";
+      mes "*Kill Stealing in Glast Heim*";
       mes "~REWARD~";
       mes "50,000 Zeny";
       mes "Contact: iROGM02";
@@ -883,6 +675,22 @@ prontera.gat,278,212,0 script "Sign" 111,{
       close;
 }
 
+prt_in,26,30,1 script "Sir Michael" 54,{
+	mes "[Sir Michael]";
+	mes "I dunno if you'll ever believe me, but I saw the WEIRDEST thing down in the ^5555FFCulvert Sewers^000000.";
+	mes "I've been training in the 3rd level of the sewers for a long time now, so there's nothing about that area that I don't know.";
+	next;
+	mes "[Sir Michael]";
+	mes "The 4th level is a different story however, and I must have ventured there when it happened.......";
+	next;
+	mes "[Sir Michael]";
+	mes "I saw a GIAGANTIC, SHIMMERING, ^FF5555GOLDEN THIEF BUG^000000.";
+	   emotion 0;
+	next;
+	mes "[Sir Michael]";
+	mes "I all my years I've never seen a thief bug as LARGE or as SHINY!!! What an amazing sight!";
+	close;
+}
 
 prontera,216,70,4 script "Strife" 48,{
          check Job == 1,L_Swordie,-; 
@@ -960,3 +768,59 @@ L_Fight:
       mes "Fight! Fight! Fight!";
       close;
 }
+
+prontera.gat,78,150,3 script "Dairenne" 90,{
+	mes "[Town girl Dairenne]";
+	mes "(Cough Cough)... Nowadays the streets are too crowded. (Cough Cough)...";
+	mes "Oh..So Dusty...So dirty here... Now I think the Capital City isn't all that good.";
+	next;
+	mes "[Town girl Dairenne]";
+	mes "Hmm... Anyway what is the matter?";
+	next;
+	menu "Talk",L_Menu,"Cancel",L_End;
+L_Menu:
+	mes "[Town girl Dairenne]";
+         check Gender == 1,-,L_Not;
+      mes "I'm not sure if your into Girllie Dress Stuff..Hohoho..but...";
+L_Not:
+	mes "These days, the most interesting topic around here is beautiful dresses Dyed in various Colors.";
+	next;
+	mes "[Town girl Dairenne]";
+	mes "To enchance your Clothing with those Dazzling Colors, you must use ^0000ffDyestuffs^000000 made in ^0000ffMorroc^000000 city... I hear they will cost you alot of money.";
+	next;
+	mes "[Town girl Dairenne]";
+	mes "Ah... I wish I could wear a Dress like that just once in my life...";
+	close;
+L_End:
+	mes "[Town girl Dairenne]";
+	mes "(Cough)....See you around.";
+	close;
+}
+
+prontera.gat,106,117,6 script "Merideth" 91,{
+	mes "[Merideth]";
+	mes "The weather was nice on my day off, so my family and I decided to have a picnic.";
+	mes "We chose to go to a somewhat secluded area and were amazed at what we saw."; 
+	next;
+	mes "[Merideth]";
+	mes "A HUGE swarm of hornets!! I never saw anything like it! But what was even more surprising was the Queen Bee.";
+	mes "The fact that she could control all of them with such ease....";
+	   emotion 23;
+	next;
+	mes "[Merideth]";
+	mes "If only a girl like myself had that much power over guys.... NOW THAT, would be really cool!!";
+	   emotion 29;
+	close;
+}
+
+prontera.gat,102,287,5 script "Shuger" 98,{
+	mes "[Shuger]";
+	mes "In the fields outside of town, there are pink monsters called '^FF8888Porings^000000'.";
+	mes "Though they are cute and do not harm people, they are notorious looters.  They will absorb any item that they find on the ground.";
+	next;
+	mes "[Shuger]";
+	mes "There are also green colored ones, called ^008800Poporings^000000'.  They are like the pink Porings but are much stronger.";
+	mes "It would be a HUGE MISTAKE for a newbie to attack a Poporing, thinking that it was as weak as a Poring!";
+	close;
+}
+

@@ -113,178 +113,209 @@ l_case3:
 	close;
 }
 
-izlude.gat,150,143,2	script	"Kylick"	97,{
+izlude.gat,150,143,2 script "Kylick" 97,{
 	mes "[Kylick]";
-	mes "Don't you think the Izlude Telescope is really COOL?! You know you can see here and there...";
-	mes "...Ahem~! We, here at Izlude, are responsible for maintaining peace not only on land but also at the sea.";
+	mes "Don't you think the Izlude Telescope is really COOL?!  YOU can see SUPER FAR AWAY...";
+	   emotion 5;
 	next;
 	mes "[Kylick]";
-	mes "That's why we have that huge Telescope and watch over the sea constantly to prevent any serious troubles beforehand.";
-	mes "After all, being prepared is better than being late.";
+	mes "... Ahem~! We, here at Izlude, are responsable for maintaining peace, not only on land, but also at sea.";
+	next;
+	mes "[Kylick]";
+	mes "That's why we have that huge Parascope to constantly watch over the sea and help prevent any serious problems beforehand.";
+	next;
+	mes "[Kylick]";
+	mes "After all, being well prepared is always better than being unprepared.";
+	   emotion 33;
 	close;
 }
 
-izlude.gat,56,126,2 script "Red" 85,{
-	scriptlabel arguement;
+izlude.gat,58,126,1 script "Red" 98,{
+	   scriptlabel BashBReak;
 	mes "[Red]";
-	mes "The only skill that's needed for a Swordman is 'Bash'! 'Bash'! 'Bash'! ONLY 'Bash'!";
-	mes "No need to waste time and effort for small skills~~ Everything else is for a coward, a chicken!";
+	mes "The only skill that a Swordsman needs is 'Bash'! 'Bash'! 'Bash'! ONLY 'Bash'!";
+	mes "There's no need to waste any time and effort on other minor skills ~~ unless you're some kind of wuss!";
+	   emotion 29;
 	next;
 	mes "[Cebalis]";
-	mes "What are you talking about!? Needless to speak, the romance of Swordsman is to stand decisively alone against all those enemies around and to squash them all.";
-	mes "AND What you have is 'Magnum Break' to do the job right~!!";
-	mes "Well..It does some explosion damage to unintended enemies wandering around...";
-	mes "And they all end up coming after you BUT that is risk a Swordman should be willing to take, you know?!"; 
-	next;
-	mes "[Red]";
-	mes "That's exactly why you're dumb, you idiot! What about the romance of the Swordsman?! I still remember last time when you used 'Magnum Break'.";
-	mes "You were just busy running away from all those Porings hit by that stupid skill! You weakling!";
-	mes "All those Porings around you got hit and all tried to attack you.";
+	mes "What are you talking about?";
+	   emotion 1;
 	next;
 	mes "[Cebalis]";
-	mes "Ahem..Hm..Hm..Y-you always keep such a trifling event in your mind too long. I-I'm telling you 'Magnum Break' is the skill for a Swordsman~!!";
-	mes "Something like 'Bash' is just one of the steps towards 'Magnum Break'.";
+	mes "The mark of a true Swordsman is the ability to bravely stand alone against a mob of enemies and SQUASH them ALL!";
+	next;
+	mes "[Cebalis]";
+	mes "AND the only skill that can do that is 'Magnum Break'!!";
+	next;
+	mes "[Cebalis]";
+	mes "It's a little bit risky to use because the explosive impact it creates may hit un-intended targets... which will then come after you... ";
+	mes "but its a risk a Swordsman SHOULD BE willing to take!!";
 	next;
 	mes "[Red]";
-	mes "Oh~ man~ Hey I know you heard everything. Yeah..you~ So what do you think? Which one do you think is better?";
-	mes "one critical damage skill, 'Bash' and Splash damage skill, 'Magnum Break'!";
+	mes "That's exactly why you're a dumb, idiot! The mark of a true Swordsman?! I still remmember the last time you used 'Magnum Break'....";
+	   emotion 32;
 	next;
-	menu "Bash",-,"Magnum Break",l_case2;
+	mes "[Red]";
+	mes "You were just busy running away from all of those Porings that got hit by that stupid skill! You weakling!";
+	mes "'Bash' hits ONE target with DEADLY PRECISION!! No need to fear accicental mobs.";
+	next;
+	mes "[Cebalis]";
+	mes "Ahem..... Why do you always have to bring up insiginfigant incidents that have long sinced passed?";
+	mes "I'm TELLING YOU, 'Magnum Break' is THE skill for a SWORDSMAN~!!";
+	next;
+	mes "[Cebalis]";
+	mes "'Bash' is just a stepping stone to getting 'Magnum Break'.  After all you need 5 levels of 'Bash before you can get lvl 1 'Magnum Break'.";
+	next;
+	mes "[Red]";
+	mes "Ooohhh maaaann.....";
+	   emotion 9;
+	next;
+	mes "[Red]";
+	mes "Hey! You there! which do you think is better? 'Bash', a powerfull and precise blow used on a single enemy,.......";
+	mes "or 'Magnum Break', a firey strike that does splash damage to many enemies??";
+	next;
+	menu "Bash",L_Menu_0,"Magnum Break",L_Menu_1;
+L_Menu_0:
 	   check Job == 1,-,L_Menu1_F1;
+	   check Job == 7,-,L_Menu1_F1;
 	mes "[Red]";
-	mes "Hahahaha!!! I knew you'd choose so!! You ARE a great guy!! Undoubtedly only 'Bash' suits a Swordman..";
-	mes "Please tell that to that BONEHEAD over there!! Hahaha.";
-	next;
-	mes "[Red]";
-	mes "Hm, Let me give you a bit of advice. After you achieve level 5 'Bash', the amount of SP the skill consumes increases greatly, so watch out for your SP.";
+	mes "Hahahaha!! See!? Someone who pursues a different job agrees with me~! You really are a great person!";
+	mes "Hahaha!! Undoubtedly only 'Bash' is suitable for a Swordman.  Please tell that to this BONEHEAD over here!! Hahaha.";
+	   emotion 21;
 	close;
 L_Menu1_F1:
-	    check Job == 7,-,L_Menu1_F2;
 	mes "[Red]";
-	mes "Hahahaha!!! I knew you'd choose so!! You ARE a great guy!! Undoubtedly only 'Bash' suits a Swordman..";
-	mes "Please tell that to that BONEHEAD over there!! Hahaha.";
+	mes "Hahahaha!!! I knew you'd choose 'Bash'!! Without a doubt only 'Bash' suits a Swordsman.  Please tell that to the BONEHEAD over there!! Hahaha.";
+	   emotion 21;
 	next;
 	mes "[Red]";
-	mes "Hm, Let me give you a bit of advice. After you achieve level 5 'Bash', the amount of SP the skill consumes increases greatly, so watch out for your SP.";
+	mes "Hm, Let me give you a bit of advice.  After you achieve level 5 'Bash', the amount of SP the skill consumes doubles, so keep an eye on your SP guage.";
+	close;
+L_Menu_1:
+	mes "[Cebalis]";
+	   check Job == 1,-,L_Menu1_F2;
+	   check Job == 7,-,L_Menu1_F2;
+	mes "[Cebalis]";
+	mes "Right! 'Magnum Break' is THE BEST!!! You know what you're talking about, huh? I don't know why this bonehead is sooooo stubborn.";
 	close;
 L_Menu1_F2:
-	mes "[Red]";
-	mes "Hahahaha!! See!? Someone who pursues a different job agrees with me~! You really are a great guy! Hahaha!! Undoubtedly only 'Bash' suits a Swordsman.. ";
-	mes "Please tell that to this BONEHEAD over here!! Hahaha.";
-	close;
-l_case2:
-	   check Job == 1,-,L_Menu2_F1;
 	mes "[Cebalis]";
-	mes "Alright!! 'Magnum Break' is the BEST!! Now you're talking~!! You know stuff~ HaHaHa.";
-	mes "You wanna useful information? Okay, okay lemme tell ya! 'Magnum Break' has the Fire Property.";
-	mes "So it won't be too effective against Water property monsters, but this is THE skill against the undead and the earth property monsters!";
+	mes "Darn Right!! 'Magnum Break' IS the BETTER skill!! You know what your talking about freind. HaHaHa.";
 	next;
 	mes "[Cebalis]";
-	mes "And most importantly, look around before you use it, otherwise you will be in a BI~~~~G trouble~";
-	close;
-L_Menu2_F1:
-	   check Job == 7,-,L_Menu2_F2;
-	mes "[Cebalis]";
-	mes "Alright!! 'Magnum Break' is the BEST!! Now you're talking~!! You know stuff~ HaHaHa.";
-	mes "You wanna useful information? Okay, okay lemme tell ya! 'Magnum Break' has the Fire Property.";
-	mes "So it won't be too effective against Water property monsters, but this is THE skill against the undead and the earth property monsters!";
+	mes "You want some useful information? Okay, lemme tell ya! 'Magnum Break' has the elemental Property of 'Fire'.";
+	mes "It won't be too effective against monsters with the 'Water' property, but it works great against 'Undead' and 'Earth' property monsters.!";
 	next;
 	mes "[Cebalis]";
-	mes "And most importantly, look around before you use it, otherwise you will be in a BI~~~~G trouble~";
-	close;
-L_Menu2_F2:
-	mes "[Cebalis]";
-	mes "Right?! 'Magnum Break is THE BEST!!! You know what you're talking about, huh?! I don't know why this bonehead is sooooo stubborn.";
+	mes "And most importantly, check your surroundings before you use it.  If you don't you may end up taking on more monsters than you can handle.";
 	close;
 }
 
-izlude.gat,58,126,2 script "Cebalis" 98,{
-	script arguement;
+izlude.gat,56,126,7 script "Cebalis" 85,{
+	   script BashBreak;
 }
 
 izlude_in.gat,125,164,2	script "Aaron" 65,{
 	mes "[Aaron]";
-	mes "Hm? A Swordsman? Don't you think Strong VIT and highly trained and unique breathing methods which enable quick HP recovery are the greatest advantages for a Swordman?";
+	mes "Hm? A Swordman?..........";
+	   emotion 1;
 	next;
 	mes "[Aaron]";
-	mes "If you train your skills very hard, you can even notice your HP recovers. And the amount depends on VIT, so if you invest in your VIT more, then recovery amount increases accordingly.";
+	mes "Do you think strong VIT and a highly trained and unique breathing method enabling quick HP recovery, are the greatest advantages of a Swordman?";
 	next;
 	mes "[Aaron]";
-	mes "But of course it'd be good to have high Attack, wouldn't it? You can either acquire a good weapon or bring up your STR to support your Attack. You know you'll need some strength anyway to swing a weapons easily.";
+	mes "If you train hard enough, you can even notice your HP recovering. The amount that recovers depends on your VIT level.";
 	next;
 	mes "[Aaron]";
-	mes "Another important thing is how accurate you can hit your opponents. DEX is the key here. Also if you train DEX, then the gap between the MIN and MAX damage will decrease.";
+	mes "So if you invest in your VIT more, then the recovery amount will increase accordingly.";
+	next;
+	mes "[Aaron]";
+	mes "But of course it'd be good to have a high Attack, wouldn't it? You can either acquire a good weapon or increase your STR level to enhance your Attack.";
+	next;
+	mes "[Aaron]";
+	mes "You will also need strength to handle weapons more easily as well as to increase the amount of weight you can carry.";
+	next;
+	mes "[Aaron]";
+	mes "Another important thing is how accurate you can hit your opponents. DEX is the key here.  Dexterity also decreases the gap between the MIN and MAX damage you can deal.";
 	next;
 	mes "[Aaron]";
 	mes "Hm... Are you bored? Want me to go on?";
+	   emotion 20;
 	next;
-	menu "Tell me more please.",-,"End conversation.",L_case2;
+	menu "Tell me more please.",L_Menu,"End conversation",L_End;
+L_Menu:
 	mes "[Aaron]";
-	mes "Hm.. in that case, I'll explain about other attributes to you briefly.";
-	mes "In order to attack and evade quickly, you've gotta pay attention to AGI.";
+	mes "Hm... in that case, I'll explain about the other attributes to you briefly.  In order to attack and evade quickly, you've gotta have a good amount of AGI.";
 	next;
 	mes "[Aaron]";
-	mes "In case you want to make more critical hits, it's a good idea to invest in LUK.";
-	mes "INT increases Max SP, which is needed to use various skills... but well it's up to you.";
-	close;	
-L_case2:
+	mes "A high AGI level will ensure that you can avoid attacks making you almost unhittable.";
+	next;
+	mes "[Aaron]";
+	mes "In case you want to land more critical hits, it's a good idea to invest in LUK.  INT increases max SP, which is needed to use various skills.";
+	next;
+	mes "[Aaron]";
+	mes "Well it's up to you on what you type of attributes you focus on.";
+	next;
+L_End:
 	mes "[Aaron]";
 	mes "OK, train hard~~";
+	   emotion 21;
 	close;
 }
 
 izlude.gat,124,178,2 script "Soldier" 105,{
 	mes "[Soldier]";
-	mes "HeHeHeHe..HaHaHaHa";
+	mes "HeHeHeHe... HaHaHaHa";
 	mes "Huh? Why am I so happy?";
 	mes "you wanna know?";
+	   emotion 18;
 	next;
-	menu "Sure, why?",-,"Not really, I don't care.",L_case2;
+	menu "Sure, why?",L_Menu_1,"Not really, I don't care.",L_End;
+L_Menu_1:
 	mes "[Soldier]";
-	mes "Ah~~ There is not much for us to do these days. Merchants buy items, which monsters drop. You knew that, right?";
+	mes "Ah~~ There is not much for us to do these days. Merchants buy items which monsters drop.... you knew that, right?";
 	next;
-	menu "Of course",-,"Eh? Really?",L_para2; 
+	menu "Of course",L_Sub_1,"Eh? Really?",L_Sub_2;
+L_Sub_1:
 	mes "[Soldier]";
 	mes "HaHa In fact, that was actually our job.";
 	mes "But there were more and more hunters who come in order to get paid. So it was just too much to handle.";
 	next;
 	mes "[Soldier]";
-	mes "We had to work over time every day. Ah~~~ that was a nightmare...~~~";
-	mes "Anyways, the government took a smart action, making the Registration System. The Office of Prize Compensation only pays those who have the Registration.";
+	mes "We had to work over time every day.  Ah~~~ that was a nightmare!!!...~~~";
+	   emotion 16;
 	next;
 	mes "[Soldier]";
-	mes "Requirements for the Registration are for a merchant to secure sufficient funds and to stay at one place all the time. The Office gives away the registration to any merchant who fulfills those requirements.";
+	mes "Anyways, the government made a smart move and created the Registration System.";
+	mes "The Office of Prize Compensation only pays those who have been registered.";
 	next;
 	mes "[Soldier]";
-	mes "So there aren't too many people who come to us any more. I mean we are still busy, but that's nothing compared to how it was before~~";
-	mes "People who suffered first know how to thank even the slightest comfort.";
+	mes "The requirements for registration are for a merchant to secure sufficient funds and to stay at one place all the time.";
+	mes "The Office gives away the registration to any merchant who fullfills those requirements.";
+	next;
+	mes "[Soldier]";
+	mes "So there aren't too many people that come to us any more. I mean we are still busy, but that's nothing compared to how it was before~~";
+	next;
+	mes "[Soldier]";
+	mes "People who have suffered are able to appreicate even the slightest in comforts.";
+	next;
+	mes "[Soldier]";
 	mes "HaHaHaHaHa!";
-	close;	
-L_para2:
+	   emotion 18;
+	close;
+L_Sub_2:
 	mes "[Soldier]";
 	mes "What?! What do you mean you didn't know?!";
-	mes "Hm.. well..well.. You know you could get some items, killing monsters. You could make some money out of it if you bring and sell those to a merchant.";
-	mes "ANYWAYS!";
+	   emotion 1;
 	next;
 	mes "[Soldier]";
-	mes "HaHa In fact, that was actually our job.";
-	mes "But there were more and more hunters who came in order to get paid. So it was just too much to handle.";
+	mes "Hm... well... you know you could get items by killing monsters right?";
+	mes "You could make some money out of it by selling those items to a merchant.";
 	next;
+	goto L_End;
+L_End:
 	mes "[Soldier]";
-	mes "We had to work over time every day. Ah~~~ that was a nightmare...~~~";
-	mes "Anyways, the government took a smart action, making the Registration System. The Office of Prize Compensation only pays those who have the Registration.";
-	next;
-	mes "[Soldier]";
-	mes "Requirements for the Registration are for a merchant to secure sufficient funds and to stay at one place all the time. The Office gives away the registration to any merchant who fulfills those requirements.";
-	next;
-	mes "[Soldier]";
-	mes "So there aren't too many people who come to us any more. I mean we are still busy, but that's nothing compared to how it was before~~";
-	mes "People who suffered first know how to thank even the slightest comfort.";
-	mes "HaHaHaHaHa!";
-	close;
-L_case2:
-	mes "[Soldier]";
-	mes "OK Good Bye~~";
+	mes "OK Good bye~~";
 	close;
 }
 
@@ -293,7 +324,6 @@ izlude.gat,201,181,1 script "Sailor" 100,{
 	mes "Hey Everybody, Attention!";
 	mes " Come and Ride the Wind with a Fascinated Ship!!! Come on! Hurry up!";
 	next;
-
 //	menu "Byalan Island -> 150 Zeny",-,"Alberta -> 500 Zeny.",L_Menu2,"Turtle Dungeon -> 900 Zeny.",L_Menu3,"Cancel.",-;
 	menu "Byalan Island -> 150 Zeny",-,"Alberta -> 500 Zeny.",L_Menu2,"Turtle Dungeon -> 900 Zeny.",L_Menu3,"Jawaii -> 500 Zeny.",L_Menu4,"Cancel.",-;
 	   check Zeny >= 150,-,L_Menu1_F;
@@ -369,6 +399,9 @@ izlude.gat,182,186,2 script "Edgar" 49,{
 L_para2:
 	mes "[Edgar]";
 	mes "Oh boy, you hate to walk and have no money, but you want to go there? Oh boy..";
+	   emotion 4;
+	next;
+	mes "[Edgar]";
 	mes "Yeah yeah, me, the captain of this ship can afford to bring you there at lower price, 250 Zeny.";
 	next;
 	menu "Alrighty~!",Pay,"Bah,what a rip off!!",L_sub2;
@@ -383,7 +416,8 @@ L_Menu1_F:
 	close;
 L_sub2:
 	mes "[Edgar]";
-	mes "Oh boy I don't rip you off...";
+	mes "What!!... ahg... bah... guh... I'm NOT ripping you off!!!...";
+	   emotion 23;
 	close;
 L_menu2:
 	mes "[Edgar]";
@@ -421,4 +455,10 @@ izlude.gat,125,116,0 script "Izlude Bulletin" 111,{
       mes "Welcome, and enjoy your stay in";
       mes "the beautiful satelite town of Izlude.";
       close;
+}
+
+izlude.gat,179,183,0 script "Sign" 111,{
+	mes "^993333- The Sign Reads -^000000";
+ 	mes "Take a boat ride to the city of Alberta or to the island of Byalan.";
+  	close;
 }
