@@ -9,6 +9,9 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.005 (Fusion 1.212)
 ----------------------------------------------------------------------------------------------------
+- 05-30-04: Event\Event_Carnival.txt - Added Carnival script. [Muad_Dib]
+- 05-30-04: Town\Town_Turtle_Island.txt - Added Turtle Island script. [Muad_Dib]
+- 05-30-04: Town\Town_Alberta.txt - Removed some turtle dungeon npc's. [Muad_Dib]
 - 05-30-04: Town\Town_Kafra.txt - Fixed Izlude Kafra warping bug (0000714). [Tsusai]
 - 05-29-04: Mob\dungeon\tur_dun.txt - Updated turtle dungeon mobs. [Muad_Dib]
 - 05-28-04: Mob\field\gon_fild.txt - Disabled "Baby Leopard" until the DB drops is fixed. [Tsusai]
