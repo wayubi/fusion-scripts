@@ -1,20 +1,46 @@
-beach_dun.gat,0,0,0,0	monster	Chimera 1283,1,7200000,3600000,0
-beach_dun.gat,0,0,0,0	monster	Megalith 1274,8,0,0,0
-beach_dun.gat,0,0,0,0	monster	Merman 1264,40,10000,20,0
-beach_dun.gat,0,0,0,0	monster	Neraid 1255,25,0,0,0
-beach_dun.gat,0,0,0,0	monster	Penoema 1216,8,30000,0,0
-beach_dun.gat,0,0,0,0	monster	Pest 1256,25,0,0,0
-beach_dun.gat,0,0,0,0	monster	Tri_Joint 1279,8,0,0,0
-beach_dun2.gat,0,0,0,0	monster	Hydra 1068,15,0,0,0
-beach_dun2.gat,0,0,0,0	monster	Megalith 1274,30,0,0,0
-beach_dun2.gat,0,0,0,0	monster	Merman 1264,5,0,0,0
-beach_dun2.gat,0,0,0,0	monster	Neraid 1255,5,0,0,0
-beach_dun2.gat,0,0,0,0	monster	Stalactic_Golem 1278,40,5000,0,0
-beach_dun2.gat,0,0,0,0	monster	Tri_Joint 1279,20,0,0,0
-beach_dun3.gat,0,0,0,0	monster	Cornutus 1067,30,0,0,0
-beach_dun3.gat,0,0,0,0	monster	Hydra 1068,20,0,0,0
-beach_dun3.gat,0,0,0,0	monster	Megalodon 1064,30,0,0,0
-beach_dun3.gat,0,0,0,0	monster	Neraid 1255,2,0,0,0
-beach_dun3.gat,0,0,0,0	monster	Pest 1256,2,60000,0,0
-beach_dun3.gat,0,0,0,0	monster	Shellfish 1074,25,0,0,0
-beach_dun3.gat,0,0,0,0	monster	Tri_Joint 1279,5,0,0,0
+//========================================================================================
+// »» The Fusion Project ««
+// Copyright (c) 2004, Cobax Information Systems
+// http://fusion.cobax.net/
+// ---------------------------------------------------------------------------------------
+//
+//  Comodo Dungeon Mob - Monster Spawn Locations
+//
+//========================================================================================
+
+//========================================================================================
+// -  Comodo Dungeon 01
+//========================================================================================
+
+beach_dun.gat,0,0,0,0	monster	"Tri Joint" 1279,8,0,0,0
+beach_dun.gat,0,0,0,0	monster	"Nereid" 1255,25,0,0,0
+beach_dun.gat,0,0,0,0	monster	"Pest" 1256,25,0,0,0
+beach_dun.gat,0,0,0,0	monster	"Megabolis" 1274,8,0,0,0
+beach_dun.gat,0,0,0,0	monster	"Merman" 1264,40,10000,20,1
+beach_dun.gat,0,0,0,0	monster	"Penomena" 1216,8,30000,0,0
+beach_dun.gat,0,0,0,0	monster	"Chimera" 1283,1,7200000,3600000,1
+
+//========================================================================================
+// -  Comodo Dungeon 02
+//========================================================================================
+
+beach_dun2.gat,0,0,0,0	monster	"Hydra" 1068,15,0,0,0
+beach_dun2.gat,0,0,0,0	monster	"Tri Joint" 1279,20,0,0,0
+beach_dun2.gat,0,0,0,0	monster	"Nereid" 1255,5,0,0,0
+beach_dun2.gat,0,0,0,0	monster	"Megabolis" 1274,30,0,0,0
+beach_dun2.gat,0,0,0,0	monster	"Merman" 1264,5,0,0,0
+beach_dun2.gat,0,0,0,0	monster	"Stalactic Golem" 1278,40,5000,0,0
+
+//========================================================================================
+// -  Comodo Dungeon 03
+//========================================================================================
+
+beach_dun3.gat,0,0,0,0	monster	"Hydra" 1068,20,0,0,0
+beach_dun3.gat,0,0,0,0	monster	"Shellfish" 1074,25,0,0,0
+beach_dun3.gat,0,0,0,0	monster	"Cornutus" 1067,30,0,0,0
+beach_dun3.gat,0,0,0,0	monster	"Megalodon" 1064,30,0,0,0
+beach_dun3.gat,0,0,0,0	monster	"Tri Joint" 1279,5,0,0,0
+beach_dun3.gat,0,0,0,0	monster	"Neraid" 1255,2,0,0,0
+beach_dun3.gat,0,0,0,0	monster	"Pest" 1256,2,60000,0,0
+
+
