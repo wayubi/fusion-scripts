@@ -1,7 +1,16 @@
-ama_dun01.gat,228,6,0	warp	warp8007	1,1,ama_test.gat,50,87
-ama_dun01.gat,234,143,0	warp	warp8008	1,1,ama_dun02.gat,31,41
-ama_dun02.gat,29,41,0	warp	warp8009	1,1,ama_dun01.gat,231,143
-ama_dun02.gat,196,124,0	warp	warp8010	1,1,ama_dun03.gat,119,14
-ama_dun03.gat,119,9,0	warp	warp8011	1,1,ama_dun02.gat,196,121
+//========================================================================================
+// »» The Fusion Project ««
+// Copyright (c) 2004, Cobax Information Systems
+// http://fusion.cobax.net/
+// ---------------------------------------------------------------------------------------
+//
+// Amatsu Dungeon Warps - Warp Locations
+//
+//========================================================================================
 
-
+ama_dun01.gat,235,144,0	warp	amadunwarp001	1,1,ama_dun02.gat,33,40
+ama_dun02.gat,30,40,0	warp	amadunwarp002	1,1,ama_dun01.gat,232,144
+ama_dun02.gat,196,123,0	warp	amadunwarp003	1,1,ama_dun03.gat,120,12
+ama_dun03.gat,120,9,0	warp	amadunwarp004	1,1,ama_dun02.gat,196,120
+ama_in02.gat,59,160,0	warp	amadunwarp005	1,1,ama_in02.gat,215,152
+ama_in02.gat,215,149,0	warp	amadunwarp006	1,1,ama_in02.gat,59,156
