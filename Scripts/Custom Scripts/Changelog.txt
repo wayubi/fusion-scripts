@@ -1,6 +1,7 @@
 --------------------------------------------------------------------------------
  Fusion 1.212 - June 30th, 2004
 --------------------------------------------------------------------------------
+ - 06-10-04: Added 40z Prontera Hair Stylist script (ENG) - Hair Stylists\Ashley-40z_input.txt. [Yun Qi]
  - 06-08-04: Added Samurai Warpers script (ENG) - Warpers\SamuraiWarpers_100+300.txt. [Yun Qi]
  - 06-08-04: Added "Warpers" folder - Scripts\Custom\Warpers. [Yun Qi]
  - 06-06-04: Added Prontera Pet Food shop (ENG) - Shops\PetCo_food.txt. [Yun Qi]
