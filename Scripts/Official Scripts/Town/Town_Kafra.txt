@@ -2548,7 +2548,6 @@ R1:
 kafra:
 	set @kafra_COUPON = 0;
 	cutin "kafra_02",2;
-	check 1ST_JOB_QUEST != 4,-,L_QUEST;
 	mes "[kafra Personnel]";
 	mes "Welcome.";
 	mes "kafra service is always by your side.";
