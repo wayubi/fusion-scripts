@@ -27,7 +27,7 @@ prontera.gat,52,350,5	script	"PecoPeco Breeder"	105,{
 				mes "You can rent one Peco Peco for 2500 Zeny.";
 				next;
 				menu "Give me one.",-,"What a Rip-Off!!",CANCEL;
-			            check option == 2,-,L_GOT;
+			            check option == 0,-,L_GOT;
 					check Zeny <= 2499,-,SKILL;
 						mes "[PecoPeco Breeder]";
 						mes "General,you don't have enough money.";
@@ -56,7 +56,7 @@ prontera.gat,52,350,5	script	"PecoPeco Breeder"	105,{
 				close;
 			L_GOT:
 				mes "[PecoPeco Breeder]";
-				mes "Umm... aren't you already riding a Grand PecoPeco??....";
+				mes "Umm... aren't you already riding a PecoPeco??....";
 				emotion 20;
 				close;
 }
@@ -69,7 +69,7 @@ in_hunter.gat,146,99,3	script	"Falcon Fancier"	105,{
 				mes "Need a Falcon for hunting?! Give me 2500 Zeny then.";
 				next;
 				menu "Alright.",-,"What a Rip-Off!!",CANCEL;
-			            check option == 1,-,L_GOT;
+			            check option == 0,-,L_GOT;
 					check Zeny <= 2499,-,SKILL;
 						mes "[Falcon Fancier]";
 						mes "Go get more money.";
@@ -115,7 +115,7 @@ prontera.gat,231,317,4	script "Grand PecoPeco Breeder" 105,{
 				mes "You can rent one Grand Peco Peco for 3000 Zeny.";
 				next;
 				menu "Give me one.",-,"What a Rip-Off!!",CANCEL;
-			            check option == 2,-,L_GOT;
+			            check option == 0,-,L_GOT;
 					check Zeny <= 2999,-,SKILL;
 						mes "[Grand PecoPeco Breeder]";
 						mes "General,you don't have enough money.";
