@@ -1690,7 +1690,7 @@ L_MENU_8:
 	additem 5028,1;
 	goto L_ROOT_2;
 L_MENU_9:
-	checkitem 529,100,-,L_ROOT_1;
+	checkitem 529,10,-,L_ROOT_1;
 	checkitem 530,5,-,L_ROOT_1;
 	checkitem 538,15,-,L_ROOT_1;
 	checkitem 539,300,-,L_ROOT_1;
@@ -1835,7 +1835,7 @@ L_MENU_2:
 	L_SUB_2_8:
 		mes "[Titicupe]";
 		mes "Cake Hat?";
-		mes "100 Candy";
+		mes "10 Candy";
 		mes "5 Candy Cane";
 		mes "15 Well-baked Cookie";
 		mes "20 Piece Of Cake";

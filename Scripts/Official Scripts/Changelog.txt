@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.003
 ----------------------------------------------------------------------------------------------------
+- Event\Event_Making.txt - Correcting Cake Hat requirements. [Tsusai]
 - Job\Job_Super_Novice.txt - Chaned some text parts. [Muad_Dib] 
 - Event\Event_Sign.txt - Added event sign. [Muad_Dib]
 - Quest\Quest_skill\Thief_Skill.txt - file added. [nestor_zulueta]
