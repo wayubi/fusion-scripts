@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.005
 ----------------------------------------------------------------------------------------------------
+- Mob\dungeon\xmas_dun - Fixed Mastering spawn. [Muad_Dib]
 - Job\Job1_Swordman.txt - Put back in changes cause it works server sided. [Muad_Dib]
 - Mob\other\job_quests.txt - Put back in changes cause it works server sided. [Muad_Dib]
 - Warp\other\job_sword.txt - Put back in changes cause it works server sided. [Muad_Dib]

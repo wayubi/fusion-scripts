@@ -13,7 +13,7 @@
 //========================================================================================
 
 xmas_dun01.gat,0,0,0,0	monster	"Poring" 1002,10,0,0,0
-xmas_dun01.gat,0,0,0,0	monster	"Mastering" 1090,0,0,0
+xmas_dun01.gat,0,0,0,0	monster	"Mastering" 1090,1,0,0,0
 xmas_dun01.gat,0,0,0,0	monster	"Drops" 1113,10,0,0,0
 xmas_dun01.gat,0,0,0,0	monster	"Poporing" 1031,20,0,0,0
 xmas_dun01.gat,0,0,0,0	monster	"Marin" 1242,20,0,0,0
