@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.003
 ----------------------------------------------------------------------------------------------------
+- Warp\fields\prt_fild.txt - Fixed warp destination bug (#602). [Tsusai]
 - Event\Event_Rental.txt - Moved Grand Peko Breeder here and removed crusader support for Peko Breeder. [Tsusai]
 - GvG\gefg_cas01 - 03.txt - Fixes missing Guardian bug and Kafra service bug. [icbob]
 - GvG\aldeg_cas0#.txt - Fixes missing Guardian bug and Kafra service bug in all Aldebaran Guild castles. [icbob]

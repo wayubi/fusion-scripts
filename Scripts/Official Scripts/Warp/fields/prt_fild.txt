@@ -1,4 +1,4 @@
-prt_fild00.gat,18,129,0	warp	warp1116	2,6,gef_fild00.gat,276,140
+prt_fild00.gat,18,129,0	warp	warp1116	2,6,gef_fild00.gat,376,140
 prt_fild00.gat,159,383,0	warp	warp1117	4,2,mjolnir_07.gat,156,19
 prt_fild00.gat,165,18,0	warp	warp1118	9,3,prt_fild04.gat,158,384
 prt_fild00.gat,317,18,0	warp	warp1119	8,2,prt_fild04.gat,323,384
