@@ -18,7 +18,7 @@
 // - Dairen -> prontera: 78,150
 //   Need description.
 //
-// - Zabadorihan -> morocc_in: 146,99
+// - Java Dullihan -> morocc_in: 146,99
 //   Need description.
 //
 // - Jineda inlay full -> prt_in.gat: 284,168
@@ -357,298 +357,233 @@ prontera.gat,78,150,3	script	"Dairen"	90,{
 			close;
 }
 
-morocc_in.gat,146,99,3	script	"Zabadorihan"	58,{
-		mes "[Zabadorihan]";
-		mes " ... the weather is true -- it is hot . -- such weather   To making dye, it is tight.";
+morocc_in.gat,146,99,3	script	"Java Dullihan"	58,{
+	mes "[Dye Maker Java Dullihan]";
+	mes "Wow... Such a nice strong day. Days like this are perfect to make dyes.";
+	next;
+	menu "Talk",-,"Make Dyestuffs",MENU_1,"Cancel",END;
+		mes "[Dye Maker Java Dullihan]";
+		mes "I don't really have much to say to you...";
+		mes "But, if you would like to talk about my life, i can do that.";
+		mes "It may be a little long a boring, but would you like to listen?";
 		next;
-		menu "Talk",-,"Dye is built.",L_MENU_2,"Go away",L_MENU_3;
-			mes "[Zabadorihan]";
-			mes "There is nothing that I want to tell to you independently.";
-			mes "But, it is made to hear it if it is the talk of my past..";
-			mes "A few is [ which it is long and is not loaded ] whether to hear it, although it may not be.?";
+		menu "Listen",-,"Don't Listen",END;
+			mes "[Dye Maker Java Dullihan]";
+			mes "Ever since i was born my father has been making dyes";
+			mes "He made dyes for countless hours.";
+			mes "Yeah... Even when my mother passed away after being sick for son long... He never stopped making dyes.";
+			mes "At one point, I hated my father so much...";
 			next;
-			menu "I heard about it",-,"Didn't hear about",L_MENU_1_1;
-				mes "[Zabadorihan]";
-				mes "From [ before I am born and discretion sticks ] ... Father   Dye was made..";
-				mes "Time long like there is no... and the father had been making dye.";
-				mes "It meets... When a mother is sick and dies ... It did not stop making dye..";
-				mes "Then, such a father was hateful...";
-				next;
-				mes "[Zabadorihan]";
-				mes "Such a father is disagreeable.. It is dye automatically.   Although structure also becomes disagreeable, it comes out of a house when young, and anything is done and it excels.";
-				mes "but ... now, I go back [ home ] again and trade is in me by ... making dye ... I tried to want for blood not to have ... probably ... even if it begins .... obtaining ... a 15-year ...  shelf.";
-				next;
-				mes "[Zabadorihan]";
-				mes "These days came and it felt... It is  now as which a father can understand..";
-				mes "While the father threw all away why, was crazy to making dye?...";
-				next;
-				mes "[Zabadorihan]";
-				mes "that color that the work repeated repeatedly overlaps and probably dyes it ... in order to take out the color of a phantom which was seen in much time and the dream   it was....";
-				next;
-				mes "[Zabadorihan]";
-				mes "FUTSU [ ... It is / or / it was from what body . year / which present I believe so / before ]. / ... From the moment that what a color says comes to be understood / ... It is ? why it is known... It.....";
-				mes "See.I did not get a father -- that color is surely taken out and is shown.";
-				close;
-	L_MENU_1_1:
-				mes "[Zabadorihan]";
-				mes "It can do -- it can do .. should not believe the talk of making .... dye and it should not be heard . HAHAHAHATSU";
-				close;
-	L_MENU_2:
-		mes "[Zabadorihan]";
-		mes "Means! It will make, if only you are good. I am surely you.   He promises to take out a color needed..";
-		mes "It comes out and is what color.   Paddle which wants to make dye. A commission changes with colors which it is going to make.";
-		mes "Do you want to ask why it is? this world -- a hand -- what is necessary is for it just to turn out that there are a color which can be made at a low price, and a color which is not so";
-		mes "possibly, don't think that a commission is high . -- is the color of this dye the special thing which my soul is putting?.";
-		next;
-		menu "Red dye",-,"Yellow dye",L_MENU_2_2,"It ? Is and is dye.",L_MENU_2_3,"Dye of Dark",L_MENU_2_4,"Dye of Light",L_MENU_2_5,"Purple dye",L_MENU_2_6,"White dye",L_MENU_2_7,"It ? Is and is dye.",L_MENU_2_8,"Go away",L_MENU_2_9;
-			mes "[Zabadorihan]";
-			mes "Obtaining ... in order to make Red dye   Red herb   '30' a neutralizer, and a Empty Bottle ? is required..";
-			mes "The commission for manufacture 3000 Zeny only the grade is got.";
-			mes "If it is you, although it thinks that it can be preparing...Is work begun?";
+			mes "[Dye Maker Java Dullihan]";
+			mes "Because I hated my father.. Natrually, I quit making dyes, and even ran away from home to try new things.";
+			mes "Anyways... Now i'm back home to carry on the family tradition.";
+			mes "Making dyes... You can't abandon your blood... I've been doing this for.. 15 years already.";
 			next;
-			menu "Makeme a dye.",-,"Nothing",L_MENU_2_9;
-				checkitem 507,30,-,L_ROOT_2_1A;
-				checkitem 973,1,-,L_ROOT_2_1A;
-				checkitem 713,1,-,L_ROOT_2_1A;
-				check Zeny >= 3000,L_ROOT_2_1B,-;
-	L_ROOT_2_1A:
-				mes "[Zabadorihan]";
-				mes "Insufficient [and]...";
-				mes "It seems that the color which somehow or other cannot be taken out with the material. How collects material more.?";
-				close;
-	L_ROOT_2_1B:
-				delitem 507,30;
-				delitem 973,1;
-				delitem 713,1;
-				set Zeny -= 3000,0;
-				additem 975,1;
-				mes "[Zabadorihan]";
-				mes "FUMU ... It can improve, if it does not and come. It is a deep color even if it takes..";
-				mes "Of course, I am although it tries hard in order to take out the charming color beyond this...";
-				mes "...When dye was needed then always, before coming.";
-				close;
-	L_MENU_2_2:
-			mes "[Zabadorihan]";
-			mes "Obtaining ... In order to make yellow dye   Yellow herb   '30'   a neutralizer, and an Empty Bottle is required.";
-			mes "The commission for manufacture 3000 Zeny only the grade is got.";
-			mes "If it is you, although it thinks that it can be preparing...Is work begun?";
+			mes "[Dye Maker Java Dullihan]";
+			mes "Something I realized these days is... I can understand my father.";
+			mes "Why my father devoted everything into making dyes...";
 			next;
-			menu "Makeme a dye.",-,"Nothing",L_MENU_2_9;
-				checkitem 508,30,-,L_ROOT_2_2A;
-				checkitem 973,1,-,L_ROOT_2_2A;
-				checkitem 713,1,-,L_ROOT_2_2A;
-				check Zeny >= 3000,L_ROOT_2_2B,-;
-	L_ROOT_2_2A:
-				mes "[Zabadorihan]";
-				mes "Insufficient [and]...";
-				mes "It seems that the color which somehow or other cannot be taken out with the material. How collects material more.?";
-				close;
-	L_ROOT_2_2B:
-				delitem 508,30;
-				delitem 973,1;
-				delitem 713,1;
-				set Zeny -= 3000,0;
-				additem 976,1;
-				mes "[Zabadorihan]";
-				mes "FUMU ... It can improve, if it does not and come. It is a deep color even if it takes..";
-				mes "Of course, I am although it tries hard in order to take out the charming color beyond this...";
-				mes "...When dye was needed then always, before coming.";
-				close;
-	L_MENU_2_3:
-			mes "[Zabadorihan]";
-			mes "Obtaining ... In order to make blue dye   Yellow herb   '20'   a neutralizer, and an Empty Bottle is required."
-			mes "The commission for manufacture 3500 Zeny only the grade is got.";
-			mes "If it is you, although it thinks that it can be preparing...Is work begun?";
+			mes "[Dye Maker Java Dullihan]";
+			mes "While doing that tedious and hard work... he probally felt the magical colors passing on so many dreams.. it was probally for those dreams that he tried so hard to make dyes...";
 			next;
-			menu "Makeme a dye.",-,"Nothing",L_MENU_2_9;
-				checkitem 510,20,-,L_ROOT_2_3A;
-				checkitem 973,1,-,L_ROOT_2_3A;
-				checkitem 713,1,-,L_ROOT_2_3A;
-				check Zeny >= 3500,L_ROOT_2_3B,-;
-	L_ROOT_2_3A:
-				mes "[Zabadorihan]";
-				mes "Insufficient [and]...";
-				mes "It seems that the color which somehow or other cannot be taken out with the material. How collects material more.?";
-				close;
-	L_ROOT_2_3B:
-				delitem 510,20;
-				delitem 973,1;
-				delitem 713,1;
-				set Zeny -= 3500,0;
-				additem 978,1;
-				mes "[Zabadorihan]";
-				mes "FUMU ... It can improve, if it does not and come. It is a deep color even if it takes..";
-				mes "Of course, I am although it tries hard in order to take out the charming color beyond this...";
-				mes "...When dye was needed then always, before coming.";
-				close;
-	L_MENU_2_4:
-			mes "[????? ??????]";
-			mes "Obtaining ... In order to make blue dye   Yellow herb   '5'   a neutralizer, and an Empty Bottle is required.";
-			mes "The commission for manufacture 5000 Zeny only the grade is got.";
-			mes "If it is you, although it thinks that it can be preparing...Is work begun?";
+			mes "[Dye Maker Java Dullihan]";
+			mes "Heh... how do i know this?... That's... because that's the way i feel right now. since a couple years ago... ever since... I was able to hear what the colors were saying......";
+			mes "Just watch, I'm going to succeed in making the color my father wanted to, but never did.";
 			next;
-			menu "Makeme a dye.",-,"Nothing",L_MENU_2_9;
-				checkitem 510,5,-,L_ROOT_2_4A;
-				checkitem 973,1,-,L_ROOT_2_4A;
-				checkitem 713,1,-,L_ROOT_2_4A;
-				checkitem 511,20,-,L_ROOT_2_4A;
-				checkitem 508,20,-,L_ROOT_2_4A;
-				checkitem 974,1,-,L_ROOT_2_4A;
-				check Zeny >= 5000,L_ROOT_2_4B,-;
-	L_ROOT_2_4A:
-				mes "[Zabadorihan]";
-				mes "Insufficient [and]...";
-				mes "It seems that the color which somehow or other cannot be taken out with the material. How collects material more.?";
-				close;
-	L_ROOT_2_4B:
-				delitem 510,5;
-				delitem 973,1;
-				delitem 713,1;
-				delitem 511,20;
-				delitem 508,20;
-				delitem 974,1;
-				set Zeny -= 5000,0;
-				additem 979,1;
-				mes "[Zabadorihan]";
-				mes "FUMU ... It can improve, if it does not and come. It is a deep color even if it takes..";
-				mes "Of course, I am although it tries hard in order to take out the charming color beyond this...";
-				mes "...When dye was needed then always, before coming.";
-				close;
-	L_MENU_2_5:
-			mes "[Zabadorihan]";
-			mes "Obtaining ... In order to make blue dye   Yellow herb   '20'   a neutralizer, and an Empty Bottle is required."
-			mes "The commission for manufacture 3500 Zeny only the grade is got.";
-			mes "If it is you, although it thinks that it can be preparing...Is work begun?";
-			next;
-			menu "Makeme a dye.",-,"Nothing",L_MENU_2_9;
-				checkitem 507,20,-,L_ROOT_2_5A;
-				checkitem 973,1,-,L_ROOT_2_5A;
-				checkitem 713,1,-,L_ROOT_2_5A;
-				checkitem 974,1,-,L_ROOT_2_5A;
-				checkitem 508,20,-,L_ROOT_2_5A;
-				check Zeny >= 5000,L_ROOT_2_5B,-;
-	L_ROOT_2_5A:
-				mes "[Zabadorihan]";
-				mes "Insufficient [and]...";
-				mes "It seems that the color which somehow or other cannot be taken out with the material. How collects material more.?";
-				close;
-	L_ROOT_2_5B:
-				delitem 507,20;
-				delitem 973,1;
-				delitem 713,1;
-				delitem 974,1;
-				delitem 508,20;
-				set Zeny -= 5000,0;
-				additem 980,1;
-				mes "[Zabadorihan]";
-				mes "FUMU ... It can improve, if it does not and come. It is a deep color even if it takes..";
-				mes "Of course, I am although it tries hard in order to take out the charming color beyond this...";
-				mes "...When dye was needed then always, before coming.";
-				close;
-	L_MENU_2_6:
-			mes "[Zabadorihan]";
-			mes "Obtaining ... In order to make blue dye   Yellow herb   '20'   a neutralizer, and an Empty Bottle is required."
-			mes "The commission for manufacture 3500 Zeny only the grade is got.";
-			mes "If it is you, although it thinks that it can be preparing...Is work begun?";
-			next;
-			menu "Makeme a dye.",-,"Nothing",L_MENU_2_9;
-				checkitem 507,20,-,L_ROOT_2_6A;
-				checkitem 973,1,-,L_ROOT_2_6A;
-				checkitem 713,1,-,L_ROOT_2_6A;
-				checkitem 974,1,-,L_ROOT_2_6A;
-				checkitem 510,10,-,L_ROOT_2_6A;
-				check Zeny >= 5000,L_ROOT_2_6B,-;
-	L_ROOT_2_6A:
-				mes "[Zabadorihan]";
-				mes "Insufficient [and]...";
-				mes "It seems that the color which somehow or other cannot be taken out with the material. How collects material more.?";
-				close;
-	L_ROOT_2_6B:
-				delitem 507,20;
-				delitem 973,1;
-				delitem 713,1;
-				delitem 974,1;
-				delitem 510,10;
-				set Zeny -= 5000,0;
-				additem 981,1;
-				mes "[Zabadorihan]";
-				mes "FUMU ... It can improve, if it does not and come. It is a deep color even if it takes..";
-				mes "Of course, I am although it tries hard in order to take out the charming color beyond this...";
-				mes "...When dye was needed then always, before coming.";
-				close;
-	L_MENU_2_7:
-			mes "[Zabadorihan]";
-			mes "Obtaining ... In order to make blue dye   Yellow herb   '20'   a neutralizer, and an Empty Bottle is required."
-			mes "The commission for manufacture 3000 Zeny only the grade is got.";
-			mes "If it is you, although it thinks that it can be preparing...Is work begun?";
-			next;
-			menu "Makeme a dye.",-,"Nothing",L_MENU_2_9;
-				checkitem 509,30,-,L_ROOT_2_7A;
-				checkitem 973,1,-,L_ROOT_2_7A;
-				checkitem 713,1,-,L_ROOT_2_7A;
-				check Zeny >= 3000,L_ROOT_2_7B,-;
-	L_ROOT_2_7A:
-				mes "[Zabadorihan]";
-				mes "Insufficient [and]...";
-				mes "It seems that the color which somehow or other cannot be taken out with the material. How collects material more.?";
-				close;
-	L_ROOT_2_7B:
-				delitem 509,30;
-				delitem 973,1;
-				delitem 713,1;
-				set Zeny -= 3000,0;
-				additem 982,1;
-				mes "[Zabadorihan]";
-				mes "FUMU ... It can improve, if it does not and come. It is a deep color even if it takes..";
-				mes "Of course, I am although it tries hard in order to take out the charming color beyond this...";
-				mes "...When dye was needed then always, before coming.";
-				close;
-	L_MENU_2_8:
-			mes "[Zabadorihan]";
-			mes "Obtaining ... In order to make blue dye   Yellow herb   '20'   a neutralizer, and an Empty Bottle is required."
-			mes "The commission for manufacture 7000 Zeny only the grade is got.";
-			mes "If it is you, although it thinks that it can be preparing...Is work begun?";
-			next;
-			menu "Makeme a dye.",-,"Nothing",L_MENU_2_9;
-				checkitem 507,30,-,L_ROOT_2_8A;
-				checkitem 973,1,-,L_ROOT_2_8A;
-				checkitem 713,1,-,L_ROOT_2_8A;
-				checkitem 510,5,-,L_ROOT_2_8A;
-				checkitem 508,30,-,L_ROOT_2_8A;
-				checkitem 974,1,-,L_ROOT_2_8A;
-				checkitem 511,30,-,L_ROOT_2_8A;
-				check Zeny >= 7000,L_ROOT_2_8B,-;
-	L_ROOT_2_8A:
-				mes "[Zabadorihan]";
-				mes "Insufficient [and]...";
-				mes "It seems that the color which somehow or other cannot be taken out with the material. How collects material more.?";
-				close;
-	L_ROOT_2_8B:
-				delitem 507,30;
-				delitem 973,1;
-				delitem 713,1;
-				delitem 510,5;
-				delitem 508,30;
-				delitem 974,1;
-				delitem 511,30;
-				set Zeny -= 7000,0;
-				additem 983,1;
-				mes "[Zabadorihan]";
-				mes "FUMU ... It can improve, if it does not and come. It is a deep color even if it takes..";
-				mes "Of course, I am although it tries hard in order to take out the charming color beyond this...";
-				mes "...When dye was needed then always, before coming.";
-				close;
-	L_MENU_2_9:
-				mes "[Zabadorihan]";
-				mes "What?";
-				mes "....is having divided strangely such ... ";
-				close;
-	L_MENU_3:
-			mes "[Zabadorihan]";
-			mes "Although it is not boast, I have the technology which makes dyeing medicine.";
-			mes "If it may be required, I will be asked, and it is , at a good price I think.";
 			close;
-}
+MENU_1:
+	mes "[Dye Maker Java Dullihan]";
+	mes "Great! If you want, I'll make it for you. I promise I'll make you the color you want.";
+	mes "But what color would you like me to make? The fee is diffrent depending on the color.";
+	mes "Why, do you ask? Just remember there are colors that are easy to make, and those that require more effort and work.";
+	mes "Please don't think the fee is too expensive. The color of dye is special.. Made with all my heart and soul.";
+	next;
+	menu "Scarlet Dyestuffs",RED,"Lemon Dye",YELLOW,"Cobaltblue Dye",BLUE,"Darkgreen Dye",GREEN,"Orange Dye",ORANGE,"Violet Dye",PURPLE,"White Dye",WHITE,"Black Dye",BLACK;
+	close;
+RED:
+	checkitem 507,30,-,R1;
+	checkitem 973,1,-,R1;
+	checkitem 713,1,-,R1;
+	check zeny >= 3000,-,R1;
+	mes "[Dye Maker Java Dullihan]";
+	mes "Ok!I would belive you would have everything ready...would you like to start the process?";
+	menu "Yes",-,"No",END;
+	set zeny -= 3000;
+	delitem 507,30;
+	delitem 973,1;
+	delitem 713,1;
+	additem 975,1
+	goto DONE;
+R1:
+	mes "[Dye Maker Java Dullihan]";
+	mes "Mmm...I need 30 Red Herbs,1 Counteragent,and 1 Empty Bottle to make Red Dyestuffs.The fee is only 3000 zeny to make it.";
+	next;
+	close;
+YELLOW:
+	checkitem 508,30,-,Y1;
+	checkitem 973,1,-,Y1;
+	checkitem 713,1,-,Y1;
+	check zeny >= 3000,-,Y1;
+	mes "[Dye Maker Java Dullihan]";
+	mes "Ok!I would belive you would have everything ready...would you like to start the process?";
+	menu "Yes",-,"No",END;
+	set zeny -= 3000;
+	delitem 508,30;
+	delitem 973,1;
+	delitem 713,1;
+	additem 976,1
+	goto DONE;
+Y1:
+	mes "[Dye Maker Java Dullihan]";
+	mes "Mmm...I need 30 Yellow Herbs,1 Counteragent,and 1 Empty Bottle to make Lemon Dyestuffs.The fee is only 3000 zeny to make it.";
+	next;
+	close;
+BLUE:
+	checkitem 509,20,-,C1;
+	checkitem 973,1,-,C1;
+	checkitem 713,1,-,C1;
+	check zeny >= 3500,-,C1;
+	mes "[Dye Maker Java Dullihan]";
+	mes "Ok!I would belive you would have everything ready...would you like to start the process?";
+	menu "Yes",-,"No",END;
+	set zeny -= 3500;
+	delitem 509,20;
+	delitem 973,1;
+	delitem 713,1;
+	additem 978,1
+	goto DONE;
+C1:
+	mes "[Dye Maker Java Dullihan]";
+	mes "Mmm...I need 20 Blue Herbs,1 Counteragent,and 1 Empty Bottle to make Cobaltblue Dyestuff.Its hard to use the Blue Herb,so the fee is going to be 3500 zeny.";
+	next;
+	close;
+GREEN:
+	checkitem 509,10,-,G1;
+	checkitem 511,20,-,G1;
+	checkitem 508,20,-,G1;
+	checkitem 973,1,-,G1;
+	checkitem 974,1,-,G1;
+	checkitem 713,1,-,G1;
+	check zeny >= 5000,-,G1;
+	mes "[Dye Maker Java Dullihan]";
+	mes "Ok!I would belive you would have everything ready...would you like to start the process?";
+	menu "Yes",-,"No",END;
+	set zeny -= 5000;
+	delitem 509,10;
+	delitem 511,20;
+	delitem 508,20;
+	delitem 973,1;
+	delitem 974,1;
+	delitem 713,1;
+	additem 979,1
+	goto DONE;
+G1:
+	mes "[Dye Maker Java Dullihan]";
+	mes "Mmm...I need 5 Blue Herbs,20 Green Herbs,20 Yellow Herbs,1 Counteragent,1 Mixture,and 1 Empty Bottle to make Darkgreen Dyestuff.Dont get all of the materials confused.The fee is only 5000 zeny.";
+	next;
+	close;
+ORANGE:
+	checkitem 507,20,-,O1;
+	checkitem 508,20,-,O1;
+	checkitem 973,1,-,O1;
+	checkitem 974,1,-,O1;
+	checkitem 713,1,-,O1;
+	check zeny >= 5000,-,O1;
+	mes "[Dye Maker Java Dullihan]";
+	mes "Ok!I would belive you would have everything ready...would you like to start the process?";
+	menu "Yes",-,"No",END;
+	set zeny -= 5000;
+	delitem 507,20;
+	delitem 508,20;
+	delitem 973,1;
+	delitem 974,1;
+	delitem 713,1;
+	additem 980,1
+	goto DONE;
+O1:
+	mes "[Dye Maker Java Dullihan]";
+	mes "Mmm...I need 20 Red Herbs,20 Yellow Herbs,1 Counteragent,1 Mixture,and 1 Empty Bottle to make Orange Dyestuffs.The fee is going to be 5000 zeny.";
+	next;
+	close;
+PURPLE:
+	checkitem 509,10,-,P1;
+	checkitem 507,30,-,P1;
+	checkitem 973,1,-,P1;
+	checkitem 974,1,-,P1;
+	checkitem 713,1,-,P1;
+	check zeny >= 5000,-,P1;
+	mes "[Dye Maker Java Dullihan]";
+	mes "Ok!I would belive you would have everything ready...would you like to start the process?";
+	menu "Yes",-,"No",END;
+	set zeny -= 5000;
+	delitem 509,10;
+	delitem 507,30;
+	delitem 973,1;
+	delitem 974,1;
+	delitem 713,1;
+	additem 981,1
+	goto DONE;
+P1:
+	mes "[Dye Maker Java Dullihan]";
+	mes "Mmm...I need 10 Blue Herbs,30 Red Herbs,1 Counteragent,1 Mixture,and 1 Empty Bottle to make Violet Dyestuffs.The fee will be 5000 zeny.";
+	next;
+	close;
+WHITE:
+	checkitem 509,30,-,W1;
+	checkitem 973,1,-,W1;
+	checkitem 713,1,-,W1;
+	check zeny >= 3000,-,W1;
+	mes "[Dye Maker Java Dullihan]";
+	mes "Ok!I would belive you would have everything ready...would you like to start the process?";
+	menu "Yes",-,"No",END;
+	set zeny -= 3000;
+	delitem 509,30;
+	delitem 973,1;
+	delitem 713,1;
+	additem 982,1
+	goto DONE;
+W1:
+	mes "[Dye Maker Java Dullihan]";
+	mes "Mmm...I need 30 White Herbs,1 Counteragent,and 1 Empty Bottle to make White Dyestuffs.The fee will be 3000 zeny.";
+	next;
+	close;
+BLACK:
+	checkitem 507,30,-,B1;
+	checkitem 508,30,-,B1;
+	checkitem 511,30,-,B1;
+	checkitem 510,5,-,B1;
+	checkitem 973,1,-,B1;
+	checkitem 974,1,-,B1;
+	checkitem 713,1,-,B1;
+	check zeny >= 7000,-,B1;
+	mes "[Dye Maker Java Dullihan]";
+	mes "Ok!I would belive you would have everything ready...would you like to start the process?";
+	menu "Yes",-,"No",END;
+	set zeny -= 7000;
+	delitem 507,30;
+	delitem 508,30;
+	delitem 511,30;
+	delitem 510,5;
+	delitem 973,1;
+	delitem 974,1;
+	delitem 713,1;
+	additem 983,1
+	goto DONE;
+B1:
+	mes "[Dye Maker Java Dullihan]";
+	mes "Mmm...I need 30 of each Red,Yellow,and Green Herb,5 Blue Herbs,1 Counter agent,1 Mixture,and 1 Empty Bottle.This process takes longer and more effort than the others,so it is going to be 7000 zeny.";
+	next;
+	close;
+DONE:
+	mes "[Dye Maker Java Dullihan]";
+	mes "Hmm... It came out prety well. A very rich color.";
+	mes "Of course I'll be trying hard to make a more charming color...";
+	mes "Well... then. Stop by whenever you need more dyes.";
+	next;
+	close;
+END:
+	close;
+
 
 prt_in.gat,284,168,3	script	"Jineda inlay full"	55,{
 		mes "[Jineda]";

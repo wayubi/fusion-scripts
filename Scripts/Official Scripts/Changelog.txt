@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.003
 ----------------------------------------------------------------------------------------------------
+- event\Event_Dye.txt replaced Zabadorihan NPC with Owl,s Java Dullihan NPC. [Muad_Dib
 - shop\amatsu.txt - Updated Amatsu shops added items updated prices. [Muad_Dib]
 - shop\lutie.txt - Updated Lutie shops added items updated prices. [Muad_Dib]
 - shop\umbala.txt - Updated Umbala shops added items updated prices. [Muad_Dib]
