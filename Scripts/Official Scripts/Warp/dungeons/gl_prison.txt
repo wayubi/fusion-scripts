@@ -12,7 +12,7 @@ gl_prison.gat,10,70,4	script	""	45,{
 				warp "gl_cas01.gat",238,192;
 				close;
 			w2:
-				warp "gl_cas01.gat",368,301;;
+				warp "gl_cas01.gat",368,301;
 				close;
 			w3:
 				warp "gl_cas01.gat",144,314;
