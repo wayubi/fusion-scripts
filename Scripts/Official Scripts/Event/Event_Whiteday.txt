@@ -79,7 +79,7 @@ L_INPUT:
       mes "[Sugar]";
       mes "Thank you!!!";
       mes "These sweets are really delicious.";
-      mes "Since my teacher of sweet is No.1 teacher's in world!";
+      mes "Since my teacher of sweet is the No.1 teacher's in world!";
       mes "Although you may eat by yourself";
       mes "dont eat so much or you'll grow fat.";
       mes "Please take care!!!";
@@ -90,7 +90,7 @@ L1:
       mes "The teacher of mine";
       mes "is Mr. Kuberu, a sweets craftsman.";
       mes "Making sweets under two persons.";
-      mes "which is allowed to self-train";
+      mes "which is allowed to self-train.";
       next;
       mes "[Sugar]";
       mes "Although selling is seemingly to carried out ....";
@@ -101,7 +101,7 @@ L_ERROR:
       mes "[Sugar]";
       mes "???";
       mes "You seem to have a failure on hearing.";
-      mes "I would tell you once again?";
+      mes "I will tell you once again?";
       mes "You can only purchase";
       mes "^ff0000 5 pieces^000000 at once.";
       next;
