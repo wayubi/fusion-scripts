@@ -36,6 +36,8 @@
 - Event\Event_Rental.txt - Finished officialise script. [mudvayne]
 - Event\Event_MrSmile.txt - Finished officialise script. [mudvayne]
 - Town\Town_Siglude.txt - Fixed missing label. [icbob]
+- Shop\niflhiem.txt - Added Weapon Merchant. [icbob]
+- Shop\niflhiem.txt - Added Armer Merchant. [icbob]
 
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.002
