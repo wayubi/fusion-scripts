@@ -9,7 +9,7 @@
 // - Taka -> alberta: 245,45
 //   Warps you to LouYang.
 //
-// - Taka -> lou_fild01: 194,79
+// - Taka -> lou_fild01: 190,100
 //   Warps you back to Alberta.
 //
 //========================================================================================
@@ -65,7 +65,7 @@ L_GO:
 	mes "[Taka]";
 	mes "All aboard!";
 	next;
-	warp "lou_fild01",197,83;
+	warp "lou_fild01",191,104;
 	close;
 L_ZENY:
 	mes "[Taka]";
@@ -77,7 +77,7 @@ L_ZENY:
 	close;
 }
 
-lou_fild01.gat,194,79,4 script "Taka" 726,{
+lou_fild01.gat,190,100,4 script "Taka" 726,{
 	mes "[Taka]";
 	mes "Ready to leave?";
 	mes "Probably had lots of fun exploring.";
