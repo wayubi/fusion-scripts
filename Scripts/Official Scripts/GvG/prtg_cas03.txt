@@ -101,6 +101,32 @@ OnInit:
 	guildreg "prtg_cas03";
 	return;
 }
+prt_gld.gat,147,136,4	script	"Fadhgridh"	722,{
+	guildreg "prtg_cas03";
+	check guildid == 0,-,L_START_1;
+      mes "[ Edict of the Divine Rune Midgard Kingdom ]"
+      mes "                                            ";
+      mes "1.Follow the ordinance of the Divine Rune Midgard Kingdom,";
+      mes "  we approve that this place can be claimed by every guild.";
+      next;
+      mes "2.In order to ^FF0000claim^000000 this Guild Castle,";
+      mes "  you need to ^FF0000eliminate^000000 the ^FF0000emperium^000000 .";
+      close;
+L_START_1:
+      mes "[ Edict of the Divine Rune Midgard Kingdom ]";
+      mes "                                            ";
+      mes "1.Follow the ordinance of the Divine Rune Midgard Kingdom,";
+      mes "  we approve that this place is in the private possesion of";
+      mes "  ^FF0000$guildname's^000000 Guild.";
+      next;
+      mes "2.The Guild Master of ^FF0000$guildname^000000 is ^FF0000$guildmaster^000000.";
+      mes "  If there is anyone who objects to this, prove your strength and honour";
+      mes "  with a steel blade in your hand.";
+      close;
+OnInit:
+	guildreg "prtg_cas03";
+	return;
+}
 
 prtg_cas03.gat,168,28,4	script	"Fadhgridh"	722,{
 	guildreg "prtg_cas03";
@@ -397,18 +423,22 @@ prtg_cas03.gat,181,215,4	script	"Kafra Service"	117,{
 		mes "[Kafra Personnel]";
 		mes "Please pick your destination.";
 		next;
-		menu "Payon",L_MENU_2_1,"Prontera",L_MENU_2_2,"Morroc",L_MENU_2_3,"Cancel",L_MENU_2_4;
-		L_MENU_2_1:
-			warp "payon",69,100;
-		L_MENU_2_2:
-			warp "prontera",116,72;
-		L_MENU_2_3:
-			warp "morocc",156,46;
-		L_MENU_2_4:
-			mes "[Kafra Personnel]";
-			mes "Thank you.";
-			mes "Please come again.";
-			goto L_EXIT;
+		menu "Prontera -> 200z",L_MENU_2_1,"Cancel",L_MENU_2_2;
+	L_MENU_2_1:
+		check Zeny < 200,-,L_MENU_2_1_1;
+		mes "[Kafra Personnel]";
+  		mes "Dear. you don't have enough Money.";
+   		mes "Please check again.";
+		goto L_EXIT;
+	L_MENU_2_1_1:
+		set Zeny -= 200,0;
+		set KF_PIT += 10;
+		warp "prontera",278,211;
+	L_MENU_2_2:
+		mes "[Kafra Personnel]";
+		mes "Thank you.";
+		mes "Please come again.";
+		goto L_EXIT;
 	L_MENU_3:
 		check Job != 5,-,L_SUB_3_1;
 		check Job != 10,-,L_SUB_3_1;

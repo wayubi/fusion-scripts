@@ -11,13 +11,12 @@
 //umbala.gat,219,189,0 warp  umbalawarp001   1,1,um_in.gat,32,70 
 //Replaced with jAthena Script #umba0029 with added on denying message.
 umbala.gat,220,189,0	script	""	723,{
-	check event_umbala==7,Warp,-;
+	check event_umbala == 7,Warp,-;
 		mes "[*Unknown*]";
 		mes "You aren't allowed in here. Go away!";
-		return;
+		close;
 	Warp:
 		warp "um_in.gat",32,71;
-		return;
 }
 um_in.gat,28,70,0    warp  umbalawarp002   1,1,umbala.gat,217,187 
 umbala.gat,125,157,0 warp  umbalawarp003   1,1,um_in.gat,155,114 

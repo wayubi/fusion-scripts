@@ -1,6 +1,16 @@
 --------------------------------------------------------------------------------
  Fusion 1.213 - August 29th, 2004
 --------------------------------------------------------------------------------
+- 08-25-04: Town\Town_Jawaii.txt - Added dancers (Need On_Emotion command to fully work) [Muad_Dib]
+- 08-25-04: Warp\towns\Umbala.txt - Made a menu close. [Muad_Dib]
+- 08-25-04: Town\Town_Umbala.txt - Changed town name to Umbla. [Muad_Dib]
+- 08-25-04: Event\Event_PvP.txt - Moved 2 npc's. [Muad_Dib]
+- 08-25-04: GvG\nguild_###.txt - Updated novice guild kafra's. [Muad_Dib]
+- 08-25-04: GvG\gefg_cas0#.txt - Updated guild kafra's. [Muad_Dib]
+- 08-25-04: GvG\aldeg_cas0#.txt - Updated guild kafra's. [Muad_Dib]
+- 08-25-04: GvG\payg_cas0#.txt - Updated guild kafra's. [Muad_Dib]
+- 08-25-04: GvG\prtg_cas0#.txt - Updated guild kafra's. [Muad_Dib]
+- 08-25-04: GvG\prtg_cas03.txt - Added missing flag. [Muad_Dib]
 - 08-23-04: Town\Town_Umbala.txt - updated bungee w/ percentdamage. [Tsusai]
 - 08-19-04: Event\Event_Dragon_Boat_Festival.txt - Fixed Header and some typos. [Muad_Dib]
 - 08-18-04: Event\Event_Dragon_Boat_Festival.txt - Added Dragon Boat Festival Npc. [Muad_Dib]
@@ -30,7 +40,6 @@
 - 07-06-04: Job\Job_2-2\Job2_alchemist.txt - alchemist job quest added. [nestor_zulueta]
 - 07-05-04: GvG\npc_guardiankafra.txt - Corrected Spelling mistakes in enablenpc commands. [Tsusai]
 - 07-05-04: Job\Novice\Job_Novice.txt - Updated NPC mapnames. [Tsusai]
-
 
 --------------------------------------------------------------------------------
  Fusion 1.212 - June 30th, 2004

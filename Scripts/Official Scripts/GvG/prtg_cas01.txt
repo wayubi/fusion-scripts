@@ -435,18 +435,22 @@ prtg_cas01.gat,96,173,0	script	"Kafra Service"	117,{
 		mes "[Kafra Personnel]";
 		mes "Please pick your destination.";
 		next;
-		menu "Payon",L_MENU_2_1,"Prontera",L_MENU_2_2,"Morroc",L_MENU_2_3,"Cancel",L_MENU_2_4;
-		L_MENU_2_1:
-			warp "payon",69,100;
-		L_MENU_2_2:
-			warp "prontera",116,72;
-		L_MENU_2_3:
-			warp "morocc",156,46;
-		L_MENU_2_4:
-			mes "[Kafra Personnel]";
-			mes "Thank you.";
-			mes "Please come again.";
-			goto L_EXIT;
+		menu "Prontera -> 200z",L_MENU_2_1,"Cancel",L_MENU_2_2;
+	L_MENU_2_1:
+		check Zeny < 200,-,L_MENU_2_1_1;
+		mes "[Kafra Personnel]";
+  		mes "Dear. you don't have enough Money.";
+   		mes "Please check again.";
+		goto L_EXIT;
+	L_MENU_2_1_1:
+		set Zeny -= 200,0;
+		set KF_PIT += 10;
+		warp "prontera",278,211;
+	L_MENU_2_2:
+		mes "[Kafra Personnel]";
+		mes "Thank you.";
+		mes "Please come again.";
+		goto L_EXIT;
 	L_MENU_3:
 		check Job != 5,-,L_SUB_3_1;
 		check Job != 10,-,L_SUB_3_1;

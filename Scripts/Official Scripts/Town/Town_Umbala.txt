@@ -4,7 +4,7 @@
 // http://fusion.cobax.net/
 // ---------------------------------------------------------------------------------------
 //
-// Umbala Town - Non Player Character Locations
+// Umbla Town - Non Player Character Locations
 //  Translated by RPG-Advocate
 //
 //========================================================================================
@@ -205,11 +205,11 @@ cmd_in01.gat,164,115,1	script	"Niles"	731,{
 }
 
 //==================================================================
-//	Umbala NPCs and Quests
+//	Umbla NPCs and Quests
 //==================================================================
 //Trade money for meat
-umbala.gat,70,106,3	script	"Utan Child #1"	781,{
-	check event_umbala < 3,LumWord,-;
+Umbala.gat,70,106,3	script	"Utan Child #1"	781,{
+	check event_Umbla < 3,LumWord,-;
 		mes "[HHH]";
 		mes "Hello!  I'm a member of";
 		mes "the Utan tribe.";
@@ -317,8 +317,8 @@ umbala.gat,70,106,3	script	"Utan Child #1"	781,{
 }
 
 //Trade Meat for Clover, ???, and Soft Fur 
-umbala.gat,59,243,5	script	"Utan Child #4"	787,{
-	check event_umbala < 3,LumWord,-;
+Umbala.gat,59,243,5	script	"Utan Child #4"	787,{
+	check event_Umbla < 3,LumWord,-;
 		mes "[Kotan]";
 		mes ".....";
 		mes ".....";
@@ -387,8 +387,8 @@ umbala.gat,59,243,5	script	"Utan Child #4"	787,{
 //==============================================================================
 //Skeletal Gate
 //==============================================================================
-umbala.gat,221,193,1	script	"Skeletal Gate"	111,{
-	check event_umbala==7,LwarpNoText,-;
+Umbala.gat,221,193,1	script	"Skeletal Gate"	111,{
+	check event_Umbla==7,LwarpNoText,-;
 		set @ryumon = 0;
 		mes "^3355FFThe gate is shaped like a skeleton";
 		mes "You cannot pass this point as the gate is";
@@ -530,10 +530,10 @@ umbala.gat,221,193,1	script	"Skeletal Gate"	111,{
 				mes ".........................";
 				mes ".........................^000000";
 				next;
-				check event_umbala < 6,-,2ndCheck;
+				check event_Umbla < 6,-,2ndCheck;
 					check @ryumon == 33,Lwarp,-;
 				2ndCheck:
-				check event_umbala >= 6,-,NewEnd;
+				check event_Umbla >= 6,-,NewEnd;
 					check @ryumon == 13,Lwarp,-;
 					NewEnd:
 						mes "^3355FFNothing happened.";
@@ -559,16 +559,16 @@ Lend:
 }
 
 //==============================================================================
-//Umbala Event
+//Umbla Event
 //==============================================================================
 um_in.gat,39,122,5	script	"Utan Tribal Elder"	784,{
-	check event_umbala = 1,LStart2,-;
-	check event_umbala = 2,LStart3,-;
-	check event_umbala = 3,LStart4,-;
-	check event_umbala = 4,LStart5,-;
-	check event_umbala = 5,LStart6,-;
-	check event_umbala = 6,LStart4,-;
-	check event_umbala = 7,LStart4,-;
+	check event_Umbla = 1,LStart2,-;
+	check event_Umbla = 2,LStart3,-;
+	check event_Umbla = 3,LStart4,-;
+	check event_Umbla = 4,LStart5,-;
+	check event_Umbla = 5,LStart6,-;
+	check event_Umbla = 6,LStart4,-;
+	check event_Umbla = 7,LStart4,-;
 		mes "[Karukatan]";
 		mes "Aha, You're new to the Utan";
 		mes "family's little village, aren't";
@@ -618,7 +618,7 @@ um_in.gat,39,122,5	script	"Utan Tribal Elder"	784,{
 		mes "language, come and visit me.  Don't";
 		mes "forget to make yourself appear as";
 		mes "much like us as you can.";
-		set event_umbala = 1;
+		set event_Umbla = 1;
 		close;
 	LStart2:
 		mes "[Karukatan]";
@@ -685,7 +685,7 @@ um_in.gat,39,122,5	script	"Utan Tribal Elder"	784,{
 		mes "[Karukatan]";
 		mes "Once you get these, I can start";
 		mes "teaching you the language.";
-		set event_umbala = 2;
+		set event_Umbla = 2;
 		close;
 	L2:
 		mes "[Karukatan]";
@@ -765,7 +765,7 @@ LStart3:
 		delitem 7111,5;
 		delitem 1024,1;
 		delitem 916,1;
-		set event_umbala = 3;
+		set event_Umbla = 3;
 		next;
 		mes "[Karukatan]";
 		mes "If you need something while you're";
@@ -810,7 +810,7 @@ LStart3:
 		mes "to Putsuchiratan as a gift if I ever";
 		mes "came across one.  If you can find a Smile Mask for me,";
 	        mes "I'll give you permission to speak with her.";
-		set event_umbala = 5;
+		set event_Umbla = 5;
 		close;
 	LStart6:
 		checkitem 2278,1,Lsmileok,-;
@@ -829,7 +829,7 @@ LStart3:
 			mes "give this to Putsuchiritan as";
 			mes "a gift.";
 			delitem 2278,1;
-			set event_umbala = 6;
+			set event_Umbla = 6;
 			next;
 			mes "[Karukatan]";
 			mes "I'll tell Putsuchiritan to allow you";
@@ -840,11 +840,11 @@ LStart3:
 }
 
 um_in.gat,44,71,2	script	"Utan Tribe Shaman"	782,{
-	check event_umbala < 3,LumWord,-;
-	check event_umbala = 4,LStart2,-;
-	check event_umbala = 5,LStart2,-;
-	check event_umbala = 6,LStart3,-;
-	check event_umbala = 7,LStart4,-;
+	check event_Umbla < 3,LumWord,-;
+	check event_Umbla = 4,LStart2,-;
+	check event_Umbla = 5,LStart2,-;
+	check event_Umbla = 6,LStart3,-;
+	check event_Umbla = 7,LStart4,-;
 		mes "[Putsuchiritan]";
 		mes "I will not see outsiders that are";
 		mes "not from the Utan tribe.";
@@ -871,7 +871,7 @@ um_in.gat,44,71,2	script	"Utan Tribe Shaman"	782,{
 		mes "if you want my assistance.";
 		mes "Also, don't be stirring up trouble";
 		mes "among the tribesmen.";
-		set event_umbala = 4;
+		set event_Umbla = 4;
 		close;
 	LStart2:
 		mes "[Putsuchiritan]";
@@ -895,7 +895,7 @@ um_in.gat,44,71,2	script	"Utan Tribe Shaman"	782,{
 		mes "I need to prepare my rituals.";
 		mes "When you're ready to proceed, please";
 		mes "talk to me again.";
-		set event_umbala = 7;
+		set event_Umbla = 7;
 		close;
 	LStart4:
 		set @umchange[1] = 0;
@@ -1198,12 +1198,12 @@ LumWord:
 	mes "Umbabaumbabaumbaumbabaumba";
 	mes "Fumbaumba.";
 	next;
-	warp "umbala",217,186;
+	warp "Umbla",217,186;
 	close;
 }
 
-umbala.gat,177,153,3	script	"Bast"	97,{
-	check event_umbala >= 3,-,Continue;
+Umbala.gat,177,153,3	script	"Bast"	97,{
+	check event_Umbla >= 3,-,Continue;
 		emotion 0;
 	Continue:
 		mes "[Bast]";
@@ -1213,7 +1213,7 @@ umbala.gat,177,153,3	script	"Bast"	97,{
 		mes "Bast.";
 		next;
 		mes "[Bast]";
-		mes "Because Umbala village is isolated";
+		mes "Because Umbla village is isolated";
 		mes "within a deep forest, its culture";
 		mes "is unaffected by the steady pull";
 		mes "of progress.";
@@ -1227,7 +1227,7 @@ umbala.gat,177,153,3	script	"Bast"	97,{
 		mes "[Bast]";
 		mes "Even the things you would expect";
 		mes "to transcend culture have a";
-		mes "different meaning in Umbala.";
+		mes "different meaning in Umbla.";
 		next;
 		mes "[Bast]";
 		mes "Just because a tribeman's face laughs";
@@ -1241,7 +1241,7 @@ umbala.gat,177,153,3	script	"Bast"	97,{
 		close;
 }
 	
-umbala.gat,80,146,4	script	"Yuki"	753,{
+Umbala.gat,80,146,4	script	"Yuki"	753,{
 	mes "[Yuki]";
 	mes "Umbaubaugau...Oh!";
 	mes "You're from abroad?  That's";
@@ -1273,7 +1273,7 @@ umbala.gat,80,146,4	script	"Yuki"	753,{
 }
 
 um_in.gat,101,73,3	script	"Yunatan" 	783,{
-	check event_umbala < 3,LumWord,-;
+	check event_Umbla < 3,LumWord,-;
 		mes "[Yunatan]";
 		mes "I'm standing out here because I";
 		mes "can't stand to lay eyes on";
@@ -1289,7 +1289,7 @@ um_in.gat,101,73,3	script	"Yunatan" 	783,{
 }
 
 um_in.gat,94,123,5	script	"Bartsutan"	783,{
-	check event_umbala < 3,LumWord,-;
+	check event_Umbla < 3,LumWord,-;
 		mes "[Bartsutan]";
 		mes "I want to see Wambokoriotan";
 		mes "morph into an insect so I can";
@@ -1306,8 +1306,8 @@ um_in.gat,94,123,5	script	"Bartsutan"	783,{
 		close;
 }
 
-umbala.gat,140,157,6	script	"Utan Tribe Young Adult #1"	785,{
-	check event_umbala < 3,LumWord,-;
+Umbala.gat,140,157,6	script	"Utan Tribe Young Adult #1"	785,{
+	check event_Umbla < 3,LumWord,-;
 		mes "[Seirutan]";
 		mes "Bungy jumping is extremely dangerous.";
 		mes "As such, completing a successful";
@@ -1322,8 +1322,8 @@ umbala.gat,140,157,6	script	"Utan Tribe Young Adult #1"	785,{
 		close;
 }
 
-umbala.gat,146,157,4	script	"Utan Young Adult #2"	786,{
-	check event_umbala < 3,LumWord,-;
+Umbala.gat,146,157,4	script	"Utan Young Adult #2"	786,{
+	check event_Umbla < 3,LumWord,-;
 		mes "[Arotan]";
 		mes "Making a safe bungy jump is a";
 		mes "really big deal.  When someone makes";
@@ -1337,8 +1337,8 @@ umbala.gat,146,157,4	script	"Utan Young Adult #2"	786,{
 		close;
 }
 
-umbala.gat,149,165,4	script	"Utan Young Adult #3"	781,{
-	check event_umbala < 3,LumWord,-;
+Umbala.gat,149,165,4	script	"Utan Young Adult #3"	781,{
+	check event_Umbla < 3,LumWord,-;
 		mes "[Kryubatan]";
 		mes "I'm really afraid of heights,";
 		mes "so I really don't want to jump,";
@@ -1354,8 +1354,8 @@ umbala.gat,149,165,4	script	"Utan Young Adult #3"	781,{
 		close;
 }
 
-umbala.gat,92,159,4	script	"Hartan"	785,{
-	check event_umbala < 3,LumWord,-;
+Umbala.gat,92,159,4	script	"Hartan"	785,{
+	check event_Umbla < 3,LumWord,-;
 		mes "[Hartan]";
 		mes "You want to know why our";
 		mes "skin is jet-black?";
@@ -1381,8 +1381,8 @@ umbala.gat,92,159,4	script	"Hartan"	785,{
 		close;
 }
 
-umbala.gat,194,104,4	script	"Utan Tribe Child #2"	787,{
-	check event_umbala < 3,LumWord,-;
+Umbala.gat,194,104,4	script	"Utan Tribe Child #2"	787,{
+	check event_Umbla < 3,LumWord,-;
 		mes "[Burkatan]";
 		mes "An outsider?";
 		mes "Are you here to try bungy jumping?";
@@ -1420,8 +1420,8 @@ umbala.gat,194,104,4	script	"Utan Tribe Child #2"	787,{
 			close;
 }
 
-umbala.gat,193,208,6	script	"Utan Child #3"	789,{
-	check event_umbala < 3,LumWord,-;
+Umbala.gat,193,208,6	script	"Utan Child #3"	789,{
+	check event_Umbla < 3,LumWord,-;
 		mes "[Fuitan]";
 		mes "When I was younger, I went bungy";
 		mes "jumping even though it was extremely";
@@ -1438,8 +1438,8 @@ umbala.gat,193,208,6	script	"Utan Child #3"	789,{
 		close;
 }
 
-umbala.gat,139,205,4	script	"Utan Tribe Young Adult #5"	785,{
-	check event_umbala < 3,LumWord,-;
+Umbala.gat,139,205,4	script	"Utan Tribe Young Adult #5"	785,{
+	check event_Umbla < 3,LumWord,-;
 		mes "[Tsunitan]";
 		mes "Awesome!  I haven't seen an outsider in some time.";
 		mes "You're just in time to watch as";
@@ -1478,13 +1478,13 @@ umbala.gat,139,205,4	script	"Utan Tribe Young Adult #5"	785,{
 }
 
 um_in.gat,158,71,3	script	"Utan Tribesman"	787,{
-	check event_umbala < 3,LumWord,-;
+	check event_Umbla < 3,LumWord,-;
 		mes "[Mutakutan]";
-		mes "Umbala has enough interesting trees";
+		mes "Umbla has enough interesting trees";
 		mes "that studying them never gets old!";
 		next;
 		mes "[Mutakutan]";
-		mes "My favorite tree near Umbala is huge!";
+		mes "My favorite tree near Umbla is huge!";
 		mes "It stretches into the sky as far";
 		mes "as the eye can see!";
 		mes "It's supposed to be the tallest tree in the world!";
@@ -1514,7 +1514,7 @@ um_in.gat,158,71,3	script	"Utan Tribesman"	787,{
 		next;
 		mes "[Mutakutan]";
 		mes "At the same time, a terrible illness";
-		mes "was ravaging Umbala village.";
+		mes "was ravaging Umbla village.";
 		next;
 		mes "[Mutakutan]";
 		mes "The elder's health was declining";
@@ -1538,8 +1538,8 @@ um_in.gat,158,71,3	script	"Utan Tribesman"	787,{
 		close;
 }
 
-umbala.gat,145,217,3	script	"Chibibatan"	783,{
-	check event_umbala < 3,LumWord,-;
+Umbala.gat,145,217,3	script	"Chibibatan"	783,{
+	check event_Umbla < 3,LumWord,-;
 		mes "[Chibibatan]";
 		mes "I want to have some fun with";
 		mes "Wambokoriotan, but after seeing";
@@ -1555,7 +1555,7 @@ umbala.gat,145,217,3	script	"Chibibatan"	783,{
 }
 
 um_in.gat,139,48,5	script	"Purenotan"	783,{
-	check event_umbala < 3,LumWord,-;
+	check event_Umbla < 3,LumWord,-;
 		mes "[Purenotan]";
 		mes "See that loser over there?";
 		mes "I'm on to him.  He hasn't";
@@ -1584,14 +1584,14 @@ um_in.gat,139,48,5	script	"Purenotan"	783,{
 }
 
 um_in.gat,144,45,5	script	"Wambokoriotan"	789,{
-	check event_umbala < 3,LumWord,-;
+	check event_Umbla < 3,LumWord,-;
 		mes "[Wambokoriotan]";
 		mes "Ahhh...My wife is a real";
 		mes "hothead.  Ouch...ouch.";
 		next;
 		mes "[Wambokoriotan]";
 		mes "Yunatan, Bartsutan, Chibibatan...";
-		mes "I want Umbala's babes as much";
+		mes "I want Umbla's babes as much";
 		mes "as they want me...Ouch...ouch!";
 		close;
 	LumWord:
@@ -1609,7 +1609,7 @@ um_in.gat,144,45,5	script	"Wambokoriotan"	789,{
 //Bungee jumping!
 //==============================================================================
 //
-umbala.gat,140,197,0	script	"Bungy Jumping"	139,{
+Umbala.gat,140,197,0	script	"Bungy Jumping"	139,{
 //don't know how to auto trigger, so.... there, it ain't working, but it can soon - Tsusai
 	random @jumprand,4;
 	check @jumprand == 1,L1,-;

@@ -1,16 +1,19 @@
 //========================================================================================
 // »» The Fusion Project ««
 // Copyright (c) 2004, Cobax Information Systems
-// http://fusion.cobax.net/
+// http://cobax.net/
 // ---------------------------------------------------------------------------------------
 //
 // Jawaii Town - Non Player Character Locations
 //
-// - Sailor -> jawaii: 39,125
+// - Sailor -> jawaii: 235,110
 //   Warps you back to Izlude.
 //
-// - Sailor -> jawaii: 39,125
+// - Sailor -> jawaii: 114,262
 //   Sailor that is repairing his ship.
+//
+// - Dancer -> jawaii_in: 
+//   Eight Dancers that show emotions.
 //
 //========================================================================================
 
@@ -31,3 +34,53 @@ jawaii.gat,114,262,6 script "Sailor" 100,{
 	mes "It got damaged on the last crossover, and now it needs repairs.";
 	close;
 }
+
+jawaii_in.gat,25,94,1 script "Dancer" 724,{
+	return;
+On_Emotion30:
+	emotion 30;
+	return;
+}
+jawaii_in.gat,25,96,1 script "Dancer" 724,{
+	return;
+On_Emotion30:
+	emotion 30;
+	return;
+}
+jawaii_in.gat,25,98,1 script "Dancer" 724,{
+	return;
+On_Emotion30:
+	emotion 30;
+	return;
+}
+jawaii_in.gat,25,100,1 script "Dancer" 724,{
+	return;
+On_Emotion30:
+	emotion 30;
+	return;
+}
+jawaii_in.gat,30,94,4 script "Dancer" 724,{
+	return;
+On_Emotion30:
+	emotion 30;
+	return;
+}
+jawaii_in.gat,30,96,4 script "Dancer" 724,{
+	return;
+On_Emotion30:
+	emotion 30;
+	return;
+}
+jawaii_in.gat,30,98,4 script "Dancer" 724,{
+	return;
+On_Emotion30:
+	emotion 30;
+	return;
+}
+jawaii_in.gat,30,100,4 script "Dancer" 724,{
+	return;
+On_Emotion30:
+	emotion 30;
+	return;
+}
+
