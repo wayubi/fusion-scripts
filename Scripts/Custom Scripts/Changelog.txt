@@ -9,7 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion 1.212
 ----------------------------------------------------------------------------------------------------
- - 06-06-04: Added Prontera Pet Food shop (ENG) - Shops\petco_food.txt [Yun Qi]
+ - 06-06-04: Added Prontera Pet Food shop (ENG) - Shops\PetCo_food.txt [Yun Qi]
  - 06-06-04: Added "Shops" folder - Scripts\Custom\Shops [Yun Qi]
  - 06-05-04: Added 40z Prontera Hair Stylist script (ENG) - Hair Stylists\Ashley-40z.txt [Yun Qi]
  - 06-05-04: Renamed Hair Stylists\Ashley.txt to Ashley-free.txt. [Yun Qi]
