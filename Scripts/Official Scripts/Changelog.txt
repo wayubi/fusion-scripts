@@ -9,6 +9,8 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.005
 ----------------------------------------------------------------------------------------------------
+- Town\Town_Payon.txt - Added Header. [Muad_Dib]
+- Town\Town_Prontera.txt - Updated Header. [Muad_Dib]
 - Town\Town_Prontera.txt - Updated Strife Npc. [Muad_Dib]
 - Event\Event_Valentine.txt - Added Valentine Event. (Needs 2 lines in item database in order to work. I have done this in mine.)[Muad_Dib]
 - GvG\npc_gflag.txt - Moved Kriemhild flag position. [Muad_Dib]

@@ -9,10 +9,10 @@
 // - Tono -> prontera: 54,240
 //   Talks about fabre pupa peco and picky's.
 //
-// - Yupi -> prontera: 160,133
+// - YuPi -> prontera: 160,133
 //   Talks about the dangers of some monsters.
 //
-// - Yuna -> prontera: 149,202
+// - YuNa -> prontera: 149,202
 //   Talks about the god odin.
 //
 // - Bartender -> prt_in: 180,20
@@ -96,7 +96,7 @@
 // - Billboard -> prontera: 31,212
 //   Prontera Billboard.
 //
-// - Prontera Sign -> prontera: 216,70
+// - Sign -> prontera: 216,70
 //   Prontera Sign.
 //
 // - Strife -> prontera: 278,212
@@ -117,7 +117,7 @@ prontera.gat,54,240,6 script "Tono" 97,{
 	close;
 }
 
-prontera.gat,160,133,2 script	"Yupi" 102,{
+prontera.gat,160,133,2 script	"YuPi" 102,{
 	mes "[YuPi]";
 	mes "Among monsters of the same form, there are some more ferocious than others.";
 	mes "If you ever even touch them by mistakes, you'd better prepare yourself for what you've done.";
@@ -128,17 +128,17 @@ prontera.gat,160,133,2 script	"Yupi" 102,{
 	close;
 }
 
-prontera.gat,149,202,2 script	"Yuna" 700,{
-	mes "[Yuna]";
+prontera.gat,149,202,2 script	"YuNa" 700,{
+	mes "[YuNa]";
 	mes "Odin is the god we serve. Odin is the god of wisdom and war.";
 	mes "He decisively abandon his one eye in order to acquire wisdom. The statue in the middle of the water fountain over there is sculptured after the god himself.";
 	next;
-	mes "[Yuna]";
+	mes "[YuNa]";
 	mes "But it is really sorrowful and such a shame because, I don't know who the sculptor was, he did it all wrong.";
 	mes "The statue is just totally different from Odin we all know..."; 
 	mes "He insisted that it was his artistic view or something...."; 
 	next;
-	mes "[Yuna]";
+	mes "[YuNa]";
 	mes "Look~ He doesn't have a broad brimmed hat. Not only that he's not even riding Sleipnir. This is just totally unacceptable~!";
 	close;
 }

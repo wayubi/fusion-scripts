@@ -1,3 +1,69 @@
+//========================================================================================
+// »» The Fusion Project ««
+// Copyright (c) 2004, Cobax Information Systems
+// http://fusion.cobax.net/
+// ---------------------------------------------------------------------------------------
+//
+// Payon Town - Non Player Character Locations
+//
+// - Lady -> payon : 163,139
+//   Talks a little abouyt the history of payon.
+//
+// - Young Man -> payon : 171,138
+//   Talks about monsters and magic.
+//
+// - Young Man -> payon_in01 : 29,115
+//   Says something about his grand father.
+//
+// - Waitress -> payon_in01 : 104,183
+//   wWaitress that tells you a story.
+//
+// - Guardsman -> payon : 93,162
+//   Tells you to behave.
+//
+// - Chief Guardsman -> payon_in01 : 69,90
+//   Tells you to behave.
+//
+// - Woman -> payon : 166,140
+//   Talks about the payon cave.
+//
+// - Women -> payon : 163,142
+//   Talks about a fortune tellar.
+//
+// - Drunk -> payon_in01: 95,181
+//   A drunk man.
+//
+// - Archer Zakk -> payon_in01: 95,179
+//   A Payon Archer.
+//
+// - Archer Wolt -> payon_in01: 176,176
+//   A Payon Archer.
+//
+// - Archer Joe -> pay_arche: 77,131
+//   A Payon Archer.
+//
+// - Monster Scholar -> payon_in01: 164,165
+//   Talks about his monster research.
+//
+// - Chief -> payon_in01: 136,147
+//   Talks about the payon surroundings.
+//
+// - Guard -> payon_in01: 129,140
+//   Payon Guard that tell tou are not allowed in there.
+//
+// - Payon Bulletin -> payon: 82,129
+//   Payon Bulletin Board.
+//
+// - Sign -> payon: 27,175
+//   Payon Sign.
+//
+// - Sign -> payon: 171,137
+//   Payon Sign.
+//
+// - Sign Post -> payon: 165,128
+//   Payon Sign Post.
+//
+//========================================================================================
 
 payon.gat,163,139,0 script "Lady" 90,{
 	mes "[Lady]";
@@ -45,7 +111,7 @@ payon_in01.gat,104,183,0 script "Waitress" 90,{
 	   check Gender=1,-,LStartF;
   	mes "[Pub Lady]";
   	mes "Hello, mister?";
-   LStartF:
+LStartF:
    	mes "[Pub Lady]";
    	mes "Hello, lady?";
 	next;
