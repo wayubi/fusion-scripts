@@ -32,3 +32,5 @@ umbala.gat,156,249,0 warp  umbalawarp011   1,1,um_in.gat,99,67
 um_in.gat,99,63,0    warp  umbalawarp012   1,1,umbala.gat,160,247 
 umbala.gat,108,164,0 warp  umbalawarp013   1,1,um_in.gat,38,113
 um_in.gat,38,110,0   warp  umbalawarp014   1,1,umbala.gat,104,163 
+//Bungee Jumping area
+umbala.gat,136,195,0	hiddenwarp	umbalariver	1,1,umbala,145,166

@@ -1,6 +1,8 @@
 --------------------------------------------------------------------------------
  Fusion 1.213 - August 29th, 2004
 --------------------------------------------------------------------------------
+- 07-29-04: Warp\towns\Umbala.txt - Moved warp here, turned into a hiddenwarp. (why didn't i c this b4?) [Tsusai]
+- 07-29-04: Town\Town_Umbala.txt - removed bungee area script warp. [Tsusai]
 - 07-29-04: Job\Job_1-1\*.* - Updated scripts in preparation of semi-official Adv Class script. [Tsusai]
 - 07-29-04: Job\Job_1-1\Job1_Magician.txt - Mage Mixing Machine Redone and now official (ph33r me). [Tsusai]
 - 07-17-04: Event\Event_Making.txt - Alberta hat merchant now shows correctrequirements. [Muad_Dib]

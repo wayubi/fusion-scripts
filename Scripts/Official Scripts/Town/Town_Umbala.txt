@@ -1636,8 +1636,3 @@ um_in.gat,144,45,5	script	"Wambokoriotan"	789,{
 		percentheal -99,0;
 		end;
 }
-
-//umbala.gat,136,195,0	script	#Warp Point	139,1,1,{
-	warp "umbala",145,166;
-	end;
-}
