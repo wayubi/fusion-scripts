@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.002
 ----------------------------------------------------------------------------------------------------
+- Event\Event_Making.txt - Moved berserk platinum skills to NPC/npc_skill_get.txt [mudvayne]
 - Town\Town_Juno.txt - Moved 3 npc to there respected files, fixed missing " in npc names. [mudvayne]
 - Job\Job22_Sage.txt - Moved this job changer from Town_Juno.txt here. [mudvayne]
 - Town\Town_Siglude.txt - Moved the two Town_Juno.txt forge npcs here. [mudvayne]
