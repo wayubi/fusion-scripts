@@ -9,7 +9,7 @@
 //
 //========================================================================================
 
-cmd_in02.af2,180,100,4   script   "Borris"   98,{
+cmd_in02.gat,180,100,4   script   "Borris"   98,{
         check BORRIS == 1,HAS,-;
         set BORRIS = 1;
         mes "[Borris]";
