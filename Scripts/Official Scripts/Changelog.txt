@@ -9,6 +9,10 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.004
 ----------------------------------------------------------------------------------------------------
+- Mob\dungeon\ama_dun.txt - Updated, reorganised Amatsu Dungeon Monster Spawns. [Muad_Dib]
+- Mob\dungeon\gon_dun.txt - Updated, reorganised Gon Ryun Dungeon Monster Spawns. [Muad_Dib]
+- Mob\field\ama_fild.txt - Updated, reorganised Amatsu Field Monster Spawns. [Muad_Dib]
+- Mob\field\gon_fild.txt - Updated, reorganised Gon Ryun Field Monster Spawns. [Muad_Dib]
 - Mob\dungeon\tur_dun.txt - Updated, reorganised Comodo Dungeon Monster Spawns. [Muad_Dib]
 - Mob\dungeon\beach_dun.txt - Updated, reorganised Comodo Dungeon Monster Spawns. [Muad_Dib]
 - Mob\dungeon\gef_dun.txt - Updated, reorganised Geffen Tower Dungeon Monster Spawns. [Muad_Dib]
