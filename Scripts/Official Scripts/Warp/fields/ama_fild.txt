@@ -1,0 +1,7 @@
+amatsu.gat,248,290,0	warp	ama0023	1,1,ama_fild01,75,33
+ama_fild01.gat,73,32,0	warp	ama0024	1,1,amatsu.gat,248,288
+ama_fild01.gat,174,332,0	warp	warp8003	1,1,ama_test.gat,50,19
+ama_test.gat,50,16,0	warp	warp8003	1,1,ama_fild01.gat,174,330
+ama_test.gat,50,44,0	warp	warp8004	1,1,ama_test.gat,50,82
+ama_test.gat,50,79,0	warp	warp8005	1,1,ama_test.gat,50,41
+ama_test.gat,50,90,0	warp	warp8006	1,1,ama_dun01.gat,228,9

@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.002
 ----------------------------------------------------------------------------------------------------
+- Warp\*.txt - Moved to new filename system. [mudvayne]
 - Mob\*.txt - Moved to new filename system. [mudvayne]
 - GvG\*.txt - Fixed miss placed npcs. [mudvayne]
 - GvG\*.txt - Cleaned scripts, added missing " in npc names, fixed push cart check bug, fixed option check bug, added support for alchimist in kafra cart rent. [mudvayne]

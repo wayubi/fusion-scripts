@@ -1,0 +1,3 @@
+mag_dun01.gat,241,240,0	warp	warp1894	1,1,yuno_fild03.gat,39,140
+mag_dun01.gat,126,68,0	warp	warp1895	1,1,mag_dun02.gat,48,35
+mag_dun02.gat,48,30,0	warp	warp1896	1,1,mag_dun01.gat,126,72

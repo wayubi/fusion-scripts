@@ -1,0 +1,2 @@
+gon_fild01.gat,191,263,0	warp	warp8012	1,1,gonryun.gat,160,19
+gonryun.gat,160,23,0	warp	warp8013	1,1,gon_fild01.gat,191,262
