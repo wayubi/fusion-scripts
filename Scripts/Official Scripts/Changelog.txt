@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.003
 ----------------------------------------------------------------------------------------------------
+- shop\amatsu.txt - Updated Amatsu shops In preparation for Town_Amatsu.txt is finished. [Muad_Dib]
 - GvG\ - Added Cart rental support for High merchant, Whitesmith and Creator to all castles kafras. [Muad_Dib]
 - Town\Town_Kafra.txt - Added Cart rental support for High merchant, Whitesmith and Creator. [Muad_Dib]
 - Town\Town_Siglude.txt - Corrected one thing of the conversation display. [Muad_Dib]
