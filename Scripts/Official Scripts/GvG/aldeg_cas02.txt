@@ -25,6 +25,9 @@
 
 aldeg_cas02.gat,82,71,2	script	"Hohenschwangau"	722,{
 	scriptlabel aldeg_casF02;
+OnInit:
+	guildreg "aldeg_cas02";
+return;
 	guildreg "aldeg_cas02";
 	check guildid == 0,-,L_START_1;
 	mes "       [ Kingdom of Aldebaran ]";

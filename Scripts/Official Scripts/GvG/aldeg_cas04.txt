@@ -25,6 +25,9 @@
 
 aldeg_cas04.gat,167,61,2	script	"Wuerzburg"	722,{
 	scriptlabel aldeg_casF04;
+OnInit:
+	guildreg "aldeg_cas04";
+return;
 	guildreg "aldeg_cas04";
 	check guildid == 0,-,L_START_1;
 	mes "       [ Kingdom of Aldebaran ]";
