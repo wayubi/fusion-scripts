@@ -14,9 +14,9 @@
 niflheim.gat,202,180,3 script "Kafra Employee" 791,{
 		set @Kafra_PASS = 0;
 	mes "[Kafra Employee]"; 
-	mes "Welcome..."; 
-	mes "Kafra Services..."; 
-	mes "Will be with you even when you die..."; 
+	mes "Welcome... to.... ";
+	mes "Kafra Corp....";
+	mes "We will.... stay with you.... even till death...."; 
 	next;
 L_START_1:
 		check @Kafra_PASS = 1,-,L_SUB_0_1;

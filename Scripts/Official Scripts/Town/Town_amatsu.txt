@@ -1583,45 +1583,4 @@ amatsu.gat,261,197,4 script "Legendary Sakura Tree" 111,{
 	close;
 }
 
-amatsu.gat,251,283,4 script "Guide" 767,{
-	mes "[Guide]";
-	mes "Good evening!";
-	mes "Today is a good day to take";
-	mes "a tour of Amatsu!";
-	next;
-	mes "[Guide]";
-	mes "Are you interested in someplace specific?";
-	next;
-	menu "Castle",L1,"Tool shop",L2,"Weapon shop",L3,"Bar",L4;
-L1:
-	   viewpoint 1,85,235,0,0xFF3355;
-	mes "[Guide]";
-	mes "I marked the castle with a";
-	mes "^FF3355+^000000 on your";
-	mes "minimap.";
-	goto L_End;
-L2:
-	   viewpoint 1,96,118,1,0xCE6300;
-	mes "[Guide]";
-	mes "I marked the tool shop with a";
-	mes "^CE6300+^000000 on your";
-	mes "minimap.";
-	goto L_End;
-L3:
-	   viewpoint 1,132,117,2,0x55FF33;
-	mes "[Guide]";
-	mes "I marked the weapon shop with a";
-	mes "^55FF33+^000000 on your";
-	mes "minimap.";
-	goto L_End;
-L4:
-	   viewpoint 1,217,116,3,0x3355FF;
-	mes "[Guide]";
-	mes "I marked the bar with a";
-	mes "^3355FF+^000000 on your";
-	mes "minimap.";
-L_End:
-	mes "Please enjoy your stay";
-	mes "in Amatsu.";
-	close;
-}
+

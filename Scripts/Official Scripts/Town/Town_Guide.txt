@@ -1302,7 +1302,7 @@ L_End:
 
 gonryun.gat,163,60,4 script "Gon Ryune Guide" 780,{ 
       mes "[Ha Wonch]"; 
-      mes "Welcome to Gon Ryune!"; 
+      mes "Welcome to Kunlun!"; 
       mes "A thriving place"; 
       mes "which is always full of people!"; 
 next; 
@@ -1348,7 +1348,7 @@ L5:
       mes "on the minimap."; 
       goto L_End; 
 L_End: 
-	mes "Gonryun is a great place to";
+	mes "Kunlun is a great place to";
 	mes "relax.  Stay as long as you like!";
 	close;
 }
@@ -1374,7 +1374,7 @@ umbala.gat,128,94,4 script "Explorer" 702,{
 	mes "on your minimap.  The Chief is the only link";
 	mes "the village has to the outside world.  You";
 	mes "ought to speak with him first.";
-	   viewpoint 1,66,250,2,0xFF3355;
+	  	 viewpoint 1,66,250,2,0xFF3355;
 	close;
 L1_2:
 	mes "[Explorer]";
@@ -1383,21 +1383,21 @@ L1_2:
       mes "very fabric of nature itself.";
       mes "The shaman's house is marked with a^CE6300+^000000";
 	mes "on your minimap.";
-	   viewpoint 1,217,186,3,0xCE6300;
+	  	 viewpoint 1,217,186,3,0xCE6300;
 	close;
 L1_3:
 	mes "[Explorer]";
 	mes "The weapon shop is marked with a ^55FF33+^000000 on";
 	mes "your minimap.  Enemies love to invade this";
 	mes "town, so there are always some weapons on hand.";
-	   viewpoint 1,126,154,4,0x55FF33;
+	  	 viewpoint 1,126,154,4,0x55FF33;
 	close;
 L1_4:
 	mes "[Explorer]";
 	mes "The tool shop is marked with a ^55FF33+^000000 on";
 	mes "your minimap.  Stop by before you go.  You";
 	mes "never know when you'll get another chance.";
-	   viewpoint 1,136,127,5,0x3355FF;
+	  	 viewpoint 1,136,127,5,0x3355FF;
 	close;
 L1_5:
 	mes "[Explorer]";
@@ -1407,7 +1407,7 @@ L1_5:
 	mes "minimap marked with a ^00FF00+^000000";
 	mes "and give it a try, if you have the";
 	mes "balls.";
-	   viewpoint 1,139,198,6,0x00FF00;
+	   	viewpoint 1,139,198,6,0x00FF00;
 	close;
 L1_6:
 	mes "[Explorer]";
@@ -1416,11 +1416,11 @@ L1_6:
 	mes "my minimap marks'.";
 	close;
 L2:
-	   viewpoint 2,66,250,2,0x00FF00;
-	   viewpoint 2,217,186,3,0x00FF00;
-	   viewpoint 2,126,154,4,0x00FF00;
-	   viewpoint 2,136,127,5,0x00FF00;
-	   viewpoint 2,139,198,6,0x00FF00;
+	   	viewpoint 2,66,250,2,0x00FF00;
+	   	viewpoint 2,217,186,3,0x00FF00;
+	   	viewpoint 2,126,154,4,0x00FF00;
+	   	viewpoint 2,136,127,5,0x00FF00;
+		viewpoint 2,139,198,6,0x00FF00;
 	mes "[Explorer]";
 	mes "All the marks have been removed from";
 	mes "your minimap.  Please talk to me again";
@@ -1430,5 +1430,80 @@ L_End:
 	mes "[Explorer]";
 	mes "It's interesting to observe interesting people";
 	mes "going about their business, don't you think?";
+	close;
+}
+
+niflheim.gat,186,190,6 script "迷い人" 798,{
+	mes "[リカエル]";
+	mes "こんなに恐ろしい街へ";
+	mes "いらっしゃるなんて……";
+	mes "あなたも道に迷われたのですね。";
+	mes "僕は巨大な樹に導かれて、ここへ";
+	mes "来ました。けれども長い間、";
+	mes "脱出することができません。";
+	next;
+	mes "[リカエル]";
+	mes "それでもずっと出口を捜していたので、";
+	mes "街の地理だけはよく解っています。";
+	mes "外へ出るのに役立つかもしれないので、";
+	mes "遠慮なくお尋ねください。";
+	next;
+	menu "街の地理を尋ねる",L_Menu1,"ミニマップの表示を全て消す",L_Menu2,"話をやめる",-;
+	mes "[リカエル]";
+	mes "直接、歩いて見るのはとても";
+	mes "危ないのに……気をつけて";
+	mes "行ってらっしゃい。";
+	close;
+L_Menu1:
+	mes "[リカエル]";
+	mes "何を知りたいですか？";
+	next;
+	menu "魔女の城",-,"道具屋",L1_2,"武器屋",L1_3,"酒屋",L1_4,"取り消し",L1_5;
+	mes "[リカエル]";
+	mes "ニブルヘイムには恐ろしい魔女が";
+	mes "います。 ^FF3355+^000000 の位置に、その魔女が";
+	mes "住むお城があります。私は一度だけ";
+	mes "行ったことがありますが、とても";
+	mes "恐ろしかったので、すぐに逃げ出して";
+	mes "きました。";
+		viewpoint 1,253,191,1,0xFF3355;
+	close;
+L1_2:
+	mes "[リカエル]";
+	mes "道具屋は ^CE6300+^000000 の位置にあります。";
+	mes "外の世界では売られていない";
+	mes "珍しい物もありますので、是非一度、";
+	mes "行ってみてください。";
+		viewpoint 1,217,196,2,0xCE6300;
+	close;
+L1_3:
+	mes "[リカエル]";
+	mes "武器屋は ^55FF33+^000000 の位置にあります。";
+	mes "他の所では見かけない物もありますので";
+	mes "是非一度、行ってみてください。";
+		viewpoint 1,216,171,3,0x55FF33;
+	close;
+L1_4:
+	mes "[リカエル]";
+	mes "酒屋は ^3355FF+^000000 の位置にあります。";
+	mes "ここではたまに、死者達が集まって";
+	mes "パーティーをしていますね。";
+		viewpoint 1,189,207,4,0x3355FF;
+	close;
+L1_5:
+	mes "[リカエル]";
+	mes "位置表示を消したければ";
+	mes "「ミニマップの表示を全て消す」";
+	mes "を選択してください。";
+	close;
+L_Menu2:
+		viewpoint 2,253,191,1,0x00FF00;
+		viewpoint 2,217,196,2,0x00FF00;
+		viewpoint 2,216,171,3,0x00FF00;
+		viewpoint 2,189,207,4,0x00FF00;
+	mes "[リカエル]";
+	mes "ミニマップの表示を全て消しました。";
+	mes "またミニマップの表示を消したければ、";
+	mes "いつでも声をかけてください。";
 	close;
 }

@@ -1,6 +1,10 @@
 --------------------------------------------------------------------------------
  Fusion 1.213 - August 29th, 2004
 --------------------------------------------------------------------------------
+- 09-18-04: Town\Town_Gonryun.txt - Renamed to the iro name. [Muad_Dib]
+- 09-18-04: Town\Town_Guide.txt - Added japanese Niflheim guide. [Muad_Dib]
+- 09-18-04: Town\Town_Amatsu.txt - Removed Guide. [Muad_Dib]
+- 09-18-04: Town\kafra\Niflheim_Kafra.txt - Updated text. [Muad_Dib]
 - 09-16-04: Npc\npc_kafra_corp.txt - Renamed Kafra Service name to Kafra Employee. [Muad_Dib]
 - 09-16-04: Event\Kafra_P.txt - Renamed kafra points to special reserve points. [Muad_Dib]
 - 09-16-04: Shop\jawaii.txt - Had better merchant translations. [Muad_Dib]

@@ -4,20 +4,20 @@
 // http://fusion.cobax.net/
 // ---------------------------------------------------------------------------------------
 //
-// Gon Ryune Town - Non Player Character Locations
+// Kunlun Town - Non Player Character Locations
 // - Translated by the RPG-Advocate.
 //
-// - Gon Ryune Ambassador -> alberta: 245,69
-//   Npc that can warp you to Gon Ryune.
+// - Kunlun Ambassador -> alberta: 245,69
+//   Npc that can warp you to Kunlun.
 //
-// - Gon Ryune Ambassador -> gon_fild01: 255,79
+// - Kunlun Ambassador -> gon_fild01: 255,79
 //   Npc that can warp you back to alberta.
 //
-// - Gon Ryune Ambassador -> gon_fild01: 187,239
+// - Kunlun Ambassador -> gon_fild01: 187,239
 //   Npc that shows you the way.
 //
-// - Gon Ryune Ambassador -> gonryun: 153,64
-//   Npc that can warp you back to the Gon Ryune port.
+// - Kunlun Ambassador -> gonryun: 153,64
+//   Npc that can warp you back to the Kunlun port.
 //
 // - Ryokan Priestess -> gonryun: 200,82
 //   Tells you their alcohol is sold out.
@@ -44,7 +44,7 @@
 //   Woman in mayors house.
 //
 // - Elder -> gon_in: 17,93
-//   The Elder of town Gon Ryune.
+//   The Elder of town Kunlun.
 //
 // - Chun Onsoku -> gonryun: 119,111
 //   Man that talks about the elder.
@@ -68,23 +68,23 @@
 //   A soldier in front of the dungeon entrance.
 //
 // - Guide -> gonryun: 169,71
-//   A guide that tells you something about Gon Ryune.
+//   A guide that tells you something about Kunlun.
 //
 //========================================================================================
 
-alberta.gat,245,69,4 script "Gon Ryune Ambassador" 776,{
+alberta.gat,245,69,4 script "Kunlun Ambassador" 776,{
 	mes "[Wabajo]";
 	mes "Good afternoon!";
-	mes "Want to go to Gon Ryune?";
+	mes "Want to go to Kunlun?";
 	mes "I'm delighted to see so many";
 	mes "people from Rune-Midgard";
 	mes "going there to experience the culture!";
 	next;
-	menu "Gon Ryune?",L_Gonryune,"Yeah, I want to go!",L_Go,"Perhaps another time",L_Another;
+	menu "Kunlun?",L_Gonryune,"Yeah, I want to go!",L_Go,"Perhaps another time",L_Another;
       close;
 L_Gonryune:
 	mes "[Wabajo]";
-	mes "The village of Gon Ryune is the ultimate";
+	mes "The village of Kunlun is the ultimate";
 	mes "tourist destination!";
 	mes "Suspended on a pillar of light,";
 	mes "our beautiful village floats in the clouds.";
@@ -92,17 +92,17 @@ L_Gonryune:
 	mes "[Wabajo]";
 	mes "While you're there, don't forget";
 	mes "to try our manjuu cakes and peaches,";
-	mes "Gon Ryune's specialty!";
+	mes "Kunlun's specialty!";
 	next;
 	mes "[Wabajo]";
-	mes "Gon Ryune life isn't all peachy, though, so";
+	mes "Kunlun life isn't all peachy, though, so";
 	mes "you should prepare yourself for";
 	mes "possible danger.  There are places the";
 	mes "villagers know not to approach.";
 L_Another:
 	mes "[Wabajo]";	
         mes "Oh, alright.  If you want";
-	mes "to go to Gon Ryune in the future,";
+	mes "to go to Kunlun in the future,";
 	mes "then please come back.  I would";
 	mes "be pleased to guide you there.";
 	close;
@@ -110,7 +110,7 @@ L_Go:
 	mes "[Wabajo]";
 	mes "It's ^0000ff10,000zeny^000000";
 	mes "for round-trip travel to and from";
-	mes "Gon Ryune.  Is that agreeable to";
+	mes "Kunlun.  Is that agreeable to";
 	mes "you?";
 	next;
 	menu "Sure thing!",L_Sure,"Well, it's kind of expensive...",L_Another;
@@ -127,9 +127,9 @@ L_Error:
 	close;
 }
 
-gon_fild01.gat,255,79,6	script "Gon Ryune Ambassador" 776,{
+gon_fild01.gat,255,79,6	script "Kunlun Ambassador" 776,{
 	mes "[Wabajo]";
-	mes "Did you enjoy your stay in Gon Ryune?";
+	mes "Did you enjoy your stay in Kunlun?";
 	mes "Do you want to return to Alberta now?";
 	next;
 	menu "Back to Alberta",L_Yes,"I'll stay a little longer",L_No;
@@ -142,24 +142,24 @@ L_Yes:
 L_No:
 	mes "[Wabajo]";
 	mes "Oh, no problem.";
-	mes "There's so much to see in Gon Ryune.";
+	mes "There's so much to see in Kunlun.";
 	mes "Please take your time and take";
 	mes "in all the sights.";
 	close;
 }
 
-gon_fild01.gat,187,239,4 script "Gon Ryune Ambassador" 776,{
+gon_fild01.gat,187,239,4 script "Kunlun Ambassador" 776,{
 	mes "[Chou Seiryuu]";
-	mes "Hello, and welcome to Gon Ryune!";
+	mes "Hello, and welcome to Kunlun!";
 	mes "Please keep going this way to";
-	mes "get to Gon Ryune.";
+	mes "get to Kunlun.";
 	mes "Enjoy your stay!";
 	close;
 }
 
-gonryun.gat,153,64,0 script "Gon Ryune Ambassador" 776,{
+gonryun.gat,153,64,0 script "Kunlun Ambassador" 776,{
 	mes "[Chou Seiryuu]";
-	mes "How do you like Gon Ryune?";
+	mes "How do you like Kunlun?";
 	mes "Are you enjoying yourself?";
 	mes "If you want to return home, I";
 	mes "can guide you to the port.";
@@ -167,14 +167,14 @@ gonryun.gat,153,64,0 script "Gon Ryune Ambassador" 776,{
 	menu "Please do",L_Yes,"Not just yet",L_No;
 L_Yes:
 	mes "[Chou Seiryuu]";
-	mes "Please come back to Gon Ryune soon!";
+	mes "Please come back to Kunlun soon!";
 	next;
 	   warp "gon_fild01",258,82;
 	close;
 L_No:
 	mes "[Chou Seiryuu]";
 	mes "Oh, no problem.";
-	mes "There's so much to see in Gon Ryune.";
+	mes "There's so much to see in Kunlun.";
 	mes "Please take your time and take";
 	mes "in all the sights.";
 	close;
@@ -256,7 +256,7 @@ gonryun.gat,113,135,6 script "Gate Guardian" 780,{
 	mes "[Gate Guardian]";
 	mes "Welcome to Sayomun's manor.";
 	mes "Sayomun is the current ruler";
-	mes "of Gon Ryune.";
+	mes "of Kunlun.";
 	next;
 	mes "[Gate Guardian]";
 	mes "We generally trust you, but if";
@@ -274,7 +274,7 @@ gonryun.gat,113,127,6 script "Gate Guardian" 780,{
 	mes "[Gate Guardian]";
 	mes "Welcome to Sayomun's manor.";
 	mes "Sayomun is the current ruler";
-	mes "of Gon Ryune.";
+	mes "of Kunlun.";
 	next;
 	mes "[Gate Guardian]";
 	mes "We generally trust you, but if";
@@ -298,7 +298,7 @@ L_Look:
 	mes "[Sangufuyon]";
 	mes "Oh, you're quite welcome";
 	mes "to look around.  Time moves slowly";
-	mes "here in Gon Ryune, so please enjoy";
+	mes "here in Kunlun, so please enjoy";
 	mes "what our quiet village has to offer.";
 	close;
 L_Where:
@@ -324,10 +324,10 @@ gon_in.gat,17,93,4 script "Elder" 775,{
 	mes "[Sayomun]";
 	mes "A guest?  My name is Sayomun.";
 	mes "I'm the village elder.  Welcome";
-	mes "to Gon Ryune.";
+	mes "to Kunlun.";
 	next;
 	mes "[Sayomun]";
-	mes "Gon Ryune used to be a completely";
+	mes "Kunlun used to be a completely";
 	mes "insular town.  Recently, we";
 	mes "started a ferry service to bring";
 	mes "people here from Alberta.";
@@ -353,7 +353,7 @@ gonryun.gat,119,111,4 script "Chun Onsoku" 89,{
 	next;
 	mes "[Chun Onsoku]";
 	mes "If you win the elder's favor,";
-	mes "you win Gon Ryune's favor.";
+	mes "you win Kunlun's favor.";
 	mes "He's suspicious that thieves";
 	mes "are operating, though.";
 	close;
@@ -381,7 +381,7 @@ gonryun.gat,268,88,4 script "Lun Chinho" 776,{
 
 gonryun.gat,181,161,4 script "Chin Munjin" 773,{
 	mes "[Chin Munjin]";
-	mes "All the men of Gon Ryune";
+	mes "All the men of Kunlun";
 	mes "are blessed with strong";
 	mes "hearts and minds, but that makes";
 	mes "it tough to find someone who's available!";
