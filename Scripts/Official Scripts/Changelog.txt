@@ -9,13 +9,19 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.003
 ----------------------------------------------------------------------------------------------------
+- Job\Job2_Alchemist.txt - Added a temp changer until more quest info is known. (Requested on Bugtracker) [Muad_Dib]
+- Job\Job2_Rogue.txt - Added a temp changer until more quest info is known. (Requested on Bugtracker) [Muad_Dib]
+- Job\Job2_Dancer - Added a temp changer until more quest info is known. (Requested on Bugtracker) [Muad_Dib]
+- Job\Job2_Sage.txt - Added a temp changer until more quest info is known. (Requested on Bugtracker) [Muad_Dib]
+- Job\Job2_Monk.txt - Added a temp changer until more quest info is known. (Requested on Bugtracker) [Muad_Dib]
+- Job\Job_Super_Novice.txt - Added a temp changer until more quest info is known. (Requested on Bugtracker) [Muad_Dib] 
 - Town\Town_Amatsu.txt - Replaced Town_Amatsu with a tottaly new One. [Muad_Dib]
 - Town\Town_Kafra.txt - Moved a Amatsu Kafra. [Muad_Dib]
 - Job\Job2_Knight_quest.txt - Fixed bad NPC IDs for hidden script loaders. [Colus]
 - Quest\quest_arena_test.txt - Fixed bad NPC IDs for hidden script loaders. [Colus]
 - GvG\npc_guardiankafra.txt - Fixed bad NPC IDs for hidden script loaders. [Colus]
 - shop\amatsu.txt - Updated Amatsu shops In preparation for when Town_Amatsu.txt is finished. [Muad_Dib]
-- GvG\ - Added Cart rental support for High merchant, Whitesmith and Creator to all castles kafras. [Muad_Dib]
+- GvG\ - Added Cart rental support for High merchant, Whitesmith and Creator to all kafras in the castles. [Muad_Dib]
 - Town\Town_Kafra.txt - Added Cart rental support for High merchant, Whitesmith and Creator. [Muad_Dib]
 - Town\Town_Siglude.txt - Corrected one thing of the conversation display. [Muad_Dib]
 - Job\Job2_Crusader.txt - Deleted Grand Peko Breeder due to being obsolete with Event_Rental.txt. [Muad_Dib]
