@@ -27,6 +27,9 @@
 // - Eric -> geffen_in: 30,71
 //   Give information and make Headset Quest.
 //
+// - Marius -> morocc_in: 76,163
+//   Give information and make Binoculars Quest.
+//
 //========================================================================================
 
 payon_in01.gat,103,111,4	script	"Granny"	103,{
@@ -687,72 +690,66 @@ geffen_in.gat,30,71,4	script	"Eric"	83,{
 		close;
 }
 
-//----------------------------------
-// 望遠鏡
-//----------------------------------
-
-morocc_in.gat,76,163,4	script	錬金術師	64,{
-	mes "[バリオジュナ]";
-	mes "おほ！またお客さんか！";
-	mes "君が何の話しをしようとするのか、わかってるぜべビィー";
-	mes "この俺様に魔法の眼鏡を作って貰おうとしているだろう？";
+morocc_in.gat,76,163,4	script	"Marius"	64,{
+	mes "[Marius]";
+	mes "Howdi - A new customer !";
+	mes "Stop!!! I know I know what you're gonna talk about.";
+	mes "You want the Magic Glasses from me,right ?";
 	next;
-	menu "魔法の眼鏡ってなに？",-,"魔法の眼鏡を製作する",L_MENU_1,"無視する",L_MENU_2;
-		mes "[バリオジュナ]";
-		mes "うむ！正式名称は ' ^3355FF望遠鏡^000000 ' という！!";
-		mes "長い丸形の管の中に";
-		mes "ガラスで作ったレンズを入れて、";
-		mes "そのレンズが対象から反射する光を映し、";
-		mes "遠く離れている事物が";
-		mes "目の前にあるように見られるものだ！";
+	menu "What is that ?",-,"Manufacture",L_MENU_1,"Ignore him",L_MENU_2;
+		mes "[Marius]";
+		mes "Hmm ! Officially it is called as the ' ^3355FFBinoculars^000000 '!";
+		mes "An optical device, such as a pair of field glasses ,";
+		mes "designed for simultaneous use by both eyes !";
+		mes "And consisting of two small telescopes joined with a single focusing device.";
+		mes "You can make them arranged to produce stereoscopic vision.";
 		next;
-		mes "[バリオジュナ]";
-		mes "どうだ？すごいだろう？";
-		mes "うははははは！";
-		mes "……";
-		mes "…？おい、信じてないのかよ。";
-		mes "ったく、本当だってば！";
+		mes "[Marius]";
+		mes "So? Something,Huh ?!";
+		mes "Muhahahahahaha !";
+		mes ". . . . .";
+		mes ".. Errr ? You don't seem to believe what I said?";
+		mes "Oh C'mon,Jerk . It is real !!";
 		next;
-		mes "[バリオジュナ]";
-		mes "望遠鏡を作るための材料を";
-		mes "特別に教えたる。";
-		mes "^3355FFスピングラス^000000 １個 ! ^3355FF鋼鉄^000000 100個 ! そして^3355FF50000 Zeny^000000 !";
+		mes "[Marius]";
+		mes "I will teach you the special ingredients needed in order to create a Binoculars";
+		mes "^3355FF1 Geek Glasses !^000000, ^3355FF100 Steel!^000000 and ^3355FF50000 Zeny^000000 !";
 		close;
 	L_MENU_1:
 		checkitem 2243,1,-,L_SUB_1;
 		checkitem 999,100,-,L_SUB_1;
 		check Zeny >= 50000,-,L_SUB_1;
-		mes "[バリオジュナ]";
-		mes "OK、OK！";
-		mes "俺様が作った望遠鏡も";
-		mes "素敵な持ち主に出会って、幸せだろう！";
+		mes "[Marius]";
+		mes "Gr~~~~eat !";
+		mes "This Magic Glasses will be happy";
+		mes "with you,the Nice Master !";
 		next;
 		delitem 2243,1;
 		delitem 999,100;
 		delitem 983,1;
 		set Zeny -= 50000,0;
-		mes "[バリオジュナ]";
-		mes "ほいっ！望遠鏡だぜ！";
+		mes "[Marius]";
+		mes "Here it is ! The Binoculars !";
 		additem 2296,1;
 		next;
-		mes "[バリオジュナ]";
-		mes "望遠鏡を使って、";
-		mes "いやらしいことはしないでね。";
-		mes "ぷははははは！";
+		mes "[Marius]";
+		mes "But I must say ..";
+		mes "Don't peep at something you should not look ｢ﾝ";
+		mes "Pooffff !";
 		close;
 	L_SUB_1:
-		mes "[バリオジュナ]";
-		mes "足りないじゃん～！！！！";
-		mes "このミッドガルド最高の光学錬金術師の";
-		mes "俺様をなめてるのか？";
-		mes "ひどすぎ～～～！！！";
+		mes "[Marius]";
+		mes "Argggghhhhhhh !! You didn't bring enough items!!!!";
+		mes "Now you bring a disgrace on me!!!";
+		mes "Baaaadddd !!";
 		close;
 	L_MENU_2:
-		mes "[バリオジュナ]";
-		mes "おいおい！";
-		mes "このミッドガルドの光学分野で";
-		mes "一番有名で、純粋で、デリケートなこの俺様との";
-		mes "対話を遠慮する気？";
+		mes "[Marius]";
+		mes "Hey you !";
+		mes "Now you're in front of Marius,";
+		mes "Alchemist of the Alchemist.";
+		mes "Do you ignore me,now,Huh???";
+		mes "Come on!! I beat your ass!!!";
 		close;
 }
 
