@@ -9,7 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion 1.212
 ----------------------------------------------------------------------------------------------------
- - 2004-06-02: Added changelog.txt file. [AlexKreuz]
- - 2004-06-02: Added Casion Games folder - Scripts\Custom\Casino Games [Yun Qi]
- - 2004-06-02: Added Russian Roulette script (ENG) - Casino Games\Russian_Roulette.txt [Yun Qi]
  - 2004-06-03: Added Russian Roulette script (SPN) - Casino Games\Russian_Roulette_SPN.txt [Yun Qi]
+ - 2004-06-02: Added Russian Roulette script (ENG) - Casino Games\Russian_Roulette.txt [Yun Qi]
+ - 2004-06-02: Added Casion Games folder - Scripts\Custom\Casino Games [Yun Qi]
+ - 2004-06-02: Added changelog.txt file. [AlexKreuz]
