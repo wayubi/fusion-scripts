@@ -4,7 +4,7 @@
 // http://fusion.cobax.net/
 // ---------------------------------------------------------------------------------------
 //
-// Alberta Town - Non Player Character Locations
+// Monster Taming Quests - Non Player Character Locations
 //
 // - Iwado -> alberta_in: 173,76
 //   Transform items into Monsters Taming items, Monster Juice, Singing Flower, Wild Flower
