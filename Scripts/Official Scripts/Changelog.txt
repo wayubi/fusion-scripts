@@ -1,6 +1,9 @@
 --------------------------------------------------------------------------------
  Fusion 1.212 - June 30th, 2004
 --------------------------------------------------------------------------------
+- 06-15-04: Warp\newbies\new_zone.txt - Updated and now includes server side map entries. [Tsusai]
+- 06-15-04: Warp\other\force_map.txt - Updated and now includes server side map entries. [Tsusai]
+- 06-15-04: Warp\other\Arena_Test.txt - Removed, entries put into force_map.txt [Tsusai]
 - 06-15-04: Job\Novice\Job_Super_Novice.txt - Added offical Super Novice Quest. [Muad_Dib]
 - 06-14-04: Town\Town_Gonryun.txt - Activated npc emotions. [Muad_Dib]
 - 06-14-04: Town\Town_Siglude.txt - Added npc emotions. [Muad_Dib]
