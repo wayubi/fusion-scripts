@@ -70,7 +70,7 @@ L_START_1:
       mes "2.The Guild Master of ^FF0000$guildname^000000 is ^FF0000$guildmaster^000000.";
       mes "  If there is anyone who objects to this, prove your strength and honour";
       mes "  with a steel blade in your hand.";
-      close;	close;
+      close;
 OnInit:
 	guildreg "aldeg_cas01";
 return;

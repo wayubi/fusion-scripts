@@ -1275,12 +1275,134 @@ OnInit:
 		enablenpc "job_wiz","Fire Room",0;
 		enablenpc "job_wiz","Raul",0;
 		resetmymob "job_wiz";
-		enablenpc "job_wiz","Water Room",1;
+		enablenpc "job_wiz","watertest",1;
 		warpallpc "job_wiz",114,169,2;
 		return;
 }
 
-job_wiz.gat,1,1,1	script	"Water Room"	-1,{
+//job_wiz.gat,115,170,2	script	"h"	811,{
+	mes "hmm";
+	mes "Phase $[\@Testing] .";
+	close;
+}
+
+job_wiz.gat,1,1,1	script	"watertest"	-1,{
+	check \@Testing = 2,WaterMobs,-;
+	check \@Testing = 3,WaterGate,-;
+	return;
+OnInit:
+	check \@Testing = 1,Phase1,-;
+		return;
+	Phase1:
+		callmob "job_wiz",109,174,"Phen",1158,0,"watertest";
+		callmob "job_wiz",118,174,"Kukre",1070,0,"watertest";
+		callmob "job_wiz",109,165,"Vadon",1066,0,"watertest";
+		callmob "job_wiz",118,165,"Cornutus",1067,0,"watertest";
+		callmob "job_wiz",101,157,"Marina",1141,0,"watertest";
+		callmob "job_wiz",126,157,"Marin",1242,0,"watertest";
+		callmob "job_wiz",98,170,"Kukre",1070,0,"watertest";
+		callmob "job_wiz",129,170,"Obeaune",1044,0,"watertest";
+		set \@Testing = 2;
+		npctimer 1;
+		return;
+	WaterMobs:
+		set \@watermob += 1;
+		broadcast "$[\@watermob] monster(s) dead.";
+		check \@watermob = 8,Guardians,-;
+			return;
+	Guardians:
+		npctimer 0;
+		set \@watermob = 0;
+		broadcast "You have killed all the monsters!",10;
+//		broadcast "$[$\@yourname] has killed all the monsters!",10;
+		set \@Testing = 3;
+		callmob "job_wiz",114,169,"Marine Sphere",1142,0,"watertest";
+		callmob "job_wiz",112,169,"Hydra",1068,0,"watertest";
+		callmob "job_wiz",116,169,"Hydra",1068,0,"watertest";
+		callmob "job_wiz",114,171,"Hydra",1068,0,"watertest";
+		callmob "job_wiz",114,167,"Hydra",1068,0,"watertest";
+		npctimer 1;
+		return;
+	WaterGate:
+		set \@watermob += 1;
+		broadcast "$[\@watermob] monster(s) dead.";
+		check \@watermob = 5,End,-;
+		return;
+	End:
+		npctimer 0;
+		broadcast "You have succenssfully defeated the guards!",10;
+//		broadcast "$[$\@yourname] has succenssfully defeated the guards!",10;
+		set \@Testing = 3;
+		enablenpc "job_wiz","Earth Room",1;
+		warpallpc "job_wiz",116,97,0;
+		return;
+	OnTimer1000:
+		check \@Testing = 3,P1000,-;
+			broadcast "Room of Water, testing will begin.",10;
+			return;
+		P1000:
+			broadcast "The gate guards have appeared! 1 min left!",10;
+			return;
+	OnTimer2000:
+		check \@Testing = 3,Null,-;
+			broadcast "3 min left",10;
+			return;
+	OnTimer3000:
+		broadcast "Kill all the monsters within the time limit.",10;
+		return;
+	OnTimer30000:
+		check \@Testing = 3,-,Null;
+			goto OnTimer153000;
+	OnTimer33000:
+		check \@Testing = 2,-,Null;
+			broadcast "2min 30sec left.",10;
+			return;
+	OnTimer50000:
+		check \@Testing = 3,-,Null;
+			goto OnTimer173000;
+	OnTimer60000:
+		check \@Testing = 3,-,Null;
+			goto OnTimer183000;
+	OnTimer61000:
+		check \@Testing = 3,-,Null;
+			goto OnTimer184000;
+	OnTimer63000:
+		check \@Testing = 3,P63000,-;
+			broadcast "2min left",10;
+			return;
+		P63000:
+			goto OnTimer185000;
+	OnTimer93000:
+		broadcast "1min 30sec left",10;
+		return;
+	OnTimer123000:
+		broadcast "1min left.",10;
+		return;
+	OnTimer153000:
+		broadcast "30sec left.",10;
+		return;
+	OnTimer173000:
+		broadcast "10 seconds!",10;
+		return;
+	OnTimer183000:
+		broadcast "Out of Time",10;
+		resetmymob "job_wiz";
+		return;
+	OnTimer184000:
+		broadcast "You have failed the test!",10;
+		resetmymob "job_wiz";
+//		broadcast "$[$\@yourname] has failed the test!",10;
+		return;
+	OnTimer185000:
+		npctimer 0;
+		warpallpc "geffen",120,110,0;
+		broadcast "Next in line, please enter.",10;
+		set \@Testing = 0;
+	Null:
+		return;
+}
+
+//job_wiz.gat,1,1,1	script	"Water Room"	-1,{
 	return;
 OnInit:
 	check \@Testing = 1,Start,-;
@@ -1339,7 +1461,7 @@ OnInit:
 		return;
 }
 
-job_wiz.gat,0,0,0	script	"watertest"	-1,{
+//job_wiz.gat,0,0,0	script	"watertest"	-1,{
 	check \@Testing = 1,WaterMobs,-;
 	check \@Testing = 2,WaterGate,-;
 	broadcast "$[\@Testing] is the phase number";
