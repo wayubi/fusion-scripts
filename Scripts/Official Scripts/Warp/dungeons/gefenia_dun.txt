@@ -1,3 +1,13 @@
+//========================================================================================
+// »» The Fusion Project ««
+// Copyright (c) 2004, Cobax Information Systems
+// http://fusion.cobax.net/
+// ---------------------------------------------------------------------------------------
+//
+// Geffenia Dungeon Warps - Warp Locations
+//
+//========================================================================================
+
 gefenia01.gat,199,269,0	warp	gefeniawarp001	1,1,gefenia02.gat,203,34
 gefenia02.gat,203,31,0	warp	gefeniawarp002	1,1,gefenia01.gat,199,266
 gefenia01.gat,220,256,0	warp	gefeniawarp003	1,1,gefenia02.gat,240,23
@@ -12,4 +22,5 @@ gefenia03.gat,58,26,0	warp	gefeniawarp011	1,1,gefenia04.gat,33,270
 gefenia04.gat,33,273,0	warp	gefeniawarp012	1,1,gefenia03.gat,58,29
 gefenia04.gat,287,95,0	warp	gefeniawarp013	1,1,gefenia01.gat,40,103
 gefenia01.gat,37,103,0	warp	gefeniawarp014	1,1,gefenia04.gat,283,95
+gefenia01.gat,61,169,0	warp	gefeniawarp015	1,1,gef_dun03.gat,137,117
 
