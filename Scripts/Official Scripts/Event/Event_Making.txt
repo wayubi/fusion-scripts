@@ -45,6 +45,9 @@
 // - Young Man -> payon_in01: 122,41
 //   Give information and make Angel Helm and Deviruchi Hat
 //
+// - Zic -> alberta: 120,53
+//   Give information and make BaoBao, Crescent Hairpin, Fashion Glasses and Heart Hairpin
+//
 //========================================================================================
 
 payon_in01.gat,103,111,4	script	"Granny"	103,{
@@ -1154,4 +1157,137 @@ L_START_1:
 	mes "[Tempestra]";
 	mes "Umm excuse me...where is the potion?";
 	close;	
+}
+alberta.gat,120,53,4	script	"Stylist Merchant"	51,{
+	mes "[Zic]";
+	mes "Yay~ cool breeze!! That's why I";
+	mes "love the sea all the time!";
+	mes "Hum?...Do you have any business";
+	mes "with me?";
+	mes "You came to me because I'm a";
+	mes "merchant right??";
+	next;
+	mes "[Zic]";
+	mes "Ok.. I get tired of my reputation.";
+	mes "Ok.Ok I can't have any peace or";
+	mes "rest around here...";
+	next;
+	mes "[Zic]";
+	mes "What do you wanna get? again?";
+	mes "Tell me~Tell me~~ It's so easy to";
+	mes "guess what you want~~!!";
+	next;
+	menu "Bao Bao",L_MENU_1,"Crescent Hairpin",L_MENU_2,"Fashionable Glasses",L_MENU_3,"Heart Hairpin",L_MENU_4;
+	close;
+L_MENU_1:
+	checkitem 10007,1,-,L_SUB_1_1;
+	checkitem 968,50,-,L_SUB_1_1;
+	mes "[Zic]";
+	mes "Wow!! Well done! Finally you have gathered all items needed!";
+	mes "We will make the Bao Bao for you right away.";
+	next;
+	delitem 10007,1;
+	delitem 969,50;
+	additem 5042,1;
+	mes "[Zic]";
+	mes "Tah Dah!!!^FF0000DBao Bao^000000.. Please Take it!
+	close;
+L_SUB_1_1:
+	mes "[Zic]";
+	mes "Oh you already know what I create!";
+	mes "Ha ha!!";
+	mes "Hum~~ tell me where did you heard";
+	mes "about this?";
+	next;
+	mes "[Zic]";
+	mes "Bao Bao requires~~";
+	next;
+	mes "[Zic]";
+	mes "Silk Ribbon 1";
+	mes "Heroic Emblem 50";
+	mes "...Did you know this already?";
+	close;
+L_MENU_2:
+	checkitem 5041,1,-,L_SUB_2_1;
+	checkitem 999,10,-,L_SUB_2_1;
+	mes "[Zic]";
+	mes "Wow!! Well done! Finally you have gathered all items needed!";
+	mes "We will make the Crescent Moon Hairpin for you right away.";
+	next;
+	delitem 5041,1;
+	delitem 999,10;
+	additem 5048,1;
+	mes "[Zic]";
+	mes "Tah Dah!!!^FF0000Crescent Moon Hairpin^000000...! Please Take it!";
+	close;
+L_SUB_2_1:
+	mes "[Zic]";
+	mes "Oh you already know what I create!";
+	mes "Ha ha!!";
+	mes "Hum~~ tell me where did you heard";
+	mes "about this?";
+	next;
+	mes "[Zic]";
+	mes "Cresent Hairpin requires~";
+	next;
+	mes "[Zic]";
+	mes "Heart Hairpin 1";
+	mes "Steel 10";
+	mes "...Did you know this already?";
+	close;
+L_MENU_3:
+	checkitem 2271,1,-,L_SUB_3_1;
+	checkitem 975,1,-,L_SUB_3_1;
+	mes "[Zic]";
+	mes "Wow!! Well done! Finally you have gathered all items needed!";
+	mes "We will make the Fashion Sunglasses for you right away.";
+	next;
+	delitem 2271,1;
+	delitem 975,1;
+	additem 5047,1;
+	mes "[Zic]";
+	mes "Tah Dah!!!^FF0000Fashion Sunglasses^000000...! Please Take it!";
+	close;
+L_SUB_3_1:
+	mes "[Zic]";
+	mes "Oh you already know what I create!";
+	mes "Ha ha!!";
+	mes "Hum~~ tell me where did you heard";
+	mes "about this?";
+	next;
+	mes "[Zic]";
+	mes "Fashionable Glasses requires!";
+	next;
+	mes "[Zic]";
+	mes "Jack a Dandy 1";
+	mes "Scarlet Dyestuffs 1";
+	mes "...Did you know this already?";
+	close;
+L_MENU_4:
+	checkitem 7013,1200,-,L_SUB_4_1;
+	mes "[Zic]";
+	mes "Wow!! Well done! Finally you have gathered all items needed!";
+	mes "We will make the Heart Hairpin for you right away.";
+	next;
+	delitem 7013,1200;
+	additem 5041,1;
+	mes "[Zic]";
+	mes "Tah Dah!!!^FF0000Heart Hairpin^000000...! Please Take it!";
+	close;
+L_SUB_4_1:
+	mes "[Zic]";
+	mes "Oh you already know what I create!";
+	mes "Ha ha!!";
+	mes "Hum~~ tell me where did you heard";
+	mes "about this?";
+	next;
+	mes "[Zic]";
+	mes "Heart Hairpin requires!";
+	next;
+	mes "[Zic]";
+	mes "Simple! ignorant item?! (Do You";
+	mes "like it? sure~~)";
+	mes "Coral Reef 1200";
+	mes "...Did you know this already?";
+	close;
 }
