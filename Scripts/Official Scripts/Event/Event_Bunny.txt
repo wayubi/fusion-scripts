@@ -1,11 +1,29 @@
-//----------------------------------------------------------------------------------------
-// Bunny Band NPC - From Weiss, translated by GTO, some corrections by Hylysi
-// eWeiss Project 2003 - http://revolve.emuxhaven.net/weiss/
-//----------------------------------------------------------------------------------------
+//========================================================================================
+// »» The Fusion Project ««
+// Copyright (c) 2004, Cobax Information Systems
+// http://fusion.cobax.net/
+// ---------------------------------------------------------------------------------------
+//
+// Bunny Band Quests - Non Player Character Locations
+//
+// - Kafra Employee -> prontera: 147,172
+//   Give informations and make Bunny Band.
+//
+// - Kafra Employee -> geffen: 116,62
+//   Give informations and make Bunny Band.
+//
+// - Kafra Employee -> morocc: 154,97
+//   Give informations and make Bunny Band.
+//
+// - Kafra Employee -> alberta: 26,229
+//   Give informations and make Bunny Band.
+//
+// - Kafra Employee -> payon: 97,116
+//   Give informations and make Bunny Band.
+//
+//========================================================================================
 
-[Kafra - prontera]
-
-prontera.gat,147,172,6	script	Kafra	83,{
+prontera.gat,147,172,6	script	"Kafra Employee"	83,{
 	check KAFRA_XMAS == 0,-,L_START_1;
 		mes "[Kafra]";
 		mes "^529DFFSpecial Festival, ^FF0000Bunny Band ^529DFFquest!!^000000";
@@ -92,9 +110,7 @@ prontera.gat,147,172,6	script	Kafra	83,{
 			close;
 }
 
-//[Kafra - geffen]
-
-geffen.gat,116,62,2	script	Kafra	83,{
+geffen.gat,116,62,2	script	"Kafra Employee"	83,{
 	check KAFRA_XMAS == 0,-,L_START_1;
 		mes "[Kafra]";
 		mes "^529DFFSpecial Festival, ^FF0000Bunny Band ^529DFFquest!!^000000";
@@ -181,9 +197,7 @@ geffen.gat,116,62,2	script	Kafra	83,{
 			close;
 }
 
-//[Kafra - morocc]
-
-morocc.gat,154,97,4	script	Kafra	83,{
+morocc.gat,154,97,4	script	"Kafra Employee"	83,{
 	check KAFRA_XMAS == 0,-,L_START_1;
 		mes "[Kafra]";
 		mes "^529DFFSpecial Festival, ^FF0000Bunny Band ^529DFFquest!!^000000";
@@ -270,9 +284,7 @@ morocc.gat,154,97,4	script	Kafra	83,{
 			close;
 }
 
-//[Kafra - alberta]
-
-alberta.gat,26,229,0	script	Kafra	83,{
+alberta.gat,26,229,0	script	"Kafra Employee"	83,{
 	check KAFRA_XMAS == 0,-,L_START_1;
 		mes "[Kafra]";
 		mes "^529DFFSpecial Festival, ^FF0000Bunny Band ^529DFFquest!!^000000";
@@ -359,9 +371,7 @@ alberta.gat,26,229,0	script	Kafra	83,{
 			close;
 }
 
-//[Kafra - payon]
-
-payon.gat,97,116,4	script	Kafra	83,{
+payon.gat,97,116,4	script	"Kafra Employee"	83,{
 	check KAFRA_XMAS == 0,-,L_START_1;
 		mes "[Kafra]";
 		mes "^529DFFSpecial festival, ^FF0000Bunny Band ^529DFFquest!!^000000";
