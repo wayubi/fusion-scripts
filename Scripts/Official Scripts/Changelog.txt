@@ -1,6 +1,7 @@
 --------------------------------------------------------------------------------
  Fusion 1.213 - August 29th, 2004
 -------------------------------------------------------------------------------- 
+- 11-11-04: Job\Job_2-1\Job2_Priest.txt - Official Priest Quest done. [Tsusai]
 - 11-06-04: Mob\dungeon\ayo_dun.txt - Added ayothaya mob spawns doesn't show correct sprites with current exe. [Muad_Dib]
 - 11-06-04: Mob\field\ayo_fild.txt - Added ayothaya mob spawns doesn't show correct sprites with current exe. [Muad_Dib]
 - 11-06-04: Job\Job_1\Job1_Acolyte.txt - Added Priest Quest checks for in the future. [Muad_Dib]
