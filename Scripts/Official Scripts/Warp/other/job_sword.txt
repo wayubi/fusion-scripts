@@ -1,0 +1,19 @@
+//========================================================================================
+// »» The Fusion Project ««
+// Copyright (c) 2004, Cobax Information Systems
+// http://fusion.cobax.net/
+// ---------------------------------------------------------------------------------------
+//
+// Swordman Quest - Non Player Character Locations
+//
+// - Warps -> job_sword1: ALL
+//
+// ---------------------------------------------------------------------------------------
+job_sword1.gat,193,244,0	warp	sword0	1,1,job_sword1.gat,216,243
+job_sword1.gat,193,206,0	warp	sword1	1,1,job_sword1.gat,216,205
+job_sword1.gat,224,244,0	warp	sword1-1	1,1,job_sword1.gat,10,206
+job_sword1.gat,193,168,0	warp	sword2	1,1,job_sword1.gat,216,167
+job_sword1.gat,214,243,0	warp	sword3	1,1,job_sword1.gat,191,244
+job_sword1.gat,224,206,0	warp	sword3-1	1,1,job_sword1.gat,10,169
+job_sword1.gat,214,205,0	warp	sword4	1,1,job_sword1.gat,191,206
+job_sword1.gat,214,167,0	warp	sword5	1,1,job_sword1.gat,191,168

@@ -9,6 +9,14 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.003
 ----------------------------------------------------------------------------------------------------
+- Job\Job1_Thief.txt - Added theif quest. [Storm_Queenie]
+- Job\Job1_Swordman.txt - Added swordmen quest. [Storm_Queenie]
+- Job\Job1_Magician.txt - Added magician quest. [Storm_Queenie]
+- Job\Job1_Archer.txt - Added archer quest. [Storm_Queenie]
+- Job\Job1_Acolyte.txt - Added acolyte quest. [Storm_Queenie]
+- Event\Event_Solution.txt - Moved to magician quest. [Storm_Queenie]
+- NPC\npc_bookshelf.txt - Moved to magician quest. [Storm_Queenie]
+- Warp\other\job_sword.txt - Swordmen quest warps. [Storm_Queenie]
 - NPC\npc_skill_get.txt - Translated more platinum skills. [mudvayne]
 - Event\Event_Rental.txt - Finished officialise script. [mudvayne]
 - Event\Event_MrSmile.txt - Finished officialise script. [mudvayne]
