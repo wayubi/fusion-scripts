@@ -7,7 +7,7 @@
 // Dragon Boat Festival Event - Non Player Character Locations
 //
 // - Master Fahae -> payon: 93,79
-//   Sells Realgar Wine and Exorsize Herb.
+//   Exorcist npc that sells Realgar Wine and Exorsize Herbs.
 //
 //========================================================================================
 
@@ -60,7 +60,7 @@ L_Wine:
 	goto L_InputW;
 L_Herb:
 	mes "[Exorcist Master Fahae]";
-      mes "Exorcize Herb increases magic power";
+      mes "Exorcize Herbs increases magic power";
       mes "for a period of time.";
       mes "How many do you want?";
 	next;
@@ -114,7 +114,7 @@ L_InputH:
          input @num;
          check @num = 0,L_Cancel,-;
 	mes "[Exorcist Master Fahae]";
-      mes "So you need $[@num] Exorcize Herb?";
+      mes "So you need $[@num] Exorcize Herbs?";
       mes "It's very effective you know...";
       mes "Are you sure you need that much?";
       next;
