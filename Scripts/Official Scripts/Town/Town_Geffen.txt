@@ -3,7 +3,7 @@
 // for translating to english first (i corrected grammar and made it work)
 //----------------------------------------------------------------------
 
-geffen.gat,59,143,0	script	Lady	91,{
+geffen.gat,59,143,0	script	"Lady"	91,{
 	mes "[Womankind]";
 	mes "Oh, you must be a stranger here. Welcome to Geffen, the city of magic. You must be very tired, aren't you? Why don't you eat some Honey? It will relieve you of your fatigue~";
 	mes "Hornets, the Bee family living in Grassland, gather Honey at the queen bee's Command, for Their entire life. Honey is very sweet and of high nutritive value, so it is the one of high-priced articles.";
@@ -51,9 +51,9 @@ geffen.gat,147,26,0	script	"Young man"	97,{
 	close;
 }
 
-geffen.gat,111,48,0	script	Womankind	101,{
+geffen.gat,111,48,0	script	"Womankind"	101,{
 	mes "[Womankind]";
-	mes "Good Day, adventurer? Have you ever happened to see Orcs, the demi-muman tribe?";
+	mes "Good Day, adventurer? Have you ever happened to see Orcs, the demi-human tribe?";
 	mes "When you go down to the Southward from here, in the deep forest, you will meet Orcs.";
 	next;
 	mes "[Womankind]";
@@ -76,7 +76,7 @@ geffen_in.gat,34,170,0	script	"Young man"	47,{
 	close;
 }
 
-geffen_in.gat,110,172,0	script	Christopher	63,{
+geffen_in.gat,110,172,0	script	"Christopher"	63,{
 	mes "[Christopher Guillenrow]";
 	mes "Welcome to Christopher's Workshop.";
 	mes "You can get every item to forge here.";
@@ -259,4 +259,3 @@ geffen_in.gat,110,172,0	script	Christopher	63,{
 		mes "Feel free to come anytime whenever you need, farewell.";
 		close;
 }
-
