@@ -2520,6 +2520,7 @@ JobMerQ2Cont1:
 	checkitem 1072,1,DevMsg,-;
 	goto DevMsgCont;
 DevMsg:
+	next;
 	menu "This is from Mr. Mahnsoo...",M1;
 M1:
 	set message = 2;
