@@ -27,9 +27,6 @@
 // - Marvin -> prt_in: 177,18
 //   Talks about skill levels.
 //
-// - Man -> prontera: 101,288
-//   Talks about porings and poporings.
-//
 // - Girl -> prontera: 106,116
 //   Talks about a family picnick.
 //
@@ -331,17 +328,6 @@ prt_in.gat,177,18,2 script "Marvin"	80,{
 	mes "[Marvin]";
 	mes "Therefore, don't just go ahead and learn anything either. Collect some information about skills and plan ahead.";
 	mes "That way, you can use your valuable skill points very wisely without wasting any.";
-	close;
-}
-
-prontera.gat,101,288,3 script	"Man"	98,{
-	mes "[Man]";
-	mes "There are pink colored monsters: ^000077Poring^000000 outside the town";
-	mes "They're cute, and don't attack people, but they like to eat whatever that's on the ground.";
-	next;
-	mes "[Man]";
-	mes "It's kinda troublesome to have your stuff stolen by them, but good thing is that they are very weak,";
-	mes "There are green colored version call ^000077Poporings^000000, it's much stronger than Porings, so if you're a novice, you better be careful.";
 	close;
 }
 

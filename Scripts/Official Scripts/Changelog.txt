@@ -1,6 +1,11 @@
 --------------------------------------------------------------------------------
  Fusion 1.213 - August 29th, 2004
 --------------------------------------------------------------------------------
+- 09-16-04: Town\Town_Prontera.txt - Removed duplicate npc. [Muad_Dib]
+- 09-16-04: Town\Town_Izlude.txt - Removed old jawaii warp option. [Muad_Dib]
+- 09-16-04: Town\Town_Jawaii.txt - Added Japanese jawaii. [Muad_Dib]
+- 09-16-04: Town\Town_Kafra.txt - Removed Town_kafra. [Muad_Dib]
+- 09-16-04: Town\kafra\xxxx_Kafra.txt - Added Kafras in seperate scripts. [Muad_Dib]
 - 09-14-04: Mob\other\jawaii_mob.txt - forgot to add ,0. [Muad_Dib]
 - 09-14-04: Warp\other\valkyrie.txt - Updated with jathena warps. [Muad_Dib]
 - 09-14-04: Mob\other\jawaii_mob.txt - Added jathena mobs. [Muad_Dib]
