@@ -22,6 +22,8 @@
 //   payg_cas04.gat,250,270
 //   payg_cas05.gat,60,230
 //
+//   gefg_cas02.gat,70,143
+//
 //========================================================================================
 
 prtg_cas01.gat,95,32,0	script	"CastleCheck"	-1,{
@@ -951,5 +953,380 @@ KAFRA:
 	enablenpc "payg_cas05","Kafra Service",0;
 FIN:
 	enablenpc "payg_cas05","CastleCheck",0;
+	return;
+}
+
+
+gefg_cas01.gat,34,140,0	script	"GuardianRecaller"	-1,{
+OnInit:
+	guildreg "gefg_cas01";
+	check guildkafra == 0,-,FIN;
+	enablenpc "gefg_cas01","Kafra Service",0;
+	check guildid == 0,-,GD0;
+	goto FIN;
+GD0:
+	set @GD = 0;
+	getguardstatus @GD,@NSTATUS;
+	check @NSTATUS == 0,GD1,-;
+	callguard @GD;
+	goto GD1;
+GD1:
+	set @GD = 1;
+	getguardstatus @GD,@NSTATUS;
+	check @NSTATUS == 0,GD2,-;
+	callguard @GD;
+	goto GD2;
+GD2:
+	set @GD = 2;
+	getguardstatus @GD,@NSTATUS;
+	check @NSTATUS == 0,GD3,-;
+	callguard @GD;
+	goto GD3;
+GD3:
+	set @GD = 3;
+	getguardstatus @GD,@NSTATUS;
+	check @NSTATUS == 0,GD4,-;
+	callguard @GD;
+	goto GD4;
+GD4:
+	set @GD = 4;
+	getguardstatus @GD,@NSTATUS;
+	check @NSTATUS == 0,GD5,-;
+	callguard @GD;
+	goto GD5;
+GD5:
+	set @GD = 5;
+	getguardstatus @GD,@NSTATUS;
+	check @NSTATUS == 0,GD6,-;
+	callguard @GD;
+	goto GD6;
+GD6:
+	set @GD = 6;
+	getguardstatus @GD,@NSTATUS;
+	check @NSTATUS == 0,GD7,-;
+	callguard @GD;
+	goto GD7;
+GD7:
+	set @GD = 7;
+	getguardstatus @GD,@NSTATUS;
+	check @NSTATUS == 0,FIN,-;
+	callguard @GD;
+	goto FIN;
+FIN:
+	enablenpc "gefg_cas01","GuardianRecaller",0;
+	return;
+}
+
+gefg_cas02.gat,70,143,0	script	"GuardianRecaller"	-1,{
+OnInit:
+	guildreg "gefg_cas02";
+	check guildkafra == 0,-,FIN;
+	enablenpc "gefg_cas02","Kafra Service",0;
+	check guildid == 0,-,GD0;
+	goto FIN;
+GD0:
+	set @GD = 0;
+	getguardstatus @GD,@NSTATUS;
+	check @NSTATUS == 0,GD1,-;
+	callguard @GD;
+	goto GD1;
+GD1:
+	set @GD = 1;
+	getguardstatus @GD,@NSTATUS;
+	check @NSTATUS == 0,GD2,-;
+	callguard @GD;
+	goto GD2;
+GD2:
+	set @GD = 2;
+	getguardstatus @GD,@NSTATUS;
+	check @NSTATUS == 0,GD3,-;
+	callguard @GD;
+	goto GD3;
+GD3:
+	set @GD = 3;
+	getguardstatus @GD,@NSTATUS;
+	check @NSTATUS == 0,GD4,-;
+	callguard @GD;
+	goto GD4;
+GD4:
+	set @GD = 4;
+	getguardstatus @GD,@NSTATUS;
+	check @NSTATUS == 0,GD5,-;
+	callguard @GD;
+	goto GD5;
+GD5:
+	set @GD = 5;
+	getguardstatus @GD,@NSTATUS;
+	check @NSTATUS == 0,GD6,-;
+	callguard @GD;
+	goto GD6;
+GD6:
+	set @GD = 6;
+	getguardstatus @GD,@NSTATUS;
+	check @NSTATUS == 0,GD7,-;
+	callguard @GD;
+	goto GD7;
+GD7:
+	set @GD = 7;
+	getguardstatus @GD,@NSTATUS;
+	check @NSTATUS == 0,FIN,-;
+	callguard @GD;
+	goto FIN;
+FIN:
+	enablenpc "gefg_cas02","GuardianRecaller",0;
+	return;
+}
+
+gefg_cas03.gat,60,286,0	script	"GuardianRecaller1"	-1,{
+OnInit:
+	guildreg "gefg_cas03";
+	check guildkafra == 0,-,FIN;
+	enablenpc "gefg_cas03","Kafra Service",0;
+	check guildid == 0,-,GD0;
+	goto FIN;
+GD0:
+	set @GD = 0;
+	getguardstatus @GD,@NSTATUS;
+	check @NSTATUS == 0,GD1,-;
+	callguard @GD;
+	goto GD1;
+GD1:
+	set @GD = 1;
+	getguardstatus @GD,@NSTATUS;
+	check @NSTATUS == 0,GD2,-;
+	callguard @GD;
+	goto GD2;
+GD2:
+	set @GD = 2;
+	getguardstatus @GD,@NSTATUS;
+	check @NSTATUS == 0,GD3,-;
+	callguard @GD;
+	goto GD3;
+GD3:
+	set @GD = 3;
+	getguardstatus @GD,@NSTATUS;
+	check @NSTATUS == 0,GD4,-;
+	callguard @GD;
+	goto GD4;
+GD4:
+	set @GD = 4;
+	getguardstatus @GD,@NSTATUS;
+	check @NSTATUS == 0,GD5,-;
+	callguard @GD;
+	goto GD5;
+GD5:
+	set @GD = 5;
+	getguardstatus @GD,@NSTATUS;
+	check @NSTATUS == 0,GD6,-;
+	callguard @GD;
+	goto GD6;
+GD6:
+	set @GD = 6;
+	getguardstatus @GD,@NSTATUS;
+	check @NSTATUS == 0,GD7,-;
+	callguard @GD;
+	goto GD7;
+GD7:
+	set @GD = 7;
+	getguardstatus @GD,@NSTATUS;
+	check @NSTATUS == 0,FIN,-;
+	callguard @GD;
+	goto FIN;
+FIN:
+	enablenpc "gefg_cas03","GuardianRecaller",0;
+	enablenpc "gefg_cas03","GuardianRecaller3",0;
+	enablenpc "gefg_cas03","GuardianRecaller2",0;
+	enablenpc "gefg_cas03","GuardianRecaller1",0;
+	return;
+}
+
+
+gefg_cas03.gat,100,280,0	script	"GuardianRecaller2"	-1,{
+OnInit:
+	guildreg "gefg_cas03";
+	check guildkafra == 0,-,FIN;
+	enablenpc "gefg_cas03","Kafra Service",0;
+	check guildid == 0,-,GD0;
+	goto FIN;
+GD0:
+	set @GD = 0;
+	getguardstatus @GD,@NSTATUS;
+	check @NSTATUS == 0,GD1,-;
+	callguard @GD;
+	goto GD1;
+GD1:
+	set @GD = 1;
+	getguardstatus @GD,@NSTATUS;
+	check @NSTATUS == 0,GD2,-;
+	callguard @GD;
+	goto GD2;
+GD2:
+	set @GD = 2;
+	getguardstatus @GD,@NSTATUS;
+	check @NSTATUS == 0,GD3,-;
+	callguard @GD;
+	goto GD3;
+GD3:
+	set @GD = 3;
+	getguardstatus @GD,@NSTATUS;
+	check @NSTATUS == 0,GD4,-;
+	callguard @GD;
+	goto GD4;
+GD4:
+	set @GD = 4;
+	getguardstatus @GD,@NSTATUS;
+	check @NSTATUS == 0,GD5,-;
+	callguard @GD;
+	goto GD5;
+GD5:
+	set @GD = 5;
+	getguardstatus @GD,@NSTATUS;
+	check @NSTATUS == 0,GD6,-;
+	callguard @GD;
+	goto GD6;
+GD6:
+	set @GD = 6;
+	getguardstatus @GD,@NSTATUS;
+	check @NSTATUS == 0,GD7,-;
+	callguard @GD;
+	goto GD7;
+GD7:
+	set @GD = 7;
+	getguardstatus @GD,@NSTATUS;
+	check @NSTATUS == 0,FIN,-;
+	callguard @GD;
+	goto FIN;
+FIN:
+	enablenpc "gefg_cas03","GuardianRecaller",0;
+	enablenpc "gefg_cas03","GuardianRecaller1",0;
+	enablenpc "gefg_cas03","GuardianRecaller3",0;
+	enablenpc "gefg_cas03","GuardianRecaller2",0;
+	return;
+}
+
+gefg_cas03.gat,125,250,0	script	"GuardianRecaller2"	-1,{
+OnInit:
+	guildreg "gefg_cas03";
+	check guildkafra == 0,-,FIN;
+	enablenpc "gefg_cas03","Kafra Service",0;
+	check guildid == 0,-,GD0;
+	goto FIN;
+GD0:
+	set @GD = 0;
+	getguardstatus @GD,@NSTATUS;
+	check @NSTATUS == 0,GD1,-;
+	callguard @GD;
+	goto GD1;
+GD1:
+	set @GD = 1;
+	getguardstatus @GD,@NSTATUS;
+	check @NSTATUS == 0,GD2,-;
+	callguard @GD;
+	goto GD2;
+GD2:
+	set @GD = 2;
+	getguardstatus @GD,@NSTATUS;
+	check @NSTATUS == 0,GD3,-;
+	callguard @GD;
+	goto GD3;
+GD3:
+	set @GD = 3;
+	getguardstatus @GD,@NSTATUS;
+	check @NSTATUS == 0,GD4,-;
+	callguard @GD;
+	goto GD4;
+GD4:
+	set @GD = 4;
+	getguardstatus @GD,@NSTATUS;
+	check @NSTATUS == 0,GD5,-;
+	callguard @GD;
+	goto GD5;
+GD5:
+	set @GD = 5;
+	getguardstatus @GD,@NSTATUS;
+	check @NSTATUS == 0,GD6,-;
+	callguard @GD;
+	goto GD6;
+GD6:
+	set @GD = 6;
+	getguardstatus @GD,@NSTATUS;
+	check @NSTATUS == 0,GD7,-;
+	callguard @GD;
+	goto GD7;
+GD7:
+	set @GD = 7;
+	getguardstatus @GD,@NSTATUS;
+	check @NSTATUS == 0,FIN,-;
+	callguard @GD;
+	goto FIN;
+FIN:
+	enablenpc "gefg_cas03","GuardianRecaller",0;
+	enablenpc "gefg_cas03","GuardianRecaller1",0;
+	enablenpc "gefg_cas03","GuardianRecaller2",0;
+	enablenpc "gefg_cas03","GuardianRecaller3",0;
+	return;
+}
+
+
+gefg_cas03.gat,89,159,0	script	"GuardianRecaller"	-1,{
+OnInit:
+	guildreg "gefg_cas03";
+	check guildkafra == 0,-,FIN;
+	enablenpc "gefg_cas03","Kafra Service",0;
+	check guildid == 0,-,GD0;
+	goto FIN;
+GD0:
+	set @GD = 0;
+	getguardstatus @GD,@NSTATUS;
+	check @NSTATUS == 0,GD1,-;
+	callguard @GD;
+	goto GD1;
+GD1:
+	set @GD = 1;
+	getguardstatus @GD,@NSTATUS;
+	check @NSTATUS == 0,GD2,-;
+	callguard @GD;
+	goto GD2;
+GD2:
+	set @GD = 2;
+	getguardstatus @GD,@NSTATUS;
+	check @NSTATUS == 0,GD3,-;
+	callguard @GD;
+	goto GD3;
+GD3:
+	set @GD = 3;
+	getguardstatus @GD,@NSTATUS;
+	check @NSTATUS == 0,GD4,-;
+	callguard @GD;
+	goto GD4;
+GD4:
+	set @GD = 4;
+	getguardstatus @GD,@NSTATUS;
+	check @NSTATUS == 0,GD5,-;
+	callguard @GD;
+	goto GD5;
+GD5:
+	set @GD = 5;
+	getguardstatus @GD,@NSTATUS;
+	check @NSTATUS == 0,GD6,-;
+	callguard @GD;
+	goto GD6;
+GD6:
+	set @GD = 6;
+	getguardstatus @GD,@NSTATUS;
+	check @NSTATUS == 0,GD7,-;
+	callguard @GD;
+	goto GD7;
+GD7:
+	set @GD = 7;
+	getguardstatus @GD,@NSTATUS;
+	check @NSTATUS == 0,FIN,-;
+	callguard @GD;
+	goto FIN;
+FIN:
+	enablenpc "gefg_cas03","GuardianRecaller3",0;
+	enablenpc "gefg_cas03","GuardianRecaller1",0;
+	enablenpc "gefg_cas03","GuardianRecaller2",0;
+	enablenpc "gefg_cas03","GuardianRecaller",0;
 	return;
 }
