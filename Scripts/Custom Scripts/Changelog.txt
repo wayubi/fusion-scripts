@@ -9,6 +9,8 @@
 ----------------------------------------------------------------------------------------------------
  Fusion 1.212
 ----------------------------------------------------------------------------------------------------
+ - 06-03-04: Added 40z Prontera Hair Stylist script (ENG) - Hair Stylists\Ashley-40z.txt [Yun Qi]
+ - 06-05-04: Renamed Hair Stylists\Ashley.txt to Ashley-free.txt. [Yun Qi]
  - 06-05-04: Edited Hair Stylists\Ashley.txt - Major overhall. [Yun Qi]
  - 06-04-04: Removed all SPN scripts. [Yun Qi]
  - 06-04-04: Edited Hair Stylists\Ashley.txt - Corrected a spelling error. [Yun Qi]
