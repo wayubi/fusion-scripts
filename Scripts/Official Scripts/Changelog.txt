@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.002
 ----------------------------------------------------------------------------------------------------
+- Event\Event_MobTim.txt - Finished translating Shogo. [Tsusai]
 - GvG\npc_gflag.txt - Fixed next error command. [mudvayne]
 - Original\Original_Arena.txt - Moved to archive, not official. [mudvayne]
 - Event\Event_Making.txt - Moved berserk platinum skills to NPC/npc_skill_get.txt [mudvayne]
