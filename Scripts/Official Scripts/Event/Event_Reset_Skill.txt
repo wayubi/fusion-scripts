@@ -18,12 +18,13 @@ yuno.gat,138,187,6 script "Skill Resetter" 124,{
       next;
       menu "^3366CCInformation about Reset skills.^000000",L_Inf,"^CC3366Reset skills.^000000",L_Reset,"Nevermind",-;
       mes "[Skill Resetter]";
-      mes "Perhaps you are not yet ready for a Skill Reset."; 
+      mes "You know where to find me,";
+      mes "if you ever want a reset!!"; 
       close;
 L_Inf:
       mes "[Skill Resetter]";
-      mes "In order to Reset your Skills,";
-      mes "I will need 20000 Zeny.";
+      mes "A skills reset is going";
+      mes "to cost you 20.000 Zeny.";
       next;
       mes "[Skill Resetter]";
       mes "Oh yeah, one more thing!";
@@ -37,16 +38,18 @@ L_Reset:
          set zeny -= 20000;
       mes "[Skill Resetter]";
       mes "Allright, here we go.";
+      next;
          option 0,0;
          option 1,0;
          option 2,0;
          resetskill;
 	mes "[Reset Girl]";
-      mes "There we go, all finished, be more careful with your skills from here on.";
+      mes "There we go, all finished, be more";
+      mes " careful with your skills from here on.";
       close;
 L_Nzeny:
       mes "[Skill Resetter]";
-      mes "Hmm, it seems you don't have enough zeny."; 
+      mes "Hmm, it seems you don't have enough zeny!"; 
       close;
 L_Skillp:
       mes "[Skill Resetter]";
@@ -54,6 +57,6 @@ L_Skillp:
       close;
 L_Novice:
       mes "[Skill Resetter]";
-      mes "I am sorry but this service is not for the novice class!"; 
+      mes "I am sorry but this service is unavailable to novices!!"; 
       close;
 }
