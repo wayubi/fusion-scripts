@@ -12,7 +12,7 @@
 //   Bring items to obtain skill. Applicable jobs are Merchant, Blacksmith and Alchemist.
 //========================================================================================
 
-alberta.gat,232,106,6   script   Gershaun   57,{ 
+alberta.gat,232,106,6   script   "Gershaun"   57,6,6,{ 
 	check Job = 5,Lcheck,-; 
 	check Job = 10,LStart,-;
 	check Job = 18,LStart,-;
@@ -123,5 +123,12 @@ LStartTwice:
 	setskilllevel 0x99,1;
 	mes "[Gershaun]"; 
 	mes "You already have this skill implemented in your skilltree."; 
-	close; 
+	close;
+	return;
+OnTouch: 
+	mes "[Gershaun]"; 
+	mes "If it doesn't work, make it work.";
+	mes "If it doesn't work, make it work.";
+	mes "If it doesn't work, make it work.";
+	close;
 }

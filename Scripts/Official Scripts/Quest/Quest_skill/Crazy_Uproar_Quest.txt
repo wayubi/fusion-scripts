@@ -84,3 +84,10 @@ LStartTwice:
 	mes "I know."; 
 	close; 
 }
+
+alberta.gat,83,95,0 script "" 139,7,4,{ 
+	mes "[!?]"; 
+	mes "Muahahahahahahahahahahahaha!!"; 
+	mes "Pukakakakakakakakakakaka!"; 
+	close;
+}

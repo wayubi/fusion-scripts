@@ -1,6 +1,12 @@
 --------------------------------------------------------------------------------
  Fusion 1.213 - December ??th, 2004
 -------------------------------------------------------------------------------- 
+- 12-02-04: Event\Event_KafraP.txt - Changed Reward Sweet Potato with Carrots. [Muad_Dib]
+- 12-02-04: Quest\Quest_skill\Cart_Revolution.txt - Updated With OnTouch. [Muad_Dib]
+- 12-02-04: Quest\Quest_skill\Crazy_Uproar_Quest.txt - Updated with OnTouch. [Muad_Dib]
+- 12-02-04: Shop\xxxxxxxx.txt - Updated Prices and shop names. [Muad_Dib]
+- 12-02-04: Town\Town_Payon.txt - Upon entering the payon castle your equipment will now be removed. [Muad_Dib]
+- 12-02-04: Town\Guide\Aldebaran_Guide.txt - Rewrote the Guard. [Muad_Dib]
 - 12-01-04: Town\Town_Niflheim.txt - Updated with inputstr. [Muad_Dib]
 - 11-30-04: Town\Town_Niflheim.txt - Touchups. [Tsusai]
 - 11-30-04: Ontouch updates over various files. [Tsusai]

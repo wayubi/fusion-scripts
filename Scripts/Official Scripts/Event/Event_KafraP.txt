@@ -29,7 +29,7 @@ aldeba_in.gat,79,161,6	script	"Kafra Employee"	115,{
 	mes "^FF0000 $[KF_PIT] ^000000 points";
 	mes "Please choise from the following items";
 	next;
-	menu "100p = 7 Sweet Potato",L1_1,"200p = 15 Sweet Potato",L1_2,"300p = 25 Sweet Potato",L1_3,"400p = 35 Sweet Potato",L1_4,"500p = 50 Sweet Potato",L1_5,"600p = 60 Sweet Potato",L1_6,"700p = 75 Sweet Potato",L1_7,"800p = 85 Sweet Potato",L1_8,"900p = 100 Sweet Potato",L1_9,"1000p = Lottery Chance 1",L1_10,"Next Menu",LMenu2,"Cancel",LEnd2;
+	menu "100p = 7 Carrot",L1_1,"200p = 15 Carrot",L1_2,"300p = 25 Carrot",L1_3,"400p = 35 Carrot",L1_4,"500p = 50 Carrot",L1_5,"600p = 60 Carrot",L1_6,"700p = 75 Carrot",L1_7,"800p = 85 Carrot",L1_8,"900p = 100 Carrot",L1_9,"1000p = Lottery Chance 1",L1_10,"Next Menu",LMenu2,"Cancel",LEnd2;
 LMenu2:
 	menu "1100p = 7 Red Potion",L2_1,"1300p = 15 Red Potion",L2_2,"1500p = 25 Red Potion",L2_3,"1700p = 35 Red Potion",L2_4,"1900p = 50 Red Potion",L2_5,"2100p = 60 Red Potion",L2_6,"2300p = 75 Red Potion",L2_7,"2500p = 85 Red Potion",L2_8,"2800p = 100 Red Potion",L2_9,"3000p = Lottery Chance 2",L2_10,"Cancel",LEnd2;
 L1_1:
@@ -42,7 +42,7 @@ L1_1:
 	next;
 	menu "Trade",-,"Cancel",LEnd2;
 	set KF_PIT - 100,0;
-	additem 516,7;
+	additem 515,7;
 	goto LEnd1;
 L1_2:
 	check KF_PIT >= 200,-,LError;
@@ -54,7 +54,7 @@ L1_2:
 	next;
 	menu "Trade",-,"Cancel",LEnd2;
 	set KF_PIT - 200,0;
-	additem 516,15;
+	additem 515,15;
 	goto LEnd1;
 L1_3:
 	check KF_PIT >= 300,-,LError;
@@ -66,7 +66,7 @@ L1_3:
 	next;
 	menu "Trade",-,"Cancel",LEnd2;
 	set KF_PIT - 300,0;
-	additem 516,25;
+	additem 515,25;
 	goto LEnd1;
 L1_4:
 	check KF_PIT >= 400,-,LError;
@@ -78,7 +78,7 @@ L1_4:
 	next;
 	menu "Trade",-,"Cancel",LEnd2;
 	set KF_PIT - 400,0;
-	additem 516,35;
+	additem 515,35;
 	goto LEnd1;
 L1_5:
 	check KF_PIT >= 500,-,LError;
@@ -90,7 +90,7 @@ L1_5:
 	next;
 	menu "Trade",-,"Cancel",LEnd2;
 	set KF_PIT - 500,0;
-	additem 516,50;
+	additem 515,50;
 	goto LEnd1;
 L1_6:
 	check KF_PIT >= 600,-,LError;
@@ -102,7 +102,7 @@ L1_6:
 	next;
 	menu "Trade",-,"Cancel",LEnd2;
 	set KF_PIT - 600,0;
-	additem 516,60;
+	additem 515,60;
 	goto LEnd1;
 L1_7:
 	check KF_PIT >= 700,-,LError;
@@ -114,7 +114,7 @@ L1_7:
 	next;
 	menu "Trade",-,"Cancel",LEnd2;
 	set KF_PIT - 700,0;
-	additem 516,75;
+	additem 515,75;
 	goto LEnd1;
 L1_8:
 	check KF_PIT >= 800,-,LError;
@@ -126,7 +126,7 @@ L1_8:
 	next;
 	menu "Trade",-,"Cancel",LEnd2;
 	set KF_PIT - 800,0;
-	additem 516,85;
+	additem 515,85;
 	goto LEnd1;
 L1_9:
 	check KF_PIT >= 900,-,LError;
@@ -138,7 +138,7 @@ L1_9:
 	next;
 	menu "Trade",-,"Cancel",LEnd2;
 	set KF_PIT - 900,0;
-	additem 516,100;
+	additem 515,100;
 	goto LEnd1;
 L2_1:
 	check KF_PIT >= 1100,-,LError;
@@ -346,7 +346,7 @@ Lc1_4:
 	mes "[Kafra] Employee";
 	mes "Oh...  I'm sorry";
 	mes "4th prize";
-	mes "You got 100 ^00ff00sweet potatos^000000";
+	mes "You got 100 ^00ff00Carrots^000000";
 	next;
 	mes "[Kafra] Employee";
 	mes "Thank you for using the Special Reserve point service";

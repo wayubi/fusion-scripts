@@ -786,6 +786,21 @@ payon_in03.gat,92,157,4	script "Palace Guardsman" 708,{
 	close;
 }
 
+payon.gat,156,243,0 script "Weapon Strip" 139,3,4,{
+	mes "[Palace Guardsman]";
+	mes "This is the central palace of Payon.";
+	mes "Even though we open this place to the public";
+	mes "in obedience to the head of the tribe's order..";
+	mes "YOU must be orderly inside.";
+	next;
+	mes "[Palace Guardsman]";
+	mes "Besided we disarm your equipments";
+	mes "for the preservation of public peace.";
+		removeequipment;
+	mes "Please cooperate.";
+	close;
+}
+
 payon_in03.gat,107,157,4 script "Palace Guard Chief" 708,{
 	   check BaseLevel => 30,-,L_Less;
 	mes "[Palace Guard Chief]";
