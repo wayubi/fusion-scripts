@@ -489,7 +489,7 @@ L_MENU_8:
 	close;
 	return;
 }
-gefg_cas03.gat,267,287,0	script	" "	111,{
+gefg_cas03.gat,275,290,0	script	" "	111,{
 	mes " ";
 	mes "There is little switch over here would you like to pull the switch down?";
 	next;

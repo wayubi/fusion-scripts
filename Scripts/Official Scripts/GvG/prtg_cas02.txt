@@ -496,7 +496,7 @@ L_EXIT:
 	close;
 	return;
 }
-prtg_cas02.gat,206,228,0	script	" "	111,{
+prtg_cas02.gat,207,228,0	script	" "	111,{
 	mes " ";
 	mes "There is little switch over here would you like to pull the switch down?";
 	next;

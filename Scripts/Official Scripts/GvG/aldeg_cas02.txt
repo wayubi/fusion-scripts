@@ -480,7 +480,7 @@ L2:
 		close;
 }
 
-aldeg_cas02.gat,194,236,0	script	" "	111,{
+aldeg_cas02.gat,135,235,0	script	" "	111,{
 	mes " ";
 	mes "There is little switch over here would you like to pull the switch down?";
 	next;

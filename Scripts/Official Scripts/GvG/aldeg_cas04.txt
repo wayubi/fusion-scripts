@@ -479,7 +479,7 @@ L_MENU_8:
 	return;
 }
 
-aldeg_cas04.gat,79,15,0	script	" "	111,{
+aldeg_cas04.gat,83,17,0	script	" "	111,{
 	mes " ";
 	mes "There is little switch over here would you like to pull the switch down?";
 	next;

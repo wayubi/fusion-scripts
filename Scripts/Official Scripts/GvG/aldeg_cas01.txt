@@ -504,7 +504,7 @@ L_EXIT:
 	return;
 }
 
-aldeg_cas01.gat,123,223,0	script	" "	111,{
+aldeg_cas01.gat,119,227,0	script	" "	111,{
 	mes " ";
 	mes "There is little switch over here would you like to pull the switch down?";
 	next;
@@ -515,7 +515,7 @@ aldeg_cas01.gat,123,223,0	script	" "	111,{
 			close;
 }
 
-aldeg_cas01.gat,123,233,0	script	" "	111,{
+aldeg_cas01.gat,123,223,0	script	" "	111,{
 	mes " ";
 	mes "There is little switch over here would you like to pull the switch down?";
 	next;

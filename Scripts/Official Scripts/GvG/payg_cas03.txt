@@ -478,7 +478,7 @@ L_MENU_8:
 	return;
 }
 
-payg_cas03.gat,155,165,0	script	" "	111,{
+payg_cas03.gat,163,167,0	script	" "	111,{
 	mes " ";
 	mes "There is little switch over here would you like to pull the switch down?";
 	next;

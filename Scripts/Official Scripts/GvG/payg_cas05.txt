@@ -476,7 +476,7 @@ L_EXIT:
 	return;
 }
 
-payg_cas05.gat,153,129,0	script	" "	111,{
+payg_cas05.gat,161,137,0	script	" "	111,{
 	mes " ";
 	mes "There is little switch over here would you like to pull the switch down?";
 	next;

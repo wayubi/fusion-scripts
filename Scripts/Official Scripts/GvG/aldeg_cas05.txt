@@ -197,7 +197,7 @@ aldeg_cas05.gat,31,190,0	script	"Kafra Service"	117,{
 		close;
 }
 
-aldeg_cas05.gat,51,179,0	script	"Brimhemsen"	55,{
+aldeg_cas05.gat,51,177,0	script	"Brimhemsen"	55,{
 	guildreg "aldeg_cas05";
 	check guildid == 0,-,L_HASGUILD_1;
 	mes "[ Brimhemsen ]";
@@ -473,7 +473,7 @@ L_MENU_8:
 	return;
 }
 
-aldeg_cas05.gat,68,13,0	script	" "	111,{
+aldeg_cas05.gat,64,8,0	script	" "	111,{
 	mes " ";
 	mes "There is little switch over here would you like to pull the switch down?";
 	next;
