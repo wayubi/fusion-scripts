@@ -1,7 +1,86 @@
-//----------------------------------------------------------------------------------------
-// Aldebaranz Finished By: SilentDragon
+//========================================================================================
+// »» The Fusion Project ««
+// Copyright (c) 2004, Cobax Information Systems
+// http://fusion.cobax.net/
+// ---------------------------------------------------------------------------------------
+//
+// Alde Baran Town - Non Player Character Locations
+//
+// - Munster -> aldebaran: 113,70
+//   Inform players about item upgrade.
+//
+// - Smithing Guy -> aldebaran: 64,104
+//   Inform players about advanced item upgrade stats.
+//
+// - Young Man -> aldebaran: 49,93
+//   Say level 4 weapon exist.
+//
+// - Shell Gathering Lady -> aldebaran: 81,61
+//   Say information about sea shells.
+//
+// - Canal Boy -> aldebaran: 46,129
+//   Say history about alde baran canals.
+//
+// - Young Man -> aldebaran: 67,154
+//   Give information about mt. mjolnir and payon forest.
+//
+// - Slot Guy -> aldebaran: 90,170
+//   Give informations about item slots.
+//
+// - Pharcon Guy -> aldebaran: 117,181
+//   Give information about phracon.
+//
+// - Alchemy Guy -> aldebaran: 121,231
+//   Give small information about alchemist class and cards.
+//
+// - Little Kid -> aldebaran: 86,228
+//   Tell player history of is bebevang and inform about mt. mjolnir.
+//
+// - Insect Guy -> aldebaran: 159,242
+//   Say stuff about insect of mt. mjolnir.
+//
+// - RS125 -> aldeba_in: 232,241
+//   Tell player is sprinter history.
+//
+// - Horrible-looking Man -> aldeba_in: 223,121
+//   Say stuff about mercenary.
+//
+// - Nice-looking Man -> aldeba_in: 219,61
+//   Say stuff about the horrible-looking man.
+//
+// - Giddy Fellow -> aldeba_in: 152,48
+//   He's trying to find is chicken.
+//
+// - Master -> aldeba_in: 156,179
+//   Inform player sabout the Kafra warehouse.
+//
+// - Senorita -> aldebaran: 60,70
+//   She trying to find kafra warehouse and inform players about magnifiers.
+//
+// - Crane leg -> aldebaran: 93,80
+//   Tell players is last date.
+//
+// - Asian -> aldebaran: 180,46
+//   A tourist from payon.
+//
+// - Citizen -> aldebaran: 212,122
+//   Welcome players to Alde, and tell about the winged-poring.
+//
+// - Town Girl -> aldebaran: 146,124
+//   Say stuff about the Assassin Guild.
+//
+// - Soldier -> aldebaran: 139,63
+//   Aldeberan guide soldier.
+//
+// - Soldier -> aldebaran: 241,136
+//   Aldeberan guide soldier.
+//
+// - Bell Keeper A -> aldebaran: 146,136
+//   Tell players important informations about the clock tower and random warps.
+//
+//========================================================================================
 
-aldebaran.gat,113,70,4	script	Munster	48,{
+aldebaran.gat,113,70,4	script	"Munster"	48,{
 	mes "[Munster]";
 	mes "My family used to live in Geffen.";
 	mes "We moved to this town, Al De Baran, last winter.";
@@ -32,7 +111,6 @@ aldebaran.gat,113,70,4	script	Munster	48,{
 		mes "Usually for the armor class, they can be upgraded till +5.";
 		close;
 }
-
 aldebaran.gat,64,104,4	script	"Smithing Guy"	55,{
 	mes "[Quatro]";
 	mes "It has been rumored that famous blacksmith came to this town from Geffen...";
@@ -56,7 +134,6 @@ aldebaran.gat,64,104,4	script	"Smithing Guy"	55,{
 		mes "And 4 leveled equal to a 3 leveled one";
 		close;
 }
-
 aldebaran.gat,49,93,4	script	"Young Man"	83,{
 	mes "[Miller]";
 	mes "Did you know ?";
@@ -66,7 +143,6 @@ aldebaran.gat,49,93,4	script	"Young Man"	83,{
 	mes "Hmmm... of course they are rarely seen in the open market, But boss monsters drop them by low chance.";
 	close;
 }
-
 aldebaran.gat,81,61,4	script	"Shell Gathering Lady"	101,{
 	mes "[Joanne]";
 	mes "I like to go gathering shells to sea.";
@@ -96,7 +172,6 @@ aldebaran.gat,81,61,4	script	"Shell Gathering Lady"	101,{
 			mes "What a scary shell it is ..";
 			close;
 }
-
 aldebaran.gat,46,129,4	script	"Canal Boy"	97,{
 	mes "[Panama]";
 	mes "Al De Baran has been world-widely known as the City of canals,";
@@ -122,7 +197,6 @@ aldebaran.gat,46,129,4	script	"Canal Boy"	97,{
 			mes "is a kind of Canals.";
 			close;
 }
-
 aldebaran.gat,67,154,4	script	"Young Man"	98,{
 	mes "[Isenberg]";
 	mes "Mountain Mjolnir, Payon Forrest.";
@@ -173,7 +247,6 @@ aldebaran.gat,67,154,4	script	"Young Man"	98,{
 			mes "rather than Alberta Forrest.";
 			close;
 }
-
 aldebaran.gat,90,170,4	script	"Slot Guy"	47,{
 	mes "[Epthiel]";
 	mes "Some of Weapons or armors possess Slots within,";
@@ -196,7 +269,6 @@ aldebaran.gat,90,170,4	script	"Slot Guy"	47,{
 			mes "Please be attentive before you do.";
 			close;
 }
-
 aldebaran.gat,117,181,4	script	"Pharcon Guy"	48,{
 	mes "[Joy]";
 	mes "Lv 1 weapon the lowest grade needs a metal named 'Phracon' for the upgrade job.";
@@ -231,7 +303,6 @@ aldebaran.gat,117,181,4	script	"Pharcon Guy"	48,{
 			mes "I got aphracon dropped from Baby Wild Bore.";
 			close;
 }
-
 aldebaran.gat,121,231,4	script	"Alchemy Guy"	49,{
 	mes "[Chemirre]";
 	mes "Alchemist is one of 2nd Jobs that has been able to create jewelries out of several meterials from the Ancient age of Al De Baran.";
@@ -287,7 +358,6 @@ aldebaran.gat,121,231,4	script	"Alchemy Guy"	49,{
 			mes "You can assemble it into the armor you want.";
 			close;
 }
-
 aldebaran.gat,86,228,4	script	"Little Kid"	62,{
 	mes "[Bebe]";
 	mes "A while ago I went out for a walk toward Mt.Mjolnir, carrying 'Bebevang', a little hog with me.";
@@ -320,7 +390,6 @@ aldebaran.gat,86,228,4	script	"Little Kid"	62,{
 			mes "Most of beasts and insects never cause harm on human unless we attack first.";
 			close;
 }
-
 aldebaran.gat,159,242,4	script	"Insect Guy"	119,{
 	mes "[Stromme]";
 	mes "When you take a walk in the Mt. Mjolnir ...";
@@ -353,8 +422,7 @@ aldebaran.gat,159,242,4	script	"Insect Guy"	119,{
 			mes "Luckily that leech thingy is weak at sight, it worn't notice you go around a distance from it.";
 			close;
 }
-
-aldeba_in.gat,232,241,4	script	Žs–¯	48,{
+aldeba_in.gat,232,241,4	script	"RS125"	48,{
 	mes "[RS125]";
 	mes "Even if my first name is not humane or although my way of talking is not nice,";
 	mes "Don't be afraid of me.I am a warm-hearted person.";
@@ -398,7 +466,6 @@ aldeba_in.gat,232,241,4	script	Žs–¯	48,{
 			mes "After the championship of next year,Me and my brother are going to travel all over the world together.";
 			close;
 }
-
 aldeba_in.gat,223,121,4	script	"Horrible-looking Man"	63,{
 	mes "[Evil-Looking Guy]";
 	mes "Hey dude. Don't you think it's rude enough for a stranger to enter the other's house?";
@@ -446,7 +513,6 @@ aldeba_in.gat,223,121,4	script	"Horrible-looking Man"	63,{
 		mes "Don't forget to change thier wet tissues as well!!";
 		close;
 }
-
 aldeba_in.gat,219,61,4	script	"Nice-looking Man"	109,{
 	mes "[Good-Looking Guy]";
 	mes "Forget about the goofer living next door.";
@@ -458,7 +524,6 @@ aldeba_in.gat,219,61,4	script	"Nice-looking Man"	109,{
 	mes "Oh my godness!";
 	close;
 }
-
 aldeba_in.gat,152,48,4	script	"Giddy Fellow"	97,{
 	mes "[Giddy Fellow]";
 	mes "E..E..E..Emergenc----y!!!";
@@ -487,10 +552,7 @@ aldeba_in.gat,152,48,4	script	"Giddy Fellow"	97,{
 		mes " so my cute chicken is like a younger brother to me! SOB SOB SOB SOB";
 		close;
 }
-
-//--------------------Master-------------------
-
-aldeba_in.gat,156,179,4	script	Master	61,{
+aldeba_in.gat,156,179,4	script	"Master"	61,{
 	mes "[Master]";
 	mes "The head quarter of Kafra wearhouse is located at here,in Aldebaran.You hear that?";
 	mes "Young Kapra Ladies visit me from time to time,";
@@ -575,8 +637,7 @@ aldeba_in.gat,156,179,4	script	Master	61,{
 					mes "It's a c-c-crime!";
 					close;
 }
-
-aldebaran.gat,60,70,4	script	Senorita	69,{
+aldebaran.gat,60,70,4	script	"Senorita"	69,{
 	mes "[Senorita Sylvia]";
 	mes "I came all the way here from Prontera because I heard there is Kafra Main Office somewhere at the city of Al De Baran";
 	mes "B-B-But... sob";
@@ -604,7 +665,6 @@ aldebaran.gat,60,70,4	script	Senorita	69,{
 		mes "With a magnifier, you can simply acknowledge what kind of Equip Item you have even without Blacksmith in your party.";
 		close;
 }
-
 aldebaran.gat,93,80,4	script	"Crane leg"	48,{
 	mes "[Daniel]";
 	mes "With waterways everywhere, the city of Al De Baran is such a wonderful place.";
@@ -633,8 +693,7 @@ aldebaran.gat,93,80,4	script	"Crane leg"	48,{
 		mes "Whatever that means...";
 		close;
 }
-
-aldebaran.gat,180,46,4	script	Asian	88,{
+aldebaran.gat,180,46,4	script	"Asian"	88,{
 	mes "[Joo Jahk]";
 	mes "I am tourist from Payon, the city of forests..";
 	mes "It's very cool here...probably thanks to the waterways.";
@@ -663,8 +722,7 @@ aldebaran.gat,180,46,4	script	Asian	88,{
 		mes "Well, then excuse me..";
 		close;
 }
-
-aldebaran.gat,212,122,4	script	Citizen	97,{
+aldebaran.gat,212,122,4	script	"Citizen"	97,{
 	mes "[Gavin]";
 	mes "Welcome! We, townspeople of Al De Baran all welcome you . . . . .";
 	next;
@@ -688,7 +746,6 @@ aldebaran.gat,212,122,4	script	Citizen	97,{
 		mes "What's it like...?";
 		close;
 }
-
 aldebaran.gat,146,124,4	script	"Town Girl"	101,{
 	mes "[Nastasia]";
 	mes "Somewhere in the world there is a place called ^3355FF' Assassin Guild '^000000, teaching you how to assassinate a person without even the slightest trace.";
@@ -714,8 +771,7 @@ aldebaran.gat,146,124,4	script	"Town Girl"	101,{
 		mes "In order to fight against those kinds, you'll need ore DEX, right?";
 		close;
 }
-
-aldebaran.gat,139,63,4	script	Soldier	105,{
+aldebaran.gat,139,63,4	script	"Soldier"	105,{
 	mes "[Al De Baran Guard]";
 	mes "I am just any ordinary guard you could find in any other cityies!!";
 	mes "I am in charge of Service Guide of Al De Baran Garrison, and";
@@ -742,8 +798,7 @@ aldebaran.gat,139,63,4	script	Soldier	105,{
  mes "^FF5555+^000000 -> Chemical Acadamey (closed)"
 			close;
 }
-
-aldebaran.gat,241,136,4	script	Soldier	105,{
+aldebaran.gat,241,136,4	script	"Soldier"	105,{
 		mes "[Al De Baran Guard]";
 	mes "I am just any ordinary guard you could find in any other cityies!!";
 	mes "I am in charge of Service Guide of Al De Baran Garrison, and";
@@ -770,7 +825,6 @@ aldebaran.gat,241,136,4	script	Soldier	105,{
  mes "^FF5555+^000000 -> Chemical Acadamey (closed)"
 			close;
 }
-
 aldebaran.gat,146,136,4	script	"Bell Keeper A"	89,{
 	mes "[Bell Keeper]";
 	mes "Let me introduce myself, I am 'Monster A' the keeper of Al De Baran Clock Tower,in Committee of 'Heaven on Earth'.";

@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.002
 ----------------------------------------------------------------------------------------------------
+- Town\Town_Aldebaran.txt - Fixed missing " in npc names, translated some npc names, cleaned script. [mudvayne]
 - Town\Town_Amatsu.txt - Fixed missing " in npc names, cleaned script. [mudvayne]
 - GvG\*.txt - Updated Guild Base Flag names. [mudvayne]
 - GvG\*.txt - Updated the NPC's that warp you to the proper coordinates for the Master Room. [Tsusai]
