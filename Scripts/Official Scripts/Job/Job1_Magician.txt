@@ -5,14 +5,17 @@
 // ---------------------------------------------------------------------------------------
 //
 // Magician Quest - Non Player Character Locations
+// - Created by Storm_Queenie
+// - Grammar and Spell Check by Koori
+// - Fixed by FouLou
 //
-// - Mage Guildsman -> moc_prydb1: 39,129
-//   Gives Quest to Novice wanting to become thief.
+// - Mage Guildsman -> geffen_in: 164,124
+//   Gives Quest to Novice wanting to become Mage.
 //
 // - Mixing Machine -> geffen_in: 164,112
 //   Mixes Ingrediants for REQuired Potion, to finish Quest.
 //
-// - Ponka-Hontas -> moc_ruins: 91,150
+// - Ponka-Hontas -> moc_ruins: 101,125
 //   Gives Quest applicant Potion for 50z and empty test tube.
 //
 // - Dollshoi -> pay_arche: 122,100
@@ -36,8 +39,8 @@ geffen_in.gat,164,124,4	script	"Mage Guildsman"	123,{
 		check Mage_Quest >= 1,QUEST_DONE,-;
 		mes "Wanna be a Mage? Hmmm.....";
 		next;
-		check Gender == 0,FEMAIL,MALE;
-		FEMAIL:
+		check Gender == 0,FEMALE,MALE;
+		FEMALE:
 			mes "... Oh, what a Hot Babe you are~~ I like the type of Girl like you~";
 			goto CONTINUE;
 		MALE:
@@ -91,49 +94,133 @@ geffen_in.gat,164,124,4	script	"Mage Guildsman"	123,{
 		mes "Okay, Let's start to check...";
 		next;
 		mes "[Mage Guildsman]";
-		check Mage_Quest == 1,QD1,-;
-		check Mage_Quest == 2,QD2,-;
-		check Mage_Quest == 3,QD3,-;
-		check Mage_Quest == 4,QD4,EXIT;
-			NO_SOL:
-				mes "Where's the Solution I asked...? I can't check it out if you don't show me, can I?";
-				close;
+		check Mage_Mixed == 1,CONT,-;
+		set Mage_Mixed = 0;
+		mes "Where's the Solution I asked...? I can't check it out if you don't show me, can I?";
+		close;
+		CONT:
+			check Mage_Quest == 1,QD1,-;
+			check Mage_Quest == 2,QD2,-;
+			check Mage_Quest == 3,QD3,-;
+			check Mage_Quest == 4,QD4,EXIT;
 			QD1:
-				checkitem 1071,1,DONE,-;
+				checkitem 1071,1,DONE1,-;
 				mes "....... Darn it. This is not exactly what I asked. What you have to do is.....";
 				mes "Mix up the Mixed Solution No.1 and Bring back to me.";
-				mes "Try again.";
+				mes "I taking this messed solution from you, so you have to start mixing from the begining..." 
+				mes "I'm recommending you to try again...";
+				set Mage_Mixed = 0;
+				checkitem 1085,1,REMOVE2,-;
+				checkitem 1086,1,REMOVE3,-;
+				checkitem 1087,1,REMOVE4,-;
+				checkitem 1090,1,REMOVE5,-;
 				close;
 			QD2:
-				checkitem 1085,1,DONE,-;
+				checkitem 1085,1,DONE2,-;
 				mes "....... Darn it. This is not exactly what I asked. What you have to do is.....";
 				mes "Mix up the Mixed Solution No.2 and Bring back to me.";
-				mes "Try again.";
+				mes "I taking this messed solution from you, so you have to start mixing from the begining..." 
+				mes "I'm recommending you to try again...";
+				set Mage_Mixed = 0;
+				checkitem 1071,1,REMOVE1,-;
+				checkitem 1086,1,REMOVE3,-;
+				checkitem 1087,1,REMOVE4,-;
+				checkitem 1090,1,REMOVE5,-;
 				close;
 			QD3:
-				checkitem 1086,1,DONE,-;
+				checkitem 1086,1,DONE3,-;
 				mes "....... Darn it. This is not exactly what I asked. What you have to do is.....";
 				mes "Mix up the Mixed Solution No.3 and Bring back to me.";
-				mes "Try again.";
+				mes "I taking this messed solution from you, so you have to start mixing from the begining..." 
+				mes "I'm recommending you to try again...";
+				set Mage_Mixed = 0;
+				checkitem 1071,1,REMOVE1,-;
+				checkitem 1085,1,REMOVE2,-;
+				checkitem 1087,1,REMOVE4,-;
+				checkitem 1090,1,REMOVE5,-;
 				close;
 			QD4:
-				checkitem 1087,1,DONE,-;
+				checkitem 1087,1,DONE4,-;
 				mes "....... Darn it. This is not exactly what I asked. What you have to do is.....";
 				mes "Mix up the Mixed Solution No.4 and Bring back to me.";
-				mes "Try again.";
+				mes "I taking this messed solution from you, so you have to start mixing from the begining..." 
+				mes "I'm recommending you to try again...";
+				set Mage_Mixed = 0;
+				checkitem 1071,1,REMOVE1,-;
+				checkitem 1085,1,REMOVE2,-;
+				checkitem 1086,1,REMOVE3,-;
+				checkitem 1090,1,REMOVE5,-;
+				REMOVE1:
+					delitem 1071,1;
+				REMOVE2:
+					delitem 1085,1;
+				REMOVE3:
+					delitem 1086,1;
+				REMOVE4:
+					delitem 1087,1;
+				REMOVE5:
+					delitem 1090,1;
 				close;
-		DONE:
-			delitem 1071,1;
-			delitem 1085,1;
-			delitem 1086,1;
-			delitem 1087,1;
-			delitem 1090,1;
+		DONE1:
 			mes "..... Hmm. I can see how hard you tried. Although it is not perfect, but It will be fine.";
 			mes "Alright! You pass the Mage Test. I will promote you right away.";
 			next;
+			mes "[Mage Guildsman]";
 			mes "Ehem... Now you are one of us, the Mages.";
 			mes "I sincerely congratulate you.";
 			next;
+			delitem 1071,1;
+			set JobLevel = 1,0;
+			jobchange 2;
+			set Zeny += 50,0;
+			mes "[Mage Guildsman]";
+			mes "'Welcome to My World~'";
+      			mes "Quate from the Well-Known Movie. Heh heh,I just wanna try this~";
+			mes "Anyway, I congratulate you to join us. ~Let's be friends, Alright?~";
+			close;
+		DONE2:
+			mes "..... Hmm. I can see how hard you tried. Although it is not perfect, but It will be fine.";
+			mes "Alright! You pass the Mage Test. I will promote you right away.";
+			next;
+			mes "[Mage Guildsman]";
+			mes "Ehem... Now you are one of us, the Mages.";
+			mes "I sincerely congratulate you.";
+			next;
+			delitem 1085,1;
+			set JobLevel = 1,0;
+			jobchange 2;
+			set Zeny += 50,0;
+			mes "[Mage Guildsman]";
+			mes "'Welcome to My World~'";
+      			mes "Quate from the Well-Known Movie. Heh heh,I just wanna try this~";
+			mes "Anyway, I congratulate you to join us. ~Let's be friends, Alright?~";
+			close;
+		DONE3:
+			mes "..... Hmm. I can see how hard you tried. Although it is not perfect, but It will be fine.";
+			mes "Alright! You pass the Mage Test. I will promote you right away.";
+			next;
+			mes "[Mage Guildsman]";
+			mes "Ehem... Now you are one of us, the Mages.";
+			mes "I sincerely congratulate you.";
+			next;
+			delitem 1086,1;
+			set JobLevel = 1,0;
+			jobchange 2;
+			set Zeny += 50,0;
+			mes "[Mage Guildsman]";
+			mes "'Welcome to My World~'";
+      			mes "Quate from the Well-Known Movie. Heh heh,I just wanna try this~";
+			mes "Anyway, I congratulate you to join us. ~Let's be friends, Alright?~";
+			close;
+		DONE4:
+			mes "..... Hmm. I can see how hard you tried. Although it is not perfect, but It will be fine.";
+			mes "Alright! You pass the Mage Test. I will promote you right away.";
+			next;
+			mes "[Mage Guildsman]";
+			mes "Ehem... Now you are one of us, the Mages.";
+			mes "I sincerely congratulate you.";
+			next;
+			delitem 1087,1;
 			set JobLevel = 1,0;
 			jobchange 2;
 			set Zeny += 50,0;
@@ -183,6 +270,7 @@ EXIT:
 }
 
 geffen_in.gat,164,112,1	script	"Mixing Machine"	111,{
+	check Mage_Mixed == 1,BREAK1,-;
 	mes "[Mixing Machine]";
 	checkitem 1071,1,INVALID,-;
 	checkitem 1085,1,INVALID,-;
@@ -209,7 +297,7 @@ geffen_in.gat,164,112,1	script	"Mixing Machine"	111,{
 		checkitem 519,1,-,NO_MILK;
 		checkitem 1092,1,-,NO_TEST;
 		input @Num;
-			check @Num == 3735,INPUT1,-;
+			check @Num == 3735,INPUT2,-;
 			check @Num < 3735,FAIL2,-;
 			check @Num > 3735,FAIL2,EXIT;
 	SOL3:
@@ -218,7 +306,7 @@ geffen_in.gat,164,112,1	script	"Mixing Machine"	111,{
 		checkitem 1089,1,-,NO_SOLV;
 		checkitem 1092,1,-,NO_TEST;
 		input @Num;
-			check @Num == 2750,INPUT1,-;
+			check @Num == 2750,INPUT3,-;
 			check @Num < 2750,FAIL3,-;
 			check @Num > 2750,FAIL3,EXIT;
 	SOL4:
@@ -227,7 +315,7 @@ geffen_in.gat,164,112,1	script	"Mixing Machine"	111,{
 		checkitem 1088,1,-,NO_SOLV;
 		checkitem 1092,1,-,NO_TEST;
 		input @Num;
-			check @Num == 5429,INPUT1,-;
+			check @Num == 5429,INPUT4,-;
 			check @Num < 5429,FAIL4,-;
 			check @Num > 5429,FAIL4,EXIT;
 		INPUT1:
@@ -239,6 +327,7 @@ geffen_in.gat,164,112,1	script	"Mixing Machine"	111,{
 			delitem 519,1;
 			delitem 1089,1;
 			additem 1071,1;
+			set Mage_Mixed = 1;
 			mes "Mixing complete.";
 			close;
 		INPUT2:
@@ -249,6 +338,7 @@ geffen_in.gat,164,112,1	script	"Mixing Machine"	111,{
 			delitem 914,3;
 			delitem 519,1;
 			additem 1085,1;
+			set Mage_Mixed = 1;
 			mes "Mixing complete.";
 			close;
 		INPUT3:
@@ -259,6 +349,7 @@ geffen_in.gat,164,112,1	script	"Mixing Machine"	111,{
 			delitem 914,3;
 			delitem 1089,1;
 			additem 1086,1;
+			set Mage_Mixed = 1;
 			mes "Mixing complete.";
 			close;
 		INPUT4:
@@ -269,6 +360,7 @@ geffen_in.gat,164,112,1	script	"Mixing Machine"	111,{
 			delitem 914,3;
 			delitem 1088,1;
 			additem 1087,1;
+			set Mage_Mixed = 1;
 			mes "Mixing complete.";
 			close;
 	FAIL1:
@@ -277,6 +369,7 @@ geffen_in.gat,164,112,1	script	"Mixing Machine"	111,{
 		delitem 519,1;
 		delitem 1089,1;
 		additem 1090,1;
+		set Mage_Mixed = 1;
 		mes "Mixing complete.";
 		close;
 	FAIL2:
@@ -284,6 +377,7 @@ geffen_in.gat,164,112,1	script	"Mixing Machine"	111,{
 		delitem 914,3;
 		delitem 519,1;
 		additem 1090,1;
+		set Mage_Mixed = 1;
 		mes "Mixing complete.";
 		close;
 	FAIL3:
@@ -291,6 +385,7 @@ geffen_in.gat,164,112,1	script	"Mixing Machine"	111,{
 		delitem 914,3;
 		delitem 1089,1;
 		additem 1090,1;
+		set Mage_Mixed = 1;
 		mes "Mixing complete.";
 		close;
 	FAIL4:
@@ -298,13 +393,14 @@ geffen_in.gat,164,112,1	script	"Mixing Machine"	111,{
 		delitem 914,3;
 		delitem 1088,1;
 		additem 1090,1;
+		set Mage_Mixed = 1;
 		mes "Mixing complete.";
 		close;
 	NO_TEST:
 		mes "You don't have an empty testtube.";
 		close;	
 	NO_JEL:	
-		mes "Not enought jellopy.";
+		mes "Not enought jellopy's.";
 		close;
 	NO_FLUFF:
 		mes "Not enought Fluff.";
@@ -318,11 +414,16 @@ geffen_in.gat,164,112,1	script	"Mixing Machine"	111,{
 	INVALID:
 		mes "Please dispose of any mixed solutions in your inventory before initiating mixing process to prevent risk of wrong mixture.";
 		close;
+	BREAK1:
+	mes "[Mixing Machine]";
+	mes "Your mixing work already in my database (said machine).;"
+	mes "Go, and show your fusion to Mage Guildsman!;"
+	close;
 EXIT:
 	close;
 }
 
-moc_ruins.gat,91,150,5	script	"Ponka-Hontas"	93,{
+moc_ruins.gat,101,125,5	script	"Ponka-Hontas"	93,{
 	mes "[Mage Guildsman]";
 	mes "You want the Solution? Then give me 50 Zeny and at least 1 Empty Testube.";
 	next;
@@ -351,6 +452,8 @@ moc_ruins.gat,91,150,5	script	"Ponka-Hontas"	93,{
 				close;
 EXIT:
 	mes "[Mage Guildsman]";
+		mes "Than go away out of here!"
+		mes "And stop wasting my preceous time."
 		close;
 }
 
