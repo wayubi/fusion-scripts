@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.003
 ----------------------------------------------------------------------------------------------------
+- Event\Event_Rental.txt - Finished officialise script. [mudvayne]
 - Event\Event_MrSmile.txt - Finished officialise script. [mudvayne]
 
 
