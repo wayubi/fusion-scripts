@@ -9,13 +9,15 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.005
 ----------------------------------------------------------------------------------------------------
-- Job\Job2_Wizard.txt - Corrected a menu and set function. [Tsusai]
-- Mob\field\lou_fld.txt - Added Hatii Baby. 2004/05/21 [Muad_Dib via Tezuka]
-- Mob\dungeon\lou_dun.txt - Added Hatii Baby. 2004/05/21 [Muad_Dib via Tezuka]
-- Mob\field\xmas_fld.txt - Added Hatii Baby. 2004/05/21 [Muad_Dib via Tezuka]
-- Mob\dungeon\xmas_dun.txt - Added Hatii Baby. 2004/05/21 [Muad_Dib via Tezuka]
-- Mob\field\xmas_fld.txt - Added Hatii Baby. 2004/05/21 [Muad_Dib]
-- Mob\dungeon\xmas_dun.txt - Added Hatii Baby. 2004/05/21 [Muad_Dib]
+- 05-24-04: Town\Town_Siglude.txt - Turned my Weapon Research fix from 40 lines to 2. [Tsusai]
+- 05-24-04: Started Nicer Date Tracking. [Tsusai]
+- 05-23-04: Job\Job2_Wizard.txt - Corrected a menu and set function. [Tsusai]
+- 05-21-04: Mob\field\lou_fld.txt - Added Hatii Baby. [Muad_Dib via Tezuka]
+- 05-21-04: Mob\dungeon\lou_dun.txt - Added Hatii Baby. [Muad_Dib via Tezuka]
+- 05-21-04: Mob\field\xmas_fld.txt - Added Hatii Baby. [Muad_Dib via Tezuka]
+- 05-21-04: Mob\dungeon\xmas_dun.txt - Added Hatii Baby. [Muad_Dib via Tezuka]
+- 05-21-04: Mob\field\xmas_fld.txt - Added Hatii Baby. [Muad_Dib]
+- 05-21-04: Mob\dungeon\xmas_dun.txt - Added Hatii Baby. [Muad_Dib]
 - Town\Town_Guide.txt - Updated Comodo Guides. [Muad_Dib]
 - Town\Town_Kafra.txt - Updated Comodo Kafra. [Muad_Dib]
 - Town\Town_Comodo.txt - Updated Town Comodo. [Muad_Dib]
