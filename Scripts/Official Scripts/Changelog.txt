@@ -9,6 +9,8 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.004
 ----------------------------------------------------------------------------------------------------
+- Warp\guilds\*_gld.txt - Moved to archive. [Tsusai]
+- Warp\guilds\*_gld.txt - Warps moved into conjugate *_cas.txt files. [Tsusai]
 - Warp\npcs - Removed empty directory. [Tsusai]
 - Archive - Rearanged. [Tsusai]
 - Warp\npcs\Yuno_Random_Warps.txt -  Moved to archive. [Tsusai]
