@@ -18,10 +18,10 @@ prontera.gat,55,350,5	script	"Peco Breeder"	105,{
 	mes "[Peco Breeder]";
 	check Job == 7,L_START_2,-;
 	check Job == 14,-,L_START_1;
-	set @peco_price 3000;
+	set @peco_price = 3000;
 	goto L_START_2;
 L_START_2:
-	set @peco_price 2500;
+	set @peco_price = 2500;
 	goto L_START_2_1;
 L_START_2_1:
 		mes "Hello, want to buy a peco to ride on?";
