@@ -1667,7 +1667,7 @@ L_MENU_5:
 L_MENU_6:
 	checkitem 7047,100,-,L_ROOT_1;
 	delitem 7047,100;
-	aditem 5040,1;
+	additem 5040,1;
 	goto L_ROOT_2;
 L_MENU_7:
 	checkitem 539,120,-,L_ROOT_1;

@@ -9,6 +9,8 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.005
 ----------------------------------------------------------------------------------------------------
+- Event\Event_Making.txt - Fixed a additem error. [Muad_Dib]
+- Town\Town_amatsu.txt - Fixed a few mes errors. [Muad_Dib]
 - Town\Town_Alberta.txt - Updated Gotanblue NPC. [Muad_Dib]
 - Town\Town_Prontera.txt - Added missing guard [Muad_Dib]
 - Town\Town_Geffen.txt - Updated Town Geffen and fixed a next; command. [Muad_Dib]

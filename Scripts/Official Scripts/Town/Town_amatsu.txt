@@ -633,9 +633,9 @@ L_MENU_2:
 	close;
 L_MENU_3:
 	mes "[Guard Soldier]";
-	mes" Hey!";
-	mes" What's that sound!?";
-	mes" Where did it come from!?";
+	mes " Hey!";
+	mes " What's that sound!?";
+	mes " Where did it come from!?";
 	close;
 L_MENU_4:
 	mes "[Guard Soldier]";
