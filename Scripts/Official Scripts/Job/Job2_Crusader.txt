@@ -17,9 +17,6 @@
 // - Renalds -> prt_castle: 80,49
 //  The final battle - incomplete
 //
-// - Grand Peko Breeder -> prontera: 238,313
-//   Allows Crusader to ride a peko, for 3000z.
-//
 // - Still working on the quest...
 //
 //========================================================================================

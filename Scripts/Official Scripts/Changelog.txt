@@ -9,6 +9,10 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.003
 ----------------------------------------------------------------------------------------------------
+- Job\Job2_Crusader.txt - Deleted Grand Peko Breeder due to being obsolete with Event_Rental.txt. [Muad_Dib]
+- Job\Job2_Hunter.txt - Deleted Hunter Breeder due to being obsolete with Event_Rental.txt. [Muad_Dib]
+- Job\Job2_Knight.txt - Deleted Peco breeder due to being obsolete with Event_Rental.txt. [Muad_Dib]
+- Event\Event_Rental.txt - Added advanced 2nd job support and skill checks. [Muad_Dib]
 - Town\Town_Kafra.txt - deleted some extra codes for merchant quest. [nestor_zulueta] 
 - Town\Town_Siglude.txt - Corrected typo when looking for a bug this version doesn't seem to have. [Muad_Dib]
 - Job\Job_Newbie.txt - Fixed incorrect answers display. [Muad_Dib]

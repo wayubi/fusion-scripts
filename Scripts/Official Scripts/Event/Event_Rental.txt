@@ -1,123 +1,174 @@
 //========================================================================================
 // »» The Fusion Project ««
-// Copyright (c) 2004, Cobax Information Systems
-// http://fusion.cobax.net/
+// Copyright (c) 2003-2004, Cobax Information Systems
+//
 // ---------------------------------------------------------------------------------------
 //
 // Breeders - Non Player Character Locations
 //
 // - Peco Breeder -> prontera: 55,350
-//   Rent pecopeco to Knights and Crusaders.
+//   Rent PecoPeco to Knights and Lord Knights.
 //
 // - Falcon Breeder -> in_hunter: 146,99
-//   Rent falcon to Hunters.
+//   Rent Falcon to Hunters and Snipers.
 //
 // - Grand Peko Breeder -> prontera: 238,313
-//   Rent pecopeco to Crusaders.
+//   Rent Grand Peco to Crusaders and Paladins.
 //
 //========================================================================================
 
-prontera.gat,55,350,5	script	"Peco Breeder"	105,{
-	check Job == 7,-,L_START_1;
-	set @peco_price = 2500;
-	goto L_START_2_1;
-	L_START_2_1:
-		mes "[Peco Breeder]";
-		mes "Hello, want to buy a peco to ride on?";
-		next;
-		menu "Yes",-,"No",L_MENU_1;
-			check Zeny < @peco_price,-,L_SUB_1;
-			mes "[Peco Breeder]";
-			mes "Sorry, but you don't seem to have $[@peco_price]z on you, come back later.";
-			close;
-			L_SUB_1:
-				mes "[Peco Breeder]";
-				mes "You will! That’s good";
-				mes "Using a Peco won’t only make you look good but it will also make you move faster then walking.";
-				mes "The cost of using a Peco is $[@peco_price]z";
-				next;
-				menu "I'll take one!",-,"Maybe later",L_ROOT_1;
-					set Zeny -= @peco_price,0;
-					option 2,1;
-				L_ROOT_1:
-					mes "[Peco Breeder]";
-					mes "Thanks for stopping by";
-					close;
-		L_MENU_1:
-			mes "[Peco Breeder]";
-			mes "Ah well, have a good day then!";
-			close;
-	L_START_1:
-		mes "[Peco Breeder]";
-		mes "Sorry only Knights and Crusaders can ride a Pecos";
-		close;
-}
-in_hunter.gat,146,99,2	script	"Falcon Breeder"	105,{
-	check Job == 11,-,L_START_1;
-	mes "[Falcon Breeder]";
-	mes "Welcome, want a bird by your side young Hunter?";
-	next;
-	menu "Yes",-,"No",L_MENU_1;
-		check Zeny < 2500,-,L_SUB_1;
-		mes "[Falcon Breeder]";
-		mes "Sorry, but you don't seem";
-		mes "to have 2500z on you,";
-		mes "come back later.";
-		close;
-		L_SUB_1:
-			mes "[Falcon Breeder]";
-			mes "Say hello to your now best friend.";
-			mes "When you have a Falcon by your side you don’t just have a new friend with you.";
-			mes "You have a new ally";
-			mes "but it will cost you 2500z.";
-			next;
-			menu "I'll take one!",-,"Maybe later",L_ROOT_1;
-				set Zeny -= 2500,0;
-				option 1,1;
-			L_ROOT_1:
-			mes "[Falcon Breeder]";
-			mes "Thanks for stopping by";
-				close;
-		L_MENU_1:
-			mes "[Falcon Breeder]";
-			mes "Oki, have a nice day!";
-			close;
-	L_START_1:
-		mes "[Falcon Breeder]";
-		mes "Sorry only Hunters can have a Falcon";
-		close;
+prontera.gat,55,350,5 script "Peco Breeder" 105,{
+      set @peco_price = 2500;
+      mes "[Peco Breeder]";
+      mes "Hello, Do you want to Rent a Peco Peco to ride on?";
+      next;
+      menu "Yes",L_YES,"No",L_GDAY;
+      close;
+L_YES:
+      check Zeny < @peco_price,-,L_GET_PECO;
+	mes "[Peco Breeder]";
+	mes "Sorry, but you don't seem to have $[@peco_price]z on you, come back later.";
+	close;
+L_GET_PECO:
+      check Job == 7,L_BUY_PECO,-; 
+      check Job == 31,L_BUY_PECO,L_SONLY; 
+L_BUY_PECO:
+      mes "[Peco Breeder]";
+	mes "You will! That’s good.";
+	mes "Using a Peco won’t only make you look good but it will also make you move faster then walking.";
+	mes "The cost of using a Peco is $[@peco_price]z.";
+      next;
+	menu "I'll take one!",L_TAKE,"Maybe later",L_STOP;
+      close;
+L_TAKE:
+      getskilllevel 63,@skilllv_riding; 
+      check @skilllv_riding => 1,-,L_NO_SKILL;
+      set Zeny -= @peco_price,0;
+      option 2,1;
+      goto L_TAKEC;
+L_TAKEC:
+      mes "[Peco Breeder]";
+      mes "take care of your Peco Peco.";
+      close;
+L_STOP:
+     mes "[Peco Breeder]";
+     mes "Thanks for stopping by.";
+     close;
+L_GDAY:
+	mes "[Peco Breeder]";
+	mes "Ah well, have a good day then!";
+	close;
+L_SONLY:
+      mes "[Peco Breeder]";
+	mes "Sorry only Knights and Lord Knights can ride on Regular Peco's.";
+	close;
+L_NO_SKILL:
+      mes "[Peco Breeder]";
+	mes "Sorry you need the skill peco ride level 1 before you can master a Peco Peco.";
+      close;
 }
 
-prontera.gat,238,313,3	script	"Grand Peko Breeder"	105,{
-	check Job=14,-,L_noKnight;
-	mes "[Grand Peko Breeder]";
-	mes "So you wish to rent a Grand Peko huh?";
-	mes "It'll cost you 3000 zeny.";
-	next;
-	menu "Rent a Grand Peko",L_peko_yes,"No",L_peko_no;
-	L_peko_yes:
-		check Zeny >= 3000,-,L_peko_nomaney;
-		mes "[Grand Peko Breeder]";
-		mes "That will be 3000 zenys";
-		set Zeny - 3000;
-		next;
-		option 2,0;
-		option 2,1;
-		mes "[Grand Peko Breeder]";
-		mes "... and here is your PecoPeco.";
-		close;
-	L_peko_no:
-		mes "[Grand Peko Breeder]";
-		mes "Alright, continue on.";
-		close;
- L_peko_nomaney:
-  mes "[Grand Peko Breeder]";
-  mes "I'm sorry...";
-  mes "You don't have enough zeny.";
-  close;
-L_noKnight:
-  mes "[Grand Peko Breeder]";
-  mes "So you wish to ride a PecoPeco?";
-  mes "You can't ride a PecoPeco unless you are a Crusader.";
- close;
+in_hunter.gat,146,99,2 script	"Falcon Breeder" 105,{
+      set @falcon_price = 2500;
+	mes "[Falcon Breeder]";
+	mes "Welcome, Do you want a bird by your side?";
+      next;
+      menu "Yes",L_YES,"No",L_GDAY;
+      close;
+L_YES:
+      check Zeny < @falcon_price,-,L_GET_FALCON;
+	mes "[Peco Breeder]";
+	mes "Sorry, but you don't seem to have $[@peco_price]z on you, come back later.";
+	close;
+L_GET_FALCON:
+      check Job == 11,L_BUY_FALCON,-; 
+      check Job == 35,L_BUY_FALCON,L_SONLY; 
+L_BUY_FALCON:
+	mes "[Falcon Breeder]";
+	mes "Say hello to your now best friend.";
+	mes "When you have a Falcon by your side you don’t just have a new friend with you.";
+	mes "You also have a new ally";
+	mes "The cost of using a Falcon is $[@falcon_price]z.";
+      next;
+	menu "I'll take one!",L_TAKE,"Maybe later",L_STOP;
+      close;
+L_TAKE:
+      getskilllevel 127,@skilllv_falcon; 
+      check @skilllv_falcon = 1,-,L_NO_SKILL; 
+      set Zeny -= @falcon_price,0;
+      option 1,1;
+      goto L_TAKEC;
+L_TAKEC:
+	mes "[Falcon Breeder]";
+      mes "Take good care of your Falcon.";
+      close;
+L_STOP:
+	mes "[Falcon Breeder]";
+      mes "Thanks for stopping by.";
+      close;
+L_GDAY:
+	mes "[Falcon Breeder]";
+	mes "Ah well, have a good day then!";
+	close;
+L_SONLY:
+	mes "[Falcon Breeder]";
+	mes "Sorry only Hunters and Snipers can handle a Falcon.";
+	close;
+L_NO_SKILL:
+	mes "[Falcon Breeder]";
+	mes "Sorry you need the skill Falcon Mastery on level 1 before you can handle a Falcon.";
+      close;
 }
+
+prontera.gat,238,313,4 script "Grand Peco Breeder" 105,{
+      set @gpeco_price = 3000;
+      mes "[Grand Peco Breeder]";
+      mes "Hello, Do you want to Rent a Grand Peco to ride on?";
+      next;
+      menu "Yes",L_YES,"No",L_GDAY;
+      close;
+L_YES:
+      check Zeny < @gpeco_price,-,L_GET_GPECO;
+      mes "[Grand Peco Breeder]";
+	mes "Sorry, but you don't seem to have $[@gpeco_price]z on you, come back later.";
+	close;
+L_GET_GPECO:
+      check Job == 14,L_BUY_GPECO,-; 
+      check Job == 38,L_BUY_GPECO,L_SONLY; 
+L_BUY_GPECO:
+      mes "[Grand Peco Breeder]";
+	mes "You will! That’s good.";
+	mes "Using a Grand Peco won’t only make you look good but it will also make you move faster then walking.";
+	mes "The cost of using a Peco is $[@gpeco_price]z.";
+      next;
+	menu "I'll take one!",L_TAKE,"Maybe later",L_STOP;
+      close;
+L_TAKE:
+      getskilllevel 63,@skilllv_riding; 
+      check @skilllv_riding => 1,-,L_NO_SKILL;
+      set Zeny -= @gpeco_price,0;
+      option 2,1;
+      goto L_TAKEC;
+L_TAKEC:
+      mes "[Grand Peco Breeder]";
+      mes "Take care of your Grand Peco.";
+      close;
+L_STOP:
+      mes "[Grand Peco Breeder]";
+      mes "Thanks for stopping by.";
+      close;
+L_GDAY:
+      mes "[Grand Peco Breeder]";
+	mes "Ah well, have a good day then!";
+	close;
+L_SONLY:
+      mes "[Grand Peco Breeder]";
+	mes "Sorry only Crusaders and Palladins can ride on Grand Peco's.";
+	close;
+L_NO_SKILL:
+      mes "[Grand Peco Breeder]";
+	mes "Sorry you need the skill Peco Ride level 1 before you can master a Grand Peco.";
+      close;
+}
+
+
