@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.002
 ----------------------------------------------------------------------------------------------------
+- Town\Town_Kafra.txt - Fixed Push Cart Skill check, Fixed " in npc names, Fixed all npc names to Kafra Personnel. [mudvayne]
 - Quest\Quest_Pet_Food_Quest.txt - Fixed Lisa Npc Sprite. [mudvayne]
 - Event\Event_Bunny.txt - Fixed Prontera Kafra Employee coordonate. [mudvayne]
 - Town\Town_Kafra.txt - Fixed Center Kafra coordonate and save point. [mudvayne]
