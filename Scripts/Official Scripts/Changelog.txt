@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.002
 ----------------------------------------------------------------------------------------------------
+- Quest\Quest_Pet_Food_Quest.txt - Fixed the missing .gat in npc mapname, Fixed page header and cleaned script. [mudvayne]
 - Warp\warp_arena_test.txt - Moved the Quest_Arena_Test.txt warps here. [mudvayne]
 - Quest\Quest_Arena_Test.txt - Fixed page header, cleaned script. [mudvayne]
 - Event\Event_Making.txt - Translated Trader, Doctor Band, Feather Bonnet, Phantom of Opera and Sakkat Quest. [mudvayne]

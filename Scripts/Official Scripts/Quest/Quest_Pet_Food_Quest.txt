@@ -1,10 +1,23 @@
-//----------------------------------------------------------------------
-// SCRIPT : Pet Food Quest NPC v1.0
-// By eWeiss. Translated by melz (for LameRO)
-//----------------------------------------------------------------------
+//========================================================================================
+// »» The Fusion Project ««
+// Copyright (c) 2004, Cobax Information Systems
+// http://fusion.cobax.net/
+// ---------------------------------------------------------------------------------------
+//
+// Pet Food Quest - Non Player Character Locations
+//
+// - Liza -> prontera: 116,77
+//   A girl who says her peco is hungry asking to met Egar in payon for food.
+//
+// - Gon-Chan -> prontera: 116,79
+//   Liza's Peco peco.
+//
+// - Egar -> payon: 105,105
+//   A guy who can sell peco food for the Liza's Peco.
+//
+//========================================================================================
 
-//Appeal
-prontera,116,77,4	script	Liza	111,{
+prontera.gat,116,77,4	script	"Liza"	111,{
 	check F_Pet_Food_QUEST > 0,L_CHECK_1,-;
 	mes "[Liza]";
 	mes "My Pecopeco seems hungry.";
@@ -86,13 +99,8 @@ L_CHECK_3-2:
 	set F_Pet_Food_QUEST = 4;
 	close;
 }
-prontera,116,77,16	script	Liza	4,{
-	mes "[Liza]";
-	close;
-}
 
-// Quest Sample
-prontera,116,79,4	script	Gon-chan	1019,{
+prontera.gat,116,79,4	script	"Gon-chan"	1019,{
 	mes "[Gon-chan]";
 	mes "Kue! Kue!";
 	next;
@@ -103,8 +111,7 @@ prontera,116,79,4	script	Gon-chan	1019,{
 	close;
 }
 
-// Quest Sample
-payon,105,105,4	script	Egar	709,{
+payon.gat,105,105,4	script	"Egar"	709,{
 	check F_Pet_Food_QUEST > 0,L_CHECK_1,-;
 	mes "[Egar]";
 	mes "Can I help you?";
