@@ -16,4 +16,4 @@ xmas_fild01.gat,0,0,0,0	  monster	"Santa Poring" 1062,15,0,0,0
 xmas_fild01.gat,0,0,0,0	  monster	"Marin" 1242,25,0,0,0
 xmas_fild01.gat,0,0,0,0	  monster	"Sasquatch" 1243,20,0,0,0
 xmas_fild01.gat,0,0,0,0	  monster	"Hatii Baby" 1515,10,0,0,0
-xmas_fild01.gat,0,0,0,0	  monster	"Garm" 1252,1,3600000,7200000,1
+xmas_fild01.gat,0,0,0,0	  monster	"Hatii" 1252,1,3600000,7200000,1

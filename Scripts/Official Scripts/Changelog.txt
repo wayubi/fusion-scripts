@@ -9,7 +9,10 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.005
 ----------------------------------------------------------------------------------------------------
-
+- Mob\field\lou_fld.txt - Added Hatii Baby. 2004/05/21 [Muad_Dib via Tezuka]
+- Mob\dungeon\lou_dun.txt - Added Hatii Baby. 2004/05/21 [Muad_Dib via Tezuka]
+- Mob\field\xmas_fld.txt - Added Hatii Baby. 2004/05/21 [Muad_Dib via Tezuka]
+- Mob\dungeon\xmas_dun.txt - Added Hatii Baby. 2004/05/21 [Muad_Dib via Tezuka]
 - Mob\field\xmas_fld.txt - Added Hatii Baby. 2004/05/21 [Muad_Dib]
 - Mob\dungeon\xmas_dun.txt - Added Hatii Baby. 2004/05/21 [Muad_Dib]
 - Town\Town_Guide.txt - Updated Comodo Guides. [Muad_Dib]

@@ -13,6 +13,8 @@
 // - LouYang Field 01
 //========================================================================================
 
-lou_fild01.gat,0,0,0,0	monster  "Bigfoot" 1060,15,0,0,0
+lou_fild01.gat,0,0,0,0	monster  "Bigfoot" 1060,10,0,0,0
 lou_fild01.gat,0,0,0,0	monster  "Caramel" 1103,10,0,0,0
-lou_fild01.gat,0,0,0,0	monster  "Mantis" 1139,25,0,0,0
+lou_fild01.gat,0,0,0,0	monster  "Mantis" 1139,20,0,0,0
+lou_fild01.gat,0,0,0,0	monster  "Li Me Mang Ryang" 1516,5,0,0,0
+lou_fild01.gat,0,0,0,0	monster  "Increase Soil" 1517,15,0,0,0
