@@ -1,8 +1,10 @@
 --------------------------------------------------------------------------------
  Fusion 1.212 - June 30th, 2004
 --------------------------------------------------------------------------------
-- 06-14-04: Town\Town_Guide.txt - Updated Town Gon Ryune Guide [Muad_Dib]
-- 06-14-04: Town\Town_Gonryun.txt - Updated Town Gon Ryune [Muad_Dib]
+- 06-14-04: Town\Town_Guide.txt - Added the Juno Guide. [Muad_Dib]
+- 06-14-04: Town\Town_Juno.txt - Updated Town Juno and moved the guide to Town_Guide.txt. [Muad_Dib]
+- 06-14-04: Town\Town_Guide.txt - Updated Town Gon Ryune Guide. [Muad_Dib]
+- 06-14-04: Town\Town_Gonryun.txt - Updated Town Gon Ryune. [Muad_Dib]
 - 06-12-04: Warp\towns\umbala.txt - Turned a warp into a scripted warp in anticipation of official script. [Tsusai]
 - 06-12-04: Mob\dungeon\um_dun.txt - Added Jathena Mobs. [Muad_Dib]
 - 06-12-04: Mob\field\um_fild.txt - Added Jathena Mobs. [Muad_Dib]
