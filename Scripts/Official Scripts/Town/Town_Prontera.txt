@@ -144,14 +144,14 @@ prontera.gat,149,202,2 script	"YuNa" 700,{
 	next;
 	mes "[YuNa]";
 	mes "HE DID IT ALL WRONG!!";
-	emotion 7;
+	   emotion 7;
 	next;
 	mes "[YuNa]";
 	mes "The statue is just totally different from the Odin we all know! He insisted that it was his artistic view or something....";
 	next;
 	mes "[YuNa]";
 	mes "Look~ He doesn't have a broad brimmed hat.... he's not even riding Sleipnir.... this is just totally unacceptable~!";
-	emotion 32;
+	   emotion 32;
 	close;
 }
 
@@ -822,5 +822,8 @@ prontera.gat,102,287,5 script "Shuger" 98,{
 	mes "There are also green colored ones, called ^008800Poporings^000000'.  They are like the pink Porings but are much stronger.";
 	mes "It would be a HUGE MISTAKE for a newbie to attack a Poporing, thinking that it was as weak as a Poring!";
 	close;
+}
+
+prontera.gat,162,304,4 script "Jeno" 790,{
 }
 
