@@ -1,6 +1,11 @@
 --------------------------------------------------------------------------------
  Fusion 1.212 - June 30th, 2004
 --------------------------------------------------------------------------------
+- 06-12-04: updated untranslated town_umbala [Muad_Dib]
+- 06-12-04: added untranslated npc_job_sage [Muad_Dib]
+- 06-12-04: added untranslated npc_town_kafra [Muad_Dib]
+- 06-12-04: added untranslated npc_town_guide [Muad_Dib]
+- 06-12-04: added untranslated npc_town_lutie I has some missing parts for event pumpkin [Muad_Dib]
 - 06-11-04: added untranslated npc_job_supernovice [Tsusai]
 - 06-11-04: added untranslated readme [Tsusai]
 - 06-10-04: added untranslated town_gonryun [Muad_Dib]
