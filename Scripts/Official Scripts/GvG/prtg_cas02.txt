@@ -1,4 +1,4 @@
-prtg_cas02.gat,157,173,0,0	monster	Emperium 1288,1,0,0,1
+prtg_cas02.gat,158,174,0,0	monster	Emperium 1288,1,0,0,1
 
 prt_gld.gat,244,126,8	script	Flag	722,{
 	scriptlabel prt_gldF02;
@@ -95,10 +95,10 @@ prtg_cas02.gat,38,189,8	script	Flag	722,{
 prtg_cas02.gat,34,189,8	script	Flag	722,{
 	script prtg_casF02;
 }
-prtg_cas02.gat,187,181,4	script	Flag	722,{
+prtg_cas02.gat,152,174,4	script	Flag	722,{
 	script prtg_casF02;
 }
-prtg_cas02.gat,200,181,4	script	Flag	722,{
+prtg_cas02.gat,164,174,4	script	Flag	722,{
 	script prtg_casF02;
 }
 
