@@ -572,8 +572,8 @@ aldeg_cas05.gat,31,190,0	script	"Kafra Service"	117,{
 	next;
 	menu "Storage Service",L_MENU_1,"Teleport Service",L_MENU_2,"Cart Rental Service",L_MENU_3,"End",L_MENU_4;
 	L_MENU_1:
-		check Job > 0,L_SUB_1,-;
-		check JobLevel < 6,-,L_SUB_1;
+		getskilllevel 1,@storagecheck;
+		check @storagecheck >= 6,L_SUB_1,-;
 			mes "[Kafra Personnel]";
 			mes "You need to have Basic Skills level 6";
 			mes "in order to use the storage service.";
