@@ -436,7 +436,7 @@ L_MENU_1-9:
 	mes "[ DJ ]";
 	mes "Please follow me through the secret way.";
 	mes "You must push downt the secret switch in order to get out.";
-	warp "payg_cas05",15,209;
+	warp "payg_cas05",158,132;
 L_MENU_2-9:
 	mes "[ DJ ]";
 	mes "Goods are producing everyday, you must get'em whenever you can.";

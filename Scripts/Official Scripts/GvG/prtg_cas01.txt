@@ -445,7 +445,7 @@ L_MENU_1-9:
 	mes "[ Abrai ]";
 	mes "Please follow me through the secret way.";
 	mes "You must push downt the secret switch in order to get out.";
-	warp "prtg_cas01",15,209;
+	warp "prtg_cas01",11,208;
 L_MENU_2-9:
 	mes "[ Abrai ]";
 	mes "Goods are producing everyday, you must get'em whenever you can.";

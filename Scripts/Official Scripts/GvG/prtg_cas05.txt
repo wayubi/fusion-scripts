@@ -442,7 +442,7 @@ L_MENU_1-9:
 	mes "[ Reiner ]";
 	mes "Please follow me through the secret way.";
 	mes "You must push downt the secret switch in order to get out.";
-	warp "prtg_cas05",15,209;
+	warp "prtg_cas05",277,178;
 L_MENU_2-9:
 	mes "[ Reiner ]";
 	mes "Goods are producing everyday, you must get'em whenever you can.";

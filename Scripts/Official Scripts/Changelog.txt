@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.002
 ----------------------------------------------------------------------------------------------------
+- GvG\*.txt - Updated the NPC's that warp you to the proper coordinates for the Master Room. [Tsusai]
 - Quest\Quest_Arena_Test.txt - Updated map names. [Tsusai]
 - Shop\Comodo.txt - Added Instruments and Whips to weapon shop. [mudvayne]
 - Warp\Towns\Amatsu.txt - Added 2 houses and renumbered warps. [Tsusai]
