@@ -9,6 +9,8 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.005
 ----------------------------------------------------------------------------------------------------
+- Shop\yuno.txt - Updated Yuno shops. [Muad_Dib]
+- Shop\amatsu.txt - Updated Amatsu shops. [Muad_Dib]
 - Archive\ - Commented out warps. [Tsusai]
 - Warp\other\Monk_guild.txt - Added missing jAthena warps, moved old warps to Archive. [Tsusai]
 - Shop\amatsu.txt - Updated amatsu shops. [Muad_Dib]
