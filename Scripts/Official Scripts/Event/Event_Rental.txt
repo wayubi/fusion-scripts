@@ -1,6 +1,7 @@
 //========================================================================================
 // »» The Fusion Project ««
 // Copyright (c) 2003-2004, Cobax Information Systems
+// http://cobax.net
 //
 // ---------------------------------------------------------------------------------------
 //
@@ -26,6 +27,7 @@ prontera.gat,52,350,5	script	"PecoPeco Breeder"	105,{
 				mes "You can rent one Peco Peco for 2500 Zeny.";
 				next;
 				menu "Give me one.",-,"What a Rip-Off!!",CANCEL;
+			            check option == 2,-,L_GOT;
 					check Zeny <= 2499,-,SKILL;
 						mes "[PecoPeco Breeder]";
 						mes "General,you don't have enough money.";
@@ -36,7 +38,10 @@ prontera.gat,52,350,5	script	"PecoPeco Breeder"	105,{
 						check @skilllv_riding => 1,-,L_NO_SKILL;
 							set Zeny -= 2500;
 							option 2,1;
-							close;
+							mes "[PecoPeco Breeder]";
+		                              mes "Thank you and good day.";
+		                              emotion 15;
+		                              close;
 						L_NO_SKILL:
 							mes "[PecoPeco Breeder]";
 							mes "Sorry you need the skill peco ride level 1 before you can master a Peco Peco.";
@@ -49,6 +54,11 @@ prontera.gat,52,350,5	script	"PecoPeco Breeder"	105,{
 				mes "What can I do for you?";
 				mes "Our PecoPeco's are only for Knights and Lord Knights.";
 				close;
+			L_Got:
+				mes "[PecoPeco Breeder]";
+				mes "Umm... aren't you already riding a Grand PecoPeco??....";
+				emotion 20;
+				close;
 }
 
 in_hunter.gat,146,99,3	script	"Falcon Fancier"	105,{
@@ -59,6 +69,7 @@ in_hunter.gat,146,99,3	script	"Falcon Fancier"	105,{
 				mes "Need a Falcon for hunting?! Give me 2500 Zeny then.";
 				next;
 				menu "Alright.",-,"What a Rip-Off!!",CANCEL;
+			            check option == 1,-,L_GOT;
 					check Zeny <= 2499,-,SKILL;
 						mes "[Falcon Fancier]";
 						mes "Go get more money.";
@@ -68,7 +79,10 @@ in_hunter.gat,146,99,3	script	"Falcon Fancier"	105,{
 						check @skilllv_falcon = 1,-,L_NO_SKILL;
 							set Zeny -= 2500;
 							option 1,1;
-							close;
+							mes "[Falcon Fancier]";
+		                              mes "Thank you and good day.";
+		                              emotion 15;
+		                              close;
 						L_NO_SKILL:
 							mes "[Falcon Fancier]";
 							mes "Sorry you need the skill Falcon Mastery on level 1 before you can handle a Falcon.";
@@ -85,6 +99,11 @@ in_hunter.gat,146,99,3	script	"Falcon Fancier"	105,{
 			L_SONLY:
 				mes "What an asshole! Falcons are only for the Hunter and Sniper Classes !";
 				close;
+L_Got;
+				mes "[Falcon Fancier]";
+				mes "You can only have 1 Falcon at a time.";
+				emotion 20;
+				close;
 }
 
 prontera.gat,231,317,4	script "Grand PecoPeco Breeder" 105,{
@@ -96,6 +115,7 @@ prontera.gat,231,317,4	script "Grand PecoPeco Breeder" 105,{
 				mes "You can rent one Grand Peco Peco for 3000 Zeny.";
 				next;
 				menu "Give me one.",-,"What a Rip-Off!!",CANCEL;
+			            check option == 2,-,L_GOT;
 					check Zeny <= 2999,-,SKILL;
 						mes "[Grand PecoPeco Breeder]";
 						mes "General,you don't have enough money.";
@@ -106,6 +126,9 @@ prontera.gat,231,317,4	script "Grand PecoPeco Breeder" 105,{
 						check @skilllv_riding => 1,-,L_NO_SKILL;
 							set Zeny -= 3000;
 							option 2,1;
+							mes "[Grand PecoPeco Breeder]";
+		                              mes "Thank you and good day.";
+		                              emotion 15;
 							close;
 						L_NO_SKILL:
 							mes "[Grand PecoPeco Breeder]";
@@ -118,5 +141,10 @@ prontera.gat,231,317,4	script "Grand PecoPeco Breeder" 105,{
 			L_SONLY:
 				mes "What can I do for you?";
 				mes "Our PecoPeco's are only for Crusaders and Palladins.";
+				close;
+			L_Got:
+				mes "[Grand PecoPeco Breeder]";
+				mes "Umm... aren't you already riding a Grand PecoPeco??....";
+				emotion 20;
 				close;
 }

@@ -1,7 +1,7 @@
 //========================================================================================
 // »» The Fusion Project ««
 // Copyright (c) 2004, Cobax Information Systems
-// http://fusion.cobax.net/
+// http://cobax.net/
 // ---------------------------------------------------------------------------------------
 //
 // Dye Event - Non Player Character Locations
@@ -12,7 +12,7 @@
 // - Auru day phon -> geffen: 184,114
 //   Need description.
 //
-// - Morugen Stain -> geffen_in: 141,140
+// - Molgen Stein -> geffen_in: 141,140
 //   Need description.
 //
 // - Dairen -> prontera: 78,150
@@ -116,226 +116,192 @@ alberta_in.gat,133,55,3	script	"Ruitsu"	84,{
 		menu "Talk",L_MENU_1_1,"Leave alone",L_MENU_1_3;
 }
 
-geffen.gat,184,114,6	script	"Auru day phon"	82,{
-		check MOLGENSTAIN == 2,-,L_START_2;
-			mes "[Geffen residents   AURU day phon]";
-			mes "Did fate lead us once again? It was waiting for you to come.";
-			mes "It comes out... Or [ having met those whom you are looking for ]?";
-			next;
-			menu "Talk about MORUGEN Stein.",-,"Stop",L_MENU_1;
-				mes "[Geffen residents   AURU day phon]";
-				mes "Doesn't it meet yet?";
-				mes "He is a blacksmith.   It lives in the second floor. Although it is for a while, since it is an important talk, it talks. Please be careful! It is better for approaching him too much to avoid.";
-				close;
-	L_MENU_1:
-				mes "[Geffen residents   AURU day phon]";
-				mes "Only while it was for a while, a certain will was felt from your seen face. But do you tell me nothing?";
-				mes "I am that you thought that you were already a friend.   ... Was it only my illusion?";
-				close;
-	L_START_2:
-		mes "[Geffen residents   AURU day phon]";
-		mes "The time which passed away at once does not return. Even if it is the power of great magic. Time is flowing also at this moment that I am telling to such a wind.";
-		mes "Why was I really called the thing??";
-		next;
-		check MOLGENSTAIN > 0,-,L_START_3;
-			menu "Talk",-,"I heard about MORUGEN Stein.",L_MENU_2_1,"Stop",L_MENU_2_2;
-				mes "[Geffen residents   AURU day phon]";
-				mes "The power of magic is studied and I who pursue am also common.   I do not think people. Does it seem that but this world has many really rare people?";
-				mes "If it is you, can even something take in being able to apply all? having given up surrounding [ all ] ... I tried to want to be out of order in something completely -- alike ...";
-				close;
-	L_MENU_2_1:
-				set MOLGENSTAIN = 2;
-				mes "[Geffen residents   AURU day phon]";
-				mes "If it knows about that madness, do you also have distance with normal people? Although it seems to want to know in many cases about that man";
-				mes "I am impossible for explaining his thing in detail. I'm sorry, please understand also by ... The maximum action which I can do will only obtain his room.";
-				next;
-				mes "[Geffen residents   AURU day phon]";
-				mes "He is a blacksmith.   It lives in the second floor. Although it is for a while, since it is an important talk, it talks. Please be careful! It is better for approaching him too much to avoid.";
-				close;
-	L_MENU_2_2:
-				mes "[Geffen residents   AURU day phon]";
-				mes "Only while it was for a while, a certain will was felt from your seen face. But do you tell me nothing?";
-				mes "Although it is, there is also no method of comrades as me... Also for one human being, Nature is ..., i.e., man's will, a part... It is since it is like being the flow of Nature.";
-				close;
-	L_START_3:
-		menu "Talk",-,"Stop",L_MENU_3;
-			mes "[Geffen residents   AURU day phon]";
-			mes "The power of magic is studied and I who pursue am also common.   I do not think people. Does it seem that but this world has many really rare people?";
-			mes "If it is you, can even something take in being able to apply all? having given up surrounding [ all ] ... I tried to want to be out of order in something completely -- alike ...";
-			close;
-	L_MENU_3:
-			mes "[Geffen residents   AURU day phon]";
-			mes "Only while it was for a while, a certain will was felt from your seen face. But do you tell me nothing?";
-			mes "Regrettably there is also no method of comrades as me... Also for one human being, Nature is ..., i.e., man's will, a part... It is since it is like being the flow of Nature.";
-			close;
+geffen.gat,181,114,4 script "Auru day phon" 55,{
+	mes "[Geffen residents AURU day phon]";
+	mes "TIME never WAITS for you!! Even MAGIC cannot SLOW it down!  I can feel it passing me by even as we speak!!....";
+	   emotion 0;
+	next;
+	mes "[Geffen residents AURU day phon]";
+	mes "So... why did you stop me??";
+	   emotion 20;
+	   check MOLGENSTEIN = 1,L_Menu2,-;
+L_Menu:
+	next;
+	menu "Talk",L_Talk,"Cancel",L_Cancel;
+L_Menu2:
+	next;
+	menu "Talk",L_Talk,"More about Molgen Stain",L_Molgenstain,"Cancel",L_Cancel;
+L_Talk:
+	mes "[Geffen residents AURU day phon]";
+	mes "It's true that I'm a little excentric because of my quest to gain the power of magic, but I assure that there are others out there that are even stranger than myself.";
+	next;
+	mes "[Geffen residents AURU day phon]";
+	mes "Like that mad scientist ^0000ddMOLGENSTEINshtein^000000.  Anyway, if it were up to you, would you be able to devote your ENTIRE life to one single purpose?";
+	next;
+	mes "[Geffen residents AURU day phon]";
+	mes "Would you be able to give up everthing else in your life to achieve that goal? Even if it meant risking insanity??";
+	   check MOLGENSTEIN = 1,L_Menu2,-;
+	goto L_Menu;
+L_Molgenstain:
+	   set MOLGENSTEIN = 2;
+	mes "[Geffen residents AURU day phon]";
+	mes "MOLGENSTEINshtein? Now that man definatley has a few screws loose.  He's always in the ^0000ddBlasksmith Guild Building^000000 making crazy potions.";
+	mes "He calls them ^ff0000Mixtures^000000 and ^ff0000Counteragents^000000.  I'm not sure what there used for though.";
+	next;
+	mes "[Geffen residents AURU day phon]";
+	mes "You should go speak with him if your that curious about his work.";
+	goto L_Menu2;
+L_Cancel:
+	mes "[Geffen residents AURU day phon]";
+	mes "Human beings are just a small part of Nature.... therefore the human will is that of Natures will.....";
+	close;
 }
 
-geffen_in.gat,141,140,3	script	"Morugen Stain"	121,{
-		check MOLGENSTAIN == 3,-,L_START_3;
-		mes "[Chemist   MORUGEN Stein]";
-		mes "HIHIHIHI .... A way is just . HIHIHIHI.... HIHIHIHIHITSU";
-		next;
-		menu "I heard about the research currently done now.",-,"Ask to make a new thing.",L_MENU_1,"Stop",L_MENU_0;
-			mes "[Chemist   MORUGEN Stein]";
-			mes "HIHIHIHI ... I tried to want to hear it about the research which I am doing by somewhere.";
-			mes "It meets [ ...to which hiding also dropped off / ... HIHIHIHIHI ].. After knowing all, it says without [and] hiding... Disagreeable";
-			next;
-			mes "[Chemist   MORUGEN Stein]";
-			mes "... It is expected that the research which I was doing has already been completed.";
-			mes "It can do [ ... Time / .... HIHIHITSU ] in this gifted of mine... HIHIHI .... Time is only a problem.";
-			next;
-			mes "[Chemist   MORUGEN Stein]";
-			mes "... [ ... It was only going to find the method of melting what is not melted in water. ] It was said that he wanted to know about the research... It is ...  even if it takes.";
-			mes "Isn't there any profoundly interesting? That hard rock and iron   The method of melting a lump into a weak liquid!!!";
-			mes "any -- or -- although -- muddily ---- it will come [!! ] to be alike muddily HIHI!!! ... HIHIHIHITSU!! ... It is !!!. HIHIHIHIHHIHI muddily!!! !.";
-			next;
-			mes "[Chemist   MORUGEN Stein]";
-			mes "passing ... and ... anyhow .. yet --   Some have been found out although all cannot be melted.";
-			mes "... which can make what has ... newer than what you can imagine by this method many ... It is if only you wish!! ";
-			mes "... such .. a face becomes red while blood conveyance is activated in the body -- this -- feeling ... a pleasant liquid secretes in the head -- having -- a joy like pleasure -- ???   this -- feeling ... such -- such ..... ";
-			mes " -- only wishing ... ";
-			close;
-	L_MENU_1:
-			mes " [Chemist   MORUGEN Stein] ";
-			mes " -- HIHIHIHITSU .... you were also interested too .";
-			mes " -- so ... that is right ... a world -- whom -- interest [   ] -- not having -- ? which obtained and dropped off ... a thing -- this pleasant and excited ... FUFUFUFU";
-			mes "... Paddle ?? which wants to make what.. Well ? HIHIHIHI";
-			next;
-			menu "Neutralizer",-,"Mixture",L_MENU_2;
-				mes " [chemist   MORUGEN Stein] ";
-				mes " ... it was said that he wanted to make a neutralizer -- buying ... FU   FU   FU   FU -- the preparation thing for this play is obtained in ... ";
-				mes " ... which ... ... ...... such ...... ";
-				next;
-				mes " [chemist   MORUGEN Stein] ";
-				mes " ..... remembered ... so ... alcohol .... and ..... date RIMIN --   sky ? which can keep .... and it ... ";
-				mes " -- which can be made if there are even these three preparation things -- I want to ask ... and me the gratitude of the gratitude which came to enjoy this play that gifted ... and   technology collected ... HIHIHIHITSU";
-				mes " ... it cuts in ... so much -- it has not rubbed ... a great thing does not want me ... FU   FU   FU   FU ... great ....";
-				mes " ... 3000    What is necessary is just to take out even Zeny... HIHIHIHI";
-				mes ".... .....? which is not the reason which carries out by accident and is regarded as high ... it is moved by me -- Mr. ... has ... too like me, and creative ... HIHIHIHIHIHIHIHIHIHIHITSU";
-				next;
-				mes "[Chemist   MORUGEN Stein]";
-				mes "... Does it begin? ....";
-				next;
-				menu "Talk",-,"Don't Talk",L_ROOT_1;
-					checkitem 970,1,-,L_SUB_1_1;
-					checkitem 971,1,-,L_SUB_1_1;
-					checkitem 713,1,-,L_SUB_1_1;
-					check Zeny >= 3000,L_SUB_1_2,-;
-	L_SUB_1_1:
-					mes "[Chemist   MORUGEN Stein]";
-					mes "FUFUFUFU [ .. HAA / .... Quick / .. Quick / ... Before having collected material!! /] .... It is insufficient... HAA";
-					mes "Play is then... It is FUFUFUFUFU.";
-					close;
-	L_SUB_1_2:
-					mes "[Chemist   MORUGEN Stein]";
-					mes "...... HIHIHIHIHIHI ...... so ... in this way ...... so ... ??? ... more ........ HIHIHIHIHI";
-					mes ".... AA .... AHA ... HA .... AHA ....!!! !!!.";
-					next;
-					delitem 970,1;
-					delitem 971,1;
-					delitem 713,1;
-					set Zeny -= 3000,0;
-					additem 973,1;
-					set counter_agent = 1;
-					mes "[Chemist   MORUGEN Stein]";
-					mes "..........";
-					close;
-	L_ROOT_1:
-					mes "[Chemist   MORUGEN Stein]";
-					mes "HI... HIHIHI....";
-					close;
-	L_MENU_2:
-				mes "[Chemist   MORUGEN Stein]";
-				mes "... it was said that he wanted to make a mixture -- buying ... FU   FU   FU   FU -- the preparation thing for this play is obtained in ...";
-				mes "... which ... ... ...... such .....";
-				next;
-				mes "[Chemist   MORUGEN Stein]";
-				mes "..... remembered ... so ... alcohol .... and ..... KARUBODIRU .... and it can be kept   Empty ?";
-				mes "...which can be made if there are even these three preparation things...gifted to ... and me   I want to ask the gratitude of the gratitude which came to enjoy this play that technology collected ... HIHIHIHITSU";
-				mes " it cuts in ... so much -- it has not rubbed ... a great thing does not want me ... FU   FU   FU   FU ... great....";
-				mes "... 4000Zeny ...    What is necessary is just to take out even Zeny... HIHIHIHI";
-				mes "......What? which is not the reason which carries out by accident and is regarded as high ... it is moved by me -- Mr. ... has ...too like me, and creativ .... HIHIHIHIHIHIHIHIHIHIHITSU";
-				next;
-				mes "[Chemist   MORUGEN Stein]";
-				mes " ... Does it begin? ....";
-				next;
-				menu "Talk",-,"Go Away",L_ROOT_2;
-					checkitem 970,1,-,L_SUB_2_1;
-					checkitem 972,1,-,L_SUB_2_1;
-					checkitem 713,1,-,L_SUB_2_1;
-					check Zeny >= 4000,L_SUB_2_2,-;
-	L_SUB_2_1:
-					mes "[Chemist   MORUGEN Stein]";
-					mes "FUFUFUFU [ .. HAA / .... Quick / .. Quick / ... Before having collected material!! ] .... It is insufficient... HAA";
-					mes "Play is then... It is FUFUFUFUFU.";
-					close;
-	L_SUB_2_2:
-					mes "[Chemist   MORUGEN Stein]";
-					mes ".... HIHIHIHIHIHI ...... so ... in this way ...... so .... more ........ HIHIHIHIHI";
-					mes ".... AA .... AHA ... HA .... AHA ....!!!";
-					next;
-					delitem 970,1;
-					delitem 972,1;
-					delitem 713,1;
-					set Zeny -= 4000,0;
-					additem 974,1;
-					set mixture = 1;
-					mes "[Chemist   MORUGEN Stein]";
-					mes " .........";
-					close;
-	L_ROOT_2:
-					mes "[Chemist   MORUGEN Stein]";
-					mes "FU...FUFUFU";
-					close;
-	L_MENU_0:
-		mes "[Chemist   MORUGEN Stein]";
-		mes "FUFUFUF...FUFU";
-		close;
-	L_START_3:
-		check MOLGENSTAIN == 2,-,L_START_4;
-			set MOLGENSTAIN = 3;
-			mes "[Chemist   MORUGEN Stein]";
-			mes "HIHIHIHI .... Just way. HIHIHIHI .... HIHIHIHIHITSU .... ";
-			next;
-			mes "[Chemist   MORUGEN Stein]";
-			mes " [ ... I / ... A long time sees a living man. ] ... It is bad when impolite... HIHIHIHI";
-			mes "that is right ... it is what business -- ?";
-			next;
-			menu "It is heard about the research currently done now",-,"It asks to make a new thing.",L_MENU_3_1,"It stops",L_MENU_3_2;
-		mes "[Chemist   MORUGEN Stein]";
-		mes "HIHIHIHI .... A way is just . HIHIHIHI.... HIHIHIHIHITSU";
-		next;
-		menu "I heard about the research currently done now.",-,"Ask to make a new thing.",L_MENU_1,"Stop",L_MENU_0;
-			mes "[Chemist   MORUGEN Stein]";
-			mes "HIHIHIHI ... I tried to want to hear it about the research which I am doing by somewhere.";
-			mes "It meets [ ...to which hiding also dropped off / ... HIHIHIHIHI ].. After knowing all, it says without [and] hiding... Disagreeable";
-			next;
-			mes "[Chemist   MORUGEN Stein]";
-			mes "... It is expected that the research which I was doing has already been completed.";
-			mes "It can do [ ... Time / .... HIHIHITSU ] in this gifted of mine... HIHIHI .... Time is only a problem.";
-			next;
-			mes "[Chemist   MORUGEN Stein]";
-			mes "... [ ... It was only going to find the method of melting what is not melted in water. ] It was said that he wanted to know about the research... It is ...  even if it takes.";
-			mes "Isn't there any profoundly interesting? That hard rock and iron   The method of melting a lump into a weak liquid!!!";
-			mes "any -- or -- although -- muddily ---- it will come [!! ] to be alike muddily HIHI!!! ... HIHIHIHITSU!! ... It is !!!. HIHIHIHIHHIHI muddily!!! !.";
-			next;
-			mes "[Chemist   MORUGEN Stein]";
-			mes "passing ... and ... anyhow .. yet --   Some have been found out although all cannot be melted.";
-			mes "... which can make what has ... newer than what you can imagine by this method many ... It is if only you wish!! ";
-			mes "... such .. a face becomes red while blood conveyance is activated in the body -- this -- feeling ... a pleasant liquid secretes in the head -- having -- a joy like pleasure -- ???   this -- feeling ... such -- such ..... ";
-			mes " -- only wishing ... ";
-			close;
-	L_MENU_3_1:
-				mes "[Chemist   MORUGEN Stein]";
-				mes "HIHI .... HIHIHIHI .... ";
-				close;
-	L_MENU_3_2:
-				close;
-	L_START_4:
-		mes "[Chemist   MORUGEN Stein]";
-		mes "HIHIHIHI -- Mr. ... him .... there should not be the smell of the meat which has a memory in a long time.";
-		mes "Man ... Are you man? Man to whom it is also valid   ... HIHIHIHIHIHI";
-		close;
+geffen_in.gat,141,140,2	script "Molgen Stein" 121,{
+	   check MOLGENSTEIN = 2,L_Ask,-;
+	   check MOLGENSTEIN = 3,L_What,-;
+	mes "[Chemist Molgen Stein]";
+	mes "Heheheheheh... Sniff Sniff... I can smell something appetizing here.";
+	mes "It is a Human Being... living one... umm yummy... Heheheheheh";
+	   emotion 29;
+	close;
+L_Ask:
+	mes "[Chemist Molgen Stein]";
+	mes "So you've been asking about me huh? What is it that you want to know?";
+L_Menu:
+	next;
+	menu "Ask about his research",L_Research,"Nothing",L_End;
+L_Research:
+	mes "[Chemist Molgen Stein]";
+	mes "Heheheheheh... You probably already heard about what I do ...";
+	mes "Okay.. I will tell you everything... there is nothing left for me to hide.... Heheheheheh...";
+	   emotion 29;
+	next;
+	mes "[Chemist Molgen Stein]";
+	mes "As far as I'm concerned my research has already been completed.....";
+	mes "I am a genius you know, and I can make anything!! Heheheheh... it's only a matter how long it will take...";
+	next;
+	mes "[Chemist Molgen Stein]";
+	mes "You know what I mean..... time?.... Hehehehehehehya....";
+	   emotion 29;
+	next;
+	mes "[Chemist Molgen Stein]";
+	mes "Um.... did you say you want to know about my Research?... Oh it's all very simple.... I'm just trying to find ways to combine different materials...";
+	next;
+	mes "[Chemist Molgen Stein]";
+	mes "Isn't it interesting? I'm perfecting a method that melts materials, such as iron and stone, and then mixes them into a new substance!!!";
+	mes "Once it is perfected, I will be able to turn anything in the word into a new substance.....";
+	next;
+	mes "[Chemist Molgen Stein]";
+	mes "~~~~ !! Hehe!!!...Heheheheheh!!!...squash squash!!!..Kekekekekelll!!!!";
+	   emotion 29;
+	next;
+	mes "[Chemist Molgen Stein]";
+	mes "Ack!~cough~cough~ Ahem.... Though it is not yet possible, I did figure out something else incredible.";
+	mes "Through my research I found out how to make different types of liquids.  I call them ^5533FF'counteragents and mixtures'^000000.";
+	next;
+	mes "[Chemist Molgen Stein]";
+	mes "I can make one for you right now,if you want?? Ahhh... Talking about my experiments and research makes me.... 'excited'.......";
+	mes "You too can feel my 'excitement' if you wish..... Ahhhhh.... I can make you feel...";
+	   set MOLGENSTEIN = 3;
+	close;
+L_What:
+	mes "[Chemist Molgen Stein]";
+	mes "What do you want now?";
+L_Menu2:
+	next;
+	menu "Ask about research",L_Research,"Make a new one",L_Make,"Nothing",L_End;
+L_Make:
+	mes "[Chemist Molgen Stein]";
+	mes "Heheheheheheh.... So I see you are interested in my creations?..... Who woudn't.... Kekekekekekeke!!!";
+	mes "So what do you want me to make for you?? Huh? Heheheheheh.............";
+	   emotion 29;
+	next;
+	menu "-Make Counteragent",L_CounterA,"-Make Mixture",L_Mixture,"-Nevermind",L_End;
+L_CounterA:
+	mes "[Chemist Molgen Stein]";
+	mes "Oh... You said Counteragent... Kekekekekekeke... Let's see.... I'll need some items.......";
+	mes "... Let me check... Oh... Oh...... Ahhhh..... Hmmm.....";
+      next;
+	mes "[Chemist Molgen Stein]";
+	mes "Oh.... As I recall I need....:";
+	mes "^5533FF1 Alcohol";
+	mes "1 Detrimindexta^000000......";
+	mes "and ^5533FF1 Empty Bottle^000000....";
+	next;
+	mes "[Chemist Molgen Stein]";
+	mes "With these 3 things I'll be able to make you a counteragent.  It won't be a big deal to make..... Kekekekekekeke....";
+	mes "Oh, and there will be a fee of ^5533FF3000 zeny^000000 okay? Heheheheheh..... Oh, surely you don'ty think it's rip-off?...";
+	next;
+	mes "[Chemist Molgen Stein]";
+	mes "Alright?....";
+	next;
+	menu "Sure",-,"Cancel",L_End;
+	   checkitem 970,1,-,L_Sorry;
+	   checkitem 971,1,-,L_Sorry;
+	   checkitem 713,1,-,L_Sorry;
+	   check Zeny >= 3000,L_CounterGet,-;
+L_Sorry:
+	mes "[Chemist Molgen Stein]";
+	mes "I'm sorry but you need 1 Alcohol, 1 Detrimindexta, and 3000 Zeny for me to make a Counteragent.";
+	close;
+L_CounterGet:
+	mes "OhOhOhOh...... Heheheheheh...... Fine... Like this..... Fine... Keep... More........ Heheheheheh";
+	mes ".... Ahhhh.... ..... OhOh.... OhOh!..... OhOhOhOhOhOh!!!...!!!!!!";
+	next;
+	   additem 973,1;
+	   delitem 970,1;
+	   delitem 971,1;
+	   delitem 713,1;
+	set Zeny -= 3000,0;
+      set counter_agent = 1;
+	mes "[Chemist Molgen Stein]";
+	mes ".... Hmmm......";
+     close;
+L_Mixture:
+	mes "Oh... You said Mixture?... Kekekekekekeke... Let's see... I'll need some items.......";
+	mes "... Let me check... Oh... Oh...... Ahhhh..... Hmmm.....";
+	next;
+	mes "[Chemist Molgen Stein]";
+	mes "Oh.... As I recall I need....:";
+	mes "^5533FF1 Alcohol";
+	mes "1 Karvodailnirol^000000.....";
+	mes "and ^5533FF1 Empty Bottle^000000...........";
+	next;
+	mes "[Chemist Molgen Stein]";
+	mes "With these 3 things I'll be able to make you a mixture.  It won't be a big deal to make..... Kekekekekekeke....";
+	mes "Oh, and there will be a fee of ^5533FF4000 zeny^000000 okay? Heheheheheh..... Oh, surely you don'ty think it's rip-off?...";
+	next;
+	mes "[Chemist Molgen Stein]";
+	mes "Alright??...";
+	next;
+	menu "Make",-,"Cancel",M_End;
+	   checkitem 970,1,-,L_Sorry2;
+	   checkitem 972,1,-,L_Sorry2;
+	   checkitem 713,1,-,L_Sorry2;
+	   check Zeny >= 4000,L_MixtureGet,-;
+L_Sorry2:
+	mes "[Chemist Molgen Stein]";
+	mes "I'm sorry but you need 1 Alcohol, 1 Karvodainirol, and 4000 Zeny for me to make a Mixture.";
+	close;		
+L_MixtureGet:
+	mes "[Chemist Molgen Stein]";
+	mes "OhOhOhOh...... Heheheheheh...... Fine... Like this..... Fine... Keep... More........ Heheheheheh";
+	mes ".... Ahhhh.... ..... OhOh.... OhOh!..... OhOhOhOhOhOh!!!...!!!!!!";
+	next;
+	   additem 974,1;
+	   delitem 970,1;
+	   delitem 972,1;
+         set Zeny -= 4000,0;
+	   set mixture = 1;
+	set mixture = 1;
+	mes "[Chemist Molgen Stein]";
+	mes ".... Hmmm......";
+	close;
+L_End:
+	mes "[Chemist Molgen Stein]";
+	mes "... Kekekekekekeke....";
+	close;
 }
 
 prontera.gat,78,150,3	script	"Dairen"	90,{

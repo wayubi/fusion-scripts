@@ -1,7 +1,7 @@
 //========================================================================================
 // »» The Fusion Project ««
 // Copyright (c) 2004, Cobax Information Systems
-// http://fusion.cobax.net/
+// http://cobax.net/
 // ---------------------------------------------------------------------------------------
 //
 // Bunny Band Quest - Non Player Character Locations
@@ -54,6 +54,9 @@ L_SUB_1:
 	mes "[Kafra]";
 	mes "Wow!! Well done! Finally you have gathered all items needed!!";
 	mes "We will make the Bunny Band for you right away.";
+	   emotion 21;
+	next;
+	mes "[Kafra]";
 	mes "Please wait a moment.";
 	next;
 	   delitem 949,100;

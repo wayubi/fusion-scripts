@@ -1,6 +1,12 @@
 --------------------------------------------------------------------------------
  Fusion 1.213 - August 29th, 2004
 --------------------------------------------------------------------------------
+- 08-30-04: Event\Event_Dragon_Boat_Festival.txt - Updated location to new payon map. [Muad_Dib]
+- 08-30-04: Event\Event_Prontera_Sewers.txt - Added Npc emotions and text from mRO screens. [Muad_Dib]
+- 08-30-04: Event\Event_Nenkaras.txt - Added Nenkaras script. [Muad_Dib]
+- 08-30-04: Event\Event_Dye.txt - Added Npc emotions and text from mRO screens. [Muad_Dib]
+- 08-30-04: Event\Event_Bunny.txt - Added Npc emotions and text from mRO screens. [Muad_Dib]
+- 08-30-04: Event\Event_Rental.txt - Added Npc emotions and text from mRO screens. [Muad_Dib]
 - 08-25-04: Town\Town_Jawaii.txt - Added dancers (Need On_Emotion command to fully work) [Muad_Dib]
 - 08-25-04: Warp\towns\Umbala.txt - Made a menu close. [Muad_Dib]
 - 08-25-04: Town\Town_Umbala.txt - Changed town name to Umbla. [Muad_Dib]
