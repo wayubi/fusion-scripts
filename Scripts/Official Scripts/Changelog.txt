@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.003
 ----------------------------------------------------------------------------------------------------
+- Warp\other\alde_alche.txt - Found correct warp portals and added them to a new txt. [Tsusai]
 - Warp\towns\aldebaran.txt - Removed Alchemist warps. [Tsusai]
 - Job\Job2_Crusader.txt - Added Grand Peko Breeder. [icbob]
 - Job\Job2_Knight.txt - Fixed Pecopeco Breeder miss spelled label. [icbob]
