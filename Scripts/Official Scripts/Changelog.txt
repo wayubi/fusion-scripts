@@ -1,7 +1,7 @@
 ====================================================================================================
  »» The Fusion Project ««
  Copyright (c) 2004, Cobax Information Systems
- http:\\fusion.cobax.net\
+ http://fusion.cobax.net/
 ----------------------------------------------------------------------------------------------------
  Scripts Change Logs
 ====================================================================================================
@@ -9,6 +9,8 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.004
 ----------------------------------------------------------------------------------------------------
+- Changelog.txt - Updated links at the footer. [Tsusai]
+- Town\Town_Kafra.txt - Updated Amatsu Kafras. [Tsusai]
 - Town\Town_Kafra.txt - Added Gonryun kafra. [Muad_Dib]
 - Mob\dungeon\lou_dun.txt. - Edited the spawns [Muad_Dib]
 - Mob\field\lou_fild.txt . - Edited the spawns [Muad_Dib]
@@ -401,12 +403,12 @@ Thanks, and good luck.
 Relevant Links
 
 - The Fusion Project
-- http:\\www.izlude.net
+- http://fusion.cobax.net
 
 - The Weiss BBS
-- http:\\eweiss.sourceforge.net\forums
+- http://eweiss.sourceforge.net/garbage/
 
 - The DarkWeiss Forums
-- http:\\dweiss.sigh.org\forum
+- http://dweiss.sigh.org/forum/
 
-- IRC: irc.mircx.com - #weiss
+- IRC: irc.z4znet.com - #fusion
