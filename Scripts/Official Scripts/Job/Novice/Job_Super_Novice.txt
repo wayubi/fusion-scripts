@@ -1,0 +1,136 @@
+//========================================================================================
+// »» The Fusion Project ««
+// Copyright (c) 2004, Cobax Information Systems
+// http://fusion.cobax.net/
+// ---------------------------------------------------------------------------------------
+//
+// Super Novice Job Quest - Non Player Character Locations
+//
+// - Super Novice Instructor -> aldeba_in: 220,168
+//   Npc where you can become a Super Novice.
+//
+// - Kafra -> aldeba_in: 84,245
+//   Npc where you can get a cart for supernovice.
+//
+//========================================================================================
+
+aldeba_in.gat,220,168,4 script "Super Novice Instructor" 729,{ 
+      mes "[Super Novice Instructor]";
+      mes "Hello, welcome to the Super Novice's Guild."; 
+      next; 
+      mes "What brings you here ?";
+      next; 
+	menu "Job Change",L_CHANGE,"About the Job requirements.",L_REQ,"Cancel.",L_END;
+      close;
+L_CHANGE: 
+      mes "[Super Novice Instructor]";
+      mes "Ok, Let me check to see if you met the Requirements."; 
+      next; 
+            check Job == 0,-,L_ERROR; 
+            check BaseLevel >= 45,-,L_ERROR1; 
+            check SkillPoint == 0,-,L_ERROR2; 
+      mes "[Super Novice Instructor]";
+      mes "Okay let's see what items you have.";
+      next;
+	      checkitem 907,30,-,L_ITEM_ERR1;
+	      checkitem 938,30,-,L_ITEM_ERR2;
+      mes "[Super Novice Instructor]";
+      mes "Good you have all the items you need to complete your jobchange";
+      next; 
+	      delitem 907,30;
+	      delitem 938,30;
+            jobchange 23;
+	      additem 2339,1;
+      mes "[Super Novice Instructor]"; 
+      mes "Like the world needs a new breed of novices ......"; 
+      close; 
+L_REQ:
+      mes "[Super Novice Instructor]";
+      mes "The Requirements Are:"; 
+      mes "- You must be a novice with FF0000Base Level 45^000000.";
+      next;
+      mes "[Super Novice Instructor]"; 
+      mes "And I need the following items:"; 
+      mes "- FF000030 resin^000000."; 
+      mes "- FF000030 sticky muckus^000000."; 
+      close; 
+L_END:     
+      mes "[Super Novice Instructor]";  
+      mes "Ok, come back anytime you want."; 
+      close;
+L_ITEM_ERR1: 
+      mes "[Super Novice Instructor]"; 
+      mes "I'm sorry but you need FF000030 resin^000000."; 
+      close; 
+L_ITEM_ERR2: 
+      mes "[Super Novice Instructor]"; 
+      mes "I'm sorry but need FF000030 sticky muckus^000000."; 
+      close; 
+L_ERROR: 
+      mes "[Super Novice Instructor]"; 
+      mes "I'm sorry but you are not a novice."; 
+      close;
+L_ERROR1: 
+      mes "[Super Novice Instructor]"; 
+      mes "I'm sorry but your baselevel is not 45.";
+      close;
+L_ERROR2:
+      mes "[Super Novice Instructor]";
+      mes "Please use up all your skillpoints.";
+      close;
+}
+
+aldeba_in.gat,84,245,4 script "Kafra" 729,{ 
+      mes "[Kafra]";
+      mes "Hello, are you here to get a cart?"; 
+      next;
+	menu "Change Cart",L_CHANGE,"Cancel.",L_CANCEL;
+      close;
+L_CHANGE:
+            check Job != 23,-,L_RENT1;
+	mes "[kafra]";
+	mes "I am sorry.";
+	mes "This Cart service is only provided for";
+	mes "Super Novices.";
+	close;
+L_RENT1:
+	mes "[kafra]";
+	mes "The Cart Fee is 1900 Zeny.";
+      mes "To rent a cart";
+	next;
+   	menu "Rent a Cart.",L_RENT2,"Cancel",L_CANCEL;
+      close;
+L_RENT2:
+	      getskilllevel 39,@skilllv_pushcart; 
+	      check @skilllv_pushcart => 1,-,L_SKILL;
+	      check Zeny < 1900,-,L_CHECK1; 
+      mes "[kafra]";
+      mes "Dear. you don't have enough Money.";
+	mes "The Cart Fee is 1900 Zeny.";
+      close;
+L_SKILL:
+	mes "[kafra]";
+	mes "You do not have the skill PushCart.";
+	mes "You can't get a cart without that skill."
+      close;
+L_CHECK1:
+	      check option == 0,-,L_CART;
+	      set Zeny -= 1900,0;
+	      option 0,1;
+	goto L_THANK;
+L_THANK:
+	mes "[kafra]";
+  	mes "Thank you.";
+   	mes "Please come again.";
+	close;
+L_CART:
+	mes "[kafra]";
+	mes "Sorry you already have a cart.";
+	close;
+L_CANCEL:
+ 	mes "[kafra]";
+	mes "Please come back anytime you want.";
+	close;       
+}
+
+
