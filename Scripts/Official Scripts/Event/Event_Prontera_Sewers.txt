@@ -1,0 +1,82 @@
+//========================================================================================
+// »» The Fusion Project ««
+// Copyright (c) 2004, Cobax Information Systems
+// http://fusion.cobax.net/
+// ---------------------------------------------------------------------------------------
+//
+// Prontera Sewers Event - Non Player Character Locations
+//
+// - Recruiter -> prt_in: 88,105
+//   Gives information about the culver campaign and ask you to sign up.
+//
+// - Culvert Guardian -> prt_fild05: 270,212
+//   Warps you inside the prontera sewers.
+//
+//========================================================================================
+
+prt_in.gat,88,105,2 script "Recruiter" 105,{
+	   check SEWER_PRT == 1,-,L_START_1;
+	mes "[Recruiter]";
+	mes "Well,You joined in the Culvert Campaign .Would you let me guide you?";
+	next;
+	menu "Go toward the Enterance.",-,"Quit.",L_START_2;
+	   warp "prt_fild05",274,208;
+      close;
+L_START_1:
+	mes "[Recruiter]";
+	mes "Let me inform the Notice from the Capital Defense Headquarter of Rune-Midgard Kingdom.";
+	mes "We decided to recruit the punitive force through this incident.";
+	next;
+	menu "Volunteer.",L_MENU_1,"Incident....?",L_MENU_2,"Quit.",L_START_2;
+      close;
+L_MENU_1:
+	set SEWER_PRT = 1;
+	mes "[Recruiter]";
+	mes "Your registration confirmed . We will try to maintain peace and order in Rune-Midgard Kingdome.And I appreciate you speaking for Capital Defense Headquarter.";
+	mes "These are subsidies. 3 Red Potions, 1 Milk.";
+	mes "And 1 Orange Potion for Emergency.";
+	   additem 501,3;
+	   additem 519,1;
+	   additem 502,1;
+	next;
+	mes "[Recruiter]";
+	mes "Are you ready? I will warp you to the Culvert.";
+	   warp "prt_fild05",274,208;
+      close;
+L_MENU_2:
+	mes "[Recruiter]";
+	mes "Didn't you hear yet?";
+	mes "The Culvert is infested with noxious insects.We found out sewages and moggots there.What a huge disturbance at that time...Never hear that?";
+	next;
+	mes "[Recruiter]";
+	mes "Since the incident occurred,it has been forbidden the people to use water supply by the Quaratine.";
+	mes "Needless to say,the people has suffered in extreme water disturbance.In time,it would cause distrust in Protera Kingdome.";
+	mes "The situation has become critical.Restlessness prevails among the people¡¦¡¦.";
+	next;
+	mes "[Recruiter]";
+	mes "Alrighty,Warriors!!!!The People needs you!!";
+	mes "Let's expel those craps from our land!!!";
+	mes "Anyone want to fight for????";
+	next;
+	menu "Volunteer.",L_MENU_1,"Quit.",L_START_2;
+      close;
+L_START_2:
+	close;
+}
+
+prt_fild05.gat,270,212,5 script "Culvert Guardian" 105,{
+	   check SEWER_PRT == 0,-,L_START_1;
+	mes "[Culvert Guardian]";
+      mes "Sorry,Only Volunteers for the Culvert Campaign can go inside.";
+      mes "You can check this issue in the ^000077Culvert Registrar's Office^000000.It is located at the North-West,direction of 11 O'clock.";
+	close;
+L_START_1:
+	mes "[Culvert Guardian]";
+	mes "Here you are.The entrance of the Culvert.Are you sure you want to Go inside?";
+	next;
+	menu "Sure.",-,"Quit.",L_MENU_1;
+	   warp "prt_sewb1",131,247;
+      close;
+L_MENU_1:
+	close;
+}
