@@ -153,7 +153,7 @@ L25:
 	mes "But I still won't eat mushrooms though ...";
 	mes "Hmm, I'll need to give you a present too.";
 	next;
-	delitem 740,1;
+	delitem 743,1;
 	additem 538,5;
 	mes "[Little Kid]";
 	mes "Mom made this.";
