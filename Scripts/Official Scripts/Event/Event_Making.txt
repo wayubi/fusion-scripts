@@ -21,6 +21,9 @@
 // - Teacher -> prt_in: 38,108
 //   Give information and make PhD Hat Quest.
 //
+// - Bow -> payon_in02: 25,71
+//   Give information and make Oxygen Mask Quest.
+//
 //========================================================================================
 
 payon_in01.gat,103,111,4	script	"Granny"	103,{
@@ -508,84 +511,83 @@ prt_in.gat,38,108,4	script	"Teacher"	53,{
 		close;
 }
 
-//----------------------------------
-// 酸素マスク
-//----------------------------------
-
-payon_in02.gat,25,71,4	script	酸素マスク青年	86,{
+payon_in02.gat,25,71,4	script	"Boy"	86,{
 	checkitem 701,5,-,L_SUB_1;
-		mes "[青年]";
-		mes "うああああああ！どうしても駄目だ！";
-		mes "うう…奴らが可愛く見える！だ、駄目だ！";
+		mes "[Boy]";
+		mes "ArrrrGgggghhhh! Ah..No I can't...";
+		mes "Huk.. Now my eyes are even gone mad...They seem so Cute to my eyes... Argh..Nooooooo!!";
 		next;
-		menu "オラオラを見せる",-,"オラオラをあげる",L_MENU_1,"やめる",L_MENU_2;
-			mes "[青年]";
-			mes "おおおおおおっと!!!";
-			mes "こ、これがオラオラ…？！";
-			mes "単刀直入で言います！そのオラオラと、僕の一番の宝物と交換しましょう！";
-			mes "ど、どうですか？交換しますか？";
+		menu "Show Ora Ora",-,"Give Ora Ora",L_MENU_1,"Cancel",L_MENU_2;
+			mes "[Boy]";
+			mes "Oooooohhhh!!!";
+			mes "Is..Is this one...this is..Ora Ora...!";
+			mes "I make it short! If..If you give it to me..I will give you my treasure!";
+			mes "So..What about my idea? Wanna Deal?";
 			close;
 	L_MENU_1:
 		checkitem 701,5,-,L_SUB_2;
 		checkadditem 5004,1,-,L_START_1;
 		delitem 701,5;
-		mes "[青年]";
-		mes "くはははは！やっと手に入れたぞ！オラオラ！（叫ぶ）";
-		mes "しっつこい盗蟲やろうめ！全部やっつけてやる！（燃える）";
+		mes "[Boy]";
+		mes "Muhahahahah!!! Finally I have this! Ora Ora!";
+		mes "Stupid and Disgusting Thief Bugs!! You will get payed for !!!";
 		next;
-		mes "[青年]";
-		mes "はあ...はあ...";
-		mes "ぼ、僕がちょっと興奮したようですね.う…約束どおりに僕の宝物を渡します。";
+		mes "[Boy]";
+		mes "Huk...Huk...";
+		mes "Sorry I was out of my control for a while with pleasure.. hmm.. Now I will give my treasure as I promised you.";
 		next;
 		additem 5004,1;
-		mes "[青年]";
-		mes "これを顔にして息をしたら…いつでもどこでも爽快な息ができる物です。";
-		mes "前に、漁師の仕事をした時、海から手に入れた物です。";
-		mes "僕には大切な物だが、僕を助けてくれた礼として持ってください。";
+		mes "[Boy]";
+		mes "When you wear this on Mouth and start to Breathe... It will filter every dusty things out of your lung.";
+		mes "When I was a Sailor,I picked it up from the sea.";
+		mes "It is nothing but a useless one for me,also you helped me I will give this one for you.";
 		next;
-		mes "[青年]";
-		mes "くはははは！とりあえず、さっそくこのオラオラを使ってみたいんです！";
+		mes "[Boy]";
+		mes "Kakakakakaka! By the way I can't wait to use this Ora Ora!";
 		close;
 	L_SUB_2:
 		close;
 	L_MENU_2:
-		mes "[青年]";
-		mes "くうううう…盗蟲を追い払う事ができなければ…";
-		mes "僕に残された道は盗蟲を愛する事しかない…くうううう…";
+		mes "[Boy]";
+		mes "Huhuhuhuhu... What If I could not get rid of Thief Bugs...";
+		mes "Only one thing I could do is to Fall in Love with them..Hehehehehehe...";
 		close;
 	L_SUB_1:
-		mes "[青年]";
-		mes "うあああああ！もう、もうたくさんだ！";
-		mes "この盗蟲め！！！！！";
+		mes "[Boy]";
+		mes "Blahhhhhh! I.. I.. Now I can't take it any more!!!";
+		mes "You little stinky filthy Bastards!!!";
 		next;
-		menu "対話する",-,"やめる",L_MENU_3;
-			mes "[青年]";
-			mes "そういえば僕の人生って言うのは波乱万丈でした。";
-			mes "幼い頃、親が亡くなって…孤児で、誰も助けてくれない厳しい生活が続け…";
+		menu "Continu",-,"Cancel",L_MENU_3;
+			mes "[Boy]";
+			mes "Anyway I think my past life was really eventful.";
+			mes "My both parents passed away when I was a little kid...So I had to work for my living. It was a really hard time.";
 			next;
-			mes "[青年]";
-			mes "下っ端から今までやらなかった仕事はないほど人の下で頑張り続けたのです.";
-			mes "その後10年目…ついに僕もいつも夢見るMY－SWEET－HOMEが買えました！";
+			mes "[Boy]";
+			mes "Ever since I did work for 10 years.. I could afford to buy my own house... my dream,home sweet home.";
 			next;
-			mes "[青年]";
-			mes "しかし、なんという不幸っていうか、この家は完全に盗蟲の巣でした！";
+			mes "[Boy]";
+			mes "Unfortunately I didn't have much money to buy a nice one I wish for...";
+			mes "And.. I found this house,a Big and Cheaper than earlier one....I bought this without deep thought...";
 			next;
-			mes "[青年]";
-			mes "奴らに手段を選ばず、いろんな方法で追い払おうとしましたが、その時だけでした！";
-			mes "本当に、この家を焼き払おうかと思った時もあります！";
+			mes "[Boy]";
+			mes "Oh Jesus. It revealed as the Heaven for Thief Bugs!!!";
 			next;
-			mes "[青年]";
-			mes "ああ…この盗蟲を全て倒すためには、 ^3355FFオラオラ^000000 という物がなければならないでしょうか？";
-			mes "遠い国に行かなければ、手に入れない珍しい物だと聞きましたが…";
-			mes "オラオラが5個だけあれば、この盗蟲との戦争から解放されるのに…";
+			mes "[Boy]";
+			mes "I tried to do everything I could do...Coaxed them.. Killed them.. It was only..for a moment!";
+			mes "Lastly I tried to burn down this house....!";
+			next;
+			mes "[Boy]";
+			mes "Gasp..I mean really Do I need...  ^3355FF Ora Ora^000000 to get rid of them?";
+			mes "People say it is very rarely seen from far countries .";
+			mes "If I could afford 5 of it.. I won't have to be frustrated with these Disgusting Bugs any more...";
 			close;
 	L_MENU_3:
-			mes "[青年]";
-			mes "…何度追い払っても無駄だ…もうあきらめよう…疲れたよ…くううう…";
+			mes "[Boy]";
+			mes "Never endign fight with Bugs...Now I am really tired. I give up..Do as you wish you scumbag...Huhuhuhuhu...";
 			close;
 	L_START_1:
-		mes "[青年]";
-		mes "重量オーバーです。";
+		mes "[Boy]";
+		mes "You are overweight.";
 		close;
 }
 

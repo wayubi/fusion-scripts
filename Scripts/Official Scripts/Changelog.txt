@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.002
 ----------------------------------------------------------------------------------------------------
+- Event\Event_Making.txt - Translated Boy, Oxygen Mask Quest. [mudvayne]
 - Event\Event_Making.txt - Translated Teacher, PhD Hat Quest. [mudvayne]
 - Event\Event_Making.txt - Translated William, Stop Post Quest. [mudvayne]
 - Event\Event_Making.txt - Translated Cherokee, Antlers Quest. [mudvayne]
