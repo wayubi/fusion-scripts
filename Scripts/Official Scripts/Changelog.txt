@@ -9,6 +9,8 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.004
 ----------------------------------------------------------------------------------------------------
+- Mob\dungeon\lou_dun.txt - Edited the spawns. [Muad_Dib]
+- Mob\field\lou_fild.txt - Edited the spawns. [Muad_Dib]
 - Warp\guilds\*_gld.txt - Moved to archive. [Tsusai]
 - Warp\guilds\*_gld.txt - Warps moved into conjugate *_cas.txt files. [Tsusai]
 - Warp\npcs - Removed empty directory. [Tsusai]
