@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.004
 ----------------------------------------------------------------------------------------------------
+- Warp\town\ - Reorganised a few warp scripts. [Muad_Dib]
 - Job\Job2_Alchemist.txt - moved from new to old folder. [Muad_Dib]
 - Job\Job2_Dancer - Bard.txt - moved from new to old folder. [Muad_Dib]
 - Job\Job2_Monk.txt - moved from new to old folder. [Muad_Dib]
