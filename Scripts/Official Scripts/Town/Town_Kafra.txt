@@ -842,16 +842,16 @@ prontera.gat,248,42,0	script	"Kafra Personnel"	116,{
 		mes "[Kafra Personnel]";
 		mes "Kafra Corp does provides a";
 		mes "teleport service from here to";
-		mes "Izlude for 900 zeny.";
+		mes "Izlude for 600 zeny.";
 		next;
 		menu "Use it",-,"Use Kafra Coupon",L_MENU_1,"End",L_MENU_2;
-			check Zeny < 900,-,L_ROOT_1;
+			check Zeny < 600,-,L_ROOT_1;
 			mes "[Kafra Personnel]";
 			mes "You don't have enough money.";
 			goto L_EXIT;
 		L_ROOT_1:
-			set Zeny -= 900,0;
-			set KF_PIT += 90;
+			set Zeny -= 600,0;
+			set KF_PIT += 60;
 			warp "izlude",94,103;
 		L_MENU_1:
 			checkitem 1084,1,L_ROOT_2,-;
@@ -993,53 +993,53 @@ prontera.gat,146,89,6	script	"Kafra Personnel"	117,{
 		mes "[Kafra Personnel]";
 		mes "Please pick your destination.";
 		next;
-		menu "Izlude -> 900 z",L_MENU_3_1,"Geffen -> 1400 z",L_MENU_3_2,"Payon -> 1700 z",L_MENU_3_3,"Morroc -> 1800 z",L_MENU_3_4,"Comodo -> 2000 z",L_MENU_3_4a,"Orc Dungeon -> 1700 z",L_MENU_3_5,"Cancel",L_MENU_3_6;
+		menu "Izlude -> 600 z",L_MENU_3_1,"Geffen -> 1200 z",L_MENU_3_2,"Payon -> 1200 z",L_MENU_3_3,"Morroc -> 1200 z",L_MENU_3_4,"Comodo -> 2000 z",L_MENU_3_4a,"Orc Dungeon -> 1700 z",L_MENU_3_5,"Cancel",L_MENU_3_6;
 		L_MENU_3_1:
 			check @KAFRA_COUPON = 0,-,L_SUB_3_1;
-				check Zeny < 900,-,L_ROOT_3_1;
+				check Zeny < 600,-,L_ROOT_3_1;
 					mes "[Kafra Personnel]";
 					mes "You don't have enough money.";
 					mes "Please verify the amount of money you have.";
 					goto L_EXIT;
 			L_ROOT_3_1:
-				set Zeny -= 900,0;
-				set KF_PIT += 90;
+				set Zeny -= 600,0;
+				set KF_PIT += 60;
 			L_SUB_3_1:
 				warp "izlude",91,105;
 		L_MENU_3_2:
 			check @KAFRA_COUPON = 0,-,L_SUB_3_2;
-				check Zeny < 1400,-,L_ROOT_3_2;
+				check Zeny < 1200,-,L_ROOT_3_2;
 					mes "[Kafra Personnel]";
 					mes "You don't have enough money.";
 					mes "Please verify the amount of money you have.";
 					goto L_EXIT;
 			L_ROOT_3_2:
-				set Zeny -= 1400,0;
-				set KF_PIT += 140;
+				set Zeny -= 1200,0;
+				set KF_PIT += 120;
 			L_SUB_3_2:
 				warp "geffen",120,39;
 		L_MENU_3_3:
 			check @KAFRA_COUPON = 0,-,L_SUB_3_3;
-				check Zeny < 1700,-,L_ROOT_3_3;
+				check Zeny < 1200,-,L_ROOT_3_3;
 					mes "[Kafra Personnel]";
 					mes "You don't have enough money.";
 					mes "Please verify the amount of money you have.";
 					goto L_EXIT;
 			L_ROOT_3_3:
-				set Zeny -= 1700,0;
-				set KF_PIT += 170;
+				set Zeny -= 1200,0;
+				set KF_PIT += 120;
 			L_SUB_3_3:
 				warp "payon",69,100;
 		L_MENU_3_4:
 			check @KAFRA_COUPON = 0,-,L_SUB_3_4;
-				check Zeny < 1800,-,L_ROOT_3_4;
+				check Zeny < 1200,-,L_ROOT_3_4;
 					mes "[Kafra Personnel]";
 					mes "You don't have enough money.";
 					mes "Please verify the amount of money you have.";
 					goto L_EXIT;
 			L_ROOT_3_4:
-				set Zeny -= 1800,0;
-				set KF_PIT += 180;
+				set Zeny -= 1200,0;
+				set KF_PIT += 120;
 			L_SUB_3_4:
 				warp "morocc",156,46;
 		L_MENU_3_4a:
@@ -1237,53 +1237,53 @@ prontera.gat,282,200,2	script	"Kafra Personnel"	114,{
 		mes "[Kafra Personnel]";
 		mes "Please pick your destination.";
 		next;
-		menu "Izlude -> 900 z",L_MENU_3_1,"Geffen -> 1400 z",L_MENU_3_2,"Payon -> 1700 z",L_MENU_3_3,"Morroc -> 1800 z",L_MENU_3_4,"Comodo -> 2000 z",L_MENU_3_4a,"Orc Dungeon -> 1700 z",L_MENU_3_5,"Cancel",L_MENU_3_6;
+		menu "Izlude -> 600 z",L_MENU_3_1,"Geffen -> 1200 z",L_MENU_3_2,"Payon -> 1200 z",L_MENU_3_3,"Morroc -> 1200 z",L_MENU_3_4,"Comodo -> 2000 z",L_MENU_3_4a,"Orc Dungeon -> 1700 z",L_MENU_3_5,"Cancel",L_MENU_3_6;
 		L_MENU_3_1:
 			check @KAFRA_COUPON = 0,-,L_SUB_3_1;
-				check Zeny < 900,-,L_ROOT_3_1;
+				check Zeny < 600,-,L_ROOT_3_1;
 					mes "[Kafra Personnel]";
 					mes "You don't have enough money.";
 					mes "Please verify the amount of money you have.";
 					goto L_EXIT;
 			L_ROOT_3_1:
-				set Zeny -= 900,0;
-				set KF_PIT += 90;
+				set Zeny -= 600,0;
+				set KF_PIT += 60;
 			L_SUB_3_1:
 				warp "izlude",91,105;
 		L_MENU_3_2:
 			check @KAFRA_COUPON = 0,-,L_SUB_3_2;
-				check Zeny < 1400,-,L_ROOT_3_2;
+				check Zeny < 1200,-,L_ROOT_3_2;
 					mes "[Kafra Personnel]";
 					mes "You don't have enough money.";
 					mes "Please verify the amount of money you have.";
 					goto L_EXIT;
 			L_ROOT_3_2:
-				set Zeny -= 1400,0;
-				set KF_PIT += 140;
+				set Zeny -= 1200,0;
+				set KF_PIT += 120;
 			L_SUB_3_2:
 				warp "geffen",120,39;
 		L_MENU_3_3:
 			check @KAFRA_COUPON = 0,-,L_SUB_3_3;
-				check Zeny < 1700,-,L_ROOT_3_3;
+				check Zeny < 1200,-,L_ROOT_3_3;
 					mes "[Kafra Personnel]";
 					mes "You don't have enough money.";
 					mes "Please verify the amount of money you have.";
 					goto L_EXIT;
 			L_ROOT_3_3:
-				set Zeny -= 1700,0;
-				set KF_PIT += 170;
+				set Zeny -= 1200,0;
+				set KF_PIT += 120;
 			L_SUB_3_3:
 				warp "payon",69,100;
 		L_MENU_3_4:
 			check @KAFRA_COUPON = 0,-,L_SUB_3_4;
-				check Zeny < 1800,-,L_ROOT_3_4;
+				check Zeny < 1200,-,L_ROOT_3_4;
 					mes "[Kafra Personnel]";
 					mes "You don't have enough money.";
 					mes "Please verify the amount of money you have.";
 					goto L_EXIT;
 			L_ROOT_3_4:
-				set Zeny -= 1800,0;
-				set KF_PIT += 180;
+				set Zeny -= 1200,0;
+				set KF_PIT += 120;
 			L_SUB_3_4:
 				warp "morocc",156,46;
 		L_MENU_3_4a:
@@ -1481,53 +1481,53 @@ prontera.gat,151,29,0	script	"Kafra Personnel"	115,{
 		mes "[Kafra Personnel]";
 		mes "Please pick your destination.";
 		next;
-		menu "Izlude -> 900 z",L_MENU_3_1,"Geffen -> 1400 z",L_MENU_3_2,"Payon -> 1700 z",L_MENU_3_3,"Morroc -> 1800 z",L_MENU_3_4,"Comodo -> 2000 z",L_MENU_3_4a,"Orc Dungeon -> 1700 z",L_MENU_3_5,"Cancel",L_MENU_3_6;
+		menu "Izlude -> 600 z",L_MENU_3_1,"Geffen -> 1200 z",L_MENU_3_2,"Payon -> 1200 z",L_MENU_3_3,"Morroc -> 1200 z",L_MENU_3_4,"Comodo -> 2000 z",L_MENU_3_4a,"Orc Dungeon -> 1700 z",L_MENU_3_5,"Cancel",L_MENU_3_6;
 		L_MENU_3_1:
 			check @KAFRA_COUPON = 0,-,L_SUB_3_1;
-				check Zeny < 900,-,L_ROOT_3_1;
+				check Zeny < 600,-,L_ROOT_3_1;
 					mes "[Kafra Personnel]";
 					mes "You don't have enough money.";
 					mes "Please verify the amount of money you have.";
 					goto L_EXIT;
 			L_ROOT_3_1:
-				set Zeny -= 900,0;
-				set KF_PIT += 90;
+				set Zeny -= 600,0;
+				set KF_PIT += 60;
 			L_SUB_3_1:
 				warp "izlude",91,105;
 		L_MENU_3_2:
 			check @KAFRA_COUPON = 0,-,L_SUB_3_2;
-				check Zeny < 1400,-,L_ROOT_3_2;
+				check Zeny < 1200,-,L_ROOT_3_2;
 					mes "[Kafra Personnel]";
 					mes "You don't have enough money.";
 					mes "Please verify the amount of money you have.";
 					goto L_EXIT;
 			L_ROOT_3_2:
-				set Zeny -= 1400,0;
-				set KF_PIT += 140;
+				set Zeny -= 1200,0;
+				set KF_PIT += 120;
 			L_SUB_3_2:
 				warp "geffen",120,39;
 		L_MENU_3_3:
 			check @KAFRA_COUPON = 0,-,L_SUB_3_3;
-				check Zeny < 1700,-,L_ROOT_3_3;
+				check Zeny < 1200,-,L_ROOT_3_3;
 					mes "[Kafra Personnel]";
 					mes "You don't have enough money.";
 					mes "Please verify the amount of money you have.";
 					goto L_EXIT;
 			L_ROOT_3_3:
-				set Zeny -= 1700,0;
-				set KF_PIT += 170;
+				set Zeny -= 1200,0;
+				set KF_PIT += 120;
 			L_SUB_3_3:
 				warp "payon",69,100;
 		L_MENU_3_4:
 			check @KAFRA_COUPON = 0,-,L_SUB_3_4;
-				check Zeny < 1800,-,L_ROOT_3_4;
+				check Zeny < 1200,-,L_ROOT_3_4;
 					mes "[Kafra Personnel]";
 					mes "You don't have enough money.";
 					mes "Please verify the amount of money you have.";
 					goto L_EXIT;
 			L_ROOT_3_4:
-				set Zeny -= 1800,0;
-				set KF_PIT += 180;
+				set Zeny -= 1200,0;
+				set KF_PIT += 120;
 			L_SUB_3_4:
 				warp "morocc",156,46;
 		L_MENU_3_4a:
@@ -1725,53 +1725,53 @@ prontera.gat,29,207,6	script	"Kafra Personnel"	113,{
 		mes "[Kafra Personnel]";
 		mes "Please pick your destination.";
 		next;
-		menu "Izlude -> 900 z",L_MENU_3_1,"Geffen -> 1400 z",L_MENU_3_2,"Payon -> 1700 z",L_MENU_3_3,"Morroc -> 1800 z",L_MENU_3_4,"Comodo -> 2000 z",L_MENU_3_4a,"Orc Dungeon -> 1700 z",L_MENU_3_5,"Cancel",L_MENU_3_6;
+		menu "Izlude -> 600 z",L_MENU_3_1,"Geffen -> 1200 z",L_MENU_3_2,"Payon -> 1200 z",L_MENU_3_3,"Morroc -> 1200 z",L_MENU_3_4,"Comodo -> 2000 z",L_MENU_3_4a,"Orc Dungeon -> 1700 z",L_MENU_3_5,"Cancel",L_MENU_3_6;
 		L_MENU_3_1:
 			check @KAFRA_COUPON = 0,-,L_SUB_3_1;
-				check Zeny < 900,-,L_ROOT_3_1;
+				check Zeny < 600,-,L_ROOT_3_1;
 					mes "[Kafra Personnel]";
 					mes "You don't have enough money.";
 					mes "Please verify the amount of money you have.";
 					goto L_EXIT;
 			L_ROOT_3_1:
-				set Zeny -= 900,0;
-				set KF_PIT += 90;
+				set Zeny -= 600,0;
+				set KF_PIT += 60;
 			L_SUB_3_1:
 				warp "izlude",91,105;
 		L_MENU_3_2:
 			check @KAFRA_COUPON = 0,-,L_SUB_3_2;
-				check Zeny < 1400,-,L_ROOT_3_2;
+				check Zeny < 1200,-,L_ROOT_3_2;
 					mes "[Kafra Personnel]";
 					mes "You don't have enough money.";
 					mes "Please verify the amount of money you have.";
 					goto L_EXIT;
 			L_ROOT_3_2:
-				set Zeny -= 1400,0;
-				set KF_PIT += 140;
+				set Zeny -= 1200,0;
+				set KF_PIT += 120;
 			L_SUB_3_2:
 				warp "geffen",120,39;
 		L_MENU_3_3:
 			check @KAFRA_COUPON = 0,-,L_SUB_3_3;
-				check Zeny < 1700,-,L_ROOT_3_3;
+				check Zeny < 1200,-,L_ROOT_3_3;
 					mes "[Kafra Personnel]";
 					mes "You don't have enough money.";
 					mes "Please verify the amount of money you have.";
 					goto L_EXIT;
 			L_ROOT_3_3:
-				set Zeny -= 1700,0;
-				set KF_PIT += 170;
+				set Zeny -= 1200,0;
+				set KF_PIT += 120;
 			L_SUB_3_3:
 				warp "payon",69,100;
 		L_MENU_3_4:
 			check @KAFRA_COUPON = 0,-,L_SUB_3_4;
-				check Zeny < 1800,-,L_ROOT_3_4;
+				check Zeny < 1200,-,L_ROOT_3_4;
 					mes "[Kafra Personnel]";
 					mes "You don't have enough money.";
 					mes "Please verify the amount of money you have.";
 					goto L_EXIT;
 			L_ROOT_3_4:
-				set Zeny -= 1800,0;
-				set KF_PIT += 180;
+				set Zeny -= 1200,0;
+				set KF_PIT += 120;
 			L_SUB_3_4:
 				warp "morocc",156,46;
 		L_MENU_3_4a:
@@ -1964,53 +1964,53 @@ prt_fild01.gat,198,47,0	script	"Kafra Personnel"	112,{
 		mes "[Kafra Personnel]";
 		mes "Please pick your destination.";
 		next;
-		menu "Izlude -> 900 z",L_MENU_3_1,"Geffen -> 1400 z",L_MENU_3_2,"Payon -> 1700 z",L_MENU_3_3,"Morroc -> 1800 z",L_MENU_3_4,"Comodo -> 2000 z",L_MENU_3_4a,"Orc Dungeon -> 1700 z",L_MENU_3_5,"Cancel",L_MENU_3_6;
+		menu "Izlude -> 600 z",L_MENU_3_1,"Geffen -> 1200 z",L_MENU_3_2,"Payon -> 1200 z",L_MENU_3_3,"Morroc -> 1200 z",L_MENU_3_4,"Comodo -> 2000 z",L_MENU_3_4a,"Orc Dungeon -> 1700 z",L_MENU_3_5,"Cancel",L_MENU_3_6;
 		L_MENU_3_1:
 			check @KAFRA_COUPON = 0,-,L_SUB_3_1;
-				check Zeny < 900,-,L_ROOT_3_1;
+				check Zeny < 600,-,L_ROOT_3_1;
 					mes "[Kafra Personnel]";
 					mes "You don't have enough money.";
 					mes "Please verify the amount of money you have.";
 					goto L_EXIT;
 			L_ROOT_3_1:
-				set Zeny -= 900,0;
-				set KF_PIT += 90;
+				set Zeny -= 600,0;
+				set KF_PIT += 60;
 			L_SUB_3_1:
 				warp "izlude",91,105;
 		L_MENU_3_2:
 			check @KAFRA_COUPON = 0,-,L_SUB_3_2;
-				check Zeny < 1400,-,L_ROOT_3_2;
+				check Zeny < 1200,-,L_ROOT_3_2;
 					mes "[Kafra Personnel]";
 					mes "You don't have enough money.";
 					mes "Please verify the amount of money you have.";
 					goto L_EXIT;
 			L_ROOT_3_2:
-				set Zeny -= 1400,0;
-				set KF_PIT += 140;
+				set Zeny -= 1200,0;
+				set KF_PIT += 120;
 			L_SUB_3_2:
 				warp "geffen",120,39;
 		L_MENU_3_3:
 			check @KAFRA_COUPON = 0,-,L_SUB_3_3;
-				check Zeny < 1700,-,L_ROOT_3_3;
+				check Zeny < 1200,-,L_ROOT_3_3;
 					mes "[Kafra Personnel]";
 					mes "You don't have enough money.";
 					mes "Please verify the amount of money you have.";
 					goto L_EXIT;
 			L_ROOT_3_3:
-				set Zeny -= 1700,0;
-				set KF_PIT += 170;
+				set Zeny -= 1200,0;
+				set KF_PIT += 120;
 			L_SUB_3_3:
 				warp "payon",69,100;
 		L_MENU_3_4:
 			check @KAFRA_COUPON = 0,-,L_SUB_3_4;
-				check Zeny < 1800,-,L_ROOT_3_4;
+				check Zeny < 1200,-,L_ROOT_3_4;
 					mes "[Kafra Personnel]";
 					mes "You don't have enough money.";
 					mes "Please verify the amount of money you have.";
 					goto L_EXIT;
 			L_ROOT_3_4:
-				set Zeny -= 1800,0;
-				set KF_PIT += 180;
+				set Zeny -= 1200,0;
+				set KF_PIT += 120;
 			L_SUB_3_4:
 				warp "morocc",156,46;
 		L_MENU_3_4a:
