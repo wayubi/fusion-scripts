@@ -39,6 +39,9 @@
 // - area8 -> force_map1: 0,0
 //   Say text when area8 is clear.
 //
+//
+// Changes:
+//  Colus, 20040321: Changed invisible NPC IDs to valid values.
 //========================================================================================
 
 prt_are_in.gat,99,85,4	script	"Receptionist"	124,{
@@ -176,7 +179,7 @@ force_map1.gat,10,56,4	script	"Advancer"	111,{
 	return;
 }
 
-force_map1.gat,0,0,4	script	"area1"	-1,{
+force_map1.gat,0,0,4	script	"area1"	32767,{
 	set \@AREA1_MOB += 1;
 	check \@AREA1_MOB < 5,-,L_START_1;
 	return;
@@ -192,7 +195,7 @@ force_map1.gat,0,0,4	script	"area1"	-1,{
 	return;
 }
 
-force_map1.gat,0,0,4	script	"area2"	-1,{
+force_map1.gat,0,0,4	script	"area2"	32767,{
 	set \@AREA2_MOB += 1;
 	check \@AREA2_MOB < 4,-,L_START_1;
 	return;
@@ -208,7 +211,7 @@ force_map1.gat,0,0,4	script	"area2"	-1,{
 	return;
 }
 
-force_map1.gat,0,0,4	script	"area3"	-1,{
+force_map1.gat,0,0,4	script	"area3"	32767,{
 	set \@AREA3_MOB += 1;
 	check \@AREA3_MOB < 4,-,L_START_1;
 	return;
@@ -225,7 +228,7 @@ force_map1.gat,0,0,4	script	"area3"	-1,{
 	return;
 }
 
-force_map1.gat,0,0,4	script	"area4"	-1,{
+force_map1.gat,0,0,4	script	"area4"	32767,{
 	enablenpc "force_map1","Advancer",0;
 	set \@START_ARENA = 0;
 	broadcast "All clearance! Congratulations",10;
@@ -233,7 +236,7 @@ force_map1.gat,0,0,4	script	"area4"	-1,{
 	return;
 }
 
-force_map1.gat,0,0,4	script	"area5"	-1,{
+force_map1.gat,0,0,4	script	"area5"	32767,{
 	set \@AREA5_MOB += 1;
 	check \@AREA5_MOB < 4,-,L_START_1;
 	return;
@@ -250,7 +253,7 @@ force_map1.gat,0,0,4	script	"area5"	-1,{
 	return;
 }
 
-force_map1.gat,0,0,4	script	"area6"	-1,{
+force_map1.gat,0,0,4	script	"area6"	32767,{
 	set \@AREA6_MOB += 1;
 	check \@AREA6_MOB < 4,-,L_START_1;
 	return;
@@ -267,7 +270,7 @@ force_map1.gat,0,0,4	script	"area6"	-1,{
 	return;
 }
 
-force_map1.gat,0,0,4	script	"area7"	-1,{
+force_map1.gat,0,0,4	script	"area7"	32767,{
 	set \@AREA7_MOB += 1;
 	check \@AREA7_MOB < 4,-,L_START_1;
 	return;
@@ -284,7 +287,7 @@ force_map1.gat,0,0,4	script	"area7"	-1,{
 	return;
 }
 
-force_map1.gat,0,0,4	script	"area8"	-1,{
+force_map1.gat,0,0,4	script	"area8"	32767,{
 	set \@AREA8_MOB += 1;
 	check \@AREA8_MOB < 4,-,L_START_1;
 	return;
