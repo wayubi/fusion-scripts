@@ -9,14 +9,19 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.003
 ----------------------------------------------------------------------------------------------------
+- shop\comodo.txt - Updated Comodo shops added items updated prices. [Muad_Dib]
+- shop\payon.txt - Updated Payon shops added items updated prices. [Muad_Dib]
+- shop\morocc.txt - Updated Morocc shops added items updated prices. [Muad_Dib]
+- shop\aldebaran.txt - Updated Aldebaran shops added items updated prices. [Muad_Dib]
+- shop\alberta.txt - Updated Alberta shops added items updated prices. [Muad_Dib]
 - Mob\other\job_quests.txt - Updated monsters in the job_sword map. [Tsusai]
 - Warp\other\job_sword.txt - Added warps to get out of fallen area caused by traps. [Tsusai]
 - Warp\other\job_sword.txt - Added hidden trap warps. [Tsusai]
 - Warp\other\sword.txt - Removed - Map no longer used. [Tsusai]
 - GvG\npc_guardiankafra.txt - Added Payon Castle fixes. [Tsusai]
-- shop\geffen.txt - Updated Geffen shop added items updated prices. [Muad_Dib]
-- shop\izlude.txt - Updated Izlude shop added items updated prices. [Muad_Dib]
-- shop\prontera.txt - Updated Prontera shop added items updated prices. [Muad_Dib]
+- shop\geffen.txt - Updated Geffen shops added items updated prices. [Muad_Dib]
+- shop\izlude.txt - Updated Izlude shops added items updated prices. [Muad_Dib]
+- shop\prontera.txt - Updated Prontera shops added items updated prices. [Muad_Dib]
 - GvG\npc_guardiankafra.txt - Moved Aldebaran fixes here. [Tsusai]
 - GvG\npc_guardiankafra.txt - Finished fixing Prontera Castle Guardian and Kafra service bug. [Tsusai]
 - Warp\fields\prt_fild.txt - Fixed warp destination bug (#602). [Tsusai]
