@@ -412,7 +412,7 @@ RED:
 	delitem 507,30;
 	delitem 973,1;
 	delitem 713,1;
-	additem 975,1
+	additem 975,1;
 	goto DONE;
 R1:
 	mes "[Dye Maker Java Dullihan]";
@@ -450,7 +450,7 @@ BLUE:
 	delitem 509,20;
 	delitem 973,1;
 	delitem 713,1;
-	additem 978,1
+	additem 978,1;
 	goto DONE;
 C1:
 	mes "[Dye Maker Java Dullihan]";
@@ -475,7 +475,7 @@ GREEN:
 	delitem 973,1;
 	delitem 974,1;
 	delitem 713,1;
-	additem 979,1
+	additem 979,1;
 	goto DONE;
 G1:
 	mes "[Dye Maker Java Dullihan]";
@@ -498,7 +498,7 @@ ORANGE:
 	delitem 973,1;
 	delitem 974,1;
 	delitem 713,1;
-	additem 980,1
+	additem 980,1;
 	goto DONE;
 O1:
 	mes "[Dye Maker Java Dullihan]";
@@ -521,7 +521,7 @@ PURPLE:
 	delitem 973,1;
 	delitem 974,1;
 	delitem 713,1;
-	additem 981,1
+	additem 981,1;
 	goto DONE;
 P1:
 	mes "[Dye Maker Java Dullihan]";
@@ -540,7 +540,7 @@ WHITE:
 	delitem 509,30;
 	delitem 973,1;
 	delitem 713,1;
-	additem 982,1
+	additem 982,1;
 	goto DONE;
 W1:
 	mes "[Dye Maker Java Dullihan]";
@@ -567,7 +567,7 @@ BLACK:
 	delitem 973,1;
 	delitem 974,1;
 	delitem 713,1;
-	additem 983,1
+	additem 983,1;
 	goto DONE;
 B1:
 	mes "[Dye Maker Java Dullihan]";

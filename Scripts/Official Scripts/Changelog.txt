@@ -7,8 +7,10 @@
 ====================================================================================================
 
 ----------------------------------------------------------------------------------------------------
- Fusion NPC Pack - 1.003
+ Fusion NPC Pack - 1.004
 ----------------------------------------------------------------------------------------------------
+- Changelog.txt - Added version header. [Tsusai]
+- Event\Event_Dye.txt - corrected additem syntax errors on Java Dullihan. [Tsusai]
 - Town\Town_Kafra.txt - added missing L_ROOT_4_1 label on cart rental. [Tsusai]
 - Warp\other\job_sword.txt - Corrected the swordsman test warps. [Colus]
 - Job\Job1_Merchant - added no skill left requirement. [nestor_zulueta]
@@ -92,6 +94,10 @@
 - Job\Job1_Merchant.txt - Complete change to merchant quest. [nestor_zulueta] 
 - GvG\npc_guardiankafra.txt - Fixed Geffen Castle Guardian and Kafra service bug. [icbob]
 - event\Event_Dye.txt replaced Zabadorihan NPC with Owl,s Java Dullihan NPC. [Muad_Dib]
+
+----------------------------------------------------------------------------------------------------
+ Fusion NPC Pack - 1.003
+----------------------------------------------------------------------------------------------------
 - shop\amatsu.txt - Updated Amatsu shops added items updated prices. [Muad_Dib]
 - shop\lutie.txt - Updated Lutie shops added items updated prices. [Muad_Dib]
 - shop\umbala.txt - Updated Umbala shops added items updated prices. [Muad_Dib]
