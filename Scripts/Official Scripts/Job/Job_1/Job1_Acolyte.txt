@@ -11,13 +11,13 @@
 //   Checks if Quest is completed / changes class.
 //
 // - Ascetic -> prt_fild03: 365,255
-//   Quest 1, Marks player that quest has been fufilled.
+//   Quest 1, Marks player that quest has been fulfilled.
 //
 // - Ascetic -> /moc_fild07: 41,355
-//   Quest 2, Marks player that quest has been fufilled.
+//   Quest 2, Marks player that quest has been fulfilled.
 //
 // - Ascetic -> prt_fild00: 208,218
-//   Quest 3, Marks player that quest has been fufilled.
+//   Quest 3, Marks player that quest has been fulfilled.
 //
 //========================================================================================
 
@@ -106,7 +106,18 @@ REQ:
 	close;
 ERR0:
 	mes "[Father Mareusis]";
-	mes "Are you feeling okay today..Oh..your attire.. are you an Acolyte? You are not joking around with me, are you?";
+	mes "Are you feeling okay?....";
+		emotion 20;
+	next;
+	mes "[Father Mareusis]";
+	mes "...your attire...";
+	next;
+	mes "[Father Mareusis]";
+	mes "You're already are an Acolyte.....";
+	next;
+	mes "[Father Mareusis]";
+	mes "You are not joking with me, are you? Hoho!!..kids these days.";
+		emotion 18;
 	close;
 ERR1:
 	mes "[Father Mareusis]";
@@ -122,9 +133,11 @@ EXIT:
 }
 
 prt_fild03.gat,365,255,2 script "Ascetic"	89,{
+	   check Job == 4,L_PriestQ,-;
+	   check Job == 8,L_PriestQ,-;
 	   check Job == 24,NOV,-;
 	   check Job == 0,-,ERR0;
-	  NOV:
+NOV:
 	   check Aco_Quest >= 1,-,ERR1;
 	   check Aco_Quest == 1,-,NO1;
 	   random @RAND,100;
@@ -139,6 +152,7 @@ OK1:
 	next;
 	mes "[Father Rubalkabara]";
 	mes "But you might have to withstand what elder people say. Because God loves to teach his children, you see.";
+		emotion 18;
 	mes "I will send the message that shows that you visited me to the Santuary as soon as I can.. so go back to Prontera child.";
 	next;
 	mes "[Father Rubalkabara]";
@@ -159,6 +173,7 @@ NO1:
 	mes "[Father Rubalkabara]";
 	mes "Oh... Are you the young man who wish to become an Acolyte...? I already received the news of you from the Santuary.";
 	mes "Is your name .... $charaname ..... umm... I don't think you are on the List of Candidates.";
+		emotion 20;
 	next;
 	mes "[Father Rubalkabara]";
 	mes "...... Why don't you go back to the Santuary and check again?";
@@ -171,22 +186,60 @@ ERR0:
 ERR1:
 	mes "[Father Rubalkabara]";
 	mes "Huh..? What brings you here? This is very dangerous place for a Novice like you. Please go back quickly, be safe!";
+		emotion 0;
 	close;
 EXIT:
+	close;
+L_PriestQ:
+		check PRIEST_Q == 1,L_Test,-;
+		check PRIEST_Q2 == 1,L_Test,-;
+		check PRIEST_Q == 1,L_Done,-;
+		check PRIEST_Q2 > 1,L_Done,-;
+	mes "[Father Rubalkabara]";
+	mes "It's good to see you again.  I expect all is well? Continue on your path of helping others and serving God, and let us pray for humanities salvation.";
+	close;
+L_Test:
+	mes "Ah hello there....";
+	next;
+	mes "[Father Rubalkabara]";
+	mes "What's this? You're here because you wish to serve God in an even greater capacity?";
+		emotion 1;
+	next;
+	menu "Yes, I believe Priesthood is the right path.",-,"No, not really.... just came to say hi.",M_No;
+	mes "[Father Rubalkabara]";
+	mes "Haha! Very good.  We need more people like yourself in order for this world to survive the evils that haunt it.";
+		emotion 21;
+	next;
+	mes "[Father Rubalkabara]";
+	mes "Because of your pure heart I will give you my blessing child.  Please meet with ^5533FFMother Marthilda^000000 next.";
+	next;
+	mes "[Father Rubalkabara]";
+	mes "You can find her in the map just north of the town of Morroc.  Have a safe journey and good luck on becoming a Priest.";
+		set PRIEST_Q2 = 2;
+	close;
+M_No:
+	mes "[Father Rubalkabara]";
+	mes "Oh... well then... hello to you too.  Although it is nice to see a servant of God such as yourself, I'm a little busy right now so if you don't mind.....";
+		emotion 4;
+	close;
+L_Done:
+	mes "Please see ^5533FFMother Mathilda^000000 next.  Good luck with your journey to becoming a Priest";
 	close;
 }
 
 moc_fild07.gat,41,355,4	script "Ascetic" 95,{
+	   check Job == 4,L_PriestQ,-;
 	   check Job == 24,NOV,-;
+	   check Job == 8,NOV,-;
 	   check Job == 0,-,ERR0;
-	  NOV:
+NOV:
 	   check Aco_Quest >= 1,-,ERR1;
 	   check Aco_Quest == 2,-,NO1;
 	   random @RAND,100;
 	   check @RAND <= 50,OK1,OK2;
 OK1:
 	mes "[Mother Mathilda]";
-	mes "Ah,You are the one of Acolyte applicants.I sincerely welcome you.";
+	mes "Ah, You are the one of Acolyte applicants.I sincerely welcome you.";
 	next;
 	mes "[Mother Mathilda]";
 	mes "What is your name? Um... $charaname ..let's see.. Yes! I found you.";
@@ -207,26 +260,55 @@ NO1:
 	mes "Ah,You are the one of Acolyte applicants.I sincerely welcome you.";
 	mes "What is your name? Um... $charaname .. let's see..";
 	mes "..Well.. I can't see your name on the list ....";
+		emotion 20;
 	next;
 	mes "[Mother Mathilda]";
 	mes "I recommand you to return to the Sanctuary and check again.";
 	close;
 ERR0:
 	mes "[Mother Mathilda]";
-	mes "...................";
+	mes "Hello and welcome.  I am Mother Marthilda.  Are you a weary traveler or a mighty warrior?";
+	mes "Whoever you are please make sure to keep your faith in God.";
 	close;
 ERR1:
 	mes "[Mother Mathilda]";
-	mes "...................";
+	mes "My!! Aren't you a little far from your town?  A novice like you could get hurt.  Please be safe.";
+		emotion 0;
 	close;
 EXIT:
+	close;
+L_PriestQ:
+		check PRIEST_Q == 1,L_Test,-;
+		check PRIEST_Q2 == 2,L_Test,-;
+		check PRIEST_Q == 1,L_Done,-;
+		check PRIEST_Q2 > 2,L_Done,-;
+	mes "[Mother Mathilda]";
+	mes "Oh my... It's been a while since I've seen you.  My how you've grown.  It's nice to see one of God servants continuing to improve.";
+	mes "I wish you continued success child, and always remember to have faith.";
+	close;
+L_Test:
+	mes "[Mother Mathilda]";
+	mes "Ah, you're here for the Priest test aren't you?  I must say, you did a very good job in comming all this way.";
+	next;
+	mes "[Mother Mathilda]";
+	mes "That shows that you have true faith! It is my pleasure to allow you to continue on with your test.";
+	next;
+	mes "[Mother Mathilda]";
+	mes "You must now go see ^5533FFFather Yosuke^000000.  He is 1 map North and 2 maps East of Prontera.  I'm sure you will make a fine Priest!";
+		set PRIEST_Q2 = 3;
+	close;
+L_Done:
+	mes "[Mother Mathilda]";
+	mes "To complete your task you must go find ^5533FFFather Yosuke^000000.  Please be carefull and remeber to pray.";
 	close;
 }
 
 prt_fild00.gat,208,218,6 script "Ascetic"	98,{
+	   check Job == 4,L_PriestQ,-;
 	   check Job == 24,NOV,-;
+	   check Job == 8,NOV,-;
 	   check Job == 0,-,ERR0;
-	  NOV:
+NOV:
 	   check Aco_Quest >= 1,-,ERR1;
 	   check Aco_Quest == 3,OK1,-;
 	   random @RAND,100;
@@ -242,6 +324,7 @@ OK1:
 	mes "[Father Yosuke]";
 	mes "Ok. I will send the confirmation note to the Sanctuary that you, visited me.";
 	mes "Now go back child. And Don't forget you have to return to the Sanctuary.";
+		emotion 27;
 	   save "prt_fild00",206,230;
 	   set Aco_Quest = 99;
 	close;
@@ -253,6 +336,7 @@ NO1:
 	mes "[Father Yosuke]";
 	mes "Not bad, Not bad. You withstand the Long Journey pretty well.";
 	mes "Name? $charaname  .....Hmm.. Interesting.. I can't see your name on the List..?";
+		emotion 20;
 	next;
 	mes "[Father Yosuke]";
 	mes "I think you made a mistake.";
@@ -261,7 +345,11 @@ NO1:
 No2:
 	mes "[Father Yosuke]";
 	mes "What ? Have more Business with me?";
+		emotion 1;
+	next;	
+	mes "[Father Yosuke]";
 	mes "You don't? Please go back to the Santuary if not.";
+		emotion 27;
 	close;
 ERR0:
 	mes "[Father Yosuke]";
@@ -272,6 +360,28 @@ ERR1:
 	mes "...................";
 	close;
 EXIT:
+	close;
+L_PriestQ:
+		check PRIEST_Q == 1,L_Test,-;
+		check PRIEST_Q2 == 3,L_Test,-;
+		check PRIEST_Q == 1,L_Done,-;
+		check PRIEST_Q2 == 4,L_Done,-;
+	mes "[Father Yosuke]";
+	mes "Just because you're a servant of God doesn't mean you can come here and bother me.  Please leave...";
+	close;
+L_Test:
+	mes "[Father Yosuke]";
+	mes "Hmm...? Did you need something? Oh the Priest test..... are you sure you're up for that?";
+		emotion 1;
+	next;
+	mes "[Father Yosuke]";
+	mes "Meh, very well.  I will let you pass.  Go back to the church and speak with Father Thomas.  Your duty here has been fulfilled";
+		set PRIEST_Q2 = 4;
+	close;
+L_Done:
+	mes "[Father Yosuke]";
+	mes "Ugh? What are you still doing here...? I said to go back to the church.... I'm very busy right now....";
+		emotion 1;
 	close;
 }
 

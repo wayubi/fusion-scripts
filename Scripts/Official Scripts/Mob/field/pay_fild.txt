@@ -1,7 +1,7 @@
 //========================================================================================
 // »» The Fusion Project ««
 // Copyright (c) 2004, Cobax Information Systems
-// http://cobax.net/
+// http://fusion.cobax.net/
 // ---------------------------------------------------------------------------------------
 //
 // Payon Fields Mob - Monster Spawn Locations
@@ -70,7 +70,7 @@ pay_fild04.gat,0,0,0,0		monster	"Angeling"		1096,1,1800000,200000,1
 pay_fild04.gat,0,0,0,0		monster	"Drops"		1113,35,0,0,0
 pay_fild04.gat,0,0,0,0		monster	"Ghostring"		1120,1,1800000,200000,1
 pay_fild04.gat,0,0,0,0		monster	"Marin"		1242,20,0,0,0
-pay_fild04.gat,0,0,0,0		monster	"Deviling"		2116,1,1800000,200000,1
+pay_fild04.gat,0,0,0,0		monster	"Deviling"		1582,1,1800000,200000,1
 
 //========================================================================================
 // - Payon Field 05

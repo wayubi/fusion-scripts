@@ -162,34 +162,34 @@ jawaii.gat,112,173,0 script "Inn" 93,{
 	mes "Wich Room do you want?";
 	menu "Suite room",L_Suite,"Villa room",L_Villa,"Honey room",L_Honey,"Antique Room",L_Antique,"Maybe later",L_Later;
 L_Suite:
-		check Zeny >= 100000,-,L_Error;
-		set Zeny -= 100000,0; 
+		check Zeny >= 1000,-,L_Error;
+		set Zeny -= 1000,0; 
 		warp "jawaii_in",116,64; 
 L_Villa:
-		check Zeny >= 100000,-,L_Error;
-		set Zeny -= 100000,0; 
+		check Zeny >= 1000,-,L_Error;
+		set Zeny -= 1000,0; 
 		warp "jawaii_in",86,74; 
 L_Honey:
-		check Zeny >= 100000,-,L_Error;
-		set Zeny -= 100000,0; 
+		check Zeny >= 1000,-,L_Error;
+		set Zeny -= 1000,0; 
 		warp "jawaii_in",84,117; 
 L_Antique:
 		check Zeny >= 1000,-,L_Error;
 		set Zeny -= 1000,0; 
 		warp "jawaii_in",128,111;
 L_Error: 
-	mes "[Inn Man]"; 
+	mes "[Inn Woman]"; 
 	mes "It seems you don't have enough money."; 
 	close;  
 L_Later:
-	mes "[Inn Man]"; 
+	mes "[Inn Woman]"; 
 	mes "Allright, come back later."; 
 	close; 
 }
 
 jawaii_in.gat,25,100,0 script "Dancer#1" 724,{
  	mes "[Dancer]"; 
-	mes "Welcome; 
+	mes "Welcome"; 
 // donpcevent "::On_jemo"; 
 	close; 
 On_jemo: 
@@ -199,7 +199,7 @@ On_jemo:
 
 jawaii_in.gat,25,98,0 script "Dancer#2" 724,{
  	mes "[Dancer]"; 
-	mes "Welcome; 
+	mes "Welcome"; 
 // donpcevent "::On_jemo"; 
 	close; 
 On_jemo: 
@@ -209,7 +209,7 @@ On_jemo:
 
 jawaii_in.gat,25,96,0 script "Dancer#3" 724,{
  	mes "[Dancer]"; 
-	mes "Welcome; 
+	mes "Welcome"; 
 // donpcevent "::On_jemo"; 
 	close; 
 On_jemo: 
@@ -219,7 +219,7 @@ On_jemo:
 
 jawaii_in.gat,25,94,0 script "Dancer#4" 724,{
  	mes "[Dancer]"; 
-	mes "Welcome; 
+	mes "Welcome"; 
 // donpcevent "::On_jemo"; 
 	close; 
 On_jemo: 
@@ -229,7 +229,7 @@ On_jemo:
 
 jawaii_in.gat,30,100,4 script "Dancer#5" 724,{
  	mes "[Dancer]"; 
-	mes "Welcome; 
+	mes "Welcome"; 
 // donpcevent "::On_jemo"; 
 	close; 
 On_jemo: 
@@ -239,7 +239,7 @@ On_jemo:
 
 jawaii_in.gat,30,98,4 script "Dancer#6" 724,{
  	mes "[Dancer]"; 
-	mes "Welcome; 
+	mes "Welcome"; 
 // donpcevent "::On_jemo"; 
 	close; 
 On_jemo: 
@@ -249,7 +249,7 @@ On_jemo:
 
 jawaii_in.gat,30,96,4 script "Dancer#7" 724,{
  	mes "[Dancer]"; 
-	mes "Welcome; 
+	mes "Welcome"; 
 // donpcevent "::On_jemo"; 
 	close; 
 On_jemo: 
@@ -259,7 +259,7 @@ On_jemo:
 
 jawaii_in.gat,30,94,4 script "Dancer#8" 724,{
  	mes "[Dancer]"; 
-	mes "Welcome; 
+	mes "Welcome"; 
 // donpcevent "::On_jemo"; 
 	close; 
 On_jemo: 

@@ -1,6 +1,11 @@
 --------------------------------------------------------------------------------
  Fusion 1.213 - August 29th, 2004
 -------------------------------------------------------------------------------- 
+- 11-06-04: Mob\dungeon\ayo_dun.txt - Added ayothaya mob spawns doesn't show correct sprites with current exe. [Muad_Dib]
+- 11-06-04: Mob\field\ayo_fild.txt - Added ayothaya mob spawns doesn't show correct sprites with current exe. [Muad_Dib]
+- 11-06-04: Job\Job_1\Job1_Acolyte.txt - Added Priest Quest checks for in the future. [Muad_Dib]
+- 11-06-04: Mob\field\pay_fild.txt - Updated Deviling spawn doesn't show correct sprites with current exe. [Muad_Dib]
+- 11-06-04: Town\Town_Jawaii.txt - Fixed prices and text. [Muad_Dib]
 - 11-02-04: Town\kafra\Comodo_Kafra.txt - Added warp to Umbala. [Muad_Dib]
 - 11-02-04: Town\kafra\Umbala_Kafra.txt - Added warp to Comodo. [Muad_Dib]
 - 10-30-04: Quest\Quest_skill\Cart_Revolution.txt - Fixed Npc name. [Muad_Dib]
