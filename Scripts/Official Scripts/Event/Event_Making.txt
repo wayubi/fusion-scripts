@@ -51,6 +51,9 @@
 // - Isac Mari -> comodo: 273,137
 //   Give information and make Miner Helmet, Parcel Hat, Heart of Merchant and Phantom Opera
 //
+// - Hair Ornament Girl -> comodo: 228,159
+//   Give information and make Cross Hat, Bulb Band, Stripe band and Blue hairband
+//
 //========================================================================================
 
 payon_in01.gat,103,111,4	script	"Granny"	103,{
@@ -1522,5 +1525,142 @@ L_SUB_4_1:
 	mes "If you bring all the items then I";
 	mes "will make it for you right away.";
 	mes "Hoo~ see you later.";
+	close;
+}
+comodo.gat,228,159,4	script	"Hair Ornament Girl"	700,{
+	mes "[Hair Ornament Girl]";
+	mes "Oh! hi. You wanna make one?";
+	mes "If you want to give a present to a";
+	mes "girl friend, Hair band is the best";
+	mes "one.";
+	next;
+	mes "[Hair Ornament Girl]";
+	mes "If you give me a few simple items";
+	mes "then I can make a gorgeous Hair";
+	mes "Band~";
+	mes "Have a look at these.";
+	next;
+	menu "Cross Hat",L_MENU_1,"Bulb Band",L_MENU_2,"Stripe Hairband",L_MENU_3,"Blue Hairband",L_MENU_4;
+	close;
+L_MENU_1:
+	checkitem 2508,1,-,L_SUB_1_1;
+	checkitem 7069,500,-,L_SUB_1_1;
+	mes "[Hair Ornament Girl]";
+	mes "Wow!! Well done! Finally you have gathered all items needed!";
+	mes "We will make the Cross Hairband for you right away.";
+	next;
+	delitem 2505,1;
+	delitem 7069,500;
+	additem 5036,1;
+	mes "[Hair Ornament Girl]";
+	mes "Tah Dah!!!^FF0000Cross Hairband^000000...! Please Take it!";
+	close;
+L_SUB_1_1:
+	mes "[Hair Ornament Girl]";
+	mes "Hum~ You've chosen Cross Hat?";
+	mes "There are some required items";
+	mes "needed to make this head band.";
+	next;
+	mes "[Hair Ornament Girl]";
+	mes "To make Cross Hat..";
+	mes "1 Rosary";
+	mes "500 Destroyed Armor";
+	mes "...will need.";
+	next;
+	mes "[Hair Ornament Girl]";
+	mes "If you bring all the items then I";
+	mes "will make it for you right away.";
+	mes "Hoo~ see you then~;
+	close;
+L_MENU_2:
+	checkitem 2233,1,-,L_SUB_2_1;
+	checkitem 746,20,-,L_SUB_2_1;
+	mes "[Hair Ornament Girl]";
+	mes "Wow!! Well done! Finally you have gathered all items needed!";
+	mes "We will make the Lightbulb Hairband for you right away.";
+	next;
+	delitem 2233,1;
+	delitem 746,20;
+	additem 5034,1;
+	mes "[Hair Ornament Girl]";
+	mes "Tah Dah!!!^FF0000Lightbulb Hairband^000000...! Please Take it!";
+	close;
+L_SUB_2_1:
+	mes "[Hair Ornament Girl]";
+	mes "Hum~You've chosen Bulb Band?";
+	mes "There are some required items";
+	mes "needed to make this head band.";
+	next;
+	mes "[Hair Ornament Girl]";
+	mes "To make Light Bulb Band...";
+	mes "1 Slotted Circlet";
+	mes "20 Glass Bead";
+	mes "...will need.";
+	next;
+	mes "[Hair Ornament Girl]";
+	mes "If you bring all the items then I";
+	mes "will make it for you right away.";
+	mes "Hoo~ see you then~;
+	close;
+L_MENU_3:
+	checkitem 1090,1500,-,L_SUB_3_1;
+	mes "[Hair Ornament Girl]";
+	mes "Wow!! Well done! Finally you have gathered all items needed!";
+	mes "We will make the Striped Bandana for you right away.";
+	next;
+	delitem 1090,1500;
+	additem 5049,1;
+	mes "[Hair Ornament Girl]";
+	mes "Tah Dah!!!^FF0000Striped Bandana^000000...! Please Take it!";
+	close;
+L_SUB_3_1:
+	mes "[Hair Ornament Girl]";
+	mes "Hum~You've chosen the Stripe";
+	mes "band?";
+	mes "There are some required items";
+	mes "needed to make this head band.";
+	next;
+	mes "[Hair Ornament Girl]";
+	mes "To make Stripe band...";
+	mes "1500 Worn-out Prison Uniform";
+	mes "...will need.";
+	next;
+	mes "[Hair Ornament Girl]";
+	mes "If you bring all the items then I";
+	mes "will make it for you right away.";
+	mes "Hoo~ see you then~;
+	close;
+L_MENU_4:
+	checkitem 7003,300,-,L_SUB_4_1;
+	checkitem 2211,1,-,L_SUB_4_1;
+	checkitem 978,1,-,L_SUB_4_1;
+	mes "[Hair Ornament Girl]";
+	mes "Wow!! Well done! Finally you have gathered all items needed!";
+	mes "We will make the Blue Bandana for you right away.";
+	next;
+	delitem 7003,300;
+	delitem 2211,1;
+	delitem 978,1;
+	additem 5052,1;
+	mes "[Hair Ornament Girl]";
+	mes "Tah Dah!!!^FF0000Blue Bandana^000000...! Please Take it!";
+	close;
+L_SUB_4_1:
+	mes "[Hair Ornament Girl]";
+	mes "Hum~You've chosen Blue Hairband?";
+	mes "There are some required items";
+	mes "needed to make this head band.";
+	next;
+	mes "[Hair Ornament Girl]";
+	mes "To make Blue hair band...";
+	mes "1 Bandana";
+	mes "1 Colbaltblue Dyestuffs";
+	mes "300 Anolian Skin";
+	mes "...will need?";
+	next;
+	mes "[Hair Ornament Girl]";
+	mes "If you bring all the items then I";
+	mes "will make it for you right away.";
+	mes "Hoo~ see you then~;
 	close;
 }
