@@ -1,6 +1,9 @@
 --------------------------------------------------------------------------------
  Fusion 1.212 - June 30th, 2004
---------------------------------------------------------------------------------
+-------------------------------------------------------------------------------- 
+ - 06-20-04: Added Hats Quest for the 525 patch - Hat Quests\New_Hats_525t.txt. [Yun Qi]
+ - 06-20-04: Added "Hat Quests" folder - Scripts\Custom Scripts\Quests\Hat Quests. [Yun Qi]
+ - 06-20-04: Added "Quests" folder - Scripts\Custom Scripts\Quests. [Yun Qi]
  - 06-11-04: Added Free Stat & Skill Resetter - Stat and Skill Resetters\Dai-In-free.txt . [Yun Qi]
  - 06-11-04: Added "Stat and Skill Resetters" folder - Scripts\Custom Scripts\Stat and Skill Resetters. [Yun Qi]
  - 06-10-04: Added 40z Prontera Hair Stylist script (ENG) - Hair Stylists\Ashley-40z_input.txt. [Yun Qi]
