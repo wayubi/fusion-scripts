@@ -326,7 +326,7 @@ pay_fild08,218,283,1	script	"Guy"	89,{
 							mes "If you want to have a feel of the sword,";
 							mes "you need to prepare ^0099FFExecutioner's Mitten x 2^000000 and";
 							mes "^0099FFNecklace of Oblivion x 3^000000";
-							mes "In a	ddition, you need ^0099FFBloody Edge x 10^000000 and";
+							mes "In addition, you need ^0099FFBloody Edge x 10^000000 and";
 							mes "the item that can summon spirits - ^0099FFAmulet x 50^000000.";
 							next;
 							mes "[Blacksmith]";
