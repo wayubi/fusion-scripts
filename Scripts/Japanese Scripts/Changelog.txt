@@ -1,6 +1,13 @@
 --------------------------------------------------------------------------------
- Fusion 1.212 - June 30th, 2004
+ - Japanese scripts changelog
 --------------------------------------------------------------------------------
+- 09-15-04: Removed translated npc_event_arrow. [Muad_Dib]
+- 09-15-04: Removed translated npc_event_pumpkin. [Muad_Dib]
+- 09-15-04: Removed translated npc_job_alche. [Muad_Dib]
+- 09-15-04: Removed translated npc_town_umbala. [Muad_Dib]
+- 09-15-04: Removed translated npc_town_kafra. [Muad_Dib]
+- 09-15-04: Removed translated npc_town_lutie. [Muad_Dib]
+- 09-15-04: Removed translated npc_job_2nd. [Muad_Dib]
 - 06-20-04: Removed translated npc_town_guide, I put it in Town_Guide.txt [Muad_Dib]
 - 06-20-04: Moved translated npc_job_sage to the translated folder. [Muad_Dib]
 - 06-16-04: Removed translated npc_event_alchemist, I added it as Event_Alchemist.txt. [Muad_Dib]
