@@ -1,6 +1,7 @@
 --------------------------------------------------------------------------------
  Fusion 1.212 - June 30th, 2004
 --------------------------------------------------------------------------------
+- 06-15-04: Removed translated npc_town_amatsu, updated Town_Amatsu with it. [Muad_Dib]
 - 06-15-04: Removed translated npc_town_guide, is already translated. [Muad_Dib]
 - 06-15-04: Removed translated npc_event_yuno, it is now in Town_Juno.txt [Muad_Dib]
 - 06-15-04: Removed translated npc_job_supernovice, it is now in Job_Super_Novice.txt [Muad_Dib]
