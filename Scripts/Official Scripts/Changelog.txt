@@ -9,6 +9,9 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.004
 ----------------------------------------------------------------------------------------------------
+- Mob\dungeon\gl_dun.txt - Updated, Glastheim Monster Spawns. [Muad_Dib]
+- Mob\dungeon\moc_pryd_dun.txt - Updated, Pyramids Monster Spawns. [Muad_Dib]
+- Mob\other\yggdrasil_mob.txt - Added Yggdrasil01 Monster Spawns. [Muad_Dib]
 - Mob\dungeon\xmas_dun.txt - Changed header. [Muad_Dib]
 - Mob\dungeon\in_sphinx_dun.txt - Updated, Sphinx Dungeon Monster Spawns. [Muad_Dib]
 - Mob\dungeon\prt_sewb_dun.txt - Updated, Prontera Sewers Monster Spawns. [Muad_Dib]
