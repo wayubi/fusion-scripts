@@ -5,7 +5,7 @@
 // ---------------------------------------------------------------------------------------
 //
 // Xmass Mob - Monster Spawn Locations
-// - Credits to jathena team for the original script.
+// - Credits to jathena team for the original info.
 //
 //========================================================================================
 
