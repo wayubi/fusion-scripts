@@ -1,7 +1,6 @@
 --------------------------------------------------------------------------------
  Fusion 1.213 - August 29th, 2004
 --------------------------------------------------------------------------------
-- 09-23-04: Job\Novice\Job_Newbie. Changed payon warp destinations to avoid problems. [Tsusai]
 - 09-21-04: Town\Town_Jawaii.txt - Added English jawaii. [Muad_Dib]
 - 09-21-04: Town\Town_Guide.txt - Added English Niflheim guide. [Muad_Dib]
 - 09-21-04: Mob\other\town_rose.txt - Added Wild Roses in towns. [Muad_Dib]
