@@ -9,6 +9,9 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.005
 ----------------------------------------------------------------------------------------------------
+- Job\Job2_Dancer.txt - Added Dancer Jobchange script. [Muad_Dib]
+- Job\Job2_Bard.txt - Added Bard Jobchange Script. [Muad_Dib]
+- Job\Job2_Dancer - Bard.txt - Removed this script. [Muad_Dib]
 - Town\Town_Aldebaran.txt - Updated Al De Baran Town script. [Muad_Dib]
 - Town\Town_Lutie.txt - Updated Lutie Warper. [Muad_Dib]
 - Event\Event_Clocktower.txt - Added Event Clocktower. [Muad_Dib]
