@@ -9,6 +9,8 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.002
 ----------------------------------------------------------------------------------------------------
+- Event\Event_Making.txt - Translated Eric the Earmuff maker, matches iRO with grammar corrections - [Tsusai]
+- Warp\warp.txt - Corrected Geffen Tower staircase warp destination to avoid appearing stuck on a rail - [Tsusai]
 - Event\Event_Solution.txt - Fixed page header [mudvayne]
 - Event\Event_Rental.txt - Fixed page header, mising [npc name], enabled Crusader support for peco breeder. [mudvayne]
 - Event\Event_Doll.txt - Fixed page header, cleaned up script, removed unused comments. [mudvayne]
