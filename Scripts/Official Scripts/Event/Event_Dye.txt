@@ -275,7 +275,7 @@ L_Mixture:
 	mes "[Chemist Molgen Stein]";
 	mes "Alright??...";
 	next;
-	menu "Make",-,"Cancel",M_End;
+	menu "Make",-,"Cancel",L_End;
 	   checkitem 970,1,-,L_Sorry2;
 	   checkitem 972,1,-,L_Sorry2;
 	   checkitem 713,1,-,L_Sorry2;
