@@ -153,7 +153,7 @@ prt_in.gat,56,68,4	script	"Vurewell"	86,{
 		checkadditem @BUY_ID,@BUY_NUM,-,L_START_4;
 		set Zeny -= @BUY_ZENY,0;
 		additem @BUY_ID,@BUY_NUM;
-		mes "[Vurewell]";
+	      mes "[Vurewell]";
 		mes "Here you are, thank you for shopping at my shop.";
 		close;
 	L_START_3:
