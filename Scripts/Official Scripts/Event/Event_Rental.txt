@@ -27,7 +27,7 @@ prontera.gat,55,350,5 script "Peco Breeder" 105,{
 L_YES:
       check Zeny < @peco_price,-,L_GET_PECO;
 	mes "[Peco Breeder]";
-	mes "Sorry, but you don't seem to have $[@peco_price]z on you, come back later.";
+	mes "Sorry, but you don't seem to have $[@peco_price]zeny on you, come back later.";
 	close;
 L_GET_PECO:
       check Job == 7,L_BUY_PECO,-; 
@@ -36,7 +36,7 @@ L_BUY_PECO:
       mes "[Peco Breeder]";
 	mes "You will! That’s good.";
 	mes "Using a Peco won’t only make you look good but it will also make you move faster then walking.";
-	mes "The cost of using a Peco is $[@peco_price]z.";
+	mes "The cost of using a Peco is $[@peco_price]zeny.";
       next;
 	menu "I'll take one!",L_TAKE,"Maybe later",L_STOP;
       close;
@@ -78,7 +78,7 @@ in_hunter.gat,146,99,2 script	"Falcon Breeder" 105,{
 L_YES:
       check Zeny < @falcon_price,-,L_GET_FALCON;
 	mes "[Peco Breeder]";
-	mes "Sorry, but you don't seem to have $[@peco_price]z on you, come back later.";
+	mes "Sorry, but you don't seem to have $[@falcon_price]zeny on you, come back later.";
 	close;
 L_GET_FALCON:
       check Job == 11,L_BUY_FALCON,-; 
@@ -88,7 +88,7 @@ L_BUY_FALCON:
 	mes "Say hello to your now best friend.";
 	mes "When you have a Falcon by your side you don’t just have a new friend with you.";
 	mes "You also have a new ally";
-	mes "The cost of using a Falcon is $[@falcon_price]z.";
+	mes "The cost of using a Falcon is $[@falcon_price]zeny.";
       next;
 	menu "I'll take one!",L_TAKE,"Maybe later",L_STOP;
       close;
@@ -130,7 +130,7 @@ prontera.gat,238,313,4 script "Grand Peco Breeder" 105,{
 L_YES:
       check Zeny < @gpeco_price,-,L_GET_GPECO;
       mes "[Grand Peco Breeder]";
-	mes "Sorry, but you don't seem to have $[@gpeco_price]z on you, come back later.";
+	mes "Sorry, but you don't seem to have $[@gpeco_price]zeny on you, come back later.";
 	close;
 L_GET_GPECO:
       check Job == 14,L_BUY_GPECO,-; 
@@ -139,7 +139,7 @@ L_BUY_GPECO:
       mes "[Grand Peco Breeder]";
 	mes "You will! That’s good.";
 	mes "Using a Grand Peco won’t only make you look good but it will also make you move faster then walking.";
-	mes "The cost of using a Peco is $[@gpeco_price]z.";
+	mes "The cost of using a Peco is $[@gpeco_price]zeny.";
       next;
 	menu "I'll take one!",L_TAKE,"Maybe later",L_STOP;
       close;
