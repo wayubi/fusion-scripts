@@ -8,7 +8,7 @@
 //    translated by Victor Huang
 //    fixed and coded by nestor_zulueta
 //
-// - Deothen -> payon.dwm: 30,94
+// - Juan -> prt_in: 94,57
 //   Bring items to obtain skill. Applicable jobs are Swordsman, Knight and Crusader.
 //========================================================================================
 
