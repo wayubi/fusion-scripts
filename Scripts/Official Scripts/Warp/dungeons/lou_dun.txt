@@ -9,9 +9,9 @@
 //
 //========================================================================================
 
-louyang.gat,37,270,0      warp loudunwarp001   3,3,lou_dun01.gat,218,196
-lou_dun01.gat,222,196,0   warp loudunwarp002   3,3,louyang.gat,41,270
-lou_dun01.gat,38,205,0    warp loudunwarp003   3,3,lou_dun02.gat,282,20
-lou_dun02.gat,286,20,0    warp loudunwarp004   3,3,lou_dun01.gat,38,209
-lou_dun02.gat,165,270,0   warp loudunwarp005   3,3,lou_dun03.gat,165,38
-lou_dun03.gat,165,34,0    warp loudunwarp006   3,3,lou_dun02.gat,165,266
+louyang.gat,36,271,0	warp	loudunwarp001	1,1,lou_dun01.gat,219,196
+lou_dun01.gat,222,196,0	warp	loudunwarp002	1,1,louyang.gat,40,273
+lou_dun01.gat,30,203,0	warp	loudunwarp003	1,1,lou_dun02.gat,282,20
+lou_dun02.gat,287,20,0	warp	loudunwarp004	1,2,lou_dun01.gat,38,204
+lou_dun02.gat,165,270,0	warp	loudunwarp005	1,1,lou_dun03.gat,165,37
+lou_dun03.gat,165,34,0	warp	loudunwarp006	1,1,lou_dun02.gat,165,262

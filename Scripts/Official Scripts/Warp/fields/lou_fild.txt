@@ -9,5 +9,5 @@
 //
 //========================================================================================
 
-louyang.gat,217,22,0        warp louyfieldwarp001   3,3,lou_fild01.gat,232,353
-lou_fild01.gat,232,357,0    warp louyfieldwarp002   3,3,louyang.gat,217,26
+louyang.gat,217,23,0	    warp	loufieldwarp001	3,1,lou_fild01.gat,232,354
+lou_fild01.gat,232,357,0    warp	loufieldwarp001	2,1,louyang.gat,217,40
