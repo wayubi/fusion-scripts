@@ -9,50 +9,50 @@
 // - 騎士団兵器係 -> prt_in: 79,94
 //   Quest for Berserk platinum skill.
 //
-// - 騎士デトマソ -> izlude_in: 175,130
-//   Quest for Moving Hp recovery platinum skill.
+// - Knight Demosato -> izlude_in: 175,130
+//   Quest for Moving Hp Recovery platinum skill.
 //
-// - レオンフォンプリシュ -> prt_in: 75,88
-//   Quest for Fatal blow platinum skill.
+// - Leo -> prt_in: 75,88
+//   Quest for Fatal Blow platinum skill.
 //
-// - ファン -> prt_in: 94,57
-//   Quest for ? platinum skill.
+// - Fan -> prt_in: 94,57
+//   Quest for Auto-Berserk platinum skill.
 //
 // - Roberto -> morocc: 121,109
-//   Quest for Arrow crafting platinum skill.
+//   Quest for Arrow Crafting platinum skill.
 //
 // - Jason -> payon: 30,94
-//   Quest for Charge arrow platinum skill.
+//   Quest for Charge Arrow platinum skill.
 //
 // - Necko -> alberta: 83,96
-//   Quest for Lord exclamation platinum skill.
+//   Quest for Lord Exclamation platinum skill.
 //
 // - Charlron -> alberta: 119,221
 //   Quest for Change cart platinum skill.
 //
-// - コサンス -> alberta: 232,106
-//   Quest for Cart revolution platinum skill.
+// - Kosansu -> alberta: 232,106
+//   Quest for Cart Revolution platinum skill.
 //
 // - Father Clifford -> prt_church: 173,23
-//   Quest for Holy light platinum skill.
+//   Quest for Holy Light platinum skill.
 //
 // - Great Magician -> geffen_in: 151,119
-//   Quest for Energy coat platinum skill.
+//   Quest for Energy Coat platinum skill.
 //
 // - Nami -> prt_in: 234,133
-//   Quest for First aid platinum skill.
+//   Quest for First Aid platinum skill.
 //
 // - Prontera Knight -> prt_in: 73,87
-//   Quest for Act dead platinum skill.
+//   Quest for Act Dead platinum skill.
 //
 // - Dread Lord -> prt_castle: 175,146
-//   Quest for ? platinum skill.
+//   Quest for Act Dead platinum skill.
 //
-// - アルコスク -> moc_prydb1: 154,128
+// - Alcouskou -> moc_prydb1: 154,128
 //   Quest for thieves platinum skills.
 //
 // - RuRumuni -> payon: 30,120
-//   Quest for ? platinum skill.
+//   Quest for thieves platinum skills.
 //
 //========================================================================================
 
@@ -149,7 +149,7 @@ prt_in.gat,79,94,4	script	騎士団兵器係	119,{
 //-----------------------------------------------
 //==== 移動時HP回復 - MOVINGRECOVERY
 //-----------------------------------------------
-izlude_in.gat,175,130,2	script	"騎士デトマソ"	98,{
+izlude_in.gat,175,130,2	script	"Knight Demosato"	98,{
 	check Job = 1,Lcheck,-;
 	check Job != 7,LStartOther,Lcheck2;
 Lcheck:
@@ -159,141 +159,130 @@ Lcheck2:
 		checkitem 713,200,-,LStart1;
 		checkitem 1058,1,L3,-;
 LStart1:
-		mes "[デトマソ]";
-		mes "おい、傷だらけじゃないか！";
-		mes "こんな傷だらけになるような";
-		mes "熱い戦闘をしてきたのか…";
-		mes "やはり剣士の宿命だな。";
+		mes "[Demosato]";
+		mes "You can't get these scars by being a coward!";
+		mes "Scars like these can only be";
+		mes "won in the heat of battle!";
+		mes "That is the life of a swordsman.";
 		next;
-		mes "[デトマソ]";
+		mes "[Demosato]";
 		check Gender = 0,-,LMan;
-				mes "そんな剣士のために";
-				mes "良い技術があるぞ、凛々しいお嬢さん！";
+				mes "I know a great technique";
+				mes "for a daring girl like you!";
 				goto Lgo;
 LMan:
-				mes "そんな剣士のために";
-				mes "良い技術があるよ、兄弟！";
+				mes "I know a great technique";
+				mes "for a brother-in-arms!";
 Lgo:
-		mes "人呼んで「移動時HP回復」！";
-		mes "これは移動をしながら ";
-		mes "体力を回復することができる";
-		mes "なんとも素晴らしい技術なのだ！";
+		mes "I call it 'Moving Recovery'!";
+		mes "It's a great technique that allows";
+		mes "you to recover your strength while";
+		mes "moving!";
 		next;
-		mes "[デトマソ]";
-		mes "まだまだ発展途上の技術だから";
-		mes "大きな回復能力は期待できないが";
-		mes "少しでも君の戦闘に";
-		mes "プラスになることは間違いない。";
-		mes "どうだ、身につけるか？";
+		mes "[Demosato]";
+		mes "This technique is still";
+		mes "in the developmental stage, so";
+		mes "you shouldn't expect spectacular";
+		mes "results, but even a little";
+		mes "advantage can turn the tide, don't you think?";
 		next;
-		menu "素晴らしい技術！覚えます！",L1,"いらないよ",L2;
+		menu "Great stuff!  Teach me!",L1,"Booooooring",L2;
 L1:
-		mes "[デトマソ]";
-		mes "よし、それではこのスキルを";
-		mes "習得するための条件を教えよう。";
-		mes "まず、^3355FF職業レベル35以上^000000が必要だ。";
-		mes "そして、^3355FF「空きビン」200個^000000を";
-		mes "持ってこい。なぜかわかるか…？";
-		mes "それが戦って苦労した証だからだ。";
+		mes "[Demosato]";
+		mes "Even if you're itching to learn,";
+		mes "you can't learn it unless you're";
+		mes "at least ^3355FFjob level 35^000000.";
+		mes "Also, you'll need、^3355FF 200x Empty Bottle ^000000";
+		mes "in order to prove you've undergone the";
+		mes "rigorous preparation required.";
 		next;
-		mes "[デトマソ]";
-		mes "ん…君が着ている鎧…";
-		mes "これがまた勇士の証だな。";
-		mes "鎧は…標準的なものなら";
-		mes "アーマーがお勧めだぞ。";
-		mes "むしろ着て来い。あと最後に";
-		mes "^3355FF「蛾の羽」を一つ^000000持ってきてくれ。";
+		mes "[Demosato]";
+		mes "Also, I want to see evidence;
+		mes "of battle on your armor.";
+		mes "I will also need a little";
+		mes "something for my time, in the form of";
+		mes "^3355FF1x Moth Wing^000000.";
 		next;
-		menu "え、なんでそんな物が必要なの？",-;
-		mes "[デトマソ]";
-		mes "いやぁ…なんだ…";
-		mes "うちの甥の宿題で";
-		mes "昆虫採集がな…ハハハ";
-		mes "いや、もちろん私が面倒を見るのが";
-		mes "一番だが、仕事でここに居なくては…";
-		next;
-		mes "[デトマソ]";
-		mes "歩き回ることもできずに、同じ場所で";
-		mes "働く私が可哀想だと思わないか？";
-		mes "ぜひたのむ…しくしく…";
-		mes "というわけで、";
-		mes "よろしく頼んだ！";
+		menu "Do I really need this crap?",-;
+		mes "[Demosato]";
+		mes "Well, I'm trying";
+		mes "to build up my collection";
+		mes "of insect parts...";
+		mes "There is no excuse for my selfishness,";
+		mes "but please just indulge me here.";
 		close;
 L2:
-		mes "[デトマソ]";
-		mes "ガクッ";
+		mes "[Demosato]";
+		mes "Your loss.";
 		close;
 L3:
-		mes "[デトマソ]";
-		mes "まぁこっちに来い。";
-		mes "私はデトマソカルロス。";
-		mes "剣を持った若いの、";
-		mes "「移動時HP回復」を";
-		mes "覚える準備は整ったかね？";
+		mes "[Demosato]";
+		mes "Neat.";
+		mes "It seems you're prepared";
+		mes "to learn the Moving Recovery";
+		mes "skill.  Do you wish to go";
+		mes "ahead and learn it?";
 		next;
-		menu "いつでも大丈夫",L3_1,"まだ準備不足です",L3_2;
+		menu "Ready as I'll ever be",L3_1,"Still need to prepare",L3_2;
 L3_1:
-				mes "[デトマソ]";
-				mes "どれ……………";
+				mes "[Demosato]";
+				mes "Excellent!";
 				next;
-				mes "[デトマソ]";
-				mes "よし！それでは今からお前に";
-				mes "移動時HP回復スキルを";
-				mes "教えてやるぞ。";
+				mes "[Demosato]";
+				mes "From now on, you'll be able";
+				mes "to recover HP while moving!";
 				next;
 				delitem 713,200;
 				delitem 1058,1;
 				setskilllevel 0x90,1;
 				set skill_sm = 1,0;
-				mes "[デトマソ]";
-				mes "どうだ、気に入ったか？";
-				mes "ん～実際試して見るように。";
-				mes "あまり無理はするなよ。";
-				mes "ん？アーマーは必要じゃない。";
-				mes "紛らわしかったかスマン…";
-				mes "ハハハそれじゃ元気でな！";
+				mes "[Demosato]";
+				mes "Are you satisfied?";
+				mes "Give it a try and see.";
+				mes "Don't overdo it, though.";
+				mes "OK?  Some people think they";
+				mes "don't need any armor after";
+				mes "learning this skill.";
 				close;
 L3_2:
-				mes "[デトマソ]";
-				mes "そうか";
-				mes "それじゃ準備を整えてから";
-				mes "また呼んでくれ。";
+				mes "[Demosato]";
+				mes "Oh.";
+				mes "Once you're prepared, come";
+				mes "back and visit.";
 				close;
 LStartOther:
-		mes "[デトマソ]";
-		mes "私の名はデトマソカルロス。";
-		mes "プロンテラ第3騎士団所属の騎士だ。";
-		mes "ここのところはある任務において";
-		mes "活躍中なのである。";
-		mes "ゴホン！フッフッフ…";
+		mes "[Demosato]";
+		mes "I am a member of the Third";
+		mes "Prontera Cavalry Division.";
+		mes "I'm currently on duty, so I";
+		mes "really can't talk to you now.";
 		close;
 LStartLowlv:
-		mes "[デトマソ]";
-		mes "うん…君も剣を持つ者か…";
-		mes "私は、デトマスカルロスという。";
-		mes "よく覚えておけよ！";
-		mes "プロンテラ第3騎士団の騎士";
-		mes "デトマソカルロス！";
+		mes "[Demosato]";
+		mes "Hello, fellow swordsman!";
+		mes "I'm a member of the Third";
+		mes "Prontera Cavalry Division";
+		mes "It looks like you're on";
+		mes "your way to greatness.";
 		next;
-		mes "[デトマソ]";
-		mes "もう少し成長したら、また";
-		mes "訪ねて来なさい。";
-		mes "それでは良い一日を！";
+		mes "[Demosato]";
+		mes "Once you've matured a little,";
+		mes "come back and visit me to";
+		mes "learn something interesting!";
 		close;
 LStartTwice:
-		mes "[デトマソ]";
-		mes "よう、";
-		mes "久しぶりだな！";
-		mes "前より血色がよくなったようだな。";
-		mes "ハハハハ";
-		mes "気をつけて行け！また寄りな。";
+		mes "[Demosato]";
+		mes "Hello again!";
+		mes "I'm glad you're still";
+		mes "on the path to greatness.";
+		mes "Keep on learning new things.";
 		close;
 }
 
 //-----------------------------------------------
 //==== 急所攻撃 - FATALBLOW
 //-----------------------------------------------
-prt_in.gat,75,88,5	script	"レオンフォンプリシュ"	85,{
+prt_in.gat,75,88,5	script	"Leo"	85,{
 	check Job = 1,Lcheck,-;
 	check Job != 7,LStartOther,Lcheck2;
 Lcheck:
@@ -307,15 +296,15 @@ Lcheck2:
 	checkitem 526,5,-,L2;
 	getskilllevel 5,@skilllv_bash;
 	check @skilllv_bash => 6,-,L2;
-	mes "[レオン]";
-	mes "おお、君は「急所攻撃」を";
-	mes "覚える条件を満たして来たね。";
-	mes "どうだ？今身につけるか？";
+	mes "[Leo]";
+	mes "You've satisfied the conditions";
+	mes "to learn 'Exploit Weakness'.";
+	mes "Want to learn it?";
 	next;
-	menu "はい！",L1_1,"嫌です",L1_2,"急所攻撃って？",L1_3;
+	menu "Yes!",L1_1,"No way!",L1_2,"Tell me more.",L1_3;
 L1_1:
-		mes "[レオン]";
-		mes "よろしい。";
+		mes "[Leo]";
+		mes "Alright.";
 		next;
 		delitem 1752,10;
 		delitem 1751,10;
@@ -324,142 +313,130 @@ L1_1:
 		delitem 526,5;
 		setskilllevel 0x91,1;
 		set skill_sm2 = 1,0;
-		mes "[レオン]";
-		mes "成功だ！";
-		mes "これからも思いっきり";
-		mes "技を振るえよ！";
-		mes "ハハハハハハハハ！";
+		mes "[Leo]";
+		mes "You did it!";
+		mes "Now you've really got";
+		mes "the inside scoop on the";
+		mes "enemy's weaknesses!  Good luck!";
 		close;
 L1_2:
-		mes "[レオン]";
-		mes "私は君が嫌いだ。";
+		mes "[Leo]";
+		mes "Whatever...";
 		close;
 L1_3:
-		mes "[レオン]";
+		mes "[Leo]";
 		mes "今回私が開発したスキルだ。";
 		mes "バッシュを使う時、君のバッシュ";
 		mes "スキルによって少しスタン状態に";
 		mes "させることができる。";
 		mes "バッシュくらいは身につけているか？";
 		next;
-		mes "[レオン]";
+		mes "[Leo]";
 		mes "どうだ、スタンはかなり効果的な";
 		mes "テクニックだと思うが。";
 		mes "気に入ったらまたおいで。";
 		close;
 L2:
-	mes "[レオン]";
-	mes "ほう、若くてなかなかの剣士だな。";
+	mes "[Leo]";
+	mes "Welcome, young swordsman.";
 	next;
-	mes "[レオン]";
-	mes "その腕からして、バッシュをよく";
-	mes "使っているだろう？";
+	mes "[Leo]";
+	mes "Are you proficient in bashing";
+	mes "enemies with precision?";
 	next;
-	menu "なぜそんなことがわかるの？",-;
-	mes "[レオン]";
+	menu "Why do you ask?",-;
+	mes "[Leo]";
 	check Gender = 1,-,LWMEN;
-		mes "驚くことはない。";
-		mes "剣を持つ者たるもの";
-		mes "良い腕を持っていて当然じゃないか。";
+		mes "I'm not surprised.";
+		mes "A strong man like you would";
+		mes "would be a natural.";
 		goto L2a;
 LWMEN:
-		mes "恥ずかしがることはない。";
-		mes "剣を持つ者なら女でもそれくらいの";
-		mes "腕をしていて当然だろう。";
+		mes "You're pretty brazen.";
+		mes "I guess even a proper woman";
+		mes "can let her hair down sometimes.";
 L2a:
-	mes "このごろ怠けて修行せず、";
-	mes "ろくな腕をしていない奴が増えてね。";
-	mes "君のような剣士に会えて嬉しい。";
+	mes "Being the lazy sort, I haven't practiced in awhile.";
+	mes "Meeting you reminds me of how weak";
+	mes "my sword arm is right now.";
 	next;
-	mes "[レオン]";
-	mes "そう、良い剣士である君に";
-	mes "一つプレゼントをしようじゃないか。";
+	mes "[Leo";
+	mes "Maybe if I show this to you, you'll";
+	mes "use it more than I have been.";
 	next;
-	menu "どんなプレゼント？ ",-, "それは楽しみ",-;
-//両方一緒
-	mes "[レオン]";
-	mes "ハハ、聞いて驚け、";
-	mes "急所を狙うスキルだ！";
+	menu "Main screen turn on",-, "For great justice",-;
+//both do the same thing
+	mes "[Leo]";
+	mes "You might be surprised to learn that";
+	mes "you can ofen systematically exploit an enemy's weakness.";
 	next;
-	mes "[レオン]";
-	mes "今回私が開発したスキルだ。";
-	mes "バッシュを使う時、君のバッシュ";
-	mes "スキルによって少しスタン状態に";
-	mes "させることができる。";
-	mes "バッシュくらいは身につけているか？";
+	mes "[Leo]";
+	mes "This skill makes it possible to";
+	mes "stun an enemy when you bash it.";
+	mes "By using this skill, you";
+	mes "develop the instinct necessary to";
+	mes "spot an enemy's weakness and exploit it.";
 	next;
-	mes "[レオン]";
-	mes "私が以前君のような剣士だった頃";
-	mes "バッシュをよく使ったんだ。その時、";
-	mes "同時にスタンさせることができたら";
-	mes "もっと良いんじゃないかと思ってな。";
-	mes "一線を退いてからずっと研究を続け、";
-	mes "やっとその成果を結んだというわけだ。";
+	mes "[Leo]";
+	mes "Pretty great stuff!";
+	mes "Want to learn the skill?";
 	next;
-	mes "[レオン]";
-	mes "どうだ、私の努力の結晶！";
-	mes "そのスキルを身につけてみるか？";
-	next;
-	menu "ぜひ",L3_1,"結構です",L3_2,"寿司を食べる時の注意点は？",L3_3;
+	menu "Yes Sir!",L3_1,"Nevermind",L3_2,"How can I make better sushi?",L3_3;
 L3_1:
-		mes "[レオン]";
-		mes "よし、それでは条件を言おう。";
-		mes "まず、^3355FFバッシュをレベル6^000000にすること。";
-		mes "そして、^3355FF炎の矢^000000・^3355FF銀の矢^000000それぞれ^3355FF10本^000000";
-		mes "^3355FFバナナジュース1本^000000・^3355FF触手30個^000000";
-		mes "^3355FFローヤルゼリー5個^000000を準備するように。";
-		mes "一種の材料みたいなものだ。";
+		mes "[Leo]";
+		mes "Well, there are some prerequisites...";
+		mes "First you need the skill ^3355FF Bash Lv6 ^000000.";
+		mes "You will also need ^3355FF10x Fire Arrow^000000, ^3355FF10x Silver Arrow^000000,";
+		mes "^3355FF1x Banana Juice^000000,^3355FF30x Tentacle^000000,";
+		mes "and ^3355FF5x Emperor's Jelly^000000.";
 		next;
-		mes "[レオン]";
-		mes "材料を揃えたらまた来なさい。";
-		mes "その時続きを教えてやる。";
+		mes "[Leo]";
+		mes "Once you have gathered the materials,";
+		mes "come back here and I'll teach you the skill.";
 		close;
 L3_2:
-		mes "[レオン]";
-		mes "ハハハハハハハハハハ！";
-		mes "…";
-		mes "…";
-		mes "…";
-		mes "あっそう…";
+		mes "[Leo]";
+		mes "Whaaaaaaaat?";
+		mes "...";
+		mes "...";
+		mes "...";
+		mes "Suit yourself...";
 		close;
 L3_3:
-		mes "[寿司王レオン]";
-		mes "寿司を食べる時は手で";
-		mes "食べるのが通だね。";
-		mes "基本だろう。";
-		mes "そして、醤油はシャリにではなく";
-		mes "ネタにつけるんだ。";
+		mes "[Sushi Master Leo]";
+		mes "Well, you're probably eating";
+		mes "it with your hands already,";
+		mes "so the next step is to try";
+		mes "out different garnishes.";
 		next;
-		mes "[寿司王レオン]";
-		mes "それでこそ味が豊かになる。";
-		mes "食べる順番は、味の淡白なものから";
-		mes "だんだん濃いものにしていき、";
-		mes "最後は巻き寿司で仕上げる！";
-		mes "うーん、寿司は最高！";
+		mes "[Sushi Master Leo]";
+		mes "If you keep trying different";
+		mes "garnishes that suit your tastes,";
+		mes "your sushi-eating experience will";
+		mes "become splendid in no time!";
 		close;
 //剣士系以外+Lv不足
 LStartOther:
 LStartLowlv:
-	mes "[レオン]";
-	mes "ん？君には用が無いところだ。";
-	mes "私は一人前の剣士以外には";
-	mes "特に言うことが無い。";
-	mes "より良き世界でまた会おう。";
+	mes "[Leo]";
+	mes "Eh?  You have no business here.";
+	mes "There are other places that can";
+	mes "teach you the skills you need to";
+	mes "know to advance in the world.";
 	close;
 LStartTwice:
-	mes "[レオン]";
-	mes "やぁ、";
-	mes "誰かと思ったら";
-	mes "前に会ったな。";
-	mes "嬉しいねぇ…元気かい？";
-	mes "気をつけてな。";
+	mes "[Leo]";
+	mes "Hmm.";
+	mes "We've met before, haven't we?";
+	mes "I'm glad you're still out";
+	mes "there showing them who's boss.";
 	close;
 }
 
 //-----------------------------------------------
 //==== オートバーサーク
 //-----------------------------------------------
-prt_in.gat,94,57,3	script	"ファン"	85,{
+prt_in.gat,94,57,3	script	"Fan"	85,{
 	check Job = 1,Lcheck,-;
 	check Job != 7,LStartOther,LStart;
 Lcheck:
@@ -470,15 +447,15 @@ LStart:
 	checkitem 958,10,-,LStart2;
 	checkitem 957,10,-,LStart2;
 	checkitem 518,10,-,LStart2;
-	mes "[ファン]";
-	mes "おお、若い剣士よ！";
-	mes "最新スキル^3355FF「オートバーサーク」^000000";
-	mes "を授かる用意ができましたね？";
+	mes "[Fan]";
+	mes "Hello, brother swordsman!";
+	mes "I'll teach you the skill ^3355FFAuto-Berserk^000000!";
+	mes "Interested in learning it?";
 	next;
-	menu "ふふ…はやく伝授してください",L0_1,"それは何でしたっけ…",L0_2;
+	menu "No time like the present",L0_1,"I need more information",L0_2;
 L0_1:
-	mes "[ファン]";
-	mes "よろしい。それでは…";
+	mes "[Fan]";
+	mes "Here we go!";
 	next;
 	delitem 924,35;
 	delitem 958,10;
@@ -486,150 +463,144 @@ L0_1:
 	delitem 518,10;
 	setskilllevel 0x92,1;
 	set skill_sm3 = 1,0;
-	mes "[ファン]";
-	mes "もうあなたはオートバーサークを";
-	mes "身につけた剣士になったのです。";
-	mes "これから、内に秘めた野獣と共に";
-	mes "大きな活躍をしてください！";
+	mes "[Fan]";
+	mes "Excellent!  You're now versed in the";
+	mes "art of Auto-Berserk!  Let your";
+	mes "inner beast rage with fury";
+	mes "on the battlefield!";
 	next;
-	mes "[ファン]";
-	mes "幸運を！";
+	mes "[Fan]";
+	mes "Good luck!";
 	next;
-	mes "[ファン]";
-	mes "………そうそう、うっかり忘れて";
-	mes "話しそびれるところでした。";
-	mes "いくつか覚えておくことがあります。";
+	mes "[Fan]";
+	mes "Oh...I almost forgot.";
+	mes "You might want to know a little more";
+	mes "about the details of the skill's workings.";
 	next;
-	mes "[ファン]";
-	mes "まず、このスキルは体力が";
-	mes "回復すればおさまります。";
-	mes "そして特に制限時間は無いが、";
-	mes "体力の回復によって消えるか";
-	mes "プロボック効果を解除するスキル";
-	mes "を使用すれば消えます。";
+	mes "[Fan]";
+	mes "This skill is not limited by";
+	mes "time, but only your current HP.";
+	mes "The effect of this skil wears";
+	mes "off only if your HP recovers";
+	mes "beyond a certain point, or an";
+	mes "effect that nulls provocation is used.";
 	next;
-	mes "[ファン]";
-	mes "そんな特性を頭に入れておかないと";
-	mes "戦場で急にスキルの効果が消えて";
-	mes "荒てるから気を付けてください。";
+	mes "[Fan]";
+	mes "You'll need to manage your strength";
+	mes "carefully, because if this skill triggers";
+	mes "at an inopportune moment, you may actually be worse off.";
 	next;
-	mes "[ファン]";
-	mes "それでは、今度こそさようなら～";
+	mes "[Fan]";
+	mes "With that, I wish you well.";
 	close;
 L0_2:
-	mes "[ファン]";
-	mes "オートバーサーク。";
-	mes "戦場の花と呼ばれるスキルです。";
-	mes "あなたの体力が赤色になった時";
-	mes "体内の潜在能力がプロボックを";
-	mes "発動させるスキルです。";
+	mes "[Fan]";
+	mes "When your HP level is in the";
+	mes "red zone, your primordial instincts";
+	mes "will cause you to provoke";
+	mes "yourself.";
 	next;
-	mes "[ファン]";
-	mes "戦場で花火のように暴れる…";
-	mes "まさにそんなスキルです。";
-	mes "今のあなたならこのスキルを";
-	mes "体得することができます。";
-	mes "それでは、そのための準備について";
-	mes "説明をさし上げます。";
+	mes "[Fan]";
+	mes "This skill will channel your";
+	mes "rage into a burning fury";
+	mes "that will rule the battlefield!";
+	mes "Now, let me explain what you'll";
+	mes "need to make this skill yours.";
 	next;
-	mes "[ファン]";
-	mes "まず、^3355FF「蝶の鱗粉」35個^000000";
-	mes "派手な蝶の魂から抜き出した";
-	mes "気をあなたに宿らせ集中力を高める。";
-	mes "そして^3355FF「亡者の牙」10個^000000";
-	mes "^3355FF「亡者の爪」10個^000000";
-	mes "最後に^3355FF「ハチ蜜」10個^000000！";
+	mes "[Fan]";
+	mes "You need ^3355FF35x Butterfly Powder^000000,";
+	mes "from the heart of a living butterfly.";
+	mes "This will allow you to concentrate.";
+	mes "You also need ^3355FF10x Zealot's Fang^000000,";
+	mes "^3355FF10x Zealot's Nail^000000, and";
+	mes "^3355FF10x Bee Honey^000000!";
 	next;
-	mes "[ファン]";
-	mes "全てメモをしましたか？";
-	mes "いつも通り、全て整えてから";
-	mes "またいらっしゃい。";
-	mes "期待しています。";
+	mes "[Fan]";
+	mes "Did you get all that?";
+	mes "Well then, once you've gathered";
+	mes "all the necessary ingredients,";
+	mes "return here.";
 	close;
 LStart2:
-	mes "[ファン]";
-	mes "あら…見ないうちに傷が";
-	mes "たくさん増えましたね…";
-	mes "そんな身でまた戦場に飛び込む";
-	mes "つもりですか？無理しますね…";
+	mes "[Fan]";
+	mes "You've seen a lot of battles.";
+	mes "Do you intend to keep fighting";
+	mes "even with all those injuries?";
 	next;
-	mes "[ファン]";
-	mes "いくら力があっても限界は";
-	mes "あるんですから、";
-	mes "あまり無理しないでください…";
-	mes "もちろん我が研究所が開発した";
-	mes "限界を破るスキルもありますが…";
+	mes "[Fan]";
+	mes "There is a limit to everyone's";
+	mes "endurance, so please don't";
+	mes "overdo it.  There is a";
+	mes "technique that allows you to";
+	mes "surpass this limit, but...";
 	next;
-	menu "え？なんですかそれは!?",L1_1,"そんなもの、本当にあるの？",L1_2,"くおおおおお！",L1_3;
+	menu "How do I learn it?!",L1_1,"Really?  I don't believe you",L1_2,"Bye!",L1_3;
 L1_1:
-		mes "[ファン]";
-		mes "そのスキルの名前は";
-		mes "「オートバーサーク」";
-		mes "戦場の花と呼ばれるスキルです。";
-		mes "あなたの体力が赤色になった時";
-		mes "体内の潜在能力がプロボックを";
-		mes "発動させるスキルです。";
+		mes "[Fan]";
+		mes "I call the skill";
+		mes "'Auto-Berserk'.";
+		mes "When your HP level is in the";
+		mes "red zone, your primordial instincts";
+		mes "will cause you to provoke";
+		mes "yourself.";
 		next;
-		mes "[ファン]";
-		mes "戦場で花火のように暴れる…";
-		mes "まさにそんなスキルです。";
-		mes "今のあなたならこのスキルを";
-		mes "体得することができます。";
-		mes "それでは、そのための準備について";
-		mes "説明をさし上げます。";
+		mes "[Fan]";
+		mes "This skill will channel your";
+		mes "rage into a burning fury";
+		mes "that will rule the battlefield!";
+		mes "Now, let me explain what you'll";
+		mes "need to make this skill yours.";
 		next;
-		mes "[ファン]";
-		mes "まず、^3355FF「蝶の鱗粉」35個^000000";
-		mes "派手な蝶の魂から抜き出した";
-		mes "気をあなたに宿らせ集中力を高める。";
-		mes "そして^3355FF「亡者の牙」10個^000000";
-		mes "^3355FF「亡者の爪」10個^000000";
-		mes "最後に^3355FF「ハチ蜜」10個^000000！";
+		mes "[Fan]";
+		mes "You need ^3355FF35x Butterfly Powder^000000,";
+		mes "from the heart of a living butterfly.";
+		mes "This will allow you to concentrate.";
+		mes "You also need ^3355FF10x Zealot's Fang^000000,";
+		mes "^3355FF10x Zealot's Nail^000000, and";
+		mes "^3355FF10x Bee Honey^000000!";
 		next;
-		mes "[ファン]";
-		mes "全てメモをしましたか？";
-		mes "いつも通り、全て整えてから";
-		mes "またいらっしゃい。";
-		mes "期待しています。";
+		mes "[Fan]";
+		mes "Did you get all that?";
+		mes "Well then, once you've gathered";
+		mes "all the necessary ingredients,";
+		mes "return here.";
 		close;
 L1_2:
-		mes "[口をとがらせたファン]";
-		mes "うーん…信じない人に教えてもね…";
-		mes "やっぱり何も知りません～";
+		mes "[Fan]";
+		mes "Well, I'm obviously not going to";
+		mes "teach it to someone who doesn't believe me.";
 		close;
 L1_3:
-		mes "[興奮したファン]";
-		mes "くおおおお！";
-		mes "うおおおお！";
-		mes "きえええ！";
+		mes "[Fan]";
+		mes "Seeya later!";
 		close;
 LstartOther:
-	mes "[ファン]";
-	mes "楽しい旅をしていますか？";
-	mes "明るい毎日を送れるようお祈りします。";
-	mes "あ、私は親切な騎士、ファンです。";
-	mes "あまり気を使わずに…ハハハ";
+	mes "[Fan]";
+	mes "How are you?";
+	mes "We pray that each of your days is";
+	mes "filled with joy.  I, Knight Fan,";
+	mes "am doing my best to ensure that happens.";
 	close;
 LStartTwice:
-	mes "[ファン]";
-	mes "うーん久しぶり！";
-	mes "うまくいってますか？";
-	mes "前よりずっとたくましくなりましたね。";
-	mes "皆あなたに大きく期待しています。";
-	mes "がんばってくださいね。";
+	mes "[Fan]";
+	mes "You're back!";
+	mes "Are you doing well?";
+	mes "I see you've become more powerful than before.";
+	mes "I expect great things from you.";
+	mes "Please don't let me down.";
 	close;
 LStartLowlv:
 	check JobLevel >= 10,-,LStartLowlv2;
-	mes "[ファン]";
-	mes "若者よ、";
-	mes "よく来ましたね。";
+	mes "[Fan]";
+	mes "You're a little";
+	mes "inexperienced, don't you think?";
 	close;
 LStartLowlv2:
-	mes "[ファン]";
-	mes "なんですか？";
-	mes "まだまだひよっこですね。";
-	mes "私は忙しいからもう少し修練を";
-	mes "積んでから来なさい。";
+	mes "[Fan]";
+	mes "Hmmm?";
+	mes "You're not disciplined enough";
+	mes "to learn what I have to teach.  Come";
+	mes "back when you've grown a bit.";
 	close;
 }
 
@@ -1365,21 +1336,21 @@ alberta.gat,119,221,6	script	"Charlron"	107,{
 //-----------------------------------------------
 //==== カートレボリューション Cart Revolution ===
 //-----------------------------------------------
-alberta.gat,232,106,6	script	"コサンス"	57,{
+alberta.gat,232,106,6	script	"Kosansu"	57,{
 	check Job = 5,Lcheck,-;
 	check Job != 10,LStartOther,LStart;
 Lcheck:
 	check JobLevel >= 30,-,LStartLowlv;
 LStart:
 	check skill_mc3 = 1,LStartTwice,-;
-	mes "[コサンス]";
-	mes "ほう、君はかなり丈夫な身体を";
-	mes "した商人だな。品物を運ぶ力が";
-	mes "並ではない。それ位なら";
-	mes "「カートレボリューション」を";
-	mes "放つことができるな。";
+	mes "[Cosan]";
+	mes "Merchants are common, but STRONG";
+	mes "merchants are a rare breed.";
+	mes "Using that power in an uncommon way";
+	mes "is what sets them apart.  This power";
+	mes "is realized in a technique I call 'Cart Revolution'";
 	next;
-	menu "そう、それを覚えたい",L0_1,"それは何ですか？",L0_2;
+	menu "I want to learn that skill",L0_1,"Hmmm?  Tell me more.",L0_2;
 L0_1:
 	random care_random,3;
 	check care_random = 0,LR_1,-;
@@ -1404,15 +1375,15 @@ LR_3:
 	checkitem 601,15,-,L1Error;
 	checkitem 962,5,-,L1Error;
 LOK:
-	mes "[コサンス]";
-	mes "ふふ";
-	mes "分かった！今から君に";
-	mes "カートレボリューションを伝授しよう。";
+	mes "[Cosan]";
+	mes "Hmmm....";
+	mes "Great!  You've done it!";
+	mes "Now I'll go ahead and teach you Cart Revolution!";
 	next;
-	mes "[コサンス]";
-	mes "今日という良き日、";
-	mes "熱心に学ぶ者には";
-	mes "明るい未来を与えよう！";
+	mes "[Cosan]";
+	mes "Today is the beginning of your future.";
+	mes "One who is so enthusiastic about learning";
+	mes "is sure to succeed!";
 	next;
 	check care_random = 0,Ldel1,-;
 	check care_random = 1,Ldel2,-;
@@ -1440,210 +1411,204 @@ Ldel3:
 Lskill:
 	setskilllevel 0x99,1;
 	set skill_mc3 =1,0;
-	mes "[興奮したコサンス]";
-	mes "もう、カートレボリューションを";
-	mes "使えるようになったな。その驚くべき";
-	mes "破壊力で、商人の恐ろしさを世に";
-	mes "知らしめるのだ！ククククク…";
+	mes "[Happy Cosan]";
+	mes "There, now you know Cart Revolution!";
+	mes "Its destructive potential is beyond your";
+	mes "expectations.  Go and demonstrate to everyone";
+	mes "that Merchants aren't just docile animals!";
 	next;
-	mes "[興奮したコサンス]";
-	mes "楽しい生活の始まりだ！";
+	mes "[Happy Cosan]";
+	mes "Happy hunting!";
 	close;
 L1Error:
 	checkitem 532,1,-,LBananaJ;
-	mes "[コサンス]";
-	mes "おお！";
-	mes "私の大好物のバナナジュース！";
-	mes "ありがたくいただきます。";
-	mes "カーッ！ウマイ！";
+	mes "GVL alert!";
+	mes "Banana juice is my favorite drink";
+	mes "I see you have some.  Could you";
+	mes "give it to me?  My gratitude would";
+	mes "be unlimited!";
 	delitem 532,1;
-	mes "うまかった。ありがとう！";
 	next;
-	mes "[コサンス]";
-	mes "うーんと";
-	mes "何か忘れてるな…";
-	mes "そうそう、カートレボリューション";
-	mes "に興味があるんだったな。";
-	mes "バナナジュースをくれたお礼に";
-	mes "私直々に伝授してあげるぞ。";
+	mes "[Cosan]";
+	mes "Hmmm...";
+	mes "There was something you wanted?";
+	mes "Oh yeah!  You wanted to know about Cart";
+	mes "Revolution.";
+	mes "Well, since you were kind enough to give";
+	mes "me the Banana Juice, I'll see what I can do.";
 	next;
-	mes "[コサンス]";
-	mes "カートレボリューションを覚えるのは";
-	mes "難しい事ではない。カートを改造する";
-	mes "だけだ。そのためのアイテム材料は";
-	mes "君に集めてもらうけどね。";
+	mes "[Cosan]";
+	mes "Cart Revolution itself is a cinch to learn,";
+	mes "but your cart needs to be remodelled so it";
+	mes "can handle the stress.  You're just a few items";
+	mes "away from this goal.";
 	next;
-	mes "[コサンス]";
-	mes "まず、カートを補強するために";
-	mes "^3355FF鉄約20個^000000、そして衝撃緩和剤のゲル";
-	mes "を作る^3355FFべとべとする液体が30個ほど^000000";
-	mes "さらに^3355FFハエの羽が20枚くらい^000000に";
-	mes "^3355FF触手が5個ほど^000000、仕上げに";
-	mes "私が飲む^3355FFブドウジュース2本^000000！";
+	mes "[Cosan]";
+	mes "In order to fortify the cart, you'll need";
+	mes "about ^3355FF 20x Iron ^000000,";
+	mes "about ^3355FF 30x Sticky Slime ^000000,";
+	mes "about ^3355FF 20x Insect Wing^000000,";
+	mes "^3355FF 5x Tentacle ^000000、and";
+	mes "of course, ^3355FF 2x Grape Juice ^000000 for my labor!";
 	next;
-	mes "[コサンス]";
-	mes "それじゃよろしく～";
-	mes "しかし、私のコンディションによって";
-	mes "必要な数が微妙に変わるから、";
-	mes "さっきのはだいたいの目安だよ。";
-	mes "期待してる。いってらっしゃい！";
+	mes "[Cosan]";
+	mes "That's a pretty good estimate of";
+	mes "the materials needed, but be advised that";
+	mes "the amount of materials needed will^ff0000 vary with my mood^000000.";
+	mes "So, there you have it.";
+	mes "Good luck in your travels!";
 	close;
 LBananaJ:
-	mes "[コサンス]";
-	mes "う～ん…";
-	mes "私にできる事は無いな。";
-	mes "バナナジュースを1本飲みながら";
-	mes "話をすれば別だがね～";
+	mes "[Cosan]";
+	mes "Well...";
+	mes "I could tell you something interesting...";
+	mes "However, I'll need some banana juice";
+	mes "to put me in the mood to talk.";
 	close;
 L0_2:
-	mes "[コサンス]";
-	mes "ふむ…カートレボリューションを";
-	mes "知らないようだな…";
-	mes "よし、私が長年誰にも話さなかった";
-	mes "話をしてやろう。";
-	mes "よく聞いてなさい。";
+	mes "[Cosan]";
+	mes "I haven't talked about the Cart Revolution";
+	mes "in a long time, so it isn't widely known";
+	mes "around these parts.  You're about to hear";
+	mes "this rare story, so listen well.";
 	next;
-	mes "[コサンス]";
-	mes "私は、カートを別の用途に";
-	mes "使えないものかと考え、";
-	mes "カートでラーメンを作って食べたり";
-	mes "カートで縄跳びもしてみた…";
-	mes "しかし、どれも私を満足させて";
-	mes "くれなかった…";
+	mes "[Cosan]";
+	mes "I first tried to make my cart";
+	mes "into a portable Miantiao [traditional Chinese noodles]";
+	mes "cooking apparatus, but met with only misery.";
+	mes "After that, I tried to do stunts";
+	mes "like flipping over my cart with";
+	mes "a rope, but bruises discouraged that quickly.";
 	next;
-	mes "[コサンス]";
-	mes "失意の念に明け暮れた私は";
-	mes "外を彷徨った…";
-	mes "そんなある日…強力なモンスターに";
-	mes "出くわしてしまい、よりによって";
-	mes "武器を持っていなかった！";
-	mes "もう命の危険が迫っていたんだ！";
+	mes "[Cosan]";
+	mes "Disappointed, I wandered around";
+	mes "trying to think of a new idea.";
+	mes "Suddenly, a monster approached!";
+	mes "Being unarmed, I thought I was";
+	mes "done for!";
 	next;
-	mes "[コサンス]";
-	mes "私は恐怖に駆られ、このまま";
-	mes "惨めに死んでいくのかと思った…";
-	mes "しかし、藁にもすがる心情で";
-	mes "カートでモンスターを思いっきり";
-	mes "ぶっ叩いた！";
+	mes "[Cosan]";
+	mes "I cowered in fear, thinking that";
+	mes "I was about to draw my last breath,";
+	mes "but then, out of pure survival";
+	mes "instict, I took my cart and smacked";
+	mes "the monster as hard as I could!";
 	next;
-	mes "[コサンス]";
-	mes "なんとモンスターは一撃で倒れた。";
-	mes "あの時これは使える！と…";
-	mes "カートも武器にすることができる！";
-	mes "カートでもいくらかの攻撃は可能だと";
-	mes "いうことを悟ったんだ。";
+	mes "[Cosan]";
+	mes "The monster was killed with one attack.";
+	mes "It was then that I realized that";
+	mes "was the idea I was looking for!";
+	mes "I found out I could use my cart as";
+	mes "a weapon.";
 	next;
-	mes "[コサンス]";
-	mes "^3355FF「カートレボリューション」^000000！";
-	mes "私が開発したカート攻撃技術だ。";
-	mes "^3355FFSP12^000000を消費してカート振りかぶり";
-	mes "思いっきり敵にぶつける！";
+	mes "[Cosan]";
+	mes "^3355FFCart Revolution^000000";
+	mes "is what I call the technique I created.";
+	mes "You need ^3355FF12 Skill Points^000000 to use it.";
+	mes "It attacks enemies in a small circle.";
 	next;
-	mes "[コサンス]";
-	mes "カートが重いほど効果もより";
-	mes "高まり、一度当たれば";
-	mes "後ろに吹っ飛ばされるほど";
-	mes "激しい衝撃を受ける。";
-	mes "それがカートレボリューションだ！";
+	mes "[Cosan]";
+	mes "One more thing.  When your";
+	mes "cart is heavy,";
+	mes "the impact does critical damage!";
+	mes "That's Cart Revolution!";
 	close;
 LStartLowlv:
-	mes "[コサンス]";
-	mes "ふむ、君はまだ半人前だね。";
-	mes "確かにカートは引いている。";
-	mes "商売道具だからね。";
-	mes "しかし！それで全てだろう…";
+	mes "[Cosan]";
+	mes "You are not skilled enough yet.";
+	mes "Certainly you can pull the cart,";
+	mes "but you need more time"; 
+	mes "to transcend the preconceived notion";
+	mes "that everyone has about the cart as a mere trading device.";
 	next;
-	mes "[コサンス]";
-	mes "私は、カートを別の用途に";
-	mes "使えないものかと考え、";
-	mes "カートでラーメンを作って食べたり";
-	mes "カートで縄跳びもしてみた…";
-	mes "しかし、どれも私を満足させて";
-	mes "くれなかった…";
+	mes "[Cosan]";
+	mes "To do this, I first tried to make my cart";
+	mes "into a portable Miantaio [Chinese traditional noodles]";
+	mes "cooking apparatus, but met with only misery.";
+	mes "After that, I tried to do stunts";
+	mes "like flipping over my cart with";
+	mes "a rope, but bruises discouraged that quickly.";
 	next;
-	menu "はいはい",L2_1,"…",L2_2;
+	menu "Back away slowly...",L2_1,"Neat!  Tell me more!",L2_2;
 L2_1:
-	mes "[コサンス]";
-	mes "いや、だから…";
+	mes "[Cosan]";
+	mes "Bye...";
 	close;
 L2_2:
-	mes "[コサンス]";
-	mes "失意の念に明け暮れた私は";
-	mes "外を彷徨った…";
-	mes "そんなある日…強力なモンスターに";
-	mes "出くわしてしまい、よりによって";
-	mes "武器を持っていなかった！";
-	mes "もう命の危険が迫っていたんだ！";
+	mes "[Cosan]";
+	mes "Disappointed, I wandered around";
+	mes "trying to think of a new idea.";
+	mes "Suddenly, a monster approached!";
+	mes "Being unarmed, I thought I was";
+	mes "done for!";
 	next;
-	mes "[コサンス]";
-	mes "私は恐怖に駆られ、このまま";
-	mes "惨めに死んでいくのかと思った…";
-	mes "しかし、藁にもすがる心情で";
-	mes "カートでモンスターを思いっきり";
-	mes "ぶっ叩いた！";
+	mes "[Cosan]";
+	mes "I cowered in fear, thinking that";
+	mes "I was about to draw my last breath,";
+	mes "but then, out of pure survival";
+	mes "instict, I took my cart and smacked";
+	mes "the monster as hard as I could!";
 	next;
-	mes "[コサンス]";
-	mes "なんとモンスターは一撃で倒れた。";
-	mes "あの時これは使える！と…";
-	mes "カートも武器にすることができる！";
-	mes "カートでもいくらかの攻撃は可能だと";
-	mes "いうことを悟ったんだ。";
+	mes "[Cosan]";
+	mes "The monster was killed with one attack.";
+	mes "It was then that I realized that";
+	mes "was the idea I was looking for!";
+	mes "I found out I could use my cart as";
+	mes "a weapon.";
 	next;
-	mes "[コサンス]";
-	mes "^3355FF「カートレボリューション」^000000！";
-	mes "私が開発したカート攻撃技術だ。";
-	mes "^3355FFSP12^000000を消費してカート振りかぶり";
-	mes "思いっきり敵にぶつける！";
+	mes "[Cosan]";
+	mes "^3355FFCart Revolution^000000";
+	mes "is what I call the technique I created.";
+	mes "You need ^3355FF12 Skill Points^000000 to use it.";
+	mes "It attacks enemies in a small circle.";
 	next;
-	mes "[コサンス]";
-	mes "カートが重いほど効果もより";
-	mes "高まり、一度当たれば";
-	mes "後ろに吹っ飛ばされるほど";
-	mes "激しい衝撃を受ける。";
+	mes "[Cosan]";
+	mes "One more thing.  When your";
+	mes "cart is heavy,";
+	mes "the impact is critical!";
 	next;
-	mes "[コサンス]";
-	mes "どうだ？覚えたいか？";
+	mes "[Cosan]";
+	mes "Want to learn this skill?";
 	next;
-	menu "是非！",L2_3,"それより寿司について聞きたい.",L2_4;
+	menu "You bet!",L2_3,"I want to know about sushi preparation",L2_4;
 L2_3:
- 	mes "[コサンス]";
- 	mes "よし！";
- 	mes "それでは私が特訓してやろう。";
- 	mes "しかし、その前に体力が必要だ。";
- 	mes "^3355FF職業レベルを35^000000まで上げて";
- 	mes "来なさい！";
- 	mes "その時また話をしよう…";
+ 	mes "[Cosan]";
+ 	mes "Great!";
+ 	mes "I would love to teach you now,";
+ 	mes "but you need the requisite strength before I can.";
+ 	mes "Come back whe you are ^3355FFjob level 35^000000";
+ 	mes "and I'll teach you all you want to know!";
  	close;
 L2_4:
 	check Gender = 0,-,LMAN;
- 	mes "[寿司王コサンス]";
- 	mes "未熟者め！";
- 	mes "寿司を握るには";
- 	mes "十年早いわ!!!";
+ 	mes "[Sushi Master Cosan]";
+	mes "Youngster!";
+ 	mes "You need another ten years under your";
+ 	mes "to belt to even beging to become an expert conessuir!";
  	close;
 LMAN:
-	mes "[寿司王コサンス]";
- 	mes "はあ？";
-	mes "寿司を握るには";
-	mes "十年早いわ!!!";
+ 	mes "[Sushi Master Cosan]";
+	mes "Eh...?";
+ 	mes "You need another ten years under your";
+ 	mes "to belt to even beging to become an expert conessuir!";
 	close;
 LStartOther:
-	mes "[コサンス]";
-	mes "なるようにしかならない。";
-	mes "どうにもならないときは";
-	mes "その時にできる精一杯を。";
+	mes "[Cosan]";
+	mes "I don't know anything that";
+	mes "could help you.  My techniques";
+	mes "are designed for merchants.";
 	close;
 LStartTwice:
-	mes "[コサンス]";
-	mes "あ、久しぶりだね。";
-	mes "ん、そのカートに埋め込まれた";
-	mes "色模様は例のあれだね。";
-	mes "私の技を伝授された証拠だ。";
+	mes "[Cosan]";
+	mes "Oh, well that emblem on your";
+	mes "cart tells me that you've already";
+	mes "been taught this technique.";
+	mes "There is nothing else I can do for you.";
 	next;
-	mes "[コサンス]";
-	mes "君は私のような熱い血が流れる";
-	mes "奴だったんだな！";
-	mes "嬉しいね！";
+	mes "[Cosan]";
+	mes "Let your blood keep burning with";
+	mes "passion";
+	mes "That alone delights me!";
 	close;
 }
 
@@ -2358,18 +2323,19 @@ prt_castle.gat,175,146,4	script	"Dread Lord"	50,{
 		close;
 }
 // 追加スキル Part 7 - シーフ
-moc_prydb1.gat,154,128,4	script	"アルコスク"	118,{
+moc_prydb1.gat,154,128,4	script	"Alcouskou"	118,{
 check Job = 6,LStart,-;
 check Job !=12,LStart1,-;
 LStart:
-	mes "[アルコスク]";
-	mes "世を渡るには特に必要無いが";
-	mes "いざという時にあると";
-	mes "意外に役立つスキルが";
-	mes "いくつかある。";
-	mes "さぁ、どれに興味がある？";
+	mes "[Alcouskou]";
+	mes "Living in this world, sometimes";
+	mes "the most unuseful knowledge";
+	mes "can eventually be very useful";
+	mes "I can teach you some of them";
+	mes "Anyways, which one";
+	mes "are you interested in?";
 	next;
-	menu "砂まき",L1,"バックステップ",L2,"石拾い",L3,"石投げ",L4,"もう少し考えてみます",L5;
+	menu "Throw Sand",L1,"Backsliding",L2,"Pickup Stone",L3,"Throw Stone",L4,"Not interested",L5;
 //-----------------------------------------------
 //==== 砂まき - TF_SPRINKLESAND
 //-----------------------------------------------
@@ -2381,128 +2347,120 @@ L1:
 		check Job = 6,-,L1_0;
 		check JobLevel >= 25,-,L1_E;
 L1_0:
-		mes "[アルコスク]";
-		mes "よく集めて来たね、きれいな小石。";
-		mes "なぜこれを用意させたかというと、";
-		mes "いつどこで戦闘に出くわすか予想";
-		mes "できないからだ。例えば硬い岩";
-		mes "ばかりで成り立つダンジョンや";
-		mes "草が生い茂った森などで";
+		mes "[Alcouskou]";
+		mes "Excellent.  You've gathered the";
+		mes "Fine Grits.  It's important to";
+		mes "prepare this concoction because";
+		mes "it may be impossible to gather sand";
+		mes "if you're in a forest or a dungeon";
+		mes "with a rock floor.";
 		next;
-		mes "[アルコスク]";
-		mes "砂が手に入らない時、";
-		mes "この石を使うことにより";
-		mes "いつでもまける「砂」を";
-		mes "作ることができるんだ。";
-		mes "そしてそれを入れるための";
+		mes "[Alcouskou]";
+		mes "By using this Fine Granule";
+		mes "concoction, you can create";
+		mes "sand anywhere";
+		mes "There's just one problem.";
+		mes "You need a container for";
 		next;
-		mes "[アルコスク]";
-		mes "入れ物が必要だけど、";
-		mes "そこまでは面倒見れないから";
-		mes "フェイヨンに居る「ルルムニ」に";
-		mes "^3355FF「底なし皮袋」^000000を";
-		mes "作ってもらってきてくれ。";
+		mes "[Aroksuka]";
+		mes "all that sand you're going";
+		mes "to be making!  Head over to";
+		mes "Payon and have RuRumuni make you a";
+		mes "^3355FFLeather Bag of Infinity^000000";
+		mes "to hold the sand.";
 		next;
-		mes "[アルコスク]";
-		mes "ルルムニはフェイヨン村の";
-		mes "西の方に居るはずだ。";
-		mes "僕がこの石を加工しているうちに";
-		mes "行ってきてね。";
+		mes "[Alcouskou]";
+		mes "You can find RuRumuni in";
+		mes "Payon's western quarter.";
+		mes "Why not pay him a visit while I";
+		mes "prepare the concoction?";
 		delitem 7041,5;
 		set skill_thief_1 = 1,0;
 		close;
 L1_E:
-		mes "[アルコスク]";
-		mes "シーフってのはさ、手段を問わず";
-		mes "自分を守る技術を一つは";
-		mes "持っていて良いと思う。";
-		mes "周りの奴は卑怯だとかずるいとか";
-		mes "言うけどさ、僕はそうは思わないね。";
+		mes "[Alcouskou]";
+		mes "Thieves need skills they can";
+		mes "rely on to protect themselves";
+		mes "in any situation.  That's not";
+		mes "enough, though.  They need to";
+		mes "enhance our sneaky character.";
 		next;
-		mes "[アルコスク]";
-		mes "世の中勝ったものが生き残る。";
-		mes "同じ商売仲間として僕が特別に";
-		mes "君に技を教えてあげるよ。";
-		mes "と言っても、ただ単に";
-		mes "相手に砂をまいて、少しの間";
-		mes "視界を奪うだけだけどね。";
+		mes "[Alcouskou]";
+		mes "As a fellow thief, I would be";
+		mes "remiss in my duties if I didn't";
+		mes "teach you what I know.  I can teach;
+		mes "you a skill that will let you quickly";
+		mes "and accurately shower an enemy with sand.";
 		next;
-		mes "[アルコスク]";
-		mes "でもさ、この隙に思いっきり";
-		mes "殴っちゃえばいつもより";
-		mes "大きなダメージを与えられるよ。";
-		mes "しかもうまくキマれば";
-		mes "スタン効果も得られるしね…ふふ";
+		mes "[Alcouskou]";
+		mes "In doing so, you'll be able to";
+		mes "deal lots of damage, not to mention";
+		mes "stun the target.";
+		mes "Now that's what I call sneaky.";
 		next;
-		mes "[アルコスク]";
-		mes "僕たちも生きるためならそれも";
-		mes "やるしかない。そして、そのためには";
-		mes "まず砂を用意しなきゃ。";
-		mes "砂はあらかじめ用意しておこう。";
-		mes "ちょっと行ってきて";
-		mes "^3355FF「きれいな小石」^000000を^3355FF5個^000000集めてきて。";
+		mes "[Alcouskou]";
+		mes "You will need to make some";
+		mes "preparations, though.  In order";
+		mes "to make the concoction you will";
+		mes "need to create sand, you must";
+		mes "gather ^3355FF5x Fine Granule^000000.";
 		next;
-		mes "[アルコスク]";
-		mes "早く教えて欲しいっていう気持ちも";
-		mes "分かるけど、とりあえずそれを";
-		mes "集めてくる前にスキルを";
-		mes "教えるわけにはいかない。";
-		mes "わかったら行ってきて。";
+		mes "[Alcouskou]";
+		mes "It looks like you're eager to";
+		mes "learn the skill, but I will";
+		mes "have to hold off for awhile.";
 		next;
-		mes "[アルコスク]";
-		mes "あ、一言付け加えると、";
-		mes "アサシンなら問題がないが";
-		mes "シーフの場合は";
-		mes "^3355FF職業レベル25以上^000000にならないと";
-		mes "教えられないってことだけ";
-		mes "覚えておいてね。";
+		mes "[Alcouskou]";
+		mes "Beginning thieves don't have";
+		mes "the reflexes to pull off this skill.";
+		mes "As a result, you need to be at least";
+		mes "^3355FFjob level 25^000000 to learn this skill.";
+		mes "Assassins of any level may also";
+		mes "learn this skill.";
 		close;
 L1_1:
-		mes "[アルコスク]";
-		mes "フェイヨン村の西に居る";
-		mes "ルルムニに会って";
-		mes "^3355FF「底なし皮袋」^3355FFを";
-		mes "作ってもらってね。";
+		mes "[Alcouskou]";
+		mes "You need to talk to RuRumuni";
+		mes "in Payon to have a";
+		mes "^3355FFLeather Bag of Infinity^3355FF";
+		mes "made before we can continue.";
 		next;
-		mes "[アルコスク]";
-		mes "僕がこの石を加工しているうちに";
-		mes "行ってきてね。";
+		mes "[Alcouskou]";
+		mes "Please return when you've had";
+		mes "it made.";
 		close;
 L1_2:
-		mes "[アルコスク]";
-		mes "おっ！";
-		mes "そうそうこれが小さいものなら";
-		mes "無限に入れることができるという";
-		mes "^3355FF底なし皮袋^000000!!";
-		mes "これで僕が教えるスキルを";
-		mes "使えるようになるね。";
+		mes "[Alcouskou]";
+		mes "Ah!";
+		mes "You've returned with the";
+		mes "^3355FFLeather Bag of Infinity^000000!!";
+		mes "Now I can teach you what you";
+		mes "want to know.";
 		next;
-		mes "[アルコスク]";
-		mes "よし、僕の真似をしてね。";
-		mes "砂を持って -";
-		mes "思い切り振りかぶって -";
+		mes "[Alcouskou]";
+		mes "Now, watch me, and then";
+		mes "imitate my movements...";
 		next;
-		mes "[アルコスク]";
+		mes "[Alcouskou]";
 		mes "ていっ！";
-		mes "^5533FF- ザザッ -^000000";
+		mes "^5533FF- Sha Sha -^000000";
 		next;
-		mes "^5533FF- ぶわっ -^000000";
+		mes "^5533FF- Shaa Shaa -^000000";
 		next;
-		mes "[アルコスク]";
-		mes "ふふ…なかなか良い感じ。";
-		mes "よし、マスターしたね。";
-		mes "砂まきに関してはもう";
-		mes "教えることは無いから、";
-		mes "これからは実戦で使用して";
-		mes "有効に使ってくれ。またね。";
+		mes "[Alcouskou]";
+		mes "Great.  It seems you";
+		mes "are pretty talented.";
+		mes "Now you can use the";
+		mes "Throw Sand skill when";
+		mes "you encounter tough monsters.";
 		delitem 7042,1;
 		setskilllevel 0x95,1;
 		set skill_thief_1 = 3,0;
 		close;
 L1_End:
-		mes "[アルコスク]";
-		mes "君はすでにマスターしてるじゃないか";
-		mes "もっと他の事にチャレンジしよう";
+		mes "[Alcouskou]";
+		mes "You've already learned this skill.";
+		mes "Maybe you would like to learn something else?";
 		close;
 //-----------------------------------------------
 //==== バックスライディング - TF_BACKSLIDING
@@ -2513,80 +2471,71 @@ L2:
 		check Job = 6,-,L2_0;
 		check JobLevel >= 35,-,L2_E;
 L2_0:
- 		mes "[アルコスク]";
-		mes "がんばって練習しよう！";
+ 		mes "[Alcouskou]";
+		mes "Alright then, let's get started.";
 		next;
-		mes "[アルコスク]";
-		mes "ササー -";
+		mes "[Alcouskou]";
+		mes "........................";
 		next;
-		mes "[アルコスク]";
-		mes "ザザザッ - -";
+		mes "[Alcouskou]";
+		mes "........................";
 		next;
-		mes "[アルコスク]";
-		mes "シュン！ - - -";
+		mes "[Alcouskou]";
+		mes "........................";
 		next;
-		mes "[アルコスク]";
-		mes "いいねいいね～";
-		mes "これならもう一人でもできる。";
-		mes "今後もよく練習してね。";
+		mes "[Alcouskou]";
+		mes "That's some serious footwork";
+		mes "there.  You'll have no problem";
+		mes "evading nasties with your talent.";
  		delitem 940,20;
 		setskilllevel 0x96,1;
 		set skill_thief_2 = 1,0;
  		close;
 L2_E:
- 		mes "[アルコスク]";
-		mes "戦闘ではもちろん攻撃をするけど";
-		mes "少ない被害で相手を倒すことも";
-		mes "大事なことだと思うんだよね。";
-		mes "正確な判断のもとに裏をかくことも";
-		mes "攻撃と同じくらい重要だ。";
-		mes "僕たちは他の人達より";
+ 		mes "[Alcouskou]";
+ 		mes "[Alcouskou]";
+		mes "One of the worst things that";
+		mes "can happen is when a perfectly";
+		mes "good battle starts going bad.";
+		mes "It is these times when discretion";
+		mes "really is the better part of";
+		mes "valor.";
 		next;
-		mes "[アルコスク]";
-		mes "素早い動きが可能だから、";
-		mes "敵を翻弄して効率的に敵に";
-		mes "攻撃を与えるくらいは";
-		mes "できないとね。";
-		mes "一応僕たちの反射神経で";
-		mes "敵の攻撃をうまくかわすことは";
+		mes "[Alcouskou]";
+		mes "Of course, discretion doesn't";
+		mes "matter if you're dead, so it's";
+		mes "important to be able to get";
+		mes "away quickly.";
 		next;
-		mes "[アルコスク]";
-		mes "できるけど、結構危ない瞬間も";
-		mes "あるでしょ？";
-		mes "それに、いっぺんに敵が";
-		mes "群がったらさすがに辛いよね…";
-		mes "そういう時は潔く退くのが";
-		mes "賢明な判断。";
+		mes "[Alcouskou]";
+		mes "Like good thieves, we've";
+		mes "come up with a solution.";
+		mes "We've developed a skill that";
+		mes "will allow you to step";
+		mes "backwards at a critical moment,";
+		mes "saving your life.";
 		next;
-		mes "[アルコスク]";
-		mes "普通の人ならそんな時、";
-		mes "敵に背を見せて逃げるしかない。";
-		mes "でも僕達はそんなことをせずに、";
-		mes "敵の方を向いたまま後ろに";
-		mes "素早く後退することができるんだ。";
+		mes "[Alcouskou]";
+		mes "I can already see that you're";
+		mes "interested in learning this";
+		mes "skill, but perserverance will do";
+		mes "you little good if you don't";
+		mes "have the requisite training";
+		mes "to master it.";
 		next;
-		mes "[アルコスク]";
-		mes "すばらしいその技は、";
-		mes "瞬間的に足に力を集中し";
-		mes "一気に後ろに引き下がる。";
-		mes "つまり敵との距離を短い時間で";
-		mes "空けることができるんだ。";
-		mes "これは繰り返しの練習によって";
+		mes "[Alcouskou]";
+		mes "As part of your training,";
+		mes "you'll need to cast far and";
+		mes "wide for the";
+		mes "^3355FF20x Grasshopper's Toe^000000";
+		mes "that is the key to mastering the art of the Backsliding.";
 		next;
-		mes "[アルコスク]";
-		mes "やっと体得できる技だから、";
-		mes "練習に必要な物を今から";
-		mes "いっぱい用意して来な。";
-		mes "^3355FF「バッタの足」^000000を^3355FF20個^000000";
-		mes "集めて来たら教えてあげるよ。";
-		next;
-		mes "[アルコスク]";
-		mes "あ、一言言っておくけど、";
-		mes "それを使いこなすためには";
-		mes "ある程度の基本ができてなくちゃね。";
-		mes "シーフの場合は";
-		mes "^3355FF職業レベルが35^000000になるまでは";
-		mes "教えられないな。";
+		mes "[Alcouskou]";
+		mes "Oh, and the leadfooted";
+		mes "need not apply.  In our rigorous";
+		mes "testing, we found that those below";
+		mes "^3355FFjob level 35^000000 just didn't have";
+		mes "what it takes.";
 		close;
 //-----------------------------------------------
 //==== 石拾い - TF_PICKSTONE
@@ -2599,35 +2548,30 @@ L3:
 	check Job = 6,-,L3_0;
 	check JobLevel >= 20,-,L3_E;
 L3_0:
- 	mes "[アルコスク]";
-	mes "ほうほう、ちゃんと集めて";
-	mes "きたんだね！";
-	mes "いやー熱心さが伝わった。";
-	mes "よし、それではトレーニングを";
-	mes "始めようか。";
-	mes "滑らかで良い硬さの石を";
+ 	mes "[Alcouskou]";
+	mes "Haha! You brought all the ingredients ";
+	mes "Alright, not bad at all ";
+	mes "Are you sure you haven't studied";
+	mes "the art of discrimination before?";
+	mes "Come right this way please...";
 	next;
-	mes "[アルコスク]";
-	mes "しっかり拾って持つことが";
-	mes "肝心のポイントだ。";
-	mes "言葉で何度も説明するより";
-	mes "身体で覚えたほうが";
-	mes "効率が良いでしょ。";
-	mes "じゃ、一度やってみようか。";
+	mes "[Alcouskou]";
+	mes "Have a look at these";
+	mes "stones.  Which one do you";
+	mes "think is suitable for";
+	mes "throwing?  Let your body";
+	mes "remember the contours of";
+	mes "the stones...";
 	next;
-	mes "^3355FF- シュッ -^000000";
+	mes "- *zan*! -";
 	next;
-	mes "^3355FF- カチッ！ -^000000";
-	next;
-	mes "^3355FF- シュパッ！ -^000000";
-	next;
-	mes "[アルコスク]";
-	mes "良いじゃん、その調子！";
-	mes "これなら実戦でもしっかり";
-	mes "拾えるね。";
-	mes "これからは自分の目で、";
-	mes "そして自分の手で";
-	mes "よく見極めてね。";
+	mes "[Alcouskou]";
+	mes "That's right!  I think you";
+	mes "can now evaluate stones quickly";
+	mes "enough to do so in the midst";
+	mes "of a battle.";
+	mes "From now on, make steady use";
+	mes "of this skill and teach it to others.";
 	delitem 912,1;
 	delitem 948,1;
 	delitem 908,5;
@@ -2635,56 +2579,50 @@ L3_0:
 	set skill_thief_3 = 1,0;
  	close;
 L3_E:
- 	mes "[アルコスク]";
-	mes "私達ギルド員の優秀な";
-	mes "メンバー達は、大抵手先が器用なの。";
-	mes "道端に落ちている小さな石ころを";
-	mes "一瞬で見極め拾い、投げるのに";
-	mes "適した石を選ぶことができるんだ。";
+ 	mes "[Alcouskou]";
+	mes "One of our craftiest guild";
+	mes "members, never to let any";
+	mes "useful tool go unnoticed, has";
+	mes "a knack for picking the best";
+	mes "loose stones for throwing.";
 	next;
-	mes "[アルコスク]";
-	mes "そんな才能をどうにか実戦に";
-	mes "生かせないかと考えたところ、";
-	mes "「石投げ」をしっかりしたスキル";
-	mes "にまで昇華することができた。";
-	mes "いわゆる^3355FF「石拾い」^000000は";
-	mes "^3355FF「石投げ」^000000スキルのために";
+	mes "[Alcouskou]";
+	mes "He quickly named this";
+	mes "talent 'Pickup Stone'.";
+	mes "In teaching others his";
+	mes "technique, he sought to ";
+	mes "unify this skill and its companion";
+	mes "skill, 'Throw Stone'.";
 	next;
-	mes "[アルコスク]";
-	mes "どこででも硬くて投げやすい石を";
-	mes "素早く選び抜き拾うためのスキルだ。";
-	mes "そして石投げは遠くの敵に";
-	mes "正確に石をぶつけることによって";
-	mes "お金を一銭も掛けずに";
-	mes "いくらかの効果を得られるもの。";
+	mes "[Alcouskou]";
+	mes "This may sound easier than";
+	mes "it actually is.  Finding usable";
+	mes "stones in some locations";
+	mes "is next to impossible.  If the";
+	mes "wrong stone is chosen, you will";
+	mes "just enrage the monster with no upside.";
 	next;
-	mes "[アルコスク]";
-	mes "まぁ、たいしたスキルでは無いと";
-	mes "思うだろうけど、君はどう思う？";
-	mes "…";
+	mes "[Alcouskou]";
+	mes "^3355FFPickup Stone^000000 may";
+	mes "seem trivial to master at first";
+	mes "glance, but it requires training";
+	mes "to understand the finer points.";
 	next;
-	mes "[アルコスク]";
-	mes "^3355FF「石拾い」^000000スキルは";
-	mes "どこででも手軽に硬くて投げやすい";
-	mes "石を拾いあげる能力…";
-	mes "意外と奥が深いと思うよ？";
+	mes "[Alcouskou]";
+	mes "In order to train you in the";
+	mes "fine art of discriminating";
+	mes "between the useful and the useless,";
+	mes "I will ask you to procure three";
+	mes "uncommon objects.  First, you need";
+	mes "to find a ^3355FFGrizzly's Foot^000000.";
 	next;
-	mes "[アルコスク]";
-	mes "結構トレーニングが必要で、";
-	mes "実は相当な努力と準備が";
-	mes "あってこそできるようになるんだ。";
-	mes "…オッホン…";
-	mes "一応石ころを拾う練習の時";
-	mes "手にはめる^3355FF「くまの足の裏」1つ^000000。";
-	next;
-	mes "[アルコスク]";
-	mes "そのくまの足の裏で石の代わりに";
-	mes "拾う対象が^3355FF「ジャルゴン」^000000！";
-	mes "ジャルゴンが拾えれば完璧。";
-	mes "あと^3355FF「かえるの卵」5つ^000000 !!";
-	mes "そして君の情熱 !";
-	mes "分かったら行ってきて～";
- 	close;
+	mes "[Alcouskou]";
+	mes "Second, travel overland and find a promising and";
+	mes "and exquisite ^3355FFJiargon^000000!";
+	mes "Then, go deep into the swamp and find";
+	mes "^3355FF5x Demon's Egg^000000!!";
+	mes "Do you understand?  Then";
+	mes "go quickly!";
 //-----------------------------------------------
 //==== 石投げ - TF_THROWSTONE
 //-----------------------------------------------
@@ -2695,114 +2633,105 @@ L4:
 	check Job = 6,-,L4_0;
 	check JobLevel >= 15,-,L4_E;
 L4_0:
- 	mes "[アルコスク]";
-	mes "もう集めてきたの？";
-	mes "じゃ石投げの練習をしよう！";
-	mes "セルーとガレットを持ってー";
+	mes "[Alcouskou]";
+	mes "Aiyo. Why did you get back so fast!";
+	mes "Alright alright, I'll teach you ";
+	mes "Now the Garlets and Scells..";
 	next;
-	mes "^3355FF- シューッ …カツン！ -^000000";
+	mes "^3355FF- shoo ｡V ta ! -^000000";
 	next;
-	mes "^3355FF- シュン！…パン！ -^000000";
+	mes "^3355FF- shoonyoo - tu . . -^000000";
 	next;
-	mes "^3355FF- シュパッ!! …ズガン!! -^000000";
+	mes "^3355FF- shoopaa!! ｡V ta !! -^000000";
 	next;
-	mes "[アルコスク]";
-	mes "ストラィーーーク！";
-	mes "よっしゃぁぁぁ！";
-	mes "もうこれ以上セルーとガレットを";
-	mes "投げて練習しなくても、十分な";
-	mes "命中率とパワーが出るね！";
+	mes "[Alcouskou]";
+	mes "Good throw!!";
+	mes "Alright, not bad!";
+	mes "No we don't need the ";
+	mes "Garlet and Scell anymore ";
+	mes "You're developed good accuracy ";
 	next;
-	mes "[アルコスク]";
-	mes "もう君はこの技を";
-	mes "いつでも使いこなせるはず。";
-	mes "よくやったね！";
-	mes "じゃ、元気でねー";
+	mes "[Alcouskou]";
+	mes "Now how you use the skill ";
+	mes "is entirely up to you... ";
+	mes "I wish you luck, friend!";
  	delitem 910,2;
 	delitem 911,2;
 	setskilllevel 0x98,1;
 	set skill_thief_4 = 1,0;
  	close;
 L4_E:
- 	mes "[アルコスク]";
-	mes "私達ギルド員の優秀な";
-	mes "メンバー達は、大抵手先が器用なの。";
-	mes "道端に落ちている小さな石ころを";
-	mes "一瞬で見極め拾い、投げるのに";
-	mes "適した石を選ぶことができるんだ。";
+	mes "[Alcouskou]";
+	mes "Our guild members";
+	mes "are skilled people!";
+	mes "A lot of them can pick up ";
+	mes "stone from the roadside and throw ";
+	mes "them far away and hit their target ";
 	next;
-	mes "[アルコスク]";
-	mes "そんな才能をどうにか実戦に";
-	mes "生かせないかと考えたところ、";
-	mes "「石投げ」をしっかりしたスキル";
-	mes "にまで昇華することができた。";
-	mes "いわゆる^3355FF「石拾い」^000000は";
-	mes "^3355FF「石投げ」^000000スキルのために";
+	mes "[Alcouskou]";
+	mes "This is a very ";
+	mes "useful skill in real life ";
+	mes "But what you want to know really ";
+	mes "is how to do it right..";
+	mes "The skills are called ^3355FF' Pick Stone '^000000 and";
+	mes "^3355FF' Throw Stone'^000000 ";
 	next;
-	mes "[アルコスク]";
-	mes "どこででも硬くて投げやすい石を";
-	mes "素早く選び抜き拾うためのスキルだ。";
-	mes "そして石投げは遠くの敵に";
-	mes "正確に石をぶつけることによって";
-	mes "お金を一銭も掛けずに";
-	mes "いくらかの効果を得られるもの。";
+	mes "You can find stones everywhere ";
+	mes "and pick them up then ";
+	mes "throw them at your enemies";
+	mes "to cause damage";
+	mes "Maximum profit for minimum";
+	mes "capital";
 	next;
-	mes "[アルコスク]";
-	mes "まぁ、たいしたスキルでは無いと";
-	mes "思うだろうけど、君はどう思う？";
-	mes "…";
+	mes "[Alcouskou]";
+	mes "Very useful skill... don't you think?";
+	mes ". . . . . fu fu . . . . . .";
 	next;
-	mes "[アルコスク]";
-	mes "^3355FF「石投げ」^000000スキルは、";
-	mes "どこででも、拾える石で";
-	mes "狙った対象へ正確に石を";
-	mes "ぶつけるスキルだ。";
-	mes "石はそのへんのものを拾う";
-	mes "わけだけれども、";
+	mes "[Alcouskou]";
+	mes "^3355FF Throw Stone!!^000000";
+	mes "With this skill you can ";
+	mes "use stones you gather ";
+	mes "and hurl them at your enemies ";
 	next;
-	mes "[アルコスク]";
-	mes "どの石が投げるのに良い石か";
-	mes "選別する能力がない時には";
-	mes "他のシーフ系職業…つまり";
-	mes "同業者が得た石を分けてもらって";
-	mes "それを投げることは可能だ。";
-	mes "あまりおもしろくないけどね…";
+	mes "[Alcouskou]";
+	mes "Which stones are good for throwing?;
+	mes "If you don't know how to pick ";
+	mes "then you can ask fellow thieves who can";
+	mes "do it for you";
 	next;
-	mes "[アルコスク]";
-	mes "このスキルを身につけるには";
-	mes "それなりの練習が必要で、";
-	mes "その練習にいくつかの道具が";
-	mes "必要だね。今の君になら手軽に";
-	mes "揃えられると思うけど。";
+	mes "[Alcouskou]";
+	mes "To learn this skill there are ";
+	mes "few requirements you have to meet ";
+	mes "It's not easy, but with the help of your friends ";
+	mes "it should be simple enough...";
 	next;
-	mes "[アルコスク]";
-	mes "用意するのは^3355FF「ガレット」2つ^000000";
-	mes "そして^3355FF「セルー」2つ^000000だ。";
-	mes "石の代わりに投げるのには";
-	mes "十分丈夫な鉱物でしょ？";
-	mes "用意してきたらすぐにでも";
-	mes "スキル教えてあげるよ。";
+	mes "[Alcouskou]";
+	mes "You need 2 ^3355FF'Garlet'^000000";
+	mes "and 2 ^3355FF'Scell'^000000";
+	mes "Just think of it as substitute for";
+	mes "the stones. When you gathered the items";
+	mes "come back and I'll teach you ";
  	close;
 L5:
-	mes "[アルコスク]";
-	mes "慎重派だね。";
-	mes "決まったらまたおいで。";
+	mes "[Alcouskou]";
+	mes "If you change your mind,";
+	mes "please come back and visit.";
 	close;
 LStart1:
-	mes "[アルコスク]";
-	mes "僕達シーフ系職業にはいくつか";
-	mes "必要なスキルがあるんだ。";
-	mes "一般的には覚えることのできない";
-	mes "もので、同業者のシーフや";
-	mes "アサシン達からこっそりと";
-	mes "教えてもらうものなんだ。";
+	mes "[Alcouskou]";
+	mes "In the theiving trade, there";
+	mes "are several essential skills";
+	mes "to be learned.";
+	mes "In order to avoid notice, we";
+	mes "provide instruction to thieves and";
+	mes "assassins in this out-of-the-way place.";
 	next;
-	mes "[アルコスク]";
-	mes "君の周りに、そんなシーフ系の";
-	mes "仲間が居たら、ぜひ僕の噂を";
-	mes "伝えておいてね。";
-	mes "新しいスキルを習得して、";
-	mes "仲間の助けになるように。";
+	mes "[Alcouskou]";
+	mes "Thieves are our eyes and ears in the";
+	mes "world.  If one of your colleagues is";
+	mes "a member of the profession, please";
+	mes "tell him or her to relay to us any juicy";
+	mes "information he or she may hear.";
 	close;
 }
 
