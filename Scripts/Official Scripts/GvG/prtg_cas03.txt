@@ -25,9 +25,6 @@
 
 prt_gld.gat,147,140,4	script	"Fadhgridh"	722,{
 	scriptlabel prt_gldF03;
-OnInit:
-	guildreg "prtg_cas03";
-return;
 	guildreg "prtg_cas03";
 	check guildid == 0,-,L_START_1;
 	mes "       [ Kingdom of Prontera ]";
@@ -64,9 +61,6 @@ prt_gld.gat,158,136,4	script	"Fadhgridh"	722,{
 
 prtg_cas03.gat,168,28,4	script	"Fadhgridh"	722,{
 	scriptlabel prtg_casF03;
-OnInit:
-	guildreg "prtg_cas03";
-return;
 	guildreg "prtg_cas03";
 	check guildid == 0,-,L_START_1;
 	mes "       [ Kingdom of Prontera ]";

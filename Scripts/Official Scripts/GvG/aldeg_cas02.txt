@@ -25,9 +25,6 @@
 
 aldeg_cas02.gat,82,71,2	script	"Hohenschwangau"	722,{
 	scriptlabel aldeg_casF02;
-OnInit:
-	guildreg "aldeg_cas02";
-return;
 	guildreg "aldeg_cas02";
 	check guildid == 0,-,L_START_1;
 	mes "       [ Kingdom of Aldebaran ]";
@@ -56,49 +53,49 @@ L_START_1:
 	close;
 }
 aldeg_cas02.gat,67,30,2	script	"Hohenschwangau"	722,{
-	script aldeg_casF02;
+	script alde_gldF02;
 }
 aldeg_cas02.gat,183,140,2	script	"Hohenschwangau"	722,{
-	script aldeg_casF02;
+	script alde_gldF02;
 }
 aldeg_cas02.gat,212,152,2	script	"Hohenschwangau"	722,{
-	script aldeg_casF02;
+	script alde_gldF02;
 }
 aldeg_cas02.gat,108,39,2	script	"Hohenschwangau"	722,{
-	script aldeg_casF02;
+	script alde_gldF02;
 }
 aldeg_cas02.gat,57,213,2	script	"Hohenschwangau"	722,{
-	script aldeg_casF02;
+	script alde_gldF02;
 }
 aldeg_cas02.gat,91,181,2	script	"Hohenschwangau"	722,{
-	script aldeg_casF02;
+	script alde_gldF02;
 }
 aldeg_cas02.gat,103,53,2	script	"Hohenschwangau"	722,{
-	script aldeg_casF02;
+	script alde_gldF02;
 }
 aldeg_cas02.gat,73,53,2	script	"Hohenschwangau"	722,{
-	script aldeg_casF02;
+	script alde_gldF02;
 }
 aldeg_cas02.gat,63,41,2	script	"Hohenschwangau"	722,{
-	script aldeg_casF02;
+	script alde_gldF02;
 }
 aldeg_cas02.gat,229,6,2	script	"Hohenschwangau"	722,{
-	script aldeg_casF02;
+	script alde_gldF02;
 }
 aldeg_cas02.gat,230,40,2	script	"Hohenschwangau"	722,{
-	script aldeg_casF02;
+	script alde_gldF02;
 }
 aldeg_cas02.gat,197,40,2	script	"Hohenschwangau"	722,{
-	script aldeg_casF02;
+	script alde_gldF02;
 }
 aldeg_cas02.gat,32,213,2	script	"Hohenschwangau"	722,{
-	script aldeg_casF02;
+	script alde_gldF02;
 }
 aldeg_cas02.gat,88,180,2	script	"Hohenschwangau"	722,{
-	script aldeg_casF02;
+	script alde_gldF02;
 }
 aldeg_cas02.gat,121,29,2	script	"Hohenschwangau"	722,{
-	script aldeg_casF02;
+	script alde_gldF02;
 }
 
 aldeg_cas02.gat,84,74,0	script	"Kafra Service"	117,{

@@ -25,9 +25,6 @@
 
 gef_fild13.gat,148,51,5	script	"Repherion"	722,{
 	scriptlabel gef_fild13F01;
-OnInit:
-	guildreg "gefg_cas01";
-return;
 	guildreg "gefg_cas01";
 	check guildid == 0,-,L_START_1;
 	mes "       [ Kingdom of Geffen ]";
@@ -67,9 +64,6 @@ gef_fild13.gat,211,71,6	script	"Repherion"	722,{
 
 gefg_cas01.gat,28,157,4	script	"Repherion"	722,{
 	scriptlabel gefg_casF01;
-OnInit:
-	guildreg "gefg_cas01";
-return;
 	guildreg "gefg_cas01";
 	check guildid == 0,-,L_START_1;
 	mes "       [ Kingdom of Geffen ]";

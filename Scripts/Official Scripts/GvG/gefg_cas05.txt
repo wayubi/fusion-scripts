@@ -25,9 +25,6 @@
 
 gef_fild13.gat,302,87,7	script	"Mersetzdeitz"	722,{
 	scriptlabel gef_fild13F05;
-OnInit:
-	guildreg "gefg_cas05";
-return;
 	guildreg "gefg_cas05";
 	check guildid == 0,-,L_START_1;
 	mes "       [ Kingdom of Prontera ]";
@@ -67,9 +64,6 @@ gef_fild13.gat,26,147,2	script	"Mersetzdeitz"	722,{
 
 gefg_cas05.gat,77,185,6	script	"Mersetzdeitz"	722,{
 	scriptlabel gefg_casF05;
-OnInit:
-	guildreg "gefg_cas05";
-return;
 	guildreg "gefg_cas05";
 	check guildid == 0,-,L_START_1;
 	mes "       [ Kingdom of Prontera ]";

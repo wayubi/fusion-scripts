@@ -25,9 +25,6 @@
 
 pay_gld.gat,292,112,6	script	"Sacred Altar"	722,{
 	scriptlabel pay_gldF02;
-OnInit:
-	guildreg "payg_cas02";
-return;
 	guildreg "payg_cas02";
 	check guildid == 0,-,L_START_1;
 	mes "       [ Kingdom of Payon ]";
@@ -67,9 +64,6 @@ pay_gld.gat,271,163,0	script	"Sacred Altar"	722,{
 
 payg_cas02.gat,254,40,6	script	"Sacred Altar"	722,{
 	scriptlabel payg_casF02;
-OnInit:
-	guildreg "payg_cas02";
-return;
 	guildreg "payg_cas02";
 	check guildid == 0,-,L_START_1;
 	mes "       [ Kingdom of Payon ]";

@@ -25,9 +25,6 @@
 
 pay_gld.gat,321,298,2	script	"Holy Shadow"	722,{
 	scriptlabel pay_gldF03;
-OnInit:
-	guildreg "payg_cas03";
-return;
 	guildreg "payg_cas03";
 	check guildid == 0,-,L_START_1;
 	mes "       [ Kingdom of Payon ]";
@@ -67,9 +64,6 @@ pay_gld.gat,333,254,4	script	"Holy Shadow"	722,{
 
 payg_cas03.gat,236,54,2	script	"Holy Shadow"	722,{
 	scriptlabel payg_casF03;
-OnInit:
-	guildreg "payg_cas03";
-return;
 	guildreg "payg_cas03";
 	check guildid == 0,-,L_START_1;
 	mes "       [ Kingdom of Payon ]";

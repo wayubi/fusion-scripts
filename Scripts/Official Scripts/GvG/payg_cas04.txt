@@ -25,10 +25,7 @@
 
 pay_gld.gat,137,160,0	script	"Scarlet Palace"	722,{
 	scriptlabel pay_gldF04;
-OnInit:
-	guildreg "payg_cas04";
-return;
-	guildreg "payg_cas04";
+	guildreg "payg_cas05";
 	check guildid == 0,-,L_START_1;
 	mes "       [ Kingdom of Payon ]";
 	mes "1. As Law of Payon";
@@ -67,10 +64,7 @@ pay_gld.gat,153,166,1	script	"Scarlet Palace"	722,{
 
 payg_cas04.gat,255,259,0	script	"Scarlet Palace"	722,{
 	scriptlabel payg_casF04;
-OnInit:
-	guildreg "payg_cas04";
-return;
-	guildreg "payg_cas04";
+	guildreg "payg_cas05";
 	check guildid == 0,-,L_START_1;
 	mes "       [ Kingdom of Payon ]";
 	mes "1. As Law of Payon";
@@ -114,7 +108,7 @@ payg_cas04.gat,239,181,4	script	"Scarlet Palace"	722,{
 }
 
 payg_cas04.gat,40,235,1	script	"Kafra Service"	117,{
-	guildreg "payg_cas04";
+	guildreg "payg_cas05";
 	cutin "kafra_01",2;
 	check guildid == 0,-,L_HASGUILD_1;
 	mes "[Kafra Personnel]";
@@ -210,7 +204,7 @@ payg_cas04.gat,40,235,1	script	"Kafra Service"	117,{
 }
 
 payg_cas04.gat,38,284,3	script	"DJ"	55,{
-	guildreg "payg_cas04";
+	guildreg "payg_cas05";
 	check guildid == 0,-,L_HASGUILD_1;
 	mes "[ DJ ]";
 	mes "I am waiting for my master.";
@@ -442,7 +436,7 @@ L_MENU_1-9:
 	mes "[ DJ ]";
 	mes "Please follow me through the secret way.";
 	mes "You must push downt the secret switch in order to get out.";
-	warp "payg_cas04",158,132;
+	warp "payg_cas05",158,132;
 L_MENU_2-9:
 	mes "[ DJ ]";
 	mes "Goods are producing everyday, you must get'em whenever you can.";
