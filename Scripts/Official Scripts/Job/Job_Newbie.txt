@@ -1176,7 +1176,7 @@ new_zone02.gat,16,183,5	script	Helper	84,{
 				set NOV_GET_ITEM01 = 0;
 				mes "[Helper]";
 				mes "Well ..We wish you luck.";
-				save "new_zone02.gat",23,188;
+				save "new_zone02",23,188;
 				next;
 				warp "new_zone03",96,21;
 	L_MENU_4:

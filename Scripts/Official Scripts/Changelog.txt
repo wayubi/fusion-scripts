@@ -9,6 +9,7 @@
 ----------------------------------------------------------------------------------------------------
  Fusion NPC Pack - 1.002
 ----------------------------------------------------------------------------------------------------
+- Job\Job_Newbie.txt - Corrected NPC save command. [Tsusai]
 - NPC\npc_skill_get.txt - Fixed NPC name. [Tsusai]
 - NPC\npc_skill_get.txt - Fixed ;; mistake. [Tsusai]
 - GvG\aldeg_cas02-05.txt - Corrected scriptlabel commands. [Tsusai]
