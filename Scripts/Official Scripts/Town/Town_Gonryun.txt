@@ -152,7 +152,7 @@ L_YES:
 	mes "[Wabajo]";
 	mes "Then let's go";
 	next;
-	warp "alberta.",243,67;
+	warp "alberta",243,67;
 	close;
 L_NO:
 	mes "[Wabajo]";
