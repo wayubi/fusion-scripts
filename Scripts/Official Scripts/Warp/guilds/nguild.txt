@@ -1,6 +1,6 @@
 //Prontera Castle Replica
-//prt_gld.gat,159,298,0	warp	warp1532	1,1,nguild_prt.gat,199,30
-//nguild_prt.gat,103,32,0	warp	warp1539	1,1,prt_gld.gat,134,65
+ncastle.gat,14,14,0	warp	warp1532	1,1,nguild_prt.gat,199,30
+nguild_prt.gat,103,32,0	warp	warp1539	1,1,n_castle,92,94
 nguild_prt.gat,57,19,0	warp	warp1540	1,1,nguild_prt.gat,80,49
 nguild_prt.gat,41,34,0	warp	warp1541	1,1,nguild_prt.gat,40,47
 nguild_prt.gat,37,54,0	warp	warp1542	1,1,nguild_prt.gat,192,119
@@ -18,15 +18,13 @@ nguild_prt.gat,75,183,0	warp	warp1553	1,1,nguild_prt.gat,147,116
 nguild_prt.gat,109,163,0	warp	warp1554	1,1,nguild_prt.gat,202,183
 nguild_prt.gat,206,183,0	warp	warp1555	1,1,nguild_prt.gat,113,163
 //Geffen Castle Replica
-//gef_fild13.gat,150,54,0	warp	warp1610	1,1,nguild_gef.gat,34,140
-//gef_fild13.gat,210,75,0	warp	warp1611	1,1,nguild_gef.gat,95,178
-//nguild_gef.gat,39,196,0	warp	warp1620	1,1,nguild_gef.gat,62,13
-//nguild_gef.gat,58,185,0	warp	warp1621	1,1,nguild_gef.gat,90,47
+n_castle.gat,183,185,0	warp	warp1610	1,1,nguild_gef.gat,34,140
+nguild_gef.gat,34,136,0	warp	warp1626	1,1,n_castle.gat,113,111
+nguild_gef.gat,39,196,0	warp	warp1620	1,1,nguild_gef.gat,62,13
+nguild_gef.gat,58,185,0	warp	warp1621	1,1,nguild_gef.gat,90,47
 nguild_gef.gat,59,170,0	warp	warp1622	1,1,nguild_gef.gat,205,34
-nguild_gef.gat,99,178,0	warp	warp1623	1,1,gef_fild13.gat,214,75
 nguild_gef.gat,31,185,0	warp	warp1624	1,1,nguild_gef.gat,33,47
 nguild_gef.gat,34,167,0	warp	warp1625	1,1,nguild_gef.gat,174,34
-nguild_gef.gat,34,136,0	warp	warp1626	1,1,gef_fild13.gat,150,50
 nguild_gef.gat,54,84,0	warp	warp1627	1,1,nguild_gef.gat,174,14
 nguild_gef.gat,33,51,0	warp	warp1628	1,1,nguild_gef.gat,35,185
 nguild_gef.gat,90,51,0	warp	warp1629	1,1,nguild_gef.gat,54,185
@@ -37,8 +35,8 @@ nguild_gef.gat,209,34,0	warp	warp1633	1,1,nguild_gef.gat,56,170
 nguild_gef.gat,170,14,0	warp	warp1634	1,1,nguild_gef.gat,50,84
 nguild_gef.gat,202,160,0	warp	warp1635	1,1,nguild_gef.gat,185,52
 //Al De Baran Castle Replica
-//alde_gld.gat,48,79,0	warp	warp1794	1,1,nguild_alde.gat,34,248
-//nguild_alde.gat,34,252,0	warp	warp1799	1,1,alde_gld.gat,48,83
+n_castle.gat,183,16,0	warp	warp1794	1,1,nguild_alde.gat,34,248
+nguild_alde.gat,34,252,0	warp	warp1799	1,1,n_castle.gat,113,94
 nguild_alde.gat,50,222,0	warp	warp1800	1,1,nguild_alde.gat,104,108
 nguild_alde.gat,66,191,0	warp	warp1801	1,1,nguild_alde.gat,122,61
 nguild_alde.gat,26,188,0	warp	warp1802	1,1,nguild_alde.gat,50,70
@@ -57,13 +55,13 @@ nguild_alde.gat,46,197,0	warp	warp1814	1,1,nguild_alde.gat,232,182
 nguild_alde.gat,31,197,0	warp	warp1815	1,1,nguild_alde.gat,175,175
 nguild_alde.gat,39,222,0	warp	warp1816	1,1,nguild_alde.gat,70,108
 //Payon Castle Replica
-//pay_gld.gat,121,238,0	warp	warp1725	1,1,nguild_pay.gat,214,48
+n_castle.gat,18,182,0	warp	warp1725	1,1,nguild_pay.gat,214,48
+nguild_pay.gat,214,44,0	warp	warp1735	1,1,n_castle.gat,92,111
 nguild_pay.gat,201,126,0	warp	warp1730	1,1,nguild_pay.gat,102,21
 nguild_pay.gat,222,130,0	warp	warp1731	1,1,nguild_pay.gat,130,43
 nguild_pay.gat,218,112,0	warp	warp1732	1,1,nguild_pay.gat,230,94
 nguild_pay.gat,230,98,0	warp	warp1733	1,1,nguild_pay.gat,222,112
 nguild_pay.gat,213,76,0	warp	warp1734	1,1,nguild_pay.gat,201,118
-nguild_pay.gat,214,44,0	warp	warp1735	1,1,pay_gld.gat,121,233
 nguild_pay.gat,201,114,0	warp	warp1736	1,1,nguild_pay.gat,213,72
 nguild_pay.gat,134,43,0	warp	warp1737	1,1,nguild_pay.gat,226,130
 nguild_pay.gat,102,17,0	warp	warp1738	1,1,nguild_pay.gat,201,121
